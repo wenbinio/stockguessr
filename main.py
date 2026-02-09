@@ -43,14 +43,21 @@ def run_stock_prediction_test(config: dict, verbose: bool = False):
     evaluator = StockPredictionEvaluator()
     
     # Get configuration
-    api_key = os.getenv('OPENAI_API_KEY')
-    model = config.get('model', os.getenv('OPENAI_MODEL', 'gpt-3.5-turbo'))
+    provider = config.get('provider', 'openai')
+    model = config.get('model', os.getenv('OPENAI_MODEL', None))
+    api_base_url = config.get('api_base_url', None)
+    api_key_env_var = config.get('api_key_env_var', None)
     
     try:
-        llm_predictor = LLMPredictor(api_key=api_key, model=model)
+        llm_predictor = LLMPredictor(
+            model=model,
+            provider=provider,
+            api_base_url=api_base_url,
+            api_key_env_var=api_key_env_var,
+        )
     except ValueError as e:
         print(f"Error: {e}")
-        print("Please set OPENAI_API_KEY in .env file or environment")
+        print("Please set the appropriate API key in .env file or environment")
         sys.exit(1)
     
     # Get test parameters
@@ -64,7 +71,8 @@ def run_stock_prediction_test(config: dict, verbose: bool = False):
         sys.exit(1)
     
     print(f"=== Stock Price Prediction Test ===")
-    print(f"Model: {model}")
+    print(f"Provider: {provider}")
+    print(f"Model: {llm_predictor.model}")
     print(f"Cutoff Date: {cutoff_date}")
     print(f"Target Date: {target_date}")
     print(f"Tickers: {', '.join(tickers)}")

@@ -4,7 +4,7 @@
 
 - Python 3.8 or higher
 - pip package manager
-- OpenAI API key
+- API key for your chosen LLM provider (OpenAI, Anthropic, etc.)
 
 ## Installation
 
@@ -22,8 +22,9 @@ pip install -r requirements.txt
 3. Set up your API key:
 ```bash
 cp .env.example .env
-# Edit .env and add your OpenAI API key:
-# OPENAI_API_KEY=sk-your-actual-key-here
+# Edit .env and add your API key(s):
+# For OpenAI: OPENAI_API_KEY=sk-your-actual-key-here
+# For Anthropic: ANTHROPIC_API_KEY=sk-ant-your-actual-key-here
 ```
 
 ## Quick Demo
@@ -44,6 +45,7 @@ This will show you how the system works without making actual API calls.
   "cutoff_date": "2024-01-01",
   "target_date": "2024-06-01",
   "lookback_days": 90,
+  "provider": "openai",
   "model": "gpt-3.5-turbo"
 }
 ```
@@ -64,7 +66,10 @@ python main.py --verbose
 - **cutoff_date**: The date when LLM's knowledge is restricted to
 - **target_date**: The future date to predict prices for
 - **lookback_days**: How many days of historical data to provide (default: 90)
-- **model**: Which OpenAI model to use (gpt-3.5-turbo is cheapest, gpt-4 is more accurate)
+- **provider**: LLM provider: "openai", "anthropic", or a custom OpenAI-compatible provider (default: "openai")
+- **model**: Which model to use (defaults: "gpt-3.5-turbo" for OpenAI, "claude-sonnet-4-20250514" for Anthropic)
+- **api_base_url**: (Optional) Custom base URL for OpenAI-compatible APIs
+- **api_key_env_var**: (Optional) Custom env var name for the API key
 
 ## Example Use Cases
 
@@ -92,25 +97,30 @@ Create multiple configs with the same cutoff but different target dates:
 ## Tips
 
 1. **Start small**: Test with 1-2 tickers first to save on API costs
-2. **Use GPT-3.5-turbo**: It's cheaper and often sufficient for this task
+2. **Use GPT-3.5-turbo or Claude**: They're cheaper and often sufficient for this task
 3. **Check date ranges**: Ensure target_date is after cutoff_date
 4. **Trading days only**: Predictions work best for actual trading days (Mon-Fri)
 5. **Save results**: Copy the output to a file for later analysis
 
 ## Cost Estimation
 
-OpenAI API costs (approximate):
-- GPT-3.5-turbo: ~$0.01-0.02 per prediction
-- GPT-4: ~$0.10-0.20 per prediction
+LLM API costs (approximate per prediction):
+- GPT-3.5-turbo: ~$0.01-0.02
+- GPT-4: ~$0.10-0.20
+- Claude Sonnet: ~$0.01-0.05
+- Claude Opus: ~$0.10-0.30
 
 For a test with 5 stocks:
 - GPT-3.5-turbo: ~$0.05-0.10
 - GPT-4: ~$0.50-1.00
+- Claude Sonnet: ~$0.05-0.25
 
 ## Troubleshooting
 
-**"OpenAI API key not provided"**
-- Make sure you have a `.env` file with `OPENAI_API_KEY=your-key`
+**"API key not provided"**
+- Make sure you have a `.env` file with the appropriate API key:
+  - OpenAI: `OPENAI_API_KEY=your-key`
+  - Anthropic: `ANTHROPIC_API_KEY=your-key`
 
 **"No data found for ticker"**
 - Check that the ticker symbol is correct
@@ -125,7 +135,7 @@ For a test with 5 stocks:
 ## Next Steps
 
 After running your first test:
-1. Try different models (gpt-3.5-turbo vs gpt-4)
+1. Try different models and providers (GPT-3.5 vs GPT-4 vs Claude)
 2. Vary the time gap between cutoff and target dates
 3. Test with different types of stocks (tech, value, growth)
 4. Compare results across multiple runs
