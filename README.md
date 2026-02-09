@@ -23,6 +23,19 @@ This allows researchers to understand how well LLMs can make financial predictio
 - ⚙️ JSON-based configuration
 - 📝 Detailed and summary reporting
 
+## Quick Start
+
+See [QUICKSTART.md](QUICKSTART.md) for a quick introduction.
+
+### Try the Demo
+
+Run the demo with mock data (no API key required):
+```bash
+python demo.py
+```
+
+This demonstrates the full workflow without requiring an OpenAI API key or making network requests.
+
 ## Installation
 
 1. **Clone the repository**:
@@ -138,6 +151,23 @@ The `evaluator.py` module:
 - Compares predicted prices to actual historical prices
 - Calculates error metrics (absolute error, percentage error)
 - Provides summary statistics across all predictions
+
+## Project Structure
+
+```
+stockguessr/
+├── main.py              # Main entry point for running tests
+├── stock_data.py        # Stock data fetching using yfinance
+├── llm_predictor.py     # LLM interaction and prediction logic
+├── evaluator.py         # Evaluation and scoring system
+├── demo.py              # Demo script with mock data
+├── config.json          # Default configuration
+├── config.example.json  # Example configuration
+├── requirements.txt     # Python dependencies
+├── .env.example         # Environment variables template
+├── README.md            # This file
+└── QUICKSTART.md        # Quick start guide
+```
 
 ## Use Cases
 
