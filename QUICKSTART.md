@@ -4,7 +4,7 @@
 
 - Python 3.8 or higher
 - pip package manager
-- OpenAI API key
+- API key for an LLM provider (OpenAI, Groq, Mistral, Together AI, etc.)
 
 ## Installation
 
@@ -22,8 +22,10 @@ pip install -r requirements.txt
 3. Set up your API key:
 ```bash
 cp .env.example .env
-# Edit .env and add your OpenAI API key:
+# Edit .env and add your LLM provider API key:
 # OPENAI_API_KEY=sk-your-actual-key-here
+# Or for other providers, e.g.:
+# GROQ_API_KEY=your-groq-key-here
 ```
 
 ## Quick Demo
@@ -44,7 +46,9 @@ This will show you how the system works without making actual API calls.
   "cutoff_date": "2024-01-01",
   "target_date": "2024-06-01",
   "lookback_days": 90,
-  "model": "gpt-3.5-turbo"
+  "model": "gpt-3.5-turbo",
+  "api_base_url": null,
+  "api_key_env_var": "OPENAI_API_KEY"
 }
 ```
 
@@ -64,7 +68,9 @@ python main.py --verbose
 - **cutoff_date**: The date when LLM's knowledge is restricted to
 - **target_date**: The future date to predict prices for
 - **lookback_days**: How many days of historical data to provide (default: 90)
-- **model**: Which OpenAI model to use (gpt-3.5-turbo is cheapest, gpt-4 is more accurate)
+- **model**: Which LLM model to use (depends on your provider)
+- **api_base_url**: Custom API base URL for non-OpenAI providers (null for OpenAI)
+- **api_key_env_var**: Environment variable name for your API key (default: OPENAI_API_KEY)
 
 ## Example Use Cases
 
@@ -99,9 +105,12 @@ Create multiple configs with the same cutoff but different target dates:
 
 ## Cost Estimation
 
-OpenAI API costs (approximate):
-- GPT-3.5-turbo: ~$0.01-0.02 per prediction
-- GPT-4: ~$0.10-0.20 per prediction
+LLM API costs vary by provider (approximate per prediction):
+- OpenAI GPT-3.5-turbo: ~$0.01-0.02
+- OpenAI GPT-4: ~$0.10-0.20
+- Groq (Llama 3): Free tier available
+- Together AI: ~$0.01-0.05
+- Ollama (local): Free
 
 For a test with 5 stocks:
 - GPT-3.5-turbo: ~$0.05-0.10
@@ -109,8 +118,9 @@ For a test with 5 stocks:
 
 ## Troubleshooting
 
-**"OpenAI API key not provided"**
-- Make sure you have a `.env` file with `OPENAI_API_KEY=your-key`
+**"API key not provided"**
+- Make sure you have a `.env` file with the correct API key (e.g., `OPENAI_API_KEY=your-key`)
+- If using a different provider, set `api_key_env_var` in config to match your env var name
 
 **"No data found for ticker"**
 - Check that the ticker symbol is correct
@@ -125,7 +135,7 @@ For a test with 5 stocks:
 ## Next Steps
 
 After running your first test:
-1. Try different models (gpt-3.5-turbo vs gpt-4)
+1. Try different models and providers (OpenAI, Groq, Mistral, etc.)
 2. Vary the time gap between cutoff and target dates
 3. Test with different types of stocks (tech, value, growth)
 4. Compare results across multiple runs

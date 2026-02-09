@@ -1,6 +1,6 @@
 """
 LLM interaction module for stock price predictions.
-Handles communication with LLM APIs with date-restricted information.
+Handles communication with any OpenAI-compatible LLM API with date-restricted information.
 """
 
 import os
@@ -12,20 +12,37 @@ from openai import OpenAI
 class LLMPredictor:
     """Handles LLM-based stock price predictions with date restrictions."""
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-3.5-turbo"):
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        model: str = "gpt-3.5-turbo",
+        base_url: Optional[str] = None,
+        api_key_env_var: str = "OPENAI_API_KEY"
+    ):
         """
         Initialize the LLM predictor.
         
+        Works with any LLM provider that exposes an OpenAI-compatible API,
+        including OpenAI, Anthropic, Google Gemini, Groq, Mistral, Together AI,
+        Ollama, and others.
+        
         Args:
-            api_key: OpenAI API key (uses env var if not provided)
+            api_key: API key (uses env var specified by api_key_env_var if not provided)
             model: Model to use for predictions
+            base_url: Base URL for the LLM API (None for default OpenAI endpoint)
+            api_key_env_var: Environment variable name for the API key (default: OPENAI_API_KEY)
         """
-        self.api_key = api_key or os.getenv('OPENAI_API_KEY')
+        self.api_key = api_key or os.getenv(api_key_env_var)
         if not self.api_key:
-            raise ValueError("OpenAI API key not provided and OPENAI_API_KEY env var not set")
+            raise ValueError(
+                f"API key not provided and {api_key_env_var} env var not set"
+            )
         
         self.model = model
-        self.client = OpenAI(api_key=self.api_key)
+        client_kwargs: Dict[str, Any] = {"api_key": self.api_key}
+        if base_url:
+            client_kwargs["base_url"] = base_url
+        self.client = OpenAI(**client_kwargs)
     
     def predict_stock_price(
         self,

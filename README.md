@@ -16,7 +16,7 @@ This allows researchers to understand how well LLMs can make financial predictio
 ## Features
 
 - 📊 Fetch historical stock data using Yahoo Finance API
-- 🤖 Integration with OpenAI's GPT models for predictions
+- 🤖 Integration with any OpenAI-compatible LLM API (OpenAI, Groq, Mistral, Together AI, Ollama, etc.)
 - 📅 Configurable date restrictions (cutoff date vs target date)
 - 📈 Multiple ticker support
 - 🎯 Comprehensive evaluation metrics (absolute error, percentage error, statistics)
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 3. **Set up environment variables**:
 ```bash
 cp .env.example .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your LLM provider API key
 ```
 
 ## Configuration
@@ -65,7 +65,9 @@ Create a `config.json` file (or modify the existing one):
   "cutoff_date": "2024-01-01",
   "target_date": "2024-06-01",
   "lookback_days": 90,
-  "model": "gpt-3.5-turbo"
+  "model": "gpt-3.5-turbo",
+  "api_base_url": null,
+  "api_key_env_var": "OPENAI_API_KEY"
 }
 ```
 
@@ -75,7 +77,50 @@ Create a `config.json` file (or modify the existing one):
 - `cutoff_date`: Date when the LLM's information is restricted (YYYY-MM-DD)
 - `target_date`: Future date to predict stock price for (YYYY-MM-DD)
 - `lookback_days`: Number of days of historical data to provide (default: 90)
-- `model`: OpenAI model to use (default: "gpt-3.5-turbo", alternatives: "gpt-4", "gpt-4-turbo")
+- `model`: LLM model to use (default: "gpt-3.5-turbo")
+- `api_base_url`: Base URL for the LLM API (default: null, uses OpenAI). Set this to use a different provider.
+- `api_key_env_var`: Environment variable name containing the API key (default: "OPENAI_API_KEY")
+
+### Using Different LLM Providers
+
+StockGuessr works with any LLM provider that exposes an OpenAI-compatible API. Set `api_base_url` and `api_key_env_var` in your config:
+
+**Groq:**
+```json
+{
+  "model": "llama-3.3-70b-versatile",
+  "api_base_url": "https://api.groq.com/openai/v1",
+  "api_key_env_var": "GROQ_API_KEY"
+}
+```
+
+**Together AI:**
+```json
+{
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+  "api_base_url": "https://api.together.xyz/v1",
+  "api_key_env_var": "TOGETHER_API_KEY"
+}
+```
+
+**Mistral:**
+```json
+{
+  "model": "mistral-large-latest",
+  "api_base_url": "https://api.mistral.ai/v1",
+  "api_key_env_var": "MISTRAL_API_KEY"
+}
+```
+
+**Ollama (local):**
+```json
+{
+  "model": "llama3",
+  "api_base_url": "http://localhost:11434/v1",
+  "api_key_env_var": "OLLAMA_API_KEY"
+}
+```
+(Set `OLLAMA_API_KEY=ollama` in your `.env` file — Ollama ignores the key but the client requires one.)
 
 ## Usage
 
@@ -172,7 +217,7 @@ stockguessr/
 ## Use Cases
 
 - **Research**: Study LLM capabilities in time-constrained prediction tasks
-- **Model Comparison**: Test different LLM models (GPT-3.5 vs GPT-4) on the same task
+- **Model Comparison**: Test different LLM models and providers on the same task
 - **Temporal Analysis**: Vary the gap between cutoff and target dates to see how prediction accuracy changes
 - **Market Testing**: Test predictions for different market conditions (bull/bear markets)
 - **Benchmark Creation**: Create standardized tests for evaluating LLM financial reasoning
@@ -181,14 +226,14 @@ stockguessr/
 
 - **Historical Data Only**: This tests prediction accuracy on historical data, not real-time predictions
 - **LLM Training Data**: LLMs may have seen some of the "future" data during training
-- **API Costs**: OpenAI API calls incur costs based on token usage
+- **API Costs**: LLM API calls may incur costs based on token usage and provider
 - **Data Availability**: Stock data availability depends on Yahoo Finance
 - **Market Hours**: Predictions are for closing prices on trading days
 
 ## Contributing
 
 Contributions are welcome! Feel free to:
-- Add support for other LLM providers (Anthropic, Cohere, etc.)
+- Add support for LLM providers that don't offer OpenAI-compatible APIs
 - Implement additional evaluation metrics
 - Add visualization capabilities
 - Improve price extraction from LLM responses
