@@ -16,7 +16,7 @@ This allows researchers to understand how well LLMs can make financial predictio
 ## Features
 
 - 📊 Fetch historical stock data using Yahoo Finance API
-- 🤖 Integration with OpenAI's GPT models for predictions
+- 🤖 Multi-provider LLM support: OpenAI (GPT), Anthropic (Claude), and any OpenAI-compatible API
 - 📅 Configurable date restrictions (cutoff date vs target date)
 - 📈 Multiple ticker support
 - 🎯 Comprehensive evaluation metrics (absolute error, percentage error, statistics)
@@ -52,7 +52,9 @@ pip install -r requirements.txt
 3. **Set up environment variables**:
 ```bash
 cp .env.example .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your API key(s)
+# For OpenAI: set OPENAI_API_KEY
+# For Anthropic/Claude: set ANTHROPIC_API_KEY
 ```
 
 ## Configuration
@@ -65,6 +67,7 @@ Create a `config.json` file (or modify the existing one):
   "cutoff_date": "2024-01-01",
   "target_date": "2024-06-01",
   "lookback_days": 90,
+  "provider": "openai",
   "model": "gpt-3.5-turbo"
 }
 ```
@@ -75,7 +78,46 @@ Create a `config.json` file (or modify the existing one):
 - `cutoff_date`: Date when the LLM's information is restricted (YYYY-MM-DD)
 - `target_date`: Future date to predict stock price for (YYYY-MM-DD)
 - `lookback_days`: Number of days of historical data to provide (default: 90)
-- `model`: OpenAI model to use (default: "gpt-3.5-turbo", alternatives: "gpt-4", "gpt-4-turbo")
+- `provider`: LLM provider to use (default: "openai"). Options: "openai", "anthropic", or any OpenAI-compatible provider name
+- `model`: Model to use (default depends on provider: "gpt-3.5-turbo" for OpenAI, "claude-sonnet-4-20250514" for Anthropic)
+- `api_base_url`: (Optional) Custom API base URL for OpenAI-compatible providers
+- `api_key_env_var`: (Optional) Custom environment variable name for the API key
+
+### Provider Examples
+
+**OpenAI (default):**
+```json
+{
+  "tickers": ["AAPL"],
+  "cutoff_date": "2024-01-01",
+  "target_date": "2024-06-01",
+  "provider": "openai",
+  "model": "gpt-4"
+}
+```
+
+**Anthropic (Claude):**
+```json
+{
+  "tickers": ["AAPL"],
+  "cutoff_date": "2024-01-01",
+  "target_date": "2024-06-01",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-20250514"
+}
+```
+
+**OpenAI-compatible API (e.g., local LLM, other providers):**
+```json
+{
+  "tickers": ["AAPL"],
+  "cutoff_date": "2024-01-01",
+  "target_date": "2024-06-01",
+  "provider": "custom",
+  "model": "my-model",
+  "api_base_url": "http://localhost:8000/v1",
+  "api_key_env_var": "CUSTOM_API_KEY"
+}
 
 ## Usage
 
@@ -141,6 +183,7 @@ The `stock_data.py` module uses the yfinance library to fetch historical stock d
 
 ### 2. LLM Prediction
 The `llm_predictor.py` module:
+- Supports multiple providers: OpenAI, Anthropic (Claude), and OpenAI-compatible APIs
 - Creates a prompt with historical context up to the cutoff date
 - Instructs the LLM that it has no knowledge beyond the cutoff date
 - Asks for a price prediction for the target date
@@ -172,7 +215,7 @@ stockguessr/
 ## Use Cases
 
 - **Research**: Study LLM capabilities in time-constrained prediction tasks
-- **Model Comparison**: Test different LLM models (GPT-3.5 vs GPT-4) on the same task
+- **Model Comparison**: Test different LLM models (GPT-3.5 vs GPT-4 vs Claude) on the same task
 - **Temporal Analysis**: Vary the gap between cutoff and target dates to see how prediction accuracy changes
 - **Market Testing**: Test predictions for different market conditions (bull/bear markets)
 - **Benchmark Creation**: Create standardized tests for evaluating LLM financial reasoning
@@ -181,14 +224,14 @@ stockguessr/
 
 - **Historical Data Only**: This tests prediction accuracy on historical data, not real-time predictions
 - **LLM Training Data**: LLMs may have seen some of the "future" data during training
-- **API Costs**: OpenAI API calls incur costs based on token usage
+- **API Costs**: LLM API calls incur costs based on token usage (varies by provider)
 - **Data Availability**: Stock data availability depends on Yahoo Finance
 - **Market Hours**: Predictions are for closing prices on trading days
 
 ## Contributing
 
 Contributions are welcome! Feel free to:
-- Add support for other LLM providers (Anthropic, Cohere, etc.)
+- Add support for additional LLM providers
 - Implement additional evaluation metrics
 - Add visualization capabilities
 - Improve price extraction from LLM responses

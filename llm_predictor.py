@@ -1,31 +1,74 @@
 """
 LLM interaction module for stock price predictions.
 Handles communication with LLM APIs with date-restricted information.
+Supports multiple providers: OpenAI, Anthropic (Claude), and OpenAI-compatible APIs.
 """
 
 import os
 from typing import Optional, Dict, Any
 from datetime import datetime
 from openai import OpenAI
+import anthropic
+
+# Provider constants
+PROVIDER_OPENAI = "openai"
+PROVIDER_ANTHROPIC = "anthropic"
+
+# Default environment variable names per provider
+DEFAULT_ENV_VARS = {
+    PROVIDER_OPENAI: "OPENAI_API_KEY",
+    PROVIDER_ANTHROPIC: "ANTHROPIC_API_KEY",
+}
+
+# Default models per provider
+DEFAULT_MODELS = {
+    PROVIDER_OPENAI: "gpt-3.5-turbo",
+    PROVIDER_ANTHROPIC: "claude-sonnet-4-20250514",
+}
 
 
 class LLMPredictor:
     """Handles LLM-based stock price predictions with date restrictions."""
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-3.5-turbo"):
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        model: Optional[str] = None,
+        provider: str = PROVIDER_OPENAI,
+        api_base_url: Optional[str] = None,
+        api_key_env_var: Optional[str] = None,
+    ):
         """
         Initialize the LLM predictor.
         
         Args:
-            api_key: OpenAI API key (uses env var if not provided)
-            model: Model to use for predictions
+            api_key: API key (uses env var if not provided)
+            model: Model to use for predictions (defaults per provider)
+            provider: LLM provider - "openai", "anthropic", or any OpenAI-compatible provider
+            api_base_url: Custom API base URL (for OpenAI-compatible APIs)
+            api_key_env_var: Environment variable name for the API key
         """
-        self.api_key = api_key or os.getenv('OPENAI_API_KEY')
-        if not self.api_key:
-            raise ValueError("OpenAI API key not provided and OPENAI_API_KEY env var not set")
+        self.provider = provider.lower()
+        self.model = model or DEFAULT_MODELS.get(self.provider, "gpt-3.5-turbo")
+        self.api_base_url = api_base_url
         
-        self.model = model
-        self.client = OpenAI(api_key=self.api_key)
+        # Resolve API key
+        env_var = api_key_env_var or DEFAULT_ENV_VARS.get(self.provider, "OPENAI_API_KEY")
+        self.api_key = api_key or os.getenv(env_var)
+        if not self.api_key:
+            raise ValueError(
+                f"API key not provided and {env_var} env var not set. "
+                f"Provider: {self.provider}"
+            )
+        
+        # Initialize the appropriate client
+        if self.provider == PROVIDER_ANTHROPIC:
+            self.client = anthropic.Anthropic(api_key=self.api_key)
+        else:
+            client_kwargs = {"api_key": self.api_key}
+            if self.api_base_url:
+                client_kwargs["base_url"] = self.api_base_url
+            self.client = OpenAI(**client_kwargs)
     
     def predict_stock_price(
         self,
@@ -50,27 +93,17 @@ class LLMPredictor:
         prompt = self._create_prediction_prompt(
             ticker, target_date, cutoff_date, historical_context
         )
+        system_message = (
+            f"You are a financial analyst. Today's date is {cutoff_date}. "
+            f"You have no knowledge of events after {cutoff_date}. "
+            f"Provide stock price predictions based only on information available up to {cutoff_date}."
+        )
         
         try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": f"You are a financial analyst. Today's date is {cutoff_date}. "
-                                   f"You have no knowledge of events after {cutoff_date}. "
-                                   f"Provide stock price predictions based only on information available up to {cutoff_date}."
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
-                temperature=0.7,
-                max_tokens=500
-            )
-            
-            prediction_text = response.choices[0].message.content
+            if self.provider == PROVIDER_ANTHROPIC:
+                prediction_text = self._call_anthropic(system_message, prompt)
+            else:
+                prediction_text = self._call_openai(system_message, prompt)
             
             # Try to extract a numerical prediction
             predicted_price = self._extract_price_from_response(prediction_text)
@@ -82,6 +115,7 @@ class LLMPredictor:
                 'predicted_price': predicted_price,
                 'full_response': prediction_text,
                 'model': self.model,
+                'provider': self.provider,
                 'success': predicted_price is not None
             }
             
@@ -92,8 +126,35 @@ class LLMPredictor:
                 'cutoff_date': cutoff_date,
                 'predicted_price': None,
                 'error': str(e),
+                'model': self.model,
+                'provider': self.provider,
                 'success': False
             }
+    
+    def _call_openai(self, system_message: str, user_prompt: str) -> str:
+        """Call OpenAI or OpenAI-compatible API."""
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": system_message},
+                {"role": "user", "content": user_prompt},
+            ],
+            temperature=0.7,
+            max_tokens=500,
+        )
+        return response.choices[0].message.content
+    
+    def _call_anthropic(self, system_message: str, user_prompt: str) -> str:
+        """Call Anthropic Claude API."""
+        response = self.client.messages.create(
+            model=self.model,
+            max_tokens=500,
+            system=system_message,
+            messages=[
+                {"role": "user", "content": user_prompt},
+            ],
+        )
+        return response.content[0].text
     
     def _create_prediction_prompt(
         self,

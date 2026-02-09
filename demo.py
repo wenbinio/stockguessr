@@ -138,8 +138,10 @@ def run_demo():
     print("\n✓ Demo completed successfully!")
     print("\nNote: This demo uses mock data. In production:")
     print("  - Stock data would be fetched from Yahoo Finance (yfinance)")
-    print("  - Predictions would come from OpenAI GPT models")
-    print("  - Requires OPENAI_API_KEY in .env file")
+    print("  - Predictions would come from your chosen LLM provider:")
+    print("    * OpenAI (GPT-3.5, GPT-4, etc.) - set OPENAI_API_KEY")
+    print("    * Anthropic (Claude) - set ANTHROPIC_API_KEY")
+    print("    * Any OpenAI-compatible API - set api_base_url in config")
     print("\nRun 'python main.py' with proper configuration for real testing.")
 
 
