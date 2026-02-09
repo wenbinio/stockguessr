@@ -23,8 +23,7 @@ class LLMPredictor:
         Initialize the LLM predictor.
         
         Works with any LLM provider that exposes an OpenAI-compatible API,
-        including OpenAI, Anthropic, Google Gemini, Groq, Mistral, Together AI,
-        Ollama, and others.
+        including OpenAI, Groq, Mistral, Together AI, Ollama, and others.
         
         Args:
             api_key: API key (uses env var specified by api_key_env_var if not provided)
