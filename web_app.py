@@ -96,8 +96,9 @@ def get_stock_game_data(ticker: str, target_date: str):
         return None, "Could not fetch stock price for the requested date."
 
     try:
-        shares_outstanding = yf.Ticker(ticker).info.get('sharesOutstanding')
-    except Exception:
+        stock_info = yf.Ticker(ticker).info
+        shares_outstanding = stock_info.get('sharesOutstanding') if isinstance(stock_info, dict) else None
+    except (AttributeError, KeyError, TypeError, ValueError):
         shares_outstanding = None
 
     if not shares_outstanding:
@@ -164,4 +165,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
