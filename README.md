@@ -87,6 +87,16 @@ Run the test with the default configuration:
 python main.py
 ```
 
+### Web Interface
+
+Run the website interface for guessing market cap on a historical day:
+
+```bash
+python web_app.py
+```
+
+Then open `http://127.0.0.1:5000` in your browser.
+
 ### Custom Configuration
 
 Specify a custom config file:
