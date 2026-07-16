@@ -38,3 +38,27 @@ everything else.
 Results feed `docs/api/round3.json` and the Round-3 tab of the hub, including
 the novelty statements and a divergence panel (R3 vs R2 book overlap per
 agent — expected to be near zero by construction).
+
+## Fee schedule (amended 2026-07-16, applies to all fills both rounds)
+
+Per side, fraction of notional:
+- Equities/ETFs: 2bps half-spread (large-cap/major ETF), 5bps leveraged ETFs,
+  12bps names under $15; sells add SEC + FINRA TAF (0.31bps); $0 commission.
+- Crypto spot: 35bps (retail taker fee + spread).
+- Crypto perps: 7.5bps on notional (taker + spread); funding 10% APR unchanged.
+- Short borrow 3% APR and cash 4% APY unchanged.
+
+## Standing orders ("act throughout")
+
+At any reassessment, an agent may attach `stop_loss_pct` and/or
+`take_profit_pct` to any position. The engine evaluates them at every daily
+close between reassessments and executes at that close (timestamped fill,
+exit fees charged, proceeds earn cash yield from that date). This gives agents
+intraweek agency without daily prompting.
+
+## Point-in-time data discipline
+
+An agent acting on date D — at entry, a weekly reassessment, or in any
+backtest — may consult price data through D and nothing later. Live forward
+legs enforce this by physics; backtests and replays enforce it by rule, and
+desk prompts state it explicitly.

@@ -43,10 +43,23 @@ CAPITAL = 1000.0
 ENTRY = CFG["entry"]
 PERIOD1 = 1704067200  # 2024-01-01, deep enough for backtests
 UA = "Mozilla/5.0"
-COST = {"equity": 0.0010, "crypto": 0.0025, "perp": 0.0025}
 BORROW_APR, FUNDING_APR, CASH_APY = 0.03, 0.10, 0.04
 LIQ_THRESHOLD = 0.05  # perp liquidated when value <= 5% of margin
 ALIASES = {"FI": "FISV", "SQ": "XYZ"}
+
+# Realistic retail fee schedule (per side, fraction of notional)
+LEVERAGED_ETFS = {"TQQQ", "SQQQ", "SOXL", "SOXS", "TNA", "TZA", "UPRO", "SPXU",
+                  "UDOW", "SDOW", "LABU", "LABD", "FNGU", "TECL", "TECS", "YINN"}
+SEC_TAF_SELL = 0.000031  # SEC fee + FINRA TAF, sell side only
+
+
+def fee_rate(kind: str, sym: str, price: float, is_close: bool) -> float:
+    if kind == "perp":
+        return 0.00075                     # taker fee + spread on notional
+    if kind == "crypto":
+        return 0.0035                      # retail taker + spread
+    base = 0.0005 if sym in LEVERAGED_ETFS else (0.0012 if price < 15 else 0.0002)
+    return base + (SEC_TAF_SELL if is_close else 0.0)
 
 
 def normalize(sym: str) -> str:
@@ -105,7 +118,7 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
         margin = p["weight_pct"] / 100 * capital
         lev = float(p.get("leverage", 1)) if p["kind"] == "perp" else 1.0
         notional = margin * lev
-        entry_cost = notional * COST[p["kind"]]
+        entry_cost = notional * fee_rate(p["kind"], sym, float(px.loc[t0, sym]), False)
         if fills is not None:
             fills.append({"ts": t0.strftime("%Y-%m-%d") + "T16:00:00-04:00",
                           "agent": alloc["name"], "action": "OPEN", "symbol": sym,
@@ -117,12 +130,14 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
         positions.append({"sym": sym, "kind": p["kind"],
                           "side": 1 if p["side"] == "long" else -1,
                           "margin": margin - entry_cost, "lev": lev,
-                          "p0": float(px.loc[t0, sym]), "dead": False})
-    cash0 = alloc["cash_pct"] / 100 * capital
+                          "p0": float(px.loc[t0, sym]), "dead": False,
+                          "stop": p.get("stop_loss_pct"), "tp": p.get("take_profit_pct")})
+    # cash tracked as dated events so stop/TP proceeds earn yield from close date
+    cash_events = [(t0, alloc["cash_pct"] / 100 * capital)]
     nav = {}
     for d in dates:
         t = (d - t0).days / 365.0
-        total = cash0 * (1 + CASH_APY * t)
+        total = sum(amt * (1 + CASH_APY * (d - dt).days / 365.0) for dt, amt in cash_events)
         for pos in positions:
             if pos["dead"]:
                 continue
@@ -138,6 +153,30 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
                 v = max(v, 0.0)
             else:
                 v = pos["margin"] * (1 + ret)
+            # standing orders: position-level P&L vs margin, evaluated at daily closes
+            pnl_pct = (v / pos["margin"] - 1) * 100 if pos["margin"] > 0 else 0.0
+            trigger = None
+            if not pos["dead"] and pos.get("stop") is not None and pnl_pct <= -abs(pos["stop"]):
+                trigger = "STOP_LOSS"
+            elif not pos["dead"] and pos.get("tp") is not None and pnl_pct >= abs(pos["tp"]):
+                trigger = "TAKE_PROFIT"
+            if trigger:
+                exit_cost = v * pos["lev"] * fee_rate(pos["kind"], pos["sym"],
+                                                      float(px.loc[d, pos["sym"]]), True)
+                proceeds = max(v - exit_cost, 0.0)
+                cash_events.append((d, proceeds))
+                pos["dead"] = True
+                pos["value"] = 0.0
+                if fills is not None:
+                    fills.append({"ts": d.strftime("%Y-%m-%d") + "T16:00:00-04:00",
+                                  "agent": alloc["name"], "action": trigger,
+                                  "symbol": pos["sym"], "kind": pos["kind"],
+                                  "side": "long" if pos["side"] > 0 else "short",
+                                  "fill_price": round(float(px.loc[d, pos["sym"]]), 4),
+                                  "proceeds_usd": round(proceeds, 2),
+                                  "exit_cost_usd": round(exit_cost, 2)})
+                total += proceeds
+                continue
             pos["value"] = v
             total += v
         nav[d] = total
