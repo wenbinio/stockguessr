@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.name "stockguessr-tracker"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/api/performance.json docs/index.html
+          git add docs
           if git diff --cached --quiet; then
             echo "No changes"
           else
