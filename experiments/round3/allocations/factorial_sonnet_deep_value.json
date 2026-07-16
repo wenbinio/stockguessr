@@ -1,0 +1,103 @@
+{
+  "name": "Sonnet+tools deep value",
+  "strategy": "Global deep-value dividend payers: single-digit-to-low-teens P/E, near-book P/B, strong FCF, durable 6%+ dividends across tobacco, telecom, financials, pharma, autos, staples",
+  "positions": [
+    {
+      "symbol": "MO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "~7% dividend, single-digit P/E, dominant US tobacco FCF machine"
+    },
+    {
+      "symbol": "VZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 30,
+      "thesis": "P/E~9, ~6.5% yield, deleveraging telecom near multi-year lows"
+    },
+    {
+      "symbol": "C",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 22,
+      "take_profit_pct": 40,
+      "thesis": "Near tangible book with large buybacks and restructuring"
+    },
+    {
+      "symbol": "PFE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 30,
+      "thesis": "Post-COVID de-rating, ~6% dividend, oncology pipeline"
+    },
+    {
+      "symbol": "STLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 45,
+      "thesis": "Single-digit P/E automaker below sum-of-parts"
+    },
+    {
+      "symbol": "BTI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "High FCF conversion, ~7% dividend, cheaper than US peers"
+    },
+    {
+      "symbol": "GM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 45,
+      "thesis": "Single-digit P/E, aggressive buybacks"
+    },
+    {
+      "symbol": "KHC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "Below book value, high FCF yield, restructuring catalyst"
+    }
+  ],
+  "cash_pct": 10,
+  "backtest": {
+    "windows_tested": [
+      "2025H2 baseline",
+      "2025H1 stress",
+      "2022H1 stress"
+    ],
+    "strategy_return_pct": {
+      "H2_2025": 14.0,
+      "H1_2025_stress": 7.2,
+      "H1_2022_stress": -10.9
+    },
+    "benchmark_return_pct": {
+      "SPY_H2_2025": 11.0,
+      "SPY_H1_2025": 6.3,
+      "SPY_H1_2022": -20.4
+    },
+    "notes": "Outperformed SPY in all three windows and roughly tracked VTV; 2022 stress -11% vs SPY -20%. Selection-bias caveat acknowledged; STLA charged at the 12bps sub-$15 fee tier."
+  },
+  "outlook": "Cheap cash-generative dividend franchises should compound and cushion drawdowns; lags a momentum-led rally.",
+  "model": "sonnet",
+  "group": "factorial",
+  "treatment": "flagship (tools + mandatory backtest)",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

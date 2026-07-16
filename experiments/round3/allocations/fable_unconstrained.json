@@ -1,0 +1,78 @@
+{
+  "name": "Fable Unconstrained",
+  "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
+  "novelty": "The return drivers are carry and mean-reversion, not trend: paid for holding assets others just dumped, for multi-year valuation reversion in quality laggards, for the volatility risk premium (short-vol via SVXY), and for cash yield. R1/R2 bought recent winners; this book systematically owns recent losers and premia, zero AI-infrastructure, zero momentum, no crypto.",
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Gold -16% in 3m after blowoff top; central-bank bid intact, overshoot mean reversion"
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Brazil: single-digit P/E, ~8% dividend carry, rate-cut cycle, bought on a -13% 3m pullback"
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Quality value ballast: flat 2 years while SPY +39%, record cash pile"
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30,
+      "thesis": "Multi-year valuation reversion: ~34% below 2024 peak, franchise intact"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Staples laggard: cheap defensive carry with upside if the melt-up breaks"
+    },
+    {
+      "symbol": "SVXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 40,
+      "thesis": "Volatility risk premium: harvest VIX contango at VIX~16; 40% stop caps spike risk"
+    }
+  ],
+  "cash_pct": 32,
+  "backtest": {
+    "windows_tested": [
+      "2024H2 (VIX-spike stress)",
+      "2025H1 (tariff crash stress)",
+      "2025H2",
+      "2026H1"
+    ],
+    "strategy_return_pct": {
+      "2024H2": 0.5,
+      "2025H1": 4.19,
+      "2025H2": 8.56,
+      "2026H1": 4.55
+    },
+    "benchmark_return_pct": {
+      "2024H2_SPY": 7.47,
+      "2025H1_SPY": 5.68,
+      "2025H2_SPY": 10.41,
+      "2026H1_SPY": 10.49
+    },
+    "notes": "Positive in all 4 windows incl. both stress windows, worst 6m drawdown -9.3%. Honestly rejected: SPY short/RSP spread (bled every window), TLT duration carry (negative every window), tight stops (locked bottoms), naive bottom-3 loser rule. Book will lag SPY in a continued melt-up by design."
+  },
+  "outlook": "With SPY at highs, VIX ~16 and leadership concentrated, a book paid by carry, cash yield and reversion should compound steadily; expect +4-8% absolute with single-digit drawdown.",
+  "model": "fable",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

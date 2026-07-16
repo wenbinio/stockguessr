@@ -1,0 +1,101 @@
+{
+  "name": "Fable Barbell",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "novelty": "R1/R2 both earned long market beta shaped as a barbell. R3's driver is the cross-sectional momentum spread itself: long strongest non-AI sectors against shorts in weakest broken trends, so P&L comes from relative trend continuation, not index direction or AI capex. No ballast sleeve; risk managed by stops instead of defensive assets.",
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.8,
+      "stop_loss_pct": 15,
+      "thesis": "Top momentum rank: biotech breakout on M&A wave and rate-cut duration bid."
+    },
+    {
+      "symbol": "XOP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.8,
+      "stop_loss_pct": 15,
+      "thesis": "Energy E&P +30% 6m; strongest commodity-equity trend."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.8,
+      "stop_loss_pct": 15,
+      "thesis": "Regional banks +15% 6m with rising 1m momentum."
+    },
+    {
+      "symbol": "JETS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.8,
+      "stop_loss_pct": 15,
+      "thesis": "Airlines +16% 3m: travel strength plus fuel-cost relief."
+    },
+    {
+      "symbol": "IYT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.8,
+      "stop_loss_pct": 15,
+      "thesis": "Transports +13% 6m confirm the cyclical rotation."
+    },
+    {
+      "symbol": "SLV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 40,
+      "thesis": "Weakest rank in universe (-32% 6m): silver parabola deflating."
+    },
+    {
+      "symbol": "GDXJ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 40,
+      "thesis": "Junior gold miners -24% 6m, downtrend intact across lookbacks."
+    },
+    {
+      "symbol": "URNM",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 40,
+      "thesis": "Uranium miners -22% 6m, distinct cluster, negative momentum every horizon."
+    }
+  ],
+  "cash_pct": 13,
+  "backtest": {
+    "windows_tested": [
+      "2026H1",
+      "2025H2",
+      "2022H1 stress",
+      "2020H1 stress"
+    ],
+    "strategy_return_pct": {
+      "2026H1": 1.5,
+      "2025H2": 38.3,
+      "2022H1_stress": -0.9,
+      "2020H1_stress": -12.5
+    },
+    "benchmark_return_pct": {
+      "2026H1_SPY": 9.6,
+      "2025H2_SPY": 11.9,
+      "2022H1_SPY": -19.6,
+      "2020H1_SPY": -3.4
+    },
+    "notes": "Big alpha in trending regimes and strong crash protection in 2022; momentum crashes hurt (2020 COVID). Live shorts are post-crash trades with squeeze risk bounded by 18% stops."
+  },
+  "outlook": "The tape is rotating from deflating metals/crypto parabolas into cyclical breadth; this book monetizes both legs, stops cap regime-flip damage.",
+  "model": "fable",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

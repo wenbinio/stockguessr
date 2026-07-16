@@ -1,0 +1,112 @@
+{
+  "name": "Opus Broadening",
+  "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
+  "novelty": "A single-name cross-sectional momentum book: concentrates in stocks with the strongest trailing 3-6 month trends and shorts the worst, harvesting dispersion continuation. The opposite driver from R1/R2, which bet on dispersion COMPRESSION (breadth/laggards catching up).",
+  "positions": [
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "Cleanest all-horizon momentum (+82% 6m, still rising 1m)."
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "+96% 6m with intact 3m persistence, security-software leader."
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "+155% 12m semis momentum, best recent persistence among semis."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "Accelerating fintech, strongest 3m in the leader set (+36%)."
+    },
+    {
+      "symbol": "GS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 18,
+      "take_profit_pct": 35,
+      "thesis": "Lower-vol financials diversifier, accelerating (+13% 1m)."
+    },
+    {
+      "symbol": "SNOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "+93% 6m data-platform momentum with positive follow-through."
+    },
+    {
+      "symbol": "MSTR",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 35,
+      "thesis": "Deepest persistent downtrend (-45% 6m); doubles as risk-off hedge."
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30,
+      "thesis": "Sharp momentum breakdown (-37% 3m), the software laggard."
+    }
+  ],
+  "cash_pct": 10,
+  "backtest": {
+    "windows_tested": [
+      "2022H1 stress",
+      "2020H1 stress",
+      "2023H2",
+      "2024H1",
+      "2024H2",
+      "2025H1"
+    ],
+    "strategy_return_pct": {
+      "2022H1": -10.6,
+      "2020H1": 22.51,
+      "2023H2": -4.22,
+      "2024H1": 43.65,
+      "2024H2": 42.65,
+      "2025H1": 13.62
+    },
+    "benchmark_return_pct": {
+      "2022H1": -19.98,
+      "2020H1": -3.21,
+      "2023H2": 8.04,
+      "2024H1": 15.22,
+      "2024H2": 8.39,
+      "2025H1": 6.05
+    },
+    "notes": "Beat SPY in 5 of 6 windows including both stress windows; honest failure mode is momentum whipsaw (2023H2). Universe carries survivorship bias; point-to-point returns."
+  },
+  "outlook": "Momentum leadership intact through mid-2026; main risk is factor reversal, cushioned by shorts and 18-25% stops.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

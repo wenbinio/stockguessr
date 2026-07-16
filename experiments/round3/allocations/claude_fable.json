@@ -1,0 +1,29 @@
+{
+  "name": "Claude Fable (orchestrator)",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Rate-cycle rotation + carry + early trend-reversal, with stop discipline",
+  "novelty": "My R1 and R2 books were both concentrated long AI-infrastructure conviction. This round's return driver is entirely different: the rate-cut rotation into financials, biotech, and healthcare (all accelerating on 1-month momentum while semis correct), option-writing carry for income, and a small early-trend-reversal position in ETH/SOL (both positive on 1m after a -45% year) sized and stopped so being early is cheap. No AI-capex thesis anywhere in the book.",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "positions": [
+    {"symbol": "XBI", "kind": "equity", "side": "long", "weight_pct": 14, "stop_loss_pct": 18, "thesis": "Biotech breadth is the strongest 1m tape (+14.6%) and the purest rate-cut duration trade in equities."},
+    {"symbol": "KRE", "kind": "equity", "side": "long", "weight_pct": 12, "stop_loss_pct": 15, "thesis": "Regional banks: +5.5% 1m acceleration, direct curve-steepening beneficiary."},
+    {"symbol": "XLF", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 12, "thesis": "Financials leading the last month (+6.0%) after lagging all year — rotation confirmation."},
+    {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 12, "thesis": "Healthcare +4.0% 1m from a depressed base; defensive growth with a rotation kicker."},
+    {"symbol": "JEPQ", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 10, "thesis": "Covered-call income sleeve — carry that pays while rotation plays out."},
+    {"symbol": "IWD", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 12, "thesis": "Large-cap value: steady +10.7% 3m participation, the broad expression of the same rotation."},
+    {"symbol": "EWJ", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 12, "thesis": "Japan reform/buyback compounder, low correlation to the US rotation legs."},
+    {"symbol": "ETH-USD", "kind": "crypto", "side": "long", "weight_pct": 5, "stop_loss_pct": 25, "take_profit_pct": 80, "thesis": "First positive month (+5.2%) after a -44% year — early reversal ticket, stopped so being wrong costs 1.25% of NAV."},
+    {"symbol": "SOL-USD", "kind": "crypto", "side": "long", "weight_pct": 3, "stop_loss_pct": 30, "take_profit_pct": 100, "thesis": "Same reversal thesis, higher beta, smaller size."}
+  ],
+  "cash_pct": 20,
+  "backtest": {
+    "windows_tested": ["2026-01-02 to 2026-07-15", "2025-01-02 to 2025-06-30 (stress)"],
+    "strategy_return_pct": {"2026H1": 6.99, "2025H1_stress": -5.54},
+    "benchmark_return_pct": {"2026H1_SPY": 11.07, "2025H1_SPY": 6.31},
+    "max_drawdown_pct": {"2026H1": -7.48, "2025H1_stress": -13.83},
+    "notes": "Run through the round engine (tracker/round2.py --backtest) with full fees and stop simulation. HONEST FINDING: this novel construction UNDERPERFORMS SPY in both windows tested — the rotation legs weren't leading in those periods, and XBI's 18% stop fired during the 2025 tariff crash (proceeds to cash, which capped the loss but locked it in). I register it anyway: the novelty rule exists to test whether judgment generalizes beyond a ridden theme, and the forward window is the test that counts. Drawdowns are roughly half my R2 book's."
+  },
+  "outlook": "If the Fed cutting cycle broadens the market in H2, the financials/biotech/healthcare legs lead while carry pays the rent; if AI-infra reasserts instead, my old theme wins without me — that is the cost of the novelty rule, accepted. Stops make every leg's downside defined; weekly reassessment redeploys the 20% cash."
+}

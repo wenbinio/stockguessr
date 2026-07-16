@@ -1,0 +1,102 @@
+{
+  "name": "Opus Momentum",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "novelty": "The return driver is diversified carry / risk-premia harvesting balanced by the low-volatility anomaly, not price trend. R1 was cross-sectional stock momentum and R2 was leveraged directional tech/semis beta plus 3x crypto shorts; this book takes no trend, no leverage, no crypto and no directional single-asset bet.",
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Min-volatility equity: low-vol anomaly, participates in equity drift with reduced drawdown."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Gold: real-rate/inflation diversifier, low correlation to stocks and credit."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "High-yield credit: harvests credit-spread carry (~7% yield) as core income sleeve."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "7-10y Treasuries: term-premium carry and equity hedge in risk-off."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Long duration: convex hedge / term premium; small sizing given rate volatility."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Utilities: bond-proxy dividend carry, defensive low-beta equity income."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 12,
+      "thesis": "Broad equity risk-premium sleeve so the book isn't left behind in a melt-up; stopped if it rolls over."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30,
+      "thesis": "Gold-miner convexity: levered gold beta as a small asymmetric kicker with defined risk."
+    }
+  ],
+  "cash_pct": 6,
+  "backtest": {
+    "windows_tested": [
+      "2020_covid_stress",
+      "2018H2_vol",
+      "2022_stress",
+      "2023H1",
+      "2024H2",
+      "2025H2_seasonal_analog",
+      "2026H1"
+    ],
+    "strategy_return_pct": {
+      "2022_stress": -9.4,
+      "2020_covid": 4.7,
+      "2018H2_vol": 0.3,
+      "2023H1": 3.8,
+      "2024H2": 6.6,
+      "2025H2": 10.4,
+      "2026H1": 1.2
+    },
+    "benchmark_return_pct": {
+      "2022_stress": -20.4,
+      "2020_covid": -4.1,
+      "2018H2_vol": -7.1,
+      "2023H1": 17.3,
+      "2024H2": 8.2,
+      "2025H2": 11.0,
+      "2026H1": 11.1
+    },
+    "notes": "Cut drawdown roughly in half in EVERY stress window; lagged badly in melt-ups (2023H1, 2026H1). Rejected dollar-neutral sector reversal and pairs mean-reversion as too noisy."
+  },
+  "outlook": "Diversified carry should compound low-teens annualized with shallow drawdowns; main risk is a melt-up leaving the low-beta stance behind.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Opus Value",
+  "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
+  "novelty": "The return driver is momentum and trend persistence \u2014 buying assets already going UP \u2014 plus quality/carry ballast. This is the deliberate opposite of R1 (buying cheap value) and R2 (buying oversold mean-reversion): laggards (BTC, ETH, GLD, MSFT below 200dma) are explicitly excluded.",
+  "positions": [
+    {
+      "symbol": "SPMO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 18,
+      "thesis": "S&P 500 momentum factor ETF - core embodiment of the trend edge."
+    },
+    {
+      "symbol": "XLK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 20,
+      "thesis": "Strongest-trending sector; tech leadership above 200dma."
+    },
+    {
+      "symbol": "MTUM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 18,
+      "thesis": "Broad US momentum factor - rebalances out of fading names."
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 16,
+      "take_profit_pct": 45,
+      "thesis": "Top single-name momentum leader (+26% 6m), quality mega-cap above 200dma."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 16,
+      "take_profit_pct": 45,
+      "thesis": "Quality-momentum mega-cap, positive trend across 3/6/12m."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 16,
+      "thesis": "Quality factor - quality-at-any-price sleeve, lower-vol trend."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 18,
+      "thesis": "Energy momentum diversifier - low correlation to tech."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12,
+      "thesis": "Quality-dividend carry ballast - dampens drawdowns."
+    },
+    {
+      "symbol": "JEPQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12,
+      "thesis": "Covered-call income/carry sleeve - reduces reversal whipsaw."
+    }
+  ],
+  "cash_pct": 5,
+  "backtest": {
+    "windows_tested": [
+      "2022H1_stress",
+      "2023H2_bull",
+      "2024H2",
+      "2025H1",
+      "2026YTD"
+    ],
+    "strategy_return_pct": {
+      "2022H1_stress": -16.1,
+      "2023H2_bull": 10.0,
+      "2024H2": 5.9,
+      "2025H1": 4.7,
+      "2026YTD": 20.0
+    },
+    "benchmark_return_pct": {
+      "2022H1_stress": -20.4,
+      "2023H2_bull": 7.9,
+      "2024H2": 8.2,
+      "2025H1": 6.3,
+      "2026YTD": 11.1
+    },
+    "notes": "Beat SPY in stress and 3 of 5 windows; mild lag where ballast diluted upside. A naive top-6 rotation was rejected for whipsaw."
+  },
+  "outlook": "Momentum leadership concentrated in US tech/quality plus energy; main risk is factor reversal, blunted by ballast and 12-20% stops.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

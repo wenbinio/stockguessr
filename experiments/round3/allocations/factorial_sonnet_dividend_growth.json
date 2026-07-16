@@ -1,0 +1,95 @@
+{
+  "name": "Sonnet+tools dividend growth",
+  "strategy": "Long-only, unleveraged basket of dividend aristocrats/kings and a curated dividend-growth ETF core, tilted to defensive staples/healthcare with an energy hedge",
+  "positions": [
+    {
+      "symbol": "NOBL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 15,
+      "thesis": "Dividend Aristocrats ETF: diversified 25+ year growers"
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15,
+      "thesis": "Quality dividend-growth ETF screening FCF and ROE"
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 18,
+      "thesis": "63-year streak, defensive healthcare cash flows"
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 18,
+      "thesis": "63-year streak, recession-resilient staples"
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 18,
+      "thesis": "69-year streak, durable margins"
+    },
+    {
+      "symbol": "ABBV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 20,
+      "thesis": "High-yield pharma grower with strong FCF"
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20,
+      "thesis": "37-year energy aristocrat, inflation hedge"
+    },
+    {
+      "symbol": "MO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 20,
+      "thesis": "Dividend king, very high yield, strong cash conversion"
+    }
+  ],
+  "cash_pct": 8,
+  "backtest": {
+    "windows_tested": [
+      "2022H1 stress",
+      "2025H1 tariff shock",
+      "2025H2"
+    ],
+    "strategy_return_pct": {
+      "H1_2022_stress": 1.17,
+      "H1_2025": 5.11,
+      "H2_2025": 8.21
+    },
+    "benchmark_return_pct": {
+      "H1_2022_SPY": -20.44,
+      "H1_2025_SPY": 6.31,
+      "H2_2025_SPY": 11.04
+    },
+    "notes": "Sharply outperformed in the 2022 stress (+1.2% vs -20.4%); lagged modestly in up-windows. Screened out LOW and KMB after backtesting showed stress-window failures."
+  },
+  "outlook": "Defensive quality dividend growers should hold up in 2H2026 volatility; may lag a high-beta rally.",
+  "model": "sonnet",
+  "group": "factorial",
+  "treatment": "flagship (tools + mandatory backtest)",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

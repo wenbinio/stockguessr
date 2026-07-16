@@ -1,0 +1,102 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
+  "novelty": "Both prior rounds were long AI-infrastructure suppliers. This round carries ZERO AI-capex exposure: the driver is a weakening US dollar plus global rate-cut broadening favoring ex-US equities, commodity carry and precious metals. A currency/sector-rotation and real-assets trade, not a tech-supply-chain trade or its inverse.",
+  "positions": [
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 20,
+      "thesis": "Broad EM catch-up as the dollar softens and US-tech leadership narrows."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 20,
+      "thesis": "Brazil: high real-rate carry, cheap valuations, commodity leverage."
+    },
+    {
+      "symbol": "EZU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 18,
+      "thesis": "Eurozone value re-rates on ECB easing and fiscal/defense spend."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 18,
+      "thesis": "Japan corporate-reform and buyback story, low correlation to US tech."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 18,
+      "thesis": "Energy carry: high dividend, real-asset hedge."
+    },
+    {
+      "symbol": "COPX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 22,
+      "thesis": "Copper miners on tight supply and broad electrification demand."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 16,
+      "take_profit_pct": 40,
+      "thesis": "Gold miners diversifier vs real rates and dollar; stop caps post-parabola risk."
+    },
+    {
+      "symbol": "UUP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "stop_loss_pct": 12,
+      "thesis": "Direct short-dollar leg amplifying the rotation thesis."
+    }
+  ],
+  "cash_pct": 4,
+  "backtest": {
+    "windows_tested": [
+      "H1-2022 stress",
+      "H2-2024",
+      "H1-2025",
+      "H2-2025",
+      "H1-2026"
+    ],
+    "strategy_return_pct": {
+      "H1-2022_stress": -7.6,
+      "H2-2024": -4.5,
+      "H1-2025": 18.5,
+      "H2-2025": 18.2,
+      "H1-2026": 8.8
+    },
+    "benchmark_return_pct": {
+      "H1-2022_SPY": -20.4,
+      "H2-2024_SPY": 8.2,
+      "H1-2025_SPY": 6.3,
+      "H2-2025_SPY": 11.0,
+      "H1-2026_SPY": 9.9
+    },
+    "notes": "Beat SPY by ~13pts in the 2022 stress; led in dollar-weak regimes; clear weakness in strong-dollar US-tech-led H2-2024 \u2014 the explicit regime risk."
+  },
+  "outlook": "If the dollar softens into year-end this basket broadens past US mega-cap; a dollar/US-tech re-acceleration is the risk the stops are sized against.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}

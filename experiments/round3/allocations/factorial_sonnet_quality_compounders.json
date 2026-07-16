@@ -1,0 +1,111 @@
+{
+  "name": "Sonnet+tools quality compounders",
+  "strategy": "Long-only, equal-weight basket of ten wide-moat, high-ROIC compounders across payments, enterprise software/cloud, consumer, and pharma, unlevered with a 10% cash buffer.",
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Cloud + enterprise software moat, fortress balance sheet"
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Ecosystem lock-in, services flywheel, elite ROIC"
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Search/ads network effect plus Cloud optionality, net cash"
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Payments duopoly toll-booth economics"
+    },
+    {
+      "symbol": "MA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Payments network twin, best-in-class ROIC"
+    },
+    {
+      "symbol": "COST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Membership-fee moat, defensive comps through cycles"
+    },
+    {
+      "symbol": "LLY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 18,
+      "thesis": "GLP-1 franchise leadership, durable pricing power"
+    },
+    {
+      "symbol": "ADP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15,
+      "thesis": "Payroll switching costs and float income"
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 18,
+      "thesis": "Database moat compounding via cloud infrastructure demand"
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 18,
+      "thesis": "Custom silicon + infrastructure software moat"
+    }
+  ],
+  "cash_pct": 10,
+  "backtest": {
+    "windows_tested": [
+      "2024H2 calm",
+      "2025 tariff stress",
+      "recent 6mo"
+    ],
+    "strategy_return_pct": {
+      "calm_2024H2": 11.98,
+      "stress_2025": 7.04,
+      "recent_6mo": 5.18
+    },
+    "benchmark_return_pct": {
+      "calm_2024H2_SPY": 8.16,
+      "stress_2025_SPY": 4.63,
+      "recent_6mo_SPY": 12.14
+    },
+    "notes": "Beat SPY and QUAL in calm and stress windows, lagged the recent 6mo rotation. ACN removed after backtest showed -33%/-23% AI-disruption drag; replaced with ORCL, improving all windows."
+  },
+  "outlook": "Steady compounding from durable moats; main risk is continued rotation away from mega-cap quality.",
+  "model": "sonnet",
+  "group": "factorial",
+  "treatment": "flagship (tools + mandatory backtest)",
+  "entry": "2026-07-17",
+  "capital_usd": 1000
+}
