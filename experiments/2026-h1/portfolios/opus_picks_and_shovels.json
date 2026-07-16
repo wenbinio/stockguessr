@@ -4,7 +4,18 @@
   "author": "claude-opus subagent (knowledge cutoff: January 2026)",
   "entry_date": "2026-01-02",
   "weighting": "equal",
-  "tickers": ["VRT", "AVGO", "MU", "CLS", "GEV", "CEG", "LITE", "CRDO", "LRCX", "ANET"],
+  "tickers": [
+    "VRT",
+    "AVGO",
+    "MU",
+    "CLS",
+    "GEV",
+    "CEG",
+    "LITE",
+    "CRDO",
+    "LRCX",
+    "ANET"
+  ],
   "rationale": {
     "VRT": "Vertiv is the premier datacenter power and thermal/liquid-cooling supplier for AI racks",
     "AVGO": "Broadcom custom AI accelerators (XPUs) and datacenter networking silicon, the largest non-Mag7 AI beneficiary",
@@ -18,9 +29,20 @@
     "ANET": "Arista high-speed datacenter switching is core AI back-end networking plumbing"
   },
   "backtest": {
-    "periods_tested": ["2024-H1", "2025-H1"],
-    "strategy_return_pct": {"2024-H1": 77.71, "2025-H1": 19.21},
-    "spy_return_pct": {"2024-H1": 15.87, "2025-H1": 6.31},
+    "periods_tested": [
+      "2024-H1",
+      "2025-H1"
+    ],
+    "strategy_return_pct": {
+      "2024-H1": 77.71,
+      "2025-H1": 19.21
+    },
+    "spy_return_pct": {
+      "2024-H1": 15.87,
+      "2025-H1": 6.31
+    },
     "notes": "Equal-weight 10-name picks-and-shovels baskets formed entering 2024 and 2025, next-6-month returns from Yahoo daily adjclose. Basket beat SPY both windows (+61.8pp, +12.9pp) despite blowups (MRVL -31.7% in 2025-H1). Momentum scan of full-year 2025 confirmed breadth: LITE +331%, MU +228%, CLS +218% led."
-  }
+  },
+  "model": "opus",
+  "group": "flagship"
 }

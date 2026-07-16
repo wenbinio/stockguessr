@@ -4,7 +4,18 @@
   "author": "claude-opus subagent (knowledge cutoff: January 2026)",
   "entry_date": "2026-01-02",
   "weighting": "equal",
-  "tickers": ["UNH", "PFE", "BMY", "ELV", "CMCSA", "PYPL", "NKE", "CVX", "TGT", "KHC"],
+  "tickers": [
+    "UNH",
+    "PFE",
+    "BMY",
+    "ELV",
+    "CMCSA",
+    "PYPL",
+    "NKE",
+    "CVX",
+    "TGT",
+    "KHC"
+  ],
   "rationale": {
     "UNH": "Managed-care leader down ~33% in 2025 on utilization/DOJ fears; ~14x earnings, deep mean-reversion candidate",
     "PFE": "Ultra-cheap pharma (~8-9x), high dividend yield, pipeline pessimism overdone",
@@ -18,9 +29,20 @@
     "KHC": "Ultra-cheap staples (~9x) down ~16% with potential breakup/restructuring catalyst"
   },
   "backtest": {
-    "periods_tested": ["2024-H1", "2025-H1"],
-    "strategy_return_pct": {"2024-H1": -4.78, "2025-H1": 5.92},
-    "spy_return_pct": {"2024-H1": 16.11, "2025-H1": 6.28},
+    "periods_tested": [
+      "2024-H1",
+      "2025-H1"
+    ],
+    "strategy_return_pct": {
+      "2024-H1": -4.78,
+      "2025-H1": 5.92
+    },
+    "spy_return_pct": {
+      "2024-H1": 16.11,
+      "2025-H1": 6.28
+    },
     "notes": "Naive most-beaten-down contrarian baskets lagged hard in 2024 (momentum/AI dominance) and matched SPY in 2025; final picks avoid already-reverted names (e.g., CVS +87% in 2025) and favor cheap names with identifiable catalysts."
-  }
+  },
+  "model": "opus",
+  "group": "flagship"
 }

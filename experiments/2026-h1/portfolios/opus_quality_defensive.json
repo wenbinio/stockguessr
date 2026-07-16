@@ -4,7 +4,18 @@
   "author": "claude-opus subagent (knowledge cutoff: January 2026)",
   "entry_date": "2026-01-02",
   "weighting": "equal",
-  "tickers": ["PG", "JNJ", "KO", "PEP", "COST", "WMT", "MCD", "MRK", "ABT", "LIN"],
+  "tickers": [
+    "PG",
+    "JNJ",
+    "KO",
+    "PEP",
+    "COST",
+    "WMT",
+    "MCD",
+    "MRK",
+    "ABT",
+    "LIN"
+  ],
   "rationale": {
     "PG": "Consumer-staples moat, 68-yr dividend grower, low-beta pricing power",
     "JNJ": "AAA-tier balance sheet, diversified pharma/medtech, stable earnings and dividends",
@@ -18,10 +29,21 @@
     "LIN": "Industrial-gas oligopoly with long-term take-or-pay contracts, wide moat"
   },
   "backtest": {
-    "periods_tested": ["2024-H1", "2025-H1"],
-    "strategy_return_pct": {"2024-H1": 7.03, "2025-H1": 4.65},
-    "spy_return_pct": {"2024-H1": 15.87, "2025-H1": 6.31},
+    "periods_tested": [
+      "2024-H1",
+      "2025-H1"
+    ],
+    "strategy_return_pct": {
+      "2024-H1": 7.03,
+      "2025-H1": 4.65
+    },
+    "spy_return_pct": {
+      "2024-H1": 15.87,
+      "2025-H1": 6.31
+    },
     "drawdown_defense": "During sharpest SPY drawdown (2025-02-19 to 2025-04-08, SPY -18.76%), the basket fell only -7.36%, defending ~11pts of downside",
     "notes": "Lagged SPY in both bull-leaning H1 windows; the low-vol edge manifests as drawdown protection. No data after 2026-01-02 used."
-  }
+  },
+  "model": "opus",
+  "group": "flagship"
 }

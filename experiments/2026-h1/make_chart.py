@@ -1,7 +1,11 @@
 """Render results.json into a self-contained HTML chart page (chart.html).
 
-Line chart: each portfolio indexed to 100 at the 2026-01-02 entry close, vs SPY
-drawn as a dashed neutral benchmark. Bar chart: final total returns, ranked.
+Sections:
+  1. Ranking bars   — flagship portfolios + SPY, friction-adjusted (net) return
+  2. Race line      — flagship portfolios indexed to 100 vs dashed SPY (gross)
+  3. Fleet strip    — every portfolio (Fable/Opus/Sonnet/Haiku) as a dot on the
+                      return axis, over the bootstrap luck histogram
+  4. Scoreboard     — all portfolios: gross, net, beta, CAPM alpha, luck percentile
 """
 
 import json
@@ -9,8 +13,9 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 
-# Validated categorical palette (dataviz reference instance), slots 1-6,
-# assigned to portfolios in fixed order; the benchmark uses neutral ink.
+# Validated categorical palette (dataviz reference instance).
+# Flagship entities take slots 1-6 (line chart + bars); model tiers reuse
+# slots 1-4 in the fleet strip (fable/opus/sonnet/haiku); benchmark is neutral.
 SLOT_ORDER = [
     "Claude Fable (orchestrator)",
     "Opus Momentum",
@@ -19,6 +24,7 @@ SLOT_ORDER = [
     "Opus Picks-and-Shovels",
     "Opus Broadening",
 ]
+TIER_SLOT = {"fable": 1, "opus": 2, "sonnet": 3, "haiku": 4}
 
 TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
 <style>
@@ -27,7 +33,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
     --surface-1: #fcfcfb; --page: #f9f9f7;
     --ink-1: #0b0b0b; --ink-2: #52514e; --ink-muted: #898781;
     --grid: #e1e0d9; --baseline: #c3c2b7; --border: rgba(11,11,11,0.10);
-    --bench: #52514e;
+    --bench: #52514e; --null: #c3c2b7;
     --s1: #2a78d6; --s2: #008300; --s3: #e87ba4;
     --s4: #eda100; --s5: #1baf7a; --s6: #eb6834;
     --up: #006300; --down: #d03b3b;
@@ -38,7 +44,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
       --surface-1: #1a1a19; --page: #0d0d0d;
       --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-muted: #898781;
       --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
-      --bench: #c3c2b7;
+      --bench: #c3c2b7; --null: #52514e;
       --s1: #3987e5; --s2: #008300; --s3: #d55181;
       --s4: #c98500; --s5: #199e70; --s6: #d95926;
       --up: #0ca30c; --down: #e66767;
@@ -49,7 +55,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
     --surface-1: #1a1a19; --page: #0d0d0d;
     --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-muted: #898781;
     --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
-    --bench: #c3c2b7;
+    --bench: #c3c2b7; --null: #52514e;
     --s1: #3987e5; --s2: #008300; --s3: #d55181;
     --s4: #c98500; --s5: #199e70; --s6: #d95926;
     --up: #0ca30c; --down: #e66767;
@@ -79,89 +85,109 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
   .tip .d { color: var(--ink-muted); margin-bottom: 4px; }
   .tip .row { display: flex; justify-content: space-between; gap: 12px; }
   .tip .row b { font-variant-numeric: tabular-nums; font-weight: 600; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px;
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px;
     color: var(--ink-1); font-family: inherit; }
   th { text-align: left; color: var(--ink-muted); font-weight: 600;
-    border-bottom: 1px solid var(--baseline); padding: 6px 8px; }
-  td { padding: 7px 8px; border-bottom: 1px solid var(--grid);
+    border-bottom: 1px solid var(--baseline); padding: 6px 8px; white-space: nowrap; }
+  th.r, td.r { text-align: right; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--grid);
     font-variant-numeric: tabular-nums; }
-  td.name { display: flex; align-items: center; gap: 8px; }
-  .chip { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  td.name { white-space: nowrap; }
+  td.strat { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    color: var(--ink-2); }
+  .chip { width: 10px; height: 10px; border-radius: 3px; display: inline-block;
+    margin-right: 7px; vertical-align: -1px; }
   .pos { color: var(--up); } .neg { color: var(--down); }
   .foot { color: var(--ink-muted); font-size: 12px; }
   .tick { fill: var(--ink-muted); }
 </style>
 <div class="viz-root"><div class="wrap">
   <header>
-    <h1>StockGuessr: Claude &amp; five Opus agents vs the S&amp;P 500</h1>
+    <h1>StockGuessr: Claude, five Opus agents &amp; a 20-agent fleet vs the S&amp;P 500</h1>
     <p class="sub">Portfolios picked with knowledge frozen at the January 2026 model cutoff, bought
     (virtually) at the 2026-01-02 close, equal weight, no rebalancing — scored against real market
     prices through __ASOF__.</p>
   </header>
 
   <section class="card">
-    <h2>Final ranking — total return since entry</h2>
-    <p class="note">2026-01-02 close &rarr; __ASOF__ close · dashed line marks the S&amp;P 500 benchmark</p>
+    <h2>Flagship ranking — friction-adjusted return since entry</h2>
+    <p class="note">2026-01-02 close &rarr; __ASOF__ close · net of __COST__bps/side trading costs and
+    __DIVTAX__% dividend tax · gross figures in the scoreboard</p>
     <div class="chartbox" id="barbox"></div>
   </section>
 
   <section class="card">
     <h2>Race against the index — portfolio value, indexed to 100 at entry</h2>
-    <p class="note">Daily closes · hover for values on any date</p>
+    <p class="note">Daily closes, gross of frictions · hover for values on any date</p>
     <div class="legend" id="legend"></div>
     <div class="chartbox" id="linebox"></div>
   </section>
 
   <section class="card">
-    <h2>Scoreboard</h2>
-    <p class="note">Alpha = total return minus S&amp;P 500 (SPY) total return over the same window</p>
+    <h2>The fleet vs luck — every agent's return against random chance</h2>
+    <p class="note">Each dot is one portfolio (gross return). The gray histogram is the luck
+    distribution: __NBOOT__ random equal-weight 10-stock baskets drawn from the __UNIV__ largest
+    S&amp;P names. Dashed line marks the S&amp;P 500. Hover any dot.</p>
+    <div class="chartbox" id="stripbox"></div>
+  </section>
+
+  <section class="card">
+    <h2>Scoreboard — all portfolios</h2>
+    <p class="note">Net = after trading costs and dividend tax · CAPM &alpha; uses realized beta vs SPY and a
+    __RF__% annualized risk-free rate · luck percentile = share of random baskets beaten</p>
     <div style="overflow-x:auto"><table id="tbl">
-      <thead><tr><th>#</th><th>Portfolio</th><th>Strategy</th><th style="text-align:right">Return</th>
-      <th style="text-align:right">Max drawdown</th><th style="text-align:right">Alpha vs SPY</th></tr></thead>
+      <thead><tr><th>#</th><th>Portfolio</th><th>Model</th><th>Strategy</th>
+      <th class="r">Gross</th><th class="r">Net</th><th class="r">Beta</th>
+      <th class="r">CAPM &alpha;</th><th class="r">Luck pctile</th></tr></thead>
       <tbody></tbody>
     </table></div>
   </section>
 
-  <p class="foot">Virtual portfolios; dividends included via adjusted closes where Yahoo Finance provides
-  them. Picks were committed before any post-cutoff prices were fetched, but model training data may
-  overlap early January 2026 market levels. Research/educational demo — not investment advice.</p>
+  <p class="foot">Virtual portfolios; dividends included via adjusted closes. Friction model is an
+  approximation (fixed per-side costs, flat dividend tax, no market impact, no capital-gains tax).
+  Picks were committed before any post-cutoff prices were fetched and fleet agents ran with tools
+  disabled, but model training data may overlap early January 2026 market levels. One 6.5-month
+  window in a strong tape — research/educational demo, not investment advice.</p>
 </div></div>
 <script>
 const DATA = __DATA__;
 const CSS = n => getComputedStyle(document.querySelector('.viz-root')).getPropertyValue(n).trim();
 const SLOTS = __SLOTS__;
+const TIER_SLOT = __TIER_SLOT__;
+const TIER_LABEL = { fable: 'Claude Fable', opus: 'Opus agents', sonnet: 'Sonnet fleet', haiku: 'Haiku fleet' };
 const colorOf = name => name === 'S&P 500 (SPY)' ? CSS('--bench') : CSS('--s' + (SLOTS.indexOf(name) + 1));
+const tierColor = m => m === 'benchmark' ? CSS('--bench') : CSS('--s' + TIER_SLOT[m]);
 const fmt = v => (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
 const NS = 'http://www.w3.org/2000/svg';
 const el = (t, a) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
+const FLAG = DATA.summary.filter(r => r.group === 'flagship' || r.benchmark);
 
 function drawBars() {
-  const rows = DATA.summary, W = 940, rowH = 34, padL = 210, padR = 90;
+  const rows = FLAG.slice().sort((a, b) => b.friction_return_pct - a.friction_return_pct);
+  const W = 940, rowH = 34, padL = 210, padR = 90;
   const H = rows.length * rowH + 30;
-  const vals = rows.map(r => r.total_return_pct);
+  const vals = rows.map(r => r.friction_return_pct);
   const lo = Math.min(0, ...vals), hi = Math.max(0, ...vals);
   const x = v => padL + (v - lo) / (hi - lo) * (W - padL - padR);
   const svg = el('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` });
   svg.appendChild(el('line', { x1: x(0), x2: x(0), y1: 4, y2: H - 22, stroke: CSS('--baseline'), 'stroke-width': 1 }));
   rows.forEach((r, i) => {
-    const y = 8 + i * rowH, c = colorOf(r.name);
-    const w = Math.abs(x(r.total_return_pct) - x(0));
-    const bx = r.total_return_pct >= 0 ? x(0) : x(r.total_return_pct);
-    const bar = el('path', {});
+    const y = 8 + i * rowH, c = colorOf(r.name), v = r.friction_return_pct;
+    const w = Math.abs(x(v) - x(0));
+    const bx = v >= 0 ? x(0) : x(v);
     const rr = 4, x0 = bx, x1 = bx + w, yTop = y, yBot = y + 18;
-    bar.setAttribute('d', r.total_return_pct >= 0
+    const bar = el('path', { fill: c });
+    bar.setAttribute('d', v >= 0
       ? `M${x0},${yTop} H${x1 - rr} Q${x1},${yTop} ${x1},${yTop + rr} V${yBot - rr} Q${x1},${yBot} ${x1 - rr},${yBot} H${x0} Z`
       : `M${x1},${yTop} H${x0 + rr} Q${x0},${yTop} ${x0},${yTop + rr} V${yBot - rr} Q${x0},${yBot} ${x0 + rr},${yBot} H${x1} Z`);
-    bar.setAttribute('fill', c);
-    if (r.benchmark) { bar.setAttribute('fill-opacity', '0.55'); }
+    if (r.benchmark) bar.setAttribute('fill-opacity', '0.55');
     svg.appendChild(bar);
-    const lbl = el('text', { x: padL - 10, y: y + 14, 'text-anchor': 'end' });
-    lbl.textContent = `${i + 1}. ${r.name}`; lbl.setAttribute('fill', CSS('--ink-1'));
+    const lbl = el('text', { x: padL - 10, y: y + 14, 'text-anchor': 'end', fill: CSS('--ink-1') });
+    lbl.textContent = `${i + 1}. ${r.name}`;
     if (r.benchmark) lbl.setAttribute('font-style', 'italic');
     svg.appendChild(lbl);
-    const val = el('text', { x: (r.total_return_pct >= 0 ? x1 : x0) + 8, y: y + 14 });
-    val.textContent = fmt(r.total_return_pct);
-    val.setAttribute('fill', CSS('--ink-2')); val.setAttribute('font-weight', '600');
+    const val = el('text', { x: (v >= 0 ? x1 : x0) + 8, y: y + 14, fill: CSS('--ink-2'), 'font-weight': 600 });
+    val.textContent = fmt(v);
     svg.appendChild(val);
   });
   document.getElementById('barbox').appendChild(svg);
@@ -190,10 +216,8 @@ function drawLines() {
     t.textContent = new Date(m + '-15').toLocaleString('en', { month: 'short' });
     svg.appendChild(t);
   });
-  const ordered = names.slice().sort((a, b) => {
-    const va = DATA.series[a][dates[dates.length - 1]], vb = DATA.series[b][dates[dates.length - 1]];
-    return vb - va;
-  });
+  const last = dates[dates.length - 1];
+  const ordered = names.slice().sort((a, b) => DATA.series[b][last] - DATA.series[a][last]);
   const labelNames = new Set(ordered.filter(n => n !== 'S&P 500 (SPY)').slice(0, 3).concat(['S&P 500 (SPY)']));
   const lastYs = [];
   ordered.forEach(n => {
@@ -207,9 +231,8 @@ function drawLines() {
       let ly = y(vs[vs.length - 1]) + 4;
       while (lastYs.some(v => Math.abs(v - ly) < 14)) ly += 14;
       lastYs.push(ly);
-      const t = el('text', { x: W - padR + 8, y: ly });
+      const t = el('text', { x: W - padR + 8, y: ly, fill: CSS('--ink-2'), 'font-weight': 600 });
       t.textContent = n.replace(' (orchestrator)', '').replace(' (SPY)', '');
-      t.setAttribute('fill', CSS('--ink-2')); t.setAttribute('font-weight', '600');
       svg.appendChild(t);
       svg.appendChild(el('circle', { cx: x(dates.length - 1), cy: y(vs[vs.length - 1]), r: 3, fill: colorOf(n) }));
     }
@@ -218,22 +241,21 @@ function drawLines() {
   svg.appendChild(cross);
   const box = document.getElementById('linebox');
   const tip = document.createElement('div'); tip.className = 'tip'; box.appendChild(tip);
-  svg.appendChild(el('rect', { x: padL, y: padT, width: W - padL - padR, height: H - padT - padB, fill: 'transparent', id: 'hover' }));
-  svg.querySelector('#hover').addEventListener('mousemove', ev => {
+  const hover = el('rect', { x: padL, y: padT, width: W - padL - padR, height: H - padT - padB, fill: 'transparent' });
+  svg.appendChild(hover);
+  hover.addEventListener('mousemove', ev => {
     const r = svg.getBoundingClientRect();
     const sx = (ev.clientX - r.left) * (W / r.width);
     const i = Math.max(0, Math.min(dates.length - 1, Math.round((sx - padL) / (W - padL - padR) * (dates.length - 1))));
     cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('visibility', 'visible');
     tip.style.display = 'block';
-    const left = ev.clientX - r.left;
-    tip.style.left = Math.min(left + 16, box.clientWidth - 210) + 'px';
+    tip.style.left = Math.min(ev.clientX - r.left + 16, box.clientWidth - 210) + 'px';
     tip.style.top = '30px';
-    tip.innerHTML = `<div class="d">${dates[i]}</div>` + ordered.map(n => {
-      const v = DATA.series[n][dates[i]];
-      return `<div class="row"><span><span class="sw" style="background:${colorOf(n)}"></span> ${n.replace(' (orchestrator)', '')}</span><b>${fmt(v - 100)}</b></div>`;
-    }).join('');
+    tip.innerHTML = `<div class="d">${dates[i]}</div>` + ordered.map(n =>
+      `<div class="row"><span><span class="sw" style="background:${colorOf(n)}"></span> ${n.replace(' (orchestrator)', '')}</span><b>${fmt(DATA.series[n][dates[i]] - 100)}</b></div>`
+    ).join('');
   });
-  svg.querySelector('#hover').addEventListener('mouseleave', () => {
+  hover.addEventListener('mouseleave', () => {
     cross.setAttribute('visibility', 'hidden'); tip.style.display = 'none';
   });
   box.appendChild(svg);
@@ -246,40 +268,109 @@ function drawLines() {
   });
 }
 
+function drawStrip() {
+  const tiers = ['fable', 'opus', 'sonnet', 'haiku'];
+  const dots = DATA.summary.filter(r => !r.benchmark);
+  const boot = DATA.bootstrap.returns;
+  const spyRet = DATA.summary.find(r => r.benchmark).total_return_pct;
+  const W = 940, padL = 120, padR = 30, histH = 70, rowH = 46, padT = 14, padB = 30;
+  const H = padT + histH + tiers.length * rowH + padB;
+  const allVals = dots.map(r => r.total_return_pct).concat([boot[0], boot[boot.length - 1], spyRet, 0]);
+  const lo = Math.floor(Math.min(...allVals) / 10) * 10 - 2;
+  const hi = Math.ceil(Math.max(...allVals) / 10) * 10 + 2;
+  const x = v => padL + (v - lo) / (hi - lo) * (W - padL - padR);
+  const svg = el('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` });
+  for (let g = Math.ceil(lo / 10) * 10; g <= hi; g += 10) {
+    svg.appendChild(el('line', { x1: x(g), x2: x(g), y1: padT, y2: H - padB,
+      stroke: g === 0 ? CSS('--baseline') : CSS('--grid'), 'stroke-width': 1 }));
+    const t = el('text', { x: x(g), y: H - 12, 'text-anchor': 'middle', class: 'tick' });
+    t.textContent = (g > 0 ? '+' : '') + g + '%'; svg.appendChild(t);
+  }
+  // luck histogram
+  const nb = 36, binW = (hi - lo) / nb, bins = new Array(nb).fill(0);
+  boot.forEach(b => bins[Math.max(0, Math.min(nb - 1, Math.floor((b - lo) / binW)))]++);
+  const bMax = Math.max(...bins);
+  bins.forEach((c, i) => {
+    if (!c) return;
+    const bh = c / bMax * (histH - 12);
+    svg.appendChild(el('rect', { x: x(lo + i * binW) + 1, y: padT + histH - bh,
+      width: Math.max(1, x(lo + binW) - x(lo) - 2), height: bh, fill: CSS('--null'), rx: 2 }));
+  });
+  const hlbl = el('text', { x: padL - 10, y: padT + histH - 6, 'text-anchor': 'end', fill: CSS('--ink-2'), 'font-weight': 600 });
+  hlbl.textContent = 'Random baskets'; svg.appendChild(hlbl);
+  // SPY reference
+  const spyLine = el('line', { x1: x(spyRet), x2: x(spyRet), y1: padT, y2: H - padB,
+    stroke: CSS('--bench'), 'stroke-width': 1.5, 'stroke-dasharray': '5 4' });
+  svg.appendChild(spyLine);
+  const spyT = el('text', { x: x(spyRet) + 5, y: padT + 10, fill: CSS('--ink-2'), 'font-weight': 600 });
+  spyT.textContent = 'S&P 500 ' + fmt(spyRet); svg.appendChild(spyT);
+  // dots per tier
+  const box = document.getElementById('stripbox');
+  const tip = document.createElement('div'); tip.className = 'tip'; box.appendChild(tip);
+  tiers.forEach((m, ti) => {
+    const yBase = padT + histH + ti * rowH + rowH / 2;
+    svg.appendChild(el('line', { x1: padL, x2: W - padR, y1: yBase, y2: yBase, stroke: CSS('--grid'), 'stroke-width': 1 }));
+    const lbl = el('text', { x: padL - 10, y: yBase + 4, 'text-anchor': 'end', fill: CSS('--ink-2'), 'font-weight': 600 });
+    lbl.textContent = TIER_LABEL[m]; svg.appendChild(lbl);
+    dots.filter(r => r.model === m).forEach((r, i) => {
+      const jitter = ((i % 3) - 1) * 9;
+      const c = el('circle', { cx: x(r.total_return_pct), cy: yBase + jitter, r: 5.5,
+        fill: tierColor(m), stroke: CSS('--surface-1'), 'stroke-width': 2 });
+      c.style.cursor = 'pointer';
+      c.addEventListener('mousemove', ev => {
+        const rb = svg.getBoundingClientRect();
+        tip.style.display = 'block';
+        tip.style.left = Math.min(ev.clientX - rb.left + 14, box.clientWidth - 230) + 'px';
+        tip.style.top = (ev.clientY - rb.top - 60) + 'px';
+        tip.innerHTML = `<div class="d">${r.name}</div>
+          <div class="row"><span>Gross</span><b>${fmt(r.total_return_pct)}</b></div>
+          <div class="row"><span>Net of frictions</span><b>${fmt(r.friction_return_pct)}</b></div>
+          <div class="row"><span>Beats random</span><b>${r.bootstrap_pctile.toFixed(1)}%</b></div>`;
+      });
+      c.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+      svg.appendChild(c);
+    });
+  });
+  box.appendChild(svg);
+}
+
 function fillTable() {
   const tb = document.querySelector('#tbl tbody');
   DATA.summary.forEach((r, i) => {
     const tr = document.createElement('tr');
-    const alpha = r.benchmark ? '—' : `<span class="${r.alpha_vs_spy_pct >= 0 ? 'pos' : 'neg'}">${fmt(r.alpha_vs_spy_pct)}</span>`;
+    const cls = v => v >= 0 ? 'pos' : 'neg';
+    const alpha = r.benchmark ? '—' : `<span class="${cls(r.capm_alpha_pct)}">${fmt(r.capm_alpha_pct)}</span>`;
     tr.innerHTML = `<td>${i + 1}</td>
-      <td class="name"><span class="chip" style="background:${colorOf(r.name)}"></span>${r.name}${r.benchmark ? ' <em>(benchmark)</em>' : ''}</td>
-      <td>${r.strategy || ''}</td>
-      <td style="text-align:right"><span class="${r.total_return_pct >= 0 ? 'pos' : 'neg'}">${fmt(r.total_return_pct)}</span></td>
-      <td style="text-align:right">${r.max_drawdown_pct.toFixed(2)}%</td>
-      <td style="text-align:right">${alpha}</td>`;
+      <td class="name"><span class="chip" style="background:${tierColor(r.model)}"></span>${r.name}${r.benchmark ? ' <em>(benchmark)</em>' : ''}</td>
+      <td>${r.model === 'benchmark' ? '—' : r.model}</td>
+      <td class="strat" title="${r.strategy}">${r.strategy}</td>
+      <td class="r"><span class="${cls(r.total_return_pct)}">${fmt(r.total_return_pct)}</span></td>
+      <td class="r"><span class="${cls(r.friction_return_pct)}">${fmt(r.friction_return_pct)}</span></td>
+      <td class="r">${r.beta.toFixed(2)}</td>
+      <td class="r">${alpha}</td>
+      <td class="r">${r.bootstrap_pctile.toFixed(1)}%</td>`;
     tb.appendChild(tr);
   });
 }
-drawBars(); drawLines(); fillTable();
+drawBars(); drawLines(); drawStrip(); fillTable();
 </script>
 """
 
 
 def main() -> None:
     results = json.loads((HERE / "results.json").read_text())
-    strategies = {}
-    for pf in (HERE / "portfolios").glob("*.json"):
-        spec = json.loads(pf.read_text())
-        strategies[spec["name"]] = spec["strategy"]
-    strategies["S&P 500 (SPY)"] = "the index"
-    for row in results["summary"]:
-        row["strategy"] = strategies.get(row["name"], "")
-
+    fm = results["friction_model"]
     html = (
         TEMPLATE
         .replace("__DATA__", json.dumps(results))
         .replace("__SLOTS__", json.dumps(SLOT_ORDER))
+        .replace("__TIER_SLOT__", json.dumps(TIER_SLOT))
         .replace("__ASOF__", results["as_of"])
+        .replace("__COST__", str(fm["cost_bps_per_side"]))
+        .replace("__DIVTAX__", str(int(fm["dividend_tax"] * 100)))
+        .replace("__RF__", str(int(fm["rf_annual"] * 100)))
+        .replace("__NBOOT__", str(results["bootstrap"]["n"]))
+        .replace("__UNIV__", str(results["bootstrap"]["universe_size"]))
     )
     (HERE / "chart.html").write_text(html)
     print(f"Wrote chart.html ({len(html)} bytes)")

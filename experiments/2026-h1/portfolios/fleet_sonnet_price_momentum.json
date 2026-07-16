@@ -1,0 +1,22 @@
+{
+  "name": "Sonnet price momentum",
+  "strategy": "Equal-weight basket of the strongest 12-month price momentum names heading into 2026, concentrated in AI infrastructure, semiconductors, and secular growth leaders that led the market through 2025.",
+  "author": "claude-sonnet subagent (knowledge cutoff: January 2026, tools disabled)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "model": "sonnet",
+  "group": "fleet",
+  "tickers": [
+    "NVDA",
+    "AVGO",
+    "PLTR",
+    "VST",
+    "GEV",
+    "IBIT",
+    "APP",
+    "ANET",
+    "MSTR",
+    "TPR"
+  ],
+  "rationale": "These names represented the dominant 12-month price momentum leaders coming into 2026: AI/semiconductor infrastructure (NVDA, AVGO, ANET, APP), power/datacenter demand plays (VST, GEV), high-beta growth/fintech-adjacent momentum (PLTR, MSTR, IBIT as a bitcoin-momentum proxy), and a surprise consumer momentum name (TPR) that had a strong turnaround run. Pure trend-following basket designed to ride continuation of the strongest recent winners rather than value or defensive characteristics."
+}

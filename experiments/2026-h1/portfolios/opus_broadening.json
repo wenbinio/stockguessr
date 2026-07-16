@@ -4,7 +4,18 @@
   "author": "claude-opus subagent (knowledge cutoff: January 2026)",
   "entry_date": "2026-01-02",
   "weighting": "equal",
-  "tickers": ["IWM", "MDY", "EFA", "EEM", "EWJ", "EWG", "XLF", "XLV", "XLI", "KRE"],
+  "tickers": [
+    "IWM",
+    "MDY",
+    "EFA",
+    "EEM",
+    "EWJ",
+    "EWG",
+    "XLF",
+    "XLV",
+    "XLI",
+    "KRE"
+  ],
   "rationale": {
     "IWM": "US small caps, deepest laggard vs mega-caps; recovered +13.6% in H2 2025 as rotation began",
     "MDY": "US mid caps, cheap broadening exposure beyond the top-10 concentration",
@@ -18,9 +29,20 @@
     "KRE": "Regional banks, extreme laggard leveraged to Fed rate cuts and curve steepening"
   },
   "backtest": {
-    "periods_tested": ["2024-H1", "2025-H1"],
-    "strategy_return_pct": {"2024-H1": 5.40, "2025-H1": 11.31},
-    "spy_return_pct": {"2024-H1": 16.11, "2025-H1": 6.28},
+    "periods_tested": [
+      "2024-H1",
+      "2025-H1"
+    ],
+    "strategy_return_pct": {
+      "2024-H1": 5.4,
+      "2025-H1": 11.31
+    },
+    "spy_return_pct": {
+      "2024-H1": 16.11,
+      "2025-H1": 6.28
+    },
     "notes": "Lost badly in 2024-H1 (concentration era) but beat SPY by +5pp in 2025-H1 driven by international (EWG/EFA/EEM). H2-2025 partial lagged -2.2pp but small-cap/healthcare recovery confirmed rotation entering 2026."
-  }
+  },
+  "model": "opus",
+  "group": "flagship"
 }
