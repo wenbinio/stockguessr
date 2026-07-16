@@ -193,6 +193,9 @@ def main() -> int:
                     s += "-USD"
                 symbols.add(s)
     px = load_price_matrix(symbols)
+    # crypto trades 24/7 and returns an intraday row for "today"; official fills
+    # happen at the US close, so truncate to the last completed equity session
+    px = px.loc[:px["SPY"].dropna().index[-1]]
 
     fills = []
     out = {"updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -209,7 +212,15 @@ def main() -> int:
     for stem, files in sorted(alloc_files.items()):
         curve, spec = run_agent(files, px, fills)
         if curve is None or curve.empty:
-            print(f"SKIP {stem}: missing prices")
+            # pre-entry (the entry close hasn't printed yet): show the book at par
+            spec = json.loads(files[0].read_text())
+            gross = sum(p["weight_pct"] * p.get("leverage", 1) for p in spec["positions"])
+            out["agents"][spec["name"]] = {
+                "model": spec["model"], "group": spec["group"], "strategy": spec["strategy"],
+                "nav": CAPITAL, "growth_pct": 0.0, "max_drawdown_pct": 0.0,
+                "gross_exposure_pct": round(gross, 1), "n_positions": len(spec["positions"]),
+                "cash_pct": spec["cash_pct"], "positions": spec["positions"], "series": {},
+            }
             continue
         gross = sum(p["weight_pct"] * p.get("leverage", 1) for p in spec["positions"])
         out["agents"][spec["name"]] = {

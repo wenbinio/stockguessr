@@ -1,0 +1,75 @@
+{
+  "name": "Haiku deep value",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Core value exposure (SPY/VTV) with tactical plays on beaten-down software (ADBE/CRM), defensive dividend anchors (JPM/KO), small tech hedges (SQQQ short), crypto capitulation (BTC spot 4%), tactical GLD short, 17% cash for rebalancing.",
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "S&P 500 core broad-market exposure; baseline market participation with 2% dividend yield and sector diversification hedge."
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Vanguard large-cap value ETF; pure value factor exposure emphasizing low P/E and P/B ratios, complement to SPY."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Adobe down ~49% on AI disruption fears; profitable SaaS with strong FCF, recurring revenue, 0.7% yield; trading well below intrinsic value as market fears overstate threat and underestimate AI integration."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Salesforce similarly capitulated on AI concerns; cloud CRM platform positioning benefits from AI, not threatened; trading at depressed multiple to normalized earnings power."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "JPMorgan Chase financial anchor; ~12x P/E, 3% dividend yield, fortress balance sheet, strong FCF; trading discount to intrinsic value."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Coca-Cola dividend aristocrat; 3% dividend yield, unmatched brand moat, recession-resistant cash flows, valuation supported by steady FCF and low cost of capital."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "thesis": "Gold down -6.5% in risk-on H1; tactical short hedge given overweight to growth exposure; limits defensive drag on portfolio."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "thesis": "3x inverse Nasdaq; small hedge against tech concentration volatility; caps upside but protects against tail risk if growth corrects sharply."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Bitcoin at -27% H1 showing multi-year capitulation; small conviction play on deep value entry if macro improves; spot only (no leverage) to control risk profile."
+    }
+  ],
+  "cash_pct": 17,
+  "outlook": "AI disruption fears on ADBE/CRM should gradually ease over H2 2026 as market realizes these platforms are enhanced, not threatened; dividend anchors and value exposure should compound steadily while hedges cap downside; 17% cash provides flexibility to rebalance into weakness."
+}

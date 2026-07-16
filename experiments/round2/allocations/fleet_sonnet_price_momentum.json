@@ -1,0 +1,62 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
+  "positions": [
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "3x Nasdaq-100 captures the still-dominant AI/mega-cap tech momentum leg (QQQ +17.3% H1) with the cleanest, most liquid leveraged exposure to the theme."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Semis remain the strongest 12mo momentum theme (SOXL +250% H1) despite the last-month correction; sizing below max to respect the pullback while staying concentrated in the leading theme."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Small caps are newly catching a momentum bid (+19.4% H1) as breadth improves beyond mega-cap tech, a fresh leadership rotation worth riding unlevered given breadth risk."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Memory/AI-infra single name with standout 12mo momentum (+187% H1); direct exposure to the AI capex cycle underpinning the semis leg."
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Core AI-compute momentum name (+137% H1) riding the same infrastructure buildout as MU/SOXL, diversifying single-stock risk within the theme."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Software incumbents are the clearest negative-momentum theme (-49% H1) on AI-disruption fear; shorting the trend rather than fighting it."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "Crypto is in a deep, persistent 12mo downtrend (BTC -27% H1); a modest leveraged short rides that momentum while capping liquidation risk at 3x."
+    }
+  ],
+  "cash_pct": 12,
+  "outlook": "AI-infra momentum names are digesting a huge H1 run but remain the dominant uptrend; small caps are broadening the rally while crypto stays in a structural downtrend, so I'm leaning long leveraged equity momentum, short the weakest AI-disruption laggards and BTC."
+}

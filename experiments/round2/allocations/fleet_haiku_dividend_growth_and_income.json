@@ -1,0 +1,61 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Dividend aristocrats (22%) provide defensive base; tactical overweight to small-cap recovery (18%) and AI/semis consolidation (18%); leveraged tech position (10%); short rate hedge (4%); 28% cash for optionality and yield.",
+  "positions": [
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "60+ year dividend aristocrat, healthcare defensive anchor, ~3% dividend yield provides downside cushion"
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "67 year dividend aristocrat, consumer staples inflation hedge via pricing power, recession-resistant cash flows"
+    },
+    {
+      "symbol": "MCD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "50+ year dividend growth streak, recession-resistant franchise model, consistent international exposure"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Small-cap ETF caught up only +19.4% H1 vs large-cap +11.1%, value rotation momentum likely continues through H2"
+    },
+    {
+      "symbol": "NVDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "AI chip market dominance, semis consolidation opportunity post-+162% INTC H1 rally, AI super-cycle structural thesis intact"
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "3x Nasdaq leverage, tactical upside on tech consolidation rebound, conviction position sized for volatility"
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "thesis": "Inverse 20+ year Treasury hedge, macro conviction on rate elevation environment, defensive macro positioning"
+    }
+  ],
+  "cash_pct": 28,
+  "outlook": "H2 consolidation expected in semis/tech after H1's +250% SOXL rally and continued small-cap value rotation. Portfolio balances dividend stability with tactical sector bets to deliver growth beyond Round 1's +5.3%."
+}

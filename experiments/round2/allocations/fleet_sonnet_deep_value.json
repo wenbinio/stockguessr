@@ -1,0 +1,69 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and run a small levered short-BTC hedge against a continuing crypto bear, holding sizable cash for drawdown buys.",
+  "positions": [
+    {
+      "symbol": "XOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Integrated energy major at mid-single-digit FCF yield, low P/E, strong buyback/dividend support; classic deep value in a sector that lagged AI-led H1."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Best-in-class bank at reasonable P/B with rising net interest income and capital return; financials remain cheap relative to the broad tape."
+    },
+    {
+      "symbol": "GM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Single-digit P/E automaker with heavy buybacks and normalized truck/SUV margins; deep value optionality on any capex discipline or EV cost cuts."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed-care leader sold off to a multi-year-low P/E on medical-cost fears; healthcare defensiveness plus mean-reversion setup into H2."
+    },
+    {
+      "symbol": "PFE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Big pharma at low P/E with above-average dividend yield and improving pipeline optionality after post-COVID reset."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small/mid-cap value basket catching up after a long large-cap AI-led divergence; cheaper aggregate multiples than SPY/QQQ."
+    },
+    {
+      "symbol": "F",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Deep-value auto name trading below book with high dividend yield; a levered bet on consumer credit holding up and cost cuts sticking."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "Crypto remains in a confirmed H1 bear trend (BTC -27%, ETH -36%, SOL -40%); modest levered short as a portfolio hedge/tactical continuation bet, sized so a 9-10% BTC rally only stops out this sleeve, not the book."
+    }
+  ],
+  "cash_pct": 14,
+  "outlook": "Expect mean-reversion into cheap cyclicals/value as H1's narrow AI-infra melt-up cools, while crypto stays pressured in its bear trend; keep meaningful cash for the next drawdown-driven entry."
+}

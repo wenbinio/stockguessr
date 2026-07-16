@@ -1,0 +1,68 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Small caps are catching up (+19.4% H1) as rate-cut expectations and broadening breadth favor small/mid-cap growth into year-end."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "3x semis exposure to ride the AI infrastructure buildout; sized down after the recent correction to manage leveraged-ETF decay risk."
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Fintech mid-cap with secular tailwinds in digital banking/lending growth and improving profitability momentum."
+    },
+    {
+      "symbol": "CRSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Gene-editing biotech with multiple pipeline catalysts; small-cap biotech offers asymmetric upside on trial readouts."
+    },
+    {
+      "symbol": "RKLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Small-cap space/industrials name riding secular launch-demand growth and expanding satellite/defense contracts."
+    },
+    {
+      "symbol": "DUOL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Consumer growth compounder with AI-driven engagement and monetization tailwinds, still early in TAM penetration."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "AI-disruption fear (already -49% H1) likely persists as generative tools erode Adobe's creative-suite moat; momentum short."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Fintech/brokerage growth story benefiting from retail trading activity, crypto infrastructure optionality, and product expansion."
+    }
+  ],
+  "cash_pct": 21,
+  "outlook": "Small/mid-cap breadth continues catching up to mega-cap AI leaders while crypto stays in a structural bear through year-end; I'm leaning into secular growth winners with a targeted AI-disruption short and a large cash buffer after round 1's drawdown."
+}

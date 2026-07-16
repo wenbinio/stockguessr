@@ -1,0 +1,61 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Small caps lag large caps on cycle but are most levered to Fed rate cuts and lower financing costs; H1 catch-up (+19.4%) likely extends as easing continues."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Industrial capex reacceleration theme (reshoring, grid, factory build-out) benefits broad industrials beyond the narrow AI-infra trade."
+    },
+    {
+      "symbol": "CAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Direct capex-cycle beneficiary with pricing power; construction/mining equipment demand tracks lower rates and infrastructure spend."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Long duration is cheap after a flat H1 (-1%); Fed easing into year-end should finally reward duration as the curve prices further cuts."
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "A weakening dollar trend and Fed easing typically lift EM/China equities via cheaper dollar funding and capital rotation out of crowded US AI names."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Gold's H1 pullback (-6.5%) sets up a rebound as real rates fall with Fed cuts and the dollar trend turns lower into H2."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "3x semis already up 250% H1 and now correcting on AI-disruption/valuation fears; a modest short hedges against further momentum unwind in the most extended pocket of the market."
+    }
+  ],
+  "cash_pct": 27,
+  "outlook": "Fed easing cycle and a softening dollar favor small-caps, industrial capex, and EM/gold over the H2 back half, while the extended AI-infrastructure trade needs to digest its H1 gains; positioning tilts toward rate-sensitive breadth expansion with a modest hedge against renewed AI momentum unwind."
+}

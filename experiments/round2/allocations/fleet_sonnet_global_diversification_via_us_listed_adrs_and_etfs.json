@@ -1,0 +1,68 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Rotate the core toward international/EM ETFs and quality non-US ADRs that lagged the US AI-infra rally, keep crypto exposure at zero given the deep bear trend, and hold a modest inverse-ETF hedge plus elevated cash against US mega-cap AI-valuation risk.",
+  "positions": [
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Broad EM ETF for diversified core exposure as EM catches up to US small/mid caps rallying."
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Best-in-class Taiwan ADR, core AI/semis supplier, dip-worthy after recent memory/optics correction."
+    },
+    {
+      "symbol": "ASML",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Dutch ADR, monopoly lithography equipment maker, high-quality European AI capex play."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Brazil ETF, cheap valuations and commodity/rate-cut tailwinds, low correlation to US mega-cap AI trade."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Japan ETF, ongoing corporate governance reform and yen dynamics support continued outperformance."
+    },
+    {
+      "symbol": "BABA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "China ADR at depressed multiples, optionality on stimulus and e-commerce/cloud recovery."
+    },
+    {
+      "symbol": "INDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "India ETF for structural EM growth diversification independent of US AI-concentration risk."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Small tactical hedge against a US AI-infra valuation correction after huge H1 leveraged-tech gains (short via inverse ETF long position)."
+    }
+  ],
+  "cash_pct": 20,
+  "outlook": "Global ex-US and EM equities look attractively valued after lagging AI-infra-led US gains, while crypto remains in a structural bear market I want no long exposure to; expect broadening participation into H2 with occasional AI-correction volatility."
+}

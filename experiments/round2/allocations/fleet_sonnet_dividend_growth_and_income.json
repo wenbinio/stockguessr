@@ -1,0 +1,83 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "strategy": "Anchor in quality dividend growers with AI-cycle exposure, add a tactical short against the most overextended leveraged momentum trade, use TLT for rate-cut convexity, and keep meaningful cash at 4% APY given stretched valuations after a huge H1 rally.",
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Dividend grower with durable cash flows from Azure/AI infrastructure demand; quality compounder to anchor the book."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Dividend growth plus direct AI networking/custom silicon exposure; strong FCF supports continued payout hikes."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Diversified high-quality dividend growth ETF that lagged the AI-momentum rally, offering defensive ballast with income."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Best-in-class bank compounder with rising dividend, benefits from resilient economy and capital markets activity."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy dividend aristocrat providing sector diversification and inflation hedge with strong cash returns to shareholders."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Cyclical dividend grower positioned to benefit if small-cap/consumer breadth continues and rate cuts support housing turnover."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Long duration Treasuries offer income and convexity if growth cools into year-end after a huge risk-asset run, diversifying the equity income book."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "3x semis ETF up +250% H1 into a visible AI-infrastructure correction over the last month; tactical short to fade an extended, leverage-fragile momentum trade."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 5,
+      "leverage": 2,
+      "thesis": "BTC remains in a confirmed downtrend (-27% H1) with no reversal catalyst yet; small low-leverage short to monetize continuation while capping liquidation risk."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Defensive staples dividend payers that badly lagged H1's AI-led rally, offering mean-reversion income exposure and a hedge if the rally rotates defensive."
+    }
+  ],
+  "cash_pct": 18,
+  "outlook": "Expect continued but choppier gains into year-end as the AI trade digests its huge H1 run and rate-cut hopes support duration-sensitive dividend payers, while crypto remains structurally weak; positioning stays income-tilted with a modest tactical short overlay and ample cash for flexibility."
+}
