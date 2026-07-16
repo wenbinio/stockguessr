@@ -1,0 +1,103 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "treatment": "flagship (tools + mandatory backtest)",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "positions": [
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 22,
+      "take_profit_pct": 45,
+      "thesis": "BNPL/checkout fintech scaling GMV and profitability; most consistent across tested windows"
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "Cloud data security/backup AI leader; strong momentum, held up in stress window"
+    },
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 22,
+      "take_profit_pct": 40,
+      "thesis": "Samsara IoT/AI operations cloud compounding ARR"
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "Restaurant cloud POS/fintech with steady location growth"
+    },
+    {
+      "symbol": "S",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "SentinelOne AI-native cybersecurity gaining share; recent breakout"
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50,
+      "thesis": "Cross-border payments fintech; high-momentum small cap sized down for volatility"
+    },
+    {
+      "symbol": "PATH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 22,
+      "take_profit_pct": 40,
+      "thesis": "Agentic AI automation platform re-accelerating after reset"
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "Digital-bank fintech with proven macro-stress resilience; sized down after pullback"
+    }
+  ],
+  "cash_pct": 5,
+  "backtest": {
+    "windows_tested": [
+      "2025 tariff stress",
+      "2025H2",
+      "recent 6mo"
+    ],
+    "strategy_return_pct": {
+      "stress_2025_tariff": -3.43,
+      "2025H2": 3.11,
+      "recent_6mo": 8.67
+    },
+    "benchmark_return_pct": {
+      "stress_IWO": -3.0,
+      "2025H2_IWO": 13.63,
+      "recent_6mo_IWO": 10.02
+    },
+    "notes": "Tracked IWO in the tariff stress but lagged in risk-on windows on single-name dispersion (FLYW -48% in stress vs SOFI +48% elsewhere) - reported honestly. Screened out names grown into large-cap (APP, HOOD, NU, ALAB) and weak-momentum names."
+  },
+  "outlook": "AI-adjacent cloud security and SMB fintech show strongest momentum into H2; 50-85% single-name vol managed by stops and weekly rotation."
+}
