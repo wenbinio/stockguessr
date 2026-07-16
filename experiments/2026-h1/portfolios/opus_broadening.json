@@ -1,0 +1,26 @@
+{
+  "name": "Opus Broadening",
+  "strategy": "anti-concentration / breadth catch-up",
+  "author": "claude-opus subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "tickers": ["IWM", "MDY", "EFA", "EEM", "EWJ", "EWG", "XLF", "XLV", "XLI", "KRE"],
+  "rationale": {
+    "IWM": "US small caps, deepest laggard vs mega-caps; recovered +13.6% in H2 2025 as rotation began",
+    "MDY": "US mid caps, cheap broadening exposure beyond the top-10 concentration",
+    "EFA": "Developed international, led breadth win in 2025-H1 (+20.5%) on weak-dollar tailwind",
+    "EEM": "Emerging markets, strong 2025 run and cheap valuations vs US",
+    "EWJ": "Japan, corporate reform + reflation, steady 12%+ gains across 2025",
+    "EWG": "Germany/Europe, best single performer in 2025-H1 (+35%) on fiscal stimulus turn",
+    "XLF": "Financials benefit from steep yield curve and broadening leadership",
+    "XLV": "Healthcare, defensive laggard that snapped back +14% in H2 2025",
+    "XLI": "Industrials, reshoring/capex beneficiary with consistent breadth participation",
+    "KRE": "Regional banks, extreme laggard leveraged to Fed rate cuts and curve steepening"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": 5.40, "2025-H1": 11.31},
+    "spy_return_pct": {"2024-H1": 16.11, "2025-H1": 6.28},
+    "notes": "Lost badly in 2024-H1 (concentration era) but beat SPY by +5pp in 2025-H1 driven by international (EWG/EFA/EEM). H2-2025 partial lagged -2.2pp but small-cap/healthcare recovery confirmed rotation entering 2026."
+  }
+}

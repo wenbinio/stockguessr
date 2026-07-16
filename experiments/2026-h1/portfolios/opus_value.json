@@ -1,0 +1,26 @@
+{
+  "name": "Opus Value",
+  "strategy": "value / contrarian mean-reversion",
+  "author": "claude-opus subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "tickers": ["UNH", "PFE", "BMY", "ELV", "CMCSA", "PYPL", "NKE", "CVX", "TGT", "KHC"],
+  "rationale": {
+    "UNH": "Managed-care leader down ~33% in 2025 on utilization/DOJ fears; ~14x earnings, deep mean-reversion candidate",
+    "PFE": "Ultra-cheap pharma (~8-9x), high dividend yield, pipeline pessimism overdone",
+    "BMY": "Low P/E, high FCF yield, dividend support; flat 2025 leaves cheap re-rating room",
+    "ELV": "Cheap (~11x) managed-care insurer beaten down alongside UNH; contrarian mean-reversion pair",
+    "CMCSA": "Cheap cable/broadband at ~8-9x FCF, down ~17%, buybacks and dividend",
+    "PYPL": "Fintech at ~12x with heavy buybacks, down ~32%, turnaround optionality",
+    "NKE": "Beaten-down consumer brand (-11%) mid-turnaround under new management",
+    "CVX": "Cheap integrated energy, high FCF yield and secure dividend, diversifier vs AI trade",
+    "TGT": "Cheap retailer (~12x) down ~26%; sentiment washed out, dividend aristocrat",
+    "KHC": "Ultra-cheap staples (~9x) down ~16% with potential breakup/restructuring catalyst"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": -4.78, "2025-H1": 5.92},
+    "spy_return_pct": {"2024-H1": 16.11, "2025-H1": 6.28},
+    "notes": "Naive most-beaten-down contrarian baskets lagged hard in 2024 (momentum/AI dominance) and matched SPY in 2025; final picks avoid already-reverted names (e.g., CVS +87% in 2025) and favor cheap names with identifiable catalysts."
+  }
+}

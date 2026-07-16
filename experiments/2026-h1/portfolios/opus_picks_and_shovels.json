@@ -1,0 +1,26 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "strategy": "AI infrastructure suppliers ex-Mag7",
+  "author": "claude-opus subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "tickers": ["VRT", "AVGO", "MU", "CLS", "GEV", "CEG", "LITE", "CRDO", "LRCX", "ANET"],
+  "rationale": {
+    "VRT": "Vertiv is the premier datacenter power and thermal/liquid-cooling supplier for AI racks",
+    "AVGO": "Broadcom custom AI accelerators (XPUs) and datacenter networking silicon, the largest non-Mag7 AI beneficiary",
+    "MU": "Micron HBM memory is a structurally tight bottleneck for every AI accelerator",
+    "CLS": "Celestica AI server/rack ODM riding hyperscaler capex, huge 2025 momentum",
+    "GEV": "GE Vernova supplies the gas turbines and grid gear to power AI datacenter buildouts",
+    "CEG": "Constellation Energy nuclear fleet directly powers hyperscaler AI campuses via PPAs",
+    "LITE": "Lumentum optical transceivers/lasers scale with datacenter interconnect bandwidth",
+    "CRDO": "Credo active electrical cables and connectivity chips scale with AI cluster wiring",
+    "LRCX": "Lam Research etch/deposition equipment is levered to HBM and advanced-logic capex",
+    "ANET": "Arista high-speed datacenter switching is core AI back-end networking plumbing"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": 77.71, "2025-H1": 19.21},
+    "spy_return_pct": {"2024-H1": 15.87, "2025-H1": 6.31},
+    "notes": "Equal-weight 10-name picks-and-shovels baskets formed entering 2024 and 2025, next-6-month returns from Yahoo daily adjclose. Basket beat SPY both windows (+61.8pp, +12.9pp) despite blowups (MRVL -31.7% in 2025-H1). Momentum scan of full-year 2025 confirmed breadth: LITE +331%, MU +228%, CLS +218% led."
+  }
+}

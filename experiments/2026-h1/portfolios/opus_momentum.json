@@ -1,0 +1,26 @@
+{
+  "name": "Opus Momentum",
+  "strategy": "12-1 cross-sectional momentum",
+  "author": "claude-opus subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "tickers": ["MU", "PLTR", "AMD", "GEV", "GE", "AVGO", "GOOGL", "CAT", "UBER", "LLY"],
+  "rationale": {
+    "MU": "Top-ranked 12-1 momentum (+186%) on HBM/memory AI supercycle demand",
+    "PLTR": "+122% 12-1 momentum; sustained AIP/commercial re-rating leader",
+    "AMD": "+82% 12-1 momentum on MI-series datacenter GPU ramp",
+    "GEV": "+76% 12-1 momentum; power/electrification demand for AI datacenters",
+    "GE": "+74% 12-1 momentum; aerospace aftermarket strength and backlog",
+    "AVGO": "+68% 12-1 momentum on custom AI accelerator and networking demand",
+    "GOOGL": "+67% 12-1 momentum; Gemini/cloud re-rating and search resilience",
+    "CAT": "+59% 12-1 momentum on infrastructure and datacenter capex cycle",
+    "UBER": "+44% 12-1 momentum; profitable growth and cash-flow inflection",
+    "LLY": "+38% 12-1 momentum on GLP-1 franchise dominance"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": 36.07, "2025-H1": 34.27},
+    "spy_return_pct": {"2024-H1": 15.22, "2025-H1": 6.05},
+    "notes": "36-name liquid large/mid-cap universe. At each formation date (2023-12-29, 2024-12-31) ranked names by 12-1 momentum, took equal-weight top 10, held 6 months. Both baskets beat SPY by 20.9pp and 28.2pp. Live picks formed on data through 2025-12-31, no data past 2026-01-02 used."
+  }
+}
