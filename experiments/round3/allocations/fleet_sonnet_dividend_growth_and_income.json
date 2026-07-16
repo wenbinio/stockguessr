@@ -1,0 +1,97 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
+  "novelty": "This is a relative-value/trend-harvesting book, not a dividend or quality-cash-flow strategy: it goes long sectors showing fresh 1-3mo acceleration (financials, biotech, regional banks, healthcare) and shorts assets in confirmed multi-month breakdowns (gold/miners rolling over -13%/-24%, crypto majors in deep downtrends) using perps for capital-efficient short carry. Unlike R1 (defensive/cyclical dividend growers) or R2 (AI dividend growth + short of one overextended leveraged ETF), there is no dividend-yield selection criterion at all here, no AI theme, and the short leg is diversified across gold and crypto trend breakdowns rather than a single leveraged-momentum squeeze bet.",
+  "r2_overlap_pct": 3.9,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials showing sharp 1m acceleration (+6.0%) with steady 3m/12m trend; sector rotation into banks/rates beneficiaries.",
+      "take_profit_pct": 20,
+      "stop_loss_pct": 8
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech breaking out with +14.6% 1m surge atop strong 3m/6m/12m trend; momentum inflection in a laggard-turned-leader.",
+      "take_profit_pct": 25,
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks confirming financials rotation with +5.5% 1m and consistent multi-period gains.",
+      "take_profit_pct": 18,
+      "stop_loss_pct": 9
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Healthcare re-accelerating (+4.0% 1m) after a soft 6m, defensive-cyclical rotation candidate alongside biotech strength.",
+      "take_profit_pct": 15,
+      "stop_loss_pct": 8
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Gold miners in a confirmed breakdown: -13.2% 1m, -24.3% 3m, -23.6% 6m; pressing the trend reversal from a prior multi-year rally.",
+      "take_profit_pct": 20,
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Gold itself rolling over (-6.1% 1m, -15.5% 3m) after an extended run; miners' breakdown corroborates a cycle turn.",
+      "take_profit_pct": 12,
+      "stop_loss_pct": 7
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 10,
+      "leverage": 3,
+      "thesis": "Deep, broad-based crypto downtrend (-46.5% 6m, -56.2% 12m) with no reversal signal; pressing continuation on the weakest major.",
+      "take_profit_pct": 30,
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "ETH in a persistent multi-month downtrend (-19.8% 3m, -43.2% 6m); shorting confirmed weakness rather than chasing a bounce.",
+      "take_profit_pct": 25,
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Small duration ballast against equity long-book beta and as a hedge if risk sectors reverse sharply.",
+      "take_profit_pct": 8,
+      "stop_loss_pct": 6
+    }
+  ],
+  "cash_pct": 7,
+  "outlook": "Expect continued sector rotation into financials/healthcare/biotech as AI-momentum names (XLK/SMH) cool off, while gold/miners and crypto majors extend their established downtrends through year-end; positioned to harvest both legs of that divergence with stops to cap trend-reversal risk."
+}

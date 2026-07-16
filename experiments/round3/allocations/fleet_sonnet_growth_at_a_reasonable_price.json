@@ -1,0 +1,78 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
+  "novelty": "Unlike R1/R2's GARP quality-growth screens, this book has zero fundamental/valuation input \u2014 positions are chosen purely from trailing return inflection points (breakouts vs. breakdowns) across equities, sector ETFs and crypto, with hard stops enforcing vol-regime discipline. It explicitly shorts former winners showing 1-month reversal (SOXL, GDX, BTC) while going long assets confirming new uptrends (XBI, XLF, KRE), a relative-value/momentum-rotation edge distinct from prior long-only quality-growth stock-picking.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech breaking out with +14.6% 1m vs flat/negative broader tape, catalyst-driven momentum acceleration into 2H26.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials leading rotation (+6% 1m) as curve/rate backdrop favors banks; momentum confirmed across timeframes.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks confirming financials rotation with +5.5% 1m, higher-beta expression of same catalyst.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 28
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Long duration oversold on 3/6/12m basis, mean-reversion candidate as rate-cut expectations build; also portfolio ballast vs equity/short book.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 15
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "3x semis ETF posting -39% 1m after parabolic 500%+ 12m run: classic blow-off-top reversal, momentum has flipped decisively negative.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners breaking down -13% 1m/-24% 3m after outsized run; downside momentum continuation as gold itself rolls over (-6% 1m).",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 10,
+      "leverage": 3,
+      "thesis": "BTC in confirmed downtrend (-14.7% 3m, -32.9% 6m) with momentum still negative; perp short expresses trend continuation without long funding drag.",
+      "stop_loss_pct": 30,
+      "take_profit_pct": 50
+    }
+  ],
+  "cash_pct": 20,
+  "outlook": "Expect continued rotation out of extended 2025-style AI/semis/gold winners into laggard cyclicals (financials) and event-driven biotech through year-end, with crypto remaining in a technical downtrend; positioning trades price momentum/reversal signals with hard stops rather than macro forecasts, keeping 20% cash as dry powder and to cap overall portfolio beta."
+}

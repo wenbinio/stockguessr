@@ -1,0 +1,79 @@
+{
+  "name": "Haiku price momentum",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
+  "novelty": "Contrarian short bias on extended semiconductor bubble (SOXL) paired with systematic rotation into energy, financials, value, and EM. Fundamentally reverses Rounds 1-2's long-momentum orientation; return driver is mean-reversion + sector rotation (different edge), not momentum chasing.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Semiconductors up 506% YTD, extreme extension; already down -39% last month. Contrarian short on sector rotation outflow.",
+      "stop_loss_pct": 18,
+      "take_profit_pct": 15
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Biotech +82.7% YTD with +14.6% recent momentum. Sector strength and recent acceleration.",
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Energy +34.1% YTD with stable momentum. Macro tailwinds, defensive relative to overextended tech.",
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Financials +11.2% YTD, +6% recent acceleration. Rate scenario favorable, rotating into value.",
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Small-cap leverage +106% YTD, now consolidating. Diversification alternative to mega-cap tech concentration.",
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Value rotation: Russell 1000 Value +26.1% YTD. Better risk-reward post-tech extension.",
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Emerging markets +37.3% YTD. Geographic diversification, relative value vs US tech concentration.",
+      "take_profit_pct": 22
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Regional banks +26.5% YTD, +5.5% recent momentum. Value play in rate environment, plays financials rotation.",
+      "take_profit_pct": 18
+    }
+  ],
+  "cash_pct": 16,
+  "outlook": "Sector rotation from mega-cap tech into value, energy, and financials as SOXL normalization continues. Biotech momentum may persist; small-cap consolidation could set up next leg. Emerging market rebalancing offers diversified upside. Key risk: if mega-cap momentum resumes despite valuation extremes, short SOXL underweight tech underperforms (mitigated by 18% stop loss). Time horizon aligns with 5-month score window (7/17\u201312/31); position-level discipline enforces disciplined exit mechanics.\""
+}

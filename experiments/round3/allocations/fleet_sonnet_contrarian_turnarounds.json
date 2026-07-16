@@ -1,0 +1,81 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
+  "novelty": "Round 1 bet on idiosyncratic turnaround catalysts in depressed single names; Round 2 faded AI-disruption fear and oversold crypto. Round 3's edge is sector-level relative value and trend-confirmation: ride already-confirmed rotations (XLF/KRE credit-cycle strength, XLV/XBI healthcare-biotech breakout) while shorting extended/breaking-down groups (GDX gold miners rolling over, SOXL semis post-parabolic crack) and running a defensive pair (long low-vol/utilities vs short discretionary) \u2014 a trend-and-carry sector rotation book, not a single-name catalyst or fear-fade book.",
+  "r2_overlap_pct": 9.1,
+  "positions": [
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Regional banks confirmed uptrend (+5.5%/1m, +10.2%/3m, +14.5%/6m) riding credit-cycle/rate-curve tailwind; momentum plus carry from steepening curve.",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare showing fresh acceleration (+4.0%/1m) after a weak 6m, a defensive sector re-rating early in its rotation.",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Biotech in a confirmed strong breakout (+14.6%/1m, +82.7%/12m) \u2014 momentum continuation into H2 catalysts (approvals, M&A).",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Low-volatility defensive tilt as ballast against a stretched Nasdaq/semis complex heading into H2 volatility.",
+      "stop_loss_pct": 8
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Utilities offer bond-proxy carry and AI-power-demand tailwind while discretionary weakens \u2014 relative value long leg.",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners in a sharp confirmed breakdown (-13.2%/1m, -24.3%/3m) as gold itself rolls over (-6.1%/1m, -15.5%/3m); trend continuation short.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "3x semis after a +506% 12m parabolic move just cracked -39.2% in a month \u2014 leveraged mean-reversion short on an extended, now-breaking trend.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Consumer discretionary is the weakest S&P sector on 3m/6m (-0.8%/-3.9%) \u2014 relative-value short leg vs the XLU long, pure sector pair carry/rotation.",
+      "stop_loss_pct": 10
+    }
+  ],
+  "cash_pct": 12,
+  "outlook": "Expect continued sector dispersion into year-end: financials and healthcare/biotech extend confirmed uptrends on credit-cycle and re-rating tailwinds, while gold/miners and the most extended semis names mean-revert after historic 12m moves. A defensive utilities-over-discretionary pair and ample cash (22%, earning 4% APY) provide ballast against a stretched broad market (SPY +22.7%/12m) without relying on single-name catalysts or fading crowded fear trades."
+}

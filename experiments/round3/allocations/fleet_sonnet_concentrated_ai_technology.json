@@ -1,0 +1,74 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "novelty": "Round 1 and 2 were both concentrated long AI-infra/semis compute beta. Round 3 drops AI/tech exposure almost entirely and instead harvests cross-sector momentum/relative-value: long the strongest non-tech breakout sectors (biotech, financials, regional banks) against short positions in sectors showing confirmed technical breakdowns (gold miners, long bonds) plus a crypto-weakness short via perp. The edge is trend-confirmation pairs trading across uncorrelated sectors, not a single-theme directional bet.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Biotech breaking out hard across all timeframes (+14.6% 1m, +82.7% 12m) as rate-cut hopes and M&A activity return; strongest momentum signal in the tape outside AI.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials leading market with +6% 1m on steepening curve expectations and resilient credit conditions; broad-based sector strength.",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks confirming financials momentum (+5.5% 1m, +10.2% 3m) as funding-cost pressure eases; a relative-value complement to XLF within financials.",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Healthcare showing renewed momentum (+4% 1m) after a weak 6-12mo stretch, defensive ballast that also participates in the same rotation as biotech.",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Gold miners in a confirmed technical breakdown (-13.2% 1m, -24.3% 3m, -23.6% 6m) despite gold-adjacent yearly strength, reflecting margin compression and momentum exhaustion.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Long bonds stuck in a persistent downtrend (-1.4/-1.9/-2.5% across 1-6mo) as rate-cut timing keeps getting pushed out; carry-friendly short via borrow cost only 3% APR.",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "ETH in a severe multi-timeframe downtrend (-19.8% 3m, -43.2% 6m, -44.1% 12m) with no reversal signal; tactical short avoids longs-only funding drag.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 40
+    }
+  ],
+  "cash_pct": 10,
+  "outlook": "Rotation broadening beyond mega-cap tech: biotech (XBI) and financials (XLF/KRE) show accelerating multi-month momentum while gold miners (GDX) and long bonds (TLT) are in confirmed downtrends (GDX -13%/1m, -24%/3m) as real rates stay firm. Crypto remains in a broad downtrend (BTC -46%/12m, ETH -44%/12m) with no reversal signal yet, favoring a tactical short. Keeping cash buffer for weekly reassessment given the sector-rotation regime is only weeks old."
+}

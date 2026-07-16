@@ -1,0 +1,77 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
+  "novelty": "Round 3 shifts from R1's emerging-market thesis and R2's leveraged tech/crypto reversal plays to income-driven carry harvesting paired with mean-reversion positioning: long high-dividend sectors (XLF +6% 1m, XLE +34% YTD, XLV +21.5% YTD) while shorting QQQ after its +29.5% YTD run shows -3.4% 1m momentum fade. This captures value-stock rotation and relative-value exhaustion rather than directional growth or EM recovery.",
+  "r2_overlap_pct": 8.8,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financial sector dividend harvesting in supportive rate environment; net interest margin expansion; +6% 1m recent momentum confirms sector strength and durability of carry flows"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Mid-cycle energy positioning; geopolitical/supply-side premiums support valuations; high dividend yields (3-4%) plus commodity appreciation; +34.1% YTD shows sector durability"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Defensive quality healthcare with +21.5% YTD upside and +4% 1m; recession-resistant cash flows; dividend yields 1.5-2%; secular tailwinds from aging demographics"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Pure value rotation as mega-cap growth cools (XLK -5.2% 1m after +41.5% YTD); higher dividend yields; +26.1% YTD demonstrates value recognition; natural pair against QQQ short"
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "International developed markets diversification away from US mega-cap concentration; +23% YTD recovery; dividend yields 2-3%; less exposed to tech-sector excess valuations"
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Regional banks small-cap financials; net interest margin expansion from higher rates; +26.5% YTD momentum; dividend payout; smaller notional weight controls small-cap risk exposure"
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Japan ADR recovery (+36% YTD); Bank of Japan normalization supportive; developed markets value proposition; dividend plays in low-growth environment"
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Tactical short on tech-heavy index exhaustion after +29.5% YTD rally; momentum fade (-3.4% 1m) signals potential consolidation/rotation; pairs trade against long value positions (VTV, EFA)"
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Duration ballast and income generation; hedge against equity volatility; if rates stabilize, potential capital appreciation; safe-haven anchor for portfolio"
+    }
+  ],
+  "cash_pct": 9,
+  "outlook": "Market enters consolidation phase after tech sector's dominant YTD rally; dividend sectors provide 4-5% effective portfolio yield providing downside cushion; geopolitical/supply-side support remains for energy; financial sector well-positioned for sustained higher rates; 9% cash reserve enables opportunistic rebalancing if VIX spikes >25. Weekly reassessment through 12/31/2026 to monitor: (1) QQQ short viability if tech momentum reverses durably, (2) value rotation acceleration from XLV/VTV/EFA, (3) energy/XLE sustainability given commodity cycle dynamics. If semis fall >15% further, covering QQQ short to rebalance; if yield environment shifts sharply lower, shifting 3-4% from TLT to equity for higher equity risk exposure."
+}

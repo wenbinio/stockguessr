@@ -1,0 +1,70 @@
+{
+  "name": "Sonnet quality compounders",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
+  "novelty": "This round abandons moat/quality stock-picking entirely in favor of sector-relative-value rotation and momentum-breakdown shorts: riding rate-cut-cycle carry into financials/regional banks and biotech catalyst flow, while shorting extended, now-cracking momentum trades (gold miners post-blowoff, crypto majors in confirmed downtrends). The edge is trend/mean-reversion positioning across sectors and crypto rather than owning any specific \"great business,\" and cash is sized up to bank the 4% APY carry as part of the return, not just dry powder.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech has the strongest momentum in the tape (+14.6% 1m, +82.7% 12m) on M&A and catalyst flow; riding sector rotation into risk-on healthcare rather than owning individual moat names."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks re-rating on rate-cut-cycle carry and steepening curve, +5.5% 1m acceleration; net-interest-margin expansion play, not a quality/moat thesis."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Broad financials showing the best 1m momentum of any major sector ETF (+6.0%), confirming sector rotation out of crowded tech into rate-sensitive cyclicals."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Small-cap breadth rotation and relative-value catch-up trade vs mega-cap (IWM 12m +36.6% already leading SPY), positioned for continued broadening rally into year-end."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Gold miners in a sharp technical breakdown (-13.2% 1m, -24.3% 3m) after a blow-off top; momentum-reversal short as gold (GLD -6.1% 1m) rolls over from crowded positioning.",
+      "stop_loss_pct": 30
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "Confirmed multi-month crypto downtrend (-19.8% 3m, -43.2% 6m) with no reversal signal; short carry benefits from perp funding only applying to longs.",
+      "stop_loss_pct": 40,
+      "take_profit_pct": 60
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 3,
+      "thesis": "Weakest major crypto asset (-46.5% 6m, -56.2% 12m), continuation of altcoin underperformance vs BTC in a risk-off crypto regime.",
+      "stop_loss_pct": 40,
+      "take_profit_pct": 60
+    }
+  ],
+  "cash_pct": 23,
+  "outlook": "Expect continued rotation into rate-sensitive cyclicals (financials, regional banks) and biotech as breadth broadens beyond mega-cap tech (XLK/SMH cooling -5% to -9% over 1m), while gold miners (GDX -13% 1m) and crypto (BTC/ETH/SOL all down double digits over 3-6m) remain in technical downtrends likely to persist into year-end absent a dovish catalyst."
+}

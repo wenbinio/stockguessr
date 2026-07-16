@@ -1,0 +1,79 @@
+{
+  "name": "Haiku quality compounders",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
+  "novelty": "Unlike prior AI/quality-focused rounds, this strategy harvests tactical cycles: long small-cap momentum (TNA) plus cyclical carry (XLF/XLE) plus depressed crypto lows, hedged by short mega-cap tech pairs (QQQ/SMH). Edge is valuation mean reversion and regime rotation (small-cap breakout, financial tightening stabilization, crypto recovery off capitulation lows) via leverage, systematic shorts, and weekly rebalancing\u2014not moat-based quality accumulation.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14.1,
+      "thesis": "Small-cap 3x leverage on momentum continuation; TNA +106% YTD reflects sustained alpha in under-5B cap segment with compounding potential through Dec-31.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 100
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.6,
+      "thesis": "Energy carry on geopolitical uncertainty, OPEC supply coordination, and structural underinvestment; sector yields 2-3% and trades 0.8x book, inflation hedge as macro stabilizes."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11.6,
+      "thesis": "Financial carry on stable US rates and strong net interest margins through 2026; dividend yield 2.5% with capital appreciation as credit stabilization unfolds."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 9.0,
+      "thesis": "Spot accumulation at -46% capitulation low; historical 6-12mo recovery post-drawdown averages 3-5x, institutional adoption (spot ETF inflows) provides downside support.",
+      "stop_loss_pct": 35,
+      "take_profit_pct": 120
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.7,
+      "thesis": "Quality factor (high ROE/margins) diversification versus cyclical longs; captures AI-driven software tail (MSFT, CRM, ADBE) without mega-cap concentration risk."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.1,
+      "thesis": "Defensive ballast with 1.5% yield; sector pricing margin headwinds (GLP-1 adoption), provides counter-cyclical hedge if growth falters unexpectedly."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7.7,
+      "thesis": "Mega-cap tech hedge on compressed valuations post-AI hype; pair trade with small-cap/sector rotation, reprices lower if growth falters or rates rise.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5.1,
+      "thesis": "Semiconductor sector at +103% YTD signals extreme positioning; hedges concentration risk in leveraged small-cap, reprices sharply on execution slowdown.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 25
+    }
+  ],
+  "cash_pct": 28.1,
+  "outlook": "Macro environment supportive for carry trades (stable rates, no recession priced in). Small-cap momentum likely continues on M&A activity and equal-weight rotation. Crypto recovery is speculative but warranted at -40% drawdown. Primary risks: Fed surprises with rate cuts (hurts carry), geopolitical escalation (equity drawdown), mega-cap tech stabilization (stops QQQ short from working). Position-level stops at daily close plus weekly rebalancing provide tactical flexibility. Target NAV growth 8-12% through Dec-31; 28% cash provides dry powder for adds if volatility spikes.",
+  "registration_note": "over-allocated as submitted (weights 112% + cash 28%); positions scaled x0.643 per the documented repair rule"
+}

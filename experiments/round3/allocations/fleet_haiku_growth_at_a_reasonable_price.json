@@ -1,0 +1,90 @@
+{
+  "name": "Haiku growth at a reasonable price",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
+  "novelty": "Differs from R1 (quality earnings growers) and R2 (concentrated AI-infra) by employing long-short positioning to harvest mean-reversion in mega-cap tech extremes while rotating into undervalued sectors lagging YTD. Return driver is relative-value arbitrage between overbought semis (+507% overextension) and undervalued financials/healthcare/value factors, plus crypto washout recovery\u2014not absolute earnings growth.",
+  "r2_overlap_pct": 1.3,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Financials sector rotation; net beneficiary of rate environment, lagged YTD (+11.2%), attractive valuations"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Energy sector strength; commodity cycle momentum (+34.1% YTD), relative value vs. tech"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Healthcare quality exposure; defensive characteristics, +21.5% YTD, steady earnings growth"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Value factor diversification; mean-reversion potential as growth cools, +8.2% in 3m"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Biotech growth within value; strong momentum (+14.6% last month, +82.7% YTD), cycle strength"
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Quality factor at reasonable multiples; lower beta growth, +21.5% YTD"
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15,
+      "thesis": "Small-cap Russell 2000 3x leverage; value rotation catch-up, +106% YTD, contrarian position sizing"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 150,
+      "thesis": "Bitcoin contrarian recovery; down 46% YTD, washout bottom formation, institutional adoption tailwind"
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 2,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 100,
+      "thesis": "Ethereum contrarian recovery; down 44.1% YTD, similar washout thesis, DeFi/NFT cycle recovery"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "take_profit_pct": 25,
+      "thesis": "Semiconductor mean-reversion hedge; 3x leverage inverse position, +507% extreme overextension targets decay, reduces drawdown from tech correction"
+    }
+  ],
+  "cash_pct": 21,
+  "outlook": "Sector rotation thesis targets mean-reversion as capital rotates from mega-cap tech dominance into lagging sectors with attractive valuations. SOXL short (take-profit at 25% decline) locks in mean-reversion alpha; crypto longs (stops at 25% loss) capture washout recovery from -46%/-44% declines. TNA provides small-cap leverage for value catch-up with risk discipline (15% stop). Weekly rebalancing resets stops based on new close prices and sector momentum. Framework profits from multiple compression in semis, expansion in financials/healthcare, and contrarian crypto stabilization\u2014mechanically different from prior earnings-growth and capex-cycle theses."
+}

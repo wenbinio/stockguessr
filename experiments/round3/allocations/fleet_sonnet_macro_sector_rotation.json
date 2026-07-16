@@ -1,0 +1,83 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
+  "novelty": "This is a relative-value momentum-rotation edge, not a macro/rate-cut or dollar-debasement thesis: I'm harvesting the sharp 1-month reversal already visible in the data (XBI +14.6%/1m vs SMH -8.7%/1m and GDX -13.2%/1m) by going long the newly-leading defensive/healthcare and regional-bank groups while shorting the most overextended prior-momentum leaders (SMH/semis, XLY) that are rolling over. Round 1 and 2 were both long rate-sensitive cyclicals/small-caps and dollar hedges (gold, EM); this book has zero gold/EM/industrial-capex exposure and instead expresses a pure sector-momentum-reversal and crypto-momentum-breakdown view, harvested via a short perp rather than a long hedge.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech is the strongest 1m/3m/6m momentum leader in the data (+14.6%/+14.6%/+23.3%); catalyst-driven rotation into the group looks intact.",
+      "stop_loss_pct": 18,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Healthcare sector broadly re-rating alongside biotech (+4.0% 1m after a weak 6-12m base), defensive earnings quality with room to re-rate.",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Financials leading all sectors on 1m tape (+6.0%) as credit conditions and net interest margins improve; broad participation confirms the move.",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks confirm the financials rotation (+5.5% 1m, +10.2% 3m) with more room to close the gap versus large-cap financials.",
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Low-volatility defensive sleeve to harvest steady carry while high-beta tech unwinds, low correlation to the short book.",
+      "stop_loss_pct": 8
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Semis are the most extended prior-momentum leader (+103.8% 12m, +52.1% 6m) and just broke down -8.7% in a month; classic momentum-reversal short.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Consumer discretionary is the weakest sector on 3m/6m trend (-0.8%/-3.9%) with no signs of stabilization; short the laggard rather than fade it.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 5,
+      "leverage": 2,
+      "thesis": "Crypto is in a confirmed momentum breakdown (SOL -46.5%/6m, -56.2%/12m) with no reversal signal yet; small leveraged short expresses continued weakness while avoiding long funding costs.",
+      "stop_loss_pct": 40,
+      "take_profit_pct": 30
+    }
+  ],
+  "cash_pct": 18,
+  "outlook": "Expect continued rotation out of 2025's AI-capex/semis leadership and weak discretionary spending into healthcare, biotech, and financials through year-end, with crypto remaining under momentum pressure; elevated cash buffers against a sharp mean-reversion snapback in semis."
+}

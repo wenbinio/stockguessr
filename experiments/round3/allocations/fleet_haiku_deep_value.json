@@ -1,0 +1,97 @@
+{
+  "name": "Haiku deep value",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Momentum mean-reversion via sector rotation: short unsustainable momentum extremes (SOXL, TQQQ after 6-12 month runs), rotate into steady outperformers (energy, small-cap value, financials), amplify capitulation signals via crypto perps, enforce daily volatility stop discipline.",
+  "novelty": "Shifts from value-screening fundamentals (R1) and core broad-market value holdings (R2) to systematic momentum mean-reversion. Directly exploits regime shift: shorts momentum extremes (SOXL 3x short after +506% run, TQQQ short after tech drawdown) while rotating into steadier sectors, capturing alpha from volatility regime change rather than security selection. Uses position-level daily stops for tactical discipline rather than passive core positions.",
+  "r2_overlap_pct": 3.2,
+  "positions": [
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.5,
+      "thesis": "Russell 2000 Value +29.5% (12m), +1.4% (1m) shows stability; captures sector rotation away from mega-cap tech outperformance.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 22
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.5,
+      "thesis": "Energy +34.1% (12m), +2.4% (1m) momentum; different correlation to tech sector; steady performer in rotation.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.0,
+      "thesis": "Financials +6.0% (1m) recent strength signals rate-environment recovery; +11.2% (12m) baseline.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 15
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.5,
+      "thesis": "Emerging markets -6.0% (1m) dip after +37.3% (12m) run; oversold mean-reversion opportunity.",
+      "stop_loss_pct": 14,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3.5,
+      "thesis": "Low-volatility defensive hedge if momentum mean-reversion thesis doesn't fully materialize; provides downside cushion.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 12
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.0,
+      "thesis": "Regional banks +26.5% (12m), +5.5% (1m); specialized financial exposure with rate sensitivity, different beta than XLF.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 5.0,
+      "leverage": 3,
+      "thesis": "Bitcoin -46% (12m) capitulation crushed but stabilizing +5.2% (1m); 3x leverage captures capitulation recovery wave; crypto regime shift signal.",
+      "stop_loss_pct": 35,
+      "take_profit_pct": 55
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8.0,
+      "thesis": "3x semiconductor +506.8% (12m) run unsustainable; -39.2% (1m) reversal underway; shorting extreme captures mean-reversion acceleration.",
+      "stop_loss_pct": 28,
+      "take_profit_pct": 22
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5.0,
+      "thesis": "3x Nasdaq -11.8% (1m) after massive 12m run; mega-cap tech unwind as attention rotates to steady sectors; short leverage amplifies positioning.",
+      "stop_loss_pct": 22,
+      "take_profit_pct": 18
+    }
+  ],
+  "cash_pct": 48.0,
+  "outlook": "Tech's 12-month momentum (+40% to +506% in leveraged products) is unsustainable and reversing (-5% to -39% recent). Expect continued sector rotation into steady outperformers (energy, small-cap value, financials) over the 5-month horizon. Crypto capitulation signals early stabilization; leverage captures recovery upside. Daily stop discipline limits whipsaw losses if momentum persists despite being extended. Key risk: if tech sharply reverses course, shorts face mark-to-market pressure (mitigated by stops); if rotation stalls, long positions underperform broad market. Cash buffer (48%) provides flexibility to adapt as mean-reversion thesis plays out.",
+  "registration_note": "over-allocated as submitted (weights 104% + cash 48%); positions scaled x0.500 per the documented repair rule"
+}

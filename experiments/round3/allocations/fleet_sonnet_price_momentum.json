@@ -1,0 +1,86 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
+  "novelty": "Both prior rounds chased strongest trailing momentum (AI-infra/semis, mega-cap tech, small caps). Round 3 instead harvests relative-value and mean-reversion: going long sectors that have lagged the broad tape but show early re-acceleration (biotech, healthcare, financials/regional banks, long-duration Treasuries as a rate-cut carry play) while actively shorting the most extended, now-cracking momentum trades (gold/gold miners down double digits in 1m/3m, leveraged semis SOXL post-blowoff). Discipline is enforced via hard stops rather than by riding trend strength.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Biotech showing sharp 1m re-acceleration (+14.6%) after a long lag vs SPY; relative-value catch-up trade with genuine recent breakout confirmation.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare sector deeply lagged (12m only +1.1% vs SPY +22.7%) but turning up 1m/3m; defensive rotation candidate as breadth broadens beyond tech.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials showing broad strength (+6% 1m) as steepening/rate-cut backdrop favors bank margins; relative-value complement to tech-heavy prior books.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks confirming financials strength with even stronger 1m (+5.5%) and 3m momentum; carry-like income exposure via bank equities.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Long-duration Treasuries as a rate-cut-cycle carry/diversifier against equity risk; cheap convexity if growth data softens into year-end.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 15
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners in a sharp breakdown (-13.2% 1m, -24.3% 3m) after a huge prior run; shorting the unwind of an exhausted trade, not chasing a new one.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Gold rolling over (-6.1% 1m, -15.5% 3m) as real rates and risk appetite pressure the metal; pairs with GDX short for a broken-momentum theme short.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "3x semis ETF just posted a violent -39.2% 1m reversal after a +500% 12m blowoff top; shorting continuation of the momentum unwind with tight risk control.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35
+    }
+  ],
+  "cash_pct": 5,
+  "outlook": "Expect continued rotation out of the most extended AI/semis/gold momentum trades into laggard defensives (healthcare) and rate-sensitive value (financials, duration) as the second half unfolds; broad market likely grinds higher but leadership churns, favoring relative-value/mean-reversion over trend-chasing."
+}

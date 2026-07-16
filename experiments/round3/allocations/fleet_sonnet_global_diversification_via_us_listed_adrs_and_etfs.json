@@ -1,0 +1,60 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
+  "novelty": "Unlike R1/R2's international/EM ADR and ETF diversification theme, R3 is a pure US-sector relative-value book with zero non-US exposure and zero crypto: long catalyst-confirmed momentum (biotech breakout, bank rally) paired against short mean-reversion in names that have detached from fundamentals (gold miners in a -24% 3m drawdown, 3x leveraged semis after a 500%+ 12m run and a -39% 1m crash). The edge is vol-regime discipline via position-level stop-loss/take-profit on the short legs rather than passive beta exposure, using a rates hedge (TLT) instead of geographic diversification as the ballast.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Biotech in confirmed breakout, +14.6% 1m and accelerating vs flat 3m/6m base; catalyst-driven momentum continuation into H2 earnings/approvals."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials leading tape +6.0% 1m on steepening-curve/rate-cut expectations; best 1m sector momentum outside tech, room to catch up on 12m basis."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks confirm the financials catalyst (+5.5% 1m, +10.2% 3m) with credit conditions stabilizing; adds beta to the rate-cut/steepener trade."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Gold miners in a severe -24.3% 3m/-23.6% 6m downtrend despite GLD holding up better; miner operating leverage now working against margins, momentum breakdown likely continues.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "3x semis ETF up 507% over 12m but crashed -39% in the last month alone; extreme overextension and leverage decay favor continued mean reversion after the SMH-led selloff.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Long bonds as portfolio ballast/rate hedge against the long equity sector bets; cheap after -1.9% 3m drift, convex if growth data disappoints."
+    }
+  ],
+  "cash_pct": 20,
+  "outlook": "Expect continued rotation into rate-sensitive domestic sectors (financials, biotech) as the AI-momentum trade cools (QQQ/SMH/XLK all negative or decelerating 1m), while overextended mean-reversion candidates (gold miners, 3x leveraged semis) keep unwinding; TLT and 20% cash provide ballast against a choppy, rotation-driven H2 rather than a clean directional market."
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Haiku concentrated AI/technology",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Small-cap cyclical momentum with value rotation (TNA, IWD, XLE, XLI, XLF), selective tech exposure, rate hedging via short TLT and low-vol short.",
+  "novelty": "Shifts from mega-cap AI/enterprise software focus (R1/R2) to small-cap Russell leadership (TNA 18%, IWD 14%) and cyclical sectors (energy, industrials, financials). Uses position-level stops/profit-taking and tactical shorts (TLT, USMV) to manage rotation risk and harvest momentum decay, emphasizing capital efficiency over leverage stacking.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Russell 2000 3x leverage; small caps +106% YTD with secular outperformance vs mega-cap; runway into H2 2026",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 60
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Large-cap value rotation; up +29.5% YTD with IWD catching up vs. growth as rates stabilize; dividend yield buffer",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Energy +34.1% YTD; commodity tailwind, geopolitical premium, relative undervaluation vs. macro consensus",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 50
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Industrials +21.7% YTD; cyclical play on infrastructure demand, capex cycles; secular underowned",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Financials +11.2% YTD, lagging; rotation opportunity as rates sticky, net interest margin benefits",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Emerging markets +37.3% YTD; international cyclical exposure, relative valuation, currency hedge",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Nasdaq unleveraged; maintain core tech/growth exposure without leverage fee drag; tactical 5% to limit rotation risk",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Nasdaq 3x leverage; tactical if tech momentum sustains, sized to manage 3x volatility and fee burden (5bps leveraged)",
+      "stop_loss_pct": 30,
+      "take_profit_pct": 80
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "20-year bonds short; growth narrative supports lower bond prices, rate pressure from sticky inflation, harvest duration risk",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "thesis": "Low-volatility short; tactical hedge against crowding; rotation from defensive to cyclicals should underweight USMV",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 25
+    }
+  ],
+  "cash_pct": 6,
+  "outlook": "Small-cap cyclical momentum sustains into Q3 2026 as Fed pauses rate hikes; energy benefits from persistent geopolitical premium. Financials rotate higher on net interest margin stability. Tech consolidates after run, reducing pressure on rate-sensitive sectors. Crypto remains challenged (avoided). Bond yields stay sticky; TLT short hedges portfolio against growth repricing. Value/cyclical outperformance continues relative to defensive. Position-level stops/TPs manage rotation decay and tail risk. Reassess weekly as macro data (PCE, employment) arrives."
+}

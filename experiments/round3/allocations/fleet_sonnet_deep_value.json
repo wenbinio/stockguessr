@@ -1,0 +1,72 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
+  "novelty": "Round 1 and 2 both bet on statistically cheap cyclical/value large-caps that stayed unloved through a melt-up. Round 3 abandons value entirely: the edge here is vol-regime mean reversion and carry harvesting \u2014 pairing long low-volatility/oversold names against short overextended momentum leaders (semis, mega-cap tech, BTC), while collecting funding-free short exposure and 4% cash APY. This is a relative-value/positioning trade, not a valuation thesis.",
+  "r2_overlap_pct": 21.1,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Low-volatility quality factor lagging the melt-up (+5.8% 12m vs SPY +22.7%); harvests carry and offers ballast if momentum unwinds."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Low-vol carry sleeve, cheap ballast against short momentum book, minimal correlation to the crowded SMH/XLK trade."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Miners down -13.2%/1m and -24.3%/3m despite gold only -6%/-15% \u2014 oversold relative to bullion, mean-reversion bounce candidate.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech showing accelerating relative strength (+14.6% 1m vs flat SPY) \u2014 momentum continuation catalyst distinct from prior cyclical/value themes."
+    },
+    {
+      "symbol": "XLK",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Mega-cap tech showing first cracks (-5.2% 1m after +25.8%/6m) \u2014 short the extension as a mean-reversion hedge against the crowded long-momentum trade.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Semis parabolic at +103.8% 12m with a sharp -8.7% 1m reversal already underway \u2014 vol-regime overextension short.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 10,
+      "leverage": 2,
+      "thesis": "BTC in a confirmed downtrend (-14.7%/3m, -32.9%/6m, -46%/12m); shorting the perp avoids the 10% APR funding drag that hits longs only.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30
+    }
+  ],
+  "cash_pct": 15,
+  "outlook": "Expect continued rotation out of the most extended AI/semis momentum trade and a partial mean-reversion bounce in beaten-down gold miners and defensive low-vol names, while crypto stays in a structural downtrend; biotech's fresh relative strength offers an independent momentum leg uncorrelated to the tech unwind."
+}

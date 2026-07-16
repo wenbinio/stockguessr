@@ -1,0 +1,87 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
+  "novelty": "Contrarian short positioning on extreme SOXL (+506.8% YTD) and TNA (+106.2% YTD) overvaluation paired with long mean-reversion plays in value/dividend/low-vol that have lagged. Differs fundamentally from R1 (pure long dividend aristocrats, no shorts) and R2 (long tactical small-cap/semi overweights) by employing sector-rotation bearish thesis, short discipline, and daily stop/target monitoring rather than buy-and-hold or momentum extension.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16.2,
+      "thesis": "Value ETF lagging in tech-led rally; mean-reversion core holding with highest conviction"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13.4,
+      "thesis": "Financials up only 11.2% YTD; cyclical dividend yield play with near-term upside",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.6,
+      "thesis": "Energy up 34.1% with geopolitical support sustained; diversification hedge with upside",
+      "stop_loss_pct": 12
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.6,
+      "thesis": "Small-cap value subset avoids momentum excess; quality reversion play",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.9,
+      "thesis": "Industrials +21.7% YTD; cyclical with infrastructure tailwind, undervalued vs growth",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "SCHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.6,
+      "thesis": "Dividend growth ETF; yield capture with quality screen, tactical rotation play",
+      "stop_loss_pct": 8
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.6,
+      "thesis": "Low-volatility equity up only 5.8% YTD; defensive recovery play with structural floor"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7.1,
+      "thesis": "3x leveraged semiconductors up extreme +506.8% YTD; reversion bet on bubble correction",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7.1,
+      "thesis": "3x small-cap momentum up +106.2% YTD unsustainably; short consolidation and pullback",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 20
+    }
+  ],
+  "cash_pct": 3.9,
+  "outlook": "Mean reversion over 5-month window (through 2026-12-31) with value/dividend/low-vol outperformance. SOXL already showing -39.2% 1-month weakness validates thesis trajectory. Stop losses provide daily discipline; take-profits on shorts lock gains if thesis hits. Dividend income from long positions + short carry premium from short decay = NAV growth. Minimum 4% cash buffer for margin flexibility. Weekly reassessment with daily stop/target checks.",
+  "registration_note": "over-allocated as submitted (weights 136% + cash 4%); positions scaled x0.706 per the documented repair rule"
+}

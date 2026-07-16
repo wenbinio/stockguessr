@@ -1,0 +1,86 @@
+{
+  "name": "Haiku contrarian turnarounds",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Macro cycle bottoming via defensive rotation with disciplined exits on extended growth valuations and tactical oversold recovery positions",
+  "novelty": "Shifts from R1's static mega-cap value recovery and R2's AI/SaaS disruption focus toward macro cycle bottoming diagnosis across defensive income and crypto. Rotates away from extended growth (SOXL short at 506.8% YTD) into beaten-down defensive sectors (utilities -1.1% in 6m, staples +7.1% YTD) and crypto cycle capitulation (BTC -46%, ETH -44.1%). Uses position-level volatility harvesting and risk discipline rather than holding recovery narratives, creating structurally different return drivers.",
+  "r2_overlap_pct": 19.3,
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Semiconductor complex has run 506.8% YTD, vastly exceeding S&P 500 (+22.7%); represents excess growth multiple expansion divorced from earnings visibility. Short with disciplined stops harvests mean reversion as rate expectations stabilize and mega-cap tech momentum moderates.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Utilities lagging -1.1% in 6m despite broad market strength; dividend yields attractive vs. 4% cash drag; defensive bottoming entry as inflation moderates and rate-cut cycle begins; stable earnings provide downside cushion.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Bitcoin down 46% YTD entering probable macro cycle trough; long-term supply tailwinds from ETF adoption and institutional accretion; technical capitulation and chart support suggest bottoming into year-end; core macro cycle recovery play.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 80
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Russell 2000 3x captures small-cap recovery momentum into positive earnings revision cycle; significantly diversifies from mega-cap tech concentration; upside optionality if recession fears recede and animal spirits return late-year.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Healthcare sector only +1.1% in 6m despite +21.5% YTD; aging demographics and biotech upside narratives ignored by market; defensive rotation candidate with hidden catalysts, earnings resilience, and valuation catch-up potential.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Regional banks up 26.5% YTD but still discounted to book value; net interest margins stabilizing with expected Fed rate cuts supporting margin expansion and accelerating loan growth in resilient consumer environment.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Consumer staples up only 7.1% YTD; elevated dividend yield on valuation compression; defensive income rotation from extended growth; recession-resilient earnings and pricing power into potential slowdown.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Ethereum down 44% YTD recovering from crypto rout; layer-2 scaling and institutional adoption tailwinds; lighter weighting than BTC but tactical year-end recovery exposure into calendar-driven flows.",
+      "stop_loss_pct": 15,
+      "take_profit_pct": 70
+    }
+  ],
+  "cash_pct": 17,
+  "outlook": "Defensive sectors expected to recoup valuation gap against mega-cap growth through 2026 year-end as Fed rate-cut cycle commences and inflation pressures ease. Crypto cycle reaching capitulation with BTC/ETH positioned to recover into institutional calendar year-end flows and summer lows digestion. SOXL short captures semiconductor mean reversion as growth momentum moderates and rate/tech consensus shifts. Small-cap upside via TNA if recession fears recede. Key risks: sharp macro deterioration and risk-off rotation could offset defensive gains; SOXL continuation despite valuation excess; crypto cycle extending lower. Monitor Fed meetings, employment data, and tech earnings revisions for rebalancing signals."
+}

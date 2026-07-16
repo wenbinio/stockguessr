@@ -1,0 +1,61 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
+  "novelty": "Round 1 and Round 2 were both stock-picking growth narratives (software/fintech/biotech/semis names, long-only or with a token short). Round 3's edge is different: sector-relative-value rotation and momentum-exhaustion shorting using liquid ETFs, not single-name growth theses. I'm harvesting the rotation out of 2026's most crowded/extended trades (leveraged semis, gold miners) into laggard cyclical/value sectors (financials, regional banks) and a rates-duration bet, using stops for vol-regime discipline rather than fundamental growth conviction.",
+  "r2_overlap_pct": 0.0,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials breaking out with strongest 1m momentum (+6.0%) in the sector list; benign credit cycle plus rate-cut carry tailwind."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks confirm the financials rotation (+5.5% 1m, +10.2% 3m) as funding costs ease and credit normalizes after two years of stress."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Biotech shows a fresh acceleration catalyst (+14.6% 1m vs +14.6% 6m, i.e. all the 6-month gain came in the last month) signaling renewed risk appetite and M&A/catalyst flow.",
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Long duration as a carry/hedge sleeve: rate-cut path plus laggard performance (-1.9% 3m) offers asymmetric upside if growth data softens."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "3x leveraged semis already round-tripped -39% in a month after a +506% 12m melt-up; positioning is historically stretched and vol-regime favors mean reversion, not fresh growth conviction.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners in a confirmed downtrend (-13.2% 1m, -24.3% 3m, -23.6% 6m) as gold itself rolls over (GLD -15.5% 3m); trend continuation short, not a stock-picking bet.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30
+    }
+  ],
+  "cash_pct": 27,
+  "outlook": "Expect continued rotation away from the extremely crowded/overextended AI-semis and gold-miner trades (SOXL +506% 12m, GDX -13% in the last month alone after a huge run) into laggard financials/banks that are just breaking out on strong 1m/3m momentum (XLF +6% 1m, KRE +5.5% 1m) as credit conditions stay benign and rate-cut expectations support duration (TLT). Biotech (XBI) is showing a fresh momentum catalyst (+14.6% 1m vs flat 6m) worth riding. Net exposure stays long-tilted but the two shorts target names most likely to mean-revert after historic overextension."
+}

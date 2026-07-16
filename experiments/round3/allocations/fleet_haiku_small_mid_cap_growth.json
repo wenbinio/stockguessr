@@ -1,0 +1,68 @@
+{
+  "name": "Haiku small/mid-cap growth",
+  "model": "haiku",
+  "group": "fleet",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
+  "novelty": "This strategy pivots from previous tech-heavy approaches to a cross-sector momentum play anchored in biotech's +82.7% 12-month outperformance and financial sector recovery. Unlike Rounds 1-2 (pure growth/concentrated tech leverage), this combines three distinct edges: (1) healthcare momentum rotation away from tech saturation, (2) small-cap breadth for diversification vs mega-cap risk, (3) semi-cycle mean-reversion on oversold weakness. Crypto shorts fund carry income (10% APR perp funding) while providing systematic hedges.",
+  "r2_overlap_pct": 9.3,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Biotech momentum (+14.6% 1m, +82.7% 12m); healthcare sector rotation away from tech saturation; strong tailwinds in AI-driven drug discovery and emerging therapies",
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Regional bank recovery (+26.5% 12m); financial sector rotation supporting mean-reversion cycle; stable deposit base and net interest margin expansion"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Small-cap Russell 2000 breadth exposure (+36.6% 12m); diversifies from mega-cap tech concentration; mid-cycle strength in economically sensitive names"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "3x leveraged semiconductor mean-reversion; beaten down 1m (-8.7% SMH, -39.2% SOXL) but +103.8% 12m structural support indicates cycle bottom; leverage amplifies rebound",
+      "stop_loss_pct": 10
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Japan equity outperformance (+36% 12m) on structural reforms and yen weakness; international diversification outside US tech cycles"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Consumer staples momentum fade; weak +7.1% 12m vs +22.7% market; defensive rotation losing in growth-positive environment",
+      "take_profit_pct": 5
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 12,
+      "leverage": 3,
+      "thesis": "Crypto bear market continuation (-46% 12m); short perp generates 10% APR funding yield on long exposure; hedges tech concentration while earning carry; liquidation risk managed at 95%",
+      "stop_loss_pct": 20
+    }
+  ],
+  "cash_pct": 17,
+  "outlook": "Market environment supports sector rotation into biotech (+14.6% recent momentum) and banks as mega-cap tech faces margin pressure after 12-month +41.5% XLK run. Small-cap strength (IWM +36.6% 12m) remains intact with economic resilience. Crypto bear market (-46% 12m) likely continues through Q3, supporting short funding yields. Semiconductor cycle positioning (SOXL 3x) captures mean-reversion on excessive 1-month weakness (-39.2% SOXL) despite +103.8% 12m structural support indicating cycle inflection. Daily stop-losses enforce discipline across sector rotation volatility. Positioning for 12-16% NAV growth through 2026-12-31."
+}
