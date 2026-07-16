@@ -27,11 +27,20 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-R2 = ROOT / "experiments" / "round2"
 DOCS = ROOT / "docs"
 
+ROUNDS = {
+    "2": {"dir": "round2", "entry": "2026-07-16", "api": "round2.json",
+          "pages": [("round2.html", "FALLBACK"), ("index.html", "R2FALLBACK")]},
+    "3": {"dir": "round3", "entry": "2026-07-17", "api": "round3.json",
+          "pages": [("index.html", "R3FALLBACK")]},
+}
+_round = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "2"
+CFG = ROUNDS[_round]
+R2 = ROOT / "experiments" / CFG["dir"]
+
 CAPITAL = 1000.0
-ENTRY = "2026-07-16"
+ENTRY = CFG["entry"]
 PERIOD1 = 1704067200  # 2024-01-01, deep enough for backtests
 UA = "Mozilla/5.0"
 COST = {"equity": 0.0010, "crypto": 0.0025, "perp": 0.0025}
@@ -239,16 +248,16 @@ def main() -> int:
     (R2 / "results.json").write_text(json.dumps(out, indent=1))
     (DOCS / "api").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(out, separators=(",", ":"))
-    (DOCS / "api" / "round2.json").write_text(blob)
+    (DOCS / "api" / CFG["api"]).write_text(blob)
     import re
-    for page, marker in ((DOCS / "round2.html", "FALLBACK"),
-                         (DOCS / "index.html", "R2FALLBACK")):
+    for page_name, marker in CFG["pages"]:
+        page = DOCS / page_name
         if page.exists() and f"/*{marker}-START*/" in page.read_text():
             page.write_text(re.sub(
                 rf"(/\*{marker}-START\*/).*?(/\*{marker}-END\*/)",
                 lambda m: m.group(1) + blob + m.group(2),
                 page.read_text(), flags=re.S))
-    print(f"round2: {len(out['agents'])} agents valued, {len(fills)} fills recorded, "
+    print(f"round{_round}: {len(out['agents'])} agents valued, {len(fills)} fills recorded, "
           f"as of {out['as_of']}")
     return 0
 
