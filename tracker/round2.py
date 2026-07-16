@@ -100,8 +100,22 @@ def load_price_matrix(symbols: set[str]) -> pd.DataFrame:
     return px.ffill()
 
 
+def registered_notionals(alloc: dict) -> dict:
+    """Map (sym, side, kind) -> notional weight (weight x leverage), registered terms."""
+    out = {}
+    for p in alloc["positions"]:
+        sym = normalize(p["symbol"])
+        if p["kind"] in ("crypto", "perp") and not sym.endswith("-USD"):
+            sym += "-USD"
+        lev = float(p.get("leverage", 1)) if p["kind"] == "perp" else 1.0
+        key = (sym, p["side"], p["kind"])
+        out[key] = out.get(key, 0.0) + p["weight_pct"] * lev
+    return out
+
+
 def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
-             capital: float = CAPITAL, fills: list | None = None):
+             capital: float = CAPITAL, fills: list | None = None,
+             prev_alloc: dict | None = None):
     """Daily NAV for one allocation, buy-and-hold from entry close. Returns
     (nav_series, position_state) or None if entry prices are missing."""
     dates = px.loc[entry:end].index
@@ -118,7 +132,12 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
         margin = p["weight_pct"] / 100 * capital
         lev = float(p.get("leverage", 1)) if p["kind"] == "perp" else 1.0
         notional = margin * lev
-        entry_cost = notional * fee_rate(p["kind"], sym, float(px.loc[t0, sym]), False)
+        prev_n = 0.0
+        if prev_alloc is not None:
+            key = (sym, p["side"], p["kind"])
+            prev_n = registered_notionals(prev_alloc).get(key, 0.0) / 100 * capital
+        traded = max(notional - prev_n, 0.0)  # only the increment trades
+        entry_cost = traded * fee_rate(p["kind"], sym, float(px.loc[t0, sym]), False)
         if fills is not None:
             fills.append({"ts": t0.strftime("%Y-%m-%d") + "T16:00:00-04:00",
                           "agent": alloc["name"], "action": "OPEN", "symbol": sym,
@@ -132,8 +151,17 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
                           "margin": margin - entry_cost, "lev": lev,
                           "p0": float(px.loc[t0, sym]), "dead": False,
                           "stop": p.get("stop_loss_pct"), "tp": p.get("take_profit_pct")})
+    # exit costs on positions closed or reduced vs the prior registered book
+    exit_costs = 0.0
+    if prev_alloc is not None:
+        new_n = registered_notionals(alloc)
+        for key, prev_w in registered_notionals(prev_alloc).items():
+            reduced_w = max(prev_w - new_n.get(key, 0.0), 0.0)
+            if reduced_w > 0 and key[0] in px.columns and not pd.isna(px.loc[t0, key[0]]):
+                exit_costs += (reduced_w / 100 * capital) * fee_rate(
+                    key[2], key[0], float(px.loc[t0, key[0]]), True)
     # cash tracked as dated events so stop/TP proceeds earn yield from close date
-    cash_events = [(t0, alloc["cash_pct"] / 100 * capital)]
+    cash_events = [(t0, alloc["cash_pct"] / 100 * capital - exit_costs)]
     nav = {}
     for d in dates:
         t = (d - t0).days / 365.0
@@ -143,8 +171,9 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
                 continue
             ret = float(px.loc[d, pos["sym"]]) / pos["p0"] - 1
             if pos["kind"] == "perp":
+                funding = FUNDING_APR * t if pos["side"] > 0 else 0.0  # longs pay; shorts approximated flat
                 v = pos["margin"] * (1 + pos["lev"] * pos["side"] * ret
-                                     - pos["lev"] * FUNDING_APR * t)
+                                     - pos["lev"] * funding)
                 if v <= pos["margin"] * LIQ_THRESHOLD:
                     pos["dead"] = True
                     v = 0.0
@@ -190,8 +219,13 @@ def run_agent(files: list[Path], px: pd.DataFrame, fills: list):
     capital = CAPITAL
     for i, spec in enumerate(specs):
         end = specs[i + 1]["entry"] if i + 1 < len(specs) else None
-        res = simulate(spec, px, spec["entry"], end, capital, fills if i == 0 or True else None)
+        res = simulate(spec, px, spec["entry"], end, capital, fills,
+                       prev_alloc=specs[i - 1] if i > 0 else None)
         if res is None:
+            missing = [normalize(q["symbol"]) for q in spec["positions"]
+                       if normalize(q["symbol"]) not in px.columns]
+            print(f"DATA ERROR {spec['name']}: leg {spec['entry']} unpriceable "
+                  f"(missing: {missing or 'entry date beyond data'})")
             return None, specs[0]
         leg, _ = res
         if not curve.empty:
@@ -225,8 +259,25 @@ def main() -> int:
                   f"{pos['lev']:.0f}x  ${pos.get('value', 0):8.2f}{tag}")
         return 0
 
+    def validate(spec, fname):
+        w = sum(q["weight_pct"] for q in spec["positions"]) + spec["cash_pct"]
+        shorts = sum(q["weight_pct"] for q in spec["positions"] if q["side"] == "short")
+        mx = max(q["weight_pct"] for q in spec["positions"])
+        probs = []
+        if abs(w - 100) > 0.05: probs.append(f"weights+cash={w:.1f}")
+        if shorts > 50: probs.append(f"shorts={shorts:.0f}%")
+        if mx > 40: probs.append(f"max position={mx:.0f}%")
+        if len(spec["positions"]) < 5: probs.append("fewer than 5 positions")
+        for q in spec["positions"]:
+            if q["kind"] == "perp" and not 2 <= float(q.get("leverage", 0)) <= 10:
+                probs.append(f"perp leverage {q.get('leverage')}")
+        if probs:
+            print(f"RULES VIOLATION {fname}: {'; '.join(probs)}")
+        return not probs
+
     alloc_files = {}
     for f in sorted((R2 / "allocations").glob("*.json")):
+        validate(json.loads(f.read_text()), f.name)
         alloc_files.setdefault(f.stem, []).append(f)
     for wk in sorted(R2.glob("weeks/*/")):
         for f in sorted(wk.glob("*.json")):

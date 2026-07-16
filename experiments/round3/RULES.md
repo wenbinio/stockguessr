@@ -62,3 +62,32 @@ An agent acting on date D — at entry, a weekly reassessment, or in any
 backtest — may consult price data through D and nothing later. Live forward
 legs enforce this by physics; backtests and replays enforce it by rule, and
 desk prompts state it explicitly.
+
+## Factorial arms (methodology-review adoption, 2026-07-16)
+
+Beyond the 28 main agents, Round 3 adds 10 factorial accounts to break the
+tier/tooling/backtest confound. These run WITHOUT the novelty rule, on five
+standard fleet mandates (deep value, price momentum, quality compounders,
+dividend growth, small/mid growth):
+
+- 5 x Sonnet WITH flagship treatment (data tools + mandatory backtest)
+- 5 x Opus WITHOUT tools (fleet treatment: knowledge + mechanical context only)
+
+Tagged `group: "factorial"`; scored identically; excluded from the novelty
+divergence panel.
+
+## Context hygiene (binding)
+
+- Tools-disabled agents receive a MECHANICALLY GENERATED context pack
+  (script-emitted return tables, no authored narrative), identical across
+  agents, committed pre-entry (`context_pack.txt`).
+- R3 agents must not be shown Round-2 allocations, leaderboards, other agents'
+  output, or BACKTESTS.md. Tool-enabled agents are instructed to fetch market
+  data only (no repo reads); compliance is transcript-auditable.
+- Point-in-time rule applies: acting on date D means data through D only.
+
+## Fill convention (unified)
+
+Decisions are committed strictly before the fill close; all R3 fills occur at
+the first close after commitment (2026-07-17 for the opening book). The
+Round-1 H2 leg's same-close marking is documented as a known inconsistency.
