@@ -1,0 +1,82 @@
+{
+  "name": "Fable Unconstrained",
+  "strategy": "Dual-momentum: long 6m leaders that are NOT in sharp 1m correction (cyber-tilted), small unlevered BTC mean-reversion, no leverage, fat cash at 4%",
+  "positions": [
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Cyber breakout leader, +82% 6m and still accelerating (+19% 1m)"
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Strongest 1m in universe (+24%) on cyber platform consolidation momentum"
+    },
+    {
+      "symbol": "FTNT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "+116% 6m with intact uptrend, cyber demand supercycle"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "AI-infra leader (+137% 6m) holding up while MU/INTC crack"
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "AI power infrastructure, +73% 6m, consolidating not correcting"
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "AI networking, steady +29% 6m momentum with positive 1m"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "-48% off ATH mean-reversion ticket; spot only, no funding or liquidation risk"
+    }
+  ],
+  "cash_pct": 23,
+  "backtest": {
+    "windows_tested": [
+      "2024H2 incl Aug-24 crash",
+      "2025H1",
+      "2025H2",
+      "2026H1 sanity"
+    ],
+    "strategy_return_pct": {
+      "2024H2": 7.1,
+      "2025H1": 9.7,
+      "2025H2": 22.1,
+      "2026H1": 72.4
+    },
+    "benchmark_return_pct": {
+      "2024H2_SPY": 7.5,
+      "2025H1_SPY": 5.7,
+      "2025H2_SPY": 10.4,
+      "2026H1_SPY": 10.5
+    },
+    "notes": "Rule = rank universe by trailing 6m return, exclude anything down >12% in trailing 1m, hold top 6 + cash. Beat/matched SPY 4/4 windows. REJECTED after testing: SOXL sleeve (-50.7% in 2024H2 stress) and 2x ETH perp short (2025H2 adverse move = 202% of margin = liquidation). Caveats: 42% cyber concentration is the main risk; momentum matched but did not beat SPY in the crash window."
+  },
+  "outlook": "H1's memory/optics leaders are already correcting, so I rotate into the momentum still accelerating - cybersecurity - and hold 23% cash to redeploy on Friday reassessments.",
+  "model": "fable",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Opus Momentum",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "positions": [
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "3x Nasdaq-100; smoothest leveraged momentum vehicle, +42.8% H1 and led both backtest windows."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "3x semis; highest-octane momentum (+250% H1) but sized down for reversal/decay risk shown in stress test."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "1x semis ballast; captures AI-infra trend without leverage decay, steadier drawdowns."
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "AI accelerator momentum leader, +137% H1 with continuing datacenter demand."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Memory leader +187% H1; trimmed because momentum cooled the last month."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Optics/custom-silicon compounder; positive even in the adverse window, portfolio hedge."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "Weakest major crypto (-37% H1); 3x short net +94% on margin in backtest even after funding."
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 3,
+      "thesis": "Persistent downtrend (-39% H1); 3x short cleared funding drag handily in both recent windows."
+    }
+  ],
+  "cash_pct": 15,
+  "backtest": {
+    "windows_tested": [
+      "2025-07-16 to 2025-12-31",
+      "2026-01-01 to 2026-07-15",
+      "2024-07-16 to 2024-12-31 (adverse stress)"
+    ],
+    "strategy_return_pct": {
+      "2025H2": 35.8,
+      "2026H1": 90.9,
+      "2024H2_adverse": -16.9
+    },
+    "benchmark_return_pct": {
+      "2025H2": 9.9,
+      "2026H1": 11.1,
+      "2024H2_adverse": 4.4
+    },
+    "notes": "6mo buy-and-hold sim with real engine costs. Beat SPY by +26pp and +80pp in the two recent windows. Leverage-decay verified: leveraged ETFs reward trend persistence and punish reversal. Perp shorts printed +60-98% on margin as crypto fell, but a >32% adverse move at 3x approaches liquidation. Honest caveat: the -16.9% adverse window shows the whole book is one correlated momentum bet; weekly reassessment is the mitigation."
+  },
+  "outlook": "AI-infra momentum and the crypto downtrend remain the two dominant H2 trends; I lean into both with leverage but keep 15% cash and weekly stops so a semis reversal or crypto short-squeeze can be cut before it compounds.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

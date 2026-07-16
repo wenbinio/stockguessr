@@ -1,0 +1,82 @@
+{
+  "name": "Opus Quality Defensive",
+  "strategy": "Low-beta quality/defensive core (healthcare, quality factor, min-vol, staples) with a small gold diversifier and a disciplined 8% short on semis to express 'AI-infra overextended' without dominating the book.",
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Healthcare: cheap, defensive, and actually leading the recent tape (+8.5% since April) - defense that participates."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Quality factor (high ROE, low leverage) participates in recoveries while screening out junk - fixes Round 1's over-defensiveness."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Min-vol core ballast; cut tariff-crash drawdown to -9% vs SPY -19% historically."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Low-volatility sleeve; best equity crash defender in backtest (-6.6% vs -19%)."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Consumer staples: low-beta cash-flow ballast, held up in every drawdown window tested."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Small non-equity crash hedge - was +1.6% while stocks fell 19% in the tariff crash."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Disciplined short of overextended semis - the AI-overextension view, sized as insurance not a bet."
+    }
+  ],
+  "cash_pct": 12,
+  "backtest": {
+    "windows_tested": [
+      "2025 tariff crash",
+      "2025 recovery",
+      "April 2026 drawdown",
+      "2026 recovery"
+    ],
+    "strategy_return_pct": {
+      "2025_tariff_crash": -5.2,
+      "2025_recovery": 3.1,
+      "april_2026_drawdown": -3.6,
+      "2026_recovery": 0.9
+    },
+    "benchmark_return_pct": {
+      "2025_tariff_crash": -19.0,
+      "2025_recovery": 24.5,
+      "april_2026_drawdown": -9.1,
+      "2026_recovery": 19.4
+    },
+    "notes": "Hedge genuinely defends (captured ~25-40% of downside in both crashes) but the book lags rising markets hard. Inverse leveraged ETFs rejected: SOXS lost 98% in the 2026 recovery; a plain 8% SMH short is the disciplined insurance."
+  },
+  "outlook": "With concentration extreme and semis parabolic, reward-to-risk in the AI trade keeps deteriorating; positioned to protect NAV in an unwind while participating via quality (XLV/QUAL).",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

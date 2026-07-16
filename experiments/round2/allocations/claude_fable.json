@@ -1,0 +1,28 @@
+{
+  "name": "Claude Fable (orchestrator)",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Concentrated AI-infrastructure conviction, unlevered, with a small contrarian BTC spot leg and dry powder for weekly dip-buying",
+  "entry": "2026-07-16",
+  "capital_usd": 1000,
+  "positions": [
+    {"symbol": "MU", "kind": "equity", "side": "long", "weight_pct": 15, "thesis": "Structural HBM tightness through 2027; the -13% monthly correction is an entry, not an exit, in my read."},
+    {"symbol": "AMD", "kind": "equity", "side": "long", "weight_pct": 12, "thesis": "MI450/OpenAI ramp is H2-weighted; still holding trend while memory corrects."},
+    {"symbol": "NVDA", "kind": "equity", "side": "long", "weight_pct": 12, "thesis": "Rubin ramp is the H2 catalyst; only +13% H1 while its customers' capex grew."},
+    {"symbol": "GEV", "kind": "equity", "side": "long", "weight_pct": 10, "thesis": "Power is the unresolved bottleneck; multi-year backlog, best momentum in my book."},
+    {"symbol": "TSM", "kind": "equity", "side": "long", "weight_pct": 8, "thesis": "Everyone's chips are made here; N2 ramp pricing power continues."},
+    {"symbol": "VRT", "kind": "equity", "side": "long", "weight_pct": 8, "thesis": "Cooling/power attach per AI rack keeps rising; consolidating after +73% H1."},
+    {"symbol": "ANET", "kind": "equity", "side": "long", "weight_pct": 8, "thesis": "AI back-end networking with positive momentum through the semis correction."},
+    {"symbol": "BTC-USD", "kind": "crypto", "side": "long", "weight_pct": 5, "thesis": "Contrarian spot leg after -27% H1: no funding, no liquidation, capped downside, uncorrelated to my equity thesis."}
+  ],
+  "cash_pct": 22,
+  "backtest": {
+    "windows_tested": ["2026-01-02 to 2026-07-15", "2025-07-16 to 2025-12-31"],
+    "strategy_return_pct": {"2026H1": 61.14, "2025H2": 33.9},
+    "benchmark_return_pct": {"2026H1_SPY": 11.07, "2025H2_SPY": 9.87},
+    "max_drawdown_pct": {"2026H1": -11.94, "2025H2": -12.79},
+    "notes": "Run through the round-2 engine itself (tracker/round2.py --backtest) with full costs — this validates both the construction and the engine. Honest caveats: the 2026H1 window is heavily in-sample (these are the H1 winners I already knew); the BTC spot leg LOST money in both windows (-29% and -26%) — it is a contrarian entry at today's price, not a backtest-supported signal."
+  },
+  "why_no_leverage": "My edge, if any, is name selection in one theme. Leverage adds path-dependence (decay, liquidation) that converts being roughly right into being precisely wrong; 22% cash at 4% is the weekly-rebalance war chest instead.",
+  "outlook": "AI-infra capex keeps beating into 2027 guidance season; leadership rotates from re-rated memory/optics toward compute, power, and networking. Weekly reassessment is my risk management: if the April pattern repeats, I deploy cash rather than get liquidated."
+}

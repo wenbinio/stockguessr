@@ -1,0 +1,96 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "3x semis kicker sized so a -50% dip = -7.5% NAV; buying into the -29% one-month correction with H2 AI-capex cycle intact"
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Grid/power buildout for datacenters; best 1M momentum (+12%) of the book"
+    },
+    {
+      "symbol": "AMAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Semi-cap equipment, steady leader (+126% YTD); shallow -18% dip drawdown, lower-beta anchor"
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Datacenter power/cooling; stabilized after correcting, core electrification shovel"
+    },
+    {
+      "symbol": "ALAB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Custom-silicon connectivity, highest-beta compounder (+111% YTD); sized small given -47% dip risk"
+    },
+    {
+      "symbol": "NVT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Electrical connectors/power management, resilient, diversifies the power sleeve"
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "AI datacenter networking; positive 1M momentum, lower-beta big-cap ballast"
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Custom ASIC/networking mega-cap; laggard-but-stable ballast"
+    },
+    {
+      "symbol": "SMCI",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Commoditized AI-server assembler lagging the theme, thin margins; small hedge on a relative loser"
+    }
+  ],
+  "cash_pct": 6,
+  "backtest": {
+    "windows_tested": [
+      "YTD 2026",
+      "Q2 2026",
+      "last 3M",
+      "April-dip drawdown"
+    ],
+    "strategy_return_pct": {
+      "YTD_2026": 87.6,
+      "Q2_2026": 75.6,
+      "last_3M": 34.6,
+      "april_dip_max_drawdown": -14.0
+    },
+    "benchmark_return_pct": {
+      "YTD_2026": 11.1,
+      "Q2_2026": 15.5,
+      "last_3M": 9.0,
+      "SPY_april_dip_drawdown": -8.9
+    },
+    "notes": "SOXL decay check: daily compounding HELPED in the H1 uptrend (+294% actual vs +254% naive) but drove -43.5% peak-to-trough in the Feb-Mar dip. Capping SOXL at 15% cut basket drawdown to -14%. HONEST: in-sample basket of known H1 winners; short-term momentum has rolled over; a sideways H2 bleeds SOXL."
+  },
+  "outlook": "AI-infra capex stays the dominant H2 tailwind; leaning into power/electrification that is holding up while memory/optics cool. Expect choppy re-acceleration, not a straight-line repeat.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

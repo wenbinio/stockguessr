@@ -1,0 +1,118 @@
+{
+  "name": "Fable Barbell",
+  "strategy": "Risk-balanced barbell: 46% aggressive AI-infra compounders plus a small 2x contrarian BTC perp, against 38% defensive ballast (quality/staples/gold/utilities plus a 3% SOXL short as convexity hedge) and 18% yielding cash.",
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Aggressive: AI-infra anchor with datacenter capex still accelerating into H2"
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Aggressive: custom-ASIC/networking AI winner with software cash flows cushioning semi beta"
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Aggressive: AI power-demand pick-and-shovel; multi-year backlog, less crowded than chips"
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Aggressive: AI networking share gainer; buying the correction dip in a proven H1 name"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 3,
+      "leverage": 2,
+      "thesis": "Aggressive: small contrarian mean-reversion long after -27% H1; 2x on 3% margin caps loss at 3% of NAV"
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Ballast: cash-rich diversified compounder; best-in-class drawdown defense in both test windows"
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: staples cash-flow stability, low beta to AI-trade unwinds"
+    },
+    {
+      "symbol": "MRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: cheap defensive pharma, uncorrelated to tech capex cycle"
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast: AAA-quality healthcare defensive that held bid through both stress windows"
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: crisis hedge entered 6.5% off highs; rallied through the 2025 tariff crash"
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast: utilities defensiveness with a back-door AI power-demand kicker"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "thesis": "Ballast hedge: short 3x-levered semis after +250% H1 - convex crash protection plus volatility-decay tailwind"
+    }
+  ],
+  "cash_pct": 18,
+  "backtest": {
+    "windows_tested": [
+      "2025H1 (tariff crash)",
+      "2026H1 (April drawdown)",
+      "2025 stress zoom",
+      "2026 stress zoom"
+    ],
+    "strategy_return_pct": {
+      "2025H1": 13.2,
+      "2026H1": 5.4,
+      "2025_tariff_stress": -2.2,
+      "2026_april_stress": 5.6
+    },
+    "benchmark_return_pct": {
+      "2025H1_SPY": 5.7,
+      "2026H1_SPY": 9.3,
+      "2025_tariff_stress_SPY": -9.0,
+      "2026_april_stress_SPY": 11.6
+    },
+    "notes": "Barbell max drawdown -15.8%/-7.6% vs -40%/-15% for the aggressive sleeve alone - ballast cut DD by ~50-60%. The 3% BTC perp backtests negative by construction (the crash IS the entry thesis); the SOXL short cost 3-7pts in the 2026H1 semi bull and only pays in a correction."
+  },
+  "outlook": "AI-infra earnings momentum intact but positioning stretched; return engine stays long NVDA/AVGO/GEV/ANET while ballast, gold, cash, and a convex SOXL short absorb an April-style air pocket.",
+  "model": "fable",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

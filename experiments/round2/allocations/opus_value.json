@@ -1,0 +1,101 @@
+{
+  "name": "Opus Value",
+  "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
+  "positions": [
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed care still depressed; classic value mean-reversion candidate off multi-year lows."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Defensive healthcare basket, cheap vs market, diversifies single-name UNH risk."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "-49% on AI-disruption fear; profitable quality software at trough valuation."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "-49% on AI fear; durable cash flows, oversold, asymmetric rebound setup."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "27% off highs; most resilient crypto, core oversold mean-reversion long."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "36% off highs; higher-beta rebound on any crypto risk-on rotation."
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "39% off highs; highest-beta oversold bounce, sized small for volatility."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Reliable hedge - positive in all three backtest windows; -6.5% H1 adds contrarian tilt."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "long",
+      "leverage": 2,
+      "weight_pct": 4,
+      "thesis": "Modest 2x leveraged expression of highest-conviction oversold asset; funding drag accepted."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "3x semis +250% H1; structural leverage decay plus mean-reversion, sized to survive a melt-up."
+    }
+  ],
+  "cash_pct": 17,
+  "backtest": {
+    "windows_tested": [
+      "2024H2",
+      "2025H1",
+      "2025H2"
+    ],
+    "strategy_return_pct": {
+      "2024H2": 16.9,
+      "2025H1": -6.1,
+      "2025H2": -5.2
+    },
+    "benchmark_return_pct": {
+      "2024H2": 7.5,
+      "2025H1": 5.4,
+      "2025H2": 10.4
+    },
+    "notes": "Strongly regime-dependent: beat SPY only when crypto rallied and semis crashed (2024H2), lagged when momentum persisted. Shorting momentum leaders was catastrophic in tests, so shorts cut to one small survivable SOXL leg."
+  },
+  "outlook": "H2 2026 offers a more favorable contrarian entry than the 2025 test windows - crypto 27-40% off highs, value deeply depressed; main risk is a continued momentum melt-up.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}

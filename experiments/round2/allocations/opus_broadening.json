@@ -1,0 +1,106 @@
+{
+  "name": "Opus Broadening",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "positions": [
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "3x small-caps amplifies the arriving breadth trend (IWM +19.4% H1); capped for decay risk"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Core small-cap breadth, leading QQQ as leadership widens"
+    },
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Equal-weight S&P - purest anti-concentration long"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Biotech breadth momentum, top performer every recent window (+46.8% 2025H2)"
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks, financials accelerating into H2"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy cyclical breadth with strong H1 momentum"
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Industrials - steady cyclical breadth participant"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Financials laggard with catch-up potential"
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Beaten-down uncorrelated diversifier; small speculative tail given weak momentum"
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "thesis": "Modest anti-concentration hedge; kept small because backtest shows shorting megacap is a persistent drag"
+    }
+  ],
+  "cash_pct": 4,
+  "backtest": {
+    "windows_tested": [
+      "2024 full",
+      "2024 H2",
+      "2025 full",
+      "2025 H2",
+      "2026 H1"
+    ],
+    "strategy_return_pct": {
+      "2024": 7.9,
+      "2024H2": 7.1,
+      "2025": 8.7,
+      "2025H2": 14.1,
+      "2026H1": 16.1
+    },
+    "benchmark_return_pct": {
+      "2024_SPY": 24.0,
+      "2024H2_SPY": 7.5,
+      "2025_SPY": 16.6,
+      "2025H2_SPY": 10.4,
+      "2026H1_SPY": 10.5
+    },
+    "notes": "Beats SPY only in breadth-leading regimes (2025H2, 2026H1); lags badly when megacaps reassert (2024). Never posted a losing window. Short overlays underperformed long-only breadth in EVERY window - the 9% QQQ short is thesis expression, not backtest-supported."
+  },
+  "outlook": "Breadth is demonstrably arriving (IWM leading, financials/biotech accelerating); main risk is violent megacap reassertion, partially cushioned by the small QQQ short.",
+  "model": "opus",
+  "group": "flagship",
+  "entry": "2026-07-16",
+  "capital_usd": 1000
+}
