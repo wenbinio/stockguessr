@@ -1,0 +1,121 @@
+{
+  "name": "Sonnet+tools price momentum",
+  "model": "sonnet",
+  "group": "factorial",
+  "treatment": "flagship (tools + mandatory backtest)",
+  "entry": "2026-07-17",
+  "capital_usd": 1000,
+  "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 80,
+      "thesis": "3x semis: strongest thematic momentum vehicle (+786% 12-1)"
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 80,
+      "thesis": "Strongest large-cap single-name momentum (+729% 12-1) on HBM cycle"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 20,
+      "thesis": "Persistent AI-compute momentum leader (+250% 12-1), accelerating"
+    },
+    {
+      "symbol": "NBIS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 25,
+      "thesis": "AI cloud/GPU infrastructure momentum, +347% 12-1"
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 22,
+      "thesis": "Data-center power/cooling theme, +143% 12-1"
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 22,
+      "thesis": "Power generation riding AI electricity demand"
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15,
+      "thesis": "Mega-cap AI momentum with lower-vol ballast (+99% 12-1)"
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 15,
+      "thesis": "Foundry chokepoint, +87% steady momentum"
+    },
+    {
+      "symbol": "ASML",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15,
+      "thesis": "Lithography monopoly on leading-edge capex, +133%"
+    },
+    {
+      "symbol": "GS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15,
+      "thesis": "Financials momentum (+52%), diversifies from tech/semis"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 12,
+      "thesis": "Energy momentum theme, second non-tech sleeve"
+    }
+  ],
+  "cash_pct": 12,
+  "backtest": {
+    "windows_tested": [
+      "2025H1 tariff stress",
+      "2026H1 recent",
+      "2024H2 robustness"
+    ],
+    "strategy_return_pct": {
+      "stress_2025H1": 26.0,
+      "recent_2026H1": 55.17,
+      "extra_2024H2": 68.28
+    },
+    "benchmark_return_pct": {
+      "stress_2025H1_SPY": 5.58,
+      "recent_2026H1_SPY": 9.62,
+      "extra_2024H2_SPY": 6.25
+    },
+    "notes": "Monthly-rebalanced 12-1 top-8 rule, no lookahead, full fees. Beat SPY net in all 3 windows but carried -39% intra-window drawdown in stress. KEY REJECTION: long-short variant (short bottom-3 losers) DESTROYED value (-47% in stress, max DD -59%) via squeeze reversals - dropped shorts entirely, sized cash to 12% instead. Data-driven ranking diverged from priors: NVDA/PLTR/crypto are NOT current momentum leaders; MU/SOXL/NBIS/AI-power dominate."
+  },
+  "outlook": "AI-capex momentum persistent and broadening into financials/energy, but multi-hundred-percent trailing gains mean a sharp unwind is a real near-term risk - hence generous stops and heavy cash."
+}
