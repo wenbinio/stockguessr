@@ -1,0 +1,72 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Emerging market recovery positioning via Chinese tech leaders (TCEHY, BABA) and emerging markets ETF, combined with semiconductor infrastructure plays (ASML, TSM, ARM) poised to benefit from ongoing AI capex buildout. Complemented by developed-market quality companies (SAP, NVO, NFLX) and international diversification through regional ETFs. The portfolio leverages geographic diversification and sector exposure uncorrelated with S&P 500 concentration.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "SAP",
+      "reason": "European enterprise software down -33%, entirely misaligned with EM recovery and semiconductor infrastructure strategy"
+    },
+    {
+      "action": "SELL",
+      "ticker": "NFLX",
+      "reason": "US streaming media down -19%, no connection to emerging markets or semiconductor themes"
+    },
+    {
+      "action": "SELL",
+      "ticker": "NVO",
+      "reason": "Pharma flat at +0%, diversification not aligned with core mandate"
+    },
+    {
+      "action": "SELL",
+      "ticker": "EFA",
+      "reason": "Developed markets focus dilutes EM concentration; IEMG better serves recovery thesis"
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "reason": "Memory infrastructure exceptional H1 momentum (+187%), extends semiconductor equipment ecosystem"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LITE",
+      "reason": "Optics infrastructure strength (+95% H1), supports semiconductor supply chain diversification"
+    },
+    {
+      "action": "BUY",
+      "ticker": "MCHI",
+      "reason": "Concentrated China exposure amplifies EM recovery positioning beyond TCEHY/BABA"
+    },
+    {
+      "action": "BUY",
+      "ticker": "QCOM",
+      "reason": "Semiconductor design leader connects to AI/5G infrastructure trends in emerging markets"
+    }
+  ],
+  "holds": [
+    "ASML",
+    "TSM",
+    "ARM",
+    "TCEHY",
+    "BABA",
+    "IEMG"
+  ],
+  "resulting_portfolio": [
+    "ASML",
+    "TSM",
+    "ARM",
+    "TCEHY",
+    "BABA",
+    "IEMG",
+    "MU",
+    "LITE",
+    "MCHI",
+    "QCOM"
+  ],
+  "outlook": "Chinese tech weakness presents recovery opportunity given exceptional H1 semiconductor infrastructure momentum. Memory and optics supply acceleration should sustain through H2 2026, positioning direct infrastructure plays to outperform while EM China rebounds."
+}

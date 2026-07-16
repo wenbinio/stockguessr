@@ -1,0 +1,54 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Positioning for a 2026 macro backdrop of continued Fed easing, a softer dollar, sticky-but-moderating inflation, and reaccelerating global industrial/capex activity (AI infrastructure buildout, grid/power investment, reshoring). Rotate into rate-sensitive cyclicals (financials, homebuilders/industrials), commodities/gold as a dollar-debasement and geopolitical hedge, international/EM equities benefiting from a weaker USD, and power/infrastructure plays tied to AI-driven electricity demand, while trimming pure mega-cap-tech concentration in favor of broader participation (small/mid caps via financials and industrials).",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "GDX",
+      "reason": "Gold miner-specific execution/cost risk has offset the Fed-easing/weak-dollar tailwind (-13.7% H1); rotate to cleaner bullion exposure."
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "reason": "Physical gold is a purer play on continued Fed easing, softer dollar, and sticky inflation hedging without miner operating risk."
+    },
+    {
+      "action": "SELL",
+      "ticker": "URA",
+      "reason": "Uranium thesis stalled (-11.2% H1) amid policy/permitting overhangs; capital better deployed into the broader industrial capex re-acceleration theme."
+    },
+    {
+      "action": "BUY",
+      "ticker": "SMH",
+      "reason": "Semiconductors are the direct beneficiary of reaccelerating global industrial/AI capex spending, complementing existing industrial and EM cyclical exposure."
+    }
+  ],
+  "holds": [
+    "XLF",
+    "XLI",
+    "VWO",
+    "IWM",
+    "XLE",
+    "VNQ",
+    "GE",
+    "EEM"
+  ],
+  "resulting_portfolio": [
+    "XLF",
+    "XLI",
+    "VWO",
+    "IWM",
+    "XLE",
+    "VNQ",
+    "GE",
+    "EEM",
+    "GLD",
+    "SMH"
+  ],
+  "outlook": "H2 2026 should favor continued cyclical/industrial and EM strength as the Fed keeps easing and the dollar stays soft, while gold and semis add convexity to that macro backdrop; energy, industrials, and financials remain core holds into year-end."
+}

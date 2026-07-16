@@ -1,0 +1,63 @@
+{
+  "name": "Sonnet quality compounders",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Equal-weight basket of high-ROIC, wide-moat compounders with strong balance sheets across tech, healthcare, consumer, and financials, aiming to outperform the S&P 500 over a 6-month horizon (Jan-Jul 2026) through quality resilience and secular growth exposure.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "ACN",
+      "reason": "Severe -46% drawdown reflects structural AI-disruption pressure on consulting moat; capital better deployed elsewhere"
+    },
+    {
+      "action": "SELL",
+      "ticker": "ADP",
+      "reason": "Flat, low-growth compounder with no clear re-acceleration catalyst; trimming for higher-ROIC replacement"
+    },
+    {
+      "action": "SELL",
+      "ticker": "SPGI",
+      "reason": "Ratings/data moat under growing scrutiny and -8% H1 momentum; reallocating to stronger secular grower"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LLY",
+      "reason": "Adds missing healthcare exposure via dominant GLP-1 franchise, high ROIC and wide moat"
+    },
+    {
+      "action": "BUY",
+      "ticker": "NVDA",
+      "reason": "Best-in-class ROIC and moat in AI infrastructure buildout that led H1 2026"
+    },
+    {
+      "action": "BUY",
+      "ticker": "WMT",
+      "reason": "High-quality defensive consumer compounder with scale moat to balance tech-heavy basket"
+    }
+  ],
+  "holds": [
+    "MSFT",
+    "AAPL",
+    "V",
+    "MA",
+    "COST",
+    "LIN",
+    "TJX"
+  ],
+  "resulting_portfolio": [
+    "MSFT",
+    "AAPL",
+    "V",
+    "MA",
+    "COST",
+    "LIN",
+    "TJX",
+    "LLY",
+    "NVDA",
+    "WMT"
+  ],
+  "outlook": "Expect continued AI-capex-driven leadership from NVDA and a broadening into healthcare/consumer quality names as rate and valuation concerns test high-multiple tech in H2; equal-weight compounder basket should hold up better than cap-weighted index in a rotation."
+}

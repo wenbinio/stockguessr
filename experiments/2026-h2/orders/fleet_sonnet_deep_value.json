@@ -1,0 +1,72 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Deep value equal-weight basket of US large/mid-caps trading at low P/E, low P/B, and high FCF yield, screened from pre-2026-cutoff knowledge across financials, energy, autos, healthcare, and industrials \u2014 sectors chronically out of favor but generating strong cash flow. Avoids high-multiple growth/tech to maximize valuation margin of safety versus the cap-weighted S&P 500.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "PARA",
+      "reason": "Delisted/untradeable, mandatory replacement."
+    },
+    {
+      "action": "SELL",
+      "ticker": "KHC",
+      "reason": "Structurally challenged staples portfolio, weak organic growth, cutting from deep-value basket despite low P/E."
+    },
+    {
+      "action": "SELL",
+      "ticker": "GM",
+      "reason": "Cyclical auto value trap risk amid tariff/EV-transition uncertainty; H1 underperformance confirms thesis stalling."
+    },
+    {
+      "action": "SELL",
+      "ticker": "VOD",
+      "reason": "European telecom value trap with weak FCF conversion; rotating into higher-quality domestic value."
+    },
+    {
+      "action": "BUY",
+      "ticker": "CVS",
+      "reason": "Depressed single-digit P/E healthcare franchise (PBM+retail+Aetna) trading well below book, high FCF yield post-guidance-reset."
+    },
+    {
+      "action": "BUY",
+      "ticker": "PYPL",
+      "reason": "Low P/E, aggressive buybacks, strong FCF yield fintech trading at a steep discount to historical multiple."
+    },
+    {
+      "action": "BUY",
+      "ticker": "HPQ",
+      "reason": "Low P/E, low P/B hardware name with steady FCF and shareholder returns, classic deep-value profile."
+    },
+    {
+      "action": "BUY",
+      "ticker": "VLO",
+      "reason": "Refiner with high FCF yield and low P/B, cheap cyclical energy value exposure to diversify basket."
+    }
+  ],
+  "holds": [
+    "C",
+    "F",
+    "KVUE",
+    "VZ",
+    "PFE",
+    "BEN"
+  ],
+  "resulting_portfolio": [
+    "C",
+    "F",
+    "KVUE",
+    "VZ",
+    "PFE",
+    "BEN",
+    "CVS",
+    "PYPL",
+    "HPQ",
+    "VLO"
+  ],
+  "outlook": "Expect deep-value laggards (healthcare, fintech, refining, hardware) to mean-revert as H2 broadens out beyond AI-infrastructure leadership, while trimming staples/auto/European telecom names showing structural rather than cyclical weakness."
+}

@@ -1,0 +1,34 @@
+name: performance-tracker
+
+on:
+  schedule:
+    # Weekdays 22:35 UTC — after the US market close (scheduled runs only
+    # activate once this file is on the repository's default branch)
+    - cron: "35 22 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandas
+      - name: Refresh performance data
+        run: python tracker/track.py
+      - name: Commit if changed
+        run: |
+          git config user.name "stockguessr-tracker"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/api/performance.json docs/index.html
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "tracker: refresh performance data"
+            git push
+          fi

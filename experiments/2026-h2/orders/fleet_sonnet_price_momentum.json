@@ -1,0 +1,81 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Equal-weight basket of the strongest 12-month price momentum names heading into 2026, concentrated in AI infrastructure, semiconductors, and secular growth leaders that led the market through 2025.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "MSTR",
+      "reason": "Crypto-proxy leverage bleeding (-38% H1), off-thesis for AI infra/semis momentum mandate."
+    },
+    {
+      "action": "SELL",
+      "ticker": "IBIT",
+      "reason": "Bitcoin ETF exposure (-27.7%) is not an equity momentum play; cutting non-core position."
+    },
+    {
+      "action": "SELL",
+      "ticker": "TPR",
+      "reason": "Consumer apparel name has weak momentum (+9.3%) and no strategic fit with AI infra/secular growth focus."
+    },
+    {
+      "action": "SELL",
+      "ticker": "APP",
+      "reason": "AdTech momentum broke down (-26.8% H1); reallocating to stronger AI infra leadership."
+    },
+    {
+      "action": "SELL",
+      "ticker": "PLTR",
+      "reason": "Momentum stalled (-20.3% H1) after 2025 run; rotating into names with confirmed H1 2026 leadership."
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "reason": "Strongest H1 2026 momentum in the book's universe (+187%) on HBM/memory demand from AI buildout."
+    },
+    {
+      "action": "BUY",
+      "ticker": "LITE",
+      "reason": "Optics/datacenter interconnect leader with standout H1 momentum (+95%), core AI infra pick."
+    },
+    {
+      "action": "BUY",
+      "ticker": "VRT",
+      "reason": "Vertiv - power/thermal management critical bottleneck for AI datacenters, strong secular momentum."
+    },
+    {
+      "action": "BUY",
+      "ticker": "TSM",
+      "reason": "Foundry leader for all leading-edge AI silicon; adds semis concentration with durable momentum."
+    },
+    {
+      "action": "BUY",
+      "ticker": "CRWV",
+      "reason": "CoreWeave - pure-play AI cloud infrastructure name riding hyperscaler capex momentum."
+    }
+  ],
+  "holds": [
+    "NVDA",
+    "AVGO",
+    "VST",
+    "GEV",
+    "ANET"
+  ],
+  "resulting_portfolio": [
+    "NVDA",
+    "AVGO",
+    "VST",
+    "GEV",
+    "ANET",
+    "MU",
+    "LITE",
+    "VRT",
+    "TSM",
+    "CRWV"
+  ],
+  "outlook": "Expect AI infrastructure capex (compute, memory, power, optics) to keep outrunning the broader market into year-end, with H2 leadership concentrated in the physical bottlenecks of AI buildout - memory, networking/optics, and power delivery - while crypto-proxy and off-thesis names continue to lag."
+}

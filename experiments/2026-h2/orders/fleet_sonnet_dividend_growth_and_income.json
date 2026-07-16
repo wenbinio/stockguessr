@@ -1,0 +1,63 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Equal-weight basket of high-quality dividend growers and income compounders spanning defensive and cyclical sectors, emphasizing durable cash flows, long dividend growth streaks, and reasonable valuations to outperform the S&P 500 over a 6-month window while providing downside ballast via income and quality.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "TXN",
+      "reason": "Lock in a +72% gain; position has grown top-heavy and valuation is stretched after the semis rally, trimming single-name concentration risk."
+    },
+    {
+      "action": "SELL",
+      "ticker": "LOW",
+      "reason": "Home-improvement demand remains weak with housing turnover depressed; cutting the laggard cyclical for a steadier dividend grower."
+    },
+    {
+      "action": "SELL",
+      "ticker": "MRK",
+      "reason": "Keytruda patent-cliff overhang (2028) increasingly weighs on the growth outlook; rotating into a cleaner dividend-growth story."
+    },
+    {
+      "action": "BUY",
+      "ticker": "LIN",
+      "reason": "Industrial gases leader with pricing power, recurring on-site contracts, and 30+ years of dividend growth \u2014 durable defensive-industrial cash flow."
+    },
+    {
+      "action": "BUY",
+      "ticker": "MCD",
+      "reason": "Dividend aristocrat with globally diversified, franchise-royalty cash flows that hold up across cycles \u2014 quality income compounder."
+    },
+    {
+      "action": "BUY",
+      "ticker": "NEE",
+      "reason": "Utility with above-peer dividend growth (~10%/yr target) and renewables/grid capex tailwind from AI-driven power demand \u2014 adds defensive ballast."
+    }
+  ],
+  "holds": [
+    "JNJ",
+    "PG",
+    "KO",
+    "ABBV",
+    "HD",
+    "CVX",
+    "PEP"
+  ],
+  "resulting_portfolio": [
+    "JNJ",
+    "PG",
+    "KO",
+    "ABBV",
+    "HD",
+    "CVX",
+    "PEP",
+    "LIN",
+    "MCD",
+    "NEE"
+  ],
+  "outlook": "Expect H2 to favor quality compounders with pricing power as rate-cut expectations and AI-driven power/industrial capex broaden leadership beyond H1's narrow semis/optics rally; this basket trims stretched/impaired names for steadier dividend growers in industrials, staples, and utilities."
+}

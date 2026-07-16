@@ -1,0 +1,63 @@
+{
+  "name": "Haiku macro/sector rotation",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Position for the 2026 macro backdrop centered on the AI and semiconductor super-cycle. Overweight semiconductor infrastructure (NVDA, TSM, AMD, ASML) at the core of AI capex, combined with AI-beneficiary mega-cap software and cloud (MSFT, GOOG, AAPL) plus growth (TSLA), with defensive diversification (UNH, COST) for risk management. Equal-weight across 10 positions to capture macro rotation into AI-driven capex cycle.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "MSFT",
+      "reason": "Down 16% in H1, underperforming S&P 500 despite AI narrative; cloud software is secondary to semiconductor hardware in the core super-cycle."
+    },
+    {
+      "action": "SELL",
+      "ticker": "TSLA",
+      "reason": "Negative H1 return (-10%); not aligned with AI infrastructure semiconductor thesis."
+    },
+    {
+      "action": "SELL",
+      "ticker": "COST",
+      "reason": "Weakest performer in current book at +7.6%; defensive lagged H1 and not core to AI/semiconductor infrastructure."
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "reason": "Memory chip leader with +187% in H1; extraordinary demand validates AI infrastructure buildout and memory super-cycle continuation."
+    },
+    {
+      "action": "BUY",
+      "ticker": "LITE",
+      "reason": "Optical/photonics up +95% in H1; critical enabler for AI data center connectivity and infrastructure deployment."
+    },
+    {
+      "action": "BUY",
+      "ticker": "LRCX",
+      "reason": "Semiconductor equipment manufacturer; complements ASML positioning to capture chip manufacturing equipment demand from H2 super-cycle."
+    }
+  ],
+  "holds": [
+    "NVDA",
+    "TSM",
+    "AMD",
+    "ASML",
+    "GOOG",
+    "AAPL",
+    "UNH"
+  ],
+  "resulting_portfolio": [
+    "NVDA",
+    "TSM",
+    "AMD",
+    "ASML",
+    "GOOG",
+    "AAPL",
+    "UNH",
+    "MU",
+    "LITE",
+    "LRCX"
+  ],
+  "outlook": "The AI and semiconductor super-cycle should accelerate in H2 2026; H1 data confirms memory and optical interconnect are the strongest secular tailwinds. Direct chip makers and equipment suppliers are positioned to capture outsized value."
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Equal-weight portfolio of dividend aristocrats and dividend growth stocks spanning sectors. Emphasizes companies with 25+ year dividend increase streaks, strong free cash flow, and proven ability to grow dividends faster than inflation. Includes pure dividend-growth ETF exposure for systematic diversification.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "MSFT",
+      "reason": "Tech sector laggard (down 16%); vulnerable to continued rotation despite quality dividend history"
+    },
+    {
+      "action": "SELL",
+      "ticker": "MCD",
+      "reason": "Consumer discretionary weakness (down 11.5%); lacks classical dividend aristocrat profile"
+    },
+    {
+      "action": "SELL",
+      "ticker": "AXP",
+      "reason": "Financial services underperformance (down 3.3%); lower fit vs. utilities and staples in defensive rotation"
+    },
+    {
+      "action": "BUY",
+      "ticker": "VZ",
+      "reason": "Telecom dividend grower (20+ year streak); defensive consolidation play with high yield for H2 headwinds"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LMT",
+      "reason": "Dividend aristocrat (60+ years) in defense/industrial; geopolitical tailwinds and steady government demand"
+    },
+    {
+      "action": "BUY",
+      "ticker": "CLX",
+      "reason": "Consumer staples dividend aristocrat (60+ years); recession-resistant defensive profile for market consolidation"
+    }
+  ],
+  "holds": [
+    "JNJ",
+    "PG",
+    "PEP",
+    "KO",
+    "ABBV",
+    "NEE",
+    "SCHD"
+  ],
+  "resulting_portfolio": [
+    "JNJ",
+    "PG",
+    "PEP",
+    "KO",
+    "ABBV",
+    "NEE",
+    "SCHD",
+    "VZ",
+    "LMT",
+    "CLX"
+  ],
+  "outlook": "Dividend growth stocks positioned to outperform amid market consolidation and defensive rotation after tech-led H1 rally. Real yield stabilization supports 20+ year dividend growers through H2 2026."
+}

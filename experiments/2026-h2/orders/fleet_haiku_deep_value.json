@@ -1,0 +1,54 @@
+{
+  "name": "Haiku deep value",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Deep value focus on companies trading well below intrinsic value on P/E, price-to-book, and FCF metrics. Targets operationally sound businesses with strong dividends and cash generation positioned for valuation mean reversion and multiple expansion in H1 2026.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "MMM",
+      "reason": "Structural underperformance (+0.2% vs market +11.1%); 3M faces regulatory headwinds and breakup risk; no FCF catalyst visible"
+    },
+    {
+      "action": "SELL",
+      "ticker": "WFC",
+      "reason": "Worst performer in portfolio (-7.1%); underperforms peer JPM despite strong financial sector; persistent risk management concerns"
+    },
+    {
+      "action": "BUY",
+      "ticker": "GIS",
+      "reason": "Defensive consumer staple with stable FCF; deep value on P/E; portfolio ballast as AI rotation risk rises in 2H26"
+    },
+    {
+      "action": "BUY",
+      "ticker": "T",
+      "reason": "Telecom deep value overlooked in AI-driven market; FCF-positive, 6%+ yield; severe market underweighting creates valuation opportunity"
+    }
+  ],
+  "holds": [
+    "CVX",
+    "CSCO",
+    "F",
+    "JPM",
+    "VLO",
+    "BRK-B",
+    "MET",
+    "ALL"
+  ],
+  "resulting_portfolio": [
+    "CVX",
+    "CSCO",
+    "F",
+    "JPM",
+    "VLO",
+    "BRK-B",
+    "MET",
+    "ALL",
+    "GIS",
+    "T"
+  ],
+  "outlook": "Energy (CVX/VLO) and financials (JPM/MET) remain core to strategy heading into H2 as geopolitical supply constraints and rate volatility provide tailwinds. Rotation into defensive value (GIS/T) hedges AI hype exhaustion risk while maintaining deep-value discipline on P/E and FCF metrics."
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StockGuessr — Live Performance Tracker</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  .viz-root {
+    color-scheme: light;
+    --surface-1: #fcfcfb; --page: #f9f9f7;
+    --ink-1: #0b0b0b; --ink-2: #52514e; --ink-muted: #898781;
+    --grid: #e1e0d9; --baseline: #c3c2b7; --border: rgba(11,11,11,0.10);
+    --s1: #2a78d6; --s2: #008300; --s3: #e87ba4; --s4: #eda100;
+    --s5: #1baf7a; --s6: #eb6834; --s7: #4a3aa7; --s8: #e34948;
+    --up: #006300; --down: #d03b3b; --bench: #52514e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --page: #0d0d0d;
+      --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-muted: #898781;
+      --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
+      --s1: #3987e5; --s2: #008300; --s3: #d55181; --s4: #c98500;
+      --s5: #199e70; --s6: #d95926; --s7: #9085e9; --s8: #e66767;
+      --up: #0ca30c; --down: #e66767; --bench: #c3c2b7;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page: #0d0d0d;
+    --ink-1: #ffffff; --ink-2: #c3c2b7; --ink-muted: #898781;
+    --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
+    --s1: #3987e5; --s2: #008300; --s3: #d55181; --s4: #c98500;
+    --s5: #199e70; --s6: #d95926; --s7: #9085e9; --s8: #e66767;
+    --up: #0ca30c; --down: #e66767; --bench: #c3c2b7;
+  }
+  .viz-root { background: var(--page); color: var(--ink-1);
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 24px; min-height: 100vh; box-sizing: border-box; }
+  .viz-root * { box-sizing: border-box; }
+  .wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 18px; }
+  h1 { font-size: 21px; margin: 0; }
+  .sub { color: var(--ink-2); margin: 4px 0 0; font-size: 13.5px; }
+  .card { background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px 20px; }
+  .card h2 { font-size: 15px; margin: 0 0 2px; }
+  .card .note { color: var(--ink-muted); font-size: 12.5px; margin: 0 0 12px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; }
+  .tile .k { color: var(--ink-muted); font-size: 12px; }
+  .tile .v { font-size: 24px; font-weight: 700; margin-top: 2px; }
+  .tile .d { color: var(--ink-2); font-size: 12px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 8px 0 2px;
+    font-size: 12.5px; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+  .sw.dash { background: repeating-linear-gradient(90deg, var(--bench) 0 4px, transparent 4px 7px); }
+  .chartbox { position: relative; overflow-x: auto; }
+  svg text { font: 11.5px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .tick { fill: var(--ink-muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px;
+    color: var(--ink-1); font-family: inherit; }
+  th { text-align: left; color: var(--ink-muted); font-weight: 600;
+    border-bottom: 1px solid var(--baseline); padding: 5px 8px; white-space: nowrap; }
+  th.n, td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  td { padding: 5px 8px; border-bottom: 1px solid var(--grid); }
+  .chip { width: 10px; height: 10px; border-radius: 3px; display: inline-block;
+    margin-right: 7px; vertical-align: -1px; }
+  .pos { color: var(--up); } .neg { color: var(--down); }
+  .foot { color: var(--ink-muted); font-size: 12px; }
+  .stale { display: none; background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 12.5px; color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="viz-root"><div class="wrap">
+  <header>
+    <h1>StockGuessr — live model-vs-market tracker</h1>
+    <p class="sub">28 Claude-picked portfolios vs the S&amp;P 500. H1 leg entered 2026-01-02 (knowledge-cutoff
+    picks); H2 forward leg entered at the 2026-07-15 close via pre-registered orders — leak-proof by
+    construction. Data refreshes each market close via GitHub Actions. <span id="upd"></span></p>
+  </header>
+  <div class="stale" id="stale">Live fetch unavailable (viewing offline copy) — showing the snapshot bundled
+  at last update.</div>
+  <div class="tiles" id="tiles"></div>
+  <section class="card">
+    <h2>H2 forward race — indexed to 100 at the 2026-07-15 close</h2>
+    <p class="note">Flagship books after their H2 orders, vs dashed SPY · the leak-proof leg</p>
+    <div class="legend" id="legend"></div>
+    <div class="chartbox" id="linebox"></div>
+  </section>
+  <section class="card">
+    <h2>All 28 agents</h2>
+    <p class="note">H1 = cutoff-knowledge picks (2026-01-02 &rarr; latest). H2 = post-orders book
+    (2026-07-15 &rarr; latest). &Delta;orders = H2 return minus what the untouched H1 book would have done —
+    did the rebalancing add value?</p>
+    <div style="overflow-x:auto"><table id="tbl">
+      <thead><tr><th>#</th><th>Agent</th><th>Model</th><th class="n">H1</th><th class="n">H2</th>
+      <th class="n">&Delta;orders</th></tr></thead><tbody></tbody>
+    </table></div>
+  </section>
+  <p class="foot">Gross returns, dividends reinvested (adjusted closes), equal weight, no rebalance within a
+  leg. JSON API: <a href="api/performance.json" style="color:inherit">api/performance.json</a>. Source:
+  <code>tracker/track.py</code> in the repo. Research/educational demo — not investment advice.</p>
+</div></div>
+<script>
+const FALLBACK = /*FALLBACK-START*/{"updated_utc":"2026-07-16 03:48 UTC","as_of_close":"2026-07-15","h1_entry":"2026-01-02","h2_entry":"2026-07-15","spy":{"h1_to_date_pct":11.07,"h2_to_date_pct":0.0},"agents":[{"name":"Claude Fable (orchestrator)","model":"fable","group":"flagship","strategy":"Concentrated AI-infrastructure conviction basket","h1_return_pct":45.19,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Fable Barbell","model":"fable","group":"flagship","strategy":"risk-balanced barbell (5 aggressive + 5 ballast)","h1_return_pct":32.82,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Fable Unconstrained","model":"fable","group":"flagship","strategy":"unconstrained best ideas","h1_return_pct":47.94,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku concentrated AI/technology","model":"haiku","group":"fleet","strategy":"Concentrated exposure to AI infrastructure (chips and cloud), enterprise AI platform leaders, and pure-play AI/analytics companies positioned to benefit from accelerating AI adoption across enterprise and consumer segments through 2026.","h1_return_pct":37.58,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku contrarian turnarounds","model":"haiku","group":"fleet","strategy":"Value recovery in beaten-down mega-caps across AI semiconductors, streaming profitability inflection, fintech repositioning, and automotive electrification. Target operational catalysts and mean-reversion driven by near-term product launches, cost discipline initiatives, and secular growth thesis maturation through H1 2026.","h1_return_pct":10.35,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku deep value","model":"haiku","group":"fleet","strategy":"Deep value focus on companies trading well below intrinsic value on P/E, price-to-book, and FCF metrics. Targets operationally sound businesses with strong dividends and cash generation positioned for valuation mean reversion and multiple expansion in H1 2026.","h1_return_pct":18.95,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku dividend growth and income","model":"haiku","group":"fleet","strategy":"Equal-weight portfolio of dividend aristocrats and dividend growth stocks spanning sectors. Emphasizes companies with 25+ year dividend increase streaks, strong free cash flow, and proven ability to grow dividends faster than inflation. Includes pure dividend-growth ETF exposure for systematic diversification.","h1_return_pct":5.27,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku global diversification via US-listed ADRs and ETFs","model":"haiku","group":"fleet","strategy":"Emerging market recovery positioning via Chinese tech leaders (TCEHY, BABA) and emerging markets ETF, combined with semiconductor infrastructure plays (ASML, TSM, ARM) poised to benefit from ongoing AI capex buildout. Complemented by developed-market quality companies (SAP, NVO, NFLX) and international diversification through regional ETFs. The portfolio leverages geographic diversification and sector exposure uncorrelated with S&P 500 concentration.","h1_return_pct":15.7,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku growth at a reasonable price","model":"haiku","group":"fleet","strategy":"Focus on high-quality companies with strong earnings growth and competitive moats, primarily in AI infrastructure, cloud platforms, semiconductors, and enterprise software. Equal-weight portfolio emphasizing companies benefiting from AI adoption, cloud infrastructure spending, and digital transformation over 2026.","h1_return_pct":5.03,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku macro/sector rotation","model":"haiku","group":"fleet","strategy":"Position for the 2026 macro backdrop centered on the AI and semiconductor super-cycle. Overweight semiconductor infrastructure (NVDA, TSM, AMD, ASML) at the core of AI capex, combined with AI-beneficiary mega-cap software and cloud (MSFT, GOOG, AAPL) plus growth (TSLA), with defensive diversification (UNH, COST) for risk management. Equal-weight across 10 positions to capture macro rotation into AI-driven capex cycle.","h1_return_pct":28.43,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku price momentum","model":"haiku","group":"fleet","strategy":"Capture the strongest 12-month price momentum in US equities, concentrating in AI infrastructure, semiconductors, and cloud computing leaders that have driven market outperformance through 2024-2025.","h1_return_pct":18.4,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku quality compounders","model":"haiku","group":"fleet","strategy":"Concentrated portfolio of highest-quality US businesses with strong competitive moats, high ROIC, and fortress balance sheets. Heavy positioning in AI-driven software and semiconductors, paired with ecosystem platforms and premium financial services. Emphasis on companies that compound earnings at high rates through pricing power and capital efficiency.","h1_return_pct":7.0,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Haiku small/mid-cap growth","model":"haiku","group":"fleet","strategy":"Growth-oriented portfolio targeting fast-growing cloud, AI, and fintech companies in the small-to-mid-cap range. Focus on businesses benefiting from secular trends: cloud migration, AI/ML adoption, cybersecurity spending, and digital transformation. Equal-weighted allocation emphasizes individual growth potential while maintaining sector diversification.","h1_return_pct":4.73,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Opus Broadening","model":"opus","group":"flagship","strategy":"anti-concentration / breadth catch-up","h1_return_pct":11.31,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Opus Momentum","model":"opus","group":"flagship","strategy":"12-1 cross-sectional momentum","h1_return_pct":45.18,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Opus Picks-and-Shovels","model":"opus","group":"flagship","strategy":"AI infrastructure suppliers ex-Mag7","h1_return_pct":57.45,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Opus Quality Defensive","model":"opus","group":"flagship","strategy":"quality / low-volatility defensive","h1_return_pct":5.22,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Opus Value","model":"opus","group":"flagship","strategy":"value / contrarian mean-reversion","h1_return_pct":7.13,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet concentrated AI/technology","model":"sonnet","group":"fleet","strategy":"Concentrated, equal-weight basket of leading AI infrastructure and platform companies expected to drive and capture the ongoing AI capex/adoption cycle through 1H26: semiconductor/compute leaders, hyperscaler cloud/AI platforms, and enterprise software beneficiaries.","h1_return_pct":16.05,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet contrarian turnarounds","model":"sonnet","group":"fleet","strategy":"Equal-weight basket of beaten-down names with identifiable 2026 catalysts: management/strategic resets, restructuring, product cycle reboots, or sector mean-reversion after heavy 2024-2025 selloffs.","h1_return_pct":16.15,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet deep value","model":"sonnet","group":"fleet","strategy":"Deep value equal-weight basket of US large/mid-caps trading at low P/E, low P/B, and high FCF yield, screened from pre-2026-cutoff knowledge across financials, energy, autos, healthcare, and industrials \u2014 sectors chronically out of favor but generating strong cash flow. Avoids high-multiple growth/tech to maximize valuation margin of safety versus the cap-weighted S&P 500.","h1_return_pct":12.36,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet dividend growth and income","model":"sonnet","group":"fleet","strategy":"Equal-weight basket of high-quality dividend growers and income compounders spanning defensive and cyclical sectors, emphasizing durable cash flows, long dividend growth streaks, and reasonable valuations to outperform the S&P 500 over a 6-month window while providing downside ballast via income and quality.","h1_return_pct":14.73,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet global diversification via US-listed ADRs and ETFs","model":"sonnet","group":"fleet","strategy":"Equal-weight global diversification basket combining broad international/EM ETFs with high-quality individual ADRs across regions and sectors (Europe luxury/industrials, Asia tech/semis, LatAm financials) to capture non-US growth and reduce US concentration risk while aiming to outperform the S&P 500 over a 6-month window.","h1_return_pct":3.65,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet growth at a reasonable price","model":"sonnet","group":"fleet","strategy":"GARP: quality growth companies with durable competitive advantages, trading at reasonable multiples relative to their growth rates (as of Jan 2026 knowledge). Mix of large-cap tech compounders, healthcare/industrial growers, and financials benefiting from secular trends, avoiding the most extreme high-multiple hypergrowth names while still capturing above-market earnings growth.","h1_return_pct":11.84,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet macro/sector rotation","model":"sonnet","group":"fleet","strategy":"Positioning for a 2026 macro backdrop of continued Fed easing, a softer dollar, sticky-but-moderating inflation, and reaccelerating global industrial/capex activity (AI infrastructure buildout, grid/power investment, reshoring). Rotate into rate-sensitive cyclicals (financials, homebuilders/industrials), commodities/gold as a dollar-debasement and geopolitical hedge, international/EM equities benefiting from a weaker USD, and power/infrastructure plays tied to AI-driven electricity demand, while trimming pure mega-cap-tech concentration in favor of broader participation (small/mid caps via financials and industrials).","h1_return_pct":8.94,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet price momentum","model":"sonnet","group":"fleet","strategy":"Equal-weight basket of the strongest 12-month price momentum names heading into 2026, concentrated in AI infrastructure, semiconductors, and secular growth leaders that led the market through 2025.","h1_return_pct":0.45,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet quality compounders","model":"sonnet","group":"fleet","strategy":"Equal-weight basket of high-ROIC, wide-moat compounders with strong balance sheets across tech, healthcare, consumer, and financials, aiming to outperform the S&P 500 over a 6-month horizon (Jan-Jul 2026) through quality resilience and secular growth exposure.","h1_return_pct":-2.46,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0},{"name":"Sonnet small/mid-cap growth","model":"sonnet","group":"fleet","strategy":"Equal-weight basket of high-growth small/mid-cap companies across software, fintech, biotech, industrials and consumer, selected for durable secular tailwinds (AI adoption, automation, digital payments, healthcare innovation) and reasonable momentum heading into 2026, aiming to outpace the large-cap-dominated S&P 500 over a 6-month horizon.","h1_return_pct":-20.27,"h2_return_pct":0.0,"h2_hold_counterfactual_pct":0.0}],"h2_series":{"S&P 500 (SPY)":{"2026-07-15":100.0},"Claude Fable (orchestrator)":{"2026-07-15":100.0},"Fable Barbell":{"2026-07-15":100.0},"Fable Unconstrained":{"2026-07-15":100.0},"Opus Broadening":{"2026-07-15":100.0},"Opus Momentum":{"2026-07-15":100.0},"Opus Picks-and-Shovels":{"2026-07-15":100.0},"Opus Quality Defensive":{"2026-07-15":100.0},"Opus Value":{"2026-07-15":100.0}}}/*FALLBACK-END*/;
+const CSS = n => getComputedStyle(document.querySelector('.viz-root')).getPropertyValue(n).trim();
+const TIER = { fable: 1, opus: 2, sonnet: 3, haiku: 4 };
+const FLAG_SLOTS = ["Claude Fable (orchestrator)","Opus Momentum","Opus Value","Opus Quality Defensive",
+  "Opus Picks-and-Shovels","Opus Broadening","Fable Unconstrained","Fable Barbell"];
+const fmt = v => v == null ? '—' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+const NS = 'http://www.w3.org/2000/svg';
+const el = (t, a) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
+const colorOf = n => n === 'S&P 500 (SPY)' ? CSS('--bench') : CSS('--s' + (FLAG_SLOTS.indexOf(n) + 1));
+
+function render(D) {
+  document.getElementById('upd').textContent = `Last update: ${D.updated_utc}, prices through the ${D.as_of_close} close.`;
+  const agents = D.agents.slice().sort((a, b) => (b.h2_return_pct ?? -1e9) - (a.h2_return_pct ?? -1e9));
+  const best = agents[0];
+  const mine = D.agents.find(a => a.name.startsWith('Claude Fable'));
+  const tiles = [
+    ['S&P 500 — H2 leg', fmt(D.spy.h2_to_date_pct), `H1: ${fmt(D.spy.h1_to_date_pct)}`],
+    ['Best agent — H2', fmt(best.h2_return_pct), best.name],
+    ['Claude Fable — H2', fmt(mine?.h2_return_pct), `H1: ${fmt(mine?.h1_return_pct)}`],
+    ['Agents beating SPY (H2)', `${D.agents.filter(a => a.h2_return_pct != null && a.h2_return_pct > D.spy.h2_to_date_pct).length} / ${D.agents.length}`, 'forward leg only'],
+  ];
+  document.getElementById('tiles').innerHTML = tiles.map(([k, v, d]) =>
+    `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+
+  // line chart
+  const names = Object.keys(D.h2_series);
+  const dates = Object.keys(D.h2_series['S&P 500 (SPY)']);
+  const box = document.getElementById('linebox');
+  if (dates.length >= 2) {
+    const W = 920, H = 340, padL = 46, padR = 180, padT = 12, padB = 26;
+    let lo = Infinity, hi = -Infinity;
+    names.forEach(n => Object.values(D.h2_series[n]).forEach(v => { lo = Math.min(lo, v); hi = Math.max(hi, v); }));
+    lo = Math.floor((lo - 2) / 5) * 5; hi = Math.ceil((hi + 2) / 5) * 5;
+    const x = i => padL + i / (dates.length - 1) * (W - padL - padR);
+    const y = v => padT + (hi - v) / (hi - lo) * (H - padT - padB);
+    const svg = el('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` });
+    const step = (hi - lo) > 60 ? 20 : 10;
+    for (let g = lo; g <= hi; g += step) {
+      svg.appendChild(el('line', { x1: padL, x2: W - padR, y1: y(g), y2: y(g),
+        stroke: g === 100 ? CSS('--baseline') : CSS('--grid'), 'stroke-width': 1 }));
+      const t = el('text', { x: padL - 8, y: y(g) + 4, 'text-anchor': 'end', class: 'tick' });
+      t.textContent = g; svg.appendChild(t);
+    }
+    const months = {};
+    dates.forEach((d, i) => { const m = d.slice(0, 7); if (!(m in months)) months[m] = i; });
+    Object.entries(months).forEach(([m, i]) => {
+      const t = el('text', { x: x(i), y: H - 8, class: 'tick' });
+      t.textContent = new Date(m + '-15').toLocaleString('en', { month: 'short' });
+      svg.appendChild(t);
+    });
+    const last = dates[dates.length - 1];
+    const ordered = names.slice().sort((a, b) => D.h2_series[b][last] - D.h2_series[a][last]);
+    const labels = new Set(ordered.filter(n => n !== 'S&P 500 (SPY)').slice(0, 3).concat(['S&P 500 (SPY)']));
+    const usedY = [];
+    ordered.forEach(n => {
+      const vs = dates.map(d => D.h2_series[n][d]);
+      const p = el('path', { d: vs.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1)).join(''),
+        fill: 'none', stroke: colorOf(n), 'stroke-width': 2, 'stroke-linejoin': 'round' });
+      if (n === 'S&P 500 (SPY)') p.setAttribute('stroke-dasharray', '5 4');
+      svg.appendChild(p);
+      if (labels.has(n)) {
+        let ly = y(vs[vs.length - 1]) + 4;
+        while (usedY.some(v => Math.abs(v - ly) < 14)) ly += 14;
+        usedY.push(ly);
+        const t = el('text', { x: W - padR + 8, y: ly, fill: CSS('--ink-2'), 'font-weight': 600 });
+        t.textContent = n.replace(' (orchestrator)', '').replace(' (SPY)', '');
+        svg.appendChild(t);
+      }
+    });
+    box.appendChild(svg);
+    const leg = document.getElementById('legend');
+    ordered.forEach(n => {
+      const s = document.createElement('span');
+      const isB = n === 'S&P 500 (SPY)';
+      s.innerHTML = `<span class="sw${isB ? ' dash' : ''}" style="${isB ? '' : 'background:' + colorOf(n)}"></span>${n}`;
+      leg.appendChild(s);
+    });
+  } else {
+    box.innerHTML = '<p class="note">The H2 window just opened — the race chart appears after a few trading days.</p>';
+  }
+
+  // table
+  const tb = document.querySelector('#tbl tbody');
+  const spyRow = `<tr style="font-style:italic"><td>—</td>
+    <td><span class="chip" style="background:var(--bench)"></span>S&amp;P 500 (SPY)</td><td>—</td>
+    <td class="n">${fmt(D.spy.h1_to_date_pct)}</td><td class="n">${fmt(D.spy.h2_to_date_pct)}</td><td class="n">—</td></tr>`;
+  tb.innerHTML = agents.map((a, i) => {
+    const delta = (a.h2_return_pct != null && a.h2_hold_counterfactual_pct != null)
+      ? a.h2_return_pct - a.h2_hold_counterfactual_pct : null;
+    const cls = v => v == null ? '' : (v >= 0 ? 'pos' : 'neg');
+    return `<tr><td>${i + 1}</td>
+      <td><span class="chip" style="background:var(--s${TIER[a.model]})"></span>${a.name}</td>
+      <td>${a.model}</td>
+      <td class="n"><span class="${cls(a.h1_return_pct)}">${fmt(a.h1_return_pct)}</span></td>
+      <td class="n"><span class="${cls(a.h2_return_pct)}">${fmt(a.h2_return_pct)}</span></td>
+      <td class="n"><span class="${cls(delta)}">${fmt(delta)}</span></td></tr>`;
+  }).join('') + spyRow;
+}
+
+fetch('api/performance.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(() => {
+    if (FALLBACK) { document.getElementById('stale').style.display = 'block'; render(FALLBACK); }
+    else document.getElementById('tiles').innerHTML = '<div class="tile"><div class="k">No data yet</div><div class="v">—</div><div class="d">run tracker/track.py</div></div>';
+  });
+</script>
+</body>
+</html>

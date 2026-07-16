@@ -1,0 +1,63 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Equal-weight global diversification basket combining broad international/EM ETFs with high-quality individual ADRs across regions and sectors (Europe luxury/industrials, Asia tech/semis, LatAm financials) to capture non-US growth and reduce US concentration risk while aiming to outperform the S&P 500 over a 6-month window.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "SAP",
+      "reason": "Thesis broken: -33% H1 on cloud/ERP growth deceleration and margin concerns, no near-term catalyst to recover"
+    },
+    {
+      "action": "SELL",
+      "ticker": "BABA",
+      "reason": "China regulatory/macro overhang persists (-23.7% H1); trimming single-country concentrated China ADR risk"
+    },
+    {
+      "action": "SELL",
+      "ticker": "SONY",
+      "reason": "Weak -20% H1 with yen/consumer electronics headwinds; rotating into stronger European industrial/luxury quality names"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LVMUY",
+      "reason": "Adds Europe luxury ADR exposure per mandate; well-positioned for global consumer recovery and China demand normalization into H2"
+    },
+    {
+      "action": "BUY",
+      "ticker": "SIEGY",
+      "reason": "German industrial/automation ADR adds sector diversification and exposure to European capex/AI-driven automation demand"
+    },
+    {
+      "action": "BUY",
+      "ticker": "TTE",
+      "reason": "European energy major ADR adds sector and regional diversification with attractive valuation and dividend yield"
+    }
+  ],
+  "holds": [
+    "VWO",
+    "VGK",
+    "EWJ",
+    "TSM",
+    "ASML",
+    "NVO",
+    "MELI"
+  ],
+  "resulting_portfolio": [
+    "VWO",
+    "VGK",
+    "EWJ",
+    "TSM",
+    "ASML",
+    "NVO",
+    "MELI",
+    "LVMUY",
+    "SIEGY",
+    "TTE"
+  ],
+  "outlook": "Expect continued AI-infrastructure-led leadership (TSM, ASML) alongside a broadening into European industrials and luxury as global growth stabilizes in H2; reducing single-name China and troubled-thesis exposure while keeping broad EM/DM ETF ballast."
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Haiku price momentum",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Capture the strongest 12-month price momentum in US equities, concentrating in AI infrastructure, semiconductors, and cloud computing leaders that have driven market outperformance through 2024-2025.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "CRM",
+      "reason": "Severe underperformance (-33.8% vs S&P +11.1%); no alignment with AI/semiconductor/cloud infrastructure themes"
+    },
+    {
+      "action": "SELL",
+      "ticker": "TSLA",
+      "reason": "Negative momentum (-10.0%); electric vehicles not core to AI infrastructure/semiconductor/cloud strategy"
+    },
+    {
+      "action": "SELL",
+      "ticker": "MSFT",
+      "reason": "Cloud leader underperforms (-16.0%); momentum negative, strategy concentrates in H1 winners"
+    },
+    {
+      "action": "SELL",
+      "ticker": "SMCI",
+      "reason": "Data center supplier failed to capture AI infrastructure momentum (-13.1% despite sector strength)"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LITE",
+      "reason": "Optical interconnect critical for AI data centers; demonstrated strongest momentum at +95% in H1"
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMZN",
+      "reason": "Cloud infrastructure and AI compute leader; underrepresented in prior portfolio"
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "reason": "Semiconductor leader with strong AI/data center positioning; benefits from capacity buildout"
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMAT",
+      "reason": "Semiconductor equipment supplier positioned for sustained AI chip production capex"
+    }
+  ],
+  "holds": [
+    "NVDA",
+    "GOOG",
+    "AAPL",
+    "META",
+    "AVGO",
+    "MU"
+  ],
+  "resulting_portfolio": [
+    "NVDA",
+    "GOOG",
+    "AAPL",
+    "META",
+    "AVGO",
+    "MU",
+    "LITE",
+    "AMZN",
+    "AMD",
+    "AMAT"
+  ],
+  "outlook": "Memory (MU +187%) and optical interconnect (LITE +95%) dominated H1 AI infrastructure momentum; H2 should sustain this wave as semiconductor equipment capex and cloud-based AI adoption accelerate through year-end."
+}

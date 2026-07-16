@@ -1,0 +1,63 @@
+{
+  "name": "Haiku growth at a reasonable price",
+  "model": "haiku",
+  "group": "fleet",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "strategy": "Focus on high-quality companies with strong earnings growth and competitive moats, primarily in AI infrastructure, cloud platforms, semiconductors, and enterprise software. Equal-weight portfolio emphasizing companies benefiting from AI adoption, cloud infrastructure spending, and digital transformation over 2026.",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "CRM",
+      "reason": "Down -33.8% H1; enterprise software growth trajectory unclear; lost fit for high-growth mandate"
+    },
+    {
+      "action": "SELL",
+      "ticker": "ADBE",
+      "reason": "Down -32.6% H1; creative software headwinds; growth stalled; violates strong earnings growth criterion"
+    },
+    {
+      "action": "SELL",
+      "ticker": "SNPS",
+      "reason": "Down -11.5% H1; design tools underperforming as semiconductor cycle shifts from logic to memory/optics infrastructure"
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "reason": "Memory infrastructure leading AI data center expansion; +187% H1 validates structural DRAM/NAND demand"
+    },
+    {
+      "action": "BUY",
+      "ticker": "LITE",
+      "reason": "Optical interconnect critical for AI deployment; +95% H1 as market leader in infrastructure buildout"
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "reason": "AI chip alternative to NVDA with competitive roadmap; diversifies semiconductor concentration while maintaining strategy"
+    }
+  ],
+  "holds": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AVGO",
+    "AMZN",
+    "CRWD"
+  ],
+  "resulting_portfolio": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "META",
+    "AVGO",
+    "AMZN",
+    "CRWD",
+    "MU",
+    "LITE",
+    "AMD"
+  ],
+  "outlook": "Memory and optics infrastructure emerged as H1 2026's strongest performers (+187%, +95%), signaling AI deployment buildout has begun; continued data center investment through H2 should sustain this infrastructure cycle as enterprises move from model training to production deployment."
+}
