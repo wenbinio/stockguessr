@@ -240,12 +240,14 @@ def main() -> int:
     (DOCS / "api").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(out, separators=(",", ":"))
     (DOCS / "api" / "round2.json").write_text(blob)
-    page = DOCS / "round2.html"
-    if page.exists():
-        import re
-        page.write_text(re.sub(r"(/\*FALLBACK-START\*/).*?(/\*FALLBACK-END\*/)",
-                               lambda m: m.group(1) + blob + m.group(2),
-                               page.read_text(), flags=re.S))
+    import re
+    for page, marker in ((DOCS / "round2.html", "FALLBACK"),
+                         (DOCS / "index.html", "R2FALLBACK")):
+        if page.exists() and f"/*{marker}-START*/" in page.read_text():
+            page.write_text(re.sub(
+                rf"(/\*{marker}-START\*/).*?(/\*{marker}-END\*/)",
+                lambda m: m.group(1) + blob + m.group(2),
+                page.read_text(), flags=re.S))
     print(f"round2: {len(out['agents'])} agents valued, {len(fills)} fills recorded, "
           f"as of {out['as_of']}")
     return 0
