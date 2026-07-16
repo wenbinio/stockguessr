@@ -21,8 +21,15 @@ PERIOD2 = 1784332800  # 2026-07-18 (exclusive upper bound)
 UA = "Mozilla/5.0"
 
 
+# Corporate-action symbol changes after the model cutoff: the company still
+# trades, just under a new symbol, so a real "buy" order would have filled.
+# (Not applied to delisted/acquired names — those orders genuinely fail.)
+ALIASES = {"FI": "FISV"}
+
+
 def normalize(ticker: str) -> str:
-    return ticker.strip().upper().replace(".", "-")
+    t = ticker.strip().upper().replace(".", "-")
+    return ALIASES.get(t, t)
 
 
 def fetch_ticker(ticker: str, retries: int = 4):

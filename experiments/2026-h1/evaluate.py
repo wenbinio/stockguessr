@@ -114,7 +114,8 @@ def main() -> int:
 
     for pf in sorted((HERE / "portfolios").glob("*.json")):
         spec = json.loads(pf.read_text())
-        tickers = [t.strip().upper().replace(".", "-") for t in spec["tickers"]]
+        from fetch_data import normalize
+        tickers = [normalize(t) for t in spec["tickers"]]
         usable = [t for t in tickers if t in have]
         dropped = sorted(set(tickers) - set(usable))
         if len(usable) < MIN_TICKERS:
