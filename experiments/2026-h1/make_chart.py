@@ -23,11 +23,14 @@ SLOT_ORDER = [
     "Opus Quality Defensive",
     "Opus Picks-and-Shovels",
     "Opus Broadening",
+    "Fable Unconstrained",
+    "Fable Barbell",
 ]
 TIER_SLOT = {"fable": 1, "opus": 2, "sonnet": 3, "haiku": 4}
 
 TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
 <style>
+  html, body { margin: 0; padding: 0; }
   .viz-root {
     color-scheme: light;
     --surface-1: #fcfcfb; --page: #f9f9f7;
@@ -36,6 +39,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
     --bench: #52514e; --null: #c3c2b7;
     --s1: #2a78d6; --s2: #008300; --s3: #e87ba4;
     --s4: #eda100; --s5: #1baf7a; --s6: #eb6834;
+    --s7: #4a3aa7; --s8: #e34948;
     --up: #006300; --down: #d03b3b;
   }
   @media (prefers-color-scheme: dark) {
@@ -47,6 +51,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
       --bench: #c3c2b7; --null: #52514e;
       --s1: #3987e5; --s2: #008300; --s3: #d55181;
       --s4: #c98500; --s5: #199e70; --s6: #d95926;
+      --s7: #9085e9; --s8: #e66767;
       --up: #0ca30c; --down: #e66767;
     }
   }
@@ -58,6 +63,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
     --bench: #c3c2b7; --null: #52514e;
     --s1: #3987e5; --s2: #008300; --s3: #d55181;
     --s4: #c98500; --s5: #199e70; --s6: #d95926;
+      --s7: #9085e9; --s8: #e66767;
     --up: #0ca30c; --down: #e66767;
   }
   .viz-root { background: var(--page); color: var(--ink-1);
@@ -103,7 +109,7 @@ TEMPLATE = """<title>StockGuessr: Claude vs S&P 500 — H1 2026</title>
 </style>
 <div class="viz-root"><div class="wrap">
   <header>
-    <h1>StockGuessr: Claude, five Opus agents &amp; a 20-agent fleet vs the S&amp;P 500</h1>
+    <h1>StockGuessr: Claude, seven flagship agents &amp; a 20-agent fleet vs the S&amp;P 500</h1>
     <p class="sub">Portfolios picked with knowledge frozen at the January 2026 model cutoff, bought
     (virtually) at the 2026-01-02 close, equal weight, no rebalancing — scored against real market
     prices through __ASOF__.</p>

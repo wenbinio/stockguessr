@@ -1,0 +1,28 @@
+{
+  "name": "Fable Unconstrained",
+  "strategy": "unconstrained best ideas",
+  "author": "claude-fable subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "model": "fable",
+  "group": "flagship",
+  "tickers": ["MU", "AVGO", "AMD", "LRCX", "KLAC", "GOOGL", "HOOD", "PLTR", "APP", "GE"],
+  "rationale": {
+    "MU": "HBM memory supercycle with sold-out 2026 capacity and pricing power from AI datacenter demand",
+    "AVGO": "Custom AI ASIC backlog from hyperscalers plus VMware software margins compounding",
+    "AMD": "MI400 ramp and OpenAI/hyperscaler GPU deals give a concrete 2026 datacenter revenue catalyst",
+    "LRCX": "Wafer-fab equipment upcycle as NAND/DRAM capex recovers to feed HBM and foundry expansion",
+    "KLAC": "Process-control monopoly economics with rising intensity at advanced nodes; strong momentum",
+    "GOOGL": "Gemini 3 and TPU traction re-rating the story; still cheapest mega-cap AI compounder",
+    "HOOD": "Retail trading, crypto, and prediction-markets flywheel; highest 12-1 momentum in universe",
+    "PLTR": "AIP-driven US commercial and government acceleration keeps it the momentum leader in software",
+    "APP": "Ad-network model upgrades and e-commerce expansion driving durable earnings beats",
+    "GE": "Aerospace engine aftermarket cycle with pricing power and multi-year delivery backlog"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": 47.6, "2025-H1": 50.0},
+    "spy_return_pct": {"2024-H1": 15.2, "2025-H1": 6.1},
+    "notes": "Logic: rank a 50-name liquid US large/mid-cap universe by 12-1 momentum at entry, hold top 10 equal-weight 6 months. Beat SPY by +32.4pp and +43.9pp using adjusted closes; no post-2026-01-02 data used. Caveat: universe was hand-picked with hindsight so backtest excess is optimistic; final picks are the top-10 momentum output as of 2026-01-02 with a judgment overlay."
+  }
+}

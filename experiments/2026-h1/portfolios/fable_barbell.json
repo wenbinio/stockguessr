@@ -1,0 +1,29 @@
+{
+  "name": "Fable Barbell",
+  "strategy": "risk-balanced barbell (5 aggressive + 5 ballast)",
+  "author": "claude-fable subagent (knowledge cutoff: January 2026)",
+  "entry_date": "2026-01-02",
+  "weighting": "equal",
+  "model": "fable",
+  "group": "flagship",
+  "tickers": ["NVDA", "AVGO", "VRT", "ANET", "MU", "BRK-B", "JNJ", "WMT", "PGR", "MCK"],
+  "rationale": {
+    "NVDA": "Core AI-compute franchise; Blackwell/Rubin cycle still supply-constrained into 2026",
+    "AVGO": "Custom AI ASIC + networking leader with multi-year hyperscaler XPU backlog",
+    "VRT": "Data-center power and cooling pure-play leveraged to AI capex buildout",
+    "ANET": "AI back-end Ethernet networking share gainer at hyperscalers",
+    "MU": "HBM memory supplier in shortage; direct AI-capex beneficiary with pricing tailwind",
+    "BRK-B": "Diversified low-beta compounder with record cash pile; classic correction ballast",
+    "JNJ": "AAA-quality healthcare staple, defensive earnings and dividend, minimal AI correlation",
+    "WMT": "Staples-grade consumer defensive with share gains; holds up in risk-off tape",
+    "PGR": "Auto insurer with idiosyncratic underwriting-driven earnings, historically uncorrelated to tech drawdowns",
+    "MCK": "Drug distribution utility-like cash flows; proven resilience in 2022/2025 selloffs"
+  },
+  "backtest": {
+    "periods_tested": ["2024-H1", "2025-H1"],
+    "strategy_return_pct": {"2024-H1": 46.8, "2025-H1": 18.2},
+    "spy_return_pct": {"2024-H1": 15.9, "2025-H1": 6.3},
+    "drawdown_defense": "Ballast half returned +1.8% during the Jul-Aug 2024 selloff (SPY -7.8%) and -4.1% during the Feb-Apr 2025 tariff crash (SPY -18.8%); barbell max drawdown in 2025-H1 was -22.9% vs -45.3% for the aggressive half alone, though modestly deeper than SPY's -18.8% in that crash",
+    "notes": "Equal-weight approximation using Yahoo adjusted closes, 2023-01-03 to 2025-12-31 only; no post-2026-01-02 data requested or used"
+  }
+}
