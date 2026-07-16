@@ -1,0 +1,81 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "group": "flagship",
+  "strategy": "risk-balanced barbell (5 aggressive + 5 ballast)",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "MU",
+      "reason": "Aggressive slot: taking the +187% win - parabolic top confirmed by -25% off high and -17% last month; memory cycle risk now skewed down"
+    },
+    {
+      "action": "SELL",
+      "ticker": "VRT",
+      "reason": "Aggressive slot: momentum exhausted (3m +1.2%, -19% off high) after the H1 +73% run; rotating within the power theme to the name still trending"
+    },
+    {
+      "action": "SELL",
+      "ticker": "WMT",
+      "reason": "Ballast slot: defended April but now -16% off high with negative 3m/1m momentum and flat H1 - dead ballast"
+    },
+    {
+      "action": "SELL",
+      "ticker": "PGR",
+      "reason": "Ballast slot: failed both jobs - negative in the April drawdown window and negative for the half"
+    },
+    {
+      "action": "SELL",
+      "ticker": "MCK",
+      "reason": "Ballast slot: -27% own max drawdown in H1 violates the ballast spec despite April-window resilience"
+    },
+    {
+      "action": "BUY",
+      "ticker": "GEV",
+      "reason": "Aggressive: next leg of AI buildout is generation capacity - +18% through the April drawdown, +7.8% last month, one of few AI-adjacent names still accelerating"
+    },
+    {
+      "action": "BUY",
+      "ticker": "AAPL",
+      "reason": "Aggressive: rotation-momentum leader - fresh all-time high, +23% 3m and +10.5% 1m while semis crack, with April drawdown of only -4.4%"
+    },
+    {
+      "action": "BUY",
+      "ticker": "KO",
+      "reason": "Ballast: +4.4% through the April drawdown, +21% H1, -7.9% own max DD - defense that also compounds"
+    },
+    {
+      "action": "BUY",
+      "ticker": "ALL",
+      "reason": "Ballast: like-for-like insurer upgrade over PGR - +7% in the drawdown window, +19% H1, +8% last month"
+    },
+    {
+      "action": "BUY",
+      "ticker": "MRK",
+      "reason": "Ballast: +10.2% through the April drawdown, +18% H1, accelerating (+7.6% 1m) with an -11% own max DD"
+    }
+  ],
+  "holds": [
+    "NVDA",
+    "AVGO",
+    "ANET",
+    "BRK-B",
+    "JNJ"
+  ],
+  "resulting_portfolio": [
+    "NVDA",
+    "AVGO",
+    "ANET",
+    "BRK-B",
+    "JNJ",
+    "GEV",
+    "AAPL",
+    "KO",
+    "ALL",
+    "MRK"
+  ],
+  "outlook": "H2 tape shows the AI-semi trade breaking down and leadership rotating to power infrastructure, mega-cap quality, and defensives with momentum, so the aggressive half shifts from memory/cooling to GEV and AAPL alongside core compute/networking (NVDA, AVGO, ANET). The ballast half is upgraded to names that proved they defend AND compound (JNJ, KO, MRK, ALL, BRK-B), keeping the barbell ready for another air pocket like late March."
+}

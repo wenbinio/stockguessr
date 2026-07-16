@@ -1,0 +1,72 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "group": "flagship",
+  "strategy": "value / contrarian mean-reversion",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "TGT",
+      "reason": "Round-tripped back to entry level; contrarian mean-reversion thesis realized and washed-out sentiment now normalized"
+    },
+    {
+      "action": "SELL",
+      "ticker": "CMCSA",
+      "reason": "-33% YTD to new lows on structural broadband share loss; cheap-but-declining value trap"
+    },
+    {
+      "action": "SELL",
+      "ticker": "PYPL",
+      "reason": "-36% YTD, turnaround stalled amid competitive erosion; value trap not cheap-with-catalyst"
+    },
+    {
+      "action": "SELL",
+      "ticker": "KHC",
+      "reason": "Breakup catalyst scrapped by new CEO in Feb 2026; core thesis gone with sales still declining"
+    },
+    {
+      "action": "BUY",
+      "ticker": "ADBE",
+      "reason": "AI-fear de-rating to decade-cheap FCF (~$224, -49%); Firefly is an AI monetization asset, huge buyback"
+    },
+    {
+      "action": "BUY",
+      "ticker": "CRM",
+      "reason": "-49% to ~$167 on AI-disruption fear; Agentforce monetization catalyst plus large buyback, cheap quality franchise"
+    },
+    {
+      "action": "BUY",
+      "ticker": "ABT",
+      "reason": "Quality diversified medtech off 36% from highs; defensive value with dividend and steady FCF"
+    },
+    {
+      "action": "BUY",
+      "ticker": "PEP",
+      "reason": "Dividend-king staple at ~18x on overdone GLP-1/volume fears; cheap defensive diversifier replacing staples slot"
+    }
+  ],
+  "holds": [
+    "UNH",
+    "ELV",
+    "PFE",
+    "BMY",
+    "CVX",
+    "NKE"
+  ],
+  "resulting_portfolio": [
+    "UNH",
+    "ELV",
+    "PFE",
+    "BMY",
+    "CVX",
+    "NKE",
+    "ADBE",
+    "CRM",
+    "ABT",
+    "PEP"
+  ],
+  "outlook": "Leaning the value book into the AI melt-up's roadkill - quality software franchises de-rated on AI fear (ADBE, CRM) plus beaten-down defensive healthcare - while cutting names that either reverted (TGT) or face structural erosion (CMCSA, PYPL, KHC). Expect mean-reversion in cheap quality as breadth broadens beyond AI hardware, though momentum in the tape remains the key risk to a contrarian stance."
+}

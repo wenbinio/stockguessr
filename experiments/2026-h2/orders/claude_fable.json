@@ -1,0 +1,25 @@
+{
+  "name": "Claude Fable (orchestrator)",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Concentrated AI-infrastructure conviction basket",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "orders": [
+    {"action": "SELL", "ticker": "MSFT", "reason": "My one big loser (-16% in a +11% tape): the market has decided hyperscaler capex is a cost problem for MSFT, not a growth story — momentum broken, thesis decoupled from the AI-infra trade I actually want."},
+    {"action": "SELL", "ticker": "META", "reason": "Flat (+4.9%) half; same logic as MSFT in milder form — capex is an expense line for the hyperscalers but revenue for their suppliers. Rotating to where the spend lands."},
+    {"action": "BUY", "ticker": "VRT", "reason": "Vertiv books hyperscaler capex as revenue: power and liquid cooling attach to every AI rack; +73% H1 confirms the channel, densification of racks keeps demand ahead of supply."},
+    {"action": "BUY", "ticker": "ANET", "reason": "Arista is the back-end network for AI clusters; +29% H1 with accelerating AI-driven orders — more direct capex leverage than any hyperscaler equity."}
+  ],
+  "holds": ["NVDA", "AVGO", "TSM", "MU", "GOOGL", "AMD", "GEV", "LLY"],
+  "resulting_portfolio": ["NVDA", "AVGO", "TSM", "MU", "GOOGL", "AMD", "GEV", "LLY", "VRT", "ANET"],
+  "hold_notes": {
+    "MU": "Up +187% and consolidating — but HBM tightness is structural through 2027 and my January thesis is playing out, not played out. Highest-conviction hold.",
+    "AMD": "+137%; MI450/OpenAI ramp is H2-weighted. Hold.",
+    "NVDA": "Only +13% while its customers' capex grows — Rubin ramp is the H2 catalyst. Hold.",
+    "LLY": "Kept as the single non-AI diversifier; orforglipron launch still ahead.",
+    "GEV": "Power bottleneck unresolved; multi-year backlog. Hold."
+  },
+  "outlook": "I expect the AI-infrastructure capex cycle to keep beating expectations into 2027 guidance season, with leadership rotating from the memory/optics vertical that already re-rated toward compute (NVDA Rubin, AMD MI450) and the power/cooling/networking layer. Main risk is a crowding unwind like April's — accepted, per mandate. These two swaps make the book purer on that thesis, not safer."
+}

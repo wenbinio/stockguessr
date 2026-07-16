@@ -1,0 +1,72 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "order_date": "2026-07-16",
+  "marks": "2026-07-15 close",
+  "horizon_end": "2026-12-31",
+  "group": "flagship",
+  "strategy": "anti-concentration / breadth catch-up",
+  "orders": [
+    {
+      "action": "SELL",
+      "ticker": "EWG",
+      "reason": "Germany dead money: -0.5% YTD and -0.8% last month, gave back its 2025 run with no forward momentum"
+    },
+    {
+      "action": "SELL",
+      "ticker": "EEM",
+      "reason": "Broad EM rolling over (-6.0% last month), dragged by India -10.7% and China; breadth is now in US, not EM"
+    },
+    {
+      "action": "SELL",
+      "ticker": "EFA",
+      "reason": "Mediocre developed-intl (+9.5%, +0.5% 1mo) that overlaps EWJ; keeping Japan as the sole working intl anchor"
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLV",
+      "reason": "Large-cap healthcare sluggish (+2.7%, devices IHI -19%); the real healthcare breadth is in biotech"
+    },
+    {
+      "action": "BUY",
+      "ticker": "RSP",
+      "reason": "Equal-weight S&P 500 - the definitional anti-concentration anchor that directly under-weights the Mag7"
+    },
+    {
+      "action": "BUY",
+      "ticker": "IWD",
+      "reason": "US large-cap value, a pure anti-Mag7 breadth trade with momentum (+17.3% YTD, +10.7% 3mo)"
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLE",
+      "reason": "Energy, the strongest laggard-sector participation (+25.5% YTD) and maximally uncorrelated with mega-cap tech"
+    },
+    {
+      "action": "BUY",
+      "ticker": "XBI",
+      "reason": "Biotech breadth exploding (+28.7% YTD, +14.6% last month) - the healthcare rotation via innovation, replacing sluggish XLV"
+    }
+  ],
+  "holds": [
+    "IWM",
+    "MDY",
+    "XLI",
+    "EWJ",
+    "XLF",
+    "KRE"
+  ],
+  "resulting_portfolio": [
+    "IWM",
+    "MDY",
+    "XLI",
+    "EWJ",
+    "XLF",
+    "KRE",
+    "RSP",
+    "IWD",
+    "XLE",
+    "XBI"
+  ],
+  "outlook": "Index concentration remains extreme (memory/AI melt-up), but breadth is genuinely emerging in US small/mid caps, value, financials (rotation accelerating +6% last month) and biotech rather than in international. I rotate out of dead Germany/EM/broad-EAFE and sluggish large-cap healthcare into working US breadth plus energy, keeping Japan and regional banks as the highest-momentum anchors."
+}
