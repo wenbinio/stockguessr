@@ -20,12 +20,14 @@ jobs:
           python-version: "3.12"
       - run: pip install pandas
       - name: Refresh performance data
-        run: python tracker/track.py
+        run: |
+          python tracker/track.py
+          python tracker/round2.py
       - name: Commit if changed
         run: |
           git config user.name "stockguessr-tracker"
           git config user.email "actions@users.noreply.github.com"
-          git add docs
+          git add docs experiments/round2/results.json experiments/round2/fills.jsonl
           if git diff --cached --quiet; then
             echo "No changes"
           else
