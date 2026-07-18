@@ -1,0 +1,75 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
+  "entry": "2026-07-20",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Broad semis 1x, replacing SOXL's directional exposure without 3x volatility decay after the -50% month; captures a bounce cleanly."
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "GE Vernova power gen/grid \u2014 the datacenter power buildout leg, +8% over the drawdown month, the book's resilience anchor."
+    },
+    {
+      "symbol": "AMAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Semi cap-equipment; core picks-and-shovels supplier to every fab expansion, oversold in the pullback within a 3m uptrend."
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Vertiv datacenter power/thermal; sold off -9% but structurally levered to AI compute density buildout."
+    },
+    {
+      "symbol": "ALAB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Astera Labs AI connectivity silicon; picks-and-shovels for rack-scale interconnect scaling."
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Arista datacenter networking; flat over the month (-0.3%) on durable AI back-end switching demand."
+    },
+    {
+      "symbol": "NVT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "nVent electrical connection/protection; power-delivery hardware for datacenters, defensive infra leg."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Broadcom custom AI silicon and networking; diversified quality anchor of the compute stack."
+    },
+    {
+      "symbol": "SMCI",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Short the lowest-quality, margin-pressured AI server assembler; hedge that gained +14.6% this week and offsets long-semi beta."
+    }
+  ],
+  "cash_pct": 10,
+  "reassessment_note": "Week 1 desk (2026-07-18): Book held up well (-1.8% vs SMH -8.9%) on good construction, but the 15% SOXL 3x position decayed -50% in a month; de-lever SOXL into 1x SMH to cut volatility-decay tail risk while keeping the exact AI-infrastructure theme."
+}

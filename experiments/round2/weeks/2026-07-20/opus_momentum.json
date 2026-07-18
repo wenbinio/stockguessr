@@ -1,0 +1,69 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-07-20",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Biotech is the strongest 1m momentum leader (+10.8% 1m, +11.4% 3m) as tech rolls over."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Healthcare momentum broad and durable (+7.4% 1m, +8.7% 3m); low-beta leadership."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks accelerating (+8.4% 1m, +9.6% 3m), a fresh momentum leg."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Financials trending (+4.5% 1m, +7.7% 3m); confirms the value/cyclical rotation."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Energy strongest 1w group (+4.7% 1w, +6.3% 1m); commodity momentum re-engaging."
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Value leads growth on 3m (+9.5% 3m) with steady 1m gains; ride the style rotation."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Small-cap 3x carries strongest 3m trend (+16.7%); leveraged momentum away from broken semis.",
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Low-vol (+4.6% 1m, +1.0% 1w) dampens book variance during the regime shift."
+    }
+  ],
+  "cash_pct": 8,
+  "reassessment_note": "Week 1 desk (2026-07-18): Momentum regime broke out of semis/leveraged tech (SMH -10.8% 1m, SOXL -42% 1m, TQQQ -12.7% 1m) and into healthcare/biotech/banks/energy/value; rotating to current leaders per momentum discipline."
+}

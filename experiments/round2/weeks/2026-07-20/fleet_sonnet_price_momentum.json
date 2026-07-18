@@ -1,0 +1,61 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
+  "entry": "2026-07-20",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials showing strongest positive momentum (+1.0%/+4.5%/+7.7% across 1w/1m/3m)"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare accelerating (+0.2%/+7.4%/+8.7%), clean uptrend"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Energy leading the week (+4.7%) with strong 1m confirmation"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small caps holding up better than tech, modest positive momentum"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Semis in freefall (-29.5% 1w, -42.1% 1m), momentum decisively broken"
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Leveraged QQQ rolling over (-12.3% 1w, -12.7% 1m) after tech momentum reversal"
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners in sustained downtrend (-5.6%/-15.5%/-28.9%)"
+    }
+  ],
+  "cash_pct": 15,
+  "reassessment_note": "Week 1 desk (2026-07-18): Leveraged tech/semis momentum broke hard (SOXL -29.5%/wk, TQQQ -12.3%/wk) invalidating the long-momentum thesis; rotating to current momentum leaders (financials, healthcare, energy) and shorting the broken names."
+}

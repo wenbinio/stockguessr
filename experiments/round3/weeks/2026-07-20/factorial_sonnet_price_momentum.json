@@ -1,0 +1,76 @@
+{
+  "name": "Sonnet+tools price momentum",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
+  "entry": "2026-07-20",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Strongest multi-timeframe momentum in the mechanical set (+4.7%/+6.3%/+5.6% 1w/1m/3m), energy leading the tape while growth breaks down.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare showing strong accelerating 1m/3m momentum (+7.4%/+8.7%) with defensive characteristics amid tech drawdown.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Regional banks up +2.2%/+8.4%/+9.6% across 1w/1m/3m, one of the few groups with positive weekly momentum too.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Broad financials confirming the bank-sector momentum (+1.0%/+4.5%/+7.7%) with lower volatility than KRE.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 18
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Biotech has the strongest 1m/3m momentum in the set (+10.8%/+11.4%) despite a soft week, consistent with a developing new trend.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Value factor steadily trending (+0.5%/+3.2%/+9.5%), diversifies the rotation away from single-sector concentration.",
+      "stop_loss_pct": 8,
+      "take_profit_pct": 15
+    },
+    {
+      "symbol": "GS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Only name in the prior book showing relative strength this week (+0.95%), keeps a quality single-stock financial anchor.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    }
+  ],
+  "cash_pct": 12,
+  "reassessment_note": "Week 1 desk (2026-07-18): AI-capex/semiconductor momentum has broken hard (SOXL -29.5%/-42.1%, MU -13.3%/-16.8%, NBIS -19.1%/-33.0%, AMD -11.1%, VRT -9.2%, TSM -8.2%, SMH -8.9%/-10.8% over 1w/1m) while energy, financials and healthcare/biotech show accelerating positive momentum across 1w/1m/3m (XLE +4.7/+6.3/+5.6, KRE +2.2/+8.4/+9.6, XLF +1.0/+4.5/+7.7, XLV +0.2/+7.4/+8.7, XBI +10.8/+11.4 1m/3m). This is a clean trend reversal, not noise, so exiting the broken growth complex for the currently trending sectors.",
+  "novelty": "R2 construction rode single-stock AI-capex/semiconductor growth momentum (SOXL/MU/AMD/NBIS/VRT/GEV/GOOGL/TSM/ASML); R3 rotates the return driver entirely to broad sector-ETF momentum in energy, financials and healthcare/biotech - value/cyclical/defensive trends now outperforming, with zero semiconductor or AI-infrastructure single names retained."
+}

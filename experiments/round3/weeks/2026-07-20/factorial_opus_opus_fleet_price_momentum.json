@@ -1,0 +1,85 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-07-20",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Strongest and accelerating momentum in the table (+4.7% 1w, +6.3% 1m, +5.6% 3m); new energy leadership.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 30
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Retained momentum leader: +10.8% 1m, +11.4% 3m; biotech remains one of the strongest trends.",
+      "stop_loss_pct": 14,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Positive across all horizons (+2.2% 1w, +8.4% 1m, +9.6% 3m); regional banks leading the rotation.",
+      "stop_loss_pct": 12,
+      "take_profit_pct": 28
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Financials firmly trending (+1.0% 1w, +4.5% 1m, +7.7% 3m) with steady positive slope.",
+      "stop_loss_pct": 11,
+      "take_profit_pct": 25
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Defensive momentum leader (+0.2% 1w, +7.4% 1m, +8.7% 3m); positive when tech is breaking down.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 22
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Value factor carrying relative momentum (+0.5% 1w, +3.2% 1m, +9.5% 3m) as growth reverses.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Small-cap 3x still holds strongest 3m momentum (+16.7%) with only mild 1w pullback; tight stop guards a reversal.",
+      "stop_loss_pct": 18,
+      "take_profit_pct": 45
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Small-cap breadth complement, positive 1m/3m (+1.4%/+6.9%) with far less drawdown risk than tech.",
+      "stop_loss_pct": 10,
+      "take_profit_pct": 20
+    }
+  ],
+  "cash_pct": 7,
+  "reassessment_note": "Week 1 desk (2026-07-18): Semis/tech momentum decisively broke (SMH -10.8% 1m, SOXL -42.1% 1m, both worst in table); a price-momentum book cannot hold 47% in the worst-momentum sectors, so rotate into confirmed new leaders (energy, banks, financials, healthcare/biotech, value).",
+  "novelty": "Momentum leadership rotated out of the high-beta semis/tech/leveraged-growth driver of R1/R2/R3; this book now rides price momentum in cyclical/defensive leaders (energy, regional banks, financials, healthcare, value) \u2014 a materially different return driver."
+}

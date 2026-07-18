@@ -1,0 +1,813 @@
+{
+ "desk_run_utc": "2026-07-18 12:00 UTC",
+ "week": 1,
+ "effective_entry": "2026-07-20",
+ "managers_polled": 37,
+ "responded": 35,
+ "failed_default_hold": [
+  "Sonnet quality compounders",
+  "Sonnet small/mid-cap growth"
+ ],
+ "orchestrator": {
+  "round2": "REBALANCE (deployed 9pts cash into MU/AMD/NVDA)",
+  "round3": "HOLD"
+ },
+ "decisions": [
+  {
+   "name": "Fable Barbell",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Barbell working as designed: growth leg fell hard (AVGO -7.3%, ANET -9.8% wk) but -SOXL short (+29.5% move) plus defensives/cash held NAV to -0.25%; hedge still valuable amid semi volatility, so no fee-paying churn."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Thesis intact and flat at -0.02%: metals shorts all paid (SLV -5.9%, GDXJ -6.8%, URNM -9.5% wk) with GDX in a confirmed downtrend, while XOP +7.3% and KRE +2.2% carry the long leg; one week of mixed noise doesn't justify turnover."
+    }
+   ]
+  },
+  {
+   "name": "Fable Unconstrained",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book flat (-0.09%) through a -5.5% XLK / -8.9% SMH week because the cyber leg (CRWD +8.5%, PANW +10.0%) offset the AI-infra drawdown (AMD -11.1%, VRT -9.2%, ANET -9.8%) exactly as designed; one week of semi correction inside a +20% 3m uptrend doesn't justify paying turnover to sell the dip."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Defensive book flat (-0.01%) with XLP/UNH/BRK-B absorbing the GLD and SVXY drags during the tech selloff; 32% cash earns 4% APY and nothing in the construction has broken, so churn after four trading days would be pure fee leakage."
+    }
+   ]
+  },
+  {
+   "name": "Opus Value",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book +0.35% and working as designed: the -SOXL short is deep in the money on the semis crash (SOXL -29.5% 1w), offsetting gold and mixed crypto. No thesis broke; five days in, turnover fees are not justified."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Flat despite a tech/momentum drawdown because the defensive ballast (XLE +4.7%, SCHD, JEPQ, QUAL) is absorbing it exactly as built. A one-week factor wobble does not invalidate a momentum mandate; churning into value would pay fees to chase a five-day move."
+    }
+   ]
+  },
+  {
+   "name": "Opus Quality Defensive",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book working as designed: NAV -0.31% vs QQQ -4.2%; -SMH hedge paying off (SMH -8.9% 1w), defensives (XLV/XLP/SPLV) holding \u2014 no broken thesis, churn would only cost fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Diversified alternatives book flat (-0.10%) through a tech selloff; ETH, DBMF and PDBC providing ballast, JEPQ income cushioning MTUM \u2014 thesis intact, novelty constraint and fee drag argue against tinkering on a few days of noise."
+    }
+   ]
+  },
+  {
+   "name": "Opus Momentum",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Momentum regime broke out of semis/leveraged tech (SMH -10.8% 1m, SOXL -42% 1m, TQQQ -12.7% 1m) and into healthcare/biotech/banks/energy/value; rotating to current leaders per momentum discipline.",
+     "positions": [
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Biotech is the strongest 1m momentum leader (+10.8% 1m, +11.4% 3m) as tech rolls over."
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 13,
+       "thesis": "Healthcare momentum broad and durable (+7.4% 1m, +8.7% 3m); low-beta leadership."
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Regional banks accelerating (+8.4% 1m, +9.6% 3m), a fresh momentum leg."
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "thesis": "Financials trending (+4.5% 1m, +7.7% 3m); confirms the value/cyclical rotation."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "thesis": "Energy strongest 1w group (+4.7% 1w, +6.3% 1m); commodity momentum re-engaging."
+      },
+      {
+       "symbol": "IWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Value leads growth on 3m (+9.5% 3m) with steady 1m gains; ride the style rotation."
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Small-cap 3x carries strongest 3m trend (+16.7%); leveraged momentum away from broken semis.",
+       "stop_loss_pct": 15
+      },
+      {
+       "symbol": "SPLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "Low-vol (+4.6% 1m, +1.0% 1w) dampens book variance during the regime shift."
+      }
+     ],
+     "cash_pct": 8
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Defensive book held flat (-0.02%) through a sharp tech drawdown, doing exactly its capital-preservation job; small gold/miner drag doesn't justify turnover fees. Standing stops persist."
+    }
+   ]
+  },
+  {
+   "name": "Opus Broadening",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Core broadening thesis is working: -QQQ leg profits as XLK -5.5%/SMH -8.9% while XLF +1.0%/KRE +2.2%/XLE +4.7% hold up; book flat, no reason to pay turnover."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Idiosyncratic long/short construction held flat through a brutal semi/software tape (SMH -8.9%) as -MSTR/-ORCL and HOOD/GS offset the AMD/CRWD/PANW/SNOW drawdown; behaving as designed."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools deep value",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book NAV is flat (-0.03%) only days after entry; sector tailwinds in financials (XLF +4.5% 1m) and healthcare (XLV +7.4% 1m) support C and PFE while nothing has broken the deep-value thesis, so this is noise not signal and turnover fees aren't justified yet."
+    }
+   ]
+  },
+  {
+   "name": "Opus Picks-and-Shovels",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Book held up well (-1.8% vs SMH -8.9%) on good construction, but the 15% SOXL 3x position decayed -50% in a month; de-lever SOXL into 1x SMH to cut volatility-decay tail risk while keeping the exact AI-infrastructure theme.",
+     "positions": [
+      {
+       "symbol": "SMH",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "thesis": "Broad semis 1x, replacing SOXL's directional exposure without 3x volatility decay after the -50% month; captures a bounce cleanly."
+      },
+      {
+       "symbol": "GEV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "thesis": "GE Vernova power gen/grid \u2014 the datacenter power buildout leg, +8% over the drawdown month, the book's resilience anchor."
+      },
+      {
+       "symbol": "AMAT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Semi cap-equipment; core picks-and-shovels supplier to every fab expansion, oversold in the pullback within a 3m uptrend."
+      },
+      {
+       "symbol": "VRT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "thesis": "Vertiv datacenter power/thermal; sold off -9% but structurally levered to AI compute density buildout."
+      },
+      {
+       "symbol": "ALAB",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Astera Labs AI connectivity silicon; picks-and-shovels for rack-scale interconnect scaling."
+      },
+      {
+       "symbol": "ANET",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Arista datacenter networking; flat over the month (-0.3%) on durable AI back-end switching demand."
+      },
+      {
+       "symbol": "NVT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "nVent electrical connection/protection; power-delivery hardware for datacenters, defensive infra leg."
+      },
+      {
+       "symbol": "AVGO",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Broadcom custom AI silicon and networking; diversified quality anchor of the compute stack."
+      },
+      {
+       "symbol": "SMCI",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 5,
+       "thesis": "Short the lowest-quality, margin-pressured AI server assembler; hedge that gained +14.6% this week and offsets long-semi beta."
+      }
+     ],
+     "cash_pct": 10
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book is dead flat (-0.02%) with drivers offsetting as intended \u2014 XLE +4.7% cushioning EEM/GDX weakness \u2014 and it stayed uncorrelated to the semis rout; one flat week is no reason to churn under the novelty constraint."
+    }
+   ]
+  },
+  {
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV flat at -0.02% despite a rough week for tech/semis (XLK -5.5%, SMH -8.9%, QQQ -4.2% 1w) that hit ~45% of the book (MSFT/AAPL/GOOGL/AVGO/ORCL); non-tech quality names (V, MA, COST, LLY, ADP) offset the drawdown exactly as the diversified compounder construction intends, so this reads as noise, not a broken thesis \u2014 no reason to pay turnover fees on a one-week wobble."
+    }
+   ],
+   "name": "Sonnet+tools quality compounders"
+  },
+  {
+   "name": "Sonnet+tools dividend growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV flat (-0.02%) and the defensive dividend-growth tilt outperformed this week (SPY -1.5%, QQQ -4.2% vs flat book, with XLP +1.3%/XLV +0.2% and CVX energy exposure benefiting from XLE +4.7%); one week of noise with no thesis break doesn't justify paying turnover fees."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools price momentum",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "AI-capex/semiconductor momentum has broken hard (SOXL -29.5%/-42.1%, MU -13.3%/-16.8%, NBIS -19.1%/-33.0%, AMD -11.1%, VRT -9.2%, TSM -8.2%, SMH -8.9%/-10.8% over 1w/1m) while energy, financials and healthcare/biotech show accelerating positive momentum across 1w/1m/3m (XLE +4.7/+6.3/+5.6, KRE +2.2/+8.4/+9.6, XLF +1.0/+4.5/+7.7, XLV +0.2/+7.4/+8.7, XBI +10.8/+11.4 1m/3m). This is a clean trend reversal, not noise, so exiting the broken growth complex for the currently trending sectors.",
+     "novelty": "R2 construction rode single-stock AI-capex/semiconductor growth momentum (SOXL/MU/AMD/NBIS/VRT/GEV/GOOGL/TSM/ASML); R3 rotates the return driver entirely to broad sector-ETF momentum in energy, financials and healthcare/biotech - value/cyclical/defensive trends now outperforming, with zero semiconductor or AI-infrastructure single names retained.",
+     "positions": [
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 18,
+       "thesis": "Strongest multi-timeframe momentum in the mechanical set (+4.7%/+6.3%/+5.6% 1w/1m/3m), energy leading the tape while growth breaks down.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 20
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Healthcare showing strong accelerating 1m/3m momentum (+7.4%/+8.7%) with defensive characteristics amid tech drawdown.",
+       "stop_loss_pct": 8,
+       "take_profit_pct": 18
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 13,
+       "thesis": "Regional banks up +2.2%/+8.4%/+9.6% across 1w/1m/3m, one of the few groups with positive weekly momentum too.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 20
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Broad financials confirming the bank-sector momentum (+1.0%/+4.5%/+7.7%) with lower volatility than KRE.",
+       "stop_loss_pct": 8,
+       "take_profit_pct": 18
+      },
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Biotech has the strongest 1m/3m momentum in the set (+10.8%/+11.4%) despite a soft week, consistent with a developing new trend.",
+       "stop_loss_pct": 12,
+       "take_profit_pct": 25
+      },
+      {
+       "symbol": "IWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Value factor steadily trending (+0.5%/+3.2%/+9.5%), diversifies the rotation away from single-sector concentration.",
+       "stop_loss_pct": 8,
+       "take_profit_pct": 15
+      },
+      {
+       "symbol": "GS",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Only name in the prior book showing relative strength this week (+0.95%), keeps a quality single-stock financial anchor.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 20
+      }
+     ],
+     "cash_pct": 12
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet deep value",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Thesis intact after one week: value/defensive tilt held up while growth cracked (QQQ -4.2, XLK -5.5), and the -SMH short is squarely paying off (SMH -8.9 1w, -10.8 1m). XLE +4.7 supports VLO, XLF +1.0 supports C, XLV flat-positive supports PFE/CVS. NAV essentially flat (-0.02%) is noise, not a signal; standing stops/TPs remain adequate and rebalancing would burn fees for no directional reason."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV flat (-0.03%) after its first week despite QQQ -4.2%/SMH -8.9%/XLK -5.5% tech rout; dispersion is normal (AFRM -7%, RBRK -6% offset by S +5.5%, IOT +4%, PATH +2.5%, FLYW +2%) with no thesis break, so holding avoids paying turnover fees on noise this early in the mandate."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet quality compounders",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book is flat (-0.02%) one week in; quality-compounder thesis is intact and the week's damage was concentrated in semis (SMH -8.9%), which my diversified mega-cap/payments/healthcare mix already dampens. A few days of tech noise does not justify paying turnover fees."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet dividend growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book flat (-0.02%) as designed; defensive dividend-growth sleeves (XLV +0.2/+7.4, XLP +1.3/+2.5, XLE +4.7, IWD value) all holding up amid tech/semi drawdown (SMH -8.9, XLK -5.5) \u2014 thesis intact, no reason to pay turnover on one week of noise."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book is flat (-0.03%) through a brutal high-beta week (SMH -8.9%, XLK -5.5%, QQQ -4.2%) precisely because the fintech sleeve (SOFI/NU/HOOD, 32%) rides ripping financials (XLF +1.0%, KRE +2.2%) and offsets the AI/semis drawdown in NBIS/CRDO/ALAB/software \u2014 the construction is doing its job, so with only a few days of data and turnover fees, no real reason to churn."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet price momentum",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Semis/tech momentum decisively broke (SMH -10.8% 1m, SOXL -42.1% 1m, both worst in table); a price-momentum book cannot hold 47% in the worst-momentum sectors, so rotate into confirmed new leaders (energy, banks, financials, healthcare/biotech, value).",
+     "novelty": "Momentum leadership rotated out of the high-beta semis/tech/leveraged-growth driver of R1/R2/R3; this book now rides price momentum in cyclical/defensive leaders (energy, regional banks, financials, healthcare, value) \u2014 a materially different return driver.",
+     "cash_pct": 7,
+     "positions": [
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Strongest and accelerating momentum in the table (+4.7% 1w, +6.3% 1m, +5.6% 3m); new energy leadership.",
+       "stop_loss_pct": 12,
+       "take_profit_pct": 30
+      },
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Retained momentum leader: +10.8% 1m, +11.4% 3m; biotech remains one of the strongest trends.",
+       "stop_loss_pct": 14,
+       "take_profit_pct": 35
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "thesis": "Positive across all horizons (+2.2% 1w, +8.4% 1m, +9.6% 3m); regional banks leading the rotation.",
+       "stop_loss_pct": 12,
+       "take_profit_pct": 28
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Financials firmly trending (+1.0% 1w, +4.5% 1m, +7.7% 3m) with steady positive slope.",
+       "stop_loss_pct": 11,
+       "take_profit_pct": 25
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Defensive momentum leader (+0.2% 1w, +7.4% 1m, +8.7% 3m); positive when tech is breaking down.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 22
+      },
+      {
+       "symbol": "IWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Value factor carrying relative momentum (+0.5% 1w, +3.2% 1m, +9.5% 3m) as growth reverses.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 20
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Small-cap 3x still holds strongest 3m momentum (+16.7%) with only mild 1w pullback; tight stop guards a reversal.",
+       "stop_loss_pct": 18,
+       "take_profit_pct": 45
+      },
+      {
+       "symbol": "IWM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 7,
+       "thesis": "Small-cap breadth complement, positive 1m/3m (+1.4%/+6.9%) with far less drawdown risk than tech.",
+       "stop_loss_pct": 10,
+       "take_profit_pct": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Haiku concentrated AI/technology",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Recent tech weakness (QQQ -4.2% 1w, SMH -8.9%) is intra-trend volatility; 3m trend remains bullish (QQQ +7.3%, SMH +19.9%, SOXL +43.1%). Book -1.30% is reasonable given concentration mandate. Rebalancing locks losses and incurs fees; thesis intact."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book nearly flat (-0.03%), hedges effective (TLT -1.8%, USMV -1.2%), longs delivering (TNA +16.7%, IWD +9.5%, XLE +5.6%). Diversified allocation working as designed; no fundamental reason to churn."
+    }
+   ]
+  },
+  {
+   "name": "Haiku deep value",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Down 0.80% with shorts (SOXL, GLD) executing as intended; broad value exposure intact; early volatility insufficient to justify turnover fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Nearly flat at -0.02% with shorts outperforming sharply (SOXL -29.5%, TQQQ -12.3%); value/cyclical thesis progressing; ample cash reserves provide optionality without rebalancing churn."
+    }
+   ]
+  },
+  {
+   "name": "Haiku contrarian turnarounds",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book nearly flat with defensive 34% cash position; insufficient data after early-week entry to justify rebalancing; tech/fintech recovery thesis intact pending further confirmation."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Contrarian bearish-semis thesis strongly validated (SOXL -42% 1m, -29% 1w) but flat P&L indicates unlucky entry timing; insufficient data to justify fees for rebalancing; current allocation balances thesis conviction with defensive hedging."
+    }
+   ]
+  },
+  {
+   "name": "Haiku dividend growth and income",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "1.08% weekly loss manageable; dividend+growth thesis intact; 28% cash buffer absorbs tech weakness; no stops/TPs triggered."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Hedges performing optimally (SOXL -29.5% gain, TNA -2.1% gain); portfolio flat vs -1.5% SPY decline demonstrates hedge efficacy; value thesis working as designed."
+    }
+   ]
+  },
+  {
+   "name": "Haiku growth at a reasonable price",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Tech weakness is tactical not structural; 1-week selloff (SMH -8.9%, XLK -5.5%) offset by 3-month strength (SMH +19.9%, XLK +13.9%). Slight -1.01% drawdown is normal variance. Rebalancing would lock in losses during consolidation and incur turnover fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Portfolio performing as designed: near-flat NAV (-0.04%) despite 1-week sector noise; value thesis intact with XLE +4.7%, XLV +0.2%, VTV +0.5%, XLF +1.0%; short SOXL hedge working perfectly (up +29.5% on SOXL -29.5%). Maintains differentiated allocation vs. R2."
+    }
+   ]
+  },
+  {
+   "name": "Haiku global diversification via US-listed ADRs and ETFs",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Mechanical 1w leverage decay (SOXL -29.5%, TQQQ -12.3%) from semiconductor/mega-cap downturn does not invalidate global diversification thesis; 24% cash buffer intact and providing tactical flexibility."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Value-defensive strategy executing flawlessly; near-entry flat performance (-0.02%) with all positions contributing as designed (financials, energy, healthcare, KRE outperforming; short QQQ hedge offsetting tech weakness)."
+    }
+   ]
+  },
+  {
+   "name": "Haiku price momentum",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Portfolio only -2.05% despite tech weakness; all holdings up 3-month basis (QQQ +7.3%, TQQQ +15.5%, SOXL +43.1%, IWM +6.9%); leveraged volatility expected; insufficient cause for rebalance fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Exceptional -0.02% performance in volatile market; short SOXL hedge outperforming as semis decline; value/energy/financials thesis well-balanced; no adjustment needed."
+    }
+   ]
+  },
+  {
+   "name": "Haiku macro/sector rotation",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Macro growth thesis valid on 3m data (+7.3% QQQ, +6.9% IWM). Recent 1w weakness (-4.2% QQQ, -29.5% SOXL) doesn't justify churn; 30% cash and -1.27% drawdown manageable. Turnover costs fees without clear improvement catalyst."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Defensive value rotation working as designed: -0.02% flat, short QQQ hedge +0.42% weekly from tech decline. Value outperforming (SPLV +4.6% 1m, IWD +9.5% 3m) validates thesis. No churn case despite EEM weakness."
+    }
+   ]
+  },
+  {
+   "name": "Haiku small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Modest -2.40% loss over one week with no stops triggered; insufficient deterioration to justify rebalancing costs. Maintain current tech-growth positioning and leverage structure."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book essentially flat (-0.04%) with multi-factor allocation and short hedges performing as designed. Early-stage positioning working effectively; week-one noise does not warrant churn."
+    }
+   ]
+  },
+  {
+   "name": "Haiku quality compounders",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Quality mega-cap thesis intact despite short-term sector weakness; -1.02% drawdown insufficient to justify turnover fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Diversified hedge strategy performing as designed; nearly flat NAV (-0.05%) and profitable shorts (1w, 1m) despite 3m tech strength validate current allocation."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet contrarian turnarounds",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "NAV flat (+0.42%); short SOXL and defensive mix intact, weekly SOXL -29.5% is working exactly as designed, no reason to churn."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV flat (-0.02%); short GDX (-5.6%) and short SOXL (-29.5%) are working well while KRE/XLV/XBI longs are up, thesis intact."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet concentrated AI/technology",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "AI/semis names in line with sector volatility (SOXL -29.5%/wk expected under concentrated mandate), no thesis break, -1.65% is noise; standing stops intact."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book near flat (-0.03%), long XBI/XLF/KRE all working as intended and GDX short profitable, no reason to pay turnover fees on a book performing to plan."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet dividend growth and income",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "NAV flat (-0.08%), dividend growth/income mandate intact, no signal invalidates the quality/defensive tilt or SOXL/BTC hedges."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV flat (-0.06%); GDX/GLD short and financials/biotech longs still tracking as constructed, one week of noise doesn't warrant turnover costs."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet deep value",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book flat (-0.18%) with value/cyclical tilt intact; XLE +4.7%/XLF +1.0% this week support XOM/JPM legs and nothing has broken thesis, so no reason to pay turnover."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Low-vol-plus-short-tech book is working exactly as designed (-0.03% net): XLK -5.5%/SMH -8.9% shorts offset GDX -5.6%/XBI -3.0% drag, so hold and let the pairs play out rather than churn on a week of noise."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Only -1.43% after one week; EM/Japan softness is noise-level and diversified book still intact, not worth paying turnover fees yet."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Essentially flat at -0.02%; GDX/SOXL shorts and TLT hedge are working as designed, no reason to disturb construction."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet growth at a reasonable price",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "NAV roughly flat (-0.99 percent); broad market pullback hit tech growth names as expected but no thesis break, and TQQQ plus short COIN are acting as designed hedges - not enough signal to pay turnover fees."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "NAV essentially flat (-0.04 percent) while core theses are playing out well: GDX -15.5 percent 1m and SOXL -42.1 percent 1m validate the shorts, XBI +10.8 percent 1m and KRE +8.4 percent 1m validate the longs; no reason to churn a book performing to plan."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet macro/sector rotation",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Book flat (+0.28%) with short SOXL capturing a big win on the -29.5% weekly SOXL move while cyclical longs (IWM/XLI/CAT) and defensives (TLT/GLD) roughly offset; mandate intact, no reason to pay turnover."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book essentially flat (-0.02%) but shorts (SMH -8.9%, XLY, SOL) are working well against a soft XBI pullback; healthcare/financials-over-tech/discretionary thesis still valid, one week of noise doesn't warrant churn."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet price momentum",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Leveraged tech/semis momentum broke hard (SOXL -29.5%/wk, TQQQ -12.3%/wk) invalidating the long-momentum thesis; rotating to current momentum leaders (financials, healthcare, energy) and shorting the broken names.",
+     "positions": [
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Financials showing strongest positive momentum (+1.0%/+4.5%/+7.7% across 1w/1m/3m)"
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Healthcare accelerating (+0.2%/+7.4%/+8.7%), clean uptrend"
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Energy leading the week (+4.7%) with strong 1m confirmation"
+      },
+      {
+       "symbol": "IWM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Small caps holding up better than tech, modest positive momentum"
+      },
+      {
+       "symbol": "SOXL",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 15,
+       "thesis": "Semis in freefall (-29.5% 1w, -42.1% 1m), momentum decisively broken"
+      },
+      {
+       "symbol": "TQQQ",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 10,
+       "thesis": "Leveraged QQQ rolling over (-12.3% 1w, -12.7% 1m) after tech momentum reversal"
+      },
+      {
+       "symbol": "GDX",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 10,
+       "thesis": "Gold miners in sustained downtrend (-5.6%/-15.5%/-28.9%)"
+      }
+     ],
+     "cash_pct": 15
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Book essentially flat at entry (-0.02%) with healthcare/biotech longs and GDX/SOXL shorts already tracking correctly; one week is too little signal to justify turnover."
+    }
+   ]
+  }
+ ]
+}

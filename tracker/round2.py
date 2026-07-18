@@ -218,6 +218,10 @@ def run_agent(files: list[Path], px: pd.DataFrame, fills: list):
     curve = pd.Series(dtype=float)
     capital = CAPITAL
     for i, spec in enumerate(specs):
+        if pd.Timestamp(spec["entry"]) > px.index[-1]:
+            # registered rebalance whose entry close hasn't printed yet: the
+            # prior book keeps running until the new leg becomes priceable
+            break
         end = specs[i + 1]["entry"] if i + 1 < len(specs) else None
         res = simulate(spec, px, spec["entry"], end, capital, fills,
                        prev_alloc=specs[i - 1] if i > 0 else None)
@@ -232,7 +236,8 @@ def run_agent(files: list[Path], px: pd.DataFrame, fills: list):
             leg = leg.iloc[1:]  # avoid double-counting the rebalance close
         curve = pd.concat([curve, leg])
         capital = float(leg.iloc[-1]) if len(leg) else capital
-    return curve, specs[-1]
+        live = spec
+    return curve, (live if not curve.empty else specs[-1])
 
 
 def main() -> int:
