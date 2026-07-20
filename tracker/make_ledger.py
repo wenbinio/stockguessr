@@ -122,6 +122,57 @@ def add_book(round_id, when, alloc_dir):
 add_book("R2", "2026-07-16", "experiments/round2/allocations")
 add_book("R3", "2026-07-17", "experiments/round3/allocations")
 
+# ---- Weekly Execution Desk rebalance legs (weeks/<date>/*.json) ----
+def add_weeks(round_id, weeks_glob):
+    for wk in sorted(glob.glob(p(weeks_glob))):
+        for fp in sorted(glob.glob(os.path.join(wk, "*.json"))):
+            d = load(fp)
+            note = d.get("reassessment_note", "")
+            for pos in d.get("positions", []):
+                records.append({
+                    "when": d["entry"], "agent": d["name"], "model": d.get("model", ""),
+                    "round": round_id, "leg": round_id, "action": "REBALANCE",
+                    "symbol": pos["symbol"], "kind": pos.get("kind", "equity"),
+                    "side": pos.get("side", "long"), "leverage": pos.get("leverage"),
+                    "weight_pct": pos.get("weight_pct"), "fill": None, "fees": None,
+                    "fee_schedule": RETAIL_FEE, "realized_pct": None,
+                    "why": (pos.get("thesis", "") + (f" [{note}]" if note else "")).strip(),
+                })
+                for kind, key in (("STOP_LOSS", "stop_loss_pct"), ("TAKE_PROFIT", "take_profit_pct")):
+                    if pos.get(key) is not None:
+                        sign = "-" if kind == "STOP_LOSS" else "+"
+                        records.append({
+                            "when": d["entry"], "agent": d["name"], "model": d.get("model", ""),
+                            "round": round_id, "leg": round_id, "action": kind,
+                            "symbol": pos["symbol"], "kind": pos.get("kind", "equity"),
+                            "side": pos.get("side", "long"), "leverage": pos.get("leverage"),
+                            "weight_pct": pos.get("weight_pct"), "fill": None, "fees": None,
+                            "fee_schedule": RETAIL_FEE, "realized_pct": None,
+                            "why": f"Standing {kind.lower().replace('_', '-')} at {sign}{pos[key]}%: {pos.get('thesis', '')}",
+                        })
+
+add_weeks("R2", "experiments/round2/weeks/*/")
+add_weeks("R3", "experiments/round3/weeks/*/")
+
+# ---- Join actual fill prices/fees from the engines' fills.jsonl ----
+fills_idx = {}
+for round_id, path in (("R2", "experiments/round2/fills.jsonl"),
+                       ("R3", "experiments/round3/fills.jsonl")):
+    if not os.path.exists(p(path)):
+        continue
+    for line in open(p(path)):
+        f = json.loads(line)
+        key = (round_id, f["ts"][:10], f["agent"], f["symbol"], f.get("side", "long"))
+        fills_idx.setdefault(key, f)
+
+for rec in records:
+    if rec["round"] not in ("R2", "R3") or rec["action"] not in ("OPEN", "REBALANCE"):
+        continue
+    f = fills_idx.get((rec["round"], rec["when"], rec["agent"], rec["symbol"], rec["side"]))
+    if f:
+        rec["fill"] = f.get("fill_price")
+        rec["fees"] = f.get("entry_cost_usd")
+
 out = {
     "generated_by": "tracker/make_ledger.py",
     "entries": {"R1": "2026-01-02 (H1) / 2026-07-16 (H2)", "R2": "2026-07-16", "R3": "2026-07-17"},
