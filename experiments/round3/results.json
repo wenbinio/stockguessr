@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-07-23 21:41 UTC",
+ "updated_utc": "2026-07-24 21:40 UTC",
  "entry": "2026-07-17",
  "capital_usd": 1000.0,
- "as_of": "2026-07-23",
+ "as_of": "2026-07-24",
  "benchmarks": {
   "SPY ($1000)": {
-   "nav": 993.13,
+   "nav": 994.13,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 1000.0,
@@ -13,19 +13,21 @@
     "2026-07-20": 998.39,
     "2026-07-21": 1006.71,
     "2026-07-22": 1005.54,
-    "2026-07-23": 993.13
+    "2026-07-23": 993.13,
+    "2026-07-24": 994.13
    }
   },
   "BTC ($1000)": {
-   "nav": 1003.45,
+   "nav": 989.35,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 998.37,
     "2026-07-19": 1006.69,
     "2026-07-20": 1026.37,
     "2026-07-21": 1020.13,
-    "2026-07-22": 1003.45,
-    "2026-07-23": 1003.45
+    "2026-07-22": 1003.83,
+    "2026-07-23": 989.35,
+    "2026-07-24": 989.35
    }
   }
  },
@@ -34,9 +36,9 @@
    "model": "fable",
    "group": "flagship",
    "strategy": "Rate-cycle rotation + carry + early trend-reversal, with stop discipline",
-   "nav": 995.59,
-   "growth_pct": -0.44,
-   "max_drawdown_pct": -0.9,
+   "nav": 994.77,
+   "growth_pct": -0.52,
+   "max_drawdown_pct": -1.05,
    "gross_exposure_pct": 80,
    "n_positions": 9,
    "cash_pct": 20,
@@ -122,16 +124,17 @@
     "2026-07-19": 1001.68,
     "2026-07-20": 996.43,
     "2026-07-21": 1004.63,
-    "2026-07-22": 998.29,
-    "2026-07-23": 995.59
+    "2026-07-22": 998.17,
+    "2026-07-23": 994.08,
+    "2026-07-24": 994.77
    }
   },
   "Fable Barbell": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
-   "nav": 980.83,
-   "growth_pct": -1.92,
+   "nav": 983.82,
+   "growth_pct": -1.62,
    "max_drawdown_pct": -2.17,
    "gross_exposure_pct": 87.0,
    "n_positions": 8,
@@ -212,15 +215,16 @@
     "2026-07-20": 995.22,
     "2026-07-21": 987.79,
     "2026-07-22": 978.17,
-    "2026-07-23": 980.83
+    "2026-07-23": 980.83,
+    "2026-07-24": 983.82
    }
   },
   "Fable Unconstrained": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
-   "nav": 1002.15,
-   "growth_pct": 0.22,
+   "nav": 1002.63,
+   "growth_pct": 0.26,
    "max_drawdown_pct": -0.91,
    "gross_exposure_pct": 68,
    "n_positions": 6,
@@ -278,16 +282,17 @@
     "2026-07-20": 1000.13,
     "2026-07-21": 1007.15,
     "2026-07-22": 1011.34,
-    "2026-07-23": 1002.15
+    "2026-07-23": 1002.15,
+    "2026-07-24": 1002.63
    }
   },
   "Opus-fleet deep value": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in sub-market-multiple, FCF-rich dividend payers (banks below book, energy, pharma, telecom, staples) with a small hedge shorting the most stretched growth cohort.",
-   "nav": 1001.31,
-   "growth_pct": 0.13,
-   "max_drawdown_pct": -0.63,
+   "nav": 1012.81,
+   "growth_pct": 1.28,
+   "max_drawdown_pct": -0.57,
    "gross_exposure_pct": 94,
    "n_positions": 9,
    "cash_pct": 6,
@@ -373,15 +378,16 @@
     "2026-07-20": 998.64,
     "2026-07-21": 1007.65,
     "2026-07-22": 1006.0,
-    "2026-07-23": 1001.31
+    "2026-07-23": 1001.86,
+    "2026-07-24": 1012.81
    }
   },
   "Opus-fleet dividend growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in 25+ year dividend aristocrats and quality dividend-grower ETFs with defensive staples/healthcare tilt, funded by strong free cash flow, harvesting 4% cash yield on the sleeve.",
-   "nav": 999.16,
-   "growth_pct": -0.08,
+   "nav": 1010.7,
+   "growth_pct": 1.07,
    "max_drawdown_pct": -0.45,
    "gross_exposure_pct": 96,
    "n_positions": 12,
@@ -479,15 +485,16 @@
     "2026-07-20": 995.27,
     "2026-07-21": 995.35,
     "2026-07-22": 999.06,
-    "2026-07-23": 999.16
+    "2026-07-23": 999.16,
+    "2026-07-24": 1010.7
    }
   },
   "Opus-fleet price momentum": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
-   "nav": 999.5,
-   "growth_pct": -0.05,
+   "nav": 1001.16,
+   "growth_pct": 0.12,
    "max_drawdown_pct": -0.65,
    "gross_exposure_pct": 93,
    "n_positions": 8,
@@ -573,15 +580,16 @@
     "2026-07-20": 995.63,
     "2026-07-21": 1005.99,
     "2026-07-22": 1001.05,
-    "2026-07-23": 999.5
+    "2026-07-23": 999.5,
+    "2026-07-24": 1001.16
    }
   },
   "Opus-fleet quality compounders": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book of wide-moat, high-ROIC, net-cash compounders bought after a semis/mega-cap pullback, held to year-end.",
-   "nav": 984.86,
-   "growth_pct": -1.51,
+   "nav": 989.36,
+   "growth_pct": -1.06,
    "max_drawdown_pct": -1.83,
    "gross_exposure_pct": 93,
    "n_positions": 10,
@@ -665,16 +673,17 @@
     "2026-07-20": 1003.18,
     "2026-07-21": 1002.45,
     "2026-07-22": 999.21,
-    "2026-07-23": 984.86
+    "2026-07-23": 984.86,
+    "2026-07-24": 989.36
    }
   },
   "Opus-fleet small/mid-cap growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book in small/mid-cap cloud, AI-infra, and fintech compounders with secular demand, riding small-cap and software leadership while avoiding weak crypto.",
-   "nav": 1019.51,
-   "growth_pct": 1.95,
-   "max_drawdown_pct": -1.57,
+   "nav": 978.42,
+   "growth_pct": -2.16,
+   "max_drawdown_pct": -5.54,
    "gross_exposure_pct": 90,
    "n_positions": 10,
    "cash_pct": 10,
@@ -777,15 +786,16 @@
     "2026-07-20": 1003.46,
     "2026-07-21": 1035.82,
     "2026-07-22": 1029.1,
-    "2026-07-23": 1019.51
+    "2026-07-23": 1019.51,
+    "2026-07-24": 978.42
    }
   },
   "Sonnet+tools deep value": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Global deep-value dividend payers: single-digit-to-low-teens P/E, near-book P/B, strong FCF, durable 6%+ dividends across tobacco, telecom, financials, pharma, autos, staples",
-   "nav": 997.33,
-   "growth_pct": -0.27,
+   "nav": 1009.07,
+   "growth_pct": 0.91,
    "max_drawdown_pct": -0.96,
    "gross_exposure_pct": 90,
    "n_positions": 8,
@@ -871,15 +881,16 @@
     "2026-07-20": 996.7,
     "2026-07-21": 1002.86,
     "2026-07-22": 1007.01,
-    "2026-07-23": 997.33
+    "2026-07-23": 997.33,
+    "2026-07-24": 1009.07
    }
   },
   "Sonnet+tools dividend growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, unleveraged basket of dividend aristocrats/kings and a curated dividend-growth ETF core, tilted to defensive staples/healthcare with an energy hedge",
-   "nav": 1001.15,
-   "growth_pct": 0.12,
+   "nav": 1010.94,
+   "growth_pct": 1.09,
    "max_drawdown_pct": -0.26,
    "gross_exposure_pct": 92,
    "n_positions": 8,
@@ -957,15 +968,16 @@
     "2026-07-20": 997.39,
     "2026-07-21": 997.28,
     "2026-07-22": 1000.4,
-    "2026-07-23": 1001.15
+    "2026-07-23": 1001.15,
+    "2026-07-24": 1010.94
    }
   },
   "Sonnet+tools price momentum": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
-   "nav": 1016.98,
-   "growth_pct": 1.7,
+   "nav": 1019.27,
+   "growth_pct": 1.93,
    "max_drawdown_pct": -0.13,
    "gross_exposure_pct": 88,
    "n_positions": 7,
@@ -1042,15 +1054,16 @@
     "2026-07-20": 1010.22,
     "2026-07-21": 1018.27,
     "2026-07-22": 1018.0,
-    "2026-07-23": 1016.98
+    "2026-07-23": 1016.98,
+    "2026-07-24": 1019.27
    }
   },
   "Sonnet+tools quality compounders": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, equal-weight basket of ten wide-moat, high-ROIC compounders across payments, enterprise software/cloud, consumer, and pharma, unlevered with a 10% cash buffer.",
-   "nav": 977.79,
-   "growth_pct": -2.22,
+   "nav": 982.03,
+   "growth_pct": -1.8,
    "max_drawdown_pct": -2.21,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -1144,15 +1157,16 @@
     "2026-07-20": 997.6,
     "2026-07-21": 997.35,
     "2026-07-22": 991.63,
-    "2026-07-23": 977.79
+    "2026-07-23": 977.79,
+    "2026-07-24": 982.03
    }
   },
   "Sonnet+tools small/mid-cap growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
-   "nav": 905.53,
-   "growth_pct": -9.45,
+   "nav": 919.88,
+   "growth_pct": -8.01,
    "max_drawdown_pct": -9.42,
    "gross_exposure_pct": 95,
    "n_positions": 8,
@@ -1238,16 +1252,17 @@
     "2026-07-20": 998.17,
     "2026-07-21": 976.58,
     "2026-07-22": 935.89,
-    "2026-07-23": 905.53
+    "2026-07-23": 905.53,
+    "2026-07-24": 919.88
    }
   },
   "Haiku concentrated AI/technology": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Small-cap cyclical momentum with value rotation (TNA, IWD, XLE, XLI, XLF), selective tech exposure, rate hedging via short TLT and low-vol short.",
-   "nav": 1001.22,
-   "growth_pct": 0.12,
-   "max_drawdown_pct": -1.12,
+   "nav": 997.87,
+   "growth_pct": -0.21,
+   "max_drawdown_pct": -1.45,
    "gross_exposure_pct": 94,
    "n_positions": 10,
    "cash_pct": 6,
@@ -1350,16 +1365,17 @@
     "2026-07-20": 996.42,
     "2026-07-21": 1012.55,
     "2026-07-22": 1007.66,
-    "2026-07-23": 1001.22
+    "2026-07-23": 1001.22,
+    "2026-07-24": 997.87
    }
   },
   "Haiku contrarian turnarounds": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Macro cycle bottoming via defensive rotation with disciplined exits on extended growth valuations and tactical oversold recovery positions",
-   "nav": 980.84,
-   "growth_pct": -1.92,
-   "max_drawdown_pct": -2.17,
+   "nav": 994.75,
+   "growth_pct": -0.53,
+   "max_drawdown_pct": -2.34,
    "gross_exposure_pct": 83,
    "n_positions": 8,
    "cash_pct": 17,
@@ -1443,16 +1459,17 @@
     "2026-07-19": 1001.46,
     "2026-07-20": 998.93,
     "2026-07-21": 987.19,
-    "2026-07-22": 979.72,
-    "2026-07-23": 980.84
+    "2026-07-22": 979.7,
+    "2026-07-23": 978.04,
+    "2026-07-24": 994.75
    }
   },
   "Haiku deep value": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Momentum mean-reversion via sector rotation: short unsustainable momentum extremes (SOXL, TQQQ after 6-12 month runs), rotate into steady outperformers (energy, small-cap value, financials), amplify capitulation signals via crypto perps, enforce daily volatility stop discipline.",
-   "nav": 989.18,
-   "growth_pct": -1.08,
+   "nav": 1002.05,
+   "growth_pct": 0.2,
    "max_drawdown_pct": -1.69,
    "gross_exposure_pct": 62.0,
    "n_positions": 9,
@@ -1547,16 +1564,17 @@
     "2026-07-19": 1000.76,
     "2026-07-20": 1002.12,
     "2026-07-21": 987.9,
-    "2026-07-22": 985.17,
-    "2026-07-23": 989.18
+    "2026-07-22": 985.23,
+    "2026-07-23": 987.07,
+    "2026-07-24": 1002.05
    }
   },
   "Haiku dividend growth and income": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
-   "nav": 994.09,
-   "growth_pct": -0.59,
+   "nav": 999.49,
+   "growth_pct": -0.05,
    "max_drawdown_pct": -1.2,
    "gross_exposure_pct": 96.1,
    "n_positions": 9,
@@ -1642,15 +1660,16 @@
     "2026-07-20": 997.77,
     "2026-07-21": 987.76,
     "2026-07-22": 991.56,
-    "2026-07-23": 994.09
+    "2026-07-23": 994.09,
+    "2026-07-24": 999.49
    }
   },
   "Haiku global diversification via US-listed ADRs and ETFs": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
-   "nav": 1001.33,
-   "growth_pct": 0.13,
+   "nav": 1006.8,
+   "growth_pct": 0.68,
    "max_drawdown_pct": -0.42,
    "gross_exposure_pct": 91,
    "n_positions": 9,
@@ -1727,16 +1746,17 @@
     "2026-07-20": 995.67,
     "2026-07-21": 1000.72,
     "2026-07-22": 1001.33,
-    "2026-07-23": 1001.33
+    "2026-07-23": 1001.33,
+    "2026-07-24": 1006.8
    }
   },
   "Haiku growth at a reasonable price": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
-   "nav": 986.65,
-   "growth_pct": -1.33,
-   "max_drawdown_pct": -1.52,
+   "nav": 999.53,
+   "growth_pct": -0.05,
+   "max_drawdown_pct": -1.53,
    "gross_exposure_pct": 79,
    "n_positions": 10,
    "cash_pct": 21,
@@ -1824,16 +1844,17 @@
     "2026-07-19": 1000.32,
     "2026-07-20": 995.29,
     "2026-07-21": 990.48,
-    "2026-07-22": 985.07,
-    "2026-07-23": 986.65
+    "2026-07-22": 985.05,
+    "2026-07-23": 986.0,
+    "2026-07-24": 999.53
    }
   },
   "Haiku macro/sector rotation": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive quality rotation paired with sector mean-reversion in laggards, shorting QQQ momentum extremes to fund dividend-paying carry positions",
-   "nav": 1003.54,
-   "growth_pct": 0.35,
+   "nav": 1007.88,
+   "growth_pct": 0.79,
    "max_drawdown_pct": -0.37,
    "gross_exposure_pct": 87.9,
    "n_positions": 8,
@@ -1919,16 +1940,17 @@
     "2026-07-20": 996.15,
     "2026-07-21": 998.76,
     "2026-07-22": 1001.3,
-    "2026-07-23": 1003.54
+    "2026-07-23": 1003.54,
+    "2026-07-24": 1007.88
    }
   },
   "Haiku price momentum": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
-   "nav": 976.72,
-   "growth_pct": -2.33,
-   "max_drawdown_pct": -2.31,
+   "nav": 974.13,
+   "growth_pct": -2.59,
+   "max_drawdown_pct": -2.57,
    "gross_exposure_pct": 84,
    "n_positions": 8,
    "cash_pct": 16,
@@ -2006,16 +2028,17 @@
     "2026-07-20": 993.24,
     "2026-07-21": 986.97,
     "2026-07-22": 979.78,
-    "2026-07-23": 976.72
+    "2026-07-23": 976.72,
+    "2026-07-24": 974.13
    }
   },
   "Haiku quality compounders": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
-   "nav": 997.02,
-   "growth_pct": -0.3,
-   "max_drawdown_pct": -0.49,
+   "nav": 999.14,
+   "growth_pct": -0.09,
+   "max_drawdown_pct": -0.61,
    "gross_exposure_pct": 71.9,
    "n_positions": 8,
    "cash_pct": 28.1,
@@ -2091,17 +2114,18 @@
     "2026-07-19": 1000.16,
     "2026-07-20": 998.27,
     "2026-07-21": 1001.9,
-    "2026-07-22": 997.28,
-    "2026-07-23": 997.02
+    "2026-07-22": 997.32,
+    "2026-07-23": 995.75,
+    "2026-07-24": 999.14
    }
   },
   "Haiku small/mid-cap growth": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
-   "nav": 1013.9,
-   "growth_pct": 1.39,
-   "max_drawdown_pct": -1.44,
+   "nav": 998.89,
+   "growth_pct": -0.11,
+   "max_drawdown_pct": -1.97,
    "gross_exposure_pct": 107,
    "n_positions": 7,
    "cash_pct": 17,
@@ -2167,17 +2191,18 @@
     "2026-07-19": 997.18,
     "2026-07-20": 985.71,
     "2026-07-21": 1016.11,
-    "2026-07-22": 1018.93,
-    "2026-07-23": 1013.9
+    "2026-07-22": 1018.8,
+    "2026-07-23": 1018.96,
+    "2026-07-24": 998.89
    }
   },
   "Sonnet concentrated AI/technology": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
-   "nav": 985.08,
-   "growth_pct": -1.49,
-   "max_drawdown_pct": -1.85,
+   "nav": 987.92,
+   "growth_pct": -1.21,
+   "max_drawdown_pct": -1.82,
    "gross_exposure_pct": 106,
    "n_positions": 7,
    "cash_pct": 10,
@@ -2249,16 +2274,17 @@
     "2026-07-19": 994.19,
     "2026-07-20": 985.69,
     "2026-07-21": 983.6,
-    "2026-07-22": 981.16,
-    "2026-07-23": 985.08
+    "2026-07-22": 981.51,
+    "2026-07-23": 987.84,
+    "2026-07-24": 987.92
    }
   },
   "Sonnet contrarian turnarounds": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
-   "nav": 983.68,
-   "growth_pct": -1.63,
+   "nav": 997.05,
+   "growth_pct": -0.29,
    "max_drawdown_pct": -2.57,
    "gross_exposure_pct": 88,
    "n_positions": 8,
@@ -2339,15 +2365,16 @@
     "2026-07-20": 993.9,
     "2026-07-21": 979.93,
     "2026-07-22": 974.14,
-    "2026-07-23": 983.68
+    "2026-07-23": 983.68,
+    "2026-07-24": 997.05
    }
   },
   "Sonnet deep value": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
-   "nav": 994.66,
-   "growth_pct": -0.53,
+   "nav": 1004.06,
+   "growth_pct": 0.41,
    "max_drawdown_pct": -1.08,
    "gross_exposure_pct": 95,
    "n_positions": 7,
@@ -2418,16 +2445,17 @@
     "2026-07-19": 998.36,
     "2026-07-20": 989.27,
     "2026-07-21": 989.55,
-    "2026-07-22": 994.12,
-    "2026-07-23": 994.66
+    "2026-07-22": 994.04,
+    "2026-07-23": 997.47,
+    "2026-07-24": 1004.06
    }
   },
   "Sonnet dividend growth and income": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
-   "nav": 982.32,
-   "growth_pct": -1.77,
+   "nav": 995.04,
+   "growth_pct": -0.5,
    "max_drawdown_pct": -2.74,
    "gross_exposure_pct": 129,
    "n_positions": 9,
@@ -2523,16 +2551,17 @@
     "2026-07-19": 984.73,
     "2026-07-20": 975.08,
     "2026-07-21": 972.1,
-    "2026-07-22": 977.85,
-    "2026-07-23": 982.32
+    "2026-07-22": 978.72,
+    "2026-07-23": 994.4,
+    "2026-07-24": 995.04
    }
   },
   "Sonnet global diversification via US-listed ADRs and ETFs": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
-   "nav": 968.4,
-   "growth_pct": -3.16,
+   "nav": 983.09,
+   "growth_pct": -1.69,
    "max_drawdown_pct": -3.61,
    "gross_exposure_pct": 80,
    "n_positions": 6,
@@ -2592,16 +2621,17 @@
     "2026-07-20": 993.37,
     "2026-07-21": 974.73,
     "2026-07-22": 963.67,
-    "2026-07-23": 968.4
+    "2026-07-23": 968.4,
+    "2026-07-24": 983.09
    }
   },
   "Sonnet growth at a reasonable price": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
-   "nav": 970.36,
-   "growth_pct": -2.96,
-   "max_drawdown_pct": -3.32,
+   "nav": 990.12,
+   "growth_pct": -0.99,
+   "max_drawdown_pct": -3.33,
    "gross_exposure_pct": 100,
    "n_positions": 7,
    "cash_pct": 20,
@@ -2677,17 +2707,18 @@
     "2026-07-19": 997.61,
     "2026-07-20": 985.89,
     "2026-07-21": 970.47,
-    "2026-07-22": 966.88,
-    "2026-07-23": 970.36
+    "2026-07-22": 966.77,
+    "2026-07-23": 974.58,
+    "2026-07-24": 990.12
    }
   },
   "Sonnet macro/sector rotation": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
-   "nav": 994.75,
-   "growth_pct": -0.52,
-   "max_drawdown_pct": -1.06,
+   "nav": 1002.83,
+   "growth_pct": 0.28,
+   "max_drawdown_pct": -1.05,
    "gross_exposure_pct": 87,
    "n_positions": 8,
    "cash_pct": 18,
@@ -2768,16 +2799,17 @@
     "2026-07-19": 996.7,
     "2026-07-20": 989.89,
     "2026-07-21": 989.45,
-    "2026-07-22": 989.13,
-    "2026-07-23": 994.75
+    "2026-07-22": 989.3,
+    "2026-07-23": 997.86,
+    "2026-07-24": 1002.83
    }
   },
   "Sonnet price momentum": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
-   "nav": 975.35,
-   "growth_pct": -2.47,
+   "nav": 986.8,
+   "growth_pct": -1.32,
    "max_drawdown_pct": -3.07,
    "gross_exposure_pct": 95,
    "n_positions": 8,
@@ -2863,15 +2895,16 @@
     "2026-07-20": 991.93,
     "2026-07-21": 979.35,
     "2026-07-22": 969.13,
-    "2026-07-23": 975.35
+    "2026-07-23": 975.35,
+    "2026-07-24": 986.8
    }
   },
   "Sonnet quality compounders": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
-   "nav": 983.7,
-   "growth_pct": -1.63,
+   "nav": 991.58,
+   "growth_pct": -0.84,
    "max_drawdown_pct": -2.0,
    "gross_exposure_pct": 105,
    "n_positions": 7,
@@ -2940,16 +2973,17 @@
     "2026-07-19": 988.59,
     "2026-07-20": 980.01,
     "2026-07-21": 979.52,
-    "2026-07-22": 982.65,
-    "2026-07-23": 983.7
+    "2026-07-22": 983.3,
+    "2026-07-23": 992.06,
+    "2026-07-24": 991.58
    }
   },
   "Sonnet small/mid-cap growth": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
-   "nav": 968.2,
-   "growth_pct": -3.18,
+   "nav": 986.93,
+   "growth_pct": -1.31,
    "max_drawdown_pct": -3.56,
    "gross_exposure_pct": 73,
    "n_positions": 6,
@@ -3010,16 +3044,17 @@
     "2026-07-20": 993.88,
     "2026-07-21": 973.11,
     "2026-07-22": 964.27,
-    "2026-07-23": 968.2
+    "2026-07-23": 968.2,
+    "2026-07-24": 986.93
    }
   },
   "Opus Broadening": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
-   "nav": 989.08,
-   "growth_pct": -1.09,
-   "max_drawdown_pct": -1.07,
+   "nav": 979.89,
+   "growth_pct": -2.01,
+   "max_drawdown_pct": -1.99,
    "gross_exposure_pct": 90,
    "n_positions": 8,
    "cash_pct": 10,
@@ -3104,15 +3139,16 @@
     "2026-07-20": 993.52,
     "2026-07-21": 999.46,
     "2026-07-22": 997.14,
-    "2026-07-23": 989.08
+    "2026-07-23": 989.08,
+    "2026-07-24": 979.89
    }
   },
   "Opus Momentum": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
-   "nav": 1001.55,
-   "growth_pct": 0.16,
+   "nav": 1004.08,
+   "growth_pct": 0.41,
    "max_drawdown_pct": -0.65,
    "gross_exposure_pct": 94,
    "n_positions": 8,
@@ -3185,16 +3221,17 @@
     "2026-07-20": 997.23,
     "2026-07-21": 1003.39,
     "2026-07-22": 1008.08,
-    "2026-07-23": 1001.55
+    "2026-07-23": 1001.55,
+    "2026-07-24": 1004.08
    }
   },
   "Opus Picks-and-Shovels": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
-   "nav": 1023.28,
-   "growth_pct": 2.33,
-   "max_drawdown_pct": -1.05,
+   "nav": 1018.87,
+   "growth_pct": 1.89,
+   "max_drawdown_pct": -1.48,
    "gross_exposure_pct": 96,
    "n_positions": 8,
    "cash_pct": 4,
@@ -3272,16 +3309,17 @@
     "2026-07-20": 1000.67,
     "2026-07-21": 1023.51,
     "2026-07-22": 1034.16,
-    "2026-07-23": 1023.28
+    "2026-07-23": 1023.28,
+    "2026-07-24": 1018.87
    }
   },
   "Opus Quality Defensive": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
-   "nav": 1017.91,
-   "growth_pct": 1.79,
-   "max_drawdown_pct": -0.52,
+   "nav": 1006.39,
+   "growth_pct": 0.64,
+   "max_drawdown_pct": -1.65,
    "gross_exposure_pct": 95,
    "n_positions": 6,
    "cash_pct": 5,
@@ -3346,17 +3384,18 @@
     "2026-07-19": 1002.1,
     "2026-07-20": 1008.44,
     "2026-07-21": 1023.28,
-    "2026-07-22": 1018.82,
-    "2026-07-23": 1017.91
+    "2026-07-22": 1018.75,
+    "2026-07-23": 1014.63,
+    "2026-07-24": 1006.39
    }
   },
   "Opus Value": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
-   "nav": 1004.34,
-   "growth_pct": 0.43,
-   "max_drawdown_pct": -1.22,
+   "nav": 1000.41,
+   "growth_pct": 0.04,
+   "max_drawdown_pct": -1.6,
    "gross_exposure_pct": 95,
    "n_positions": 9,
    "cash_pct": 5,
@@ -3443,7 +3482,8 @@
     "2026-07-20": 999.83,
     "2026-07-21": 1016.71,
     "2026-07-22": 1015.47,
-    "2026-07-23": 1004.34
+    "2026-07-23": 1004.34,
+    "2026-07-24": 1000.41
    }
   }
  }
