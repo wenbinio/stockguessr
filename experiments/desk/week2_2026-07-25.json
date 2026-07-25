@@ -1,0 +1,1669 @@
+{
+ "desk_run_utc": "2026-07-25 12:00 UTC",
+ "week": 2,
+ "protocol": "v2 drip-info",
+ "effective_entry": "2026-07-27",
+ "released_item": {
+  "collection": "2026-07-25",
+  "id": 1,
+  "theme": "Semis / leveraged tech reversal"
+ },
+ "cumulative_released_items": 2,
+ "managers_polled": 37,
+ "responded": 37,
+ "rebalances_accepted": 18,
+ "rejected": 0,
+ "orchestrator": {
+  "round2": "HOLD",
+  "round3": "HOLD",
+  "reason": "Released info shows a violent semi round-trip (SOXL -13.1% on 7/24) but roughly flat over 5 days; no new information contradicts the registered AI-capex theses, and churn pays real fees."
+ },
+ "decisions": [
+  {
+   "name": "Fable Barbell",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information is semiconductor weakness (SMH -9.3% 1m, SOXL -40.4% 1m with a -13% day on 7/24), which is exactly the scenario the barbell was built to absorb: the 3% SOXL short is paying off via both downside convexity and leveraged-ETF volatility decay, while 38% defensive ballast (BRK-B, KO, MRK, JNJ, GLD, XLU) and 18% cash cushion the AI-infra sleeve. Nothing released challenges the multi-year AI datacenter capex theses behind NVDA/AVGO/GEV/ANET \u2014 this is price chop, not fundamental news \u2014 and a rebalance would pay real trading costs (elevated on the leveraged short) to re-express the same view. Holding the structure is the mandate."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "This book re-ranks on cross-sectional momentum, but the released info covers only semiconductor ETFs (SMH/SOXL/TQQQ) \u2014 none of which are in my universe \u2014 and provides zero data on biotech, energy, banks, airlines, transports, silver, gold miners, or uranium. Re-ranking without any new momentum signal would be pure noise trading with real costs. The existing hard stops (-15% on longs, -18% on shorts, +40% take-profits on shorts) already enforce discipline mechanically if any trend breaks while I'm information-dark, so the correct momentum-consistent action is to keep the ranked book unchanged."
+    }
+   ]
+  },
+  {
+   "name": "Fable Unconstrained",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "The only information released this week is a sharp, failed-bounce semiconductor correction (SMH -9 to -10% on the month, -3.3% on 7/24; SOXL -40% monthly). My dual-momentum mandate explicitly excludes 6m leaders that are in sharp 1m correction, and AMD is a direct semi name that now fails that filter. I cut AMD entirely, trim the AI-infra-adjacent VRT/ANET, keep the cyber momentum core (no released info challenges it) and the small spot-BTC mean-reversion ticket, and rotate the freed capital to 4% cash. Turnover is modest (~16% of the book) so trading cost is a few bps.",
+     "cash_pct": 33,
+     "positions": [
+      {
+       "symbol": "CRWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Cyber breakout leader, +82% 6m and accelerating; unaffected by the semi correction in released info"
+      },
+      {
+       "symbol": "PANW",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Strongest 1m momentum in universe (+24%) on cyber platform consolidation; passes both momentum filters"
+      },
+      {
+       "symbol": "FTNT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "+116% 6m with intact uptrend; cyber demand supercycle sleeve kept as the book's core"
+      },
+      {
+       "symbol": "VRT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "AI power infrastructure +73% 6m; trimmed (not cut) as AI-infra adjacent to the confirmed semi correction",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "ANET",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "AI networking with steady +29% 6m momentum; trimmed on AI-infra contagion risk from the semi selloff",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 5,
+       "thesis": "-48% off ATH spot mean-reversion ticket; no funding or liquidation risk, no new info against it"
+      }
+     ]
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The released info (semi-led tech correction, leveraged tech ETFs down 12-40% on the month) does not touch any holding in this defensive value/carry book \u2014 gold, Brazil, Berkshire, UNH, and staples have no semi exposure, and a cracking megacap-tech melt-up is precisely the regime this contrarian book was built for. The one vulnerable line, SVXY, is already sized small (8%) with a -40% stop capping a vol-spike loss. With 32% cash earning 4% and real trading costs, churning a book the new information actually supports would be value-destructive. Hold unchanged."
+    }
+   ]
+  },
+  {
+   "name": "Haiku concentrated AI/technology",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Semiconductor weakness (SOXL -40% month) affects tactical leverage position but does not invalidate core AI infrastructure thesis. Insufficient price data on enterprise holdings (NVDA, MSFT, ADBE, SNOW, AMZN, CRM). The 12% dry powder and 8% tactical SOXL were positioned for volatility. Core thesis\u2014H2 2026 rotation into enterprise AI platforms and cloud services\u2014remains intact without confirmation of broken adoption trends. Rebalancing on leverage ETF weakness alone would crystallize losses prematurely."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Only 5% of portfolio has price data (TQQQ at -12.69% month, not breaching -30% stop). No market prices available for 95% of holdings (TNA, IWD, XLE, XLI, XLF, EEM, TLT short, USMV short). Nasdaq weakness may support value rotation thesis but cannot assess without prices on core cyclical and value positions. Rebalancing decision requires current prices on structural positions; withhold until more data released."
+    }
+   ]
+  },
+  {
+   "name": "Haiku contrarian turnarounds",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "AI-disruption recovery thesis for ADBE/CRM and crypto turnaround thesis remain structurally intact with no contradictory market data. Limited information releases do not address core holdings; high-cash positioning (34%) prudent until oversold recovery catalysts materialize."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "SOXL short thesis validated by 40%+ YTD decline and -13.14% capitulation drop on 07-24, confirming semiconductor mean-reversion opportunity. Maintaining defensive long rotation (XLU, XLP, KRE) and oversold recovery plays (TNA, XLV, BTC, ETH) as macro-cycle bottoming trade with disciplined stops. Contrarian positioning survives test."
+    }
+   ]
+  },
+  {
+   "name": "Haiku deep value",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Core deep-value thesis on beaten-down software (ADBE/CRM) and dividend defensives (JPM/KO) remains sound; tech sector compression validates thesis rather than contradicting it. Tactical hedges (SQQQ/GLD shorts) are appropriately sized to absorb volatility. One week of market data insufficient to overturn multi-month fundamental recovery thesis. Market conditions support mean-reversion into undervalued fundamentals."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Mean-reversion shorts have achieved/exceeded targets: SOXL down -40.41% (tp +22%), TQQQ down -12.69% (tp +18%). Substantial unrealized gains should be locked in; extended holding risks mean-reversion bounce. BTC perp leverage at 3x adds unnecessary tail risk. Cash deployment into rotation thesis justified given energy/financial/EM positioning.",
+     "positions": [
+      {
+       "symbol": "SPY",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 3,
+       "thesis": "Broad S&P 500 market anchor for core exposure."
+      },
+      {
+       "symbol": "IWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "stop_loss_pct": 8,
+       "take_profit_pct": 20,
+       "thesis": "Russell 2000 Value showing +29.5% 12m stability; core rotation target capturing capital flow from mega-cap tech."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "stop_loss_pct": 10,
+       "take_profit_pct": 18,
+       "thesis": "Energy +34.1% 12m; steady performer in sector rotation away from tech."
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "stop_loss_pct": 10,
+       "take_profit_pct": 15,
+       "thesis": "Financials +6.0% 1m strength signals rate-environment recovery."
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "stop_loss_pct": 10,
+       "take_profit_pct": 18,
+       "thesis": "Regional banks +26.5% 12m showing rate leverage and specialized financial exposure."
+      },
+      {
+       "symbol": "EEM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "stop_loss_pct": 12,
+       "take_profit_pct": 20,
+       "thesis": "Emerging markets -6.0% 1m dip after +37.3% 12m run; oversold mean-reversion opportunity."
+      },
+      {
+       "symbol": "SPLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 5,
+       "stop_loss_pct": 8,
+       "take_profit_pct": 12,
+       "thesis": "Low-volatility defensive providing downside cushion."
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "perp",
+       "side": "long",
+       "weight_pct": 3.5,
+       "leverage": 2,
+       "stop_loss_pct": 30,
+       "take_profit_pct": 40,
+       "thesis": "Bitcoin capitulation recovery with 2x leverage (reduced from 3x); moderate conviction with controlled tail risk."
+      },
+      {
+       "symbol": "TQQQ",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 2,
+       "stop_loss_pct": 25,
+       "take_profit_pct": 15,
+       "thesis": "3x Nasdaq short reduced from 5% to 2%; trims mean-reversion gains while retaining small tech hedge."
+      }
+     ],
+     "cash_pct": 37.5,
+     "novelty": "Shifts from deep-value equity fundamentals (ADBE/CRM) and dividend defensives (JPM/KO) to macro-driven sector rotation mean-reversion betting that extreme tech momentum (SOXL +506.8% 12m) is unsustainable; deploys into energy, small-cap value, regional financials, and EM while trimming tech shorts from 13% to 2% after achieving targets. Only ~5% same-direction weight overlap with Round 2."
+    }
+   ]
+  },
+  {
+   "name": "Haiku dividend growth and income",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Bullish semis/small-cap consolidation thesis invalidated: SOXL -40.41%, TQQQ -12.69%, SMH -9.33% (1-month). NVDA and TQQQ positions destroyed. Rebalancing to dividend-income core strategy aligned with mandate, using market weakness for value rotation.",
+     "positions": [
+      {
+       "symbol": "JNJ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Dividend aristocrat, 60+ year consecutive growth, 3% yield provides defensive cushion"
+      },
+      {
+       "symbol": "PG",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Dividend aristocrat, pricing power inflation hedge, recession-resistant cash flows"
+      },
+      {
+       "symbol": "MCD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "Dividend growth 50+ years, franchise model resilience, international diversification"
+      },
+      {
+       "symbol": "SCHD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Dividend growth ETF with quality screen, income generation aligned with mandate"
+      },
+      {
+       "symbol": "VOO",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 18,
+       "thesis": "Large-cap dividend exposure, defensive vs concentrated growth, portfolio core"
+      },
+      {
+       "symbol": "XLP",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Consumer staples, defensive sector, dividend yield, counter-cyclical positioning"
+      },
+      {
+       "symbol": "VTV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Value ETF, lower valuations after tech decline, mean reversion play"
+      },
+      {
+       "symbol": "SOXL",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 5,
+       "thesis": "Tactical hedge on semis weakness validation, reverses bullish NVDA conviction position"
+      }
+     ],
+     "cash_pct": 23
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "SOXL SHORT 40.41% profitable, far exceeding +25% take profit target. Prudent profit-taking and risk management warrant closing SOXL position and redeploying into expanded value/dividend complex while maintaining TNA short momentum hedge.",
+     "positions": [
+      {
+       "symbol": "VTV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 16,
+       "thesis": "Value ETF, core mean-reversion play, expanded position after SOXL short profits"
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "stop_loss_pct": -10,
+       "thesis": "Financials lagging YTD, dividend yield capture, cyclical upside into rate normalization"
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": -12,
+       "thesis": "Energy diversification with geopolitical support, dividend yield, expanded position"
+      },
+      {
+       "symbol": "IWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": -10,
+       "thesis": "Small-cap value subset, quality reversion play, avoids momentum excess"
+      },
+      {
+       "symbol": "XLI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": -10,
+       "thesis": "Industrials, infrastructure tailwind, cyclical undervaluation vs growth, expanded position"
+      },
+      {
+       "symbol": "SCHV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": -8,
+       "thesis": "Dividend growth ETF, yield capture with quality screen, tactical rotation anchor"
+      },
+      {
+       "symbol": "USMV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": -8,
+       "thesis": "Low-volatility laggard (5.8% YTD), defensive recovery play with structural support"
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 7,
+       "stop_loss_pct": -12,
+       "take_profit_pct": 20,
+       "thesis": "3x small-cap momentum short retained as mean-reversion hedge; SOXL profits redeploy to longs"
+      }
+     ],
+     "cash_pct": 8,
+     "novelty": "Return driver shifts from dual tactical mean-reversion shorts (SOXL + TNA) capturing semis/small-cap excess to expanded value/dividend long rotation with single TNA momentum hedge; SOXL thesis validated at +40%, now pivoting to longer-duration value complex with reduced leverage exposure and profit lock-in."
+    }
+   ]
+  },
+  {
+   "name": "Haiku global diversification via US-listed ADRs and ETFs",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "AI infrastructure recovery (consolidation setup) thesis disproven by accelerating losses (-13% single day on SOXL 2026-07-24). Leverage magnifying drawdowns (SOXL -40.41% vs SMH -9.33% monthly shows 3x leverage destroying capital 4.3x faster than underlying). De-lever into unleveraged EM exposure (FXI, IEMG) while maintaining crypto capitulation thesis and Japan diversification. Preserves global diversification mandate and core beaten-down markets rotation thesis while eliminating failing leverage bet. 24% cash buffer designed for this rebalancing scenario.",
+     "cash_pct": 30,
+     "positions": [
+      {
+       "symbol": "SOXL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 3,
+       "thesis": "Maintain AI infrastructure optionality but eliminate leverage bleed destroying capital faster than thesis validates"
+      },
+      {
+       "symbol": "TQQQ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 2,
+       "thesis": "Maintain Nasdaq upside exposure optionality but minimize leverage drag during thesis invalidation period"
+      },
+      {
+       "symbol": "BTC",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 16,
+       "thesis": "Capitulation reversal; -27.3% represents typical 70%+ bear market drawdown low; recovery to $80k+ offers 24%+ upside; uncorrelated diversifier"
+      },
+      {
+       "symbol": "FXI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 18,
+       "thesis": "Increased EM China recovery positioning; Alibaba/Tencent/Baidu ADR exposure to rotational flows as US tech dominance fades"
+      },
+      {
+       "symbol": "IEMG",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 22,
+       "thesis": "Core broad EM diversification; global growth recovery and positive risk sentiment reversion after H1 underperformance"
+      },
+      {
+       "symbol": "EWJ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Japan regional ADR diversification; developed market stability and growth optionality within global diversification mandate"
+      }
+     ]
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "QQQ short thesis validated by observed Nasdaq weakness (TQQQ -12.69% monthly confirms tech exhaustion after +29.5% YTD rally). Dividend carry and value rotation positions (XLF/XLE/XLV/VTV/EFA/KRE/EWJ) remain untested with current data but construction sound: sector rotation away from tech concentration, income generation via high-yield financials/energy/healthcare, international value diversification, duration hedge via TLT. Tactical short provides pairs-trade hedge. Cash buffer (9%) adequate for weekly reassessment cycle."
+    }
+   ]
+  },
+  {
+   "name": "Haiku growth at a reasonable price",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "AI infrastructure thesis fundamentally intact despite tactical semiconductor weakness. Quality semiconductor and software exposure (NVDA 14%, MSFT 12%, AVGO 9%, LRCX 7%, AMD 6%) positioned for multi-year LLM capex buildout and enterprise AI adoption secular tailwind. Portfolio defensively structured (20% cash, zero leverage, high-quality equities, dividend plays like JNJ, BRK.B, V) ensuring capital preservation mandate. Sector-specific pullback in semis (SMH -3.27% day, TQQQ -3.47% day versus Nasdaq-100 ~-1% inferred) reflects positioning rotation, not thesis rejection. Maintain positioning."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Mean-reversion thesis validated precisely as designed: semiconductor extreme hypothesis confirmed with SOXL collapsing 40% YTD and accelerating -13.14% on 2026-07-24 (significantly exceeding +25% take-profit target). Lock in profits and de-risk for correction environment: close SOXL short, reduce TNA leverage, increase cash buffer. Maintain core sector-rotation thesis (XLF, XLE, XLV, VTV capturing lagging-sector outperformance with financials +11.2%, energy +34.1%, healthcare +21.5% YTD) while shifting to defensive positioning.",
+     "positions": [
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 13,
+       "thesis": "Financials sector rotation; net beneficiary of rate environment, lagged YTD (+11.2%), attractive valuations"
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Energy sector strength; commodity cycle momentum (+34.1% YTD), relative value versus tech"
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Healthcare quality exposure; defensive characteristics, +21.5% YTD, steady earnings growth"
+      },
+      {
+       "symbol": "VTV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Value factor diversification; mean-reversion potential as growth cools, +8.2% in 3m"
+      },
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Biotech growth within value; strong momentum (+14.6% last month, +82.7% YTD), cycle strength"
+      },
+      {
+       "symbol": "QUAL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Quality factor at reasonable multiples; lower-beta growth, +21.5% YTD"
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 7,
+       "leverage": 3,
+       "stop_loss_pct": 15,
+       "thesis": "Small-cap Russell 2000 3x leverage; value rotation catch-up, +106% YTD, contrarian positioning"
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 2,
+       "stop_loss_pct": 25,
+       "take_profit_pct": 150,
+       "thesis": "Bitcoin contrarian recovery; down 46% YTD, washout bottom formation, institutional adoption tailwind"
+      },
+      {
+       "symbol": "ETH-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 2,
+       "stop_loss_pct": 25,
+       "take_profit_pct": 100,
+       "thesis": "Ethereum contrarian recovery; down 44.1% YTD, similar washout thesis, DeFi/NFT cycle recovery"
+      }
+     ],
+     "cash_pct": 30,
+     "novelty": "Return drivers fundamentally inverted from Round 2: eliminates concentrated tech-infrastructure theme (48% in semiconductors/software) in favor of sector-rotation mean-reversion across lagging value/healthcare/financials (43% combined XLF/XLE/XLV/VTV), capturing outperformance from fundamental-driven sector rotation and lagging-sector catch-up rather than AI capex cycle; <10% gross-weight overlap same-direction positioning."
+    }
+   ]
+  },
+  {
+   "name": "Haiku macro/sector rotation",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Tech and semiconductor sector implosion (-40.41% month in SOXL, -12.69% month in TQQQ) forces macro rotation from AI/leverage thesis into defensive quality and cash. Eliminating leveraged positions and rotating proceeds to healthcare and utilities defensives with 3-4% dividend yield; maintaining small-cap diversification and crypto opportunism with elevated cash (42%) to capitalize on sector rotation opportunities as volatility stabilizes.",
+     "positions": [
+      {
+       "symbol": "QQQ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Broad Nasdaq-100 exposure at 1x leverage replaces leveraged TQQQ; captures mega-cap tech exposure without leverage risk"
+      },
+      {
+       "symbol": "IWM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Russell 2000 small-cap remains stable relative to tech sector stress; maintains diversification away from mega-cap concentration"
+      },
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Healthcare sector defensives with 3-4% dividend yield; outperforming during risk-off rotation as growth fears dominate"
+      },
+      {
+       "symbol": "XLU",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "Utilities defensives with 3-4% dividend yield and rate-sensitive positioning; capturing mean-reversion during equity stress"
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 4,
+       "thesis": "Bitcoin allocation reduced from 5% to 4% due to risk-off environment; maintains crypto recovery exposure with lower conviction"
+      },
+      {
+       "symbol": "GLD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Gold hedge increased from 10% to 12%; uncorrelated portfolio protection during tech drawdown and macro volatility"
+      }
+     ],
+     "cash_pct": 42
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Defensive quality rotation thesis validated by tech sector implosion (QQQ down -12.69% month); short QQQ (+10% notional) correctly hedging momentum extremes; long positions in healthcare, financials, and emerging markets weathering volatility; stop losses and take profits appropriately calibrated for risk management across defensive factor and sector rotation plays."
+    }
+   ]
+  },
+  {
+   "name": "Haiku price momentum",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Semiconductor and leveraged Nasdaq momentum have reversed decisively (SOXL -41.5% month, TQQQ -12.7% month), invalidating the momentum thesis established 2026-07-16. A price-momentum strategy must pursue actual momentum; with H2 2026 momentum shifted from mega-cap tech into reversal, re-balancing defensively\u2014reducing SOXL/TQQQ/MU exposure by 80% and deploying into bonds/treasuries/cash to preserve capital and await new momentum signals while avoiding further drawdown from broken trend.",
+     "positions": [
+      {
+       "symbol": "TQQQ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Retain Nasdaq participation on stabilization; reduced from 20% due to momentum reversal."
+      },
+      {
+       "symbol": "IWM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Small-cap provides diversification alternative to mega-cap tech momentum collapse."
+      },
+      {
+       "symbol": "QQQ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Core Nasdaq ballast but significantly de-risked from 12%."
+      },
+      {
+       "symbol": "SOXL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 3,
+       "thesis": "Minimal semiconductor exposure; essentially exiting from 15% given -41% drawdown and broken momentum."
+      },
+      {
+       "symbol": "MU",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 4,
+       "thesis": "Token mega-cap semi exposure from 13%; waiting for technical stabilization."
+      },
+      {
+       "symbol": "SPY",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "Broad market ballast for stability and diversification."
+      },
+      {
+       "symbol": "SHV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Short-term treasuries for capital preservation and 4% cash yield."
+      },
+      {
+       "symbol": "AGG",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 5,
+       "thesis": "Bond exposure for downside protection."
+      },
+      {
+       "symbol": "IEF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "Intermediate-term treasuries; intermediate duration for yield with stability."
+      }
+     ],
+     "cash_pct": 35
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "SHORT SOXL thesis validated: semiconductors down -40.4% as of 2026-07-24 (vs +506% YTD peak). The +15% TP should trigger soon, locking in massive profits. Re-balancing to close the winning short and re-deploy proceeds into full-conviction rotation theme (energy/financials/biotech/value/EM) at increased position sizing, maximizing capital efficiency in the confirmed rotation-out-of-tech structural trade.",
+     "positions": [
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 16,
+       "take_profit_pct": 25,
+       "thesis": "Biotech rotation; increase from 12% as capital flows out of tech into overlooked value sectors."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "take_profit_pct": 22,
+       "thesis": "Energy rotation; increase from 10% with macro tailwinds and relative value vs collapsed tech."
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "take_profit_pct": 18,
+       "thesis": "Financials rotation; increase from 10% as rotation theme accelerates post-tech crash."
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "take_profit_pct": 18,
+       "thesis": "Small-cap value leverage; increase from 12% for enhanced participation in rotation away from mega-cap tech."
+      },
+      {
+       "symbol": "VTV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 19,
+       "take_profit_pct": 15,
+       "thesis": "Large-cap value core; increase from 8% to 19% as value rotation gains structural traction."
+      },
+      {
+       "symbol": "EEM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 13,
+       "take_profit_pct": 18,
+       "thesis": "Emerging markets rotation; increase from 12% capturing geographic diversification from broken US tech concentration."
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "take_profit_pct": 16,
+       "thesis": "Regional banks rotation; increase from 8% as value/small-cap rotation theme deepens."
+      }
+     ],
+     "cash_pct": 0,
+     "novelty": "ROUND-2 rebalance retreated defensive post-momentum-collapse (tech down to 23%, cash/bonds up to 51%); ROUND-3 rebalance pivots aggressive into pure sector rotation\u201484% deployed in value/energy/financials/biotech/EM, 0% tech/semis, opposite direction from ROUND-2's tech shorts. Same-direction overlap is small-cap only (~15-17%, IWM vs TNA both long small-cap). Return drivers inverted: ROUND-2 preserves capital; ROUND-3 exploits rotation-into-value from tech destruction. <20% same-direction gross overlap; structural return-driver reversal."
+    }
+   ]
+  },
+  {
+   "name": "Haiku quality compounders",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Quality compounder strategy is designed for persistent long-term value creation through operational moats and fortress balance sheets. The market data shows tech sector weakness (leveraged indices -40%+, semiconductors -9% monthly) but does not indicate fundamental deterioration in MSFT cloud/AI leadership, NVDA infrastructure essentiality, AMZN/META duopoly economics, or the capital-efficient compounding of AAPL, BRK.B, UNH, COST, and JPM. Selling quality compounders into sector-wide corrections wastes ~2bps trading costs on each liquidation and violates the long-term strategic mandate. The 11% dry powder remains available for tactical accumulation if weakness persists. Hold strategy through correction."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Tactical thesis (small-cap momentum outperformance + sector carry + crypto capitulation recovery) is being falsified by market data. 3x-leveraged indices down 40%+ over 1 month indicate risk-off environment, not the small-cap rotation intended; mega-cap tech hedges (QQQ/SMH shorts) are working but cannot offset failed core momentum longs. With only 1 week elapsed and insufficient hedge gains to justify holding failed thesis, preemptive rebalancing away from small-cap leverage and toward defensive sector carry with increased hedges is prudent. Redirects to hedged defensive positioning with tech shorts as primary profit source.",
+     "positions": [
+      {
+       "symbol": "XLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "thesis": "Healthcare sector defensive ballast; 1.5%+ yield provides income cushion in risk-off, lower correlation to momentum unwinding."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Energy sector carry on geopolitical uncertainty and OPEC coordination; slight reduction from 11.6% maintains carry thesis while reducing leverage exposure."
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "thesis": "Financial sector carry on stable rates and net interest margins; slightly reduced from 11.6% to reallocate to defensive."
+      },
+      {
+       "symbol": "QUAL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Quality factor diversification; increased from 7.7% to capture AI-driven software tail and ROE strength while reducing single-stock risk."
+      },
+      {
+       "symbol": "SCHD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Dividend income ETF adds defensive ballast with 3%+ yield; provides counter-cyclical cushion if momentum collapse accelerates."
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 3,
+       "stop_loss_pct": 35,
+       "take_profit_pct": 120,
+       "thesis": "Crypto residual allocation reduced from 9% (lower conviction on recovery given risk-off); maintains stop discipline for capitulation accumulation."
+      },
+      {
+       "symbol": "QQQ",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 11,
+       "stop_loss_pct": 20,
+       "take_profit_pct": 30,
+       "thesis": "Increased tech hedge from -7.7%; mega-cap tech repricing as growth expectations reset; pair hedge to small-cap unwinding."
+      },
+      {
+       "symbol": "SMH",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 11,
+       "stop_loss_pct": 25,
+       "take_profit_pct": 25,
+       "thesis": "Increased semiconductor hedge from -5.1%; sector at +103% YTD positioning extremes; reprices sharply on execution slowdown or capex caution."
+      }
+     ],
+     "cash_pct": 21,
+     "novelty": "Tactical positioning pivots from small-cap momentum leverage to hedged defensive sector carry with substantially increased tech/semiconductor shorts; return driver shifts to risk-off portfolio protection through defensive healthcare/dividend yields and energy/financial carry spreads, maintaining zero overlap with mega-cap quality compounding thesis."
+    }
+   ]
+  },
+  {
+   "name": "Haiku small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Secular growth thesis in cloud/AI/fintech remains intact despite -12.69% TQQQ drawdown over one month. Short 8-day window since book set (2026-07-16) and real trading costs (~2bps) argue against rebalancing based on temporary tech sector weakness. Beaten-down valuations in high-conviction positions justify maintaining concentrated exposure through near-term volatility."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Biotech/bank/Japan sector rotation thesis intact despite SOXL weakness (-40.41% month). Position design includes stop-loss discipline at -10% and diversification across XBI (+82.7% 12m structural support), KRE, EWJ to absorb semiconductor volatility. Crypto short position likely generating carry income via funding yield. Only 7 days into setup with incomplete pricing data on non-semiconductor holdings; insufficient information to justify abandoning rotation thesis. Stop losses provide hard exit discipline if thesis fails."
+    }
+   ]
+  },
+  {
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information this week (Info Items 1 and 2) is about semiconductors and Nasdaq \u2014 exactly the exposure this book rotated OUT of on 2026-07-20. SMH -9.3%/1m, TQQQ -12.7%/1m, SOXL -40.4%/1m, with a -13.1% single-day SOXL collapse on 7/24 after a mid-week bounce. That confirms the rotation thesis rather than challenging it: leadership has moved to biotech, healthcare, regional banks, financials, energy and value, which is precisely the current book. Critically, ZERO information has been released on any position I actually hold (XBI, XLV, KRE, XLF, XLE, IWD, TNA, SPLV) \u2014 I have no evidence any of these trends has broken, and momentum discipline says let a five-day-old leadership rotation run rather than re-cut it on confirming-but-irrelevant data. I considered adding a short-semis leg to monetize the one signal I do have, but rejected it: shorting after a ~15% underlying / 40% leveraged one-month drawdown is a late entry into maximum squeeze risk (the 7/24 tape already showed a positive 5-day before the dump), it costs 3%/yr borrow, and funding it would force turnover across all eight existing lines at 2bps+/side for no informational edge. TNA already carries a -15% stop as the leveraged-beta release valve. Churn is not free and there is nothing here worth paying for.",
+     "cash_pct": 8
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "This is the net-low-beta cross-asset carry / risk-parity book: term premium (IEF, TLT), credit-spread carry (HYG), gold diversification (GLD, GDX), low-vol and bond-proxy equity income (USMV, XLU) and a small equity-risk-premium sleeve (SPY, stopped -12%). Both released info items concern semiconductor and Nasdaq price action only \u2014 they say nothing about rates, the yield curve, credit spreads, gold, real yields, or realized cross-asset volatility, which are the entire return-driver set of this book. There is no NAV or performance feedback either, so I have no basis to re-derive inverse-vol weights: any reweighting would be invented precision. If anything, a sharp de-rating in the most crowded high-beta corner of the equity market is mildly supportive of a net-low-beta carry stance, and the 10% SPY sleeve with its stop is the designed participation channel if this proves to be a contained tech-only drawdown. Rebalancing on zero relevant information would burn real spread (35bps-equivalent friction across an eight-line book) to reproduce essentially the same portfolio. Hold, keep earning 4% on the 6% cash buffer, and wait for information that actually bears on the mandate.",
+     "cash_pct": 6
+    }
+   ],
+   "name": "Opus Momentum"
+  },
+  {
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information is semiconductor tape, and it argues against acting. SMH's -3.27% day on 7/24 sits inside a week that was net POSITIVE (+0.84% 5-day) and a 1-month drawdown that IMPROVED from -10.44% to -9.33% versus the prior release. That is a stabilizing base with high daily variance, not a fresh leg down. Trimming semis into that would be selling the healing. The book's leverage risk was already removed last week (SOXL 3x replaced by SMH 1x), which is precisely why SOXL's continued -40% month bleed and -13.14% day no longer touch me \u2014 the whole point of that swap is now paying off and reversing it or churning around it would forfeit the benefit. Diversification is intact and doing its job: only ~43% is direct semi beta (SMH 14, AMAT 12, ALAB 9, AVGO 8), with ~33% in the power/thermal/electrical leg (GEV 14, VRT 11, NVT 8) that has no released bad news, 9% in ANET networking, a 5% SMCI short as beta offset, and 10% cash as cushion. Critically, ZERO information has been released about power, grid, networking, or custom silicon \u2014 so for roughly 60% of the book I would be trading on nothing. Equity costs of ~2bps/side are small but the expected value of information-free churn is negative, and the mandate (diversified AI-infra suppliers, leverage capped so drawdown stays ~-14% not -44%) is being executed as written.",
+     "novelty": ""
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Not a single released information item bears on this book. Both info items cover semiconductor and Nasdaq ETFs only (SMH, SOXL, TQQQ); nothing has been released on emerging markets, Brazil, Eurozone, Japan, energy, copper miners, gold miners, or the dollar. Rebalancing an eight-position international rotation book on literally zero relevant data is pure cost with no informational edge \u2014 and several legs here are the pricier kind to churn. The thesis is also structurally unrefuted by what WAS released: the rotation is premised on US-tech leadership narrowing, and the new tape showing semis still -9.33% on the month with 3x semis down ~40% is directionally consistent with that premise, not against it. Every position already carries a stop (-12% to -22%), so downside is pre-defined and I do not need to hand-manage risk mid-week. Holding also preserves, at no cost, the complete non-overlap with my Round 2 AI-infra book \u2014 the two books share no symbol and no return driver, so the novelty separation stays intact by construction.",
+     "novelty": ""
+    }
+   ],
+   "name": "Opus Picks-and-Shovels"
+  },
+  {
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "Thesis intact, structure fixed. The only information released this week (SMH -9.3%/1m, TQQQ -12.7%/1m, a -3.3% day on 7/24) corroborates the anti-concentration case: the megacap/semis complex is the thing breaking, which is exactly how leadership broadens. So I keep the long-heavy breadth mandate. What the data forces me to change is the leverage. SOXL went 136.81 -> 136.81 (0.00%) over four days in which SMH rose +0.42%, and -40.4% over a month in which SMH fell only -9.3% -- roughly 12pp of pure daily-reset path decay. TNA is the identical structure on small caps, and at 15% it was the single largest structural leak in the book in a confirmed high-realized-vol tape. I cut TNA 15->6 (with a -30% stop) and redeploy into unleveraged IWM (12->15) and RSP (12->13), which carry the same breadth factor exposure without the compounding drag. I also lift the QQQ short 9->11 now that the megacap downtrend is directly evidenced rather than assumed, while keeping it small because shorting megacap has been a persistent drag historically. Cyclical sleeve (XBI, KRE, XLE, XLI, XLF) and the ETH tail are essentially untouched -- I have no new information on any of them, so I refuse to churn them. One-way turnover is ~10% of the book, costing single-digit bps, which is cheap for removing 60% of the leveraged-decay exposure.",
+     "cash_pct": 5,
+     "positions": [
+      {
+       "symbol": "IWM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Core unleveraged small-cap breadth. Upsized with the TNA proceeds: same factor, no daily-reset decay."
+      },
+      {
+       "symbol": "RSP",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 13,
+       "thesis": "Equal-weight S&P - the purest anti-concentration long, and the direct beneficiary if the megacap/semis drawdown in the data keeps rotating money down-cap."
+      },
+      {
+       "symbol": "XBI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "thesis": "Biotech breadth momentum, top performer across recent windows and structurally uncorrelated to the semiconductor complex that is currently breaking."
+      },
+      {
+       "symbol": "KRE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Regional banks - domestic cyclical breadth with no semiconductor supply-chain exposure."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Energy cyclical breadth; strong H1 momentum and the lowest correlation in the book to the tech drawdown."
+      },
+      {
+       "symbol": "XLI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "thesis": "Industrials - steady cyclical breadth participant, held unchanged in the absence of new information."
+      },
+      {
+       "symbol": "XLF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 7,
+       "thesis": "Financials laggard with catch-up potential as leadership widens away from concentrated tech."
+      },
+      {
+       "symbol": "TNA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "thesis": "3x small-cap amplifier cut from 15% to 6%. SOXL's 12pp of decay versus SMH this month is the direct evidence that daily-reset leverage is toxic at current realized vol; kept only as a small convex kicker.",
+       "stop_loss_pct": 30
+      },
+      {
+       "symbol": "ETH-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 4,
+       "thesis": "Small beaten-down speculative tail for diversification; trimmed a point, no new information to justify more."
+      },
+      {
+       "symbol": "QQQ",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 11,
+       "thesis": "Anti-concentration hedge, raised 9->11. TQQQ -12.7%/1m confirms the megacap complex is in an actual downtrend rather than a hypothesised one; still capped small because shorting megacap has historically been a persistent drag."
+      }
+     ]
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Holding is indefensible here. The Round-3 book was ~74% net long high-beta growth with AMD at 12% sitting squarely inside the drawdown the only released data describes (SMH -9.3%/1m, -3.27% on 7/24). Cross-sectional momentum with a one-month reversal overlay says the semis leg is now a laggard, not a leader, so AMD goes. I keep the strategy's core logic -- winners keep winning, losers keep losing -- but rebuild it as a dispersion trade rather than a directional growth basket, because the data says the beta itself is the problem. Long side: the non-semi momentum leaders whose driver is idiosyncratic (CRWD, PANW, SNOW in security/data software; GS as the low-vol accelerating financial; HOOD sized down from 12 to 8 because it is the highest-beta name I own and vol is spiking). Short side: I add SOXL and TQQQ, which is the highest-quality inference available from my information set. SOXL was unchanged (136.81 -> 136.81) across four days in which SMH gained +0.42%, and lost 40.4% in a month SMH lost 9.3% -- that ~12pp gap is structural daily-reset decay, and shorting it harvests volatility drag on top of the downtrend rather than betting purely on direction. MSTR (deepest persistent downtrend, doubles as risk-off hedge) and ORCL (sharp -37% 3m breakdown) stay as the single-name laggard shorts. Net exposure falls from ~74% long to ~20% long, gross shorts are 34% (well inside the 50% cap), and cash rises to 12% for dry powder. Stops are widened on the leveraged shorts because a 3x product can gap 13% in a day, as it just did -- a tight stop there would be pure noise-harvesting.",
+     "cash_pct": 12,
+     "novelty": "Round 2 is a ~84%-long, unlevered breadth basket whose return driver is broad small-cap/equal-weight/cyclical beta rotating down-cap; Round 3 shares zero tickers with it and is instead a near-market-neutral (~20% net) single-name dispersion book whose return driver is idiosyncratic software/financials momentum funded by harvesting daily-reset volatility decay in leveraged ETFs -- Round 2 makes money if the market broadens and rises, Round 3 makes money if leaders and laggards keep separating and realized volatility stays high, which can occur in opposite tapes.",
+     "positions": [
+      {
+       "symbol": "GS",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "thesis": "Lowest-vol momentum name in the leader set and accelerating (+13% 1m). Upsized to anchor the long book because financials carry no semiconductor exposure in a semis-led drawdown.",
+       "stop_loss_pct": 18,
+       "take_profit_pct": 35
+      },
+      {
+       "symbol": "CRWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Cleanest all-horizon momentum (+82% 6m, still rising 1m). Security software demand is budget-protected and decoupled from the semiconductor capex cycle that is rolling over.",
+       "stop_loss_pct": 20,
+       "take_profit_pct": 45
+      },
+      {
+       "symbol": "PANW",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "+96% 6m with intact 3m persistence; the other security-software leader. Paired with the TQQQ short so the position expresses relative strength rather than tech beta.",
+       "stop_loss_pct": 20,
+       "take_profit_pct": 45
+      },
+      {
+       "symbol": "SNOW",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "+93% 6m data-platform momentum with positive follow-through; kept at a modest weight as the higher-beta software leg.",
+       "stop_loss_pct": 20,
+       "take_profit_pct": 45
+      },
+      {
+       "symbol": "HOOD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Strongest 3m acceleration in the leader set (+36%), but the highest-beta name I hold - cut from 12% to 8% because the 7/24 tape shows realized volatility spiking.",
+       "stop_loss_pct": 25,
+       "take_profit_pct": 50
+      },
+      {
+       "symbol": "SOXL",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 12,
+       "thesis": "Highest-conviction expression of my information set: 3x semis fell 40.4% in a month SMH fell only 9.3%, and went exactly flat over four days SMH rose 0.42%. Shorting it collects daily-reset decay whether or not semis keep falling; wide stop because a 3x fund can gap 13% in a session.",
+       "stop_loss_pct": 35,
+       "take_profit_pct": 40
+      },
+      {
+       "symbol": "MSTR",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 10,
+       "thesis": "Deepest persistent downtrend (-45% 6m) and the purest laggard leg of the momentum trade; doubles as a risk-off hedge against the long software book.",
+       "stop_loss_pct": 25,
+       "take_profit_pct": 35
+      },
+      {
+       "symbol": "TQQQ",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 6,
+       "thesis": "3x Nasdaq-100, -12.7% on the month with a -3.47% day on 7/24. Shorts the leveraged megacap beta that my software longs are exposed to, converting the long book into a relative-strength bet rather than a directional one.",
+       "stop_loss_pct": 30,
+       "take_profit_pct": 35
+      },
+      {
+       "symbol": "ORCL",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 6,
+       "thesis": "Sharp momentum breakdown (-37% 3m) and the clearest software laggard - the short-side mirror of the CRWD/PANW longs within the same sector.",
+       "stop_loss_pct": 20,
+       "take_profit_pct": 30
+      }
+     ]
+    }
+   ],
+   "name": "Opus Broadening"
+  },
+  {
+   "name": "Opus Quality Defensive",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only information released this week is semiconductor weakness (SMH -3.27% on 7/24, -9.33% 1-month; SOXL -40%; TQQQ -12.7% 1-month). That is precisely the view my 8% SMH short was sized to express, and it is paying. Nothing in the packet touches XLV, QUAL, USMV, SPLV, XLP or GLD, so any change to the defensive core would be trading on an absence of data. The book is a low-beta quality core with a working insurance-sized short; adding to the short would convert insurance into a bet and violate the mandate, while trimming it would abandon a thesis the tape just confirmed. Costs are real and the correct action is to sit still."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "A trend-and-carry book must exit trends that have broken. MTUM (20%) and JEPQ (20%) were 40% of the book levered to the US mega-cap/AI-infra complex, and the released data shows that complex unwinding: TQQQ -12.69% 1-month and -5.23% on the week, SOXL -40.41% 1-month, SMH -9.33% 1-month with a -3.27% single-day break on 7/24 after mid-week gains \u2014 a failed rally, the classic signature of a momentum top rather than a dip. Holding a momentum factor sleeve into a momentum unwind, and writing calls on the index doing the unwinding, is the exact failure mode of this strategy. I keep the crypto trend engine unchanged (35bps round-trip makes churn there genuinely expensive and no crypto information was released), raise DBMF to 22% because managed futures is the one sleeve that monetises the new downtrend instead of fighting it, swap JEPQ for JEPI to preserve the option-writing carry while dropping the Nasdaq concentration, cut MTUM to a 8% stub, lift commodity roll carry slightly, and add a 7% short in SMH so the book trades with the dominant trend rather than against it. Equity turnover is roughly 60% one-way at ~2bps, about 12bps of the book \u2014 cheap relative to carrying 40% in a broken trend.",
+     "cash_pct": 8,
+     "novelty": "The Round-2 book is a long-only low-beta equity defensive core (healthcare, quality, min-vol, staples, gold) whose return driver is equity-market ballast; this book earns from cross-asset trend and carry \u2014 crypto trend, managed-futures futures trend, commodity roll yield, and option-writing premium \u2014 and shares only a single same-direction leg with Round 2, the 7% SMH short against Round 2's 8%, for roughly 7% same-direction gross overlap, far below the 50% limit.",
+     "positions": [
+      {
+       "symbol": "DBMF",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 22,
+       "stop_loss_pct": 10,
+       "take_profit_pct": 30,
+       "thesis": "Managed-futures cross-asset trend: the only sleeve that gets structurally long the new downtrend as CTAs flip short equities and semis. Raised from 17% because a confirmed trend break is when this sleeve earns its keep."
+      },
+      {
+       "symbol": "BTC-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 16,
+       "stop_loss_pct": 22,
+       "take_profit_pct": 55,
+       "thesis": "Primary crypto trend engine, held unchanged: no crypto information was released, and 35bps spot cost makes discretionary churn on no news a guaranteed loss. Spot avoids perp funding drag; stop caps crash risk."
+      },
+      {
+       "symbol": "JEPI",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 16,
+       "stop_loss_pct": 10,
+       "thesis": "Broad-index covered-call income replaces JEPQ: keeps the option-writing carry leg of the mandate while cutting the Nasdaq/AI-infra concentration that the released data shows breaking down. Call writing also performs better in the choppy, lower-drift tape a momentum unwind produces."
+      },
+      {
+       "symbol": "PDBC",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "stop_loss_pct": 12,
+       "take_profit_pct": 30,
+       "thesis": "Broad commodity roll carry - real-asset diversification with a return driver uncorrelated to the semiconductor complex now dragging on equity trend."
+      },
+      {
+       "symbol": "ETH-USD",
+       "kind": "crypto",
+       "side": "long",
+       "weight_pct": 9,
+       "stop_loss_pct": 25,
+       "take_profit_pct": 65,
+       "thesis": "Higher-beta crypto trend sleeve with a wider stop, held unchanged for the same cost-and-no-news reason as BTC."
+      },
+      {
+       "symbol": "MTUM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "stop_loss_pct": 12,
+       "take_profit_pct": 30,
+       "thesis": "US equity momentum cut from 20% to a stub. The factor is crowded into the AI-infra names now unwinding, but momentum rebalances its holdings and I keep a small position rather than zero in case the 7/24 break is a shakeout inside an intact uptrend."
+      },
+      {
+       "symbol": "SMH",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 7,
+       "stop_loss_pct": 12,
+       "take_profit_pct": 20,
+       "thesis": "Small short trading with the trend rather than against it: SMH -9.33% 1-month and a -3.27% single-day reversal on 7/24 that erased the week's gains, with the 3x sleeve down 40% on the month showing leveraged holders being forcibly unwound. Sized as a trend expression, with a stop in case the break fails."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet deep value",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only information released this week concerns the semiconductor complex, and it validates rather than challenges the existing book. SMH is -9.33% over one month and fell -3.27% on 2026-07-24, with the 3x vehicles collapsing (SOXL -40.4% 1m, TQQQ -12.7% 1m) \u2014 a classic unwind of the most stretched growth cohort, which is exactly the hedge leg I sized at 6% short. Nothing in the packet touches the eight deep-value longs (C, VLO, VTV, VZ, PFE, MO, CVS, GM), whose theses rest on 5-10x earnings, sub-book asset value, and 3-7% covered dividend yields \u2014 slow-moving, cash-flow-anchored variables that one week of semiconductor tape does not revise. A value-over-growth rotation is precisely the environment this book was constructed for. I deliberately am not pressing the SMH short: adding after a -10% month is momentum-chasing, not deep value, and the mandate keeps the hedge small and subordinate to the long carry. Churn has real cost (~2bps/side plus spread on the sub-$15-adjacent names), the 6% cash sleeve earns 4%, and the portfolio's dividend stream (~4.5% blended on the longs) compounds without any action. No position has been stopped out on the information available, so the correct move is to let the existing stops and the +30% take-profit on SMH do the work. HOLD."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet dividend growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only information released this week is semiconductor/leveraged-tech weakness (SMH -3.27% day, -9.33% 1m; SOXL -13.14% day, -40.41% 1m; TQQQ -3.47% day, -12.69% 1m). I hold zero semiconductor, zero Nasdaq and zero leveraged exposure, so this touches not one line of my book. Directionally it is confirmatory rather than contradictory: a high-beta momentum unwind is precisely the regime in which 25+ year raisers funded by real free cash flow (JNJ, PG, KO, ABBV, ABT, MCD, ADP) and quality-screened dividend ETFs (SCHD, NOBL) are meant to earn their keep on a relative basis, with the 4% cash sleeve compounding at 4%/yr as ballast. No holding-specific data was released - no dividend action, no earnings, no sector move in XLV/XLP/XLE/XLI beyond what was already reflected in the 2026-07-17 construction - so any trade would be reacting to information I do not have. Churn is not free: turning over twelve equity positions costs round-trip spread on every leg for zero signal, and reaching outside these names to express a semis view would violate the mandate (25+ year aristocrats and quality dividend growers with a defensive staples/healthcare tilt). The book is already spread across healthcare, staples, energy, industrials, retail and services with a max single weight of 18% in a broad ETF, so there is no concentration or risk problem demanding a fix. Correct action is to sit still, collect the yield and the cash interest, and preserve dry powder for a week when information actually arrives about what I own."
+    }
+   ]
+  },
+  {
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only released information this week concerns semiconductors, which touches exactly one 7% leg of this book. It confirms rather than contradicts the thesis: SOXL is -41% over a month with a -13.1% single day, meaning realized vol in the underlying has exploded. At roughly 15% daily vol on a 3x fund, variance drag alone is a large structural headwind even if SMH round-trips flat, so the short's expected return is still strongly positive and there is no case for taking profit yet. I weighed the opposite argument -- that a mandate to buy deeply oversold assets sits awkwardly with staying short the most oversold instrument on the tape -- but the position is 3x-levered decay, not a fundamental short, and at 7% it was sized from the start to survive a melt-up. Critically, I have received no information whatsoever on the other 86% of the book: managed care (UNH/XLV), the AI-fear software pair (CRM/ADBE), crypto (BTC/ETH/SOL and the 2x perp), or gold. Rebalancing legs I know nothing new about would be pure churn, and leveraged-ETF plus crypto round-trips are the most expensive trades available to me (35bps crypto spot, elevated spreads on a sub-$150 leveraged name). Contrarian mean-reversion is a patience strategy; the 17% cash earning 4% is adequate dry powder if anything genuinely breaks. No trade."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "Trend-following discipline requires acting when the designated leadership sleeve breaks, and that is precisely what the released data shows. The sector I explicitly called 'strongest-trending' a week ago is now the worst thing I can observe: SMH -9.3% on the month and -3.27% on 7/24, with SOXL -41% and printing a -13.1% day. TQQQ at -12.7% on the month implies the Nasdaq-100 itself is only down roughly 4%, so this is a rotation and a volatility-regime shift rather than a full market break -- which argues for a measured trim, not a regime flip. Crucially, I have no data showing where relative strength has rotated TO, so I cannot honestly chase a new leader; the disciplined response is to cut the exposure I know is deteriorating and park it in quality/income ballast, low-volatility, and cash while waiting for the next leadership signal. Changes: XLK 13->7 (its semiconductor weight is the epicentre), AAPL 10->8 and GOOGL 9->8 with stops tightened from 16% to 14% given the higher-vol tape, SPMO 18->14 and MTUM 12->11 (both factor ETFs are themselves semi-heavy right now, so they carry correlated risk, though their internal rebalancing will bleed the losers out for me). Proceeds go to SCHD 9->11, QUAL 8->10, JEPQ 8->9, a new 6% SPLV low-volatility sleeve appropriate to a rising-vol regime, and cash 5->8. XLE held at 8% as the non-tech momentum diversifier. Gross tech beta falls from about 62% to about 48%. Equity friction at ~2bps/side makes this roughly half a basis point of NAV, so cost is not the constraint here -- the risk of over-reacting to a two-datapoint drawdown is, which is why this is a trim rather than an exit.",
+     "cash_pct": 8,
+     "novelty": "This book's return driver is trend persistence in demonstrated relative-strength leaders expressed through momentum/quality factor ETFs, dividend-quality carry, low-volatility ballast and long-only US equity beta with hard stops, whereas my Round-2 book is driven by contrarian mean-reversion in beaten-down crypto (BTC/ETH/SOL plus a 2x perp), depressed managed-care and AI-fear software single names, a gold hedge and a short leveraged-semis leg -- there is zero ticker overlap between the two books (0% same-direction gross-weight overlap), and the two are constructed to profit from opposite conditions: Round 2 needs oversold assets to revert, Round 3 needs winners to keep winning.",
+     "positions": [
+      {
+       "symbol": "SPMO",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 14,
+       "stop_loss_pct": 18,
+       "thesis": "S&P 500 momentum factor ETF remains the core embodiment of the trend edge, but trimmed from 18% because its current constituent mix is semiconductor-heavy and therefore correlated with the sleeve now breaking; its internal reconstitution will rotate out of fading names for me."
+      },
+      {
+       "symbol": "MTUM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": 18,
+       "thesis": "Broad US momentum factor, kept as the second self-rebalancing engine that mechanically sheds losers without me needing to forecast the next leader; modest trim for the same semi-concentration reason as SPMO."
+      },
+      {
+       "symbol": "SCHD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 11,
+       "stop_loss_pct": 12,
+       "thesis": "Quality-dividend carry ballast raised from 9% - in a rising-volatility tape this is the sleeve that dampens drawdown and pays while I wait for a new leadership signal to emerge."
+      },
+      {
+       "symbol": "QUAL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "stop_loss_pct": 16,
+       "thesis": "Quality factor raised from 8% - high return-on-equity, low-leverage balance sheets are the part of the trend complex that historically holds up best when high-beta leadership cracks."
+      },
+      {
+       "symbol": "JEPQ",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 9,
+       "stop_loss_pct": 12,
+       "thesis": "Covered-call income sleeve nudged up to 9% - option premium is richer precisely when realized volatility spikes like this, so the carry improves exactly when the directional sleeves are struggling."
+      },
+      {
+       "symbol": "AAPL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "stop_loss_pct": 14,
+       "take_profit_pct": 40,
+       "thesis": "Top single-name momentum leader retained but trimmed from 10% with the stop tightened from 16% to 14%, because a higher-volatility regime means a given stop distance now represents far less time-to-exit than it did a week ago."
+      },
+      {
+       "symbol": "GOOGL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "stop_loss_pct": 14,
+       "take_profit_pct": 40,
+       "thesis": "Quality-momentum mega-cap with positive 3/6/12-month trend, trimmed from 9% and stop tightened alongside AAPL; less semiconductor-cycle exposure than the hardware complex that is currently breaking."
+      },
+      {
+       "symbol": "XLE",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "stop_loss_pct": 18,
+       "thesis": "Energy held flat at 8% as the deliberate non-tech momentum diversifier - it is the one sleeve in the book with genuinely low correlation to the semiconductor unwind driving this week's information."
+      },
+      {
+       "symbol": "XLK",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 7,
+       "stop_loss_pct": 15,
+       "thesis": "Cut hard from 13% to 7% and stop tightened from 20% to 15%. Semiconductors are XLK's highest-beta component and they are now the worst-performing thing I can observe; trend discipline says reduce a breaking leader rather than defend it, but a 7% residual keeps a foothold in case this proves a shakeout within an intact uptrend."
+      },
+      {
+       "symbol": "SPLV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 6,
+       "stop_loss_pct": 12,
+       "thesis": "New low-volatility sleeve. A 13% single-day move in a 3x semi fund is a volatility-regime signal, and low-vol equity is the trend-compatible way to stay invested with materially less drawdown sensitivity than the high-beta sleeves I just trimmed."
+      }
+     ]
+    }
+   ],
+   "name": "Opus Value"
+  },
+  {
+   "name": "Opus-fleet quality compounders",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only new information this week is two price snapshots of the same semiconductor drawdown I explicitly bought into on 2026-07-17: SMH is -9.3% on the month but actually +0.84% over 5 days, with a single -3.27% session on 07-24 giving back a mid-week bounce. That is volatility, not a change in the thesis. There is zero new fundamental information \u2014 no earnings, no guidance, no capex revisions, no balance-sheet or competitive news on MSFT, GOOGL, V, COST, MA, AVGO, NVDA, LLY, AAPL or QUAL. My mandate is a concentrated long book of wide-moat, high-ROIC, net-cash compounders bought after a semis/mega-cap pullback and held to year-end; the correct response to the pullback deepening slightly is to keep owning it, not to trade around it. The signal in the packet is also mostly about leveraged products (SOXL -13.1% in a day on a -3.3% underlying, -40% on the month) which is pure 3x decay/path-dependency mechanics and tells me nothing about the durable earnings power of the underlying franchises \u2014 it is a reason to stay away from leverage, which I already do. Semis exposure is only 17% gross (AVGO 9 + NVDA 8) against 66% in payments, software, retail, pharma and quality-factor ballast, so the drawdown is well contained at book level. Trading costs are real and one-directional against me: a full replacement of a 10-position book burns roughly 4bps of round-trip friction plus spread on no informational edge, and my 7% cash is already earning 4%/yr while providing dry powder if the reset extends. Week-2 reshuffling on a one-week price wiggle is exactly the churn that destroys compounder returns. Holding unchanged."
+    }
+   ]
+  },
+  {
+   "name": "Opus-fleet price momentum",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Both released info items are semiconductor/leveraged-tech specific (SMH -3.27% day, -9.3% 1m; SOXL -13.1% day, -40.4% 1m; TQQQ -5.2% 5-day, -12.7% 1m). My Round-3 book, set 2026-07-20, already carries zero semi/Nasdaq-leverage exposure - it was deliberately rotated into the intact non-tech momentum themes (XLE, XBI, KRE, XLF, XLV, IWD, IWM plus a small TNA sleeve). The new data confirms that positioning rather than contradicting it: the trends I exited kept breaking down, and I received no price information at all on any name I actually hold, so there is no evidence a held trend has rolled over. A price-momentum mandate says stay with intact trends until they break; with no fresh prints on my holdings there is no momentum signal to act on, and turning over an eight-position book on semi-only news would pay ~2bps/side (more on the leveraged TNA sleeve) to buy back essentially the same exposure. The one holding with second-order sensitivity to a broad risk-off spillover is the 8% TNA (3x small-cap), already the smallest equity sleeve with the widest-but-capped stop (-18%), so that tail is handled mechanically rather than needing a trade. Existing stops and take-profits remain the right risk expression. HOLD."
+    }
+   ]
+  },
+  {
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only information released this week is semiconductor-complex price data, and read across the two items it is not new adverse news about my book. SMH's 1-month drawdown IMPROVED between releases (-10.44% through 7/20 to -9.33% through 7/24), SOXL closed at exactly $136.81 on both dates (unchanged over four sessions), and SMH's 5-day is +0.84% \u2014 the -3.27% print on 7/24 merely gave back gains earned earlier that same week. Critically, the bulk of that semi decline predates 2026-07-17, when this book was set, so measured from my entry the AI-infra tape is roughly flat rather than deteriorating. My 23% AI-infra sleeve (NBIS 8 / CRDO 8 / ALAB 7) was deliberately sized with -40% stops and +110/120% targets precisely for this volatility; a sector move of this magnitude leaves those stops nowhere near triggering, so the pre-committed risk plan is working as designed and does not need overriding. Halving that sleeve into cash now would be pure post-drawdown vol-targeting on price action with no fundamental news, and it would contradict a mandate that explicitly calls for a CONCENTRATED book in cloud, AI-infra and fintech compounders with secular demand \u2014 AI-infra is a core pillar, not a satellite. The move is also poorly supported on the read-across: TQQQ -12.69% 1-month implies the broad Nasdaq is down only mid-single-digits, marking this as a semi-specific derating rather than a growth-complex breakdown, and I have been given zero information on the software (NET/DDOG/CRWD, 28%) and fintech (SOFI/NU/HOOD, 32%) sleeves that make up the majority of the book. Cost is not my binding reason \u2014 2bps/side equity churn is cheap and I would pay it for genuine information \u2014 but I have none, and the existing 10% cash already carries the defensive ballast I would otherwise be buying, while earning 4%. Trading here would only convert a considered risk plan into a reaction to a flat four-day tape."
+    }
+   ],
+   "name": "Opus-fleet small/mid-cap growth"
+  },
+  {
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new info (SOXL/SMH data from 7/21 and 7/25) confirms the existing short-SOXL thesis is playing out as expected (SOXL now -40 to -41% on the month, including a -13% single-day drop on 7/24) \u2014 the correction from the +250% H1 melt-up is real but SOXL is still up net well over 100% from where the melt-up started, so this is not yet an oversold extreme worth covering into. No information was released on ADBE, CRM, PYPL, BTC, ETH, IWM, or GLD, so there is no basis to touch those legs. Rebalancing on a single confirmatory data point about one 10% position would just pay unnecessary trading costs across the whole book."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Same two info items are the only new data, and they concern the semis complex where this book already carries an 8% SOXL short with stop -20%/tp +35% explicitly premised on the parabolic 12m move 'now breaking' \u2014 the further -13.14% single-day and continued ~-40% monthly decline confirms rather than contradicts that setup. No new information was released on KRE, XLV, XBI, USMV, XLU, GDX, or XLY, so there's no signal to justify unwinding or resizing those legs. Holding avoids paying equity/leveraged-ETF trading costs on a rebalance the current data doesn't support; will revisit sector-pair legs if fresh info on financials, healthcare, biotech, gold miners, or discretionary/utilities arrives."
+    }
+   ],
+   "name": "Sonnet contrarian turnarounds"
+  },
+  {
+   "name": "Sonnet concentrated AI/technology",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "REBALANCE",
+     "reason": "The only new information this week (Info items 1-2) is price action confirming the 3x-leveraged SOXL sleeve is behaving exactly as leveraged-ETF theory predicts in a choppy tape: it rallied mid-week then round-tripped back to the same $136.81 close with a violent -13.14% single-day drop on 7/24, still down >40% for the month even as the underlying SMH is down a much milder ~9%. That gap is pure volatility-decay drag from daily resetting, not a semis-thesis break. Rather than hold a leveraged position bleeding value on whipsaw action, I'm exiting the SOXL sleeve entirely and redeploying into MSFT (lower-beta, still core AI platform exposure) and cash, while leaving the unleveraged core (NVDA/AVGO/AMD/MU) and the AAPL funding short untouched to keep turnover -- and costs -- minimal. Adding stops on the semis-linked names given the now-demonstrated intraday volatility.",
+     "positions": [
+      {
+       "symbol": "NVDA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 25,
+       "thesis": "Core AI compute bottleneck; Blackwell/next-gen ramp keeps NVDA the highest-quality way to own the capex cycle.",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "MSFT",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 20,
+       "thesis": "Azure AI monetization plus enterprise Copilot adoption gives durable, lower-volatility AI platform exposure; increased weight to replace decaying leveraged-semis beta with a steadier AI-capex proxy."
+      },
+      {
+       "symbol": "AVGO",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Custom silicon/networking for hyperscaler AI clusters diversifies compute exposure beyond GPUs.",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "AMD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "MI-series datacenter GPU share gains and cyclical semis exposure at a more reasonable multiple than NVDA.",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "MU",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "HBM/memory remains structurally tight for AI servers despite the recent pullback.",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "AAPL",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 10,
+       "thesis": "Relative laggard in on-device/enterprise AI monetization versus platform peers; funds long book while staying within short-side limits."
+      }
+     ],
+     "cash_pct": 10
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "The Round 3 book on file (cross-sector momentum in biotech/financials/gold-miner-and-bond shorts, explicitly avoiding AI/semis) is inconsistent with this book's concentrated AI/technology mandate, so I'm resetting it back onto mandate rather than holding an off-thesis book. Given the week's only information (semis technicals showing SMH -9%/month with a sharp -3.27% day on 7/24 and SOXL's violent whipsaw) confirms near-term stress specifically in the hardware/chip-capex layer of AI, Round 3 expresses AI/tech conviction through a different, non-overlapping sleeve: mega-cap AI application and platform winners (search/ads/cloud AI monetization) plus enterprise AI software, funded partly by a tactical short on the semis complex itself (SMH) to harvest the now-confirmed technical breakdown rather than fight it. This keeps the manager fully within its named mandate while diversifying the AI return driver away from the chip-cycle names concentrated in the Round 2 book.",
+     "positions": [
+      {
+       "symbol": "GOOGL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 20,
+       "thesis": "Alphabet's AI stack (Gemini, in-house TPUs, Cloud) offers diversified AI monetization with ad/search cash-flow ballast, uncorrelated to semis-supply-chain volatility."
+      },
+      {
+       "symbol": "AMZN",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 18,
+       "thesis": "AWS AI infrastructure buildout (Trainium/Inferentia) and Bedrock adoption capture hyperscaler AI capex through a cloud-services lens rather than chip-supply exposure."
+      },
+      {
+       "symbol": "META",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Massive AI capex is funding best-in-class ad-targeting monetization; core platform economics give a return driver distinct from hardware-cycle names."
+      },
+      {
+       "symbol": "PLTR",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Enterprise/government AI software adoption (AIP) represents the software layer of the AI theme, with different demand drivers than compute-hardware capex.",
+       "stop_loss_pct": 20
+      },
+      {
+       "symbol": "CRWD",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "AI-driven cybersecurity platform consolidation is an adjacent AI-software theme insulated from chip-cycle swings.",
+       "stop_loss_pct": 15
+      },
+      {
+       "symbol": "SMH",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 15,
+       "thesis": "Confirmed technical breakdown in semis this week (-9.33% month, -3.27% day on 7/24) with continued leveraged-ETF instability; a direct tactical short monetizes the downtrend rather than fighting it.",
+       "stop_loss_pct": 10
+      }
+     ],
+     "cash_pct": 10,
+     "novelty": "Round 3 rotates the AI/technology return driver from hardware/semis capex names (NVDA, MSFT, AVGO, AMD, MU) held long in Round 2 to mega-cap AI application and platform winners (GOOGL, AMZN, META, PLTR, CRWD) plus a fresh short on SMH itself -- zero ticker overlap with the Round 2 book and an opposite-direction stance on the semis complex, so gross-weight same-direction overlap with Round 2 is 0%, well under the 50% threshold."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet deep value",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Round 2 book (XOM/JPM/GM/UNH/PFE/IWM/F long value cyclicals + small levered BTC short hedge + 14% cash) has zero direct exposure to the only new information released this week, which is entirely about semiconductor ETFs (SMH/SOXL/TQQQ). Nothing in the SMH/SOXL/TQQQ moves bears on integrated energy, banks, autos, managed care, pharma, small-cap value beta, or BTC. No thesis-relevant news, no stop/take-profit triggers, no reason to pay turnover costs on a book that is unaffected by the released data."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Round 3's short-SMH sleeve (10% short, stop -15%/tp +25%) is the only position touched by this week's info. Entry thesis cited SMH at -8.7% 1-month with a fresh reversal from a +103.8% 12-month melt-up. The new data shows SMH round-tripped (a mid-week bounce to +0.84% 5-day per item 2, then a sharp -3.27% day reversal back down) and now sits at -9.33% to -10.44% 1-month -- essentially the same magnitude of weakness as at entry, well inside both the stop and take-profit bands. The mean-reversion/overextension-short thesis is intact and not yet resolved either way, so there is no informational trigger to rebalance; doing so would just incur avoidable equity-short and hedge-unwind costs for a position still tracking its original thesis."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet dividend growth and income",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information this week (Info Items 1-2) covers semiconductor ETFs SMH/SOXL/TQQQ. It confirms the book's existing tactical SOXL short thesis is playing out as intended -- SOXL remains down roughly -40% to -41.5% on the month with continued sharp daily volatility (-13.14% on 7/24) and SMH down -9% to -10% monthly, i.e. the 'extended, leverage-fragile momentum trade' the short was designed to fade is still correcting with no reversal signal. There is no information bearing on the dividend-growth core (MSFT, AVGO, SCHD, JPM, CVX, HD), TLT, XLP, or the small BTC short. Given real shorting/leveraged-ETF trading costs and an intact thesis, resizing or unwinding now is unjustified churn -- hold the book unchanged."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "This week's only released information (semiconductor ETF data for SMH/SOXL/TQQQ) touches none of the Round 3 book's holdings (XLF, XBI, KRE, XLV, GDX, GLD, SOL-USD perp, ETH-USD perp, TLT) -- SOXL/TQQQ are not held in this book at all. With zero new information relevant to any position's thesis (financials/biotech/healthcare relative-strength rotation, gold breakdown shorts, crypto downtrend shorts), and existing stop-loss/take-profit brackets already managing downside/upside risk on every position, there is no basis to trade. Rebalancing now would only incur equity, short-borrow, and perp (7.5bps + funding) costs without any new signal to justify repositioning."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information since the book was set (07-16) is semiconductor/AI-infra price action: SMH -9.33% 1m with a sharp -3.27% day drop on 07-24 after early-week gains, SOXL -40.41% 1m with a -13.14% single-day drop, and TQQQ -12.69% 1m. This directly confirms the book's core thesis -- that US AI-mega-cap/semis valuations are under stress -- and validates staying rotated into EM/international diversifiers (EEM, EWZ, EWJ, BABA, INDA), holding ASML/TSM as quality non-US semis/tech exposure rather than US mega-cap concentration, and keeping the SQQQ hedge plus 20% cash as ballast. No new information touches the EM/ADR names themselves, so there is no fresh catalyst to reposition, and turning the book over now would only add trading costs without an informational edge. Continuing to hold preserves the correct macro read at zero cost."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "The Round-3 book on file (XBI/XLF/KRE momentum longs, GDX/SOXL mean-reversion shorts, TLT ballast) is a domestic sector relative-value book with zero ADR/international content -- it does not match this manager's mandate of global diversification via US-listed ADRs and ETFs. Bringing it back on-mandate: replacing with a developed/EM-ex-US ADR and ETF book spanning Europe, UK, Latin America, Australia and EM sovereign debt, with no US sector-timing bets and no semis exposure. The newest info (continued sharp semis/AI-infra volatility -- SOXL -13.14% on 07-24 alone after a mid-week bounce, SMH -9.33% 1m) argues for staying out of leveraged US tech/semis mean-reversion bets given how whippy that trade has been, reinforcing the case for a calmer, defensively-tilted international book here instead.",
+     "cash_pct": 24,
+     "positions": [
+      {
+       "symbol": "EFA",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 18,
+       "thesis": "Core MSCI EAFE developed-ex-US ETF for broad, low-cost diversification away from US mega-cap AI concentration and away from the whipsaw semis trade."
+      },
+      {
+       "symbol": "NVS",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Novartis (Swiss) ADR -- defensive global pharma exposure, low correlation to US tech/semis volatility."
+      },
+      {
+       "symbol": "RIO",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Rio Tinto (UK/Australia) ADR -- diversified miner giving commodity/EM-demand exposure distinct from tech-driven return streams."
+      },
+      {
+       "symbol": "UL",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Unilever (UK/Netherlands) ADR -- global consumer staples ballast, defensive counterweight to volatile AI/semis-linked assets."
+      },
+      {
+       "symbol": "EWU",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "UK equity ETF for developed-market diversification with limited AI/semis-sector weight."
+      },
+      {
+       "symbol": "EWW",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Mexico ETF -- nearshoring/EM-Americas diversification, low correlation to US mega-cap tech drawdowns."
+      },
+      {
+       "symbol": "EMB",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "EM USD sovereign bond ETF -- adds income and a different risk driver (rates/EM credit) to diversify the book's return sources away from equity-momentum/semis bets."
+      }
+     ],
+     "novelty": "This book's return driver is developed-market defensive/staples/healthcare ADRs plus EM sovereign bonds across Europe, the UK, Latin America and Australia -- entirely disjoint in symbols and driver from the domestic-sector-rotation book previously on file, and also disjoint from the Round-2 book's EM-tech/Asia set (EEM/TSM/ASML/EWZ/EWJ/BABA/INDA/SQQQ), giving 0% same-direction gross-weight overlap with Round 2."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet macro/sector rotation",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information (INFO ITEMS 1-2) confirms the semiconductor/AI-infra unwind thesis already expressed via the 8% SOXL short: SMH is down roughly -9 to -10% on the month and SOXL is down roughly -40% on the month with a sharp -13% single-day drop on 7/24. This validates rather than contradicts the Round 2 book's positioning (funding rate-sensitive small caps/industrials/duration/gold/EM by trimming AI-infra exposure). No information has been released on rates, small caps, industrials, duration, gold, or EM to warrant changing those legs, and resizing an already-working short off a single data point would just add trading costs without a new catalyst. Staying put."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "INFO ITEMS 1-2 directly confirm the Round 3 momentum-reversal short thesis on semis: SMH -9.3% to -10.4% on the month and SOXL -40% to -41.5% on the month, with continued weakness into 7/24 (SMH -3.27% day, SOXL -13.14% day) even after a mid-week bounce. This is exactly the breakdown the 10% SMH short (stop -15%/tp +25%) was positioned for, and price action remains well within the stop/take-profit bounds already set, so nothing is mechanically triggered. No new information has touched healthcare/biotech, regional banks/financials, low-vol, discretionary, or crypto (SOL), so there is no basis to touch those legs either. Holding avoids paying spread/short-borrow costs to re-express a thesis that is already playing out as designed."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet price momentum",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Both info releases confirm the semis/leveraged-tech breakdown thesis underlying my SOXL (-15%) and TQQQ (-10%) shorts is intact and still accelerating (SOXL -41.5% then -40.4% 1-month, -13.14% single-day drop on 7/24; TQQQ -12.55% then -12.69% 1-month, -3.47% day). No information has arrived on XLF, XLV, XLE, IWM, or GDX to challenge those legs. Since the only new data reinforces rather than contradicts the current book's momentum calls, and rebalancing leveraged-ETF and short positions carries real transaction/borrow costs, holding is optimal."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The two info items only cover the semiconductor complex and both confirm the SOXL short (7%) thesis: momentum unwind is continuing, not reversing (SOXL -41.5%/-40.4% 1-month across the two releases, with a sharp -13.14% single-day drop on 7/24, and SMH itself now down 1-month too). Nothing has arrived on XBI, XLV, XLF, KRE, TLT, GDX, or GLD to alter those mean-reversion/relative-value calls. With no contradicting evidence and real turnover costs on equities plus stop/tp-bearing positions already in place, holding avoids unnecessary churn while the existing short remains validated."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet growth at a reasonable price",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information this week (INFO 1 and INFO 2) is semiconductor/leveraged-Nasdaq price action (SMH, SOXL, TQQQ), and it merely confirms the correction that was already priced into the thesis for AVGO ('more reasonable valuation than the SOXL basket after the recent semis correction') and the deliberately small 5% TQQQ tactical sleeve ('sized modestly given amplified drawdown risk'). Neither position's underlying valuation case has changed, no stops were breached, and the rest of the book (MSFT, GOOGL, META, IWM, UNH, COST, XOM, COIN short) has no new information at all. Churning a GARP book on confirmatory momentum data rather than a fundamental/valuation change is not justified given real trading costs, so the book is held unchanged."
+    },
+    {
+     "round": 3,
+     "action": "REBALANCE",
+     "reason": "This manager's mandate is growth-at-a-reasonable-price (GARP): quality/valuation-driven longs with only a modest speculative-hedge short. The inherited Round 3 book was built on a pure price-action momentum/mean-reversion framework (breakout/blow-off-top signals across XBI, XLF, KRE, TLT, SOXL, GDX, and a 3x-leveraged BTC perp short) with 30% gross short exposure and no valuation rationale for any position -- that is a materially different, non-GARP strategy and not something this week's semis-momentum info items (the only info released) give any fresh edge on continuing. Rather than hold a book that's off-mandate, I'm rotating Round 3 into a second, distinct GARP sleeve: quality compounders in different sectors than the Round 2 book, at reasonable multiples, with small-cap value breadth and a single modest hedge against speculative/leveraged crypto-proxy froth (replacing the momentum shorts and 3x BTC perp) -- consistent with the 'modest hedge' language in the manager's own mandate rather than a 30% gross short book.",
+     "positions": [
+      {
+       "symbol": "JPM",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 15,
+       "thesis": "Quality money-center bank compounding book value/EPS at a reasonable ~11-12x multiple; diversifies the book's growth exposure into financials on fundamentals rather than the sector-rotation momentum signal used previously."
+      },
+      {
+       "symbol": "ELV",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 12,
+       "thesis": "Managed-care quality compounder trading at a depressed/reasonable multiple after sector de-rating, GARP entry point with earnings growth intact, healthcare diversification distinct from Round 2's UNH position."
+      },
+      {
+       "symbol": "UNP",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Rail duopoly industrial compounder with pricing power and steady volume growth at a reasonable multiple; low-beta ballast versus the book's other cyclical exposure."
+      },
+      {
+       "symbol": "V",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Payments-network compounder with durable double-digit volume growth at a reasonable multiple relative to peers; secular growth exposure uncorrelated to mega-cap AI-capex names already held in Round 2."
+      },
+      {
+       "symbol": "PG",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Defensive staples compounder to balance the book's cyclical/growth tilt, steady mid-single-digit growth at a reasonable multiple, resilient through drawdowns."
+      },
+      {
+       "symbol": "IJR",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 10,
+       "thesis": "Small-cap value breadth exposure via a distinct vehicle from Round 2's IWM, capturing the same broadening-rally thesis with a value/profitability screen more consistent with GARP than pure small-cap beta."
+      },
+      {
+       "symbol": "CVX",
+       "kind": "equity",
+       "side": "long",
+       "weight_pct": 8,
+       "thesis": "Energy diversifier trading cheap on free-cash-flow yield with dividend support, low correlation to tech/AI-infra momentum swings; distinct single name from Round 2's XOM."
+      },
+      {
+       "symbol": "MSTR",
+       "kind": "equity",
+       "side": "short",
+       "weight_pct": 6,
+       "stop_loss_pct": 20,
+       "take_profit_pct": 35,
+       "thesis": "Modest hedge against frothy, leveraged speculative excess (a BTC-proxy trading at a large NAV premium via debt-funded crypto treasury), replacing the prior book's oversized SOXL/GDX/BTC-perp momentum shorts with a single targeted, appropriately-sized speculative-excess hedge consistent with the GARP mandate."
+      }
+     ],
+     "cash_pct": 19,
+     "novelty": "Round 3's return driver moves from Round 2's mega-cap AI/tech GARP compounding (MSFT/GOOGL/AVGO/META) plus Russell small-cap breadth and a COIN crypto-proxy short, to a fully distinct sector set -- financials, payments, managed care, staples, rails, energy and small-cap value (JPM/V/ELV/PG/UNP/CVX/IJR) -- with the speculative hedge redirected from COIN to MSTR; there is zero ticker overlap with the Round 2 book, so same-direction gross-weight overlap is 0% (well under the 50% threshold)."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "The only new information this week (Info Items 1-2) concerns semiconductors. SOXL closed at the identical $136.81 on both 2026-07-20 and 2026-07-24 -- it round-tripped (rallied mid-week, then fell -13.14% on 7/24) but is net unchanged versus the prior reading. There is no fresh directional signal to act on, and the 10% SOXL long was already sized down specifically to manage leveraged-ETF decay risk. The rest of the book (IWM, SOFI, CRSP, RKLB, DUOL, HOOD long; ADBE short; 21% cash) has zero information released against it this week. Rebalancing on a flat/no-new-info signal would just pay 2bps+ in equity trading costs for no thesis change, so I hold the book unchanged."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "This book's SOXL short (12%, stop -25%/tp +40%) is the position most directly touched by this week's info. SOXL's price is unchanged ($136.81 on both 7/20 and 7/24) despite an intraweek round trip, so the mean-reversion short thesis is neither confirmed nor invalidated -- it's simply consolidating, well inside the stop/tp band already set for intraweek risk. No information was released on financials (XLF/KRE), biotech (XBI), duration (TLT), or gold miners (GDX), which together make up the bulk of the book, so there's no basis to touch those legs either. With no differentiated signal and real transaction costs (2bps equities, 3%/yr borrow already accruing on the shorts), holding is the correct call rather than paying to rebalance a book that hasn't been invalidated."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet quality compounders",
+   "decisions": [
+    {
+     "round": 2,
+     "action": "HOLD",
+     "reason": "Only new datapoint since the book was set (7/16) is broad semiconductor/leveraged-ETF price action (SMH -9.33% 1mo, -3.27% on 7/24; SOXL -40.41% 1mo; TQQQ -12.69% 1mo). This is sector-level technical/leverage-decay noise, not company-specific fundamental news on any held name. AVGO has some AI-silicon adjacency but is a diversified franchise (custom silicon + networking + enterprise software), not a levered semis-ETF proxy, and nothing here contradicts its moat/ROIC thesis. MSFT, GOOGL, LLY, V, MA, COST, UNH are untouched by this info. The book already carries an 11% cash buffer and an 8% IWM short as ballast against exactly this kind of frothy-momentum unwind. With real per-side equity costs and no fundamental catalyst, turning the book over on one week of leveraged-ETF volatility would be unjustified churn for a quality-compounder mandate that is explicitly meant to look through short-term technicals. HOLD."
+    },
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only information released since this book was set (7/17) is semiconductor/leveraged-ETF price action (SMH, SOXL, TQQQ) \u2014 none of which are constituents of or close proxies for any R3 holding (XBI, KRE, XLF, IWM long, GDX short, ETH-USD perp short, SOL-USD perp short). No new data on financials/rate-cut carry, biotech momentum, small-cap breadth, gold-miner technicals, or crypto trend has been released to confirm or refute the sector-rotation and momentum-reversal theses underlying this book. Given real transaction costs on this leg (crypto perp fees + funding asymmetry, short borrow on GDX, equity costs on the sector ETFs), rebalancing on a data point tangential to every current position would be unjustified churn rather than a response to new evidence. HOLD."
+    }
+   ]
+  },
+  {
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "No information released this week bears on the deep-value dividend thesis (MO, VZ, C, PFE, STLA, BTI, GM, KHC) \u2014 both info items concern semiconductor/leveraged-ETF volatility (SMH, SOXL, TQQQ), which we hold zero exposure to and which says nothing about tobacco, telecom, financials, pharma, auto, or staples valuations/dividends. The book's single-digit-to-low-teens P/E, near-book P/B, and 6%+ dividend theses set on 2026-07-17 are unchanged. Turning over 8 low-single-digit-priced-relative-to-book equity positions on no new fundamental catalyst would only realize ~2bps/side trading costs for zero informational edge, so we hold the current book intact."
+    }
+   ],
+   "name": "Sonnet+tools deep value"
+  },
+  {
+   "name": "Sonnet+tools dividend growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Both released info items concern semiconductor and leveraged tech/Nasdaq ETFs (SMH, SOXL, TQQQ) which sit entirely outside this book's mandate of unleveraged dividend aristocrats/kings plus a dividend-growth ETF core with an energy hedge (NOBL, SCHD, JNJ, KO, PG, ABBV, CVX, MO, cash). There is no signal here about staples, healthcare, energy, or broad dividend-payer cash flows, so there is no information edge that justifies turning over a long-only defensive book and paying trading costs. The book remains diversified across 8 positions with reasonable single-name caps and stops already in place, cash buffer at 8% earning 4%/yr while idle. Holding avoids unnecessary churn on a mandate-consistent, well-diversified defensive basket in the absence of any relevant new information."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools price momentum",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Both new info items (released 7/21 and 7/25) cover only semiconductor/leveraged-Nasdaq proxies (SMH/SOXL/TQQQ), confirming continued momentum breakdown there (SOXL -40%+ monthly with a -13% single-day drop on 7/24, SMH -9 to -10% monthly) \u2014 none of which are held in the current book. The Round 3 book already rotated entirely out of semis into the strongest verified momentum leaders (XLE, XLV, KRE, XLF, XBI, IWD, GS) plus a 12% cash buffer, consistent with the long-only momentum mandate and prior backtest avoiding short squeezes. No new data has arrived on any of the actual holdings' price momentum, so there is no fresh signal to act on. Rebalancing now would mean paying real equity trading costs to reshuffle a book that the available information does not actually speak to \u2014 exactly the churn the mandate is designed to avoid. Holding preserves the current momentum tilt and stop-loss/take-profit risk framework intact."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools quality compounders",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "The only new information released this week (INFO ITEMS 1-2) concerns broad semiconductor and leveraged-ETF price action (SMH, SOXL, TQQQ) -- none of it is company-specific fundamental news about any of the ten quality compounders held (MSFT, AAPL, GOOGL, V, MA, COST, LLY, ADP, ORCL, AVGO). While AVGO has semiconductor exposure, a single name's noisy short-term correlation to a leveraged-ETF selloff is not a reason to alter a long-only, equal-weight, wide-moat compounder mandate built for multi-year holding periods. Selling any of these toll-booth/franchise businesses on unrelated leveraged-ETF volatility would be reactive churn that violates the stated buy-and-hold thesis and needlessly incurs trading costs with no fundamental catalyst. The 10% cash buffer and existing -15%/-18% stops remain appropriate risk controls. Maintaining the current equal-weight book."
+    }
+   ]
+  },
+  {
+   "name": "Sonnet+tools small/mid-cap growth",
+   "decisions": [
+    {
+     "round": 3,
+     "action": "HOLD",
+     "reason": "Both released info items concern semiconductor/leveraged-ETF proxies (SMH, SOXL, TQQQ) that are not held in this book and are not close proxies for our cloud/AI-infra/fintech small-mid cap names (AFRM, RBRK, IOT, TOST, S, FLYW, PATH, SOFI). While the data shows broader tech-sector volatility and a sharp down day in leveraged Nasdaq exposure (TQQQ -3.47% on 7/24, -12.69% 1mo), that's a diffuse macro signal rather than name-specific catalyst information, and the current book already carries individually-tuned stop-losses (-20% to -25%) sized per name for exactly this kind of stress-window risk, plus a 5% cash buffer. Given the mandate emphasizes momentum plus stress-window resilience already reflected in current sizing (largest weights in AFRM/RBRK, flagged as most consistent/resilient), and given real trading costs (2bps/side equities) with no name-specific information justifying a change, churning the book now would be unrewarded cost. Holding preserves the resilience-weighted structure while awaiting information more directly relevant to the held tickers."
+    }
+   ]
+  }
+ ]
+}

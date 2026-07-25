@@ -1,0 +1,96 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPMO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 18,
+      "thesis": "S&P 500 momentum factor ETF remains the core embodiment of the trend edge, but trimmed from 18% because its current constituent mix is semiconductor-heavy and therefore correlated with the sleeve now breaking; its internal reconstitution will rotate out of fading names for me."
+    },
+    {
+      "symbol": "MTUM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 18,
+      "thesis": "Broad US momentum factor, kept as the second self-rebalancing engine that mechanically sheds losers without me needing to forecast the next leader; modest trim for the same semi-concentration reason as SPMO."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 12,
+      "thesis": "Quality-dividend carry ballast raised from 9% - in a rising-volatility tape this is the sleeve that dampens drawdown and pays while I wait for a new leadership signal to emerge."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 16,
+      "thesis": "Quality factor raised from 8% - high return-on-equity, low-leverage balance sheets are the part of the trend complex that historically holds up best when high-beta leadership cracks."
+    },
+    {
+      "symbol": "JEPQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12,
+      "thesis": "Covered-call income sleeve nudged up to 9% - option premium is richer precisely when realized volatility spikes like this, so the carry improves exactly when the directional sleeves are struggling."
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 14,
+      "take_profit_pct": 40,
+      "thesis": "Top single-name momentum leader retained but trimmed from 10% with the stop tightened from 16% to 14%, because a higher-volatility regime means a given stop distance now represents far less time-to-exit than it did a week ago."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 14,
+      "take_profit_pct": 40,
+      "thesis": "Quality-momentum mega-cap with positive 3/6/12-month trend, trimmed from 9% and stop tightened alongside AAPL; less semiconductor-cycle exposure than the hardware complex that is currently breaking."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 18,
+      "thesis": "Energy held flat at 8% as the deliberate non-tech momentum diversifier - it is the one sleeve in the book with genuinely low correlation to the semiconductor unwind driving this week's information."
+    },
+    {
+      "symbol": "XLK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 15,
+      "thesis": "Cut hard from 13% to 7% and stop tightened from 20% to 15%. Semiconductors are XLK's highest-beta component and they are now the worst-performing thing I can observe; trend discipline says reduce a breaking leader rather than defend it, but a 7% residual keeps a foothold in case this proves a shakeout within an intact uptrend."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12,
+      "thesis": "New low-volatility sleeve. A 13% single-day move in a 3x semi fund is a volatility-regime signal, and low-vol equity is the trend-compatible way to stay invested with materially less drawdown sensitivity than the high-beta sleeves I just trimmed."
+    }
+  ],
+  "cash_pct": 8,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Trend-following discipline requires acting when the designated leadership sleeve breaks, and that is precisely what the released data shows. The sector I explicitly called 'strongest-trending' a week ago is now the worst thing I can observe: SMH -9.3% on the month and -3.27% on 7/24, with SOXL -41% and printing a -13.1% day. TQQQ at -12.7% on the month implies the Nasdaq-100 itself is only down roughly 4%, so this is a rotation and a volatility-regime shift rather than a full market break -- which argues for a measured trim, not a regime flip. Crucially, I have no data showing where relative strength has rotated TO, so I cannot honestly chase a new leader; the disciplined response is to cut the exposure I know is deteriorating and park it in quality/income ballast, low-volatility, and cash while waiting for the next leadership signal. Changes: XLK 13->7 (its semiconductor weight is the epicentre), AAPL 10->8 and GOOGL 9->8 with stops tightened from 16% to 14% given the higher-vol tape, SPMO 18->14 and MTUM 12->11 (both factor ETFs are themselves semi-heavy right now, so they carry correlated risk, though their internal rebalancing will bleed the losers out for me). Proceeds go to SCHD 9->11, QUAL 8->10, JEPQ 8->9, a new 6% SPLV low-volatility sleeve appropriate to a rising-vol regime, and cash 5->8. XLE held at 8% as the non-tech momentum diversifier. Gross tech beta falls from about 62% to about 48%. Equity friction at ~2bps/side makes this roughly half a basis point of NAV, so cost is not the constraint here -- the risk of over-reacting to a two-datapoint drawdown is, which is why this is a trim rather than an exit.",
+  "novelty": "This book's return driver is trend persistence in demonstrated relative-strength leaders expressed through momentum/quality factor ETFs, dividend-quality carry, low-volatility ballast and long-only US equity beta with hard stops, whereas my Round-2 book is driven by contrarian mean-reversion in beaten-down crypto (BTC/ETH/SOL plus a 2x perp), depressed managed-care and AI-fear software single names, a gold hedge and a short leveraged-semis leg -- there is zero ticker overlap between the two books (0% same-direction gross-weight overlap), and the two are constructed to profit from opposite conditions: Round 2 needs oversold assets to revert, Round 3 needs winners to keep winning.",
+  "r2_overlap_pct": 0
+}

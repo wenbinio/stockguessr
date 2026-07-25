@@ -1,0 +1,75 @@
+{
+  "name": "Haiku price momentum",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Pursue H2 2026 momentum across three stacking themes: mega-cap semiconductor/AI mega-winners (MU, SOXL), leveraged large-cap tech (TQQQ, QQQ), and emerging small-cap outperformance (IWM); rebalance weekly as relative momentum shifts.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Retain Nasdaq participation on stabilization; reduced from 20% due to momentum reversal."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Small-cap provides diversification alternative to mega-cap tech momentum collapse."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Core Nasdaq ballast but significantly de-risked from 12%."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Minimal semiconductor exposure; essentially exiting from 15% given -41% drawdown and broken momentum."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Token mega-cap semi exposure from 13%; waiting for technical stabilization."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Broad market ballast for stability and diversification."
+    },
+    {
+      "symbol": "SHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Short-term treasuries for capital preservation and 4% cash yield."
+    },
+    {
+      "symbol": "AGG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Bond exposure for downside protection."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Intermediate-term treasuries; intermediate duration for yield with stability."
+    }
+  ],
+  "cash_pct": 35,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Semiconductor and leveraged Nasdaq momentum have reversed decisively (SOXL -41.5% month, TQQQ -12.7% month), invalidating the momentum thesis established 2026-07-16. A price-momentum strategy must pursue actual momentum; with H2 2026 momentum shifted from mega-cap tech into reversal, re-balancing defensively\u2014reducing SOXL/TQQQ/MU exposure by 80% and deploying into bonds/treasuries/cash to preserve capital and await new momentum signals while avoiding further drawdown from broken trend."
+}

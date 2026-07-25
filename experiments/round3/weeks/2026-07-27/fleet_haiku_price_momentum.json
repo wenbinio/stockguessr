@@ -1,0 +1,70 @@
+{
+  "name": "Haiku price momentum",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "take_profit_pct": 25,
+      "thesis": "Biotech rotation; increase from 12% as capital flows out of tech into overlooked value sectors."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "take_profit_pct": 22,
+      "thesis": "Energy rotation; increase from 10% with macro tailwinds and relative value vs collapsed tech."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "take_profit_pct": 18,
+      "thesis": "Financials rotation; increase from 10% as rotation theme accelerates post-tech crash."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "take_profit_pct": 18,
+      "thesis": "Small-cap value leverage; increase from 12% for enhanced participation in rotation away from mega-cap tech."
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "take_profit_pct": 15,
+      "thesis": "Large-cap value core; increase from 8% to 19% as value rotation gains structural traction."
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "take_profit_pct": 18,
+      "thesis": "Emerging markets rotation; increase from 12% capturing geographic diversification from broken US tech concentration."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "take_profit_pct": 16,
+      "thesis": "Regional banks rotation; increase from 8% as value/small-cap rotation theme deepens."
+    }
+  ],
+  "cash_pct": 0,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): SHORT SOXL thesis validated: semiconductors down -40.4% as of 2026-07-24 (vs +506% YTD peak). The +15% TP should trigger soon, locking in massive profits. Re-balancing to close the winning short and re-deploy proceeds into full-conviction rotation theme (energy/financials/biotech/value/EM) at increased position sizing, maximizing capital efficiency in the confirmed rotation-out-of-tech structural trade.",
+  "novelty": "ROUND-2 rebalance retreated defensive post-momentum-collapse (tech down to 23%, cash/bonds up to 51%); ROUND-3 rebalance pivots aggressive into pure sector rotation\u201484% deployed in value/energy/financials/biotech/EM, 0% tech/semis, opposite direction from ROUND-2's tech shorts. Same-direction overlap is small-cap only (~15-17%, IWM vs TNA both long small-cap). Return drivers inverted: ROUND-2 preserves capital; ROUND-3 exploits rotation-into-value from tech destruction. <20% same-direction gross overlap; structural return-driver reversal.",
+  "r2_overlap_pct": 0
+}

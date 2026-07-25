@@ -1,0 +1,54 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Conviction long in AI infrastructure recovery (3x semis/tech), crypto capitulation reversal, EM rotation into beaten-down China and broad emerging markets, plus Japan regional diversification; 24% cash buffer for weekly rebalancing.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Maintain AI infrastructure optionality but eliminate leverage bleed destroying capital faster than thesis validates"
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 2,
+      "thesis": "Maintain Nasdaq upside exposure optionality but minimize leverage drag during thesis invalidation period"
+    },
+    {
+      "symbol": "BTC",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Capitulation reversal; -27.3% represents typical 70%+ bear market drawdown low; recovery to $80k+ offers 24%+ upside; uncorrelated diversifier"
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Increased EM China recovery positioning; Alibaba/Tencent/Baidu ADR exposure to rotational flows as US tech dominance fades"
+    },
+    {
+      "symbol": "IEMG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "Core broad EM diversification; global growth recovery and positive risk sentiment reversion after H1 underperformance"
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Japan regional ADR diversification; developed market stability and growth optionality within global diversification mandate"
+    }
+  ],
+  "cash_pct": 30,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): AI infrastructure recovery (consolidation setup) thesis disproven by accelerating losses (-13% single day on SOXL 2026-07-24). Leverage magnifying drawdowns (SOXL -40.41% vs SMH -9.33% monthly shows 3x leverage destroying capital 4.3x faster than underlying). De-lever into unleveraged EM exposure (FXI, IEMG) while maintaining crypto capitulation thesis and Japan diversification. Preserves global diversification mandate and core beaten-down markets rotation thesis while eliminating failing leverage bet. 24% cash buffer designed for this rebalancing scenario."
+}

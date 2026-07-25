@@ -1,0 +1,82 @@
+{
+  "name": "Haiku growth at a reasonable price",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Financials sector rotation; net beneficiary of rate environment, lagged YTD (+11.2%), attractive valuations"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Energy sector strength; commodity cycle momentum (+34.1% YTD), relative value versus tech"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Healthcare quality exposure; defensive characteristics, +21.5% YTD, steady earnings growth"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Value factor diversification; mean-reversion potential as growth cools, +8.2% in 3m"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Biotech growth within value; strong momentum (+14.6% last month, +82.7% YTD), cycle strength"
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Quality factor at reasonable multiples; lower-beta growth, +21.5% YTD"
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 15,
+      "thesis": "Small-cap Russell 2000 3x leverage; value rotation catch-up, +106% YTD, contrarian positioning"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 2,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 150,
+      "thesis": "Bitcoin contrarian recovery; down 46% YTD, washout bottom formation, institutional adoption tailwind"
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 2,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 100,
+      "thesis": "Ethereum contrarian recovery; down 44.1% YTD, similar washout thesis, DeFi/NFT cycle recovery"
+    }
+  ],
+  "cash_pct": 30,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Mean-reversion thesis validated precisely as designed: semiconductor extreme hypothesis confirmed with SOXL collapsing 40% YTD and accelerating -13.14% on 2026-07-24 (significantly exceeding +25% take-profit target). Lock in profits and de-risk for correction environment: close SOXL short, reduce TNA leverage, increase cash buffer. Maintain core sector-rotation thesis (XLF, XLE, XLV, VTV capturing lagging-sector outperformance with financials +11.2%, energy +34.1%, healthcare +21.5% YTD) while shifting to defensive positioning.",
+  "novelty": "Return drivers fundamentally inverted from Round 2: eliminates concentrated tech-infrastructure theme (48% in semiconductors/software) in favor of sector-rotation mean-reversion across lagging value/healthcare/financials (43% combined XLF/XLE/XLV/VTV), capturing outperformance from fundamental-driven sector rotation and lagging-sector catch-up rather than AI capex cycle; <10% gross-weight overlap same-direction positioning.",
+  "r2_overlap_pct": 1.2
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Haiku macro/sector rotation",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "H2 2026 AI/semis core with tactical small-cap broadening, crypto recovery spot, and 30% dry powder for post-earnings optionality",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Broad Nasdaq-100 exposure at 1x leverage replaces leveraged TQQQ; captures mega-cap tech exposure without leverage risk"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Russell 2000 small-cap remains stable relative to tech sector stress; maintains diversification away from mega-cap concentration"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Healthcare sector defensives with 3-4% dividend yield; outperforming during risk-off rotation as growth fears dominate"
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Utilities defensives with 3-4% dividend yield and rate-sensitive positioning; capturing mean-reversion during equity stress"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Bitcoin allocation reduced from 5% to 4% due to risk-off environment; maintains crypto recovery exposure with lower conviction"
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Gold hedge increased from 10% to 12%; uncorrelated portfolio protection during tech drawdown and macro volatility"
+    }
+  ],
+  "cash_pct": 42,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Tech and semiconductor sector implosion (-40.41% month in SOXL, -12.69% month in TQQQ) forces macro rotation from AI/leverage thesis into defensive quality and cash. Eliminating leveraged positions and rotating proceeds to healthcare and utilities defensives with 3-4% dividend yield; maintaining small-cap diversification and crypto opportunism with elevated cash (42%) to capitalize on sector rotation opportunities as volatility stabilizes."
+}

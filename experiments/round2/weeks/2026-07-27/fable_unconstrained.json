@@ -1,0 +1,56 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Dual-momentum: long 6m leaders that are NOT in sharp 1m correction (cyber-tilted), small unlevered BTC mean-reversion, no leverage, fat cash at 4%",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Cyber breakout leader, +82% 6m and accelerating; unaffected by the semi correction in released info"
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Strongest 1m momentum in universe (+24%) on cyber platform consolidation; passes both momentum filters"
+    },
+    {
+      "symbol": "FTNT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "+116% 6m with intact uptrend; cyber demand supercycle sleeve kept as the book's core"
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "AI power infrastructure +73% 6m; trimmed (not cut) as AI-infra adjacent to the confirmed semi correction",
+      "stop_loss_pct": 20
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "AI networking with steady +29% 6m momentum; trimmed on AI-infra contagion risk from the semi selloff",
+      "stop_loss_pct": 20
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "-48% off ATH spot mean-reversion ticket; no funding or liquidation risk, no new info against it"
+    }
+  ],
+  "cash_pct": 33,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): The only information released this week is a sharp, failed-bounce semiconductor correction (SMH -9 to -10% on the month, -3.3% on 7/24; SOXL -40% monthly). My dual-momentum mandate explicitly excludes 6m leaders that are in sharp 1m correction, and AMD is a direct semi name that now fails that filter. I cut AMD entirely, trim the AI-infra-adjacent VRT/ANET, keep the cyber momentum core (no released info challenges it) and the small spot-BTC mean-reversion ticket, and rotate the freed capital to 4% cash. Turnover is modest (~16% of the book) so trading cost is a few bps."
+}

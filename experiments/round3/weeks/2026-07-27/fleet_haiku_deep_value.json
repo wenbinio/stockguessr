@@ -1,0 +1,94 @@
+{
+  "name": "Haiku deep value",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Momentum mean-reversion via sector rotation: short unsustainable momentum extremes (SOXL, TQQQ after 6-12 month runs), rotate into steady outperformers (energy, small-cap value, financials), amplify capitulation signals via crypto perps, enforce daily volatility stop discipline.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Broad S&P 500 market anchor for core exposure."
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 8,
+      "take_profit_pct": 20,
+      "thesis": "Russell 2000 Value showing +29.5% 12m stability; core rotation target capturing capital flow from mega-cap tech."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10,
+      "take_profit_pct": 18,
+      "thesis": "Energy +34.1% 12m; steady performer in sector rotation away from tech."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10,
+      "take_profit_pct": 15,
+      "thesis": "Financials +6.0% 1m strength signals rate-environment recovery."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 10,
+      "take_profit_pct": 18,
+      "thesis": "Regional banks +26.5% 12m showing rate leverage and specialized financial exposure."
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12,
+      "take_profit_pct": 20,
+      "thesis": "Emerging markets -6.0% 1m dip after +37.3% 12m run; oversold mean-reversion opportunity."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 8,
+      "take_profit_pct": 12,
+      "thesis": "Low-volatility defensive providing downside cushion."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 3.5,
+      "leverage": 2,
+      "stop_loss_pct": 30,
+      "take_profit_pct": 40,
+      "thesis": "Bitcoin capitulation recovery with 2x leverage (reduced from 3x); moderate conviction with controlled tail risk."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 2,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 15,
+      "thesis": "3x Nasdaq short reduced from 5% to 2%; trims mean-reversion gains while retaining small tech hedge."
+    }
+  ],
+  "cash_pct": 37.5,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Mean-reversion shorts have achieved/exceeded targets: SOXL down -40.41% (tp +22%), TQQQ down -12.69% (tp +18%). Substantial unrealized gains should be locked in; extended holding risks mean-reversion bounce. BTC perp leverage at 3x adds unnecessary tail risk. Cash deployment into rotation thesis justified given energy/financial/EM positioning.",
+  "novelty": "Shifts from deep-value equity fundamentals (ADBE/CRM) and dividend defensives (JPM/KO) to macro-driven sector rotation mean-reversion betting that extreme tech momentum (SOXL +506.8% 12m) is unsustainable; deploys into energy, small-cap value, regional financials, and EM while trimming tech shorts from 13% to 2% after achieving targets. Only ~5% same-direction weight overlap with Round 2.",
+  "r2_overlap_pct": 9.4
+}

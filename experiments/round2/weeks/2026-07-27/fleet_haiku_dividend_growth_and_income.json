@@ -1,0 +1,68 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Dividend aristocrats (22%) provide defensive base; tactical overweight to small-cap recovery (18%) and AI/semis consolidation (18%); leveraged tech position (10%); short rate hedge (4%); 28% cash for optionality and yield.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Dividend aristocrat, 60+ year consecutive growth, 3% yield provides defensive cushion"
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Dividend aristocrat, pricing power inflation hedge, recession-resistant cash flows"
+    },
+    {
+      "symbol": "MCD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Dividend growth 50+ years, franchise model resilience, international diversification"
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Dividend growth ETF with quality screen, income generation aligned with mandate"
+    },
+    {
+      "symbol": "VOO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Large-cap dividend exposure, defensive vs concentrated growth, portfolio core"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Consumer staples, defensive sector, dividend yield, counter-cyclical positioning"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Value ETF, lower valuations after tech decline, mean reversion play"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Tactical hedge on semis weakness validation, reverses bullish NVDA conviction position"
+    }
+  ],
+  "cash_pct": 23,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Bullish semis/small-cap consolidation thesis invalidated: SOXL -40.41%, TQQQ -12.69%, SMH -9.33% (1-month). NVDA and TQQQ positions destroyed. Rebalancing to dividend-income core strategy aligned with mandate, using market weakness for value rotation."
+}

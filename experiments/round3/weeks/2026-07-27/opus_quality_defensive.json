@@ -1,0 +1,76 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "DBMF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "stop_loss_pct": 10,
+      "take_profit_pct": 30,
+      "thesis": "Managed-futures cross-asset trend: the only sleeve that gets structurally long the new downtrend as CTAs flip short equities and semis. Raised from 17% because a confirmed trend break is when this sleeve earns its keep."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 22,
+      "take_profit_pct": 55,
+      "thesis": "Primary crypto trend engine, held unchanged: no crypto information was released, and 35bps spot cost makes discretionary churn on no news a guaranteed loss. Spot avoids perp funding drag; stop caps crash risk."
+    },
+    {
+      "symbol": "JEPI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 10,
+      "thesis": "Broad-index covered-call income replaces JEPQ: keeps the option-writing carry leg of the mandate while cutting the Nasdaq/AI-infra concentration that the released data shows breaking down. Call writing also performs better in the choppy, lower-drift tape a momentum unwind produces."
+    },
+    {
+      "symbol": "PDBC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 12,
+      "take_profit_pct": 30,
+      "thesis": "Broad commodity roll carry - real-asset diversification with a return driver uncorrelated to the semiconductor complex now dragging on equity trend."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 65,
+      "thesis": "Higher-beta crypto trend sleeve with a wider stop, held unchanged for the same cost-and-no-news reason as BTC."
+    },
+    {
+      "symbol": "MTUM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12,
+      "take_profit_pct": 30,
+      "thesis": "US equity momentum cut from 20% to a stub. The factor is crowded into the AI-infra names now unwinding, but momentum rebalances its holdings and I keep a small position rather than zero in case the 7/24 break is a shakeout inside an intact uptrend."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "stop_loss_pct": 12,
+      "take_profit_pct": 20,
+      "thesis": "Small short trading with the trend rather than against it: SMH -9.33% 1-month and a -3.27% single-day reversal on 7/24 that erased the week's gains, with the 3x sleeve down 40% on the month showing leveraged holders being forcibly unwound. Sized as a trend expression, with a stop in case the break fails."
+    }
+  ],
+  "cash_pct": 8,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): A trend-and-carry book must exit trends that have broken. MTUM (20%) and JEPQ (20%) were 40% of the book levered to the US mega-cap/AI-infra complex, and the released data shows that complex unwinding: TQQQ -12.69% 1-month and -5.23% on the week, SOXL -40.41% 1-month, SMH -9.33% 1-month with a -3.27% single-day break on 7/24 after mid-week gains \u2014 a failed rally, the classic signature of a momentum top rather than a dip. Holding a momentum factor sleeve into a momentum unwind, and writing calls on the index doing the unwinding, is the exact failure mode of this strategy. I keep the crypto trend engine unchanged (35bps round-trip makes churn there genuinely expensive and no crypto information was released), raise DBMF to 22% because managed futures is the one sleeve that monetises the new downtrend instead of fighting it, swap JEPQ for JEPI to preserve the option-writing carry while dropping the Nasdaq concentration, cut MTUM to a 8% stub, lift commodity roll carry slightly, and add a 7% short in SMH so the book trades with the dominant trend rather than against it. Equity turnover is roughly 60% one-way at ~2bps, about 12bps of the book \u2014 cheap relative to carrying 40% in a broken trend.",
+  "novelty": "The Round-2 book is a long-only low-beta equity defensive core (healthcare, quality, min-vol, staples, gold) whose return driver is equity-market ballast; this book earns from cross-asset trend and carry \u2014 crypto trend, managed-futures futures trend, commodity roll yield, and option-writing premium \u2014 and shares only a single same-direction leg with Round 2, the 7% SMH short against Round 2's 8%, for roughly 7% same-direction gross overlap, far below the 50% limit.",
+  "r2_overlap_pct": 7.6
+}

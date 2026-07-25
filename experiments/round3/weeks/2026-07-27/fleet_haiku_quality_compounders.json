@@ -1,0 +1,76 @@
+{
+  "name": "Haiku quality compounders",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Healthcare sector defensive ballast; 1.5%+ yield provides income cushion in risk-off, lower correlation to momentum unwinding."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Energy sector carry on geopolitical uncertainty and OPEC coordination; slight reduction from 11.6% maintains carry thesis while reducing leverage exposure."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Financial sector carry on stable rates and net interest margins; slightly reduced from 11.6% to reallocate to defensive."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Quality factor diversification; increased from 7.7% to capture AI-driven software tail and ROE strength while reducing single-stock risk."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Dividend income ETF adds defensive ballast with 3%+ yield; provides counter-cyclical cushion if momentum collapse accelerates."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 35,
+      "take_profit_pct": 120,
+      "thesis": "Crypto residual allocation reduced from 9% (lower conviction on recovery given risk-off); maintains stop discipline for capitulation accumulation."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 11,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30,
+      "thesis": "Increased tech hedge from -7.7%; mega-cap tech repricing as growth expectations reset; pair hedge to small-cap unwinding."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 11,
+      "stop_loss_pct": 25,
+      "take_profit_pct": 25,
+      "thesis": "Increased semiconductor hedge from -5.1%; sector at +103% YTD positioning extremes; reprices sharply on execution slowdown or capex caution."
+    }
+  ],
+  "cash_pct": 21,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Tactical thesis (small-cap momentum outperformance + sector carry + crypto capitulation recovery) is being falsified by market data. 3x-leveraged indices down 40%+ over 1 month indicate risk-off environment, not the small-cap rotation intended; mega-cap tech hedges (QQQ/SMH shorts) are working but cannot offset failed core momentum longs. With only 1 week elapsed and insufficient hedge gains to justify holding failed thesis, preemptive rebalancing away from small-cap leverage and toward defensive sector carry with increased hedges is prudent. Redirects to hedged defensive positioning with tech shorts as primary profit source.",
+  "novelty": "Tactical positioning pivots from small-cap momentum leverage to hedged defensive sector carry with substantially increased tech/semiconductor shorts; return driver shifts to risk-off portfolio protection through defensive healthcare/dividend yields and energy/financial carry spreads, maintaining zero overlap with mega-cap quality compounding thesis.",
+  "r2_overlap_pct": 0
+}

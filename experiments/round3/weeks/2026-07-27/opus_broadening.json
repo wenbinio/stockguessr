@@ -1,0 +1,95 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Lowest-vol momentum name in the leader set and accelerating (+13% 1m). Upsized to anchor the long book because financials carry no semiconductor exposure in a semis-led drawdown.",
+      "stop_loss_pct": 18,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Cleanest all-horizon momentum (+82% 6m, still rising 1m). Security software demand is budget-protected and decoupled from the semiconductor capex cycle that is rolling over.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 45
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "+96% 6m with intact 3m persistence; the other security-software leader. Paired with the TQQQ short so the position expresses relative strength rather than tech beta.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 45
+    },
+    {
+      "symbol": "SNOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "+93% 6m data-platform momentum with positive follow-through; kept at a modest weight as the higher-beta software leg.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 45
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Strongest 3m acceleration in the leader set (+36%), but the highest-beta name I hold - cut from 12% to 8% because the 7/24 tape shows realized volatility spiking.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 50
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Highest-conviction expression of my information set: 3x semis fell 40.4% in a month SMH fell only 9.3%, and went exactly flat over four days SMH rose 0.42%. Shorting it collects daily-reset decay whether or not semis keep falling; wide stop because a 3x fund can gap 13% in a session.",
+      "stop_loss_pct": 35,
+      "take_profit_pct": 40
+    },
+    {
+      "symbol": "MSTR",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Deepest persistent downtrend (-45% 6m) and the purest laggard leg of the momentum trade; doubles as a risk-off hedge against the long software book.",
+      "stop_loss_pct": 25,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "3x Nasdaq-100, -12.7% on the month with a -3.47% day on 7/24. Shorts the leveraged megacap beta that my software longs are exposed to, converting the long book into a relative-strength bet rather than a directional one.",
+      "stop_loss_pct": 30,
+      "take_profit_pct": 35
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Sharp momentum breakdown (-37% 3m) and the clearest software laggard - the short-side mirror of the CRWD/PANW longs within the same sector.",
+      "stop_loss_pct": 20,
+      "take_profit_pct": 30
+    }
+  ],
+  "cash_pct": 12,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Holding is indefensible here. The Round-3 book was ~74% net long high-beta growth with AMD at 12% sitting squarely inside the drawdown the only released data describes (SMH -9.3%/1m, -3.27% on 7/24). Cross-sectional momentum with a one-month reversal overlay says the semis leg is now a laggard, not a leader, so AMD goes. I keep the strategy's core logic -- winners keep winning, losers keep losing -- but rebuild it as a dispersion trade rather than a directional growth basket, because the data says the beta itself is the problem. Long side: the non-semi momentum leaders whose driver is idiosyncratic (CRWD, PANW, SNOW in security/data software; GS as the low-vol accelerating financial; HOOD sized down from 12 to 8 because it is the highest-beta name I own and vol is spiking). Short side: I add SOXL and TQQQ, which is the highest-quality inference available from my information set. SOXL was unchanged (136.81 -> 136.81) across four days in which SMH gained +0.42%, and lost 40.4% in a month SMH lost 9.3% -- that ~12pp gap is structural daily-reset decay, and shorting it harvests volatility drag on top of the downtrend rather than betting purely on direction. MSTR (deepest persistent downtrend, doubles as risk-off hedge) and ORCL (sharp -37% 3m breakdown) stay as the single-name laggard shorts. Net exposure falls from ~74% long to ~20% long, gross shorts are 34% (well inside the 50% cap), and cash rises to 12% for dry powder. Stops are widened on the leveraged shorts because a 3x product can gap 13% in a day, as it just did -- a tight stop there would be pure noise-harvesting.",
+  "novelty": "Round 2 is a ~84%-long, unlevered breadth basket whose return driver is broad small-cap/equal-weight/cyclical beta rotating down-cap; Round 3 shares zero tickers with it and is instead a near-market-neutral (~20% net) single-name dispersion book whose return driver is idiosyncratic software/financials momentum funded by harvesting daily-reset volatility decay in leveraged ETFs -- Round 2 makes money if the market broadens and rises, Round 3 makes money if leaders and laggards keep separating and realized volatility stays high, which can occur in opposite tapes.",
+  "r2_overlap_pct": 0
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Core MSCI EAFE developed-ex-US ETF for broad, low-cost diversification away from US mega-cap AI concentration and away from the whipsaw semis trade."
+    },
+    {
+      "symbol": "NVS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Novartis (Swiss) ADR -- defensive global pharma exposure, low correlation to US tech/semis volatility."
+    },
+    {
+      "symbol": "RIO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rio Tinto (UK/Australia) ADR -- diversified miner giving commodity/EM-demand exposure distinct from tech-driven return streams."
+    },
+    {
+      "symbol": "UL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Unilever (UK/Netherlands) ADR -- global consumer staples ballast, defensive counterweight to volatile AI/semis-linked assets."
+    },
+    {
+      "symbol": "EWU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "UK equity ETF for developed-market diversification with limited AI/semis-sector weight."
+    },
+    {
+      "symbol": "EWW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Mexico ETF -- nearshoring/EM-Americas diversification, low correlation to US mega-cap tech drawdowns."
+    },
+    {
+      "symbol": "EMB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "EM USD sovereign bond ETF -- adds income and a different risk driver (rates/EM credit) to diversify the book's return sources away from equity-momentum/semis bets."
+    }
+  ],
+  "cash_pct": 24,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): The Round-3 book on file (XBI/XLF/KRE momentum longs, GDX/SOXL mean-reversion shorts, TLT ballast) is a domestic sector relative-value book with zero ADR/international content -- it does not match this manager's mandate of global diversification via US-listed ADRs and ETFs. Bringing it back on-mandate: replacing with a developed/EM-ex-US ADR and ETF book spanning Europe, UK, Latin America, Australia and EM sovereign debt, with no US sector-timing bets and no semis exposure. The newest info (continued sharp semis/AI-infra volatility -- SOXL -13.14% on 07-24 alone after a mid-week bounce, SMH -9.33% 1m) argues for staying out of leveraged US tech/semis mean-reversion bets given how whippy that trade has been, reinforcing the case for a calmer, defensively-tilted international book here instead.",
+  "novelty": "This book's return driver is developed-market defensive/staples/healthcare ADRs plus EM sovereign bonds across Europe, the UK, Latin America and Australia -- entirely disjoint in symbols and driver from the domestic-sector-rotation book previously on file, and also disjoint from the Round-2 book's EM-tech/Asia set (EEM/TSM/ASML/EWZ/EWJ/BABA/INDA/SQQQ), giving 0% same-direction gross-weight overlap with Round 2.",
+  "r2_overlap_pct": 0
+}

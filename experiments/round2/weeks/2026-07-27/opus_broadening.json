@@ -1,0 +1,83 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Core unleveraged small-cap breadth. Upsized with the TNA proceeds: same factor, no daily-reset decay."
+    },
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Equal-weight S&P - the purest anti-concentration long, and the direct beneficiary if the megacap/semis drawdown in the data keeps rotating money down-cap."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Biotech breadth momentum, top performer across recent windows and structurally uncorrelated to the semiconductor complex that is currently breaking."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks - domestic cyclical breadth with no semiconductor supply-chain exposure."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Energy cyclical breadth; strong H1 momentum and the lowest correlation in the book to the tech drawdown."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Industrials - steady cyclical breadth participant, held unchanged in the absence of new information."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Financials laggard with catch-up potential as leadership widens away from concentrated tech."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "3x small-cap amplifier cut from 15% to 6%. SOXL's 12pp of decay versus SMH this month is the direct evidence that daily-reset leverage is toxic at current realized vol; kept only as a small convex kicker.",
+      "stop_loss_pct": 30
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Small beaten-down speculative tail for diversification; trimmed a point, no new information to justify more."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 11,
+      "thesis": "Anti-concentration hedge, raised 9->11. TQQQ -12.7%/1m confirms the megacap complex is in an actual downtrend rather than a hypothesised one; still capped small because shorting megacap has historically been a persistent drag."
+    }
+  ],
+  "cash_pct": 5,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): Thesis intact, structure fixed. The only information released this week (SMH -9.3%/1m, TQQQ -12.7%/1m, a -3.3% day on 7/24) corroborates the anti-concentration case: the megacap/semis complex is the thing breaking, which is exactly how leadership broadens. So I keep the long-heavy breadth mandate. What the data forces me to change is the leverage. SOXL went 136.81 -> 136.81 (0.00%) over four days in which SMH rose +0.42%, and -40.4% over a month in which SMH fell only -9.3% -- roughly 12pp of pure daily-reset path decay. TNA is the identical structure on small caps, and at 15% it was the single largest structural leak in the book in a confirmed high-realized-vol tape. I cut TNA 15->6 (with a -30% stop) and redeploy into unleveraged IWM (12->15) and RSP (12->13), which carry the same breadth factor exposure without the compounding drag. I also lift the QQQ short 9->11 now that the megacap downtrend is directly evidenced rather than assumed, while keeping it small because shorting megacap has been a persistent drag historically. Cyclical sleeve (XBI, KRE, XLE, XLI, XLF) and the ETH tail are essentially untouched -- I have no new information on any of them, so I refuse to churn them. One-way turnover is ~10% of the book, costing single-digit bps, which is cheap for removing 60% of the leveraged-decay exposure."
+}

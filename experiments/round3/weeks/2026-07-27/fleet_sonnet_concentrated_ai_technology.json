@@ -1,0 +1,59 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Alphabet's AI stack (Gemini, in-house TPUs, Cloud) offers diversified AI monetization with ad/search cash-flow ballast, uncorrelated to semis-supply-chain volatility."
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "AWS AI infrastructure buildout (Trainium/Inferentia) and Bedrock adoption capture hyperscaler AI capex through a cloud-services lens rather than chip-supply exposure."
+    },
+    {
+      "symbol": "META",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Massive AI capex is funding best-in-class ad-targeting monetization; core platform economics give a return driver distinct from hardware-cycle names."
+    },
+    {
+      "symbol": "PLTR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Enterprise/government AI software adoption (AIP) represents the software layer of the AI theme, with different demand drivers than compute-hardware capex.",
+      "stop_loss_pct": 20
+    },
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "AI-driven cybersecurity platform consolidation is an adjacent AI-software theme insulated from chip-cycle swings.",
+      "stop_loss_pct": 15
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Confirmed technical breakdown in semis this week (-9.33% month, -3.27% day on 7/24) with continued leveraged-ETF instability; a direct tactical short monetizes the downtrend rather than fighting it.",
+      "stop_loss_pct": 10
+    }
+  ],
+  "cash_pct": 10,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): The Round 3 book on file (cross-sector momentum in biotech/financials/gold-miner-and-bond shorts, explicitly avoiding AI/semis) is inconsistent with this book's concentrated AI/technology mandate, so I'm resetting it back onto mandate rather than holding an off-thesis book. Given the week's only information (semis technicals showing SMH -9%/month with a sharp -3.27% day on 7/24 and SOXL's violent whipsaw) confirms near-term stress specifically in the hardware/chip-capex layer of AI, Round 3 expresses AI/tech conviction through a different, non-overlapping sleeve: mega-cap AI application and platform winners (search/ads/cloud AI monetization) plus enterprise AI software, funded partly by a tactical short on the semis complex itself (SMH) to harvest the now-confirmed technical breakdown rather than fight it. This keeps the manager fully within its named mandate while diversifying the AI return driver away from the chip-cycle names concentrated in the Round 2 book.",
+  "novelty": "Round 3 rotates the AI/technology return driver from hardware/semis capex names (NVDA, MSFT, AVGO, AMD, MU) held long in Round 2 to mega-cap AI application and platform winners (GOOGL, AMZN, META, PLTR, CRWD) plus a fresh short on SMH itself -- zero ticker overlap with the Round 2 book and an opposite-direction stance on the semis complex, so gross-weight same-direction overlap with Round 2 is 0%, well under the 50% threshold.",
+  "r2_overlap_pct": 0
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Value ETF, core mean-reversion play, expanded position after SOXL short profits"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Financials lagging YTD, dividend yield capture, cyclical upside into rate normalization"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Energy diversification with geopolitical support, dividend yield, expanded position"
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Small-cap value subset, quality reversion play, avoids momentum excess"
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Industrials, infrastructure tailwind, cyclical undervaluation vs growth, expanded position"
+    },
+    {
+      "symbol": "SCHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Dividend growth ETF, yield capture with quality screen, tactical rotation anchor"
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Low-volatility laggard (5.8% YTD), defensive recovery play with structural support"
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "take_profit_pct": 20,
+      "thesis": "3x small-cap momentum short retained as mean-reversion hedge; SOXL profits redeploy to longs"
+    }
+  ],
+  "cash_pct": 8,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): SOXL SHORT 40.41% profitable, far exceeding +25% take profit target. Prudent profit-taking and risk management warrant closing SOXL position and redeploying into expanded value/dividend complex while maintaining TNA short momentum hedge.",
+  "novelty": "Return driver shifts from dual tactical mean-reversion shorts (SOXL + TNA) capturing semis/small-cap excess to expanded value/dividend long rotation with single TNA momentum hedge; SOXL thesis validated at +40%, now pivoting to longer-duration value complex with reduced leverage exposure and profit lock-in.",
+  "r2_overlap_pct": 0
+}

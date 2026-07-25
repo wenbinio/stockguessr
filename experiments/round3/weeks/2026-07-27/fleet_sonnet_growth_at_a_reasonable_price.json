@@ -1,0 +1,72 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Quality money-center bank compounding book value/EPS at a reasonable ~11-12x multiple; diversifies the book's growth exposure into financials on fundamentals rather than the sector-rotation momentum signal used previously."
+    },
+    {
+      "symbol": "ELV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed-care quality compounder trading at a depressed/reasonable multiple after sector de-rating, GARP entry point with earnings growth intact, healthcare diversification distinct from Round 2's UNH position."
+    },
+    {
+      "symbol": "UNP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rail duopoly industrial compounder with pricing power and steady volume growth at a reasonable multiple; low-beta ballast versus the book's other cyclical exposure."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Payments-network compounder with durable double-digit volume growth at a reasonable multiple relative to peers; secular growth exposure uncorrelated to mega-cap AI-capex names already held in Round 2."
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Defensive staples compounder to balance the book's cyclical/growth tilt, steady mid-single-digit growth at a reasonable multiple, resilient through drawdowns."
+    },
+    {
+      "symbol": "IJR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap value breadth exposure via a distinct vehicle from Round 2's IWM, capturing the same broadening-rally thesis with a value/profitability screen more consistent with GARP than pure small-cap beta."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy diversifier trading cheap on free-cash-flow yield with dividend support, low correlation to tech/AI-infra momentum swings; distinct single name from Round 2's XOM."
+    },
+    {
+      "symbol": "MSTR",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 20,
+      "take_profit_pct": 35,
+      "thesis": "Modest hedge against frothy, leveraged speculative excess (a BTC-proxy trading at a large NAV premium via debt-funded crypto treasury), replacing the prior book's oversized SOXL/GDX/BTC-perp momentum shorts with a single targeted, appropriately-sized speculative-excess hedge consistent with the GARP mandate."
+    }
+  ],
+  "cash_pct": 19,
+  "reassessment_note": "Week 2 Info Desk (2026-07-25, drip protocol \u2014 released items only): This manager's mandate is growth-at-a-reasonable-price (GARP): quality/valuation-driven longs with only a modest speculative-hedge short. The inherited Round 3 book was built on a pure price-action momentum/mean-reversion framework (breakout/blow-off-top signals across XBI, XLF, KRE, TLT, SOXL, GDX, and a 3x-leveraged BTC perp short) with 30% gross short exposure and no valuation rationale for any position -- that is a materially different, non-GARP strategy and not something this week's semis-momentum info items (the only info released) give any fresh edge on continuing. Rather than hold a book that's off-mandate, I'm rotating Round 3 into a second, distinct GARP sleeve: quality compounders in different sectors than the Round 2 book, at reasonable multiples, with small-cap value breadth and a single modest hedge against speculative/leveraged crypto-proxy froth (replacing the momentum shorts and 3x BTC perp) -- consistent with the 'modest hedge' language in the manager's own mandate rather than a 30% gross short book.",
+  "novelty": "Round 3's return driver moves from Round 2's mega-cap AI/tech GARP compounding (MSFT/GOOGL/AVGO/META) plus Russell small-cap breadth and a COIN crypto-proxy short, to a fully distinct sector set -- financials, payments, managed care, staples, rails, energy and small-cap value (JPM/V/ELV/PG/UNP/CVX/IJR) -- with the speculative hedge redirected from COIN to MSTR; there is zero ticker overlap with the Round 2 book, so same-direction gross-weight overlap is 0% (well under the 50% threshold).",
+  "r2_overlap_pct": 0
+}
