@@ -1,0 +1,126 @@
+{
+ "name": "Opus 5 event driven",
+ "model": "opus",
+ "group": "opus5",
+ "strategy": "Every position is a discrete, tape-datable catalyst: five post-earnings-drift longs bought 1-2 sessions after a >6% up-gap on >2x normal volume in names already up >10% over 20 days (stop 10%, no take-profit, so the drift can run); five capitulation longs bought after a >6% down-gap in names already down >10% over 20 days (wide 18-22% stops); one merger-arb long in a stock whose realised volatility has collapsed to 6% annualised in a 1.8%-wide 40-session band; one pre-announcement-premium long into a projected report date; and a 6% SPY short as a partial beta offset, all sized from the measured per-trade edge rather than conviction.",
+ "novelty": "The edge hypothesis is that prices misprice discrete corporate events for a few weeks afterwards, so the return driver is the calendar of gaps, deals and report dates rather than any theme, factor or trend. It differs from long-AI-momentum because entry is triggered by an event that has already happened in the tape and is exited by a defined stop or the next reassessment regardless of the name's narrative -- the same rule would have put me long Lockheed and Schlumberger this week and long nothing in AI. It is falsified if liquid stocks that gap on earnings show no measurable forward drift once the entry lag and market return are accounted for: my own tradeable test of the fashionable version of this (shorting the up-gap) came out negative, and if the long-side drift and the capitulation bounce also fail out-of-sample the book has no reason to exist.",
+ "entry": "2026-07-27",
+ "capital_usd": 1000,
+ "positions": [
+  {
+   "symbol": "TSLA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18,
+   "thesis": "Capitulation: -14.52% gap 2026-07-23 on 3.4x median volume, already -16.2% over the prior 20 sessions. Rule (>6% down-gap, >2x volume, ADV>$200M, prior-20d < -10%), buying 2 sessions later and holding 20: n=463 historical trades, mean +2.44% raw (t=+3.50), +1.23% market-hedged, 55% hit; stable by year (2024 +1.19%, 2025 +1.53%, 2026 +1.49% hedged at 15d)."
+  },
+  {
+   "symbol": "ISRG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18,
+   "thesis": "Capitulation: -14.15% gap 2026-07-17 on 4.3x volume (largest volume spike in the cohort), prior 20d -17.2%, ADV $1.09bn. Same n=463 rule; at a 6-session entry lag the rule still returns +1.92% raw (t=+2.57) over 20 sessions, so the 2026-07-17 event is still inside the tested window."
+  },
+  {
+   "symbol": "NFLX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 18,
+   "thesis": "Capitulation: -7.26% gap 2026-07-17 on 3.1x volume, prior 20d -12.4%, ADV $3.4bn. Mid-July report date is consistent with the volume signature. Same n=463 statistic; the leg's edge is strongest unhedged (+3.12% mean, t=+4.13 at 20 sessions with no stop) which is why the stop is set wide rather than tight."
+  },
+  {
+   "symbol": "HIMS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 22,
+   "thesis": "Capitulation: -14.20% gap 2026-07-24 on 2.2x volume, prior 20d -14.1%, ADV $459M. Freshest event in the book (1-session lag, where the rule measures +2.40% raw, t=+3.40). Smallest capitulation weight and widest stop because its realised volatility is roughly double the rest of the leg."
+  },
+  {
+   "symbol": "CDNS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18,
+   "thesis": "Capitulation: -9.47% gap 2026-07-17 on 2.7x volume, prior 20d -14.9%, ADV $712M. Held at half the size of the other capitulation names because SNPS gapped -7.85% the same session on 3.2x volume, which means this was a shared sector shock rather than a clean single-name event -- I took one of the pair rather than both."
+  },
+  {
+   "symbol": "LMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10,
+   "thesis": "Post-earnings-announcement drift: +10.54% gap 2026-07-23 on 3.3x volume, prior 20d +12.9%, ADV $511M. Rule (>6% up-gap, >2x volume, ADV>$200M, prior-20d > +10%), entering 2 sessions later, holding 20 with a 10% stop and no take-profit: n=658, mean +2.81% raw (t=+4.74), +2.06% market-hedged (t=+3.69). Adding a take-profit cut the mean to +1.37%, so the position is deliberately left uncapped."
+  },
+  {
+   "symbol": "TMO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10,
+   "thesis": "PEAD: +8.71% gap 2026-07-23 on 2.8x volume, prior 20d +21.9% (strongest pre-gap trend in the leg), ADV $1.09bn. Same n=658 statistic; the prior-20d filter is what makes the leg work -- unconditional up-gaps returned only +0.35% hedged over 20 sessions and were negative in 2026, while up-gaps in existing uptrends returned +1.23% hedged in 2026."
+  },
+  {
+   "symbol": "SLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10,
+   "thesis": "PEAD: +11.01% gap 2026-07-24 on 2.5x volume, prior 20d +12.5%, ADV $536M. Only energy exposure in the book, which is the point of holding it over a second defence name. Entered at a 1-session lag, where the rule measures +2.34% raw (t=+3.93)."
+  },
+  {
+   "symbol": "RTX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10,
+   "thesis": "PEAD: +7.33% gap 2026-07-23 on 2.4x volume, prior 20d +12.2%, ADV $790M. Sized below LMT because the two are the same sector and reported the same week, so the pair is one correlated bet on the defence earnings cycle rather than two independent draws from the n=658 distribution."
+  },
+  {
+   "symbol": "THC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12,
+   "thesis": "PEAD: +17.17% gap 2026-07-24 on 4.0x volume, the largest qualifying up-gap and the highest volume ratio in the leg, prior 20d +27.5%, ADV $228M. Thinnest name in the book and the most extended, hence the smallest PEAD weight and a wider 12% stop to survive normal post-gap chop."
+  },
+  {
+   "symbol": "PEN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 8,
+   "take_profit_pct": 6,
+   "thesis": "Merger-arb 'pinned price' signature, measured not asserted: 20-day realised volatility has fallen from 50-68% (Nov 2025-Jan 2026) to 5-9% (Jun-Jul 2026); over the last 60 sessions annualised volatility is 7.8% versus SPY's 13.2%, the lowest of 400+ names screened; the last 40 closes sit in a 1.78%-wide band (315.46-321.06, stdev $1.36 on a $318 stock) drifting slightly upward. A single stock cannot trade at half the index's volatility for a quarter without a fixed-price corporate event pinning it. The verified fact is the volatility collapse; 'pending cash acquisition' is my inference, which is why the stop is 8% (a deal break gaps far more) and the take-profit is 6% (spread convergence)."
+  },
+  {
+   "symbol": "META",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 6,
+   "take_profit_pct": 4,
+   "thesis": "Earnings-announcement premium: across 608 volume-spike announcements in liquid names, the 5 sessions ending the day before the event returned +0.89% raw (t=+3.41, 59.2% hit) and +0.52% market-hedged (t=+2.26), while the event-day return itself was indistinguishable from zero (n=1281, mean -0.07%, t=-0.20). So the trade is the run-up, not the print. META's last volume-spike event was 2026-04-30 and its own median event spacing projects the next one about 5 sessions after 2026-07-24; it has had no volume spike in the last 12 sessions, confirming it has not yet reported. The 4% take-profit is there to harvest the run-up before the print and the 6% stop to cap the coin-flip if I am still holding into it."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 9,
+   "thesis": "Partial beta offset, not a market view. The edge I measured is largest on a market-hedged basis (PEAD +2.06% hedged vs +2.81% raw; capitulation +1.23% hedged vs +2.44% raw), so a small index short moves the book's return driver toward the event component. Deliberately only 6% of NAV: in all three backtest windows the short was a drag, and the raw event edge is significant on its own (t=+4.98 and t=+3.63 on the widened ADV>$100M samples), so a full hedge is not needed to make the strategy work."
+  }
+ ],
+ "cash_pct": 14,
+ "backtest": {
+  "windows_tested": ["2026-01-02 to 2026-07-24", "2025-07-16 to 2025-12-31"],
+  "strategy_return_pct": {"2026H1": -0.93, "2025H2": 6.39},
+  "benchmark_return_pct": {"2026H1_SPY": 8.74, "2025H2_SPY": 9.87},
+  "max_drawdown_pct": {"2026H1": -7.50, "2025H2": -3.19},
+  "notes": "Engine runs (tracker/round2.py --backtest, verbatim): 2026-01-02 to 2026-07-24 NAV $1000 -> $990.72 (-0.93%), max drawdown -7.50%, SPY +8.74%. 2025-07-16 to 2025-12-31 NAV $1000 -> $1063.88 (+6.39%), max drawdown -3.19%, SPY +9.87%. A third, more relevant earnings-season analogue, 2025-07-28 to 2025-09-30: NAV $1000 -> $1053.70 (+5.37%), max drawdown -1.77%, SPY +4.88% -- the only window where the book beat SPY, and with roughly a third of its drawdown. WHAT THESE RUNS DO NOT ESTABLISH: they buy and hold today's event-selected names over past windows, so they mostly measure the 2025-26 drift of ISRG, NFLX, TSLA, LMT et al., not the strategy. Worse, the events that justify these positions had not happened on those entry dates, and PEN's 8% stop is calibrated to its current 6%-volatility pinned regime, so in 2025 (when it was a 40-70% volatility stock) it stops out immediately and costs about a point of NAV in every window -- that is a mechanical artifact, not evidence about the deal. The 2026H1 run is dominated by tight stops firing across a six-month hold and parking the book in cash; the construction is built for a 15-20 session event horizon with weekly refresh, and a six-month buy-and-hold is not how it is meant to be used. WHAT DOES ESTABLISH THE EDGE is the event study on the rule itself, run over 418 symbols and 2024-01 to 2026-07 with a realistic entry lag and market-hedged returns: PEAD long n=658 (n=820 at the ADV>$100M cut) +2.81% raw / +2.06% hedged per trade, t=+4.74 / +3.69; capitulation long n=463 +2.44% raw / +1.23% hedged, t=+3.50 / +1.84; announcement premium n=608 +0.89% raw over 5 pre-report sessions, t=+3.41. HONEST NEGATIVE RESULT: the textbook version of this trade -- fading the up-gap -- does not work once entry lag, liquidity and the market return are handled properly (short up-gap, n=1065, mean -0.76% hedged, -1.14% raw at t=-4.60, i.e. the short loses). An earlier stock-demeaned version of my own analysis appeared to show a strong up-gap fade (t=-5.94); that signal was an artifact of demeaning by each stock's own bull-market drift and vanished in the tradeable test. I inverted the leg on the evidence rather than trading the version I expected to find."
+ },
+ "outlook": "I expect a per-cycle edge of roughly 1-2% on the deployed event legs, not a directional windfall: 10 event positions at a measured mean of about +2.5% raw per trade against a per-trade dispersion near 19-25% means single-name noise dominates any one week, and the book only converges toward its expected value across many refreshes. Management is mechanical. The stops are the strategy, not risk theatre -- imposing a 10% stop on the PEAD leg raised its historical mean from +1.90% to +2.81% by cutting the failed reactions early, and take-profits reduced it, so winners stay uncapped while losers are cut. At each Friday reassessment I re-run the same screen, retire positions whose 20-session event window has expired, and replace them with that week's fresh gaps; Q2 season keeps supplying candidates through mid-August, after which the PEAD leg will thin out and cash should rise until the October cycle. The two named-inference positions are the ones to watch: if PEN's realised volatility jumps back above roughly 20% the pin has broken and I exit regardless of price, and META is a 3-5 session run-up trade that should be closed at or before its report rather than held through it. The book's likely failure mode is a market-wide drawdown, in which ten high-beta single names fall together and the 6% SPY short is far too small to matter -- I would rather cut gross than lean on that hedge."
+}
