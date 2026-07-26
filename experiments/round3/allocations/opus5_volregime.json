@@ -1,0 +1,66 @@
+{
+  "name": "Opus 5 vol regime",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Classified the current tape as a calm-index / high-dispersion regime (SPY 20d realized vol 11.65%, 34th percentile of two years, 10d/60d term ratio 0.80, versus QQQ 23.66% and XLK 30.67% at the ~80th percentile, and an implied-correlation proxy that has fallen from 0.54 to 0.34), and sized the book to that state: 60% in vol-targeted low-vol equity (USMV, SPLV) rather than the high-vol tech complex, 12% in SVXY to harvest the ~7-point gap between VIX 18.6 and SPY realized 11.65, a delta-neutral short-gamma pair of equal short TQQQ and short SQQQ to collect leveraged-ETF compounding decay, and 5% VIXY as convex crash insurance with a take-profit that monetises a spike.",
+  "novelty": "The edge hypothesis is that the volatility STATE of the market — realized vol, its term structure, cross-sectional dispersion and the compounding decay of leveraged products — determines how much and what kind of risk to hold, with no directional view attached; the return comes from the variance risk premium and from path-dependent decay, not from being right about where prices go. That is a different driver from long-AI-momentum: the two largest P&L engines here (short-vol carry and the short TQQQ/SQQQ gamma pair) are approximately delta-neutral to the AI complex and are paid by chop and by the persistence of contango, so the book can make money in a flat or falling tape and will lag badly in a melt-up. It is falsified if realized vol rises above implied for a sustained stretch (short-vol carry stops paying), if the leveraged-ETF pair loses money in a strongly trending market faster than the low-vol core earns, or if low-vol equity fails to deliver its historical vol reduction — the 2025H2 backtest already shows the cost side of this, an 8-point shortfall to SPY in a calm melt-up.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 36,
+      "stop_loss_pct": 14,
+      "thesis": "Min-volatility equity core. 20d realized vol 9.97% annualized vs SPY 11.65% and QQQ 23.66%; 60d 9.09%. With index vol at the 34th percentile the vol-targeting rule says run full equity size, but dispersion at the 80th percentile says run it in the low-vol cross-section, not the index. Held +2.20% over the last 21 sessions while QQQ fell 3.71%. The 14% stop is a regime-break brake, not a trading stop."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 24,
+      "stop_loss_pct": 16,
+      "thesis": "Second low-vol sleeve, 20d realized vol 14.88%, 60d 12.99%, both below SPY's 60d 13.25%. Unlike USMV it is a pure S&P-500 low-vol screen so its sector mix differs; +3.54% over 21 sessions. Adds low-vol equity beta without concentrating the whole defensive core in one construction."
+    },
+    {
+      "symbol": "SVXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 25,
+      "thesis": "The variance risk premium is wide: VIX closed 18.58 against SPY 20d realized of 11.65 and 10d of 10.56, roughly 7 vol points of premium, and VIXY has bled 24.8% over 63 sessions and 48.7% over 252 confirming persistent contango. SVXY is the short side of that roll. Sized at 12% and stopped at 25%: SVXY's worst single day in the last two years was -21.4% and its worst 5-day was -33.8%, so a 25% stop is wide enough to survive ordinary stress but caps the leg's contribution near -3% to -4% of NAV in a gap."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Short-gamma leg. TQQQ has underperformed a naive 3x QQQ by 7.14pp over 63 sessions, 12.25pp over 126 and 19.16pp over 252 — pure daily-rebalance compounding decay, and QQQ's 20d realized vol of 23.66% at the 80th percentile means that decay is currently running fast. Deliberately carries NO individual stop: it is one half of a hedged pair and an individual stop converts the hedged structure into a naked directional short at exactly the wrong moment (see backtest notes)."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Equal-notional opposite leg. Short TQQQ carries about -3 delta on QQQ and short SQQQ about +3, so the pair is near delta-neutral and its P&L is the joint decay of both funds — a short-gamma carry trade paid by chop and taxed by trend. Rolling 63-day P&L of the equal-notional pair over the last 579 sessions: mean +0.29%, median +1.41%, positive 63.4% of the time, worst -27.76% of notional. Loss is bounded by construction: the engine floors a short at zero margin, the legs are near -1 correlated, and at 10%+10% the realistic bad case is roughly -5% of NAV."
+    },
+    {
+      "symbol": "VIXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "take_profit_pct": 90,
+      "thesis": "Convex left-tail hedge and the reason the short-vol legs can be held at all. VIXY gained 93.8% in five sessions around the August 2024 spike and 28.1% through the February-May 2025 drawdown, against SVXY's -33.8% and -22.1% in the same windows. Kept small at 5% because it bleeds with contango (-42.8% in calm 2025H2); the 90% take-profit converts a genuine vol spike into cash rather than round-tripping it, and it fired in both stress backtests."
+    }
+  ],
+  "cash_pct": 3,
+  "backtest": {
+    "windows_tested": ["2026-01-02 to 2026-07-24", "2025-07-16 to 2025-12-31", "2025-02-14 to 2025-05-30 (stress)"],
+    "strategy_return_pct": {"2026H1": 4.14, "2025H2": 1.69, "2025_STRESS": 5.47},
+    "benchmark_return_pct": {"2026H1_SPY": 8.74, "2025H2_SPY": 9.87, "2025_STRESS_SPY": -3.04},
+    "max_drawdown_pct": {"2026H1": -4.75, "2025H2": -2.85, "2025_STRESS": -8.07},
+    "notes": "Numbers are verbatim from `python3 tracker/round2.py --backtest <entry> <end> <file>` on this exact construction. The engine reports NAV $1041.42 / $1016.88 / $1054.73 on $1000. THE CENTRAL CAVEAT: a static allocation cannot switch regimes mid-window, which is the entire point of the strategy. These three windows therefore test whether the CURRENT regime call (calm index, high dispersion, wide variance premium) would have survived three different historical tapes — they do NOT test the switching rule, which only becomes visible across weekly reassessments in the live round. The book underperforms SPY by 4.6 and 8.2 points in the two rising windows and beats it by 8.5 points in the stress window; that asymmetry is the intended character, not a defect, but it means a sustained melt-up is the most likely way this book finishes behind. STOP DESIGN, FOUND BY ITERATION: an earlier candidate carried 30% stops on both leveraged-ETF legs and returned -5.92% with a -11.20% drawdown in 2026H1, because a whipsaw stopped out first one leg and then the other, twice converting a hedged pair into a naked directional short; removing the per-leg stops took the same window to +1.62% and the stress window from -0.05% to +7.83%. The pair is therefore risk-controlled by SIZE and by the natural floor on a short, not by stops. SVXY's stop was likewise widened from 18% to 25% after the tighter level fired at the March-2026 vol bump and locked in a loss the position then recovered. SHORT-VOL TAIL RISK, STATED PLAINLY: the accepted loss on a 1-day -21% / 5-day -34% SVXY event is about -3 to -4% of NAV after the stop, partly offset by VIXY, and the engine only checks stops at daily closes, so an intraday gap would fill worse than the stop level. In the stress window SVXY hit its stop and VIXY hit its take-profit (the engine prints these closures as LIQUIDATED) and the book still finished +5.47%, which is the hedge working as designed. Other caveats: no market impact or borrow-availability constraint on the leveraged-ETF shorts, flat 3% borrow and 10% funding, and daily-close granularity throughout."
+  },
+  "outlook": "I expect a low-volatility, positively-skewed-in-stress return profile: roughly 8-9% annualized portfolio vol against SPY's 11.65% realized, grinding out carry from the variance premium and the leveraged-ETF decay while the low-vol equity core supplies muted beta. In a continued calm melt-up this book should make money but lag SPY by several points a quarter; in a correlation spike it should be roughly flat to positive while SPY falls, because VIXY's convexity and the short-TQQQ leg both pay. Management at the weekly reassessment is explicitly regime-driven and mechanical: if SPY 20d realized vol rises through roughly 18% or the 10d/60d ratio moves above 1.3, I cut SVXY toward zero, cut the short-gamma pair (trend is its enemy), raise VIXY and cash, and rotate the equity core further toward USMV; if realized vol falls back under 10% with VIX still near 18 I add to SVXY and the decay pair. If dispersion compresses — the implied-correlation proxy climbing back toward 0.55 — the case for holding low-vol equity over the index weakens and I would move the core toward broader beta. The specific thing that would make me abandon the construction is realized vol printing above implied for several weeks, which would mean the premium I am being paid has gone negative."
+}
