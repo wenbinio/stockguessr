@@ -1,0 +1,111 @@
+{
+ "name": "Opus 5 pairs",
+ "model": "opus",
+ "group": "opus5",
+ "strategy": "Six market-neutral relative-value pairs (WFC/BAC, TSM/KLAC, LOW/HD, MA/V, XLU/D and QUAL+IWF vs MTUM) chosen from a 150-symbol screen for a stretched 250-day log-spread z-score AND evidence of stationarity - at least 8 crossings of the spread's own mean in the past year, under 25% two-year drift and above 0.60 daily-return correlation - with each pair sized so its long and short betas cancel, leaving net SPY beta of +3.2% of NAV.",
+ "novelty": "The edge hypothesis is that dispersion between economically-linked instruments is bounded: when a stationary log-spread reaches 1-2.6 standard deviations, it decays back toward its mean, and that decay is a return stream with no market-direction component at all. It is a genuinely different driver from long-AI-momentum because the book earns nothing if the market or the AI complex rises - every long is financed by a beta-matched short in its own sector, realised book volatility is 2.5-3.8% annualised and realised correlation to SPY is -0.00 to +0.51 on a 90% gross position; indeed the factor leg is explicitly SHORT the momentum factor (MTUM) against quality and growth, so crowded-momentum continuation is a headwind, not the thesis. It is falsified if the spreads keep widening rather than converging - concretely, if by year-end KLAC, BAC, HD, V, D and MTUM have each continued to outrun their paired long, which would mean these are re-ratings (regime changes in relative fundamentals) rather than the oscillations the 8-29 annual mean-crossings imply.",
+ "entry": "2026-07-27",
+ "capital_usd": 1000,
+ "positions": [
+  {
+   "symbol": "WFC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Long leg vs BAC. The WFC/BAC log ratio is 2.6sd below its 250d mean (14% to full convergence) yet the spread has near-zero net drift over two years and crossed its own mean 17 times in the past year - a stationary spread at its widest point, not a broken one. Daily-return correlation 0.80, betas 0.76 vs 0.77."
+  },
+  {
+   "symbol": "BAC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "thesis": "Short leg vs WFC; equal-weighted because the two betas are identical (0.77 vs 0.76), so this pair is both dollar-neutral and beta-neutral on its own. Highest-conviction pair in the book and therefore the largest."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Long leg vs KLAC. Largest convergence available in the screen (19% back to the 250d mean) with a 34-day spread half-life and 15 mean-crossings in a year; two-year drift is only -12%, so the last year's 33% relative fall is oscillation rather than a re-rating."
+  },
+  {
+   "symbol": "KLAC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "thesis": "Short leg vs TSM, sized to 3% against a 4% long because KLAC's beta (2.70) exceeds TSM's (2.15) - beta-matched rather than dollar-matched. Held small on purpose: KLAC ran 67% in six months and is the book's most dangerous short."
+  },
+  {
+   "symbol": "LOW",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Long leg vs HD. The cleanest hedge in the book: 0.88 daily-return correlation, betas 0.65 vs 0.68, 16 mean-crossings and only -6% two-year drift. Ratio is 1.2sd cheap after HD beat LOW by 14% in a quarter."
+  },
+  {
+   "symbol": "HD",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "thesis": "Short leg vs LOW; the home-improvement duopoly spread has no persistent winner over two years, and past sub-(-1.25sd) episodes reverted about +5% over the following 110 sessions."
+  },
+  {
+   "symbol": "MA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Long leg vs V. The most stationary spread found anywhere in the screen (22 mean-crossings in a year), 0.85 correlation, betas 0.35 vs 0.38 and only 4% spread vol - the pair where the hedge is most reliable even though the payoff per unit is the smallest."
+  },
+  {
+   "symbol": "V",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "thesis": "Short leg vs MA; V trades at its widest premium to MA in a year with no divergence in the underlying network economics to justify it. Sized at 7% against an 8% long to match beta."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "thesis": "Long leg vs D - an ETF-versus-component pair. D is rich against the utility sector as a whole and separately against SO and DUK, and the XLU/D spread crossed its mean 27 times in the past year, the most stationary relationship in the screen (46-day half-life)."
+  },
+  {
+   "symbol": "D",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "thesis": "Short leg vs XLU. Both legs are near-zero beta (0.16 and -0.09), so this pair carries no market exposure at all and isolates one utility's premium to its own sector index."
+  },
+  {
+   "symbol": "QUAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "First long leg of the factor triangle: quality versus momentum crowding. QUAL/MTUM is 1.1sd cheap with 16 mean-crossings in the past year; owning quality against crowded momentum is the explicit opposite side of the momentum trade."
+  },
+  {
+   "symbol": "IWF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Second long leg against MTUM: plain large-cap growth is 1.8sd cheap versus the momentum factor (14% to convergence, 14 mean-crossings), implying MTUM's excess is a crowding premium rather than an earnings premium."
+  },
+  {
+   "symbol": "MTUM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "thesis": "Single short leg against QUAL+IWF, sized so the triangle is beta-matched (10.9 units of long beta against 10.5 short). This is the book's only non-sector pair and its return driver is the decay of momentum crowding."
+  }
+ ],
+ "cash_pct": 10,
+ "backtest": {
+  "windows_tested": ["2026-01-02 to 2026-07-24", "2025-07-16 to 2025-12-31", "2025-01-02 to 2025-06-30", "2024-01-03 to 2024-12-31"],
+  "strategy_return_pct": {"2026H1": -6.78, "2025H2": 1.62, "2025H1": -1.48, "2024": 5.96},
+  "benchmark_return_pct": {"2026H1_SPY": 8.74, "2025H2_SPY": 9.87, "2025H1_SPY": 6.31, "2024_SPY": 26.62},
+  "max_drawdown_pct": {"2026H1": -8.11, "2025H2": -1.10, "2025H1": -2.54, "2024": -1.48},
+  "notes": "Run through tracker/round2.py --backtest on this exact book. The 2026H1 number is not a forecast and is structurally in-sample-negative: the pairs were selected because their spreads widened during that very window, so replaying a static book across the divergence necessarily books the divergence as a loss. Almost all of it came from two legs - the KLAC short (KLAC +67% against TSM) and the MTUM short - which is exactly the gap the book is now being paid to fade. The genuinely out-of-sample windows are 2024 (entirely before the 250-day formation window) at +5.96% with a -1.48% drawdown, and 2025H1 at -1.48%; 2025H2 was +1.62% with a -1.10% drawdown. Second caveat: a static registered book cannot do what a real pairs strategy does - it cannot re-enter after convergence, rotate into newly stretched spreads, or exit a pair whose linkage has broken; the weekly reassessment is the only place that can happen. Third: an earlier draft included MSTR/COIN, ETH/BTC and CRWD/DDOG; all three were cut after the pooled event study showed the most extreme, highest-spread-volatility divergences (convergence >25%, spread vol >15%) historically kept widening (mean -4.7% to -9.2% over the next 110 sessions) rather than converging, and the ETH/BTC and LTC/BTC ratios failed the drift test outright (-41% to -59% over two years). Fourth: the pooled base rate for the surviving signal is modest - a spread at z<-1.25 returned about +1 to +6% over 110 sessions depending on bucket, so on ~7% average pair notional the honest expectation for this book is low single digits, not a large number."
+ },
+ "outlook": "This book should look boring and should be judged on whether it makes money in flat or falling markets, not on whether it keeps up with SPY in a rally - realised volatility across four backtest windows was 2.5-3.8% annualised with drawdowns of 1-2.5% outside the in-sample window. Net SPY beta is +3.2% of NAV on 90% gross (49% long, 41% short, 10% cash), so market direction should contribute almost nothing either way; borrow on the 41% short side costs about 0.55% over five months and the 10% cash offsets roughly a sixth of that. Expected return is the convergence of six spreads - roughly +1.5 to +2.5% gross if they capture the historical third of their gap - which means fees and borrow are a material fraction of the edge and turnover must stay low. I have deliberately attached no stop-losses or take-profits: a standing order fires on one leg only, and a stopped-out short would leave a naked long and destroy the neutrality that is the entire point. Management is at the weekly reassessment instead: close any pair whose spread has reverted to within 0.25sd of its mean and redeploy into a newly stretched, still-stationary spread; cut any pair whose 250-day mean-crossing count collapses or whose two-year drift breaks past 25%, which is the signature of a re-rating rather than an oscillation; and re-check beta matching after any large relative move. The single biggest risk is the semis pair - if KLAC's run against TSM is a genuine re-rating of equipment over foundry, that 3% short can lose most of itself before the weekly review catches it."
+}
