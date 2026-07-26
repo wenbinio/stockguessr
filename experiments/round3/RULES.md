@@ -78,7 +78,7 @@ divergence panel.
 
 ## The Opus 5 field (added 2026-07-26, entry 2026-07-27)
 
-A dedicated single-model cohort: **8 accounts, all Opus 5, all tool-enabled,
+A dedicated single-model cohort: **9 accounts, all Opus 5, all tool-enabled,
 all mandatorily backtested**. Tagged `group: "opus5"`, stems `opus5_*`.
 
 Where the factorial arms hold the mandate fixed and vary the model, this
@@ -95,6 +95,17 @@ long-AI-momentum (the driver that dominates the R1/R2/R3 field):
 6. `opus5_dispersion` — dispersion: long idiosyncratic names vs short index
 7. `opus5_seasonality` — calendar/flow effects and month-end positioning
 8. `opus5_eventdriven` — catalyst/event-driven and corporate-action driven
+9. `opus5_unrestricted` — **no assigned driver** (added 2026-07-26)
+
+Slot 9 is the cohort's control: an Opus 5 account with no mandate at all, free
+to pick any return driver it believes maximises NAV — including the long-AI
+momentum every other slot is steered away from — and free to concentrate,
+lever, short or sit in cash. It is exempt from the cross-cohort distinctness
+check (it is permitted to overlap the other eight), and it is *not* exempt
+from the account limits below, which are engine constraints defining the game
+rather than strategy restrictions. Its purpose is to measure what the
+assigned-driver constraint costs or earns: if the eight mandated books beat
+it, the constraint added value; if it beats them, the mandates were a tax.
 
 Binding conditions:
 
