@@ -1,0 +1,136 @@
+{
+ "name": "Opus 5 trend following",
+ "model": "opus",
+ "group": "opus5",
+ "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+ "novelty": "Edge hypothesis: time-series trend persistence is a cross-asset risk premium that pays for absorbing other participants' need to reduce risk in a direction that is already moving, so it can be harvested in bonds, FX, metals, energy, ags and crypto with no equity-selection view at all. This is a different return driver from long-AI-momentum in three concrete ways: it is time-series (each market is judged only against its own history, never ranked against peers), it is explicitly short six of twelve legs including the precious-metals complex and crypto, and its largest single risk sleeve is currency and agriculture rather than technology - indeed the current signal set is short-tech-adjacent, since XLK sits below its 50-day average and SOXL is down 40% in a month. It is falsified if markets chop: if the assets currently above their 200-day averages mean-revert through them and the ones below rally back, a trend book loses on both sides at once, and a persistent whipsaw regime with no follow-through in any asset class is exactly the environment that kills managed futures.",
+ "entry": "2026-07-27",
+ "capital_usd": 1000,
+ "positions": [
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 18,
+   "thesis": "Cleanest low-vol uptrend in the screen: price 5.2% above 50dma and 7.5% above 200dma, 50dma above 200dma by 2.2%, 3m ts-momentum +9.1%, 60d annualised vol only 13.2% so inverse-vol sizing makes it the largest weight."
+  },
+  {
+   "symbol": "EUO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15,
+   "thesis": "Dollar-up leg (2x short EUR). EUO price 2.8% above 50dma, 6.4% above 200dma, 3m ts-momentum +6.9%, vol 9.9%. Confirmed by the mirror: FXE is 2.0% below its 200dma with 3m -2.5%, FXY 4.0% below with 3m -2.5%, and UUP is 4.1% above its 200dma with 3m +3.8%."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 20,
+   "thesis": "Healthcare turned up decisively: 5.5% above 50dma, 7.8% above 200dma with the 50dma crossing 2.2% above the 200dma, 3m ts-momentum +11.7% - the strongest 3m reading of any low-vol sleeve (vol 18.3%)."
+  },
+  {
+   "symbol": "DBA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 18,
+   "thesis": "Agriculture uptrend and the book's least equity-correlated long: 3.5% above 50dma, 6.9% above 200dma, 3m ts-momentum +3.1%, 1m +6.3%, vol 13.3%. Corroborated by WEAT at 14.4% above its 200dma with 3m +7.7%."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 25,
+   "thesis": "Energy equities in a well-established uptrend: 5.5% above 50dma, 15.5% above 200dma, 50dma 9.5% above 200dma, 3m ts-momentum +5.4% and 1m +11.3%; vol 24.4% caps the size. XOP (+16.5% vs 200dma) confirms the sleeve."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 20,
+   "thesis": "Broad equity trend leg via small caps: 10.4% above 200dma with the 50dma 10.3% above the 200dma, 3m ts-momentum +5.9%, 12m +29.8%; only 0.1% above the 50dma, so the near-term trend is flatter than the primary one - hence a middling weight (vol 18.6%)."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 40,
+   "thesis": "Strongest moving-average trend anywhere in the universe - 9.0% above 50dma and 38.3% above 200dma, 1m +28.6% - but 3m ts-momentum is only +1.5%, so the two filters barely agree; that disagreement plus 51.7% vol earns it the smallest long weight and the widest stop."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 22,
+   "thesis": "Consumer discretionary is the only major US sector below both averages: 6.0% below 50dma, 6.3% below 200dma, 3m ts-momentum -6.9%, 12m -2.7%. Vol 20.9%. Doubles as a partial hedge on the four long equity legs."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 25,
+   "thesis": "Precious metals rolled over after a 12m melt-up: gold 4.7% below its 50dma, 9.7% below its 200dma, 50dma now 5.3% below the 200dma (bearish cross), 3m ts-momentum -13.7%. Vol 24.4%. Core expression of the short-metals sleeve."
+  },
+  {
+   "symbol": "SLV",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 40,
+   "take_profit_pct": 35,
+   "thesis": "The violent end of the same downtrend: silver 12.3% below its 50dma, 17.0% below its 200dma, 3m ts-momentum -23.1% against 12m +47.4% - a classic trend reversal off an extended high. Vol 51.2% forces a small weight; take-profit banks a crash leg."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "perp",
+   "side": "short",
+   "weight_pct": 3,
+   "leverage": 2,
+   "stop_loss_pct": 45,
+   "take_profit_pct": 50,
+   "thesis": "Crypto downtrend: BTC 11.5% below its 200dma with the 50dma 12.8% below the 200dma, 3m ts-momentum -15.1%, 12m -32.1%; ETH (-13.6% vs 200dma) and SOL (-16.7%) agree. Counter-signal: price is 1.6% ABOVE the 50dma, i.e. bouncing - hence only 3% margin at 2x (6% notional) and a wide 45% stop. Perp short avoids spot borrow and pays no funding in this engine."
+  },
+  {
+   "symbol": "URA",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 2,
+   "stop_loss_pct": 40,
+   "take_profit_pct": 35,
+   "thesis": "Sharpest downtrend in the universe: uranium 12.4% below its 50dma, 18.5% below its 200dma, 3m ts-momentum -29.4%, 1m -10.8%, with 12m at only +1.4% - a thematic unwinding. Vol 51.8% caps it at the smallest weight."
+  }
+ ],
+ "cash_pct": 5,
+ "backtest": {
+  "windows_tested": [
+   "2026-01-02 to 2026-07-24",
+   "2025-07-16 to 2025-12-31",
+   "2025-01-02 to 2025-06-30"
+  ],
+  "strategy_return_pct": {
+   "2026H1": 12.55,
+   "2025H2": 1.83,
+   "2025H1": -6.14
+  },
+  "benchmark_return_pct": {
+   "2026H1_SPY": 8.74,
+   "2025H2_SPY": 9.87,
+   "2025H1_SPY": 6.31
+  },
+  "max_drawdown_pct": {
+   "2026H1": -3.25,
+   "2025H2": -3.93,
+   "2025H1": -9.42
+  },
+  "notes": "Run through tracker/round2.py --backtest on this exact file; numbers verbatim. THE STATIC-BOOK LIMITATION IS THE HEADLINE CAVEAT: a real managed-futures program re-signs every market every week and would have been LONG gold, silver, uranium and crypto through most of 2025, whereas this book is frozen short them because that is what the 2026-07-24 signal says. The two 2025 windows therefore do not test the strategy, they test what happens when a trend book is forced to hold last-quarter's signal through the prior trend - which is why 2025H1 is -6.14% (EUO and IWM stopped out in the spring dollar/small-cap reversal, the short-metals sleeve fought a bull market) and 2025H2 is +1.83% with all four metals/crypto shorts stopped or taken out. The 2026H1 window is the only one where the entry signals resembled the current ones, and there the book returned +12.55% against SPY +8.74% with a -3.25% drawdown, i.e. it beat the index at roughly a third of its volatility. Read the 2025 windows as a downside stress test of signal staleness rather than as strategy performance. Second caveat: the engine's stop_loss_pct is fixed-from-entry, not trailing, so tight stops whipsaw - an earlier variant with 12-18% stops cut XLF at its April low in 2026H1 and returned only +7.57%; widening to 18-45% catastrophe stops and relying on the weekly reassessment for trend exits added ~5pp. Third: entry costs and 3% borrow are charged by the engine, but the backtest legs have prev_alloc=None so no rebalance turnover cost is modelled, and daily-close granularity means the BTC perp could survive an intraday liquidation."
+ },
+ "outlook": "Expect a low-beta, low-drawdown return stream that looks nothing like the index: net equity exposure is only about +38% gross long minus 8% short, and roughly half the risk budget sits in currency (EUO), agriculture (DBA), energy (XLE/USO) and the short metals/crypto sleeve. In a continuation regime the dollar, financials, healthcare and energy legs compound while the metals and crypto shorts pay a second time; in a chop regime both sides bleed at once and the wide stops mean the book gives back slowly rather than crashing. Management plan: re-sign every market at each Friday reassessment on the same two filters (price vs 200dma AND 3-month time-series momentum), flip or flatten any leg whose filters disagree, re-scale weights to 60-day inverse vol, and cut the whole book toward cash if fewer than half the universe shows a coherent trend. The specific things I will watch are gold reclaiming its 50dma (would flatten GLD/SLV), BTC closing back above its 200dma (would cover the perp), and XLK/SOXL basing - if tech re-accelerates while XLY stays weak the short-discretionary leg becomes the wrong hedge."
+}
