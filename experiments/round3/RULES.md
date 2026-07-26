@@ -76,6 +76,49 @@ dividend growth, small/mid growth):
 Tagged `group: "factorial"`; scored identically; excluded from the novelty
 divergence panel.
 
+## The Opus 5 field (added 2026-07-26, entry 2026-07-27)
+
+A dedicated single-model cohort: **8 accounts, all Opus 5, all tool-enabled,
+all mandatorily backtested**. Tagged `group: "opus5"`, stems `opus5_*`.
+
+Where the factorial arms hold the mandate fixed and vary the model, this
+cohort holds the **model fixed and varies the return driver**, so the spread
+within it is attributable to strategy selection rather than tier. Each account
+is assigned a distinct, pre-registered edge hypothesis, none of which is
+long-AI-momentum (the driver that dominates the R1/R2/R3 field):
+
+1. `opus5_carry` — cross-asset carry: perp funding, cash yield, borrow spreads
+2. `opus5_pairs` — market-neutral relative value / statistical pairs
+3. `opus5_meanrev` — cross-sectional short-horizon mean reversion (buy losers)
+4. `opus5_trend` — multi-asset trend following (managed-futures style)
+5. `opus5_volregime` — volatility-regime switching and vol targeting
+6. `opus5_dispersion` — dispersion: long idiosyncratic names vs short index
+7. `opus5_seasonality` — calendar/flow effects and month-end positioning
+8. `opus5_eventdriven` — catalyst/event-driven and corporate-action driven
+
+Binding conditions:
+
+- **Point-in-time**: data through the **2026-07-24** close only (the last
+  completed session before registration). Books are committed before the
+  2026-07-27 fill close.
+- **Mandatory backtest**: every account backtests its own construction through
+  the engine itself (`tracker/round2.py --backtest <entry> <end> <file>`) over
+  **at least two windows**, one of which must end before 2026-01-01, and
+  records the result verbatim in a `backtest` block. Costs, funding,
+  liquidation and standing orders are therefore applied by the same code that
+  scores the live round.
+- **Cross-cohort distinctness**: no two Opus 5 books may share more than 50%
+  of gross weight in the same direction; the desk checks this pairwise at
+  registration (the field's analogue of the per-agent novelty rule, which
+  cannot apply here because these accounts have no R1/R2 history).
+- **Context hygiene**: these agents fetch market data only. They may read the
+  rules and the engine source; they may not read any `allocations/`,
+  `results.json`, `fills.jsonl`, desk logs, `docs/`, or another agent's output.
+- **Later entry is disclosed**: this cohort enters at the 2026-07-27 close,
+  seven sessions after the 2026-07-17 Round-3 field. Absolute NAV is therefore
+  not directly comparable to the original field; the cohort is scored against
+  SPY over its own window, and the hub labels the entry date.
+
 ## Context hygiene (binding)
 
 - Tools-disabled agents receive a MECHANICALLY GENERATED context pack
