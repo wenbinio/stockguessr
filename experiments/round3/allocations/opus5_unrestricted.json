@@ -1,0 +1,82 @@
+{
+  "name": "Opus 5 unrestricted",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Concentrated bet on the 2026 oil-supply-shock rotation: ~53% effective energy exposure via 2x ERX plus refiner MPC, carried by low-correlation healthcare/financials/defense longs, hedged by a short in oil-taxed consumer discretionary and a small stopped short-DOGE perp, with 8% cash at 4%.",
+  "novelty": "Edge hypothesis: crude has roughly doubled in 2026 (USO +98% YTD through 7/24) while energy equities have repriced only about a third of that (XLE +32%), and the resulting rotation out of long-duration tech into real-economy cash flow is eight weeks old and accelerating (July MTD: XLE +12.3%, MPC +21.0% vs QQQ -7.1%, SMH -14.4%) - I am buying that lag, levered 2x, because ERX's realised 2026 tracking was 2.01x XLE with essentially no volatility decay at 19.6% sector vol, which makes leverage unusually cheap here. I chose this over the long-AI/semiconductor momentum I was explicitly free to take because that trade has just broken (SOXL -40%, MU -12%, SMH -14% in the past month after MU's +725% twelve months), and over crypto beta because BTC is -45% over twelve months with no uptrend to buy; I also declined a bigger cash weight because energy's -0.29 daily correlation to SPY in 2026 already gives the book drawdown protection without giving up return. Falsified if crude round-trips below its pre-shock level, or if XLE breaks its June low while XLY outperforms - i.e. if July was a geopolitical risk premium that unwinds rather than a persistent supply regime.",
+  "entry": "2026-07-27",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "ERX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "stop_loss_pct": 30,
+      "thesis": "2x Energy Select. Core position: 44% effective XLE exposure for 22 points of weight. XLE is the top sector YTD (+32.4%) with the lowest vol of any leader (19.6%), 7 months of persistent uptrend, and equities pricing crude far below spot. Downside capture on crude down-days in 2026 was only 0.27x, so an oil reversal costs far less than the crude move. ERX realised 2.01x XLE YTD and 2.0x on the drawdown (-30.0% vs -15.0%), i.e. no measurable decay. Stop at -30% caps the leg at ~6.6% of NAV and corresponds to roughly a -15% XLE break."
+    },
+    {
+      "symbol": "MPC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 25,
+      "thesis": "Refining/crack-spread leg - a genuinely different driver from crude beta: MPC rose 19.6% between 1 June and 24 July while crude round-tripped, then added another 21% in July. +91.8% YTD, +38.5% 3m, and -0.16 correlation to SPY. Held as the high-beta expression of tight refined-product supply. Single-name earnings risk is why it is 9% with a -25% stop."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Healthcare sector - the best risk-adjusted non-energy trend available: +13.3% over 3 months and +6.0% over 1 month at only 13.7% annualised vol, with 0.22 correlation to SPY and -0.07 to XLE. Re-rating off a multi-year derating base (JNJ +28%, MRK +25%, CVS +38%, UNH +27% YTD) and defensive if the rotation broadens into a growth scare. Chosen over 3x CURE deliberately: I do not want leverage on the ballast."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Financials. +9.9% over 3 months, +4.8% over 1 month, 13.1% vol, and rising long yields (TLT -3.3% in July) support NIM. Adds the one piece of positive SPY beta the book needs so it is not a pure short-market expression."
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "The only mega-cap tech name still working: +23.1% YTD, +13.6% 1m, +5.6% in the last two weeks, at 22.1% vol while QQQ fell 7.1% in July. Low-duration cash flows rather than AI-capex optionality. Deliberate partial hedge against the scenario where the tech unwind reverses and my otherwise negative-beta book lags a rallying SPY."
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Defense/aero. +22.6% 3m, +15.0% 1m, +8.6% in two weeks, 0.12 correlation to SPY. Coherent with the supply-shock regime driving the energy leg (defense budgets and geopolitical risk premia move together with it) but a separate cash-flow stream, so it diversifies the single-commodity dependence."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "stop_loss_pct": 18,
+      "thesis": "The funding short and the cleanest expression of the thesis: an oil price shock is a consumer tax. XLY is -7.2% YTD, -10.8% over 6 months and -6.7% in the last two weeks, at only 17.0% vol, and carries -0.38 daily correlation to XLE - so it is additive to the energy core rather than an offset. An ETF rather than a single name, so no earnings-gap squeeze risk; 3% APR borrow, and a -18% stop if the consumer trade turns."
+    },
+    {
+      "symbol": "DOGE",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 4,
+      "leverage": 3,
+      "stop_loss_pct": 50,
+      "take_profit_pct": 90,
+      "thesis": "Small convexity leg exploiting an engine asymmetry: short perps pay zero funding while long perps pay leverage x 10% APR, so this is free leverage. DOGE is the single worst cross-sectional performer in crypto (-70.6% over 12 months, -51.4% YTD) and is sitting at the 1st percentile of its 90-day range while BTC bounced to the 40th and ETH gained 18.9% in a month - it is not participating in the crypto bounce at all. Loss capped at the 4% margin; stop at -50% and take-profit at +90% (DOGE -30%) give roughly 1.8:1 reward-to-risk."
+    }
+  ],
+  "cash_pct": 8,
+  "backtest": {
+    "windows_tested": ["2026-01-02 to 2026-07-24", "2025-07-16 to 2025-12-31", "2025-01-02 to 2025-06-30"],
+    "strategy_return_pct": {"2026H1": 31.95, "2025H2": 4.33, "2025H1": 5.25},
+    "benchmark_return_pct": {"2026H1_SPY": 8.74, "2025H2_SPY": 9.87, "2025H1_SPY": 6.31},
+    "max_drawdown_pct": {"2026H1": -8.58, "2025H2": -5.09, "2025H1": -13.19},
+    "notes": "All figures are verbatim from tracker/round2.py --backtest on this exact construction. BE CLEAR ABOUT WHAT THIS IS AND IS NOT EVIDENCE FOR. The 2026-01-02 to 2026-07-24 window is almost entirely hindsight-contaminated and should be read as a construction check, not a result: ERX and MPC were selected precisely because energy led 2026, and XLV, XLF, RTX and AAPL were all picked off a trailing 3-month/1-month momentum screen run through the 2026-07-24 close, so every long leg knows the answer. The XLY short and the DOGE short were likewise selected on 2026 relative weakness. The +31.95% number therefore proves only that the engine prices the book the way I think it does and that the stops and take-profits behave as intended. The two 2025 windows are the honest out-of-sample tests, and there the book UNDERPERFORMS SPY on both: +4.33% vs +9.87% in 2025H2 and +5.25% vs +6.31% in 2025H1, the latter with a -13.19% drawdown against a +6.31% SPY. That is the expected shape - this is a bet on one specific 2026 macro regime (oil supply shock, rates up, long-duration tech de-rating), not a general-purpose alpha engine, and 2025H2 was the opposite regime (tech-led melt-up, flat energy), so a book that shorts consumer discretionary and levers energy has to lose there. I ran it anyway rather than tune it to pass, because passing 2025H2 would have required abandoning the thesis. Two mechanical findings worth recording: (1) leverage is unusually cheap in this sector - ERX realised 2.01x XLE on the year and 2.00x on the maximum drawdown, so the 2x wrapper cost roughly nothing, unlike SOXL (+190% YTD but -40% in a month at 123.6% vol) or FAS (0.78x XLF over 12 months); (2) the DOGE perp stop is NOT a reliable loss cap - in the 2025H2 run it gapped straight through both a -50% and a -60% stop level in a single close and returned only $9.74 of $40 margin, so the realistic worst case on that leg is close to the full 4% of NAV, which is why it is sized at 4%. Across the three windows the DOGE leg contributed +4.6pp, -3.1pp and +3.65pp versus an otherwise identical book without it. Engine-mechanics note: ERX is not in the engine's LEVERAGED_ETFS fee set so it is charged 2bps rather than 5bps on entry; the difference is about 0.7bps of NAV and the construction does not depend on it."
+  },
+  "outlook": "I expect this book to make money in the 8-20% range over the rest of 2026 if the oil supply regime holds, driven mostly by the ERX/MPC core, and to lose 8-12% if crude round-trips - the asymmetry comes from energy equities having repriced only about a third of the crude move, so they have far less to give back than crude does. Realised book vol on 2026 data is 11.4% annualised at a -0.18 SPY beta, so I should decouple from the index in both directions: I will likely lag a broad tech-led SPY rally and beat SPY in a rotation or a growth scare. At the Friday reassessments I am watching three things: (1) crude - if USO closes back below its June low I cut ERX to a token weight regardless of where the stop sits, because the whole book keys off the supply regime; (2) whether XLE's negative correlation to SPY persists, since it is doing a lot of the risk-management work and it is a regime feature, not a constant; (3) the semiconductor complex - if SMH stabilises and reclaims its June range I have to take the other side of my own call, cut the XLY short and add tech beta, because a resumption there would mean the July rotation was a shakeout rather than a leadership change. The risk I am most worried about is not the one the stops cover. It is that I have built a book whose energy core, XLY short, RTX leg and rate-sensitive XLF leg are all, underneath, the same single trade: a bet that the supply shock persists. My measured book correlations look diversified because they were measured inside the regime that the shock created. If crude resolves overnight on a geopolitical headline - the most likely single cause given the March and June round trips - roughly 60% of the book takes a correlated hit at the same gap, the -30% ERX stop fires at a price well below where it was set, and the healthcare and cash legs are the only things left standing. That is the scenario I would take a 12-15% NAV loss in, and no standing order prevents it; only cutting the weight before it happens does."
+}
