@@ -25,6 +25,9 @@ jobs:
           python tracker/round2.py
           python tracker/round2.py --round 3
           python tracker/make_ledger.py
+          python tracker/check_reasoning.py
+          python tracker/make_performance_page.py
+          python tracker/make_roster_page.py
           python tracker/inject_fallbacks.py
       - name: Commit if changed
         run: |

@@ -5,12 +5,29 @@
  "managers_polled": 37,
  "responded": 35,
  "failed_default_hold": [
-  "Sonnet quality compounders",
-  "Sonnet small/mid-cap growth"
+  {
+   "name": "Sonnet quality compounders",
+   "action": "DEFAULT HOLD",
+   "reason_unavailable": true,
+   "reason": "No agent reasoning exists: this manager never returned a decision (structured-output retry cap reached). Desk reasoning for the default: the weekly protocol treats a non-responding manager as a HOLD so its prior registered book continues unchanged, because substituting a desk-authored book would attribute a decision to an agent that did not make one.",
+   "reason_source": "desk, not the agent"
+  },
+  {
+   "name": "Sonnet small/mid-cap growth",
+   "action": "DEFAULT HOLD",
+   "reason_unavailable": true,
+   "reason": "No agent reasoning exists: this manager never returned a decision (structured-output retry cap reached). Desk reasoning for the default: as above \u2014 the prior book continues, and no reasoning is attributed to the agent.",
+   "reason_source": "desk, not the agent"
+  }
  ],
  "orchestrator": {
-  "round2": "REBALANCE (deployed 9pts cash into MU/AMD/NVDA)",
-  "round3": "HOLD"
+  "round2": "REBALANCE",
+  "round2_reason": "Week 1: deployed 9pts of cash into MU/AMD/NVDA per the registered plan ('if the April pattern repeats, I deploy cash rather than get liquidated') \u2014 semis corrected hard this week (SOXL -29.5%) while the capex thesis is unchanged. All other positions and the BTC leg held.",
+  "round2_reason_source": "contemporaneous \u2014 experiments/round2/weeks/2026-07-20/claude_fable.json reassessment_note, written at registration",
+  "round3": "HOLD",
+  "round3_reason_unavailable": true,
+  "round3_reason": "NO CONTEMPORANEOUS REASON WAS RECORDED. The orchestrator logged the action only. Retroactive note (written 2026-07-30, NOT the reasoning used at the time): the Round-3 book had been registered one day earlier at the 2026-07-17 close, so a HOLD at the 2026-07-18 desk was close to automatic. This is a reconstruction of the situation, not a record of the decision, and it is labelled as such because the reasoning was simply not written down.",
+  "round3_reason_source": "retroactive reconstruction by the orchestrator, 2026-07-30 \u2014 the gap that motivated tracker/check_reasoning.py"
  },
  "decisions": [
   {
@@ -809,5 +826,6 @@
     }
    ]
   }
- ]
+ ],
+ "reasoning_invariant": "Every decision must carry written reasoning; where none exists it is declared with reason_unavailable and reason_source. Enforced by tracker/check_reasoning.py."
 }

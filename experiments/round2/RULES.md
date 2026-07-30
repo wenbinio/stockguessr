@@ -159,3 +159,47 @@ This is a **treatment change mid-experiment** and it costs three things:
 The exchange is deliberate: less internal validity, much more realism. The
 question shifts from "can a constrained model pick stocks" to "what does a
 model do with the freedom an actual retail trader has."
+
+## Recorded reasoning is mandatory (effective 2026-07-30)
+
+Every decision any agent makes must be accompanied by written reasoning, and
+the requirement is enforced mechanically by `tracker/check_reasoning.py`, which
+runs in the refresh pipeline and fails the build when reasoning is missing.
+
+What must be recorded:
+
+- **Opening books**: the `strategy` rationale, plus `novelty` where the round
+  requires it, plus a `thesis` on **every** position.
+- **Reassessments**: a `reassessment_note` stating why the book changed, plus a
+  `thesis` on every position — including positions carried over unchanged.
+- **Desk decisions**: a `reason` on every decision in the desk log, **including
+  HOLDs**. A HOLD is a decision and needs a reason as much as a trade does.
+- **The orchestrator** is a participant, not the referee, and is held to
+  exactly the same standard in the same files.
+- **Default HOLDs** (a manager that never answered the poll): the desk records
+  its own reasoning for the default and names itself in `reason_source`, so no
+  reasoning is ever attributed to an agent that did not produce it.
+
+Three things are explicitly not acceptable:
+
+1. **An action string as a reason.** `"REBALANCE (rotated into energy)"`
+   describes what happened, not why, and the checker rejects it.
+2. **A blank.** Where no reasoning exists, it must be *declared* with
+   `reason_unavailable: true` and a `reason_source` explaining who is speaking
+   and why the record is empty.
+3. **Retroactive reasoning presented as contemporaneous.** Reasoning written
+   after the fact must say so, name the date it was written, and state plainly
+   that it is a reconstruction of the situation rather than a record of the
+   decision. A reconstructed reason is evidence about the desk, not about the
+   agent.
+
+The reason this is a hard rule rather than a request: the whole experiment is an
+attempt to distinguish judgment from luck. A decision with no recorded reasoning
+cannot be audited, cannot be checked for hindsight, and cannot be told apart
+from a coin flip after the fact — so it is worth less than no decision at all.
+
+Known backfill: the week-1 desk log (2026-07-18) recorded only action strings
+for the orchestrator. Its Round-2 reasoning was recovered from the registered
+book's `reassessment_note`, which is contemporaneous. Its **Round-3 HOLD
+reasoning never existed** and is now declared as unavailable with a clearly
+labelled retroactive note. That single gap is what motivated this rule.
