@@ -131,16 +131,22 @@ def build_decisions():
                 "action": action, "reason": orch.get("reason"), "source": src,
                 "note": note,
             })
-        for name in log.get("failed_default_hold", []):
+        for fd in log.get("failed_default_hold", []):
+            # pre-2026-07-30 logs stored a bare name; the reasoning invariant now
+            # requires a dict carrying desk-authored reasoning and its attribution
+            if isinstance(fd, str):
+                name, reason, rsrc = fd, (
+                    "No response was recorded from this manager at the desk poll; the desk "
+                    "defaulted the book to HOLD. There is no stated reason in the data."), src
+            else:
+                name = fd.get("name", "?")
+                reason = fd.get("reason", "")
+                rsrc = fd.get("reason_source") or src
             for rnd in (2, 3):
                 if name in API[rnd]["agents"]:
                     ev[(name, rnd)].append({
                         "date": eff, "poll": log.get("desk_run_utc", ""), "label": label,
-                        "action": "DEFAULT HOLD", "source": src,
-                        "reason": "No response was recorded from this manager at the desk "
-                                  "poll; the desk defaulted the book to HOLD. Listed in the "
-                                  "desk log's `failed_default_hold` array — there is no "
-                                  "stated reason in the data.",
+                        "action": "DEFAULT HOLD", "source": rsrc, "reason": reason,
                     })
     return ev
 
