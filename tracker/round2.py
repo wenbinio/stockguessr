@@ -45,6 +45,7 @@ PERIOD1 = 1704067200  # 2024-01-01, deep enough for backtests
 UA = "Mozilla/5.0"
 BORROW_APR, FUNDING_APR, CASH_APY = 0.03, 0.10, 0.04
 LIQ_THRESHOLD = 0.05  # perp liquidated when value <= 5% of margin
+PERP_MAX_LEV = 100.0  # venue maximum on majors (unrestricted-retail rules, 2026-07-30)
 ALIASES = {"FI": "FISV", "SQ": "XYZ"}
 
 # Realistic retail fee schedule (per side, fraction of notional)
@@ -265,17 +266,26 @@ def main() -> int:
         return 0
 
     def validate(spec, fname):
+        """Unrestricted-retail rules (effective 2026-07-30).
+
+        Concentration guardrails are gone: no maximum position size, no minimum
+        position count, and the short side may use the whole notional. What
+        remains is arithmetic (a book must allocate exactly 100% of the
+        account) plus venue realism on perp leverage. Books registered before
+        2026-07-30 were built under the old caps; see round2/RULES.md.
+        """
         w = sum(q["weight_pct"] for q in spec["positions"]) + spec["cash_pct"]
         shorts = sum(q["weight_pct"] for q in spec["positions"] if q["side"] == "short")
-        mx = max(q["weight_pct"] for q in spec["positions"])
         probs = []
         if abs(w - 100) > 0.05: probs.append(f"weights+cash={w:.1f}")
-        if shorts > 50: probs.append(f"shorts={shorts:.0f}%")
-        if mx > 40: probs.append(f"max position={mx:.0f}%")
-        if len(spec["positions"]) < 5: probs.append("fewer than 5 positions")
+        if not spec["positions"]: probs.append("no positions")
+        if any(q["weight_pct"] < 0 for q in spec["positions"]):
+            probs.append("negative weight (use side=short instead)")
+        if spec["cash_pct"] < 0: probs.append(f"negative cash={spec['cash_pct']:.1f}")
+        if shorts > 100: probs.append(f"shorts={shorts:.0f}%")
         for q in spec["positions"]:
-            if q["kind"] == "perp" and not 2 <= float(q.get("leverage", 0)) <= 10:
-                probs.append(f"perp leverage {q.get('leverage')}")
+            if q["kind"] == "perp" and not 0 < float(q.get("leverage", 0)) <= PERP_MAX_LEV:
+                probs.append(f"perp leverage {q.get('leverage')} (venue max {PERP_MAX_LEV}x)")
         if probs:
             print(f"RULES VIOLATION {fname}: {'; '.join(probs)}")
         return not probs

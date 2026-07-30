@@ -130,7 +130,17 @@ Binding conditions:
   not directly comparable to the original field; the cohort is scored against
   SPY over its own window, and the hub labels the entry date.
 
-## Context hygiene (binding)
+## Unrestricted retail rules (effective 2026-07-30)
+
+Superseded for every book registered on or after 2026-07-30: free internet for
+all agents, own-account visibility, no concentration caps, no minimum position
+count, shorts to 100%, perp leverage to 100x, free resizing, and dated
+intraweek rebalances. See `../round2/RULES.md` for the full amendment, including
+the recorded cost to this round's factorial tooling arm and the 2026-07-30
+epoch boundary for analysis. The context-hygiene section below describes the
+regime that applied to the original registrations.
+
+## Context hygiene (applied to registrations before 2026-07-30)
 
 - Tools-disabled agents receive a MECHANICALLY GENERATED context pack
   (script-emitted return tables, no authored narrative), identical across
