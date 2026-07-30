@@ -1,0 +1,56 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials at fresh all-time highs on Fed stress-test-driven buyback/dividend increases and strong bank earnings with AI-driven trading revenue; held at prior size as the core of the rotation trade."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Regional banks showing resilient lending/fee growth and 'shrugging off war jitters,' outperforming the broader tape on the 7/29 selloff (-0.8% vs -1.5% to -2% for major indices); slightly increased (12%->13%) on confirmed relative strength."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Biotech M&A is running at $106B across 201 deals in H1 2026, the best pace since pre-COVID, and healthcare is pulling in rotational flows as a 'haven from tech'; XBI only fell -1.25% on a day the market fell far more, the strongest relative performer in the book, so increasing 14%->17%.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 16,
+      "thesis": "Thesis playing out hard: SOXL fell -16% in a single session on chip-selling, China-competition, and hyperscaler-capex worries, on top of an already-stretched +506% 12-month melt-up; increasing 12%->16% while keeping stop/TP discipline given the position is now working strongly.",
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "thesis": "Gold miners remain in a confirmed downtrend, and the hawkish Fed surprise (dissents favoring a hike) is a fresh headwind for gold as real-rate expectations firm; increasing 10%->13% on continued trend confirmation.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 26,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The 7/29 hawkish Fed surprise (3 dissents for a hike) and Iran-war escalation is a near-perfect confirmation of half this book and a clean falsification of the other half. It crushed leveraged semis (SOXL -16% in one day on top of an already-stretched melt-up unwind) and pressured gold miners further as rate-cut/safe-haven flows into gold cool -- both shorts are working exactly as thesized, so I'm adding to both. Financials (XLF at fresh ATHs on stress-test-driven buybacks/dividends) and regional banks (KRE showing resilient lending/fee growth, -0.8% vs market -1.5%) held up well on the down day, confirming the rotation thesis; biotech (XBI) is the standout, riding a record $106B H1 M&A wave and a 'haven from tech' rotation while only dipping -1.25% on a rough tape -- adding there too. TLT is the one leg the new information kills: the thesis was 'rate-cut path plus laggard performance,' but the Fed just signaled hawkish risk, long yields hit two-decade highs, and fiscal/debt concerns are pressuring the long end structurally -- that's the opposite of the setup this position needs, so I'm exiting it rather than holding a broken duration bet through more potential yield spikes.",
+  "novelty": "Zero same-direction overlap with the Round-2 book: the only shared ticker (SOXL) is held LONG in Round 2 (a residual secular-buildout stake) and SHORT here in Round 3 (a mean-reversion trade on the same leveraged-ETF melt-up unwind) -- opposite directions don't count as overlap, and every other name (XLF, KRE, XBI, GDX vs. IWM, SOFI, CRSP, RKLB, DUOL, ADBE, HOOD) is unique to its book, so overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/performance/news for every holding in both books via stockanalysis.com (IWM, ADBE, SOFI, RKLB, DUOL, HOOD, CRSP, SOXL, XLF, KRE, XBI, TLT, GDX) plus a market-wide summary for 7/29/2026. Key finding: the Fed held rates on 7/29 but with THREE dissents favoring a hike (Chair Warsh flagged as inflation-hawkish), long yields hit two-decade highs, and Iran-war escalation triggered a broad risk-off selloff (SPY -1.5%, QQQ -2.0%, Dow -2.2%, IWM -1.6%). This directly undercuts the Round-2 rate-cut/small-cap-catch-up thesis and the Round-3 'long duration turning up' (TLT) thesis, while it independently crushed leveraged semis (SOXL -16% in one session on chip-selling/China-competition/Q3-seasonality headlines) and pressured gold miners (GDX) further -- strongly validating the Round-3 SOXL/GDX shorts. Financials (XLF at fresh ATHs on stress-test buybacks) and biotech (XBI, benefiting from a record $106B H1 M&A wave and a rotation into healthcare as a 'haven from tech') both showed relative strength on the down day, confirming that leg of the Round-3 book. Individual Round-2 names: SOFI and HOOD both beat Q2 estimates (SOFI record revenue +40% YoY/raised guidance; HOOD EPS $0.62 vs $0.43 consensus) but SOFI still sold off -8.9% while HOOD held up better (-3.2%, roughly in line with the tape); RKLB won a $266M Space Force contract but remains highly volatile ahead of 8/10 earnings; DUOL showed relative resilience (-0.6%) with three sell-side price-target hikes ahead of 8/5 earnings; CRSP is flat into an 8/3 print; ADBE (the short) squeezed +5.7% on a Q2 beat and a defensive AI acquisition (Topaz Labs), though Morgan Stanley's Underweight call on AI-disruption risk keeps the structural short thesis alive."
+}

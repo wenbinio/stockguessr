@@ -1,0 +1,62 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap Fed-cut lever still intact structurally but near-term dragged by AI-capex risk-off spillover; trimmed from 15% to de-risk while keeping participation.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Industrial capex reacceleration thesis softened by the same data-center backlash hurting CAT; trimmed from 12% pending clarity, kept as broad (non-power-gen) industrial exposure.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Duration/Fed-cut hedge held flat at 10%; -0.71% 1mo shows the cut-relief rally hasn't fired yet, but it's the natural hedge if this AI unwind forces the Fed's hand toward easing."
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "EM/China rotation thesis strongly confirmed (+12.85% 1mo) as capital rotates out of crowded US AI names; sized up from 10% to press the winner.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Dollar-debasement/safe-haven hedge working (+0.68% 1mo, holding above $4000/oz spot despite a rough prior quarter); sized up from 8% as the AI-correction plays out and real-rate-cut expectations build.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "3x semis already down -61% in a month as the AI-infra trade unwinds; sized up modestly from 8% to press the clearly working hedge, but capped given a name down this much in a month carries real squeeze/mean-reversion risk.",
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 50.0
+    }
+  ],
+  "cash_pct": 36,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Confirmed AI-capex/semis unwind (SMH -20% 1mo, SOXL -61% 1mo, CAT -24% 1mo on data-center regulatory pushback hitting its power-gen backlog) is validating the short-AI-infra leg hard while directly damaging CAT, the capex-cycle long that turned out to be AI-capex-adjacent. FXI (+12.85% 1mo) and GLD (dollar-debasement) are working cleanly. IWM/XLI are soft on today's broad risk-off but the underlying Fed-cut thesis isn't refuted, just paused, so I trim rather than exit. Net: cut the confirmed loser (CAT) entirely, trim the two soft cyclicals, press the two confirmed winners (FXI, GLD) and the confirmed short (SOXL), and grow the cash buffer given realized volatility is now materializing exactly as the mandate anticipated.",
+  "research_notes": "Web search budget was exhausted session-wide, but WebFetch against Yahoo Finance/stockanalysis pages worked and gave live prices + 1mo/3mo/6mo trailing performance plus embedded news snippets as of 2026-07-29/30 close. Key findings: an AI-capex/semis unwind is in full swing -- SMH -20.2% 1mo (-4.8% just on 7/29), SOXL (3x) -61.1% 1mo, described in press as 'the chip crash exposing the brutal cost of leverage.' CAT is down -24.2% 1mo (-6.9% on 7/29) after a Baird downgrade citing regulatory pushback on data-center power-generation demand -- i.e., CAT got hit by the same AI-capex backlash it was supposed to benefit from as a broad industrial-capex play. XLI -1.2% 1mo (-3.2% on 7/29) and IWM -3.5% 1mo are both soft amid the broader risk-off spillover. On the other side, FXI is up +12.9% 1mo (EM/China rotation working cleanly), GLD +0.7% 1mo and holding above $4000/oz spot despite a rough prior quarter (dollar-debasement/safe-haven thesis intact), XLV +7.3% 1mo and XLF +7.5% 1mo are both strong (healthcare/financials rotation firmly confirmed), XLY -1.65% 1mo/-7.6% 3mo (discretionary laggard short thesis working), and SOL-USD is roughly flat 1mo (-0.6%) but still down -37.7% 6mo (momentum breakdown thesis intact but stalled short-term). Could not confirm the exact July FOMC outcome (Fed press-release page had no accessible decision text, CNBC blocked, search budget exhausted) so I treated the equity action as AI-capex-driven rather than a confirmed dovish/hawkish surprise. Net read: both books' short-AI-infra/semis legs and dollar-debasement/rotation legs are working strongly and get sized up; the capex-linked cyclical longs (CAT especially) and the biotech long (XBI, which has rolled over) get cut or trimmed."
+}

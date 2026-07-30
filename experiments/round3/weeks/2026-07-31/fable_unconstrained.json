@@ -1,0 +1,60 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Gold ~$4,100, -27% from January record; central-bank and reserve buying intact \u2014 overshoot mean reversion, sized flat vs hawkish-Fed headwind."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Single-digit P/E, ~8% carry, Selic cut cycle begun (100% historical hit rate post-first-cut); trimmed for hawkish-Fed dollar risk."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Quality-value ballast in a correction; record cash pile earns more as rates rise; added as flight-to-quality sink."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "thesis": "Jul 16 Q2 beat ($6.38 adj EPS vs $4.90) and full-year guide raised to $19.50-20.00 \u2014 multi-year reversion thesis confirmed, added."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Staples laggard: cheap defensive carry that outperforms if the correction deepens; unchanged."
+    },
+    {
+      "symbol": "SVXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 40.0,
+      "thesis": "VRP harvest kept but shrunk: curve still in contango (VIX 18.6 vs VIX3M 20.5 on 7/24) but VIX ~20 with hike risk means smaller size, same -40% spike stop."
+    }
+  ],
+  "cash_pct": 33,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Defensive book is doing its job (+0.64%, max DD -0.91% while the Nasdaq entered correction), so this is a risk-tilt, not a rebuild. Trim SVXY 8->5: VIX jumped to ~20 with a hawkish Warsh Fed (~60% hike odds by Sept) and megacap earnings risk \u2014 the vol-risk-premium leg is the one that can gap through its stop, so I harvest it smaller; keep the -40% stop. Trim EWZ 14->12 on hawkish-Fed dollar headwind (carry/Selic-cut thesis intact). Add UNH 10->12 after the Jul 16 beat-and-raise confirmed the reversion thesis, and BRK-B 14->16 as flight-to-quality ballast whose record cash pile earns more in a hiking regime. GLD and XLP unchanged. Cash rises to 33% at 4% \u2014 defensive carry is exactly the mandate in this tape.",
+  "novelty": "Zero same-direction gross-weight overlap with my Round-2 book: Round 3 holds defensive value/mean-reversion names (GLD, EWZ, BRK-B, UNH, XLP, SVXY) while Round 2 holds cyber momentum and BTC \u2014 no shared tickers.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked market news for 2026-07-29/30: Nasdaq 100 in correction (-11% from June peak) on chip selloff (China chip-tech breakthrough + AI-capex-peaking fears); Dow -2.19% Jul 29, worst since Apr 2025. Warsh Fed held with 3 hawkish dissents; ~60% odds of a hike by Sept; VIX +10% to ~20 (still contango vs VIX3M as of Jul 24). MSFT +7% AH on higher FY27 capex guide; Meta EPS miss; AAPL/AMZN tonight. Cybersecurity is holding near highs while AI cracks (CRWD +75% YTD near 52w high, PANW +25% 1m, FTNT +109% YTD) \u2014 passes both dual-momentum filters. ANET now in sharp 1m correction (-6.4% Jul 29, heavy insider sales) \u2014 fails my filter. BTC ~$64.5k, ~48% off ATH. R3: UNH beat-and-raise Jul 16 (guidance up to $19.50-20.00 EPS); gold ~$4,100, -27% from Jan record with CB bid intact; EWZ +48% 1y on Selic cut cycle but faces hawkish-Fed dollar headwind."
+}

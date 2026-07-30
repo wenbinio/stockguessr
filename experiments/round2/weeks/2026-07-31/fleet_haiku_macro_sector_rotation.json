@@ -1,0 +1,64 @@
+{
+  "name": "Haiku macro/sector rotation",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "H2 2026 AI/semis core with tactical small-cap broadening, crypto recovery spot, and 30% dry powder for post-earnings optionality",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.98,
+      "thesis": "Russell 2000 up +22% YTD with rare 30% valuation discount vs large caps; 77% historical win rate in second half after April recovery pattern; sector rotation from Magnificent 7 tech to small-cap value creating structural outperformance; aligns with mandate's tactical small-cap broadening."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.32,
+      "thesis": "Maintaining AI/semis core exposure per mandate but at reduced conviction sizing; QQQ down 10% from peak, trading 10.1% overvalued, momentum indicators bearish (below 0, RSI sell territory); chip sector weakness (Micron -8.8%, AMD -8.1%) creates headwinds; conservative core positioning awaits post-earnings clarity."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.71,
+      "thesis": "Healthcare defensive with 24.57% past-year return, only 0.8% overvalued, 1.51% dividend yield provides ballast in choppy market; tactical position to capture mean-reversion as valuations stabilize post-earnings."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3.66,
+      "thesis": "Utilities defensive with 3-4% dividend yield and rate-sensitive hedge profile; maintaining minimum defensive positioning against further market volatility."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 2.44,
+      "thesis": "Bitcoin recovery allocation at right sizing; mixed signals (down 20.48% in June, up 2.73% in July, at $63,669 below key EMAs) warrant conservative small allocation pending clearer recovery thesis."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.1,
+      "thesis": "Reduced from 12% as equity allocation shift provides portfolio defensiveness; gold hedge sized for macro hedge without over-concentration; supports tactical flexibility as earnings digest."
+    },
+    {
+      "symbol": "CASH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 23.79,
+      "thesis": "Reduced from 42% to deploy conviction into small-cap outperformance while preserving 39% post-earnings dry powder for tactical flexibility; enables rebalancing discipline while respecting optionality mandate."
+    }
+  ],
+  "cash_pct": 39,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Post-earnings optionality thesis becomes active as Apple and Amazon report today; small-cap rotation thesis justified by Russell 2000's +22% YTD and 30% valuation discount to large caps; QQQ momentum deteriorating (indicator below 0, RSI in sell territory) despite being 10.1% overvalued; current 42% cash exceeds mandated 30% dry powder, enabling conviction deployment; market decline creates entry points after recent volatility. Rebalancing concentrates on mandated tactical small-cap broadening while reducing overvalued momentum exposure.",
+  "research_notes": "Researched market conditions on 2026-07-30: market declined sharply on July 29 (Dow -2.19%, S&P -1.52%, Nasdaq -1.74%) due to Fed holding rates and Iran oil crisis. QQQ under pressure\u2014down 10% from June peak to ~$667, trading 10.1% overvalued per GF Value, momentum indicator below 0 (bearish), RSI in sell territory. Semiconductor sector weakening sharply (Micron -8.8%, AMD -8.1%, Intel -5.9%, SanDisk -14.2%). Russell 2000 (IWM) massively outperforming at +22% YTD, trading at 30% discount to large caps at year start, with 77% historical win rate for second-half returns. Small-cap rotation thesis confirmed: capital flowing FROM Magnificent 7 tech TO value/dividend sectors. Healthcare (XLV) up 24.57% past year, only 0.8% overvalued, 1.51% yield. Bitcoin mixed recovery: down 20.48% in June, up 2.73% in July to ~$63,669, below key EMAs. Major earnings happening today (Apple, Amazon) and yesterday (Microsoft, Meta) with consensus expecting 63% tech sector profit growth. Post-earnings optionality thesis is active NOW.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 39; scaled by 0.6100 to sum to 61 (relative sizing preserved, declared cash kept)"
+}

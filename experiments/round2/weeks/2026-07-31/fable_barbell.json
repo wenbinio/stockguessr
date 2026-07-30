@@ -1,0 +1,90 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Risk-balanced barbell: 46% aggressive AI-infra compounders plus a small 2x contrarian BTC perp, against 38% defensive ballast (quality/staples/gold/utilities plus a 3% SOXL short as convexity hedge) and 18% yielding cash.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: AI-infra anchor; trimmed into the rotation but datacenter capex intact into late-Aug earnings."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: custom-ASIC/networking winner with software cash flows; trimmed for chip-rotation risk."
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: raised FY26 guidance on AI power demand, $24.2B Q2 orders; least crowded AI leg, kept at full size."
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: outperforming the tape into Aug 4 earnings, AI revenue target raised to $3.5B; slight trim for event risk."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Ballast: cash-rich compounder, best drawdown defense; added \u2014 its cash pile earns more as rates stay high."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: staples stability, low beta to the AI unwind."
+    },
+    {
+      "symbol": "MRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: cheap defensive pharma, uncorrelated to tech capex."
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: AAA-quality defensive; modest add as risk-off spreads."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast: 20-year-high yields hurt bond proxies but AI power demand (GEV orders confirm it) offsets; kept small."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Convex hedge pressed 3->5: semi rout accelerating, 3x decay tailwind; TP +40 banks a crash, stop caps a squeeze."
+    }
+  ],
+  "cash_pct": 29,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The barbell worked (-1.17% vs an 11% Nasdaq correction) but two legs are broken and the regime turned more hostile. I cut the ballast legs that fail under a hawkish Fed with 20-year-high real yields: GLD (gold -20% from peak; real yields ARE the crisis, so the crisis hedge loses) and the 2x BTC perp (hawkish hold, 36% hike odds, 10% APR funding drag \u2014 thesis never confirmed). I trim the AI sleeve modestly (NVDA 14->10, AVGO 10->8, ANET 9->7) into an accelerating rotation out of AI winners, but keep GEV at 10 (raised guidance, $24.2B orders, less chip-crowded) and keep meaningful exposure since the selloff is arguably overdone. I add to the working convexity hedge: SOXL short 3->5 with a +40% take-profit to bank a crash, -30% stop to cap squeeze risk. Freed capital goes to BRK-B (10->12), JNJ (4->5), and cash 18->29 earning 4% APY \u2014 the best-paid ballast available in this regime. Barbell structure preserved: 35 aggressive / 31 defensive quality / 5 convex short / 29 yielding cash.",
+  "research_notes": "Checked macro, Fed, and every position. Key findings: (1) AI trade unwinding hard \u2014 Nasdaq 100 in 11% correction, record rotation out of AI winners, chip selloff accelerating on China competition and AI-capex-return scrutiny; NVDA ~$197. (2) Fed held 3.5-3.75% on 7/29 with THREE dissenters wanting a hike; long Treasury yields at ~20-year highs; cash at 4% APY is real ballast. (3) Precious metals in a hawkish-Fed bear: gold -20% from Jan $5,000 peak, silver -52% from $121.62 to ~$58 \u2014 but silver has stabilized ~2 weeks and sell-side targets ($67-81) sit far above spot, so my R3 metal shorts are mature. (4) Oil war premium deflating: WTI -7.5% to $82.61 on US-Iran de-escalation, EIA sees sub-$80 Q3 / $70 YE \u2014 breaks XOP's trend, boosts JETS/IYT fuel economics. (5) KRE rallying with a +52bps 2s/10s steepener tailwind. (6) XBI +24.9% YTD on a $106B biotech M&A wave \u2014 momentum intact. (7) GEV beat revenue and raised FY26 guidance ($24.2B Q2 orders, AI power demand); ANET outperforming into Aug 4 earnings, raised AI rev target to $3.5B. (8) BTC ~$64k with hike odds ~36% and 10% APR long funding \u2014 contrarian long not confirming. (9) XLI cited as a mid-July sector leader."
+}

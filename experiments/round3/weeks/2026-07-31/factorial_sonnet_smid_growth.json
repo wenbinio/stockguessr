@@ -1,0 +1,86 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Samsara crossed $2B ARR, rebranded, reclaimed 50d/200d MAs; fresh Buy initiation (Guggenheim $45 PT, ~37% upside) confirms momentum + AI-ops compounding story.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Cloud data security/backup AI leader; analysts see it ~12% undervalued (avg PT $95 vs $73), continued platform/AI expansion (agentic Rubrik AI, EMEA HQ investment).",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "BNPL/checkout fintech scaling GMV; analyst targets rising into a print expecting ~720% YoY EPS growth (Truist PT $83, new Bernstein Outperform).",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Cross-border payments fintech trading near its 52-week high as the payments-tech tape firms; kept at prior sizing given still-elevated single-name volatility.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Restaurant cloud POS/fintech pivoting into AI agents and enterprise expansion; steady but consensus Hold with no near-term catalyst, trimmed slightly to fund higher-conviction adds.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "S",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "AI-native cybersecurity, cheap after a 63% slump from highs, but consensus upside is now modest (avg PT $19.68 vs $18.52); trimmed to a starter-size stake for optionality.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "PATH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Agentic AI automation platform; hit first GAAP-profitable quarter but stock is down 23% YTD and UBS's Neutral PT ($12) sits at the current price, offering no edge - cut to residual size.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Digital-bank fintech; Q2 revenue grew 43% but the stock fell -8.9% on the print (down 41.75% YTD) as the market punished stepped-up growth spending over near-term profit - the 'stress-window resilience' thesis just broke, so cut hard and tighten the stop.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Refreshed each holding against current news/analyst data (WebFetch, 2026-07-29 closes). Momentum leaders confirmed by fresh catalysts get sized up: Samsara (IOT) crossed $2B ARR with a rebrand, cleared its 50/200-day MAs, and got a fresh Buy initiation (Guggenheim, $45 PT, ~37% upside) -> increase to 20%. Rubrik (RBRK) still flagged undervalued by ~12% with avg PT $95 vs $73 price, plus continued AI-security platform momentum -> increase to 18%. Affirm (AFRM) has rising analyst targets (Truist to $83, new Bernstein Outperform) into a print expecting +720% YoY EPS growth -> modest increase to 18%. Flywire (FLYW) is trading near its 52-week high with a firming payments-tech tape -> hold near 12%. Toast (TOST) is directionally fine but consensus is a Hold with no fresh catalyst -> trim slightly to 10% funding source. SentinelOne (S) is cheap after a 63% slump with only modest upside to consensus (avg PT $19.68 vs $18.52) -> trim to 8%, keep a starter stake for optionality. UiPath (PATH) is down 23% YTD with UBS's Neutral price target basically equal to the current price (no edge) -> cut to 5%. SoFi (SOFI) is the clearest deterioration: it fell -8.9% on its print despite +43% revenue growth because the market punished its stepped-up growth spend and flat profit guidance, breaking the 'proven macro-stress resilience' thesis that justified the position -> cut hard to 4%, tighten its stop. Net effect: add to confirmed momentum winners (IOT, RBRK, AFRM), trim the two names whose theses just broke (SOFI, PATH) and modestly de-risk S/TOST, keep the 5% cash buffer per mandate.",
+  "research_notes": "Packet showed only a Round 3 book (no Round 2 book on file for this manager, so the novelty rule does not apply). Used WebFetch (Yahoo Finance / Google Finance) on 2026-07-29/30 data for all 8 holdings since Web Search's budget was exhausted session-wide. Findings: IOT (Samsara) crossed $2B ARR, cleared 50d/200d MAs, got a fresh Guggenheim Buy ($45 PT); RBRK still ~12% undervalued per analysts (avg PT $95 vs $73) with continued AI-security platform news; AFRM has rising analyst targets (Truist $83, new Bernstein Outperform) into a print expecting ~720% YoY EPS growth; FLYW is trading near its 52-week high; TOST is steady but consensus Hold with no fresh catalyst; S is cheap after a 63% slump but consensus upside is now thin (avg PT $19.68 vs $18.52); PATH is down 23% YTD with UBS's Neutral PT basically equal to spot price; SOFI is the standout negative - it fell -8.9% on its earnings print despite +43% revenue growth because the market punished increased growth spending versus flat profit guidance, undercutting the position's original 'macro-stress resilience' thesis. Rebalanced to add to the three names with the freshest positive momentum/catalysts (IOT, RBRK, AFRM) and cut the two names whose theses deteriorated most (SOFI, PATH), while trimming S and TOST modestly and holding FLYW steady. Kept the 5% cash buffer and a long-only diversified basket consistent with the stated mandate rather than concentrating into a single name."
+}

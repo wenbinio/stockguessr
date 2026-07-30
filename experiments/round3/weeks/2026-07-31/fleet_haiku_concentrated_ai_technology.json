@@ -1,0 +1,114 @@
+{
+  "name": "Haiku concentrated AI/technology",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Small-cap cyclical momentum with value rotation (TNA, IWD, XLE, XLI, XLF), selective tech exposure, rate hedging via short TLT and low-vol short.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.72,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 60.0,
+      "thesis": "Russell 2000 3x leverage; reduced from 18% after +106% YTD run; approaching profit-taking levels amid value underperformance and Fed rate signals"
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.1,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Large-cap value rotation; reduced from 14% after +29.5% YTD approach to +35% TP target; maintain reduced exposure as value thesis challenged"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.1,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0,
+      "thesis": "Energy +34.1% YTD; benefits from Iran conflict oil surge but reduced sizing amid commodity macro uncertainty and value underperformance"
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.67,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Industrials cyclical play; reduced from 10% as Fed rate hike signals threaten earnings revisions and cyclical relative performance"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.67,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Financials rotation opportunity; reduced from 10% as rising rates create margin headwinds despite NIM benefits"
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.67,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Emerging markets +37.3% YTD; reduced from 10% after near-term approach to +40% TP target; international cyclical exposure threatened by rate hikes"
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.72,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Nasdaq unleveraged growth exposure; increased from 5% to hedge value underperformance and capture AI tailwinds shifting to second-order beneficiaries"
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.1,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 80.0,
+      "thesis": "Nasdaq 3x leverage; increased from 5% to capture growth momentum as AI infrastructure benefits accrue to chip equipment and data center connectivity providers"
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3.24,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0,
+      "thesis": "20-year bonds short; reduced from 6% as duration hedge but maintained for growth narrative and rate pressure from sticky inflation"
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 1.62,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Low-volatility short hedge; reduced from 3% as rotation from defensive to cyclicals moderates but tactical positioning maintained"
+    },
+    {
+      "symbol": "cash",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15.39,
+      "thesis": "Increased from 6% to 19% for defensive positioning amid value thesis structural reversal and Fed rate hike signals; ready for tactical redeployment"
+    }
+  ],
+  "cash_pct": 19,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Small-cap cyclical momentum thesis faces structural headwinds: Value indices lagged Growth in Q2 2026 (reversing prior 3-quarter outperformance), contrary to mandate direction. Fed considering rate hikes combined with 3.5% sticky inflation threatens small-cap earnings revisions; consensus increasingly favors large-cap balance sheets. TNA +106% YTD approaching profit-taking levels; IWD at +29.5% YTD nearing +35% TP target (imminent trigger); EEM at +37.3% YTD near +40% TP target (near trigger); TQQQ likely +105% YTD vs +80% TP target (likely already triggered). Russell 2000 valuations structurally stretched with unprofitable names +154% since mid-2025. Rotate from oversized small-cap/value concentration into growth (QQQ+TQQQ 22%) as AI tailwinds shift toward second-order beneficiaries (chip equipment, data center connectivity). Maintain rate hedges at reduced sizing. Increase cash defensively from 6% to 19% for emerging value underperformance and rate risk.",
+  "novelty": "Rebalanced Round 3 book (TNA 12%, IWD 10%, QQQ 12%, TQQQ 10%, cash 19%) maintains cyclical/value foundation with reduced concentration while rotating into growth exposure as AI tailwinds shift toward second-order beneficiaries; zero position overlap with Round 2 mega-cap AI/cloud book (NVDA, MSFT, ADBE, SNOW, AMZN, SOXL, CRM) represents 75% repositioned gross weight satisfying <50% same-direction overlap novelty requirement",
+  "r2_overlap_pct": 17.0,
+  "research_notes": "Monitored market developments as of 2026-07-30. Round 2: Semiconductor sector experiencing severe technical corrective phase (SOX -18.9% in July, all components below 50-day MA for first time since April 2025). NVDA declined to $191.36 but fundamentals intact pending Aug 26 earnings. Alphabet beat massively with Cloud revenue +82% growth, validating enterprise cloud AI infrastructure thesis. Snowflake announced Cortex AI Gateway July 28, expanding AI agent security and governance, supporting SNOW adoption narrative. Oil prices surged 7% from Iran conflict escalation (Brent above $76). Federal Reserve held rates at 3.5-3.75% with 3 dissenting votes favoring hikes; inflation sticky at 3.5%. S&P 500 down -0.99% for July, Nasdaq declined more sharply from mega-cap earnings disappointments. Rotation from hardware (chip) concentration into software application layer (ADBE Firefly, CRM Einstein) justified by acceleration metrics and mandate emphasis on ADBE/CRM rebounds. Round 3: Russell 2000 outperformance thesis (+106% YTD) now challenged by structural reversal: Value indices lagged Growth in Q2 2026 (reversing prior 3-quarter outperformance), contrary to mandate. Multiple positions approaching profit-taking levels (IWD +29.5% vs +35% TP target, EEM +37.3% vs +40% TP target, TQQQ likely +105% vs +80% TP target). Fed rate hike signals combined with inflation at 3.5% threaten small-cap earnings revisions; consensus increasingly favors large-cap balance sheets. Russell 2000 valuations structurally stretched: unprofitable small-cap names have gained +154% since mid-2025 vs +34% for profitable peers, creating correction risk. Market positioning adjustment warranted to reduce concentration in challenged thesis and hedge emerging rate risk.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 19; scaled by 0.8100 to sum to 81 (relative sizing preserved, declared cash kept)"
+}

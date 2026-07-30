@@ -1,0 +1,83 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "thesis": "Top momentum rank: +24.9% YTD on a $106B biotech M&A wave with $140-160B projected for 2026."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "thesis": "Regional banks rallying; +52bps 2s/10s steepener is a direct net-interest-income tailwind."
+    },
+    {
+      "symbol": "JETS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "thesis": "Airlines: travel strength plus an accelerating fuel-cost windfall as the oil war premium deflates."
+    },
+    {
+      "symbol": "IYT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "Transports: cyclical rotation intact, margin boost from falling fuel costs."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "Industrials: cited mid-July sector leader; replaces XOP as fifth long, cheaper energy input costs."
+    },
+    {
+      "symbol": "SLV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Still bottom rank (-52% from peak) but stabilizing near $58 with sell-side targets far above spot; trimmed, tight TP."
+    },
+    {
+      "symbol": "GDXJ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Junior miners' downtrend intact while real yields sit at 20-year highs; trimmed as the move matures."
+    },
+    {
+      "symbol": "URNM",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Uranium miners negative on every lookback, distinct cluster; trimmed with tightened profit discipline."
+    }
+  ],
+  "cash_pct": 21,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Weekly re-rank per mandate, with two information-driven overrides. Longs: XBI (+24.9% YTD, $106B M&A wave), KRE (rallying on a +52bps steepener), JETS and IYT (fuel-cost windfall as oil's war premium deflates) all keep top ranks and get modest adds. XOP exits: its trend driver was the Iran war premium, which is evaporating (WTI -7.5% to $82.61, EIA sees sub-$80 Q3) \u2014 holding the YTD-best sector into a broken catalyst is how momentum books give it all back. XLI replaces it as fifth long (cited mid-July sector leader, industrials benefit from cheaper energy). Shorts: SLV/GDXJ/URNM remain the bottom-3 broken downtrends so the mandate keeps them, but the parabola-deflation move is mature (silver -52% from peak, stable ~$58 for two weeks, sell-side targets $67-81 above spot), so I cut each to 6% and tighten take-profits to +20% with -12% stops \u2014 take the discipline the mandate promises. Gross drops 87->79 with 21% cash at 4% in a correcting tape.",
+  "novelty": "Zero same-direction gross-weight overlap with my Round-2 book: no ticker appears in both books in any direction (Round 2 is single-name AI infra plus quality ballast and a SOXL hedge; Round 3 is entirely sector-ETF long/short momentum).",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked macro, Fed, and every position. Key findings: (1) AI trade unwinding hard \u2014 Nasdaq 100 in 11% correction, record rotation out of AI winners, chip selloff accelerating on China competition and AI-capex-return scrutiny; NVDA ~$197. (2) Fed held 3.5-3.75% on 7/29 with THREE dissenters wanting a hike; long Treasury yields at ~20-year highs; cash at 4% APY is real ballast. (3) Precious metals in a hawkish-Fed bear: gold -20% from Jan $5,000 peak, silver -52% from $121.62 to ~$58 \u2014 but silver has stabilized ~2 weeks and sell-side targets ($67-81) sit far above spot, so my R3 metal shorts are mature. (4) Oil war premium deflating: WTI -7.5% to $82.61 on US-Iran de-escalation, EIA sees sub-$80 Q3 / $70 YE \u2014 breaks XOP's trend, boosts JETS/IYT fuel economics. (5) KRE rallying with a +52bps 2s/10s steepener tailwind. (6) XBI +24.9% YTD on a $106B biotech M&A wave \u2014 momentum intact. (7) GEV beat revenue and raised FY26 guidance ($24.2B Q2 orders, AI power demand); ANET outperforming into Aug 4 earnings, raised AI rev target to $3.5B. (8) BTC ~$64k with hike odds ~36% and 10% APR long funding \u2014 contrarian long not confirming. (9) XLI cited as a mid-July sector leader."
+}

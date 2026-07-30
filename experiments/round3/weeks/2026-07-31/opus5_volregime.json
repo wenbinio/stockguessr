@@ -1,0 +1,61 @@
+{
+  "name": "Opus 5 vol regime",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Classified the current tape as a calm-index / high-dispersion regime (SPY 20d realized vol 11.65%, 34th percentile of two years, 10d/60d term ratio 0.80, versus QQQ 23.66% and XLK 30.67% at the ~80th percentile, and an implied-correlation proxy that has fallen from 0.54 to 0.34), and sized the book to that state: 60% in vol-targeted low-vol equity (USMV, SPLV) rather than the high-vol tech complex, 12% in SVXY to harvest the ~7-point gap between VIX 18.6 and SPY realized 11.65, a delta-neutral short-gamma pair of equal short TQQQ and short SQQQ to collect leveraged-ETF compounding decay, and 5% VIXY as convex crash insurance with a take-profit that monetises a spike.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 44,
+      "stop_loss_pct": 14.0,
+      "thesis": "Min-volatility equity core, upsized from 36% because it is the single best-confirmed leg in the book. On 29-Jul it fell 0.21% against SPY -1.54%, SMH -4.79% and QQQ -2.04% \u2014 a 14% downside capture on a real risk-off day, and it closed within 1% of its 52wk high while the index sold off. 20d realized vol 9.97% vs SPY 11.65% and QQQ 23.66%; beta 0.66. The vol-target rule still permits close to full equity size because a 74% low-vol core running 10-15% realized vol sits under my vol budget even with index implied at 20.66. Sell-side is flagging that low-vol is 'having a moment after a long stretch of underperformance,' which means the rotation is early, not exhausted. The 14% stop is a regime-break brake, not a trading stop, and at 44% weight it caps this leg's loss near -6% of NAV."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "stop_loss_pct": 16.0,
+      "thesis": "Second low-vol sleeve, raised from 24%. Its value here is construction diversity from USMV: SPLV is a pure S&P-500 low-vol screen whose top holdings are Loews, FirstEnergy and J&J, giving it essentially zero semiconductor exposure at the exact moment the tape's stress is 'chip worries spreading' and Morgan Stanley is calling a hard remainder of 2026 for semis. Fell 0.55% on a SPY -1.54% day, 36% downside capture. Yields 2.09% vs USMV's 1.47%, so it also pays me to wait. Kept smaller than USMV because its 20d realized vol of 14.88% is meaningfully higher, and the vol-target rule tilts the core toward the lower-vol construction. Stop kept wider at 16% to match that higher vol."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "Short-gamma leg, cut from 10% after an honest re-check of its economics. The leveraged-ETF compounding decay is real and running fast \u2014 TQQQ fell 6.19% on a QQQ -2.04% day, worse than a naive 3x, and QQQ realized vol at the 80th percentile accelerates the drag since decay scales with sigma-squared. But my own backtest mean of +0.29% of notional per 63 sessions annualises to ~1.2%, which does not clear the 3% APR borrow on each leg, against a worst 63-day of -27.76% of notional. So this is roughly a break-even carry with a fat left tail and it gets sized down, not up. It stays in the book at reduced size because it is the only leg that is long realized vol in the Nasdaq complex without taking directional risk, which is the regime call itself. Deliberately carries NO stop: it is one half of a hedged pair and an individual stop converts the structure into a naked directional short at the worst possible moment."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "Equal-notional opposite leg, cut from 10% alongside TQQQ. The pair proved its neutrality on 29-Jul: TQQQ -6.19% and SQQQ +6.30% meant the equal-notional short lost only 0.11% of notional (about -0.01% of NAV) on one of the largest trend days of the quarter. Short TQQQ carries roughly -3 delta on QQQ and short SQQQ roughly +3, so P&L is the joint decay of both funds \u2014 a carry paid by chop and taxed by trend. At 7+7 the realistic bad case is around -3.9% of NAV versus -5.6% at the old sizing, which is the right price for a leg whose expected return is close to its financing cost. No individual stop, for the same structural reason as the TQQQ leg."
+    },
+    {
+      "symbol": "SVXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 20.0,
+      "thesis": "Variance-risk-premium harvest, halved from 12%. The premium is nominally WIDER than when I put the book on \u2014 VIX 20.66 against SPY realized of roughly 13-14% \u2014 and the dispersion regime structurally supports short INDEX vol, because offsetting mega-cap moves (MSFT +8.8%, META -7.5%) mechanically damp index realized even while single-stock variance explodes. That is the real mechanism and it argues for keeping the leg. But short vol into a VIX that just jumped 13.5% in a session, with AAPL and AMZN reporting tonight, NVDA on 26-Aug and an unresolved China-AI narrative, is the wrong entry timing: the first spike off a low base is often followed by a larger one. Halving the size and tightening the stop from -25% to -20% keeps the carry alive while capping the leg's contribution near -1.2% of NAV, versus -3% under the old sizing."
+    },
+    {
+      "symbol": "VIXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "take_profit_pct": 50.0,
+      "thesis": "Convex left-tail hedge on a 74% low-vol equity core, trimmed from 5% and with the take-profit recalibrated from +90% to +50%. The trim reflects that the position already did its job \u2014 VIXY gained 6.07% on 29-Jul \u2014 and that buying more vol insurance after the pop, in a fund that bleeds 43.8% a year to contango, is paying up for a hedge post-event. The TP change is the more important edit: from an already-elevated VIX 20.66 base, a +90% move requires a 2024-style dislocation, whereas +50% (VIXY around $34, VIX in the high-20s to 30) is a genuine stress event I can realistically convert into cash rather than round-trip. No stop, because a stop on insurance defeats the purpose. This leg plus SVXY's reduced size is what lets me carry a 74% equity core with net portfolio beta near 0.45."
+    }
+  ],
+  "cash_pct": 2,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The regime call is confirmed but its two halves have moved in opposite directions, so the book has to be re-weighted rather than held. CONFIRMED: dispersion is exploding. USMV fell 0.21% and SPLV 0.55% on a day SPY fell 1.54% and SMH fell 4.79%, and MSFT (+8.8%) and META (-7.5%) gapped 16 points apart after hours on the same night. That is exactly the falling-implied-correlation state I sized for, and the low-vol cross-section is absorbing almost none of the stress. So I lean into it: low-vol core goes 60% to 74% (USMV 36 to 44, SPLV 24 to 30), the highest-conviction and best-evidenced leg in the book. CHANGED: index implied vol is no longer at the 34th percentile \u2014 VIX is 20.66 and rising 13.5% in a day with AAPL and AMZN reporting tonight. Short index vol into a rising VIX with a live catalyst chain is the wrong side of the timing even though the variance risk premium is nominally wider (20.66 implied vs ~13-14% realized), so SVXY is halved 12% to 6% and its stop tightened from -25% to -20%. REFUTED BY MY OWN NUMBERS: the TQQQ/SQQQ short-gamma pair does not clear its financing. My recorded backtest mean is +0.29% of notional per 63 sessions (~1.2%/yr) against 3% APR borrow on each leg; even doubling the decay for 80th-percentile QQQ vol it is roughly break-even with a -27.76% worst-case tail. I cut it 10+10 to 7+7 rather than upsizing it, and redeploy the freed budget into the low-vol core where the expected return is actually positive. VIXY trims 5% to 4% and its take-profit drops from +90% to +50%: from an already-elevated VIX 20.66 base a +90% move needs a 2024-style event, whereas +50% (VIXY ~$34, VIX high-20s) is a spike I can realistically monetise into cash. Net portfolio beta lands near 0.45, appropriate for a vol-target rule at mid-range index vol. Total turnover is ~27% of NAV at 2-5bps, roughly 0.7bps or $0.07 \u2014 this reallocation is essentially free, which is why it is worth doing rather than holding. No intraweek_date: the new exposure is overwhelmingly low-vol ETFs with negligible AAPL/AMZN weight, so tonight's earnings are not a reason to delay, and waiting only pays more VIXY contango.",
+  "novelty": "I manage no Round-2 book (my packet lists Round 3 only), so the <50% overlap constraint does not bind here; nonetheless this book is materially re-weighted from its predecessor, moving the low-vol core from 60% to 74%, halving SVXY, and cutting the leveraged-ETF decay pair by 30% after finding it fails to clear its borrow cost.",
+  "research_notes": "Pulled live marks for 29-Jul-2026 close (search budget was exhausted, so all of this is direct WebFetch of quote/news pages).\n\nREGIME DATA (29-Jul close):\n- VIX 20.66, +2.45 (+13.45%) on the day, from ~18.21. 52wk range 13.38-35.30, so index implied is mid-range and RISING, not at the 34th-percentile calm I sized into on 27-Jul.\n- SPY 729.46 (-1.54%), QQQ 661.73 (-2.04%), SMH 504.22 (-4.79%), XLK 166.57 (-2.64%), NVDA 190.01 (-3.55%).\n- USMV 98.35 (-0.21%), SPLV 77.54 (-0.55%). Downside capture of 14% and 36% against SPY on a genuine risk-off day. Both sit within ~1% of 52wk highs while SPY sells off.\n- VIXY 22.53 (+6.07%), UVXY +9.16%, SVXY 55.35 (-3.06%). TQQQ -6.19%, SQQQ +6.30% \u2014 my equal-notional short pair lost only 0.11% of notional (~-0.01% NAV) on a large trend day, confirming the delta-neutrality works.\n\nWHAT IS DRIVING IT: FOMC on 29-Jul plus \"chip worries spread.\" Investors rotating out of semis on hyperscaler capex discipline and signs China is closing the AI gap; Morgan Stanley calls a \"hard remainder of 2026\" for chips while JPMorgan calls it a buying opportunity; a Taiwan prosecutor detained an NVIDIA employee over server exports; Cathie Wood bought the dip; Burry/Cuban warning on Nvidia concentration.\n\nTHE DECISIVE OBSERVATION \u2014 DISPERSION, NOT INDEX VOL: MSFT and META both reported the night of 29-Jul and moved in OPPOSITE directions by 16 points. MSFT beat ($4.74 vs $4.24, Azure +43%, past $100bn ARR, and cut CY26 capex guide from $190bn to $175bn by extending datacentre life to 25 years) and is +8.83% after hours. META missed ($6.18 vs $7.22 consensus, Reality Labs -$4.6bn, capex raised to $130-145bn) and is -7.45% after hours. Weighting those in SPY (~4.5% and ~2.5%) they net to roughly +0.2% of index \u2014 single-stock variance is exploding while index variance is mechanically damped by offsetting constituents. That is the textbook falling-implied-correlation regime my mandate is built on, and it is now confirmed violently rather than merely inferred. AAPL and AMZN both report 30-Jul after the close, so the dispersion event has another leg tonight; NVDA is 26-Aug. Also picked up sell-side commentary that \"low-volatility stocks are having a moment after a long stretch of underperformance,\" i.e. the factor rotation is early rather than exhausted.\n\nHONEST NEGATIVE FINDING ON MY OWN BOOK: I re-ran the arithmetic on the TQQQ/SQQQ decay pair against my own recorded backtest (mean +0.29% of notional per 63 sessions = ~1.2%/yr) and it does NOT clear the 3% APR short borrow on both legs. Even grossing the decay up for the fact that QQQ realized vol is running at the 80th percentile (decay scales with sigma-squared, so maybe 2x the historical mean) it only gets to roughly break-even, against a backtested worst 63-day of -27.76% of notional. That is variance with no expected return, so the leg gets cut hard rather than upsized \u2014 which is the opposite of what \"high vol in the tech complex\" naively suggested."
+}

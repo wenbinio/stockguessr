@@ -1,0 +1,81 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19.1979,
+      "thesis": "The purest anti-concentration long, upsized from 13%. Sitting 1.1% below its 52-week high while QQQ is 11.6% below its - the rotation down-cap and away from megacap is now measured fact, not forecast, and RSP is the cleanest vehicle for it."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17.1771,
+      "thesis": "Largest single long, up from 9%. Only sector green on a -1,000 Dow day (+1.88%), +37.31% over one year, and now carrying a live supply shock after Iranian strikes on a US base in Jordan sent oil up over 6%. Energy is a cyclical sector so this sits inside the breadth mandate, and it is the correct long when three Fed officials are dissenting toward a hike."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13.1354,
+      "thesis": "Core unleveraged small-cap breadth, trimmed 15->13 to fund energy. Kept substantial because the rotation is real, capped because 30-year yields at their highest since 2007 are a direct headwind to small-cap floating-rate borrowers."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.0938,
+      "thesis": "Industrials - steady cyclical breadth with no semiconductor supply-chain exposure. Held unchanged; nothing in the new information set moves the case either way."
+    },
+    {
+      "symbol": "XOP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.0833,
+      "thesis": "New. Equal-weighted oil and gas E&P - the one holding that satisfies both halves of my mandate at once (equal-weight AND cyclical), with far more torque to crude than XLE's 36% Exxon/Chevron core. Up 3.41% on 7/29 versus XLE's 1.88%, and at $172 still 10% below its 52-week high, so I am not buying the top of the spike.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 28.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.0833,
+      "thesis": "Regional banks, trimmed 10->8. Near its 52-week high and down only 0.79% on a brutal tape, and a steeper curve with the Fed on hold helps net interest margin - but 20-year-high long yields also mark down securities portfolios, so I take size down rather than add."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.0729,
+      "thesis": "Biotech breadth, trimmed 11->7. Still +71.64% over a year, M&A-supported, and structurally uncorrelated to the semiconductor complex that is breaking - but it is the longest-duration asset I own, and with the 30-year at its highest since 2007 that argues for a smaller position, not the same one."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3.0312,
+      "thesis": "Speculative tail per mandate, trimmed 4->3. Genuine one-month momentum (+24.99%) but down 49% over a year, and a Fed with three hike dissents is the wrong regime for it. Token size, stopped, and at 35bps a side I will not churn it.",
+      "stop_loss_pct": 30.0
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12.125,
+      "thesis": "Mandated anti-concentration hedge, 11->12. QQQ is 11.6% below its 52-week high while equal-weight RSP is 1.1% below its - this leg is the direct expression of the spread that is paying me, and 20-year-high long yields compress megacap multiples most. Kept modest because shorting megacap is a historically persistent drag and mega-caps can turn defensive if risk-off deepens."
+    }
+  ],
+  "cash_pct": 3,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The mandate is working and the live data says to press it, but with different sector composition. RSP is 1.1% from its high while QQQ is 11.6% from its high - the anti-concentration rotation is confirmed, so I upsize RSP 13->19 and keep the mandated QQQ short (11->12). The genuinely new information is macro: a hawkish Fed with three hike dissents, 30-year yields at 2007 highs, and an Iranian strike on a US base in Jordan spiking oil >6%. Energy was the ONLY thing green on a -1,000 Dow day (XLE +1.88%, XOP +3.41%), it is a cyclical sector so it sits dead centre of my breadth mandate, and it is the natural long in an inflation-scare regime. Energy goes 9% -> 25% via XLE 17 plus a new XOP 8 (equal-weighted E&P is literally equal-weight cyclical breadth, with more torque than XLE's Exxon/Chevron core). I stop short of a larger energy bet because geopolitical oil spikes retrace and USO is already fading from its 52-week high. Two exits: TNA to zero, because I cannot short 3x leverage in Round 3 on a volatility-drag argument and simultaneously own 3x leverage here - realized vol just exploded (TNA -4.89%, beta 3.29) and 20-year-high long yields directly hit small-cap floating-rate debt; and XLF to zero, because cap-weighted financials are 36% JPM/BRK/V/MA, which is the concentration I am supposed to be short, and GS -5.09% flags capital-markets stress. XBI trimmed 11->7 (the purest long duration in the book with the 30-year at a two-decade high, though M&A support and semis-independence earn it a place). IWM 15->13 and KRE 10->8 fund the energy add. ETH trimmed to a token 3% - the mandate calls for a speculative crypto tail, but a Fed dissenting toward a hike is the worst backdrop for an asset down 49% year on year.",
+  "research_notes": "MACRO (marks as of 7/29/2026 close; first look at live data rather than the old fixed table): Fed under Warsh held at 3.50-3.75% on a 9-3 vote with THREE dissents in favour of a HIKE, and abandoned forward guidance. 30-year Treasury yields hit their highest since 2007 as the bond market priced inflation/term-premium risk. Dow fell 1,000+ points - worst Fed Day since Dec 2024. Simultaneously Iranian strikes on a US base in Jordan spiked oil >6% (USO +7.32%, XOP +3.41%, XLE +1.88% on a day the tape was down hard). Semis/AI kept unwinding on China chipmaking competition and an SK Hynix disappointment; Morgan Stanley warns on the sector through year-end while JPMorgan says a buying opportunity is approaching.\n\nBREADTH CONFIRMED: RSP $215.73, only 1.1% below its 52-week high, versus QQQ $661.73, 11.6% below its high. The anti-concentration rotation my Round-2 mandate is built on is no longer hypothetical.\n\nLEVERAGED-ETF DECAY QUANTIFIED: QQQ is 11.6% off its high but TQQQ ($57.75, -6.19% on the day) is 34.4% off its high - roughly 3x the drawdown, i.e. pure volatility drag on top of beta. SMH -4.79% ($504.22) drove SOXL -16.02% ($91.99). Realized vol just exploded, which maximizes daily-reset drag. Structural carry edge, not a directional guess, and shorts pay no funding.\n\nSINGLE NAMES (52-week-range position as a clean momentum score): SNOW $282.90, 96% of range, +4.64% ON A -1,000 DOW DAY, Wells Fargo PT to $500, Cortex AI Gateway launch - best relative strength in my universe. PANW $314.15, 88% of range, Capital One upgrade to Overweight, BofA $420 / Tigress $430, earnings 8/17. CRWD $179.38, 71% of range and 17.5% off its high - momentum decaying despite Citi $250 / BofA $230. GS $980.75, -5.09% on the day and 15% off its high - my \"lowest-vol momentum anchor\" thesis is falsified. HOOD $89.84, 42% below its high and only 29% of range DESPITE a record Q2 ($1.31B rev +32%, EPS $0.62 vs $0.43 est) - good news, no reaction, the worst momentum signal there is. ORCL $117.74 sitting on its 52-week low of $114.50, 66% off its high on AI-capex funding fear (one analyst flags a possible $500B capital need).\n\nKEY REVERSAL - MSTR: researched the balance sheet rather than the chart. Strategy holds ~843,775 BTC; at BTC $63,942 that is ~$54.0B of bitcoin against a $34.03B market cap, i.e. mNAV has flipped BELOW 1.0. BTC is also +6.33% over the last month. The company has paused purchases for five straight weeks, built $3.75B of cash, and reports earnings TODAY (7/30). The premium-collapse mechanism that produced the -45% six-month move is exhausted; what remains is a levered bitcoin claim trading under its asset value into a catalyst. Not a short I should be in.\n\nOTHER R2 CONSTITUENTS: XLE +37.31% 1yr. XOP is equal-weighted E&P with more oil torque than XLE's 36% Exxon/Chevron core. KRE $76.18 near its 52-week high, only -0.79% on the bad day. XBI $147.91, +71.64% 1yr, M&A-supported, but pure long duration. XLF $56.68 is cap-weighted into JPM/BRK/V/MA - that is concentration, not breadth. TNA $65.88, -4.89%, beta 3.29. GDX is 37% below its 52-week high, so gold is not the clean inflation expression here - energy is. ETH $1,964, +24.99% 1m but -49% 1yr.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 96 with cash 3; scaled by 1.0104 to sum to 97 (relative sizing preserved, declared cash kept)"
+}

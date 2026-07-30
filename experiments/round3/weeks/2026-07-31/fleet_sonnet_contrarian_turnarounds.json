@@ -1,0 +1,83 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Regional banks' credit-cycle tailwind remains intact (12mo total return +26.1%); holding size on a confirmed uptrend.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Healthcare's rotation is accelerating further (+7.3% in the past month vs the +4.0% noted at inception) \u2014 increasing on a confirmed breakout.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Still up sharply (YTD +23.6%, 1yr +72.7%) but showing a clear momentum pause (-6.6%/1mo) \u2014 trimming modestly while keeping a core position for H2 catalysts.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Defensive ballast is doing its job modestly (+3.7% YTD) but offers little torque \u2014 trimming to fund higher-conviction breakout/breakdown trades.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Utilities are pausing short-term (-1.5%/1mo) but still up YTD (+6.6%) on the AI-power-demand tailwind \u2014 holding as the long leg of the discretionary pair.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Miners' breakdown has largely played out (-15.3% YTD, -34.4%/6mo) and is now decelerating (-2.8%/1mo) as gold stabilizes (+0.7%/1mo) \u2014 trimming and lowering the take-profit to lock in the already-realized gain and cut squeeze risk.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 20,
+      "thesis": "The standout call in this book: the leveraged-semis mean-reversion short is a confirmed, still-accelerating crash (-42.9%/1mo, -61.1%/3mo) \u2014 sizing up materially while the trend is working, with stops to cap squeeze risk.",
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Discretionary remains the weakest S&P sector (YTD -6.8%) \u2014 holding as the short leg of the utilities relative-value pair.",
+      "stop_loss_pct": 10.0
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The semi-extreme mean-reversion short (SOXL) is the standout confirmed breakdown in this book too \u2014 down -42.9%/1mo and -61.1%/3mo, still accelerating \u2014 so I'm sizing it up materially from 8% to 20% with protective stops. GDX's breakdown, by contrast, is decelerating (-2.8%/1mo vs the sharp -13.2%/1mo noted at inception) as gold itself stabilizes (+0.7%/1mo), raising squeeze risk on further downside bets, so I'm trimming that short from 10% to 8% and lowering the take-profit to lock in the already-large realized gain (-15.3% YTD / -34.4% 6mo). XLV's breakout is confirming further (+7.3% in the past month) \u2014 increasing. XBI has cooled after a huge run (-6.6% 1mo despite +23.6% YTD) and USMV is low-torque ballast \u2014 both trimmed modestly to fund the SOXL add. KRE, XLU and XLY are holding up as thesised and are left roughly unchanged.",
+  "novelty": "Only SOXL-short (20% in both books) repeats across Round 2 and Round 3; overlap = min(20,20)/95 \u2248 21% of Round 3's gross position weight, well under the 50% cap \u2014 Round 3 otherwise runs entirely on sector-ETF breakout/breakdown and relative-value pair trades (KRE/XLV/XBI/USMV/XLU/GDX/XLY) that are structurally distinct from Round 2's single-name-equity-and-crypto turnaround bets (ADBE/CRM/PYPL/BTC/ETH/IWM/GLD).",
+  "r2_overlap_pct": 21.1,
+  "research_notes": "Checked live prices/performance (as of 2026-07-29 close) for every held name. Round 2 book: ADBE $263.43 (YTD -24.7%, but +5.7% on 7/29 alone after FTC cleared the Topaz Labs deal, near 2-month highs \u2014 though Morgan Stanley just cut its target to $240, below spot, so the turnaround is real but arguably ahead of itself now). CRM $188.38 (YTD -28.9%, +19.3% in the last month on Agentforce traction, though 'mixed analyst sentiment' persists). PYPL $58.35 (YTD only +0.6%, +5.1% 1mo, Q2 beat with $1.38 EPS/$8.68B rev, but Goldman still Sell at $50 \u2014 modest turnaround, not dramatic). SOXL $91.64 \u2014 the standout: -42.9% in the last month and -61.1% over 3 months ('chip crash exposing the brutal cost of leverage'), i.e. the 'first signs of correction' thesis has become a full-blown, still-accelerating breakdown. BTC $63,942 (YTD -26.9%, but +6.3% 1mo) and ETH $1,964 (YTD -33.8%, +25.0% 1mo, the strongest snapback) both show the oversold-bounce thesis starting to work, ETH more so. IWM $288.57 (YTD +19.5%, essentially matching the +19.4% figure noted at inception, i.e. the catch-up largely already happened, and now -3.5% 1mo pullback) and GLD $371.08 (YTD -6.4%, flat vs the -6.5% noted at inception, +0.7% 1mo) both show the least evidence the contrarian call is paying off. Round 3 book: KRE $76.18 (12mo total return +26.1%, credit-cycle tailwind intact). XLV $160.25 (YTD +4.4%, accelerating +7.3% 1mo \u2014 breakout confirming further). XBI $147.92 (YTD +23.6%, 1yr +72.7%, but -6.6% in the last month \u2014 momentum cooling after a huge run). USMV $96.95 (YTD +3.7%, +2.2% 1mo \u2014 steady but low-torque). XLU $45.52 (YTD +6.6%, -1.5% 1mo \u2014 pausing). GDX $73.57 (YTD -15.3%, 6mo -34.4%, but only -2.8% 1mo \u2014 the breakdown is decelerating as gold itself stabilizes, +0.7% 1mo for GLD, raising squeeze risk on the short). XLY $112.48 (YTD -6.8%, still the weak sector). SOXL short (also held here) shows the same accelerating -42.9%/1mo, -61.1%/3mo crash noted above \u2014 the single best-performing thesis across both books."
+}

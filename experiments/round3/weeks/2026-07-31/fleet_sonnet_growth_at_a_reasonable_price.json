@@ -1,0 +1,74 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Still near 52-wk highs and no trend break, but today's -3.5% drop on the hawkish Fed hold (rate-sensitive financials repricing) warrants trimming into strength rather than adding blind."
+    },
+    {
+      "symbol": "ELV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed-care compounder with raised EPS guidance and insider buying; held at weight, no reversal signal."
+    },
+    {
+      "symbol": "UNP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rail duopoly still delivering 'new-economy' margins/cash flow near 52-wk highs; held at weight."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Q3 beat on resilient spend/World Cup travel, efficiency restructuring underway; held at weight, trend intact."
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Defensive staples ballast against the cyclical/short-book volatility; held at weight."
+    },
+    {
+      "symbol": "IJR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap value breadth exposure tracking the broadening rally alongside IWM in the other book; held at weight despite today's market-wide small-cap dip (no trend break)."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy diversifier up 2.3% today on cheap FCF yield; held at weight, trend intact."
+    },
+    {
+      "symbol": "MSTR",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Confirmed continuing blow-off-top reversal: MSTR down from a $414 52-wk high to $93.33 as BTC itself sits well off its highs near $64.2k. Sizing the momentum short up materially given the trend is confirmed, not reversing, with a tightened stop to protect the already-large gain and an extended take-profit to let the trend run."
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The book's core mandate signal -- fading the crypto blow-off top -- has confirmed hard: MSTR has collapsed from a $414 52-week high to $93.33 (BTC itself sits at ~$64.2k, well off its highs), a textbook continuing breakdown under the momentum/mean-reversion framework. I'm sizing the MSTR short up materially (6% to 12%) and tightening the stop while extending the take-profit to let a confirmed trend run further, funded by trimming JPM (which gave back the most today, -3.5%, on hawkish-Fed rate jitters) and drawing down cash. The rest of the book -- ELV, UNP, V, PG, IJR, CVX -- all checked out in-trend (V beat on Q3 earnings, UNP delivering 'new economy' returns, CVX up 2.3% today, ELV raised EPS guide) with no reversal signal, so those are held at or near current weights.",
+  "novelty": "Zero symbol overlap between the two books (Round 2: MSFT/GOOGL/AVGO/META/IWM/UNH/COST/XOM/TQQQ long, COIN short; Round 3: JPM/ELV/UNP/V/PG/IJR/CVX long, MSTR short) -- 0% same-direction gross-weight overlap, trivially satisfying the novelty requirement.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live marks and news via WebFetch (Google Finance / Yahoo) for every held name plus BTC and the S&P, since WebSearch budget was already exhausted session-wide. Key findings: broad market sold off today (S&P -1.5%, Nasdaq -1.7%, Russell -1.6%) on a hawkish Fed hold, described as the worst session since April 2025. MSFT delivered a blockbuster Q4 (Azure >$100B, profit +31% YoY) and is +8.9% after-hours. META beat on revenue but guided soft with FCF concerns and fell -7.5% AH. GOOGL and AVGO held up relatively well despite the tape. UNH's GARP turnaround thesis is strongly confirmed (~$420 vs. the sub-$235 low it was bought against). COST, XOM, JPM, V, UNP, CVX, ELV all checked out near 52-week highs or in-trend, consistent with their theses; JPM gave back the most today (-3.5%) on rate-sensitivity. Biggest single finding: MSTR has collapsed to $93.33 from a $414 52-week high (BTC itself near $64.2k, off its highs) -- the Round 3 book's crypto-blow-off-top short thesis has confirmed hard, and COIN (Round 2's crypto hedge) is also down -29% YTD / -4.6% today, confirming the ongoing crypto bear across both books."
+}

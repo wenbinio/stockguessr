@@ -1,0 +1,71 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Financials trading within ~2% of 52-week highs; the strongest confirmed sector trend in the book, sizing up.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Regional banks also near 52-week highs ($76 vs $78 high), confirming the financials rotation; adding.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 18.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Healthcare re-accelerating hard, +7.3% in the past month and within 3% of its 52-week high as capital rotates out of expensive tech into healthcare; adding to the strongest newly-confirming trend.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "1-year breakout intact (+72%) but short-term momentum has stalled (roughly flat to down over 1m/3m, 10.7% off highs); trimming size to reflect weaker near-term confirmation while keeping a long-term breakout stake.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Gold miners remain well off 2026 highs but the pace of decline has decelerated sharply (1m decline down to roughly -4% from -13% at entry) with an after-hours bounce; trimming the short as trend confirmation weakens.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 3,
+      "thesis": "Medium/long-term downtrend intact (-38%/-41% 6m/YTD) but 1-month price action has gone flat; trimming leveraged size while momentum consolidates rather than pressing a stalled trend.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 29,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Trend-confirmation discipline cuts both ways: press the sector legs still confirming (XLF and KRE within ~2% of 52-week highs, XLV re-accelerating +7.3% in a month) and trim/exit the legs whose trend has broken or decelerated \u2014 exit ETH short (the trend reversed hard, +25% in a month, a losing/dangerous position at 3x leverage), exit GLD short (3-month return flipped positive, an early reversal signal), exit TLT long (surging yields directly contradict the rate-cut-hedge rationale), and trim GDX short, SOL short, and XBI long where the recent-month trend has decelerated or stalled even though the longer-term trend is intact. Freed capital goes to cash given weaker overall confirmation breadth this round.",
+  "novelty": "Round 3 now shares zero symbols with the round 2 book \u2014 round 2 holds single-name dividend equities (MSFT, AVGO, JPM, CVX, HD) plus SCHD/XLP and a SOXL short, while round 3 holds sector ETFs (XLF, KRE, XLV, XBI), a GDX short, and a SOL short; same-direction gross-weight overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/trends for all major holdings via WebFetch (Yahoo Finance / stockanalysis.com) since WebSearch budget was exhausted early. Key findings: (1) MSFT beat Q4 earnings hard on 7/29 \u2014 Azure topped $100B annualized revenue growing 41-43%, capex raised to $175B, stock +8.8% after-hours. (2) Broad semiconductor rout: SOXL -16% in one session, -43% 1m, -61% 3m on AI-capex-sustainability worries and China chip-competition fears (SK Hynix, Samsung-Broadcom $200B MOU news mixed in); AVGO caught in the downdraft (-2.8%) despite bullish long-term analyst view. Sell-side split (JPMorgan sees a 'summer buying opportunity,' Morgan Stanley's Wilson sees 'more downside'). (3) TLT near 52-week lows \u2014 long yields have surged on inflation/Middle East oil-price concerns and a more hawkish Fed under new Chair Kevin Warsh; 'rate cuts diminished' headlines directly undercut the TLT convexity thesis in both books. (4) JPM -3.5% on a no-news day despite a fresh Deutsche Bank upgrade and a '$1T bank' narrative \u2014 reads as a dip in an intact uptrend; XLF/KRE both trading within ~2% of 52-week highs, confirming the financials-rotation thesis. (5) XLV re-accelerating hard (+7.3% 1m, near highs) \u2014 healthcare rotation strengthening. XBI momentum has stalled short-term (down ~1m/3m, 10.7% off highs) even though the 1yr breakout (+72%) is intact. (6) GDX's decline has decelerated (1m -4% vs the -13% at entry) with an after-hours bounce and a bearish-engulfing warning cited \u2014 trend confirmation weakening. GLD's 3-month return has flipped positive (+0.68%) \u2014 an early reversal signal against the short. (7) Crypto: BTC is +6.3% over the past month (still -27% YTD) \u2014 no longer a clean confirmed downtrend. SOL is roughly flat over 1 month (-0.6%) though still down big 6m/12m. ETH has reversed hard: +25% in the past month and +4.5% today \u2014 this directly invalidates the round-3 short thesis and, at 3x leverage, is a serious loss risk that must be cut rather than held."
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Round 2: rotate into quality mega-cap and select mid-cap growth names trading at reasonable multiples relative to durable earnings growth, add small-cap breadth exposure, stay out of crypto's ongoing bear market, and hedge frothy speculative excess with a modest short.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Blowout Q4: Azure crossed $100B, profit +31% YoY, capex raised on AI demand; stock +8.9% AH into next close. Sizing up the highest-conviction GARP name in the book while still reasonable at ~23x forward."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Still cheapest mega-cap grower on PEG; Q2 revenue beat (+24% YoY) though capex-hike concerns capped the pop. Held at weight -- thesis intact, no reason to chase or cut."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "AI infra/custom-silicon compounder holding up near highs despite today's broad tech selloff; Samsung pact expands TAM. Held at weight."
+    },
+    {
+      "symbol": "META",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Revenue/EPS beat but soft guidance and shrinking FCF on AI capex spooked the market (-7.5% AH); trimming rather than exiting since the ad-engagement growth story is still real, just less 'reasonable' near-term."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Small-cap breadth rotation intact; near 52-wk highs before today's market-wide 1.6% pullback on the hawkish Fed hold. Held at weight."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "GARP turnaround confirmed -- shares near $420 vs. the depressed sub-$235 low the position was built against, Q2 net income +61% YoY. Adding modestly to a working thesis."
+    },
+    {
+      "symbol": "COST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Steady membership compounder near 52-wk highs ahead of Q4 print; defensive ballast against the AI-capex-driven tech volatility. Held at weight."
+    },
+    {
+      "symbol": "XOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cheap cash-flow yield energy diversifier near 52-wk highs; Q2 earnings 7/31 is a near-term catalyst but position is a long-term GARP hold, not a trade. Held at weight."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Trimmed modestly -- leveraged Nasdaq beta adds decay/cost drag and amplified downside into a volatile post-Fed, post-earnings tape; kept small rather than removed since underlying mega-cap AI theses (MSFT especially) just got a fundamental boost."
+    },
+    {
+      "symbol": "COIN",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Crypto bear market continues to confirm (COIN -29% YTD, -19.6% over 6mo, -4.6% today); increasing the hedge modestly while keeping it sized as a hedge, not a core short, consistent with the GARP mandate's 'modest' framing."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Fresh checks (7/29 close + AH) confirm the GARP theses are largely playing out: MSFT posted a blowout Q4 (Azure >$100B, profit +31% YoY) and is +8.9% after-hours going into the next close, so I'm adding to the highest-conviction name. UNH's turnaround is confirmed (stock near $420 vs the $234 low it was bought against) so I'm nudging it up modestly. META beat on revenue but guided soft with FCF concerns and fell -7.5% AH -- that undercuts the 'reasonable multiple relative to growth' thesis short-term, so I'm trimming it rather than exiting (mandate is GARP, not momentum-chasing bad news either way). TQQQ (pure leveraged beta, no fundamental thesis) is trimmed slightly to fund the higher-conviction adds and cut funding/decay drag given today's broad hawkish-Fed selloff (S&P -1.5%, worst since April '25). COIN short is added to modestly -- crypto bear is intact (COIN -29% YTD, -4.6% today) -- but kept 'modest' per mandate, not turned into a core position. GOOGL, AVGO, COST, XOM, IWM held at current weights; all are tracking their theses (GOOGL resilient post-earnings, AVGO/COST/XOM near 52-wk highs, IWM broadening-rally intact despite today's dip).",
+  "research_notes": "Checked live marks and news via WebFetch (Google Finance / Yahoo) for every held name plus BTC and the S&P, since WebSearch budget was already exhausted session-wide. Key findings: broad market sold off today (S&P -1.5%, Nasdaq -1.7%, Russell -1.6%) on a hawkish Fed hold, described as the worst session since April 2025. MSFT delivered a blockbuster Q4 (Azure >$100B, profit +31% YoY) and is +8.9% after-hours. META beat on revenue but guided soft with FCF concerns and fell -7.5% AH. GOOGL and AVGO held up relatively well despite the tape. UNH's GARP turnaround thesis is strongly confirmed (~$420 vs. the sub-$235 low it was bought against). COST, XOM, JPM, V, UNP, CVX, ELV all checked out near 52-week highs or in-trend, consistent with their theses; JPM gave back the most today (-3.5%) on rate-sensitivity. Biggest single finding: MSTR has collapsed to $93.33 from a $414 52-week high (BTC itself near $64.2k, off its highs) -- the Round 3 book's crypto-blow-off-top short thesis has confirmed hard, and COIN (Round 2's crypto hedge) is also down -29% YTD / -4.6% today, confirming the ongoing crypto bear across both books."
+}

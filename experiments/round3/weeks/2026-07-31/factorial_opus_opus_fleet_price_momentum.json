@@ -1,0 +1,69 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 36,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Core conviction. The only theme that is strong, intact and accelerating at once: +37.3% 1yr, +33% YTD, just 7.6% off its 52-week high, and it rose +1.88% on a day the Dow fell 1,000 points. Trend predates the Iran strike; supply shock, record refiner margins, SPR at historic lows and AI-datacenter power demand stack on top of momentum that was already working."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Highest-quality intact trend on the board - 1.4% below its 52-week high, +25% 1yr, and the explicitly named destination of the rotation out of AI infrastructure. Doubles as my genuine hedge: a ceasefire headline that breaks oil is the same headline that bids defensives. Tight 8% stop because at this volatility that move would be real trend damage."
+    },
+    {
+      "symbol": "XOP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 14.0,
+      "take_profit_pct": 32.0,
+      "thesis": "High-beta expression of the same energy trend: +3.41% on a -1.54% SPY day, +34.5% 1yr. Equal-weighted E&P with heavy refiner exposure (PBF, Par Pacific, Delek) captures the record crack spreads that cap-weighted XLE dilutes. Wider stop respects its higher volatility."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 22.0,
+      "thesis": "Survives the cut where XLF does not: 2.5% off its 52-week high with +26.1% 1yr versus XLF's +8.5%, P/E 13.4 and beta 0.85, and it lost only 0.79% on Fed day. A curve steepening to 2007-high long yields supports regional-bank net interest margin. Trimmed from 14% to fund the energy conviction."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Halved, not cut. The +71.6% 12-month trend still qualifies under the mandate, but price is 10.7% below its high and small-cap biotech is long-duration and rate-sensitive - precisely what a Fed with hike dissents punishes. The healthcare bid is visibly going to large-cap pharma instead, so size reflects reduced conviction."
+    },
+    {
+      "symbol": "ERX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 45.0,
+      "thesis": "The mandate's 'select leverage where the trend is still working' clause, sized with restraint. 2x energy, +3.78% on the day, +70.5% 1yr. Held small precisely because it sits 17% below its high while unlevered XLE sits 7.6% below - that gap is daily-rebalance decay in a ceasefire-headline-chopped oil tape, so I take the convexity in a size that decay cannot meaningfully damage."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): My book was flat (-0.18%) because it was a diversified eight-line spread across themes that have now sharply diverged. The 29 July hawkish-Fed-plus-oil-shock split the tape cleanly, and a price-momentum mandate requires me to act on that separation rather than hold an average of winners and losers.\n\nWHAT I CUT AND WHY. XLF (12%->0): weakest momentum I own on every horizon, YTD +4.4% and 1yr +8.5% - a momentum book sells its laggard. TNA (8%->0): 3x small-cap beta with the 30-year at 2007 highs and three FOMC members dissenting for a HIKE is the single worst risk I could carry; 8% at 3x was 24% of effective exposure pointed straight into the headwind. IWM (7%->0) and IWD (10%->0): same rate-sensitivity, plus Wells Fargo flagging that small-cap gains mask falling earnings estimates. XBI 15%->7%: the mandate keeps me in biotech on its +71.6% 12-month trend, but it is 10.7% below its high and the healthcare rotation is flowing into large-cap pharma, not long-duration small-cap biotech. KRE 14%->10%: still 2.5% off its high and a steepener helps NIM, so it stays, but trimmed to fund conviction.\n\nWHAT I BACKED. Energy goes from 15% to 54% nominal (~60% effective). It is the only theme in my scan that is simultaneously strong (+37.3% 1yr, +33% YTD), intact (7.6% off high) and accelerating - and it printed +1.88% on a day the Dow fell 1,000 points. The trend predates the Iran strike, so the supply shock is a catalyst layered onto working momentum rather than the whole thesis; record refiner margins, the SPR at historic lows and AI-datacenter power demand all sit underneath it. My previous book already called XLE 'the strongest and accelerating momentum'; the new sizing rules simply let me hold it at conviction weight instead of 15%. Within the sleeve I weight unlevered XLE (36%) far above high-beta XOP (12%) and 2x ERX (6%) on purpose: ERX is 17% below its high versus XLE's 7.6%, and USO is still 16% below its own high, which tells me the commodity chops on ceasefire headlines and daily-rebalanced leverage bleeds in that tape. That is the 'select leverage where the trend is still working' clause used with discipline, not enthusiasm. XLV goes 12%->18% as the highest-quality intact trend on the board (1.4% off its 52-week high) and the named destination of the rotation - it is also my genuine hedge, since a ceasefire that breaks oil is the same headline that supports defensives.\n\nMANDATE FIDELITY. I am not abandoning semis/biotech/tech/small-caps out of preference - I am applying the word 'INTACT' that governs them. Semis have the market's best trailing 12-month return (+73.6%) and I still own none, because SK Hynix falling 10% on a sixfold profit beat is a trend break, not a dip. Biotech stays at reduced size. The themes rotate; the momentum rule does not.\n\nCash 11% earns 4% APY and is real dry powder if oil gaps down. Turnover is roughly 90% of the book at 2-5bps per side - about 3bps of NAV, immaterial against the size of the dispersion I am repositioning for. Stops are widened on the volatile energy legs so a single ceasefire headline cannot stop me out of a trend I still believe in, and tightened on low-vol XLV where -8% would be genuine trend damage. No intraweek_date: the catalyst is live and I want the next close.",
+  "novelty": "I do not manage a Round-2 book, so the <50% overlap rule does not bind; for the record this book is nonetheless a major departure from my own prior Round-3 book, retaining only three of eight lines and rotating gross weight out of financials, value and small-caps (XLF, IWD, IWM, TNA all to zero, 37% of the book) and into a concentrated energy complex (XLE/XOP/ERX, 15%->54%).",
+  "research_notes": "Point-in-time research as of the 2026-07-29 close (web search budget was exhausted, so I pulled live quote/return pages directly).\n\nMACRO REGIME EVENT, 29 Jul 2026: Fed held at 3.50-3.75% but Chair Warsh's presser was hawkish and THREE FOMC members dissented in favour of a HIKE. Dow fell 1,000+ points; 30-year Treasury yields hit their highest level since 2007. Separately, Iran struck a US base in Jordan and crude jumped ~6-7% (USO +7.32% on the day). Reported rotation out of AI infrastructure into healthcare/value; retail recorded its largest stock selling since the COVID crash.\n\nCROSS-SECTIONAL MOMENTUM SCAN (last / 1-day / distance below 52wk high / 1yr total return):\n- XOP 172.04 / +3.41% / -9.6% / +34.5%\n- ERX (2x energy) 92.04 / +3.78% / -17.0% / +70.5%\n- XLE 58.65 / +1.88% / -7.6% / +37.3% (YTD +33.0%)\n- XLV 166.24 / -0.61% / -1.4% / +25.0%\n- KRE 76.18 / -0.79% / -2.5% / +26.1% (P/E 13.4, beta 0.85)\n- XBI 147.91 / -1.25% / -10.7% / +71.6%\n- SPY 729.46 / -1.54% / -4.1% / +15.8%\n- IWM 288.57 / -1.64% / -4.7% / +30.1%\n- ITA 236.26 / -3.56% / -6.1% / +19.9%\n- SMH 504.22 / -4.79% (-6.3% 1wk) / n/a / +73.6%\n- GDX 73.57 / -0.86% / -37% below high / YTD +40.9%\n- XLF YTD +4.4% / 1yr +8.5%; QQQ YTD +8.0% / 1yr +17.0%\n\nKEY INFERENCES.\n(1) SEMIS: best trailing 12m number in the market (+73.6%) but the trend is NO LONGER INTACT. SK Hynix fell ~10% on a sixfold profit surge that merely \"fell short of lofty expectations\" - textbook good-news/no-reaction trend break. AI-capex sustainability is now the dominant narrative. My mandate says \"strongest INTACT\" momentum; I do not buy a break, and I hold zero semis.\n(2) GOLD MINERS: +40.9% YTD looks like momentum but price is 37% below its 52-week high. Dead trend masked by a stale YTD print. Rejected.\n(3) ENERGY is the only theme that is strong, intact AND accelerating, and it rose on a -1,000-point Dow day. Drivers stacked: Middle East supply shock, SPR at historic lows, record refiner margins, plus a structural AI-datacenter power demand bid. XLE is only 7.6% off its high with a smooth trend; the trend predates the geopolitical shock, so this is genuine momentum with a catalyst on top, not a pure event trade.\n(4) VEHICLE CHOICE within energy: I deliberately weight XLE (unlevered, -7.6% from high) far above ERX (2x, -17% from high). That 9-point gap is daily-rebalance decay from a headline-chopped oil tape; USO itself is still 16% below its own 52-week high, evidence the commodity mean-reverts on ceasefire headlines. So the leverage sleeve stays small.\n(5) RATE-SENSITIVES: with the long end at 2007 highs and a Fed carrying hike dissents, 3x small-cap beta (TNA) is the worst risk in my book, and Wells Fargo flags that small-cap gains are \"masking a disturbing trend of falling earnings estimates.\" Cut TNA, IWM, IWD.\n(6) XLF is the weakest name I own on every horizon (YTD +4.4%, 1yr +8.5%). A momentum book must sell its laggard. Cut to zero. KRE is a different animal - 2.5% off its high, P/E 13.4, steepening curve helps NIM - so it survives, trimmed.\n(7) XLV is 1.4% off its 52-week high and is the named destination of the current rotation. Best risk-adjusted intact trend available. Upsized.\n(8) XBI: +71.6% 1yr keeps it in the book per mandate, but it is 10.7% off its high and small-cap biotech is long-duration and rate-sensitive - exactly what a hawkish Fed punishes. The healthcare bid is going into large-cap pharma (XLV at highs), not XBI. Halved rather than cut.\n(9) Considered and rejected: shorting SMH (its 12-month momentum is the market's strongest - shorting it contradicts the mandate and invites a violent snapback); ITA defence despite the Iran headline (-3.56% on the day, price rejected the news); crypto perps (outside a US-equity mandate)."
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Biotech re-acceleration (+14.6% 1m) after a long lag vs SPY; best-performing, most-confirmed relative-value catch-up trade in the book -- sized up."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Healthcare deeply lagged on 12m but turning up 1m/3m; defensive rotation candidate, trimmed slightly to fund XBI/GDX increases."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Financials broad strength (+6% 1m) on steepening/rate-cut backdrop; trimmed slightly, thesis unchanged."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Regional banks confirming financials strength with strong 1m/3m momentum; unchanged."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Duration carry/diversifier against equity risk into a rate-cut cycle; trimmed as the weakest-conviction leg to fund higher-conviction rotation names."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Gold miners in a sharp breakdown (-13.2% 1m, -24.3% 3m) after a huge prior run; clearest exhausted-momentum short in the book, sized up."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Gold rolling over (-6.1% 1m, -15.5% 3m) as real rates/risk appetite pressure the metal; unchanged, pairs with GDX short."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 35.0,
+      "thesis": "3x semis reversal (-39.2% 1m) after a blowoff top; trimmed here since the same trade is now expressed at much larger size in the Round 2 momentum book -- kept small to avoid redundant duplication of risk."
+    }
+  ],
+  "cash_pct": 3,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Mean-reversion/relative-value mandate is intact and working (+1.38% NAV, max drawdown only -3.07%). With caps removed I'm concentrating further into the best-confirmed laggard-rotation trade (XBI, which already broke out +14.6% 1m after a long lag) and the clearest exhausted-momentum short (GDX, -13.2%/-24.3% 1m/3m after a huge prior run), funding this by trimming TLT (a diversifier/carry idea with a weaker directional signal than the equity legs), XLF/XLV modestly (still held, still thesis-true, just smaller to make room), and cutting SOXL short down (its momentum-unwind thesis is now better expressed via the much larger SOXL short already running in the Round 2 momentum book, so duplicating it heavily here adds redundant risk rather than distinct conviction). Kept GLD short, KRE long roughly as-is since both theses are intact and unconfirmed by any new contradicting data. Web search budget was exhausted this session, so no fresh data changed the underlying theses -- this is a conviction-weighted resize of the existing, already-validated book, not a re-underwrite.",
+  "novelty": "Same-direction overlap with the Round 2 book is confined to XLV long (12% vs 15%), XLF long (12% vs 15%), GDX short (15% vs 10%), and a now-small SOXL short (5% vs 25%) -- roughly 39 of 97 points of Round 3 gross weight (~40%), under the 50% threshold. The books remain structurally distinct: Round 2 is a trend-following leveraged-ETF momentum book (long the strongest 1w/1m/3m breakouts, short the most violent breakdowns, no duration exposure), while Round 3 is a mean-reversion/relative-value book anchored in XBI/KRE/TLT rotation into laggards -- names Round 2 doesn't hold at all -- and treats the shared shorts (GDX, SOXL) as 'fade the exhausted extreme' rather than 'ride the broken trend.'",
+  "r2_overlap_pct": 40.4,
+  "research_notes": "Read the account packet for both books (Round 2 NAV $1,040.27 / +4.03%, Round 3 NAV $1,013.80 / +1.38%), including all position weights, standing orders, and recorded theses with their momentum stats. Attempted two WebSearch queries for fresh July 2026 sector/semiconductor momentum data to confirm whether the existing theses still hold, but the session's WebSearch budget was already exhausted (200/200 used) before either query ran, so no new external data was obtained this turn. Given that, both decisions are conviction-weighted resizes of the existing, already-partially-validated books rather than re-underwritten theses: I leaned harder into the legs whose momentum signal was most extreme/decisive in the packet (SOXL short, TQQQ short in Round 2; XBI long, GDX short in Round 3), trimmed the weakest-signal legs to fund it, and cut cash now that concentration caps are gone, while deliberately avoiding an all-in single-name bet given the absence of fresh confirming data this session."
+}

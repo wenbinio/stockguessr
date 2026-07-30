@@ -1,0 +1,49 @@
+{
+  "name": "Haiku price momentum",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Pursue H2 2026 momentum across three stacking themes: mega-cap semiconductor/AI mega-winners (MU, SOXL), leveraged large-cap tech (TQQQ, QQQ), and emerging small-cap outperformance (IWM); rebalance weekly as relative momentum shifts.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25,
+      "thesis": "Concentrate on the single working momentum theme. Small-cap outperformance intact (22% YTD) with strong relative outperformance vs. mega-cap tech and semis. This is the only component of the three-theme momentum strategy that is performing."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Minimal broad market ballast for diversification; reduced from 6% given market weakness."
+    },
+    {
+      "symbol": "SHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Short-term treasury ETF increased from 10% for capital preservation and 4% cash yield. Better value now with market stress."
+    },
+    {
+      "symbol": "AGG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Bond ETF maintained for downside protection."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Intermediate-term treasury ETF reduced from 6% to free capital for cash buffer."
+    }
+  ],
+  "cash_pct": 50,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Mandate requires pursuing momentum across three themes: mega-cap semis (SOXL/MU), leveraged large-cap tech (TQQQ/QQQ), and small-cap (IWM). Two of three themes have broken decisively\u2014SOXL down 38% in 10 days, TQQQ down 22% from highs, Nasdaq in technical correction. Only small-cap theme (IWM up 22% YTD) is working. Current -6.25% P&L with positions concentrated in broken momentum themes warrants trimming losers, concentrating remaining equity exposure on the working theme, and increasing defensive cash buffer. Momentum mandate cannot be pursued when momentum is broken; defend capital while maintaining exposure to the single working momentum theme.",
+  "research_notes": "Researched market conditions as of July 29-30, 2026. Semiconductors in freefall: SOXL down 38% in past 10 days, SOX index down 4.5% on July 29. Nasdaq 100 in technical correction (down 11% from highs). S&P 500 fell 1.5% on July 30 amid macro headwinds. Consumer confidence declined to 90.8 from 92.2. Small-cap (IWM) remains the clear winner, up 22.1% YTD with strong outperformance vs. broad market. Rotation into value/energy/financials continuing as tech weakens. Two of three Round 2 momentum themes are decisively broken; only small-cap momentum (IWM) is working. Round 3 contrarian rotation thesis is performing better (-3.89% vs. -6.25% for Round 2) and positions are optimally aligned with continued sector rotation."
+}

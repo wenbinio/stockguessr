@@ -1,0 +1,77 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Anchor in quality dividend growers with AI-cycle exposure, add a tactical short against the most overextended leveraged momentum trade, use TLT for rate-cut convexity, and keep meaningful cash at 4% APY given stretched valuations after a huge H1 rally.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Q4 beat: Azure topped $100B annualized revenue growing 41-43%, 2026 capex raised to $175B, stock +8.8% after-hours; durable AI-driven cash flow anchoring the dividend book \u2014 sizing up after the print."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "New $200B Samsung foundry/memory MOU reinforces multi-year AI-silicon demand and FCF for dividend growth, but trimming slightly given the broad chip-sector selloff (China competition, AI-capex-sustainability fears) dragging on semis peers."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Diversified quality dividend-growth ballast; adding as valuations stay stretched and volatility rises across the AI-cycle names."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "-3.5% pullback on a no-news day despite a fresh Deutsche Bank upgrade and a path to a $1T balance sheet; buying the dip in a best-in-class rising-dividend compounder."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Energy dividend aristocrat; the same oil-price/inflation backdrop pressuring bonds supports energy cash returns, keeping this as a diversifier and inflation hedge."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimming \u2014 rate-cut odds have diminished under a more hawkish Fed and surging long yields, weakening the housing-turnover catalyst this position depended on."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Cutting most of the position \u2014 long yields have surged to multi-year highs and rate-cut expectations have faded ('possibility of a rate cut has diminished'), invalidating the convexity thesis; keeping only a token stake as a growth-scare hedge."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "thesis": "Taking partial profits after semis cratered (-43% 1m, -61% 3m, -16% in a single session) on AI-capex-sustainability and China-competition fears; trimming an already-extended, high-squeeze-risk short (down >65% from its 52w high) rather than pressing it further."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Adding to defensive staples dividend payers as ballast given a volatile, valuation-stretched tape; low-beta income to complement the AI-cycle names."
+    }
+  ],
+  "cash_pct": 28,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Trend-confirming rebalance: press the MSFT winner after a blowout earnings/Azure print, trim rate-sensitive TLT/HD now that yields have surged and rate-cut odds have faded under a hawkish Fed, take partial profits on the now-extended SOXL short (already down >60% in 3 months, squeeze risk rising) rather than adding to it, exit the small BTC short since its clean downtrend broke (+6.3% 1m bounce), and raise cash meaningfully given cross-asset volatility (semis crash, bond selloff) while adding to quality dividend ballast (SCHD, XLP) and buying JPM's no-news dip.",
+  "research_notes": "Checked live prices/trends for all major holdings via WebFetch (Yahoo Finance / stockanalysis.com) since WebSearch budget was exhausted early. Key findings: (1) MSFT beat Q4 earnings hard on 7/29 \u2014 Azure topped $100B annualized revenue growing 41-43%, capex raised to $175B, stock +8.8% after-hours. (2) Broad semiconductor rout: SOXL -16% in one session, -43% 1m, -61% 3m on AI-capex-sustainability worries and China chip-competition fears (SK Hynix, Samsung-Broadcom $200B MOU news mixed in); AVGO caught in the downdraft (-2.8%) despite bullish long-term analyst view. Sell-side split (JPMorgan sees a 'summer buying opportunity,' Morgan Stanley's Wilson sees 'more downside'). (3) TLT near 52-week lows \u2014 long yields have surged on inflation/Middle East oil-price concerns and a more hawkish Fed under new Chair Kevin Warsh; 'rate cuts diminished' headlines directly undercut the TLT convexity thesis in both books. (4) JPM -3.5% on a no-news day despite a fresh Deutsche Bank upgrade and a '$1T bank' narrative \u2014 reads as a dip in an intact uptrend; XLF/KRE both trading within ~2% of 52-week highs, confirming the financials-rotation thesis. (5) XLV re-accelerating hard (+7.3% 1m, near highs) \u2014 healthcare rotation strengthening. XBI momentum has stalled short-term (down ~1m/3m, 10.7% off highs) even though the 1yr breakout (+72%) is intact. (6) GDX's decline has decelerated (1m -4% vs the -13% at entry) with an after-hours bounce and a bearish-engulfing warning cited \u2014 trend confirmation weakening. GLD's 3-month return has flipped positive (+0.68%) \u2014 an early reversal signal against the short. (7) Crypto: BTC is +6.3% over the past month (still -27% YTD) \u2014 no longer a clean confirmed downtrend. SOL is roughly flat over 1 month (-0.6%) though still down big 6m/12m. ETH has reversed hard: +25% in the past month and +4.5% today \u2014 this directly invalidates the round-3 short thesis and, at 3x leverage, is a serious loss risk that must be cut rather than held."
+}

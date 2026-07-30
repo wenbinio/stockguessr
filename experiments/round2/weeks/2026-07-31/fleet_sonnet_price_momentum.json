@@ -1,0 +1,63 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials showing strongest positive momentum across all timeframes (+1.0%/+4.5%/+7.7% 1w/1m/3m); unchanged, clean uptrend confirmed multi-timeframe."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare accelerating (+0.2%/+7.4%/+8.7%); unchanged, momentum still building."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy led the week (+4.7%) but only has 1-week confirmation; trimmed to fund higher-conviction shorts."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Small caps holding up but momentum only modestly positive; weakest long in the book, trimmed."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 25,
+      "thesis": "Semis in freefall (-29.5% 1w, -42.1% 1m) -- the single clearest, most decisive broken-momentum trend in the book; sized up now that concentration caps are gone."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Leveraged QQQ rolling over (-12.3%/-12.7% 1w/1m) after tech momentum reversal; increased conviction, thesis playing out."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Gold miners in sustained downtrend (-5.6%/-15.5%/-28.9%); held flat, still working but less extreme than SOXL/TQQQ."
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Rules changed in our favor (no caps, cash cut freely) so I'm sizing up the highest-conviction, most decisively-confirmed momentum signals rather than rebuilding the book. SOXL short (-29.5%/-42.1% over 1w/1m, decisively broken) and TQQQ short (-12.3%/-12.7%, confirmed rollover) are the cleanest negative-momentum reads in the packet and the book is already validating (+4.03% NAV) with these legs working, so I'm adding to both. I funded the increase by trimming the two weakest-signal longs -- XLE (only 1-week confirmation) and IWM (merely modest momentum) -- and cutting cash from 15% to 5%, since idle cash is now the main drag on a strategy whose edge is supposed to be concentrated conviction. XLF and XLV stay unchanged as clean, multi-timeframe confirmed uptrends. GDX short held flat -- momentum-negative but less extreme than the other two shorts. Session's web search budget was exhausted before I could pull fresh confirming data, so I stayed with moderate resizing (not a single 50-100% bet) rather than a large re-underwrite on stale information, keeping the book diversified across 7 legs.",
+  "research_notes": "Read the account packet for both books (Round 2 NAV $1,040.27 / +4.03%, Round 3 NAV $1,013.80 / +1.38%), including all position weights, standing orders, and recorded theses with their momentum stats. Attempted two WebSearch queries for fresh July 2026 sector/semiconductor momentum data to confirm whether the existing theses still hold, but the session's WebSearch budget was already exhausted (200/200 used) before either query ran, so no new external data was obtained this turn. Given that, both decisions are conviction-weighted resizes of the existing, already-partially-validated books rather than re-underwritten theses: I leaned harder into the legs whose momentum signal was most extreme/decisive in the packet (SOXL short, TQQQ short in Round 2; XBI long, GDX short in Round 3), trimmed the weakest-signal legs to fund it, and cut cash now that concentration caps are gone, while deliberately avoiding an all-in single-name bet given the absence of fresh confirming data this session."
+}

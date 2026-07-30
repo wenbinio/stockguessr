@@ -1,0 +1,74 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Low-vol quality ballast performing as designed (+2.2%/1mo, +2.2%/3mo, beta 0.48); unchanged."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Second low-vol carry sleeve, minimal correlation to the momentum-short book; unchanged."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Oversold-vs-gold bounce thesis has not confirmed (-4.1%/1mo, -2.8%/3mo since entry) -- cut back but not exited, stop/TP retained.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Relative-strength momentum has reversed since entry (-2.75%/1mo, -6.6%/3mo) -- trimmed given the continuation catalyst stalled."
+    },
+    {
+      "symbol": "XLK",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 18,
+      "thesis": "Mega-cap tech extension short is working (-10.2%/1mo since entry, 'first cracks' thesis confirming); sized up while below the +20% TP.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "thesis": "Semis parabolic-reversal short has moved sharply in our favor (-20.2%/1mo since entry); added moderately, mindful it may be nearing the +25% TP.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 10,
+      "leverage": 2,
+      "thesis": "Downtrend intact (-46%/1yr) but a recent 1mo +6.3% bounce argues against adding; held flat with existing stop/TP.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 21,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Mean-reversion/carry thesis is bifurcating cleanly: the momentum-extension shorts are working hard (XLK -10.2% 1mo since the 'first cracks' entry, SMH -20.2% 1mo since the 'parabolic reversal' entry) so I'm pressing both winners while they're still short of their take-profit triggers. The oversold-bounce longs have NOT mean-reverted yet -- GDX is still down -4.1%/1mo and -2.8%/3mo versus gold (no bounce materialized) and XBI's 'accelerating relative strength' has flipped to -2.75%/1mo, -6.6%/3mo -- so both are cut back rather than added to, preserving optionality without doubling down on a thesis that hasn't confirmed. Low-vol carry sleeves (USMV/SPLV) are behaving exactly as designed (small positive drift, low beta) and are left alone. BTC short held flat -- the 1mo bounce (+6.3%) is a caution flag against adding, but the deep downtrend (-46%/1yr) argues against cutting the hedge. Freed-up capital from GDX/XBI trims plus the size added to the shorts funds a higher cash-carry balance.",
+  "novelty": "Only one instrument overlaps in the same direction across books -- the BTC-USD short (8% of the Round-2 book vs 10% of the Round-2 book's 79% gross exposure here, ~12.7% of Round-3 gross) -- while every equity long (XOM/JPM/GM/UNH/PFE/IWM/F vs USMV/SPLV/GDX/XBI) and the equity shorts (XLK/SMH) are entirely distinct names, so same-direction gross-weight overlap is far below the 50% threshold.",
+  "r2_overlap_pct": 22.5,
+  "research_notes": "Read the account packet (Round 2 NAV $1,031.56 +3.16%; Round 3 NAV $1,021.14 +2.11%). WebSearch was already exhausted for the session, so I used WebFetch against Yahoo Finance quote pages for live prices/performance/news as of 2026-07-29 close: XOM (+30% YTD, +15%/1mo on Mideast oil spike, earnings 7/31, BofA cut to Neutral), JPM (-3.5% today, Dimon macro caution, bank stocks weak pre-Fed, still 15.3x P/E), GM (Q2 beat, raised guidance, +8.9%/1mo), F (Q2 beat, raised guidance, large military contract, Citi upgrade, +9%/1mo), UNH (Q2 EPS beat 56% YoY, raised FY guide, +27% YTD), PFE (earnings pending 8/4, 6.8% yield, muted YTD), IWM (+16% YTD but -3.5%/1mo, catch-up trade stalled), BTC-USD (-27% YTD, -46%/1yr, but +6.3% 1mo bounce), XLK (-10.2%/1mo, cracks widening), SMH (-20.2%/1mo, sharp reversal), XBI (-2.75%/1mo, -6.6%/3mo, momentum reversed from entry), GDX (-4.1%/1mo, -2.8%/3mo, bounce thesis not confirmed), USMV (+2.2%/1mo, low beta as designed). SPLV quote failed to load (503) so left unchanged as a proxy for USMV's behavior. Used this to resize both books: Round 2 rotated weight from stretched/weakening names (XOM ahead of earnings, JPM pre-Fed, stalled IWM) into names with freshly confirmed catalysts (GM, F, UNH) and raised cash modestly. Round 3 pressed the two shorts that are working (XLK, SMH) and cut back the two longs whose mean-reversion/momentum theses have not yet confirmed (GDX, XBI), funding a higher cash-carry balance."
+}

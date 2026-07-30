@@ -1,0 +1,52 @@
+{
+  "name": "Sonnet quality compounders",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "Biotech momentum accelerating further: near 52-week high, $106B in M&A across 201 deals in H1, sector becoming a haven as investors rotate out of expensive AI tech -- add to the strongest-momentum name in the book."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Regional banks are the cleanest rate-cut-cycle carry trade: +26% 12m, framed in the press as 'a cheaper way to play the AI banking boom,' with a lending/fee surge and a deregulation tailwind building -- add, this sub-sector is out-executing broad financials."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Broad financials lag the sub-sector story badly (+8.5% 12m vs KRE's +26%) -- trim toward the stronger regional-bank expression of the same rate-cut thesis rather than the mega-bank-heavy index."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Small-cap breadth rotation still running (+30% 12m, still leading SPY) -- add modestly, funded by closing the crypto shorts and trimming the gold-miner short."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "stop_loss_pct": 15.0,
+      "thesis": "Momentum-breakdown thesis has already delivered (-34% 3m) but decelerated sharply to -2.8% over the last month while gold stabilizes near $4,000 support with retail dip-buying and record Chinese import demand -- trim the short and tighten the stop to lock in gains against reversal risk."
+    }
+  ],
+  "cash_pct": 32,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Sector-relative-value rotation is confirmed working (XBI and KRE both showing accelerating, news-backed momentum) so add to the strongest expressions and trim the laggard (XLF vs KRE). The crypto momentum-breakdown shorts have lost their premise -- ETH is +20.3% over 30 days on a Morgan Stanley spot-ETF launch and SOL has stopped declining -- so both perp shorts are closed outright rather than held into a reversal at 3x leverage. GDX short has already captured most of its move (-34% 3m) but is decelerating (-2.8% 1m) against a stabilizing gold price, so it's trimmed and the stop tightened to lock in gains. Freed capital lands mostly in cash, which is explicitly part of the mandate and now earns 4% APY risk-free.",
+  "novelty": "Zero same-direction ticker overlap between the two books: Round 2 is long mega-cap quality compounders (MSFT/GOOGL/AVGO/LLY/V/MA/COST/UNH) plus a small-cap short hedge, while Round 3 is long financials/biotech/small-caps (XBI/KRE/XLF/IWM) plus a gold-miner short; the only shared ticker, IWM, is held on opposite sides (short in Round 2, long in Round 3), so same-direction gross-weight overlap is 0%, far under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked fresh earnings/news for every held name and every relevant sector proxy as of the 7/29 close. Round 2 book: MSFT reported a blowout FQ4 (rev $90.0B vs $87.6B est, EPS $4.74 vs $4.24 est, Azure +41% past a $100B run-rate, stock +8.8% after-hours to $425) plus extended data-center useful life to cut 2026 capex while holding spend guidance -- strongest print in the book. V beat Q3 (+14% rev, +11% EPS) with price-target hikes (JPM to $450). UNH beat-and-raised, hit a 52-week high, and got target raises from JPM/WFC/MS to $516-529 vs a $420 price -- the contrarian pick is working. LLY posted strong Phase 3 data for next-gen obesity drug retatrutide (up to 56lb weight loss), filing targeted Q1'27. AVGO announced a $200B Samsung memory/foundry MOU but stock was soft (-2.8%) with no earnings confirmation until Sept 3. GOOGL, MA (reports today), COST all steady/in-line, no thesis change. IWM (short leg) still up 30% 12m -- hedge thesis intact. Round 3 book: XBI momentum accelerating (near 52wk high, $106B in H1 biotech M&A, healthcare framed as the 'haven' sector vs expensive AI tech). KRE outperforming XLF badly (regional banks +26% 12m vs broad financials +8.5% 12m), press explicitly framing regional/community banks as the cheaper AI-banking-boom play with a lending/fee surge and deregulation tailwind -- classic relative-value signal to rotate within the sector. IWM breadth trade still running (+30% 12m). GDX short has already captured the big move (-34% 3m) but decelerated hard to -2.8% over the last month while gold (GLD) is stabilizing near $4,000 support with retail dip-buying and record Chinese import demand -- reversal risk rising, so trimming and tightening the stop. Biggest finding: the crypto short thesis has broken. ETH is +20.3% over 30 days with Morgan Stanley launching a spot ETH ETF (a major institutional-adoption catalyst) directly contradicting the 'confirmed downtrend, no reversal signal' short thesis; at 3x leverage that move would already have this position near or through its -40% stop. SOL is flat-to-up over 30d/3m (not continuing its prior collapse). Both perp shorts no longer match their stated momentum-breakdown logic, so both are closed."
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Conviction long in AI infrastructure recovery (3x semis/tech), crypto capitulation reversal, EM rotation into beaten-down China and broad emerging markets, plus Japan regional diversification; 24% cash buffer for weekly rebalancing.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1.22,
+      "thesis": "Maintain AI infrastructure optionality with reduced leverage exposure; eliminate daily rebalancing bleed destroying capital during thesis validation period; semis fundamentals strong but technical exhaustion warrants smaller position",
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1.22,
+      "thesis": "Maintain Nasdaq upside exposure optionality but minimize leverage drag during technical consolidation phase; QQQ exhaustion signals suggest holding smaller size pending reversal confirmation",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "BTC",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 12.2,
+      "thesis": "Capitulation reversal thesis validating; $60-64k represents typical 70%+ bear market drawdown level seen in cycles; recovery to $80-90k+ offers material upside; increased conviction sizing while avoiding leverage; patient positioning for multi-month reversal without leverage bleed",
+      "stop_loss_pct": 35.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4.88,
+      "thesis": "Reduced China positioning from 18% due to broken rotation thesis; evidence shows capital flowing OUT of China to other EM; tactical hold awaiting stimulus response and technical consolidation; lower weight reflects uncertainty",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "IEMG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.76,
+      "thesis": "Reduced broad EM concentration to avoid China drag; evidence shows EM ex-China outperforming +38% vs China weak; maintains emerging market diversification thesis while reducing concentration in underperforming geography",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.93,
+      "thesis": "Increased Japan allocation due to strong validation (+36% YTD, all-time highs); despite recent 2-day Nikkei pullback and yen currency headwind, Japan regional diversification thesis most clearly working; momentum and Bank of Japan normalization support continued upside",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "USDC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 23.79,
+      "thesis": "Increased cash buffer from 30% to 39% for tariff uncertainty (Aug 1 deadline) and market volatility amid technical exhaustion signals; provides dry powder for rebalancing opportunities and reduces forced leverage exposure during consolidation phases"
+    }
+  ],
+  "cash_pct": 39,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Round 2 down 4.42% with breaking theses. China rotation thesis falsified - evidence shows EM ex-China up 38% vs China dragging; reducing China/EM concentration harmful to capital. BTC capitulation thesis validating ($60k is major bear low) but needs patient positioning, not leverage drag. Tech exhaustion signals real (QQQ technical breakdown, tariff deadline, seasonal headwind) - reducing leverage bleed from SOXL/TQQQ allows capital to work on real convictions. Japan thesis working (+36% YTD) - increase allocation. Rebalancing maintains core mandates (crypto, AI, EM, Japan) while reducing concentration in broken themes and leverage drag, improving risk-reward.",
+  "research_notes": "Researched current market conditions (late July 2026). Key findings: (1) Bitcoin at $63-64k represents ~50% bear drawdown from $126k peak - capitulation thesis validating but reversal uncertain given ETF outflows and Fed holding rates; (2) Tech/AI shows exhaustion signals (QQQ -10% from peak, technical breakdown, MACD crossover) despite strong TSMC/NVIDIA earnings, with Aug 1 tariff deadline adding headwind; (3) China rotation thesis falsified - EM ex-China up 38% YTD while China drags; capital rotating OUT not IN; (4) Japan performing well (EWJ +15-36% YTD, hitting all-time highs) but recent 2-day Nikkei pullback; (5) Value/dividend rotation accelerating (flows $1.96B into financials, $1.47B into healthcare; XLF/XLE/XLV all strong); (6) Financial sector dividend yields at 5.69% average with subsectors higher (9%+). Round 3 strategy validating perfectly (+0.91% with -0.42% max drawdown). Round 2 down 4.42% with broken theses (China rotation, tech leverage drag).",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 39; scaled by 0.6100 to sum to 61 (relative sizing preserved, declared cash kept)"
+}

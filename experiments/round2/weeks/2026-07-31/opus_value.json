@@ -1,0 +1,74 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Highest-conviction validated value long, raised 12->16%. Q2 beat consensus by 31% with raised guidance and PT hikes from JPMorgan, Wells Fargo and Goldman; still only 27x with a $475 target vs $420 spot. The mean-reversion thesis has been confirmed by fundamentals, not just price, so it earns the largest weight in the book."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 45.0,
+      "thesis": "Raised 7->15%. Fell 16% in one session yet still +242% YTD, so the compounding decay of a 3x fund now has a real fundamental driver behind it: Chinese state-backed mass production and doubts about AI capex durability, with Morgan Stanley flagging a hard remainder of 2026. Sized to be my second-largest line but deliberately not larger, with a 40% stop, because a 3x instrument can rally violently and my mandate was written after backtests showed unbounded shorting kills portfolios."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Raised 8->12%. Up 3.79% on a red tape, 21.9x earnings with net income +29%, a $1.6bn VA contract, and a $242 consensus target implying 28% upside. The AI-disruption discount is starting to close and this is the cheapest way to own that closing."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Raised 7->11%. Up 5.72% in a single session, trading at 15.1x with revenue +11.5% and earnings +28%. It is the most extreme valuation dislocation I can find in profitable quality software, which is precisely the asymmetry my mandate exists to buy."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Held flat at 11%. Defending the $4,000 gold level after five weeks of consolidation with early signs of a bullish reversal, +21.5% YTD, and it is the one line that works if the semiconductor unwind turns into a broad risk-off rather than the orderly rotation I am positioned for."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Raised 9->10%. Beta 0.57, +25% over the past year, explicitly described as the destination for investors leaving tech, and upgraded to positive by State Street for Q3. Diversifies my single-name UNH risk while riding the same rotation."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 25.0,
+      "thesis": "Held flat at 8% and now the entire crypto core. It is the only crypto showing actual mean reversion, +17.6% over 30 days, still 61% below its all-time high, with a genuine institutional catalyst in Morgan Stanley's new Ethereum ETF. Stopped at -25% because deeply oversold assets can still trend down."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut 13->6%. Still the most resilient crypto and 49% off its high, so a residual oversold long remains consistent with the mandate, but persistent ETF outflows and a Fed on hold give it no near-term catalyst. It no longer deserves to be a top-three weight."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The rotation my mandate was built for has arrived and the evidence now separates my winners from my dead money cleanly. Confirmations: UNH beat Q2 by 31% and raised guidance with a $475 target vs $420 spot; CRM +3.79% and ADBE +5.72% on a day SPY fell 1.54%, with ADBE at 15x and CRM at 22x \u2014 the 'AI kills software' fear trade is visibly unwinding; XLV is being called a haven for investors ditching tech and State Street upgraded healthcare to positive. Meanwhile SOXL fell 16% in a single session on a genuinely structural catalyst (Chinese state-backed chips in mass production, AI-capex sustainability doubt) while still sitting on +242% YTD \u2014 my short is no longer just a leverage-decay valuation view, it has a fundamental driver. So I concentrate into the four validated value longs and roughly double the SOXL short. Against that, crypto is where my losses live and it has no catalyst: BTC is 49% off its high with ETF outflows, SOL is 75% off its high and still falling. I cut BTC in half, exit SOL entirely as a failed mean-reversion, and exit the BTC perp because paying 10% APR funding to be long a bleeding asset is a pure tax I no longer need now that sizing is free. I keep ETH at full weight because it is the one crypto actually mean-reverting (+17.6% over 30 days) with a real institutional catalyst. GLD stays as the hedge that has earned its place. Free sizing does not mean maximum sizing: my mandate explicitly warns that momentum-shorting is a portfolio killer, so the SOXL short goes to 15%, not 40%, with a 40% stop that caps the damage at roughly 6% of NAV if JPMorgan's buy-the-dip call proves right.",
+  "research_notes": "Researched the 2026-07-29 close via live web sources. Core finding: a violent sector rotation out of semiconductors and into value/defensives. SOXL closed -16.0% at $91.99 (still +242% YTD), NVDA -3.55% at $190, XLK -2.64% at $166.57, SPY -1.54% at $729.46 after the FOMC held rates. Drivers cited: doubts about the sustainability of AI capex, a Chinese state-backed firm beginning mass production of competitive chips, and rising memory costs forcing NVIDIA to cut memory in Vera Rubin systems. Morgan Stanley warns of a hard remainder of 2026 for semis; JPMorgan calls it a buying opportunity. The money leaving semis went into exactly what my contrarian book owns: CRM +3.79% at $188 (21.9x, net income +29%, $1.6bn VA contract, $242 target), ADBE +5.72% at $263 (15.1x, revenue +11.5%), XLE +1.88% at $58.65 (+37.3% 1yr, record refiner margins, US-Iran oil tension), XLV -0.61% but +25% 1yr and explicitly described as a haven for investors ditching tech with State Street upgrading healthcare to positive for Q3. UNH at $420 (-1.9% on the day) beat Q2 consensus by 31% and raised guidance, triggering PT raises from JPMorgan, Wells Fargo and Goldman; 27x with a $475 consensus target. GOOGL +0.90% at $336.71 on 16.7x with trailing net income +111% and a $428 target. AAPL $338.19 (-0.56%) just off a 52-week high of $344.57 at 41x, reports fiscal Q3 on 2026-07-30, and its consensus target of $321.66 sits below spot. Crypto: BTC $64,139, 49% below its $126,080 October 2025 ATH, stalling after the Fed hold amid ETF outflows, -2.9% on the week. ETH $1,916, 61% below ATH but +17.6% over 30 days on Morgan Stanley launching an Ethereum ETF. SOL $74.04, 75% below its $293 ATH and -5.0% on the week. GLD $371.08 (+0.46%), +21.5% YTD, defending the $4,000 gold level after five weeks of consolidation with early bullish reversal signals. Critically for my momentum book, SPMO ($136.37, -3.25%, 16% below its 52-week high) holds 51% of assets in its top ten led by Micron 10.33%, NVIDIA 8.18% and Broadcom 6.76% \u2014 it is a semiconductor fund in momentum clothing. GDX at $73.57 is 37% below its 52-week high despite a +40.9% one-year return, so gold miners are not a current leader and I passed on them."
+}

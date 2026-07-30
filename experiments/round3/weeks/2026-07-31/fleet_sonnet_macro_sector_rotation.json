@@ -1,0 +1,84 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Biotech momentum has rolled over (-6.6% 1mo, -2.75% 3mo) versus the original 'strongest leader' setup; trimmed from 15% to 8%, kept as a small catalyst-optionality sleeve rather than a core position.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Healthcare re-rating firmly confirmed (+7.3% 1mo); sized up from 12% as the clean defensive-quality rotation the mandate wanted.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Financials rotation strongly confirmed (+7.5% 1mo) on credit/NIM improvement; sized up from 12% to press the winner.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks continuing to confirm the broader financials rotation alongside XLF; held at 10%.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Low-vol defensive sleeve trimmed from 10% to 6% to fund higher-conviction adds now that the short book is generating its own ballast.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 16,
+      "thesis": "The mandate's highest-conviction call: semis/AI-capex momentum-reversal is firing hard (-20.2% 1mo, -8.7%+ in recent single sessions); sized up from 10% to 16% as the single largest position in the book.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Discretionary laggard thesis intact (-1.65% 1mo, -7.63% 3mo) with no stabilization signal; sized up modestly from 8%.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "crypto",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "6-month momentum breakdown thesis intact (-37.7% 6mo) but 1-month move has stalled (-0.58%), so held flat at 5% rather than added to; shorts pay no funding, so cost of carry to stay patient here is minimal.",
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The mandate's core short leg (semis/AI-capex) is playing out forcefully -- SMH -20.2% 1mo, and the healthcare/financials long legs are both confirmed winners (XLV +7.3% 1mo, XLF +7.5% 1mo). XBI has rolled over (-6.6% 1mo, -2.75% 3mo, momentum leadership no longer intact per the mandate's own catalyst-driven logic) so I trim it and the defensive SPLV sleeve to fund bigger allocations to the names actually working: XLV, XLF, and especially the SMH short, which is the strongest signal in the whole book. XLY short and the SOL-USD momentum-breakdown short stay roughly as-is -- discretionary is grinding lower as expected, and SOL's breakdown has stalled short-term so I'm not adding there.",
+  "novelty": "Zero symbol overlap with the Round-2 book (IWM/XLI/TLT/FXI/GLD long, SOXL short vs. XBI/XLV/XLF/KRE/SPLV long, SMH/XLY/SOL-USD short) -- same-direction gross-weight overlap is 0%, well under the 50% cap; the two books express the shared 'AI-capex is correcting' view through entirely distinct vehicles (SOXL vs SMH) sized independently to each mandate.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Web search budget was exhausted session-wide, but WebFetch against Yahoo Finance/stockanalysis pages worked and gave live prices + 1mo/3mo/6mo trailing performance plus embedded news snippets as of 2026-07-29/30 close. Key findings: an AI-capex/semis unwind is in full swing -- SMH -20.2% 1mo (-4.8% just on 7/29), SOXL (3x) -61.1% 1mo, described in press as 'the chip crash exposing the brutal cost of leverage.' CAT is down -24.2% 1mo (-6.9% on 7/29) after a Baird downgrade citing regulatory pushback on data-center power-generation demand -- i.e., CAT got hit by the same AI-capex backlash it was supposed to benefit from as a broad industrial-capex play. XLI -1.2% 1mo (-3.2% on 7/29) and IWM -3.5% 1mo are both soft amid the broader risk-off spillover. On the other side, FXI is up +12.9% 1mo (EM/China rotation working cleanly), GLD +0.7% 1mo and holding above $4000/oz spot despite a rough prior quarter (dollar-debasement/safe-haven thesis intact), XLV +7.3% 1mo and XLF +7.5% 1mo are both strong (healthcare/financials rotation firmly confirmed), XLY -1.65% 1mo/-7.6% 3mo (discretionary laggard short thesis working), and SOL-USD is roughly flat 1mo (-0.6%) but still down -37.7% 6mo (momentum breakdown thesis intact but stalled short-term). Could not confirm the exact July FOMC outcome (Fed press-release page had no accessible decision text, CNBC blocked, search budget exhausted) so I treated the equity action as AI-capex-driven rather than a confirmed dovish/hawkish surprise. Net read: both books' short-AI-infra/semis legs and dollar-debasement/rotation legs are working strongly and get sized up; the capex-linked cyclical longs (CAT especially) and the biotech long (XBI, which has rolled over) get cut or trimmed."
+}

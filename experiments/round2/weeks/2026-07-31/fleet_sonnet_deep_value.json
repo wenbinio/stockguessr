@@ -1,0 +1,71 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and run a small levered short-BTC hedge against a continuing crypto bear, holding sizable cash for drawdown buys.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Integrated energy major, FCF yield still attractive; trimmed ahead of 7/31 earnings after a 30% YTD run and a BofA downgrade-to-Neutral flagging limited near-term upside."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Still cheap at 15.3x P/E with a 10% dividend hike, but trimmed after today's -3.5% drop and Dimon's macro caution ahead of the Fed."
+    },
+    {
+      "symbol": "GM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Q2 beat (EPS $3.57, revenue $48B) with raised full-year guidance and truck/SUV margin strength confirming the deep-value thesis; sized up on momentum."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Q2 EPS beat estimates by 56% YoY, FY guide raised to $19.50-20.00; mean-reversion off the medical-cost-fear lows is playing out, added modestly."
+    },
+    {
+      "symbol": "PFE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "6.8% dividend yield, still deep value at 19x; held unchanged into the 8/4 earnings print."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Small-cap value beta trimmed after a stalled catch-up trade (-3.5% 1mo, -1.8% 3mo despite +16% YTD)."
+    },
+    {
+      "symbol": "F",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Q2 beat, raised profit guidance, largest military contract in decades, Citi upgrade to $20 PT; added on confirmed momentum and a 4.1% dividend yield."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 8,
+      "leverage": 3,
+      "thesis": "Small levered hedge kept unchanged; multi-quarter crypto downtrend intact (-24% 6mo, -46% 1yr) despite a recent 1mo bounce, sized so only a further BTC surge stops it out."
+    }
+  ],
+  "cash_pct": 16,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Deep-value cyclical rotation thesis is confirmed by the tape: XOM +30% YTD/+15% 1mo on the Mideast oil spike (earnings due 7/31, BofA cut to Neutral on 'limited upside' near its new $158 PT vs $156.75 spot -> trim into the print); GM +8.9%/1mo and F +9.0%/1mo both beat and raised guidance (F also landed a large military contract, Citi upgrade) -> add to both; UNH crushed Q2 (EPS beat 56% YoY, raised FY guide, +27% YTD) -> modest add, valuation has already re-rated some so not oversizing; JPM fell 3.5% today with Dimon flagging macro/valuation caution and 'bank stocks drop from highs ahead of Fed' -> trim; IWM is -3.5% 1mo despite +16% YTD, the small-cap catch-up stalled -> trim; PFE unchanged, earnings 8/4 still pending; BTC short hedge kept small per mandate despite a +6.3% 1mo BTC bounce since the multi-quarter downtrend (-24%/6mo, -46%/1yr) is intact. Net effect: rotate weight from stretched/weakening names into names with freshly confirmed catalysts, and raise cash slightly for the mandate's drawdown-buying dry powder.",
+  "research_notes": "Read the account packet (Round 2 NAV $1,031.56 +3.16%; Round 3 NAV $1,021.14 +2.11%). WebSearch was already exhausted for the session, so I used WebFetch against Yahoo Finance quote pages for live prices/performance/news as of 2026-07-29 close: XOM (+30% YTD, +15%/1mo on Mideast oil spike, earnings 7/31, BofA cut to Neutral), JPM (-3.5% today, Dimon macro caution, bank stocks weak pre-Fed, still 15.3x P/E), GM (Q2 beat, raised guidance, +8.9%/1mo), F (Q2 beat, raised guidance, large military contract, Citi upgrade, +9%/1mo), UNH (Q2 EPS beat 56% YoY, raised FY guide, +27% YTD), PFE (earnings pending 8/4, 6.8% yield, muted YTD), IWM (+16% YTD but -3.5%/1mo, catch-up trade stalled), BTC-USD (-27% YTD, -46%/1yr, but +6.3% 1mo bounce), XLK (-10.2%/1mo, cracks widening), SMH (-20.2%/1mo, sharp reversal), XBI (-2.75%/1mo, -6.6%/3mo, momentum reversed from entry), GDX (-4.1%/1mo, -2.8%/3mo, bounce thesis not confirmed), USMV (+2.2%/1mo, low beta as designed). SPLV quote failed to load (503) so left unchanged as a proxy for USMV's behavior. Used this to resize both books: Round 2 rotated weight from stretched/weakening names (XOM ahead of earnings, JPM pre-Fed, stalled IWM) into names with freshly confirmed catalysts (GM, F, UNH) and raised cash modestly. Round 3 pressed the two shorts that are working (XLK, SMH) and cut back the two longs whose mean-reversion/momentum theses have not yet confirmed (GDX, XBI), funding a higher cash-carry balance."
+}

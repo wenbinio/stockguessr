@@ -1,0 +1,89 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Min-volatility equity is the core equity-risk-premium sleeve and it is earning its keep: +2.2% 1w and +2.3% 1m while SPY fell 2.4% on the week. Lowest volatility in the basket, so inverse-vol weighting hands it the largest allocation."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "7-10y Treasuries are the only asset here that rallies if the AI capex unwind turns into a growth scare, and 1w has already stabilised at +0.1%. Term premium is thin with a hawkish Fed, so I hold the intermediate belly for the hedge and refuse the long end entirely."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 6.0,
+      "thesis": "Credit-spread carry at roughly a 7% yield remains the book's income engine and spreads have not actually widened yet (3m flat). Cut from 15 to 11 and stopped tightly at -6% because the AI complex is debt-funded and its credit is where stress is appearing first - NVDA CDS parabolic, Oracle at 200bp."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 10.0,
+      "thesis": "Gold stays as the low-correlation real-asset diversifier and best hedge against the AI-credit tail, and its 1m has turned marginally positive (+0.7%) after a rough quarter. Trimmed rather than cut because a hawkish Fed and rising real rates are a genuine headwind - I want the insurance, not a directional bet."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Low-volatility equity alongside USMV: +1.8% 1w, +2.8% 1m, +5.2% 3m. Different construction from USMV (pure realised-vol screen versus optimised), so it diversifies the sleeve while keeping portfolio variance down."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Consumer staples as the defensive dividend-carry sleeve, +3.5% on both 1w and 1m. Takes over the bond-proxy income role from utilities with similar yield, similar beta and none of the AI-datacenter-power exposure."
+    },
+    {
+      "symbol": "XLRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "REITs harvest rent carry and are quietly working: +2.1% 1w, +2.3% 1m, +13.2% 6m. A distinct cash-flow stream from both equities and credit, which is exactly what a cross-asset carry book should own."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Energy is the strongest 1m sector at +9.5% with +19.7% on 6m and pays real dividend and FCF carry. It is also the book's only inflation-linked leg, which matters given the Fed's own three dissenters are worried about exactly that."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "+8.4% 1w, +7.8% 1m, +14.4% 3m, +22.7% 6m on a stable dividend. Defensive dividend carry with the strongest trend of any staple - the single-name expression of where low-beta money is actually going."
+    },
+    {
+      "symbol": "T",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Telecom yield carry with momentum: +3.9% 1w and +11.2% 1m on a high dividend. Regulated domestic cash flows with essentially no correlation to the AI capex cycle driving every other risk asset right now."
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The carry book has done its job - flat at +0.05% with a -0.75% max drawdown while the Nasdaq entered correction - but three of its four carry sleeves have stopped paying and I would rather fix them now than collect a coupon into a drawdown. First, duration is not being paid: TLT -4.9% on 1m and IEF -1.7%, with the Fed on hold against THREE dissents and Warsh talking hawkishly. Term premium is a thesis about being compensated for rate risk, and right now I take the risk without the compensation, so TLT goes entirely and IEF stays only as the genuine risk-off hedge if this AI unwind becomes a growth scare. Second, the insight I actually care about: XLU is no longer a bond proxy. It was quietly repriced over the past year as the AI-datacenter-power trade and is now unwinding with the rest of it - SRE -5.4% 1m, AEP -6.2%, XLU -2.4% 1m. Holding it as a 'defensive low-beta income' sleeve means holding hidden AI beta inside a book whose entire purpose is not to have any, so it goes and its income role passes to XLP, KO and T, which carry similar yield with actual positive momentum and no capex contamination. Third, GDX at -16.9% on 3m and -32.7% on 6m is not convexity, it is leverage pointed at a downtrending asset; I take the +4% bounce since the book was set and exit. I also cut SPY, because inverse-vol balancing says the equity risk premium should come from USMV and SPLV, up 2%+ on the week while SPY fell 2.4%. HYG comes from 15 to 11 with a tight stop: high yield still pays its ~7% coupon, but with NVDA's CDS parabolic and Oracle's at 200bp the AI complex's debt is the fattest tail in credit and I want a defined exit rather than a thesis. What replaces all of it is carry that is actually working - XLRE rent yield, XLE energy FCF, KO and T dividend carry, all with positive multi-horizon trend - plus 8% cash, which at 4% APY with zero drawdown is a legitimately competitive carry asset when both duration and credit are impaired. Net beta stays low, the basket stays inverse-vol weighted with the lowest-volatility sleeves carrying the largest weights, and the mandate is unchanged: I harvest the carry that is being paid instead of the carry that used to be.",
+  "novelty": "This book shares only 15 points of same-direction gross weight with my Round-2 book (XLP 8 and XLE 7, about 16% of gross, far under the 50% limit): Round 2 is a concentrated long/short momentum spread that is short 18% of semis, Oracle and Tesla and long single-name trend leaders (AAPL, RTX, LMT, XLV, VZ), while Round 3 holds none of those, runs no shorts at all, and is built from instruments Round 2 does not touch - USMV, SPLV, IEF, HYG, GLD, XLRE, KO and T - as a long-only inverse-vol cross-asset carry basket.",
+  "r2_overlap_pct": 16.1,
+  "research_notes": "WebSearch budget was exhausted, so I pulled fresh daily bars myself from the Yahoo chart API (last equity close 2026-07-29, crypto live 07-30) for ~130 ETFs/stocks, computed 1w/2w/1m/3m/6m trend plus performance since each book was set, then read news via the Yahoo news endpoints and WebFetch.\n\nREGIME: a violent AI-capex unwind. SOXX -16.3% 1w / -24.3% 1m; SMH -14.1/-20.2; semi-cap destroyed (AMAT -21/-37, LRCX -21/-39, KLAC -21/-39, MU -23/-35, ASML -14/-18, ALAB -25/-45, VRT -26/-27). SOXL -42.9% in ONE week, -61% 1m. MTUM (the momentum factor ETF itself) -9.9% 1w / -15.7% 1m: a textbook crowded-momentum crash, not a dip.\n\nCATALYSTS CONFIRMED: (1) Meta 07-29/30 - revenue beat $60.8bn but EPS missed 14%, costs +55%, FREE CASH FLOW COLLAPSED 91% to $784m, FY capex guided to $130-145bn; stock -10%, framed as \"a broader earnings-season pattern in which AI infrastructure spending is unsettling investors.\" The market has flipped the sign on capex: spending is now punished. (2) Fed held with THREE dissents; Chair Kevin Warsh's comments \"sent the stock market tumbling\"; \"Dow sees worst day in over a year, Nasdaq enters correction territory.\" VIX 20.66, +13.5%. (3) AI CREDIT cracking - Burry flags NVDA 5Y CDS parabolic; Oracle default insurance hit 200bp at a 52-week low. (4) Qualcomm tepid guide; Japan earthquake hit TSMC/Toyota ops; Kospi selloff; \"$2 trillion AI rout.\"\n\nWHERE MONEY IS GOING (positive 1w AND 1m AND 3m): Healthcare cleanest - XLV +4.3/+3.4/+16.1 (ABT +7.4/+17.3, TMO +9.5/+13.8, HCA +9.8, AMGN +5.9/+7.5, ABBV 3m +34, LLY 3m +39). Staples XLP +3.5/+3.5/+5.9 (KO +8.4/+7.8/+14.4, PM 3m +21, KMB 3m +17). Defense post-earnings drift: RTX +10.5/+14.9/+23.0, LMT +10.7/+13.4/+11.8. Energy strongest 1m sector: XLE +9.5% 1m / +19.7% 6m (XOM +15.2% 1m). Telecom carry VZ +6.6/+8.9/+24.0 6m, T +3.9/+11.2. Low-vol USMV +2.2/+2.3/+5.2, SPLV +1.8/+2.8/+5.2; XLRE +2.1/+2.3/+13.2 6m. AAPL is the best large-cap trend in the universe (+3.8/+20.0/+25.0/+31.2, just crossed $5tn) precisely because it is the anti-capex tech name - but it reports tonight (07-30), so I sized it modestly rather than heroically.\n\nCLEANEST SHORTS (negative on EVERY horizon = true time-series momentum, not a stretched short): ORCL -6.4/-20.0/-28.8/-32.2 with CDS 200bp and Ellison backstopping $40.4bn of a media deal; TSLA -20.2/-27.6/-20.7/-30.8, worst week since 2022 as investors balked at robotaxi/AI spending. Semis (SOXX/SOXL) are still positive on 3m/6m, so I sized that leg smaller and stopped it - that is where squeeze risk lives.\n\nCRYPTO: my original short-crypto sleeve has lost its edge. BTC 1m now +2.6%, ETH +9.7% 1m / +2.8% 1w; only SOL still trends down. The persistent BTC/ETH downtrend has flattened, so I will not pay borrow and slippage to re-express it.\n\nRATES/GOLD for the carry book: duration is not being paid - TLT -4.9% 1m, IEF -1.7% 1m, hawkish Fed with three dissents. XLU (-2.2/-2.4) is no longer a clean bond proxy: it is contaminated by the AI-datacenter-power narrative now unwinding (SRE -5.4% 1m, AEP -6.2%). GDX -16.9% 3m / -32.7% 6m is a broken trend, not convexity. Cash at 4% APY is a genuinely competitive carry asset with zero drawdown."
+}

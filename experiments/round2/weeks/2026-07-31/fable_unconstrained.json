@@ -1,0 +1,45 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Dual-momentum: long 6m leaders that are NOT in sharp 1m correction (cyber-tilted), small unlevered BTC mean-reversion, no leverage, fat cash at 4%",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 15.0,
+      "thesis": "Cyber breakout leader +75% YTD near 52w high; holding while AI trade cracks \u2014 passes both momentum filters; add on relative strength."
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 15.0,
+      "thesis": "Strongest 1m momentum in the book (+25% 1m) on platform consolidation and 31% revenue growth; passes both filters."
+    },
+    {
+      "symbol": "FTNT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 15.0,
+      "thesis": "+109% YTD on 31% billings growth (AI/OT security demand); uptrend intact, unaffected by semi correction."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Spot mean-reversion ticket ~48% off ATH at ~$64.5k; unlevered, no funding or liquidation risk; unchanged (no re-trade cost)."
+    }
+  ],
+  "cash_pct": 41,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Mandate-driven resize, not a rebuild. VRT already stopped out (-20% fired 7/29) and I will not re-enter a name in freefall. ANET now fails my second filter \u2014 sharp 1m correction (-6.4% on 7/29, AI-infra contagion, heavy insider selling) \u2014 so it is cut per the dual-momentum rules. The cyber sleeve is the only 6m leadership pocket NOT in 1m correction (holding near highs while the AI trade cracks), so I add to it modestly with the freed capital, with -15% disaster stops since momentum books die by crash. BTC mean-reversion ticket unchanged (~48% off ATH, no funding cost, no new adverse info). Remaining 41% sits in cash at 4% \u2014 consistent with my 'fat cash' mandate and prudent with a Fed hike now ~60% priced by September and index in correction.",
+  "research_notes": "Checked market news for 2026-07-29/30: Nasdaq 100 in correction (-11% from June peak) on chip selloff (China chip-tech breakthrough + AI-capex-peaking fears); Dow -2.19% Jul 29, worst since Apr 2025. Warsh Fed held with 3 hawkish dissents; ~60% odds of a hike by Sept; VIX +10% to ~20 (still contango vs VIX3M as of Jul 24). MSFT +7% AH on higher FY27 capex guide; Meta EPS miss; AAPL/AMZN tonight. Cybersecurity is holding near highs while AI cracks (CRWD +75% YTD near 52w high, PANW +25% 1m, FTNT +109% YTD) \u2014 passes both dual-momentum filters. ANET now in sharp 1m correction (-6.4% Jul 29, heavy insider sales) \u2014 fails my filter. BTC ~$64.5k, ~48% off ATH. R3: UNH beat-and-raise Jul 16 (guidance up to $19.50-20.00 EPS); gold ~$4,100, -27% from Jan record with CB bid intact; EWZ +48% 1y on Selic cut cycle but faces hawkish-Fed dollar headwind."
+}

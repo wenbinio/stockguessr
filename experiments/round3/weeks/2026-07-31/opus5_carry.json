@@ -1,0 +1,64 @@
+{
+  "name": "Opus 5 carry",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "A 10-leg cross-asset carry book that earns spread and premium income rather than price appreciation - structured credit (JAAA/CLOZ), agency-MBS-vs-repo carry (NLY), EM currency and sovereign carry (EMLC/EMB), high-yield spread (SPHY), equity and VIX variance premium (SPYI/SVXY) and midstream distributions (AMLP) - funded by 13% cash at 4% APY, with the only short expressed as a 3%-margin 3x BTC perp because perp shorts pay 0% financing in this engine while equity shorts carry a ~7% all-in drag.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JAAA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 40,
+      "stop_loss_pct": 10.0,
+      "thesis": "The anchor, now sized to conviction. AAA CLO tranches at roughly SOFR+120bp and a 5.5% distribution with effectively zero duration - the only carry on the board whose coupon RISES if the Fed delivers the hike futures now price at ~60% by September, and which loses nothing if it doesn't. Collateral is improving, not deteriorating: LSTA trailing loan defaults have fallen to 3.5% from 4.3%. AAA CLO has never defaulted in thirty years, including 2008 and 2020. The only real risk is a liquidity gap, which is what the wide -10% stop is for; a tighter stop would just whipsaw me out of the safest income in the book."
+    },
+    {
+      "symbol": "AMLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 20.0,
+      "thesis": "Real-asset cash yield, and the one leg the oil shock pays rather than punishes. 7.8% distribution just raised to a record $1.03 per quarter, every top holding raised in H1, +17% YTD, coverage guided through 2027. Revenue is fee-based and volume-linked with LNG exports at max capacity and data-center power demand adding multi-year throughput; $100 Brent eliminates the stated bear case that sub-$60 crude chokes producer activity. Five years of above-target inflation is a tailwind here, not a headwind, because midstream contracts escalate with it."
+    },
+    {
+      "symbol": "CLOZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 15.0,
+      "thesis": "BBB/BB CLO mezzanine at roughly 9% floating - the same improving loan collateral as JAAA, paid for taking subordination instead of duration. A deliberate second helping of the regime's best carry at a higher point on the risk curve, justified by a loan default rate that is falling rather than rising. Held at 15% rather than matching JAAA because subordination can gap wider in a risk-off even when the collateral is fine."
+    },
+    {
+      "symbol": "SPHY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "US high-yield corporate spread at roughly 7% with short duration - the plain-vanilla credit risk premium, supported by defaults falling toward 3%. Raised only modestly because at ~285bp of spread this is the richest and most crowded of the carries, so it earns a place but not size."
+    },
+    {
+      "symbol": "SPYI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "thesis": "Equity variance risk premium, halved rather than kept. Writing index calls at VIX 18 collects a richer premium than at VIX 14, which is why the leg survives at all. But the structure is long index beta with capped upside, and with the Nasdaq 100 in correction and AMLP already supplying equity beta, the honest size for a premium-income leg in a downtape is small."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 5,
+      "leverage": 3,
+      "stop_loss_pct": 60.0,
+      "thesis": "A financing-spread expression that doubles as the book's beta hedge. Perp shorts are charged 0% funding in this engine while longs pay 10% APR and equity shorts pay 3% borrow on top of 4% forgone cash yield, so short beta is roughly seven points a year cheaper in this form. 15% of notional hedging an 85% gross risk book for 5% of NAV in margin, against an asset 42% below its January-2025 high with ETF outflows, a hawkish Fed, and Citi cutting its target to $82k from $112k. Left at 3x: liquidation needs a ~32% rally and the -60% stop caps the loss near 3% of NAV well before that. Higher leverage would convert a hedge into a gamble."
+    }
+  ],
+  "cash_pct": 10,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The Fed's hawkish 29-July hold (three dissents to HIKE, ~60% odds of a higher target by September) splits my ten carry legs cleanly in two, and the freedom to size means I should stop pretending they are equally good. Floating-rate CLO carry gets a coupon UPGRADE from a hike at zero duration cost; three of my legs get hit twice by that same event. So I concentrate hard into the winners and cut the losers to zero rather than trimming everything by a token amount. RAISED: JAAA 16 -> 40, the single best risk-adjusted carry available - SOFR+~120bp floating, 5.5% distribution, effectively zero duration, AAA CLO has never defaulted in thirty years, and the underlying loan default rate is FALLING (4.3% -> 3.5%). It reprices upward if the Fed hikes and loses nothing if it doesn't. Under the old caps I could not express that; I can now, so it becomes the anchor with a deliberately wide -10% stop that only fires in a 2020-style liquidity gap. AMLP 9 -> 16, the highest-conviction risk-carry and the one leg the oil shock pays rather than punishes: 7.8% yield, record $1.03 distribution just raised, +17% YTD, LNG and data-center volume tailwinds, and $100 Brent removes its only stated downside. CLOZ 13 -> 15 and SPHY 6 -> 8, second and third helpings of the same improving-collateral floating credit. BTC perp short 3 -> 5 (15% notional at 3x), the cheapest beta hedge in the engine at 0% funding, against an asset 42% off its high with ETF outflows and a hawkish Fed. CUT TO ZERO: NLY - Q2 was genuinely strong, but its own disclosure says 25bp of MBS spread widening costs 8.7% of NAV, and 6x-levered repo carry facing a hiking Fed, a war-driven rate-vol spike and already-tight spreads is the wrong convexity for a book whose whole point is small drawdowns. EMB - roughly seven years of duration into a 10y at 4.70% and rising, with heavy Gulf sovereign weight sitting on top of the Hormuz conflict. EMLC - shorting the dollar for a rate differential against a Fed the market prices to hike, with DXY firming. SVXY - VIX at 18 is not enough premium for short vol into a US-Iran shooting war. TRIMMED: SPYI 10 -> 6; still a real variance premium and richer at VIX 18, but it is long index beta with capped upside into a correcting tape and AMLP already supplies my equity beta. Cash 13 -> 10 because JAAA earns 5.5% for barely more risk than the 4% cash rate. Result: six legs, 90% gross, with 55% of NAV in floating-rate spread that gets BETTER if the Fed does what the market now expects. Turnover is roughly 65% one-way at ~2bps for equities, about 1.3bps of NAV - far cheaper than carrying the wrong duration into a hike.",
+  "novelty": "I manage no Round-2 book, so the overlap rule is not binding here, but this book is in any case a majority-new construction: four of ten legs (NLY, EMB, EMLC, SVXY - 30% of prior gross) are eliminated outright and the anchor is re-weighted 2.5x, converting a diversified ten-line yield spread into a concentrated floating-rate-and-real-asset carry expression.",
+  "research_notes": "Fed (29 Jul 2026): held 3.50-3.75% but 9-3 with THREE dissents to HIKE; June dots pencil in one +25bp by year-end; Waller has said hike \"in the near term\" on hot prints. Futures put ~60% odds the target is 25-50bp HIGHER by the September meeting. Inflation has run above target for five years (May CPI 4.2%, June cooled to 3.5%, core 2.6%). 10y Treasury 4.70% and rising (4.55% on 17 Jul, 4.63% on 23 Jul). Risk tape: S&P -1.52% to 7,316 on 29 Jul, Dow -2.19%, Nasdaq 100 into correction, Kospi -6%, VIX 18.2. Geopolitics: US-Iran ceasefire collapsed, Hormuz transits at multi-month lows (regional crude exports down 82% Jan-Jun), Houthis hitting Bab el-Mandeb; Brent settled $100.68, WTI $92.36. DXY ~101.3 and firming.\n\nLEG BY LEG: (1) JAAA - 5.5% distribution, primary AAA CLO liabilities SOFR+115/123bp, effectively zero duration, AAA CLO has never defaulted in 30 years; LSTA trailing loan default rate FELL to 3.5% (from 4.3% Sep-25), JPM index 3.04% (from 4.49% peak). A hike UPGRADES this coupon at zero price cost. (2) CLOZ - same improving collateral, ~9% floating. (3) AMLP - ~$53, 7.8% yield, quarterly distribution stepped to a record $1.03 from $1.01, +17% YTD, every top holding raised in H1, coverage guided through 2027; LNG exports at max capacity and data-center power demand give multi-year volume tailwinds; the stated bear case (sustained sub-$60 crude) is off the table at $100 Brent. (4) NLY - Q2 was GOOD (economic return 5.5%, BV +1.7% to $20.15, EAD $0.79 covering the $0.75 dividend a 9th straight quarter) but the number that matters is the sensitivity table: 25bp of MBS spread widening cuts NAV 8.7%. Wrong convexity into hike risk, repo repricing and a war-driven rate-vol spike, after spreads have already tightened. (5) EMB - ~7yr duration into a rising 4.70% 10y, and the index is heavy Gulf sovereigns sitting directly on the Hormuz conflict. (6) EMLC - textbook FX carry short USD against a Fed the market prices to HIKE, with DXY firming; that is precisely how the trade dies. (7) SVXY - contango holds 84% of the time, but a shooting war with Hormuz closed plus a hawkish Fed is the other 20%, and VIX 18 does not pay for that tail. (8) BTC - $63.7-64.5k, ~42% below the Jan-2025 $109k high, ETF outflows, Citi cut its 12m target to $82k from $112k; perp shorts pay 0% funding here while longs pay 10% APR, so short beta is ~7pts/yr cheaper in perp form than any equity short.\n\nCONCLUSION: the regime has one clear message for a carry book - own FLOATING-RATE, ZERO-DURATION spread, and sell the duration-and-dollar-dependent carries."
+}

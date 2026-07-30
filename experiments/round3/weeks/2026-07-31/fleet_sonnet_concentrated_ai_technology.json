@@ -1,0 +1,48 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25,
+      "stop_loss_pct": 12.0,
+      "thesis": "Confirmed multi-month breakout in biotech (+72% 1yr, technical breakout through resistance) powered by record 2026 M&A activity ($106B YTD, best since pre-COVID) and a rotation out of expensive AI/tech names into biotech/pharma as a defensive growth trade."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 10.0,
+      "thesis": "Confirmed regional-bank uptrend (+26% YTD, consolidating near 52-week highs) on broad Q2 lending growth, strong fee income, and dividend increases following positive Fed stress-test results; stronger and more concentrated signal than the broader financials sector (XLF)."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 20,
+      "stop_loss_pct": 15.0,
+      "thesis": "Confirmed breakdown: gold miners are ~37% off their 52-week high with bearish technical (engulfing) patterns flagged despite gold's own strong 2026 run, and analysts are warning against buying the dip - monetizing the technical downtrend rather than the still-solid miner fundamentals."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 22,
+      "stop_loss_pct": 8.0,
+      "thesis": "Confirmed structural downtrend in long bonds - price near 52-week lows, yields surging to multi-year highs on inflation/geopolitical risk data described as a 'clear warning' by bond-market commentary; direct short on the confirmed breakdown."
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The existing round-3 book (GOOGL/AMZN/META/PLTR/CRWD long, SMH short) is actually a second AI/semis-correlated book, which directly contradicts this mandate's own text: 'cross-sector momentum in biotech/financials/regional banks long, gold miners/long bonds/crypto weakness short, avoiding AI/semis entirely.' With unrestricted internet research now available I rebuilt the book to match the stated mandate rather than keep chasing the same AI theme as the round-2 book. Confirmed breakouts found: XBI (biotech) is up ~72% over 1yr, technical commentary flags a 'long-term breakout,' and there is a genuine rotation catalyst (record biotech M&A - $106B YTD - plus investors rotating out of expensive tech into pharma/biotech as a defensive AI-adjacent trade); KRE (regional banks) is +26% YTD, consolidating just under 52-week highs on strong Q2 lending/fee-income growth and post-stress-test dividend hikes - broad XLF is comparatively muted ('not a clear uptrend') so I concentrated the financials sleeve in the stronger regional-bank signal. Confirmed breakdowns found: GDX (gold miners) is down ~37% off its 52-week high with bearish technical patterns flagged by chartists despite a strong 2026 gold run - a name-level breakdown, not just noise; TLT (long bonds) is in a clean structural downtrend, sitting near 52-week lows on rising yields/inflation data, described by multiple outlets as a 'clear warning' signal. I found no confirmed crypto breakdown (BTC reads as consolidating, not trending down), so per the mandate's 'confirmed' standard I left crypto out rather than force a low-conviction short.",
+  "novelty": "Zero ticker overlap with the round-2 book: round 2 holds NVDA/MSFT/AVGO/AMD/MU (all AI-compute/semis longs), while this round-3 book holds XBI/KRE long and GDX/TLT short - entirely different sectors (biotech, regional banks, gold miners, treasuries) with no shared names and no AI/semis exposure at all, satisfying the novelty rule by a wide margin (0% overlap vs the <50% cap).",
+  "r2_overlap_pct": 0,
+  "research_notes": "Researched live prices/news (via WebFetch on stockanalysis.com and other sources, WebSearch budget was exhausted session-wide before I could use it) for both books as of the Jul 29-30, 2026 close. Round-2 findings: semis in a 3-day rout, SMH -4.79% on the day and described as 'bear-market territory' (China chip-equipment competition, AI-capex-sustainability worries, Taiwan chip-smuggling investigation touching an NVDA employee); NVDA -3.55%, AVGO -2.78%, AMD -5.51%, MU -9.94% (-32% off its June peak, CEO sold ~$37M stock into the dip). Countervailing bullish signal: MSFT beat hard (Azure +41%, revenue/EPS beat, stock +~9% after hours) and mega-cap capex guides (Meta raising its FY26 capex floor, Amazon guiding to a record ~$200B) show AI demand still accelerating even as chip-stock sentiment sours. Most important finding: AAPL, which the book was short as a 'relative AI-monetization laggard,' instead just became the most valuable company in the world (~$5T market cap, briefly passed NVDA), sits near its 52-week high, and reports earnings after today's close with strong iPhone demand expected - the short thesis is falsified, so I closed it. Round-3 findings: the standing round-3 book (GOOGL/AMZN/META/PLTR/CRWD long, SMH short) is itself an AI/semis book that contradicts its own stated mandate of cross-sector momentum avoiding AI/semis; META also just badly missed EPS on a Q2 report and cratered ~7% after hours on capex/Reality-Labs-loss concerns, reinforcing that the round-3 book's actual AI exposure was working against it too. I found genuine confirmed-breakout signals in XBI (biotech, +72% 1yr, breakout language, record M&A, rotation-out-of-tech safe haven) and KRE (regional banks, +26% YTD, near highs, strong Q2 fundamentals) for the long side, and genuine confirmed-breakdown signals in GDX (gold miners, -37% off 52wk high, bearish technicals) and TLT (long bonds, near 52wk lows, structural downtrend on rising yields) for the short side. Could not confirm a crypto breakdown (BTC data read as consolidating, not trending down), so I left crypto out rather than force it."
+}

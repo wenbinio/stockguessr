@@ -1,0 +1,87 @@
+{
+  "name": "Opus 5 event driven",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Every position is a discrete, tape-datable catalyst: five post-earnings-drift longs bought 1-2 sessions after a >6% up-gap on >2x normal volume in names already up >10% over 20 days (stop 10%, no take-profit, so the drift can run); five capitulation longs bought after a >6% down-gap in names already down >10% over 20 days (wide 18-22% stops); one merger-arb long in a stock whose realised volatility has collapsed to 6% annualised in a 1.8%-wide 40-session band; one pre-announcement-premium long into a projected report date; and a 6% SPY short as a partial beta offset, all sized from the measured per-trade edge rather than conviction.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "LMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 21,
+      "stop_loss_pct": 10.0,
+      "thesis": "Post-earnings-announcement drift with a live second catalyst. +10.54% gap 2026-07-23 on 3.3x volume, prior 20d +12.9%, ADV $511M \u2014 every filter in the n=658 rule (mean +2.81% raw, t=+4.74; +2.06% market-hedged, t=+3.69) is satisfied. Research adds what the tape alone could not: the gap was caused by LMT raising FY26 revenue to $79.75-81.75bn on Pentagon restocking, with Missiles & Fire Control revenue +20% to $4.1bn on PAC-3 and Precision Strike production used in the Iran war. On 2026-07-29 that war escalated rather than resolved (US-Saudi strikes on Iran-backed groups in Iraq, Iran firing at US bases in Jordan), so the driver behind the gap is still compounding while I hold. Largest position in the book because this is the rare case where a t=+4.74 statistical edge and a verifiable, dated fundamental catalyst point the same direction. Stop stays at 10% and there is deliberately no take-profit \u2014 my own test showed a take-profit cuts the mean from +2.81% to +1.37%, so the drift is left uncapped."
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 10.0,
+      "thesis": "PEAD, resized up from 6% on new information. +7.33% gap 2026-07-23 on 2.4x volume, prior 20d +12.2%, ADV $790M. I previously halved this against LMT on the view that the pair was one correlated bet rather than two independent draws from the n=658 sample. That reasoning inverts once the shared driver is identified: RTX raised FY26 sales to $95-96bn and EPS to $7.10-7.25, with the Raytheon segment +18% to $8.27bn specifically on Patriot, Standard and AMRAAM \u2014 the exact interceptors being expended against Iranian drones and missiles in the 07-29 escalation. Correlation with LMT is now the thesis rather than a reason to discount it. Sized just below LMT because RTX's commercial aerospace half dilutes the munitions catalyst. 10% stop, no take-profit."
+    },
+    {
+      "symbol": "SLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "thesis": "PEAD plus the same geopolitical catalyst from the energy side. +11.01% gap 2026-07-24 on 2.5x volume, prior 20d +12.5%, ADV $536M, entered at a 1-session lag where the rule measures +2.34% raw (t=+3.93). The gap came with the CEO calling the start of an upcycle on an energy-security framing, Q3 revenue guided +3-4% sequentially on recovering Middle East activity, and Q4 above $10bn. Brent then jumped 6.8% to $89.79 on 07-29 on Houthi tanker attacks and Iranian threats to Hormuz. Sized meaningfully but below the defence pair for a specific reason: SLB's Middle East operations are themselves disrupted by a shooting war, so the Hormuz catalyst is two-sided for this name in a way it is not for LMT and RTX. 10% stop, no take-profit."
+    },
+    {
+      "symbol": "TMO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 10.0,
+      "thesis": "PEAD, essentially unchanged. +8.71% gap 2026-07-23 on 2.8x volume, prior 20d +21.9% \u2014 the strongest pre-gap trend in the leg, which matters because the prior-20d filter is the entire source of the edge (unconditional up-gaps returned +0.35% hedged and were negative in 2026, versus +1.23% hedged for up-gaps in existing uptrends). ADV $1.09bn. I checked the read-across risk: Bio-Rad fell 15.7% on 07-29 on weak academic and biotech research demand, which is a genuine sector headwind, but TMO gapped up on its own print with the leg's best pre-gap trend, i.e. the signal is on TMO's own tape. Kept as a low-beta PEAD holding that works in a rising-yield regime. 10% stop, no take-profit."
+    },
+    {
+      "symbol": "THC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "thesis": "PEAD. +17.17% gap 2026-07-24 on 4.0x volume \u2014 the largest qualifying up-gap and highest volume ratio in the leg \u2014 prior 20d +27.5%, ADV $228M. Nudged up one point but still a small weight, because it is the thinnest name in the book and the most extended, and because HCA's commentary on rising uninsured patients is a real sector headwind for hospital operators that THC gapped through rather than around. Wider 12% stop to survive normal post-gap chop in a $228M ADV name. No take-profit."
+    },
+    {
+      "symbol": "ISRG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 18.0,
+      "thesis": "Capitulation, trimmed from 8%. -14.15% gap 2026-07-17 on 4.3x volume (the largest volume spike in the cohort), prior 20d -17.2%, ADV $1.09bn \u2014 the cleanest signal in the leg by the n=463 rule (mean +2.44% raw, t=+3.50), and at a 6-session entry lag the rule still returns +1.92% raw (t=+2.57) over 20 sessions, so the event remains inside the tested window. Trimmed rather than held flat because med-tech sentiment is visibly poor right now (BSX down 60% on serial recalls) and because a hawkish Fed with three hike dissents is the wrong tape for a high-multiple name. Wide 18% stop, no take-profit, per the rule's specification."
+    },
+    {
+      "symbol": "NFLX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 18.0,
+      "thesis": "Capitulation, trimmed from 7%. -7.26% gap 2026-07-17 on 3.1x volume, prior 20d -12.4%, ADV $3.4bn. Retained because this leg's edge is strongest unhedged (+3.12% mean, t=+4.13 at 20 sessions with no stop), which is why the stop is wide at 18% rather than tight. Trimmed one point as part of a general reduction in long-duration growth exposure with the Nasdaq 100 in an 11% correction and the Fed leaning hawkish, not because anything in the name's own event has changed."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 18.0,
+      "thesis": "Capitulation, cut from 8% to the minimum size at which I still respect my own rule. The signal qualifies cleanly \u2014 -14.52% gap 2026-07-23 on 3.4x median volume, prior 20d -16.2%, the largest volume ratio in the cohort \u2014 and the n=463 statistic is stable by year (2024 +1.19%, 2025 +1.53%, 2026 +1.49% hedged at 15d). But research changed the character of the event: the gap was an EPS miss ($0.33 vs $0.54), gross margin down to 16.8%, free cash flow turning negative, -29% year to date, and price-target cuts from JPMorgan, Cantor and Mizuho. That is fundamental deterioration rather than the indiscriminate liquidation my mean-reversion rule is measured on, and TSLA is also the highest-beta name I own into a Fed with three members dissenting for a hike. I keep a residual position because the rule is the rule and I do not want to override a t=+3.50 edge on narrative, but I size it as the smallest capitulation line. 18% stop."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "stop_loss_pct": 9.0,
+      "thesis": "Partial beta offset, raised from 6% to 8% \u2014 still deliberately partial and still not a market view. The rationale is unchanged: my measured edge is largest on a market-hedged basis (PEAD +2.06% hedged vs +2.81% raw; capitulation +1.23% hedged vs +2.44% raw), so an index short moves the book's return driver toward the event component. The modest increase reflects that the specific beta I am offsetting \u2014 TSLA, ISRG and NFLX, 17% of NAV in long-duration growth \u2014 now sits in a genuinely hostile regime: the Fed held on 07-29 with three dissents voting for a hike, the Dow had its worst day since April 2025, and the Nasdaq 100 is 11% off its high. I keep it small because in all three backtest windows the short was a drag and the raw event edge is significant on its own (t=+4.98 and t=+3.63 on the widened ADV>$100M samples), and because the defence and energy names that now dominate the book carry little market beta for the short to offset. Shorts pay no funding and 3% borrow is immaterial at this size."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Two of my thirteen legs had their theses resolved outright by research, and the freed 15% goes into the one leg where the measured statistical edge and a fresh dated catalyst now point the same way. EXITS: PEN (10%) \u2014 the merger is real (BSX at $374, 73% cash / 27% stock at 3.8721 BSX) but BSX has fallen 60% on Class I recalls, so the blended consideration is $318-321, exactly where PEN trades. The spread is ~0.5% to a year-end close, below the 4% cash rate, with BSX downside attached; my inference was correct and the arb is fully harvested, so holding it is worse than holding cash. META (5%) \u2014 the run-up I was buying never occurred (nine straight down days into the print), the 07-29 event has passed with a big EPS miss, and the trade is over by construction. HIMS (5%) \u2014 an FDA panel declining emideltide is a permanent repricing, not the indiscriminate selling my n=463 rule is measured on. CDNS (5%) \u2014 I already sized it half for being a shared EDA shock with SNPS, and semis are now leading the Nasdaq's 11% correction. TRIMS: TSLA 8->5 (negative FCF, 16.8% gross margin, PT cuts \u2014 deterioration, and the highest-beta name I own into a hike-dissent Fed), ISRG 8->6, NFLX 7->6, keeping the three cleanest capitulation signals at reduced size because rising yields are the wrong tape for that whole leg. ADDS: LMT 7->21 and RTX 6->17. I originally halved RTX because it and LMT are one correlated bet rather than two independent draws from the n=658 distribution. That reasoning inverts now: the shared driver is not a one-off print but an escalating war, and on 07-29 the US and Saudi Arabia struck Iran-backed groups in Iraq while Iran fired on Hormuz shipping and US bases in Jordan. Both names satisfy every filter in my rule (>6% gap, >2x volume, prior-20d >+10%, ADV>$200M) AND raised FY26 guidance specifically on munitions restocking, with PAC-3, Patriot, Standard and AMRAAM being consumed in real time. Correlation is the thesis, not a flaw in it. SLB 7->12 on the same catalyst from the other side: an 11% gap, a CEO calling the start of an upcycle, Q3 guided +3-4% sequential, and Brent at ~$88 on Hormuz risk \u2014 sized below the defence pair because a shooting war also disrupts SLB's own Middle East operations. TMO 7->8 and THC 5->6 held as the non-cyclical PEAD names. SPY short 6->8 as a still-partial beta offset: my edge measures largest market-hedged, and TSLA/ISRG/NFLX are the beta I am offsetting. All PEAD stops stay at 10% with NO take-profit (adding one cut the measured mean from +2.81% to +1.37%), capitulation stops stay wide at 18%, and I kept 11% cash rather than forcing marginal names like MANH or CSGP that fail my own filters. Gross 89%, no leverage \u2014 the mandate is a measured statistical edge, and levering it would be adding variance I have not measured.",
+  "novelty": "I manage only a Round-3 book, so the novelty rule does not bind, but for the record this book is materially different from what I held into today: four of thirteen legs are closed outright (PEN, META, HIMS, CDNS), three more are cut, and gross weight shifts from a 13-name equal-ish spread across five sleeves into a 40% concentration in the defence-restocking PEAD pair backed by a dated, escalating catalyst.",
+  "research_notes": "Used free internet to resolve the three open questions in my book, and two of the three answers changed the position sizing materially.\n\n(1) PEN \u2014 my inference was RIGHT and the trade is DEAD. I had inferred \"pending cash acquisition\" purely from a volatility collapse (20d realised vol 50-68% -> 5-9%, 40 closes in a 1.78% band). Confirmed: Boston Scientific agreed 2026-01-14 to buy Penumbra at $374/share, ~$14.5bn EV; holders elect $374 cash or 3.8721 BSX shares, mix ~73% cash / 27% stock; shareholders approved 2026-05-06; only HSR and non-US clearances remain; close expected end-2026. BUT BSX has collapsed from $109.50 (Sep 2025) to ~$43-46 (52wk low $42.20) on a Class I ACCOLADE pacemaker recall (4 deaths, 2,557 serious injuries), a worldwide CRE endoscopy recall, and WATCHMAN growth stalling. So the blended consideration is 0.73*374 + 0.27*3.8721*BSX = $317.84 at BSX $42.87 and $321.17 at BSX $46.06 \u2014 which matches PEN's observed 315.46-321.06 band to the penny. That is the whole explanation for the volatility collapse, and it means the spread is ~0.5%, i.e. under the 4% cash rate, with residual BSX downside attached. My +6% take-profit would need BSX up ~40%; my -8% stop needs a deal break to a $313.50 undisturbed price. Dead money at 10% of NAV. EXIT.\n\n(2) META \u2014 the pre-announcement-premium leg lost its own bet. META reported Q2 after the close on 2026-07-29: EPS $6.18 vs $7.17-7.18 expected, revenue $60.8bn (+28%), operating margin 31% vs 43% a year ago, 2026 AI capex guided to $130-145bn. It closed 585.61 and fell 9.64% after hours to ~$529. Critically, the run-up I was buying never happened \u2014 META fell nine straight sessions into the print, the longest losing streak in its history. The event has passed; there is no edge left in the name and the -6% stop is firing anyway. EXIT.\n\n(3) The defence PEAD leg has a second, live catalyst on top of the drift. LMT (+10.6%) and RTX (+7.7%) gapped 2026-07-23 because BOTH raised FY26 guidance on Pentagon restocking: LMT to $79.75-81.75bn with Missiles & Fire Control +20% to $4.1bn on PAC-3 and PrSM; RTX to $95-96bn sales and $7.10-7.25 EPS with Raytheon +18% to $8.27bn on Patriot, Standard and AMRAAM. Then on 2026-07-29 the war escalated rather than ended: US and Saudi strikes on Iran-backed groups in Iraq, Iran firing on ships in the Strait of Hormuz and at US bases in Jordan, drone attacks on Saudi oil facilities. The exact munitions driving the guidance raises are being expended right now. Brent +6.8% to $89.79, WTI +6.2% to $84.20 (gave back ~0.9% on 07-30). SLB's +11% gap on 07-24 came with the CEO calling \"the start of an upcycle\" and Q3 guided +3-4% sequential on Middle East recovery.\n\n(4) Macro regime turned hostile for the growth half of my book. Fed held on 2026-07-29 with THREE dissents voting for a HIKE; Dow -1,153 (-2.19%) to 51,594, its worst day since April 2025; S&P -1.52% to 7,316; Nasdaq 100 now 11% off its high and in technical correction with chips leading down.\n\n(5) Position-level checks on the capitulation leg. TSLA's -14.5% gap was an EPS miss ($0.33 vs $0.54), gross margin down to 16.8%, negative FCF, -29% YTD, and PT cuts from JPM/Cantor/Mizuho \u2014 fundamental deterioration, not indiscriminate selling. HIMS's -14.2% gap was an FDA advisory panel declining to add emideltide to the 503A Bulks List plus CFO Okupe selling 7,163 shares \u2014 a permanent regulatory repricing, which is not what my mean-reversion rule is measured on. CDNS I had already flagged as a shared EDA shock with SNPS, and EDA/semis are now the epicentre of the Nasdaq correction.\n\n(6) Screened new candidates and rejected them on my own filters rather than forcing them: MANH +22.6% on 07-29 but traded mid-$150s to mid-$160s all July, so prior-20d fails the >+10% uptrend filter (my unconditional up-gap sample returned only +0.35% hedged and was negative in 2026). CSGP -14.7% and BIO -15.7% on 07-29 are guidance cuts and a CFO exit, plus borderline ADV. META's own prior-20d is only about -6%, short of the <-10% capitulation filter. NOC raised guidance on 07-21 and still fell 8%, which is a useful reminder that the defence bid is name-specific, not a sector free ride. SHW/KO/MDLZ/TER/F gaps were under the 6% threshold or lacked the pre-gap trend."
+}

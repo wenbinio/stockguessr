@@ -1,0 +1,92 @@
+{
+  "name": "Opus 5 pairs",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Six market-neutral relative-value pairs (WFC/BAC, TSM/KLAC, LOW/HD, MA/V, XLU/D and QUAL+IWF vs MTUM) chosen from a 150-symbol screen for a stretched 250-day log-spread z-score AND evidence of stationarity - at least 8 crossings of the spread's own mean in the past year, under 25% two-year drift and above 0.60 daily-return correlation - with each pair sized so its long and short betas cancel, leaving net SPY beta of +3.2% of NAV.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "WFC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17.5,
+      "thesis": "Long leg vs BAC, now the book's dominant position at 34.8% of gross across the pair. The WFC/BAC log ratio sits 2.6sd below its 250d mean with 14% to full convergence, yet the spread has near-zero net drift over two years and crossed its own mean 17 times in the past year, and daily-return correlation is 0.80 with betas of 0.76 vs 0.77 - so the pair is dollar-neutral and beta-neutral at the same weight. Fundamentals justify the gap but not its size: WFC's NIM compressed to 2.47% from 2.67% and it has posted two subpar quarters, but the asset cap is gone, 2026 NII is guided to $50bn, consensus EPS growth is +11%/+12.9% for 2026/27, $4.0bn of stock was retired in Q1 alone against a $263bn cap, and WFC is cheaper than BAC on every multiple. Both banks reported on 2026-07-14, so I am buying a post-event dislocation rather than anticipating one."
+    },
+    {
+      "symbol": "BAC",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 17.3,
+      "thesis": "Short leg vs WFC, sized at 17.3 against 17.5 so the 0.77 and 0.76 betas cancel to within 0.02% of NAV. BAC has genuinely out-executed - NII +9% to $15.9bn, Q1 EPS +25% - and has beaten WFC by 21 percentage points over twelve months. That is precisely why the spread is at its extreme; my bet is that the outperformance is now in the price at 12.45x forward, not that BAC is a bad bank."
+    },
+    {
+      "symbol": "LOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Long leg vs HD, raised to 21.5% of gross. This is the cleanest hedge I own: 0.88 daily-return correlation, betas 0.65 vs 0.68, 16 mean-crossings and only -6% two-year drift, with the ratio 1.2sd cheap after HD beat LOW by 14% in a quarter. The macro is uniformly bad for both - Ellison calls it the hardest housing market since the financial crisis, mortgage rates near 6.53% and turnover at multi-year lows - which is what makes it a spread trade rather than a directional one, and street commentary currently favours LOW on execution across Pro and DIY. Neither reports until mid-August."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10.5,
+      "thesis": "Short leg vs LOW, sized to 10.5 against 11.0 to cancel the 0.68 vs 0.65 betas exactly. The home-improvement duopoly spread has no persistent winner over two years and past sub-(-1.25sd) episodes reverted about +5% over the following 110 sessions; HD's own 52-week low in May confirms both names are being repriced by the same rate shock, so the divergence is rotation between two identical assets rather than a change in relative franchise value."
+    },
+    {
+      "symbol": "IWF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.9,
+      "thesis": "Larger of the two long legs in the factor triangle against MTUM, weighted above QUAL because it is the wider dislocation: plain large-cap growth is 1.8sd cheap versus the momentum factor with 14% to convergence and 14 mean-crossings, implying MTUM's excess over the very growth names it holds is a crowding premium rather than an earnings premium."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.3,
+      "thesis": "Second long leg of the factor triangle. QUAL/MTUM is 1.1sd cheap with 16 mean-crossings in the past year; owning quality against crowded momentum is the explicit opposite side of the momentum trade, and it diversifies IWF's own AI-growth tilt so the triangle is not simply long the same names I am short."
+    },
+    {
+      "symbol": "MTUM",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8.1,
+      "thesis": "Single short leg against QUAL+IWF, sized so the triangle is beta-matched (12.21 units of long beta against 12.15 short). The return driver is decay of momentum crowding, and the evidence has strengthened: MTUM is +29% YTD entirely on the AI-chip surge, took its worst weekly drawdown of the year at roughly -7% in the week ending 2026-07-02, and its May/November rebalances mechanically rotate the book into whatever just worked, so the fund cannot de-crowd itself. Raised from 7% to 8.1% of gross."
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.9,
+      "thesis": "Long leg vs KLAC, raised from 4% because the event risk on this pair has now been spent. TSM reported on 2026-07-16 with roughly 65% earnings growth and reported price hikes against a $520 street target, yet has underperformed the semiconductor sector all year and fell five consecutive sessions into 07-28. The screen still shows the largest convergence available anywhere in my universe - 19% back to the 250d mean - with a 34-day spread half-life, 15 mean-crossings in a year and only -12% two-year drift, so the last year's 33% relative fall is oscillation rather than a re-rating."
+    },
+    {
+      "symbol": "KLAC",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5.5,
+      "thesis": "Short leg vs TSM, sized to 5.5 against a 6.9 long because KLAC's beta of 2.70 exceeds TSM's 2.15 - beta-matched, not dollar-matched. KLAC reported FQ4 on 2026-07-28, beat on both lines ($3.66bn revenue, $1.05 non-GAAP EPS vs $1.00), and still fell about 5% on guidance concerns: the binary resolved in my direction and cleared the calendar. I am still holding this as the smallest sector pair on purpose, because with 2.15/2.70 betas it is the most violent spread in the book and shorting semi-cap into an AI capex boom is the position most likely to be wrong for the longest."
+    },
+    {
+      "symbol": "MA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.3,
+      "thesis": "Long leg vs V, trimmed from 8% to 6.3%. Still the most stationary spread I found anywhere in the screen (22 mean-crossings in a year, 0.85 correlation, betas 0.35 vs 0.38) and V trades at its widest premium to MA in a year with no divergence in the underlying network economics - stablecoin settlement and the AI-agent interchange debate hit both networks symmetrically. But 4% spread vol means even a full 1sd convergence is worth very little per dollar of capital committed, which makes this the least productive use of scarce gross now that I am capped at 100%. MA reports pre-open today (07-30) with four straight beats behind it, so any fill I get is post-print."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5.7,
+      "thesis": "Short leg vs MA, sized to 5.7 against 6.3 to match the 0.38 vs 0.35 betas. Trimmed alongside the long: Visa has already reported a clean beat with net revenue +17% y/y, and on 2026-07-28 announced 2,600 job cuts framed around AI and its stablecoin pivot - a credible margin story that can defend the premium I am shorting for longer than the z-score alone would suggest."
+    }
+  ],
+  "cash_pct": 0,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Two changes, both driven by information rather than by the new freedom for its own sake. First, I am exiting the XLU/D pair entirely. NextEra's all-stock acquisition of Dominion at a fixed 0.8138 exchange ratio, announced 2026-05-18 with state review beginning 2026-07-16, means D is now priced off a deal ratio and a merger spread rather than off the utility sector. The stationarity that earned that pair its 16% of gross - 27 mean-crossings, 46-day half-life - is an artefact of a lookback window that is mostly pre-announcement. It fails my own screen's drift and stationarity tests going forward, and it carried a 07-31 earnings event on the short leg. A pairs mandate is a bet on spreads that revert; this one has been converted into a merger-arb position I did not choose and do not want. Second, having freed that capital and with all concentration caps gone, I am pushing gross from 90% to the full 100% and redistributing across the five surviving pairs in proportion to conviction rather than in near-equal slices. WFC/BAC goes from 20% to 34.8% of gross - it is the widest spread (2.6sd, 14% to convergence), has the tightest hedge economics (betas 0.76 vs 0.77, so it is dollar-neutral and beta-neutral simultaneously), 17 mean-crossings and near-zero two-year drift, and its divergence event (07-14 earnings) is now behind it. I am deliberately not going further than that: WFC's NIM compression to 2.47% and two subpar quarters are a genuine fundamental reason the spread widened, and a 2.6sd gap with a story attached is exactly the kind that can widen to 3.5sd before it reverts. LOW/HD rises to 21.5% because it is the cleanest hedge I own (0.88 correlation, betas 0.65/0.68) with no event until mid-August. The QUAL+IWF vs MTUM triangle rises to 19.3% with IWF weighted above QUAL, since MTUM's +29% YTD on AI chips and its worst week of the year in early July are exactly the crowding decay I am positioned for. TSM/KLAC rises to 12.4% - larger, because KLAC's 07-28 print resolved the way I wanted (beat, but -5% on guidance) and both legs' earnings risk is now spent, but still the smallest sector pair because 2.15/2.70 betas make it the most dangerous spread I hold. MA/V is trimmed to 12.0%: it is the most stationary spread in the screen but only 4% spread vol, so it is the least productive use of scarce gross, and Visa's 2,600-job cost-cut announcement on 07-28 gives the short leg a margin story that can defend its premium. I am attaching no stop-losses or take-profits anywhere. On a beta-matched pairs book a stop on one leg converts a hedged spread into a naked directional position at precisely the moment the spread is widest - which for a mean-reversion strategy is when expected return is highest, not lowest. Standing orders would systematically monetise my worst entries and destroy the edge. Every pair remains individually beta-cancelled; removing XLU/D (whose 0.16 / -0.09 beta mismatch generated almost the entire prior +3.2% residual) leaves aggregate net SPY beta at roughly +0.07% of NAV, which is more faithful to the market-neutral mandate, not less. Turnover is about 48% of NAV at ~2bps a side, roughly a dime of cost against a book I expect to work over weeks. Cash goes to zero: 4% APY on idle cash is worth about 1bp a week, less than the reversion I expect from putting that capital into WFC/BAC.",
+  "novelty": "I run no Round-2 book - Round 3 is the only account I manage - so the <50% overlap rule does not bind; relative to my own prior Round-3 book the change is nonetheless material, with the entire XLU/D pair (16% of gross) eliminated on the NextEra merger break and gross reallocated so that WFC/BAC alone now carries more than a third of the book instead of a near-equal slice.",
+  "research_notes": "Researched all six pairs for structural breaks that would invalidate the stationarity premise behind each spread, then resized on conviction.\n\nBIGGEST FINDING \u2014 XLU/D IS BROKEN. On 2026-05-18 NextEra agreed to acquire Dominion Energy in a ~$67bn ALL-STOCK deal at a FIXED exchange ratio of 0.8138 NEE per D share plus a $360m cash payment, targeted to close H2 2027; state regulatory review clocks started 2026-07-16. D now trades as a merger target pinned to the NEE ratio and the deal spread, not as a utility oscillating around XLU. Its 21.5% 52-week gain versus XLU's 8% is a one-off deal re-rating, and the \"27 mean-crossings / 46-day half-life\" in my thesis is measured over a window that is majority pre-announcement and therefore no longer predictive. My own mandate screen requires stationarity and <25% two-year drift; this pair no longer passes. It also had D reporting Q2 on 2026-07-31, an event on a short I no longer want. EXITED both legs.\n\nWFC/BAC \u2014 thesis intact but with a real fundamental headwind I should acknowledge. WFC +5% over 12 months vs BAC +26%. BAC grew NII 9% to $15.9bn and Q1 EPS +25%; WFC grew EPS 15% but NIM compressed to 2.47% from 2.67% and it is described as having posted back-to-back subpar quarters. Offsetting: the asset cap is gone, management guides $50bn NII for 2026, consensus has WFC EPS +11% and +12.9% in 2026/27, WFC bought back $4.0bn in Q1 alone against a $263bn cap, and it is cheaper on every multiple. Crucially both reported on 2026-07-14, so the divergence event is behind us and the 2.6sd gap is now a post-event price, not an anticipation. Still my best pair; sized up.\n\nTSM/KLAC \u2014 the binary cleared IN MY FAVOUR after my book was set. KLAC reported FQ4 on 2026-07-28 (rev $3.66bn, non-GAAP EPS $1.05 vs $1.00 consensus) and the stock fell ~5% on guidance concerns despite the beat. TSM reported 2026-07-16 with ~65% earnings growth, price hikes and a $520 street target, yet has underperformed the semi sector and fell five sessions in a row into 07-28. Earnings risk on both legs is now spent. Increased, but kept the smallest sector pair because the 2.15/2.70 betas make it the most violent spread in the book.\n\nLOW/HD \u2014 no structural break. Housing is bad for both (Ellison: \"most difficult housing market since the financial crisis\", 30y mortgage 6.53%, lowest turnover in years), HD hit a 52-week low in May and LOW in June. Consensus commentary favours LOW on execution across Pro and DIY. Both report mid-August, so no near-term event. Best hedge in the book (0.88 correlation); sized up.\n\nMA/V \u2014 no structural break; stablecoin settlement and the AI-agent disintermediation debate hit both networks symmetrically (Mastercard added USDC/PYUSD/USDG/RLUSD settlement in June, Visa has run issuer settlement since 2021). Two things trimmed my enthusiasm: Visa already reported a clean beat (rev +17% y/y) and on 2026-07-28 announced 2,600 job cuts, a margin story that can defend V's premium; and MA reports pre-open TODAY (07-30), so any fill I get is post-print. This is also the lowest-payoff pair in the book \u2014 4% spread vol means even full convergence is worth little per dollar of capital. Trimmed.\n\nQUAL+IWF vs MTUM \u2014 thesis reinforced. MTUM is +29% YTD on the AI-chip surge, took its worst weekly loss of the year (~-7%) in the week ending 07-02, and its May/November rebalances mechanically rotate into whatever just worked. Multiple sources flag it as a concentrated bet on AI infrastructure. That is exactly the crowding premium I am short. Sized up modestly, with IWF larger than QUAL because IWF/MTUM is the wider dislocation (1.8sd vs 1.1sd)."
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Now the largest position, up from 6%. QQQ sits 11.6% below its 52-week high but TQQQ sits 34.4% below its - roughly three points of underperformance per point of drawdown, which is volatility drag on top of beta and accrues whether or not the Nasdaq falls further. Realized vol just exploded (TQQQ -6.19% on 7/29), maximizing that drag; 30-year yields at 2007 highs compress megacap multiples; shorts pay no funding and borrow is only 3% APR. Also converts my long software book into a relative-strength bet rather than a directional one.",
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "SNOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Promoted to anchor long from 8%. At 96% of its 52-week range and up 4.64% on a day the Dow fell over 1,000 points - the single strongest relative-strength reading in my universe. Cortex AI Gateway positions it as the governance layer for enterprise AI agents, Wells Fargo raised its target to $500, and it is software rather than semiconductor AI exposure, so it is on the right side of the capex unwind. Earnings 8/26.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Held at 12%. At 88% of its 52-week range with Capital One upgrading to Overweight and BofA and Tigress at $420 and $430. Security spending is budget-protected and decoupled from the semiconductor capex cycle that is rolling over. The stop is real because a 274 P/E is fragile with the long end at two-decade highs, and earnings land 8/17.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "Trimmed from 12% - taking profit rather than pressing. The structural case is intact and improving: SMH fell 4.79% and SOXL fell 16.02%, the daily-reset decay engine at full speed, and semis face China chipmaking competition, an SK Hynix miss and a Morgan Stanley warning through year-end. But a single -16% session is precisely where a 3x fund squeezes, and JPMorgan is already calling for a buying opportunity, so I bank part of the leg and widen the stop to survive a gap.",
+      "stop_loss_pct": 38.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Cut from 12% on decaying momentum - 71% of its 52-week range and 17.5% below its high, materially weaker than SNOW or PANW on the same measure. Kept because the fundamental case still stands (revenue +23%, Citi $250, BofA $230, Cerebras and Schwarz Digits partnerships) and it rallied 1.90% after hours, but the mandate ranks names cross-sectionally and this one has slipped in the ranking.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Trimmed from 6%. Still the clearest persistent software laggard - $117.74, sitting on its 52-week low of $114.50 and 66% below its high on AI-capex funding fear, with one analyst flagging a potential $500B capital requirement. But shorting at the exact 52-week low against a $248 consensus target and a fresh $7B Department of War contract is late, so I keep only a core leg and pull the take-profit in to +25%.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 25.0
+    }
+  ],
+  "cash_pct": 38,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Free information falsified two of my five longs and one of my four shorts, so the momentum mandate itself demands a rebalance. GS is out: it fell 5.09% in a session and sits 15% below its high, which disproves my recorded thesis that it was the lowest-volatility momentum anchor, and it was always the loosest fit to a software/semis/fintech mandate. HOOD is out: down 42% from its high and at just 29% of its 52-week range DESPITE a record quarter (revenue $1.31B +32%, EPS $0.62 versus $0.43 expected). A momentum leader that cannot rally on a blowout beat is not a leader. CRWD trimmed 12->7 on decaying relative strength (71% of range, 17.5% off its high). SNOW upsized 8->13 as the new anchor: 96% of its 52-week range and UP 4.64% on a day the Dow lost 1,000 points, the strongest relative-strength reading available to me. PANW held at 12. MSTR short covered entirely - the most important thing I learned: Strategy holds ~843,775 BTC worth roughly $54B against a $34B market cap, so mNAV has flipped below 1.0, BTC is +6.33% on the month, the company has paused buying and built $3.75B of cash, and it reports today. The premium-collapse mechanism that drove the -45% is spent, and shorting a levered bitcoin claim trading below its asset value into a catalyst is bad risk. I also trim rather than press the two shorts that already paid: SOXL 12->10 after a single -16.02% session (that is where squeezes start, and JPMorgan is already calling for a buying opportunity), and ORCL 6->5 because it sits exactly on its 52-week low of $114.50, 66% off its high, against a $248 consensus target and a fresh $7B defence contract. The weight goes into TQQQ, upsized 6->15 as the highest-quality short I have: QQQ is 11.6% off its high but TQQQ is 34.4% off its, so roughly three points of that gap is pure daily-reset volatility drag that accrues even if the Nasdaq goes nowhere - and realized vol just exploded, maximizing the drag. The result is a deliberately near-market-neutral relative-strength book (32 long versus 30 short) with 38% cash at 4%. That is the honest expression of my conviction: with three Fed officials dissenting toward a hike and 30-year yields at 2007 highs, my long leg is high-multiple long duration (PANW on a 274 P/E, SNOW and CRWD loss-making) and does not deserve directional size. My edge here is cross-sectional and structural, not directional - which is exactly what the mandate describes.",
+  "novelty": "Zero ticker overlap with my Round-2 book in either direction: Round 2 is sector and index ETFs (RSP, XLE, IWM, XLI, XOP, KRE, XBI, ETH long; QQQ short) while Round 3 is single-name software longs (SNOW, PANW, CRWD) against leveraged-ETF and laggard shorts (TQQQ, SOXL, ORCL), so same-direction gross-weight overlap is 0%. I note candidly that Round 2's QQQ short and Round 3's TQQQ short are economically correlated, but they are different instruments expressing different trades - Round 2 shorts the index as a mandated anti-concentration hedge against a long breadth basket, while Round 3 shorts the 3x wrapper specifically to harvest daily-reset volatility drag, which is why TQQQ is 34.4% off its high against QQQ's 11.6%.",
+  "r2_overlap_pct": 0,
+  "research_notes": "MACRO (marks as of 7/29/2026 close; first look at live data rather than the old fixed table): Fed under Warsh held at 3.50-3.75% on a 9-3 vote with THREE dissents in favour of a HIKE, and abandoned forward guidance. 30-year Treasury yields hit their highest since 2007 as the bond market priced inflation/term-premium risk. Dow fell 1,000+ points - worst Fed Day since Dec 2024. Simultaneously Iranian strikes on a US base in Jordan spiked oil >6% (USO +7.32%, XOP +3.41%, XLE +1.88% on a day the tape was down hard). Semis/AI kept unwinding on China chipmaking competition and an SK Hynix disappointment; Morgan Stanley warns on the sector through year-end while JPMorgan says a buying opportunity is approaching.\n\nBREADTH CONFIRMED: RSP $215.73, only 1.1% below its 52-week high, versus QQQ $661.73, 11.6% below its high. The anti-concentration rotation my Round-2 mandate is built on is no longer hypothetical.\n\nLEVERAGED-ETF DECAY QUANTIFIED: QQQ is 11.6% off its high but TQQQ ($57.75, -6.19% on the day) is 34.4% off its high - roughly 3x the drawdown, i.e. pure volatility drag on top of beta. SMH -4.79% ($504.22) drove SOXL -16.02% ($91.99). Realized vol just exploded, which maximizes daily-reset drag. Structural carry edge, not a directional guess, and shorts pay no funding.\n\nSINGLE NAMES (52-week-range position as a clean momentum score): SNOW $282.90, 96% of range, +4.64% ON A -1,000 DOW DAY, Wells Fargo PT to $500, Cortex AI Gateway launch - best relative strength in my universe. PANW $314.15, 88% of range, Capital One upgrade to Overweight, BofA $420 / Tigress $430, earnings 8/17. CRWD $179.38, 71% of range and 17.5% off its high - momentum decaying despite Citi $250 / BofA $230. GS $980.75, -5.09% on the day and 15% off its high - my \"lowest-vol momentum anchor\" thesis is falsified. HOOD $89.84, 42% below its high and only 29% of range DESPITE a record Q2 ($1.31B rev +32%, EPS $0.62 vs $0.43 est) - good news, no reaction, the worst momentum signal there is. ORCL $117.74 sitting on its 52-week low of $114.50, 66% off its high on AI-capex funding fear (one analyst flags a possible $500B capital need).\n\nKEY REVERSAL - MSTR: researched the balance sheet rather than the chart. Strategy holds ~843,775 BTC; at BTC $63,942 that is ~$54.0B of bitcoin against a $34.03B market cap, i.e. mNAV has flipped BELOW 1.0. BTC is also +6.33% over the last month. The company has paused purchases for five straight weeks, built $3.75B of cash, and reports earnings TODAY (7/30). The premium-collapse mechanism that produced the -45% six-month move is exhausted; what remains is a levered bitcoin claim trading under its asset value into a catalyst. Not a short I should be in.\n\nOTHER R2 CONSTITUENTS: XLE +37.31% 1yr. XOP is equal-weighted E&P with more oil torque than XLE's 36% Exxon/Chevron core. KRE $76.18 near its 52-week high, only -0.79% on the bad day. XBI $147.91, +71.64% 1yr, M&A-supported, but pure long duration. XLF $56.68 is cap-weighted into JPM/BRK/V/MA - that is concentration, not breadth. TNA $65.88, -4.89%, beta 3.29. GDX is 37% below its 52-week high, so gold is not the clean inflation expression here - energy is. ETH $1,964, +24.99% 1m but -49% 1yr."
+}

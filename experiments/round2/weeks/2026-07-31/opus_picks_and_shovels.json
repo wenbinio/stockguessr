@@ -1,0 +1,63 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "stop_loss_pct": 22.0,
+      "thesis": "GE Vernova: the power-generation bottleneck. Decisive Q2 beat-and-raise with guidance lifted $1B, PE 25.8, avg target $1,233 vs $900 spot. Unlike servers and GPUs, turbines and grid gear cannot be conjured away by extending depreciation schedules - electricity demand is electricity demand. Highest-conviction leg, doubled in weight."
+    },
+    {
+      "symbol": "AMAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 25.0,
+      "thesis": "Semi-cap equipment at fwd PE 29 and -41% from its $740 high. The memory shortage that is inflating everyone's bill of materials forces DRAM wafer-fab-equipment spend; AMAT shipped new DRAM and advanced AI packaging systems in June. Earnings Aug 13 is a near-term catalyst into a washed-out price."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 22.0,
+      "thesis": "Custom AI silicon and networking. Hyperscaler capex discipline is a tailwind, not a headwind, for custom ASICs - they are the cheaper compute-per-dollar answer to MSFT's efficiency push. The ~$200B Samsung memory/foundry partnership through 2030 locks in supply. -25% from its high."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 28.0,
+      "thesis": "NEW. Memory is the actual physical shortage in the AI stack right now - rising memory cost is what analysts flag as the constraint on Vera Rubin systems, which means MU has the pricing power everyone else is paying for. PE 18.5, fwd PE 5.7, -41% from the June peak. Sized 12% not more because memory cyclicals always look cheapest near the top and ChangXin's Chinese DRAM debut is a real competitive event."
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 22.0,
+      "thesis": "Arista back-end datacenter switching: durable AI networking demand at a materially lower multiple than the thermal/rack names I am cutting. Retained as the diversifying compute-fabric leg."
+    },
+    {
+      "symbol": "SMCI",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Increased 5%-to-9%. The precise loser of memory-cost inflation: a low-gross-margin server assembler whose largest input cost is exploding while its customers demand price discipline. Add an active illegal-server-export-to-China probe and Aug 11 earnings. Capped at 9% with a hard stop because it is already -59% from its high and squeezed +24% this week on a prelim orders update."
+    }
+  ],
+  "cash_pct": 20,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Two overnight catalysts hit this book directly and asymmetrically, so I am re-sizing within the mandate rather than defending the old mix. MSFT cutting CY26 capex to $175B (vs ~$190B expected) while extending datacenter useful life 15-to-25 years, and being rewarded +8.8% for it, while META is punished -7.5% for raising capex, tells me the market has switched to paying for capex DISCIPLINE. Layer on a hawkish Warsh Fed with September hike risk and 30y yields at 2007 highs, and undifferentiated high-multiple capex beneficiaries face a multiple headwind that good numbers will not fix (GEV beat, raised guidance $1B, and still fell 4.6%). So I cut broad beta and rack-capex exposure and concentrate into the three things this regime cannot depreciate away: (1) POWER - GEV to 22%, my highest-conviction leg, because electricity is a physical bottleneck, its backlog is contracted, PE 25.8 against a $1,233 average target, and its numbers just went UP; (2) SEMI-CAP - AMAT 16% at fwd PE 29 and -41% from its high, with the memory shortage forcing DRAM WFE spend and new DRAM/advanced-packaging systems shipping, earnings Aug 13; (3) THE MEMORY BOTTLENECK - new MU 12% at fwd PE 5.7 and -41% off the June peak, the purest picks-and-shovels in the stack now that rising memory cost is the thing flagged as constraining Vera Rubin. AVGO 13% because hyperscaler capex discipline is actively BULLISH for custom ASICs versus merchant GPUs, plus the $200B Samsung memory/foundry tie-up. ANET 8% kept as the cheaper, more durable networking leg. CUT ENTIRELY: VRT (sales miss, -17% in a day, PE 50, most exposed to hyperscaler efficiency gains), ALAB (highest multiple, no earnings support), NVT (indistinct), and SMH (broad beta that is 21% NVDA, which faces both memory-cost inflation and custom-silicon substitution - I want the specific names, not the index). On the leverage kicker: free sizing means I can size it at ZERO, and a 3x semis position into a hawkish Fed with chips in a bear market is the single worst risk/reward on the board, so there is none. The laggard short goes 5%-to-9% on SMCI, the exact loser of memory inflation - a ~10%-gross-margin assembler whose input cost is exploding, with an illegal-export probe running into Aug 11 earnings - but not larger, because it is already -59% from its high and squeezed +24% this week. Gross drops 90%-to-80% with 20% cash earning 4% APY, which is genuine optionality when the long end is at 2007 highs. Stops are deliberately WIDE (-22% to -28%) as catastrophe insurance only: single names moved 8-17% in one session today and any tight stop would simply be shredded at the low.",
+  "research_notes": "MACRO (29-30 Jul 2026): Warsh Fed held 9-3, read as hawkish; market now prices a possible SEPTEMBER HIKE. 30y Treasury at highest yield since 2007 \u2014 the bond market is openly doubting inflation containment and Warsh's credibility. Dow -1,000pts, worst Fed Day since Dec-2024. SPY -1.54% to $729 (only ~4% off its high) \u2014 so this is a RATE/MULTIPLE shock, not a growth shock, and it lands hardest on long-duration high-multiple equities.\n\nAI-INFRA (the two overnight catalysts that reshaped my Round 2): MSFT after-hours +8.8% \u2014 Azure +41% and past $100B, but capex guided DOWN to $175B CY26 vs ~$190B expected, and datacenter useful life extended 15\u219225 years. META after-hours -7.5% \u2014 EPS $6.18 vs $7.22 est, capex RAISED to $130-145B. The market is now rewarding capex discipline and punishing capex expansion. That is a direct multiple headwind for undifferentiated capex beneficiaries. Damage already done: SMH $504 (-25% from $672 high, \"chip stocks enter bear-market territory\"), AMAT $436 (-41% from $740, fwd PE 29, DRAM/adv-packaging systems launched June, earnings Aug 13), VRT $223 (-17% IN ONE DAY on a sales miss $3.27B vs $3.38B, PE 50, -41% from high), MU $739 (-10% on the day, -41% from June peak, PE 18.5 / FWD PE 5.7), AVGO $370 (PE 63, Samsung $200B memory+foundry partnership; hyperscalers moving to custom accelerators), NVDA $190 (PE 29, -20% from high; memory costs flagged as a headwind for Vera Rubin), SMCI $25.70 (-9.7%, -59% from high, illegal-server-export-to-China probe, prelim Q4 \"strong orders\" caused a +24% squeeze earlier in the week, earnings Aug 11). GEV $900: decisive Q2 beat-and-raise, guidance +$1B, PE 25.8, avg PT $1,233 \u2014 yet the stock still fell 4.6%, i.e. good numbers are not being paid for right now. Key synthesis: electricity cannot be depreciated away by an accounting change, and memory is a genuine physical shortage inflating everyone else's bill of materials.\n\nROTATION BASKET (Round 3): XLE $58.65 UP 1.88% on a -1.54% SPY day, +37% 1yr \u2014 energy is outperforming on geopolitical supply fear, high oil and AI power demand; PE 21, 2.6% yield, beta 0.44. GLD $371 (gold ~$4,000/oz) rose +0.46% and +0.92% after-hours ON the hawkish Fed day \u2014 the debasement/credibility trade is waking up; GDX $73.57 is -37% from its $117 high at PE 13.6, a heavily levered call on that. COPX $76 +75% 1yr, -24% off high, AI buildout adding demand to materials. EWZ PE 9.8 / 4.1% yield but facing new 25-50% US tariffs on Brazilian goods. Critically, EEM is NOT a clean rotation vehicle: TSMC 15.2% + Samsung 6.2% + SK hynix 5.1% = ~26% semis, so it is a levered AI-semi proxy that both duplicates my Round 2 factor and contradicts the \"rotate out of AI\" mandate \u2014 it fell -2.07% today with the chips. UUP $28.42 sits near the TOP of its 52-week range ($26.40-$28.60) \u2014 with a hawkish Fed and hike risk, the short-dollar leg is fighting the tape."
+}

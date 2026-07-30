@@ -1,0 +1,52 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "thesis": "US financials ETF, confirmed momentum leg of the mandate -- +7.52%/mo, +2.66%/wk, trading at 52-week highs (Berkshire/JPM/Visa/Mastercard top holdings) even as broader market sells off on hawkish Fed repricing.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "US biotech ETF, second momentum leg -- sector still +23.62% YTD and widely described as 'booming' with active neuro/obesity-drug catalysts, despite a recent -6.56%/mo pullback that's being read as a buyable dip amid depressed retail sentiment.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "thesis": "Gold miners ETF, mean-reversion short -- underperforming bullion itself (GDX -15.28% YTD vs GLD -6.37% YTD) and still declining (-4.06%/wk), consistent with the mandate's overextension-unwind thesis.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 10,
+      "thesis": "3x leveraged semis ETF, mean-reversion short per mandate on AI-capex valuation unwind; sized small and stopped tightly because the crash is already extreme (-61%/mo, -42.9%/wk) and a violent short squeeze is a real risk from here.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0
+    }
+  ],
+  "cash_pct": 25,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The current book (EFA/NVS/RIO/UL/EWU/EWW/EMB) is an international-diversification book that does not reflect this account's actual mandate -- domestic biotech/financials momentum longs against gold-miner/leveraged-semis mean-reversion shorts. Realigning to the real strategy using live data: financials show confirmed catalyst momentum (XLF +7.52%/mo, +2.66%/wk, at 52-week highs) and biotech remains a 'booming' momentum sector (XBI +23.62% YTD, active Alzheimer's/weight-loss catalysts) despite a recent wobble. On the short side, gold miners are a live mean-reversion short -- GDX is underperforming gold itself (-15.28% YTD vs GLD -6.37% YTD) and still sliding. Leveraged semis (SOXL) are also shorted per mandate, but sized small with a firm stop since the move (-61%/mo already) is largely spent and a fresh short here carries real squeeze/bounce risk -- hard stops are used on every leg per the mandate's own 'intraweek discipline' language. Cash raised to 25% given today's Fed-driven vol spike (VIX +13.45%).",
+  "novelty": "Zero ticker overlap with the Round-2 book (EEM/TSM/ASML/EWZ/EWJ/BABA/INDA long, SQQQ short) -- Round 3 now runs XLF/XBI long and GDX/SOXL short, a domestic sector relative-value pairs book with 0% same-direction gross-weight overlap against Round 2's international-ADR/EM-ETF diversification book.",
+  "r2_overlap_pct": 0,
+  "research_notes": "WebSearch budget was exhausted session-wide, so research was done via WebFetch on Yahoo Finance quote pages (data as of close 7/27-7/28/2026, the most recent available). Key findings: (1) Broad market risk-off in progress -- S&P500 -1.52% on the day, -2.44%/wk, VIX +13.45%, triggered by hawkish Fed comments from Chair Kevin Warsh ('Wall Street's worst day since April 2025'). (2) AI/semis-capex names getting hit hardest: TSM -11.05%/wk, -13.34%/mo; ASML -13.94%/wk, -13.59%/mo (China lithography-competition fears, though BofA calls it an overreaction and ASML is still +44.64% YTD); leveraged semis SOXL -42.86%/wk, -61.11%/mo (extreme, largely already played out). (3) SQQQ (my Round-2 inverse-Nasdaq hedge) is up +20.76%/wk, +29.56%/mo -- the book's own 'AI-valuation-correction' hedge thesis is confirmed live. (4) EEM is heavily AI/semis-correlated itself (tech 45.88% of fund, TSM 15.05%, Samsung 8.14%), down -7.19%/mo -- less of a clean diversifier than intended. (5) BABA is resilient, +21.33%/mo despite weak op-cash-flow headlines -- stimulus/e-commerce-recovery thesis holding up. (6) For Round 3: financials (XLF) show confirmed momentum, +7.52%/mo, +2.66%/wk, at 52-week highs; biotech (XBI) is still +23.62% YTD ('biotech is booming' per multiple outlets, Alzheimer's/weight-loss catalysts active) despite a recent -6.56%/mo pullback; gold miners (GDX) are underperforming gold itself (GDX -15.28% YTD vs GLD -6.37% YTD, gold spot near $4,126/oz) and still sliding (-4.06%/wk) -- a live mean-reversion short; SOXL has already crashed -61%/mo so a fresh short there is late and carries real squeeze risk, sized small with a hard stop accordingly. Also noted: the current Round-3 book (EFA/NVS/RIO/UL/EWU/EWW/EMB) does not resemble the stated Round-3 mandate (domestic biotech/financials long vs gold-miner/leveraged-semis short) at all -- it reads like a duplicate of the Round-2 international-diversification book. Realigned Round 3 to its actual mandate this round."
+}

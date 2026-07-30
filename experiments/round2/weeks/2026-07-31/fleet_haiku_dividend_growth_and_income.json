@@ -1,0 +1,92 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Dividend aristocrats (22%) provide defensive base; tactical overweight to small-cap recovery (18%) and AI/semis consolidation (18%); leveraged tech position (10%); short rate hedge (4%); 28% cash for optionality and yield.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.16,
+      "thesis": "Dividend aristocrat core, 60+ year consecutive growth, 3% yield defensive base"
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.16,
+      "thesis": "Dividend aristocrat, inflation hedge, pricing power in consumer staples"
+    },
+    {
+      "symbol": "MCD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4.62,
+      "thesis": "Dividend growth 50+ years, franchise model resilience, international diversification"
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3.85,
+      "thesis": "Dividend growth ETF quality screen, income generation, reduced from 12% to make room for mandate-required positions"
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.01,
+      "thesis": "Small-cap recovery play per mandate (Russell 2000 up 22% in H1, structural tailwind), addresses underweight vs 18% target"
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.78,
+      "thesis": "3x leveraged semiconductor consolidation position mandated 18%; AI build-out continues despite summer volatility; NVDA undervalued at $212.50 vs $361.93 GF Value"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.16,
+      "thesis": "Consumer staples dividend, defensive positioning, plays recession resilience theme"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 0.77,
+      "thesis": "Minimal retained position, primary allocation shifted to IWM/SOXL for mandate targets"
+    },
+    {
+      "symbol": "UPRO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.7,
+      "thesis": "3x leveraged S&P 500 for mandated 10% leveraged tech exposure, rides value rotation and dividend yield"
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3.08,
+      "thesis": "Rate hedge per mandate: Fed on hold but three officials dissented for increase; long-duration bonds vulnerable if inflation remains sticky; 4% short provides defensive hedge"
+    },
+    {
+      "symbol": "CASH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17.71,
+      "thesis": "Maintained at 23% (vs 28% target) to fund mandate-required position additions; 4% APY on cash provides portfolio yield"
+    }
+  ],
+  "cash_pct": 23,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Current book severely misaligned with stated mandate. Mandate requires 18% AI/semis consolidation but position is 5% SHORT (SOXL); missing 10% leveraged tech exposure (UPRO); missing 4% rate hedge (TLT short); underweight small-cap recovery (10% vs 18% target); overweight dividend positions (34% vs 22% target). Rebalancing adds SOXL long, UPRO, TLT short, IWM, and reduces dividend concentration to meet mandate allocation targets. Rate environment stable (Fed on hold) and dividend yields (4% cash rate) support increased positioning. Rebalance cost justified by dramatic mandate misalignment.",
+  "research_notes": "Researched current market conditions as of 2026-07-30: Fed held rates at 3.5-3.75% (July 29 decision) with three officials dissenting for rate increase; large value up 11% YTD vs growth, signaling major mean-reversion rotation; Russell 2000 small-caps surged 22% in H1 (best start since 1991); dividend aristocrats lagging S&P 500 but delivering 9.91% 1-year return with lower volatility; NVIDIA undervalued at 41% discount to GF Value despite 43x forward P/E; semiconductor sector described as struggling with key earnings ahead despite AI build-out continuing. Portfolio markedly misaligned with stated mandates: Round 2 overweights dividends, underweights small-cap recovery, incorrectly shorts semis instead of consolidating them long, and lacks leveraged tech or rate hedge positioning. Round 3 properly shorts small-cap momentum but lacks required semiconductor short in face of overheated growth momentum.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 23; scaled by 0.7700 to sum to 77 (relative sizing preserved, declared cash kept)"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "PDBC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 24,
+      "thesis": "The strongest confirmed uptrend I can find and the core commodity roll-carry leg. +10.9% 1m, +20.2% 6m, +30.2% 12m, trading above its 50-day and 12.6% above its 200-day, with a live catalyst in the oil supply shock (crude +18.5% 1m, +5.8% on 7/29). Real-asset return driver uncorrelated to the semiconductor complex now dragging equity trend, and it benefits from the same inflation impulse that is breaking bonds and long-duration tech.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "DBMF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Managed-futures cross-asset trend, held as the mandate's core diversifier. CTA positioning \u2014 long commodities, short bonds, flipping short equities and semis \u2014 maps almost exactly onto the current regime, and it is grinding higher (+2.2% 1m, +21.1% 12m) above both moving averages. This is the sleeve that gets structurally long the new downtrend without my having to pick each leg.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "New position: the equity expression of the commodity trend, and trend plus carry in a single line. +9.5% 1m, +18.1% 6m, +33.8% 12m, above its 50-day and 11.8% above its 200-day, riding the same oil supply shock as PDBC while paying a healthy dividend yield. Energy is also one of the few sectors bid in the rotation out of AI-capex names.",
+      "stop_loss_pct": 13.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "thesis": "The strongest downtrend in the market and therefore a natural long for a trend book expressed as a short: SMH -20.2% 1m and -14.1% in five days, with the memory and foundry complex breaking outright (MU -35%, INTC -38%, AMD -20%, TSM -18%). Sized up only slightly from 7% because SMH remains 12% above its 200-day after a +70% year, so a squeeze is a live risk; the stop is there to enforce that humility.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Reduced from 9% to a trend-consistent stub. ETH is the stronger of the two majors right now \u2014 +10.0% 1m and +8.6% above its 50-day \u2014 but it is still 9.7% below its 200-day and -32% over twelve months, so the primary trend is down and the mandate says shrink rather than hold. Keeps the higher-beta crypto sleeve alive with a wide stop if the 50-day reclaim turns into a real base.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 55.0
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Cut from 16% to a minimal stub. BTC is -26% over twelve months, -10.1% over six months and 10.6% below its 200-day; the +1.2% perch above the 50-day is a bounce inside a broken trend, not a signal. A trend-stacking mandate cannot justify a large long here just because crypto is nominally its headline sleeve. Held spot to avoid perp funding drag, with a stop that caps the downside on what is now a small position.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "JEPI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Halved from 16%. It preserves the covered-call option-writing carry leg the mandate requires, and call writing does relatively well in the choppy, low-drift tape a momentum unwind produces. But it returned +0.1% over twelve months and -2.9% over six, and sits below its 200-day, so it fails the trend filter and does not deserve a core weight \u2014 it stays as the carry leg, not as ballast.",
+      "stop_loss_pct": 10.0
+    }
+  ],
+  "cash_pct": 14,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): This is a trend-stacking mandate, so I applied the trend filter honestly and it told me to sell most of what I own. Cuts: MTUM to zero (-15.7% 1m, -9.9% in five days, 10.5% below its 50-day \u2014 the momentum factor IS the crowded AI trade that is unwinding, and a trend book cannot be long the worst-trending factor). BTC 16% to 5% and ETH 9% to 6% \u2014 both majors are below their 200-day (BTC -26% 12m, ETH -32% 12m), and a trend mandate follows the trend even when the trend is in its headline sleeve; ETH keeps the larger stub only because it is +8.6% above its 50-day with the strongest short-term crypto momentum. JEPI 16% to 8% \u2014 it returned +0.1% over twelve months and sits below its 200-day, so it is dead money that survives only as the covered-call carry leg the mandate requires. Adds go into the one genuinely confirmed and accelerating trend in the market: commodity and energy carry. PDBC 14% to 24% (+10.9% 1m, +20.2% 6m, +30.2% 12m, 12.6% above its 200-day, with oil +18.5% on the month and a +5.8% day on 7/29). New XLE at 14% \u2014 the equity expression of the same supply shock, +9.5% 1m and +18.1% 6m, and it pays a dividend, so it is trend and carry in one line. DBMF stays 20% as the managed-futures core, positioned long commodities and short equities and bonds, which is exactly this tape. SMH short nudged 7% to 9% as the strongest downtrend available. Cash rises to 14% because there are not enough confirmed uptrends to fill the book, and forcing capital into assets below their 200-day to avoid holding cash would be the precise mistake this mandate exists to prevent \u2014 idle cash earns 4% APY. Every leg carries a stop and most a take-profit, per the mandate's discipline requirement. Crypto turnover costs ~2bps of NAV at 35bps spot, which is cheap for removing 14 points of exposure to a broken trend.",
+  "novelty": "The two books now share only the SMH short, 8% in Round 2 against 9% here, which is roughly 9% of this book's 86% gross \u2014 far below the 50% same-direction threshold \u2014 because Round 2 is an unlevered long-only defensive equity book (healthcare, dividend-quality, min-vol, staples) while this one is commodity carry, managed futures, energy trend and a small crypto stub, with no overlapping long leg at all.",
+  "r2_overlap_pct": 9.2,
+  "research_notes": "Pulled full price/trend history (1d/5d/1m/3m/6m/12m plus 50d & 200d moving-average position) for ~60 tickers via Yahoo chart data through the 2026-07-29 close. WebSearch budget was exhausted and most news sites returned 503/403, so the read is built from price action, which was unusually unambiguous.\n\nREGIME: a memory/foundry capex bust plus a rates-and-oil inflation impulse \u2014 NOT a broad crash. MU -35.5% 1m, INTC -37.8%, AMD -20.4%, TSM -17.7%, SMH -20.2% (-14.1% in 5 days, -4.8% on 7/29). But NVDA only -2.5% 1m, AVGO -0.6%, MSFT +6.0%, AAPL +20.0%, META +4.1% \u2014 the damage is concentrated in the capex/memory complex, not AI compute leaders. SPY just -1.6% 1m, equal-weight RSP +1.3% 1m and +6.0% 3m, HYG -1.0% (no credit stress). VIX 20.7, +24% on the week. This is a rotation out of one crowded trade, not a systemic event.\n\nWHERE MONEY IS GOING: healthcare is the decisive leader and it is broad, not one name \u2014 XLV +13.9% 3m/+23.9% 12m, VHT +14.3% 3m, LLY +29.5%, ABBV +24.6%, MRK +19.4%, JNJ +15.5%, UNH +13.5%, IBB +11.8%, PPH +11.4%, IHI +7.9% in 5d. XLV sits +6.8% over its 50d and +9.2% over its 200d. Also bid: staples (XLP +3.5% 1m, KO +7.8% 1m/+13.1% 3m), dividend-quality (SCHD +6.0% 1m, +15.2% 6m, +26.0% 12m, +12.4% over 200d), energy (XLE +9.5% 1m, +18.1% 6m), financials (+5.5% 1m).\n\nTWO KEY NEGATIVE FINDINGS THAT CHANGED MY BOOKS:\n1) QUAL is the wrong quality vehicle. MSCI USA Quality is heavy in exactly the megacaps de-rating: -0.6% 1m versus XLV +3.4% and SCHD +6.0%. It delivered tech beta, not defense. SCHD's ROE/FCF-and-leverage screen is the same quality factor without the AI-bubble exposure and it beats QUAL on every horizon.\n2) Gold is broken, and so are bonds. GLD -22.1% 6m, -4.1% below its 50d and -9.9% below its 200d; GDX -16.7% 3m, SLV -22.3%. The +2.7% gold pop on 7/29 is a bounce inside a confirmed downtrend. TLT is -5.3% 1m with 10y yields at 4.62% and rising. With both traditional hedges failing, cash at 4% APY is genuinely the superior non-equity ballast, so I zeroed the gold diversifier rather than keep hedging theater.\n\nON THE SMH SHORT (held in both books): the trend is my best idea, but SMH is now -15.5% below its 50-day while still +12.4% ABOVE its 200-day and +70% over 12 months. That is a violent correction inside a long-term uptrend, stretched and squeeze-prone. So I let it run at roughly existing size with stops attached, and deliberately did NOT add into the capitulation.\n\nCRYPTO (Round 3): the trend filter says no. BTC -26.0% 12m, -10.1% 6m, -10.6% below its 200d. ETH -32.4% 12m, -11.7% 6m, -9.7% below its 200d \u2014 though ETH is +8.6% above its 50d and +10.0% 1m, the strongest short-term crypto momentum. Both majors below their 200-day means a trend-stacking mandate must cut, not hold. Also cut MTUM entirely (-15.7% 1m, -10.5% below its 50d) and cut JEPI hard \u2014 it is -2.9% over 6m, +0.1% over 12m and below its 200-day, i.e. dead money that only earns its keep as the option-carry mandate leg. Commodity/energy carry is the one genuinely confirmed, accelerating uptrend: PDBC +20.2% 6m/+30.2% 12m and +12.6% over its 200d, XLE +18.1% 6m/+33.8% 12m."
+}

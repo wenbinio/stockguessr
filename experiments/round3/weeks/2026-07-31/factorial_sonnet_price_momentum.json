@@ -1,0 +1,77 @@
+{
+  "name": "Sonnet+tools price momentum",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Energy sector momentum is now fundamentally confirmed: refiner margins at fresh record highs for three straight sessions, oil supply fears plus AI-infrastructure power demand keeping prices elevated. Strongest, best-backed momentum in the book."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "State Street just upgraded healthcare from neutral to positive; Lilly/JNJ/AbbVie hitting all-time highs; sector acting as a defensive haven from tech drawdowns with demand characteristics uncorrelated to AI capex cycles."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "XLF touched a fresh all-time high this week on fintech strength; banks posting record Q2 profitability aided by trading and AI adoption; trades at only ~15.5x forward earnings."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Regional banks near 52-week highs with 1yr total return of +26%; strong Q2 lending rebound and fee income; emerging 'cheaper way to play the AI banking boom' narrative among analysts."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Biotech M&A running at $106B across 201 deals in 2026, one of the strongest stretches on record; AI-assisted drug discovery and further consolidation cited as ongoing catalysts."
+    },
+    {
+      "symbol": "GS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Jul 29 -5% move confirmed as a broad pre-FOMC bank-sector selloff (JPM, C also down), not GS-specific; comes right after a record Q2 beat and an 11% dividend hike. Fundamentals intact; kept as the single-stock financial anchor."
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Trimmed: solid trailing return but the weakest differentiated momentum signal in the set -- more mega-cap value beta than an active rotation theme -- funds the higher-conviction adds."
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Fresh checks (Jul 29-30 close) confirm the momentum thesis is intact and strengthening in most sleeves, not reversing, so I'm leaning further into the strongest-confirmed names and trimming the weaker diversifier and a sliver of cash, while keeping a real cash buffer given a broad bank-sector pullback ahead of the Fed meeting. XLE: refiner margins hit fresh record highs, energy sector outperformance is now explicitly tied to AI-infra power demand plus oil supply fears -- strongest, most fundamentally-backed momentum in the book, sized up. XLF: touched a fresh all-time high on fintech/trading strength and record Q2 bank profitability -- sized up. XLV: State Street just upgraded healthcare to positive after a year of caution, pharma names hitting all-time highs, 'haven from tech' flows continuing -- sized up modestly. KRE: still near 52-week highs (1yr total return +26%) with an 'AI banking boom' narrative and strong Q2 lending/fee income, held roughly flat despite a soft single day. XBI: biotech M&A running at $106B/201 deals, one of the strongest stretches on record -- held. GS: -5% single-day move on Jul 29 was confirmed as a sector-wide pre-FOMC bank selloff (JPM/C also down), not company-specific -- Q2 earnings were a record beat with an 11% dividend hike, so fundamentals are intact; trimmed only slightly for single-name/event risk into the Fed meeting rather than cut. IWD: least differentiated signal (mega-cap-heavy value beta rather than a live momentum theme) -- trimmed to fund the higher-conviction adds. Cash trimmed from 12% to 8%, still an above-average buffer consistent with the mandate's crash protection, given elevated macro (Fed) event risk this week.",
+  "research_notes": "Web search budget was exhausted for this session (0 queries went through), so I used WebFetch directly against stockanalysis.com pages for XLE, XLV, KRE, XLF, IWD and GS, plus a news fetch on the Jul 29 bank selloff, to sanity-check whether the momentum theses behind the existing book had continued, stalled, or reversed since it was set on 2026-07-20. Findings: XLE -- refiner margins at fresh record highs, energy strength now explicitly linked to AI-infra power demand plus oil supply risk (thesis strengthening). XLV -- State Street upgraded healthcare to positive, pharma megacaps at all-time highs, sector framed as a haven from tech drawdowns (thesis strengthening). XLF -- touched a fresh all-time high on fintech and record bank profitability (thesis strengthening). KRE -- near 52-week highs, 1yr total return +26%, strong Q2 lending/fee income, 'AI banking boom' framing (thesis intact, slightly cooling on the day). XBI -- biotech M&A at $106B/201 deals, one of the strongest stretches on record (thesis intact despite a soft single day). GS -- fell ~5% on Jul 29, but I confirmed via a news fetch this was a broad pre-FOMC bank-sector selloff (JPM and Citi also fell), not GS-specific; the drop came right after a record Q2 earnings beat and an 11% dividend hike, so fundamentals remain strong. IWD -- solid trailing return but weakest differentiated momentum signal, more generic mega-cap value beta. Net conclusion: no reversal signals anywhere in the book; used the new free-sizing rules to lean modestly harder into the best-confirmed sleeves (XLE, XLV, XLF), trim the least-differentiated diversifier (IWD) and pare cash slightly (12%->8%) while still keeping an above-average buffer given Fed-meeting event risk this week, consistent with the mandate's crash-protection stance. I only manage Round 3 per my account packet (no Round 2 book), so no novelty constraint applies."
+}

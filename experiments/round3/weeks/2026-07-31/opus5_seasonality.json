@@ -1,0 +1,76 @@
+{
+  "name": "Opus 5 seasonality",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "A calendar-driven book sized off measured Jul-27-to-year-end window statistics computed over 2000-2025 daily history: overweight the sectors with the highest seasonal hit-rates into the Aug-Dec window (industrials, financials, regional banks, large-cap growth), hold gold and utilities as the measured Aug-Sep defensive/flow legs, short the two sleeves that most reliably lag the S&P over the same calendar window (developed non-US equity and intermediate Treasuries), and carry 7% cash as pre-committed dry powder for the Oct-1 and Nov-1 seasonal rotations.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Core of the book and my strongest measured window: XLI Jul-27 to Dec-31 averaged +5.39% at a 21/26-year (81%) hit rate, t=+2.49, 9/10 in the last decade, with the Nov-Dec leg alone at +4.68%, 81%, t=+3.78 and +1.59% versus SPY at t=+3.04. The new macro reinforces it \u2014 industrials are the cyclical least exposed to the AI-capex de-rating hitting tech, benefit from defense spend during an active Iran conflict, and are far less duration-sensitive than growth into a hiking scare. Raised from 18% because this is the one leg where my best statistic and the new regime agree without qualification."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 17,
+      "thesis": "Highest-conviction leg in the book after the hawkish hold. Intermediate Treasuries beat SPY in only 5/23 years (22%) over Jul-27 to Dec-31 and in just 1 of the last 10, averaging -6.00% \u2014 the most extreme number in my study. The macro now agrees independently: three FOMC dissents for a 25bp hike, ~60-79% priced odds of a hike by September, Brent through $90 re-igniting an inflation impulse, and long-dated yields rising on a HOLD. Raised from 4%, where it was too small to earn anything even when right. 3% borrow over five months is roughly 0.2% of NAV. Stopped at -10% because an IEF rally that large is a flight-to-quality recession signal, in which case my cyclical longs are bleeding too and I do not want the correlation.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Financials carry a strong Q4 seasonal \u2014 XLF Jul-27 to Dec-31 averaged +5.04%, 20/26 years (77%), and 9/10 in the last decade at +8.94% average, with Oct-31 to Dec-31 at +3.64%, 19/26 years. The regime change is a direct tailwind rather than a tolerance: the Fed holding while long-dated yields rise is a bear steepener, the textbook environment for bank net interest margin, and financials were named among the sectors showing broad participation. Raised from 13%."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "My cleanest non-equity seasonal now carrying a live catalyst: GLD Jul-27 to Oct-27 averaged +3.54%, 14/21 years (67%), t=+1.69, and +3.13% versus SPY at t=+1.80. Layered on top are an active Iran re-engagement, a $90+ Brent inflation impulse, and the specific tell that gold rose 0.94% on July 29 even as the Fed turned hawkish and yields rose. Positioning is far cleaner at $4,066 than at the $5,595 January peak. Doubles as the hedge that pays if a September hike breaks my cyclical longs, so the take-profit is set wide at +30% to bank only an extreme war spike without decapitating the hedge during ordinary strength.",
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Kept near full size against my initial instinct to cut it as a bond proxy into a hiking scare, because the breadth data overrides that read: 90% of XLU constituents trade above their 200-day EMA, the highest of all 11 sectors, and the bid is structural AI power demand rather than duration. The measured window supports it \u2014 XLU Jul-27 to Sep-30 averaged +1.14% and was positive 18/26 years versus SPY at -0.55%, and Sep-30 to Oct-31 averaged +1.24%, 19/26 years (73%), 8/10 in the last decade. Trimmed one point from 9% purely for rate risk."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Highest-return seasonal sleeve I measured: KRE Jul-27 to Dec-31 averaged +7.24%, 15/20 years (75%), t=+2.28, and 8/10 in the last decade at +10.14%, with Oct-31 to Dec-31 alone at +5.91%. Regional banks are the highest-beta expression of the same bear-steepener NIM tailwind driving the XLF leg. Nudged up only one point from 6% despite the strong setup, because it is the leg most exposed to credit stress if a September hike lands on top of an oil shock. Stop tightened from -25% to -20% for exactly that reason: the original level was calibrated to 2008 as a slow beta drawdown, whereas credit stress would show up faster.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut from 20% \u2014 the largest single change in the book. QQQ minus SPY measured only +1.05% at t=+1.35, the least significant statistic in my entire study, and I was carrying it at top weight on narrative rather than on evidence. It now faces the Nasdaq 100 in correction, an AI-capex de-rating crystallised by Meta missing by $1.04 with expenses +55% against revenue +28% and light Q3 guidance, and rising long yields compressing exactly this duration. I retain a 6% stub because the ABSOLUTE window is still respectable at +3.97%, 20/26 years (77%), and Microsoft's Azure +43% shows the capex is buying real revenue \u2014 it was the relative case that was thin, not the absolute one.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Held at existing size rather than added. The seasonal case remains one of my better relative statistics \u2014 EFA minus SPY was positive in only 9/24 years (38%) over Jul-27 to Dec-31 and just 2/10 in the last decade at -2.65% average. But I declined to size it up because half its mechanism was dollar strength and DXY is rangebound near 101 rather than breaking out, and a US-led tech correction can flatter less tech-heavy foreign indices. Its natural pair, the long QQQ leg, also just shrank by two thirds, so adding here would leave an unanchored outright short.",
+      "stop_loss_pct": 12.0
+    }
+  ],
+  "cash_pct": 6,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The regime changed under the book three days after I set it, and it changed in a way that sorts my legs cleanly by measured conviction rather than forcing me off mandate. I am not abandoning calendar seasonality \u2014 I am re-sizing it so that weight concentrates where my Jul-27-to-year-end statistics and the new macro point the same direction, and drains from where they conflict.\n\nCUT QQQ 20 -> 6. This was my largest position and my weakest evidence: QQQ minus SPY measured t=+1.35, the least significant statistic in my entire study, and I was carrying it at top weight purely because it was the 'growth core'. It now faces three simultaneous headwinds \u2014 the Nasdaq 100 is in correction, Meta missed by $1.04 with expenses +55% against revenue +28% and guided Q3 light, and rising long yields compress exactly this duration. I keep a 6% stub because QQQ's ABSOLUTE Jul-27 to Dec-31 window is still +3.97% at 20/26 years (77%) and Microsoft's Azure +43% shows the capex is at least buying revenue; it is the relative-to-SPY case, not the absolute case, that was thin. Sizing by measured conviction is the mandate, and this leg measured worst.\n\nSIZE UP IEF SHORT 4 -> 17. This is now the single cleanest idea I own. My seasonal read was already the most extreme number in the study \u2014 intermediate Treasuries beat SPY in only 5/23 years (22%) over this window and in just 1 of the last 10, at -6.00% average. The macro has now arrived at the same conclusion from the other side: three FOMC dissents for a hike, ~60-79% odds of a hike by September, a $90 Brent inflation impulse, and long yields that ROSE on a hold. At 4% this leg could not earn anything even if it was perfectly right. At 17% it can. 3% borrow over five months costs ~0.2% of NAV, which is cheap for the only leg that pays off in the scenario that hurts everything else I own.\n\nSIZE UP XLI 18 -> 20 and XLF 13 -> 16, KRE 6 -> 7. These carry my best measured windows (XLI +5.39%, 21/26 years, t=+2.49, with Nov-Dec at t=+3.78 and t=+3.04 versus SPY; XLF +5.04% at 20/26 and 9/10 in the last decade at +8.94%; KRE the highest-return sleeve at +7.24%, t=+2.28, 8/10 last decade at +10.14%). Crucially the macro now reinforces rather than merely permits them: a bear steepener with the Fed on hold and long yields rising is the textbook environment for bank net interest margin, and industrials are the cyclical least exposed to the AI-capex de-rating while benefiting from defense spending in an active Middle East conflict. Financials and industrials were both named in the broad-participation breadth data.\n\nSIZE UP GLD 13 -> 15. My cleanest non-equity seasonal (+3.54% Jul-27 to Oct-27, t=+1.69, +3.13% versus SPY at t=+1.80) now has a live geopolitical and inflation catalyst stacked on top, and the tell that matters is that gold rose 0.94% on the hawkish day while yields rose. Positioning is also far cleaner at $4,066 than at the January $5,595 peak. This is simultaneously my seasonal leg and the hedge that pays if the September hike breaks my cyclical longs.\n\nHOLD XLU 9 -> 8. I expected to cut this as a bond proxy into a hiking scare, but the breadth data argued me out of it: 90% of XLU constituents sit above their 200-day EMA, the strongest of all 11 sectors, because the bid is AI power demand rather than duration. Combined with a positive measured Sep-30 to Oct-31 window (19/26 years, 8/10 in the last decade) I keep it near full size, trimming a point for rate risk.\n\nDROP XLP 5 -> 0. Painful because it had my highest t-statistic (t=+3.32 absolute, t=+3.93 for Nov-Dec), but that edge is concentrated in the Oct-31 to Dec-31 leg, and staples face input-cost compression from a $90 oil shock in the meantime. This is a timing decision, not a rejection: I intend to re-enter it with cash at the November rotation, which is exactly what the dry powder is for.\n\nTRIM EFA SHORT 5 -> 5 (unchanged). I nearly cut this. The seasonal case is genuinely good (positive in only 9/24 years, 2/10 in the last decade at -2.65%), but half of its mechanism was dollar strength and DXY is stuck near 101 rather than breaking out \u2014 and a US-led tech correction can actually flatter less tech-heavy foreign indices. Holding at existing size rather than adding, since its natural pair (long QQQ) just shrank by two thirds.\n\nCASH 7 -> 6. I release one point to fund the IEF short while preserving essentially all pre-committed dry powder for the Oct-1 and Nov-1 rotations, when XLP and the mid/small-cap shift come back on.\n\nStanding orders: I tighten KRE's stop from -25% to -20%, because the original -25% was calibrated to the 2008 drawdown as a pure beta event, whereas the live risk is credit stress from a hike landing on top of an oil shock, which would show up faster. I add a -18% stop on the QQQ stub and a -12% stop on EFA. I attach a -10% stop to the IEF short: if intermediate Treasuries rally 10% against me that is a flight-to-quality recession event, in which case my industrials, financials and regional banks are all bleeding too and I want that leg closed rather than doubling the correlation. I put a +30% take-profit on GLD to bank an extreme war spike, set deliberately wide so it does not decapitate the hedge during ordinary strength. Taking the next available fill rather than naming a date \u2014 I am adding to cyclicals into a flush, which is the right side of this print, and waiting for a bounce to sell my QQQ cut would be over-cleverness.",
+  "novelty": "The novelty rule does not bind here: my packet lists Round 3 as the only round I manage, so I run no Round-2 book for this Round-3 book to overlap with, and there is no same-direction gross-weight constraint to satisfy.",
+  "research_notes": "Researched the July 28-29 FOMC and the tape since my 7/27 book was set. Findings: (1) Fed held at 3.50-3.75% for a fifth meeting but THREE members dissented in favour of a 25bp HIKE; markets now price roughly 60-79% odds of at least one hike by the September meeting. Long-dated yields rose on the announcement \u2014 a bear steepener, not a bull flattener. (2) Risk assets sold off hard on 7/29: S&P -1.52% to 7,316, Dow -2.19% (-1,100pts), Nasdaq -1.74%, with the Nasdaq 100 entering correction. (3) The proximate equity story is AI-capex skepticism, not rates alone: Meta missed by $1.04 (EPS $6.18), expenses +55% to $42bn vs revenue +28%, net income -14%, and guided Q3 light \u2014 shares -6% to -10% after hours. Microsoft beat (rev $90.01bn vs $87.62bn est, Azure +43% cc) and rose ~2.4%. SK Hynix disappointed and semis were the worst group. (4) Geopolitics: Iran launched an attempted surprise attack, the first US-Iran re-engagement since the recent pause; Brent jumped over 7% through $90, a seven-month high. Energy and utilities were the only groups showing positive breadth. (5) Inflation is 3.5% headline / 2.6% core and cooling, but a $90+ oil impulse plus three hike dissents means the disinflation trade is over. (6) Gold sits at $4,066, far below the January $5,595 peak, and notably ROSE 0.94% on the hawkish day when yields rose \u2014 a resilience tell and cleaner positioning. (7) XLU has 90% of constituents above their 200-day EMA, the highest breadth of any of the 11 sectors, driven by AI power demand rather than by duration. (8) DXY is rangebound near 101, not breaking out, which weakens the dollar-strength half of my EFA-short case.\n\nHow this maps onto my measured seasonal windows: the macro regime AGREES with my highest-conviction stats (short IEF, long XLI, long XLF/KRE \u2014 a bear steepener is the single best backdrop for bank NIM, and industrials carry my strongest measured window at 81% hit rate and t=+2.49/+3.78) and FIGHTS my weakest stat (QQQ minus SPY was only t=+1.35, the least significant number in my entire study, and it now sits against a correction, an AI-capex de-rating and rising discount rates). Gold's Aug-Sep restocking window is reinforced by a live shooting war and an oil-driven inflation impulse. Utilities' rate sensitivity is offset by best-in-market breadth and a structural power-demand bid."
+}

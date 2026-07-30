@@ -1,0 +1,72 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "stop_loss_pct": 18.0,
+      "thesis": "Energy carry, now the anchor leg. Up +1.88% on a -1.54% SPY day and +37% over the year on geopolitical supply fear, elevated oil and AI-driven power demand. PE 21, 2.6% yield, beta 0.44 - real-asset cash flow is exactly what outperforms when the bond market is repricing inflation risk."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "stop_loss_pct": 20.0,
+      "thesis": "Gold miners as the levered Fed-credibility trade. Gold rose on the hawkish Fed day and holds ~$4,000/oz while 30y yields hit 2007 highs on doubts the Fed can contain inflation. Miners at PE 13.6 and -37% from their high are earning enormous margins at this gold price. Take-profit REMOVED so I am not forced out of the thesis early; stop widened to -20%."
+    },
+    {
+      "symbol": "COPX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 22.0,
+      "thesis": "Copper miners: tight physical supply meeting electrification and datacenter buildout demand. +75% over the past year and still -24% below its high, with a 2.5% yield. The commodity-linked real-asset leg of the rotation."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Brazil at PE 9.8 with a 4.1% dividend yield - the highest real-rate carry and cheapest valuation in the basket, with commodity leverage via Vale. Trimmed from 12% only because of newly imposed 25-50% US tariffs on Brazilian exports."
+    },
+    {
+      "symbol": "EZU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 18.0,
+      "thesis": "Eurozone value re-rating on ECB easing plus sustained fiscal and defense spending. Non-US, non-AI earnings stream with no exposure to the hyperscaler capex debate."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 18.0,
+      "thesis": "Japan corporate-governance reform and buyback story, low correlation to US tech. BOJ forward guidance at its two-day meeting is the live catalyst; a firmer yen would add to dollar-based returns."
+    },
+    {
+      "symbol": "UUP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "stop_loss_pct": 10.0,
+      "thesis": "Cut 8%-to-3%. Kept as the token dollar short the mandate requires, but heavily reduced: UUP sits near the top of its 52-week range and a hawkish Warsh Fed with September hike risk means the near-term rate differential favours the dollar, even if the fiscal-credibility story eventually does not."
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The macro resolved decisively in favour of two legs of this mandate and against two others, so I am re-weighting hard rather than holding a book that is flat because its winners and losers are cancelling out. FOR: energy and gold. XLE rose +1.88% on a day SPY fell -1.54% and is +37% over the year on geopolitical supply fear, high oil and AI power demand - it is the real-asset carry leg working exactly as intended, so it goes to 26%. And gold ROSE (+0.46%, +0.92% after-hours, ~$4,000/oz) on the most hawkish Fed day since 2024 - that is the tell. When 30y yields hit 2007 highs specifically because the bond market doubts the Fed can contain inflation and Warsh's credibility is being openly questioned, that IS the gold thesis, and GDX at PE 13.6 and -37% from its high is the levered expression of it, so 22%. I am also REMOVING the +40% take-profit on GDX: I do not want to be automatically forced out of my best macro leg right as it starts working. AGAINST: the dollar short and EEM. UUP sits near the TOP of its 52-week range with a hawkish Fed and September hike risk - the near-term rate differential is against me even though the long-run credibility story is not - so the dollar short is cut 8%-to-3%, kept only as the token leg the mandate calls for. EEM is CUT ENTIRELY: its top three holdings are TSMC 15.2%, Samsung 6.2% and SK hynix 5.1%, roughly a quarter of the fund in semis, which makes it a levered AI-chip proxy dressed as emerging markets. Owning it both contradicts the 'rotate out of US mega-cap AI' mandate and doubles down on the exact factor my Round 2 book already carries; it fell -2.07% today with the chips. Its weight goes to energy and gold. COPX 12% retained as the commodity/electrification leg (+75% 1yr, -24% off high). EWZ trimmed 12%-to-10% purely on the new 25-50% US tariffs on Brazilian goods, though PE 9.8 and a 4.1% yield still make it the cheapest carry available. EZU 10% and EWJ 9% held as the non-US, non-AI value legs, with the BOJ meeting live for EWJ. Stops widened across the board (-18% to -22%) so the thesis has room in a high-volatility rate regime instead of being whipsawed out at the low.",
+  "novelty": "Zero symbol overlap and zero same-direction gross-weight overlap with my Round 2 book: Round 2 is US AI-infrastructure equity (GEV, AMAT, AVGO, MU, ANET long, SMCI short), while Round 3 is entirely real assets and ex-US value (XLE, GDX, COPX, EWZ, EZU, EWJ long, UUP short) - and I deliberately cut EEM this round precisely because its ~26% semiconductor weighting was the one place the two books were quietly converging on the same AI factor.",
+  "r2_overlap_pct": 0,
+  "research_notes": "MACRO (29-30 Jul 2026): Warsh Fed held 9-3, read as hawkish; market now prices a possible SEPTEMBER HIKE. 30y Treasury at highest yield since 2007 \u2014 the bond market is openly doubting inflation containment and Warsh's credibility. Dow -1,000pts, worst Fed Day since Dec-2024. SPY -1.54% to $729 (only ~4% off its high) \u2014 so this is a RATE/MULTIPLE shock, not a growth shock, and it lands hardest on long-duration high-multiple equities.\n\nAI-INFRA (the two overnight catalysts that reshaped my Round 2): MSFT after-hours +8.8% \u2014 Azure +41% and past $100B, but capex guided DOWN to $175B CY26 vs ~$190B expected, and datacenter useful life extended 15\u219225 years. META after-hours -7.5% \u2014 EPS $6.18 vs $7.22 est, capex RAISED to $130-145B. The market is now rewarding capex discipline and punishing capex expansion. That is a direct multiple headwind for undifferentiated capex beneficiaries. Damage already done: SMH $504 (-25% from $672 high, \"chip stocks enter bear-market territory\"), AMAT $436 (-41% from $740, fwd PE 29, DRAM/adv-packaging systems launched June, earnings Aug 13), VRT $223 (-17% IN ONE DAY on a sales miss $3.27B vs $3.38B, PE 50, -41% from high), MU $739 (-10% on the day, -41% from June peak, PE 18.5 / FWD PE 5.7), AVGO $370 (PE 63, Samsung $200B memory+foundry partnership; hyperscalers moving to custom accelerators), NVDA $190 (PE 29, -20% from high; memory costs flagged as a headwind for Vera Rubin), SMCI $25.70 (-9.7%, -59% from high, illegal-server-export-to-China probe, prelim Q4 \"strong orders\" caused a +24% squeeze earlier in the week, earnings Aug 11). GEV $900: decisive Q2 beat-and-raise, guidance +$1B, PE 25.8, avg PT $1,233 \u2014 yet the stock still fell 4.6%, i.e. good numbers are not being paid for right now. Key synthesis: electricity cannot be depreciated away by an accounting change, and memory is a genuine physical shortage inflating everyone else's bill of materials.\n\nROTATION BASKET (Round 3): XLE $58.65 UP 1.88% on a -1.54% SPY day, +37% 1yr \u2014 energy is outperforming on geopolitical supply fear, high oil and AI power demand; PE 21, 2.6% yield, beta 0.44. GLD $371 (gold ~$4,000/oz) rose +0.46% and +0.92% after-hours ON the hawkish Fed day \u2014 the debasement/credibility trade is waking up; GDX $73.57 is -37% from its $117 high at PE 13.6, a heavily levered call on that. COPX $76 +75% 1yr, -24% off high, AI buildout adding demand to materials. EWZ PE 9.8 / 4.1% yield but facing new 25-50% US tariffs on Brazilian goods. Critically, EEM is NOT a clean rotation vehicle: TSMC 15.2% + Samsung 6.2% + SK hynix 5.1% = ~26% semis, so it is a levered AI-semi proxy that both duplicates my Round 2 factor and contradicts the \"rotate out of AI\" mandate \u2014 it fell -2.07% today with the chips. UUP $28.42 sits near the TOP of its 52-week range ($26.40-$28.60) \u2014 with a hawkish Fed and hike risk, the short-dollar leg is fighting the tape."
+}

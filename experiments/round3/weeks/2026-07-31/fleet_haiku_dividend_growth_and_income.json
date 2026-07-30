@@ -1,0 +1,88 @@
+{
+  "name": "Haiku dividend growth and income",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14.72,
+      "thesis": "Value ETF core mean-reversion play, expanded position anchoring defensive rotation vs growth extremes"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12.88,
+      "thesis": "Financials lagging YTD, dividend yield 3-4%, cyclical upside as rates stabilize at 3.5-3.75%"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.12,
+      "thesis": "Energy, geopolitical support, dividend yield capture, mean-reversion play vs growth leadership"
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.12,
+      "thesis": "Small-cap value subset, quality reversion play, avoids momentum excess despite small-cap rally"
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.12,
+      "thesis": "Industrials, infrastructure tailwind, cyclical undervaluation vs growth, benefits from rate stability"
+    },
+    {
+      "symbol": "SCHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.2,
+      "thesis": "Dividend growth ETF, yield capture 3.5%+, quality screen, tactical rotation anchor for value thesis"
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.44,
+      "thesis": "Low-volatility laggard (5.8% YTD), defensive recovery play, downside protected in momentum correction"
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6.44,
+      "take_profit_pct": 20.0,
+      "thesis": "3x small-cap momentum short retained as mean-reversion hedge; small-caps surged 22% in H1 (best start since 1991), creates hedging opportunity; +20% take-profit maintains tactical discipline"
+    },
+    {
+      "symbol": "PSQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4.6,
+      "thesis": "NEW: Inverse Nasdaq-100 hedge capturing semiconductor/growth momentum weakness; mandated defensive short on semis (explicit in mandate); semis sector struggling per research; SOXL short previously stopped out, requiring new hedge vehicle"
+    },
+    {
+      "symbol": "CASH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.36,
+      "thesis": "Conservative cash buffer for execution and tactical opportunity; maintains 92% gross exposure (80% long + 12% short) for conviction positioning"
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Mandate requires tactical shorts on both overheated momentum sectors (semis AND small-caps); current book only shorts small-caps via TNA 7%, completely missing semiconductor short despite semis being explicitly named as 'extreme-outperformers' requiring shorts. SOXL short previously stopped out for loss on 2026-07-21, leaving semis unhedged. With Russell 2000 up 22% YTD and semiconductor sector described as struggling with key earnings ahead, adding PSQ (inverse Nasdaq-100) captures both growth and semis momentum downside. Maintains 92% gross exposure for conviction on value longs while adding dual-momentum hedge. Strengthens defensive value rotation thesis. Novelty satisfied: only ~2% VTV overlap with Round 2; completely different positioning (value-rotation vs dividend-consolidation).",
+  "novelty": "Round 3 rotates from dividend-consolidation focus (Round 2: JNJ/PG/MCD/SCHD/SOXL/UPRO) to pure defensive value mean-reversion (VTV/XLF/XLE/IWD/XLI/SCHV/USMV) with dual tactical momentum shorts (TNA small-cap + PSQ semis/growth), maintaining less than 3% position overlap with Round 2 while fully satisfying both-sides-of-momentum hedge mandate.",
+  "r2_overlap_pct": 9.0,
+  "research_notes": "Researched current market conditions as of 2026-07-30: Fed held rates at 3.5-3.75% (July 29 decision) with three officials dissenting for rate increase; large value up 11% YTD vs growth, signaling major mean-reversion rotation; Russell 2000 small-caps surged 22% in H1 (best start since 1991); dividend aristocrats lagging S&P 500 but delivering 9.91% 1-year return with lower volatility; NVIDIA undervalued at 41% discount to GF Value despite 43x forward P/E; semiconductor sector described as struggling with key earnings ahead despite AI build-out continuing. Portfolio markedly misaligned with stated mandates: Round 2 overweights dividends, underweights small-cap recovery, incorrectly shorts semis instead of consolidating them long, and lacks leveraged tech or rate hedge positioning. Round 3 properly shorts small-cap momentum but lacks required semiconductor short in face of overheated growth momentum.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 8; scaled by 0.9200 to sum to 92 (relative sizing preserved, declared cash kept)"
+}

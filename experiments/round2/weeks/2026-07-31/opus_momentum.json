@@ -1,0 +1,98 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 23,
+      "thesis": "The only sector positive on 1w, 1m, 3m and 6m at once (+4.3/+3.4/+16.1/+7.9) with real breadth - ABT, TMO, HCA, AMGN, JNJ, ABBV, LLY, MRK all trending. Capital fleeing AI capex needs cash-flow-return defensives and this is where it is landing. Largest position because it is the highest-quality trend at the lowest volatility."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Staples +3.5% 1w / +3.5% 1m / +5.9% 3m with KO +8.4% 1w and PM, KMB, CL, MO all up on 3m. Low-beta dividend momentum that historically leads for months once a growth-crowding unwind begins."
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "+10.5% 1w, +14.9% 1m, +23.0% 3m on a post-earnings breakout. Post-earnings-announcement drift is the most reliable momentum anomaly there is, and defense budgets are indifferent to hyperscaler capex discipline."
+    },
+    {
+      "symbol": "LMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "+10.7% 1w, +13.4% 1m, +11.8% 3m on a fresh post-earnings move. Pairs with RTX as an uncorrelated-to-AI momentum sleeve with real backlog visibility."
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12.0,
+      "thesis": "Best large-cap trend in the universe (+3.8/+20.0/+25.0/+31.2, just crossed $5tn) and structurally the anti-capex tech name: it monetises AI on-device instead of building $130bn of data centres, so it wins the exact rotation killing the rest of tech. Sized 9% not 15% because Q3 earnings land tonight - strong iPhone 17 shipment data plus momentum is positive expectancy, but not worth a 15% gap."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Strongest 1m sector at +9.5%, +19.7% on 6m, XOM +15.2% 1m. Commodity momentum re-engaging gives a genuinely different return driver from the defensive equity sleeve, and it is the one long that benefits if the Fed's inflation worry proves right."
+    },
+    {
+      "symbol": "VZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "+6.6% 1w, +8.9% 1m, +24.0% 6m on a ~6% dividend. High-carry, low-beta trend with zero AI-capex exposure - the cleanest small diversifier available."
+    },
+    {
+      "symbol": "SOXX",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "thesis": "The core sign-flip of my own mandate: -16.3% 1w and -24.3% 1m as the market repriced AI capex, with semi-cap equipment (AMAT/LRCX/KLAC near -21% in a week, -38% in a month) leading down. Hyperscalers are trapped - cut capex and orders collapse, keep spending and their own stock gets hit like Meta's did. Stopped at 15% because 3m and 6m are still positive, so this is a 1m downtrend inside a longer uptrend and squeezes can be vicious."
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 20.0,
+      "thesis": "The single cleanest trend short available: negative on 1w, 1m, 3m and 6m (-6.4/-20.0/-28.8/-32.2) with no positive-momentum leg at all. At a 52-week low with default insurance at 200bp and Ellison personally backstopping $40.4bn of a media deal - the most debt-funded AI-capex story in the market, being repriced by the credit market first."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Capital-efficient version of the same view: 3x short semis beta from only 4% of the book, plus volatility decay that bleeds the instrument even in violent sideways chop (SOXL -61% in a month against SOXX -24%). Stop and take-profit attached because a leveraged-ETF short is the one position here with genuinely unbounded upside risk."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "stop_loss_pct": 22.0,
+      "thesis": "Also negative on all four horizons (-20.2/-27.6/-20.7/-30.8) and its worst week since 2022 specifically because investors balked at Musk's robotaxi and AI spending plans - the identical capex-punishment theme. Kept to 3% only because it sits 3% above its 52-week low, which is where forced-cover squeezes start."
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Momentum means following the trend that exists, not the trend I wish existed - and the trend has inverted hard. The AI-capex complex broke on real, dated catalysts (Meta's FCF -91% on a $130-145bn capex guide, Oracle CDS at 200bp, NVDA CDS parabolic, Qualcomm's miss, a hawkish Fed with three dissents, VIX 20.66). MTUM itself is -15.7% in a month, which is the signature of a crowded-momentum unwind: the correct trend-following response is to rotate to the new leaders and short the former ones, never to buy the fallen leaders back. So I keep every piece of my mandate's machinery - directional equity momentum, a funding short sleeve, weekly reassessment, a cash buffer - and let the sign flip where the data says it flipped. The long side is the only group positive on 1w AND 1m AND 3m simultaneously: healthcare (XLV +4.3/+3.4/+16.1), staples, defense on post-earnings drift (RTX +10.5% 1w, LMT +10.7% 1w), energy (strongest 1m sector), telecom carry (VZ), and AAPL, the anti-capex tech leader and best large-cap trend in my universe. I cut AAPL to 9% rather than 15% purely because it reports tonight and I refuse a gap risk I am not paid for. The funding sleeve is no longer short crypto - BTC 1m is now +2.6% and ETH +9.7%, so that downtrend has flattened and I will not pay costs to chase a dead signal - it is short the broken AI-capex complex instead, which is the same trade my mandate always described, just on the other side of the sign. ORCL and TSLA are negative on all four horizons with no positive-momentum leg at all, exactly what a time-series momentum short wants; the semis leg is smaller and stopped because SOXX is still +6% on 3m and +33% on 6m, so that is where squeeze risk lives, and SOXL adds 3x short beta plus volatility decay from only 4% of capital. Net beta lands near 0.15, deliberately: with a hawkish Fed, rising VIX and AI credit stress I want return from the long/short spread (XLV +4.3% vs SOXX -16.3% in one week) rather than market direction. I am not forcing 3x long ETFs to satisfy the word 'leveraged' - buying TQQQ or SOXL long into a momentum crash would be the single most destructive thing I could do here.",
+  "research_notes": "WebSearch budget was exhausted, so I pulled fresh daily bars myself from the Yahoo chart API (last equity close 2026-07-29, crypto live 07-30) for ~130 ETFs/stocks, computed 1w/2w/1m/3m/6m trend plus performance since each book was set, then read news via the Yahoo news endpoints and WebFetch.\n\nREGIME: a violent AI-capex unwind. SOXX -16.3% 1w / -24.3% 1m; SMH -14.1/-20.2; semi-cap destroyed (AMAT -21/-37, LRCX -21/-39, KLAC -21/-39, MU -23/-35, ASML -14/-18, ALAB -25/-45, VRT -26/-27). SOXL -42.9% in ONE week, -61% 1m. MTUM (the momentum factor ETF itself) -9.9% 1w / -15.7% 1m: a textbook crowded-momentum crash, not a dip.\n\nCATALYSTS CONFIRMED: (1) Meta 07-29/30 - revenue beat $60.8bn but EPS missed 14%, costs +55%, FREE CASH FLOW COLLAPSED 91% to $784m, FY capex guided to $130-145bn; stock -10%, framed as \"a broader earnings-season pattern in which AI infrastructure spending is unsettling investors.\" The market has flipped the sign on capex: spending is now punished. (2) Fed held with THREE dissents; Chair Kevin Warsh's comments \"sent the stock market tumbling\"; \"Dow sees worst day in over a year, Nasdaq enters correction territory.\" VIX 20.66, +13.5%. (3) AI CREDIT cracking - Burry flags NVDA 5Y CDS parabolic; Oracle default insurance hit 200bp at a 52-week low. (4) Qualcomm tepid guide; Japan earthquake hit TSMC/Toyota ops; Kospi selloff; \"$2 trillion AI rout.\"\n\nWHERE MONEY IS GOING (positive 1w AND 1m AND 3m): Healthcare cleanest - XLV +4.3/+3.4/+16.1 (ABT +7.4/+17.3, TMO +9.5/+13.8, HCA +9.8, AMGN +5.9/+7.5, ABBV 3m +34, LLY 3m +39). Staples XLP +3.5/+3.5/+5.9 (KO +8.4/+7.8/+14.4, PM 3m +21, KMB 3m +17). Defense post-earnings drift: RTX +10.5/+14.9/+23.0, LMT +10.7/+13.4/+11.8. Energy strongest 1m sector: XLE +9.5% 1m / +19.7% 6m (XOM +15.2% 1m). Telecom carry VZ +6.6/+8.9/+24.0 6m, T +3.9/+11.2. Low-vol USMV +2.2/+2.3/+5.2, SPLV +1.8/+2.8/+5.2; XLRE +2.1/+2.3/+13.2 6m. AAPL is the best large-cap trend in the universe (+3.8/+20.0/+25.0/+31.2, just crossed $5tn) precisely because it is the anti-capex tech name - but it reports tonight (07-30), so I sized it modestly rather than heroically.\n\nCLEANEST SHORTS (negative on EVERY horizon = true time-series momentum, not a stretched short): ORCL -6.4/-20.0/-28.8/-32.2 with CDS 200bp and Ellison backstopping $40.4bn of a media deal; TSLA -20.2/-27.6/-20.7/-30.8, worst week since 2022 as investors balked at robotaxi/AI spending. Semis (SOXX/SOXL) are still positive on 3m/6m, so I sized that leg smaller and stopped it - that is where squeeze risk lives.\n\nCRYPTO: my original short-crypto sleeve has lost its edge. BTC 1m now +2.6%, ETH +9.7% 1m / +2.8% 1w; only SOL still trends down. The persistent BTC/ETH downtrend has flattened, so I will not pay borrow and slippage to re-express it.\n\nRATES/GOLD for the carry book: duration is not being paid - TLT -4.9% 1m, IEF -1.7% 1m, hawkish Fed with three dissents. XLU (-2.2/-2.4) is no longer a clean bond proxy: it is contaminated by the AI-datacenter-power narrative now unwinding (SRE -5.4% 1m, AEP -6.2%). GDX -16.9% 3m / -32.7% 6m is a broken trend, not convexity. Cash at 4% APY is a genuinely competitive carry asset with zero drawdown."
+}

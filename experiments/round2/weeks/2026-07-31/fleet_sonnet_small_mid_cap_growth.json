@@ -1,0 +1,72 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Small caps still up strongly YTD and outperforming SPX, but the rate-cut tailwind behind the catch-up trade is now in question after 3 FOMC dissents favored a hike; trimming from 15% to reflect a weaker macro tailwind while keeping core small-cap beta."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "3x semis exposure to the AI buildout, cut hard (10%->4%) after a -16% single-day crash on chip-selling/China-competition headlines and 'Q3 seasonal weakness' warnings; leveraged-ETF decay risk is now realized, not hypothetical, so sizing down to a token stake with a stop.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Record Q2 revenue (+40% YoY) and raised FY guidance, but stock dropped -8.9% on the print anyway (market focused on other line items); trimming 10%->8% given the negative reaction and broad risk-off tape, keeping exposure to the digital-banking growth story."
+    },
+    {
+      "symbol": "CRSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Gene-editing pipeline still has 6 major data readouts in the next 12-18 months and CASGEVY commercialization is accelerating; trimming 8%->6% ahead of the 8/3 earnings print to manage event risk into a volatile tape."
+    },
+    {
+      "symbol": "RKLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Just landed a $266M Space Force contract (largest ever) and got a broker upgrade to Outperform, but the stock is extremely volatile (30%+ swings intramonth) and fell -8.3% with the broader tape; trimming 8%->6% ahead of the 8/10 print.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "DUOL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Held near prior size (10%) given relative resilience yesterday (-0.6% vs market -1.5 to -2%) and multiple bank price-target hikes (MS, JPM, Jefferies all to $125) even as AI-disruption chatter continues; still a consumer AI-engagement compounder into the 8/5 print."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "AI-disruption short thesis intact structurally (Morgan Stanley cut to Underweight on competitive/transition risk) but trimming 8%->6% after the stock squeezed +5.7% on a Q2 beat and a defensive AI acquisition (Topaz Labs) -- respecting the squeeze risk rather than fighting it at full size."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Beat badly (EPS $0.62 vs $0.43 consensus, revenue +32% YoY, record net deposits) and only fell -3.2% on a day the Nasdaq fell -2%, roughly in line with the market; held near prior size as the strongest fundamental print in the book."
+    }
+  ],
+  "cash_pct": 37,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Macro regime just turned hostile for this book: the Fed held rates on 7/29 with THREE dissents pushing for a hike (not the rate-cut tailwind the IWM/small-cap thesis depended on), long yields hit two-decade highs, and Iran-war escalation triggered a broad risk-off tape (SPY -1.5%, QQQ -2.0%, IWM -1.6%). Leveraged semis got hit hardest -- SOXL cratered -16% in a single session on China-competition/hyperscaler-capex worries and 'Q3 tends to underperform' commentary -- so I am cutting that leg hard to manage decay risk exactly as the original thesis flagged. ADBE (the short) squeezed +5.7% on a Q2 beat plus a defensive AI acquisition (Topaz Labs), so I am trimming that short rather than doubling down into a squeeze, while keeping it on because sell-side AI-disruption downgrades (Morgan Stanley to Underweight) show the structural bear case is intact. SOFI/RKLB both sold off hard post-earnings (-8.9%/-8.3%) despite beats/contract wins -- trimming, not exiting, ahead of more binary prints (CRSP 8/3, DUOL 8/5, RKLB 8/10). HOOD and DUOL showed relative resilience (only -3.2%/-0.6% on a down ~2% tape) with earnings beats and rising analyst targets, so those get held closer to prior size. Net: de-risk into a materially larger cash cushion given the book is already -7.89% and the macro backdrop just got worse, consistent with the mandate's cash-cushion discipline.",
+  "research_notes": "Checked live prices/performance/news for every holding in both books via stockanalysis.com (IWM, ADBE, SOFI, RKLB, DUOL, HOOD, CRSP, SOXL, XLF, KRE, XBI, TLT, GDX) plus a market-wide summary for 7/29/2026. Key finding: the Fed held rates on 7/29 but with THREE dissents favoring a hike (Chair Warsh flagged as inflation-hawkish), long yields hit two-decade highs, and Iran-war escalation triggered a broad risk-off selloff (SPY -1.5%, QQQ -2.0%, Dow -2.2%, IWM -1.6%). This directly undercuts the Round-2 rate-cut/small-cap-catch-up thesis and the Round-3 'long duration turning up' (TLT) thesis, while it independently crushed leveraged semis (SOXL -16% in one session on chip-selling/China-competition/Q3-seasonality headlines) and pressured gold miners (GDX) further -- strongly validating the Round-3 SOXL/GDX shorts. Financials (XLF at fresh ATHs on stress-test buybacks) and biotech (XBI, benefiting from a record $106B H1 M&A wave and a rotation into healthcare as a 'haven from tech') both showed relative strength on the down day, confirming that leg of the Round-3 book. Individual Round-2 names: SOFI and HOOD both beat Q2 estimates (SOFI record revenue +40% YoY/raised guidance; HOOD EPS $0.62 vs $0.43 consensus) but SOFI still sold off -8.9% while HOOD held up better (-3.2%, roughly in line with the tape); RKLB won a $266M Space Force contract but remains highly volatile ahead of 8/10 earnings; DUOL showed relative resilience (-0.6%) with three sell-side price-target hikes ahead of 8/5 earnings; CRSP is flat into an 8/3 print; ADBE (the short) squeezed +5.7% on a Q2 beat and a defensive AI acquisition (Topaz Labs), though Morgan Stanley's Underweight call on AI-disruption risk keeps the structural short thesis alive."
+}

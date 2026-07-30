@@ -1,0 +1,108 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "EUO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18.6162,
+      "stop_loss_pct": 15.0,
+      "thesis": "Largest weight on inverse-vol merit: 60d vol only 9.9%, the lowest in the book, against the cleanest macro-confirmed trend I own. Price 2.8% above its 50dma, 6.4% above its 200dma, 3m ts-momentum +6.9%. The 29 Jul hawkish hold with three hike dissents widens the Fed/ECB policy gap that consensus already had driving EUR/USD to 1.12 in Q3 from ~1.14 spot, against softer eurozone inflation prints. Mirror confirmation holds: FXE below its 200dma with negative 3m, FXY below with negative 3m, UUP above with positive 3m."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14.697,
+      "stop_loss_pct": 25.0,
+      "thesis": "Best-established uptrend among names whose vol permits real size: 5.5% above 50dma, 15.5% above 200dma, 50dma 9.5% above 200dma, 3m +5.4%, 1m +11.3%, XOP confirming at +16.5% vs its 200dma. The trend now has a live and re-accelerating driver - Iran has blocked Hormuz since February and rejected Oman's shared-control proposal, and Brent jumped over 7% to $90+ on 29 Jul. Vol 24.4% is what caps this at 15 rather than higher; it is also the lower-volatility way to own the oil trend versus USO."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13.7172,
+      "stop_loss_pct": 20.0,
+      "thesis": "Strongest 3m ts-momentum of any low-vol sleeve at +11.7%, 5.5% above 50dma, 7.8% above 200dma with a fresh golden cross, vol 18.3%. Freshly corroborated: healthcare was the top S&P sector on 28 Jul at +2.33% (staples second at +1.96%) and it held up while the index fell 1.5% on 29 Jul. Defensive leadership is the natural beneficiary of a hawkish Fed and a deepening semis/AI de-rating."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.798,
+      "stop_loss_pct": 18.0,
+      "thesis": "Trimmed from 16 but retained because the trend is unambiguously intact - record high $56.18, +8.7% over three months, 5.2% above 50dma, 7.5% above 200dma, 3m +9.1%, vol only 13.2%. The cut reflects that this is my highest equity-beta and most credit-cycle-exposed long into a Fed with a hiking bias; higher-for-longer helps net interest margins but hurts credit and the equity multiple, so the marginal dollar works harder in the dollar and energy legs."
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.8586,
+      "stop_loss_pct": 18.0,
+      "thesis": "The book's least equity-correlated long and my inflation-sleeve diversifier: 3.5% above 50dma, 6.9% above 200dma, 3m +3.1%, 1m +6.3%, vol 13.3%, with WEAT 14.4% above its 200dma and 3m +7.7% corroborating. A 4.2% CPI print driven by an energy shock is a supportive backdrop for softs and grains. Modest trim from 10 only because the trend strength is middling relative to what I am funding."
+    },
+    {
+      "symbol": "USO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4.899,
+      "stop_loss_pct": 40.0,
+      "thesis": "Strongest moving-average trend anywhere in the universe - 9.0% above 50dma, 38.3% above 200dma, 1m +28.6% - and re-accelerated by WTI's ~4% jump toward $83 and Brent's 7% jump to $90+ on 29 Jul. Deliberately kept small despite that: 3m ts-momentum is only +1.5%, so my two filters barely agree, 60d vol is 51.7%, and the whipsaw risk is real (oil fell three straight sessions to $79 on diplomacy headlines immediately before the spike). Widest stop in the book at -40% so a Hormuz de-escalation gap does not knock me out of the underlying energy trend I express more cheaply through XLE."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9.798,
+      "stop_loss_pct": 25.0,
+      "thesis": "Core short-metals expression, raised from 6. Gold 4.7% below its 50dma, 9.7% below its 200dma, 50dma 5.3% below the 200dma (bearish cross), 3m ts-momentum -13.7%, price ~$4,140 versus January's $5,598 record - a 26% decline. The 29 Jul hawkish hold and the jump in long-dated yields directly reinforce the driver: gold yields nothing, so rising real yields plus a firmer dollar is precisely why it is falling, and OCBC now expects further declines through year-end on exactly that combination. Vol 24.4%."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9.798,
+      "stop_loss_pct": 22.0,
+      "thesis": "The only major US sector below both its moving averages: 6.0% below 50dma, 6.3% below 200dma, 3m ts-momentum -6.9%, 12m -2.7%, vol 20.9%. Raised from 8 because the fundamental corroboration got stronger, not weaker - 4.2% CPI, an energy shock with pump prices following Brent to $90, and a Fed biased toward hiking is a direct squeeze on discretionary wallets. Also my cleanest partial hedge on the four long equity legs in a tape that just dropped the Dow 1,100 points."
+    },
+    {
+      "symbol": "SLV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 2.9394,
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 35.0,
+      "thesis": "The violent end of the same downtrend: silver 12.3% below its 50dma, 17.0% below its 200dma, 3m ts-momentum -23.1% against 12m +47.4%, and ~$58-60 versus January's $121.62 high - down 52%. Held at 3 rather than raised with gold because 51.2% vol demands a small weight and silver has been clawing back toward $60, so the near-term counter-move is live. Take-profit banks another crash leg."
+    },
+    {
+      "symbol": "URA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 2.9394,
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Sharpest active downtrend in the universe and the news confirms it is accelerating: URA around $39, down roughly 18% over the past month and 10% over the past week, even though spot uranium is firm at $85-86.60. That divergence is the point - the miners and developers are de-rating on financing, cost and sentiment independently of the commodity, which is a thematic unwind rather than a commodity call. Screen reads 12.4% below 50dma, 18.5% below 200dma, 3m -29.4%, 1m -10.8%, 12m only +1.4%. Vol 51.8% caps the weight."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 2.9394,
+      "leverage": 2,
+      "stop_loss_pct": 45.0,
+      "take_profit_pct": 50.0,
+      "thesis": "Crypto sleeve of the trend engine: BTC 11.5% below its 200dma with the 50dma 12.8% below the 200dma, 3m ts-momentum -15.1%, 12m -32.1%, ETH and SOL agreeing at -13.6% and -16.7% versus their 200dmas, and total crypto capitalisation down 48% from peak on Fed repricing and ETF outflows. Deliberately left at 3% margin and only 2x (6% notional) rather than raised, because the counter-signal has strengthened, not faded: BTC has bounced off a 21-month low near $58k to ~$63.9k and is sitting above its 50dma. Perp short avoids spot borrow and pays no funding in this engine; wide 45% stop respects the bounce."
+    }
+  ],
+  "cash_pct": 3,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): The trend signals I built this book on were not just confirmed this week, they were re-fuelled by a genuine regime event on 29 Jul: a hawkish Fed hold with three dissents FOR A HIKE, long yields up, Brent +7% to $90+ on Hormuz. That single catalyst simultaneously strengthens my dollar long (widening Fed/ECB gap), my precious-metals shorts (rising real yields is THE gold driver, and OCBC/consensus now sees further declines), my energy long (Hormuz supply constraint is what turned the Fed hawkish in the first place), my defensive healthcare long (XLV was the top S&P sector on 28 Jul at +2.33% while the index fell 1.5%), and my consumer-discretionary short (4.2% CPI plus an energy shock plus hike risk is a direct squeeze on discretionary spend). So this is not a rebuild, it is a conviction-weighted resize of the same eleven trends, which is exactly what the new sizing freedom is for. Three changes. FIRST, I EXIT IWM ENTIRELY. It was already my weakest signal (only 0.1% above its 50dma, i.e. the fast trend had gone flat while the slow one was still up), and the 29 Jul event is precisely the catalyst that breaks it: BofA puts the damage at ~2% of R2K operating earnings per 25bp, small caps carry the most floating-rate debt and refi need, and a hike-biased Fed favours large balance sheets. Weekly reassessment is my real trend-exit mechanism and this is what it is for - I do not wait for a -20% catastrophe stop to tell me a trend has rolled. SECOND, I lift the four legs where the macro driver and the price trend now point the same way and the volatility is low enough to justify size: EUO 14 to 19 (lowest vol in the book at 9.9%, cleanest macro trend, inverse-vol sizing makes it the top weight on merit not on hunch), XLE 9 to 15 (best-established MA trend among the low-vol-enough names, 15.5% above its 200dma, with a live and re-accelerating supply catalyst), GLD short 6 to 10 and XLY short 8 to 10. XLV goes 13 to 14 and URA short 2 to 3 - URA is down 18% in a month and 10% in a week even with spot uranium firm at $86, the sharpest active downtrend I can find, capped only by its 51.8% vol. THIRD, I trim XLF 16 to 10. The trend is genuinely intact (record high $56.18, +8.7% in three months) so I am not exiting, but it is my highest equity-beta and most credit-cycle-exposed long and a hiking Fed is not its friend; that capital works harder in the dollar and energy legs. USO goes 3 to 5 but no further - 38% above its 200dma against 3m momentum of only +1.5% is the definition of an extended trend where the two filters disagree, and 51.7% vol plus whipsaw risk on any Hormuz diplomacy headline (oil fell three straight days to $79 before the 29 Jul spike) keeps it small with a -40% stop. I am NOT going to a one-line book. My mandate is time-series trend across six asset classes sized inversely to realised volatility, and the whole edge is that the equity, FX, commodity, metals and crypto sleeves each contribute similar risk from independent drivers - collapsing that into one name would be abandoning the strategy, not expressing conviction in it. Gross equity 94% keeps me inside the no-margin cap, cash 3% earns 4%, and the turnover here is a handful of basis points on maybe 30% of the book.",
+  "novelty": "I run no Round-2 book, so the overlap rule does not bind; nonetheless this book is materially reshaped versus my 27 Jul Round-3 book - IWM is fully exited, XLF is cut by more than a third, and EUO, XLE, GLD-short, XLY-short, USO and URA-short are all materially resized around the 29 Jul hawkish-hold and Hormuz shock.",
+  "research_notes": "Searched the tape for 27-30 Jul 2026 plus each sleeve in my book. Key findings: (1) REGIME SHOCK 29 Jul \u2014 Fed (Chair Warsh) held rates at 3.50-3.75% but THREE FOMC members dissented in favour of a HIKE; long-dated yields jumped, Dow -1,100 (-2.2%), S&P -1.5%, Nasdaq -1.7% with the semis/AI selloff deepening after SK Hynix. Markets are now pricing hikes, not cuts (June headline PCE 3.6%, core 3.3%, CPI 4.2%). (2) ENERGY IS THE DOMINANT TREND \u2014 Iran has blocked the Strait of Hormuz since late Feb; Iran rejected Oman's 50-50 control proposal; Brent surged >7% to $90+ and WTI to ~$83 on 29 Jul after a three-day diplomacy-driven dip to $79. Energy prices +20% in two weeks is what turned the Fed hawkish. (3) DOLLAR \u2014 Fed/ECB rate gap is the dominant FX driver; hawkish Fed vs softer eurozone inflation; consensus EUR/USD 1.12 for Q3 vs ~1.14 spot; DXY basing near 100.6 off a 101.4 high. Confirms the EUO leg. (4) PRECIOUS METALS DOWNTREND INTACT AND RE-FUELLED \u2014 gold ~$4,140, -26% from Jan's $5,598 record; silver ~$58-60, -52% from Jan's $121.62; OCBC sees further declines on rising Treasury yields and a stronger dollar. Rising real yields is exactly the 29 Jul catalyst. (5) HEALTHCARE LEADS \u2014 XLV was the top S&P sector on 28 Jul (+2.33%, with staples +1.96%); pharma-led, defensive leadership is what you expect in a hawkish/risk-off tape. (6) SMALL CAPS ARE THE BROKEN LEG \u2014 R2K +17-18% YTD but BofA estimates every extra 25bp hike cuts R2K operating earnings ~2%; hike-dissent Fed, floating-rate debt and refi needs make small caps the single most rate-hike-exposed sleeve, and my own screen already had IWM only 0.1% above its 50dma. (7) URA -18% over the past month and -10% over the past week even with spot uranium firm at $85-86.60 \u2014 the miners/equity complex is de-rating independently of the commodity; sharpest active downtrend in my universe. (8) BTC ~$63.9k, stabilising after a 21-month low near $58k, total crypto cap -48% from peak, driven by the Fed and ETF outflows \u2014 downtrend intact but a bounce is in progress. (9) XLF made a record high $56.18 (+8.7% in three months) \u2014 trend intact, but it is the highest equity-beta and credit-cycle-sensitive long I own into a hiking Fed.",
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 99 with cash 3; scaled by 0.9798 to sum to 97 (relative sizing preserved, declared cash kept)"
+}

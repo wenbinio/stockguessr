@@ -1,0 +1,96 @@
+{
+  "name": "Opus 5 mean reversion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
+  "entry": "2026-07-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "LRCX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Highest-conviction leg. Reported 7/29 after close: EPS $1.82 vs $1.72 and fiscal Q1 guidance of $7.70-8.50B revenue against $7.09B consensus with $2.00-2.30 EPS vs $1.83. Closed the session -6.4% at $252.35 then traded +6.2% to ~$268 after hours. This is exactly what my rule is built to catch \u2014 a name in the bottom decile (-18.6% 1m against +38.6% 6m) whose drawdown was sentiment, not earnings, with the correction now documented by the company itself. Upsized from 8%."
+    },
+    {
+      "symbol": "AXP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Textbook fade-of-a-beat. Q2 EPS $4.53 vs ~$4.40 consensus with a raised full-year forecast, yet the stock fell 6% on a $19.64B vs $19.69B revenue miss and 12% expense growth, while credit provisions actually improved to $1.1B from $1.4B a year ago. The bear case investors sold on \u2014 consumer credit deterioration \u2014 is contradicted by the provision line. No AI capex exposure, which is the theme doing the damage elsewhere in my book. Upsized from 8%."
+    },
+    {
+      "symbol": "WMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "The defensive anchor, and my best risk-adjusted reversion. An 18-19% drawdown triggered largely by one Cleveland Research note on slowing US comps, leaving it near $109 against a $138 mean target with 28 buy ratings. Lowest-beta leg in the book, which matters when the Fed just raised its PCE projection to 3.6% and may hike in September \u2014 I want reversion exposure that does not need multiple expansion to work. Upsized from 8%."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Revenue +24% to $119.8B, Cloud +82% to $24.8B, operating income +30%, EPS $9.11 well ahead \u2014 and the stock fell ~7% purely because FY capex guidance went to $195-205B and FCF printed -$5.9B. A mega-cap compounder marked down for investing is the cleanest overreaction available, and MSFT's fastest cloud growth in four years corroborates that the spend is meeting real demand. Sized just below the top tier because the capex-punishment regime is still live and could persist another quarter. Upsized from 8%."
+    },
+    {
+      "symbol": "UBER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "The anti-capex trade: asset-light with genuine free cash flow at the exact moment the market is punishing negative-FCF AI builders, which argues for rotation into it. Held at 8% rather than upsized purely because Q2 prints Aug 5 with an ~8.3% implied move \u2014 I want the exposure but I am not paying up for a coin flip."
+    },
+    {
+      "symbol": "QCOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Demoted from 8%. Revenue beat at $9.95B vs $9.67B and the stock is ~40% off its June high, but the fiscal Q4 guide came in light ($9.2-10.0B, EPS $2.10-2.30) on the memory supply crunch and it fell ~3% after hours. Demand is intact, margins are the problem, and management is raising prices across the board from Sept 1 \u2014 a real but slow fix. Kept as a discounted tail, not a core."
+    },
+    {
+      "symbol": "LUV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Demoted from 8% on fundamentals but retained for pair logic. Q2 EPS $0.94 crushed the $0.53 estimate, yet FY26 was cut to $3.25-4.25 from at least $4.00 and Q3 guided to $0.50-0.75 vs $0.80 \u2014 with ~$900M of incremental fuel cost the named culprit. That makes it the direct beneficiary of the same oil de-escalation that drives my XLE short, so the two legs express one view from both sides."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Deliberate stub, cut from 8%. Still the largest one-week drawdown in the universe and therefore the purest expression of my mandate \u2014 -26% over four weeks, down five sessions running and nine of the last ten to $307.44. But the selling has identifiable fundamental causes (a fatal Semi crash under investigation, robotaxi and AI cost headlines) rather than being flow-driven, and Q2 deliveries of 480k beat by a wide margin without arresting the slide. When a beat cannot stop the decline, the reversion trigger is missing. Lottery sizing with the wide stop intact."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 14,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 20.0,
+      "thesis": "The winner leg, doubled from 7% and now my largest single conviction. Energy is the #1 sector YTD at ~+32% and XLE trades near $59 against a 52-week range of $42-63 after a fourteen-week run \u2014 the definition of a crowded, extended top-decile cluster, and still the way six of the highest-ranked single-name winners (XOM, CVX, COP, OXY, SLB, EOG) are expressed without single-stock momentum risk. What changed is that the catalyst is unwinding: Iran has signalled it will suspend attacks while the US pause holds, Hormuz diplomacy is advancing, Brent has fallen to ~$84 (lowest in over a week), and energy was the worst-performing sector on 7/28. Shorts pay no funding and only 3% borrow, so this is cheap carry and it cuts my net long to 59% into a hawkish Fed. Stop tightened to -15% from -20% because Hormuz re-escalation is the one tail that can run against a short without bound."
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Same mandate, conviction-weighted sizing. I am still long a beaten-down basket and short the crowded top-decile winner cluster, but the free internet let me separate two things my rank screen cannot tell apart: names sold in a flow shock (which revert) and names being structurally re-rated on cash flow and credit (which do not). ORCL goes to zero \u2014 52-week low, -64% in ten months, ~$130B debt, D/E ~300%, S&P downgrade to BBB-, FY26 FCF -$23.7B. That is a balance-sheet de-rating, and my own 7/27 thesis already flagged it as the biggest falling-knife risk I owned; I am acting on my own warning rather than waiting for a -30% stop. INTC goes to zero for the same reason \u2014 a ~$2.1B Foundry operating loss, ~$293M of external foundry revenue, and another -4.24% day on 7/29 with the downtrend still accelerating. Those two were roughly a third of my losses and neither has a reversion catalyst. The capital goes into the three names where a genuine overreaction is now documented: LRCX (guided fiscal Q1 to $7.7-8.5B vs $7.09B consensus and popped 6.2% after hours off a -6.4% close), AXP (beat and raised, faded 6% on expenses while credit provisions actually improved), and WMT (18-19% drawdown on a single sell-side comp note, $109 against a $138 mean target, and the lowest-beta way to own reversion into a Fed that may hike in September). GOOGL stays substantial at 11% because a 24% revenue grower with Cloud up 82% falling 7% purely on capex is the exact overreaction I exist to buy, and MSFT's cloud print corroborates the demand. UBER 8% keeps the anti-capex, real-FCF rotation trade but is sized for the Aug 5 print's ~8.3% implied move rather than for conviction. QCOM 7% and LUV 6% are demoted to tails \u2014 both had guidance cuts, and I want them present but not paid for. TSLA 5% is a deliberate stub: it is the deepest one-week drawdown in the universe and the purest expression of my rule, but the decline is fundamental and regulatory, not flow, so it gets lottery-ticket sizing rather than a full slot. On the short side I double XLE from 7% to 14%. Energy is the most crowded winner on the board at +32% YTD, XLE sits near the top of its 52-week range after a fourteen-week run, and the geopolitical premium that produced the run is actively deflating \u2014 Iran suspending attacks, Hormuz diplomacy, Brent back to ~$84, energy the worst sector on 7/28. It is also the right hedge shape now: it pays no funding, costs only 3% borrow, and it pairs directly with LUV, whose guidance cut was driven by ~$900M of incremental fuel cost. Net long drops from 73% to 59% and gross stays at 87% with cash back at the mandated 13% \u2014 I am taking less market beta into a hawkish Fed and a Nasdaq 100 correction while concentrating what I do own into the four situations with an identifiable reversion trigger. Stops stay wide at 30% on the longs, which is the point of the mandate: the fastest way to lose money in mean reversion is to be stopped out at the low. The XLE short gets a tighter -15% stop because a Hormuz re-escalation is the one tail that can run against a short without bound.",
+  "novelty": "I manage no Round-2 book, so the overlap rule does not bind here; nevertheless this Round-3 book differs materially from my 7/27 construction \u2014 two of eleven legs eliminated outright, no leg left at its original 8%, and the short doubled \u2014 so under half the gross weight sits in unchanged same-direction positions.",
+  "research_notes": "Macro (new since my 7/27 book): Fed held 7/29 under Warsh with three dissents, raised its 2026 PCE projection to 3.6% from 2.7%, and was read as possibly hiking in September. Dow -1,153 (-2.19%), S&P -1.52% to 7,316, Nasdaq Composite -1.74%; Nasdaq 100 is now 11% off its high, i.e. a technical correction. 30-year yield at its highest since 2007. This is a discount-rate/multiple-compression regime, not a one-week liquidity air pocket, so I have to be selective about which \"losers\" I lean into.\n\nDominant theme: the market is specifically punishing AI capex and negative free cash flow. GOOGL beat hard (rev +24% to $119.8B, Cloud +82%, EPS $9.11) but fell ~7% purely on raising FY capex to $195-205B with FCF at -$5.9B. ORCL is the extreme version of the same trade: 52-week low, -64% in ten months, ~$130B debt, D/E ~300%, S&P cut to BBB-, FY26 FCF -$23.7B. That is a credit/solvency re-rating, not a flow shock, and reversion rules do not work on those. INTC fell another 4.24% on 7/29 with Foundry running a ~$2.1B operating loss, external foundry revenue only ~$293M, and the stock breaking a level it had held since April.\n\nName-level catalysts found after my book was set:\n- LRCX reported 7/29 after close: EPS $1.82 vs $1.72, and guided fiscal Q1 to $7.7-8.5B revenue vs $7.09B consensus and $2.00-2.30 EPS vs $1.83. Closed -6.4% at $252.35 then traded +6.2% to ~$268 after hours. Strongest single reversion catalyst in my book.\n- AXP: Q2 EPS $4.53 vs ~$4.40, raised forecast, yet faded -6% on a slight revenue miss and 12% expense growth. Provisions actually FELL to $1.1B from $1.4B. Classic fade-of-a-beat overreaction.\n- WMT: ~18-19% drawdown off a Cleveland Research comp-slowdown note, now ~$109 vs a $138 mean target, 28 buys. Lowest-beta reversion candidate and the right profile for a hawkish-Fed tape.\n- QCOM reported 7/29: revenue beat ($9.95B vs $9.67B) but light Q4 guide ($9.2-10.0B, EPS $2.10-2.30) on the memory supply crunch; -3% after hours. Raising chip prices across the board from Sept 1. Mixed, so smaller.\n- UBER reports Aug 5 with an ~8.3% implied move. Asset-light with real FCF, which is the natural beneficiary if money rotates out of capex-heavy AI names, but it's a binary in six days.\n- LUV: Q2 EPS $0.94 vs $0.53, but cut FY26 to $3.25-4.25 from \"at least $4.00\" and guided Q3 $0.50-0.75 vs $0.80, with fuel up ~$900M y/y. Fundamentally the weakest long, but it is the direct fuel-cost mirror of my XLE short.\n- TSLA: -26% over four weeks, down five sessions in a row and nine of ten, $307.44 on 7/28. Fatal Semi crash under NHTSA investigation plus robotaxi cost headlines. Deepest weekly drawdown in the universe (which is exactly what my rule targets) but no catalyst, so I keep only a tail-sized stub.\n\nThe winner leg: energy is the #1 sector YTD at ~+32% and XLE is ~$59 against a 52-week range of $42-63 after a 14-week run. Crucially the war premium that drove it is unwinding \u2014 Iran has signalled it will suspend attacks while the US pause holds, Hormuz diplomacy is progressing, and Brent has fallen to ~$84, its lowest in over a week. Energy was also the single worst-performing sector on 7/28 (-1.4%). That is an extended, crowded winner losing its catalyst, which is the best short in the book, and shorts pay no funding (3% borrow only). Offsetting risk: part of the energy bid is durable AI-datacenter power demand, and re-escalation is a live tail, so I cap it and tighten its stop.\n\nAlso noted: MSFT posted its fastest cloud growth in four years and META guided lacklustre; futures were modestly higher into 7/30. The MSFT print supports the GOOGL cloud leg."
+}
