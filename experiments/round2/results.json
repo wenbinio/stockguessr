@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-07-30 21:40 UTC",
+ "updated_utc": "2026-07-31 21:40 UTC",
  "entry": "2026-07-16",
  "capital_usd": 1000.0,
- "as_of": "2026-07-30",
+ "as_of": "2026-07-31",
  "benchmarks": {
   "SPY ($1000)": {
-   "nav": 987.97,
+   "nav": 995.08,
    "series": {
     "2026-07-16": 1000.0,
     "2026-07-17": 990.1,
@@ -21,11 +21,12 @@
     "2026-07-27": 984.51,
     "2026-07-28": 986.87,
     "2026-07-29": 971.68,
-    "2026-07-30": 987.97
+    "2026-07-30": 987.97,
+    "2026-07-31": 995.08
    }
   },
   "BTC ($1000)": {
-   "nav": 1012.61,
+   "nav": 985.11,
    "series": {
     "2026-07-16": 1000.0,
     "2026-07-17": 1014.04,
@@ -40,8 +41,9 @@
     "2026-07-26": 997.27,
     "2026-07-27": 999.56,
     "2026-07-28": 1000.14,
-    "2026-07-29": 1012.61,
-    "2026-07-30": 1012.61
+    "2026-07-29": 1012.92,
+    "2026-07-30": 985.11,
+    "2026-07-31": 985.11
    }
   }
  },
@@ -50,8 +52,8 @@
    "model": "fable",
    "group": "flagship",
    "strategy": "Concentrated AI-infrastructure conviction, unlevered, with a small contrarian BTC spot leg and dry powder for weekly dip-buying",
-   "nav": 968.02,
-   "growth_pct": -3.2,
+   "nav": 966.65,
+   "growth_pct": -3.33,
    "max_drawdown_pct": -14.59,
    "gross_exposure_pct": 87,
    "n_positions": 8,
@@ -128,105 +130,97 @@
     "2026-07-26": 1018.38,
     "2026-07-27": 993.58,
     "2026-07-28": 953.51,
-    "2026-07-29": 898.47,
-    "2026-07-30": 968.02
+    "2026-07-29": 898.49,
+    "2026-07-30": 966.69,
+    "2026-07-31": 966.65
    }
   },
   "Fable Barbell": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Risk-balanced barbell: 46% aggressive AI-infra compounders plus a small 2x contrarian BTC perp, against 38% defensive ballast (quality/staples/gold/utilities plus a 3% SOXL short as convexity hedge) and 18% yielding cash.",
-   "nav": 1005.91,
-   "growth_pct": 0.59,
+   "nav": 1013.33,
+   "growth_pct": 1.33,
    "max_drawdown_pct": -1.94,
-   "gross_exposure_pct": 85,
-   "n_positions": 12,
-   "cash_pct": 18,
+   "gross_exposure_pct": 71,
+   "n_positions": 10,
+   "cash_pct": 29,
    "positions": [
     {
      "symbol": "NVDA",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 14,
-     "thesis": "Aggressive: AI-infra anchor with datacenter capex still accelerating into H2"
+     "weight_pct": 10,
+     "stop_loss_pct": 20.0,
+     "thesis": "Aggressive: AI-infra anchor; trimmed into the rotation but datacenter capex intact into late-Aug earnings."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Aggressive: custom-ASIC/networking AI winner with software cash flows cushioning semi beta"
+     "weight_pct": 8,
+     "stop_loss_pct": 20.0,
+     "thesis": "Aggressive: custom-ASIC/networking winner with software cash flows; trimmed for chip-rotation risk."
     },
     {
      "symbol": "GEV",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Aggressive: AI power-demand pick-and-shovel; multi-year backlog, less crowded than chips"
+     "stop_loss_pct": 20.0,
+     "thesis": "Aggressive: raised FY26 guidance on AI power demand, $24.2B Q2 orders; least crowded AI leg, kept at full size."
     },
     {
      "symbol": "ANET",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Aggressive: AI networking share gainer; buying the correction dip in a proven H1 name"
-    },
-    {
-     "symbol": "BTC-USD",
-     "kind": "perp",
-     "side": "long",
-     "weight_pct": 3,
-     "leverage": 2,
-     "thesis": "Aggressive: small contrarian mean-reversion long after -27% H1; 2x on 3% margin caps loss at 3% of NAV"
+     "weight_pct": 7,
+     "stop_loss_pct": 20.0,
+     "thesis": "Aggressive: outperforming the tape into Aug 4 earnings, AI revenue target raised to $3.5B; slight trim for event risk."
     },
     {
      "symbol": "BRK-B",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Ballast: cash-rich diversified compounder; best-in-class drawdown defense in both test windows"
+     "weight_pct": 12,
+     "thesis": "Ballast: cash-rich compounder, best drawdown defense; added \u2014 its cash pile earns more as rates stay high."
     },
     {
      "symbol": "KO",
      "kind": "equity",
      "side": "long",
      "weight_pct": 5,
-     "thesis": "Ballast: staples cash-flow stability, low beta to AI-trade unwinds"
+     "thesis": "Ballast: staples stability, low beta to the AI unwind."
     },
     {
      "symbol": "MRK",
      "kind": "equity",
      "side": "long",
      "weight_pct": 5,
-     "thesis": "Ballast: cheap defensive pharma, uncorrelated to tech capex cycle"
+     "thesis": "Ballast: cheap defensive pharma, uncorrelated to tech capex."
     },
     {
      "symbol": "JNJ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 4,
-     "thesis": "Ballast: AAA-quality healthcare defensive that held bid through both stress windows"
-    },
-    {
-     "symbol": "GLD",
-     "kind": "equity",
-     "side": "long",
      "weight_pct": 5,
-     "thesis": "Ballast: crisis hedge entered 6.5% off highs; rallied through the 2025 tariff crash"
+     "thesis": "Ballast: AAA-quality defensive; modest add as risk-off spreads."
     },
     {
      "symbol": "XLU",
      "kind": "equity",
      "side": "long",
      "weight_pct": 4,
-     "thesis": "Ballast: utilities defensiveness with a back-door AI power-demand kicker"
+     "thesis": "Ballast: 20-year-high yields hurt bond proxies but AI power demand (GEV orders confirm it) offsets; kept small."
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 3,
-     "thesis": "Ballast hedge: short 3x-levered semis after +250% H1 - convex crash protection plus volatility-decay tailwind"
+     "weight_pct": 5,
+     "stop_loss_pct": 30.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Convex hedge pressed 3->5: semi rout accelerating, 3x decay tailwind; TP +40 banks a crash, stop caps a squeeze."
     }
    ],
    "series": {
@@ -243,64 +237,52 @@
     "2026-07-26": 1007.23,
     "2026-07-27": 1000.74,
     "2026-07-28": 1003.95,
-    "2026-07-29": 989.18,
-    "2026-07-30": 1005.91
+    "2026-07-29": 989.2,
+    "2026-07-30": 1004.26,
+    "2026-07-31": 1013.33
    }
   },
   "Fable Unconstrained": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Dual-momentum: long 6m leaders that are NOT in sharp 1m correction (cyber-tilted), small unlevered BTC mean-reversion, no leverage, fat cash at 4%",
-   "nav": 950.34,
-   "growth_pct": -4.97,
+   "nav": 967.82,
+   "growth_pct": -3.22,
    "max_drawdown_pct": -6.89,
-   "gross_exposure_pct": 67,
-   "n_positions": 6,
-   "cash_pct": 33,
+   "gross_exposure_pct": 59,
+   "n_positions": 4,
+   "cash_pct": 41,
    "positions": [
     {
      "symbol": "CRWD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Cyber breakout leader, +82% 6m and accelerating; unaffected by the semi correction in released info"
+     "weight_pct": 18,
+     "stop_loss_pct": 15.0,
+     "thesis": "Cyber breakout leader +75% YTD near 52w high; holding while AI trade cracks \u2014 passes both momentum filters; add on relative strength."
     },
     {
      "symbol": "PANW",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Strongest 1m momentum in universe (+24%) on cyber platform consolidation; passes both momentum filters"
+     "weight_pct": 18,
+     "stop_loss_pct": 15.0,
+     "thesis": "Strongest 1m momentum in the book (+25% 1m) on platform consolidation and 31% revenue growth; passes both filters."
     },
     {
      "symbol": "FTNT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "+116% 6m with intact uptrend; cyber demand supercycle sleeve kept as the book's core"
-    },
-    {
-     "symbol": "VRT",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 9,
-     "thesis": "AI power infrastructure +73% 6m; trimmed (not cut) as AI-infra adjacent to the confirmed semi correction",
-     "stop_loss_pct": 20
-    },
-    {
-     "symbol": "ANET",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "AI networking with steady +29% 6m momentum; trimmed on AI-infra contagion risk from the semi selloff",
-     "stop_loss_pct": 20
+     "weight_pct": 18,
+     "stop_loss_pct": 15.0,
+     "thesis": "+109% YTD on 31% billings growth (AI/OT security demand); uptrend intact, unaffected by semi correction."
     },
     {
      "symbol": "BTC-USD",
      "kind": "crypto",
      "side": "long",
      "weight_pct": 5,
-     "thesis": "-48% off ATH spot mean-reversion ticket; no funding or liquidation risk, no new info against it"
+     "thesis": "Spot mean-reversion ticket ~48% off ATH at ~$64.5k; unlevered, no funding or liquidation risk; unchanged (no re-trade cost)."
     }
    ],
    "series": {
@@ -317,69 +299,77 @@
     "2026-07-26": 972.8,
     "2026-07-27": 959.27,
     "2026-07-28": 953.26,
-    "2026-07-29": 933.56,
-    "2026-07-30": 950.34
+    "2026-07-29": 933.58,
+    "2026-07-30": 949.02,
+    "2026-07-31": 967.82
    }
   },
   "Haiku concentrated AI/technology": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "H2 2026 rotation: enterprise AI platforms (ADBE/CRM rebound) and cloud services (MSFT/AMZN) at scale, core chip exposure (NVDA), tactical leverage (SOXL), 12% dry powder for weekly rebalancing.",
-   "nav": 1006.88,
-   "growth_pct": 0.69,
+   "nav": 1033.54,
+   "growth_pct": 3.35,
    "max_drawdown_pct": -3.2,
-   "gross_exposure_pct": 88,
-   "n_positions": 7,
-   "cash_pct": 12,
+   "gross_exposure_pct": 83.0,
+   "n_positions": 8,
+   "cash_pct": 17,
    "positions": [
     {
      "symbol": "NVDA",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 22,
-     "thesis": "Core AI chip infrastructure; H100/H200 data center deployment drives cloud AI expansion; elevated valuation justified by AI TAM acceleration."
+     "weight_pct": 13.28,
+     "thesis": "Core AI chip infrastructure; H100/H200 data center deployment validation pending Aug 26 earnings; reduced concentration after technical correction in semiconductor sector"
     },
     {
      "symbol": "MSFT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Azure AI and Copilot enterprise adoption accelerating cloud AI consumption; mission-critical software transformation via Copilot integration."
+     "weight_pct": 12.45,
+     "thesis": "Azure AI and Copilot enterprise adoption driving cloud AI consumption; Cloud revenue +82% growth validates cloud infrastructure thesis"
     },
     {
      "symbol": "ADBE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 14,
-     "thesis": "49% H1 drawdown overdone; Firefly generative AI adoption accelerating in Creative Cloud; enterprise content creation transformation."
+     "weight_pct": 14.94,
+     "thesis": "H1 drawdown created rebound opportunity; Firefly generative AI adoption accelerating in Creative Cloud; enterprise content creation transformation underpinned by AI software"
     },
     {
      "symbol": "SNOW",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 11,
-     "thesis": "Pure-play data warehouse for AI/ML; Cortex AI analytics adoption accelerating; direct leverage to enterprise AI infrastructure."
+     "weight_pct": 9.13,
+     "thesis": "Pure-play data warehouse for AI/ML; Cortex AI analytics and new Cortex AI Gateway driving enterprise adoption; direct leverage to enterprise AI infrastructure buildout"
     },
     {
      "symbol": "AMZN",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "AWS AI services fastest-growing segment; Alexa and AI agent ecosystem positioning; cloud AI consumption driver."
+     "weight_pct": 6.64,
+     "thesis": "AWS AI services fastest-growing segment; cloud AI consumption driver; reduced sizing to manage broad tech sector rotation"
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "3x semiconductor leverage to AI infrastructure buildout; tactical entry after H1 +250% rally and early correction consolidation."
+     "weight_pct": 2.49,
+     "thesis": "3x semiconductor leverage to AI infrastructure; reduced from 8% to 3% as tactical position amid semiconductor sector technical correction"
     },
     {
      "symbol": "CRM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Einstein AI platform early adoption phase; sales force automation via AI agents; H1 drawdown creates rebound opportunity."
+     "weight_pct": 9.96,
+     "thesis": "Einstein AI platform early adoption phase with 12,000+ Agentforce customers live; H1 drawdown creates rebound opportunity; sales force automation via AI agents"
+    },
+    {
+     "symbol": "cash",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 14.11,
+     "thesis": "Dry powder for post-earnings volatility management and weekly rebalancing; hedge against semiconductor sector technical deterioration"
     }
    ],
    "series": {
@@ -397,61 +387,69 @@
     "2026-07-27": 971.52,
     "2026-07-28": 972.42,
     "2026-07-29": 969.19,
-    "2026-07-30": 1006.88
+    "2026-07-30": 1006.88,
+    "2026-07-31": 1033.54
    }
   },
   "Haiku contrarian turnarounds": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Contrarian recovery in AI-disrupted SaaS (ADBE, CRM down 49%), deeply beaten crypto (BTC/ETH -27-39%), and fintech; expect 2H rebound as market reverses AI-disruption panic, regulatory clarity emerges, and risk-on sentiment persists post-April drawdown.",
-   "nav": 1024.89,
-   "growth_pct": 2.49,
+   "nav": 1019.6,
+   "growth_pct": 1.96,
    "max_drawdown_pct": -4.41,
-   "gross_exposure_pct": 66,
-   "n_positions": 6,
-   "cash_pct": 34,
+   "gross_exposure_pct": 100,
+   "n_positions": 7,
+   "cash_pct": 0.0,
    "positions": [
     {
      "symbol": "ADBE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 18,
-     "thesis": "Creative Cloud down 49% on AI-disruption fears, but Firefly adoption is accelerating and professional creative tools remain essential. Market panic-sold on unfounded disruption thesis; recovery play on margin expansion as Firefly monetization scales."
+     "weight_pct": 25,
+     "thesis": "Firefly AI monetization accelerating with 50% QoQ ARR growth and 4x asset generation; market panic-sold on disruption fears proven unfounded by execution; recovery play on margin expansion"
     },
     {
      "symbol": "CRM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Enterprise SaaS down 49% on similar AI-disruption FUD, but Einstein AI is table-stakes now and CRM is mission-critical infrastructure. Market vastly overreacted; recovery play on enterprise software resilience and AI feature adoption."
-    },
-    {
-     "symbol": "BTC-USD",
-     "kind": "crypto",
-     "side": "long",
-     "weight_pct": 10,
-     "thesis": "Deep bear -27.3% H1 on regulatory headwinds, but macro stabilization, SEC ETF approvals, and institutional adoption accelerating. Turnaround catalyst: regulatory clarity (Ripple lawsuit resolution, clearer SEC framework) and crypto winter bottom."
-    },
-    {
-     "symbol": "MSTR",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "Bitcoin proxy holding significant BTC reserves; leveraged recovery play on BTC bottom. Volatility amplifies upside on crypto stabilization and institutional inflows; 2x+ leverage vs direct BTC."
+     "weight_pct": 21,
+     "thesis": "Agentforce driving enterprise AI adoption at scale (12k+ customers, nearly 50% Fortune 100); Einstein AI is mission-critical infrastructure; market vastly overreacted to AI-disruption FUD"
     },
     {
      "symbol": "SQ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Block's diversified fintech services (Cash App, Afterpay, Square payments, TBD Bitcoin layer) resilient despite macro concerns. Recovery play on payment volume recovery post-slowdown fears; Bitcoin integration provides long-term optionality."
+     "weight_pct": 11,
+     "thesis": "Block's Bitcoin/AI integration (Moneybot, Square AI, Cash App Green) advancing while payment volume recovery supports fintech diversification thesis"
+    },
+    {
+     "symbol": "BTC-USD",
+     "kind": "crypto",
+     "side": "long",
+     "weight_pct": 12,
+     "thesis": "Stabilizing after H1 -27% selloff; institutional adoption and ETF inflows continue; macro cycle recovery play"
     },
     {
      "symbol": "ETH-USD",
      "kind": "crypto",
      "side": "long",
+     "weight_pct": 9,
+     "thesis": "Layer 2 scaling and institutional adoption tailwinds intact; recovery from H1 -36% panic sell-off"
+    },
+    {
+     "symbol": "MSTR",
+     "kind": "equity",
+     "side": "long",
      "weight_pct": 7,
-     "thesis": "Ethereum down -36.1%, deeper than BTC, but Layer 2 scaling solutions maturing (Arbitrum, Optimism adoption accelerating) and institutional adoption improving. Turnaround on Ethereum scalability narrative and DeFi recovery."
+     "thesis": "Bitcoin proxy with 843k BTC holdings; reduce to avoid over-leverage given direct BTC exposure now adequate"
+    },
+    {
+     "symbol": "CASH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 15,
+     "thesis": "Deployed from 34% to fund conviction sizing; retain 15% for dry powder"
     }
    ],
    "series": {
@@ -468,16 +466,17 @@
     "2026-07-26": 979.36,
     "2026-07-27": 1008.99,
     "2026-07-28": 1023.96,
-    "2026-07-29": 1039.24,
-    "2026-07-30": 1024.89
+    "2026-07-29": 1039.17,
+    "2026-07-30": 1019.89,
+    "2026-07-31": 1019.6
    }
   },
   "Haiku deep value": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Core value exposure (SPY/VTV) with tactical plays on beaten-down software (ADBE/CRM), defensive dividend anchors (JPM/KO), small tech hedges (SQQQ short), crypto capitulation (BTC spot 4%), tactical GLD short, 17% cash for rebalancing.",
-   "nav": 1011.54,
-   "growth_pct": 1.15,
+   "nav": 1015.33,
+   "growth_pct": 1.53,
    "max_drawdown_pct": -2.66,
    "gross_exposure_pct": 83,
    "n_positions": 9,
@@ -561,76 +560,98 @@
     "2026-07-26": 985.05,
     "2026-07-27": 999.63,
     "2026-07-28": 1014.78,
-    "2026-07-29": 1016.28,
-    "2026-07-30": 1011.54
+    "2026-07-29": 1016.29,
+    "2026-07-30": 1010.45,
+    "2026-07-31": 1015.33
    }
   },
   "Haiku dividend growth and income": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Dividend aristocrats (22%) provide defensive base; tactical overweight to small-cap recovery (18%) and AI/semis consolidation (18%); leveraged tech position (10%); short rate hedge (4%); 28% cash for optionality and yield.",
-   "nav": 981.64,
-   "growth_pct": -1.84,
+   "nav": 983.31,
+   "growth_pct": -1.67,
    "max_drawdown_pct": -1.94,
-   "gross_exposure_pct": 77,
-   "n_positions": 8,
+   "gross_exposure_pct": 77.0,
+   "n_positions": 11,
    "cash_pct": 23,
    "positions": [
     {
      "symbol": "JNJ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Dividend aristocrat, 60+ year consecutive growth, 3% yield provides defensive cushion"
+     "weight_pct": 6.16,
+     "thesis": "Dividend aristocrat core, 60+ year consecutive growth, 3% yield defensive base"
     },
     {
      "symbol": "PG",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Dividend aristocrat, pricing power inflation hedge, recession-resistant cash flows"
+     "weight_pct": 6.16,
+     "thesis": "Dividend aristocrat, inflation hedge, pricing power in consumer staples"
     },
     {
      "symbol": "MCD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
+     "weight_pct": 4.62,
      "thesis": "Dividend growth 50+ years, franchise model resilience, international diversification"
     },
     {
      "symbol": "SCHD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Dividend growth ETF with quality screen, income generation aligned with mandate"
+     "weight_pct": 3.85,
+     "thesis": "Dividend growth ETF quality screen, income generation, reduced from 12% to make room for mandate-required positions"
     },
     {
-     "symbol": "VOO",
+     "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 18,
-     "thesis": "Large-cap dividend exposure, defensive vs concentrated growth, portfolio core"
+     "weight_pct": 10.01,
+     "thesis": "Small-cap recovery play per mandate (Russell 2000 up 22% in H1, structural tailwind), addresses underweight vs 18% target"
+    },
+    {
+     "symbol": "SOXL",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10.78,
+     "thesis": "3x leveraged semiconductor consolidation position mandated 18%; AI build-out continues despite summer volatility; NVDA undervalued at $212.50 vs $361.93 GF Value"
     },
     {
      "symbol": "XLP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Consumer staples, defensive sector, dividend yield, counter-cyclical positioning"
+     "weight_pct": 6.16,
+     "thesis": "Consumer staples dividend, defensive positioning, plays recession resilience theme"
     },
     {
      "symbol": "VTV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Value ETF, lower valuations after tech decline, mean reversion play"
+     "weight_pct": 0.77,
+     "thesis": "Minimal retained position, primary allocation shifted to IWM/SOXL for mandate targets"
     },
     {
-     "symbol": "SOXL",
+     "symbol": "UPRO",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7.7,
+     "thesis": "3x leveraged S&P 500 for mandated 10% leveraged tech exposure, rides value rotation and dividend yield"
+    },
+    {
+     "symbol": "TLT",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 5,
-     "thesis": "Tactical hedge on semis weakness validation, reverses bullish NVDA conviction position"
+     "weight_pct": 3.08,
+     "thesis": "Rate hedge per mandate: Fed on hold but three officials dissented for increase; long-duration bonds vulnerable if inflation remains sticky; 4% short provides defensive hedge"
+    },
+    {
+     "symbol": "CASH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 17.71,
+     "thesis": "Maintained at 23% (vs 28% target) to fund mandate-required position additions; 4% APY on cash provides portfolio yield"
     }
    ],
    "series": {
@@ -648,61 +669,81 @@
     "2026-07-27": 982.47,
     "2026-07-28": 994.8,
     "2026-07-29": 995.42,
-    "2026-07-30": 981.64
+    "2026-07-30": 981.64,
+    "2026-07-31": 983.31
    }
   },
   "Haiku global diversification via US-listed ADRs and ETFs": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Conviction long in AI infrastructure recovery (3x semis/tech), crypto capitulation reversal, EM rotation into beaten-down China and broad emerging markets, plus Japan regional diversification; 24% cash buffer for weekly rebalancing.",
-   "nav": 978.85,
-   "growth_pct": -2.12,
+   "nav": 975.59,
+   "growth_pct": -2.44,
    "max_drawdown_pct": -6.6,
-   "gross_exposure_pct": 70,
-   "n_positions": 6,
-   "cash_pct": 30,
+   "gross_exposure_pct": 61.0,
+   "n_positions": 7,
+   "cash_pct": 39,
    "positions": [
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 3,
-     "thesis": "Maintain AI infrastructure optionality but eliminate leverage bleed destroying capital faster than thesis validates"
+     "weight_pct": 1.22,
+     "thesis": "Maintain AI infrastructure optionality with reduced leverage exposure; eliminate daily rebalancing bleed destroying capital during thesis validation period; semis fundamentals strong but technical exhaustion warrants smaller position",
+     "stop_loss_pct": 30.0,
+     "take_profit_pct": 30.0
     },
     {
      "symbol": "TQQQ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 2,
-     "thesis": "Maintain Nasdaq upside exposure optionality but minimize leverage drag during thesis invalidation period"
+     "weight_pct": 1.22,
+     "thesis": "Maintain Nasdaq upside exposure optionality but minimize leverage drag during technical consolidation phase; QQQ exhaustion signals suggest holding smaller size pending reversal confirmation",
+     "stop_loss_pct": 20.0,
+     "take_profit_pct": 20.0
     },
     {
      "symbol": "BTC",
      "kind": "crypto",
      "side": "long",
-     "weight_pct": 16,
-     "thesis": "Capitulation reversal; -27.3% represents typical 70%+ bear market drawdown low; recovery to $80k+ offers 24%+ upside; uncorrelated diversifier"
+     "weight_pct": 12.2,
+     "thesis": "Capitulation reversal thesis validating; $60-64k represents typical 70%+ bear market drawdown level seen in cycles; recovery to $80-90k+ offers material upside; increased conviction sizing while avoiding leverage; patient positioning for multi-month reversal without leverage bleed",
+     "stop_loss_pct": 35.0,
+     "take_profit_pct": 40.0
     },
     {
      "symbol": "FXI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 18,
-     "thesis": "Increased EM China recovery positioning; Alibaba/Tencent/Baidu ADR exposure to rotational flows as US tech dominance fades"
+     "weight_pct": 4.88,
+     "thesis": "Reduced China positioning from 18% due to broken rotation thesis; evidence shows capital flowing OUT of China to other EM; tactical hold awaiting stimulus response and technical consolidation; lower weight reflects uncertainty",
+     "stop_loss_pct": 20.0,
+     "take_profit_pct": 25.0
     },
     {
      "symbol": "IEMG",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 22,
-     "thesis": "Core broad EM diversification; global growth recovery and positive risk sentiment reversion after H1 underperformance"
+     "weight_pct": 9.76,
+     "thesis": "Reduced broad EM concentration to avoid China drag; evidence shows EM ex-China outperforming +38% vs China weak; maintains emerging market diversification thesis while reducing concentration in underperforming geography",
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 20.0
     },
     {
      "symbol": "EWJ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Japan regional ADR diversification; developed market stability and growth optionality within global diversification mandate"
+     "weight_pct": 7.93,
+     "thesis": "Increased Japan allocation due to strong validation (+36% YTD, all-time highs); despite recent 2-day Nikkei pullback and yen currency headwind, Japan regional diversification thesis most clearly working; momentum and Bank of Japan normalization support continued upside",
+     "stop_loss_pct": 10.0,
+     "take_profit_pct": 40.0
+    },
+    {
+     "symbol": "USDC",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 23.79,
+     "thesis": "Increased cash buffer from 30% to 39% for tariff uncertainty (Aug 1 deadline) and market volatility amid technical exhaustion signals; provides dry powder for rebalancing opportunities and reduces forced leverage exposure during consolidation phases"
     }
    ],
    "series": {
@@ -719,16 +760,17 @@
     "2026-07-26": 979.47,
     "2026-07-27": 972.93,
     "2026-07-28": 964.04,
-    "2026-07-29": 958.16,
-    "2026-07-30": 978.85
+    "2026-07-29": 958.21,
+    "2026-07-30": 974.57,
+    "2026-07-31": 975.59
    }
   },
   "Haiku growth at a reasonable price": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Alpha through concentrated exposure to AI infrastructure buildout; quality over momentum; capital preservation via cash and no leverage.",
-   "nav": 1012.63,
-   "growth_pct": 1.26,
+   "nav": 1020.85,
+   "growth_pct": 2.09,
    "max_drawdown_pct": -2.27,
    "gross_exposure_pct": 80,
    "n_positions": 11,
@@ -826,62 +868,70 @@
     "2026-07-26": 989.16,
     "2026-07-27": 988.08,
     "2026-07-28": 988.2,
-    "2026-07-29": 979.59,
-    "2026-07-30": 1012.63
+    "2026-07-29": 979.6,
+    "2026-07-30": 1012.36,
+    "2026-07-31": 1020.85
    }
   },
   "Haiku macro/sector rotation": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "H2 2026 AI/semis core with tactical small-cap broadening, crypto recovery spot, and 30% dry powder for post-earnings optionality",
-   "nav": 974.34,
-   "growth_pct": -2.57,
+   "nav": 971.04,
+   "growth_pct": -2.9,
    "max_drawdown_pct": -5.09,
-   "gross_exposure_pct": 58,
-   "n_positions": 6,
-   "cash_pct": 42,
+   "gross_exposure_pct": 61.0,
+   "n_positions": 7,
+   "cash_pct": 39,
    "positions": [
-    {
-     "symbol": "QQQ",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 15,
-     "thesis": "Broad Nasdaq-100 exposure at 1x leverage replaces leveraged TQQQ; captures mega-cap tech exposure without leverage risk"
-    },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Russell 2000 small-cap remains stable relative to tech sector stress; maintains diversification away from mega-cap concentration"
+     "weight_pct": 10.98,
+     "thesis": "Russell 2000 up +22% YTD with rare 30% valuation discount vs large caps; 77% historical win rate in second half after April recovery pattern; sector rotation from Magnificent 7 tech to small-cap value creating structural outperformance; aligns with mandate's tactical small-cap broadening."
+    },
+    {
+     "symbol": "QQQ",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7.32,
+     "thesis": "Maintaining AI/semis core exposure per mandate but at reduced conviction sizing; QQQ down 10% from peak, trading 10.1% overvalued, momentum indicators bearish (below 0, RSI sell territory); chip sector weakness (Micron -8.8%, AMD -8.1%) creates headwinds; conservative core positioning awaits post-earnings clarity."
     },
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Healthcare sector defensives with 3-4% dividend yield; outperforming during risk-off rotation as growth fears dominate"
+     "weight_pct": 6.71,
+     "thesis": "Healthcare defensive with 24.57% past-year return, only 0.8% overvalued, 1.51% dividend yield provides ballast in choppy market; tactical position to capture mean-reversion as valuations stabilize post-earnings."
     },
     {
      "symbol": "XLU",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "Utilities defensives with 3-4% dividend yield and rate-sensitive positioning; capturing mean-reversion during equity stress"
+     "weight_pct": 3.66,
+     "thesis": "Utilities defensive with 3-4% dividend yield and rate-sensitive hedge profile; maintaining minimum defensive positioning against further market volatility."
     },
     {
      "symbol": "BTC-USD",
      "kind": "crypto",
      "side": "long",
-     "weight_pct": 4,
-     "thesis": "Bitcoin allocation reduced from 5% to 4% due to risk-off environment; maintains crypto recovery exposure with lower conviction"
+     "weight_pct": 2.44,
+     "thesis": "Bitcoin recovery allocation at right sizing; mixed signals (down 20.48% in June, up 2.73% in July, at $63,669 below key EMAs) warrant conservative small allocation pending clearer recovery thesis."
     },
     {
      "symbol": "GLD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Gold hedge increased from 10% to 12%; uncorrelated portfolio protection during tech drawdown and macro volatility"
+     "weight_pct": 6.1,
+     "thesis": "Reduced from 12% as equity allocation shift provides portfolio defensiveness; gold hedge sized for macro hedge without over-concentration; supports tactical flexibility as earnings digest."
+    },
+    {
+     "symbol": "CASH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 23.79,
+     "thesis": "Reduced from 42% to deploy conviction into small-cap outperformance while preserving 39% post-earnings dry powder for tactical flexibility; enables rebalancing discipline while respecting optionality mandate."
     }
    ],
    "series": {
@@ -898,83 +948,56 @@
     "2026-07-26": 980.95,
     "2026-07-27": 974.16,
     "2026-07-28": 973.02,
-    "2026-07-29": 967.9,
-    "2026-07-30": 974.34
+    "2026-07-29": 967.91,
+    "2026-07-30": 973.27,
+    "2026-07-31": 971.04
    }
   },
   "Haiku price momentum": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Pursue H2 2026 momentum across three stacking themes: mega-cap semiconductor/AI mega-winners (MU, SOXL), leveraged large-cap tech (TQQQ, QQQ), and emerging small-cap outperformance (IWM); rebalance weekly as relative momentum shifts.",
-   "nav": 960.76,
-   "growth_pct": -3.92,
+   "nav": 960.16,
+   "growth_pct": -3.98,
    "max_drawdown_pct": -9.66,
-   "gross_exposure_pct": 65,
-   "n_positions": 9,
-   "cash_pct": 35,
+   "gross_exposure_pct": 50,
+   "n_positions": 5,
+   "cash_pct": 50,
    "positions": [
-    {
-     "symbol": "TQQQ",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "Retain Nasdaq participation on stabilization; reduced from 20% due to momentum reversal."
-    },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Small-cap provides diversification alternative to mega-cap tech momentum collapse."
-    },
-    {
-     "symbol": "QQQ",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "Core Nasdaq ballast but significantly de-risked from 12%."
-    },
-    {
-     "symbol": "SOXL",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 3,
-     "thesis": "Minimal semiconductor exposure; essentially exiting from 15% given -41% drawdown and broken momentum."
-    },
-    {
-     "symbol": "MU",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 4,
-     "thesis": "Token mega-cap semi exposure from 13%; waiting for technical stabilization."
+     "weight_pct": 25,
+     "thesis": "Concentrate on the single working momentum theme. Small-cap outperformance intact (22% YTD) with strong relative outperformance vs. mega-cap tech and semis. This is the only component of the three-theme momentum strategy that is performing."
     },
     {
      "symbol": "SPY",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "Broad market ballast for stability and diversification."
+     "weight_pct": 3,
+     "thesis": "Minimal broad market ballast for diversification; reduced from 6% given market weakness."
     },
     {
      "symbol": "SHV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Short-term treasuries for capital preservation and 4% cash yield."
+     "weight_pct": 13,
+     "thesis": "Short-term treasury ETF increased from 10% for capital preservation and 4% cash yield. Better value now with market stress."
     },
     {
      "symbol": "AGG",
      "kind": "equity",
      "side": "long",
      "weight_pct": 5,
-     "thesis": "Bond exposure for downside protection."
+     "thesis": "Bond ETF maintained for downside protection."
     },
     {
      "symbol": "IEF",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "Intermediate-term treasuries; intermediate duration for yield with stability."
+     "weight_pct": 4,
+     "thesis": "Intermediate-term treasury ETF reduced from 6% to free capital for cash buffer."
     }
    ],
    "series": {
@@ -992,15 +1015,16 @@
     "2026-07-27": 964.93,
     "2026-07-28": 954.81,
     "2026-07-29": 937.53,
-    "2026-07-30": 960.76
+    "2026-07-30": 960.76,
+    "2026-07-31": 960.16
    }
   },
   "Haiku quality compounders": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Concentrated in quality mega-cap compounders with AI exposure and fortress balance sheets; 11% dry powder for tactical flexibility.",
-   "nav": 988.93,
-   "growth_pct": -1.11,
+   "nav": 1009.66,
+   "growth_pct": 0.97,
    "max_drawdown_pct": -3.12,
    "gross_exposure_pct": 89,
    "n_positions": 9,
@@ -1085,96 +1109,104 @@
     "2026-07-27": 973.29,
     "2026-07-28": 981.85,
     "2026-07-29": 968.63,
-    "2026-07-30": 988.93
+    "2026-07-30": 988.93,
+    "2026-07-31": 1009.66
    }
   },
   "Haiku small/mid-cap growth": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Concentrated small/mid-cap cloud/AI/fintech positions with 3x tech leverage to capture growth tailwinds and beaten-down valuations.",
-   "nav": 952.22,
-   "growth_pct": -4.78,
+   "nav": 952.5,
+   "growth_pct": -4.75,
    "max_drawdown_pct": -7.98,
-   "gross_exposure_pct": 95,
-   "n_positions": 11,
+   "gross_exposure_pct": 95.0,
+   "n_positions": 12,
    "cash_pct": 5,
    "positions": [
-    {
-     "symbol": "TQQQ",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 23,
-     "thesis": "3x Nasdaq leverage captures AI infrastructure and cloud secular growth; amplifies upside in continued tech-led rotation"
-    },
     {
      "symbol": "ARKK",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Diversified small/mid-cap growth exposure across AI, cloud, fintech; ARK's active management targets secular disruptors"
+     "weight_pct": 16.15,
+     "thesis": "Best-performing small/mid-cap growth fund; ARK's active management significantly outperforming index leverage (41.61% YTD vs 21.88% TQQQ); diversified exposure to AI, cloud, fintech secular tailwinds with strong relative momentum"
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Russell 2000 small-cap mandate; +19.4% H1 suggests alpha potential; broad exposure to SMB growth in cloud/tech"
+     "weight_pct": 12.35,
+     "thesis": "Russell 2000 small-cap rally strongest since 2003 (+22% YTD); unprofitable small caps up 154% since mid-2025 as market prices AI disruption potential; SMB growth in cloud/tech benefiting from secular digital transformation"
+    },
+    {
+     "symbol": "TQQQ",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 16.15,
+     "thesis": "3x Nasdaq leverage maintains tech exposure; recent correction in leveraged products creates reentry opportunity; AI infrastructure and cloud secular growth thesis remains intact despite current volatility; amplifies upside in continued tech-led rotation"
     },
     {
      "symbol": "CRWD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Cybersecurity leader with secular growth; essential infrastructure for enterprises digitizing; resilient business model"
+     "weight_pct": 8.55,
+     "thesis": "Cybersecurity infrastructure leader experiencing AI inflection; AI detection and response capabilities showing strong adoption; raised FY26 guidance signals confidence; essential enterprise security spending unimpaired by tech sector cycles"
     },
     {
      "symbol": "DDOG",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Cloud observability essential for modern DevOps; SaaS beaten down but secular cloud-native tailwind remains intact"
+     "weight_pct": 7.6,
+     "thesis": "Cloud observability essential for DevOps in AI-driven infrastructure; SaaS correction creates value entry; secular cloud-native tailwind accelerating with AI/ML workloads; beaten-down valuation presents accumulation opportunity"
     },
     {
      "symbol": "UPST",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "AI-powered consumer lending platform; fintech disruption at beaten-down valuations; AI credit decisioning has secular tailwind"
+     "weight_pct": 8.55,
+     "thesis": "AI-powered consumer lending platform; fintech disruption thesis at attractive valuations post-correction; AI credit decisioning has structural tailwind; market repricing fintech growth after sector volatility"
     },
     {
      "symbol": "MDB",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "NoSQL database standard for cloud-native applications; developer platform moat; SaaS correction creates value entry"
-    },
-    {
-     "symbol": "SOFI",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6,
-     "thesis": "Fintech lending platform scaling institutional adoption; disrupts traditional banking; secular fintech tailwinds intact"
+     "weight_pct": 6.65,
+     "thesis": "NoSQL database standard for cloud-native applications; developer platform with strong moat; SaaS correction creates value entry; essential infrastructure for AI/ML deployments"
     },
     {
      "symbol": "SHOP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "E-commerce platform for SMBs; internet-facing secular growth; beaten down despite strong SMB positioning"
+     "weight_pct": 5.7,
+     "thesis": "E-commerce platform for SMBs; internet-facing secular growth with resilient positioning; beaten down despite strong SMB adoption trends; payment processing growth accelerating"
     },
     {
-     "symbol": "COIN",
+     "symbol": "SOFI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 3,
-     "thesis": "Institutional crypto gateway; operational moat despite crypto bear; tactical exposure to potential recovery bounce"
+     "weight_pct": 3.8,
+     "thesis": "Fintech lending platform scaling institutional adoption; secular fintech disruption tailwinds intact; valuations reset after market correction"
     },
     {
      "symbol": "SNOW",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 3,
-     "thesis": "Cloud data warehouse leader essential for AI/ML workflows; beaten-down SaaS with strong secular tailwind"
+     "weight_pct": 2.85,
+     "thesis": "Cloud data warehouse leader essential for AI/ML workflows; beaten-down SaaS with strong secular tailwind; critical infrastructure for data-driven AI applications"
+    },
+    {
+     "symbol": "COIN",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 1.9,
+     "thesis": "Institutional crypto gateway with operational moat; tactical exposure to potential crypto recovery bounce; BTC stability improving from lows"
+    },
+    {
+     "symbol": "CASH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 4.75,
+     "thesis": "Dry powder for tactical moves; flexibility in market volatility"
     }
    ],
    "series": {
@@ -1192,65 +1224,60 @@
     "2026-07-27": 943.69,
     "2026-07-28": 940.13,
     "2026-07-29": 919.94,
-    "2026-07-30": 952.22
+    "2026-07-30": 952.22,
+    "2026-07-31": 952.5
    }
   },
   "Sonnet concentrated AI/technology": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Concentrated long book in AI infrastructure leaders (compute, networking, memory) with leveraged semis beta for extra torque, a modest single-name short to offset gross exposure, and cash held for weekly rebalancing flexibility.",
-   "nav": 1006.24,
-   "growth_pct": 0.62,
+   "nav": 1020.44,
+   "growth_pct": 2.04,
    "max_drawdown_pct": -10.74,
-   "gross_exposure_pct": 90,
-   "n_positions": 6,
-   "cash_pct": 10,
+   "gross_exposure_pct": 80,
+   "n_positions": 5,
+   "cash_pct": 20,
    "positions": [
     {
      "symbol": "NVDA",
      "kind": "equity",
      "side": "long",
      "weight_pct": 25,
-     "thesis": "Core AI compute bottleneck; Blackwell/next-gen ramp keeps NVDA the highest-quality way to own the capex cycle.",
-     "stop_loss_pct": 20
+     "stop_loss_pct": 20.0,
+     "thesis": "Core AI compute bottleneck; despite the 3-day semis selloff (China chip-smuggling headline, sector rotation), analyst targets imply ~59% upside and quality-name accumulation (Cathie Wood buying the dip) continues. Highest-quality way to own the capex cycle; hold core size through the volatility."
     },
     {
      "symbol": "MSFT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 20,
-     "thesis": "Azure AI monetization plus enterprise Copilot adoption gives durable, lower-volatility AI platform exposure; increased weight to replace decaying leveraged-semis beta with a steadier AI-capex proxy."
+     "weight_pct": 28,
+     "stop_loss_pct": 18.0,
+     "thesis": "Just posted a blowout quarter: Azure +41% (fastest growth in four years, crossed $100B annualized), revenue and EPS beat consensus, stock up ~9% after hours. Extending data-center useful life (15->25yr) trims near-term capex guide but is margin-accretive, not a demand cut. Best risk-adjusted AI-platform exposure this week; increasing weight to the strongest confirmed catalyst in the book."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
      "weight_pct": 15,
-     "thesis": "Custom silicon/networking for hyperscaler AI clusters diversifies compute exposure beyond GPUs.",
-     "stop_loss_pct": 20
+     "stop_loss_pct": 20.0,
+     "thesis": "Custom silicon/networking diversifies compute exposure beyond GPUs; new $200B multi-year Samsung memory/AI-chip collaboration through 2030 is a bullish structural catalyst even as the stock sold off with the sector this week."
     },
     {
      "symbol": "AMD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "MI-series datacenter GPU share gains and cyclical semis exposure at a more reasonable multiple than NVDA.",
-     "stop_loss_pct": 20
+     "weight_pct": 7,
+     "stop_loss_pct": 20.0,
+     "thesis": "MI-series share gains and the new Core Scientific datacenter deal (~2.5GW, ~$14B) remain real catalysts, but trimming from 10% to 7% given a stretched ~143x PE and AMD carrying the highest beta into a sector-wide rotation out of chip stocks."
     },
     {
      "symbol": "MU",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "HBM/memory remains structurally tight for AI servers despite the recent pullback.",
-     "stop_loss_pct": 20
-    },
-    {
-     "symbol": "AAPL",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 10,
-     "thesis": "Relative laggard in on-device/enterprise AI monetization versus platform peers; funds long book while staying within short-side limits."
+     "weight_pct": 5,
+     "stop_loss_pct": 20.0,
+     "thesis": "HBM/memory structurally tight long-term (cheap on trailing PE ~18x) but trimming from 10% to 5% given a brutal -9.94% single-day move, -32% drawdown from June highs, CEO insider selling into the dip, and direct China memory-competition headlines (ChangXin) that are name-specific risk on top of the sector selloff."
     }
    ],
    "series": {
@@ -1268,75 +1295,84 @@
     "2026-07-27": 978.82,
     "2026-07-28": 963.07,
     "2026-07-29": 935.62,
-    "2026-07-30": 1006.24
+    "2026-07-30": 1006.24,
+    "2026-07-31": 1020.44
    }
   },
   "Sonnet contrarian turnarounds": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Fade H1's extremes: buy the AI-disruption-fear and macro-beaten-down names with real turnaround catalysts (ADBE/CRM/PYPL, oversold crypto, small caps, gold), while trimming the most overextended momentum trade (SOXL) short.",
-   "nav": 1039.11,
-   "growth_pct": 3.91,
+   "nav": 1036.74,
+   "growth_pct": 3.67,
    "max_drawdown_pct": -4.57,
-   "gross_exposure_pct": 78,
+   "gross_exposure_pct": 88,
    "n_positions": 8,
-   "cash_pct": 22,
+   "cash_pct": 12,
    "positions": [
     {
      "symbol": "ADBE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Down ~49% H1 on AI-disruption fear that looks overdone; Firefly/AI-assistant monetization plus depressed valuation set up a mean-reversion catalyst."
+     "weight_pct": 17,
+     "thesis": "Turnaround catalyst confirming (FTC cleared Topaz Labs deal, stock near 2-month highs, +5.7% on 7/29) but MS just cut target to $240 (below the $263 spot) \u2014 modest add, protecting gains with a tight take-profit given valuation risk after the sharp recovery from H1 lows.",
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0
     },
     {
      "symbol": "CRM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Fell alongside ADBE on AI-replaces-SaaS narrative; Agentforce traction and management's margin-discipline reset offer a turnaround catalyst from depressed multiples."
+     "weight_pct": 13,
+     "thesis": "Agentforce-driven re-rating underway (+19.3% in the past month) validating the depressed-multiple turnaround call; sizing up modestly given still-mixed analyst sentiment on AI growth.",
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 25.0
     },
     {
      "symbol": "PYPL",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Multi-year beaten-down fintech with new CEO-led restructuring, buyback support, and branded-checkout reboot underappreciated by the market."
+     "thesis": "Q2 beat ($1.38 EPS / $8.68B rev) supports the restructuring thesis, but the stock is only +0.6% YTD and Goldman remains at Sell $50 \u2014 holding size, turnaround thesis intact but not yet dramatic."
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 10,
-     "thesis": "3x semis ETF up +250% H1 is showing the first signs of correction after an extreme melt-up; sizing small given leveraged-ETF decay risk on the short side too."
+     "weight_pct": 20,
+     "thesis": "Highest-conviction call in the book: the leveraged-melt-up-into-correction thesis has become a confirmed, accelerating crash (-42.9%/1mo, -61.1%/3mo, 'chip crash exposing the brutal cost of leverage'). Doubling down while the trend is still working, with a stop to cap squeeze risk after such a large realized move and a take-profit to bank further downside.",
+     "stop_loss_pct": 25.0,
+     "take_profit_pct": 40.0
     },
     {
      "symbol": "BTC-USD",
      "kind": "crypto",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Down 27% H1 in a deep crypto bear; oversold positioning and historically this magnitude of drawdown has preceded sharp mean-reversion rallies."
+     "weight_pct": 10,
+     "thesis": "Oversold-bounce thesis starting to confirm (+6.3% in the past month off a -26.9% YTD trough); adding to the position as the deep bear shows first signs of a bottom.",
+     "stop_loss_pct": 20.0
     },
     {
      "symbol": "ETH-USD",
      "kind": "crypto",
      "side": "long",
-     "weight_pct": 5,
-     "thesis": "Down 36% H1, worst major-crypto laggard; smaller sizing reflects higher risk but asymmetric rebound potential if crypto bear finds a bottom."
+     "weight_pct": 8,
+     "thesis": "Strongest crypto rebound of the book (+25.0% in the past month off the worst YTD drawdown, -33.8%); the laggard-to-leader dynamic is playing out exactly as the turnaround thesis called for \u2014 sizing up.",
+     "stop_loss_pct": 20.0
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Small caps still trailing despite a +19.4% H1 catch-up; further mean reversion likely as rate-cut expectations and broadening market favor cyclicals."
+     "weight_pct": 5,
+     "thesis": "The small-cap catch-up has essentially already happened (current +19.5% YTD roughly matches the +19.4% level noted when this book was set) and is now pulling back (-3.5%/1mo) \u2014 trimming to fund higher-conviction names."
     },
     {
      "symbol": "GLD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Gold down 6.5% H1 while equities ran hot; contrarian hedge that also benefits if risk-on unwinds or rate-cut cycle resumes."
+     "weight_pct": 5,
+     "thesis": "Gold has gone essentially nowhere since inception (-6.4% YTD vs -6.5% noted then, +0.7%/1mo) \u2014 the contrarian catalyst hasn't materialized yet; trimming to a small watch-size position."
     }
    ],
    "series": {
@@ -1353,69 +1389,70 @@
     "2026-07-26": 990.88,
     "2026-07-27": 1013.96,
     "2026-07-28": 1042.51,
-    "2026-07-29": 1068.81,
-    "2026-07-30": 1039.11
+    "2026-07-29": 1068.76,
+    "2026-07-30": 1035.3,
+    "2026-07-31": 1036.74
    }
   },
   "Sonnet deep value": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and run a small levered short-BTC hedge against a continuing crypto bear, holding sizable cash for drawdown buys.",
-   "nav": 1028.08,
-   "growth_pct": 2.81,
+   "nav": 1030.95,
+   "growth_pct": 3.09,
    "max_drawdown_pct": -1.56,
-   "gross_exposure_pct": 102,
+   "gross_exposure_pct": 100,
    "n_positions": 8,
-   "cash_pct": 14,
+   "cash_pct": 16,
    "positions": [
     {
      "symbol": "XOM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Integrated energy major at mid-single-digit FCF yield, low P/E, strong buyback/dividend support; classic deep value in a sector that lagged AI-led H1."
+     "weight_pct": 12,
+     "thesis": "Integrated energy major, FCF yield still attractive; trimmed ahead of 7/31 earnings after a 30% YTD run and a BofA downgrade-to-Neutral flagging limited near-term upside."
     },
     {
      "symbol": "JPM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Best-in-class bank at reasonable P/B with rising net interest income and capital return; financials remain cheap relative to the broad tape."
+     "weight_pct": 11,
+     "thesis": "Still cheap at 15.3x P/E with a 10% dividend hike, but trimmed after today's -3.5% drop and Dimon's macro caution ahead of the Fed."
     },
     {
      "symbol": "GM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Single-digit P/E automaker with heavy buybacks and normalized truck/SUV margins; deep value optionality on any capex discipline or EV cost cuts."
+     "weight_pct": 13,
+     "thesis": "Q2 beat (EPS $3.57, revenue $48B) with raised full-year guidance and truck/SUV margin strength confirming the deep-value thesis; sized up on momentum."
     },
     {
      "symbol": "UNH",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Managed-care leader sold off to a multi-year-low P/E on medical-cost fears; healthcare defensiveness plus mean-reversion setup into H2."
+     "weight_pct": 14,
+     "thesis": "Q2 EPS beat estimates by 56% YoY, FY guide raised to $19.50-20.00; mean-reversion off the medical-cost-fear lows is playing out, added modestly."
     },
     {
      "symbol": "PFE",
      "kind": "equity",
      "side": "long",
      "weight_pct": 8,
-     "thesis": "Big pharma at low P/E with above-average dividend yield and improving pipeline optionality after post-COVID reset."
+     "thesis": "6.8% dividend yield, still deep value at 19x; held unchanged into the 8/4 earnings print."
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Small/mid-cap value basket catching up after a long large-cap AI-led divergence; cheaper aggregate multiples than SPY/QQQ."
+     "weight_pct": 7,
+     "thesis": "Small-cap value beta trimmed after a stalled catch-up trade (-3.5% 1mo, -1.8% 3mo despite +16% YTD)."
     },
     {
      "symbol": "F",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Deep-value auto name trading below book with high dividend yield; a levered bet on consumer credit holding up and cost cuts sticking."
+     "weight_pct": 11,
+     "thesis": "Q2 beat, raised profit guidance, largest military contract in decades, Citi upgrade to $20 PT; added on confirmed momentum and a 4.1% dividend yield."
     },
     {
      "symbol": "BTC-USD",
@@ -1423,7 +1460,7 @@
      "side": "short",
      "weight_pct": 8,
      "leverage": 3,
-     "thesis": "Crypto remains in a confirmed H1 bear trend (BTC -27%, ETH -36%, SOL -40%); modest levered short as a portfolio hedge/tactical continuation bet, sized so a 9-10% BTC rally only stops out this sleeve, not the book."
+     "thesis": "Small levered hedge kept unchanged; multi-quarter crypto downtrend intact (-24% 6mo, -46% 1yr) despite a recent 1mo bounce, sized so only a further BTC surge stops it out."
     }
    ],
    "series": {
@@ -1440,91 +1477,84 @@
     "2026-07-26": 1020.64,
     "2026-07-27": 1026.72,
     "2026-07-28": 1036.27,
-    "2026-07-29": 1027.97,
-    "2026-07-30": 1028.08
+    "2026-07-29": 1027.89,
+    "2026-07-30": 1034.66,
+    "2026-07-31": 1030.95
    }
   },
   "Sonnet dividend growth and income": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Anchor in quality dividend growers with AI-cycle exposure, add a tactical short against the most overextended leveraged momentum trade, use TLT for rate-cut convexity, and keep meaningful cash at 4% APY given stretched valuations after a huge H1 rally.",
-   "nav": 1034.85,
-   "growth_pct": 3.48,
+   "nav": 1043.33,
+   "growth_pct": 4.33,
    "max_drawdown_pct": -1.23,
-   "gross_exposure_pct": 87,
-   "n_positions": 10,
-   "cash_pct": 18,
+   "gross_exposure_pct": 72,
+   "n_positions": 9,
+   "cash_pct": 28,
    "positions": [
     {
      "symbol": "MSFT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Dividend grower with durable cash flows from Azure/AI infrastructure demand; quality compounder to anchor the book."
+     "weight_pct": 14,
+     "thesis": "Q4 beat: Azure topped $100B annualized revenue growing 41-43%, 2026 capex raised to $175B, stock +8.8% after-hours; durable AI-driven cash flow anchoring the dividend book \u2014 sizing up after the print."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Dividend growth plus direct AI networking/custom silicon exposure; strong FCF supports continued payout hikes."
+     "weight_pct": 9,
+     "thesis": "New $200B Samsung foundry/memory MOU reinforces multi-year AI-silicon demand and FCF for dividend growth, but trimming slightly given the broad chip-sector selloff (China competition, AI-capex-sustainability fears) dragging on semis peers."
     },
     {
      "symbol": "SCHD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Diversified high-quality dividend growth ETF that lagged the AI-momentum rally, offering defensive ballast with income."
+     "weight_pct": 11,
+     "thesis": "Diversified quality dividend-growth ballast; adding as valuations stay stretched and volatility rises across the AI-cycle names."
     },
     {
      "symbol": "JPM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Best-in-class bank compounder with rising dividend, benefits from resilient economy and capital markets activity."
+     "weight_pct": 9,
+     "thesis": "-3.5% pullback on a no-news day despite a fresh Deutsche Bank upgrade and a path to a $1T balance sheet; buying the dip in a best-in-class rising-dividend compounder."
     },
     {
      "symbol": "CVX",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Energy dividend aristocrat providing sector diversification and inflation hedge with strong cash returns to shareholders."
+     "weight_pct": 9,
+     "thesis": "Energy dividend aristocrat; the same oil-price/inflation backdrop pressuring bonds supports energy cash returns, keeping this as a diversifier and inflation hedge."
     },
     {
      "symbol": "HD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 7,
-     "thesis": "Cyclical dividend grower positioned to benefit if small-cap/consumer breadth continues and rate cuts support housing turnover."
+     "weight_pct": 5,
+     "thesis": "Trimming \u2014 rate-cut odds have diminished under a more hawkish Fed and surging long yields, weakening the housing-turnover catalyst this position depended on."
     },
     {
      "symbol": "TLT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Long duration Treasuries offer income and convexity if growth cools into year-end after a huge risk-asset run, diversifying the equity income book."
+     "weight_pct": 3,
+     "thesis": "Cutting most of the position \u2014 long yields have surged to multi-year highs and rate-cut expectations have faded ('possibility of a rate cut has diminished'), invalidating the convexity thesis; keeping only a token stake as a growth-scare hedge."
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 8,
-     "thesis": "3x semis ETF up +250% H1 into a visible AI-infrastructure correction over the last month; tactical short to fade an extended, leverage-fragile momentum trade."
-    },
-    {
-     "symbol": "BTC-USD",
-     "kind": "perp",
-     "side": "short",
-     "weight_pct": 5,
-     "leverage": 2,
-     "thesis": "BTC remains in a confirmed downtrend (-27% H1) with no reversal catalyst yet; small low-leverage short to monetize continuation while capping liquidation risk."
+     "weight_pct": 4,
+     "thesis": "Taking partial profits after semis cratered (-43% 1m, -61% 3m, -16% in a single session) on AI-capex-sustainability and China-competition fears; trimming an already-extended, high-squeeze-risk short (down >65% from its 52w high) rather than pressing it further."
     },
     {
      "symbol": "XLP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "Defensive staples dividend payers that badly lagged H1's AI-led rally, offering mean-reversion income exposure and a hedge if the rally rotates defensive."
+     "weight_pct": 8,
+     "thesis": "Adding to defensive staples dividend payers as ballast given a volatile, valuation-stretched tape; low-beta income to complement the AI-cycle names."
     }
    ],
    "series": {
@@ -1541,16 +1571,17 @@
     "2026-07-26": 1002.27,
     "2026-07-27": 1010.47,
     "2026-07-28": 1025.46,
-    "2026-07-29": 1026.8,
-    "2026-07-30": 1034.85
+    "2026-07-29": 1026.77,
+    "2026-07-30": 1037.59,
+    "2026-07-31": 1043.33
    }
   },
   "Sonnet global diversification via US-listed ADRs and ETFs": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate the core toward international/EM ETFs and quality non-US ADRs that lagged the US AI-infra rally, keep crypto exposure at zero given the deep bear trend, and hold a modest inverse-ETF hedge plus elevated cash against US mega-cap AI-valuation risk.",
-   "nav": 988.99,
-   "growth_pct": -1.1,
+   "nav": 994.02,
+   "growth_pct": -0.6,
    "max_drawdown_pct": -5.95,
    "gross_exposure_pct": 80,
    "n_positions": 8,
@@ -1560,57 +1591,62 @@
      "symbol": "EEM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 14,
-     "thesis": "Broad EM ETF for diversified core exposure as EM catches up to US small/mid caps rallying."
+     "weight_pct": 12,
+     "thesis": "Broad EM ETF core exposure; trimmed slightly since the fund is ~46% tech-weighted (TSM 15%, Samsung 8% of NAV) and thus more AI-capex-correlated than a clean EM diversifier."
     },
     {
      "symbol": "TSM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Best-in-class Taiwan ADR, core AI/semis supplier, dip-worthy after recent memory/optics correction."
+     "weight_pct": 8,
+     "thesis": "Best-in-class semis ADR, trimmed after -13.34%/mo AI-selloff; still a core long-term holding but sized down given confirmed near-term AI-capex de-rating risk.",
+     "stop_loss_pct": 15.0
     },
     {
      "symbol": "ASML",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Dutch ADR, monopoly lithography equipment maker, high-quality European AI capex play."
+     "weight_pct": 5,
+     "thesis": "Monopoly lithography maker, trimmed after -13.59%/mo drop on China-competition fears; BofA calls the reaction overdone and it's still +44.6% YTD, so kept as a smaller position rather than exited.",
+     "stop_loss_pct": 15.0
     },
     {
      "symbol": "EWZ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Brazil ETF, cheap valuations and commodity/rate-cut tailwinds, low correlation to US mega-cap AI trade."
+     "weight_pct": 10,
+     "thesis": "Brazil ETF, low correlation to the US AI-valuation trade; unchanged conviction."
     },
     {
      "symbol": "EWJ",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Japan ETF, ongoing corporate governance reform and yen dynamics support continued outperformance."
+     "thesis": "Japan ETF, governance-reform tailwind independent of US tech drawdown; unchanged."
     },
     {
      "symbol": "BABA",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "China ADR at depressed multiples, optionality on stimulus and e-commerce/cloud recovery."
+     "weight_pct": 10,
+     "thesis": "China ADR, added to on continued resilience (+21.33%/mo) despite weak cash-flow headlines -- stimulus/e-commerce recovery optionality thesis playing out.",
+     "take_profit_pct": 35.0
     },
     {
      "symbol": "INDA",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "India ETF for structural EM growth diversification independent of US AI-concentration risk."
+     "weight_pct": 9,
+     "thesis": "India ETF, structural EM growth diversification, low correlation to the current US AI-capex selloff; modestly increased."
     },
     {
      "symbol": "SQQQ",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 6,
-     "thesis": "Small tactical hedge against a US AI-infra valuation correction after huge H1 leveraged-tech gains (short via inverse ETF long position)."
+     "weight_pct": 16,
+     "thesis": "Tactical hedge against US AI-infra valuation correction, upsized meaningfully because the correction is now visibly underway (SQQQ +29.56%/mo, S&P -2.44%/wk on hawkish Fed shock) -- this is the mandate's core hedge doing its job.",
+     "take_profit_pct": 45.0,
+     "stop_loss_pct": 20.0
     }
    ],
    "series": {
@@ -1628,89 +1664,90 @@
     "2026-07-27": 980.83,
     "2026-07-28": 969.36,
     "2026-07-29": 951.54,
-    "2026-07-30": 988.99
+    "2026-07-30": 988.99,
+    "2026-07-31": 994.02
    }
   },
   "Sonnet growth at a reasonable price": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Round 2: rotate into quality mega-cap and select mid-cap growth names trading at reasonable multiples relative to durable earnings growth, add small-cap breadth exposure, stay out of crypto's ongoing bear market, and hedge frothy speculative excess with a modest short.",
-   "nav": 993.98,
-   "growth_pct": -0.6,
+   "nav": 1014.63,
+   "growth_pct": 1.46,
    "max_drawdown_pct": -2.92,
-   "gross_exposure_pct": 87,
+   "gross_exposure_pct": 89,
    "n_positions": 10,
-   "cash_pct": 13,
+   "cash_pct": 11,
    "positions": [
     {
      "symbol": "MSFT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Azure/AI cloud growth compounding at a still-reasonable multiple vs. peers; diversified enterprise moat limits drawdown risk after April volatility."
+     "weight_pct": 19,
+     "thesis": "Blowout Q4: Azure crossed $100B, profit +31% YoY, capex raised on AI demand; stock +8.9% AH into next close. Sizing up the highest-conviction GARP name in the book while still reasonable at ~23x forward."
     },
     {
      "symbol": "GOOGL",
      "kind": "equity",
      "side": "long",
      "weight_pct": 12,
-     "thesis": "Cheapest mega-cap grower on a P/E-to-growth basis; Search+Cloud+YouTube diversify AI monetization while trading below peer multiples."
+     "thesis": "Still cheapest mega-cap grower on PEG; Q2 revenue beat (+24% YoY) though capex-hike concerns capped the pop. Held at weight -- thesis intact, no reason to chase or cut."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Custom silicon/networking beneficiary of AI infra buildout with more reasonable valuation than the SOXL basket after the recent semis correction."
+     "thesis": "AI infra/custom-silicon compounder holding up near highs despite today's broad tech selloff; Samsung pact expands TAM. Held at weight."
     },
     {
      "symbol": "META",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Ad-revenue growth reaccelerating with AI-driven engagement/targeting gains, reasonable multiple relative to growth versus other AI plays."
+     "weight_pct": 6,
+     "thesis": "Revenue/EPS beat but soft guidance and shrinking FCF on AI capex spooked the market (-7.5% AH); trimming rather than exiting since the ad-engagement growth story is still real, just less 'reasonable' near-term."
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
      "weight_pct": 8,
-     "thesis": "Small caps still catching up (+19.4% H1 but lagging QQQ historically); broadening rally and eventual rate relief support continued rotation."
+     "thesis": "Small-cap breadth rotation intact; near 52-wk highs before today's market-wide 1.6% pullback on the hawkish Fed hold. Held at weight."
     },
     {
      "symbol": "UNH",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Deeply out-of-favor quality compounder; depressed multiple provides GARP entry with earnings growth resuming, adds healthcare sector diversification."
+     "weight_pct": 10,
+     "thesis": "GARP turnaround confirmed -- shares near $420 vs. the depressed sub-$235 low the position was built against, Q2 net income +61% YoY. Adding modestly to a working thesis."
     },
     {
      "symbol": "COST",
      "kind": "equity",
      "side": "long",
      "weight_pct": 7,
-     "thesis": "Defensive, steady membership-driven growth compounder to balance high-beta AI exposure; resilient through the April drawdown pattern."
+     "thesis": "Steady membership compounder near 52-wk highs ahead of Q4 print; defensive ballast against the AI-capex-driven tech volatility. Held at weight."
     },
     {
      "symbol": "XOM",
      "kind": "equity",
      "side": "long",
      "weight_pct": 6,
-     "thesis": "Energy sector diversifier trading cheap on cash-flow yield, low correlation to AI-infra correction risk, dividend support."
+     "thesis": "Cheap cash-flow yield energy diversifier near 52-wk highs; Q2 earnings 7/31 is a near-term catalyst but position is a long-term GARP hold, not a trade. Held at weight."
     },
     {
      "symbol": "TQQQ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 5,
-     "thesis": "Small leveraged tap on continued Nasdaq momentum post-correction, sized modestly given amplified drawdown risk."
+     "weight_pct": 3,
+     "thesis": "Trimmed modestly -- leveraged Nasdaq beta adds decay/cost drag and amplified downside into a volatile post-Fed, post-earnings tape; kept small rather than removed since underlying mega-cap AI theses (MSFT especially) just got a fundamental boost."
     },
     {
      "symbol": "COIN",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 6,
-     "thesis": "Crypto remains in a deep bear (BTC/ETH/SOL all down double digits H1); Coinbase trading volumes and multiple exposed to further downside, funds the hedge cheaply without touching crypto directly."
+     "weight_pct": 8,
+     "thesis": "Crypto bear market continues to confirm (COIN -29% YTD, -19.6% over 6mo, -4.6% today); increasing the hedge modestly while keeping it sized as a hedge, not a core short, consistent with the GARP mandate's 'modest' framing."
     }
    ],
    "series": {
@@ -1728,68 +1765,68 @@
     "2026-07-27": 972.26,
     "2026-07-28": 976.77,
     "2026-07-29": 972.2,
-    "2026-07-30": 993.98
+    "2026-07-30": 993.98,
+    "2026-07-31": 1014.63
    }
   },
   "Sonnet macro/sector rotation": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
-   "nav": 1012.22,
-   "growth_pct": 1.22,
+   "nav": 1011.2,
+   "growth_pct": 1.12,
    "max_drawdown_pct": -1.16,
-   "gross_exposure_pct": 73,
-   "n_positions": 7,
-   "cash_pct": 27,
+   "gross_exposure_pct": 64,
+   "n_positions": 6,
+   "cash_pct": 36,
    "positions": [
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Small caps lag large caps on cycle but are most levered to Fed rate cuts and lower financing costs; H1 catch-up (+19.4%) likely extends as easing continues."
+     "weight_pct": 10,
+     "thesis": "Small-cap Fed-cut lever still intact structurally but near-term dragged by AI-capex risk-off spillover; trimmed from 15% to de-risk while keeping participation.",
+     "stop_loss_pct": 10.0
     },
     {
      "symbol": "XLI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Industrial capex reacceleration theme (reshoring, grid, factory build-out) benefits broad industrials beyond the narrow AI-infra trade."
-    },
-    {
-     "symbol": "CAT",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 10,
-     "thesis": "Direct capex-cycle beneficiary with pricing power; construction/mining equipment demand tracks lower rates and infrastructure spend."
+     "weight_pct": 8,
+     "thesis": "Industrial capex reacceleration thesis softened by the same data-center backlash hurting CAT; trimmed from 12% pending clarity, kept as broad (non-power-gen) industrial exposure.",
+     "stop_loss_pct": 10.0
     },
     {
      "symbol": "TLT",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Long duration is cheap after a flat H1 (-1%); Fed easing into year-end should finally reward duration as the curve prices further cuts."
+     "thesis": "Duration/Fed-cut hedge held flat at 10%; -0.71% 1mo shows the cut-relief rally hasn't fired yet, but it's the natural hedge if this AI unwind forces the Fed's hand toward easing."
     },
     {
      "symbol": "FXI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "A weakening dollar trend and Fed easing typically lift EM/China equities via cheaper dollar funding and capital rotation out of crowded US AI names."
+     "weight_pct": 14,
+     "thesis": "EM/China rotation thesis strongly confirmed (+12.85% 1mo) as capital rotates out of crowded US AI names; sized up from 10% to press the winner.",
+     "stop_loss_pct": 8.0
     },
     {
      "symbol": "GLD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Gold's H1 pullback (-6.5%) sets up a rebound as real rates fall with Fed cuts and the dollar trend turns lower into H2."
+     "weight_pct": 12,
+     "thesis": "Dollar-debasement/safe-haven hedge working (+0.68% 1mo, holding above $4000/oz spot despite a rough prior quarter); sized up from 8% as the AI-correction plays out and real-rate-cut expectations build.",
+     "stop_loss_pct": 8.0
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 8,
-     "thesis": "3x semis already up 250% H1 and now correcting on AI-disruption/valuation fears; a modest short hedges against further momentum unwind in the most extended pocket of the market."
+     "weight_pct": 10,
+     "thesis": "3x semis already down -61% in a month as the AI-infra trade unwinds; sized up modestly from 8% to press the clearly working hedge, but capped given a name down this much in a month carries real squeeze/mean-reversion risk.",
+     "stop_loss_pct": 25.0,
+     "take_profit_pct": 50.0
     }
    ],
    "series": {
@@ -1807,68 +1844,69 @@
     "2026-07-27": 1012.28,
     "2026-07-28": 1019.31,
     "2026-07-29": 1016.31,
-    "2026-07-30": 1012.22
+    "2026-07-30": 1012.22,
+    "2026-07-31": 1011.2
    }
   },
   "Sonnet price momentum": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
-   "nav": 1003.76,
-   "growth_pct": 0.38,
+   "nav": 1005.03,
+   "growth_pct": 0.5,
    "max_drawdown_pct": -6.05,
-   "gross_exposure_pct": 85,
+   "gross_exposure_pct": 95,
    "n_positions": 7,
-   "cash_pct": 15,
+   "cash_pct": 5,
    "positions": [
     {
      "symbol": "XLF",
      "kind": "equity",
      "side": "long",
      "weight_pct": 15,
-     "thesis": "Financials showing strongest positive momentum (+1.0%/+4.5%/+7.7% across 1w/1m/3m)"
+     "thesis": "Financials showing strongest positive momentum across all timeframes (+1.0%/+4.5%/+7.7% 1w/1m/3m); unchanged, clean uptrend confirmed multi-timeframe."
     },
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
      "weight_pct": 15,
-     "thesis": "Healthcare accelerating (+0.2%/+7.4%/+8.7%), clean uptrend"
+     "thesis": "Healthcare accelerating (+0.2%/+7.4%/+8.7%); unchanged, momentum still building."
     },
     {
      "symbol": "XLE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Energy leading the week (+4.7%) with strong 1m confirmation"
+     "weight_pct": 8,
+     "thesis": "Energy led the week (+4.7%) but only has 1-week confirmation; trimmed to fund higher-conviction shorts."
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Small caps holding up better than tech, modest positive momentum"
+     "weight_pct": 7,
+     "thesis": "Small caps holding up but momentum only modestly positive; weakest long in the book, trimmed."
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 15,
-     "thesis": "Semis in freefall (-29.5% 1w, -42.1% 1m), momentum decisively broken"
+     "weight_pct": 25,
+     "thesis": "Semis in freefall (-29.5% 1w, -42.1% 1m) -- the single clearest, most decisive broken-momentum trend in the book; sized up now that concentration caps are gone."
     },
     {
      "symbol": "TQQQ",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 10,
-     "thesis": "Leveraged QQQ rolling over (-12.3% 1w, -12.7% 1m) after tech momentum reversal"
+     "weight_pct": 15,
+     "thesis": "Leveraged QQQ rolling over (-12.3%/-12.7% 1w/1m) after tech momentum reversal; increased conviction, thesis playing out."
     },
     {
      "symbol": "GDX",
      "kind": "equity",
      "side": "short",
      "weight_pct": 10,
-     "thesis": "Gold miners in sustained downtrend (-5.6%/-15.5%/-28.9%)"
+     "thesis": "Gold miners in sustained downtrend (-5.6%/-15.5%/-28.9%); held flat, still working but less extreme than SOXL/TQQQ."
     }
    ],
    "series": {
@@ -1886,82 +1924,83 @@
     "2026-07-27": 989.43,
     "2026-07-28": 1018.29,
     "2026-07-29": 1040.27,
-    "2026-07-30": 1003.76
+    "2026-07-30": 1003.76,
+    "2026-07-31": 1005.03
    }
   },
   "Sonnet quality compounders": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Concentrate in high-ROIC wide-moat compounders (mega-cap tech, payments, healthcare) with durable pricing power, add a small tactical short against frothy small-caps, and hold meaningful cash after a weak H1.",
-   "nav": 1020.08,
-   "growth_pct": 2.01,
+   "nav": 1031.25,
+   "growth_pct": 3.12,
    "max_drawdown_pct": -2.0,
-   "gross_exposure_pct": 89,
+   "gross_exposure_pct": 93,
    "n_positions": 9,
-   "cash_pct": 11,
+   "cash_pct": 7,
    "positions": [
     {
      "symbol": "MSFT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Azure/AI infrastructure plus Office moat, fortress balance sheet, best-in-class ROIC compounder."
+     "weight_pct": 17,
+     "thesis": "FQ4 blowout: rev $90.0B vs $87.6B est, EPS $4.74 vs $4.24 est, Azure +41% past $100B run-rate, stock +8.8% after-hours; extended server life cuts 2026 capex while holding spend guidance -- best-in-class ROIC compounder just delivered proof, adding to the strongest print in the book."
     },
     {
      "symbol": "GOOGL",
      "kind": "equity",
      "side": "long",
      "weight_pct": 12,
-     "thesis": "Search moat plus Gemini/cloud optionality trading at a reasonable multiple after lagging AI-infra peers."
+     "thesis": "Search moat plus Gemini/cloud optionality; Strong Buy consensus, 27% upside, 16.9x P/E on 32% EPS growth. Some market angst over AI capex intensity, but fundamentals unchanged -- hold size."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Custom AI silicon and networking moat with high recurring software margins; recent memory/optics correction gives a better entry."
+     "weight_pct": 11,
+     "thesis": "Custom AI silicon/networking moat intact and new $200B Samsung memory-foundry MOU is a positive long-term signal, but no earnings confirmation until Sept 3 and stock soft today (-2.8%) -- trim slightly pending the next print."
     },
     {
      "symbol": "LLY",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "GLP-1 franchise dominance, pricing power, pipeline depth; healthcare compounder that lagged the AI-led H1 rally."
+     "weight_pct": 11,
+     "thesis": "GLP-1 dominance reinforced by strong Phase 3 data for next-gen triple-hormone drug retatrutide (up to 56lb weight loss), filing targeted Q1 2027 -- durable pipeline moat, add on the catalyst."
     },
     {
      "symbol": "V",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Toll-booth payments network, near-100% incremental margins, minimal credit risk, resilient through cycles."
+     "weight_pct": 11,
+     "thesis": "Q3 beat: revenue +14% YoY, EPS +11%, price targets raised (JPM to $450) -- toll-booth network moat delivering, add on confirmed execution."
     },
     {
      "symbol": "MA",
      "kind": "equity",
      "side": "long",
      "weight_pct": 8,
-     "thesis": "Duopoly payments moat alongside V, consistent double-digit compounding with low capital intensity."
+     "thesis": "Duopoly payments moat alongside V; Q2 results due today (7/30) so holding size steady rather than sizing into same-day event risk."
     },
     {
      "symbol": "COST",
      "kind": "equity",
      "side": "long",
      "weight_pct": 8,
-     "thesis": "Membership-model moat, loyal customer base, defensive quality compounder to balance tech-heavy book."
+     "thesis": "Membership moat intact -- June comps +8.8%, net sales +10.6% YoY; hold size, monitoring minor product-liability litigation noise."
+    },
+    {
+     "symbol": "UNH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7,
+     "thesis": "Q2 beat-and-raise, stock at a 52-week high, JPMorgan/Wells Fargo/Morgan Stanley all raised targets to $516-529 vs $420 current -- turnaround thesis confirmed, add to the contrarian quality pick."
     },
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "short",
      "weight_pct": 8,
-     "thesis": "Small caps rallied 19.4% in H1 on low-quality, rate-sensitive, weak-balance-sheet names; fade the move as a quality-vs-junk hedge."
-    },
-    {
-     "symbol": "UNH",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6,
-     "thesis": "Deep value healthcare compounder beaten down on margin fears, strong moat in scale and data, contrarian quality add."
+     "thesis": "Small caps continue to lead (+30% 12m) on low-quality, rate-sensitive names; fade persists as a quality-vs-junk hedge, unchanged."
     }
    ],
    "series": {
@@ -1979,75 +2018,78 @@
     "2026-07-27": 991.05,
     "2026-07-28": 1001.74,
     "2026-07-29": 998.84,
-    "2026-07-30": 1020.08
+    "2026-07-30": 1020.08,
+    "2026-07-31": 1031.25
    }
   },
   "Sonnet small/mid-cap growth": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
-   "nav": 951.78,
-   "growth_pct": -4.82,
+   "nav": 949.79,
+   "growth_pct": -5.02,
    "max_drawdown_pct": -9.23,
-   "gross_exposure_pct": 79,
+   "gross_exposure_pct": 63,
    "n_positions": 8,
-   "cash_pct": 21,
+   "cash_pct": 37,
    "positions": [
     {
      "symbol": "IWM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Small caps are catching up (+19.4% H1) as rate-cut expectations and broadening breadth favor small/mid-cap growth into year-end."
+     "weight_pct": 13,
+     "thesis": "Small caps still up strongly YTD and outperforming SPX, but the rate-cut tailwind behind the catch-up trade is now in question after 3 FOMC dissents favored a hike; trimming from 15% to reflect a weaker macro tailwind while keeping core small-cap beta."
     },
     {
      "symbol": "SOXL",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "3x semis exposure to ride the AI infrastructure buildout; sized down after the recent correction to manage leveraged-ETF decay risk."
+     "weight_pct": 4,
+     "thesis": "3x semis exposure to the AI buildout, cut hard (10%->4%) after a -16% single-day crash on chip-selling/China-competition headlines and 'Q3 seasonal weakness' warnings; leveraged-ETF decay risk is now realized, not hypothetical, so sizing down to a token stake with a stop.",
+     "stop_loss_pct": 20.0
     },
     {
      "symbol": "SOFI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 10,
-     "thesis": "Fintech mid-cap with secular tailwinds in digital banking/lending growth and improving profitability momentum."
+     "weight_pct": 8,
+     "thesis": "Record Q2 revenue (+40% YoY) and raised FY guidance, but stock dropped -8.9% on the print anyway (market focused on other line items); trimming 10%->8% given the negative reaction and broad risk-off tape, keeping exposure to the digital-banking growth story."
     },
     {
      "symbol": "CRSP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Gene-editing biotech with multiple pipeline catalysts; small-cap biotech offers asymmetric upside on trial readouts."
+     "weight_pct": 6,
+     "thesis": "Gene-editing pipeline still has 6 major data readouts in the next 12-18 months and CASGEVY commercialization is accelerating; trimming 8%->6% ahead of the 8/3 earnings print to manage event risk into a volatile tape."
     },
     {
      "symbol": "RKLB",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "Small-cap space/industrials name riding secular launch-demand growth and expanding satellite/defense contracts."
+     "weight_pct": 6,
+     "thesis": "Just landed a $266M Space Force contract (largest ever) and got a broker upgrade to Outperform, but the stock is extremely volatile (30%+ swings intramonth) and fell -8.3% with the broader tape; trimming 8%->6% ahead of the 8/10 print.",
+     "stop_loss_pct": 20.0
     },
     {
      "symbol": "DUOL",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Consumer growth compounder with AI-driven engagement and monetization tailwinds, still early in TAM penetration."
+     "thesis": "Held near prior size (10%) given relative resilience yesterday (-0.6% vs market -1.5 to -2%) and multiple bank price-target hikes (MS, JPM, Jefferies all to $125) even as AI-disruption chatter continues; still a consumer AI-engagement compounder into the 8/5 print."
     },
     {
      "symbol": "ADBE",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 8,
-     "thesis": "AI-disruption fear (already -49% H1) likely persists as generative tools erode Adobe's creative-suite moat; momentum short."
+     "weight_pct": 6,
+     "thesis": "AI-disruption short thesis intact structurally (Morgan Stanley cut to Underweight on competitive/transition risk) but trimming 8%->6% after the stock squeezed +5.7% on a Q2 beat and a defensive AI acquisition (Topaz Labs) -- respecting the squeeze risk rather than fighting it at full size."
     },
     {
      "symbol": "HOOD",
      "kind": "equity",
      "side": "long",
      "weight_pct": 10,
-     "thesis": "Fintech/brokerage growth story benefiting from retail trading activity, crypto infrastructure optionality, and product expansion."
+     "thesis": "Beat badly (EPS $0.62 vs $0.43 consensus, revenue +32% YoY, record net deposits) and only fell -3.2% on a day the Nasdaq fell -2%, roughly in line with the market; held near prior size as the strongest fundamental print in the book."
     }
    ],
    "series": {
@@ -2065,90 +2107,86 @@
     "2026-07-27": 974.92,
     "2026-07-28": 958.56,
     "2026-07-29": 921.06,
-    "2026-07-30": 951.78
+    "2026-07-30": 951.78,
+    "2026-07-31": 949.79
    }
   },
   "Opus Broadening": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
-   "nav": 997.2,
-   "growth_pct": -0.28,
-   "max_drawdown_pct": -0.94,
-   "gross_exposure_pct": 95,
-   "n_positions": 10,
-   "cash_pct": 5,
+   "nav": 992.0,
+   "growth_pct": -0.8,
+   "max_drawdown_pct": -1.01,
+   "gross_exposure_pct": 97.0,
+   "n_positions": 9,
+   "cash_pct": 3,
    "positions": [
-    {
-     "symbol": "IWM",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 15,
-     "thesis": "Core unleveraged small-cap breadth. Upsized with the TNA proceeds: same factor, no daily-reset decay."
-    },
     {
      "symbol": "RSP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 13,
-     "thesis": "Equal-weight S&P - the purest anti-concentration long, and the direct beneficiary if the megacap/semis drawdown in the data keeps rotating money down-cap."
-    },
-    {
-     "symbol": "XBI",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 11,
-     "thesis": "Biotech breadth momentum, top performer across recent windows and structurally uncorrelated to the semiconductor complex that is currently breaking."
-    },
-    {
-     "symbol": "KRE",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 10,
-     "thesis": "Regional banks - domestic cyclical breadth with no semiconductor supply-chain exposure."
+     "weight_pct": 19.1979,
+     "thesis": "The purest anti-concentration long, upsized from 13%. Sitting 1.1% below its 52-week high while QQQ is 11.6% below its - the rotation down-cap and away from megacap is now measured fact, not forecast, and RSP is the cleanest vehicle for it."
     },
     {
      "symbol": "XLE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Energy cyclical breadth; strong H1 momentum and the lowest correlation in the book to the tech drawdown."
+     "weight_pct": 17.1771,
+     "thesis": "Largest single long, up from 9%. Only sector green on a -1,000 Dow day (+1.88%), +37.31% over one year, and now carrying a live supply shock after Iranian strikes on a US base in Jordan sent oil up over 6%. Energy is a cyclical sector so this sits inside the breadth mandate, and it is the correct long when three Fed officials are dissenting toward a hike."
+    },
+    {
+     "symbol": "IWM",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 13.1354,
+     "thesis": "Core unleveraged small-cap breadth, trimmed 15->13 to fund energy. Kept substantial because the rotation is real, capped because 30-year yields at their highest since 2007 are a direct headwind to small-cap floating-rate borrowers."
     },
     {
      "symbol": "XLI",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9,
-     "thesis": "Industrials - steady cyclical breadth participant, held unchanged in the absence of new information."
+     "weight_pct": 9.0938,
+     "thesis": "Industrials - steady cyclical breadth with no semiconductor supply-chain exposure. Held unchanged; nothing in the new information set moves the case either way."
     },
     {
-     "symbol": "XLF",
+     "symbol": "XOP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 7,
-     "thesis": "Financials laggard with catch-up potential as leadership widens away from concentrated tech."
+     "weight_pct": 8.0833,
+     "thesis": "New. Equal-weighted oil and gas E&P - the one holding that satisfies both halves of my mandate at once (equal-weight AND cyclical), with far more torque to crude than XLE's 36% Exxon/Chevron core. Up 3.41% on 7/29 versus XLE's 1.88%, and at $172 still 10% below its 52-week high, so I am not buying the top of the spike.",
+     "stop_loss_pct": 20.0,
+     "take_profit_pct": 28.0
     },
     {
-     "symbol": "TNA",
+     "symbol": "KRE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "thesis": "3x small-cap amplifier cut from 15% to 6%. SOXL's 12pp of decay versus SMH this month is the direct evidence that daily-reset leverage is toxic at current realized vol; kept only as a small convex kicker.",
-     "stop_loss_pct": 30
+     "weight_pct": 8.0833,
+     "thesis": "Regional banks, trimmed 10->8. Near its 52-week high and down only 0.79% on a brutal tape, and a steeper curve with the Fed on hold helps net interest margin - but 20-year-high long yields also mark down securities portfolios, so I take size down rather than add."
+    },
+    {
+     "symbol": "XBI",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7.0729,
+     "thesis": "Biotech breadth, trimmed 11->7. Still +71.64% over a year, M&A-supported, and structurally uncorrelated to the semiconductor complex that is breaking - but it is the longest-duration asset I own, and with the 30-year at its highest since 2007 that argues for a smaller position, not the same one."
     },
     {
      "symbol": "ETH-USD",
      "kind": "crypto",
      "side": "long",
-     "weight_pct": 4,
-     "thesis": "Small beaten-down speculative tail for diversification; trimmed a point, no new information to justify more."
+     "weight_pct": 3.0312,
+     "thesis": "Speculative tail per mandate, trimmed 4->3. Genuine one-month momentum (+24.99%) but down 49% over a year, and a Fed with three hike dissents is the wrong regime for it. Token size, stopped, and at 35bps a side I will not churn it.",
+     "stop_loss_pct": 30.0
     },
     {
      "symbol": "QQQ",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 11,
-     "thesis": "Anti-concentration hedge, raised 9->11. TQQQ -12.7%/1m confirms the megacap complex is in an actual downtrend rather than a hypothesised one; still capped small because shorting megacap has historically been a persistent drag."
+     "weight_pct": 12.125,
+     "thesis": "Mandated anti-concentration hedge, 11->12. QQQ is 11.6% below its 52-week high while equal-weight RSP is 1.1% below its - this leg is the direct expression of the spread that is paying me, and 20-year-high long yields compress megacap multiples most. Kept modest because shorting megacap is a historically persistent drag and mega-caps can turn defensive if risk-off deepens."
     }
    ],
    "series": {
@@ -2165,77 +2203,105 @@
     "2026-07-26": 994.18,
     "2026-07-27": 998.12,
     "2026-07-28": 1001.25,
-    "2026-07-29": 992.62,
-    "2026-07-30": 997.2
+    "2026-07-29": 992.57,
+    "2026-07-30": 995.96,
+    "2026-07-31": 992.0
    }
   },
   "Opus Momentum": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
-   "nav": 973.98,
-   "growth_pct": -2.6,
+   "nav": 968.99,
+   "growth_pct": -3.1,
    "max_drawdown_pct": -3.63,
-   "gross_exposure_pct": 92,
-   "n_positions": 8,
-   "cash_pct": 8,
+   "gross_exposure_pct": 95,
+   "n_positions": 11,
+   "cash_pct": 5,
    "positions": [
-    {
-     "symbol": "XBI",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 15,
-     "thesis": "Biotech is the strongest 1m momentum leader (+10.8% 1m, +11.4% 3m) as tech rolls over."
-    },
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 13,
-     "thesis": "Healthcare momentum broad and durable (+7.4% 1m, +8.7% 3m); low-beta leadership."
+     "weight_pct": 23,
+     "thesis": "The only sector positive on 1w, 1m, 3m and 6m at once (+4.3/+3.4/+16.1/+7.9) with real breadth - ABT, TMO, HCA, AMGN, JNJ, ABBV, LLY, MRK all trending. Capital fleeing AI capex needs cash-flow-return defensives and this is where it is landing. Largest position because it is the highest-quality trend at the lowest volatility."
     },
     {
-     "symbol": "KRE",
+     "symbol": "XLP",
      "kind": "equity",
      "side": "long",
      "weight_pct": 12,
-     "thesis": "Regional banks accelerating (+8.4% 1m, +9.6% 3m), a fresh momentum leg."
+     "thesis": "Staples +3.5% 1w / +3.5% 1m / +5.9% 3m with KO +8.4% 1w and PM, KMB, CL, MO all up on 3m. Low-beta dividend momentum that historically leads for months once a growth-crowding unwind begins."
     },
     {
-     "symbol": "XLF",
+     "symbol": "RTX",
      "kind": "equity",
      "side": "long",
      "weight_pct": 11,
-     "thesis": "Financials trending (+4.5% 1m, +7.7% 3m); confirms the value/cyclical rotation."
+     "thesis": "+10.5% 1w, +14.9% 1m, +23.0% 3m on a post-earnings breakout. Post-earnings-announcement drift is the most reliable momentum anomaly there is, and defense budgets are indifferent to hyperscaler capex discipline."
+    },
+    {
+     "symbol": "LMT",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "thesis": "+10.7% 1w, +13.4% 1m, +11.8% 3m on a fresh post-earnings move. Pairs with RTX as an uncorrelated-to-AI momentum sleeve with real backlog visibility."
+    },
+    {
+     "symbol": "AAPL",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 9,
+     "stop_loss_pct": 12.0,
+     "thesis": "Best large-cap trend in the universe (+3.8/+20.0/+25.0/+31.2, just crossed $5tn) and structurally the anti-capex tech name: it monetises AI on-device instead of building $130bn of data centres, so it wins the exact rotation killing the rest of tech. Sized 9% not 15% because Q3 earnings land tonight - strong iPhone 17 shipment data plus momentum is positive expectancy, but not worth a 15% gap."
     },
     {
      "symbol": "XLE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 11,
-     "thesis": "Energy strongest 1w group (+4.7% 1w, +6.3% 1m); commodity momentum re-engaging."
+     "weight_pct": 7,
+     "stop_loss_pct": 12.0,
+     "thesis": "Strongest 1m sector at +9.5%, +19.7% on 6m, XOM +15.2% 1m. Commodity momentum re-engaging gives a genuinely different return driver from the defensive equity sleeve, and it is the one long that benefits if the Fed's inflation worry proves right."
     },
     {
-     "symbol": "IWD",
+     "symbol": "VZ",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Value leads growth on 3m (+9.5% 3m) with steady 1m gains; ride the style rotation."
+     "weight_pct": 5,
+     "thesis": "+6.6% 1w, +8.9% 1m, +24.0% 6m on a ~6% dividend. High-carry, low-beta trend with zero AI-capex exposure - the cleanest small diversifier available."
     },
     {
-     "symbol": "TNA",
+     "symbol": "SOXX",
      "kind": "equity",
-     "side": "long",
-     "weight_pct": 12,
-     "thesis": "Small-cap 3x carries strongest 3m trend (+16.7%); leveraged momentum away from broken semis.",
-     "stop_loss_pct": 15
-    },
-    {
-     "symbol": "SPLV",
-     "kind": "equity",
-     "side": "long",
+     "side": "short",
      "weight_pct": 6,
-     "thesis": "Low-vol (+4.6% 1m, +1.0% 1w) dampens book variance during the regime shift."
+     "stop_loss_pct": 15.0,
+     "thesis": "The core sign-flip of my own mandate: -16.3% 1w and -24.3% 1m as the market repriced AI capex, with semi-cap equipment (AMAT/LRCX/KLAC near -21% in a week, -38% in a month) leading down. Hyperscalers are trapped - cut capex and orders collapse, keep spending and their own stock gets hit like Meta's did. Stopped at 15% because 3m and 6m are still positive, so this is a 1m downtrend inside a longer uptrend and squeezes can be vicious."
+    },
+    {
+     "symbol": "ORCL",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 5,
+     "stop_loss_pct": 20.0,
+     "thesis": "The single cleanest trend short available: negative on 1w, 1m, 3m and 6m (-6.4/-20.0/-28.8/-32.2) with no positive-momentum leg at all. At a 52-week low with default insurance at 200bp and Ellison personally backstopping $40.4bn of a media deal - the most debt-funded AI-capex story in the market, being repriced by the credit market first."
+    },
+    {
+     "symbol": "SOXL",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 4,
+     "stop_loss_pct": 25.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Capital-efficient version of the same view: 3x short semis beta from only 4% of the book, plus volatility decay that bleeds the instrument even in violent sideways chop (SOXL -61% in a month against SOXX -24%). Stop and take-profit attached because a leveraged-ETF short is the one position here with genuinely unbounded upside risk."
+    },
+    {
+     "symbol": "TSLA",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 3,
+     "stop_loss_pct": 22.0,
+     "thesis": "Also negative on all four horizons (-20.2/-27.6/-20.7/-30.8) and its worst week since 2022 specifically because investors balked at Musk's robotaxi and AI spending plans - the identical capex-punishment theme. Kept to 3% only because it sits 3% above its 52-week low, which is where forced-cover squeezes start."
     }
    ],
    "series": {
@@ -2253,82 +2319,69 @@
     "2026-07-27": 972.04,
     "2026-07-28": 978.31,
     "2026-07-29": 967.81,
-    "2026-07-30": 973.98
+    "2026-07-30": 973.98,
+    "2026-07-31": 968.99
    }
   },
   "Opus Picks-and-Shovels": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
-   "nav": 930.83,
-   "growth_pct": -6.92,
+   "nav": 950.68,
+   "growth_pct": -4.93,
    "max_drawdown_pct": -14.61,
-   "gross_exposure_pct": 90,
-   "n_positions": 9,
-   "cash_pct": 10,
+   "gross_exposure_pct": 80,
+   "n_positions": 6,
+   "cash_pct": 20,
    "positions": [
-    {
-     "symbol": "SMH",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 14,
-     "thesis": "Broad semis 1x, replacing SOXL's directional exposure without 3x volatility decay after the -50% month; captures a bounce cleanly."
-    },
     {
      "symbol": "GEV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 14,
-     "thesis": "GE Vernova power gen/grid \u2014 the datacenter power buildout leg, +8% over the drawdown month, the book's resilience anchor."
+     "weight_pct": 22,
+     "stop_loss_pct": 22.0,
+     "thesis": "GE Vernova: the power-generation bottleneck. Decisive Q2 beat-and-raise with guidance lifted $1B, PE 25.8, avg target $1,233 vs $900 spot. Unlike servers and GPUs, turbines and grid gear cannot be conjured away by extending depreciation schedules - electricity demand is electricity demand. Highest-conviction leg, doubled in weight."
     },
     {
      "symbol": "AMAT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Semi cap-equipment; core picks-and-shovels supplier to every fab expansion, oversold in the pullback within a 3m uptrend."
-    },
-    {
-     "symbol": "VRT",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 11,
-     "thesis": "Vertiv datacenter power/thermal; sold off -9% but structurally levered to AI compute density buildout."
-    },
-    {
-     "symbol": "ALAB",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 9,
-     "thesis": "Astera Labs AI connectivity silicon; picks-and-shovels for rack-scale interconnect scaling."
-    },
-    {
-     "symbol": "ANET",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 9,
-     "thesis": "Arista datacenter networking; flat over the month (-0.3%) on durable AI back-end switching demand."
-    },
-    {
-     "symbol": "NVT",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "nVent electrical connection/protection; power-delivery hardware for datacenters, defensive infra leg."
+     "weight_pct": 16,
+     "stop_loss_pct": 25.0,
+     "thesis": "Semi-cap equipment at fwd PE 29 and -41% from its $740 high. The memory shortage that is inflating everyone's bill of materials forces DRAM wafer-fab-equipment spend; AMAT shipped new DRAM and advanced AI packaging systems in June. Earnings Aug 13 is a near-term catalyst into a washed-out price."
     },
     {
      "symbol": "AVGO",
      "kind": "equity",
      "side": "long",
+     "weight_pct": 13,
+     "stop_loss_pct": 22.0,
+     "thesis": "Custom AI silicon and networking. Hyperscaler capex discipline is a tailwind, not a headwind, for custom ASICs - they are the cheaper compute-per-dollar answer to MSFT's efficiency push. The ~$200B Samsung memory/foundry partnership through 2030 locks in supply. -25% from its high."
+    },
+    {
+     "symbol": "MU",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 12,
+     "stop_loss_pct": 28.0,
+     "thesis": "NEW. Memory is the actual physical shortage in the AI stack right now - rising memory cost is what analysts flag as the constraint on Vera Rubin systems, which means MU has the pricing power everyone else is paying for. PE 18.5, fwd PE 5.7, -41% from the June peak. Sized 12% not more because memory cyclicals always look cheapest near the top and ChangXin's Chinese DRAM debut is a real competitive event."
+    },
+    {
+     "symbol": "ANET",
+     "kind": "equity",
+     "side": "long",
      "weight_pct": 8,
-     "thesis": "Broadcom custom AI silicon and networking; diversified quality anchor of the compute stack."
+     "stop_loss_pct": 22.0,
+     "thesis": "Arista back-end datacenter switching: durable AI networking demand at a materially lower multiple than the thermal/rack names I am cutting. Retained as the diversifying compute-fabric leg."
     },
     {
      "symbol": "SMCI",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 5,
-     "thesis": "Short the lowest-quality, margin-pressured AI server assembler; hedge that gained +14.6% this week and offsets long-semi beta."
+     "weight_pct": 9,
+     "stop_loss_pct": 30.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Increased 5%-to-9%. The precise loser of memory-cost inflation: a low-gross-margin server assembler whose largest input cost is exploding while its customers demand price discipline. Add an active illegal-server-export-to-China probe and Aug 11 earnings. Capped at 9% with a hard stop because it is already -59% from its high and squeezed +24% this week on a prelim orders update."
     }
    ],
    "series": {
@@ -2346,68 +2399,57 @@
     "2026-07-27": 952.87,
     "2026-07-28": 916.95,
     "2026-07-29": 868.81,
-    "2026-07-30": 930.83
+    "2026-07-30": 930.83,
+    "2026-07-31": 950.68
    }
   },
   "Opus Quality Defensive": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Low-beta quality/defensive core (healthcare, quality factor, min-vol, staples) with a small gold diversifier and a disciplined 8% short on semis to express 'AI-infra overextended' without dominating the book.",
-   "nav": 1006.8,
-   "growth_pct": 0.68,
-   "max_drawdown_pct": -1.02,
-   "gross_exposure_pct": 88,
-   "n_positions": 7,
-   "cash_pct": 12,
+   "nav": 1004.23,
+   "growth_pct": 0.42,
+   "max_drawdown_pct": -1.19,
+   "gross_exposure_pct": 87,
+   "n_positions": 5,
+   "cash_pct": 13,
    "positions": [
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 19,
-     "thesis": "Healthcare: cheap, defensive, and actually leading the recent tape (+8.5% since April) - defense that participates."
+     "weight_pct": 36,
+     "thesis": "The conviction position. Healthcare leads on every horizon (+3.4% 1m, +13.9% 3m, +23.9% 12m), trades above its 50d and 200d, is the cheapest large defensive sector, and the leadership is broad across pharma, managed care, biotech and devices rather than a single name. In a rotation from expensive long-duration tech into cheap cash-flow, this is the biggest and best-quality destination \u2014 so I am sizing it like a real view instead of a diversification slot."
     },
     {
-     "symbol": "QUAL",
+     "symbol": "SCHD",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 18,
-     "thesis": "Quality factor (high ROE, low leverage) participates in recoveries while screening out junk - fixes Round 1's over-defensiveness."
+     "weight_pct": 16,
+     "thesis": "Replaces QUAL as the quality-factor sleeve. Same factor \u2014 screens on return on capital, free cash flow and low leverage \u2014 but without the ~30% technology weight that made QUAL a de-rating megacap proxy (-0.6% 1m). SCHD returned +6.0% 1m, +15.2% 6m, +26.0% 12m and sits 12.4% above its 200-day. Quality that is actually defensive."
     },
     {
      "symbol": "USMV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 15,
-     "thesis": "Min-vol core ballast; cut tariff-crash drawdown to -9% vs SPY -19% historically."
-    },
-    {
-     "symbol": "SPLV",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 11,
-     "thesis": "Low-volatility sleeve; best equity crash defender in backtest (-6.6% vs -19%)."
+     "weight_pct": 14,
+     "thesis": "Min-vol core ballast, now carrying the whole low-volatility allocation after folding in the redundant SPLV sleeve. +2.3% 1m and above both moving averages. Preferred over SPLV because SPLV's heavy utilities tilt is a headwind with 10-year yields at 4.62% and rising (XLU -2.4% 1m)."
     },
     {
      "symbol": "XLP",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 11,
-     "thesis": "Consumer staples: low-beta cash-flow ballast, held up in every drawdown window tested."
-    },
-    {
-     "symbol": "GLD",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6,
-     "thesis": "Small non-equity crash hedge - was +1.6% while stocks fell 19% in the tariff crash."
+     "weight_pct": 13,
+     "thesis": "Consumer staples: low-beta cash-flow ballast that is participating, not just defending (+3.5% 1m, above 50d and 200d). KO +7.8% 1m and +13.1% 3m, COST +5.0% and WMT +4.5% over five days as the rotation reaches the group."
     },
     {
      "symbol": "SMH",
      "kind": "equity",
      "side": "short",
      "weight_pct": 8,
-     "thesis": "Disciplined short of overextended semis - the AI-overextension view, sized as insurance not a bet."
+     "thesis": "The AI-infra overextension view, still sized as insurance rather than a bet. It has worked hard (SMH -20.2% 1m, -14.1% in five days) as the memory and foundry complex broke \u2014 MU -35%, INTC -38%, AMD -20%, TSM -18%. I am deliberately not adding: SMH is 15% below its 50-day but still 12% above its 200-day and +70% over twelve months, so this is a stretched correction inside a long-term uptrend and squeeze risk is real. Stop caps a squeeze, take-profit banks the gain if the bust extends.",
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0
     }
    ],
    "series": {
@@ -2425,90 +2467,80 @@
     "2026-07-27": 1004.13,
     "2026-07-28": 1016.26,
     "2026-07-29": 1016.34,
-    "2026-07-30": 1006.8
+    "2026-07-30": 1006.8,
+    "2026-07-31": 1004.23
    }
   },
   "Opus Value": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
-   "nav": 1029.76,
-   "growth_pct": 2.98,
+   "nav": 1018.67,
+   "growth_pct": 1.87,
    "max_drawdown_pct": -3.43,
-   "gross_exposure_pct": 87,
-   "n_positions": 10,
-   "cash_pct": 17,
+   "gross_exposure_pct": 89,
+   "n_positions": 8,
+   "cash_pct": 11,
    "positions": [
     {
      "symbol": "UNH",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
-     "thesis": "Managed care still depressed; classic value mean-reversion candidate off multi-year lows."
+     "weight_pct": 16,
+     "thesis": "Highest-conviction validated value long, raised 12->16%. Q2 beat consensus by 31% with raised guidance and PT hikes from JPMorgan, Wells Fargo and Goldman; still only 27x with a $475 target vs $420 spot. The mean-reversion thesis has been confirmed by fundamentals, not just price, so it earns the largest weight in the book."
     },
     {
-     "symbol": "XLV",
+     "symbol": "SOXL",
      "kind": "equity",
-     "side": "long",
-     "weight_pct": 9,
-     "thesis": "Defensive healthcare basket, cheap vs market, diversifies single-name UNH risk."
+     "side": "short",
+     "weight_pct": 15,
+     "stop_loss_pct": 40.0,
+     "take_profit_pct": 45.0,
+     "thesis": "Raised 7->15%. Fell 16% in one session yet still +242% YTD, so the compounding decay of a 3x fund now has a real fundamental driver behind it: Chinese state-backed mass production and doubts about AI capex durability, with Morgan Stanley flagging a hard remainder of 2026. Sized to be my second-largest line but deliberately not larger, with a 40% stop, because a 3x instrument can rally violently and my mandate was written after backtests showed unbounded shorting kills portfolios."
     },
     {
      "symbol": "CRM",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 8,
-     "thesis": "-49% on AI-disruption fear; profitable quality software at trough valuation."
+     "weight_pct": 12,
+     "thesis": "Raised 8->12%. Up 3.79% on a red tape, 21.9x earnings with net income +29%, a $1.6bn VA contract, and a $242 consensus target implying 28% upside. The AI-disruption discount is starting to close and this is the cheapest way to own that closing."
     },
     {
      "symbol": "ADBE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 7,
-     "thesis": "-49% on AI fear; durable cash flows, oversold, asymmetric rebound setup."
-    },
-    {
-     "symbol": "BTC-USD",
-     "kind": "crypto",
-     "side": "long",
-     "weight_pct": 13,
-     "thesis": "27% off highs; most resilient crypto, core oversold mean-reversion long."
-    },
-    {
-     "symbol": "ETH-USD",
-     "kind": "crypto",
-     "side": "long",
-     "weight_pct": 8,
-     "thesis": "36% off highs; higher-beta rebound on any crypto risk-on rotation."
-    },
-    {
-     "symbol": "SOL-USD",
-     "kind": "crypto",
-     "side": "long",
-     "weight_pct": 4,
-     "thesis": "39% off highs; highest-beta oversold bounce, sized small for volatility."
+     "weight_pct": 11,
+     "thesis": "Raised 7->11%. Up 5.72% in a single session, trading at 15.1x with revenue +11.5% and earnings +28%. It is the most extreme valuation dislocation I can find in profitable quality software, which is precisely the asymmetry my mandate exists to buy."
     },
     {
      "symbol": "GLD",
      "kind": "equity",
      "side": "long",
      "weight_pct": 11,
-     "thesis": "Reliable hedge - positive in all three backtest windows; -6.5% H1 adds contrarian tilt."
+     "thesis": "Held flat at 11%. Defending the $4,000 gold level after five weeks of consolidation with early signs of a bullish reversal, +21.5% YTD, and it is the one line that works if the semiconductor unwind turns into a broad risk-off rather than the orderly rotation I am positioned for."
+    },
+    {
+     "symbol": "XLV",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "thesis": "Raised 9->10%. Beta 0.57, +25% over the past year, explicitly described as the destination for investors leaving tech, and upgraded to positive by State Street for Q3. Diversifies my single-name UNH risk while riding the same rotation."
+    },
+    {
+     "symbol": "ETH-USD",
+     "kind": "crypto",
+     "side": "long",
+     "weight_pct": 8,
+     "stop_loss_pct": 25.0,
+     "thesis": "Held flat at 8% and now the entire crypto core. It is the only crypto showing actual mean reversion, +17.6% over 30 days, still 61% below its all-time high, with a genuine institutional catalyst in Morgan Stanley's new Ethereum ETF. Stopped at -25% because deeply oversold assets can still trend down."
     },
     {
      "symbol": "BTC-USD",
-     "kind": "perp",
+     "kind": "crypto",
      "side": "long",
-     "leverage": 2,
-     "weight_pct": 4,
-     "thesis": "Modest 2x leveraged expression of highest-conviction oversold asset; funding drag accepted."
-    },
-    {
-     "symbol": "SOXL",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 7,
-     "thesis": "3x semis +250% H1; structural leverage decay plus mean-reversion, sized to survive a melt-up."
+     "weight_pct": 6,
+     "stop_loss_pct": 25.0,
+     "thesis": "Cut 13->6%. Still the most resilient crypto and 49% off its high, so a residual oversold long remains consistent with the mandate, but persistent ETF outflows and a Fed on hold give it no near-term catalyst. It no longer deserves to be a top-three weight."
     }
    ],
    "series": {
@@ -2525,8 +2557,9 @@
     "2026-07-26": 997.3,
     "2026-07-27": 1011.83,
     "2026-07-28": 1031.31,
-    "2026-07-29": 1048.52,
-    "2026-07-30": 1029.76
+    "2026-07-29": 1048.49,
+    "2026-07-30": 1020.64,
+    "2026-07-31": 1018.67
    }
   }
  }
