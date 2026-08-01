@@ -1,0 +1,82 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 15.0,
+      "thesis": "Held at 16% and still the anchor. Crude gained more than 20% in July to roughly $85 WTI with Brent above $88, driven by Iranian attacks on tankers under US escort in the Strait of Hormuz and falling US inventories \u2014 the most strongly confirmed trend I can verify anywhere in my universe. It is also the one sleeve that benefits from the same inflation impulse that has pushed 30-year yields to their highest since 2007. Not raised further because a geopolitical premium can unwind on one ceasefire headline, which is what the 15% stop is for."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 13.0,
+      "thesis": "Held at 13%. Still quality-momentum in its purest form at roughly 17x earnings with trailing net income up 111% and revenue up 20%, and unlike Apple it carries no consumer-hardware cycle or China revenue cliff to guide down \u2014 the specific risk that just took 7.2% out of the other mega-cap in this book. Nothing about the thesis changed this week, so neither does the weight.",
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "thesis": "Held at 12%. Rising long yields are a mild headwind to dividend carry, but this sleeve exists to dampen drawdown while leadership reforms, and this week proves leadership is still reforming \u2014 a single session produced Amazon +15%, Apple -7.2% and an 8% semiconductor bounce. Getting paid to wait through that dispersion is the point, and trimming it to chase the same week's winner would be exactly backwards."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "thesis": "Held at 12%. With the 10-year above 4.7% and the 30-year at its highest level since 2007, high return-on-equity businesses with low leverage are the part of the equity complex least damaged by a repricing of the cost of capital, because they do not need the capital. It keeps me inside the factor mandate without rebuilding the high-beta exposure that broke it."
+    },
+    {
+      "symbol": "JEPQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "thesis": "Held at 10%. Realized volatility in the mega-cap complex is elevated \u2014 Apple down 7.2% and Amazon up 15% in the same session \u2014 and written-call premium is richest exactly when that is true, so this sleeve's carry improves precisely as my directional sleeves get noisier. It remains the most counter-cyclical income available inside the mandate."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "thesis": "Held at 10%. A 65% one-month collapse in a 3x semiconductor fund followed by an 8% single-day index bounce, alongside double-digit single-session moves in two of the largest companies in the world, is a volatility-regime signal rather than noise. Low-volatility equity is the trend-compatible way to stay fully engaged through a regime like that instead of retreating to cash."
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "New 8% position funded by the Apple exit and two points of cash. Q2 net sales rose 20% to $200.6bn with operating income up 43% and AWS growth accelerating to +36.7% on a $496bn backlog, and the stock rose about 15% \u2014 its largest single-day gain in over a decade \u2014 with Wells Fargo, Citi and Wedbush reiterating buys. That is a demonstrated relative-strength leader with quality confirmation rather than a valuation guess, and it expresses AI through cloud monetization rather than the hardware cycle that is still unstable. The 12% stop is deliberately tight because I am entering immediately after a gap and gaps can retrace.",
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "SPMO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "thesis": "Held at 6%. Semis bounced hard this week with SOXX +8% and Micron +18%, but that move is characterized as short covering and bargain hunting rather than fresh demand, so I neither add back the weight I cut nor cut further on a signal I do not trust in either direction. The residual exists so the index's own reconstitution mechanically rotates me out of fading names and into the next leaders without my having to forecast them."
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: One leg broke and one new leader was confirmed; everything else is untouched because nothing in it changed. Apple's binary event resolved against the position exactly as I framed it: revenue and EPS beat, but Services missed by roughly $500m, Greater China came in light, and September-quarter guidance of +9-11% undershot the +12% modeled, with Barclays and others calling services deceleration and China structural rather than transitory. The stock fell 7.2%. A trend follower does not hold a leader that has just broken down on guidance \u2014 the whole point of the tight stop and reduced size was to make this exit cheap, and taking it is the discipline, not a reversal. Amazon is the replacement the tape handed me on the same day: up about 15%, its biggest single-day move since 2012, on AWS accelerating to +36.7% with a $496bn backlog, revenue +20% and operating income +43%. That is demonstrated relative strength with quality confirmation, and critically it sits on the monetization side of AI rather than the hardware side that is still cracking, so it does not rebuild the semiconductor concentration I spent last week removing. XLE stays the anchor because its trend was confirmed hard this week \u2014 crude up more than 20% in July on Hormuz tanker attacks and falling inventories. I deliberately do not press XLE further despite that: a geopolitical risk premium reverses violently on a single diplomatic headline, and the US has already paused airstrikes once. I also do not add back the semiconductor sleeve despite SOXX +8% and Micron +18%, because the analysis of that move reads as short covering rather than fresh demand and a trend follower needs a confirmed signal, not a bounce.",
+  "novelty": "This book shares no symbol at all with my Round 2 book \u2014 zero same-direction gross-weight overlap \u2014 and the two are built on opposite tests: Round 3 buys demonstrated relative strength (XLE on a confirmed oil trend, AMZN precisely because it just gapped up 15%, GOOGL for positive momentum) with quality, low-volatility and option-income ballast, while Round 2 buys depressed multiples and oversold dislocations (UNH, CRM, ADBE, NOW) plus gold and crypto and now holds no short at all.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked the 7/30 and 7/31 sessions, which both post-date the information my 7/30 decision was built on. Key findings: (1) Amazon reported Q2 after the 7/30 close \u2014 net sales +20% to $200.6bn, operating income +43%, AWS accelerating to +36.7% with a $496bn backlog, 2026 capex guided UP to $220bn; the stock rose ~15% on 7/31, its biggest day since 2012. This is direct evidence AGAINST the \"AI capex sustainability doubt\" driver I cited when doubling the SOXL short. (2) Semis violently rebounded on 7/30: SOXX +8%, Micron +18%, AMD +13%, with ETF inflows \u2014 though commentary reads it as short-covering, not fresh demand. (3) SOXL is now 69.5% below its 52-week high after falling 65.5% in July (from $266.71 on 6/30), so my \"still frothy, +242% YTD\" framing was stale. (4) Apple reported 7/30: revenue $109.4bn +16% and EPS +29% both beat, but Services came in $30.74bn vs $31.22bn expected, China $18.8bn vs $19.5bn, and September-quarter guidance of +9-11% undershot the +12% modeled; stock -7.2% on 7/31, with Barclays flagging services deceleration and China as structural. (5) Oil +20%+ in July to ~$85 WTI / Brent above $88 on Iranian attacks on escorted tankers in the Strait of Hormuz plus falling US inventories \u2014 XLE thesis strongly confirmed. (6) Gold broke above $4,100 for the first time in five weeks. (7) Macro: 30-year Treasury yield at its highest since 2007 (5.25%), 10-year above 4.7%, highest since Jan 2025 \u2014 a headwind for long-duration equity and bond-proxy sleeves. (8) Sector data for July: healthcare was the worst performer at -0.78%, undercutting my \"rotation into healthcare\" wrapper thesis even though UNH's own Q2 (adj EPS +56% to $6.38 vs $4.91) is verified; UNH now $419 vs a $475 fair-value target after pulling back from a 52-week high. (9) Enterprise software staged a sharp reversal in late July \u2014 CRM +7% to $176 (down 34% YTD, 2.96x fwd sales), ADBE +7% to $241 (down 32.9% YTD, 3.33x fwd sales), ServiceNow +8% to $107 (down 45% over one year), Workday +10%. (10) Crypto: BTC ~$63,900, ETH ~$1,877, both drifting lower on a pause in US airstrikes; Fed held rates. Nothing material changed."
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Now my top weight because it is the only leg where the driver strengthened on hard, dated evidence rather than narrative: the IRGC attacked two tankers transiting Hormuz under US military escort on 31 July with four more turning back, Brent settled $90.12 and WTI $84.67, and euro-area July energy inflation at 10.0% vs 8.5% independently confirms the supply shock is transmitting into global prices. The trend was already the best-established one whose volatility permits real size \u2014 5.5% above its 50dma, 15.5% above its 200dma with the 50dma 9.5% above the 200dma, 3m momentum +5.4%, XOP confirming \u2014 and 24.4% vol is what caps it here rather than higher. It is also the cheaper, lower-volatility way to own the oil trend than USO.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13.5,
+      "thesis": "Held at weight, but deliberately re-justified on its own price trend rather than on the defensive-rotation story I told two days ago, because that story did not hold up \u2014 31 July was an AI-led melt-up with Nasdaq +1% and no semis de-rating. What survives is the standalone signal: the strongest 3m time-series momentum of any low-volatility sleeve at +11.7%, +12.43% over the quarter, 5.5% above its 50dma and 7.8% above its 200dma with a fresh golden cross, and only 18.3% vol. That is a valid long under my rules regardless of what the tech tape does, and it is my lowest-correlation equity ballast against an energy-heavy long book.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "EUO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Cut from 18.6 to its inverse-vol baseline because the macro confirmation I paid up for was falsified on 31 July: euro-area flash HICP accelerated to 2.9% from 2.8% with energy at 10%, EZ Q2 GDP beat, ECB hike speculation is live, and EUR/USD rose to 1.1485 rather than falling toward the 1.12 consensus I cited. I stay long rather than exiting because the price trend itself has not flipped \u2014 still 2.8% above its 50dma, 6.4% above its 200dma, 3m momentum +6.9% \u2014 and the Fed leg is if anything firmer with JP Morgan now forecasting a December hike. But with both central banks hawkish the policy gap is no longer clearly widening, so this reverts to a position sized on its 9.9% volatility, the lowest in the book, and nothing more.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Raised because 31 July delivered the cleanest possible test of the thesis and it passed: gold fell another 1.47% to $4,043 on the very session that euro-area inflation printed hot, proving the market is pricing gold off rising real yields rather than off inflation, which is exactly the mechanism I am short. Trend is unambiguous \u2014 4.7% below the 50dma, 9.7% below the 200dma, bearish 50/200 cross, 3m momentum -13.7%, and a 26% decline from January's $5,598 record. JP Morgan's move to a December Fed hike extends the driver. Capped at 12 rather than pushed to top weight only because $4,000 is an obvious psychologically defended level where a bounce is the live risk.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.8,
+      "thesis": "Untouched because nothing new reached this leg in either direction and the trend is unambiguously intact: record high $56.18, +8.7% over three months, 5.2% above its 50dma, 7.5% above its 200dma, 3m momentum +9.1%, and only 13.2% vol. It stays at the trimmed weight for the reason I trimmed it \u2014 it is my highest equity-beta and most credit-cycle-exposed long into a Fed that JP Morgan now expects to hike in December, where higher-for-longer helps net interest margins but hurts credit and the multiple.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Lifted modestly as the book's least equity-correlated long and its inflation-sleeve diversifier, now with a fresher driver: euro-area inflation reaccelerating to 2.9% on a 10% energy component, on top of a 4.2% US CPI, is the classic energy-cost-into-food-cost transmission that supports softs and grains. Trend supports it independently \u2014 3.5% above the 50dma, 6.9% above the 200dma, 3m +3.1%, 1m +6.3%, with WEAT 14.4% above its 200dma and 3m +7.7% corroborating \u2014 and 13.3% vol makes it cheap risk to carry.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "USO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Nudged up only slightly because the Hormuz risk converted from diplomatic headline to physical attack on 31 July, which reduces the whipsaw risk that was my main reason for keeping it tiny \u2014 but it stays small because my two filters still barely agree. It has the strongest moving-average trend in the universe at 9.0% above its 50dma and 38.3% above its 200dma, yet 3m time-series momentum is only +1.5%, which is the signature of an extended trend, and 51.7% vol demands restraint. The -40% stop stays widest in the book so a Hormuz de-escalation gap cannot knock me out of the underlying energy trend I express far more cheaply through XLE.",
+      "stop_loss_pct": 40.0
+    },
+    {
+      "symbol": "SLV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4.5,
+      "thesis": "Raised from 3 because the specific counter-signal I flagged has failed: I held it small because silver was clawing back toward $60, and instead it fell 2.35% on 31 July to $57.62, resuming the downtrend rather than reversing it. This is the violent end of the same real-yield trade as gold \u2014 12.3% below the 50dma, 17.0% below the 200dma, 3m momentum -23.1%, and roughly $58 against January's $121.62 high, down 52%. Still capped by 51.2% vol under inverse-vol sizing, with a take-profit to bank another crash leg.",
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "URA",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 3,
+      "thesis": "Held unchanged because it remains the sharpest active downtrend in my universe and nothing this week touched it: around $39, down roughly 18% in a month and 10% in a week, while spot uranium stayed firm at $85-86.60. That divergence is the whole trade \u2014 the miners and developers are de-rating on financing costs and sentiment independently of the commodity, a thematic unwind rather than a commodity call, which is why it diversifies my commodity longs instead of contradicting them. Screen: 12.4% below 50dma, 18.5% below 200dma, 3m -29.4%. Vol of 51.8% is what caps the weight.",
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 3,
+      "thesis": "Held unchanged as the crypto sleeve of the trend engine, still valid on both filters: BTC 11.5% below its 200dma with the 50dma 12.8% below the 200dma, 3m momentum -15.1%, 12m -32.1%, ETH and SOL agreeing at -13.6% and -16.7% versus their 200dmas. Kept at only 2x on 3% margin because the counter-signal remains live \u2014 BTC bounced off a 21-month low near $58k and was still around $63.9k on 31 July, sitting above its 50dma even as the AI-led equity rally failed to pull it higher. Perp short avoids spot borrow and pays no funding since funding applies to longs only; the wide 45% stop respects that bounce.",
+      "leverage": 2,
+      "stop_loss_pct": 45.0,
+      "take_profit_pct": 50.0
+    }
+  ],
+  "cash_pct": 8.2,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: Two things dated 31 July postdate my 30 July sizing and hit specific legs, so this is a signal repair rather than churn. FIRST, I cut the XLY short entirely. I sized it at 10 because it was the only major sector below BOTH moving averages, and after a +3.29% session to $116.09 that is no longer true \u2014 the fast filter has gone from roughly -6% to flat against a falling 50dma. My mandate shorts only where both filters are negative, and I applied exactly this standard two days ago when I exited IWM for being 0.1% above its 50dma; consistency requires I apply it to my own short. The corroboration is dead too: the move came from Amazon +15.3% on AWS growth of 37%, and with Amazon plus Tesla at ~40% of the fund, XLY is an AI-capex proxy, not the discretionary-wallet squeeze I underwrote. SECOND, I cut EUO from 18.6 to 13. I made it my top weight explicitly because it was 'the cleanest macro-confirmed trend I own', and Eurostat's 31 July flash falsified the confirmation \u2014 euro-area inflation accelerated to 2.9% with energy at 10.0%, EZ Q2 GDP beat, ECB hike pricing is live and EUR/USD went UP to 1.1485. The price trend is still positive so I stay long, but the conviction overlay above inverse-vol baseline was built on a premise that is now wrong, so the overlay comes off rather than the position. THIRD, the freed capital goes where the driver got objectively stronger and verifiable: XLE to 19 as top weight, because the Hormuz constraint stopped being a headline and became physical on 31 July with the IRGC attacking escorted tankers and four more turning back, Brent settling $90.12, and euro-area energy inflation at 10% independently confirming the shock is transmitting globally. GLD short to 12 and SLV short to 4.5 because both made fresh lows on 31 July on the very day inflation printed hot, which is the cleanest evidence that metals are trading off rising real yields and not off inflation, and because JP Morgan now forecasts a December Fed hike. DBA to 8 and USO to 6 on the same energy-led inflation impulse. XLF, XLV, URA and the BTC perp are untouched because nothing new reached them. Cash rises to 8.2 at 4% APY because I am removing conviction I no longer have evidence for, and parking it is more honest than force-feeding it into legs I learned nothing new about. Turnover is roughly a quarter of the book at ~2bps a side, about half a basis point of NAV \u2014 cheap relative to running a short whose entry condition has expired and a top weight whose stated rationale was disproved.",
+  "novelty": "I manage no Round-2 book, so there is no overlap to avoid; this book's distinctness comes from being a six-sleeve inverse-vol time-series trend engine whose long side is now concentrated in the physical-supply-shock complex (energy, ags) rather than the AI/mega-cap tape that drove the 31 July index rally, and whose short side is precious metals, uranium equities and crypto rather than any consumer or index hedge.",
+  "research_notes": "Checked the two sessions since my 30 Jul decision (book filled at the 31 Jul close, so it is one session old; NAV $996, -0.40%, essentially entry costs).\n\nCONFIRMING for the book: Brent settled $90.12 and WTI $84.67 on 31 Jul after the IRGC said it attacked two tankers transiting Hormuz under US escort, with four more turning back; the US/Iran pause has collapsed with Houthi and Saudi involvement widening. Gold fell 1.47% to $4,043 and silver 2.35% to $57.62 on 31 Jul, both making fresh lows into the $4,000 round number. BTC ~$63.9k, still below its 200dma. JP Morgan on 1 Aug moved to a 25bp Fed HIKE in December with real risk of September \u2014 the Fed side of my dollar trade is intact.\n\nFALSIFYING, and both dated 31 Jul (i.e. after I sized this book): (1) Eurostat's flash put euro-area July HICP at 2.9%, UP from 2.8%, with energy at 10.0% vs 8.5%; EUR/USD rose to 1.1485 on better-than-expected EZ Q2 GDP and ECB hike speculation, and DXY faded off its highs to 99.95 on ambiguous Fed guidance. My EUO thesis explicitly rested on \"softer eurozone inflation prints\" and a widening Fed/ECB gap. That premise is wrong \u2014 both central banks are now hawkish and the euro is going the wrong way (1.1485 vs the 1.12 consensus target I cited). (2) XLY closed 31 Jul at $116.09, +3.29% in a single session, after Amazon (23.47% of the fund) jumped 15.3% on AWS revenue +37%, its fastest growth since 2021. AMZN plus Tesla are ~40% of XLY, so the fund is far more an AI/EV proxy than a consumer-wallet proxy. From $111.61 on 29 Jul, that pop takes XLY from roughly 6% below its 50dma to about flat against it.\n\nAlso: the broad \"deepening semis/AI de-rating\" I cited as support for the defensive tilt did not happen \u2014 31 Jul was Nasdaq +1% to 25,373.85, S&P +0.7% to 7,489.72, with Alphabet +6.9%, Microsoft +3%, Meta +3.3%. XLV's quarter is still +12.43%, so it keeps its weight on its own price trend, not on that narrative."
+}

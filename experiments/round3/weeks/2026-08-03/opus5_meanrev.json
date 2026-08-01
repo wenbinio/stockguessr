@@ -1,0 +1,87 @@
+{
+  "name": "Opus 5 mean reversion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "WMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "The one core leg whose drawdown has NOT reverted, which is why it takes the top weight now that LRCX and GOOGL have. Still near $109.47 and 19% below its May high of $134, on a single Cleveland Research comp note plus tariff worry, against a $138 mean target. It is also the lowest-beta reversion I can own into a Fed that just held with PCE projected at 3.6% and a live September hike risk, because it does not need multiple expansion to work. Q2 in mid-August is a genuine two-sided catalyst with sell-side already braced for a low-water mark, which is why I stop at 16% rather than push higher."
+    },
+    {
+      "symbol": "META",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New, and the direct replacement for GOOGL. Revenue BEAT at $60.8B versus $60.2B growing 28% year over year; the $6.18 EPS miss against $7.14 and the FCF collapse to $784M are both depreciation and capex artifacts of guiding spend to $135-145B, not demand deterioration. That is the same mega-cap-marked-down-for-investing pattern that just paid me 11% in GOOGL, except META fell 10.4% on 7/30 and has not begun to recover, so I am buying the setup rather than the aftermath. The distinction from my ORCL and INTC exits is decisive: those had a credit downgrade and a shrinking foundry business, this has an accelerating top line."
+    },
+    {
+      "symbol": "AXP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 12% with no trade because the thesis is unchanged and unreverted: still $336 against a 52-week high of $387, having gone essentially nowhere since I bought it. The market sold a beat-and-raise on a $50mn revenue shortfall and 12% expense growth, while the actual bear case of consumer credit deterioration is contradicted by provisions improving to $1.1B from $1.4B. No AI capex exposure, which is the exact theme mauling the rest of the tape."
+    },
+    {
+      "symbol": "SNPS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New. The sharpest fundamentals-versus-price divergence on the 7/31 52-week-low screen: the stock sits about 41% below its $651.73 high and fell 16.5% over the month, while management RAISED full-year revenue guidance to $9.625-9.705B and EPS to $14.72-14.80 on 42% revenue growth. The selling is about Design IP softness and Ansys integration cost, both margin-mix issues on an intact franchise, and the debt outlook is improving rather than deteriorating. Sized at 10% rather than core because a slow multi-quarter re-rating on integration is a real alternative reading of the same tape."
+    },
+    {
+      "symbol": "UBER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 8% with no trade. The anti-capex, real-FCF rotation trade keeps working precisely because META and GOOGL keep demonstrating what the market does to negative-FCF AI builders. Down 5.5% on the month against a flat tape. Not upsized because Q2 lands Aug 5 with the autonomous-vehicle outlook as the swing factor and a large implied move, and I will not pay up ahead of a binary."
+    },
+    {
+      "symbol": "QCOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 7% with no trade, and deliberately NOT upsized despite being the deepest discount in the book at $148.52 against a $259.92 high. Revenue beat at $9.95B but the guide was cut on the memory supply crunch and the stock is still making lower lows with no reversion trigger yet. That is the falling-knife signature that cost me money in ORCL and INTC, so it stays a discounted tail until the Sept 1 price increases show up in margins."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 5% with no trade. At $311.21 it remains among the deepest drawdowns in the universe and therefore the purest literal expression of my rule, but the causes are fundamental and regulatory rather than a flow shock, and a large Q2 delivery beat failed to arrest the slide. When a beat cannot stop the decline the reversion trigger is absent, so it stays lottery-sized with the wide stop that lets it work if I am wrong about the absence."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Trimmed from 14% because I got the catalyst wrong, not the direction. I claimed Brent had fallen to about $84 and Iran was suspending attacks; in fact $84.67 was WTI, Brent settled $90.12, and on 7/31 the IRGC struck two tankers transiting Hormuz under US escort. What still holds, on better evidence than I originally cited: crude fell more than 5% for the WEEK, OPEC+ is adding 188kbd for a fifth consecutive month, most shut-in supply is expected back by year-end, and the Reuters 2026 Brent consensus of $90.44 means spot offers no upside versus what is already discounted. Most telling, XLE gained only 8.55% on a month when crude gained over 20% and it sits at $58.96 against a $63.46 high, which is holders distributing into a supply scare rather than accumulating. It remains the mandated short of the top-decile winner cluster at +29.6% YTD, it costs only 3% borrow with no funding, and it holds my net long near 61%. The tight -15% stop stays because a Hormuz escalation with the mid-August truce expiry is the one tail that runs without bound."
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: I am correcting a fill-timing error, not chasing news. My two largest longs were upsized on 7/30 precisely because I had documented an overreaction, and both fully reverted in the two sessions before my order filled at the 7/31 close: LRCX ran +18.1% off $252.35 to $298.44 and GOOGL went $315.04 to roughly $351, +11% with RSI back to 55. That is 23% of NAV sitting in names that are now top-decile one-week WINNERS inside a mandate whose entire job is to own the bottom decile and short the winners. Holding them is not a cheap HOLD, it is an off-mandate momentum position I paid for and captured none of. Worse, my rule re-ranks weekly and today is the re-rank date, so these names would screen out anyway. The capital goes into the identical setup caught a week earlier: META fell 10.4% on a revenue BEAT of $60.8B growing 28%, with the EPS miss driven by depreciation and the FCF collapse to $784M driven by capex guided to $135-145B. That is the exact mega-cap-punished-for-investing trade GOOGL just paid me for, except the reversion has not begun. SNPS is the cleaner divergence still: a 52-week low, 41% below its high, while management RAISED both revenue and EPS guidance on 42% revenue growth. LUV goes to zero because its thesis was explicitly that it benefits from the same oil de-escalation driving my XLE short, and with Brent settling at $90.12 while Iran actively strikes US-escorted tankers, a carrier that already cut FY26 guidance on 900mn of incremental fuel cost gets a second cut, not a reversion. On XLE I have to be honest that my stated catalyst was factually wrong: I wrote that Brent had fallen to about 84, but 84.67 was WTI and Brent is 90, and Iran is attacking rather than suspending. The direction still survives on better evidence than the one I cited, since crude fell more than 5% for the WEEK, OPEC+ is adding 188kbd for a fifth straight month, shut-in supply returns by year-end, spot already sits at the 90.44 consensus, and XLE rose only 8.55% on a month when crude rose over 20%, which is holders distributing into strength. So I trim it from 14% to 13% rather than defend a premise I got wrong. AXP, UBER, QCOM and TSLA are deliberately left untouched at their existing weights so I pay no second entry cost on legs where nothing changed.",
+  "novelty": "This is my only book, so there is no Round-2 overlap to manage; the novelty versus my prior book is that it replaces two names whose reversion completed during my fill lag (LRCX, GOOGL) with the same overreaction pattern caught one week earlier and unstarted (META, SNPS), and drops the LUV/XLE oil pair now that only one side of it still holds.",
+  "research_notes": "Checked the two sessions between my 7/30 decision and my 7/31 fill, since my book only marked at Friday's close. Index path: Fed held 7/29 and the Dow fell 2.2% to 51,594 (worst day since Apr 2025), then rallied 7/30 (+613.92 to 52,208) and 7/31 (+276.97 to 52,485; S&P 7,489.72, Nasdaq 25,373.85). Position-level: LRCX traded UP 18.1% on 7/30 off the $252.35 close, high $319.50, and closed 7/31 at $298.44 \u2014 the reversion I sized for completed before my fill. GOOGL bottomed $315.04 on 7/24, was $340.69 on 7/30 and +3.1% on 7/31 to ~$351, RSI back to 55 \u2014 also round-tripped. AXP $336.29 (52w 288-387), essentially unmoved, fade-of-a-beat intact. WMT ~$109.47, still -19% from its May $134 high, Q2 due mid-August with sell-side warning of a \"low-water mark.\" QCOM $148.52 vs 52w high $259.92 and low $121.99, still grinding lower. TSLA $311.21. UBER ~$70.13, -5.5% 1m, reports Aug 5 ($0.83 EPS / $14.21B revenue expected, AV outlook the swing factor). New candidates: META -10.4% on 7/30 \u2014 revenue BEAT at $60.8B (+28% YoY) vs $60.2B, EPS $6.18 missed $7.14 on depreciation, FCF collapsed to $784M, capex guided to $135-145B, price targets cut. SNPS at a 52-week low (52w 376-652, ~41% off high, -16.5% 1m) despite RAISING FY revenue guidance to $9.625-9.705B and EPS to $14.72-14.80 on 42% revenue growth; the drag is Design IP softness and Ansys integration cost, not demand. Screened the 7/31 52-week-low list (SNPS, ROL, LII -22.4%/-27.1%, PSKY, BLDR) and rejected LII and BLDR as guidance collapses / rate-sensitive rather than flow overreactions. Energy: Brent settled $90.12 and WTI $84.67 on 7/31, up ~1% on the day after Iran's IRGC struck two tankers transiting Hormuz under US escort with four more turning back \u2014 but crude was DOWN more than 5% for the week on de-escalation hopes. OPEC+ is adding 188kbd for a fifth consecutive month, most shut-in crude is expected back near pre-conflict levels by year-end, and the Reuters survey 2026 Brent consensus is $90.44 \u2014 i.e. spot is already at consensus. XLE closed $58.96 (52w 42.05-63.46, +29.6% YTD) having gained only 8.55% on the month while crude gained over 20%."
+}

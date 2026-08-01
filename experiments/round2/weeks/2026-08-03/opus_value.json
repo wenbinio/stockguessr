@@ -1,0 +1,72 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Raised 16->18 and still the highest-conviction line. Q2 adjusted EPS rose 56% to $6.38 against $4.91 consensus with 2026 guidance raised, and the stock has since pulled back from a 52-week high to about $419 against a $475 fair-value target. The healthcare sector itself was July's worst performer at -0.78%, so the evidence supporting this position is idiosyncratic and verified rather than thematic, which is exactly why the single name earns weight the sector wrapper no longer does."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Raised 12->13. Down 34% year to date at 2.96x forward sales, cheaper than Adobe on the identical measure, and it jumped 7% to $176 in the late-July enterprise-software reversal alongside ServiceNow +8% and Workday +10%. The 'AI kills software' discount is visibly closing and this is the cheapest large-cap way to own that closing."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Raised 11->13. Gold broke above $4,100 after five weeks of consolidation and did so while the 30-year Treasury yield reached its highest level since 2007 at 5.25% \u2014 that is strength shown against its single worst macro headwind, which is a better signal than a rally on falling rates would be. With the SOXL short removed this is now the book's only hedge, and Iranian attacks on escorted tankers in the Strait of Hormuz are precisely the tail it is here to cover."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Raised 11->12. Down 32.9% year to date, roughly 15x earnings with revenue +11.5% and earnings +28%, and it rallied 7% to $241 in the same software reversal. It remains the most extreme valuation dislocation I can find in profitable quality software, but at 3.33x forward sales it is priced above Salesforce, which is why it sits one point below CRM rather than above it."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Cut 10->8. Healthcare was the worst-performing sector in July at -0.78%, so the 'destination for investors leaving tech' rotation I bought this wrapper to ride has not actually appeared in the sector data, even though it has appeared in UNH's own results. I keep a stub to diversify single-name risk but move the rest of the weight to where the fundamental evidence is verified."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 25.0,
+      "thesis": "Held flat at 8% and still the crypto core. Near $1,877 it remains the only major crypto showing genuine mean-reversion behaviour and the only one with an institutional catalyst in the new Ethereum ETF, and the only change this week was a modest give-back on the pause in US airstrikes. Spot crypto costs 35bps a side, so with no new information the correct action is to leave it alone. Stop stays at -25% because deeply oversold assets can still trend down."
+    },
+    {
+      "symbol": "NOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "New 6% starter. Down 45% over the past year at about $107, the deepest dislocation in profitable enterprise software, and it participated in the late-July reversal with an 8% single-day gain. A high-retention subscription business priced for terminal decline is the purest available expression of this mandate. Sized as a starter rather than a core because 30-year yields at their highest since 2007 are a genuine headwind to long-duration multiples and I would rather average in than anchor on one bounce."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 25.0,
+      "thesis": "Held flat at 6%. Near $63,900 it is still roughly half off its high, which keeps a residual oversold long consistent with the mandate, but the Fed held rates and ETF flows remain poor so there is still no near-term catalyst to justify more. Paying 35bps to adjust a position on no news would be pure cost."
+    }
+  ],
+  "cash_pct": 16,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: I got the SOXL short wrong and new evidence arrived within one session. The fundamental driver I cited when doubling it \u2014 doubt about AI capex durability \u2014 was contradicted directly by Amazon's Q2: AWS accelerated to +36.7% with a $496bn backlog and 2026 capex was guided UP to $220bn, and the semi complex responded with SOXX +8%, Micron +18% and AMD +13%. Worse, SOXL is now 69.5% below its 52-week high after a 65.5% collapse in July, so calling it a still-frothy 3x fund was stale framing; I was momentum-shorting an asset that has already crashed, which is precisely the behaviour my mandate was written after backtests to forbid, and a 3x instrument down 70% carries violent upside convexity against a short. I exit the short entirely rather than trim, because there is no version of my contrarian mean-reversion mandate in which the most oversold thing in my universe is a short. I do not flip it long: the rebound reads as short-covering rather than fresh demand and the Chinese state-backed capacity story is unchanged, so no conviction means no position. The freed notional goes to the depressed quality longs the mandate actually exists to own, plus a new ServiceNow starter as the deepest dislocation available, plus gold, which broke $4,100 while 30-year yields hit their highest since 2007 \u2014 strength against its worst macro headwind, and now my only hedge. XLV is cut because July sector data showed healthcare as the worst-performing sector at -0.78%, so the thematic wrapper is unconfirmed even though the UNH-specific fundamentals are. Crypto is untouched because nothing changed and spot costs 35bps a side.",
+  "research_notes": "Checked the 7/30 and 7/31 sessions, which both post-date the information my 7/30 decision was built on. Key findings: (1) Amazon reported Q2 after the 7/30 close \u2014 net sales +20% to $200.6bn, operating income +43%, AWS accelerating to +36.7% with a $496bn backlog, 2026 capex guided UP to $220bn; the stock rose ~15% on 7/31, its biggest day since 2012. This is direct evidence AGAINST the \"AI capex sustainability doubt\" driver I cited when doubling the SOXL short. (2) Semis violently rebounded on 7/30: SOXX +8%, Micron +18%, AMD +13%, with ETF inflows \u2014 though commentary reads it as short-covering, not fresh demand. (3) SOXL is now 69.5% below its 52-week high after falling 65.5% in July (from $266.71 on 6/30), so my \"still frothy, +242% YTD\" framing was stale. (4) Apple reported 7/30: revenue $109.4bn +16% and EPS +29% both beat, but Services came in $30.74bn vs $31.22bn expected, China $18.8bn vs $19.5bn, and September-quarter guidance of +9-11% undershot the +12% modeled; stock -7.2% on 7/31, with Barclays flagging services deceleration and China as structural. (5) Oil +20%+ in July to ~$85 WTI / Brent above $88 on Iranian attacks on escorted tankers in the Strait of Hormuz plus falling US inventories \u2014 XLE thesis strongly confirmed. (6) Gold broke above $4,100 for the first time in five weeks. (7) Macro: 30-year Treasury yield at its highest since 2007 (5.25%), 10-year above 4.7%, highest since Jan 2025 \u2014 a headwind for long-duration equity and bond-proxy sleeves. (8) Sector data for July: healthcare was the worst performer at -0.78%, undercutting my \"rotation into healthcare\" wrapper thesis even though UNH's own Q2 (adj EPS +56% to $6.38 vs $4.91) is verified; UNH now $419 vs a $475 fair-value target after pulling back from a 52-week high. (9) Enterprise software staged a sharp reversal in late July \u2014 CRM +7% to $176 (down 34% YTD, 2.96x fwd sales), ADBE +7% to $241 (down 32.9% YTD, 3.33x fwd sales), ServiceNow +8% to $107 (down 45% over one year), Workday +10%. (10) Crypto: BTC ~$63,900, ETH ~$1,877, both drifting lower on a pause in US airstrikes; Fed held rates. Nothing material changed."
+}

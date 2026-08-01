@@ -1,0 +1,104 @@
+{
+  "name": "Opus 5 dispersion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Equal-weight 51% long basket of twelve large caps screened for the highest idiosyncratic (residual-to-SPY) volatility and the lowest mutual correlation across eight sectors, hedged with a 47% short of the cap-weighted indices they sit in (28% SPY + 19% QQQ, the split that minimised residual volatility across five half-year windows), leaving 2% cash and roughly zero net index beta.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "HUM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.5,
+      "stop_loss_pct": 20.0,
+      "thesis": "Managed care, and still the purest single-name scatter in the screen: ~52% vol, ~99% idiosyncratic, measured beta 0.35, driven by MA rate notices and utilisation trend with no index analogue. Q2 adjusted EPS $7.61 on revenue $40.9bn (+26%), yet the stock fell 6.7% on a trimmed GAAP outlook and rising medical costs - a derated entry into the one sector absorbing capital as it leaves the AI trade. The 2027 exit from plans covering ~600k members is margin-accretive toward the 3% pretax target on a dated, company-specific clock."
+    },
+    {
+      "symbol": "PYPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.5,
+      "stop_loss_pct": 20.0,
+      "thesis": "Payments. ~50% vol, 92% idiosyncratic, with the re-rating story freshly validated: Q2 adjusted EPS $1.38 vs $1.28, revenue $8.7bn vs $8.48bn, FY26 raised to ~$5.38. The 248bp of margin contraction keeps the debate genuinely two-sided, which is exactly what makes it a scatter asset rather than a beta proxy - it trades on branded-checkout share and take-rate disclosure, not on the index."
+    },
+    {
+      "symbol": "COF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.5,
+      "stop_loss_pct": 20.0,
+      "thesis": "Consumer finance, and the highest-idiosyncratic-volatility large cap available in a sector at all-time highs. The volatility is calendar-driven and company-specific: full card originations onto the Capital One stack by end-Q3, back book by Q1 2027, $2.5bn of Discover synergies by 2027, layered on a credit cycle. Q2 net income $3.0bn, adjusted EPS $5.81, revenue $15.85bn vs $15.7bn est, domestic card volume +26%, charge-offs the live two-sided debate. Integration milestones have no index analogue - textbook dispersion fuel."
+    },
+    {
+      "symbol": "DLTR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Discount retail. ~46% vol with a 96% idiosyncratic share, driven by comp-store prints and banner restructuring - consumer-side scatter with zero tech overlap and a low-income trade-down profile that runs against, not with, the cyclical names elsewhere in the basket. Two recent upgrades on earnings-upside potential, and FY26 guidance of $20.5-20.7bn on 3-4% comps looks conservative ahead of lower fuel, possible tariff refunds and buybacks."
+    },
+    {
+      "symbol": "CF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Nitrogen fertiliser: ~50% vol driven by the natural gas feedstock spread and crop economics, with essentially no equity-index loading (measured beta -1.4 is noise around zero). With a single AI factor still dominating cross-asset correlation - now on the upside, as the memory squeeze showed - a name whose return function is gas and grain is the cleanest correlation diversifier in the book and the least likely to be captured by whatever the index does next."
+    },
+    {
+      "symbol": "RCL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.5,
+      "stop_loss_pct": 18.0,
+      "thesis": "Cruise. ~54% vol with a large booking-curve-driven company-specific component sitting on top of a cyclical beta that the index short already absorbs. Q2 adjusted EPS $4.21 vs $3.98, FY guide raised to $17.73-17.87, buybacks accelerated near record levels, while the revenue trim to ~9% on geopolitical softness in some European sailings is precisely the idiosyncratic two-sidedness the mandate wants."
+    },
+    {
+      "symbol": "QCOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.5,
+      "stop_loss_pct": 18.0,
+      "thesis": "Mobile and edge semis - the one semiconductor long I keep, because its ~63% vol is 76% idiosyncratic and driven by licensing renewals and customer-concentration news rather than the AI capex cycle. It gives the basket semi exposure without memory pricing or HBM risk, and the late-July reversal (SOXX +8%, MU +18%) is why keeping one non-AI-factor semi rather than none was right. Tighter 18% stop because the sector tape is still disorderly in both directions."
+    },
+    {
+      "symbol": "OXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 20.0,
+      "thesis": "Energy - the basket's macro-offset leg, crude-driven returns being the classic low-correlation block in a dispersion basket, with ~39% vol and a measured beta near zero. Q2 lands after the close on 5 August (~$1.84 est) with production setbacks the known debate, and crude firmed into month end after OPEC+ supply additions had pressured it. Held for its orthogonality to the other eight rather than for a bullish crude view, hence the smallest weight in the cyclical block."
+    },
+    {
+      "symbol": "MRNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.5,
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Biotech: ~72% vol, ~90% idiosyncratic, pipeline binaries being the archetypal dispersion asset. It just proved the point - down 7% on 31 July on its own norovirus Phase 3 interim miss while the Nasdaq closed +1% - and I bought it at that post-drop close rather than ahead of the print. Revenue $145m beat guidance and the 10% growth target holds, but cash guiding to $4.7-5.2bn at year end makes the burn the bear case. The mRNA-1010 PDUFA on 5 August is a dated binary carrying a unanimous 9-0 adcom benefit-risk vote. Smallest of the nine and the only one with a take-profit, because I want the convexity without the crowd risk."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 24,
+      "take_profit_pct": 7.0,
+      "thesis": "Primary hedge, restored to the larger leg. A long book that is now healthcare, consumer finance, payments, discount retail, nitrogen, cruise, energy and biotech carries broad-market beta, not Nasdaq beta, so the residual-vol-minimising instrument against it is the broad index. Sized with the QQQ leg so short-side beta (~38.9) offsets long-side beta and net index exposure stays near zero - the hedge exists to strip market direction so that the cross-sectional spread is what pays, and cutting it would turn a spread bet into a directional short into payrolls."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "take_profit_pct": 9.0,
+      "thesis": "Secondary hedge, cut from 21% to 13% to match the Nasdaq loading the basket actually carries (QCOM 6.5% plus PYPL 7.5%) instead of expressing a view I no longer hold. The 21% version was a bet that mega-cap concentration was unwinding; Samsung's tight-memory-to-2028 guide, MU +18%, SOXX +8% and ~$1.5trn added by Alphabet, Amazon and Microsoft in one week say that is not a bet the mandate asked me to make. Retained at 13% because QQQ, not SPY, is the right hedge for the tech beta I do own. Take-profit at 9% so a genuine mega-cap drawdown is banked rather than round-tripped."
+    }
+  ],
+  "cash_pct": 2,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: The nine longs and their weights are correct and I am not touching a single one - the screen is two days old and no company-specific fact changed. What I got wrong is the hedge mix, and I got it wrong for a reason the tape has now exposed. My mandate defines the SPY/QQQ split as the split that MINIMISES residual volatility against the long basket. On 07-30 I overrode that rule and tilted to 21% QQQ vs 16% SPY on a macro view - 'QQQ is the concentration vehicle and the concentration unwind is the trade' - which is a directional short-tech factor bet bolted onto a dispersion book, not a residual-vol-minimising hedge. Within one to two sessions that premise failed on hard data I did not have when I set it: Samsung guiding memory tight to 2028, MU +18% then +5%, SK Hynix +17%, SOXX +8%, Amazon lifting capex to $220bn BECAUSE memory is scarce, and GOOGL/AMZN/MSFT adding ~$1.5trn in a week. Separately, the construction argument was never sound: after cutting MU, DELL, PLTR and CRM my long book is healthcare, consumer finance, payments, discount retail, nitrogen, cruise, energy and biotech, with genuine Nasdaq loading of roughly QCOM 6.5% plus PYPL 7.5% - about 14% of NAV. Hedging that with 21% of QQQ is a deliberate net short of a factor I no longer own, which adds residual variance instead of removing it, and it is the leg that bleeds if the AI complex keeps squeezing. So I move to 24% SPY / 13% QQQ: total short-side beta goes from about 40.2 to about 38.9 (net index beta still roughly flat, still a spread bet and not a market bet), gross stays 98%, cash stays 2%, and the hedge's tech loading now matches the tech the basket actually holds. Only two legs trade - roughly 16% of NAV of notional at ~2bps a side, on the order of 0.3bp of NAV - a trivial price for deleting an unmandated factor bet, and I am paying it on nothing else. Everything about the long basket, its stops and its take-profits stands exactly as filled.",
+  "novelty": "I run no Round-2 book, so there is no overlap to manage; the distinguishing feature of this book remains a nine-name equal-ish long basket screened for high residual-to-SPY volatility and low mutual correlation across eight non-AI sectors, hedged with cap-weighted indices sized purely to strip market beta rather than to express any view on mega-cap tech.",
+  "research_notes": "Checked what actually happened around and after my 2026-07-31 fill. (1) The AI/memory complex violently reversed the move my 07-30 rationale was built on: Samsung guided memory supply tight into 2028, MU +18.4% to ~$875 then +5% more toward ~$919, SK Hynix +17%, SOXX +8% over late July, and Amazon RAISED 2026 capex to $220bn explicitly because memory costs are higher (Apple is raising Mac/iPad prices for the same reason). Alphabet, Amazon and Microsoft added ~$1.5trn of combined value in the week; Nasdaq +1.0% and S&P +0.7% on 07-31 to record closes. So \"the concentration unwind is the trade\" was contradicted within one to two sessions. Note my book filled AT the 07-31 close, i.e. after that bounce, so the exits and the hedge are struck at post-rally levels rather than at the SOX lows. (2) Correlation inside the AI complex stayed extreme, just with the sign flipped - MU/SK Hynix/SOXX all moving together double digits - which confirms the correlation half of the call even as the direction went against it, so staying out of MU/DELL/PLTR/CRM remains mandate-correct. (3) MRNA reported 07-31: revenue $145m (+2%, above guidance), loss $1.97/sh vs $2.13, but the Phase 3 norovirus interim missed its early-efficacy bar and year-end cash guides to $4.7-5.2bn from $6.9bn after a $950m litigation payment; stock -7% on a day the Nasdaq was +1% - textbook dispersion behaviour, and I bought it at the post-drop close. The mRNA-1010 (mFLUSIVA) PDUFA date is still ahead on 08-05 with a 9-0 adcom benefit-risk vote behind it. (4) OXY reports Q2 after the close 08-05 (~$1.84 est); crude firmed into month end. (5) FOMC already passed with the funds rate held at 3.50-3.75% alongside cooler CPI, removing the event risk I was hedging into; next week is payrolls (~86k est, u-rate 4.2%). (6) No new company-specific news on COF (Q2 net income $3.02bn, $0.80 dividend, ex-date 08-17), HUM, PYPL, DLTR, CF, RCL or QCOM since the fill."
+}

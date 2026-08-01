@@ -1,0 +1,102 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-08-03",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "thesis": "Memory is the binding physical constraint of the AI buildout, and Amazon just attributed its $20bn capex raise specifically to higher memory costs - the largest buyer's cost line is Micron's revenue line. HBM is sold out through 2026 under multi-year agreements, DRAM rose 90% in Q1 with suppliers guiding a further 10-20% per month into year-end, and Micron forecasts shortage beyond 2026. +212% YTD and +637% over a year makes it the strongest trend in my mandate's named universe; largest weight, wide -18% stop because its realised volatility is extreme and a tight stop would just donate the position to noise."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 12.0,
+      "thesis": "The clean, low-idiosyncratic-risk expression of the mandate's core: broad semis momentum reconfirmed by +6.5% on the reversal session, with the ETF still roughly 20% below its 52-week high, so the reinstated uptrend has room rather than being chased at an extreme. Owning the index alongside two single names caps the damage if any one chip story disappoints."
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "Post-earnings-announcement drift, the same anomaly I already trust on RTX and LMT, applied to the strongest print of the quarter: revenue $200.6bn (+20%), operating income +43%, AWS accelerating to 37% with $496bn of RPO and an AI run-rate above $25bn. It is also the single event that flipped the market's reaction function to capex from punishment to reward, which makes it the most information-dense long available."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 15.0,
+      "thesis": "Custom AI silicon is the validated sub-theme rather than a hope: hyperscalers guiding above $400bn of combined 2026 capex are steering an increasing share into in-house accelerators, and Broadcom is the prime designer for that work. A genuinely distinct driver from memory pricing and from broad semis beta, so it diversifies the sleeve instead of levering it."
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "thesis": "The first of the two prints that broke the capex-fear narrative - Azure grew faster than expected and the stock added 16% in a session. Post-earnings drift plus the cleanest large-cap evidence that AI spending is actually converting into recognised cloud revenue, which is the fact the whole complex was doubting a week ago."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0,
+      "thesis": "My mandate's named leveraged instrument, now pointed the right way: 3x semis beta from only 5% of capital. Both brackets are attached deliberately - daily-rebalanced leverage decays hard in violent chop and we just came out of a 24% drawdown month, so I want the convexity defined at both ends rather than left open."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "thesis": "Still the only sector positive on 1w, 1m, 3m and 6m simultaneously (+4.3/+3.4/+16.1/+7.9) with genuine breadth, and absolutely nothing in this week's news touched it. Trimmed from 23% because it is now ballast rather than the core view - it funds the semis sleeve while keeping a real low-beta anchor under a book that is otherwise entirely long risk."
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12.0,
+      "thesis": "Post-earnings breakout (+10.5% 1w, +14.9% 1m, +23.0% 3m) that has since been reinforced by live escalation - US forces intercepting an Iranian ballistic-missile attack and an unresolved Hormuz standoff. This is order-book momentum, indifferent to whether hyperscaler capex is loved or hated in any given week."
+    },
+    {
+      "symbol": "LMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "Fresh post-earnings move (+10.7% 1w, +13.4% 1m) with the same geopolitical reinforcement as RTX and real backlog visibility. Paired with RTX it gives a trend sleeve whose correlation to the AI cycle is close to zero, which is what makes the barbell honest rather than decorative."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Strongest 1m sector at +9.5% and +19.7% on 6m, with WTI near $86 carrying a live supply-risk premium from the Hormuz standoff and Houthi threats against Saudi shipping. It is also the only long here that pays off if the Fed's three hawkish dissenters turn out to be right about inflation, which no other leg in this book does."
+    },
+    {
+      "symbol": "VZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "+6.6% 1w and +8.9% 1m on a roughly 6% dividend, with regulated domestic cash flows and no exposure whatsoever to the capex cycle now driving every other position. Deliberately unstopped and small: it is carry ballast whose whole purpose is to sit still, and a stop on a low-volatility dividend name only creates a way to be shaken out of it for no reason."
+    }
+  ],
+  "cash_pct": 10,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-01: My short sleeve was built on one explicit claim, which I wrote down: hyperscalers are trapped, because cutting capex collapses orders and keeping capex gets the stock hit like Meta's was. Amazon ran that experiment 36 hours later - raised the capex guide by $20bn to $220bn, showed AWS accelerating 28% to 37% with a $496bn backlog - and the stock rose 15.6%. Microsoft did the same on Azure and rose 16%. The demand signal the AI-capex drawdown was pricing has been falsified by the two largest buyers, and SOXX responded +8% in a session. This is not noise around my thesis, it is the specific event my thesis said could not happen, and it postdates the reasoning I recorded on 7/30. Momentum discipline means following the trend that exists, and the trend that existed for one month has just been reversed by dated fundamentals, so I cover all four shorts (SOXX, ORCL, SOXL, TSLA) rather than carry an 18% gross short into a sector-wide squeeze - ORCL especially, because a $638bn backlog at a 52-week low after a 40% retrace is the single most squeezable name in the group once cloud demand is confirmed. I also cut AAPL: I owned it as the best large-cap trend AND as the anti-capex winner, and both legs broke at once when it fell 7.3% on a weak September guide, with Cook's chip-supply squeeze being precisely the input-cost story that makes Micron money and costs Apple margin. So I express that same insight on the correct side. What I do NOT do is whipsaw the whole book: XLV, RTX, LMT, XLE and VZ were never invalidated by this news - healthcare is still the best multi-horizon trend, and the Hormuz standoff plus intercepted Iranian missiles actively reinforce defense and energy - so they stay as ballast at reduced size while the mandate's home position, leveraged long semis, comes back with real size and real stops. XLP goes because in a levered growth-momentum book staples were always the weakest claim on capital and it duplicates my Round 3 exposure. Net result is 90% gross long, ~41% of it low-beta ballast, 10% cash at 4%, and no forced short - there is no falsified trend to short right now, and crypto is still directionless, so paying costs to manufacture a hedge would be theatre. Turnover here costs roughly 2bps a side against the risk of carrying a falsified short into a confirmed reversal; the cost is not the binding consideration, being wrong is.",
+  "research_notes": "Checked the 7/30-7/31 tape and the earnings that drove it. The decisive facts, all dated AFTER the 7/30 reasoning I recorded: (1) Microsoft reported faster-than-expected Azure growth and rallied 16% in the 7/30 session; (2) Amazon reported 7/30 with AWS revenue accelerating from 28% to ~37% ($42.2bn), RPO backlog $496bn, AI run-rate >$25bn, and RAISED 2026 capex guidance $20bn to ~$220bn - and the stock rose 15.6% on 7/31. That is the exact inverse of Meta's reaction a week earlier and it inverts the market's reaction function to capex, which was the literal foundation of my short sleeve. (3) SOXX +8% and SMH +6.5% on the reversal; SK Hynix/Samsung rallying; hyperscaler 2026 capex now guided above $400bn combined vs ~$230bn in 2024. (4) Apple beat ($2.02 vs $1.89, rev $109.4bn, iPhone +22%) but fell 7.3% on a soft September guide, a services miss and Cook flagging a chip-supply squeeze raising costs - so AAPL's trend broke and its \"anti-capex\" virtue became the wrong side of the trade. (5) Micron: +212% YTD / +637% 1yr, HBM sold out through 2026, DRAM +90% in Q1 with suppliers guiding +10-20%/month through year-end and shortage forecast beyond 2026 - and Amazon named higher memory costs as the reason for its capex raise, so the largest buyer's cost line is Micron's revenue line. (6) Macro: Fed held 7/29 with three hike dissents, 10y finished 7/31 at 4.75%, gold $4,102 (+1.9% on the hold), Nasdaq closed 7/31 at 25,373.85 (+1.0%) though July was still -3.2%. (7) Geopolitics: US forces intercepted an Iranian ballistic-missile attack, Hormuz standoff live, WTI ~$86 with a supply-risk premium - supportive of both XLE and defense. (8) Crypto: BTC ~$63.6k, ETH ~$1.88k, both directionless and drifting - still no tradeable trend. (9) Credit: HY OAS ~289bp, bottom decile, seasonal widening bias into Q4 - but the cloud prints make AI debt more serviceable, so that tail receded rather than grew."
+}
