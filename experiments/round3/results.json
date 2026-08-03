@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-08-01 13:05 UTC",
+ "updated_utc": "2026-08-03 21:42 UTC",
  "entry": "2026-07-17",
  "capital_usd": 1000.0,
- "as_of": "2026-07-31",
+ "as_of": "2026-08-03",
  "benchmarks": {
   "SPY ($1000)": {
-   "nav": 1005.03,
+   "nav": 1019.35,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 1000.0,
@@ -21,11 +21,14 @@
     "2026-07-28": 996.73,
     "2026-07-29": 981.39,
     "2026-07-30": 997.85,
-    "2026-07-31": 1005.03
+    "2026-07-31": 1005.03,
+    "2026-08-01": 1005.03,
+    "2026-08-02": 1005.03,
+    "2026-08-03": 1019.35
    }
   },
   "BTC ($1000)": {
-   "nav": 972.87,
+   "nav": 981.99,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 998.37,
@@ -41,7 +44,10 @@
     "2026-07-28": 986.29,
     "2026-07-29": 998.9,
     "2026-07-30": 969.4,
-    "2026-07-31": 972.87
+    "2026-07-31": 968.62,
+    "2026-08-01": 979.71,
+    "2026-08-02": 981.99,
+    "2026-08-03": 981.99
    }
   }
  },
@@ -50,8 +56,8 @@
    "model": "fable",
    "group": "flagship",
    "strategy": "Rate-cycle rotation + carry + early trend-reversal, with stop discipline",
-   "nav": 996.02,
-   "growth_pct": -0.4,
+   "nav": 1000.24,
+   "growth_pct": 0.02,
    "max_drawdown_pct": -1.08,
    "gross_exposure_pct": 80,
    "n_positions": 9,
@@ -147,15 +153,18 @@
     "2026-07-28": 1001.11,
     "2026-07-29": 993.75,
     "2026-07-30": 1000.15,
-    "2026-07-31": 996.02
+    "2026-07-31": 994.99,
+    "2026-08-01": 996.68,
+    "2026-08-02": 996.39,
+    "2026-08-03": 1000.24
    }
   },
   "Fable Barbell": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
-   "nav": 988.78,
-   "growth_pct": -1.12,
+   "nav": 994.89,
+   "growth_pct": -0.51,
    "max_drawdown_pct": -2.17,
    "gross_exposure_pct": 79,
    "n_positions": 8,
@@ -244,15 +253,18 @@
     "2026-07-28": 989.73,
     "2026-07-29": 990.15,
     "2026-07-30": 984.28,
-    "2026-07-31": 988.78
+    "2026-07-31": 988.78,
+    "2026-08-01": 988.71,
+    "2026-08-02": 988.72,
+    "2026-08-03": 994.89
    }
   },
   "Fable Unconstrained": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
-   "nav": 1012.26,
-   "growth_pct": 1.23,
+   "nav": 1012.43,
+   "growth_pct": 1.24,
    "max_drawdown_pct": -0.91,
    "gross_exposure_pct": 67,
    "n_positions": 6,
@@ -318,19 +330,22 @@
     "2026-07-28": 1013.09,
     "2026-07-29": 1006.43,
     "2026-07-30": 1014.22,
-    "2026-07-31": 1012.26
+    "2026-07-31": 1012.26,
+    "2026-08-01": 1012.27,
+    "2026-08-02": 1012.31,
+    "2026-08-03": 1012.43
    }
   },
   "Opus-fleet deep value": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in sub-market-multiple, FCF-rich dividend payers (banks below book, energy, pharma, telecom, staples) with a small hedge shorting the most stretched growth cohort.",
-   "nav": 1021.88,
-   "growth_pct": 2.19,
+   "nav": 1018.83,
+   "growth_pct": 1.88,
    "max_drawdown_pct": -1.88,
-   "gross_exposure_pct": 90,
+   "gross_exposure_pct": 81,
    "n_positions": 7,
-   "cash_pct": 10,
+   "cash_pct": 19,
    "positions": [
     {
      "symbol": "PFE",
@@ -338,7 +353,15 @@
      "side": "long",
      "weight_pct": 18,
      "stop_loss_pct": 18.0,
-     "thesis": "Top conviction. 8.81x forward earnings, 15x price-to-FCF, 6.84% dividend yield, trading at its 52-week low of $23.11-$25.15 while the index sits 4% off an all-time high \u2014 the only name I own that has not participated in anything. Post-COVID trough pricing still ignores durable base-pharma cash generation, and the pipeline keeps delivering (FDA priority review in prostate cancer, PADCEV+Keytruda approval in muscle-invasive bladder cancer, EC approval for the XFG-variant vaccine) against one lung-cancer trial miss. Crucially it carries no AI-capex duration and minimal rate duration, so it is the cleanest deep-value expression of a hawkish-Fed, growth-de-rating tape. Earnings 8/4."
+     "thesis": "Still my top conviction and unchanged from two sessions ago. 8.73x forward earnings against a 19.11x industry and its own 9.31x five-year mean, a ~6.8% dividend yield, and a price ~13% below its $28.75 peak - the only line I own that never joined the rally, which is precisely why it carries no AI-capex duration and minimal rate duration. That mattered less this week than I expected because the AI trade rebounded, but it is exactly what makes the position robust to whichever way the capex argument resolves next. Q2 lands 8/4 pre-market with consensus at $0.68 on $14.45bn; the company has beaten in each of the last four quarters by an average of ~22% and screens with a positive earnings ESP. Holding the full 18% into the print rather than trading around it - the -18% stop is wide enough to absorb a bad gap without converting a valuation thesis into a stop-out."
+    },
+    {
+     "symbol": "CVX",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 16,
+     "stop_loss_pct": 18.0,
+     "thesis": "Raised from 13% on information that post-dates my fill. Chevron reported Q2 after the 7/31 close: adjusted $6.06 against $5.11 consensus, a 19% beat, revenue $67bn versus $44.4bn a year ago, worldwide production up 20% on legacy Hess assets and the Permian, record US production and record US refinery crude throughput, a 20-year power agreement with Microsoft for a West Texas data centre, and a $1.78 quarterly dividend declared. My entry mark contains none of that. The macro leg is intact and stronger: Brent around $88-90, up more than 20% on the month, with Iran attacking tankers in the Strait of Hormuz. This is the mandate's energy sleeve doing double duty - a sub-market-multiple FCF payer that also hedges the inflation path a Fed pricing a September hike is worried about. Still preferred to ConocoPhillips, whose 42% Kirkuk stake turns an Iran-Iraq escalation into asset risk rather than a tailwind."
     },
     {
      "symbol": "C",
@@ -346,15 +369,7 @@
      "side": "long",
      "weight_pct": 15,
      "stop_loss_pct": 20.0,
-     "thesis": "Cheapest large-cap US bank at ~11x forward and roughly 0.8x tangible book, buying back stock below book which is directly accretive to TBVPS. Sold off 4.03% on 7/29 with no company-specific news at all \u2014 the entire group went (GS -5.1%, JPM -3.5%, WFC -3.5%) on the hawkish Fed. A sector-wide flush in the cheapest name is precisely what deep value is supposed to buy. Higher-for-longer rates support net interest margin, CET1 is strong, Q2 was solid, and consensus sits at $155 against $127. Wide stop because I expect the sector to stay volatile while the September hike debate runs."
-    },
-    {
-     "symbol": "CVX",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 13,
-     "stop_loss_pct": 18.0,
-     "thesis": "New position. 11.10x forward earnings and a 3.71% dividend yield, ~11% below its 52-week high, from a business throwing off enormous free cash flow \u2014 cheaper on forward and better-yielding than XOM at 12.57x/2.63%. It was up 2.28% on a day the S&P fell 1.54%, because Iran's strike on the US base in Jordan put crude up 6% and energy was the only green sector (XLE +1.88%). This is the mandate's energy sleeve doing double duty: a genuinely sub-market-multiple FCF payer that also hedges the inflation path a three-dissent Fed is worried about. Chosen over ConocoPhillips deliberately \u2014 COP's new 42% Kirkuk stake and Syria deal turn an Iran-Iraq escalation into asset risk, whereas Chevron's Iraq exposure is small against a diversified base."
+     "thesis": "Held flat, with a correction to my own record. I previously claimed roughly 0.8x tangible book and buybacks below book; TBVPS is $100.89 against a $132.71 close, so the multiple is ~1.32x tangible and the below-book accretion argument does not hold. What does hold: still the cheapest large-cap US bank at ~11x forward, Q2 delivered $5.8bn of net income on $24.77bn of revenue with ROTCE up to 13%, consensus sits near $155 against $132.71, and the curve has steepened to roughly 100bp (30y 5.28% versus 2y 4.28%) with about two-thirds odds of a September hike priced - a direct net interest margin tailwind. But it has already recovered 4.5% from the no-news sector flush at $127 that I bought, so that specific dislocation is largely harvested. Cheap enough to own at 15%, not cheap enough to size up on a premise I just found to be wrong. Wide stop because the September hike debate will keep the group volatile."
     },
     {
      "symbol": "VZ",
@@ -362,7 +377,7 @@
      "side": "long",
      "weight_pct": 12,
      "stop_loss_pct": 15.0,
-     "thesis": "9.3x forward earnings, 5.99% dividend yield covered by free cash flow, beta 0.24. Management raised the 2026 buyback target to $4.5bn and signed a $1bn+ dark-fiber deal with Google, so the AI buildout pays it rent rather than costing it multiple. The two-decade-high yield curve is a real headwind for any bond proxy, which is why this is 12% rather than larger, but a 6% covered yield on short-duration, contracted cash flows still clears a ~5% Treasury with equity upside, and it compounds in a flat or falling tape."
+     "thesis": "Unchanged; nothing company-specific happened in two sessions. 9.3x forward earnings, a ~6% dividend covered by free cash flow, beta 0.24, a 2026 buyback target raised to $4.5bn, and a $1bn+ dark-fiber deal with Google that makes the AI buildout pay it rent instead of costing it multiple - a structure that looks better, not worse, now that hyperscaler capex has been confirmed at roughly $650bn for the year. The honest headwind is duration: with the 30-year at 5.28% a 6% bond-proxy yield is a thinner spread than it was, which is exactly why this is 12% and not larger. Short-duration contracted cash flows still clear the curve with equity upside, and it compounds in a flat tape."
     },
     {
      "symbol": "VLO",
@@ -371,7 +386,7 @@
      "weight_pct": 9,
      "stop_loss_pct": 18.0,
      "take_profit_pct": 20.0,
-     "thesis": "Trimmed from 12%. Still best-in-class refining at 8.25x forward with heavy buybacks, and Middle East disruption is historically bullish distillate cracks. But the position has done its job \u2014 the stock went from $130.78 to $301.32 and now sits within 6% of its 52-week high, a crude spike squeezes feedstock costs before cracks catch up, and it reports today. Cutting the size is a valuation-discipline trim, not a change of view; the take-profit at +20% harvests the move if the crack blowout runs."
+     "thesis": "Held at the trimmed size. The Q2 blowout I was waiting on arrived on 7/30 - $12.54 adjusted against $10.22 consensus, a 27% surprise, revenue $44.5bn against $39.4bn, refining operating income $4.5bn versus $1.3bn a year ago, renewable diesel swinging to $717m of operating income from a loss, and $2.6bn returned at a 59% payout - but my fill was at the 7/31 close, so that print is already in my entry price and is not a reason to add. Best-in-class refining at roughly 8.25x forward with heavy buybacks and Middle East disruption historically bullish for distillate cracks, offset by a position near its 52-week high after tripling and by a crude spike that squeezes feedstock before cracks catch up. Right-sized already; the +20% take-profit harvests a crack blowout without my having to time it."
     },
     {
      "symbol": "MO",
@@ -379,16 +394,16 @@
      "side": "long",
      "weight_pct": 5,
      "stop_loss_pct": 15.0,
-     "thesis": "Halved from 10% to a residual ballast line. Still a 13.1x forward, 5.66%-yielding cash cow with pricing power and a 55-year dividend record, and its near-zero beta is genuinely useful in this tape. But the deep-value case has thinned: it trades at $74.92 against a $77.06 52-week high, the 14-analyst consensus target of $70.64 is BELOW the current price, and a 5.7% bond proxy is the wrong duration to own against two-decade-high Treasury yields. Keeping a small carry position rather than paying up for it."
+     "thesis": "Unchanged residual ballast. A 13.1x forward, ~5.7%-yielding cash machine with pricing power and a 55-year dividend record, and near-zero beta that is genuinely useful precisely because I am cutting my hedge and adding net long exposure this week. But the deep-value case is thin at these levels - it trades close to its 52-week high and the analyst consensus target sits below spot - and a 5.7% bond proxy is the wrong duration against a 5.28% 30-year with a hike being priced for September. Small enough that it earns carry and dampens the book without my paying up for a discount that has already closed."
     },
     {
      "symbol": "SMH",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 18,
+     "weight_pct": 6,
      "stop_loss_pct": 22.0,
      "take_profit_pct": 30.0,
-     "thesis": "Tripled from 6% \u2014 my single highest-confidence idea and the reason the caps mattered. Semiconductors remain +73.6% over twelve months, so despite falling 25% from $671.83 to $504.22 there is still enormous valuation air in the cohort. The catalyst turned live in the last 48 hours: SK Hynix disappointed on guidance even while profit rose sixfold, SMH fell 4.79% in a single session, the Nasdaq-100 approached correction, Meta is being pressed by its own holders for better answers on AI capex returns, and a Fed with three hike dissents plus two-decade-high yields is a direct de-rating force on the longest-duration equities in the market. This is the exact antithesis of my mandate's holdings and it funds the value-over-growth rotation while cutting net equity exposure to ~54% into a genuinely dangerous macro window. Shorts pay no funding here, only 3% borrow, so the carry cost is trivial. Stop at +22% against me because momentum reversals in this cohort are violent; take-profit at +30%."
+     "thesis": "Cut from 18% back to the mandate's small structural hedge because the specific catalyst I named has been falsified. I sized this up on hyperscaler capex doubt and SK Hynix's guidance miss; within 48 hours Microsoft showed a $37bn AI business growing 123% with Azure accelerating, Amazon's cloud beat with revenue up 20%, Big Tech capex is tracking ~$650bn for 2026, and SK Hynix and Samsung both posted record single-day gains while SOXX rose over 8%, Micron 18% and AMD 13%. Semis are the direct recipients of the spend that was just confirmed, and the tape is now discriminating between spenders and beneficiaries rather than de-rating duration wholesale. What remains of my case is only that the cohort is up roughly 80% over twelve months and sits below a $671.83 peak while the 30-year yields 5.28% - enough to justify a hedge, not a bet. I keep 6% because the mandate calls for a small short in the most stretched growth cohort and, having checked, SMH is still that cohort: ARKK is flat over twelve months and would be a strictly worse vehicle. Borrow is 3% with no funding cost on shorts, so carry is trivial, and the -22% stop now risks only about 1.3% of NAV."
     }
    ],
    "series": {
@@ -406,16 +421,19 @@
     "2026-07-28": 1038.11,
     "2026-07-29": 1027.45,
     "2026-07-30": 1018.59,
-    "2026-07-31": 1021.88
+    "2026-07-31": 1021.88,
+    "2026-08-01": 1021.72,
+    "2026-08-02": 1021.72,
+    "2026-08-03": 1018.83
    }
   },
   "Opus-fleet dividend growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in 25+ year dividend aristocrats and quality dividend-grower ETFs with defensive staples/healthcare tilt, funded by strong free cash flow, harvesting 4% cash yield on the sleeve.",
-   "nav": 1010.92,
-   "growth_pct": 1.09,
-   "max_drawdown_pct": -1.91,
+   "nav": 1007.98,
+   "growth_pct": 0.8,
+   "max_drawdown_pct": -2.2,
    "gross_exposure_pct": 96,
    "n_positions": 10,
    "cash_pct": 4,
@@ -523,16 +541,19 @@
     "2026-07-28": 1030.65,
     "2026-07-29": 1027.59,
     "2026-07-30": 1013.13,
-    "2026-07-31": 1010.92
+    "2026-07-31": 1010.92,
+    "2026-08-01": 1010.78,
+    "2026-08-02": 1010.79,
+    "2026-08-03": 1007.98
    }
   },
   "Opus-fleet price momentum": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
-   "nav": 1000.75,
-   "growth_pct": 0.08,
-   "max_drawdown_pct": -0.89,
+   "nav": 993.41,
+   "growth_pct": -0.66,
+   "max_drawdown_pct": -1.37,
    "gross_exposure_pct": 89,
    "n_positions": 6,
    "cash_pct": 11,
@@ -607,15 +628,18 @@
     "2026-07-28": 1007.19,
     "2026-07-29": 998.2,
     "2026-07-30": 1005.16,
-    "2026-07-31": 1000.75
+    "2026-07-31": 1000.75,
+    "2026-08-01": 1000.54,
+    "2026-08-02": 1000.55,
+    "2026-08-03": 993.41
    }
   },
   "Opus-fleet quality compounders": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book of wide-moat, high-ROIC, net-cash compounders bought after a semis/mega-cap pullback, held to year-end.",
-   "nav": 1031.9,
-   "growth_pct": 3.19,
+   "nav": 1060.95,
+   "growth_pct": 6.09,
    "max_drawdown_pct": -1.83,
    "gross_exposure_pct": 94,
    "n_positions": 6,
@@ -680,15 +704,18 @@
     "2026-07-28": 1008.22,
     "2026-07-29": 1002.75,
     "2026-07-30": 1023.46,
-    "2026-07-31": 1031.9
+    "2026-07-31": 1031.9,
+    "2026-08-01": 1031.74,
+    "2026-08-02": 1031.75,
+    "2026-08-03": 1060.95
    }
   },
   "Opus-fleet small/mid-cap growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book in small/mid-cap cloud, AI-infra, and fintech compounders with secular demand, riding small-cap and software leadership while avoiding weak crypto.",
-   "nav": 989.35,
-   "growth_pct": -1.07,
+   "nav": 1013.04,
+   "growth_pct": 1.3,
    "max_drawdown_pct": -10.29,
    "gross_exposure_pct": 82,
    "n_positions": 7,
@@ -773,16 +800,19 @@
     "2026-07-28": 960.12,
     "2026-07-29": 929.21,
     "2026-07-30": 987.09,
-    "2026-07-31": 989.35
+    "2026-07-31": 989.35,
+    "2026-08-01": 989.21,
+    "2026-08-02": 989.23,
+    "2026-08-03": 1013.04
    }
   },
   "Sonnet+tools deep value": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Global deep-value dividend payers: single-digit-to-low-teens P/E, near-book P/B, strong FCF, durable 6%+ dividends across tobacco, telecom, financials, pharma, autos, staples",
-   "nav": 1015.15,
-   "growth_pct": 1.52,
-   "max_drawdown_pct": -2.58,
+   "nav": 1018.56,
+   "growth_pct": 1.86,
+   "max_drawdown_pct": -2.6,
    "gross_exposure_pct": 77,
    "n_positions": 6,
    "cash_pct": 23,
@@ -857,16 +887,19 @@
     "2026-07-28": 1042.07,
     "2026-07-29": 1038.54,
     "2026-07-30": 1016.5,
-    "2026-07-31": 1015.15
+    "2026-07-31": 1015.15,
+    "2026-08-01": 1015.01,
+    "2026-08-02": 1015.03,
+    "2026-08-03": 1018.56
    }
   },
   "Sonnet+tools dividend growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, unleveraged basket of dividend aristocrats/kings and a curated dividend-growth ETF core, tilted to defensive staples/healthcare with an energy hedge",
-   "nav": 1006.85,
-   "growth_pct": 0.69,
-   "max_drawdown_pct": -2.22,
+   "nav": 1001.51,
+   "growth_pct": 0.15,
+   "max_drawdown_pct": -2.74,
    "gross_exposure_pct": 92,
    "n_positions": 8,
    "cash_pct": 8,
@@ -951,15 +984,18 @@
     "2026-07-28": 1029.43,
     "2026-07-29": 1029.73,
     "2026-07-30": 1007.86,
-    "2026-07-31": 1006.85
+    "2026-07-31": 1006.85,
+    "2026-08-01": 1006.86,
+    "2026-08-02": 1006.87,
+    "2026-08-03": 1001.51
    }
   },
   "Sonnet+tools price momentum": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
-   "nav": 1016.45,
-   "growth_pct": 1.65,
+   "nav": 1018.1,
+   "growth_pct": 1.81,
    "max_drawdown_pct": -0.7,
    "gross_exposure_pct": 92,
    "n_positions": 7,
@@ -1044,15 +1080,18 @@
     "2026-07-28": 1020.83,
     "2026-07-29": 1013.66,
     "2026-07-30": 1018.98,
-    "2026-07-31": 1016.45
+    "2026-07-31": 1016.45,
+    "2026-08-01": 1016.44,
+    "2026-08-02": 1016.45,
+    "2026-08-03": 1018.1
    }
   },
   "Sonnet+tools quality compounders": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, equal-weight basket of ten wide-moat, high-ROIC compounders across payments, enterprise software/cloud, consumer, and pharma, unlevered with a 10% cash buffer.",
-   "nav": 1028.46,
-   "growth_pct": 2.85,
+   "nav": 1044.82,
+   "growth_pct": 4.48,
    "max_drawdown_pct": -2.21,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -1154,15 +1193,18 @@
     "2026-07-28": 1010.11,
     "2026-07-29": 1009.37,
     "2026-07-30": 1024.64,
-    "2026-07-31": 1028.46
+    "2026-07-31": 1028.46,
+    "2026-08-01": 1028.47,
+    "2026-08-02": 1028.48,
+    "2026-08-03": 1044.82
    }
   },
   "Sonnet+tools small/mid-cap growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
-   "nav": 968.0,
-   "growth_pct": -3.2,
+   "nav": 998.22,
+   "growth_pct": -0.18,
    "max_drawdown_pct": -9.42,
    "gross_exposure_pct": 95,
    "n_positions": 8,
@@ -1256,15 +1298,18 @@
     "2026-07-28": 965.44,
     "2026-07-29": 964.51,
     "2026-07-30": 962.87,
-    "2026-07-31": 968.0
+    "2026-07-31": 968.0,
+    "2026-08-01": 967.91,
+    "2026-08-02": 967.91,
+    "2026-08-03": 998.22
    }
   },
   "Haiku concentrated AI/technology": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Small-cap cyclical momentum with value rotation (TNA, IWD, XLE, XLI, XLF), selective tech exposure, rate hedging via short TLT and low-vol short.",
-   "nav": 1001.09,
-   "growth_pct": 0.11,
+   "nav": 1017.57,
+   "growth_pct": 1.76,
    "max_drawdown_pct": -3.33,
    "gross_exposure_pct": 81.0,
    "n_positions": 11,
@@ -1383,15 +1428,18 @@
     "2026-07-28": 996.2,
     "2026-07-29": 978.82,
     "2026-07-30": 998.41,
-    "2026-07-31": 1001.09
+    "2026-07-31": 1001.09,
+    "2026-08-01": 1000.95,
+    "2026-08-02": 1000.96,
+    "2026-08-03": 1017.57
    }
   },
   "Haiku contrarian turnarounds": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Macro cycle bottoming via defensive rotation with disciplined exits on extended growth valuations and tactical oversold recovery positions",
-   "nav": 1021.38,
-   "growth_pct": 2.14,
+   "nav": 1035.79,
+   "growth_pct": 3.58,
    "max_drawdown_pct": -2.33,
    "gross_exposure_pct": 100,
    "n_positions": 8,
@@ -1469,15 +1517,18 @@
     "2026-07-28": 1023.89,
     "2026-07-29": 1030.4,
     "2026-07-30": 1023.99,
-    "2026-07-31": 1021.38
+    "2026-07-31": 1019.98,
+    "2026-08-01": 1023.8,
+    "2026-08-02": 1023.5,
+    "2026-08-03": 1035.79
    }
   },
   "Haiku deep value": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Momentum mean-reversion via sector rotation: short unsustainable momentum extremes (SOXL, TQQQ after 6-12 month runs), rotate into steady outperformers (energy, small-cap value, financials), amplify capitulation signals via crypto perps, enforce daily volatility stop discipline.",
-   "nav": 1009.53,
-   "growth_pct": 0.95,
+   "nav": 1011.64,
+   "growth_pct": 1.16,
    "max_drawdown_pct": -1.69,
    "gross_exposure_pct": 66.0,
    "n_positions": 9,
@@ -1579,15 +1630,18 @@
     "2026-07-28": 1008.46,
     "2026-07-29": 1006.37,
     "2026-07-30": 1007.23,
-    "2026-07-31": 1009.53
+    "2026-07-31": 1009.23,
+    "2026-08-01": 1010.04,
+    "2026-08-02": 1010.23,
+    "2026-08-03": 1011.64
    }
   },
   "Haiku dividend growth and income": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
-   "nav": 1000.72,
-   "growth_pct": 0.07,
+   "nav": 1004.36,
+   "growth_pct": 0.44,
    "max_drawdown_pct": -1.2,
    "gross_exposure_pct": 92.0,
    "n_positions": 10,
@@ -1680,15 +1734,18 @@
     "2026-07-28": 1002.24,
     "2026-07-29": 996.58,
     "2026-07-30": 998.06,
-    "2026-07-31": 1000.72
+    "2026-07-31": 1000.72,
+    "2026-08-01": 1000.67,
+    "2026-08-02": 1000.67,
+    "2026-08-03": 1004.36
    }
   },
   "Haiku global diversification via US-listed ADRs and ETFs": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
-   "nav": 1010.51,
-   "growth_pct": 1.05,
+   "nav": 1011.09,
+   "growth_pct": 1.11,
    "max_drawdown_pct": -0.42,
    "gross_exposure_pct": 91,
    "n_positions": 9,
@@ -1773,15 +1830,18 @@
     "2026-07-28": 1012.6,
     "2026-07-29": 1009.09,
     "2026-07-30": 1012.61,
-    "2026-07-31": 1010.51
+    "2026-07-31": 1010.51,
+    "2026-08-01": 1010.52,
+    "2026-08-02": 1010.52,
+    "2026-08-03": 1011.09
    }
   },
   "Haiku growth at a reasonable price": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
-   "nav": 1004.21,
-   "growth_pct": 0.42,
+   "nav": 1009.02,
+   "growth_pct": 0.9,
    "max_drawdown_pct": -1.53,
    "gross_exposure_pct": 70,
    "n_positions": 9,
@@ -1871,15 +1931,18 @@
     "2026-07-28": 1010.07,
     "2026-07-29": 1002.74,
     "2026-07-30": 1007.21,
-    "2026-07-31": 1004.21
+    "2026-07-31": 1003.88,
+    "2026-08-01": 1004.55,
+    "2026-08-02": 1004.46,
+    "2026-08-03": 1009.02
    }
   },
   "Haiku macro/sector rotation": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive quality rotation paired with sector mean-reversion in laggards, shorting QQQ momentum extremes to fund dividend-paying carry positions",
-   "nav": 1004.62,
-   "growth_pct": 0.46,
+   "nav": 1005.41,
+   "growth_pct": 0.54,
    "max_drawdown_pct": -1.25,
    "gross_exposure_pct": 87.9,
    "n_positions": 8,
@@ -1973,15 +2036,18 @@
     "2026-07-28": 1017.36,
     "2026-07-29": 1010.43,
     "2026-07-30": 1008.1,
-    "2026-07-31": 1004.62
+    "2026-07-31": 1004.62,
+    "2026-08-01": 1004.63,
+    "2026-08-02": 1004.63,
+    "2026-08-03": 1005.41
    }
   },
   "Haiku price momentum": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
-   "nav": 972.26,
-   "growth_pct": -2.77,
+   "nav": 981.23,
+   "growth_pct": -1.88,
    "max_drawdown_pct": -3.87,
    "gross_exposure_pct": 100,
    "n_positions": 7,
@@ -2059,16 +2125,19 @@
     "2026-07-28": 975.42,
     "2026-07-29": 961.06,
     "2026-07-30": 976.78,
-    "2026-07-31": 972.26
+    "2026-07-31": 972.26,
+    "2026-08-01": 972.26,
+    "2026-08-02": 972.26,
+    "2026-08-03": 981.23
    }
   },
   "Haiku quality compounders": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
-   "nav": 1004.44,
-   "growth_pct": 0.44,
-   "max_drawdown_pct": -1.24,
+   "nav": 1002.03,
+   "growth_pct": 0.2,
+   "max_drawdown_pct": -1.48,
    "gross_exposure_pct": 79,
    "n_positions": 8,
    "cash_pct": 21,
@@ -2151,15 +2220,18 @@
     "2026-07-28": 1010.94,
     "2026-07-29": 1017.04,
     "2026-07-30": 1004.79,
-    "2026-07-31": 1004.44
+    "2026-07-31": 1004.31,
+    "2026-08-01": 1004.65,
+    "2026-08-02": 1004.72,
+    "2026-08-03": 1002.03
    }
   },
   "Haiku small/mid-cap growth": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
-   "nav": 978.36,
-   "growth_pct": -2.16,
+   "nav": 986.05,
+   "growth_pct": -1.4,
    "max_drawdown_pct": -5.37,
    "gross_exposure_pct": 84.3,
    "n_positions": 7,
@@ -2235,15 +2307,18 @@
     "2026-07-28": 975.03,
     "2026-07-29": 964.29,
     "2026-07-30": 985.33,
-    "2026-07-31": 978.36
+    "2026-07-31": 979.89,
+    "2026-08-01": 976.94,
+    "2026-08-02": 976.4,
+    "2026-08-03": 986.05
    }
   },
   "Sonnet concentrated AI/technology": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
-   "nav": 1019.23,
-   "growth_pct": 1.92,
+   "nav": 1016.52,
+   "growth_pct": 1.65,
    "max_drawdown_pct": -2.91,
    "gross_exposure_pct": 85,
    "n_positions": 4,
@@ -2297,16 +2372,19 @@
     "2026-07-28": 982.24,
     "2026-07-29": 983.91,
     "2026-07-30": 970.52,
-    "2026-07-31": 1019.23
+    "2026-07-31": 1019.23,
+    "2026-08-01": 1018.83,
+    "2026-08-02": 1018.81,
+    "2026-08-03": 1016.52
    }
   },
   "Sonnet contrarian turnarounds": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
-   "nav": 1001.64,
-   "growth_pct": 0.16,
-   "max_drawdown_pct": -2.57,
+   "nav": 996.56,
+   "growth_pct": -0.34,
+   "max_drawdown_pct": -2.77,
    "gross_exposure_pct": 95,
    "n_positions": 8,
    "cash_pct": 5,
@@ -2394,16 +2472,19 @@
     "2026-07-28": 1018.27,
     "2026-07-29": 1024.96,
     "2026-07-30": 1005.09,
-    "2026-07-31": 1001.64
+    "2026-07-31": 1001.64,
+    "2026-08-01": 1001.53,
+    "2026-08-02": 1001.51,
+    "2026-08-03": 996.56
    }
   },
   "Sonnet deep value": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
-   "nav": 1006.79,
-   "growth_pct": 0.68,
-   "max_drawdown_pct": -1.11,
+   "nav": 1002.82,
+   "growth_pct": 0.28,
+   "max_drawdown_pct": -1.5,
    "gross_exposure_pct": 89,
    "n_positions": 7,
    "cash_pct": 21,
@@ -2482,15 +2563,18 @@
     "2026-07-28": 1015.83,
     "2026-07-29": 1018.12,
     "2026-07-30": 1015.6,
-    "2026-07-31": 1006.79
+    "2026-07-31": 1007.64,
+    "2026-08-01": 1005.29,
+    "2026-08-02": 1004.82,
+    "2026-08-03": 1002.82
    }
   },
   "Sonnet dividend growth and income": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
-   "nav": 996.97,
-   "growth_pct": -0.3,
+   "nav": 1000.2,
+   "growth_pct": 0.02,
    "max_drawdown_pct": -2.84,
    "gross_exposure_pct": 83,
    "n_positions": 6,
@@ -2567,15 +2651,18 @@
     "2026-07-28": 998.62,
     "2026-07-29": 988.2,
     "2026-07-30": 997.69,
-    "2026-07-31": 996.97
+    "2026-07-31": 1004.04,
+    "2026-08-01": 999.74,
+    "2026-08-02": 999.09,
+    "2026-08-03": 1000.2
    }
   },
   "Sonnet global diversification via US-listed ADRs and ETFs": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
-   "nav": 1003.32,
-   "growth_pct": 0.33,
+   "nav": 1000.02,
+   "growth_pct": 0.0,
    "max_drawdown_pct": -3.61,
    "gross_exposure_pct": 75,
    "n_positions": 4,
@@ -2633,15 +2720,18 @@
     "2026-07-28": 1002.67,
     "2026-07-29": 1000.02,
     "2026-07-30": 1010.42,
-    "2026-07-31": 1003.32
+    "2026-07-31": 1003.32,
+    "2026-08-01": 1002.97,
+    "2026-08-02": 1002.98,
+    "2026-08-03": 1000.02
    }
   },
   "Sonnet growth at a reasonable price": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
-   "nav": 997.43,
-   "growth_pct": -0.26,
+   "nav": 997.99,
+   "growth_pct": -0.2,
    "max_drawdown_pct": -3.33,
    "gross_exposure_pct": 85,
    "n_positions": 8,
@@ -2721,16 +2811,19 @@
     "2026-07-28": 1001.63,
     "2026-07-29": 993.38,
     "2026-07-30": 991.4,
-    "2026-07-31": 997.43
+    "2026-07-31": 997.43,
+    "2026-08-01": 997.42,
+    "2026-08-02": 997.42,
+    "2026-08-03": 997.99
    }
   },
   "Sonnet macro/sector rotation": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
-   "nav": 1000.09,
-   "growth_pct": 0.01,
-   "max_drawdown_pct": -1.41,
+   "nav": 998.91,
+   "growth_pct": -0.11,
+   "max_drawdown_pct": -1.53,
    "gross_exposure_pct": 87,
    "n_positions": 8,
    "cash_pct": 13,
@@ -2819,15 +2912,18 @@
     "2026-07-28": 1014.42,
     "2026-07-29": 1012.54,
     "2026-07-30": 1008.22,
-    "2026-07-31": 1000.09
+    "2026-07-31": 1001.43,
+    "2026-08-01": 1000.01,
+    "2026-08-02": 999.81,
+    "2026-08-03": 998.91
    }
   },
   "Sonnet price momentum": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
-   "nav": 996.39,
-   "growth_pct": -0.36,
+   "nav": 993.88,
+   "growth_pct": -0.61,
    "max_drawdown_pct": -3.07,
    "gross_exposure_pct": 97,
    "n_positions": 8,
@@ -2921,15 +3017,18 @@
     "2026-07-28": 1012.58,
     "2026-07-29": 1013.8,
     "2026-07-30": 998.25,
-    "2026-07-31": 996.39
+    "2026-07-31": 996.39,
+    "2026-08-01": 996.31,
+    "2026-08-02": 996.28,
+    "2026-08-03": 993.88
    }
   },
   "Sonnet quality compounders": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
-   "nav": 992.76,
-   "growth_pct": -0.72,
+   "nav": 1001.52,
+   "growth_pct": 0.15,
    "max_drawdown_pct": -2.73,
    "gross_exposure_pct": 68,
    "n_positions": 5,
@@ -2987,15 +3086,18 @@
     "2026-07-28": 991.62,
     "2026-07-29": 982.81,
     "2026-07-30": 994.09,
-    "2026-07-31": 992.76
+    "2026-07-31": 998.22,
+    "2026-08-01": 997.88,
+    "2026-08-02": 997.91,
+    "2026-08-03": 1001.52
    }
   },
   "Sonnet small/mid-cap growth": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
-   "nav": 1006.02,
-   "growth_pct": 0.6,
+   "nav": 1002.97,
+   "growth_pct": 0.3,
    "max_drawdown_pct": -3.56,
    "gross_exposure_pct": 74,
    "n_positions": 5,
@@ -3057,15 +3159,18 @@
     "2026-07-28": 1018.18,
     "2026-07-29": 1027.88,
     "2026-07-30": 1006.85,
-    "2026-07-31": 1006.02
+    "2026-07-31": 1006.02,
+    "2026-08-01": 1005.96,
+    "2026-08-02": 1005.97,
+    "2026-08-03": 1002.97
    }
   },
   "Opus 5 carry": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A 10-leg cross-asset carry book that earns spread and premium income rather than price appreciation - structured credit (JAAA/CLOZ), agency-MBS-vs-repo carry (NLY), EM currency and sovereign carry (EMLC/EMB), high-yield spread (SPHY), equity and VIX variance premium (SPYI/SVXY) and midstream distributions (AMLP) - funded by 13% cash at 4% APY, with the only short expressed as a 3%-margin 3x BTC perp because perp shorts pay 0% financing in this engine while equity shorts carry a ~7% all-in drag.",
-   "nav": 1006.4,
-   "growth_pct": 0.64,
+   "nav": 1004.54,
+   "growth_pct": 0.45,
    "max_drawdown_pct": -0.59,
    "gross_exposure_pct": 100,
    "n_positions": 6,
@@ -3126,16 +3231,19 @@
     "2026-07-28": 1004.37,
     "2026-07-29": 998.44,
     "2026-07-30": 1006.06,
-    "2026-07-31": 1006.4
+    "2026-07-31": 1006.78,
+    "2026-08-01": 1004.87,
+    "2026-08-02": 1004.53,
+    "2026-08-03": 1004.54
    }
   },
   "Opus 5 dispersion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Equal-weight 51% long basket of twelve large caps screened for the highest idiosyncratic (residual-to-SPY) volatility and the lowest mutual correlation across eight sectors, hedged with a 47% short of the cap-weighted indices they sit in (28% SPY + 19% QQQ, the split that minimised residual volatility across five half-year windows), leaving 2% cash and roughly zero net index beta.",
-   "nav": 987.74,
-   "growth_pct": -1.23,
-   "max_drawdown_pct": -1.21,
+   "nav": 986.62,
+   "growth_pct": -1.34,
+   "max_drawdown_pct": -1.32,
    "gross_exposure_pct": 98.0,
    "n_positions": 11,
    "cash_pct": 2,
@@ -3146,7 +3254,7 @@
      "side": "long",
      "weight_pct": 7.5,
      "stop_loss_pct": 20.0,
-     "thesis": "Managed care. Still the purest single-name scatter in the screen - ~52% vol, ~99% idiosyncratic, measured beta 0.35, driven by MA rate and utilisation news with no index analogue. Q2 beat at $7.61 adj vs $7.22 with revenue +26%, then fell 6.7% purely on unchanged guidance; the 2027 exit from plans covering ~600k members is margin-accretive toward the 3% pretax target. A derated entry into the sector printing all-time highs as capital leaves the AI trade. Upsized from 4.25%."
+     "thesis": "Managed care, and still the purest single-name scatter in the screen: ~52% vol, ~99% idiosyncratic, measured beta 0.35, driven by MA rate notices and utilisation trend with no index analogue. Q2 adjusted EPS $7.61 on revenue $40.9bn (+26%), yet the stock fell 6.7% on a trimmed GAAP outlook and rising medical costs - a derated entry into the one sector absorbing capital as it leaves the AI trade. The 2027 exit from plans covering ~600k members is margin-accretive toward the 3% pretax target on a dated, company-specific clock."
     },
     {
      "symbol": "PYPL",
@@ -3154,7 +3262,7 @@
      "side": "long",
      "weight_pct": 7.5,
      "stop_loss_pct": 20.0,
-     "thesis": "Payments. ~50% vol, 92% idiosyncratic, and the company-specific re-rating story has just been validated: Q2 adj EPS $1.38 vs $1.28, revenue $8.7bn vs $8.48bn, FY26 raised to ~$5.38, stock +4.5%. Margin contraction of 248bp keeps the debate genuinely two-sided, which is what makes it a scatter asset rather than a beta proxy. Upsized from 4.25%."
+     "thesis": "Payments. ~50% vol, 92% idiosyncratic, with the re-rating story freshly validated: Q2 adjusted EPS $1.38 vs $1.28, revenue $8.7bn vs $8.48bn, FY26 raised to ~$5.38. The 248bp of margin contraction keeps the debate genuinely two-sided, which is exactly what makes it a scatter asset rather than a beta proxy - it trades on branded-checkout share and take-rate disclosure, not on the index."
     },
     {
      "symbol": "COF",
@@ -3162,7 +3270,7 @@
      "side": "long",
      "weight_pct": 7.5,
      "stop_loss_pct": 20.0,
-     "thesis": "NEW - consumer finance. The highest-idiosyncratic-volatility large-cap I can find in the sector currently making all-time highs, and the volatility is genuinely company-specific: a 24-month Discover integration on a public clock (full card originations on the Cap One stack by end-Q3, back book by Q1 2027, $2.5bn synergies by 2027) layered on a credit cycle. Q2 net income $3.0bn, adj EPS $5.81, revenue $15.85bn vs $15.7bn est, credit losses falling, domestic card volume +26%. Integration milestones are calendar events with no index analogue - textbook dispersion fuel."
+     "thesis": "Consumer finance, and the highest-idiosyncratic-volatility large cap available in a sector at all-time highs. The volatility is calendar-driven and company-specific: full card originations onto the Capital One stack by end-Q3, back book by Q1 2027, $2.5bn of Discover synergies by 2027, layered on a credit cycle. Q2 net income $3.0bn, adjusted EPS $5.81, revenue $15.85bn vs $15.7bn est, domestic card volume +26%, charge-offs the live two-sided debate. Integration milestones have no index analogue - textbook dispersion fuel."
     },
     {
      "symbol": "DLTR",
@@ -3170,7 +3278,7 @@
      "side": "long",
      "weight_pct": 7,
      "stop_loss_pct": 20.0,
-     "thesis": "Discount retail. ~46% vol with a 96% idiosyncratic share; comp-store and banner-restructuring outcomes, consumer-side scatter with zero tech overlap. Two fresh Wall Street upgrades on earnings-upside potential, and FY26 guidance of $20.5-20.7bn on 3-4% comps looks conservative before lower fuel, possible tariff refunds and buybacks. Upsized from 4.25%."
+     "thesis": "Discount retail. ~46% vol with a 96% idiosyncratic share, driven by comp-store prints and banner restructuring - consumer-side scatter with zero tech overlap and a low-income trade-down profile that runs against, not with, the cyclical names elsewhere in the basket. Two recent upgrades on earnings-upside potential, and FY26 guidance of $20.5-20.7bn on 3-4% comps looks conservative ahead of lower fuel, possible tariff refunds and buybacks."
     },
     {
      "symbol": "CF",
@@ -3178,7 +3286,7 @@
      "side": "long",
      "weight_pct": 7,
      "stop_loss_pct": 20.0,
-     "thesis": "Nitrogen fertiliser. ~50% vol on a gas/grain spread cycle with essentially no equity-index loading (measured beta -1.4 is noise around zero). With the AI factor now dominating cross-asset correlation, a name driven by natural gas feedstock and crop economics is the single cleanest correlation diversifier in the book. Upsized from 4.25%."
+     "thesis": "Nitrogen fertiliser: ~50% vol driven by the natural gas feedstock spread and crop economics, with essentially no equity-index loading (measured beta -1.4 is noise around zero). With a single AI factor still dominating cross-asset correlation - now on the upside, as the memory squeeze showed - a name whose return function is gas and grain is the cleanest correlation diversifier in the book and the least likely to be captured by whatever the index does next."
     },
     {
      "symbol": "RCL",
@@ -3186,7 +3294,7 @@
      "side": "long",
      "weight_pct": 6.5,
      "stop_loss_pct": 18.0,
-     "thesis": "Cruise. ~54% vol with a large booking-curve-driven company-specific component on top of a cyclical beta the index short already absorbs. Q2 adj EPS $4.21 vs $3.98, FY guide raised to $17.73-17.87, buybacks accelerated, near record levels - and the revenue trim to ~9% on geopolitical softness in some European sailings is precisely the idiosyncratic two-sidedness the mandate wants. Upsized from 4.25%."
+     "thesis": "Cruise. ~54% vol with a large booking-curve-driven company-specific component sitting on top of a cyclical beta that the index short already absorbs. Q2 adjusted EPS $4.21 vs $3.98, FY guide raised to $17.73-17.87, buybacks accelerated near record levels, while the revenue trim to ~9% on geopolitical softness in some European sailings is precisely the idiosyncratic two-sidedness the mandate wants."
     },
     {
      "symbol": "QCOM",
@@ -3194,7 +3302,7 @@
      "side": "long",
      "weight_pct": 6.5,
      "stop_loss_pct": 18.0,
-     "thesis": "Mobile/edge semis. The one semiconductor long I keep, because its ~63% vol is 76% idiosyncratic and driven by licensing and customer-concentration news rather than the AI capex cycle wrecking the rest of the complex. Gives the basket semi exposure at a washed-out tape level (every SOX member below its 50-day) without memory pricing or HBM risk. Upsized modestly from 4.25%; tighter 18% stop because the sector tape is disorderly."
+     "thesis": "Mobile and edge semis - the one semiconductor long I keep, because its ~63% vol is 76% idiosyncratic and driven by licensing renewals and customer-concentration news rather than the AI capex cycle. It gives the basket semi exposure without memory pricing or HBM risk, and the late-July reversal (SOXX +8%, MU +18%) is why keeping one non-AI-factor semi rather than none was right. Tighter 18% stop because the sector tape is still disorderly in both directions."
     },
     {
      "symbol": "OXY",
@@ -3202,7 +3310,7 @@
      "side": "long",
      "weight_pct": 6,
      "stop_loss_pct": 20.0,
-     "thesis": "Energy - the basket's macro-offset leg, crude-driven returns being the classic low-correlation block in a dispersion basket, with ~39% vol and a measured beta near zero. Deliberately the smallest upsize: Q2 realisations were strong at $96.78/bbl but crude is near its lowest since late February, OPEC+ approved another August increase and Aramco cut Arab Light to Asia by $11. Held for its orthogonality, not for a bullish crude view."
+     "thesis": "Energy - the basket's macro-offset leg, crude-driven returns being the classic low-correlation block in a dispersion basket, with ~39% vol and a measured beta near zero. Q2 lands after the close on 5 August (~$1.84 est) with production setbacks the known debate, and crude firmed into month end after OPEC+ supply additions had pressured it. Held for its orthogonality to the other eight rather than for a bullish crude view, hence the smallest weight in the cyclical block."
     },
     {
      "symbol": "MRNA",
@@ -3211,23 +3319,23 @@
      "weight_pct": 5.5,
      "stop_loss_pct": 22.0,
      "take_profit_pct": 35.0,
-     "thesis": "Biotech. ~72% vol, ~90% idiosyncratic - pipeline and readout binaries are the archetypal dispersion asset, orthogonal to SPY and to the other eight names. Two dated catalysts: Q2 on 31 July and the FDA seasonal flu (mRNA-1010) decision on 5 August. Kept the smallest of the nine and the only one with a take-profit attached, because it is up 83-109% YTD and a 0.12 put/call into the print says the long side is crowded - I want the convexity, not the crowd risk."
-    },
-    {
-     "symbol": "QQQ",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 21,
-     "take_profit_pct": 9.0,
-     "thesis": "Primary hedge, and now the larger of the two legs - a reversal of the old 60/40 SPY/QQQ split, which was calibrated to five Nasdaq-loading longs I no longer own. QQQ is the concentration vehicle itself: a handful of mega-caps dominate it, and those are the names deleveraging (Meta -10% AH on a $165-169bn opex guide, Alphabet's first negative-FCF quarter, SOX -19% MTD). Shorting the cap-weighted concentration index against a diversified equal-weight basket is the equity expression of long dispersion / short correlation; RSP has beaten VOO by 3.7pp in a month. Take-profit at 9% so an oversold bounce cannot give the unwind gain back."
+     "thesis": "Biotech: ~72% vol, ~90% idiosyncratic, pipeline binaries being the archetypal dispersion asset. It just proved the point - down 7% on 31 July on its own norovirus Phase 3 interim miss while the Nasdaq closed +1% - and I bought it at that post-drop close rather than ahead of the print. Revenue $145m beat guidance and the 10% growth target holds, but cash guiding to $4.7-5.2bn at year end makes the burn the bear case. The mRNA-1010 PDUFA on 5 August is a dated binary carrying a unanimous 9-0 adcom benefit-risk vote. Smallest of the nine and the only one with a take-profit, because I want the convexity without the crowd risk."
     },
     {
      "symbol": "SPY",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 16,
+     "weight_pct": 24,
      "take_profit_pct": 7.0,
-     "thesis": "Second hedge leg, carrying the broad-market beta of a long book that is now mostly healthcare, financials, staples, materials and energy. Sized so total short-side beta (~40.8) offsets long-side beta (~42.8) for net index beta of roughly +0.02 - the hedge exists to strip market direction, and cutting it below this would turn a spread bet into a directional short of the tape into FOMC, which is not what this mandate is for."
+     "thesis": "Primary hedge, restored to the larger leg. A long book that is now healthcare, consumer finance, payments, discount retail, nitrogen, cruise, energy and biotech carries broad-market beta, not Nasdaq beta, so the residual-vol-minimising instrument against it is the broad index. Sized with the QQQ leg so short-side beta (~38.9) offsets long-side beta and net index exposure stays near zero - the hedge exists to strip market direction so that the cross-sectional spread is what pays, and cutting it would turn a spread bet into a directional short into payrolls."
+    },
+    {
+     "symbol": "QQQ",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 13,
+     "take_profit_pct": 9.0,
+     "thesis": "Secondary hedge, cut from 21% to 13% to match the Nasdaq loading the basket actually carries (QCOM 6.5% plus PYPL 7.5%) instead of expressing a view I no longer hold. The 21% version was a bet that mega-cap concentration was unwinding; Samsung's tight-memory-to-2028 guide, MU +18%, SOXX +8% and ~$1.5trn added by Alphabet, Amazon and Microsoft in one week say that is not a bet the mandate asked me to make. Retained at 13% because QQQ, not SPY, is the right hedge for the tech beta I do own. Take-profit at 9% so a genuine mega-cap drawdown is banked rather than round-tripped."
     }
    ],
    "series": {
@@ -3235,15 +3343,18 @@
     "2026-07-28": 997.15,
     "2026-07-29": 999.4,
     "2026-07-30": 996.67,
-    "2026-07-31": 987.74
+    "2026-07-31": 987.74,
+    "2026-08-01": 987.59,
+    "2026-08-02": 987.56,
+    "2026-08-03": 986.62
    }
   },
   "Opus 5 event driven": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Every position is a discrete, tape-datable catalyst: five post-earnings-drift longs bought 1-2 sessions after a >6% up-gap on >2x normal volume in names already up >10% over 20 days (stop 10%, no take-profit, so the drift can run); five capitulation longs bought after a >6% down-gap in names already down >10% over 20 days (wide 18-22% stops); one merger-arb long in a stock whose realised volatility has collapsed to 6% annualised in a 1.8%-wide 40-session band; one pre-announcement-premium long into a projected report date; and a 6% SPY short as a partial beta offset, all sized from the measured per-trade edge rather than conviction.",
-   "nav": 993.3,
-   "growth_pct": -0.67,
+   "nav": 999.42,
+   "growth_pct": -0.06,
    "max_drawdown_pct": -1.64,
    "gross_exposure_pct": 89,
    "n_positions": 9,
@@ -3327,28 +3438,40 @@
     "2026-07-28": 1005.99,
     "2026-07-29": 989.55,
     "2026-07-30": 989.48,
-    "2026-07-31": 993.3
+    "2026-07-31": 993.3,
+    "2026-08-01": 993.17,
+    "2026-08-02": 993.18,
+    "2026-08-03": 999.42
    }
   },
   "Opus 5 mean reversion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
-   "nav": 1003.05,
-   "growth_pct": 0.3,
+   "nav": 1021.16,
+   "growth_pct": 2.12,
    "max_drawdown_pct": -2.55,
    "gross_exposure_pct": 87,
-   "n_positions": 9,
+   "n_positions": 8,
    "cash_pct": 13,
    "positions": [
     {
-     "symbol": "LRCX",
+     "symbol": "WMT",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
+     "weight_pct": 16,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "Highest-conviction leg. Reported 7/29 after close: EPS $1.82 vs $1.72 and fiscal Q1 guidance of $7.70-8.50B revenue against $7.09B consensus with $2.00-2.30 EPS vs $1.83. Closed the session -6.4% at $252.35 then traded +6.2% to ~$268 after hours. This is exactly what my rule is built to catch \u2014 a name in the bottom decile (-18.6% 1m against +38.6% 6m) whose drawdown was sentiment, not earnings, with the correction now documented by the company itself. Upsized from 8%."
+     "thesis": "The one core leg whose drawdown has NOT reverted, which is why it takes the top weight now that LRCX and GOOGL have. Still near $109.47 and 19% below its May high of $134, on a single Cleveland Research comp note plus tariff worry, against a $138 mean target. It is also the lowest-beta reversion I can own into a Fed that just held with PCE projected at 3.6% and a live September hike risk, because it does not need multiple expansion to work. Q2 in mid-August is a genuine two-sided catalyst with sell-side already braced for a low-water mark, which is why I stop at 16% rather than push higher."
+    },
+    {
+     "symbol": "META",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 16,
+     "stop_loss_pct": 30.0,
+     "take_profit_pct": 30.0,
+     "thesis": "New, and the direct replacement for GOOGL. Revenue BEAT at $60.8B versus $60.2B growing 28% year over year; the $6.18 EPS miss against $7.14 and the FCF collapse to $784M are both depreciation and capex artifacts of guiding spend to $135-145B, not demand deterioration. That is the same mega-cap-marked-down-for-investing pattern that just paid me 11% in GOOGL, except META fell 10.4% on 7/30 and has not begun to recover, so I am buying the setup rather than the aftermath. The distinction from my ORCL and INTC exits is decisive: those had a credit downgrade and a shrinking foundry business, this has an accelerating top line."
     },
     {
      "symbol": "AXP",
@@ -3357,25 +3480,16 @@
      "weight_pct": 12,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "Textbook fade-of-a-beat. Q2 EPS $4.53 vs ~$4.40 consensus with a raised full-year forecast, yet the stock fell 6% on a $19.64B vs $19.69B revenue miss and 12% expense growth, while credit provisions actually improved to $1.1B from $1.4B a year ago. The bear case investors sold on \u2014 consumer credit deterioration \u2014 is contradicted by the provision line. No AI capex exposure, which is the theme doing the damage elsewhere in my book. Upsized from 8%."
+     "thesis": "Held at 12% with no trade because the thesis is unchanged and unreverted: still $336 against a 52-week high of $387, having gone essentially nowhere since I bought it. The market sold a beat-and-raise on a $50mn revenue shortfall and 12% expense growth, while the actual bear case of consumer credit deterioration is contradicted by provisions improving to $1.1B from $1.4B. No AI capex exposure, which is the exact theme mauling the rest of the tape."
     },
     {
-     "symbol": "WMT",
+     "symbol": "SNPS",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 12,
+     "weight_pct": 10,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "The defensive anchor, and my best risk-adjusted reversion. An 18-19% drawdown triggered largely by one Cleveland Research note on slowing US comps, leaving it near $109 against a $138 mean target with 28 buy ratings. Lowest-beta leg in the book, which matters when the Fed just raised its PCE projection to 3.6% and may hike in September \u2014 I want reversion exposure that does not need multiple expansion to work. Upsized from 8%."
-    },
-    {
-     "symbol": "GOOGL",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 11,
-     "stop_loss_pct": 30.0,
-     "take_profit_pct": 30.0,
-     "thesis": "Revenue +24% to $119.8B, Cloud +82% to $24.8B, operating income +30%, EPS $9.11 well ahead \u2014 and the stock fell ~7% purely because FY capex guidance went to $195-205B and FCF printed -$5.9B. A mega-cap compounder marked down for investing is the cleanest overreaction available, and MSFT's fastest cloud growth in four years corroborates that the spend is meeting real demand. Sized just below the top tier because the capex-punishment regime is still live and could persist another quarter. Upsized from 8%."
+     "thesis": "New. The sharpest fundamentals-versus-price divergence on the 7/31 52-week-low screen: the stock sits about 41% below its $651.73 high and fell 16.5% over the month, while management RAISED full-year revenue guidance to $9.625-9.705B and EPS to $14.72-14.80 on 42% revenue growth. The selling is about Design IP softness and Ansys integration cost, both margin-mix issues on an intact franchise, and the debt outlook is improving rather than deteriorating. Sized at 10% rather than core because a slow multi-quarter re-rating on integration is a real alternative reading of the same tape."
     },
     {
      "symbol": "UBER",
@@ -3384,7 +3498,7 @@
      "weight_pct": 8,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "The anti-capex trade: asset-light with genuine free cash flow at the exact moment the market is punishing negative-FCF AI builders, which argues for rotation into it. Held at 8% rather than upsized purely because Q2 prints Aug 5 with an ~8.3% implied move \u2014 I want the exposure but I am not paying up for a coin flip."
+     "thesis": "Held at 8% with no trade. The anti-capex, real-FCF rotation trade keeps working precisely because META and GOOGL keep demonstrating what the market does to negative-FCF AI builders. Down 5.5% on the month against a flat tape. Not upsized because Q2 lands Aug 5 with the autonomous-vehicle outlook as the swing factor and a large implied move, and I will not pay up ahead of a binary."
     },
     {
      "symbol": "QCOM",
@@ -3393,16 +3507,7 @@
      "weight_pct": 7,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "Demoted from 8%. Revenue beat at $9.95B vs $9.67B and the stock is ~40% off its June high, but the fiscal Q4 guide came in light ($9.2-10.0B, EPS $2.10-2.30) on the memory supply crunch and it fell ~3% after hours. Demand is intact, margins are the problem, and management is raising prices across the board from Sept 1 \u2014 a real but slow fix. Kept as a discounted tail, not a core."
-    },
-    {
-     "symbol": "LUV",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6,
-     "stop_loss_pct": 30.0,
-     "take_profit_pct": 30.0,
-     "thesis": "Demoted from 8% on fundamentals but retained for pair logic. Q2 EPS $0.94 crushed the $0.53 estimate, yet FY26 was cut to $3.25-4.25 from at least $4.00 and Q3 guided to $0.50-0.75 vs $0.80 \u2014 with ~$900M of incremental fuel cost the named culprit. That makes it the direct beneficiary of the same oil de-escalation that drives my XLE short, so the two legs express one view from both sides."
+     "thesis": "Held at 7% with no trade, and deliberately NOT upsized despite being the deepest discount in the book at $148.52 against a $259.92 high. Revenue beat at $9.95B but the guide was cut on the memory supply crunch and the stock is still making lower lows with no reversion trigger yet. That is the falling-knife signature that cost me money in ORCL and INTC, so it stays a discounted tail until the Sept 1 price increases show up in margins."
     },
     {
      "symbol": "TSLA",
@@ -3411,16 +3516,16 @@
      "weight_pct": 5,
      "stop_loss_pct": 30.0,
      "take_profit_pct": 30.0,
-     "thesis": "Deliberate stub, cut from 8%. Still the largest one-week drawdown in the universe and therefore the purest expression of my mandate \u2014 -26% over four weeks, down five sessions running and nine of the last ten to $307.44. But the selling has identifiable fundamental causes (a fatal Semi crash under investigation, robotaxi and AI cost headlines) rather than being flow-driven, and Q2 deliveries of 480k beat by a wide margin without arresting the slide. When a beat cannot stop the decline, the reversion trigger is missing. Lottery sizing with the wide stop intact."
+     "thesis": "Held at 5% with no trade. At $311.21 it remains among the deepest drawdowns in the universe and therefore the purest literal expression of my rule, but the causes are fundamental and regulatory rather than a flow shock, and a large Q2 delivery beat failed to arrest the slide. When a beat cannot stop the decline the reversion trigger is absent, so it stays lottery-sized with the wide stop that lets it work if I am wrong about the absence."
     },
     {
      "symbol": "XLE",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 14,
+     "weight_pct": 13,
      "stop_loss_pct": 15.0,
      "take_profit_pct": 20.0,
-     "thesis": "The winner leg, doubled from 7% and now my largest single conviction. Energy is the #1 sector YTD at ~+32% and XLE trades near $59 against a 52-week range of $42-63 after a fourteen-week run \u2014 the definition of a crowded, extended top-decile cluster, and still the way six of the highest-ranked single-name winners (XOM, CVX, COP, OXY, SLB, EOG) are expressed without single-stock momentum risk. What changed is that the catalyst is unwinding: Iran has signalled it will suspend attacks while the US pause holds, Hormuz diplomacy is advancing, Brent has fallen to ~$84 (lowest in over a week), and energy was the worst-performing sector on 7/28. Shorts pay no funding and only 3% borrow, so this is cheap carry and it cuts my net long to 59% into a hawkish Fed. Stop tightened to -15% from -20% because Hormuz re-escalation is the one tail that can run against a short without bound."
+     "thesis": "Trimmed from 14% because I got the catalyst wrong, not the direction. I claimed Brent had fallen to about $84 and Iran was suspending attacks; in fact $84.67 was WTI, Brent settled $90.12, and on 7/31 the IRGC struck two tankers transiting Hormuz under US escort. What still holds, on better evidence than I originally cited: crude fell more than 5% for the WEEK, OPEC+ is adding 188kbd for a fifth consecutive month, most shut-in supply is expected back by year-end, and the Reuters 2026 Brent consensus of $90.44 means spot offers no upside versus what is already discounted. Most telling, XLE gained only 8.55% on a month when crude gained over 20% and it sits at $58.96 against a $63.46 high, which is holders distributing into a supply scare rather than accumulating. It remains the mandated short of the top-decile winner cluster at +29.6% YTD, it costs only 3% borrow with no funding, and it holds my net long near 61%. The tight -15% stop stays because a Hormuz escalation with the mid-August truce expiry is the one tail that runs without bound."
     }
    ],
    "series": {
@@ -3428,16 +3533,19 @@
     "2026-07-28": 993.94,
     "2026-07-29": 974.28,
     "2026-07-30": 1001.42,
-    "2026-07-31": 1003.05
+    "2026-07-31": 1003.05,
+    "2026-08-01": 1002.96,
+    "2026-08-02": 1002.96,
+    "2026-08-03": 1021.16
    }
   },
   "Opus 5 pairs": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Six market-neutral relative-value pairs (WFC/BAC, TSM/KLAC, LOW/HD, MA/V, XLU/D and QUAL+IWF vs MTUM) chosen from a 150-symbol screen for a stretched 250-day log-spread z-score AND evidence of stationarity - at least 8 crossings of the spread's own mean in the past year, under 25% two-year drift and above 0.60 daily-return correlation - with each pair sized so its long and short betas cancel, leaving net SPY beta of +3.2% of NAV.",
-   "nav": 1004.57,
-   "growth_pct": 0.46,
-   "max_drawdown_pct": -0.04,
+   "nav": 1006.94,
+   "growth_pct": 0.69,
+   "max_drawdown_pct": -0.06,
    "gross_exposure_pct": 100.0,
    "n_positions": 11,
    "cash_pct": 0,
@@ -3525,15 +3633,18 @@
     "2026-07-28": 1002.98,
     "2026-07-29": 1002.67,
     "2026-07-30": 1004.98,
-    "2026-07-31": 1004.57
+    "2026-07-31": 1004.57,
+    "2026-08-01": 1004.43,
+    "2026-08-02": 1004.39,
+    "2026-08-03": 1006.94
    }
   },
   "Opus 5 seasonality": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A calendar-driven book sized off measured Jul-27-to-year-end window statistics computed over 2000-2025 daily history: overweight the sectors with the highest seasonal hit-rates into the Aug-Dec window (industrials, financials, regional banks, large-cap growth), hold gold and utilities as the measured Aug-Sep defensive/flow legs, short the two sleeves that most reliably lag the S&P over the same calendar window (developed non-US equity and intermediate Treasuries), and carry 7% cash as pre-committed dry powder for the Oct-1 and Nov-1 seasonal rotations.",
-   "nav": 994.27,
-   "growth_pct": -0.57,
+   "nav": 1001.12,
+   "growth_pct": 0.11,
    "max_drawdown_pct": -1.36,
    "gross_exposure_pct": 94,
    "n_positions": 8,
@@ -3606,111 +3717,106 @@
     "2026-07-28": 998.57,
     "2026-07-29": 986.21,
     "2026-07-30": 993.93,
-    "2026-07-31": 994.27
+    "2026-07-31": 994.27,
+    "2026-08-01": 994.17,
+    "2026-08-02": 994.16,
+    "2026-08-03": 1001.12
    }
   },
   "Opus 5 trend following": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
-   "nav": 995.94,
-   "growth_pct": -0.41,
-   "max_drawdown_pct": -0.82,
-   "gross_exposure_pct": 99.9,
-   "n_positions": 11,
-   "cash_pct": 3,
+   "nav": 989.34,
+   "growth_pct": -1.07,
+   "max_drawdown_pct": -1.47,
+   "gross_exposure_pct": 94.8,
+   "n_positions": 10,
+   "cash_pct": 8.2,
    "positions": [
-    {
-     "symbol": "EUO",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 18.6162,
-     "stop_loss_pct": 15.0,
-     "thesis": "Largest weight on inverse-vol merit: 60d vol only 9.9%, the lowest in the book, against the cleanest macro-confirmed trend I own. Price 2.8% above its 50dma, 6.4% above its 200dma, 3m ts-momentum +6.9%. The 29 Jul hawkish hold with three hike dissents widens the Fed/ECB policy gap that consensus already had driving EUR/USD to 1.12 in Q3 from ~1.14 spot, against softer eurozone inflation prints. Mirror confirmation holds: FXE below its 200dma with negative 3m, FXY below with negative 3m, UUP above with positive 3m."
-    },
     {
      "symbol": "XLE",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 14.697,
-     "stop_loss_pct": 25.0,
-     "thesis": "Best-established uptrend among names whose vol permits real size: 5.5% above 50dma, 15.5% above 200dma, 50dma 9.5% above 200dma, 3m +5.4%, 1m +11.3%, XOP confirming at +16.5% vs its 200dma. The trend now has a live and re-accelerating driver - Iran has blocked Hormuz since February and rejected Oman's shared-control proposal, and Brent jumped over 7% to $90+ on 29 Jul. Vol 24.4% is what caps this at 15 rather than higher; it is also the lower-volatility way to own the oil trend versus USO."
+     "weight_pct": 19,
+     "thesis": "Now my top weight because it is the only leg where the driver strengthened on hard, dated evidence rather than narrative: the IRGC attacked two tankers transiting Hormuz under US military escort on 31 July with four more turning back, Brent settled $90.12 and WTI $84.67, and euro-area July energy inflation at 10.0% vs 8.5% independently confirms the supply shock is transmitting into global prices. The trend was already the best-established one whose volatility permits real size \u2014 5.5% above its 50dma, 15.5% above its 200dma with the 50dma 9.5% above the 200dma, 3m momentum +5.4%, XOP confirming \u2014 and 24.4% vol is what caps it here rather than higher. It is also the cheaper, lower-volatility way to own the oil trend than USO.",
+     "stop_loss_pct": 25.0
     },
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 13.7172,
-     "stop_loss_pct": 20.0,
-     "thesis": "Strongest 3m ts-momentum of any low-vol sleeve at +11.7%, 5.5% above 50dma, 7.8% above 200dma with a fresh golden cross, vol 18.3%. Freshly corroborated: healthcare was the top S&P sector on 28 Jul at +2.33% (staples second at +1.96%) and it held up while the index fell 1.5% on 29 Jul. Defensive leadership is the natural beneficiary of a hawkish Fed and a deepening semis/AI de-rating."
+     "weight_pct": 13.5,
+     "thesis": "Held at weight, but deliberately re-justified on its own price trend rather than on the defensive-rotation story I told two days ago, because that story did not hold up \u2014 31 July was an AI-led melt-up with Nasdaq +1% and no semis de-rating. What survives is the standalone signal: the strongest 3m time-series momentum of any low-volatility sleeve at +11.7%, +12.43% over the quarter, 5.5% above its 50dma and 7.8% above its 200dma with a fresh golden cross, and only 18.3% vol. That is a valid long under my rules regardless of what the tech tape does, and it is my lowest-correlation equity ballast against an energy-heavy long book.",
+     "stop_loss_pct": 20.0
     },
     {
-     "symbol": "XLF",
+     "symbol": "EUO",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 9.798,
-     "stop_loss_pct": 18.0,
-     "thesis": "Trimmed from 16 but retained because the trend is unambiguously intact - record high $56.18, +8.7% over three months, 5.2% above 50dma, 7.5% above 200dma, 3m +9.1%, vol only 13.2%. The cut reflects that this is my highest equity-beta and most credit-cycle-exposed long into a Fed with a hiking bias; higher-for-longer helps net interest margins but hurts credit and the equity multiple, so the marginal dollar works harder in the dollar and energy legs."
-    },
-    {
-     "symbol": "DBA",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6.8586,
-     "stop_loss_pct": 18.0,
-     "thesis": "The book's least equity-correlated long and my inflation-sleeve diversifier: 3.5% above 50dma, 6.9% above 200dma, 3m +3.1%, 1m +6.3%, vol 13.3%, with WEAT 14.4% above its 200dma and 3m +7.7% corroborating. A 4.2% CPI print driven by an energy shock is a supportive backdrop for softs and grains. Modest trim from 10 only because the trend strength is middling relative to what I am funding."
-    },
-    {
-     "symbol": "USO",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 4.899,
-     "stop_loss_pct": 40.0,
-     "thesis": "Strongest moving-average trend anywhere in the universe - 9.0% above 50dma, 38.3% above 200dma, 1m +28.6% - and re-accelerated by WTI's ~4% jump toward $83 and Brent's 7% jump to $90+ on 29 Jul. Deliberately kept small despite that: 3m ts-momentum is only +1.5%, so my two filters barely agree, 60d vol is 51.7%, and the whipsaw risk is real (oil fell three straight sessions to $79 on diplomacy headlines immediately before the spike). Widest stop in the book at -40% so a Hormuz de-escalation gap does not knock me out of the underlying energy trend I express more cheaply through XLE."
+     "weight_pct": 13,
+     "thesis": "Cut from 18.6 to its inverse-vol baseline because the macro confirmation I paid up for was falsified on 31 July: euro-area flash HICP accelerated to 2.9% from 2.8% with energy at 10%, EZ Q2 GDP beat, ECB hike speculation is live, and EUR/USD rose to 1.1485 rather than falling toward the 1.12 consensus I cited. I stay long rather than exiting because the price trend itself has not flipped \u2014 still 2.8% above its 50dma, 6.4% above its 200dma, 3m momentum +6.9% \u2014 and the Fed leg is if anything firmer with JP Morgan now forecasting a December hike. But with both central banks hawkish the policy gap is no longer clearly widening, so this reverts to a position sized on its 9.9% volatility, the lowest in the book, and nothing more.",
+     "stop_loss_pct": 15.0
     },
     {
      "symbol": "GLD",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 9.798,
-     "stop_loss_pct": 25.0,
-     "thesis": "Core short-metals expression, raised from 6. Gold 4.7% below its 50dma, 9.7% below its 200dma, 50dma 5.3% below the 200dma (bearish cross), 3m ts-momentum -13.7%, price ~$4,140 versus January's $5,598 record - a 26% decline. The 29 Jul hawkish hold and the jump in long-dated yields directly reinforce the driver: gold yields nothing, so rising real yields plus a firmer dollar is precisely why it is falling, and OCBC now expects further declines through year-end on exactly that combination. Vol 24.4%."
+     "weight_pct": 12,
+     "thesis": "Raised because 31 July delivered the cleanest possible test of the thesis and it passed: gold fell another 1.47% to $4,043 on the very session that euro-area inflation printed hot, proving the market is pricing gold off rising real yields rather than off inflation, which is exactly the mechanism I am short. Trend is unambiguous \u2014 4.7% below the 50dma, 9.7% below the 200dma, bearish 50/200 cross, 3m momentum -13.7%, and a 26% decline from January's $5,598 record. JP Morgan's move to a December Fed hike extends the driver. Capped at 12 rather than pushed to top weight only because $4,000 is an obvious psychologically defended level where a bounce is the live risk.",
+     "stop_loss_pct": 25.0
     },
     {
-     "symbol": "XLY",
+     "symbol": "XLF",
      "kind": "equity",
-     "side": "short",
-     "weight_pct": 9.798,
-     "stop_loss_pct": 22.0,
-     "thesis": "The only major US sector below both its moving averages: 6.0% below 50dma, 6.3% below 200dma, 3m ts-momentum -6.9%, 12m -2.7%, vol 20.9%. Raised from 8 because the fundamental corroboration got stronger, not weaker - 4.2% CPI, an energy shock with pump prices following Brent to $90, and a Fed biased toward hiking is a direct squeeze on discretionary wallets. Also my cleanest partial hedge on the four long equity legs in a tape that just dropped the Dow 1,100 points."
+     "side": "long",
+     "weight_pct": 9.8,
+     "thesis": "Untouched because nothing new reached this leg in either direction and the trend is unambiguously intact: record high $56.18, +8.7% over three months, 5.2% above its 50dma, 7.5% above its 200dma, 3m momentum +9.1%, and only 13.2% vol. It stays at the trimmed weight for the reason I trimmed it \u2014 it is my highest equity-beta and most credit-cycle-exposed long into a Fed that JP Morgan now expects to hike in December, where higher-for-longer helps net interest margins but hurts credit and the multiple.",
+     "stop_loss_pct": 18.0
+    },
+    {
+     "symbol": "DBA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 8,
+     "thesis": "Lifted modestly as the book's least equity-correlated long and its inflation-sleeve diversifier, now with a fresher driver: euro-area inflation reaccelerating to 2.9% on a 10% energy component, on top of a 4.2% US CPI, is the classic energy-cost-into-food-cost transmission that supports softs and grains. Trend supports it independently \u2014 3.5% above the 50dma, 6.9% above the 200dma, 3m +3.1%, 1m +6.3%, with WEAT 14.4% above its 200dma and 3m +7.7% corroborating \u2014 and 13.3% vol makes it cheap risk to carry.",
+     "stop_loss_pct": 18.0
+    },
+    {
+     "symbol": "USO",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 6,
+     "thesis": "Nudged up only slightly because the Hormuz risk converted from diplomatic headline to physical attack on 31 July, which reduces the whipsaw risk that was my main reason for keeping it tiny \u2014 but it stays small because my two filters still barely agree. It has the strongest moving-average trend in the universe at 9.0% above its 50dma and 38.3% above its 200dma, yet 3m time-series momentum is only +1.5%, which is the signature of an extended trend, and 51.7% vol demands restraint. The -40% stop stays widest in the book so a Hormuz de-escalation gap cannot knock me out of the underlying energy trend I express far more cheaply through XLE.",
+     "stop_loss_pct": 40.0
     },
     {
      "symbol": "SLV",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 2.9394,
+     "weight_pct": 4.5,
+     "thesis": "Raised from 3 because the specific counter-signal I flagged has failed: I held it small because silver was clawing back toward $60, and instead it fell 2.35% on 31 July to $57.62, resuming the downtrend rather than reversing it. This is the violent end of the same real-yield trade as gold \u2014 12.3% below the 50dma, 17.0% below the 200dma, 3m momentum -23.1%, and roughly $58 against January's $121.62 high, down 52%. Still capped by 51.2% vol under inverse-vol sizing, with a take-profit to bank another crash leg.",
      "stop_loss_pct": 40.0,
-     "take_profit_pct": 35.0,
-     "thesis": "The violent end of the same downtrend: silver 12.3% below its 50dma, 17.0% below its 200dma, 3m ts-momentum -23.1% against 12m +47.4%, and ~$58-60 versus January's $121.62 high - down 52%. Held at 3 rather than raised with gold because 51.2% vol demands a small weight and silver has been clawing back toward $60, so the near-term counter-move is live. Take-profit banks another crash leg."
+     "take_profit_pct": 35.0
     },
     {
      "symbol": "URA",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 2.9394,
+     "weight_pct": 3,
+     "thesis": "Held unchanged because it remains the sharpest active downtrend in my universe and nothing this week touched it: around $39, down roughly 18% in a month and 10% in a week, while spot uranium stayed firm at $85-86.60. That divergence is the whole trade \u2014 the miners and developers are de-rating on financing costs and sentiment independently of the commodity, a thematic unwind rather than a commodity call, which is why it diversifies my commodity longs instead of contradicting them. Screen: 12.4% below 50dma, 18.5% below 200dma, 3m -29.4%. Vol of 51.8% is what caps the weight.",
      "stop_loss_pct": 40.0,
-     "take_profit_pct": 35.0,
-     "thesis": "Sharpest active downtrend in the universe and the news confirms it is accelerating: URA around $39, down roughly 18% over the past month and 10% over the past week, even though spot uranium is firm at $85-86.60. That divergence is the point - the miners and developers are de-rating on financing, cost and sentiment independently of the commodity, which is a thematic unwind rather than a commodity call. Screen reads 12.4% below 50dma, 18.5% below 200dma, 3m -29.4%, 1m -10.8%, 12m only +1.4%. Vol 51.8% caps the weight."
+     "take_profit_pct": 35.0
     },
     {
      "symbol": "BTC-USD",
      "kind": "perp",
      "side": "short",
-     "weight_pct": 2.9394,
+     "weight_pct": 3,
+     "thesis": "Held unchanged as the crypto sleeve of the trend engine, still valid on both filters: BTC 11.5% below its 200dma with the 50dma 12.8% below the 200dma, 3m momentum -15.1%, 12m -32.1%, ETH and SOL agreeing at -13.6% and -16.7% versus their 200dmas. Kept at only 2x on 3% margin because the counter-signal remains live \u2014 BTC bounced off a 21-month low near $58k and was still around $63.9k on 31 July, sitting above its 50dma even as the AI-led equity rally failed to pull it higher. Perp short avoids spot borrow and pays no funding since funding applies to longs only; the wide 45% stop respects that bounce.",
      "leverage": 2,
      "stop_loss_pct": 45.0,
-     "take_profit_pct": 50.0,
-     "thesis": "Crypto sleeve of the trend engine: BTC 11.5% below its 200dma with the 50dma 12.8% below the 200dma, 3m ts-momentum -15.1%, 12m -32.1%, ETH and SOL agreeing at -13.6% and -16.7% versus their 200dmas, and total crypto capitalisation down 48% from peak on Fed repricing and ETF outflows. Deliberately left at 3% margin and only 2x (6% notional) rather than raised, because the counter-signal has strengthened, not faded: BTC has bounced off a 21-month low near $58k to ~$63.9k and is sitting above its 50dma. Perp short avoids spot borrow and pays no funding in this engine; wide 45% stop respects the bounce."
+     "take_profit_pct": 50.0
     }
    ],
    "series": {
@@ -3718,42 +3824,37 @@
     "2026-07-28": 1004.13,
     "2026-07-29": 1000.83,
     "2026-07-30": 996.76,
-    "2026-07-31": 995.94
+    "2026-07-31": 996.19,
+    "2026-08-01": 995.43,
+    "2026-08-02": 995.27,
+    "2026-08-03": 989.34
    }
   },
   "Opus 5 unrestricted": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Concentrated bet on the 2026 oil-supply-shock rotation: ~53% effective energy exposure via 2x ERX plus refiner MPC, carried by low-correlation healthcare/financials/defense longs, hedged by a short in oil-taxed consumer discretionary and a small stopped short-DOGE perp, with 8% cash at 4%.",
-   "nav": 997.22,
-   "growth_pct": -0.28,
-   "max_drawdown_pct": -0.59,
-   "gross_exposure_pct": 94,
-   "n_positions": 5,
-   "cash_pct": 12,
+   "nav": 980.15,
+   "growth_pct": -1.99,
+   "max_drawdown_pct": -2.29,
+   "gross_exposure_pct": 89,
+   "n_positions": 6,
+   "cash_pct": 17,
    "positions": [
     {
      "symbol": "ERX",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 32,
+     "weight_pct": 26,
      "stop_loss_pct": 30.0,
-     "thesis": "2x Energy Select \u2014 the core. 32 points buys 64% effective XLE exposure. The trade is the dislocation: on 29 July crude gapped +6.2% (WTI $84.18, Brent $89.43) on the collapse of the US-Iran ceasefire and fresh strikes, and XLE rose only +1.88%. Energy equities are still discounting crude far below spot after five months of a shut Strait of Hormuz, which gives me both the convergence upside and the downside cushion (2026 downside capture on crude down-days was 0.27x \u2014 equities cannot hand back a move they never made). XLE is the #1 sector of 2026 at +37.3% YTD and +9.02% in July while XLK fell 6.81%, the widest monthly split since January 2022. ERX printed +3.78% against XLE's +1.88% \u2014 exactly 2.0x, no measurable decay. The -30% stop caps this leg at 9.6% of NAV and corresponds to roughly a -15% XLE break."
+     "thesis": "2x Energy Select \u2014 still the core, trimmed from 32 to 26 not because I stopped believing it but because six points bought better-evidenced exposure elsewhere. 26 points is 52% effective XLE. The dislocation is unchanged and unconverged: Brent rose 22% and WTI 20% in July while XLE managed roughly 9% and sits at 58.38 against a 52-week high of 63.46. Energy equities are still discounting crude far below the $90.12 Brent spot after five months with Hormuz shut, and on 7/31 the IRGC struck two tankers moving under US naval escort with four more turning back \u2014 a direct engagement with the US Navy that crude answered with only 1%. That skepticism is simultaneously my upside and my cushion, since 2026 downside capture on crude down-days ran 0.27x and equities cannot hand back a move they never made. ERX has realised a clean 2.0x with no measurable decay. The reason for the trim is honest: this is my highest-leverage expression of the thesis I have the least confirmation for, and crude fell more than 5% on the week on a single de-escalation headline. The -30% stop caps this leg at 7.8% of NAV, roughly a -15% XLE break."
     },
     {
      "symbol": "XLV",
      "kind": "equity",
      "side": "long",
      "weight_pct": 20,
-     "thesis": "Healthcare \u2014 the ballast that makes the energy concentration carryable. -0.07 correlation to XLE and 0.22 to SPY at only 13.7% annualised vol, +25.0% total return over the past year, re-rating off a multi-year derating base. State Street has just upgraded healthcare from neutral to positive for Q3 2026 on drug-pipeline wins, so the trend has fresh institutional sponsorship. Deliberately unlevered rather than 3x CURE: the whole point of this leg is that it does not add variance."
-    },
-    {
-     "symbol": "XLY",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 17,
-     "stop_loss_pct": 18.0,
-     "thesis": "The funding short and the cleanest statement of the thesis: an oil shock is a consumer tax, and Brent at $89 with Hormuz shut is a large one. Raised from 13% because it now does double duty \u2014 23.2% AMZN plus 15.7% TSLA means 39% of this ETF sits at the intersection of the consumer squeeze and the AI-valuation de-rating that dragged XLK down 6.81% in July. XLY is $111.61 with a -0.54% total return over the past year at only 17% vol, and its -0.38 daily correlation to XLE makes it additive to the energy core rather than an offset. Also my only broad protection if the market breaks. An ETF, so no earnings-gap squeeze risk; 3% APR borrow; -18% stop if the consumer trade turns."
+     "thesis": "Healthcare \u2014 the ballast that makes the energy concentration carryable, held untouched. -0.07 correlation to XLE and 0.22 to SPY at 13.7% annualised vol, +25% total return over the past year off a multi-year derating base, with State Street's Q3 upgrade from neutral to positive on drug-pipeline wins giving the trend fresh institutional sponsorship. It underperformed on 7/31 in a risk-on AI melt-up, which is exactly what ballast is supposed to do \u2014 I did not buy it to win on days the Nasdaq makes highs, I bought it so that an 78%-effective energy book is survivable. Deliberately unlevered rather than 3x CURE: the entire job of this leg is to not add variance, and paying entry costs to resize it after one session would be pure churn."
     },
     {
      "symbol": "MPC",
@@ -3761,7 +3862,24 @@
      "side": "long",
      "weight_pct": 16,
      "stop_loss_pct": 25.0,
-     "thesis": "Refining/crack-spread leg, sized up into the 4 August print \u2014 the only near-dated catalyst in the book. Consensus Q2 EPS of ~$11-12 is +184-199% y/y on ~$42bn revenue, with management having front-loaded ~40% of annual turnarounds into Q1 specifically to run 2.99mb/d at ~94% utilisation into this window. The $301.59 average price target is stale and sits below the $308.72 spot while the two most recent revisions are Goldman $376 and TD Cowen $357. Cracks are a distinct driver from crude beta (-0.16 correlation to SPY), so this is not simply more ERX. Sized at 16% with a -25% stop, which caps single-name earnings-gap damage at 4.0% of NAV."
+     "thesis": "Highest-conviction single name, held at 16% into the 4 August pre-open print, and the read-across got materially better since I sized it. Valero reported after I set this book with adjusted EPS of $12.54 against $9.87-10.03 consensus, a 27% surprise, and then guided Q3 refining margins and capture rates ABOVE Q2 on improved feedstock as delivered crude moves to discounts rather than premiums to benchmark. That is a same-quarter, same-driver confirmation from the closest comparable. MPC consensus has firmed to $13.26 EPS, +235% y/y, on roughly $42bn revenue, with management having front-loaded about 40% of annual turnarounds into Q1 specifically to run 2.99mb/d at ~94% utilisation into this window and the 3-2-1 crack at an all-time high above $59. I am not raising it despite the better read-across, because VLO's beat has already moved MPC from $308.72 to ~$314 and I would rather diversify the crack bet than concentrate more capital into one binary date. The -25% stop caps single-name earnings-gap damage at 4.0% of NAV."
+    },
+    {
+     "symbol": "VLO",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 22.0,
+     "thesis": "New leg, funded out of ERX, and the point of it is that it carries the same driver as MPC with the binary event already behind it. Valero just beat Q2 by 27% at $12.54 adjusted EPS on $44.5bn revenue and management explicitly guided Q3 refining margins and capture rates stronger than Q2 \u2014 I am buying a pure-play refiner whose CEO has already told me the next quarter is better, into an all-time-high 3-2-1 crack above $59 with distillate and jet cracks at records. The structural reason I want refining rather than more crude beta is that the crack is driven by capacity shortage \u2014 Ukrainian strikes on Russian refineries, permanent closures, drawn-down jet and gasoline stores \u2014 not by Hormuz. That means it partially survives the one scenario that kills the rest of this book: on a durable ceasefire, crude collapses and ERX halves the move twice over, but refiners get cheaper feedstock against sticky product prices and cracks can widen before they narrow. So this is the closest thing to a hedge I own that is still inside the mandate. Sized at 10% with a -22% stop, capping the leg at 2.2% of NAV."
+    },
+    {
+     "symbol": "JETS",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 8,
+     "stop_loss_pct": 20.0,
+     "take_profit_pct": 30.0,
+     "thesis": "The funding short, rebuilt correctly. This is the mirror image of the MPC and VLO longs \u2014 the record crack spread that those two capture is precisely the cost that airlines pay, so the same fact pattern drives both sides and the pairing is internally consistent in a way the XLY short never was. Jet fuel has roughly doubled since the February strikes and is up about 130% y/y, fuel runs to a quarter of airline operating expense, Spirit has already ceased operations after its rescue collapsed, and Frontier and Avelo are asking for a $2.5bn federal liquidity pool plus suspension of the ticket excise tax. The bailout is my main squeeze risk and it has been publicly rejected \u2014 Transportation Secretary Duffy said private funding is preferable and there is no need, and Congress has shown little appetite \u2014 which is why I am willing to short a sector that has already fallen. And it has not stayed fallen: JETS is around $31.86 against a 52-week range of $22.91-33.98, so I am shorting near the highs, not into a hole. It is also high-beta broad-market protection, my only real cover if the AI melt-up that took the Nasdaq to 25,373 on Friday reverses. Sized at only 8% rather than the 17% the old short carried, because it is directionally additive to the energy bet rather than a hedge against it, and because a surprise bailout headline gaps it. 3% APR borrow, an ETF so no single-name earnings squeeze, -20% stop capping the leg at 1.6% of NAV and +30% take-profit."
     },
     {
      "symbol": "DOGE",
@@ -3771,7 +3889,7 @@
      "leverage": 3,
      "stop_loss_pct": 50.0,
      "take_profit_pct": 90.0,
-     "thesis": "Small convexity leg on an engine asymmetry that still holds: short perps pay zero funding while long perps pay leverage x 10% APR, so the leverage here is free. DOGE is $0.0702, down 0.6% on the day, still pinned at the bottom of its range with no participation in any crypto bounce \u2014 the worst cross-sectional performer in the asset class. Loss is hard-capped at the 3% margin; the -50% stop and +90% take-profit (DOGE -30%) give roughly 1.8:1. Trimmed one point to fund the energy core."
+     "thesis": "Small convexity leg on an engine asymmetry that still holds and is unchanged: short perps pay zero funding while long perps pay leverage x 10% APR, so this leverage is genuinely free. DOGE is still around $0.070, has not participated in any crypto bounce, and remains the worst cross-sectional performer in the asset class. Loss is hard-capped at the 3% margin and the -50% stop caps it at 1.5% of NAV; the +90% take-profit corresponds to DOGE -30% for roughly 1.8:1. Held untouched at the same size \u2014 nothing about it changed in one session and resizing a 3% leg would cost more in attention than it could possibly earn."
     }
    ],
    "series": {
@@ -3779,65 +3897,46 @@
     "2026-07-28": 997.89,
     "2026-07-29": 1002.53,
     "2026-07-30": 1003.09,
-    "2026-07-31": 997.22
+    "2026-07-31": 998.57,
+    "2026-08-01": 996.36,
+    "2026-08-02": 996.69,
+    "2026-08-03": 980.15
    }
   },
   "Opus 5 vol regime": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Classified the current tape as a calm-index / high-dispersion regime (SPY 20d realized vol 11.65%, 34th percentile of two years, 10d/60d term ratio 0.80, versus QQQ 23.66% and XLK 30.67% at the ~80th percentile, and an implied-correlation proxy that has fallen from 0.54 to 0.34), and sized the book to that state: 60% in vol-targeted low-vol equity (USMV, SPLV) rather than the high-vol tech complex, 12% in SVXY to harvest the ~7-point gap between VIX 18.6 and SPY realized 11.65, a delta-neutral short-gamma pair of equal short TQQQ and short SQQQ to collect leveraged-ETF compounding decay, and 5% VIXY as convex crash insurance with a take-profit that monetises a spike.",
-   "nav": 999.74,
-   "growth_pct": -0.03,
+   "nav": 1001.04,
+   "growth_pct": 0.1,
    "max_drawdown_pct": -0.63,
-   "gross_exposure_pct": 98,
-   "n_positions": 6,
-   "cash_pct": 2,
+   "gross_exposure_pct": 84,
+   "n_positions": 3,
+   "cash_pct": 16,
    "positions": [
     {
      "symbol": "USMV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 44,
+     "weight_pct": 46,
      "stop_loss_pct": 14.0,
-     "thesis": "Min-volatility equity core, upsized from 36% because it is the single best-confirmed leg in the book. On 29-Jul it fell 0.21% against SPY -1.54%, SMH -4.79% and QQQ -2.04% \u2014 a 14% downside capture on a real risk-off day, and it closed within 1% of its 52wk high while the index sold off. 20d realized vol 9.97% vs SPY 11.65% and QQQ 23.66%; beta 0.66. The vol-target rule still permits close to full equity size because a 74% low-vol core running 10-15% realized vol sits under my vol budget even with index implied at 20.66. Sell-side is flagging that low-vol is 'having a moment after a long stretch of underperformance,' which means the rotation is early, not exhausted. The 14% stop is a regime-break brake, not a trading stop, and at 44% weight it caps this leg's loss near -6% of NAV."
+     "thesis": "I attacked this leg with the strongest objection available and it survived, which is why it grows rather than shrinks. The objection: iShares' own page shows USMV at 31.82% Information Technology, seemingly absurd in a book whose central claim is that the tech/semi complex is the source of the tape's volatility, and SPLV's YTD +9.5% against USMV's +4.63% says the market agrees. The rebuttal is that the sector label conflates two unlike things \u2014 MSCI's minimum-volatility optimizer explicitly excludes high-volatility constituents, so USMV's tech weight sits in low-beta software, services and payments, not semiconductors. That is not theory: on 29-Jul USMV fell 0.21% while SMH fell 4.79% and SPY fell 1.54%. No fund with genuine semi exposure posts a 14% downside capture on a day the semis drop nearly 5%. So USMV's low measured vol is real rather than an artifact, and it is also the leg with the lowest rate sensitivity in my core at just 6.96% utilities, which matters now that the 10y is at 4.75%. 20d realized vol 9.97% against SPY 11.65%; 3yr beta 0.49 per the issuer; expense 0.15%. Upsized from 44% because closing two negative-carry legs freed budget and this is the position I have the most direct evidence for. The -14% stop is a regime-break brake rather than a trading stop, capping this leg near -6.4% of NAV."
     },
     {
      "symbol": "SPLV",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 30,
+     "weight_pct": 32,
      "stop_loss_pct": 16.0,
-     "thesis": "Second low-vol sleeve, raised from 24%. Its value here is construction diversity from USMV: SPLV is a pure S&P-500 low-vol screen whose top holdings are Loews, FirstEnergy and J&J, giving it essentially zero semiconductor exposure at the exact moment the tape's stress is 'chip worries spreading' and Morgan Stanley is calling a hard remainder of 2026 for semis. Fell 0.55% on a SPY -1.54% day, 36% downside capture. Yields 2.09% vs USMV's 1.47%, so it also pays me to wait. Kept smaller than USMV because its 20d realized vol of 14.88% is meaningfully higher, and the vol-target rule tilts the core toward the lower-vol construction. Stop kept wider at 16% to match that higher vol."
-    },
-    {
-     "symbol": "TQQQ",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 7,
-     "thesis": "Short-gamma leg, cut from 10% after an honest re-check of its economics. The leveraged-ETF compounding decay is real and running fast \u2014 TQQQ fell 6.19% on a QQQ -2.04% day, worse than a naive 3x, and QQQ realized vol at the 80th percentile accelerates the drag since decay scales with sigma-squared. But my own backtest mean of +0.29% of notional per 63 sessions annualises to ~1.2%, which does not clear the 3% APR borrow on each leg, against a worst 63-day of -27.76% of notional. So this is roughly a break-even carry with a fat left tail and it gets sized down, not up. It stays in the book at reduced size because it is the only leg that is long realized vol in the Nasdaq complex without taking directional risk, which is the regime call itself. Deliberately carries NO stop: it is one half of a hedged pair and an individual stop converts the structure into a naked directional short at the worst possible moment."
-    },
-    {
-     "symbol": "SQQQ",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 7,
-     "thesis": "Equal-notional opposite leg, cut from 10% alongside TQQQ. The pair proved its neutrality on 29-Jul: TQQQ -6.19% and SQQQ +6.30% meant the equal-notional short lost only 0.11% of notional (about -0.01% of NAV) on one of the largest trend days of the quarter. Short TQQQ carries roughly -3 delta on QQQ and short SQQQ roughly +3, so P&L is the joint decay of both funds \u2014 a carry paid by chop and taxed by trend. At 7+7 the realistic bad case is around -3.9% of NAV versus -5.6% at the old sizing, which is the right price for a leg whose expected return is close to its financing cost. No individual stop, for the same structural reason as the TQQQ leg."
-    },
-    {
-     "symbol": "SVXY",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 6,
-     "stop_loss_pct": 20.0,
-     "thesis": "Variance-risk-premium harvest, halved from 12%. The premium is nominally WIDER than when I put the book on \u2014 VIX 20.66 against SPY realized of roughly 13-14% \u2014 and the dispersion regime structurally supports short INDEX vol, because offsetting mega-cap moves (MSFT +8.8%, META -7.5%) mechanically damp index realized even while single-stock variance explodes. That is the real mechanism and it argues for keeping the leg. But short vol into a VIX that just jumped 13.5% in a session, with AAPL and AMZN reporting tonight, NVDA on 26-Aug and an unresolved China-AI narrative, is the wrong entry timing: the first spike off a low base is often followed by a larger one. Halving the size and tightening the stop from -25% to -20% keeps the carry alive while capping the leg's contribution near -1.2% of NAV, versus -3% under the old sizing."
+     "thesis": "Held for the concentration USMV structurally cannot provide: 1.78% technology versus USMV's 31.82%, because SPLV is an unconstrained screen of the 100 lowest-volatility S&P 500 names while USMV must normalize to its parent index's sector weights. That makes SPLV the only sleeve in the book with essentially zero semiconductor exposure at the moment my regime call identifies semis as the vol source, which is why it belongs alongside USMV rather than instead of it \u2014 the two funds fail in different states, and owning both is the actual diversification. The live objection is rates: ~25.4% utilities into a 10y at 4.75%, its highest since January 2025, on an oil-driven inflation impulse. I checked whether that is biting and it is not \u2014 SPLV is +9.5% YTD and +3.92% over the past month, trading within about 1% of its 52-week high straight through the rate move, so the market is treating these as defensives rather than bond proxies. The ~2.2% yield also pays me to wait, roughly a point better than USMV. Kept smaller than USMV because its 20d realized vol of 14.88% is half again USMV's and my vol-target rule tilts the core toward the lower-vol construction. The stop stays wider at -16% precisely so ordinary rate noise in the utility sleeve cannot stop me out of a position I hold for its tech-free composition."
     },
     {
      "symbol": "VIXY",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 4,
+     "weight_pct": 6,
      "take_profit_pct": 50.0,
-     "thesis": "Convex left-tail hedge on a 74% low-vol equity core, trimmed from 5% and with the take-profit recalibrated from +90% to +50%. The trim reflects that the position already did its job \u2014 VIXY gained 6.07% on 29-Jul \u2014 and that buying more vol insurance after the pop, in a fund that bleeds 43.8% a year to contango, is paying up for a hedge post-event. The TP change is the more important edit: from an already-elevated VIX 20.66 base, a +90% move requires a 2024-style dislocation, whereas +50% (VIXY around $34, VIX in the high-20s to 30) is a genuine stress event I can realistically convert into cash rather than round-trip. No stop, because a stop on insurance defeats the purpose. This leg plus SVXY's reduced size is what lets me carry a 74% equity core with net portfolio beta near 0.45."
+     "thesis": "Sized up from 4% as the exact inverse of the reasoning that made me trim it a session ago. On 30-Jul I cut this leg because adding vol insurance at VIX 20.66 immediately after a 13.5% spike is paying up for a hedge post-event. VIX has since collapsed to roughly 16, so the identical protection is about 22% cheaper in VIX terms \u2014 while the risk it protects against grew materially, with $100 oil, an escalating Middle East conflict, the 10y at a 19-month high of 4.75% and Fed speakers reinforcing higher-for-longer. Selling insurance when it is expensive and buying it when it is cheap is the entire discipline; doing the reverse is how vol books die. This is now the book's only long-volatility expression, replacing the short TQQQ/SQQQ pair, and it is a strictly better one: it is genuinely convex and costs a known contango bleed rather than an unknown trend tax with a -27.76% tail. That bleed is real at roughly 43.8%/yr, about 0.22% of NAV per month at this weight, and it is the price of letting me carry a 78% equity core into a fattening macro tail. The +50% take-profit is unchanged and still correctly calibrated after the reset: off the lower futures basis it corresponds to VIX in the high-20s to 30, a genuine dislocation worth converting into cash rather than round-tripping. No stop, because stopping out of insurance at the moment it is losing money is the one thing insurance must never do."
     }
    ],
    "series": {
@@ -3845,73 +3944,67 @@
     "2026-07-28": 1005.87,
     "2026-07-29": 1002.6,
     "2026-07-30": 999.54,
-    "2026-07-31": 999.74
+    "2026-07-31": 999.74,
+    "2026-08-01": 999.65,
+    "2026-08-02": 999.64,
+    "2026-08-03": 1001.04
    }
   },
   "Opus Broadening": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
-   "nav": 977.78,
-   "growth_pct": -2.22,
+   "nav": 979.67,
+   "growth_pct": -2.03,
    "max_drawdown_pct": -4.0,
-   "gross_exposure_pct": 62,
-   "n_positions": 6,
-   "cash_pct": 38,
+   "gross_exposure_pct": 60,
+   "n_positions": 5,
+   "cash_pct": 40,
    "positions": [
     {
-     "symbol": "TQQQ",
+     "symbol": "SMH",
      "kind": "equity",
-     "side": "short",
-     "weight_pct": 15,
-     "thesis": "Now the largest position, up from 6%. QQQ sits 11.6% below its 52-week high but TQQQ sits 34.4% below its - roughly three points of underperformance per point of drawdown, which is volatility drag on top of beta and accrues whether or not the Nasdaq falls further. Realized vol just exploded (TQQQ -6.19% on 7/29), maximizing that drag; 30-year yields at 2007 highs compress megacap multiples; shorts pay no funding and borrow is only 3% APR. Also converts my long software book into a relative-strength bet rather than a directional one.",
-     "stop_loss_pct": 30.0,
-     "take_profit_pct": 40.0
+     "side": "long",
+     "weight_pct": 20,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 35.0,
+     "thesis": "New, and the largest position. Corrects a mandate gap \u2014 my mandate names semis as a long sector and I owned none while being short them. On twelve-month-minus-one-month momentum, semis rank first in my universe: SOXQ +99% YTD, SMH +93% off its 52-week low, and July's pullback is exactly the recent-month reversal that momentum construction skips. The catalyst is fundamental, not a squeeze: hyperscalers raised 2026 capex to a combined $720-745B, Microsoft and Amazon both beat on cloud, and Samsung guided that the memory shortage runs into 2028. Taken via the diversified ETF at 2bps rather than Micron at $903 after a $744-$911 single-session range, because I want the sector signal without single-name gap risk. Stopped at -18% because it is still 20% below its June high and the complex is trading with 15-20% weekly swings."
     },
     {
      "symbol": "SNOW",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 13,
-     "thesis": "Promoted to anchor long from 8%. At 96% of its 52-week range and up 4.64% on a day the Dow fell over 1,000 points - the single strongest relative-strength reading in my universe. Cortex AI Gateway positions it as the governance layer for enterprise AI agents, Wells Fargo raised its target to $500, and it is software rather than semiconductor AI exposure, so it is on the right side of the capex unwind. Earnings 8/26.",
+     "weight_pct": 14,
      "stop_loss_pct": 22.0,
-     "take_profit_pct": 45.0
+     "take_profit_pct": 45.0,
+     "thesis": "Held as the software anchor, nudged 13 to 14. Still the best relative-strength reading in software at 96% of its 52-week range, and it rose 4.64% on the day the Dow fell over 1,000 points. Mizuho channel checks into the quarter are favorable, citing data modernization, Snowflake Intelligence and Cortex adoption. It is software rather than silicon, so it participates in the AI capex upgrade through consumption without carrying the hardware cycle. Earnings 8/26 \u2014 the stop is live because a 96%-of-range name has no valuation cushion into a print."
     },
     {
      "symbol": "PANW",
      "kind": "equity",
      "side": "long",
      "weight_pct": 12,
-     "thesis": "Held at 12%. At 88% of its 52-week range with Capital One upgrading to Overweight and BofA and Tigress at $420 and $430. Security spending is budget-protected and decoupled from the semiconductor capex cycle that is rolling over. The stop is real because a 274 P/E is fragile with the long end at two-decade highs, and earnings land 8/17.",
      "stop_loss_pct": 20.0,
-     "take_profit_pct": 45.0
-    },
-    {
-     "symbol": "SOXL",
-     "kind": "equity",
-     "side": "short",
-     "weight_pct": 10,
-     "thesis": "Trimmed from 12% - taking profit rather than pressing. The structural case is intact and improving: SMH fell 4.79% and SOXL fell 16.02%, the daily-reset decay engine at full speed, and semis face China chipmaking competition, an SK Hynix miss and a Morgan Stanley warning through year-end. But a single -16% session is precisely where a 3x fund squeezes, and JPMorgan is already calling for a buying opportunity, so I bank part of the leg and widen the stop to survive a gap.",
-     "stop_loss_pct": 38.0,
-     "take_profit_pct": 45.0
-    },
-    {
-     "symbol": "CRWD",
-     "kind": "equity",
-     "side": "long",
-     "weight_pct": 7,
-     "thesis": "Cut from 12% on decaying momentum - 71% of its 52-week range and 17.5% below its high, materially weaker than SNOW or PANW on the same measure. Kept because the fundamental case still stands (revenue +23%, Citi $250, BofA $230, Cerebras and Schwarz Digits partnerships) and it rallied 1.90% after hours, but the mandate ranks names cross-sectionally and this one has slipped in the ranking.",
-     "stop_loss_pct": 20.0,
-     "take_profit_pct": 40.0
+     "take_profit_pct": 45.0,
+     "thesis": "Unchanged at 12%. At 88% of its 52-week range with favorable Mizuho checks on subscription and product revenue, and security budgets are the least discretionary line in enterprise software. Nothing in the capex news changes the case either way, so I leave it alone rather than pay costs to restate it. The stop stays real because a 274 P/E is the wrong thing to own outright with the 30-year at 5.22% and three Fed officials dissenting toward a hike, and earnings land 8/17."
     },
     {
      "symbol": "ORCL",
      "kind": "equity",
      "side": "short",
-     "weight_pct": 5,
-     "thesis": "Trimmed from 6%. Still the clearest persistent software laggard - $117.74, sitting on its 52-week low of $114.50 and 66% below its high on AI-capex funding fear, with one analyst flagging a potential $500B capital requirement. But shorting at the exact 52-week low against a $248 consensus target and a fresh $7B Department of War contract is late, so I keep only a core leg and pull the take-profit in to +25%.",
+     "weight_pct": 8,
      "stop_loss_pct": 20.0,
-     "take_profit_pct": 25.0
+     "take_profit_pct": 25.0,
+     "thesis": "Upsized 5 to 8 \u2014 the one short where the week's news cuts my way rather than against me. The semiconductor reversal rescued SOXL but not Oracle: higher industry capex makes Oracle's problem worse, because it is the one participant that must borrow to build. Roughly $130B of debt, about 300% debt-to-equity, FY27 capex heading toward $95B and a planned $40B debt-and-equity raise, all to service a $638B backlog the market does not believe converts to cash \u2014 down 64% in ten months. That is a persistent laggard with a mechanical reason to keep lagging. Take-profit kept modest at +25% because it is already near its low against a far higher consensus target, so this is a core short, not a press."
+    },
+    {
+     "symbol": "HOOD",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 6,
+     "stop_loss_pct": 25.0,
+     "take_profit_pct": 30.0,
+     "thesis": "New short, and the logical completion of last week's exit. I sold it as a long because it sits 42% below its high at just 29% of its 52-week range despite a record quarter \u2014 revenue $1.31B up 32%, EPS $0.62 against $0.43 expected. Under a losers-keep-losing mandate, a name that cannot rally on a blowout beat is not merely a non-leader, it is the cleanest short signal available, and it keeps the short leg inside my mandated software/semis/fintech universe. Sized small at 6% with a wide -25% stop because it is a high-beta retail and crypto proxy that squeezes violently in a melt-up, which is precisely the tape I am now long semis into."
     }
    ],
    "series": {
@@ -3929,15 +4022,18 @@
     "2026-07-28": 977.21,
     "2026-07-29": 991.38,
     "2026-07-30": 972.15,
-    "2026-07-31": 977.78
+    "2026-07-31": 977.78,
+    "2026-08-01": 977.65,
+    "2026-08-02": 977.67,
+    "2026-08-03": 979.67
    }
   },
   "Opus Momentum": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
-   "nav": 1001.08,
-   "growth_pct": 0.11,
+   "nav": 1000.54,
+   "growth_pct": 0.05,
    "max_drawdown_pct": -0.75,
    "gross_exposure_pct": 92,
    "n_positions": 10,
@@ -4032,15 +4128,18 @@
     "2026-07-28": 1005.75,
     "2026-07-29": 1000.49,
     "2026-07-30": 1006.25,
-    "2026-07-31": 1001.08
+    "2026-07-31": 1001.08,
+    "2026-08-01": 1000.89,
+    "2026-08-02": 1000.9,
+    "2026-08-03": 1000.54
    }
   },
   "Opus Picks-and-Shovels": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
-   "nav": 1028.99,
-   "growth_pct": 2.9,
+   "nav": 1033.07,
+   "growth_pct": 3.31,
    "max_drawdown_pct": -3.09,
    "gross_exposure_pct": 92,
    "n_positions": 7,
@@ -4118,16 +4217,19 @@
     "2026-07-28": 1007.77,
     "2026-07-29": 1002.26,
     "2026-07-30": 1032.33,
-    "2026-07-31": 1028.99
+    "2026-07-31": 1028.99,
+    "2026-08-01": 1028.88,
+    "2026-08-02": 1028.89,
+    "2026-08-03": 1033.07
    }
   },
   "Opus Quality Defensive": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
-   "nav": 995.88,
-   "growth_pct": -0.41,
-   "max_drawdown_pct": -2.92,
+   "nav": 986.19,
+   "growth_pct": -1.38,
+   "max_drawdown_pct": -3.62,
    "gross_exposure_pct": 86,
    "n_positions": 7,
    "cash_pct": 14,
@@ -4210,19 +4312,22 @@
     "2026-07-28": 996.4,
     "2026-07-29": 1002.15,
     "2026-07-30": 993.4,
-    "2026-07-31": 995.88
+    "2026-07-31": 994.07,
+    "2026-08-01": 995.34,
+    "2026-08-02": 994.96,
+    "2026-08-03": 986.19
    }
   },
   "Opus Value": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
-   "nav": 998.72,
-   "growth_pct": -0.13,
+   "nav": 1004.3,
+   "growth_pct": 0.43,
    "max_drawdown_pct": -3.58,
-   "gross_exposure_pct": 85,
+   "gross_exposure_pct": 87,
    "n_positions": 8,
-   "cash_pct": 15,
+   "cash_pct": 13,
    "positions": [
     {
      "symbol": "XLE",
@@ -4230,7 +4335,7 @@
      "side": "long",
      "weight_pct": 16,
      "stop_loss_pct": 15.0,
-     "thesis": "Raised 8->16% and now the anchor. It is the strongest relative-strength sector I can verify: +1.88% on a day the S&P fell 1.54%, +37.3% over one year, record refiner margins and oil supported by geopolitical tension. It also has genuinely low correlation to the semiconductor unwind driving every other drawdown in this book, so it is both the new trend and the diversifier."
+     "thesis": "Held at 16% and still the anchor. Crude gained more than 20% in July to roughly $85 WTI with Brent above $88, driven by Iranian attacks on tankers under US escort in the Strait of Hormuz and falling US inventories \u2014 the most strongly confirmed trend I can verify anywhere in my universe. It is also the one sleeve that benefits from the same inflation impulse that has pushed 30-year yields to their highest since 2007. Not raised further because a geopolitical premium can unwind on one ceasefire headline, which is what the 15% stop is for."
     },
     {
      "symbol": "GOOGL",
@@ -4238,8 +4343,8 @@
      "side": "long",
      "weight_pct": 13,
      "stop_loss_pct": 13.0,
-     "take_profit_pct": 35.0,
-     "thesis": "Raised 8->13%. Quality-momentum in its purest form: positive on a red tape, 16.7x earnings with trailing net income up 111% and revenue up 20%, a Strong Buy consensus with 27% implied upside, and materially less exposure to the AI hardware cycle that is currently cracking than any other mega-cap in the complex."
+     "thesis": "Held at 13%. Still quality-momentum in its purest form at roughly 17x earnings with trailing net income up 111% and revenue up 20%, and unlike Apple it carries no consumer-hardware cycle or China revenue cliff to guide down \u2014 the specific risk that just took 7.2% out of the other mega-cap in this book. Nothing about the thesis changed this week, so neither does the weight.",
+     "take_profit_pct": 35.0
     },
     {
      "symbol": "SCHD",
@@ -4247,7 +4352,7 @@
      "side": "long",
      "weight_pct": 12,
      "stop_loss_pct": 10.0,
-     "thesis": "Raised 11->12%. Quality-dividend carry is the sleeve that dampens drawdown and pays me while the leadership signal reforms; in a regime where the momentum factor itself is the thing breaking, getting paid to wait is a real edge rather than a consolation."
+     "thesis": "Held at 12%. Rising long yields are a mild headwind to dividend carry, but this sleeve exists to dampen drawdown while leadership reforms, and this week proves leadership is still reforming \u2014 a single session produced Amazon +15%, Apple -7.2% and an 8% semiconductor bounce. Getting paid to wait through that dispersion is the point, and trimming it to chase the same week's winner would be exactly backwards."
     },
     {
      "symbol": "QUAL",
@@ -4255,7 +4360,7 @@
      "side": "long",
      "weight_pct": 12,
      "stop_loss_pct": 12.0,
-     "thesis": "Raised 10->12%. High return-on-equity, low-leverage balance sheets are historically the part of the trend complex that holds up best when high-beta leadership cracks, which is exactly the transition now underway. It keeps me inside my factor mandate while shedding the semiconductor beta that broke it."
+     "thesis": "Held at 12%. With the 10-year above 4.7% and the 30-year at its highest level since 2007, high return-on-equity businesses with low leverage are the part of the equity complex least damaged by a repricing of the cost of capital, because they do not need the capital. It keeps me inside the factor mandate without rebuilding the high-beta exposure that broke it."
     },
     {
      "symbol": "JEPQ",
@@ -4263,7 +4368,7 @@
      "side": "long",
      "weight_pct": 10,
      "stop_loss_pct": 10.0,
-     "thesis": "Raised 9->10%. Option premium is richest precisely when realized volatility spikes the way it just did, so this sleeve's carry improves at the exact moment my directional sleeves are struggling. It is the most counter-cyclical income I can hold without leaving the mandate."
+     "thesis": "Held at 10%. Realized volatility in the mega-cap complex is elevated \u2014 Apple down 7.2% and Amazon up 15% in the same session \u2014 and written-call premium is richest exactly when that is true, so this sleeve's carry improves precisely as my directional sleeves get noisier. It remains the most counter-cyclical income available inside the mandate."
     },
     {
      "symbol": "SPLV",
@@ -4271,16 +4376,16 @@
      "side": "long",
      "weight_pct": 10,
      "stop_loss_pct": 10.0,
-     "thesis": "Raised 6->10%. A 16% single-day move in a 3x semiconductor fund is a volatility-regime signal, not noise, and low-volatility equity is the trend-compatible way to stay fully engaged with far less drawdown sensitivity than the high-beta sleeves I just cut."
+     "thesis": "Held at 10%. A 65% one-month collapse in a 3x semiconductor fund followed by an 8% single-day index bounce, alongside double-digit single-session moves in two of the largest companies in the world, is a volatility-regime signal rather than noise. Low-volatility equity is the trend-compatible way to stay fully engaged through a regime like that instead of retreating to cash."
     },
     {
-     "symbol": "AAPL",
+     "symbol": "AMZN",
      "kind": "equity",
      "side": "long",
-     "weight_pct": 6,
-     "stop_loss_pct": 10.0,
-     "take_profit_pct": 25.0,
-     "thesis": "Trimmed 8->6% with the stop tightened from 14% to 10% and the take-profit cut from 40% to 25%. It is still a real price leader trading near its 52-week high after touching a $5tn market cap, so trend rules say keep it, but it reports fiscal Q3 tomorrow at 41x with a consensus target of $322 below the $338 spot, which is a binary event with negative expected upside. Smaller size and a tight stop is how a trend follower owns a leader into a coin flip."
+     "weight_pct": 8,
+     "stop_loss_pct": 12.0,
+     "thesis": "New 8% position funded by the Apple exit and two points of cash. Q2 net sales rose 20% to $200.6bn with operating income up 43% and AWS growth accelerating to +36.7% on a $496bn backlog, and the stock rose about 15% \u2014 its largest single-day gain in over a decade \u2014 with Wells Fargo, Citi and Wedbush reiterating buys. That is a demonstrated relative-strength leader with quality confirmation rather than a valuation guess, and it expresses AI through cloud monetization rather than the hardware cycle that is still unstable. The 12% stop is deliberately tight because I am entering immediately after a gap and gaps can retrace.",
+     "take_profit_pct": 30.0
     },
     {
      "symbol": "SPMO",
@@ -4288,7 +4393,7 @@
      "side": "long",
      "weight_pct": 6,
      "stop_loss_pct": 12.0,
-     "thesis": "Cut hard from 14% to 6%. Its top ten is 51% of assets led by Micron 10.3%, NVIDIA 8.2% and Broadcom 6.8%, so it is currently a semiconductor bet wearing a momentum label, and it is already 16% below its 52-week high. The residual weight exists only so its own index reconstitution can mechanically rotate me out of the fading names and into the next leaders without my forecasting them."
+     "thesis": "Held at 6%. Semis bounced hard this week with SOXX +8% and Micron +18%, but that move is characterized as short covering and bargain hunting rather than fresh demand, so I neither add back the weight I cut nor cut further on a signal I do not trust in either direction. The residual exists so the index's own reconstitution mechanically rotates me out of fading names and into the next leaders without my having to forecast them."
     }
    ],
    "series": {
@@ -4306,7 +4411,10 @@
     "2026-07-28": 991.47,
     "2026-07-29": 980.36,
     "2026-07-30": 996.9,
-    "2026-07-31": 998.72
+    "2026-07-31": 998.72,
+    "2026-08-01": 998.63,
+    "2026-08-02": 998.64,
+    "2026-08-03": 1004.3
    }
   }
  }
