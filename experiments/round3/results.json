@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-08-03 21:42 UTC",
+ "updated_utc": "2026-08-04 21:42 UTC",
  "entry": "2026-07-17",
  "capital_usd": 1000.0,
- "as_of": "2026-08-03",
+ "as_of": "2026-08-04",
  "benchmarks": {
   "SPY ($1000)": {
-   "nav": 1019.35,
+   "nav": 1037.72,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 1000.0,
@@ -24,11 +24,12 @@
     "2026-07-31": 1005.03,
     "2026-08-01": 1005.03,
     "2026-08-02": 1005.03,
-    "2026-08-03": 1019.35
+    "2026-08-03": 1019.35,
+    "2026-08-04": 1037.72
    }
   },
   "BTC ($1000)": {
-   "nav": 981.99,
+   "nav": 990.4,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 998.37,
@@ -46,8 +47,9 @@
     "2026-07-30": 969.4,
     "2026-07-31": 968.62,
     "2026-08-01": 979.71,
-    "2026-08-02": 981.99,
-    "2026-08-03": 981.99
+    "2026-08-02": 979.39,
+    "2026-08-03": 990.4,
+    "2026-08-04": 990.4
    }
   }
  },
@@ -56,8 +58,8 @@
    "model": "fable",
    "group": "flagship",
    "strategy": "Rate-cycle rotation + carry + early trend-reversal, with stop discipline",
-   "nav": 1000.24,
-   "growth_pct": 0.02,
+   "nav": 1012.28,
+   "growth_pct": 1.23,
    "max_drawdown_pct": -1.08,
    "gross_exposure_pct": 80,
    "n_positions": 9,
@@ -155,16 +157,17 @@
     "2026-07-30": 1000.15,
     "2026-07-31": 994.99,
     "2026-08-01": 996.68,
-    "2026-08-02": 996.39,
-    "2026-08-03": 1000.24
+    "2026-08-02": 996.06,
+    "2026-08-03": 1001.7,
+    "2026-08-04": 1012.28
    }
   },
   "Fable Barbell": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
-   "nav": 994.89,
-   "growth_pct": -0.51,
+   "nav": 1002.66,
+   "growth_pct": 0.27,
    "max_drawdown_pct": -2.17,
    "gross_exposure_pct": 79,
    "n_positions": 8,
@@ -256,15 +259,16 @@
     "2026-07-31": 988.78,
     "2026-08-01": 988.71,
     "2026-08-02": 988.72,
-    "2026-08-03": 994.89
+    "2026-08-03": 994.89,
+    "2026-08-04": 1002.66
    }
   },
   "Fable Unconstrained": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
-   "nav": 1012.43,
-   "growth_pct": 1.24,
+   "nav": 1011.67,
+   "growth_pct": 1.17,
    "max_drawdown_pct": -0.91,
    "gross_exposure_pct": 67,
    "n_positions": 6,
@@ -333,15 +337,16 @@
     "2026-07-31": 1012.26,
     "2026-08-01": 1012.27,
     "2026-08-02": 1012.31,
-    "2026-08-03": 1012.43
+    "2026-08-03": 1012.43,
+    "2026-08-04": 1011.67
    }
   },
   "Opus-fleet deep value": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in sub-market-multiple, FCF-rich dividend payers (banks below book, energy, pharma, telecom, staples) with a small hedge shorting the most stretched growth cohort.",
-   "nav": 1018.83,
-   "growth_pct": 1.88,
+   "nav": 1019.39,
+   "growth_pct": 1.94,
    "max_drawdown_pct": -1.88,
    "gross_exposure_pct": 81,
    "n_positions": 7,
@@ -424,15 +429,16 @@
     "2026-07-31": 1021.88,
     "2026-08-01": 1021.72,
     "2026-08-02": 1021.72,
-    "2026-08-03": 1018.83
+    "2026-08-03": 1019.61,
+    "2026-08-04": 1019.39
    }
   },
   "Opus-fleet dividend growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated in 25+ year dividend aristocrats and quality dividend-grower ETFs with defensive staples/healthcare tilt, funded by strong free cash flow, harvesting 4% cash yield on the sleeve.",
-   "nav": 1007.98,
-   "growth_pct": 0.8,
+   "nav": 1008.79,
+   "growth_pct": 0.88,
    "max_drawdown_pct": -2.2,
    "gross_exposure_pct": 96,
    "n_positions": 10,
@@ -544,16 +550,17 @@
     "2026-07-31": 1010.92,
     "2026-08-01": 1010.78,
     "2026-08-02": 1010.79,
-    "2026-08-03": 1007.98
+    "2026-08-03": 1007.98,
+    "2026-08-04": 1008.79
    }
   },
   "Opus-fleet price momentum": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
-   "nav": 993.41,
-   "growth_pct": -0.66,
-   "max_drawdown_pct": -1.37,
+   "nav": 992.66,
+   "growth_pct": -0.73,
+   "max_drawdown_pct": -1.44,
    "gross_exposure_pct": 89,
    "n_positions": 6,
    "cash_pct": 11,
@@ -631,15 +638,16 @@
     "2026-07-31": 1000.75,
     "2026-08-01": 1000.54,
     "2026-08-02": 1000.55,
-    "2026-08-03": 993.41
+    "2026-08-03": 993.41,
+    "2026-08-04": 992.66
    }
   },
   "Opus-fleet quality compounders": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book of wide-moat, high-ROIC, net-cash compounders bought after a semis/mega-cap pullback, held to year-end.",
-   "nav": 1060.95,
-   "growth_pct": 6.09,
+   "nav": 1073.93,
+   "growth_pct": 7.39,
    "max_drawdown_pct": -1.83,
    "gross_exposure_pct": 94,
    "n_positions": 6,
@@ -707,15 +715,16 @@
     "2026-07-31": 1031.9,
     "2026-08-01": 1031.74,
     "2026-08-02": 1031.75,
-    "2026-08-03": 1060.95
+    "2026-08-03": 1060.95,
+    "2026-08-04": 1073.93
    }
   },
   "Opus-fleet small/mid-cap growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book in small/mid-cap cloud, AI-infra, and fintech compounders with secular demand, riding small-cap and software leadership while avoiding weak crypto.",
-   "nav": 1013.04,
-   "growth_pct": 1.3,
+   "nav": 1046.1,
+   "growth_pct": 4.61,
    "max_drawdown_pct": -10.29,
    "gross_exposure_pct": 82,
    "n_positions": 7,
@@ -803,15 +812,16 @@
     "2026-07-31": 989.35,
     "2026-08-01": 989.21,
     "2026-08-02": 989.23,
-    "2026-08-03": 1013.04
+    "2026-08-03": 1013.04,
+    "2026-08-04": 1046.1
    }
   },
   "Sonnet+tools deep value": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Global deep-value dividend payers: single-digit-to-low-teens P/E, near-book P/B, strong FCF, durable 6%+ dividends across tobacco, telecom, financials, pharma, autos, staples",
-   "nav": 1018.56,
-   "growth_pct": 1.86,
+   "nav": 1021.13,
+   "growth_pct": 2.11,
    "max_drawdown_pct": -2.6,
    "gross_exposure_pct": 77,
    "n_positions": 6,
@@ -890,15 +900,16 @@
     "2026-07-31": 1015.15,
     "2026-08-01": 1015.01,
     "2026-08-02": 1015.03,
-    "2026-08-03": 1018.56
+    "2026-08-03": 1019.18,
+    "2026-08-04": 1021.13
    }
   },
   "Sonnet+tools dividend growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, unleveraged basket of dividend aristocrats/kings and a curated dividend-growth ETF core, tilted to defensive staples/healthcare with an energy hedge",
-   "nav": 1001.51,
-   "growth_pct": 0.15,
+   "nav": 1004.06,
+   "growth_pct": 0.41,
    "max_drawdown_pct": -2.74,
    "gross_exposure_pct": 92,
    "n_positions": 8,
@@ -987,15 +998,16 @@
     "2026-07-31": 1006.85,
     "2026-08-01": 1006.86,
     "2026-08-02": 1006.87,
-    "2026-08-03": 1001.51
+    "2026-08-03": 1001.51,
+    "2026-08-04": 1004.06
    }
   },
   "Sonnet+tools price momentum": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long the strongest data-verified 12-1 momentum names/themes (AI-compute semis, AI power infra, financials/energy momentum); long-only after backtest showed shorting losers gets destroyed by squeeze reversals; oversized cash buffer against momentum-crash risk.",
-   "nav": 1018.1,
-   "growth_pct": 1.81,
+   "nav": 1026.27,
+   "growth_pct": 2.63,
    "max_drawdown_pct": -0.7,
    "gross_exposure_pct": 92,
    "n_positions": 7,
@@ -1083,15 +1095,16 @@
     "2026-07-31": 1016.45,
     "2026-08-01": 1016.44,
     "2026-08-02": 1016.45,
-    "2026-08-03": 1018.1
+    "2026-08-03": 1018.1,
+    "2026-08-04": 1026.27
    }
   },
   "Sonnet+tools quality compounders": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, equal-weight basket of ten wide-moat, high-ROIC compounders across payments, enterprise software/cloud, consumer, and pharma, unlevered with a 10% cash buffer.",
-   "nav": 1044.82,
-   "growth_pct": 4.48,
+   "nav": 1058.03,
+   "growth_pct": 5.8,
    "max_drawdown_pct": -2.21,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -1196,15 +1209,16 @@
     "2026-07-31": 1028.46,
     "2026-08-01": 1028.47,
     "2026-08-02": 1028.48,
-    "2026-08-03": 1044.82
+    "2026-08-03": 1044.82,
+    "2026-08-04": 1058.03
    }
   },
   "Sonnet+tools small/mid-cap growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
-   "nav": 998.22,
-   "growth_pct": -0.18,
+   "nav": 1043.96,
+   "growth_pct": 4.4,
    "max_drawdown_pct": -9.42,
    "gross_exposure_pct": 95,
    "n_positions": 8,
@@ -1301,15 +1315,16 @@
     "2026-07-31": 968.0,
     "2026-08-01": 967.91,
     "2026-08-02": 967.91,
-    "2026-08-03": 998.22
+    "2026-08-03": 998.22,
+    "2026-08-04": 1043.96
    }
   },
   "Haiku concentrated AI/technology": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Small-cap cyclical momentum with value rotation (TNA, IWD, XLE, XLI, XLF), selective tech exposure, rate hedging via short TLT and low-vol short.",
-   "nav": 1017.57,
-   "growth_pct": 1.76,
+   "nav": 1035.87,
+   "growth_pct": 3.59,
    "max_drawdown_pct": -3.33,
    "gross_exposure_pct": 81.0,
    "n_positions": 11,
@@ -1431,15 +1446,16 @@
     "2026-07-31": 1001.09,
     "2026-08-01": 1000.95,
     "2026-08-02": 1000.96,
-    "2026-08-03": 1017.57
+    "2026-08-03": 1017.44,
+    "2026-08-04": 1035.87
    }
   },
   "Haiku contrarian turnarounds": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Macro cycle bottoming via defensive rotation with disciplined exits on extended growth valuations and tactical oversold recovery positions",
-   "nav": 1035.79,
-   "growth_pct": 3.58,
+   "nav": 1038.65,
+   "growth_pct": 3.87,
    "max_drawdown_pct": -2.33,
    "gross_exposure_pct": 100,
    "n_positions": 8,
@@ -1519,16 +1535,17 @@
     "2026-07-30": 1023.99,
     "2026-07-31": 1019.98,
     "2026-08-01": 1023.8,
-    "2026-08-02": 1023.5,
-    "2026-08-03": 1035.79
+    "2026-08-02": 1022.52,
+    "2026-08-03": 1037.77,
+    "2026-08-04": 1038.65
    }
   },
   "Haiku deep value": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Momentum mean-reversion via sector rotation: short unsustainable momentum extremes (SOXL, TQQQ after 6-12 month runs), rotate into steady outperformers (energy, small-cap value, financials), amplify capitulation signals via crypto perps, enforce daily volatility stop discipline.",
-   "nav": 1011.64,
-   "growth_pct": 1.16,
+   "nav": 1015.56,
+   "growth_pct": 1.56,
    "max_drawdown_pct": -1.69,
    "gross_exposure_pct": 66.0,
    "n_positions": 9,
@@ -1632,16 +1649,17 @@
     "2026-07-30": 1007.23,
     "2026-07-31": 1009.23,
     "2026-08-01": 1010.04,
-    "2026-08-02": 1010.23,
-    "2026-08-03": 1011.64
+    "2026-08-02": 1010.04,
+    "2026-08-03": 1012.24,
+    "2026-08-04": 1015.56
    }
   },
   "Haiku dividend growth and income": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
-   "nav": 1004.36,
-   "growth_pct": 0.44,
+   "nav": 1009.07,
+   "growth_pct": 0.91,
    "max_drawdown_pct": -1.2,
    "gross_exposure_pct": 92.0,
    "n_positions": 10,
@@ -1737,15 +1755,16 @@
     "2026-07-31": 1000.72,
     "2026-08-01": 1000.67,
     "2026-08-02": 1000.67,
-    "2026-08-03": 1004.36
+    "2026-08-03": 1004.36,
+    "2026-08-04": 1009.07
    }
   },
   "Haiku global diversification via US-listed ADRs and ETFs": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
-   "nav": 1011.09,
-   "growth_pct": 1.11,
+   "nav": 1014.85,
+   "growth_pct": 1.48,
    "max_drawdown_pct": -0.42,
    "gross_exposure_pct": 91,
    "n_positions": 9,
@@ -1833,15 +1852,16 @@
     "2026-07-31": 1010.51,
     "2026-08-01": 1010.52,
     "2026-08-02": 1010.52,
-    "2026-08-03": 1011.09
+    "2026-08-03": 1011.29,
+    "2026-08-04": 1014.85
    }
   },
   "Haiku growth at a reasonable price": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
-   "nav": 1009.02,
-   "growth_pct": 0.9,
+   "nav": 1018.81,
+   "growth_pct": 1.88,
    "max_drawdown_pct": -1.53,
    "gross_exposure_pct": 70,
    "n_positions": 9,
@@ -1933,16 +1953,17 @@
     "2026-07-30": 1007.21,
     "2026-07-31": 1003.88,
     "2026-08-01": 1004.55,
-    "2026-08-02": 1004.46,
-    "2026-08-03": 1009.02
+    "2026-08-02": 1004.32,
+    "2026-08-03": 1009.24,
+    "2026-08-04": 1018.81
    }
   },
   "Haiku macro/sector rotation": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive quality rotation paired with sector mean-reversion in laggards, shorting QQQ momentum extremes to fund dividend-paying carry positions",
-   "nav": 1005.41,
-   "growth_pct": 0.54,
+   "nav": 1009.1,
+   "growth_pct": 0.91,
    "max_drawdown_pct": -1.25,
    "gross_exposure_pct": 87.9,
    "n_positions": 8,
@@ -2039,15 +2060,16 @@
     "2026-07-31": 1004.62,
     "2026-08-01": 1004.63,
     "2026-08-02": 1004.63,
-    "2026-08-03": 1005.41
+    "2026-08-03": 1005.41,
+    "2026-08-04": 1009.1
    }
   },
   "Haiku price momentum": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
-   "nav": 981.23,
-   "growth_pct": -1.88,
+   "nav": 1001.13,
+   "growth_pct": 0.11,
    "max_drawdown_pct": -3.87,
    "gross_exposure_pct": 100,
    "n_positions": 7,
@@ -2128,16 +2150,17 @@
     "2026-07-31": 972.26,
     "2026-08-01": 972.26,
     "2026-08-02": 972.26,
-    "2026-08-03": 981.23
+    "2026-08-03": 981.23,
+    "2026-08-04": 1001.13
    }
   },
   "Haiku quality compounders": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
-   "nav": 1002.03,
-   "growth_pct": 0.2,
-   "max_drawdown_pct": -1.48,
+   "nav": 994.64,
+   "growth_pct": -0.54,
+   "max_drawdown_pct": -2.2,
    "gross_exposure_pct": 79,
    "n_positions": 8,
    "cash_pct": 21,
@@ -2222,16 +2245,17 @@
     "2026-07-30": 1004.79,
     "2026-07-31": 1004.31,
     "2026-08-01": 1004.65,
-    "2026-08-02": 1004.72,
-    "2026-08-03": 1002.03
+    "2026-08-02": 1004.65,
+    "2026-08-03": 1002.29,
+    "2026-08-04": 994.64
    }
   },
   "Haiku small/mid-cap growth": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
-   "nav": 986.05,
-   "growth_pct": -1.4,
+   "nav": 987.23,
+   "growth_pct": -1.28,
    "max_drawdown_pct": -5.37,
    "gross_exposure_pct": 84.3,
    "n_positions": 7,
@@ -2309,16 +2333,17 @@
     "2026-07-30": 985.33,
     "2026-07-31": 979.89,
     "2026-08-01": 976.94,
-    "2026-08-02": 976.4,
-    "2026-08-03": 986.05
+    "2026-08-02": 977.05,
+    "2026-08-03": 983.96,
+    "2026-08-04": 987.23
    }
   },
   "Sonnet concentrated AI/technology": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
-   "nav": 1016.52,
-   "growth_pct": 1.65,
+   "nav": 1018.54,
+   "growth_pct": 1.85,
    "max_drawdown_pct": -2.91,
    "gross_exposure_pct": 85,
    "n_positions": 4,
@@ -2375,16 +2400,17 @@
     "2026-07-31": 1019.23,
     "2026-08-01": 1018.83,
     "2026-08-02": 1018.81,
-    "2026-08-03": 1016.52
+    "2026-08-03": 1015.62,
+    "2026-08-04": 1018.54
    }
   },
   "Sonnet contrarian turnarounds": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
-   "nav": 996.56,
-   "growth_pct": -0.34,
-   "max_drawdown_pct": -2.77,
+   "nav": 958.94,
+   "growth_pct": -4.11,
+   "max_drawdown_pct": -6.44,
    "gross_exposure_pct": 95,
    "n_positions": 8,
    "cash_pct": 5,
@@ -2475,16 +2501,17 @@
     "2026-07-31": 1001.64,
     "2026-08-01": 1001.53,
     "2026-08-02": 1001.51,
-    "2026-08-03": 996.56
+    "2026-08-03": 996.56,
+    "2026-08-04": 958.94
    }
   },
   "Sonnet deep value": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
-   "nav": 1002.82,
-   "growth_pct": 0.28,
-   "max_drawdown_pct": -1.5,
+   "nav": 990.8,
+   "growth_pct": -0.92,
+   "max_drawdown_pct": -2.68,
    "gross_exposure_pct": 89,
    "n_positions": 7,
    "cash_pct": 21,
@@ -2565,16 +2592,17 @@
     "2026-07-30": 1015.6,
     "2026-07-31": 1007.64,
     "2026-08-01": 1005.29,
-    "2026-08-02": 1004.82,
-    "2026-08-03": 1002.82
+    "2026-08-02": 1005.36,
+    "2026-08-03": 1001.08,
+    "2026-08-04": 990.8
    }
   },
   "Sonnet dividend growth and income": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
-   "nav": 1000.2,
-   "growth_pct": 0.02,
+   "nav": 1003.45,
+   "growth_pct": 0.34,
    "max_drawdown_pct": -2.84,
    "gross_exposure_pct": 83,
    "n_positions": 6,
@@ -2653,16 +2681,17 @@
     "2026-07-30": 997.69,
     "2026-07-31": 1004.04,
     "2026-08-01": 999.74,
-    "2026-08-02": 999.09,
-    "2026-08-03": 1000.2
+    "2026-08-02": 999.71,
+    "2026-08-03": 999.35,
+    "2026-08-04": 1003.45
    }
   },
   "Sonnet global diversification via US-listed ADRs and ETFs": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
-   "nav": 1000.02,
-   "growth_pct": 0.0,
+   "nav": 984.8,
+   "growth_pct": -1.52,
    "max_drawdown_pct": -3.61,
    "gross_exposure_pct": 75,
    "n_positions": 4,
@@ -2723,15 +2752,16 @@
     "2026-07-31": 1003.32,
     "2026-08-01": 1002.97,
     "2026-08-02": 1002.98,
-    "2026-08-03": 1000.02
+    "2026-08-03": 1000.02,
+    "2026-08-04": 984.8
    }
   },
   "Sonnet growth at a reasonable price": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
-   "nav": 997.99,
-   "growth_pct": -0.2,
+   "nav": 1000.23,
+   "growth_pct": 0.02,
    "max_drawdown_pct": -3.33,
    "gross_exposure_pct": 85,
    "n_positions": 8,
@@ -2814,16 +2844,17 @@
     "2026-07-31": 997.43,
     "2026-08-01": 997.42,
     "2026-08-02": 997.42,
-    "2026-08-03": 997.99
+    "2026-08-03": 997.99,
+    "2026-08-04": 1000.23
    }
   },
   "Sonnet macro/sector rotation": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
-   "nav": 998.91,
-   "growth_pct": -0.11,
-   "max_drawdown_pct": -1.53,
+   "nav": 994.55,
+   "growth_pct": -0.54,
+   "max_drawdown_pct": -1.96,
    "gross_exposure_pct": 87,
    "n_positions": 8,
    "cash_pct": 13,
@@ -2914,16 +2945,17 @@
     "2026-07-30": 1008.22,
     "2026-07-31": 1001.43,
     "2026-08-01": 1000.01,
-    "2026-08-02": 999.81,
-    "2026-08-03": 998.91
+    "2026-08-02": 999.98,
+    "2026-08-03": 998.67,
+    "2026-08-04": 994.55
    }
   },
   "Sonnet price momentum": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
-   "nav": 993.88,
-   "growth_pct": -0.61,
+   "nav": 989.98,
+   "growth_pct": -1.0,
    "max_drawdown_pct": -3.07,
    "gross_exposure_pct": 97,
    "n_positions": 8,
@@ -3020,15 +3052,16 @@
     "2026-07-31": 996.39,
     "2026-08-01": 996.31,
     "2026-08-02": 996.28,
-    "2026-08-03": 993.88
+    "2026-08-03": 994.2,
+    "2026-08-04": 989.98
    }
   },
   "Sonnet quality compounders": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
-   "nav": 1001.52,
-   "growth_pct": 0.15,
+   "nav": 1011.36,
+   "growth_pct": 1.14,
    "max_drawdown_pct": -2.73,
    "gross_exposure_pct": 68,
    "n_positions": 5,
@@ -3089,16 +3122,17 @@
     "2026-07-31": 998.22,
     "2026-08-01": 997.88,
     "2026-08-02": 997.91,
-    "2026-08-03": 1001.52
+    "2026-08-03": 1001.52,
+    "2026-08-04": 1011.36
    }
   },
   "Sonnet small/mid-cap growth": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
-   "nav": 1002.97,
-   "growth_pct": 0.3,
-   "max_drawdown_pct": -3.56,
+   "nav": 975.13,
+   "growth_pct": -2.49,
+   "max_drawdown_pct": -5.13,
    "gross_exposure_pct": 74,
    "n_positions": 5,
    "cash_pct": 26,
@@ -3162,15 +3196,16 @@
     "2026-07-31": 1006.02,
     "2026-08-01": 1005.96,
     "2026-08-02": 1005.97,
-    "2026-08-03": 1002.97
+    "2026-08-03": 1002.97,
+    "2026-08-04": 975.13
    }
   },
   "Opus 5 carry": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A 10-leg cross-asset carry book that earns spread and premium income rather than price appreciation - structured credit (JAAA/CLOZ), agency-MBS-vs-repo carry (NLY), EM currency and sovereign carry (EMLC/EMB), high-yield spread (SPHY), equity and VIX variance premium (SPYI/SVXY) and midstream distributions (AMLP) - funded by 13% cash at 4% APY, with the only short expressed as a 3%-margin 3x BTC perp because perp shorts pay 0% financing in this engine while equity shorts carry a ~7% all-in drag.",
-   "nav": 1004.54,
-   "growth_pct": 0.45,
+   "nav": 1003.58,
+   "growth_pct": 0.36,
    "max_drawdown_pct": -0.59,
    "gross_exposure_pct": 100,
    "n_positions": 6,
@@ -3233,17 +3268,18 @@
     "2026-07-30": 1006.06,
     "2026-07-31": 1006.78,
     "2026-08-01": 1004.87,
-    "2026-08-02": 1004.53,
-    "2026-08-03": 1004.54
+    "2026-08-02": 1004.93,
+    "2026-08-03": 1003.7,
+    "2026-08-04": 1003.58
    }
   },
   "Opus 5 dispersion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Equal-weight 51% long basket of twelve large caps screened for the highest idiosyncratic (residual-to-SPY) volatility and the lowest mutual correlation across eight sectors, hedged with a 47% short of the cap-weighted indices they sit in (28% SPY + 19% QQQ, the split that minimised residual volatility across five half-year windows), leaving 2% cash and roughly zero net index beta.",
-   "nav": 986.62,
-   "growth_pct": -1.34,
-   "max_drawdown_pct": -1.32,
+   "nav": 984.86,
+   "growth_pct": -1.51,
+   "max_drawdown_pct": -1.49,
    "gross_exposure_pct": 98.0,
    "n_positions": 11,
    "cash_pct": 2,
@@ -3346,15 +3382,16 @@
     "2026-07-31": 987.74,
     "2026-08-01": 987.59,
     "2026-08-02": 987.56,
-    "2026-08-03": 986.62
+    "2026-08-03": 986.62,
+    "2026-08-04": 984.86
    }
   },
   "Opus 5 event driven": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Every position is a discrete, tape-datable catalyst: five post-earnings-drift longs bought 1-2 sessions after a >6% up-gap on >2x normal volume in names already up >10% over 20 days (stop 10%, no take-profit, so the drift can run); five capitulation longs bought after a >6% down-gap in names already down >10% over 20 days (wide 18-22% stops); one merger-arb long in a stock whose realised volatility has collapsed to 6% annualised in a 1.8%-wide 40-session band; one pre-announcement-premium long into a projected report date; and a 6% SPY short as a partial beta offset, all sized from the measured per-trade edge rather than conviction.",
-   "nav": 999.42,
-   "growth_pct": -0.06,
+   "nav": 1003.0,
+   "growth_pct": 0.3,
    "max_drawdown_pct": -1.64,
    "gross_exposure_pct": 89,
    "n_positions": 9,
@@ -3441,15 +3478,16 @@
     "2026-07-31": 993.3,
     "2026-08-01": 993.17,
     "2026-08-02": 993.18,
-    "2026-08-03": 999.42
+    "2026-08-03": 999.42,
+    "2026-08-04": 1003.0
    }
   },
   "Opus 5 mean reversion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
-   "nav": 1021.16,
-   "growth_pct": 2.12,
+   "nav": 1032.53,
+   "growth_pct": 3.25,
    "max_drawdown_pct": -2.55,
    "gross_exposure_pct": 87,
    "n_positions": 8,
@@ -3536,16 +3574,17 @@
     "2026-07-31": 1003.05,
     "2026-08-01": 1002.96,
     "2026-08-02": 1002.96,
-    "2026-08-03": 1021.16
+    "2026-08-03": 1021.16,
+    "2026-08-04": 1032.53
    }
   },
   "Opus 5 pairs": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Six market-neutral relative-value pairs (WFC/BAC, TSM/KLAC, LOW/HD, MA/V, XLU/D and QUAL+IWF vs MTUM) chosen from a 150-symbol screen for a stretched 250-day log-spread z-score AND evidence of stationarity - at least 8 crossings of the spread's own mean in the past year, under 25% two-year drift and above 0.60 daily-return correlation - with each pair sized so its long and short betas cancel, leaving net SPY beta of +3.2% of NAV.",
-   "nav": 1006.94,
-   "growth_pct": 0.69,
-   "max_drawdown_pct": -0.06,
+   "nav": 1004.11,
+   "growth_pct": 0.41,
+   "max_drawdown_pct": -0.28,
    "gross_exposure_pct": 100.0,
    "n_positions": 11,
    "cash_pct": 0,
@@ -3636,15 +3675,16 @@
     "2026-07-31": 1004.57,
     "2026-08-01": 1004.43,
     "2026-08-02": 1004.39,
-    "2026-08-03": 1006.94
+    "2026-08-03": 1006.94,
+    "2026-08-04": 1004.11
    }
   },
   "Opus 5 seasonality": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A calendar-driven book sized off measured Jul-27-to-year-end window statistics computed over 2000-2025 daily history: overweight the sectors with the highest seasonal hit-rates into the Aug-Dec window (industrials, financials, regional banks, large-cap growth), hold gold and utilities as the measured Aug-Sep defensive/flow legs, short the two sleeves that most reliably lag the S&P over the same calendar window (developed non-US equity and intermediate Treasuries), and carry 7% cash as pre-committed dry powder for the Oct-1 and Nov-1 seasonal rotations.",
-   "nav": 1001.12,
-   "growth_pct": 0.11,
+   "nav": 1007.42,
+   "growth_pct": 0.74,
    "max_drawdown_pct": -1.36,
    "gross_exposure_pct": 94,
    "n_positions": 8,
@@ -3720,16 +3760,17 @@
     "2026-07-31": 994.27,
     "2026-08-01": 994.17,
     "2026-08-02": 994.16,
-    "2026-08-03": 1001.12
+    "2026-08-03": 1000.54,
+    "2026-08-04": 1007.42
    }
   },
   "Opus 5 trend following": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
-   "nav": 989.34,
-   "growth_pct": -1.07,
-   "max_drawdown_pct": -1.47,
+   "nav": 981.76,
+   "growth_pct": -1.82,
+   "max_drawdown_pct": -2.23,
    "gross_exposure_pct": 94.8,
    "n_positions": 10,
    "cash_pct": 8.2,
@@ -3826,17 +3867,18 @@
     "2026-07-30": 996.76,
     "2026-07-31": 996.19,
     "2026-08-01": 995.43,
-    "2026-08-02": 995.27,
-    "2026-08-03": 989.34
+    "2026-08-02": 995.43,
+    "2026-08-03": 988.83,
+    "2026-08-04": 981.76
    }
   },
   "Opus 5 unrestricted": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Concentrated bet on the 2026 oil-supply-shock rotation: ~53% effective energy exposure via 2x ERX plus refiner MPC, carried by low-correlation healthcare/financials/defense longs, hedged by a short in oil-taxed consumer discretionary and a small stopped short-DOGE perp, with 8% cash at 4%.",
-   "nav": 980.15,
-   "growth_pct": -1.99,
-   "max_drawdown_pct": -2.29,
+   "nav": 979.03,
+   "growth_pct": -2.1,
+   "max_drawdown_pct": -2.4,
    "gross_exposure_pct": 89,
    "n_positions": 6,
    "cash_pct": 17,
@@ -3899,16 +3941,17 @@
     "2026-07-30": 1003.09,
     "2026-07-31": 998.57,
     "2026-08-01": 996.36,
-    "2026-08-02": 996.69,
-    "2026-08-03": 980.15
+    "2026-08-02": 997.05,
+    "2026-08-03": 980.39,
+    "2026-08-04": 979.03
    }
   },
   "Opus 5 vol regime": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Classified the current tape as a calm-index / high-dispersion regime (SPY 20d realized vol 11.65%, 34th percentile of two years, 10d/60d term ratio 0.80, versus QQQ 23.66% and XLK 30.67% at the ~80th percentile, and an implied-correlation proxy that has fallen from 0.54 to 0.34), and sized the book to that state: 60% in vol-targeted low-vol equity (USMV, SPLV) rather than the high-vol tech complex, 12% in SVXY to harvest the ~7-point gap between VIX 18.6 and SPY realized 11.65, a delta-neutral short-gamma pair of equal short TQQQ and short SQQQ to collect leveraged-ETF compounding decay, and 5% VIXY as convex crash insurance with a take-profit that monetises a spike.",
-   "nav": 1001.04,
-   "growth_pct": 0.1,
+   "nav": 1008.71,
+   "growth_pct": 0.87,
    "max_drawdown_pct": -0.63,
    "gross_exposure_pct": 84,
    "n_positions": 3,
@@ -3947,15 +3990,16 @@
     "2026-07-31": 999.74,
     "2026-08-01": 999.65,
     "2026-08-02": 999.64,
-    "2026-08-03": 1001.04
+    "2026-08-03": 1001.04,
+    "2026-08-04": 1008.71
    }
   },
   "Opus Broadening": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Long the current cross-sectional momentum leaders in software/semis/fintech, short two persistent laggards, with per-name stops - betting winners keep winning and losers keep losing.",
-   "nav": 979.67,
-   "growth_pct": -2.03,
+   "nav": 996.78,
+   "growth_pct": -0.32,
    "max_drawdown_pct": -4.0,
    "gross_exposure_pct": 60,
    "n_positions": 5,
@@ -4025,15 +4069,16 @@
     "2026-07-31": 977.78,
     "2026-08-01": 977.65,
     "2026-08-02": 977.67,
-    "2026-08-03": 979.67
+    "2026-08-03": 979.67,
+    "2026-08-04": 996.78
    }
   },
   "Opus Momentum": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
-   "nav": 1000.54,
-   "growth_pct": 0.05,
+   "nav": 1005.01,
+   "growth_pct": 0.5,
    "max_drawdown_pct": -0.75,
    "gross_exposure_pct": 92,
    "n_positions": 10,
@@ -4131,15 +4176,16 @@
     "2026-07-31": 1001.08,
     "2026-08-01": 1000.89,
     "2026-08-02": 1000.9,
-    "2026-08-03": 1000.54
+    "2026-08-03": 1001.52,
+    "2026-08-04": 1005.01
    }
   },
   "Opus Picks-and-Shovels": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
-   "nav": 1033.07,
-   "growth_pct": 3.31,
+   "nav": 1046.9,
+   "growth_pct": 4.69,
    "max_drawdown_pct": -3.09,
    "gross_exposure_pct": 92,
    "n_positions": 7,
@@ -4220,16 +4266,17 @@
     "2026-07-31": 1028.99,
     "2026-08-01": 1028.88,
     "2026-08-02": 1028.89,
-    "2026-08-03": 1033.07
+    "2026-08-03": 1033.07,
+    "2026-08-04": 1046.9
    }
   },
   "Opus Quality Defensive": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
-   "nav": 986.19,
-   "growth_pct": -1.38,
-   "max_drawdown_pct": -3.62,
+   "nav": 977.26,
+   "growth_pct": -2.27,
+   "max_drawdown_pct": -4.5,
    "gross_exposure_pct": 86,
    "n_positions": 7,
    "cash_pct": 14,
@@ -4314,16 +4361,17 @@
     "2026-07-30": 993.4,
     "2026-07-31": 994.07,
     "2026-08-01": 995.34,
-    "2026-08-02": 994.96,
-    "2026-08-03": 986.19
+    "2026-08-02": 994.54,
+    "2026-08-03": 987.26,
+    "2026-08-04": 977.26
    }
   },
   "Opus Value": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Quality-momentum / trend-following: own demonstrated relative-strength leaders (momentum & quality factor ETFs + top above-200dma names) with income/quality ballast and hard stops.",
-   "nav": 1004.3,
-   "growth_pct": 0.43,
+   "nav": 1011.83,
+   "growth_pct": 1.18,
    "max_drawdown_pct": -3.58,
    "gross_exposure_pct": 87,
    "n_positions": 8,
@@ -4414,7 +4462,8 @@
     "2026-07-31": 998.72,
     "2026-08-01": 998.63,
     "2026-08-02": 998.64,
-    "2026-08-03": 1004.3
+    "2026-08-03": 1005.52,
+    "2026-08-04": 1011.83
    }
   }
  }
