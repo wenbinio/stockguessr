@@ -47,3 +47,66 @@ engine, context packs, and competes); curated-context herding in fleet legs
 variance; H2-leg same-close fill convention vs R2/R3 next-close convention;
 single price source (Yahoo); daily-close granularity favoring high leverage;
 dropped-ticker renormalization in R1.
+
+---
+
+# Amendment 2 — epoch-2 endpoint (pre-registered 2026-08-07)
+
+Adopted from the independent Fable design critique of 2026-08-07
+(`experiments/reviews/design_critique_2026-08-07.md`). Committed **before** the
+outcomes it governs have accrued: at the time of writing, prices run through
+the 2026-08-06 close and epoch 2 is five sessions old.
+
+## Why this amendment exists
+
+The original confirmatory endpoint scores Round 2 over its whole life,
+2026-07-16 to 2026-12-31. On 2026-07-30 every agent simultaneously received
+free internet, own-account visibility and unrestricted position sizing. The
+rules themselves (`experiments/round2/RULES.md`, "Consequences for the
+experimental design") forbid pooling across that boundary. The original
+endpoint therefore pools exactly what the rules say cannot be pooled, and it
+cannot be repaired after the fact by any statistical adjustment.
+
+## The endpoint, restated
+
+1. **Confirmatory endpoint (epoch 2 only)**: daily-return CAPM alpha vs SPY
+   over **2026-08-03 to 2026-12-31** — the first full session after the
+   epoch-2 books filled (2026-07-31) through final scoring. HAC (Newey-West)
+   standard errors, family-wise Romano-Wolf stepdown across all books in the
+   round. This is the only window on which an inferential claim may be made.
+2. **Epoch 1 (2026-07-16/17 to 2026-07-30)** is reported separately and
+   **descriptively only**. Eleven sessions cannot support inference and will
+   not be asked to.
+3. **The full-window ranking is demoted to descriptive.** It may be shown as a
+   tournament result — it is what actually happened to the money — but no
+   p-value, significance claim, or tier inference may be attached to it.
+
+## What this amendment concedes, permanently
+
+The treatment hit all 46 agents at once, so there is **no control arm**: the
+effect of free information and free sizing is confounded with whatever the
+market did after 2026-07-30, and no re-registration recovers it. The Round-3
+factorial tooling arm (5 Sonnet-with-tools vs 5 Opus-without-tools) measured a
+contrast that no longer exists; its pre-2026-07-30 data remains valid for that
+contrast and nothing after does. Cross-agent blinding ended on 2026-07-30 and
+is not reinstated, since the results are published continuously to a public
+hub; any post-epoch-2 herding is therefore uncontrolled and must be disclosed.
+
+## Binding procedural commitments
+
+- **Every interim statistical run is logged**, whether or not its result is
+  reported, in `experiments/reviews/analysis_runs.jsonl`: timestamp, script,
+  window, what was computed, and the result. Selective reporting is prevented
+  by making the unreported runs part of the record.
+- **Both directions of every persistence test are reported.** The 2026-08-07
+  critique found that R1→R2 rank correlation had been reported repeatedly
+  (rho = -0.049) while R1→R3 had never been computed (rho = +0.470). Any
+  persistence claim must state every pairing tested.
+- **Inference runs only from `tracker/stats.py`**, which implements this plan.
+  Ad-hoc t-statistics computed in a shell are descriptive only and must be
+  labelled as such. The 2026-08-07 critique found the orchestrator reporting
+  OLS t-statistics while citing this plan's HAC requirement; under HAC the
+  count of Round-2 books clearing |t| > 1.96 falls from 1 to 0.
+- **The desk is audited by an independent agent before December scoring**, in
+  the manner of the Round-1 forensic audit, covering repair discretion,
+  validation gaps and rule-amendment authorship.
