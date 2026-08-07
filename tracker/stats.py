@@ -38,7 +38,17 @@ RUNLOG = ROOT / "experiments" / "reviews" / "analysis_runs.jsonl"
 
 EPOCH2_START = "2026-08-03"   # first full session after the epoch-2 books filled
 B_BOOTSTRAP = 5000
-BLOCK = 5                      # stationary block length, ~1 trading week
+MIN_OBS_FWER = 30   # below this the block bootstrap is degenerate — refuse, do not guess
+
+
+def block_len(n: int) -> int:
+    """Block length scaled to sample size (~n^(1/3)). A fixed 5-day block on an
+    11-day sample gives ~2 blocks per draw: the resampled series is then so
+    autocorrelated that its HAC variance explodes, null t-statistics compress,
+    and ANY observed |t| above ~2 looks impossible. That is not conservatism,
+    it is a false-positive generator — it flagged one book at p=0.0002 on
+    2026-08-07 before this guard existed."""
+    return max(2, int(round(n ** (1 / 3))))
 SEED = 20260807                # fixed: the same run must reproduce
 
 
@@ -148,7 +158,7 @@ def analyse(rnd: int, start: str, end: str | None):
     return d, books, resids
 
 
-def romano_wolf(books, resids, b=B_BOOTSTRAP, block=BLOCK, seed=SEED):
+def romano_wolf(books, resids, b=B_BOOTSTRAP, seed=SEED):
     """Family-wise adjusted p-values by stationary-block bootstrap stepdown.
 
     Resamples whole date-blocks from the residual MATRIX, so every book is
@@ -160,6 +170,13 @@ def romano_wolf(books, resids, b=B_BOOTSTRAP, block=BLOCK, seed=SEED):
         return
     rng = random.Random(seed)
     n = min(len(r) for r in resids)
+    if n < MIN_OBS_FWER:
+        for bk in books:
+            bk["p_romano_wolf"] = None
+            bk["fwer_skipped"] = (f"only {n} common observations; the stepdown needs "
+                                  f">= {MIN_OBS_FWER} to have a usable null")
+        return {"skipped": True, "n": n}
+    block = block_len(n)
     R = [r[-n:] for r in resids]
     k = len(R)
     obs = [abs(books[i]["t_hac"]) for i in range(k)]
@@ -188,6 +205,8 @@ def romano_wolf(books, resids, b=B_BOOTSTRAP, block=BLOCK, seed=SEED):
         p = max(p, prev)          # enforce monotonicity down the stepdown
         prev = p
         books[i]["p_romano_wolf"] = round(p, 4)
+    return {"skipped": False, "n": n, "block": block,
+            "null_max_median": round(sorted(max(r) for r in null_max)[b // 2], 3)}
 
 
 def eff_bets(resids):
@@ -261,7 +280,7 @@ def main() -> int:
             print(f"round {rnd}: no book has enough observations in this window")
             record["results"][f"round{rnd}"] = {"error": "insufficient observations"}
             continue
-        romano_wolf(books, resids)
+        rw = romano_wolf(books, resids)
         rbar, eff = eff_bets(resids)
         books.sort(key=lambda x: -x["alpha_cum_pp"])
         window = f"{args.start} to {args.end or d['as_of']}"
@@ -274,14 +293,23 @@ def main() -> int:
         print(f"{'book':<44}{'alpha pp':>9}{'beta':>7}{'t(HAC)':>8}{'p_RW':>8}")
         for bk in books[:8]:
             print(f"  {bk['name'][:42]:<42}{bk['alpha_cum_pp']:>9.2f}{bk['beta_spy']:>7.2f}"
-                  f"{bk['t_hac']:>8.2f}{bk.get('p_romano_wolf', float('nan')):>8.3f}")
-        sig = [b for b in books if b.get("p_romano_wolf", 1) < 0.05]
-        print(f"  books surviving family-wise correction at 5%: {len(sig)} of {len(books)}"
-              + (f" — {', '.join(b['name'] for b in sig)}" if sig else ""))
+                  f"{bk['t_hac']:>8.2f}"
+                  + (f"{bk['p_romano_wolf']:>8.3f}" if bk.get('p_romano_wolf') is not None
+                     else f"{'n/a':>8}"))
+        if rw.get("skipped"):
+            sig = []
+            print(f"  FAMILY-WISE CORRECTION NOT RUN: only {rw['n']} common observations "
+                  f"(needs >= {MIN_OBS_FWER}). Alphas above are DESCRIPTIVE ONLY — no "
+                  f"significance claim may be drawn from this window.")
+        else:
+            sig = [b for b in books if (b.get("p_romano_wolf") or 1) < 0.05]
+            print(f"  null max-|t| median {rw['null_max_median']} (block {rw['block']}); "
+                  f"books surviving family-wise correction at 5%: {len(sig)} of {len(books)}"
+                  + (f" — {', '.join(b['name'] for b in sig)}" if sig else ""))
         record["results"][f"round{rnd}"] = {
             "window": window, "n_obs": n_obs, "n_books": len(books),
             "mean_pairwise_corr": round(rbar, 4), "effective_bets": round(eff, 2),
-            "n_surviving_fwer_5pct": len(sig),
+            "fwer": rw, "n_surviving_fwer_5pct": len(sig),
             "survivors": [b["name"] for b in sig],
             "books": [{k: (round(v, 4) if isinstance(v, float) else v)
                        for k, v in b.items()} for b in books],
