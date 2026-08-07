@@ -52,20 +52,14 @@
       "leverage": 3,
       "stop_loss_pct": 15.0,
       "thesis": "Crypto bear market continuation (-46% 12m, -33% YTD); short perp generates 10% APR funding yield on long exposure; natural hedge to tech concentration; liquidation risk managed at 95% margin; recent weakness and ETF outflows confirm bear thesis"
-    },
-    {
-      "symbol": "CASH",
-      "kind": "equity",
-      "side": "long",
-      "weight_pct": 21.76,
-      "thesis": "Elevated cash raised for Fed policy uncertainty; SOXL stop loss freed capital; flexibility for sector rotation opportunities"
     }
   ],
-  "cash_pct": 32,
+  "cash_pct": 53.76,
   "rules_epoch": "unrestricted-retail-2026-07-30",
   "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): XBI biotech rally has reached 5-year highs (25-30% YTD) making partial profit-taking prudent; KRE regional banks downgraded with Fed easing catalyst exhausted and rate hikes expected\u2014trimming to manage downside. BTC short thesis working exceptionally (down 33% YTD), increasing allocation to maximize carry yield (10% APR on long perps) while serving as natural tech hedge. Maintaining IWM small-cap breadth as secondary strength, keeping Japan (EWJ) for structural reform diversification, and raising cash to 32% for Fed policy uncertainty. SOXL stop loss (fired 2026-07-28) freed capital; now repositioning allocation.",
   "novelty": "Round 3 dramatically rotates away from Round 2's cloud/AI/fintech concentration into biotech/banking/crypto shorts sector rotation; IWM appears in both (13% R2 vs 18% R3) representing only 13% overlap relative to R2 gross weight, well below 50% novelty threshold; short hedges and Japan diversification represent fundamentally different risk/return profile than pure growth/leverage positioning",
   "r2_overlap_pct": 18.0,
   "research_notes": "Market research shows: ARKK outperforming TQQQ significantly (41.61% YTD vs 21.88%); Russell 2000 IWM having best year since 2003 (+22% YTD) as investors price AI disruption into small-cap unprofitable names; cloud/SaaS valuations beaten down (DDOG, MDB, SNOW) despite intact secular tailwinds; CRWD showing strong AI inflection momentum with raised FY26 guidance. Round 3: XBI biotech rally approached 5-year highs (25-30% YTD) on M&A and clinical trial recovery; KRE regional banks downgraded as Fed easing catalyst exhausted and rate hikes expected; BTC down 33% YTD making short perp highly profitable with strong 10% APR carry yield; EWJ Japan continues outperformance (31.7% trailing 12m) driven by corporate governance reforms and capital return acceleration; SOXL stop loss fired 2026-07-28, freeing capital.",
-  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 32; scaled by 0.6800 to sum to 68 (relative sizing preserved, declared cash kept)"
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 32; scaled by 0.6800 to sum to 68 (relative sizing preserved, declared cash kept) | Desk correction 2026-08-07 (desk error, not the manager's): a 21.76% position in 'CASH' was registered as an equity and filled as a real listed security (Pathward Financial), though the manager's own thesis describes cash. Reallocated to cash_pct. Resulting cash_pct 53.76%. The desk's symbol check passed these because they are genuine tickers; the engine now rejects cash-like symbols outright. AMBIGUITY DISCLOSED: this manager stated cash twice \u2014 as cash_pct AND as a position \u2014 so two readings exist. (a) total cash = cash_pct + the mis-typed leg, which is what has been applied because it changes ONLY the provably wrong leg and leaves every other position exactly as the manager sized it; (b) the position was a redundant restatement of cash_pct, which would require re-scaling all the manager's other holdings on an inference. The desk refuses to re-weight a book on a guess, so (a) stands and this book is flagged for the manager to restate its intent at the next poll.",
+  "desk_flag": "restate_cash_intent_at_next_poll"
 }

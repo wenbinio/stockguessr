@@ -46,6 +46,7 @@ UA = "Mozilla/5.0"
 BORROW_APR, FUNDING_APR, CASH_APY = 0.03, 0.10, 0.04
 LIQ_THRESHOLD = 0.05  # perp liquidated when value <= 5% of margin
 PERP_MAX_LEV = 100.0  # venue maximum on majors (unrestricted-retail rules, 2026-07-30)
+CASH_LIKE = {"CASH", "USDC", "USD", "MONEY", "CASHX"}  # tickers that are NOT cash
 ALIASES = {"FI": "FISV", "SQ": "XYZ"}
 
 # Realistic retail fee schedule (per side, fraction of notional)
@@ -277,6 +278,14 @@ def main() -> int:
         w = sum(q["weight_pct"] for q in spec["positions"]) + spec["cash_pct"]
         shorts = sum(q["weight_pct"] for q in spec["positions"] if q["side"] == "short")
         probs = []
+        # Cash is `cash_pct`, never a position. CASH and USDC are real listed
+        # securities (Pathward Financial; USDATA Corp, a sub-penny OTC shell),
+        # so a manager writing "CASH" for dry powder silently bought a bank —
+        # and a symbol-priceability check passes them precisely because they
+        # are genuine tickers. Ten books were filled this way on 2026-07-31.
+        for q in spec["positions"]:
+            if q["symbol"].upper() in CASH_LIKE:
+                probs.append(f"'{q['symbol']}' is a listed security, not cash — use cash_pct")
         if abs(w - 100) > 0.05: probs.append(f"weights+cash={w:.1f}")
         if not spec["positions"]: probs.append("no positions")
         if any(q["weight_pct"] < 0 for q in spec["positions"]):

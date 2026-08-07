@@ -47,18 +47,12 @@
       "side": "long",
       "weight_pct": 6.1,
       "thesis": "Reduced from 12% as equity allocation shift provides portfolio defensiveness; gold hedge sized for macro hedge without over-concentration; supports tactical flexibility as earnings digest."
-    },
-    {
-      "symbol": "CASH",
-      "kind": "equity",
-      "side": "long",
-      "weight_pct": 23.79,
-      "thesis": "Reduced from 42% to deploy conviction into small-cap outperformance while preserving 39% post-earnings dry powder for tactical flexibility; enables rebalancing discipline while respecting optionality mandate."
     }
   ],
-  "cash_pct": 39,
+  "cash_pct": 62.79,
   "rules_epoch": "unrestricted-retail-2026-07-30",
   "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Post-earnings optionality thesis becomes active as Apple and Amazon report today; small-cap rotation thesis justified by Russell 2000's +22% YTD and 30% valuation discount to large caps; QQQ momentum deteriorating (indicator below 0, RSI in sell territory) despite being 10.1% overvalued; current 42% cash exceeds mandated 30% dry powder, enabling conviction deployment; market decline creates entry points after recent volatility. Rebalancing concentrates on mandated tactical small-cap broadening while reducing overvalued momentum exposure.",
   "research_notes": "Researched market conditions on 2026-07-30: market declined sharply on July 29 (Dow -2.19%, S&P -1.52%, Nasdaq -1.74%) due to Fed holding rates and Iran oil crisis. QQQ under pressure\u2014down 10% from June peak to ~$667, trading 10.1% overvalued per GF Value, momentum indicator below 0 (bearish), RSI in sell territory. Semiconductor sector weakening sharply (Micron -8.8%, AMD -8.1%, Intel -5.9%, SanDisk -14.2%). Russell 2000 (IWM) massively outperforming at +22% YTD, trading at 30% discount to large caps at year start, with 77% historical win rate for second-half returns. Small-cap rotation thesis confirmed: capital flowing FROM Magnificent 7 tech TO value/dividend sectors. Healthcare (XLV) up 24.57% past year, only 0.8% overvalued, 1.51% yield. Bitcoin mixed recovery: down 20.48% in June, up 2.73% in July to ~$63,669, below key EMAs. Major earnings happening today (Apple, Amazon) and yesterday (Microsoft, Meta) with consensus expecting 63% tech sector profit growth. Post-earnings optionality thesis is active NOW.",
-  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 39; scaled by 0.6100 to sum to 61 (relative sizing preserved, declared cash kept)"
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 39; scaled by 0.6100 to sum to 61 (relative sizing preserved, declared cash kept) | Desk correction 2026-08-07 (desk error, not the manager's): a 23.79% position in 'CASH' was registered as an equity and filled as a real listed security (Pathward Financial), though the manager's own thesis describes cash. Reallocated to cash_pct. Resulting cash_pct 62.79%. The desk's symbol check passed these because they are genuine tickers; the engine now rejects cash-like symbols outright. AMBIGUITY DISCLOSED: this manager stated cash twice \u2014 as cash_pct AND as a position \u2014 so two readings exist. (a) total cash = cash_pct + the mis-typed leg, which is what has been applied because it changes ONLY the provably wrong leg and leaves every other position exactly as the manager sized it; (b) the position was a redundant restatement of cash_pct, which would require re-scaling all the manager's other holdings on an inference. The desk refuses to re-weight a book on a guess, so (a) stands and this book is flagged for the manager to restate its intent at the next poll.",
+  "desk_flag": "restate_cash_intent_at_next_poll"
 }

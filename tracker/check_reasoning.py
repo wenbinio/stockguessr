@@ -92,7 +92,9 @@ def check_desk(problems: list) -> int:
                 if k not in orc:
                     continue
                 n += 1
-                r = orc.get(f"{k}_reason") or orc.get("reason")
+                # per-round reason required: a single blended reason covering two
+                # separate round decisions was accepted twice before 2026-08-07
+                r = orc.get(f"{k}_reason")
                 if _thin(r) and not orc.get(f"{k}_reason_unavailable"):
                     problems.append(
                         f"{rel}: orchestrator {k} decision has no reason "

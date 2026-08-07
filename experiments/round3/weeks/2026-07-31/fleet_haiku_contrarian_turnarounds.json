@@ -54,20 +54,14 @@
       "side": "long",
       "weight_pct": 5,
       "thesis": "Reduce from 8% as pure defensive play becomes less compelling when hawkish Fed is not cutting; reserve capital instead"
-    },
-    {
-      "symbol": "CASH",
-      "kind": "equity",
-      "side": "long",
-      "weight_pct": 27,
-      "thesis": "17% original plus ~10% freed from SOXL short closure plus capital from trims; raise dry powder given macro surprise (stickier inflation, delayed rate cuts)"
     }
   ],
-  "cash_pct": 0.0,
+  "cash_pct": 27.0,
   "rules_epoch": "unrestricted-retail-2026-07-30",
   "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): SOXL short closed at +20% TP on 2026-07-29\u2014perfectly executed disciplined exit on extended valuation (SOXL -63% vs SOXX -25% since June 22). Fed surprised with stickier inflation (3.6% PCE), delaying rate-cut cycle and weakening defensive-rotation thesis predicated on rate relief. Redeploy freed capital into positions that work in higher-rate regime: rotate into NIM-beneficiary financials (KRE), earnings-growth healthcare (XLV), and macro hedges (BTC/ETH). Trim rate-dependent defensive plays (utilities, staples, small-cap beta).",
   "novelty": "Round 3 rotates into macro hedges (BTC 20%+ETH 9% = 29% vs R2 17%) and NIM-beneficiary financials (KRE 13% vs R2 0%), diverging from R2's SaaS/fintech focus; same-direction overlap 17% vs 66% R2 gross = 26% < 50% threshold",
   "r2_overlap_pct": 36.0,
   "research_notes": "ADBE and CRM showing strong AI monetization execution (Firefly ARR 50% QoQ, Agentforce 12k+ customers, 150% AI assistant MAU growth). BTC/ETH stabilizing post-panic at $64k/$1.9k. SQ advancing Bitcoin/AI integration. SOXL short closed at +20% TP\u2014leveraged mean reversion worked perfectly (SOXL -63% vs SOXX -25% since June 22). Fed surprised with stickier inflation (3.6% PCE), delaying rate-cut cycle and weakening defensive-rotation-via-cuts thesis. Macro cycle still bottoming but in higher-inflation regime. Regional banks now benefit from NIM expansion; utilities/staples less attractive without rate-cut tailwinds. MSTR holding 843k BTC at $75.5k avg cost, now underwater at $64k spot, moving cautiously.",
-  "registration_note": "Desk arithmetic repair \u2014 cash_pct omitted by the manager; set to 0 = 100 - sum(weights)"
+  "registration_note": "Desk arithmetic repair \u2014 cash_pct omitted by the manager; set to 0 = 100 - sum(weights) | Desk correction 2026-08-07 (desk error, not the manager's): a 27% position in 'CASH' was registered as an equity and filled as a real listed security (Pathward Financial), though the manager's own thesis describes cash. Reallocated to cash_pct. Resulting cash_pct 27.0%. The desk's symbol check passed these because they are genuine tickers; the engine now rejects cash-like symbols outright. AMBIGUITY DISCLOSED: this manager stated cash twice \u2014 as cash_pct AND as a position \u2014 so two readings exist. (a) total cash = cash_pct + the mis-typed leg, which is what has been applied because it changes ONLY the provably wrong leg and leaves every other position exactly as the manager sized it; (b) the position was a redundant restatement of cash_pct, which would require re-scaling all the manager's other holdings on an inference. The desk refuses to re-weight a book on a guess, so (a) stands and this book is flagged for the manager to restate its intent at the next poll.",
+  "desk_flag": "restate_cash_intent_at_next_poll"
 }

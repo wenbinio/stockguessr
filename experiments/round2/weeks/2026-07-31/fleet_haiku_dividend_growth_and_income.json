@@ -75,18 +75,12 @@
       "side": "short",
       "weight_pct": 3.08,
       "thesis": "Rate hedge per mandate: Fed on hold but three officials dissented for increase; long-duration bonds vulnerable if inflation remains sticky; 4% short provides defensive hedge"
-    },
-    {
-      "symbol": "CASH",
-      "kind": "equity",
-      "side": "long",
-      "weight_pct": 17.71,
-      "thesis": "Maintained at 23% (vs 28% target) to fund mandate-required position additions; 4% APY on cash provides portfolio yield"
     }
   ],
-  "cash_pct": 23,
+  "cash_pct": 40.71,
   "rules_epoch": "unrestricted-retail-2026-07-30",
   "reassessment_note": "Unrestricted-retail resize (2026-07-30, free internet + no sizing caps): Current book severely misaligned with stated mandate. Mandate requires 18% AI/semis consolidation but position is 5% SHORT (SOXL); missing 10% leveraged tech exposure (UPRO); missing 4% rate hedge (TLT short); underweight small-cap recovery (10% vs 18% target); overweight dividend positions (34% vs 22% target). Rebalancing adds SOXL long, UPRO, TLT short, IWM, and reduces dividend concentration to meet mandate allocation targets. Rate environment stable (Fed on hold) and dividend yields (4% cash rate) support increased positioning. Rebalance cost justified by dramatic mandate misalignment.",
   "research_notes": "Researched current market conditions as of 2026-07-30: Fed held rates at 3.5-3.75% (July 29 decision) with three officials dissenting for rate increase; large value up 11% YTD vs growth, signaling major mean-reversion rotation; Russell 2000 small-caps surged 22% in H1 (best start since 1991); dividend aristocrats lagging S&P 500 but delivering 9.91% 1-year return with lower volatility; NVIDIA undervalued at 41% discount to GF Value despite 43x forward P/E; semiconductor sector described as struggling with key earnings ahead despite AI build-out continuing. Portfolio markedly misaligned with stated mandates: Round 2 overweights dividends, underweights small-cap recovery, incorrectly shorts semis instead of consolidating them long, and lacks leveraged tech or rate hedge positioning. Round 3 properly shorts small-cap momentum but lacks required semiconductor short in face of overheated growth momentum.",
-  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 23; scaled by 0.7700 to sum to 77 (relative sizing preserved, declared cash kept)"
+  "registration_note": "Desk arithmetic repair \u2014 weights summed to 100 with cash 23; scaled by 0.7700 to sum to 77 (relative sizing preserved, declared cash kept) | Desk correction 2026-08-07 (desk error, not the manager's): a 17.71% position in 'CASH' was registered as an equity and filled as a real listed security (Pathward Financial), though the manager's own thesis describes cash. Reallocated to cash_pct. Resulting cash_pct 40.71%. The desk's symbol check passed these because they are genuine tickers; the engine now rejects cash-like symbols outright. AMBIGUITY DISCLOSED: this manager stated cash twice \u2014 as cash_pct AND as a position \u2014 so two readings exist. (a) total cash = cash_pct + the mis-typed leg, which is what has been applied because it changes ONLY the provably wrong leg and leaves every other position exactly as the manager sized it; (b) the position was a redundant restatement of cash_pct, which would require re-scaling all the manager's other holdings on an inference. The desk refuses to re-weight a book on a guess, so (a) stands and this book is flagged for the manager to restate its intent at the next poll.",
+  "desk_flag": "restate_cash_intent_at_next_poll"
 }
