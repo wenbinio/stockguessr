@@ -291,12 +291,26 @@ def main() -> int:
         return not probs
 
     alloc_files = {}
+    bad = []
     for f in sorted((R2 / "allocations").glob("*.json")):
-        validate(json.loads(f.read_text()), f.name)
+        if not validate(json.loads(f.read_text()), f.name):
+            bad.append(str(f.relative_to(R2.parent.parent)))
         alloc_files.setdefault(f.stem, []).append(f)
     for wk in sorted(R2.glob("weeks/*/")):
         for f in sorted(wk.glob("*.json")):
+            # weekly rebalances go through the SAME gate as opening books. Until
+            # 2026-08-07 they were never validated here at all: validate() ran
+            # only over allocations/ and its return value was discarded, so a
+            # malformed reassessment would have been simulated silently.
+            if not validate(json.loads(f.read_text()), str(Path(wk.name) / f.name)):
+                bad.append(str(f.relative_to(R2.parent.parent)))
             alloc_files.setdefault(f.stem, []).append(f)
+    if bad:
+        print(f"REFUSING TO SCORE: {len(bad)} book(s) violate the rules — "
+              f"fix or withdraw them, do not publish a ranking that includes them:")
+        for b in bad:
+            print(f"  {b}")
+        return 1
 
     symbols = {"SPY", "BTC-USD"}
     for files in alloc_files.values():
