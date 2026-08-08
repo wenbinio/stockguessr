@@ -1,0 +1,73 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Fade H1's extremes: buy the AI-disruption-fear and macro-beaten-down names with real turnaround catalysts (ADBE/CRM/PYPL, oversold crypto, small caps, gold), while trimming the most overextended momentum trade (SOXL) short.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Holding flat at $265 (Hold consensus $269.61 PT, CLSA $300) even as MS cut to Underweight on AI-competition risk \u2014 bracket unchanged, letting the stop/TP manage the analyst split rather than adding into a name near fair value."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Turnaround confirming further: $1.6B VA contract, raised FY26 guidance, +3.2% on 8/7 to $192.74, 53 analysts at Buy with a $241.72 target (~25% upside) \u2014 adding on continued momentum."
+    },
+    {
+      "symbol": "PYPL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 12.0,
+      "thesis": "Management says the turnaround is 'progressing' with raised profit guidance, and the board rejecting Stripe/Advent's $53B bid while staying 'open to higher offers' confirms real strategic value the market was missing \u2014 sizing up on genuine takeover-premium optionality, adding a stop for the first time given single-name/deal-binary risk."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 20.0,
+      "thesis": "Bounce continuing (+3.1% over 7 days) on sustained ETF inflows and whale accumulation \u2014 modest add, thesis intact but not yet dramatic."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 20.0,
+      "thesis": "ETF inflows accelerating (+$245M weekly) plus rising stablecoin activity on-chain support the laggard-to-leader turnaround \u2014 modest add."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 8.0,
+      "thesis": "Small caps still running (+1.11% on 8/7) on rate-cut hopes, but Wells Fargo flags deteriorating earnings estimates behind the price gains \u2014 holding small size with a protective stop rather than chasing."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "The contrarian catalyst finally materialized: weak August jobs data drove gold to 7-week highs near $4,350 (+2.26% on 8/7) on rate-cut/dollar-weakness expectations \u2014 sizing back up from last week's watch-size trim."
+    }
+  ],
+  "cash_pct": 19,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Closing the SOXL short: it moved from $114.72 (7/31 entry) to $140.25 (8/7 close), a +22.3% adverse move against the short and only ~2.3% from the -25% stop. A weak August jobs report on 8/7 triggered a broad rate-cut/dollar-weakness rally that lifted gold, semis and small caps simultaneously \u2014 not a one-day short-covering blip: 'Semiconductor Outlook Bodes Well for This ETF' and an Elliott Wave bounce call both point to a real fundamental threat to the crash thesis, and the sister GDX short in my other book already got stopped out on 8/7 in the same complex. Taking the loss on my own terms now rather than risking a worse forced stop, and rotating the freed capital into turnaround longs that are still confirming (CRM contract win + raised guidance, PYPL takeover optionality) plus gold, whose contrarian catalyst has finally shown up.",
+  "research_notes": "Read the account packet (Round 2 NAV $1,022.13/+2.21%; Round 3 NAV $948.01/-5.20%, GDX short already stopped out 8/7 @ $89.89). Pulled live/current data via WebFetch (stockanalysis.com, coingecko) since WebSearch budget was exhausted:\n\nKey finding: a weak August 2026 jobs report hit on/around 8/7, driving rate-cut expectations and a dollar-weakness/risk-on rally that lifted gold, leveraged semis, small caps AND consumer discretionary simultaneously \u2014 this explains why gold miners (GDX) and leveraged semis (SOXL) both squeezed violently in the same week the task flagged (GDX stopped out 8/7 @ $89.89 vs ~$74.10 7/31 entry, +21%; SOXL 7/31 entry $114.72 -> 8/7 close $140.25, +22.3% adverse, only ~2.3% from its -25% stop in both books). News flow (Barron's 'Jacked-Up Tech ETF Demands a Strong Stomach', 'Semiconductor Outlook Bodes Well', an Elliott Wave bounce call, and gold at 7-week highs near $4,350 on weak jobs data) suggests this has real macro legs, not pure short-covering noise \u2014 so I closed SOXL preemptively in both books rather than wait for a second forced stop in the same complex that has already eaten 12 of 17 fired standing orders in this experiment.\n\nChecked and confirmed still-working longs: ADBE $265.21 (Hold, MS cut to UW on AI-competition risk vs CLSA $300 PT \u2014 flat sizing), CRM $192.74 (+3.2% on 8/7, $1.6B VA contract, raised FY26 guidance, Buy consensus $241.72 PT \u2014 added), PYPL $59.07 (Stripe/Advent's $53B bid rejected, board 'still open to higher offers,' raised profit guidance \u2014 added with a first-time stop), IWM $301.56 (+1.11% but Wells Fargo flags weakening earnings estimates behind the rally \u2014 held small with a new stop), GLD $398.47 (+2.26% on 8/7, 7-week highs \u2014 the contrarian catalyst flagged at inception finally showed up, sized back up), BTC ~+3.1%/7d and ETH ~+2.9%/7d (bounce continuing on ETF inflows, modest adds).\n\nRound 3 sector breakouts all still confirming: KRE (+31.5%/1yr, 'cheaper way to play the AI banking boom'), XLV (+0.75% on 8/7, State Street upgraded healthcare to positive for Q3), XBI (+1.86% on 8/7, M&A and trial catalysts) \u2014 added to all three with the capital freed by closing SOXL. Trimmed the XLY short leg of the utilities/discretionary pair (XLY +1.49% on 8/7 vs XLU +0.53%, discretionary being lifted by the same risk-on move) rather than eliminating it, and raised cash meaningfully in Round 3 (13% -> 29%) given the book's -7.51% max drawdown and the whipsaw risk still evident in the short-book complex.\n\nOverlap check: closing SOXL in both books (previously short 20% in each \u2014 the only shared symbol) drops same-direction gross-weight overlap between Round 2 and Round 3 to zero, comfortably under the <50% requirement."
+}

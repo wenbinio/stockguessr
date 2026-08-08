@@ -1,0 +1,89 @@
+{
+  "name": "Opus 5 carry",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "A 10-leg cross-asset carry book that earns spread and premium income rather than price appreciation - structured credit (JAAA/CLOZ), agency-MBS-vs-repo carry (NLY), EM currency and sovereign carry (EMLC/EMB), high-yield spread (SPHY), equity and VIX variance premium (SPYI/SVXY) and midstream distributions (AMLP) - funded by 13% cash at 4% APY, with the only short expressed as a 3%-margin 3x BTC perp because perp shorts pay 0% financing in this engine while equity shorts carry a ~7% all-in drag.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JAAA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 10.0,
+      "thesis": "Still the anchor, but sized for what it actually is now rather than what a hike would have made it. AAA CLO paper at SOFR+~120bp with effectively zero duration, a 4.73% distribution, thirty years without a default including 2008 and 2020, LSTA trailing loan defaults down to 3.5% from 4.3%, and $935m of inflows over the past month. The 40% weight was justified by one thing only \u2014 that its coupon rises if the Fed hikes \u2014 and Friday's payroll miss removed that. What remains is a ~73bp pickup over cash that compresses if SOFR falls, against JPMorgan's warning that AAA spreads are tight with issuance guided down ~20%. So it stays the largest position, because zero duration is precisely the hedge I want against a hot 12-August CPI reversing this week's move, but it stops being half the book. Wide -10% stop: the only real risk is a liquidity gap, and a tight stop would just whipsaw me out of the safest income I own."
+    },
+    {
+      "symbol": "AMLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 20.0,
+      "thesis": "Real-asset cash yield and the book's main inflation-linked leg. 7.8% distribution just raised to a record $1.03 per quarter, every top holding raised in H1, coverage guided through 2027, revenue fee-based and volume-linked with LNG exports at capacity and data-center power demand adding multi-year throughput, and midstream contracts escalate with CPI. Trimmed from 16 for one honest reason: Brent has fallen from ~$100 to ~$85 as the Iran-Oman Hormuz transit arrangement advances, so the windfall part of my thesis \u2014 a shock that pays this leg rather than punishing it \u2014 has largely paid out and reversed. The core case is unharmed, because $85 crude is nowhere near the sub-$60 level that would choke producer activity, but I should not keep paying for optionality that has already expired."
+    },
+    {
+      "symbol": "EMLC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "thesis": "The single cleanest beneficiary of the payroll print and the leg I zeroed on 29 July for a reason that has now inverted. EM local-currency sovereign carry pays high single-digit local coupons, and the return has two engines that just both turned on: DXY at four-year lows in the mid-90s after a sharp dollar sell-off, and US hike odds collapsing, which is historically the trigger for EM local outperformance. The tape confirms it rather than merely predicting it \u2014 EM local sovereigns returned +0.95% on the week while hard currency was -0.07%, and weekly inflows into EM local are the heaviest since the late 2010s. I express the FX-bearing version larger than the hard-currency version because the dispersion this week was entirely FX, not spread. -10% stop because local-currency drawdowns come through the exchange rate and can be fast; this is the leg that hurts most if CPI on the 12th revives the hike."
+    },
+    {
+      "symbol": "CLOZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "BBB/BB CLO mezzanine at roughly 9% floating \u2014 the same improving loan collateral as JAAA, paid for taking subordination rather than duration. Trimmed only modestly from 15 while JAAA is halved, because the case here never depended on the hike: at a ~9% coupon there is five points of cushion over cash, so a lower SOFR path erodes far less of the edge than it does at JAAA's 4.73%. The offsetting negative is real and is why it does not get raised \u2014 a payroll print of -23,000 with government and retail shedding jobs is a mild negative for leveraged-loan borrowers, even with defaults still falling toward 3.5%, and mezzanine subordination gaps wider in a risk-off well before the collateral actually deteriorates."
+    },
+    {
+      "symbol": "NLY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15.0,
+      "thesis": "Agency MBS versus repo \u2014 the mandate leg most directly geared to the risk that just came off the table, re-added after being zeroed for hawkish-Fed reasons. mREIT book value is destroyed by rate volatility and hike shocks, so removing a live September hike removes the specific thing that made this uninvestable two weeks ago, while a front-end rally with anchored policy is the exact curve shape agency carry wants. The fundamentals are not a recovery bet, they are already delivering: Q2 dividend raised to $0.75 from $0.70 on EAD of $0.79 (105% coverage), book value +1.7% to $20.15, 5.5% economic return in the quarter and 6.9% in the first half, net interest spread +8bp to 1.50%, and economic leverage a conservative 5.6x with $9.6bn available for financing. Sized at 8 rather than larger because that same leverage cuts both ways on any hike repricing, and the -15% stop respects it."
+    },
+    {
+      "symbol": "SPHY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Plain-vanilla US high-yield corporate spread at roughly 7% with short duration, supported by defaults falling toward 3%. I called this the richest and most crowded carry on the board at ~285bp; a week in which the S&P and Nasdaq closed at record highs and posted their best week since April has made it richer and more crowded still, which is a reason to take size down rather than up. It keeps a place because the carry is genuine and short duration limits the damage from a CPI-driven rate reversal, but I am not paid to add credit beta at the tights into a tape where VIX is at 14.9."
+    },
+    {
+      "symbol": "EMB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 10.0,
+      "thesis": "EM hard-currency sovereign spread, re-added as the non-FX half of the EM barbell. It pays roughly 6% in dollars with no exchange-rate risk, and its seven-ish years of duration flipped this week from a liability under a hiking Fed to an asset under a Fed the market no longer expects to move. Deliberately sized below EMLC because the entire week's EM dispersion came through the currency \u2014 local +0.95% versus hard currency -0.07% \u2014 so the FX engine is where the return is; EMB is here as the version that still works if the dollar stops falling but rates stay anchored, which is the middle scenario neither of my other new legs covers."
+    },
+    {
+      "symbol": "SPYI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 15.0,
+      "thesis": "Equity variance risk premium, cut again for the same reason I halved it last week, now confirmed by the tape. My stated case was that writing index calls at VIX 18 collects a materially richer premium than at VIX 14 \u2014 VIX closed Friday at 14.88, near cycle lows, so I am now collecting almost exactly the premium I said was too thin to size. The structure is long index beta with capped upside into a market at record highs, which is the worst configuration a covered-call fund can have. It survives at 5% because the mandate calls for an equity-premium sleeve and monthly distributions still clear cash comfortably, but I will not pay up for compressed volatility, and I did not add SVXY for the same reason \u2014 buying short-vol carry at cycle-low VIX after a 3.5% melt-up week is selling insurance at the cheapest possible price."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 3,
+      "leverage": 3,
+      "stop_loss_pct": 50.0,
+      "take_profit_pct": 45.0,
+      "thesis": "Cut from 5% margin back to the mandate's 3% because half the thesis weakened and half did not. The financing edge is untouched and is the real reason this leg exists in perp form: perp shorts are charged 0% funding in this engine while longs pay 10% APR and an equity short would cost 3% borrow plus 4% forgone cash yield, so short beta here is roughly seven points a year cheaper than any alternative expression. What did weaken is the macro leg \u2014 the hawkish Fed I was leaning on is gone, the dollar is at four-year lows, and BTC rallied ~2.8% on the week and again on the jobs print. What keeps it alive is that BTC at ~$64,900 is still ~40% below its January-2025 high and conspicuously failed to participate while the S&P and Nasdaq made records, which is the profile of an asset with its own problem rather than a macro discount. 9% of notional hedging an 86% gross risk book. Stop tightened from -60% to -50% so the entire hedge cannot cost more than ~1.5% of NAV; liquidation would still need a ~32% rally at 3x and the stop fires long before that. Take-profit at +45% (roughly a 15% BTC decline) so a working hedge gets banked rather than round-tripped. Note this is not a short in gold miners or leveraged semis, where 12 of the 17 standing orders ever fired in this experiment were shorts being stopped out."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: I sized this book on a specific, stated macro call \u2014 that a September hike at ~60% odds made floating-rate CLO carry uniquely privileged \u2014 and Friday's payroll print (-23,000 vs +80,000 expected, earnings growth down to 3.2%) took that hike off the table. When the reason for a 40% weight disappears, the weight should not survive it. Two things follow mechanically. First, JAAA's coupon-upgrade optionality is gone, leaving a 4.73% distribution against 4% cash \u2014 about 73bp for credit and liquidity risk, and shrinking if SOFR drifts lower \u2014 so 40% is no longer justified and comes down to 20% (still the largest leg, because zero duration is exactly the insurance I want if CPI on the 12th reverses this). Second, the three mandate legs I zeroed on 29 July purely because a hawkish Fed made them uninvestable are now the best carry on my board: EMLC with DXY at four-year lows, EM local sovereigns +0.95% on the week and record inflows; EMB collecting hard-currency sovereign spread with duration now a tailwind instead of a tax; and NLY, the leg most leveraged to hike risk receding, which just raised its dividend to $0.75 on 105% EAD coverage with book value up 1.7% and spread widening 8bp. I am deliberately barbelling rather than rotating \u2014 28% new duration/FX carry against 32% still floating-rate \u2014 because a hot 12-August CPI would hit all four new-regime legs together. I also trim the two legs whose premium got thinner rather than richer this week: SPHY, because ~285bp of already-crowded high-yield spread got crowded further in a record-high tape, and SPYI, whose entire case was writing calls at VIX 18 \u2014 VIX closed 14.88, so the premium I am collecting is roughly what I said was too thin to size. AMLP trims 16 to 14 only because Brent fell from ~$100 to ~$85 on Hormuz de-escalation, removing the windfall leg of the thesis while leaving the fee-based, volume-linked core intact. The BTC perp short goes 5 to 3 \u2014 back to the mandate's stated 3% margin \u2014 because its macro leg (hawkish Fed, ETF outflows) just weakened materially while its financing-arb leg (perp shorts pay 0% funding here versus ~7% all-in drag on an equity short) is untouched; I keep it small rather than kill it because BTC is the one asset refusing to participate in a record-high tape, and I tighten the stop to -50% so the whole hedge cannot cost more than ~1.5% of NAV. I am not shorting into the gold-miner or leveraged-semi complexes at all, which is where 12 of 17 stop-outs have happened.",
+  "novelty": "I manage no Round-2 book, so there is no same-direction overlap to breach; the distinct expression here is a barbell that funds a cut in zero-duration floating-rate CLO carry into EM local-currency FX carry, EM hard-currency sovereign spread and agency-MBS-versus-repo carry \u2014 the three sleeves priced off a September hike that the market has now removed \u2014 while keeping the only short as a small unfunded perp rather than a borrow-paying equity short.",
+  "research_notes": "CHECKED: July payrolls (released Fri 2026-08-07), Fed hike odds pre/post-print, week's equity/bond tape, DXY and EM debt flows, Brent/Hormuz, VIX, JAAA flows and AAA CLO spreads, NLY Q2 results, PFF.\n\nWHAT CHANGED \u2014 the exact premise I sized on last week broke. On 2026-07-30 I concentrated JAAA 16 -> 40 and zeroed EMLC/EMB/NLY explicitly because the 29-July hawkish hold (three dissents to hike) put a September hike at ~60-65% and floating-rate CLO carry was the only leg whose coupon rises on a hike. On 2026-08-07 July nonfarm payrolls came in at -23,000 vs +80,000 expected, June revised down to +20,000, and average hourly earnings decelerated to 3.2% y/y \u2014 the lowest since May 2021. Markets took a September hike off the table. That single print removes the entire differentiating kicker behind a 40% JAAA weight while simultaneously un-blocking the three mandate legs I had zeroed.\n\nTAPE: S&P 500 and Nasdaq closed at record highs, strongest week since April (Nasdaq ~+5%, S&P ~+3.5%), Treasury yields fell across the curve. VIX closed 14.88, near cycle lows, down from ~18 when I sized SPYI. DXY at four-year lows in the mid-90s (dollar sold off hard, partly on Fed-credibility questions after Chair Warsh's presser). EM fixed income split cleanly: local-currency sovereigns +0.95% on the week vs hard-currency -0.07%, with weekly inflows into EM local the heaviest since the late 2010s. Brent ~$84-86, off the ~$100 spike as an Iran-Oman Hormuz transit arrangement moves toward (but has not cleared) Iran's parliament.\n\nLEG-LEVEL: JAAA ~$25bn AUM, distribution now 4.73% and taking inflows ($381m/5d, $935m/1m) \u2014 healthy, but 4.73% against 4% cash is only ~73bp of pickup for credit and liquidity risk, and that pickup compresses if SOFR drifts lower rather than higher. JPMorgan flags AAA CLO spreads as tight with unclear growth drivers and 2027 issuance guided down ~20%. NLY Q2 was strong and is the leg most directly helped by hike risk coming off: dividend raised to $0.75 from $0.70, EAD $0.79 (105% coverage), book value +1.7% to $20.15, 5.5% economic return in the quarter, net interest spread +8bp to 1.50%, economic leverage a conservative 5.6x. PFF screened as a possible tenth leg and I rejected it \u2014 5.47% forward yield is barely above cash, 60-70% bank/insurer concentration, and near-universal call provisions cap the recovery I would be buying it for. BTC ~$64,940, +2.8% on the week and up on the jobs print itself; still ~40% below its Jan-2025 high while equities make records.\n\nCAVEAT I SIZED FOR: this is not a one-way dovish trade. Some strategists are sticking with 75bp of hikes this year starting in September, June CPI was 3.5% y/y, and the next CPI lands ~2026-08-12 \u2014 a hot print snaps hike odds back and hits EMLC/EMB/NLY together. So I barbelled rather than rotated: ~28% in newly-added duration/FX-bearing carry against ~32% still in zero-duration floating-rate CLO paper, plus 11% cash."
+}

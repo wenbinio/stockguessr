@@ -1,0 +1,70 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Anchor in quality dividend growers with AI-cycle exposure, add a tactical short against the most overextended leveraged momentum trade, use TLT for rate-cut convexity, and keep meaningful cash at 4% APY given stretched valuations after a huge H1 rally.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Azure topped $100B annualized revenue growing 41-43%, 2026 capex raised to $175B; Citi just raised PT to $600 post-print. Durable AI-driven cash flow anchoring the dividend book, unchanged."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Samsung foundry/memory MOU plus fresh coverage framing AVGO as the biggest winner from the custom-AI-silicon shift reinforces multi-year FCF for dividend growth; holding size given ongoing China-component-ban headline risk."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Diversified quality dividend-growth ballast; kept as core holding while valuations stay stretched and volatility (gold/semis squeeze) rises elsewhere in the tape."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Trading near its $363 52-week high after the no-news dip was bought; Dimon's leverage-risk comments are a watch item but no thesis break in a best-in-class rising-dividend compounder."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Record Q2 earnings just reported (net income +385% YoY) with Wall Street turning more bullish; energy dividend aristocrat remains the book's inflation/rate-backdrop diversifier."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Token position kept at trimmed size \u2014 TLT is still pinned near 52-week lows, so rate-cut odds and the housing-turnover catalyst remain weak; not adding back until yields roll over."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Kept as a minimal growth-scare/tail hedge only; price ($82.76) still sits near the bottom of its 52-week range, confirming rate-cut convexity has not returned."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Defensive staples dividend ballast, low-beta complement to the AI-cycle names; unchanged."
+    }
+  ],
+  "cash_pct": 32,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Closing the SOXL short: the leveraged-semis squeeze the packet flagged (SOXL +5.98% on 8/7 alone, up ~23% since 7/30) is running directly against this unprotected equity short, and this book already took partial profits on it once as extended-momentum risk; better to lock in the remaining gain and remove the exposure than let a further squeeze erode it, especially with no stop attached. Everything else in the dividend book is unchanged this week \u2014 MSFT (Citi PT raised to $600 post-Azure), AVGO (AI custom-silicon tailwind), CVX (record Q2 earnings, +385% YoY net income), JPM (near 52w high) and SCHD/XLP/HD/TLT all have intact theses with no new information to act on, so those are held as-is rather than churned.",
+  "research_notes": "Checked live prices/news through 2026-08-07 close for both books. Key finding: gold miners and leveraged semis are both squeezing hard exactly as flagged \u2014 GDX +7.1% on 8/7 to $89.89 (best week since 2008, up 13.8% in a month) and SOXL +5.98% on 8/7 to $140.25, up roughly 23% just since 7/30. Round 3's standing GDX short (8%) already stopped out on 2026-08-05 at $83.68, converting to cash \u2014 consistent with the broader pattern of GDX/SOXL shorts being the dominant source of fired stops across the experiment. Round 2's SOXL short (4%) carries no stop protection and is now getting run over by the same squeeze, so I closed it. Confirmed trend-following legs remain intact: XLF $57.60 (52w range $47.67-58.41, near high), KRE $76.21 (vs $78.35 high), XLV $165.68 (vs $168.53 high, healthcare still re-accelerating), XBI +1.86% on the day and still trending. JPM $357.52 near its $363 52w high (Dimon leverage caution noted but no thesis break), MSFT $499.99 with Citi raising PT to $600 post-Azure print, AVGO $427.76 with bullish AI-custom-silicon coverage, CVX $186.56 with record Q2 earnings (+385% YoY net income) and bullish Street sentiment \u2014 all support holding the dividend anchors unchanged. TLT $82.76 still sits near the low end of its 52w range ($81.89-92.19), confirming rate-cut odds remain suppressed and the token 3% stake stays as a tail hedge only. SOL-USD ticked up 2.4% intraday with crypto broadly firmer, but nowhere near the -15% stop on the 3x short perp, so no action needed there yet."
+}

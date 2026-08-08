@@ -1,0 +1,72 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Held at 18% and still the highest-conviction line. Q2 adjusted EPS of $6.38 beat $4.91 and JPMorgan, Wells Fargo and Goldman all raised targets afterward; 27 analysts now average $475.23 against a $407.08 price. The stock is down about 2.8% since I sized it while XLV sits at a 52-week high, which is a divergence between a company whose numbers improved and a sector that re-rated without it \u2014 that is a wider discount than I entered at, not a broken thesis, so the weight stays."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Raised 13->15. Spot gold made a seven-week high near $4,293 and GLD rose 3.95% in a session while TLT sits at $82.76 against an $81.89 52-week low and the 30-year brushes 5% \u2014 gold advancing into its single worst macro headwind for a second consecutive week is the confirmation I said I was waiting for. It is also still well below its $509.70 52-week high, so I am adding to a discounted hedge rather than chasing an extended one, and it remains the only position in this book that pays off if the Hormuz de-escalation talks fail."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Held at 13%. Up about 9.5% from my $176 entry to $192.74 with net income +29.3% on revenue +11.0% at 22.4x earnings, and 53 analysts still average $241.72. I deliberately do not add ahead of the 2026-08-26 print: the mean-reversion is compounding on its own and adding size into a binary event would convert a valuation thesis into an earnings bet, which is not what this mandate is."
+    },
+    {
+      "symbol": "NOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Raised 6->9. I sized this as a starter and said I would average in only if the bounce were confirmed rather than anchor on one day, and the confirmation is fundamental rather than tape-based: Q2 subscription revenue grew 23%, AI ACV crossed $1bn and customer deployments rose ninefold, which directly refutes the terminal-decline pricing. At $124.88 it is still 36% below its $194.73 high on 22.2% revenue growth, so the dislocation survives even after a 16.7% week. Not taken to core weight because a 27.6x forward multiple is the most rate-sensitive duration in this book and long yields are not falling."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 25.0,
+      "thesis": "Raised 8->9 and still the crypto core. Up 24.99% over the past month to $1,964 while still down 49% on the year \u2014 deeply oversold but actually turning is the exact setup this mandate is written for, and the Ethereum ETF remains the only institutional catalyst in the complex. The add is one point rather than five because a 35bp round trip plus a 25% one-month move means I am no longer buying the bottom, only confirming it. Stop stays at -25% because oversold assets can still trend down."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Held at 8%. Last week I cut this because July sector data showed healthcare at -0.78% and I could not find the rotation I had bought it for; at $165.68, within a point of its $168.53 52-week high and +29.17% over a year on strong Q2 results across the majors, the rotation has arrived. I do not raise it because the stub already does its job of diversifying UNH single-name risk, but the evidence that would have justified deleting it has reversed."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Cut 12->7 to bank a thesis that worked. I bought this as the most extreme valuation dislocation in profitable quality software at $241; at $265.21 the 40-analyst consensus target is $269.61, which is 1.66% of upside, and Morgan Stanley has moved to Underweight on multiple simultaneous transitions. A contrarian mandate exits when the gap it identified closes. The forward PE of 10.23 is the only part of the original argument still standing, and net income growth decelerating to 5.2% against revenue +11.5% is the margin compression the AI-disruption bears predicted, which is why the residual is small."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut 6->4. I wrote last week that Bitcoin had no near-term catalyst while Ethereum did, and a month of BTC +4.8% against ETH +25% is that judgment being scored against the tape rather than an opinion I am revising after the fact. It stays in the book at reduced size because at $64,860 it is roughly half off its $126,198 high and the mandate is to own deeply oversold assets, but weight belongs where reversion is observable, not merely available. Stop stays at -25%."
+    }
+  ],
+  "cash_pct": 17,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The book is up 4.55% because the software-dislocation call worked, and the right response to a thesis that worked is to bank the leg where the gap has actually closed and press the leg where new fundamental evidence arrived \u2014 not to hold everything because it is green. Adobe is the specific case: it is up about 10% from entry and the 40-analyst consensus target of $269.61 now sits above the $265.21 price with Morgan Stanley at Underweight, so the mispricing I bought has been paid out and what remains is a value trap argument rather than a value argument. ServiceNow is the mirror image: I bought it as a starter explicitly saying I would average in rather than anchor on one bounce, and this week supplied the confirmation I asked for \u2014 23% subscription growth and AI ACV crossing $1bn with a ninefold rise in deployments \u2014 while the stock is still 36% below its high, so the discount is intact but the terminal-decline premise is now falsifiably wrong. On crypto, my own thesis last week said Ethereum was the only major showing genuine mean-reversion and Bitcoin had no near-term catalyst; a month of ETH +25% against BTC +4.8% is that statement being scored, so I shift weight toward the one that is actually reverting instead of paying carry on the one that is not. Gold I add to for the reason I originally bought it: it printed a seven-week high near $4,293 with the 30-year brushing 5% and TLT pinned at its lows, which is strength against its worst macro headwind, and GLD itself remains far below its high so it is a discounted hedge rather than a chase. UNH, CRM and XLV are untouched \u2014 UNH's Q2 and raised targets have not been contradicted by a 2.8% drift, and XLV near its 52-week high vindicates the stub I nearly deleted.",
+  "research_notes": "Prices verified through the 2026-08-07 close. ROUND 2 NAMES: UNH $407.08 (+0.77% on day), PE 26.2, 27-analyst consensus Buy with $475.23 target after Q2 beat drove broad target raises \u2014 thesis intact, position simply drifting. CRM $192.74 (+3.20%), up ~9.5% from my $176 entry, PE 22.4, 53-analyst target $241.72; earnings 2026-08-26; KeyBanc downgraded on AI-platform timing but the 'SaaSpocalypse' discount is visibly closing. ADBE $265.21, up ~10% from my $241 entry, forward PE 10.23 \u2014 but 40 analysts now average $269.61, i.e. 1.66% upside, and Morgan Stanley cut to Underweight; the sell side no longer sees a gap, and net income growth has decelerated to +5.2% on revenue +11.5%. NOW $124.88 (+6.42% on the day), up ~16.7% from my $107 entry, Q2 subscription revenue +23%, AI ACV crossed $1bn with 9x deployment growth, still 36% below its $194.73 52-week high. XLV $165.68, near its $168.53 52-week high, +29.17% 1yr \u2014 the healthcare rotation I doubted last week has actually shown up in the sector data. GLD $388.93 (+3.95%), spot gold $4,293 at a seven-week high, silver +4.10%; GLD still far below its $509.70 52-week high. ETH $1,964 (+4.49% day, +24.99% 1-month, -49% 1yr). BTC $64,860 (+0.83% day, +4.81% 1-month, ~half off its $126,198 high) \u2014 ETH is out-reverting BTC roughly 5:1 over the month. ROUND 3 / MACRO: crude has turned \u2014 WTI $78.18 and Brent $83.55 versus roughly $85/$88 when I sized XLE; oilprice.com headlines report 'Iran and Oman Near Landmark Deal to Manage Strait of Hormuz' and 'Oil Traders Stay Bearish Despite Deepening Middle East Disruptions' even as ADNOC counts 15 vessel attacks. XLE $57.50 fell 1.13% on a day the tape rallied, though 1yr is still +39.97%, PE 20.9, yield 2.64% and refiner margins hit a record. GOOGL $354.30 (-0.96%), 17.8x, $4.33T cap, $25bn bond raise drew $115bn of orders \u2014 but Demis Hassabis stepped down as DeepMind CEO and chief scientist Jeff Dean has left. AMZN $274.48, cap +24.9%, net income +91.6% on revenue +15.8%, Strong Buy with $324.94 target; the post-earnings gap has held rather than filled. SPMO $149.69, +29.69% 1yr, top holdings Micron 10.1%/NVDA 8.2%/AVGO 6.9%; SOXX $543.27 (+2.02%) is +130.37% over 1yr \u2014 the semi complex I was short in June has fully re-rated, so my 'it is only short covering' read was wrong. GDX $89.89 (+7.11% on the day), +57.73% 1yr, vs a $117.18 52-week high; GDXJ $117.62 (+7.51%), +68.91% 1yr \u2014 I chose GDX over GDXJ for liquidity and lower volatility at equivalent distance from the high. SPLV $76.21 (-0.07%), only +6.48% over 1yr, beta 0.54 \u2014 the weakest sleeve in either book by a wide margin. TLT $82.76 near its $81.89 52-week low with the 30yr brushing 5%, so the high-rate regime persists and is not a reason to add duration-sensitive assets. Cross-checked the desk note that 12 of 17 standing orders ever fired were shorts in GDX/SOXL being stopped out: I hold no shorts anywhere, so that tape is a signal to me rather than a risk."
+}

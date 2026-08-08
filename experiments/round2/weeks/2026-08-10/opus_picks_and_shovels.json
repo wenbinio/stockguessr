@@ -1,0 +1,63 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20.7558,
+      "thesis": "GE Vernova remains the power-generation bottleneck feeding $720-745B of 2026 hyperscaler capex \u2014 Q2 orders +88% y/y, $176B backlog, 30GW gas-turbine target by 2030. Trimmed 1pt purely as funding: at $990.32 it is flat since my fill, PE 28.3, and its $1,231 consensus target implies 24% upside, less discount than the two legs I am adding to. It stays my largest position because it is the only leg whose supply constraint is physical rather than cyclical.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "AMAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19.7674,
+      "thesis": "Applied Materials sells the tools, not the commodity, and SK Hynix's newly announced capex is a direct order-book event for wafer-fab equipment \u2014 the supply response to the memory shortage spends through AMAT. $539.14, forward PE 35.8 against a $629 target, freshly added to Goldman's US Conviction List. Held at 20% and deliberately NOT increased into the Aug 13 Q3 print: I want the exposure I already have, not an added bet on a binary three sessions out. Wide -22% stop so an earnings gap cannot mechanically stop out a thesis that is about 2027 orders.",
+      "stop_loss_pct": 22.0
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16.8023,
+      "thesis": "Raised 16-to-17 on genuinely new information: a ~$200B AI-chip partnership with Samsung that widens Broadcom's custom-silicon manufacturing capacity, the binding constraint on a business whose accelerator bookings have been stacking faster than it can ship. Rising memory and system costs make custom ASICs the cheaper compute-per-dollar answer, not a casualty. $427.76, forward PE 27.1 against a $527.88 target, still -14% from its $495 high. Earnings Sept 2 sits outside the near window.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14.8256,
+      "thesis": "Raised 8-to-15, the largest add in the book, because Arista is the only holding that produced hard confirmation this week: Q2 revenue above $3B, +37.7% y/y, and a full-year guide RAISED to $12.6B implying ~40% growth, with targets lifted broadly afterward (consensus $238.63, Barclays $289). At $188.67 it is -12% from its high and fell 1.9% on Friday despite the beat \u2014 the market has not repriced it. PE 59.7 is the risk, but it is the cheapest way I have to own compute-fabric growth of 40% and it diversifies me away from a book that is otherwise semiconductors and turbines.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.907,
+      "thesis": "New leg. Vertiv is datacenter power distribution and liquid cooling \u2014 the same physical-bottleneck thesis as GEV, but available at a 28% discount to its $379.94 high because Q2 revenue missed ($3.27B vs $3.38B) on what management calls project-timing and supply-chain slippage. Timing slippage in a capex cycle running at $720-745B is deferred revenue, not lost revenue. Forward PE 34.9 against a $338 target and 28 analysts at Strong Buy. Wider -25% stop because I am buying a name that has already been marked down for an execution stumble and needs room to prove the miss was temporary.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4.9419,
+      "thesis": "Cut 12-to-5. The memory shortage is real, but SK Hynix's capex announcement is the supply response that historically ends it, and the tape agrees \u2014 $877.57 is below the $970.95 50-day moving average, so the stock is in a downtrend while my other legs make new ground. Forward PE 6.1 and a $1,502 consensus target are why I keep a stub rather than exiting: memory cyclicals are cheapest at the top, but they are also occasionally just cheap. Tightened to a -20% stop from -28% because I no longer want catastrophe-insurance width on a position I have already reduced to a stub; next earnings is Sept 22.",
+      "stop_loss_pct": 20.0
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Two things broke my book's logic this week and both point the same way. First, my 9% SMCI short is a negative-expectancy trade I can identify in advance: the company itself pre-announced a strong preliminary fiscal Q4, analysts raised targets on it, the street's $37.81 target sits ABOVE the $31.13 spot, and it closed +5.96% Friday \u2014 I would be carrying a squeezing short into a positively pre-announced Aug 11 print, in a tape that has stopped out shorts 12 times out of 17 firings. The margin-compression thesis may still be true in a year; it is not tradeable through Tuesday, so I cover before the print rather than after. Second, ANET delivered the only hard fundamental confirmation of the week \u2014 revenue >$3B, +37.7% y/y, full-year guide RAISED to $12.6B/+40% \u2014 and it was my smallest long at 8%, while MU, which delivered nothing, was 12%. MU is now below its 50-day ($877 vs $971) precisely because SK Hynix announced heavy capex, which is the supply response that ends memory shortages; that same news raises wafer-fab-equipment demand, so the memory dollar belongs with the tool vendor I already own, not the commodity. I therefore cut MU to a 5% stub (kept only because forward PE 6.1 and a $1,502 target make a full exit reckless), take ANET to 15%, add 1pt to AVGO on the genuinely new $200B Samsung AI-chip partnership, and open a 7% VRT leg \u2014 datacenter power and thermal is the same electrons-are-the-bottleneck thesis as GEV but 28% off its high after a Q2 revenue miss management attributes to project timing, which is the discounted entry GEV no longer offers. I deliberately do NOT re-establish a leveraged semis kicker despite my mandate permitting one: SOXL closed +5.99% on Friday and my max drawdown is already -14.61%, so buying 3x semis after a 6% day is exactly the risk my mandate caps. Net long rises 70%-to-85% because covering the short mechanically adds exposure and because the evidence is one-directional, but I hold 15% cash at 4% rather than the 8% I would run if SPY were not at a record on admittedly options-driven mechanics with semis still 17% below their high.",
+  "research_notes": "PRICES/EVENTS CHECKED (through 2026-08-07 close, via stockanalysis.com quote pages):\n\nRound 2 names \u2014 ANET $188.67 (-1.90% Fri): reported Q2 on Aug 4, revenue >$3B, +37.7% y/y, FY26 guide RAISED to $12.6B (~+40% growth); consensus Strong Buy, avg target $238.63, Barclays high $289; stock still -12% below its $214.89 high. AMAT $539.14 (+2.21%), fwd PE 35.8, target $629, added to Goldman's US Conviction List, Q3 print Aug 13. AVGO $427.76 (+1.71%), fwd PE 27.1, target $527.88, NEW: ~$200B AI-chip/foundry partnership with Samsung; removed from Goldman conviction list but Buy retained; earnings Sept 2. GEV $990.32 (-1.00%), PE 28.3, target $1,231 (+24%), Q2 orders +88%, backlog $176B \u2014 flat since my fill. MU $877.57 (-0.44%), fwd PE 6.1, target $1,502, BUT trading below its 50-day MA of $970.95 and well off its high, with SK Hynix announcing large capex \u2014 i.e. the supply response to the memory shortage has begun. SMCI $31.13 (+5.96% Fri), 52wk range $19.48-$58.78, PE 16.3, target $37.81 ABOVE spot, and it PRE-ANNOUNCED a strong preliminary fiscal Q4 ~two weeks ago with multiple target raises; reports Aug 11. VRT $272.40 (-1.01%), -28% from its $379.94 high after a July 29 Q2 revenue MISS ($3.27B vs $3.38B) that management called a timing/supply issue; fwd PE 34.9, target $338.\n\nTape/macro \u2014 SPY $773.26 (+0.61%), basically at its record $776.85, but commentary flags the move as options-positioning-driven; Burry publicly warning of a 1987-type top. SOXX $543.27 (+2.02%) still -17% below its $655.95 high \u2014 semis are the laggard complex, not the extended one. SOXL $140.25 (+5.99%) but -54% from its high on 3x decay. Decisive macro event: a soft US payrolls print cut Fed hike expectations \u2014 GLD $398.47 (+2.26%), gold at seven-week highs near $4,300/oz; GDX $89.89 (+7.11%); GDXJ $117.62 (+7.51%); UUP $28.07 (-0.43%).\n\nRound 3 names \u2014 XLE $57.50 (-1.13%), the ONLY leg down on the dovish day, +40% 1y, 2.64% yield, -9% from high. COPX $88.03 (+2.25%), +104% 1y, PE 18.5. EWZ $35.34 (-1.31%), PE 9.81, 4.14% yield, 25% US tariffs live but Brazil's central bank still cutting. EZU $71.57 (+0.76%) at its 52-week high, PE 17.6, Stoxx 600 at records with ~20.8% earnings growth. EWJ $96.90 (+1.75%) at its 52-week high, PE 18.6, 3.68% yield.\n\nWHAT I LEARNED THAT CHANGED MY MIND: (1) My SMCI short thesis is being contradicted by the issuer itself \u2014 SMCI pre-announced strong prelims and the street raised targets; I was holding a squeezing 9% short into a positively pre-announced Aug 11 print, in a tape where 12 of 17 standing orders that ever fired were shorts getting stopped out. (2) ANET, not MU, produced the week's actual fundamental confirmation, and it is my most under-weighted leg. (3) SK Hynix capex is bullish the tool vendor (AMAT) and bearish the commodity (MU) \u2014 the shortage is now inducing supply. (4) The hawkish-Warsh-Fed premise on which I cut my dollar short to 3% last week was falsified by the payroll miss.",
+  "registration_note": "Desk handling \u2014 weights summed to 86 with cash 15; scaled by 0.9884"
+}

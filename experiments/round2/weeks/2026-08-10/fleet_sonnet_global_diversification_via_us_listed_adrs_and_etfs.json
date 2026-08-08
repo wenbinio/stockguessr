@@ -1,0 +1,75 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate the core toward international/EM ETFs and quality non-US ADRs that lagged the US AI-infra rally, keep crypto exposure at zero given the deep bear trend, and hold a modest inverse-ETF hedge plus elevated cash against US mega-cap AI-valuation risk.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Broad EM ETF core exposure; kept below the single-country legs in size since the fund is ~46% tech-weighted (TSM/Samsung top holdings) and thus a less clean diversifier from the US-AI trade than it's labeled as."
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Best-in-class semis ADR, restored toward core size as the AI-capex selloff that drove last week's trim has reversed (+0.44% on 8/7 alongside a +1.17% Nasdaq bounce); 19 analysts Strong Buy, $540 PT (+28.6%), N2/3nm capacity expansion ahead of schedule.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "ASML",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Monopoly lithography maker, added back after a sharp +2.15% bounce off the July -18% China-competition-fear drawdown; Strong Buy consensus, PT +25% upside, franchise intact.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Brazil ETF, low correlation to the US AI-valuation trade; unchanged conviction despite a soft -1.31% session on 8/7."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Japan ETF, governance-reform tailwind independent of the US AI drawdown/rally cycle; +1.84% on 8/7, unchanged."
+    },
+    {
+      "symbol": "BABA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "China ADR, still resilient (+27.4% in July, +1.26% on 8/7) on Qwen/AI-monetization news, but take-profit trimmed from +35% to +25% given the 8/20 earnings print and active shareholder-litigation headlines -- locking in more of the run ahead of binary event risk rather than raising size.",
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "INDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "India ETF, structural EM growth diversification with low correlation to the current US AI trade; unchanged."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Corrected hedge: last week's book held SQQQ SHORT, which is a leveraged long-Nasdaq bet (it gained specifically because SQQQ fell -3.36% as QQQ rallied +1.17% on 8/7), not a hedge against US mega-cap AI-valuation risk. Flipped to a modest LONG position, sized to the mandate's 'modest inverse-ETF hedge' language, so the book is actually protected if the AI-valuation correction resumes.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0
+    }
+  ],
+  "cash_pct": 25,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Two changes: (1) the AI-capex selloff that justified last week's defensive TSM/ASML trims has partly reversed -- Nasdaq snapped back +1.17% on 8/7, TSM +0.44%, ASML +2.15% off its oversold July drop, both still Strong-Buy-rated with 25-29% analyst upside -- so restoring modest weight to both; (2) correcting a mislabeled hedge: last week's book held SQQQ SHORT, which is actually a leveraged long-Nasdaq bet (it gains when SQQQ falls, i.e. when the Nasdaq the mandate wants to hedge against actually rallies), not a hedge against US mega-cap AI-valuation risk as the mandate requires -- flipping to a modest LONG SQQQ position that will actually pay off if the AI correction resumes, and trimming BABA's take-profit given its approaching 8/20 earnings print plus active shareholder-litigation headlines. Raising cash slightly to keep an elevated buffer per mandate.",
+  "research_notes": "Read the account packet (R2 NAV $1,033.74 +3.37%, R3 NAV $979.21 -2.08%, R3 standing orders: SOXL stopped 8/4 and GDX stopped 8/5). WebSearch budget was exhausted session-wide, so I used WebFetch on stockanalysis.com quote pages for live Aug 7 close data: QQQ +1.17%/day (Nasdaq snapping back from the prior week's hawkish-Fed shock), TSM +0.44%/day (19 analysts Strong Buy, PT $540/+28.6%, N2/3nm capacity expansion news), ASML +2.15%/day (rebounding off a July -18% China-competition drawdown, Strong Buy consensus PT +25%), BABA +1.26%/day (+27.4% in July on Qwen/AI monetization news, but earnings 8/20 plus active shareholder-litigation headlines = binary risk ahead), EEM +0.95%, EWJ +1.84%, EWZ -1.31%, INDA +0.49%, SQQQ -3.36%/day. Also checked GDX (+7.11% in a single day on 8/7, 52wk $56-$117) and SOXL (+5.99% in a single day on 8/7, 52wk $23.66-$302) and XLF (-0.36% day, near 52wk high $58.41) and XBI (+1.86% day, near 52wk high $165.71, 'positive cancer/cardiac trial readouts could keep the rally going'). Key finding for R2: last week's book carried SQQQ as a SHORT position whose thesis text described it as 'the hedge doing its job' -- but shorting an inverse-Nasdaq ETF is actually a leveraged long-Nasdaq bet, not a hedge against AI-valuation risk; it only 'worked' this week because SQQQ fell -3.36% as QQQ rallied. Key finding for R3: GDX and SOXL both squeezed +7%/+6% on the single day after being stopped out, confirming the tape note that this complex is in a live short squeeze, not mean-reversion -- re-shorting into that would very likely re-trigger a third stop-out."
+}

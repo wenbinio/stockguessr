@@ -1,0 +1,83 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "Top momentum rank retained: +~25% YTD on the $106B biotech M&A wave; trimmed one point for this week's wobble, and falling rates help the long-duration biotech trade."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "thesis": "Strongest confirmation in the book: ~4% off all-time highs at $76, and the dovish shift adds a bull-steepener to the existing net-interest-income tailwind."
+    },
+    {
+      "symbol": "JETS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "Fuel-cost windfall intact as the oil war premium deflates toward sub-$80 WTI; jobs contraction is a demand-risk watch item, so held rather than added."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "Industrials keep sector leadership with cheaper energy inputs and now cheaper capital; survives the dedupe as the broader, less freight-levered of the XLI/IYT pair."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "New fifth long, switched from the short side by the re-rank: confirmed breakout over the descending trendline (~$90) on the strongest short-lookback momentum in the universe, driven by falling real yields and gold above $4,300; targets $95-105."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Bottom rank: worst-performing sector YTD on weak fundamentals and low consumer confidence, and July's outright job losses hit discretionary spending first; stop guards against a rate-cut-relief rally."
+    },
+    {
+      "symbol": "XOP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Broken uptrend: 2026's gains were the Iran war premium, which keeps evaporating (WTI low-$80s, EIA sub-$80 Q3); flipping last month's exited long to a short as the catalyst unwinds."
+    },
+    {
+      "symbol": "MSOS",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Bottom-3 rank: -24.8% YTD in a persistent downtrend with no reversal catalyst; smallest weight of the sleeve for its liquidity and squeeze risk."
+    }
+  ],
+  "cash_pct": 29,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Weekly re-rank forced by a regime break, not churn: the book already lost GDXJ and URNM shorts to stops this week, and the surviving SLV short sits ~1% from its stop with silver +11% on a macro catalyst (payrolls -23k, hike odds collapsing) \u2014 I cover it deliberately rather than donate the last point to the squeeze. The metals complex flipped from bottom-rank shorts to top-rank momentum, so the mandate says switch sides: GDX enters as a LONG (breakout over its downtrend line at ~$90 with falling real yields behind it and targets $95-105). IYT exits because it is a correlation-duplicate of XLI (mandate requires dedupe) and its freight exposure is the long most damaged by an outright jobs contraction. New bottom-3 shorts are the actual broken downtrends now: XLY (worst YTD sector, weak consumer confidence, now negative payrolls), XOP (its entire 2026 trend was the war premium, which keeps deflating with WTI low-$80s heading sub-$80), and MSOS (-24.8% YTD, no reversal catalyst). After watching shorts get massacred across the experiment (12 of 17 fired orders), I run the short sleeve at 14% instead of 18% with -12% stops and +20% TPs \u2014 the re-rank keeps the mandate's structure while cutting the squeeze surface.",
+  "novelty": "Novelty vs my Round-2 barbell: zero symbol overlap in either direction \u2014 this book expresses the dovish turn cross-sectionally (long GDX miners momentum vs short XLY/XOP/MSOS laggards) rather than through Round 2's buy-and-hedge quality/AI barbell, and its only metals exposure is leveraged miner equity momentum, not Round 2's GLD ballast.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked: (1) Macro \u2014 July nonfarm payrolls -23k vs +80k expected, first outright decline, with -103k revisions; unemployment 4.1%; Sept hike odds fell 57%->~44%; Treasuries rallied, dollar hit a two-week low. (2) Tape \u2014 S&P 500 record close 7,757 (+3.6% wk), Nasdaq +5.2%, SOXX +7% wk (semi-short squeeze confirmed), software/IGV +10% since July while still -24.3% YTD. (3) Metals \u2014 gold above $4,300 (+7.5% wk), silver ~$64 (+11% wk, 6-week high), GDX ~$89.86 with a confirmed breakout over its descending trendline and technician targets $95-105; my SLV short is within ~1% of its -12% stop with its downtrend thesis invalidated. (4) ANET Q2 (Aug 4): $3.04B rev (first $3B quarter), EPS $1.02 vs $0.90, third FY26 guide raise to $12.6B, stock +12% AH \u2014 validates the AI-networking leg. (5) KRE ~$76, ~4% below all-time high; regional banks get a bull-steepener from the dovish shift. (6) Oil \u2014 WTI low-$80s, war premium still deflating, EIA sub-$80 Q3 view intact; XOP badly lagging OIH. (7) XLY = worst YTD sector (weak consumer confidence, now a jobs contraction); MSOS -24.8% YTD. (8) BTC ~$64.9k, +4.6% since Monday, +9.8% July, supported by falling yields/ETF inflows \u2014 the dovish catalyst my cut perp leg was waiting for. Lesson applied: 12 of 17 fired standing orders in this experiment were miner/semi shorts stopped out; both my remaining shorts (SOXL, SLV) were built for a hawkish regime that ended Friday."
+}

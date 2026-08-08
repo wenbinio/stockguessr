@@ -1,0 +1,78 @@
+{
+  "name": "Opus-fleet small/mid-cap growth",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrated long book in small/mid-cap cloud, AI-infra, and fintech compounders with secular demand, riding small-cap and software leadership while avoiding weak crypto.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Still the only line my macro helps rather than hurts \u2014 roughly a third of revenue is net interest, so higher-for-longer compounds it while volatility feeds the options franchise. Q2 was a record and prediction markets grew revenue tenfold in the quarter, which is a genuinely new engine rather than a re-telling of the old story. Trimmed two points because it is -11.7% over 52 weeks, sits 39% below its high, and the sell-side is openly split (BofA $140 against Goldman $118): I will hold it at conviction size but I will not keep feeding a laggard. Beta 2.32 justifies leaving the stop wide rather than tightening it into the noise.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 48.0
+    },
+    {
+      "symbol": "CRDO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Promoted from smallest active line to joint-largest because the numbers contradict my earlier framing of it as the speculative leg: 40.8x forward against 52.7% projected three-year revenue growth, 35% net margin, current ratio 10 and debt/equity 0.01 is the best valuation-to-growth in the book, not the frothiest. Revenue tripled, Strong Buy with fresh Barclays $300, BofA $340 and Stifel $350 targets, and no earnings until 2 September means no binary inside this window. Capped at 15% rather than higher purely because beta 3.23 makes it the dominant risk contributor at any larger weight, and it keeps the widest stop in the book for the same reason.",
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "NET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "The AI-consumption thesis was validated rather than merely survived: growth accelerated on AI demand, FY26 revenue and EPS guidance went up, and the print specifically reversed the market-wide fear that AI disrupts software. Added only two points because the good news is now in the price \u2014 203x forward, 42x sales, a GAAP loss and an average target of $317.81 leave just 4.8% to consensus at an all-time high. Taking the validation but not chasing it, and cutting the stop from -22% to -15% so the earnings gap I just earned is protected rather than round-tripped.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "DDOG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Beat with revenue +36% and raised the FY26 guide to $4.45-4.47bn, so the event I was underweight ahead of is now behind it with roughly 20% still open to the $282 consensus. Added three points on that clearing. The cap on the size is customer concentration, not growth: the stock sold off initially on lower usage from one large AI customer, which is a real single-counterparty overhang on a name at 473x earnings, so this stays a middleweight rather than a top-three position.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "The ballast is outperforming rather than merely diversifying \u2014 up 83.6% over a year, +1.9% on Friday, with dealmaking accelerating and money rotating into healthcare as a haven from tech. Equal-weighted across 157 names, so it carries no single-drug or single-print risk, which is exactly what a book with three high-multiple software lines needs. Added four points because it is the only genuinely low-correlation growth exposure available inside my mandate, and the stop is tightened to -15% since a good deal of the one-year gain is now embedded in the entry price.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 28.0
+    },
+    {
+      "symbol": "NU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Cheapest thing I own and the thesis is unchanged \u2014 16.3x forward for mid-30s revenue growth, a $1bn buyback, the Banco Porto Real acquisition securing the Brazilian licence and Mexican banking authorisation, with 30% upside to the $18 consensus and a LatAm penetration story insulated from both US long-end rates and AI sentiment. Cut from 16% to 11% purely on calendar: this is the only position with earnings inside the coming week (13 August), and the correct control on gap risk I cannot hedge is a smaller position, not a tighter stop that would simply be jumped through.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "CRWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Demoted to the smallest line because the reason I owned it has expired. It was bought as the defensive line if the capex scare broadened into an opex scare; that scare did not broaden, so I am paying a premium for protection I no longer need. After an 80% six-month run it is the only name in the book trading above its own consensus target \u2014 $214 spot against a 53-analyst average of $193 \u2014 which means the sell-side thinks the next move is down even as the business itself compounds fine on Falcon consolidation and the Cerebras partnership. Kept rather than cut to zero because the platform story is intact and the 26 August print could re-rate it, but sized so a bad print is an irritant, with the tightest stop in the book to enforce that.",
+      "stop_loss_pct": 16.0,
+      "take_profit_pct": 22.0
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The insurance I bought on 30 July expired unused and is now costing me. I sized this book for a capex scare broadening into an opex scare, and instead all three prints I was carrying resolved bullish \u2014 NET beat, raised and closed at an all-time high, DDOG beat and raised FY guide to $4.45-4.47bn, and IWM finished within 0.5% of its 52-week high \u2014 so small-cap and software leadership is intact rather than broken. Two lines were built for the scenario that did not arrive and must shrink. CRWD was explicitly held as the defensive line if software budgets got cut; that call was wrong, and it now trades ~11% ABOVE its 53-analyst consensus target of $193 after an 80% six-month run, which is the worst forward risk/reward in the book regardless of how good the business is. NU is cut not on thesis but on calendar: it is the single name with a print inside the coming week (13 August) and I do not want 16% of NAV riding one Brazilian quarter when I cannot control the gap. The proceeds go where the event risk has already been paid for and the price is still defensible. CRDO is the biggest add because the statistics undercut my own prior framing of it as the speculative leg \u2014 40.8x forward against 52.7% projected three-year growth, 35% net margins, essentially no debt, Strong Buy with fresh $300-350 targets, and no earnings until 2 September. NET gets only a small add rather than a large one precisely because the beat was so good: at 203x forward, a GAAP loss and 4.8% upside to consensus, adding aggressively into an all-time high is chasing, so I take the validation and tighten the stop instead. DDOG and XBI each rise modestly \u2014 DDOG because the print is behind it with 20% left to consensus, capped only by the AI-customer concentration flag, and XBI because the rotation into healthcare gives me the one genuinely low-correlation growth line I own. HOOD comes down two points and stays the joint-largest: it is the only name my rate view helps rather than hurts and prediction-market revenue just went up tenfold, but it is -11.7% over 52 weeks and I will not keep adding to a persistent laggard on a story. Cash goes 18% to 13% because 4% on idle money is a poor trade against a confirmed uptrend, while still leaving a real buffer given I could not verify this week's rates and Fed news and the book has already seen a -10.29% drawdown.",
+  "novelty": "I run no Round-2 book, so there is no overlap to manage, but the novelty within my own history is directional rather than cosmetic: this is the first week I have stopped paying for downside insurance inside a long-only mandate \u2014 the two positions whose entire rationale was defensive (CRWD as budget-proof software, and an 18% cash drag) are cut in favour of names whose binary events have already cleared, which converts the book from a hedged bet on a regime forecast into an unhedged bet on post-earnings fundamentals I can actually read.",
+  "research_notes": "Checked every line in the book plus the small-cap tape. WebSearch budget for the session was exhausted, so all work was done via direct fetches of stockanalysis.com quote and statistics pages (prices are 2026-08-07 close).\n\nEVENTS THAT RESOLVED THIS WEEK \u2014 all three prints I was carrying came in bullish:\n- NET (6 Aug): standout Q2, revenue growth accelerating on AI demand, FY26 revenue and EPS guidance raised. Stock +5.57% on 7 Aug to $300.27, a new all-time high. Morgan Stanley, BTIG and Scotiabank raised targets by $50-90. Launched Kitesurf, a browser for AI agents. The 209x-forward de-rating risk I sized down for did not happen \u2014 it re-rated up. But statistics page: forward PE 203.6, P/S 42.6, P/FCF 313, GAAP net loss of $206m ttm, and the 34-analyst average target of $317.81 is only 4.8% above spot. Beat is real; the upside to consensus is thin.\n- DDOG (Q2): revenue +36% to $1.12bn, beat, FY26 guide raised to $4.45-4.47bn. Closed $233.93 (+2.02%). Initially sold on \"lower usage from a major AI customer\" \u2014 the customer-concentration overhang is the live issue, not growth. PE 473, consensus target $281.94 (+20%).\n- HOOD (Q2): record quarter. Prediction markets is now the fastest-growing business in company history, revenue up 10x in the quarter; UK crypto approval; Ventures Fund II. Analyst reaction split \u2014 BofA to $140, Goldman down to $118. Closed $93.29 (+2.84%) but is still -11.7% over 52 weeks and 39% below its $153.86 high. Forward PE 39.5, beta 2.32, short interest 4.24%.\n\nNO-EVENT NAMES:\n- CRDO $249.89, +8.45% on 7 Aug. Revenue +205.7% ttm, fiscal 2026 earnings +800%. Fresh target raises: Barclays $300, BofA $340, Stifel $350; Strong Buy, average $279.29. Critically, the statistics page shows forward PE 40.8 against 52.7% projected three-year revenue growth, net margin 35.4%, current ratio 10.2, debt/equity 0.01. That is the best valuation-to-growth in the book, not the most speculative line. Next earnings 2 September \u2014 no event in this window. Beta 3.23 is the constraint.\n- CRWD $214.42, +3.39%. Fal.Con 2026 sold out at record pace, Cerebras partnership, Frost & Sullivan award, Morgan Stanley to $227 and Loop initiating at $230. But the 53-analyst consensus target is $193.13 \u2014 spot is ~11% ABOVE the average target, the only name in the book where that is true. Up ~80% in six months. Earnings 26 August.\n- NU $13.84, -1.98% on the day, the only red line. Forward PE 16.3, consensus $17.98 (+30%). Banco Porto Real acquisition for the Brazilian licence, Mexican banking authorisation, $1bn buyback. Earnings 13 AUGUST \u2014 the one event inside the coming week.\n- XBI $157.37, +1.86%, +83.6% over one year. Reporting frames healthcare as \"a haven for investors ditching tech,\" with biotech dealmaking accelerating. Equal-weight, 157 holdings, the ballast is working.\n\nTAPE: IWM closed $301.56 (+1.11%) against a 52-week high of $303.06 \u2014 small caps are within 0.5% of their high and have outperformed the broad market this year. The regime break I repositioned for on 30 July (Fed hike dissents, long-end yields, hyperscalers punished for capex) did not broaden. Cloudflare's print specifically reversed the \"AI disrupts software\" fear. I could not reach Reuters or CNBC (403/fetch blocked) so I have no fresh read on yields or Fed speak this week; I am treating that as a known gap and keeping a real cash buffer rather than assuming the macro all-clear.\n\nI hold no shorts and no crypto, so the GDX/GDXJ/SOXL squeeze that stopped out twelve short legs across the experiment does not touch this book."
+}

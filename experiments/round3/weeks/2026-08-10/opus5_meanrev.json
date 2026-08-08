@@ -1,0 +1,87 @@
+{
+  "name": "Opus 5 mean reversion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "APP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New, and the top weight because it is the worst-ranked name in the universe on both of my lookbacks: -36.2% over the month from $543.79 to $346.80 and -12.4% on the week, at a fresh 52-week low with a $113.3B market cap. The 8/6 gap of -19.7% came off revenue of $1.92B against a $1.94B estimate, a one-percent miss, with Q3 guided to $2.07B versus $2.08B consensus and revenue still compounding 53% year over year. Losing a fifth of the equity on a one-percent miss is a flow event, and at 25.6x trailing earnings with a 4.0% free cash flow yield I am not paying a momentum multiple for the recovery. The honest bear case, which is why this stops at 16% and not higher: the stated cause is the AI ad model improving more slowly, which is the growth engine rather than a line item, and the de-rating began a month before the print, so part of this is a crowded-momentum unwind that can run further. The +3.3% close on 8/7 off the gap low says buyers are already present."
+    },
+    {
+      "symbol": "WMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Cut from 16% to 14% only because it no longer owns the deepest drawdown in the book, not because anything about it changed. At $111.85 it is still roughly 17% below the May high near $134 and it returned +0.6% on a week the S&P gained 3.5%, so it remains an unreverted relative laggard. Its job in this book is ballast: it is the only low-beta long against three high-beta gap-downs, and it does not need multiple expansion to work. Q2 FY27 on August 20 is a confirmed two-sided catalyst with the sell side already braced for a low-water comp after the Cleveland Research note."
+    },
+    {
+      "symbol": "AXP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 12% with no trade because it is the one original long that reverted in neither direction: -4.2% on the month and +1.4% on a +3.5% week, so it screens as a laggard on both lookbacks and sits at $340.91 against a $387 high. The market sold a beat-and-raise on a $50mn revenue shortfall and 12% expense growth while the actual bear case, consumer credit deterioration, is contradicted by provisions improving to $1.1B from $1.4B. Its zero AI capex exposure is exactly why it lags melt-up weeks like this one and why it protects when the capex complex unwinds."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Doubled from 5% to 10% because the missing piece finally showed up. It remains the deepest one-month mega-cap drawdown in the universe at -21.7%, from $419.77 to $328.58, so it is still the purest literal expression of my rule. What changed is that the reversion trigger I explicitly said was absent is now visible in the tape: it bottomed at $298.32 on 7/29, has made higher lows since, and closed 5.6% above the 7/31 print. I am adding to a turn already in progress rather than catching the knife. It stops at 10% rather than core weight because the causes of the decline were fundamental and regulatory rather than a single dislocating flow shock, which historically makes for a slower and shallower recovery."
+    },
+    {
+      "symbol": "HONA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New, and the second-worst ranked name in the universe: -29.1% on the month from $237.70 to $168.51 and -18.5% on the week to a 52-week low, after the first standalone print since the Honeywell separation cut organic growth guidance to 4-5% from 7-9% and EBITDA to $4.35-4.45B from $4.65-4.75B. What decisively distinguishes this from the guide-downs that cost me money in ORCL and INTC is the cause. A precision-casting shortage is forcing scarce components toward Boeing and Airbus production lines and away from the higher-margin aftermarket. That is revenue deferred against unquestioned end demand, not share lost to a competitor or a deteriorating credit. A freshly spun-off holder base dumping into its first bad number is exactly the forced-seller structure my rule exists to buy, and it closed +7.7% on 8/7 off the gap low. Sized at 8% rather than core because a casting shortage can plausibly persist several quarters."
+    },
+    {
+      "symbol": "SNPS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Trimmed from 10% to 7% to bank most of the reversion. It is +6.1% since I bought it on 8/3 and +7.0% on the week, which places it in the one-week top decile, the side of my own ranking I am supposed to be selling. I keep a stub rather than exiting outright because the divergence is only partly closed: the one-month return is still -5.9%, the stock is roughly 36% below its $651.73 high, and management raised full-year revenue guidance to $9.625-9.705B and EPS to $14.72-14.80 on 42% revenue growth. The Ansys integration and Design IP softness are margin-mix issues on an intact franchise, so I want to stay involved at reduced size."
+    },
+    {
+      "symbol": "PEG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New, and deliberately the only leg in the book with no AI or tech beta. It printed a 52-week low on 8/7 at the bottom of a $76.05-$91.26 range after Q2 revenue fell 8.9% and net income fell 42.9%, with BMO cutting to $79 and Citi to $84 on 8/5, so this is a genuine ranked laggard rather than a chart I happen to like. The reason to own it now rather than a month ago is Friday's payroll report: the economy shed 23,000 jobs against roughly +80,000 expected, which takes the September hike that had been crushing bond proxies out of the pricing. A regulated utility at 17x with a 3.5% yield and 56 consecutive years of dividends is the highest-convexity thing I can own into a dovish repricing, and it decorrelates a book otherwise entirely long the AI unwind. Only 7% because the earnings trend here is genuinely negative rather than optically so, which is the opposite of what I want in a reversion name, and Wednesday's CPI could reverse the rate move that is the entire catalyst."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Held at 13% with no trade, and the case is stronger than when I put it on. Brent fell from $90.12 on 7/31 to about $82.15 on 8/7, roughly 9% in a week, while XLE gave up only 3.4% from $59.55 to $57.50, so the sector is still discounting a crude price that no longer exists; that same asymmetry the other way, XLE gaining 8.55% in a month crude gained over 20%, is what told me holders were distributing into the supply scare. Energy remains the mandated crowded top-decile winner cluster at +35% year to date and +40.9% over the trailing year and was July's best sector, and it was the single worst sector this week at -3.44%, which is the cluster beginning to roll rather than a short into strength. It costs 3% borrow with no funding leg and holds my net long at 61%. The stop stays tight at -15% rather than mandate-wide because the Hormuz tail is live and non-linear: the Iranian draft under parliamentary review bars US and Israeli vessels outright, fines violators a fifth of cargo value, and Tehran has tied any deal to the US lifting the maritime blockade first, which sent Brent up over 4% on Thursday alone."
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Three of my seven longs finished their reversion inside four sessions and I am selling the reversion rather than holding the aftermath, which is precisely the error that cost me LRCX and GOOGL two weeks ago. QCOM ran +13.7% on the week, UBER +6.6% to a period high that puts it ABOVE its own one-month starting price, and META round-tripped its entire 7/30 earnings gap from $593.41 to $592.10. All three are now one-week top-decile winners sitting inside a mandate whose job is to own the bottom decile and be short the winners; keeping them is an off-mandate momentum book, not a cheap HOLD. The 8/6 tape simultaneously handed me somewhere mandated to put the proceeds: APP and HONA printed fresh 52-week lows at -36% and -29% on the month, the two deepest one-month drawdowns in the liquid large-cap universe, both on single-day gaps rather than slow bleeds, and both closed higher on 8/7. I also take TSLA up because the reversion trigger I said was missing has appeared as a higher low, and I add PEG because the -23,000 payroll print took the September hike off the table, which is the specific catalyst that makes a 52-week-low bond proxy work and gives this book one leg that is not levered to the AI unwind.",
+  "novelty": "I manage only a Round-3 book in this experiment, so no Round-2 overlap constraint binds; the book is nonetheless newly differentiated by rotating out of the reverted mega-cap AI complex (META, QCOM) into two fresh single-day gap-downs at 52-week lows (APP, HONA) plus a regulated-utility bond proxy (PEG) that no momentum or AI-capex book would hold.",
+  "research_notes": "I manage Round 3 only. Book entered 8/3; NAV $1,043.63 (+4.36%), max DD -2.55%, gross 87%, cash 13%.\n\nMARKED EVERY LEG AGAINST THE 8/3 ENTRY (daily closes, stockanalysis.com): WMT 110.71 to 111.85 (+1.0%); META 590.24 to 592.10 (+0.3%); AXP 344.72 to 340.91 (-1.1%); SNPS 392.07 to 415.99 (+6.1%); UBER 71.61 to 75.02 (+4.8%); QCOM 151.57 to 167.86 (+10.7%); TSLA 322.08 to 328.58 (+2.0%); XLE short 58.79 to 57.50 (+2.2% to me). Weighted, that is roughly +2.2% since the book went on, consistent with the packet NAV.\n\nTAPE: Nasdaq +5% and S&P +3.5% on the week; July payrolls printed -23,000 jobs versus roughly +80,000 expected with unemployment down to 4.1%, which removed the September hike from pricing. CPI lands Wednesday. Worst sectors on the week were energy -3.44% and utilities -1.33%.\n\nRE-RANK THROUGH 8/7 (1-week and 1-month trailing returns): my own longs have largely reverted. QCOM 1w +13.7% (1m -10.0%); UBER 1w +6.6% and 1m +3.6%, i.e. now ABOVE its one-month starting price after a -5.3% earnings day on 8/5 was erased by a two-day +10% run to a period high; META round-tripped the entire 7/30 gap, 593.41 pre-print to 592.10 now; SNPS 1w +7.0%. Those are one-week top-decile WINNERS. Still unreverted: TSLA 1m -21.7% (419.77 to 328.58) but now making higher lows off 298.32 on 7/29; AXP 1m -4.2%, 1w +1.4% on a +3.5% tape; WMT 1w +0.6%, Q2 FY27 confirmed for 8/20.\n\nNEW BOTTOM-DECILE NAMES (Trefis 52-week-low list for 8/7, 25 Russell 3000 names): APP, $113.3B, 1m -36.2% (543.79 to 346.80), 1w -12.4%, gapped -19.7% on 8/6 on revenue $1.92B vs $1.94B (a 1% miss) with Q3 guided $2.07B vs $2.08B and revenue +53% YoY; 25.6x trailing, 4.0% FCF yield; cause cited was slower AI ad-model improvement; closed +3.3% on 8/7 off the low. HONA, $49.6B, 1m -29.1% (237.70 to 168.51), 1w -18.5%, first standalone print post-separation cut organic growth to 4-5% from 7-9% and EBITDA to $4.35-4.45B from $4.65-4.75B on a precision-casting shortage diverting parts to Boeing/Airbus lines away from aftermarket; closed +7.7% on 8/7 off the gap low. PEG, $37.4B, 52-week low at the bottom of a 76.05-91.26 range, Q2 revenue -8.9% and net income -42.9%, BMO to $79 and Citi to $84 on 8/5, 17x with a 3.5% yield and 56 straight years of dividends.\n\nCHECKED AND REJECTED: INTU, one of the worst YTD names, is 1m +19.5% (272.14 to 325.25) and has already reverted. HUBS -20% on 8/6 but NRR now below constant-currency revenue growth, which is churn, not a flow shock. INTC re-qualifies mechanically after -31.6% the prior week but I exited it on a shrinking foundry business and that has not changed. APTV, CELH, ROL, RBA below the large-cap universe.\n\nENERGY SHORT: Brent fell from $90.12 on 7/31 to about $82.15 on 8/7, roughly -9% on the week, while XLE gave up only 3.4%. Energy is still the crowded winner cluster at +35% YTD and +40.9% trailing year and was July's best sector. Tail risk is live: the Iranian parliamentary draft on Hormuz is tougher than priced, barring US and Israeli vessels outright and fining violators a fifth of cargo value, with Tehran tying it to the US lifting the maritime blockade first; Brent rose over 4% Thursday on that headline. I am short neither gold miners nor leveraged semis, so the squeeze that fired 12 of the 17 standing orders in this experiment does not touch me."
+}

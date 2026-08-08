@@ -1,0 +1,78 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "DBMF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "The mandate's structural core: cross-asset managed-futures trend that re-positions itself when the regime turns, which is precisely what just happened. It went nowhere this week (+0.03%) because CTAs were long commodities and short equities and both reversed \u2014 that whipsaw is the cost of the sleeve, not evidence against it. It still holds above both moving averages (+0.4% vs 50d, +4.7% vs 200d) and is +26.0% over twelve months. I own it so that the next trend turn gets captured without my having to be early on every leg by hand.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "New core trend leg and the single most consistent uptrend on my screen: positive over one week (+2.81%), one month (+4.04%), three months (+8.06%), six months (+9.46%) and twelve (+23.71%), sitting 4.6% above its 50-day and 10.0% above its 200-day. Unlike the US momentum complex it never had the AI-capex air pocket, so there is no unwind overhanging it. The macro fits the mandate too: a Fed cutting into a softening labour market weakens the dollar, and dollar weakness is a direct, mechanical tailwind to unhedged developed-international returns \u2014 trend and a currency carry in one line.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "JEPI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Promoted from an 8% stub because the facts changed. On 7/31 I kept it grudgingly since it sat below its 200-day and had returned +0.1% over twelve months; it now trades 4.1% above its 200-day and 3.0% above its 50-day, at +4.00% over three months and +9.52% over twelve. That means the covered-call income sleeve my mandate requires finally clears the same trend filter I apply to everything else, so it earns a real weight rather than a token one. Written-call carry is also the right thing to own if a record-high melt-up on weak economic data turns into a choppy, low-drift tape.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "New, and it fills the equity-momentum slot I emptied when I sold MTUM. Small caps are outperforming the S&P year-to-date, up 35.8% over twelve months, 13.3% above the 200-day and 2.7% above the 50-day, and they rose 3.56% this week. I prefer IWM to MTUM here because MTUM is still 2.4% below its own 50-day \u2014 it remains the crowded AI trade in a repair phase \u2014 whereas the Russell is the cleanest, most direct beneficiary of the rate-cut repricing that soft payrolls just triggered. Sized below my core legs because small-cap earnings are the most economically sensitive thing I own and the payroll print was genuinely weak, so the stop matters.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "PDBC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Cut from 24% to a residual, which is the biggest single change in the book. The roll-carry structure is unchanged and PDBC still holds above both moving averages (+1.4% vs 50d, +10.3% vs 200d) at +29.9% year-to-date, which is why it is not zero. But its dominant exposure just cracked: crude fell 8.66% in a week and 13.69% in two, through its 50-day, against the most bullish supply headlines available. Three-month return is now -7.21%. A contracting labour market is demand-negative for energy, so I treat the past month's strength as the tail of a trade rather than the start of one and keep only enough to stay in the commodity-carry sleeve my mandate names.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "New, and it does two jobs the mandate wants at once: a confirmed uptrend (+12.04% over three months, 5.2% above its 50-day, 9.4% above its 200-day) and dividend carry. Falling front-end rates with a steepening curve is the classic setup for financials to earn wider net interest margin while capital-markets activity picks up on the record-volume tape. I chose XLF over KRE, which screened comparably, on purpose: money-centre banks, insurers and exchanges are far better collateral than regional-bank loan books if the -23,000 payroll print is the start of real credit deterioration rather than a one-month blip.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "The crypto sleeve survives as a single stub rather than two. ETH is +7.28% over a month and 6.7% above its 50-day, the strongest short-horizon crypto trend available, and it participated in the risk-on week at +4.06%. But it is still 6.7% below its 200-day and -55% over twelve months, so the primary trend remains down and a trend mandate cannot justify size here just because crypto is a headline sleeve. Held spot rather than as a perp to avoid paying 10% APR funding to be long a broken trend. Wide stop so ordinary crypto volatility does not take me out, take-profit set where a 50-day reclaim would have become a genuine base.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 55.0
+    }
+  ],
+  "cash_pct": 16,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: This is a trend-stacking mandate and the cross-asset trend set genuinely changed, so re-racking is the discipline, not churn. Three trends I owned rolled over and two I did not own turned up. The clearest signal of the week was not in my P&L, it was in oil: USO fell 8.66% in five sessions and 13.69% in two weeks, through its 50-day, while the headlines were as bullish as they get \u2014 Hormuz disruption, record refinery margins, supermajor profits surging on crude. A trend that cannot rally on its own best news is over, and a shrinking payroll count explains why. So XLE goes to zero and PDBC is cut from 24% to a residual. Second, I close the SMH short outright. Last week I wrote that I was applying the trend filter honestly; applying it honestly today means admitting that a name up 103% over twelve months, 27.8% above its 200-day, that just rose 7.8% in a week, is not a downtrend a trend book gets to be short. The intermediate dip was the countertrend, not the trend, and I was on the wrong side of my own rule. Third, the redeployment. EFA is the cleanest uptrend on my entire screen \u2014 positive on every horizon from one week to twelve months, above both moving averages \u2014 and a Fed cutting into a weak dollar is the structural tailwind for ex-US equity, so it becomes a core leg. IWM gets the equity-momentum slot: 13.3% above its 200-day and beating the S&P year-to-date, and small caps are the most direct expression of the rate-cut repricing. XLF adds trend plus dividend carry with far better credit quality than KRE, which I screened and rejected because regional-bank credit into a contracting labour market is the wrong risk to be paid for. JEPI is upgraded from a grudging stub to a real weight because it now clears the filter it failed on 7/31 \u2014 it has reclaimed its 200-day (+4.1%) and option-writing income is exactly the right carry to own if this melt-up turns choppy. DBMF stays the structural core even though it went nowhere this week; the whole point of a managed-futures sleeve is that it re-positions across the regime turn without my having to call each leg. BTC is cut to zero and only ETH keeps a crypto stub: both are still below their 200-days and down 44% and 55% on the year, and if I only get to hold one broken trend it should be the one 6.7% above its 50-day rather than 2.6%.",
+  "novelty": "Zero name overlap with my Round 2 defensive book and zero same-direction gross-weight overlap: Round 2 owns US defensive quality and bullion (XLV, SCHD, USMV, XLP, GLD) plus a residual semis short, while Round 3 owns international and small-cap equity trend, financials, option-premium and managed-futures carry, a commodity residual and a crypto stub (EFA, IWM, XLF, JEPI, DBMF, PDBC, ETH) \u2014 and where the two books touch the same idea they take opposite postures, with Round 2 holding gold as a defensive hedge and shorting semis while Round 3 holds neither and instead expresses the same dovish-Fed impulse through high-beta cyclical and ex-US trend legs.",
+  "r2_overlap_pct": 0,
+  "research_notes": "WEB SEARCH BUDGET WAS EXHAUSTED (200/200) before I could use it, so I rebuilt the tape from primary price data (Yahoo chart API, pulled fresh through 2026-08-07 into /tmp/.../scratchpad/w4px/) plus targeted WebFetch on stockanalysis.com quote/news pages. Local repo price files (px.csv, universe_px.csv) were stale at 2026-07-24 and unusable.\n\nTHE MACRO EVENT: The July employment report printed a LOSS of 23,000 payrolls. Markets repriced the Fed toward cuts. Consequences visible across every asset I hold: dollar down, Treasury yields down (TLT +1.0% wk), gold broke out to ~$4,350 spot (seven-week high, plus the PBoC's largest monthly purchase since 2023), and equities put in \"the best week since April with a record close\" on the S&P. This is the exact opposite of the regime both my books were positioned for on 7/31 (rotation OUT of AI-capex INTO cheap defensive cash-flow).\n\nWEEK-ENDING 2026-08-07 NUMBERS I PULLED (1w / 1m / 3m / 12m / vs50d / vs200d):\n- SMH +7.80 / -4.64 / +11.48 / +103.32 / -2.1 / +27.8. SOXX +7.60 / -6.55 / +12.59 / +125.97 / -4.1 / +33.0. The semis \"bust\" was a -20% one-month drawdown that got bought violently. Long-term trend emphatically intact.\n- GDX +21.31 in ONE WEEK, +19.01 1m, +67.8 12m, +14.6 above its 50d. GLD +7.25 / +5.69 / -4.73 / +29.63, now +4.2 above 50d but still -3.2 below 200d (recovering from a -10.5% six-month correction). Consistent with the desk note that 12 of 17 fired standing orders were gold-miner and SOXL shorts stopping out.\n- Defensives (mine): XLV +1.93 / +3.01 / +14.53 / +23.52, +5.1 vs 50d, +9.0 vs 200d \u2014 still the best 3m sector I own. SCHD +1.28 / +4.63 / +7.83 / +28.64. USMV +2.75 / +2.93 / +6.86. XLP +0.08 / +1.19 / +1.96 / +7.34 \u2014 the clear laggard, barely participating. XLU -1.67 / -3.96 (glad I own none).\n- Energy/commodities BROKE, and this is the finding I did not expect: USO -8.66% on the week and -13.69% over two weeks, -18.17% 3m, now below its 50-day \u2014 while the news flow was maximally bullish (Iran/Strait of Hormuz tension, record refinery margins, XOM and CVX Q2 profits surging on higher crude). A sector that cannot rally on its own best headlines has a finished trend. XLE -3.44 wk / -2.58 3m. PDBC -1.77 wk, -3.90 2w, -7.21 3m (still +10.3 above 200d). DBC -1.83 wk. A contracting labour market is demand-negative for oil, which reconciles the price action with the headlines.\n- Trend candidates I screened for Round 3: EFA +2.81 / +4.04 / +8.06 / +23.71, +4.6 vs 50d, +10.0 vs 200d \u2014 the most consistent uptrend across every horizon on my screen, and a weak-dollar regime is structurally its tailwind. IWM +3.56 / +1.88 / +6.98 / +35.79, +13.3 above 200d, outperforming the S&P YTD. XLF +1.16 / +3.39 / +12.04, +5.2 vs 50d. JEPI +0.91 / +2.10 / +4.00 / +9.52 \u2014 materially better than last week's read; it has reclaimed its 200-day (+4.1) so the carry leg now passes the trend filter it failed on 7/31. DBMF flat (+0.03 wk) \u2014 CTAs got whipsawed as commodities and the equity short both reversed, but it holds above both MAs. MTUM still -2.4 below its 50d. SLV +9.82 wk but -9.8 below its 200d (squeeze, not trend). KRE screens well (+3.2 vs 50d) but I rejected it: regional-bank credit into a shrinking payroll count is the wrong risk.\n- Crypto: ETH +4.06 / +7.28, +6.7 above 50d but -6.7 below 200d and -55% 12m. BTC +3.50 / +1.82, +2.6 above 50d but -7.5 below 200d and -44% 12m. Both remain broken primary trends; ETH is the stronger.\n\nWHAT I CONCLUDED: The AI-infra-overextension short is a losing hedge in a rate-cut liquidity regime \u2014 it stopped hedging my longs and started correlating against them. And a -23k payroll print is genuinely bad economic news that the market is trading as good news; that argues for MORE defensive quality and MORE gold, not for chasing the melt-up, but it also argues against being short the highest-beta thing in a Fed-cut tape and against owning cyclical energy demand."
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Biotech has stabilized modestly (+1.83% 1wk) after its rollover; held flat as a small catalyst-optionality sleeve, not a core position.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Healthcare re-rating momentum has decelerated sharply versus the +7.3% 1-month read that justified sizing up to 16% on 7/31 (current read roughly flat over 1wk/1mo); trimmed to 14% to reflect the cooling trend while staying long the still-positive move.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials rotation still positive (+2.82% 1mo, +1.27% 1wk) but decelerating from the +7.5% 1-month read that drove the prior upsizing; trimmed slightly from 16% to 15%, still a core long.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Regional banks continuing to confirm the broader financials rotation alongside XLF; held flat at 10% (data check unavailable this session, no new catalyst either way).",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Low-vol defensive sleeve held flat at 6% as ballast now that the book has de-risked its largest short.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "Discretionary laggard thesis has stalled to roughly flat on the month (-0.10%), no longer confirming; trimmed from 10% to 7% rather than held at full size into a risk-on tape.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "crypto",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "6-month momentum-breakdown thesis unrefuted (-37.7% 6mo) and the 1-month move remains stalled; held flat at 5% with a wide -40% stop since shorts carry no funding cost to stay patient.",
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 35,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: SMH was the single largest position in the book (16%) and the platform data is explicit that this exact trade type - a short in the flagged semis/gold-miner complex - has caused 12 of 17 standing-order stop-outs ever, 5 just yesterday, and fresh data shows SMH +12.99% over the past week, i.e. the squeeze is live right now, not historical. Rather than risk a max-loss stop-out on my biggest position, I'm covering it. XLY short gets trimmed too since its 1-month move has gone flat (-0.10%), so the discretionary-laggard thesis isn't confirming and I don't want to hold full size into a tape that's clearly risk-on this week. On the long side, XLV and XLF - which justified their 7/31 upsizing on +7.3%/+7.5% 1-month reads - have both decelerated sharply (current reads roughly flat to +2.8%), so I trim both modestly to reflect cooling momentum without abandoning confirmed winners. XBI, KRE, and SPLV are unchanged - no new catalyst either way (KRE data was unavailable this check). SOL-USD short is unchanged - the 6-month breakdown thesis is unrefuted and the stop is wide. Net effect: cash rises from 13% to 35%, a real de-risk after removing the book's largest and most exposed position.",
+  "novelty": "Round 3 now holds zero symbol overlap with the Round 2 book (Round 2: IWM/XLI/TLT/FXI/GLD; Round 3: XBI/XLV/XLF/KRE/SPLV/XLY-short/SOL-short) - the two books express completely distinct theses, rates/EM/gold macro rotation versus catalyst-driven healthcare/financials-over-semis sector rotation, well under the 50% same-direction overlap ceiling.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet for both books (Round 2 NAV $1,003.40 +0.34%, Round 3 NAV $994.85 -0.52%, prices through 2026-08-07 close). WebSearch quota was exhausted for this session, so I used WebFetch against live finance-data pages instead (some pages carried stale/cached timestamps mixed with current intraday data, so figures are directional, not exact-to-the-cent). Key findings: (1) The prompt's explicit warning about GDX/GDXJ/SOXL squeezes is corroborated by fresh data - GDX +13.76% and gold spot +3.46% over the past week, and SMH (same semis complex as the leveraged SOXL short) +12.99% over the past week, i.e. a live, ongoing short-covering squeeze across both flagged complexes simultaneously, not sector-specific noise. This is a direct, current threat to both my SOXL short (Round 2) and my much larger SMH short (Round 3, 16% weight, largest single position in that book). (2) GLD/gold is confirmed accelerating (own long, unaffected by the squeeze risk since I'm long, not short, the metal). (3) FXI momentum has stalled week-over-week (-0.15% 1wk) though the monthly trend (+13%) is intact. (4) IWM small-caps are bouncing (+4.3% 1wk), the first real confirmation of the paused Fed-cut small-cap thesis. (5) XLV and XLF, my two largest Round 3 longs, have decelerated sharply versus the readings that justified sizing them up on 7/31 (current reads: XLV roughly flat over 1mo/1wk, XLF +2.82%/1.27% vs the +7.3%/+7.5% cited when the book was set) - momentum cooling, not reversing. (6) XBI is stabilizing modestly (+1.83% 1wk) after its rollover. (7) XLY short is roughly flat on the month (-0.10%), thesis neither confirmed nor refuted. (8) KRE data was unavailable (503 error) - held unchanged on priors. Net conclusion: cover the SOXL short outright in Round 2 and cover the SMH short outright in Round 3 given the confirmed, live, cross-complex squeeze that the platform data shows has already stopped out 12 similar positions (5 just yesterday); trim the decelerating longs modestly; raise cash meaningfully in both books as a risk-management response to a broad short-covering/risk-on tape rather than a change of long-term thesis."
+}

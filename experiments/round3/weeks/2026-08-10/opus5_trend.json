@@ -1,0 +1,63 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "stop_loss_pct": 15.0,
+      "thesis": "New top weight and the single most established trend in my universe: a record close at 7,757.64, +3.6% on the week (best since April), price within 0.5% of the 52wk high of $776.85, clearly above both moving averages and 1yr +23.55%. I have been expressing equity trend only through sector bets, which meant my equity risk was a set of thematic opinions rather than the trend itself; with the broad index printing records this is the cleanest available expression and it carries the lowest volatility in the book (~13%), which is precisely why inverse-vol sizing puts it first. Wide -15% stop because index drawdowns of that size are regime changes, not noise, and weekly reassessment is my real exit."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 18.0,
+      "thesis": "Held and nudged up because it did what I bought it to do \u2014 $165.68 against a $168.53 52wk high, up on Friday, YTD +29.17% \u2014 and it did it without needing the defensive-rotation story I abandoned a week ago. It remains the strongest 3m time-series momentum of any low-volatility sleeve at ~18% vol, above both moving averages with the golden cross intact, and it is now my lowest-correlation equity leg against an index core plus two cyclicals. Nothing in the payrolls repricing touches the healthcare trend in either direction."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised modestly from 9.8 for a specific reason: I trimmed it last week because I was carrying it into a Fed that JP Morgan expected to hike in December, where higher-for-longer threatened credit and the multiple. That tail got smaller this week \u2014 September hold odds went to 60% and the 10yr fell 8.6bp to 4.657% \u2014 while the price trend extended to a fresh record $57.60 from $56.18, roughly 8% above its 50dma. It gave back 0.36% on Friday with energy as the sector laggards, which is noise against a trend this clean at only 13.2% vol."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 22.0,
+      "thesis": "Cut from 19 to 11 because the evidence that justified top weight decayed: Brent went from $90.12 to roughly $82 and WTI from $84.67 to $78.18 as Iran-Oman talks on reopening Hormuz replaced the 31 July tanker attacks as the live story, and Goldman now frames Brent at $80-90 absent a deal or a major escalation. Energy was the worst sector on Friday. I keep it rather than exit because the sector's own trend still passes both filters \u2014 ~$57.50, about 2% above its 50dma and ~12% above its 200dma with positive 3m momentum and 1yr +40% on record refiner margins \u2014 but it no longer earns a conviction overweight above its 24.4% volatility, so it reverts to roughly its inverse-vol baseline. Stop tightened from -25% to -22% to reflect a driver that is now diplomatic rather than physical."
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 25.0,
+      "thesis": "New position and the book's replacement source of non-equity trend now that gold, silver and uranium have all stopped screening. Copper printed an all-time high this week with CPER at $39.90 against a $27.27-$40.97 52wk range and 1yr +45.3%, so it is unambiguously above both moving averages with strongly positive 3m momentum. The driver is supply-side and structural rather than a rate call \u2014 demand exceeding global supply on electrification, grid buildout and AI infrastructure, with the rally attributed to tight supply rather than a growth acceleration \u2014 which is exactly why it diversifies a book whose remaining legs are US equity beta. Sized at 10 on roughly 23% volatility, and it fell 2.11% on Friday, so I am not buying the print of the record itself."
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 18.0,
+      "thesis": "Lifted from 8 to 10 and now the book's second non-equity leg. Trend is intact on its own terms \u2014 $27.62 against a $25.40-$28.84 range, above both moving averages, 1yr +10.11% \u2014 and the fundamental backdrop got fresher rather than staler with heavy rain disrupting the Brazilian coffee harvest and drought pressuring US growers. Its beta of 0.12 makes it the least equity-correlated thing I own, which matters more now that I have removed every short and my remaining risk is directional; at 13.3% volatility it is cheap risk to carry and inverse-vol sizing would justify more than I am taking."
+    }
+  ],
+  "cash_pct": 22,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Six of my ten legs lost their price signal in a single week, and I refuse to defend a view after the filters that put me in the trade have flipped. The 7 Aug payrolls print (-23k vs +80k expected, wages +0.1%) inverted the rate path I explicitly cited as the driver for GLD, SLV and EUO, and \u2014 more importantly than the narrative \u2014 it moved price through my exit levels: gold cleared the ~$4,243 50dma I derived from my own 31 Jul reading, URA gapped ~15% through its ~$44.5 50dma, and EUR/USD at a 7-week high of 1.1560 puts EUO at a 7-week low under its 50dma. USO fell back onto its 50dma as WTI dropped 7.7% to $78.18 with 3m momentum turning negative, and BTC pushed back above its 50dma, splitting that filter. I applied exactly this standard to XLY on 1 Aug and to IWM before that for a 0.1% breach; consistency demands I apply it to legs that are costing me money, not just to ones I am indifferent about. I do NOT flip long gold or silver \u2014 both are still below their 200dmas, so they are no-positions, and I am not chasing a squeeze that stopped out twelve shorts. XLE is trimmed 19 to 11 rather than cut because the sector trend held (~2% above 50dma, ~12% above 200dma) even though the crude leg it rested on did not. The redeployment goes to the two cleanest uptrends I can find: SPY at a record 7,757.64 after the best week since April, and copper at an all-time high. Cash rises to 22% because when half my universe stops screening, holding 4% risk-free is a position, not a failure to act.",
+  "novelty": "This is my only book in the experiment, but it is a deliberate break from the book it replaces: the short/hard-dollar sleeve that defined it \u2014 GLD, SLV, URA, BTC and EUO, 35.5% of gross \u2014 is gone entirely and replaced with a long-only trend set anchored by a broad-index core and an industrial-metal leg I have never held, so same-direction overlap with the prior book is limited to the four legs whose signals actually survived.",
+  "research_notes": "Checked the 3-7 Aug tape leg by leg against my two filters (price vs 50/200dma, 3m time-series momentum) and against the macro drivers I actually cited on 1 Aug.\n\nTHE EVENT: July payrolls, released Fri 7 Aug, printed -23,000 vs +80,000 expected \u2014 the first outright decline in months \u2014 with average hourly earnings +0.1% vs +0.3% and wage growth down to 3.2%. This is the exact opposite of the \"JP Morgan now forecasts a December hike\" premise on which I built three of my four short/dollar legs. CME FedWatch flipped from ~1-in-3 hold to 60% hold for September. Notably December hike odds are still ~75%, so the hiking cycle is not dead \u2014 which is why I exit these legs rather than reverse them.\n\nPRICE CONFIRMATION (this is what governs, not the narrative):\n- Gold $4,399.70 spot / GLD $398.47, +7% on the week from $4,043. I estimated the gold 50dma at ~$4,243 from my own 31 Jul reading (4.7% below); gold is now ~3.7% ABOVE it. Fast filter flipped. Gold is still ~1.7% below its 200dma, so it is a no-position, not a long.\n- Silver $63.50, +10% weekly, six-week high; SLV $57.50. Still marginally under a ~$65.7 50dma but the counter-signal I said would kill the trade fired.\n- URA $44.91 from ~$39 \u2014 up ~15% in a week, now through the ~$44.5 50dma I derived on 31 Jul. Materials/miners led the tape on lower rate-hike odds.\n- EUR/USD $1.1560, a 7-week high; DXY -0.37% to 99.56. EUO $30.09 \u2014 if EUR is at a 7-week high, EUO is at a 7-week low, i.e. below its 50dma. Fast filter broken.\n- WTI $78.18 vs $84.67 on 31 Jul (-7.7%); USO $117.98 from ~$128. That puts USO essentially back ON the ~$117 50dma with 3m momentum (only +1.5% a week ago) now negative. Goldman: Brent $80-90 until a US-Iran deal; Iran-Oman talks on reopening Hormuz are live. XLE $57.50 from ~$59.5, still ~2% above its 50dma and ~12% above its 200dma \u2014 the sector trend survived, the crude leg did not.\n- BTC $64,940, +2.8% weekly, back above $65k and above its 50dma on the dovish print. Below the 200dma still, but the MA filter is now split.\n- Survivors: XLV $165.68 (near $168.53 52wk high, YTD +29%), XLF $57.60 (fresh record vs $56.18 last week), DBA $27.62 (52wk high $28.84). All three still clear on both filters.\n- S&P 500 record close 7,757.64, +3.6% on the week (best since April); Nasdaq +5.2%. SPY $773.26 against a $776.85 52wk high \u2014 the most established, lowest-volatility uptrend in my universe.\n\nNEW CANDIDATES SCREENED: CPER $39.90, copper at a record high, 1yr +45.3%, both filters clearly positive \u2014 a genuine non-equity trend. IGV $102.69 (+3.29% Fri) rejected: 1yr return is -8.14%, this is a bounce off $73.93, not an established trend. SMH $582.70 rejected both ways: SOX is -15% since 1 July so it fails as a long, but 1yr +104% means it is far above its 200dma so it fails as a short \u2014 which is consistent with the SOXL short stop-outs on 7 Aug. EEM $65.64 rejected: 8% off its high, dragged by the same semi names. XLU $43.61 rejected: near the bottom of a $41.15-$47.80 range, a laggard, and shorting a bond proxy into a dovish repricing is fighting the catalyst. GDX/GDXJ deliberately not touched in either direction.\n\nCONCLUSION: six of ten legs lost their signal in one week and almost nothing in my universe now screens short. The honest trend answer is a smaller, long-only book in the four survivors plus the two cleanest new uptrends, with the rest in cash at 4%."
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials at fresh all-time highs on Fed stress-test-driven buyback/dividend increases and strong bank earnings; held at prior size as the core of the rotation trade -- nothing this week contradicted the thesis and I lacked fresh data to justify changing it."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Regional banks showed resilient lending/fee growth and outperformed the broader tape during the 7/29 hawkish-Fed selloff; held at prior size, no new information this week to act on."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 15.0,
+      "thesis": "Biotech M&A running at a multi-year-best pace ($106B/201 deals H1 2026) and the sector has been pulling in rotational 'haven from tech' flows; trimming 17%->15% purely for prudence (research tools were exhausted so I could not refresh the thesis this week) while keeping the existing -15% stop for protection."
+    }
+  ],
+  "cash_pct": 57,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: This book's own GDX short was already stopped out on 2026-08-07, and the task packet confirms that was part of a broad, repeated pattern (5 of 17 experiment-wide standing-order fires happened on 8/07 alone, all shorts in the GDX/SOXL complex being squeezed higher). The remaining SOXL short (16%, -25% stop) sits in the identical complex and faces the same squeeze dynamic, so I am closing it rather than risk becoming the next stop-out on a 'momentum breaking down' thesis the tape has now falsified twice in the same book this week. I'm keeping the long rotation core (XLF, KRE, XBI) since nothing this week contradicted that leg, trimming XBI modestly (17%->15%) for prudence given I could not refresh its data, and parking the freed capital in cash (57%) given the book is already down -4.37% with a -6.96% max drawdown.",
+  "novelty": "Zero symbol overlap with my Round 2 long book: Round 3 now holds only sector ETFs (XLF/KRE/XBI, all long) versus Round 2's single-name growth longs (IWM/SOFI/CRSP/RKLB/DUOL/HOOD) plus an ADBE short; after closing the SOXL short this book carries no short exposure at all, so same-direction gross-weight overlap with Round 2 is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet in full (both Round 2 and Round 3 books, live NAV/P&L/drawdown, and the standing-order fire log). Attempted to refresh market data via WebSearch and WebFetch, but the WebSearch tool returned 'budget exhausted' on every query (0 results obtained for SOXL, GDX, DUOL, RKLB, CRSP) and most WebFetch calls to finance sites either failed outright (MarketWatch blocked) or returned data that was clearly stale/mistimed (a SOXL quote dated to 2026-07-30 pre-market-crash levels, a GDX quote showing an intraday 'market open' timestamp that cannot be current on a Saturday) -- so I did not treat any of the fetched quote data as reliable and did not use it to drive sizing decisions. Given that, I leaned on the two pieces of information I could trust: (1) the packet's own live NAV/P&L/drawdown/standing-order data, and (2) the task prompt's explicit, dated warning that GDX/GDXJ and SOXL shorts have squeezed hard across the whole experiment (12 of 17 total stop-outs ever, 5 on 2026-08-07 alone), which is directly corroborated by this book's own GDX short having been stopped out on exactly that date. Round 2 (long book): no fresh data obtained on any of its names (IWM/SOFI/CRSP/RKLB/DUOL/HOOD/ADBE), P&L roughly flat (-0.40%), prior week's risk cuts (SOXL to 4% stub, ADBE to 6%, stops on SOXL/RKLB) already in place -- HOLD to avoid trading on no information. Round 3 (rotation book): GDX short already stopped out 8/07; remaining SOXL short (16%, -25% stop) sits in the same repeatedly-squeezed complex per the prompt's warning, so I closed it to cut correlated tail risk rather than wait to be the next stop-out, trimmed XBI slightly for prudence since I could not refresh its thesis, held XLF/KRE unchanged, and raised cash to 57%. No CASH/USDC symbols used; weights + cash sum to exactly 100 in the rebalanced Round 3 book."
+}

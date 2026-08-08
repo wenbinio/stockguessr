@@ -1,0 +1,66 @@
+{
+  "name": "Haiku quality compounders",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Tactical sector rotation with small-cap momentum leverage, carry positioning in energy/financials, crypto capitulation accumulation, hedged mega-cap tech shorts; position-level stops + 28% dry powder.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12.0,
+      "thesis": "Healthcare sector defensive ballast; State Street upgraded sector from neutral to positive; 3%+ yield provides income cushion in risk-off environment; lower correlation to equity momentum unwinding"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.75,
+      "thesis": "Energy sector carry on geopolitical uncertainty and OPEC coordination; +21% YTD performance validates thesis; geopolitical tensions + AI infrastructure demand supporting commodity tailwinds"
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.0,
+      "thesis": "Financial sector at all-time highs; net interest margin benefits from stable rate environment; sector momentum intact; diversifies away from concentrated tech hedging"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.0,
+      "thesis": "Value factor diversification; low-cost value exposure counters mega-cap tech concentration in Round 2; historically resilient in risk-off environments; provides factor-level hedge"
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.75,
+      "thesis": "Quality factor diversification; retains capture of ROE strength and AI-driven software benefits; reduces single-stock idiosyncratic risk; complements but does not replicate Round 2 holdings"
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7.5,
+      "thesis": "Dividend income ETF with 3%+ yield; provides counter-cyclical income cushion if momentum collapse accelerates; defensive ballast with consistent payout"
+    },
+    {
+      "symbol": "BRK.B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.0,
+      "thesis": "Diversified quality conglomerate; fortress balance sheet provides optionality in downturn; different risk exposure than consolidated mega-cap tech; capital-efficient owner with strong downside protection"
+    }
+  ],
+  "cash_pct": 40,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Original tactical thesis has failed on three vectors requiring repositioning. (1) Small-cap momentum leverage: Falsified by market data - 3x leveraged semis down 40%+ in one month signals risk-off environment, not sector rotation; thesis no longer operative. (2) Tech short hedges crowded and being violently squeezed: 5 standing orders fired Aug 7 on SMH shorts at -25% stops; QQQ shorts slightly negative in August, failing to offset core losses; short positioning is congested and asymmetrically risky on squeeze dynamics. (3) Crypto capitulation thesis invalidated: Bitcoin at $64.6K (50% below Oct 2025 high), bearish sentiment at 29 Fear & Greed, historical August weakness persisting; capitulation accumulation thesis not validating. Replacing with defensive sector rotation (proven working: XLE +21% YTD, XLF all-time highs, XLV State Street upgraded) paired with diversified quality/value factors (QUAL, VTV, BRK.B) provides more resilient hedging through cross-sector allocation rather than crowded directional shorts. Raising cash to 20% restores tactical flexibility.",
+  "novelty": "Shifts from concentrated directional short hedging (QQQ, SMH, BTC) to cross-sector and factor diversification approach; defensive orientation hedges Round 2's mega-cap tech concentration through systematic allocation to healthcare/energy/financials rotation and quality/value factors rather than risky crowded directional bets.",
+  "r2_overlap_pct": 10.0,
+  "research_notes": "Market research through Aug 7, 2026 close: Big tech earnings season validated mega-cap AI execution (Microsoft +15.5%, Amazon $3T+ milestone, raised guidance across cohort). Semiconductor sector experienced historic volatility with July worst month since 2008, followed by sharp squeeze recovery (5 standing orders fired Aug 7 on crowded SMH shorts at -25% stops). QQQ hedges slightly negative in August. Crypto capitulation thesis invalidated: Bitcoin at $64.6K, 50% below Oct 2025 peak, bearish sentiment persists. Defensive sectors genuinely working: XLE +21% YTD on geopolitical carry, XLF at all-time highs, XLV upgraded by State Street from neutral to positive. Small-cap momentum thesis failure confirmed (3x leverage indices down 40%+ YTD indicates risk-off, not sector rotation). Round 2's quality mega-cap compounder exposure (MSFT, NVDA, AMZN, AAPL) has proven resilient with +4.59% returns and -3.12% max drawdown through earnings volatility. Round 3's hedging strategy now appears crowded and counterproductive: short positions fighting consensus squeeze dynamics while failing to offset core losses; BTC thesis invalidated by persistent weakness.",
+  "registration_note": "Desk handling \u2014 a 20% 'CASH' position was submitted again after the desk told this manager cash belongs in cash_pct and that these are real listed securities; folded into cash rather than rejecting the whole book; weights summed to 80 with cash 40; scaled by 0.7500"
+}

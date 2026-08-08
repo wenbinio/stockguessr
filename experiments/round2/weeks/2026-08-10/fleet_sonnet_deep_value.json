@@ -1,0 +1,73 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and run a small levered short-BTC hedge against a continuing crypto bear, holding sizable cash for drawdown buys.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Integrated energy major, FCF yield still attractive; -1.5% this week ($155.44->$153.04) is normal consolidation post-7/31 print with no new catalyst -- held unchanged."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Still cheap at ~15x P/E with a 10% dividend hike; +1.6% this week as last week's Dimon-driven caution faded -- held unchanged."
+    },
+    {
+      "symbol": "GM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Q2 beat and raised guidance thesis intact; -1.4% this week is digestion after the prior week's momentum add, not a thesis break -- held unchanged."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Mean-reversion off medical-cost-fear lows continuing; -1.8% this week is noise within an ongoing recovery -- held unchanged."
+    },
+    {
+      "symbol": "PFE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Deep-value re-rating is confirming -- best single-week performer in the book (+7.0%, $25.01->$26.76) while still yielding 6.8%; sized up modestly to press the winner."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap catch-up trade has un-stalled: +3.6% this week ($291.20->$301.56) as a weak July jobs print (-23k vs +83k expected) cut September Fed-hike odds, a setup that favors small-cap rate sensitivity; sized up into the inflection."
+    },
+    {
+      "symbol": "F",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Q2 beat, guidance raise, military contract and Citi upgrade are now priced in from last week's add; stock is the weakest name in the book this week (-4.8%, $14.68->$13.98) with no new negative catalyst found -- trimming to bank the prior run's gain and de-risk into a possible further fade."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 2,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Multi-quarter downtrend (-46%/1yr) intact but under near-term pressure -- BTC ground from ~$62.9k to ~$64.9k (+3.1%) this week on the same dovish-jobs risk-on tape that lifted IWM; cut leverage 3x->2x, trimmed size 8%->6%, and added a stop for the first time (previously naked) given the tape's repeated squeezes of levered shorts in this exact post-weak-jobs melt-up regime."
+    }
+  ],
+  "cash_pct": 16,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Weekly reassessment vs the 7/31 book. A weak July jobs print (-23k vs +83k expected) released this week cut September Fed-hike odds and drove a broad risk-on move: IWM ran from $291.20 to $301.56 (+3.6%) as the 'stalled catch-up trade' un-stalled on rate-cut-favorable small-cap sensitivity, and PFE re-rated hard (+7.0%, $25.01->$26.76), so both are sized up. F is the weakest name in the book this week (-4.8%, $14.68->$13.98) with its Q2-beat/guidance-raise/military-contract catalysts already priced from last week's add and no fresh negative news found -- trimming to bank the prior gain. XOM/JPM/GM/UNH moved less than 2% either way with no new catalysts -- left unchanged rather than reacting to noise. BTC short is the one position actively hurting the thesis: BTC ground from ~$62.9k to ~$64.9k (+3.1%) this week on the same dovish-jobs risk-on tape, and it carried no stop at 3x leverage -- cutting leverage to 2x, trimming size, and adding a stop for the first time given the standing-order data shows this exact regime (post-weak-jobs melt-up) has repeatedly squeezed levered shorts elsewhere in the tape (GDX/SOXL, 12 of 17 fired stops).",
+  "research_notes": "Read the account packet (Round 2 NAV $1,021.69 +2.17%, gross 100%/cash 16%; Round 3 NAV $998.03 -0.20%, gross 89%/cash 21%, both books entered 7/31). Pulled 7/31->8/7 daily closes for every held symbol (stockanalysis.com/Google Finance/CoinGecko) to measure actual since-entry moves rather than relying on stale packet commentary: XOM -1.5%, JPM +1.6%, GM -1.4%, UNH -1.8%, PFE +7.0%, IWM +3.6%, F -4.8% (Round 2); SMH +7.8%, XLK +7.2%, GDX +21.3%, XBI +7.0%, BTC +3.1% (Round 3, both books' BTC legs). Checked market-wide news: a weak July jobs report (-23k vs +83k expected) released this week cut September Fed-hike odds and triggered a broad risk-on melt-up -- S&P record highs, Nasdaq100 +$3.5T market cap in four sessions through 8/5, global semiconductor sales at a 15th straight monthly record, and gold miners' best week since 2008. This directly explains why Round 3's momentum-extension shorts (XLK, SMH) moved sharply against thesis on real catalysts rather than noise, consistent with the packet's warning that 12 of 17 standing orders ever fired in this experiment were GDX/GDXJ or SOXL shorts getting squeezed, five on 8/07 alone. Closed both XLK and SMH shorts rather than let them ride toward their stops (60% and 52% of the way there respectively), took partial profit on GDX long (near its own TP after the gold-miner squeeze) with a tightened stop, added modestly to the now-confirming XBI bounce, and de-levered/downsized the BTC short hedges in both books (Round 2: 3x/8%->2x/6% with a new stop; Round 3: 2x/10%->1x/6%) since the same dovish-jobs move lifting risk assets is also lifting BTC. In Round 2, added to IWM (small-cap rate-cut beneficiary) and PFE (confirmed re-rating), trimmed F (weakest name this week, prior catalysts already priced), left XOM/JPM/GM/UNH unchanged as sub-2% weekly moves with no new information. Did not attempt to open a new momentum-extension short in Round 3 this week -- deliberately avoiding fighting a catalyst-backed melt-up in the same week it accelerated. Verified Round2/Round3 same-direction overlap stays well under the 50% cap (only the BTC short is common, ~14% of Round 3's gross)."
+}

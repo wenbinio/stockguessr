@@ -1,0 +1,92 @@
+{
+  "name": "Opus 5 pairs",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Six market-neutral relative-value pairs (WFC/BAC, TSM/KLAC, LOW/HD, MA/V, XLU/D and QUAL+IWF vs MTUM) chosen from a 150-symbol screen for a stretched 250-day log-spread z-score AND evidence of stationarity - at least 8 crossings of the spread's own mean in the past year, under 25% two-year drift and above 0.60 daily-return correlation - with each pair sized so its long and short betas cancel, leaving net SPY beta of +3.2% of NAV.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "WFC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18.5,
+      "thesis": "Long leg vs BAC, raised from 17.5 because the spread widened against me for a reason I want more of, not less. BAC closed the week at $63.17 against a 52-week high of $63.97 \u2014 effectively at its high \u2014 while WFC at $87.25 sits 11% below its own $97.76, so the 250d log ratio is at least as stretched as the 2.6sd that got me in. The pair's stationarity evidence is the best in the book: 17 mean-crossings in a year, near-zero two-year drift, 0.80 daily-return correlation, betas 0.76 vs 0.77. Valuation carries the convergence: 12.68x trailing vs BAC's 14.59x, a $100.02 target implying 14.6% against BAC's 8.9%, and $263bn of cap against continuing buybacks. This week's news is confirmatory rather than new \u2014 dividend to $0.50, tokenized corporate deposits, Scharf calling conditions 'really good for banks.' Both banks reported 07-14, so the calendar is clear."
+    },
+    {
+      "symbol": "BAC",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 18.3,
+      "thesis": "Short leg vs WFC, sized 18.3 against 18.5 so 0.77 and 0.76 betas cancel to 0.03% of NAV. Nothing has gone wrong with BAC and that is the point: CET1 of 11.2% against WFC's 10.3%, NII +9%, a 14% dividend raise to $0.32, and a fresh 52-week high. I am short the price of that quality at 14.59x with only 8.9% of consensus upside left, not the franchise. Senior-executive departures to competitors are a minor negative I note but do not size on."
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Long leg vs KLAC, raised from 6.9 because the analyst-implied spread moved my way. TSM at $420.04 trades on a 19.0x forward multiple against 19 Strong Buys and a $540.20 target implying 28.6% upside, and it is still ~12% below its $479 52-week high in a week when SOXX rose 7% \u2014 it continues to lag the sector it manufactures for. Fundamentals are accelerating, not decaying: 2025 earnings +46.6%, accelerated 3nm and N2 capacity expansion, advanced AI packaging. The screen showed the largest convergence anywhere in my universe at 19% back to the 250d mean, with a 34-day half-life, 15 mean-crossings and only -12% two-year drift, so last year's 33% relative fall reads as oscillation."
+    },
+    {
+      "symbol": "KLAC",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6.4,
+      "thesis": "Short leg vs TSM, sized 6.4 against an 8.0 long because KLAC's 2.70 beta exceeds TSM's 2.15 \u2014 beta-matched, not dollar-matched. The 07-28 FQ4 print beat on both lines and the stock still fell 8-9% on guidance, and several firms have since cut targets, leaving $230.85 average and 16.5% upside against TSM's 28.6% \u2014 a twelve-point gap in favour of the long. At 54.1x trailing, KLAC prices the WFE cycle at its peak. I keep this as the second-smallest sector pair on purpose: with 2.15/2.70 betas it is the most violent spread I own, and shorting semi-cap into an AI capex boom is the position most likely to be wrong for the longest."
+    },
+    {
+      "symbol": "LOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Long leg vs HD, trimmed from 11.0 for event sizing rather than conviction. This remains the cleanest hedge I own \u2014 0.88 daily-return correlation, betas 0.65 vs 0.68, 16 mean-crossings and only -6% two-year drift with the ratio 1.2sd cheap. Street preference still sits with LOW on execution across Pro and DIY, Telsey raised on demand and execution strength, and management reaffirmed FY26 at $92-94bn with flat-to-+2% comps and $12.25-12.75 adjusted EPS. But LOW reports 2026-08-19, one day after HD, and consensus upside has converged to ~14% vs HD's ~15%, so I am no longer paid to carry 21.5% of gross into a two-day window."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8.6,
+      "thesis": "Short leg vs LOW, sized 8.6 against 9.0 to cancel the 0.68 vs 0.65 betas exactly. HD confirmed on 08-04 that it reports 2026-08-18, the day before LOW, which is what makes this pair worth holding through the print rather than flattening: two near-identical retailers reporting 24 hours apart means the common housing shock \u2014 mortgage rates near 6.53%, turnover at multi-year lows, Ellison's 'hardest housing market since the financial crisis' \u2014 lands on both sets of numbers, leaving the execution difference I am actually betting on. Past sub-(-1.25sd) episodes in this duopoly reverted about +5% over the following 110 sessions, and HD's own May 52-week low confirms both names are being repriced by the same rate shock."
+    },
+    {
+      "symbol": "MA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.3,
+      "thesis": "Long leg vs V, held unchanged. Still the most stationary spread in the screen \u2014 22 mean-crossings in a year, 0.85 correlation, betas 0.35 vs 0.38 \u2014 and MA at $493.98 carries a $646.97 target implying 31% upside against Visa's 22%, with a 20th consecutive beat behind it (net revenue +15.8%, adjusted EPS +23.3%). Both networks were just upgraded on cheaper valuations after a stretch of underperformance, and payments lagged this week's AI-led tape as a group, which is exactly the environment in which the intra-duopoly spread rather than the sector does the work. I do not add despite the widened target gap, because 4% spread vol still means a full 1sd convergence pays very little per dollar committed."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5.7,
+      "thesis": "Short leg vs MA, sized 5.7 against 6.3 to match the 0.38 vs 0.35 betas. Visa is a good business trading at its widest premium to MA in a year with no divergence in underlying network economics \u2014 stablecoin settlement and the AI-agent interchange debate hit both symmetrically. I respect the bear case for this short: a structurally higher operating margin, a larger and faster buyback, currency-neutral growth that matched MA last quarter, and the 07-28 announcement of 2,600 job cuts framed around AI is a credible margin story that can defend the premium longer than the z-score suggests. That is why the pair stays small rather than gets cut."
+    },
+    {
+      "symbol": "IWF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Larger long leg of the factor triangle against MTUM, halved from 5.9 alongside the short. Plain large-cap growth remains the wider of the two dislocations at 1.8sd cheap with 14 mean-crossings, and at $124.60 with a 1.17 beta it is the cleaner beta-match to a momentum short. I keep the sign because the spread still passes my stationarity screen; I cut the size because the return driver I underwrote \u2014 momentum crowding decaying \u2014 has been contradicted by the earnings the momentum names are actually delivering."
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 2.65,
+      "thesis": "Second long leg of the triangle, halved from 5.3 in proportion so the beta match survives the resize: 3.0 of IWF at 1.17 plus 2.65 of QUAL at ~1.00 gives 6.16 units of long beta against MTUM's 6.15. QUAL/MTUM is 1.1sd cheap with 16 mean-crossings, and quality has explicitly lagged because investor attention went to AI \u2014 a headwind that is the mirror image of the momentum leg. It also diversifies IWF's AI-growth tilt so the triangle is not simply long the same names it is short."
+    },
+    {
+      "symbol": "MTUM",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4.1,
+      "thesis": "Single short leg of the triangle, cut from 8.1 to 4.1 \u2014 the one position in the book whose stated thesis new information contradicted. I underwrote momentum's excess as a crowding premium rather than an earnings premium. Micron, MTUM's top holding at 6.26%, grew revenue more than fourfold last quarter with gross margin expanding from 39% to 84.9%, and targets were raised to $1,500-$1,697; AMD, Broadcom and Intel behind it at 5.22/4.72/4.11% rallied 8-10% on 08-04. That is earnings, and shorting an earnings inflection through a factor wrapper is not the trade I described. The second reason is mechanical and matters more for a mandate built on beta cancellation: the November reconstitution is expected to push MTUM's semiconductor weight materially higher and lift the fund's beta toward Micron's ~2.2, versus the ~1.5 my triangle is matched against, and I cannot re-hedge that drift from inside the fund. I hold a residual short rather than exiting because MTUM at $309.32 is still ~10.5% below its $345.59 52-week high, the fund cannot de-crowd itself between reconstitutions, and the spread has not converged \u2014 but at half the risk, and small enough that the coming beta drift is an annoyance rather than a hole in the book."
+    }
+  ],
+  "cash_pct": 9.45,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: One leg's thesis was falsified by new information and one leg now carries a dated binary, so I am cutting both and moving the gross to the two spreads whose evidence improved. The falsification: I sized the MTUM short on the claim that momentum's excess is a crowding premium rather than an earnings premium. Micron \u2014 MTUM's largest holding at 6.26% \u2014 just posted revenue up more than fourfold with gross margin going 39% to 84.9%, and targets were hiked to $1,500-$1,697. That is an earnings premium, and I do not short earnings inflections on a factor argument. Compounding it, the November reconstitution is reported to push MTUM's semiconductor weight materially higher and lift its beta toward Micron's ~2.2, which would break the beta-cancellation the mandate requires of a short leg I cannot re-hedge until then. I halve the triangle rather than exit it because the 1.8sd/1.1sd dislocation and the 14-16 mean-crossings still pass my screen \u2014 the size was wrong, not the sign. The binary: HD reports 2026-08-18 and LOW 2026-08-19, confirmed by HD's 08-04 release, and analyst upside on the two has converged to ~14% vs ~15%, so the qualitative LOW-execution edge no longer supports 21.5% of gross across a two-day event window; I cut it to 17.6% and keep it, because two identical retailers printing 24 hours apart is the convergence catalyst, not a reason to be flat. The 9.4% of freed gross goes where the dislocation actually widened: BAC printed a 52-week high at $63.97 this week while WFC sits 11% below its own with a 12.7x vs 14.6x multiple gap and a 14.6% vs 8.9% target gap, so the 2.6sd spread got cheaper, not more expensive; and TSM/KLAC now has a 28.6% vs 16.5% analyst-upside gap with firms cutting KLAC targets post-print. I leave 9.45% in cash deliberately \u2014 it earns 4% APY against zero spread risk, and I would rather bank that than force capital into MA/V, whose 4% spread vol I already judged the least productive use of gross. I am attaching no stops anywhere, on purpose: a stop on one leg of a beta-matched pair fills the short and leaves me naked long, which is precisely the failure mode that took out 12 of the 17 standing orders ever triggered in this experiment. In a pair book, size is the risk control, not price triggers.",
+  "novelty": "I manage only this Round-3 book and run no Round-2 book, so the <50% same-direction overlap constraint has no counterparty book to bind against; the book is nonetheless distinct by construction, being five beta-cancelled long/short spreads with a residual SPY beta of about -0.05% of NAV rather than any directional expression.",
+  "research_notes": "PACKET: Round 3 only (no Round-2 book). NAV $1,002.73, +0.27% since the 07-31 entry, max DD -0.42%, gross 100.0%, cash 0%. No standing orders were attached, so nothing fired.\n\nTAPE (week ending 2026-08-07): S&P 500 closed at a record 7,757.64 and posted its strongest week since April on a soft July jobs print. SOXX +7% on the week; MTUM +5%; Intel +10%, AMD +8%, Broadcom +6% on 08-04 alone. A violently risk-on, momentum-led week \u2014 the worst possible tape for a market-neutral book \u2014 and the book still finished +0.27%. That is the structure working, not luck, and it is the main argument for changing as little as possible.\n\nPAIR-BY-PAIR CHECKS:\n- WFC/BAC (34.8% of gross): WFC $87.25 (52wk $72.78-$97.76, ~11% below its high, 12.68x trailing, avg target $100.02 = +14.6%). BAC $63.17 (52wk $44.78-$63.97 \u2014 printing AT its 52-week high, 14.59x, target $68.77 = +8.9%). The spread has WIDENED, not converged: my long leg sits 11% off its high while the short leg makes new highs. BAC's fundamentals remain the better ones (CET1 11.2% vs 10.3%, NII +9%), which is exactly why the ratio is 2.6sd stretched. WFC news is constructive and not thesis-changing: dividend raised to $0.50, tokenized corporate deposits launched, Scharf saying \"these times are really good for banks.\" More convergence is available than a week ago.\n- TSM/KLAC: TSM $420.04, fwd PE 19.0, 19 Strong Buys, avg target $540.20 (+28.6%), still ~12% below its 52wk high of $479 despite the sector ripping, with 3nm/N2 capacity expansion news. KLAC $198.11 (+2.53% Friday), trailing PE 54.1, avg target $230.85 (+16.5%) with several firms CUTTING targets after the 07-28 print. The analyst-implied spread now favours the long leg by ~12 points. Thesis strengthened.\n- LOW/HD: HD confirmed on 08-04 that it reports Q2 on Tue 2026-08-18, LOW on Wed 2026-08-19. That is a dated, back-to-back binary INSIDE my holding period on 21.5% of gross. Street still favours LOW on execution (Telsey raised on demand/execution; LOW reaffirmed FY26 $92-94bn, comps flat to +2%, adj EPS $12.25-12.75), but analyst upside is now near-identical (LOW ~+14% to $277, HD ~+15% to $402), so the qualitative edge is thinner than the sizing implies.\n- MA/V: MA $493.98 (27.2x fwd, target $646.97 = +31%), V $326.36 (24.4x fwd, target $398.74 = +22%). Both were just upgraded on \"cheaper valuations after a stretch of underperformance\" \u2014 payments lagged the AI tape as a group, which is what a pair wants. Fundamentals still symmetric (V net revenue +17%, MA +15.8% with a 20th straight beat). Unchanged.\n- FACTOR TRIANGLE (QUAL+IWF vs MTUM) \u2014 this is where new information contradicts my own stated thesis. I wrote that MTUM's excess over the growth names it holds is \"a crowding premium rather than an earnings premium.\" The evidence now says otherwise: MTUM's top holding is Micron at 6.26% (then AMD 5.22%, Broadcom 4.72%, Intel 4.11%), and Micron's most recent quarter showed revenue up more than fourfold with gross margin going from 39% to 84.9%, with targets hiked to $1,500 (Arete) and $1,697 (Itau BBA). That is an earnings inflection, not a positioning artefact. Second, and worse for my construction: reporting on the November reconstitution says Micron's momentum score could push MTUM's semiconductor weight materially higher and lift the fund's beta toward Micron's ~2.2. My triangle is beta-matched against an assumed MTUM beta of ~1.5. A short leg whose beta is scheduled to drift up breaks the beta-cancellation my mandate is built on. Also, at 1.8sd/1.1sd this is my weakest z-score, so it was already the marginal use of gross.\n\nNET SPY BETA CHECK on the resulting book: WFC/BAC 14.06 vs 14.09; LOW/HD 5.85 vs 5.85; TSM/KLAC 17.20 vs 17.28; MA/V 2.21 vs 2.17; triangle 6.16 vs 6.15. Residual \u2248 -0.05% of NAV. Note for the audit: the mandate line records a +3.2% net SPY beta target, but the actual leg weights have always cancelled to roughly zero (the 07-31 book computed to ~+0.07%). I am running ~0.0% rather than +3.2%; the deviation is toward more neutrality, i.e. conservative, and worth ~0.05% of NAV on a 1% SPY move."
+}

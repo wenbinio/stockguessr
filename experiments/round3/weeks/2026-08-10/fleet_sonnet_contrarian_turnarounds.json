@@ -1,0 +1,65 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 12.0,
+      "thesis": "Credit-cycle tailwind intact (+31.5% 1yr) and coverage framing regional banks as 'a cheaper way to play the AI banking boom' \u2014 adding on confirmed strength."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 10.0,
+      "thesis": "Breakout still accelerating (+0.75% on 8/7, near 52-week highs); State Street upgraded healthcare from neutral to positive for Q3 citing pipeline and earnings strength \u2014 adding further."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Momentum resuming (+1.86% on 8/7) after last week's pause, with rising M&A activity and positive trial readouts cited as tailwinds \u2014 adding back after trimming."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 8.0,
+      "thesis": "Defensive ballast, unchanged \u2014 limited torque but useful given the volatility this week in the short book."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "thesis": "AI-power-demand tailwind intact \u2014 coverage notes utilities are 'capturing the first dollars of the AI spending cycle' \u2014 holding as the long leg of the pair."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 8.0,
+      "thesis": "Trimming and tightening the stop: discretionary (Amazon 23%/Tesla 16% of the fund) is being lifted by the same rate-cut risk-on rally (+1.49% on 8/7, outpacing XLU's +0.53%) that just broke the GDX short \u2014 keeping a smaller short leg on the pair rather than eliminating it outright."
+    }
+  ],
+  "cash_pct": 29,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: GDX short already stopped out on 8/7 at $89.89 (up from ~$74.10 entry) as gold ripped on the weak jobs report. SOXL short in this book faces the identical squeeze \u2014 $114.72 entry to $140.25 close, +22.3% adverse, ~2.3% from its -25% stop \u2014 and it's the same rate-cut-driven risk-on move (semis, small caps, gold, even consumer discretionary all up together on 8/7) that broke GDX, not isolated short-covering. Closing SOXL now rather than waiting for a second forced stop in the same complex, trimming the XLY short leg of the utilities pair since discretionary (Amazon/Tesla-heavy, +1.49% on 8/7 vs XLU's +0.53%) is being lifted by the same tailwind that's undermining the pair's relative-value logic, and rotating the freed capital into the sector breakouts that are still confirming cleanly (financials, healthcare, biotech) while banking extra cash given the whipsaw already cost this book a max drawdown of -7.51%.",
+  "novelty": "Closing the SOXL short erases what had been this book's entire same-direction overlap with the Round 2 book (both were short SOXL 20% last week) \u2014 the two books now share zero symbols: Round 3 is fully rotated into financials/healthcare/biotech sector-breakout longs plus a trimmed discretionary-vs-utilities pair, while Round 2 runs single-name turnaround longs (ADBE/CRM/PYPL) plus crypto and gold.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (Round 2 NAV $1,022.13/+2.21%; Round 3 NAV $948.01/-5.20%, GDX short already stopped out 8/7 @ $89.89). Pulled live/current data via WebFetch (stockanalysis.com, coingecko) since WebSearch budget was exhausted:\n\nKey finding: a weak August 2026 jobs report hit on/around 8/7, driving rate-cut expectations and a dollar-weakness/risk-on rally that lifted gold, leveraged semis, small caps AND consumer discretionary simultaneously \u2014 this explains why gold miners (GDX) and leveraged semis (SOXL) both squeezed violently in the same week the task flagged (GDX stopped out 8/7 @ $89.89 vs ~$74.10 7/31 entry, +21%; SOXL 7/31 entry $114.72 -> 8/7 close $140.25, +22.3% adverse, only ~2.3% from its -25% stop in both books). News flow (Barron's 'Jacked-Up Tech ETF Demands a Strong Stomach', 'Semiconductor Outlook Bodes Well', an Elliott Wave bounce call, and gold at 7-week highs near $4,350 on weak jobs data) suggests this has real macro legs, not pure short-covering noise \u2014 so I closed SOXL preemptively in both books rather than wait for a second forced stop in the same complex that has already eaten 12 of 17 fired standing orders in this experiment.\n\nChecked and confirmed still-working longs: ADBE $265.21 (Hold, MS cut to UW on AI-competition risk vs CLSA $300 PT \u2014 flat sizing), CRM $192.74 (+3.2% on 8/7, $1.6B VA contract, raised FY26 guidance, Buy consensus $241.72 PT \u2014 added), PYPL $59.07 (Stripe/Advent's $53B bid rejected, board 'still open to higher offers,' raised profit guidance \u2014 added with a first-time stop), IWM $301.56 (+1.11% but Wells Fargo flags weakening earnings estimates behind the rally \u2014 held small with a new stop), GLD $398.47 (+2.26% on 8/7, 7-week highs \u2014 the contrarian catalyst flagged at inception finally showed up, sized back up), BTC ~+3.1%/7d and ETH ~+2.9%/7d (bounce continuing on ETF inflows, modest adds).\n\nRound 3 sector breakouts all still confirming: KRE (+31.5%/1yr, 'cheaper way to play the AI banking boom'), XLV (+0.75% on 8/7, State Street upgraded healthcare to positive for Q3), XBI (+1.86% on 8/7, M&A and trial catalysts) \u2014 added to all three with the capital freed by closing SOXL. Trimmed the XLY short leg of the utilities/discretionary pair (XLY +1.49% on 8/7 vs XLU +0.53%, discretionary being lifted by the same risk-on move) rather than eliminating it, and raised cash meaningfully in Round 3 (13% -> 29%) given the book's -7.51% max drawdown and the whipsaw risk still evident in the short-book complex.\n\nOverlap check: closing SOXL in both books (previously short 20% in each \u2014 the only shared symbol) drops same-direction gross-weight overlap between Round 2 and Round 3 to zero, comfortably under the <50% requirement."
+}

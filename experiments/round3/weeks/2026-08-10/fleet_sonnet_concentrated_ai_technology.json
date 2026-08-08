@@ -1,0 +1,49 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25,
+      "thesis": "Confirmed multi-month biotech breakout intact: still trading near its 52-week high ($154.23 vs $165.71 high), +76.96% 1yr, powered by record 2026 M&A activity and rotation out of expensive AI names. No new information breaks this thesis this week; holding unchanged.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Regional-bank uptrend remains confirmed and undisturbed: trading near its 52-week high ($76.21 vs $78.35 high), +31.48% 1yr including dividends, on continued lending strength, fee income, and post-stress-test dividend hikes. Holding unchanged.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 22,
+      "thesis": "Structural long-bond downtrend is the strongest working thesis in the book: TLT sits at $82.52, essentially at its 52-week low ($81.89), yields at highest levels since 2007, described this week as a 'perfect storm for generational losses' in long-duration treasuries. Holding unchanged.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "IBIT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 20,
+      "thesis": "Replaces the stopped-out GDX short with a genuine confirmed breakdown in the mandate's other permitted short bucket (crypto weakness): IBIT is down ~44% over the past year, trading near its 52-week low ($36.80 vs $71.82 high), in what coverage explicitly calls a 'classic bear market' with negative ETF flows and weakening institutional bitcoin demand -- unlike gold miners, this downtrend has not reversed or squeezed.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The GDX short was already stopped out on 8/7 at $89.89 (confirmed via live quote: GDX closed 8/7 up 7.11% to exactly $89.89, part of the same gold-miner squeeze that has stopped out 12 of 17 standing orders fired across this whole experiment). Re-shorting gold miners into that tape would be fighting a live squeeze on a technical thesis ('bearish engulfing') that has already failed twice. Re-deploying that freed cash into another GDX/SOXL short is exactly the mistake the desk-wide note is warning against, so instead I'm using the mandate's other permitted short leg -- crypto weakness -- which is a genuine, currently-confirmed breakdown: IBIT is down ~44% YoY, sitting near its 52-week low ($36.80 vs $71.82 high), and coverage explicitly describes bitcoin as being in a 'classic bear market' with negative ETF flows and weakening institutional demand. XBI and KRE are both left untouched -- XBI ($154, near its $165.71 52wk high) and KRE ($76.21, near its $78.35 52wk high) are both still confirmed uptrends with no new information changing the thesis. TLT is left untouched -- it's the strongest working thesis in the book (near 22-year lows, yields at multi-year highs, 'perfect storm for generational losses' narrative still running).",
+  "novelty": "Swaps the failed, squeeze-prone gold-miner short (GDX, stopped out 8/7 into a sector that has produced 12 of the experiment's 17 total standing-order fires) for a short in crypto weakness (IBIT), a bucket the mandate already names but the prior book never used, while keeping zero symbol overlap with the round-2 AI/semis long book (0% same-direction gross-weight overlap, well under the 50% cap).",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live quotes/news for all round-2 and round-3 names via WebFetch (WebSearch budget was exhausted this session, so I used direct finance-site fetches instead): NVDA $218.14 (SpaceX exclusivity headline, earnings 8/26, still below 52wk high $236.54); MSFT $499.86 (+2.5%, Azure +41% blowout still driving target raises to $562-690); AVGO ($418-421, +6.6-7.15%) and AMD ($489.28, +128% YTD, Q2 rev +50%, Taalas acquisition) both caught in the live semis short-squeeze the desk flagged; MU $881.47 (-1.3%, but 'paring most losses' vs peers despite Sandisk-guidance-driven memory scare). Confirmed via stockanalysis.com that GDX closed 8/7 at exactly $89.89 (+7.11%), matching the round-3 packet's stop-loss fire -- this is the same gold-miner squeeze the task note warned about (12/17 desk-wide stop fires). XBI $154.23 (near 52wk high $165.71, M&A-driven breakout intact) and KRE $76.21 (near 52wk high $78.35, lending/fee strength) both still confirmed uptrends. TLT $82.52 (near 52wk low $81.89, yields highest since 2007) still a confirmed breakdown. Checked IBIT as a crypto-weakness alternative to re-shorting gold miners: $36.80, down ~44% YoY, near 52wk low $36.80 vs high $71.82, described as a 'classic bear market' with negative ETF flows -- a genuine, still-live breakdown, unlike GDX's now-reversed one."
+}

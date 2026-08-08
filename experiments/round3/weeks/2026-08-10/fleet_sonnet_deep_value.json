@@ -1,0 +1,56 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Low-vol quality ballast performing as designed; unchanged."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Second low-vol carry sleeve, minimal correlation to the rest of the book; unchanged."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Oversold-vs-gold bounce thesis has emphatically confirmed -- +21.3% this week ($74.10->$89.89), gold miners' best week since 2008, now ~85% of the way to TP; trimmed to lock in the bulk of the move with the stop pulled up tight, keeping a residual stake for a structurally bullish gold setup (hot inflation + falling Fed-hike odds)."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Relative-strength mean-reversion has confirmed after last week's stall -- +7.0% this week ($147.01->$157.37); added modestly into the confirmation."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 1,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Downtrend thesis intact (-46%/1yr) but BTC has ground +3.1% this week ($62.9k->$64.9k) on the same dovish-jobs risk-on tape that squeezed the equity shorts; de-levered 2x->1x and downsized 10%->6% to cut squeeze risk while keeping a small hedge for renewed weakness."
+    }
+  ],
+  "cash_pct": 56,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Closing both momentum-extension shorts. Since the 7/31 entry, SMH ran $540.53->$582.70 (+7.8%) and XLK ran $175.35->$187.97 (+7.2%) -- moves against the thesis driven by a real catalyst, not noise: the weak July jobs print cut September Fed-hike odds and triggered a broad AI/semis melt-up (Nasdaq100 +$3.5T market cap in four sessions through 8/5, global semiconductor sales at a 15th straight monthly record). This is the same regime that has stopped out 12 of 17 standing orders in the adjacent GDX/SOXL complex this cycle (5 of them on 8/07 alone); rather than let XLK ($187.97, 60% of the way to its -12% stop) and SMH ($582.70, ~52% of the way to its -15% stop) ride into their own stops, both are closed now. On the long side, GDX is trimmed after an emphatic confirmation (+21.3% this week, $74.10->$89.89, gold miners' best week since 2008, ~85% of the way to its +25% TP) with the stop pulled up tight to lock in the bulk of the move rather than risk giving it back. XBI is added to modestly as its bounce, flagged last week as not-yet-working, has now confirmed (+7.0%, $147.01->$157.37). BTC short is de-levered and downsized (2x->1x, 10%->6%) since the same dovish-jobs move squeezing the equity shorts is also lifting BTC (+3.1% this week). Not replacing the closed shorts with a new momentum-extension short this week -- fighting a catalyst-backed melt-up in the same week it accelerated is exactly the mistake the standing-order data warns against; cash rises to 56% to sit out the whipsaw and collect carry.",
+  "novelty": "This book now overlaps with Round 2 only on the 6% BTC short (13.6% of this book's 44% gross, well under the 50% cap) and runs it at half the leverage (1x vs Round 2's 2x); the differentiating core is the 25% low-vol/defensive quality sleeve (USMV+SPLV) and oversold-bounce longs (GDX, XBI), none of which Round 2 holds, while Round 2's cyclical value names (XOM/JPM/GM/UNH/PFE/F/IWM) have zero presence here -- and this week the momentum-short sleeve (XLK/SMH) that most differentiated the two mandates was cut to zero rather than pressed, a deliberate retreat from the strategy's most crowded, most-squeezed corner of the tape.",
+  "r2_overlap_pct": 13.3,
+  "research_notes": "Read the account packet (Round 2 NAV $1,021.69 +2.17%, gross 100%/cash 16%; Round 3 NAV $998.03 -0.20%, gross 89%/cash 21%, both books entered 7/31). Pulled 7/31->8/7 daily closes for every held symbol (stockanalysis.com/Google Finance/CoinGecko) to measure actual since-entry moves rather than relying on stale packet commentary: XOM -1.5%, JPM +1.6%, GM -1.4%, UNH -1.8%, PFE +7.0%, IWM +3.6%, F -4.8% (Round 2); SMH +7.8%, XLK +7.2%, GDX +21.3%, XBI +7.0%, BTC +3.1% (Round 3, both books' BTC legs). Checked market-wide news: a weak July jobs report (-23k vs +83k expected) released this week cut September Fed-hike odds and triggered a broad risk-on melt-up -- S&P record highs, Nasdaq100 +$3.5T market cap in four sessions through 8/5, global semiconductor sales at a 15th straight monthly record, and gold miners' best week since 2008. This directly explains why Round 3's momentum-extension shorts (XLK, SMH) moved sharply against thesis on real catalysts rather than noise, consistent with the packet's warning that 12 of 17 standing orders ever fired in this experiment were GDX/GDXJ or SOXL shorts getting squeezed, five on 8/07 alone. Closed both XLK and SMH shorts rather than let them ride toward their stops (60% and 52% of the way there respectively), took partial profit on GDX long (near its own TP after the gold-miner squeeze) with a tightened stop, added modestly to the now-confirming XBI bounce, and de-levered/downsized the BTC short hedges in both books (Round 2: 3x/8%->2x/6% with a new stop; Round 3: 2x/10%->1x/6%) since the same dovish-jobs move lifting risk assets is also lifting BTC. In Round 2, added to IWM (small-cap rate-cut beneficiary) and PFE (confirmed re-rating), trimmed F (weakest name this week, prior catalysts already priced), left XOM/JPM/GM/UNH unchanged as sub-2% weekly moves with no new information. Did not attempt to open a new momentum-extension short in Round 3 this week -- deliberately avoiding fighting a catalyst-backed melt-up in the same week it accelerated. Verified Round2/Round3 same-direction overlap stays well under the 50% cap (only the BTC short is common, ~14% of Round 3's gross)."
+}

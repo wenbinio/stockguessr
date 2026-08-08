@@ -1,0 +1,74 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Rate-sensitive financial holding near highs; UBS raised PT to $400; no trend break, held at weight."
+    },
+    {
+      "symbol": "ELV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed-care compounder, raised FY26 EPS guidance to at least $27, multiple PT hikes post-Q2 beat; trend intact, held at weight."
+    },
+    {
+      "symbol": "UNP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rail duopoly still delivering strong margins/cash flow near 52-wk highs; held at weight, no reversal signal."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Resilient consumer spend, Q3 beat, efficiency restructuring underway; trend intact, held at weight."
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Defensive staples ballast against the short book's volatility; held at weight."
+    },
+    {
+      "symbol": "IJR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap value breadth exposure tracking the broadening rally; held at weight, no trend break."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy diversifier on cheap FCF yield; held at weight, trend intact."
+    },
+    {
+      "symbol": "MSTR",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Fading the continuing bitcoin-proxy blow-off-top breakdown (still down from a $414 52-wk high, Q2 posted an $8.22B net loss, company still selling BTC for cash) -- but trimmed from 12% and stop tightened after a beta-driven squeeze bounce (+7.2% this week on a dovish rate repricing, not fundamentals) pushed the position roughly halfway to its old stop; sizing down to respect the momentum shift while the fundamental fade thesis stays intact."
+    }
+  ],
+  "cash_pct": 20,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Price action on MSTR flipped against the short this week -- up from the ~$93 entry to $100.01 (+7.2%, including +3.26% on 8/7 alone), about halfway to the -15% stop -- while BTC itself sat flat near $64.9k, meaning the move is squeeze/beta-driven (dovish rate repricing after a weak jobs report lifted speculative proxies broadly) rather than a fundamental improvement in Strategy's business (Q2 posted an $8.22B net loss and the company is still selling BTC to raise cash). That's the identical pattern that has repeatedly stopped out GDX/GDXJ/SOXL shorts in this experiment. A momentum/price-action-regime discipline says respect that shift and cut size pre-emptively rather than risk being forced out at the stop, while the deteriorating fundamentals still support keeping a smaller fade position on. Trimming MSTR short 12%->7%, tightening stop -15%->-10% and TP +40%->+30% to reflect the now-live squeeze risk, and parking the freed capital in cash rather than chasing already-full-weight longs since nothing new broke out this week. Checked JPM and ELV directly (both fine, no reversal signal, analyst PTs still rising) and see no fresh news undermining UNP/V/PG/IJR/CVX -- held at weight.",
+  "novelty": "Round 3 still shares zero overlapping tickers with the Round 2 GARP book (JPM/ELV/UNP/V/PG/IJR/CVX/MSTR vs. MSFT/GOOGL/AVGO/META/IWM/UNH/COST/XOM/TQQQ/COIN) -- 0% same-direction gross-weight overlap -- and runs on an entirely different discipline (price-action momentum/mean-reversion rotation vs. valuation-anchored GARP), so the <50% overlap constraint is satisfied by a wide margin.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (R2 NAV $1,042.96 +4.30%, gross 89%/cash 11%; R3 NAV $995.25 -0.48%, gross 85%/cash 15%). Web-checked marks and news through 8/7 close: MSFT $499.99 (blowout FY26 revenue +17.8%/EPS +31%, Citi PT raise on 43% Azure jump, erasing YTD losses) confirms the highest-conviction R2 name; UNH $407.08 near highs with a fresh FY guidance raise and PT hikes to $441-526 confirms the turnaround thesis. JPM $357.52 (UBS PT raise to $400) and ELV $394.20 (FY26 EPS guide raised to >=$27, multiple PT hikes) both check out fine for R3 with no reversal signal. Checked the tape-wide squeeze dynamic flagged in the brief: SOXL +5.99% on 8/7, QQQ +1.17%, broad rally attributed to a weak jobs report repricing Fed-cut odds -- this same risk-on wave is lifting crypto-adjacent shorts: COIN $153.60 (+5.63% on 8/7, though still down from pre-earnings levels after a 3rd straight quarterly miss) and MSTR $100.01 (+7.2% off the ~$93 entry, +3.26% on 8/7 alone) even though BTC itself is flat near $64,974. MSTR fundamentals kept deteriorating (Q2 $8.22B net loss, still selling BTC for cash reserves) so the fade thesis is intact, but price action moved the position roughly halfway to its -15% stop -- the same squeeze pattern that has repeatedly stopped out GDX/GDXJ/SOXL shorts elsewhere in this experiment. Net conclusion: R2's long GARP book needed no changes (theses confirming); R3's MSTR short needed derisking given the beta-driven bounce even though the underlying fundamental thesis hasn't changed."
+}

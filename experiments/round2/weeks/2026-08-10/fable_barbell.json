@@ -1,0 +1,98 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Risk-balanced barbell: 46% aggressive AI-infra compounders plus a small 2x contrarian BTC perp, against 38% defensive ballast (quality/staples/gold/utilities plus a 3% SOXL short as convexity hedge) and 18% yielding cash.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: AI-infra anchor into late-Aug earnings; ANET's $3B quarter confirms datacenter capex is accelerating, and the dovish turn removes the multiple-compression headwind."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: custom-ASIC/networking winner with software cash flows; chip-rotation risk fading as semis reclaim leadership on falling yields."
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: AI power demand play \u2014 raised FY26 guidance, $24.2B Q2 orders; least crowded AI leg and rate-sensitive infrastructure now gets a falling-yield tailwind."
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: thesis confirmed \u2014 first $3B quarter, EPS $1.02 vs $0.90, third FY26 guide raise to $12.6B, +12% on the print; hold the winner."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Ballast: cash-rich compounder and best drawdown defense; still earns well on its cash pile while giving equity participation if the melt-up continues."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: staples stability, low beta to tech; a jobs contraction argues for keeping defensive earners."
+    },
+    {
+      "symbol": "MRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: cheap defensive pharma, uncorrelated to AI capex; recession-resistant if the payroll decline is the start of real labor weakness."
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: AAA-quality defensive; keeps working whether the jobs print is noise or the first crack."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast: the bond-proxy headwind just flipped to a tailwind as yields fell, and AI power demand (GEV's order book) supports the growth side."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Ballast restored: I cut gold because 20-year-high real yields broke the hedge; that driver inverted Friday \u2014 yields and dollar falling, gold above $4,300 (+7.5% wk) \u2014 so gold is again the barbell's crisis leg."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 3,
+      "leverage": 2,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Mandate's small 2x contrarian perp restored: the catalyst I cut it for lacking (end of hike fears) arrived \u2014 hike odds 57%->44%, BTC $65k +4.6% wk on falling yields and ETF inflows; 3% at 2x keeps the 10% APR funding drag immaterial and the -15% stop is far above the ~47% liquidation move."
+    }
+  ],
+  "cash_pct": 25,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The Friday jobs shock (-23k payrolls) reversed the hawkish-Fed regime my hedges were built for. I cover the SOXL short because its driver \u2014 a semi rout under rising rate fears \u2014 is gone (SOXX +7% on the week, five sibling semi/miner shorts stopped out 8/7 alone); holding it is paying to fight a squeeze, not hedging. I restore 6% GLD because the exact reason I cut it (20-year-high real yields crushing gold) inverted \u2014 yields and the dollar are falling and gold is back above $4,300, so it functions as ballast again. I restore the mandate's small 2x BTC perp at 3% because the contrarian catalyst I was waiting for (collapse of hike odds) finally arrived with BTC at $65k. The AI sleeve stays untouched: ANET's beat-and-third-guide-raise validated the thesis and NVDA reports late August \u2014 churning winners here has no edge. Net effect: gross rises 71%->75% but the book is now hedged by assets that work in THIS regime (gold, quality, cash) rather than shorts that fight it.",
+  "research_notes": "Checked: (1) Macro \u2014 July nonfarm payrolls -23k vs +80k expected, first outright decline, with -103k revisions; unemployment 4.1%; Sept hike odds fell 57%->~44%; Treasuries rallied, dollar hit a two-week low. (2) Tape \u2014 S&P 500 record close 7,757 (+3.6% wk), Nasdaq +5.2%, SOXX +7% wk (semi-short squeeze confirmed), software/IGV +10% since July while still -24.3% YTD. (3) Metals \u2014 gold above $4,300 (+7.5% wk), silver ~$64 (+11% wk, 6-week high), GDX ~$89.86 with a confirmed breakout over its descending trendline and technician targets $95-105; my SLV short is within ~1% of its -12% stop with its downtrend thesis invalidated. (4) ANET Q2 (Aug 4): $3.04B rev (first $3B quarter), EPS $1.02 vs $0.90, third FY26 guide raise to $12.6B, stock +12% AH \u2014 validates the AI-networking leg. (5) KRE ~$76, ~4% below all-time high; regional banks get a bull-steepener from the dovish shift. (6) Oil \u2014 WTI low-$80s, war premium still deflating, EIA sub-$80 Q3 view intact; XOP badly lagging OIH. (7) XLY = worst YTD sector (weak consumer confidence, now a jobs contraction); MSOS -24.8% YTD. (8) BTC ~$64.9k, +4.6% since Monday, +9.8% July, supported by falling yields/ETF inflows \u2014 the dovish catalyst my cut perp leg was waiting for. Lesson applied: 12 of 17 fired standing orders in this experiment were miner/semi shorts stopped out; both my remaining shorts (SOXL, SLV) were built for a hawkish regime that ended Friday."
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Samsara at $40.88 (+6.96% Aug7), Strong Buy consensus, $44.31 avg PT; AI-ops/agentic momentum and $2B ARR story intact, hold at prior sizing as the highest-conviction leader.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Rubrik at $90.07 (+6.47% Aug7), Strong Buy, new Loop Capital $100 PT and Rubrik Agent Identity launch; still ~6% consensus upside into an Aug 27 print, hold at prior sizing.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Affirm at $75.25 with a fresh wave of aggressive PT hikes (BofA $93, Goldman $106, Citi $115) pushing consensus upside to ~21%; upsized off the improving analyst picture into the Aug 27 print.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Flywire beat Q2 revenue ($167.74M vs $156.02M cons) with PT raises to $22-24, but Truist cut to Hold on 2026 growth-deceleration risk; held flat pending resolution of that concern.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Toast beat Q2 (rev $1.91B vs $1.87B cons, EPS $0.26 vs $0.13 YoY), raised FY EBITDA guide to $805-825M, and drew upgrades to $42-45 PTs - the catalyst the prior 'no near-term catalyst' thesis was waiting on has now arrived; upsized off placeholder size.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "S",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "SentinelOne rallied to $21.40, now trading ABOVE the $19.68 analyst-consensus target near its 52-week high; the 'cheap after a 63% slump' edge that justified 8% is gone, cut to a residual watch position ahead of the Aug 27 print.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "PATH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "UiPath spiked +7.5% to $15.05 on pre-earnings positioning, extending further past the $13.25 Hold-consensus target (-12% implied); the 'no edge' call is more true than a week ago, trimmed further to a token stake.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "SoFi's post-earnings analyst cuts (Goldman to $18, Morgan Stanley to $15) confirm growth-spending concerns are weighing on the multiple despite a Q2 beat; held at the already-reduced size with a tight stop.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Prices through 8/7 close (one week after the 7/31 build) confirm momentum is strengthening in the top sleeve (IOT +6.96% Aug7 to $40.88 on continued Buy coverage; RBRK +6.47% to $90.07 with a new Loop Capital $100 PT initiation and an AI-agent-identity product launch; AFRM getting materially more bullish targets - BofA $93, Goldman $106, Citi $115 - vs. the ~$83 that justified the original 18% weight) while two names have lost the edge that justified their sizing: S rallied to $21.40, now trading ABOVE the $19.68 analyst-consensus target near its 52-week high - the 'cheap after a 63% slump' thesis is gone, it's priced for perfection into an Aug 27 print with no analyst upside left; PATH spiked +7.50% to $15.05 on pre-earnings positioning, extending well past the already-unfavorable $13.25 Hold-consensus target (now -12% implied), so the 'no edge, residual size' call is more true than a week ago, not less. TOST delivered the exact catalyst its thesis was waiting on: Q2 beat (rev $1.91B vs $1.87B cons, EPS $0.26 vs $0.13 YoY), raised full-year EBITDA guide to $805-825M, and upgrades to $42-45 PTs (Bernstein, JPMorgan) - the prior 'consensus Hold, no catalyst' framing is stale, so it's upsized off a placeholder-sized position. FLYW beat Q2 revenue ($167.74M vs $156.02M) with several PT raises but also a Truist downgrade on deceleration risk, so it's held flat pending Truist's concern playing out. SOFI's post-earnings analyst cuts (Goldman to $18, Morgan Stanley to $15) confirm the prior 'stress-window resilience broke' call was correct - kept at its already-cut size. Net effect: trims fund adds, gross stays at 95% / cash 5%, this is a rebalance driven by fresh, dated catalysts (TOST/FLYW Aug 4 earnings, this week's analyst target moves), not churn.",
+  "research_notes": "Read the account packet: Round 3 only book, NAV $1,081.03 (+8.10%), max drawdown -9.42%, gross 95%/cash 5%, entered 2026-07-31. WebSearch was exhausted (session budget hit) so I used WebFetch against stockanalysis.com quote pages for all 8 holdings (IOT, RBRK, AFRM, FLYW, TOST, S, PATH, SOFI) to get 8/7 closes, analyst consensus/PTs, and dated news since the book was built. Findings: IOT ($40.88, +6.96% Aug7), RBRK ($90.07, +6.47%, new Loop Capital $100 PT), and AFRM ($75.25, fresh BofA/Goldman/Citi target hikes to $93-115) all show momentum confirming/strengthening theses. TOST and FLYW both reported Q2 earnings on 8/4: TOST beat with raised FY EBITDA guidance and upgrades to $42-45 (a genuine new catalyst vs. the prior 'no catalyst' framing), FLYW beat revenue but got a Truist downgrade to Hold on deceleration risk (net roughly neutral). SOFI's post-Q2 analyst cuts (Goldman $18, Morgan Stanley $15) confirmed last week's 'stress-window thesis broke' call. Two names lost their sizing rationale on price action alone: S rallied to $21.40, now trading above its own $19.68 consensus PT (no more 'cheap' edge, near 52-wk high into an Aug 27 print); PATH spiked +7.5% to $15.05 pre-earnings, extending further past its $13.25 Hold-consensus target. Rebalanced: upsized AFRM (18->20%) and TOST (10->14%) off the improving catalysts, trimmed S (8->4%) and PATH (5->3%) where the edge evaporated, held IOT/RBRK/FLYW/SOFI flat. Gross stays 95%/cash 5% - this is not a Round-2/Round-3 overlap situation since the packet lists Round 3 only for this manager, so no novelty constraint applies."
+}

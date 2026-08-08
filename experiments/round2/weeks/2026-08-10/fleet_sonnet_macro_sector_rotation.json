@@ -1,0 +1,53 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Small-cap Fed-cut lever bouncing +4.3% over the past week, the first real confirmation since the AI-unwind risk-off paused the thesis; sized up from 10% to press the reactivation while keeping the -10% stop for discipline.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Industrial capex reacceleration thesis unchanged and unconfirmed either way this week; held flat at 8% (already de-risked from the CAT-driven power-gen scare) pending clearer signal.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Duration/Fed-cut hedge held flat; still the natural offset if the semis/AI unwind (now partially reversing into a squeeze) forces a policy response either way."
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "EM/China rotation still up 13% on the month but stalled to roughly flat this week (-0.15%); trimmed from 14% to bank some gains while keeping the core position, since the multi-month trend hasn't reversed.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Dollar-debasement/hard-asset trade is accelerating, not decelerating - gold spot +3.46% and GDX (miners) +13.76% over the past week confirm real momentum, not just a slow grind; sized up from 12% to press the clearest winner in the book.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 43,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The platform-wide warning flagged SOXL/gold-miner shorts as the exact trade blowing up (12 of 17 standing-order stop-outs ever, 5 on 8/07 alone), and fresh data confirms the squeeze is live and ongoing, not a one-day blip: GDX +13.76% over the past week and gold spot +3.46% on top of that, while SMH (same semis complex as SOXL) is +12.99% over the past week. A 3x-leveraged short in that tape carries real risk of a total-loss stop-out before I could react, so I'm covering SOXL now on my own terms rather than waiting to be stopped out. I'm redeploying into the legs that are actually confirming: GLD (accelerating, not just grinding), and IWM (bouncing +4.3% 1wk, the Fed-cut small-cap thesis reactivating after being paused). FXI gets trimmed since weekly momentum has stalled (-0.15% 1wk) even though the monthly trend (+13%) is intact. TLT and XLI are unchanged - no new catalyst either way. Net effect is a de-risk: cash rises from 36% to 43% given confirmed broad short-covering/risk-on action across two complexes I was betting against.",
+  "research_notes": "Read the account packet for both books (Round 2 NAV $1,003.40 +0.34%, Round 3 NAV $994.85 -0.52%, prices through 2026-08-07 close). WebSearch quota was exhausted for this session, so I used WebFetch against live finance-data pages instead (some pages carried stale/cached timestamps mixed with current intraday data, so figures are directional, not exact-to-the-cent). Key findings: (1) The prompt's explicit warning about GDX/GDXJ/SOXL squeezes is corroborated by fresh data - GDX +13.76% and gold spot +3.46% over the past week, and SMH (same semis complex as the leveraged SOXL short) +12.99% over the past week, i.e. a live, ongoing short-covering squeeze across both flagged complexes simultaneously, not sector-specific noise. This is a direct, current threat to both my SOXL short (Round 2) and my much larger SMH short (Round 3, 16% weight, largest single position in that book). (2) GLD/gold is confirmed accelerating (own long, unaffected by the squeeze risk since I'm long, not short, the metal). (3) FXI momentum has stalled week-over-week (-0.15% 1wk) though the monthly trend (+13%) is intact. (4) IWM small-caps are bouncing (+4.3% 1wk), the first real confirmation of the paused Fed-cut small-cap thesis. (5) XLV and XLF, my two largest Round 3 longs, have decelerated sharply versus the readings that justified sizing them up on 7/31 (current reads: XLV roughly flat over 1mo/1wk, XLF +2.82%/1.27% vs the +7.3%/+7.5% cited when the book was set) - momentum cooling, not reversing. (6) XBI is stabilizing modestly (+1.83% 1wk) after its rollover. (7) XLY short is roughly flat on the month (-0.10%), thesis neither confirmed nor refuted. (8) KRE data was unavailable (503 error) - held unchanged on priors. Net conclusion: cover the SOXL short outright in Round 2 and cover the SMH short outright in Round 3 given the confirmed, live, cross-complex squeeze that the platform data shows has already stopped out 12 similar positions (5 just yesterday); trim the decelerating longs modestly; raise cash meaningfully in both books as a risk-management response to a broad short-covering/risk-on tape rather than a change of long-term thesis."
+}

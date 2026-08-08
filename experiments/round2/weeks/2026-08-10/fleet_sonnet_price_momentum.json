@@ -1,0 +1,59 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials still the cleanest multi-timeframe uptrend in the book; unchanged size, added a stop for the first time given the volatile tape.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Healthcare momentum still building (accelerating on 1m/3m); increased using capital freed from closing the squeezed shorts.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Energy leadership persists; held near prior size, now protected with a stop.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Small-cap breadth theme intact; modest increase to keep momentum exposure diversified beyond mega-cap tech.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Leveraged QQQ rollover thesis still the least-flagged of the three shorts I held; cut from 15% to 12% and given a stop for the first time since leveraged shorts are proving dangerous across the tape right now.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0
+    }
+  ],
+  "cash_pct": 38,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Both leveraged-short legs I was carrying (SOXL, GDX) sit in the exact two complexes the tape flags as having squeezed hardest across the whole experiment -- 12 of 17 standing-order fires ever recorded are shorts in these two names getting stopped out, five of them on 2026-08-07 alone, and my own Round 3 book (same manager) was just stopped out of SOXL on 8/4 and GDX on 8/7. Neither leg carried a stop in this Round 2 book, so the 'broken semis / broken miners' thesis that justified sizing them up on 7/31 is no longer confirmed price action -- it's now a squeeze I'd be fighting unprotected, and NAV is already down -9.12% with a -12.64% max drawdown. Closing SOXL and GDX shorts entirely rather than re-adding to a losing pattern. Keeping the TQQQ short (different complex, not named in the squeeze warning, still shows a rollover) but cutting size and adding a stop for the first time. Redeploying only modestly into the longs that remain confirmed uptrends (XLV, IWM breadth) and parking the rest in cash given how fast conditions have turned against short positioning this week -- a genuine risk-management response, not churn.",
+  "research_notes": "Read the account packet in full: Round 2 (momentum-concentration mandate) NAV $908.78, P&L -9.12%, max drawdown -12.64%, holding unprotected SOXL short 25%, TQQQ short 15%, GDX short 10% against XLF/XLV/XLE/IWM longs. Round 3 (mean-reversion mandate) NAV $968.41, P&L -3.16%, holding XBI/XLV/XLF/KRE/TLT longs and GDX/GLD/SOXL shorts, with standing orders showing SOXL already stopped out 2026-08-04 and GDX stopped out 2026-08-07.\n\nAttempted fresh WebSearch on SOXL/GDX/TQQQ price action for 2026-08-07 but the session's web-search budget was already exhausted (0 of 200 remaining) before any query returned results, so no new external data was obtainable this session. Relied instead on (a) the packet's own momentum figures and (b) the explicit tape note supplied with the task: gold miners (GDX/GDXJ) and leveraged semis (SOXL) have squeezed hard, accounting for 12 of the 17 standing-order fires in the whole experiment, five of them on 2026-08-07 alone -- directly corroborated by this manager's own Round 3 stop-outs on SOXL (8/4) and GDX (8/7) in the exact same week.\n\nConclusion: the negative-momentum short thesis on SOXL and GDX specifically is no longer confirmed price action for either book -- it's an active squeeze. Closed both shorts in Round 2 (previously unprotected, 35% combined weight) and did not re-open either in Round 3 (already stopped out there). Kept one reduced, now-stopped short per book in a less-crowded expression of the same idea (TQQQ in Round 2, spot GLD in Round 3), added protective stops throughout both books for the first time, raised cash meaningfully in both (5%->38% Round 2, 3%->15% Round 3), and rotated freed capital into the legs of each mandate that are still confirmed and unflagged (XLV/IWM in Round 2; XBI/KRE/TLT in Round 3). Verified Round 3 vs Round 2 same-direction overlap stays comfortably under 50% (XLF+XLV shared overlap is only ~20 of Round 3's 85 gross points, ~24%, and ~32% of Round 2's 62 gross points) by deliberately trimming the shared XLF/XLV sleeve in Round 3 and concentrating its incremental capital in names Round 2 doesn't hold (XBI, KRE, TLT)."
+}

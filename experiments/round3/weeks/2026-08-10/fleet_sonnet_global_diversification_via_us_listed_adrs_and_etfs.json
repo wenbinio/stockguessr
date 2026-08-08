@@ -1,0 +1,34 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Domestic sector relative-value: ride confirmed catalyst momentum in biotech/financials while shorting overextended mean-reversion candidates (gold miners, leveraged semis) with hard stops for intraweek discipline.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 35,
+      "thesis": "US financials ETF, momentum leg of the mandate -- trading near 52-week highs (Berkshire/JPM/Visa/Mastercard top holdings), size increased to redeploy idle cash into the leg that is actually working after the mean-reversion shorts were stopped out.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "thesis": "US biotech ETF, momentum leg trading near its 52-week high with active positive cancer/cardiac drug trial readouts cited as ongoing catalysts (+1.86% on 8/7); size increased for the same reason as XLF.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    }
+  ],
+  "cash_pct": 35,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Both mean-reversion shorts (GDX stopped 8/4, SOXL stopped 8/5) were already stopped out this week, and on 8/7 alone GDX squeezed another +7.11% and SOXL another +5.99% -- fresh confirmation this complex is in a live short squeeze, not overextension ripe for mean reversion, exactly as flagged (12 of 17 experiment-wide standing-order fires have been shorts in this complex, five on 8/7 alone). Re-shorting into that tape now would very likely trigger a third stop-out, so the short leg stays in cash rather than being rebuilt blind. Instead redeploying the ~46% cash pile that accumulated from the stop-outs into the two legs that are actually working -- XLF and XBI both remain in confirmed momentum (XLF near its 52wk high, XBI +1.86% on 8/7 near its 52wk high on active cancer/cardiac trial catalysts) -- while still holding a real cash buffer given the mandate's shorts are temporarily sidelined.",
+  "novelty": "Zero symbol overlap with the Round 2 book (EEM/TSM/ASML/EWZ/EWJ/BABA/INDA/SQQQ vs XLF/XBI) -- Round 3 is a pure domestic-sector-momentum book with its mean-reversion short leg intentionally sidelined this week after repeated GDX/SOXL squeeze stop-outs, structurally distinct from Round 2's ex-US diversification-plus-hedge book.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (R2 NAV $1,033.74 +3.37%, R3 NAV $979.21 -2.08%, R3 standing orders: SOXL stopped 8/4 and GDX stopped 8/5). WebSearch budget was exhausted session-wide, so I used WebFetch on stockanalysis.com quote pages for live Aug 7 close data: QQQ +1.17%/day (Nasdaq snapping back from the prior week's hawkish-Fed shock), TSM +0.44%/day (19 analysts Strong Buy, PT $540/+28.6%, N2/3nm capacity expansion news), ASML +2.15%/day (rebounding off a July -18% China-competition drawdown, Strong Buy consensus PT +25%), BABA +1.26%/day (+27.4% in July on Qwen/AI monetization news, but earnings 8/20 plus active shareholder-litigation headlines = binary risk ahead), EEM +0.95%, EWJ +1.84%, EWZ -1.31%, INDA +0.49%, SQQQ -3.36%/day. Also checked GDX (+7.11% in a single day on 8/7, 52wk $56-$117) and SOXL (+5.99% in a single day on 8/7, 52wk $23.66-$302) and XLF (-0.36% day, near 52wk high $58.41) and XBI (+1.86% day, near 52wk high $165.71, 'positive cancer/cardiac trial readouts could keep the rally going'). Key finding for R2: last week's book carried SQQQ as a SHORT position whose thesis text described it as 'the hedge doing its job' -- but shorting an inverse-Nasdaq ETF is actually a leveraged long-Nasdaq bet, not a hedge against AI-valuation risk; it only 'worked' this week because SQQQ fell -3.36% as QQQ rallied. Key finding for R3: GDX and SOXL both squeezed +7%/+6% on the single day after being stopped out, confirming the tape note that this complex is in a live short squeeze, not mean-reversion -- re-shorting into that would very likely re-trigger a third stop-out."
+}

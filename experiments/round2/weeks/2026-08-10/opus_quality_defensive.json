@@ -1,0 +1,60 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Low-beta quality/defensive core (healthcare, quality factor, min-vol, staples) with a small gold diversifier and a disciplined 8% short on semis to express 'AI-infra overextended' without dominating the book.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 34,
+      "thesis": "Still the conviction position and untouched in substance. Healthcare leads my defensive set on the horizon that matters (+14.53% 3m) and on the year (+23.52%), trades 5.1% above its 50-day and 9.0% above its 200-day, and the leadership stays broad across LLY, JNJ, ABBV, MRK and managed care rather than one drug. A 0.56 beta with earnings that do not depend on the payroll count is exactly what I want owning going into a labour market that just shed 23,000 jobs. I trimmed two points only to make room for the mandated gold sleeve, not because the view weakened."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "The quality-factor sleeve, screening on return on capital, free cash flow and low leverage without QUAL's ~30% technology weight. It keeps compounding through the regime flip: +4.63% 1m, +7.83% 3m, +15.56% 6m, +24.27% YTD, and 13.1% above its 200-day. Dividend cash-flow quality also holds its value better than most equity factors if the Fed is cutting because the economy is genuinely deteriorating rather than because inflation is solved."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Min-vol ballast, and it quietly did its job this week \u2014 +2.75%, ahead of XLP and SCHD, while sitting 4.0% above its 50-day and 6.4% above its 200-day. I keep preferring it to SPLV because SPLV's utilities concentration is a live drag (XLU -3.96% 1m, below both moving averages) even now that yields have come down."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Trimmed from 13% because it is the one defensive leg not participating: +0.08% on the week and +1.96% over three months, versus +14.53% for XLV. I am not abandoning it \u2014 staples remain the truest low-beta cash-flow ballast and it still holds above both moving averages \u2014 but it does not deserve a weight comparable to sleeves compounding six times faster, and it is the natural funding source for the gold position."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "New, and it repairs a gap: my mandate specifies a small gold diversifier and the book had none through exactly the week gold broke out. Spot reached ~$4,350 on soft payrolls, a weaker dollar, falling real yields and the PBoC's biggest monthly purchase since 2023, putting GLD 4.2% above its 50-day (+7.25% on the week, +5.69% 1m). It is still 3.2% below its 200-day after a -10.5% six-month correction, so I am buying a trend that is turning rather than one that is finished, which is the better risk. I choose bullion over the miners deliberately: GDX rose 21% in five sessions and that is a squeeze, not an entry. Stop below the breakout, take-profit near the next major extension.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "thesis": "Halved from 8% and demoted to a token. The overextension case is intact on the long horizon \u2014 44.7x earnings, +103% over twelve months, 27.8% above its 200-day \u2014 and SMH is still 4.6% below where it was a month ago and below its 50-day, so I will not claim the view is dead. But the market just told me the timing is wrong: a -20% drawdown was fully bought within days of the Fed repricing dovish, and in a rate-cut regime long-duration growth gets a bid regardless of capex discipline. At 4% with a stop 8% away, the worst case from here costs 32bp, which is what a speculative hedge should cost a defensive book. Take-profit unchanged so I still get paid properly if the bust resumes.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The July payroll print (-23,000 jobs) flipped the regime my 7/31 book was built for, and it did so in a way that hurts one leg and helps the mandate everywhere else. Two changes follow from that, and I am deliberately not touching the rest. First, the semis short: my thesis was 'AI-infra overextended,' the bust actually happened (-20% in a month), and it was bought back with both hands the moment the Fed turned dovish \u2014 SMH +7.80% in a week, +103% over twelve months, still 27.8% above its 200-day. Insurance that pays out against my longs falling is worth carrying; insurance whose losses are driven by the same rate-cut impulse that lifts my longs is not insurance at all, it is an uncorrelated short in the market's highest-beta index. I cut it in half and tighten the stop so a full stop-out from here costs 32bp instead of ~1%. This is also the complex where 5 of 17 standing orders died on 8/07 alone; I am sizing to survive a squeeze rather than to be right about it. Second, my mandate names a gold diversifier and my book has had none \u2014 an omission the tape just punished. Gold broke out on soft jobs, a weaker dollar, falling real yields and record PBoC buying; bullion is the low-volatility way to own that, unlike the miners which just went up 21% in five sessions. I fund it by trimming XLP, which is the only defensive sleeve failing to participate (+1.96% over three months). Crucially I am NOT retreating from the defensive stance: a shrinking labour market is precisely the environment where healthcare, quality cash-flow and min-vol earn their keep over the next several quarters, so XLV stays the conviction position at a third of the book.",
+  "research_notes": "WEB SEARCH BUDGET WAS EXHAUSTED (200/200) before I could use it, so I rebuilt the tape from primary price data (Yahoo chart API, pulled fresh through 2026-08-07 into /tmp/.../scratchpad/w4px/) plus targeted WebFetch on stockanalysis.com quote/news pages. Local repo price files (px.csv, universe_px.csv) were stale at 2026-07-24 and unusable.\n\nTHE MACRO EVENT: The July employment report printed a LOSS of 23,000 payrolls. Markets repriced the Fed toward cuts. Consequences visible across every asset I hold: dollar down, Treasury yields down (TLT +1.0% wk), gold broke out to ~$4,350 spot (seven-week high, plus the PBoC's largest monthly purchase since 2023), and equities put in \"the best week since April with a record close\" on the S&P. This is the exact opposite of the regime both my books were positioned for on 7/31 (rotation OUT of AI-capex INTO cheap defensive cash-flow).\n\nWEEK-ENDING 2026-08-07 NUMBERS I PULLED (1w / 1m / 3m / 12m / vs50d / vs200d):\n- SMH +7.80 / -4.64 / +11.48 / +103.32 / -2.1 / +27.8. SOXX +7.60 / -6.55 / +12.59 / +125.97 / -4.1 / +33.0. The semis \"bust\" was a -20% one-month drawdown that got bought violently. Long-term trend emphatically intact.\n- GDX +21.31 in ONE WEEK, +19.01 1m, +67.8 12m, +14.6 above its 50d. GLD +7.25 / +5.69 / -4.73 / +29.63, now +4.2 above 50d but still -3.2 below 200d (recovering from a -10.5% six-month correction). Consistent with the desk note that 12 of 17 fired standing orders were gold-miner and SOXL shorts stopping out.\n- Defensives (mine): XLV +1.93 / +3.01 / +14.53 / +23.52, +5.1 vs 50d, +9.0 vs 200d \u2014 still the best 3m sector I own. SCHD +1.28 / +4.63 / +7.83 / +28.64. USMV +2.75 / +2.93 / +6.86. XLP +0.08 / +1.19 / +1.96 / +7.34 \u2014 the clear laggard, barely participating. XLU -1.67 / -3.96 (glad I own none).\n- Energy/commodities BROKE, and this is the finding I did not expect: USO -8.66% on the week and -13.69% over two weeks, -18.17% 3m, now below its 50-day \u2014 while the news flow was maximally bullish (Iran/Strait of Hormuz tension, record refinery margins, XOM and CVX Q2 profits surging on higher crude). A sector that cannot rally on its own best headlines has a finished trend. XLE -3.44 wk / -2.58 3m. PDBC -1.77 wk, -3.90 2w, -7.21 3m (still +10.3 above 200d). DBC -1.83 wk. A contracting labour market is demand-negative for oil, which reconciles the price action with the headlines.\n- Trend candidates I screened for Round 3: EFA +2.81 / +4.04 / +8.06 / +23.71, +4.6 vs 50d, +10.0 vs 200d \u2014 the most consistent uptrend across every horizon on my screen, and a weak-dollar regime is structurally its tailwind. IWM +3.56 / +1.88 / +6.98 / +35.79, +13.3 above 200d, outperforming the S&P YTD. XLF +1.16 / +3.39 / +12.04, +5.2 vs 50d. JEPI +0.91 / +2.10 / +4.00 / +9.52 \u2014 materially better than last week's read; it has reclaimed its 200-day (+4.1) so the carry leg now passes the trend filter it failed on 7/31. DBMF flat (+0.03 wk) \u2014 CTAs got whipsawed as commodities and the equity short both reversed, but it holds above both MAs. MTUM still -2.4 below its 50d. SLV +9.82 wk but -9.8 below its 200d (squeeze, not trend). KRE screens well (+3.2 vs 50d) but I rejected it: regional-bank credit into a shrinking payroll count is the wrong risk.\n- Crypto: ETH +4.06 / +7.28, +6.7 above 50d but -6.7 below 200d and -55% 12m. BTC +3.50 / +1.82, +2.6 above 50d but -7.5 below 200d and -44% 12m. Both remain broken primary trends; ETH is the stronger.\n\nWHAT I CONCLUDED: The AI-infra-overextension short is a losing hedge in a rate-cut liquidity regime \u2014 it stopped hedging my longs and started correlating against them. And a -23k payroll print is genuinely bad economic news that the market is trading as good news; that argues for MORE defensive quality and MORE gold, not for chasing the melt-up, but it also argues against being short the highest-beta thing in a Fed-cut tape and against owning cyclical energy demand."
+}

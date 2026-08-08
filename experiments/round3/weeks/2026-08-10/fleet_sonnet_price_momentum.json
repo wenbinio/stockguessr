@@ -1,0 +1,70 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into laggard defensive/value sectors (healthcare, financials, duration) while shorting exhausted momentum extremes (gold miners, gold, leveraged semis) \u2014 a mean-reversion/relative-value book, not trend-following.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "thesis": "Biotech re-acceleration remains the best-confirmed laggard catch-up trade in the book; increased further as the highest-conviction leg.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Healthcare rotation thesis intact but trimmed here specifically to reduce same-direction overlap with the Round 2 book, which also holds XLV.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Financials strength unchanged but trimmed here specifically to reduce same-direction overlap with the Round 2 book, which also holds XLF.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Regional banks confirming the financials rotation with strong multi-timeframe momentum; increased since it has no Round 2 overlap.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Duration carry into a rate-cut cycle; increased as a diversifier with no Round 2 overlap.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Sole remaining exhausted-momentum short; kept small and given a tighter stop after GDX (the leveraged/beta cousin) squeezed and stopped out -- spot gold is the least crowded way left to express this leg of the mandate.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: This book has already been stopped out of SOXL (8/4) and GDX (8/7) this week -- the 'exhausted momentum extreme' shorts that anchor half the mandate got run over, and the tape note confirms this isn't idiosyncratic: gold miners and leveraged semis are squeezing hardest across the whole experiment right now. Re-entering SOXL or GDX shorts a second time into the same squeeze would be repeating a trade that just failed twice; not doing so. I'm keeping only GLD short (spot gold, not a leveraged miner vehicle, and it hasn't been stopped out) at a reduced size with a tighter stop, so the book stays mandate-true on the short side without doubling down on the specific names that broke. The freed capital rotates further into the laggard/defensive/value longs that are the other half of the mandate and are still working (XBI catch-up, KRE, TLT duration), while trimming the XLF/XLV sleeve specifically to keep cross-book overlap low since I also run Round 2. Cash rises from 3% to 15% given the elevated volatility this week.",
+  "novelty": "Round 3 now holds three names Round 2 doesn't touch at all (XBI, KRE, TLT) and trims the shared XLF/XLV sleeve to just 20 points of combined overlap -- about a quarter of Round 3's own gross and under a third of Round 2's -- while expressing the negative-momentum short exclusively through spot GLD instead of Round 2's leveraged TQQQ short, deliberately avoiding a second entry into the SOXL/GDX complex that has already stopped this manager out twice in one week.",
+  "r2_overlap_pct": 23.5,
+  "research_notes": "Read the account packet in full: Round 2 (momentum-concentration mandate) NAV $908.78, P&L -9.12%, max drawdown -12.64%, holding unprotected SOXL short 25%, TQQQ short 15%, GDX short 10% against XLF/XLV/XLE/IWM longs. Round 3 (mean-reversion mandate) NAV $968.41, P&L -3.16%, holding XBI/XLV/XLF/KRE/TLT longs and GDX/GLD/SOXL shorts, with standing orders showing SOXL already stopped out 2026-08-04 and GDX stopped out 2026-08-07.\n\nAttempted fresh WebSearch on SOXL/GDX/TQQQ price action for 2026-08-07 but the session's web-search budget was already exhausted (0 of 200 remaining) before any query returned results, so no new external data was obtainable this session. Relied instead on (a) the packet's own momentum figures and (b) the explicit tape note supplied with the task: gold miners (GDX/GDXJ) and leveraged semis (SOXL) have squeezed hard, accounting for 12 of the 17 standing-order fires in the whole experiment, five of them on 2026-08-07 alone -- directly corroborated by this manager's own Round 3 stop-outs on SOXL (8/4) and GDX (8/7) in the exact same week.\n\nConclusion: the negative-momentum short thesis on SOXL and GDX specifically is no longer confirmed price action for either book -- it's an active squeeze. Closed both shorts in Round 2 (previously unprotected, 35% combined weight) and did not re-open either in Round 3 (already stopped out there). Kept one reduced, now-stopped short per book in a less-crowded expression of the same idea (TQQQ in Round 2, spot GLD in Round 3), added protective stops throughout both books for the first time, raised cash meaningfully in both (5%->38% Round 2, 3%->15% Round 3), and rotated freed capital into the legs of each mandate that are still confirmed and unflagged (XLV/IWM in Round 2; XBI/KRE/TLT in Round 3). Verified Round 3 vs Round 2 same-direction overlap stays comfortably under 50% (XLF+XLV shared overlap is only ~20 of Round 3's 85 gross points, ~24%, and ~32% of Round 2's 62 gross points) by deliberately trimming the shared XLF/XLV sleeve in Round 3 and concentrating its incremental capital in names Round 2 doesn't hold (XBI, KRE, TLT)."
+}

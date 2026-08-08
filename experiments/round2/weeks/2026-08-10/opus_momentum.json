@@ -1,0 +1,103 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "The clean, low-idiosyncratic expression of the mandate, and now the one confirmed by tape rather than argued from news: broad semis rallied high single digits on the week, semis ETFs led all weekly fund flows for the first time on record, and the Nasdaq closed at an all-time high. Made the top weight precisely because the memory blow-up showed that single-name chip risk inside this complex is real and idiosyncratic - owning the index is how I stay long the confirmed trend without betting on which sub-sector's pricing curve breaks next.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Custom AI silicon is the non-memory half of the semis story and it is untouched by the DRAM/NAND pricing problem - Broadcom sells design and logic against hyperscaler capex guided above $400bn, not commodity bits into a decelerating price curve. Raised from 7% with capital taken directly out of MU because it is the same complex minus the specific driver that just got falsified.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Post-earnings-announcement drift on the strongest print of the quarter - revenue $200.6bn (+20%), operating income +43%, AWS accelerating to 37% with $496bn of RPO - and the drift is still running with the Nasdaq at a record. A falling 10-year at 4.64% is a direct multiple tailwind for long-duration mega-cap cash flows, which is a second, rates-driven leg to the thesis that did not exist when I entered.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Post-earnings breakout reinforced by live escalation around Hormuz, and the reason to keep it at full size this week is that it is the only sleeve here with zero exposure to the AI capex debate. If the -23,000 payroll print turns out to be the start of a growth scare rather than a dovish gift, order-book momentum backed by government budgets is what keeps working when semis stop.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Kept as the low-beta anchor but cut from 13% because its job has changed. I sized it up when the semis reversal was one session old and unproven; the reversal is now confirmed by a week of record highs and leading fund flows, so paying momentum-book capital for defensive breadth at that size is no longer justified. Nine percent keeps a genuine anchor without dragging on the mandate.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "One of the two prints that broke the capex-fear narrative, with Azure converting AI spend into recognised cloud revenue and a 16% single-session move behind it. Nudged up because software and AI names specifically drew the institutional buying on the 08-07 record-high session as yields fell - the drift and the rates tailwind are pushing the same way.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "The mandate's named leveraged instrument, pointed the right way into a confirmed uptrend - it printed a clean +18.55% day against SOXX +6.30%, and the desk's own record shows repeated short stop-outs in this name, meaning the pressure is on the other side of my position. Raised only from 5% to 7% and both brackets kept: daily-rebalanced 3x decays hard in chop, so I want more convexity but with the downside still defined.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "LMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Fresh post-earnings trend with real backlog visibility and the same geopolitical reinforcement as RTX. Paired with RTX it forms a sleeve whose correlation to the AI cycle is near zero, which is the whole point of holding it in a book that is otherwise long one macro factor.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut from 13% to a residual because the pricing claim that justified the size is now contested - Citi projects DRAM and NAND decelerating quarter-over-quarter for four quarters on rising Chinese supply. Not cut to zero because MU fell only ~1.2% on the day WDC fell 17% and Sandisk 9.1%: roughly 40% of its DRAM bits are locked under $22bn of long-term contracts, so it is the contracted, defensible end of a sub-sector that is being repriced. Stop tightened from -18% to -15% - I no longer want to sit through the full noise band of a name whose fundamental driver is under revision.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimmed from 7% because a labour market that shed 23,000 jobs is a demand-side negative for crude, which leaves this leg standing on the Hormuz supply premium alone rather than on the two-sided case I entered. Kept at 5% because that premium is live and it remains the only position that pays off if inflation, not employment, turns out to be the binding problem.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "New leg, and the mandate's other named leveraged instrument. The 08-07 record high was Nasdaq-wide with 336 S&P names advancing and the 10-year down to 4.64% - the driver was falling rates lifting all long-duration growth, not a chips-only move, and my book had no instrument that expressed that broader leg. Sized at only 4% with a wide stop because 3x index beta on top of an already-long book is where a growth-scare reinterpretation of the payroll print would hurt fastest.",
+      "stop_loss_pct": 18.0
+    }
+  ],
+  "cash_pct": 10,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The one checkable claim under my largest position was contradicted this week and nothing else in the mandate was. My MU thesis rested on DRAM pricing accelerating 10-20% per month into year-end; Citi cut its target 18% on an explicit call that DRAM and NAND decelerate quarter-over-quarter for four straight quarters on Chinese supply, and the peer group confirmed it violently with WDC -17% and Sandisk -9.1% in one session. Over the same week the rest of the complex did the opposite: SOXX and SMH rallied hard, semis ETFs topped weekly fund flows for the first time, and the Nasdaq closed at a record 26,690 after a -23,000 payroll print repriced the Fed dovish and pulled the 10-year to 4.64%. So this is not risk-off to be hidden from, it is one sub-sector breaking while the mandate's core is being confirmed, and the honest momentum response is to move weight out of the falsified driver and into the trends actually making new highs. MU goes from my top weight to a residual tail rather than to zero, because it fell only ~1.2% while peers fell 17% - 40% of its bits sit under $22bn of long-term contracts, so it is the relative-strength survivor of a broken sub-sector, which is worth a small position and not a large one. I add TQQQ because the record high was Nasdaq-wide and rates-driven, not chips-only, and my mandate names that instrument. XLV comes down because it was ballast bought when the semis reversal was still unconfirmed and that doubt has now been resolved; VZ goes entirely because carry ballast is a worse buffer than the 4% cash I already hold. XLE is trimmed because a labour market shedding jobs is a demand-side negative that leaves the leg resting on supply premium alone.",
+  "research_notes": "Checked the 2026-08-07 session and the week's tape for both books.\n\nMACRO \u2014 the week's dominant event was the July jobs report: US nonfarm payrolls unexpectedly LOST 23,000 jobs against consensus of +80,000. The market read it dovishly rather than as a growth scare: S&P 500 closed at a record 7,757.64 (+0.62%), Nasdaq Composite at a record 26,690.62 (+1.30%), Dow +0.28%, Russell 2000 +1.10%, with 336 S&P names advancing \u2014 broad participation, not mega-cap-only. 10-year Treasury yield fell to 4.64%. Gold rose sharply on a safe-haven and lower-real-rate bid. Brent +1.3%.\n\nSEMIS \u2014 the complex split in two. Broad semis and leveraged semis ripped: SOXX up double digits on the week, SMH high single digits, SOXL up sharply (a near-perfect 3x day of +18.55% against SOXX +6.30% on the Tuesday), and semiconductor ETFs topped weekly fund flows for the first time. That is exactly the confirmation my 2026-08-01 reversal call needed. But MEMORY broke away from it: on 08-07 Western Digital fell 17%, Sandisk 9.1%, Seagate 3.9%. Citigroup cut its Micron target 18% from $1,400 to $1,150 (keeping Buy), with Atif Malik writing \"we see both DRAM and NAND prices decelerating Q/Q in the next four quarters\" and naming rising Chinese DRAM and NAND production as the primary long-term risk. MU itself held up far better than peers \u2014 down only ~1.2% to roughly $854-871 with an 8%+ intraday range \u2014 because ~40% of its DRAM bits are locked under long-term contracts worth $22bn of commitments.\n\nWHY THIS MATTERS TO ME SPECIFICALLY \u2014 my MU thesis was written on one explicit, checkable claim: DRAM rose 90% in Q1 with suppliers guiding a further 10-20% per month into year-end and shortage beyond 2026. Citi's four-quarter deceleration call plus a 17% single-session drop in a direct peer is the first genuine contradiction of that claim, and it postdates my reasoning. The rest of my mandate's universe simultaneously made new highs. That is a split inside the sleeve, not a market-wide de-risking.\n\nTAPE NOTE ON SQUEEZES \u2014 the desk flags that 12 of 17 standing orders ever fired were shorts in gold miners and SOXL being stopped out, five on 08-07 alone. I am long both complexes' direction (SOXL long, GLD long), so the squeeze is a tailwind, not a hazard, for how I am positioned. I did not build any new short leg into it.\n\nCRYPTO \u2014 my Round-2 mandate contemplates short BTC/ETH/SOL perps as funding. I have no fresh crypto data this week and, independently, a dovish-Fed repricing with indices at record highs is not a tape for opening leveraged short risk-asset exposure. Declining to re-open that sleeve on an information gap rather than guessing at it.\n\nCARRY BOOK \u2014 the single premise on which I cut all long duration on 2026-07-30 was that the Fed on hold against three dissents, with Warsh talking hawkishly, meant I was taking rate risk without being paid term premium. A -23,000 payroll print inverts that premise and the bond market agreed the same session (10y to 4.64%). The same reversal applies to the reason I trimmed gold: I cited a hawkish Fed and rising real rates as the headwind, and both just flipped. Conversely, a contracting labour market is the fundamental that high-yield credit spreads are genuinely short, so credit carry is the sleeve that now deserves less weight, not more."
+}

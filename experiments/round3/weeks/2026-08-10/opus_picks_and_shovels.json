@@ -1,0 +1,72 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Rotate out of US mega-cap/AI into a soft-dollar basket of international value, commodity-linked EM, energy carry and gold, with a small dollar short.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "Gold miners as the levered Fed-credibility trade, and now the book's anchor. Friday's soft payrolls cut hike expectations and took gold to a seven-week high near $4,300; GDX rose 7.11% to $89.89 yet still trades -23% below its $117.18 high at PE 13.6 with miners earning record margins at this gold price. Held at 22% rather than raised, because part of Friday's move was a crowded short base being stopped out and that fuel does not repeat. No take-profit, so I am not forced out of a monetary thesis by a price target; stop tightened to -18% from the new level to protect the gain.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Trimmed 26-to-20 and demoted from anchor. Energy remains genuine real-asset carry \u2014 +40% over the year, 2.64% yield, -9% from its high, supported by Middle East supply risk, refiner margins and AI power demand \u2014 but it was the only holding that FELL on the dovish payroll day, which tells me the market is now pricing it as a demand-cyclical rather than an inflation hedge. If the Fed is easing because employment is deteriorating, this is the leg that owns that deterioration, so it should not also be my largest position.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "COPX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Raised 12-to-15. Copper miners are the only leg simultaneously levered to all three of what just changed: a weaker dollar, a Fed pivoting from hikes toward cuts, and physical tightness meeting grid electrification and datacenter buildout demand. $88.03 (+2.25% Friday), +104% over the past year, PE 18.5, 2.2% yield, still short of its $99.99 high. This is the industrial-real-asset counterpart to the monetary bet in GDX.",
+      "stop_loss_pct": 22.0
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Held at 10%. Brazil at PE 9.81 with a 4.14% dividend yield is the cheapest carry in the basket, and a Fed that stops hiking is historically the single strongest input for EM equity while Brazil's own central bank is already cutting into moderating inflation. The 25% US tariff on Brazilian goods is why this is 10% and not 15%, but Vale and Petrobras give it commodity leverage that benefits from the same weaker dollar driving the rest of the book.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "EZU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Held at 10%. Eurozone value at PE 17.6 with a 2.57% yield, sitting at $71.57 against a $71.82 52-week high with the Stoxx 600 at records on roughly 20.8% projected earnings growth. A non-US, non-AI earnings stream with no exposure whatsoever to the hyperscaler capex argument my Round 2 book is making. Left untouched because a leg making new highs on broadening earnings is not a leg that needs managing.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Held at 9%. Japan's governance-reform and buyback story is still compounding \u2014 $96.90 (+1.75% Friday) against a $97.52 high, PE 18.6, 3.68% yield, +33% total return over the past year. A dollar that weakens on Fed easing firms the yen, which adds to dollar-based returns here, so this leg and the UUP short reinforce each other.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "UUP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "Raised 3-to-7, reversing last week's cut. I reduced this leg to a token specifically because a hawkish Fed with September hike risk made the near-term rate differential favour the dollar \u2014 Friday's soft payrolls repriced hike expectations away and UUP fell to $28.07, so the reason for the cut no longer exists. The structural fiscal-credibility case was always intact; what was missing was the near-term catalyst, and the labour data supplied it. Sized at 7% rather than the original 8% because UUP still sits in the upper half of its $26.40-$28.60 range and one payroll print is one data point. Tight -8% stop: this is a macro expression, not a conviction position.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 7,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: The single macro event of the week was a soft US payrolls print that cut Fed hike expectations, and it moved four of my seven legs in a way that says my current weights encode last week's regime, not this one. Gold went to a seven-week high near $4,300 (GLD +2.26%), GDX +7.11% and GDXJ +7.51% in a single session, and the dollar fell \u2014 while XLE was the ONLY leg in the book that fell (-1.13%). That is the whole rebalance. XLE goes 26-to-20: it was sized as my anchor on a geopolitical-supply-and-inflation premise, but if the Fed is now easing because the labour market is cracking, energy demand is the leg most exposed to that crack, and Friday's tape already showed energy trading as a growth asset rather than a real asset. UUP short goes 3-to-7: last week I explicitly cut it to a 3% token because a hawkish Warsh Fed with September hike risk favoured the near-term rate differential \u2014 that exact premise was falsified on Friday, so I restore the leg rather than pretend the reason still holds. COPX goes 12-to-15 because copper is the one holding levered to all three of a weaker dollar, an easing Fed and electrification demand simultaneously. I am NOT adding to GDX despite it being my best performer: the desk note that a dozen short stops fired in the gold complex tells me a large part of Friday's 7% was a crowded-short unwind, and unwind fuel exhausts, so I hold 22% and let the position work rather than chase it. EWZ, EZU and EWJ are untouched \u2014 Brazil at PE 9.8 with a 4.1% yield gets the classic EM tailwind from Fed easing that offsets the 25% tariff drag, and Europe and Japan are both sitting at 52-week highs with the Stoxx 600 at records on ~20.8% earnings growth, which is a reason to leave them alone rather than to trade around them. Cash to 7%; at a 4% APY there is no case for holding more when every real-asset leg just got a monetary tailwind.",
+  "novelty": "Round 3 shares zero names and zero same-direction gross weight with my Round 2 book: Round 2 is 85% long US AI-infrastructure equities (power generation, semi-cap, custom silicon, networking, datacenter thermal) with no shorts, while Round 3 is 86% long non-US and real-asset exposure (energy, gold miners, copper miners, Brazil, eurozone, Japan) plus a 7% short dollar leg \u2014 the two books have no overlapping ticker and are driven by opposite macro inputs, since Round 2 wants nominal growth and Round 3 wants a falling real rate and a weaker dollar.",
+  "r2_overlap_pct": 0,
+  "research_notes": "PRICES/EVENTS CHECKED (through 2026-08-07 close, via stockanalysis.com quote pages):\n\nRound 2 names \u2014 ANET $188.67 (-1.90% Fri): reported Q2 on Aug 4, revenue >$3B, +37.7% y/y, FY26 guide RAISED to $12.6B (~+40% growth); consensus Strong Buy, avg target $238.63, Barclays high $289; stock still -12% below its $214.89 high. AMAT $539.14 (+2.21%), fwd PE 35.8, target $629, added to Goldman's US Conviction List, Q3 print Aug 13. AVGO $427.76 (+1.71%), fwd PE 27.1, target $527.88, NEW: ~$200B AI-chip/foundry partnership with Samsung; removed from Goldman conviction list but Buy retained; earnings Sept 2. GEV $990.32 (-1.00%), PE 28.3, target $1,231 (+24%), Q2 orders +88%, backlog $176B \u2014 flat since my fill. MU $877.57 (-0.44%), fwd PE 6.1, target $1,502, BUT trading below its 50-day MA of $970.95 and well off its high, with SK Hynix announcing large capex \u2014 i.e. the supply response to the memory shortage has begun. SMCI $31.13 (+5.96% Fri), 52wk range $19.48-$58.78, PE 16.3, target $37.81 ABOVE spot, and it PRE-ANNOUNCED a strong preliminary fiscal Q4 ~two weeks ago with multiple target raises; reports Aug 11. VRT $272.40 (-1.01%), -28% from its $379.94 high after a July 29 Q2 revenue MISS ($3.27B vs $3.38B) that management called a timing/supply issue; fwd PE 34.9, target $338.\n\nTape/macro \u2014 SPY $773.26 (+0.61%), basically at its record $776.85, but commentary flags the move as options-positioning-driven; Burry publicly warning of a 1987-type top. SOXX $543.27 (+2.02%) still -17% below its $655.95 high \u2014 semis are the laggard complex, not the extended one. SOXL $140.25 (+5.99%) but -54% from its high on 3x decay. Decisive macro event: a soft US payrolls print cut Fed hike expectations \u2014 GLD $398.47 (+2.26%), gold at seven-week highs near $4,300/oz; GDX $89.89 (+7.11%); GDXJ $117.62 (+7.51%); UUP $28.07 (-0.43%).\n\nRound 3 names \u2014 XLE $57.50 (-1.13%), the ONLY leg down on the dovish day, +40% 1y, 2.64% yield, -9% from high. COPX $88.03 (+2.25%), +104% 1y, PE 18.5. EWZ $35.34 (-1.31%), PE 9.81, 4.14% yield, 25% US tariffs live but Brazil's central bank still cutting. EZU $71.57 (+0.76%) at its 52-week high, PE 17.6, Stoxx 600 at records with ~20.8% earnings growth. EWJ $96.90 (+1.75%) at its 52-week high, PE 18.6, 3.68% yield.\n\nWHAT I LEARNED THAT CHANGED MY MIND: (1) My SMCI short thesis is being contradicted by the issuer itself \u2014 SMCI pre-announced strong prelims and the street raised targets; I was holding a squeezing 9% short into a positively pre-announced Aug 11 print, in a tape where 12 of 17 standing orders that ever fired were shorts getting stopped out. (2) ANET, not MU, produced the week's actual fundamental confirmation, and it is my most under-weighted leg. (3) SK Hynix capex is bullish the tool vendor (AMAT) and bearish the commodity (MU) \u2014 the shortage is now inducing supply. (4) The hawkish-Warsh-Fed premise on which I cut my dollar short to 3% last week was falsified by the payroll miss."
+}

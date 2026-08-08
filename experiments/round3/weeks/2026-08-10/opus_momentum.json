@@ -1,0 +1,97 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Raised from 13% and made the top weight. This is the sleeve that gets paid first when the Fed's reaction function turns, and a payroll print at -23,000 against +80,000 expected is the cleanest turn signal available - the market moved the 10-year to 4.64% within the session. The belly rather than the long end because rate cuts are priced into 7-10y paper without also taking the fiscal term-premium risk sitting at the back of the curve, and it remains the only asset here that rallies if this resolves as a genuine growth scare."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "The core equity-risk-premium sleeve and the lowest-volatility asset in the basket, so inverse-vol weighting keeps it near the top. Trimmed two points only to fund duration and gold, not because anything about it deteriorated - a min-vol equity book is exactly what I want owning the equity premium into a tape where the bullish catalyst was a contracting labour market."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Raised from 9% because the specific reason I trimmed it has reversed. I wrote that a hawkish Fed and rising real rates were a genuine headwind and that I wanted insurance rather than a directional bet; falling real rates and a Fed pushed toward cuts remove that headwind, and gold rallied sharply on the print. It stays the book's low-correlation real asset and its best hedge against an AI-credit tail. Stop widened to -12% because the complex has just been through a violent short squeeze and post-squeeze mean reversion would take out a -10% stop on noise alone.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "XLRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Raised from 7% because REITs are the carry sleeve most directly levered to the move I am underwriting - rent yields are valued off the long rate, and the 10-year just fell to 4.64% on a Fed repricing. It supplies a cash-flow stream distinct from both equity beta and credit, which is what a cross-asset carry book is for, and it had already been quietly working at +13.2% on 6m."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Cut from 11% to 8%. High-yield carry pays roughly 7% and spreads still have not widened, but the thing credit is genuinely short is employment, and employment just contracted by 23,000 jobs. Combined with an AI complex that is debt-funded and already showing stress in NVDA CDS and Oracle at 200bp, I would rather hold less of the coupon than be paid to stand in front of the first labour-market crack. Tight -6% stop retained.",
+      "stop_loss_pct": 6.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Low-volatility equity built on a pure realised-vol screen rather than USMV's optimisation, so the two hold materially different names and diversify each other while keeping portfolio variance down. Trimmed a point alongside USMV purely as funding for the duration and gold adds."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Reinstated as a satellite after being cut entirely on 2026-07-30. My mandate names term premium as a target and I refused it while the Fed was on hold against three dissents; a -23,000 payroll print is the event that changes what I get paid for holding rate risk. Deliberately 6% and not more - the long end also carries fiscal supply risk that no amount of Fed dovishness fixes, so this is a position on the reaction function with the belly, not the back end, doing the heavy lifting.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Consumer staples as the defensive dividend-carry sleeve, taking the bond-proxy income role with similar yield and beta to utilities and none of the AI-datacenter-power exposure. Modestly trimmed as funding; its case is unchanged and it is precisely the equity exposure that holds up if the payroll number is read as recessionary rather than dovish next month."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimmed from 7% for the same reason as in the momentum book - a contracting labour market is a demand-side negative for crude, so the leg now rests on supply premium alone. Kept at 5% because it is this book's only inflation-linked sleeve and pays real dividend and FCF carry, and I do not want a portfolio whose every position needs rates to keep falling.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "The single-name expression of defensive dividend carry with the strongest trend of any staple - +14.4% 3m and +22.7% 6m on a stable dividend. Trimmed one point as funding; it remains where low-beta money is actually going and benefits alongside every other bond proxy as the discount rate falls."
+    },
+    {
+      "symbol": "T",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Telecom yield carry with momentum on regulated domestic cash flows and essentially no correlation to the AI capex cycle. A high-dividend, rate-sensitive payer is a direct beneficiary of the 10-year moving to 4.64%, which is the same trade as the duration adds expressed through equity rather than bonds."
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: I cut all long duration on 2026-07-30 for one stated reason: the Fed on hold against three dissents with Warsh hawkish meant I was carrying rate risk without being paid term premium. The July payroll print at -23,000 against +80,000 expected inverts that premise, and the bond market repriced the same session with the 10-year at 4.64%. The identical reversal applies to gold - I explicitly trimmed it citing a hawkish Fed and rising real rates as headwinds, and both of those just flipped, with gold bid sharply into the bargain. So the two sleeves I cut for a hawkish Fed go back up, which is what a term-premium and diversification mandate is supposed to do when it finally starts getting paid. Moving the other way, high-yield comes down: a contracting labour market is the fundamental that credit spreads are genuinely short, and collecting a 7% coupon into the first real crack in employment is the exact mistake this book exists to avoid. XLRE is raised because a 4.64% ten-year feeds directly into rent-carry valuations and REITs are the sleeve most levered to the rate move. Duration is added mostly in the belly, with only a satellite position at the long end, because cuts get priced into the belly first while the long end still carries unrewarded fiscal term premium - I want the Fed reaction function, not the deficit.",
+  "novelty": "This book overlaps the Round-2 momentum book by a single 5% XLE leg out of 92% gross - it is long intermediate and long duration, gold, REITs and defensive dividend carry precisely where the momentum book is long leveraged semis, Nasdaq beta and defence, so the two express opposite readings of the same -23,000 payroll print and one of them works whether it resolves as a dovish gift or a growth scare.",
+  "r2_overlap_pct": 5.4,
+  "research_notes": "Checked the 2026-08-07 session and the week's tape for both books.\n\nMACRO \u2014 the week's dominant event was the July jobs report: US nonfarm payrolls unexpectedly LOST 23,000 jobs against consensus of +80,000. The market read it dovishly rather than as a growth scare: S&P 500 closed at a record 7,757.64 (+0.62%), Nasdaq Composite at a record 26,690.62 (+1.30%), Dow +0.28%, Russell 2000 +1.10%, with 336 S&P names advancing \u2014 broad participation, not mega-cap-only. 10-year Treasury yield fell to 4.64%. Gold rose sharply on a safe-haven and lower-real-rate bid. Brent +1.3%.\n\nSEMIS \u2014 the complex split in two. Broad semis and leveraged semis ripped: SOXX up double digits on the week, SMH high single digits, SOXL up sharply (a near-perfect 3x day of +18.55% against SOXX +6.30% on the Tuesday), and semiconductor ETFs topped weekly fund flows for the first time. That is exactly the confirmation my 2026-08-01 reversal call needed. But MEMORY broke away from it: on 08-07 Western Digital fell 17%, Sandisk 9.1%, Seagate 3.9%. Citigroup cut its Micron target 18% from $1,400 to $1,150 (keeping Buy), with Atif Malik writing \"we see both DRAM and NAND prices decelerating Q/Q in the next four quarters\" and naming rising Chinese DRAM and NAND production as the primary long-term risk. MU itself held up far better than peers \u2014 down only ~1.2% to roughly $854-871 with an 8%+ intraday range \u2014 because ~40% of its DRAM bits are locked under long-term contracts worth $22bn of commitments.\n\nWHY THIS MATTERS TO ME SPECIFICALLY \u2014 my MU thesis was written on one explicit, checkable claim: DRAM rose 90% in Q1 with suppliers guiding a further 10-20% per month into year-end and shortage beyond 2026. Citi's four-quarter deceleration call plus a 17% single-session drop in a direct peer is the first genuine contradiction of that claim, and it postdates my reasoning. The rest of my mandate's universe simultaneously made new highs. That is a split inside the sleeve, not a market-wide de-risking.\n\nTAPE NOTE ON SQUEEZES \u2014 the desk flags that 12 of 17 standing orders ever fired were shorts in gold miners and SOXL being stopped out, five on 08-07 alone. I am long both complexes' direction (SOXL long, GLD long), so the squeeze is a tailwind, not a hazard, for how I am positioned. I did not build any new short leg into it.\n\nCRYPTO \u2014 my Round-2 mandate contemplates short BTC/ETH/SOL perps as funding. I have no fresh crypto data this week and, independently, a dovish-Fed repricing with indices at record highs is not a tape for opening leveraged short risk-asset exposure. Declining to re-open that sleeve on an information gap rather than guessing at it.\n\nCARRY BOOK \u2014 the single premise on which I cut all long duration on 2026-07-30 was that the Fed on hold against three dissents, with Warsh talking hawkishly, meant I was taking rate risk without being paid term premium. A -23,000 payroll print inverts that premise and the bond market agreed the same session (10y to 4.64%). The same reversal applies to the reason I trimmed gold: I cited a hawkish Fed and rising real rates as the headwind, and both just flipped. Conversely, a contracting labour market is the fundamental that high-yield credit spreads are genuinely short, so credit carry is the sleeve that now deserves less weight, not more."
+}

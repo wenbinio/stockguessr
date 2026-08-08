@@ -1,0 +1,87 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "The strongest intact trend on my board and the core of the mandate. +83.6% over twelve months, up from +71.6% a week ago, and price has closed from 10.7% below its high to 5.0% while rising 1.86% on the session. I halved this to 7% on 30 July on the argument that a Fed with hike dissents punishes long-duration small-cap biotech; the index answered by accelerating, and equal-weight biotech is being bid by large-cap pharma M&A rather than by rate expectations. Restored to top weight. The 12% stop is wide because this is a high-volatility equal-weight index where an 8% stop is noise, not trend damage.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "The cleanest breakout available: 0.5% from its 52-week high with +38.2% over twelve months, outperforming the S&P year to date, and up 1.11% on the day. Small-caps are a theme my mandate names and I owned none of them after last week. I take the exposure unlevered here so that the levered leg can be sized small and stopped tight independently.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Semis have the highest twelve-month return of any unlevered theme I can own, +103.9%, and turned up 1.96% on the session. The 13.3% distance from its high is the reason this is a third-weight position rather than a first: the trend is intact on the twelve-month test and recovering on the daily one, but it has not yet reclaimed leadership on the drawdown test the way XBI and IWM have. Sized to participate in the recovery without pretending it is confirmed.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Held from the prior book with a modest trim, because nothing about it deteriorated: 1.7% below its 52-week high with +29.2% over twelve months and a positive session on a mixed tape. It is the highest-quality trend I own on the distance-from-high test and it is the ballast that lets me carry TNA and SMH, since large-cap pharma is bid by the same defensive rotation that would break a risk-on book.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Large-cap tech, the fourth theme my mandate names, +28.1% over twelve months and 3.4% below its high after a 1.17% session. This is the low-volatility way to hold the AI complex alongside SMH: if the concern about AI capex sustainability that is pressuring semis proves right, the megacap index absorbs it far better than a 26-stock semiconductor basket does.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 16.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Kept because it strengthened rather than faded: its twelve-month return improved from +26.1% to +31.5% and it sits 2.7% below its high at a 13.4 P/E. Regional banks are the natural beneficiary of both a steep curve and a small-cap tape making new highs, so this leg and IWM reinforce each other rather than duplicate. Trimmed from 10% only to fund the mandate themes.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Cut from 36% to a residual, not eliminated. The twelve-month trend is still +40% and price is only 9.4% below its high, so this does not fail the momentum test outright the way XOP and ERX now do. I keep it because it is the one leg in the book that profits from a Hormuz escalation, which is the specific headline that would hit small-caps, semis and biotech simultaneously. Sized so that being wrong on oil costs me a rounding error instead of the year, with a 9% stop that exits if the decay continues.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "The mandate's select-leverage clause, and the only levered vehicle that currently earns it. TNA is 2.8% below its own 52-week high with +113.6% over twelve months and +3.25% on the session, versus SOXL 53.6% below its high and LABU 16.7% below theirs; that gap is the direct measure of how much daily rebalancing has eaten each trend, and in small-caps it has eaten almost nothing. Sized at 6% rather than the 8% I cut last week, so effective exposure is 18% and the 15% stop triggers on roughly a 5% move in IWM, which would be a genuine failure of the breakout rather than a shakeout.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Two independent things broke against last week's book at once, and both point the same way. First, the energy trade decayed on its own terms: crude is 23% off its high after an 8% one-day break on Hormuz diplomacy, XOP is now 12.6% below its high and ERX 20.3%, and XLE fell 1.13% on a day the S&P closed within half a percent of a record. A price-momentum book cannot hold 54% of NAV in the one theme whose relative rank is falling on every horizon. Second, the shock I repositioned around on 30 July did not persist \u2014 SPY has fully round-tripped it and IWM is printing new highs \u2014 so the reason I gave for cutting small-cap beta has been falsified by price, which is the only evidence my mandate lets me weigh. Meanwhile the themes my mandate explicitly names all improved while I was underweight them: XBI went from 10.7% to 5.0% below its high with its 12-month return rising from +71.6% to +83.6%, SMH is +104% over a year and turning up, and IWM is at highs. Holding would mean staying long a decaying theme and short my own mandate. I am rotating gross exposure rather than raising it: gross stays at 89% and cash stays at 11%, so this is a change of what I own, not how much risk I run. I keep a 7% XLE residual precisely because it is the leg that pays if Hormuz escalates instead of settling \u2014 that is real diversification against a book that is now overwhelmingly long risk-on beta \u2014 but XOP and ERX go to zero because a high-beta and a 2x expression of a theme I no longer rank first is exactly the leverage the mandate tells me to remove when the trend stops working. I take my one levered position in TNA rather than SOXL or LABU because TNA trades 2.8% below its own 52-week high against 53.6% for SOXL and 16.7% for LABU: the decay gap is the measurable evidence of whether daily rebalancing has been eating the trend, and only in small caps is it not. Turnover is roughly 55% one-way at 2-5bps a side, about 1.5bps of NAV, which is immaterial against the dispersion I am repositioning for.",
+  "novelty": "I manage only a Round-3 book, so there is no Round-2 overlap to police, but this book is now deliberately distinct from the energy-and-defensives posture it replaces: the two largest legs, XBI and IWM, express biotech and small-cap breadth rather than commodity beta, and the single levered leg is 3x small-caps chosen on decay-gap evidence rather than 2x energy.",
+  "research_notes": "Pulled point-in-time quotes and 52-week ranges through the 2026-08-07 close for every position I hold plus every mandate theme I do not.\n\nWHAT I OWN. XLE $57.50, -1.13% on the day, +39.97% 1yr, but now 9.4% below its 52-week high of $63.46 (it was 7.6% below when I sized it to 36% on 7/31). XOP $166.40, -0.39%, +37.63% 1yr, 12.6% below its $190.36 high. ERX $88.24, -2.26% on the day, +77.14% 1yr, 20.3% below its $110.78 high. The underlying is worse than the equities: USO $117.98 is 23.4% below its $154.08 52-week high, and the tape shows crude dropping 8% on unconfirmed Hormuz diplomacy between Iran and Oman, with two-way headline risk still live. XLV $165.68, +0.75%, +29.17% 1yr, only 1.7% off its high. KRE $76.21, +31.48% 1yr (up from +26.1% a week ago), 2.7% off its high. XBI $157.37, +1.86% on the day, +83.55% 1yr (up from +71.6%), and it has closed the gap to its high from 10.7% to 5.0%.\n\nWHAT I DO NOT OWN. This is the finding that matters. SPY $773.26 (+0.61%) is 0.46% off its all-time high; the 29 July hawkish-Fed/oil shock has been fully round-tripped by the index. IWM $301.56 (+1.11%), +38.15% 1yr, is 0.5% from its 52-week high \u2014 small caps are making new highs, and TNA $74.68 (+3.25%, +113.63% 1yr) sits only 2.8% below its own high, meaning the 3x vehicle has almost no accumulated decay gap versus the unlevered index. SMH $582.70 (+1.96%), +103.93% 1yr, 13.3% off its high and re-accelerating. QQQ $723.03 (+1.17%), +28.06% 1yr, 3.4% off its high. LABU +5.69% on the day, +350% 1yr but 16.7% below its high; SOXL $140.25 +5.99% but 53.6% below its $302 high \u2014 both 3x vehicles carry a decay gap two-to-six times wider than TNA's, which is why I take my leverage in small caps and not in biotech or semis.\n\nWHAT I CONCLUDE. Every theme my mandate actually names \u2014 semis, biotech, tech, small-caps \u2014 is intact and re-accelerating, and the one theme I concentrated 54% of the book into last week is the only one rolling over. My -1.47% in a week when SPY printed a record is entirely energy. On the cross-sectional test I am supposed to run, XLE ranks below XBI, IWM, XLV, KRE, SMH and QQQ on distance-from-high, and XOP and ERX rank last on the board. I also note the tape warning on stopped-out shorts in GDX/GDXJ and SOXL: I carry no shorts in either complex, so it does not constrain me, but it corroborates that the squeeze is in beta, not defensives."
+}

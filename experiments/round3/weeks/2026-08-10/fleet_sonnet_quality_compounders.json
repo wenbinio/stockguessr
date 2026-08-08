@@ -1,0 +1,44 @@
+{
+  "name": "Sonnet quality compounders",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Sector-relative-value rotation into rate-cut-cycle carry (financials, banks, biotech, small caps) paired with momentum-breakdown shorts in gold miners and crypto majors, plus elevated cash earning 4% APY.",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "thesis": "Biotech momentum still accelerating: trading near its 52-week high ($157 vs $165.71 high), +83.5% YTD, on record $106B of H1 M&A and continued rotation into healthcare as a haven from expensive AI-tech multiples. Add to the strongest-momentum expression in the book."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Regional banks remain the cleanest rate-cut-cycle carry trade -- now +31% over 12 months, framed as 'a cheaper way to play the AI banking boom,' with a lending/fee rebound and deregulation tailwind still building. Add modestly to the out-executing sub-sector."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Broad financials still lag the regional-bank sub-sector story; held flat as a small diversified sleeve on the same rate-cut thesis rather than added to, since KRE continues to out-execute it."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "thesis": "Small-cap breadth rotation is still running (+38% 12m, fresh 52-week high) but coverage is increasingly flagging falling forward earnings estimates underneath the index-level gain -- trim modestly and add a stop rather than keep sizing into a rally that's showing quality cracks."
+    }
+  ],
+  "cash_pct": 36,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: GDX short was stopped out on 2026-08-07 at $89.89 (gold near $4,300 on a weak dollar and shifting Fed-cut expectations, GDX +7.1% that single session) -- exactly the miner/leveraged-semis squeeze pattern flagged this week, so that capital is not being redeployed into a fresh gold-miner or SOXL short; chasing that complex right now is the losing trade 12 of 17 standing orders in this experiment have already made. Sector-relative-value carry keeps confirming: XBI is near its 52-week high on record biotech M&A ($106B H1) and continued haven rotation out of expensive AI tech, so it gets the largest add; KRE keeps compounding on the AI-banking/deregulation/lending-rebound story and gets a smaller add. IWM is trimmed modestly -- still leading on 12-month returns (+38%) but reporting increasingly flags deteriorating forward earnings estimates underneath the index-level strength, so size down slightly and bank the difference as cash. Net effect: gross exposure falls to 64% and cash rises to 36%, consistent with the mandate's 'elevated cash' instruction after de-risking the miner short.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (Round 2 NAV $1,051.62 / +5.16%, gross 93%, cash 7%; Round 3 NAV $1,002.52 / +0.25%, gross 68%, cash 32%, with the GDX short stop-loss fired 2026-08-07 at $89.89). Web-checked current prices/news (through 2026-08-07 close) for all nine Round-2 names (MSFT $499.99, GOOGL $354.30, AVGO $427.76, LLY $1,185.71, V $362.50, MA $562.95, COST $947.82, UNH $407.08, IWM $301.56) and all Round-3 names (XBI $157.37, KRE $76.21, XLF, IWM, GDX $89.89). Key findings: LLY posted a big Q2 beat-and-raise (Aug 5, 48% rev growth) on top of last week's retatrutide data; MA's 7/30 earnings resolved as a clean beat with targets raised; AVGO sentiment turned incrementally negative (Goldman dropped it from its conviction list) with still no catalyst until the Sept 2 print; MSFT, V, GOOGL, COST, UNH all checked out with intact Strong-Buy/Buy theses and no fundamental breaks. GDX/gold: gold near $4,300 on dollar weakness and Fed-cut repricing, GDX +7.1% the day it stopped out our short -- confirms the packet's warning that this is the losing complex to be short right now, so no fresh gold-miner or crypto short was added despite the mandate calling for momentum-breakdown shorts. XBI and KRE continue to show the strongest, best-supported momentum in the Round 3 book (near 52-week highs, M&A and AI-banking narratives intact); IWM flagged by outside reporting for deteriorating forward earnings estimates despite headline strength, prompting a modest trim there. Verified Round 3 vs Round 2 overlap: only shared symbol is IWM, held in opposite directions (short in R2, long in R3), so same-direction gross-weight overlap is 0%, comfortably under the 50% cap."
+}

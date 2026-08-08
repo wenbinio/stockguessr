@@ -1,0 +1,62 @@
+{
+  "name": "Haiku small/mid-cap growth",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
+  "entry": "2026-08-10",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Russell 2000 small-cap breadth exposure for SMB-focused tech companies benefiting from cloud/AI adoption; mid-cycle strength in economically sensitive growth names provides diversification from mega-cap concentration"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "take_profit_pct": 25.0,
+      "thesis": "Biotech momentum sustained at 5-year highs; healthcare sector rotation away from tech saturation; M&A activity accelerating; take-profit captures extended valuation on near-term strength"
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 10.0,
+      "thesis": "Regional bank recovery momentum but Fed easing catalyst exhausted; rate hikes beginning in 2026; stop loss manages downside risk during macro transition; position captures NIM recovery through cycle"
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Japan equity outperformance on structural reforms; Tokyo Stock Exchange delisting driving capital returns (buybacks, dividends); international diversification outside US tech cycles; 8-9% earnings growth expected 2026"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Consumer staples momentum fade; underperformance vs market (+7.1% 12m vs +22.7%); defensive rotation losing as growth environment strengthens; short captures relative weakness"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 17,
+      "leverage": 3,
+      "stop_loss_pct": 15.0,
+      "thesis": "Crypto bear market continuation (-33% YTD); short perp generates 10% APR funding yield on carry strategy; natural hedge to tech concentration reducing portfolio correlation; liquidation risk managed at 5% margin buffer"
+    }
+  ],
+  "cash_pct": 32,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-08: Desk correction resulted in 53.76% cash vs intended 32%, effectively underdeploying thesis positions. Rebalancing restores intended 32% cash allocation and clarifies intent explicitly. With SOXL stop loss fired and freed capital, optimal to increase BTC shorts (working well, down 33% YTD, generating 10% APR carry income) while maintaining thematic long exposures. XBI at 5-year highs benefits from modest positioning with TP already set. Fed rate headwinds on KRE already managed with STOP loss.",
+  "novelty": "Round 3 uniquely combines biotech healthcare rotation with leveraged crypto shorts for carry income (17% BTC perp at 3x for 51% notional short), while Round 2 focuses on unleveraged small/mid-cap growth; gross overlap remains below 50% threshold with healthcare/regional banks/Japan in R3 vs pure tech/cloud/fintech in R2.",
+  "r2_overlap_pct": 13.7,
+  "research_notes": "Checked ARKK (41.61% YTD), TQQQ (34.40% YTD), SHOP beat Q2 earnings with +26% premarket surge on 8/5. DDOG fell 19% on AI customer usage concerns despite beat and guidance raise; weakness appears cyclical not structural. Chip sector weakness noted (SanDisk, Samsung). CRWD beat Q1 earnings 25% above consensus. Fed holding at 3.50-3.75% with markets pricing rate hikes not cuts for 2026. S&P 500 earnings season resilient with 8 sectors showing double-digit growth. XBI biotech at 5-year highs. KRE regional banks recovered 12% last month but facing rate hike headwinds. BTC at $64,940, down 33% YTD; shorts generating profitable carry income. Round 2 thesis intact; Round 3 desk correction needs clarification on cash intent (53.76% actual vs 32% stated)."
+}
