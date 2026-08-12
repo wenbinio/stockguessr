@@ -25,6 +25,7 @@ jobs:
           python tracker/round2.py
           python tracker/round2.py --round 3
           python tracker/make_ledger.py
+          python tracker/fill_journal.py
           python tracker/check_reasoning.py
           python tracker/make_performance_page.py
           python tracker/make_roster_page.py
@@ -34,6 +35,7 @@ jobs:
           git config user.name "stockguessr-tracker"
           git config user.email "actions@users.noreply.github.com"
           git add docs experiments/round2/results.json experiments/round2/fills.jsonl \
+                  experiments/round2/fills_journal.jsonl experiments/round3/fills_journal.jsonl \
                   experiments/round3/results.json experiments/round3/fills.jsonl
           if git diff --cached --quiet; then
             echo "No changes"
