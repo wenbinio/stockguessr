@@ -1,0 +1,68 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Samsara pulled back to $39.79 (-3.3% on 8/14, likely broad-market not company-specific) but Strong Buy consensus and the $44.31 avg PT (~11% upside) are unchanged; no negative catalyst, held at prior sizing as the highest-conviction leader.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rubrik ripped 13.5% this week to $102.23 on the Wipro AI-resilience launch, and for the first time is trading ABOVE the $96.07 consensus PT (-6% implied) -- the same pattern that justified cutting S and PATH last week. Strong Buy rating and product momentum are still intact and Aug 27 earnings are a real catalyst, so trimmed rather than closed, locking in gains and reducing size into event risk with reward/risk now compressed.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 24,
+      "thesis": "Affirm at $78.35 has lagged well behind last week's aggressive PT hikes (BofA $93, Goldman $106, Citi $115 -- 19-47% implied upside), the largest gap-to-target in the book; upsized into the Aug 27 print as the best remaining risk/reward.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Flywire announced a Trustly open-banking partnership expansion (8/12) and drew fresh PT hikes to $22-24 (Morgan Stanley, B.Riley, Goldman) above the $20.54 consensus; stock up 3.1% to $18.81 on 8/14 while broader momentum names sold off. Upsized on continuing momentum despite the Q2 EPS miss.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Toast's Q2 beat/raise thesis is unchanged; $42-45 analyst PTs still imply ~25-30% upside from the $34.75 close. Held flat, no new information to act on.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "SoFi trading mid-range ($18.29, within the $16-19 band Cramer flagged) with post-earnings analyst cuts (Goldman $18, MS $15) still capping upside despite record loan growth. Held at the already-reduced size with a tight stop.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 14,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Weekly reassessment through 8/14 close: two names (S, PATH) that were already flagged last week as having lost their price-target edge extended further above consensus targets with fresh insider-selling headlines, confirming the 'no edge left' thesis to the point of closing rather than just trimming. RBRK joined that pattern this week -- a 13.5% weekly rally on the Wipro AI-resilience launch pushed it above its own $96 consensus target for the first time, so size is cut (not closed, since Strong Buy rating and product momentum are still real) ahead of the Aug 27 print. Freed capital is split between raising cash (broad red day across the sleeve: IOT -3.3%, RBRK -2.7%, TOST -1.3%, S -3.1%, PATH -4.0%) and upsizing AFRM/FLYW, the two names where the stock has lagged behind still-rising analyst targets.",
+  "research_notes": "Read the account packet (Round 3 only book, NAV $1,130.11, +13.01% since 8/10 entry, max DD -9.42%, prior cash 5%). WebSearch budget was exhausted session-wide, so I used WebFetch against Yahoo Finance and stockanalysis.com for each of the 8 holdings to get 8/14-close prices, consensus PT/rating, and recent headlines: IOT $39.79 (PT $44.31, Strong Buy, -3.3% on the day); RBRK $102.23 (PT $96.07, Strong Buy, +13.5% week on a Wipro AI-resilience product launch, now trading ABOVE consensus PT for the first time, CTO/director insider sales noted, Q2FY27 earnings 8/27); AFRM $78.35 (PTs BofA $93/Goldman $106/Citi $115, flat on the day, earnings 8/27); TOST $34.75 (Q2 beat/raise intact, PTs $42-45, Adyen US partnership expansion); FLYW $18.81 (PT $20.54 consensus but Morgan Stanley/B.Riley/Goldman raised to $22-24, Trustly open-banking expansion 8/12, +3.1% on the day -- the only holding up on a broadly red session); S $23.11 (PT $19.87, now -14% below current price, CEO/CAO/COO insider selling ahead of 8/27 earnings, 'stock looks stretched' coverage); PATH $16.01 (PT $13.44/Hold, RBC raised its target $12->$15 but stock is still above even that, Workday-takeover speculation noted, earnings 9/3); SOFI $18.29 (mid a $16-19 trading range per Cramer, Goldman/MS cut targets post-earnings despite record $10.7B loan origination). Key finding: S and PATH, already cut to token 'watch' sizes last week for trading above consensus target, extended further above target this week with insider-selling headlines confirming the thesis break -- closed both. RBRK's monster weekly rally pushed it above its own consensus PT for the first time, so it was trimmed (not closed) given the rating/momentum are still genuinely strong and earnings are a real catalyst. Freed weight was split between a larger cash buffer (broad single-day pullback across the sleeve) and upsizing AFRM and FLYW, the two names where price has lagged behind rising analyst targets."
+}

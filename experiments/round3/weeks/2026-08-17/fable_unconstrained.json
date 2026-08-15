@@ -1,0 +1,60 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Gold $4,400+ after a +10% month as no-hike odds rose; reversion from the January-record overshoot is playing out with ~21% still below the record and UBS targeting $5,000 by H1'27 \u2014 holding, not adding, because the entry edge is spent."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Restored to full size: single-digit P/E, ~8% carry, Selic cut cycle live (14.25%->14%), and the hawkish-Fed dollar headwind that justified the trim reversed post-CPI; buying the dip below the 50dma is the contrarian entry, not a chase."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Quality-value ballast; record cash pile still earns ~4-5% at a holding Fed and it remains the book's flight-to-quality sink if the record-high tape cracks."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "thesis": "Multi-year reversion thesis being confirmed: rebounded toward $420 from sub-$300 Q1 lows on the Q2 beat, raised FY26 guide and Medicare Advantage funding adjustment; Berkshire's earlier exit is a sentiment overhang already priced, not new information."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Cheap defensive carry that lags at record highs by design and outperforms if the melt-up reverses; unchanged as the book's correction hedge."
+    },
+    {
+      "symbol": "SVXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 40.0,
+      "thesis": "VRP harvest kept small: contango intact and hike odds fell, but VIX 14.6 means compressed premium and worse spike convexity into September FOMC and seasonality \u2014 5% with the -40% gap stop is the right size, not 8%."
+    }
+  ],
+  "cash_pct": 31,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: One surgical change, not a rebuild: restore EWZ from 12% to 14% because the specific reason I trimmed it on 7/30 \u2014 hawkish-Fed dollar risk at ~60% Sept-hike odds \u2014 has reversed (cool CPI, ~69% hold odds), while the carry thesis strengthened (Selic cut again to 14%, cutting cycle live) and the ETF conveniently pulled back below its 50dma, giving a contrarian entry instead of a chase; the add costs under half a basis point of NAV. Everything else is deliberately untouched: GLD stays 14% rather than being added to because a +10% month is the wrong side of a mean-reversion entry even with UBS at $5,000; SVXY stays 5% because although hike risk fell, VIX 14.6 means the harvestable premium compressed while spike convexity worsened into September FOMC/seasonality, so re-upping is worse risk/reward than the trim I made at VIX 20; UNH ($420 touched, FY guide raised), BRK-B ballast, and XLP defensive carry are all doing their jobs in a +1.24%, -1.37% max-DD book.",
+  "novelty": "Zero of this book's 69% gross sits in Round 2 names or themes \u2014 it is contrarian value, EM carry, healthcare reversion and vol-risk-premium against Round 2's cyber momentum and BTC, so same-direction gross overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Week ended 2026-08-14: July CPI cool (headline +0.1% m/m, 3.4% y/y; core 2.5% y/y) collapsed Sept hike odds \u2014 CME FedWatch now ~67-69% HOLD at 3.50-3.75% vs ~60% hike odds when I set both books on 7/30. VIX 14.63, S&P 500 at records, third straight weekly gain (Yahoo/CNBC/Bloomberg). Round 2 checks: cyber sleeve surged to record highs after Black Hat (\"AI agents have fundamentally changed the threat landscape\" \u2014 BTIG); CRWD +11% and PANW +7% on the CPI print, PANW/FTNT more than doubled YTD, CRWD nearly doubled (Yahoo, CNBC, Benzinga, qz.com). FTNT Q2 (rep. 7/29): rev $2.05B +26% vs $1.89B est, EPS $0.90 vs $0.74, billings +33%, FY guide raised \u2014 thesis confirmed. PANW FQ4 earnings Sept 1 (StockTitan/IR) and CRWD late Aug \u2014 both addressable at next weekly reassessment. BTC ~$62.9k Fri (Fortune/Yahoo) vs ~$64.5k entry \u2014 reversion ticket slightly underwater, unchanged. Round 3 checks: gold $4,400+ (Dec fut $4,408), +10% on the month as no-hike odds rose; still ~21% below Jan record; UBS targets $5,000 H1'27 (Yahoo/USAGOLD) \u2014 GLD reversion working. EWZ 33.77, slipped below 50dma 8/11, MACD negative 8/6 (Tickeron/Investing.com), but Selic cut cycle continuing (14.25%\u219214%) and the hawkish-Fed dollar headwind I trimmed for has reversed. UNH rebounded to ~$388-420 from sub-$300 Q1; FY26 profit forecast raised; Berkshire itself exited UNH earlier in 2026 (Yahoo/TIKR) \u2014 noted irony holding both, but my reversion thesis is the one being confirmed. VIX term structure sources (vixcentral et al.) confirm contango regime persists at low VIX \u2014 SVXY harvest intact but premium compressed at VIX 14.6, no case to re-add."
+}

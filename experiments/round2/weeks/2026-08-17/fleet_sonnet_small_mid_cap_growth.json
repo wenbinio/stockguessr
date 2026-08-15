@@ -1,0 +1,72 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Small caps still near 52-week highs and outperforming SPX YTD (+0.52% today); core small-cap beta held unchanged -- no new information this week to justify resizing either direction given the still-uncertain Fed rate path."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 20.0,
+      "thesis": "3x semis exposure stabilized (-0.28% today) after its prior -16% crash; sector commentary is genuinely mixed (bull-market talk vs. turbulent options market), so holding the token stake with its stop rather than adding back into an unresolved debate."
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Record Q2 revenue (+40% YoY) and raised guidance remain intact, but Mizuho/Goldman/Morgan Stanley all cut price targets on the print anyway; trimming 8%->6% to respect the analyst de-rating signal while keeping exposure to the digital-banking growth story."
+    },
+    {
+      "symbol": "CRSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Pipeline intact post-Q2 print with 5 more clinical readouts expected in H2 2026 and consensus PT implying +63.5% upside; held at prior size, nothing new this week to act on."
+    },
+    {
+      "symbol": "RKLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Q2 beat on revenue (+62% YoY) with a record $2.36B backlog; multiple analysts hiked targets (Cantor to $122, consensus $112.94) and ARK bought ~$23M post-print -- increasing 6%->7% as the thesis is actively confirming, keeping the stop given the name's historical volatility."
+    },
+    {
+      "symbol": "DUOL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 0,
+      "thesis": "EXITED. Two separate double-digit drawdowns since the book was set (-15% on the 8/6 weak Q3 guide, -7.8% more today on 8/14) have pushed the price below the sell-side consensus target -- the 'consumer AI compounder' thesis is being repeatedly falsified by the tape, and AI-disruption risk (the same risk category driving the ADBE short) is now clearly hitting Duolingo's own multiple."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "thesis": "AI-disruption short thesis is confirming rather than just holding: Morgan Stanley's Underweight call is playing out with the stock down -2.4% today on renewed AI-competition rotation concerns even after the Topaz Labs acquisition and ChatGPT-plugin news; increasing 6%->7% as the squeeze risk that justified the prior trim has faded."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Fundamentals still the strongest print in the book -- prediction-markets revenue up 10x QoQ, BofA raised its PT to $140 (Buy) post-earnings -- and today's -3.8% has no identifiable negative catalyst, reading as tape-driven rather than thesis-breaking; held at prior size."
+    }
+  ],
+  "cash_pct": 47,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: DUOL's 'consumer AI compounder' thesis is broken: since this book was set (7/31) the stock has taken two separate double-digit hits -- a ~-15% drop on the 8/6 weak Q3 guide (despite a Q2 beat) and another -7.8% today (8/14) -- pushing price below the sell-side consensus target, so exiting entirely rather than holding through a thesis the tape keeps falsifying. SOFI trimmed 8%->6%: fundamentals remain strong (record Q2 revenue, raised guidance) but three desks (Mizuho, Goldman, Morgan Stanley) cut price targets on the print anyway -- an early de-rating signal worth a partial trim, not a full break. RKLB increased 6%->7% and ADBE short increased 6%->7%: both theses are actively confirming -- RKLB on PT hikes to $112-122 consensus and ARK adding ~$23M post-beat; ADBE short on the Morgan Stanley Underweight/AI-disruption thesis playing out with -2.4% today on renewed AI-competition rotation. IWM, SOXL, CRSP, HOOD held near prior size -- no new information this week changes those theses. Net effect: gross trimmed 63%->53%, cash raised 37%->47%, using the DUOL exit to build cushion given the still-hawkish Fed backdrop (three FOMC dissents favoring a hike) rather than fully redeploying into the remaining longs.",
+  "research_notes": "Web search budget was exhausted for the session, so research relied on WebFetch of stockanalysis.com pages (prices/news current through Aug 14 2026 close) for every held name in both books plus GDX (the Round-3 short candidate).\n\nRound 2 names checked: IWM (+0.52% today, near 52wk high, small caps still outperforming SPX YTD), SOXL (-0.28%, stabilized after its prior -16% crash, sector commentary mixed -- 'closing in on a bull market' vs. 'turbulent options market'), SOFI ($18.29, -0.76%; record Q2 revenue/raised guidance but Mizuho/Goldman/Morgan Stanley all cut price targets on the print), CRSP ($53.55, -0.81%, pipeline intact, 5 trial readouts expected H2 2026, consensus PT implies +63.5%), RKLB ($80.25, +0.19%; strong Q2 beat on revenue, PT hikes to $112-122 consensus, ARK bought ~$23M post-earnings), DUOL ($132.83, -7.82% TODAY alone, on top of an already-disclosed ~-15% drop on 8/6 from weak Q3 guidance -- consensus PT ($124.79) is now BELOW the current price, i.e. analysts see further downside), ADBE ($264.02, -2.39%, MS Underweight/AI-disruption thesis playing out despite Topaz Labs acquisition and a ChatGPT plugin), HOOD ($95.56, -3.83% despite BofA raising PT to $140 and strong prediction-markets growth -- no negative catalyst found, looks like tape-driven weakness rather than thesis break).\n\nRound 3 names checked: XLF (-0.17%, flat), KRE (+0.23%, regional banks still gaining share per recent coverage), XBI (+0.35%, biotech M&A/haven-from-tech flows still intact), and GDX (+1.9%-1.7%, making a fresh 7-week high near $4,300 gold on dollar weakness/Fed-cut expectations) -- checked specifically because the mandate calls for shorting momentum names like GDX/SOXL, but GDX strength confirms (a third time this cycle) that re-shorting it now would be fighting an intact uptrend, not confirming a breakdown thesis.\n\nKey takeaway: DUOL's thesis is the one name in either book that has been outright falsified by two separate double-digit drawdowns since the book was set; everything else is either intact or only modestly softer without a clear negative catalyst."
+}

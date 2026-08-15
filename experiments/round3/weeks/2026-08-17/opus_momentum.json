@@ -1,0 +1,97 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Held at 15% and still the top weight. It returned -0.14% on the week, so the payroll-driven repricing did not extend - but a Fed reaction-function thesis is measured in months, not five sessions, and the belly outperformed the long end by 73bp over exactly that window, which is the relationship I underwrote. This remains the only asset in the basket that rallies outright if the labour-market crack resolves as a genuine growth scare rather than a dovish gift, and it takes rate-cut exposure without the fiscal term-premium risk sitting at the back of the curve."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "The core equity-risk-premium sleeve and the lowest-volatility asset in the basket, so inverse-vol weighting keeps it near the top. Untouched: nothing about a min-vol equity book deteriorated this week, and it is exactly the vehicle I want owning the equity premium into a tape where the index made new highs on rotation rather than on broad conviction."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised one point, deliberately only one. Gold has run $374.16 to $401.48 since Aug 4 (+7.3%) and finished the week +0.8%, and the regime argument behind it is coherent rather than momentum-chasing: a Fed pushed toward cuts with inflation risk still live is unambiguously bullish real assets and only ambiguously bullish the long bond. That is the same observation driving the TLT cut, so the two moves are one trade. Sized up modestly rather than aggressively because adding hard after a 7% eight-session run is how a low-vol book imports volatility it was built to avoid. Stop stays at -12% to survive post-squeeze mean reversion."
+    },
+    {
+      "symbol": "XLRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Held. Up 0.6% on the week and quietly compounding, it supplies a rent-yield cash-flow stream that is distinct from both equity beta and credit spread - the definitional job of a sleeve in a cross-asset carry book. It is levered to the same long-rate path as my duration sleeves but gets paid a contractual yield while it waits, which is why I would rather carry rate sensitivity here than at the back of the Treasury curve."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Held at 8%, not restored. The thing I feared when I cut it from 11% - that employment cracking would be the trigger for the first spread widening - has not happened, with the ETF flat at $79.71 and spreads still tight. But one quiet week is not evidence of safety either, and the structural worry is unchanged: this is credit carry standing in front of a debt-funded AI complex and a contracting labour market. Collecting roughly 7% at a reduced size with the tight -6% stop is the right shape for that asymmetry.",
+      "stop_loss_pct": 6.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Held. Low-volatility equity selected on a pure realised-vol screen rather than USMV's optimisation, so the two hold materially different names and genuinely diversify each other rather than duplicating a factor. Keeping both is what lets the equity-premium allocation stay large in a book whose mandate is portfolio variance minimisation."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised from 5% because the reason I trimmed it was overruled by the tape: I cut on the view that a contracting labour market is a demand-side negative for crude, and the sector then returned +7.7% on the week against a +49% one-year trend. Supply premium is the binding factor. Held to 6% rather than higher because this is the highest-volatility sleeve in the basket and inverse-vol weighting caps how much of it a low-beta book should own regardless of how well it is performing. It remains the only inflation-linked leg and the only position that does not need rates to keep falling."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Held. Consumer staples as defensive dividend carry, taking the bond-proxy income role at similar yield and beta to utilities with none of the AI-datacenter-power exposure that has made utilities a levered bet on the same capex cycle everything else here is trying to avoid. This is precisely the equity that holds up if the next payroll print is read as recessionary rather than dovish."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Held. The single-name expression of defensive dividend carry with the strongest trend of any staple, on a stable and growing dividend. It benefits from the same falling discount rate as every other bond proxy here while carrying essentially no exposure to the AI capex debate, and it is where low-beta money has actually been going rather than where it theoretically should."
+    },
+    {
+      "symbol": "T",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Held. Telecom yield carry on regulated domestic cash flows with near-zero correlation to the AI capex cycle. A high-dividend, rate-sensitive payer expresses the same duration view as my Treasury sleeves but through equity and with a coupon attached, which is the diversification a cross-asset carry mandate is supposed to buy."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 10.0,
+      "thesis": "Cut from 6% to 3%, applying my own stated framework rather than reversing it. When I reinstated this last week I wrote that it was capped precisely because the long end carries fiscal supply risk that Fed dovishness cannot fix - and in the five sessions since, TLT returned -0.87% against IEF -0.14%, the exact underperformance that argument predicts. It is also the highest-volatility bond sleeve in an inverse-vol book, so halving it lowers portfolio variance in the same stroke. Kept at a 3% satellite rather than cut to zero because my mandate names term premium as a target and the back end is where a hard growth scare would pay the most."
+    }
+  ],
+  "cash_pct": 9,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: The book is working as designed (+2.20% with a -0.75% max drawdown), so this is a surgical weekly rebalance along one axis the market moved, not a rebuild. The axis is that real assets paid and nominal duration did not: GLD ran +7.3% from Aug 4 and XLE +7.7% on the week, while IEF was -0.14% and TLT -0.87% and HYG was flat with spreads still not widening. I reinstated TLT one week ago on a Fed-reaction-function call, and the specific structure I flagged when I capped it at 6% - that the back end carries fiscal supply risk no amount of Fed dovishness fixes - is exactly what showed up, with the long end lagging the belly by 73bp in five sessions. So I cut the long end by more than half, add a point each to the two real-asset sleeves the tape rewarded, and move a point to cash, which yields 4% risk-free and is the cheapest carry available when nothing else is signalling. IEF stays at 15% untouched because one flat week is not a falsification of a multi-week reaction-function thesis and it remains the only sleeve that rallies in a genuine growth scare. Gross drops 92 to 91, which lowers portfolio variance - the direction an inverse-vol mandate should move when its highest-vol bond sleeve stops paying.",
+  "novelty": "This book shares exactly one symbol with my Round-2 momentum book - a 6% energy sleeve, held here for inflation-linked dividend and FCF carry and its low correlation to the rest of the basket rather than for price momentum - representing under 7% of either book's gross, while its entire core of belly duration, min-vol equity, gold, REITs, high-yield credit and staples dividend carry has no counterpart in Round 2 at all.",
+  "r2_overlap_pct": 6.6,
+  "research_notes": "WebSearch budget was exhausted at session start (200/200), so I verified everything from direct daily-close history fetches rather than headlines. Week measured Aug 7 close -> Aug 14 close.\n\nSEMIS ARE ROTATING, NOT ROLLING OVER. On Aug 14 AVGO fell -5.94% while AMD rose +6.50% and MU rose +2.30% in the same session. Over the week: MU +10.7%, AMD +6.4%, SMH +0.9%, AVGO -8.1%. This is dispersion inside the complex, not a sector break - QQQ was +1.1% and printed a new closing high at $732.07 on Aug 13.\n\nMY LARGEST CALL LAST WEEK WAS WRONG AND THE TAPE SAID SO IN FOUR SESSIONS. I cut MU from 13% to 6% on Citi's DRAM/NAND deceleration note and moved the capital into AVGO (7% -> 9%). Since my 08-10 entry MU went $861.00 -> $971.66 (+12.9%) and AVGO went $422.40 -> $393.06 (-6.9%). Confirming detail: New Street upgraded MU to Buy on a $2-3T AI-memory framing, consensus PT is $1,501.98 (+54.6%), stock +200% YTD, next catalyst earnings 2026-09-22. Live bear case still exists (YMTC now #3 in NAND), which is why I restore MU to 12% rather than to 13%+ and split the rotation into AMD. AVGO's own news was mixed-to-good (Samsung $200B MOU, Apple >$30B) - the negative was Goldman removing it from the US Conviction List (Buy kept). Good news plus an -8% week is a momentum book's exit signal.\n\nAMZN's DRIFT IS DEAD. $278.09 -> $262.65, five consecutive down sessions. A post-earnings drift thesis that declines five days running is falsified by construction regardless of cause. Exited.\n\nENERGY: I trimmed XLE to 5% arguing a -23k payroll print was a demand-side negative for crude. XLE then ran +7.7% on the week and is +49% over one year. Supply premium is dominating demand softness; I raise it in both books.\n\nCRYPTO - THE MANDATE'S PREMISE IS CURRENTLY FALSE. My Round-2 mandate funds itself partly by shorting BTC/ETH/SOL perps \"riding the persistent downtrend.\" I checked: BTC $62,891, 7d -3.1%, 14d 0.0%, 30d +1.9%, 1y +47.1%. IBIT confirms a range, not a trend: Jul 1 $34.00 -> Aug 14 $35.63 (+4.8%). There are bearish near-term headlines (ETF outflows, break below $63k) but a 14-day-flat, 1-year +47% asset is not a persistent downtrend. Putting perp leverage against a rising asset to satisfy a structural template is exactly the unforced error that cost me on AVGO. Declining the short, deliberately.\n\nRATES - THE BELLY IS BEATING THE BACK END, AS I ARGUED IT WOULD. IEF -0.14% vs TLT -0.87% on the week; the payroll-driven rally did not extend. One week does not falsify a Fed-reaction-function thesis, so IEF stays at 15%. But my own stated reason for capping TLT at 6% was that the long end carries fiscal supply risk no amount of Fed dovishness fixes, and the belly/back-end spread just confirmed it. Cutting TLT is my framework applied, not reversed.\n\nREAL ASSETS OVER NOMINAL DURATION. GLD ran $374.16 (Aug 4) -> $401.48 (+7.3%) and XLE +7.7%, while both bond sleeves were flat-to-down and HYG was flat with spreads not widening. Cuts to the front plus live inflation risk is a coherent bullish-real-asset, ambiguous-long-bond regime. Round 3 shifts along exactly that axis.\n\nRound 3 is the better book (+2.20%, max DD -0.75%) and gets a surgical trim, not a rebuild. Round 2 (+0.30%, max DD -3.86%) gets the real work."
+}

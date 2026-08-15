@@ -1,0 +1,75 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Weekly move is flat (+0.03%) but the quarter has quietly built to +16.73%, the second-best quarter-level read in the book; sized up modestly from 8% to 9% to lean into the medium-term catalyst-optionality trend, keeping the wide -15%/+35% stop/TP.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Healthcare re-rating has reaccelerated after last week's cooling read \u2014 +1.02% this week and +14.14% over the quarter confirm the trend is intact, not just a one-month artifact; sized up from 14% to 15%.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financials rotation remains the steadiest core long (+0.97% wk, +13.39% qtr); held flat at 15%, still the largest single-conviction position in the book.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks put in the strongest weekly print in the book (+2.26%), the clearest confirmation yet that the financials rotation is broadening beyond the majors; sized up from 10% to 12%.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Low-vol ballast trimmed slightly from 6% to 5% to help fund the higher-conviction longs; still a small defensive sleeve, no new signal either way.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Discretionary laggard thesis, which had stalled to flat and got trimmed to 7% last week, is reconfirming with a -1.38% weekly decline \u2014 the first real down-week since the trim; sized back up to 8%, keeping the -12%/+25% stop/TP.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "SOL-USD",
+      "kind": "crypto",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "6-month momentum-breakdown thesis (-37.7% 6mo) remains unrefuted even as the near-term read is flat-to-slightly-positive (-0.10% wk, +1.2% mo); held flat at 5% with the wide -40% stop, no funding cost to stay patient on a short.",
+      "stop_loss_pct": 40.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 31,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Sized up the confirming healthcare/biotech/regional-bank longs (XLV, KRE, XBI) on stronger weekly and quarterly reads, trimmed SPLV ballast slightly to fund them, and reactivated the XLY discretionary short on its first real down-week (-1.38%) since last week's trim to flat momentum. Held off reinstating a semis/AI-capex short despite the mandate's short leg: SMH's weekly move has cooled sharply from the +12.99% squeeze that forced this book to cover SMH last week to a much calmer +0.88% this week, but it's still a positive week, and this exact trade type has caused 12 of 17 standing-order stop-outs platform-wide historically \u2014 waiting for an actual down-week before re-shorting rather than re-risking into a still-positive tape. SOL-USD short held flat; its 6-month momentum-breakdown thesis (-37.7%) remains unrefuted even though the near-term read is flat-to-slightly-positive.",
+  "novelty": "Zero symbol overlap with the Round 2 book (healthcare/financials/biotech longs plus a discretionary/crypto short overlay here, versus small-cap/industrial/gold/EM/duration longs there) \u2014 0% same-direction gross-weight overlap, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (NAV, positions, stops, entered 2026-08-10) for both books. WebSearch was exhausted for the session, so pulled fresh Perf Week/Month/Quarter data via WebFetch on finviz.com for every held symbol (GLD, IWM, SMH, XLF, XLV, XLI, TLT, FXI, XBI, KRE, SPLV, XLY) plus current price/return context for GLD/IWM/SMH/XLF/XLV via stockanalysis.com, and SOL price/7d/30d change via coingecko.com, all as of the 2026-08-14 close.\n\nKey findings: (1) GLD's momentum decelerated hard, from last week's +13.76% GDX/+3.46% gold squeeze to just +0.76% this week (month still +10.01%) \u2014 a real change from the \"accelerating\" read used to size it up last week. (2) FXI had its worst week since entry (-3.54%), reversing the \"stalled but not reversing\" read from last week and pulling it toward its -8% stop. (3) TLT has now lost money for three straight months (-0.87% wk/-2.58% mo/-3.39% qtr) \u2014 the Fed-cut duration hedge isn't being confirmed by price action, yields are grinding higher not lower. (4) IWM is the cleanest confirming trade in the R2 book across all three timeframes (+1.17% wk/+3.21% mo/+7.26% qtr). (5) SMH's squeeze has cooled sharply (+12.99% wk last week to +0.88% wk now, quarter only +1.64%, weakest quarter read in the R3 book), suggesting the \"exhausted\" AI-infra thesis may be re-approaching viability, but it's still a positive week and this desk has a specific history of stop-outs on this exact short \u2014 chose to wait for an actual down-week rather than re-risk immediately. (6) KRE posted the strongest weekly print in either book (+2.26%), confirming regional-bank breadth beyond the majors. (7) XLV and XBI both show strong quarter-level reads (+14.14%, +16.73%) reaccelerating after a cooling month. (8) XLY's short thesis reconfirmed with its first real down-week (-1.38%) since being trimmed last week on a flat month. (9) SOL-USD is flat/slightly positive near-term but the 6-month breakdown (-37.7%) is intact, no reason to change a no-funding-cost short.\n\nResult: rebalanced both books \u2014 de-risked R2's two hottest/most-decelerating legs (GLD, FXI) plus the unconfirmed TLT hedge into more cash (43%\u219252%), while sizing up R2's cleanest confirming trade (IWM); sized up R3's confirming longs (XLV, KRE, XBI) and reactivated the XLY short, held SOL-USD short flat, and deliberately did not reinstate a semis/AI-capex short given the stop-out history and still-positive (if cooling) SMH tape. R2 and R3 books have zero symbol overlap, so the <50% overlap constraint is trivially satisfied."
+}

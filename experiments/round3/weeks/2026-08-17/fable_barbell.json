@@ -1,0 +1,83 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "Top momentum rank retained despite a mid-week wobble: +~77% trailing year on the biotech M&A wave, and the CPI-driven drop in hike odds extends the falling-rate tailwind for the sector's long-duration cash flows."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "thesis": "Still the book's strongest confirmation \u2014 cited as the leading sector this week as cooling inflation removed the hike threat to funding costs while the steepener supports net interest income; largest long retained at 13%."
+    },
+    {
+      "symbol": "JETS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed 11%->8%: the demand-risk watch item fired \u2014 July retail sales fell 0.6% and sentiment hit 51.0, the first hard evidence the consumer is cracking \u2014 but the fuel-cost windfall (WTI low-$80s vs the $119 March spike) keeps it a top-5 momentum long at reduced size."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "Industrials retain sector leadership with cheaper energy inputs and now cheaper capital after the CPI print; still the broader, less consumer-levered cyclical long in the book, so it holds full size while JETS trims."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "Breakout thesis on track: gold held $4,365-4,408 (+10% on the month) through Friday's profit-taking with falling real-yield pressure intact; the $95-105 target zone stands and the -15% stop guards a reversal."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Added 5%->7% on direct thesis confirmation: July retail sales -0.6% (first decline in 9 months, biggest in 14) and consumer sentiment collapsing to 51.0 hit discretionary spending first; stop kept at -12% against a rate-relief rally in the sector's mega-cap constituents."
+    },
+    {
+      "symbol": "XOP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "War-premium unwind thesis challenged but not broken: WTI stabilized at $81-82 (up ~1.4% Friday) yet EIA still guides sub-$80 for Q3 and the consumer-demand contraction is bearish for crude at the margin; held at 5% with the -12% stop doing the discipline."
+    },
+    {
+      "symbol": "MSOS",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Bottom-3 rank unchanged: persistent downtrend (-24.8% YTD entering the month) with no reversal catalyst surfaced this week; kept smallest in the sleeve for liquidity and squeeze risk."
+    }
+  ],
+  "cash_pct": 30,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Weekly re-rank retains all eight names \u2014 no rank flips, no stops hit \u2014 but this week's consumer data forces two resizes rather than a pure hold: July retail sales -0.6% (first decline in 9 months, biggest in 14) and sentiment at 51.0 directly confirm the XLY short thesis, so it grows 5%->7%; the same prints materialize the demand-risk watch item I flagged on JETS last week (an airline long cannot ignore the first outright consumer-spending contraction of the cycle even with fuel cheap), so it trims 11%->8% while remaining a top-5 momentum long. GDX stays at 10% with gold holding $4,400; XOP short holds with its stop because WTI at $81-82 challenges but does not break the sub-$80 unwind thesis and EIA still guides sub-$80 for Q3. Net gross drops one point to 70% and freed cash earns 4%.",
+  "novelty": "Zero symbol overlap and ~0% same-direction gross-weight overlap with my Round-2 barbell: this book expresses non-AI cross-sectional sector momentum (biotech, regional banks, airlines, industrials, gold miners) against consumer-discretionary, energy and cannabis downtrends, holding no AI-infra, mega-cap quality, bullion or crypto exposure.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked week of Aug 11-14 2026: July CPI cooler (3.4% y/y headline, 2.5% core), PPI headline flat/core slightly firm; Sept Fed HIKE odds fell from ~44% to ~30-40%, first fully-priced hike pushed to Jan 2027. S&P 500 and Nasdaq hit record highs (third straight weekly gain) then slipped Friday (-0.2%/-0.5%) on July retail sales -0.6% (first decline in 9 months, biggest in 14) and UMich consumer sentiment 51.0 vs 54.5 est. Gold held $4,365-4,408 (+10% m/m), silver >$64 \u2014 GLD and GDX legs both supported. AVGO fell ~4-6% Friday on BofA flagging $370B of AI-related debt; semi profit-taking ahead of NVDA earnings Aug 26 (Street: EPS ~$2.08, rev ~$91.9B). GEV ~$1,049, near highs, analyst PTs raised to ~$1,212. BTC diverged negatively from risk assets: ~$62.7-63k, lowest since Aug 3, first back-to-back spot-ETF outflows (~$192M) since late July \u2014 my 2x perp entered ~$65k is roughly -7% on margin, well above the -15% stop. WTI $81-82 (up ~1.4% Friday), EIA still guides sub-$80 Q3 \u2014 XOP short challenged but not broken. KRE cited as leading sector; XBI wobbled but retains top YTD momentum. No standing orders fired in either book this week."
+}

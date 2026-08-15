@@ -1,0 +1,96 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Still the strongest intact trend on my board and the core of the mandate: +74.4% over twelve months, +16.8% over three months, 90.9% of its 52-week range and above all three moving averages. Trimmed two points only because it has gone sideways for two weeks (+0.03% on the week) while energy and defense broke out, so the marginal dollar is better used there \u2014 not because anything in equal-weight biotech deteriorated. The 12% stop stays wide because an 8% stop on a high-volatility equal-weight index exits on noise rather than on trend damage.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Closed the week at a fresh 52-week high \u2014 100% range position \u2014 with +35.7% over twelve months and +1.17% on the week. This is the cleanest unlevered breakout I own and small-caps are a theme the mandate names explicitly. Unchanged weight because there is nothing to fix: holding the unlevered exposure here is what lets me keep the levered small-cap leg small and stopped independently.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Re-added from a 7% residual on a genuine signal reversal, not a bounce: 99% of its 52-week range, +7.67% on the week, +8.58% on the month, +49.2% over twelve months, above every moving average, and confirmed across the complex by XOP +8.5%, OIH +8.5% and IEO at its own 52-week high. Crude at $82.40 is up 5.4% on the week and 42% YTD on a renewed Iran risk premium. Sized at 12% rather than the 36% I once ran because the driver is a geopolitical premium that erased 8% in a single session on a diplomacy headline three weeks ago, so I want this additive if the trend persists and merely annoying if the headline flips again. The stop is tightened to 8% from 9% for the same reason \u2014 I am re-entering near the high, so my margin for error on the entry is smaller than it was in July.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Kept as ballast and trimmed two points. It remains the highest-quality trend I own on the distance-from-high test \u2014 97% of its 52-week range, 0.6% below the high, positive on the week \u2014 but +25.0% over twelve months is the weakest twelve-month trend in the book, so it is the natural funding source. Large-cap pharma is bid by the same defensive rotation that would break the small-cap and biotech legs, which is exactly why I keep a meaningful slug of it rather than zeroing it.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Cut from 13% because semis are now the only theme in the book failing the intermediate-horizon momentum test: SMH is the sole leg below its 50-day, 12.1% off its high, and up just 1.6% over three months against a +99.4% twelve-month number that is entirely historical. SOXX and XSD confirm it is the basket and not the wrapper, and AVGO falling 8.1% on the week while sitting 18% below its high shows the damage is concentrated in megacap semis rather than in NVDA. I keep a meaningful position because the twelve-month trend is still the strongest of any unlevered theme I can own and the leg was up 3.2% since I entered it, but I stop pretending leadership is recovering and tighten the stop to 10% so a further break exits rather than bleeds.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Unchanged. Large-cap tech, +27.2% over twelve months, 92.4% of its 52-week range and 1.9% below the high after a +1.11% week. This is the low-volatility way to hold the AI complex next to a now-smaller SMH: with megacap semis the specific thing breaking, the megacap index is absorbing the same theme far better than a 26-stock semiconductor basket is, and the relative price action this month says so.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 16.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Held unchanged because it strengthened again: a fresh 52-week high at 100% range position, +2.26% on the week, +15.7% over three months and +29.6% over twelve. A steep curve with the 10-year at 4.70% and a small-cap tape printing new highs are the two things regional banks need, so this leg and IWM reinforce each other on the same macro rather than duplicating a single bet.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "The mandate's select-leverage clause, and still the only levered vehicle that earns it. TNA closed at a 52-week high, +3.29% on the week and +8.28% on the month, with 12-month momentum of +104% \u2014 versus SOXL at 43.5% of its range with three-month performance of -22.2%, which measures exactly how much daily rebalancing decay each underlying trend has absorbed. In small-caps it has absorbed almost none. Held at 6% so effective exposure is 18% and the 15% stop triggers on roughly a 5% move in IWM, which would be a real failure of the breakout rather than a shakeout.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "XAR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "New position. Aerospace and defense closed the week at a 52-week high with a 100% range position, +3.45% on the week, +14.54% on the month and +38.2% over twelve months, above every moving average \u2014 the strongest defense vehicle on every horizon versus ITA at +30.5% and PPA at +27.1% on twelve months. I want it for two reasons that point the same way: it is a clean breakout that qualifies on price alone, and it is the equity-beta expression of the Iran risk premium now bidding crude, so it hedges the one headline that would hit small-caps, biotech and semis simultaneously without adding a second commodity-beta leg on top of XLE. Started at 6% with a 9% stop because the breakout is one month old, not one year old.",
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 22.0
+    }
+  ],
+  "cash_pct": 8,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Energy's relative rank flipped from falling-on-every-horizon to rising-on-every-horizon in a single week \u2014 XLE went from 9.4% below its high to 0.3% below it, +7.67% on the week, on crude reclaiming $82 as the Iran risk premium came back. I kept a 7% residual precisely as an option on that scenario and it is the second-best leg in the book; a rules-based momentum mandate has to follow the signal back in as readily as it followed it out, and refusing to re-enter because I sold lower would be anchoring, not discipline. I fund it by cutting semis, which are now the only leg below their 50-day with 3m +1.6% and AVGO down 8% on the week, and by trimming the two legs with the weakest 12-month trends (XLV, and a nick off XBI after two flat weeks). I add XAR because aerospace/defense just printed a 52-week high on a +14.5% month and is the equity-beta version of the same geopolitical driver, so it hedges the tail that would hit small-caps, biotech and semis together without doubling my commodity exposure. I deliberately rebuild energy to 12%, not the 36% I ran in July: the driver is a headline premium that has already round-tripped 8% in one session once, so I size it to be additive if the trend persists and survivable if the next Hormuz headline reads the other way. Gross goes 89% to 92% because the tape supports it \u2014 SPY at 99% of its range, VIX 14.25, four of my legs at new highs.",
+  "novelty": "I do not run a Round-2 book, so there is no same-direction overlap to manage; within Round 3 the novelty this week is the deliberate re-entry into the theme I exited a week ago plus a first-time defense sleeve, both driven by the Iran risk premium re-pricing rather than by any change in the equity themes my mandate names.",
+  "research_notes": "Pulled full price/momentum tables (1w/1m/3m/6m/12m, 12-1 momentum, 52-week range position, 10/50/200-day MA state) for the whole book plus a broad candidate scan, all through the 2026-08-14 close, and marked the book from its 2026-08-10 entry.\n\nBOOK MARK SINCE 08-10 ENTRY: TNA +4.94%, SMH +3.23%, XLE +2.87%, KRE +2.50%, IWM +1.70%, QQQ +1.41%, XBI -0.39%, XLV -0.64%. Weighted contribution +1.33pp; NAV $1,029.63 (+2.96% cumulative), max DD -2.62%. No stop or take-profit fired \u2014 all eight legs intact.\n\nTHE ONE MATERIAL CHANGE: energy reversed violently and re-took leadership. XLE +7.67% on the week, +8.58% on the month, now 0.3% from its 52-week high (range position 99.0%) with 12m +49.2% and above all three MAs. The sub-sectors confirm rather than contradict: XOP +8.47%, OIH +8.51%, ERX +15.48%, IEO +9.65% and at a 52-week high with 12m +51.6%. The driver is crude: WTI 78.18 -> 82.40 (+5.40% w/w, +42% YTD), Brent 88.52, on a renewed Iran risk premium (\"Crude Oil Rises as Iran Warned Against Economic Pain\") \u2014 i.e. the exact Hormuz headline whose *diplomatic* version broke the trade three weeks ago has flipped sign. Last week I cut XLE 36% -> 7% because its relative rank was falling on every horizon; it is now rising on every horizon. That is a real signal change, not noise.\n\nSEMIS ARE THE BOOK'S WEAK LEG. SMH is the only position below its 50-day, 12.1% off its high, and 3m +1.64% despite 12m +99.4%. SOXX and XSD tell the same story (both sub-ma50, range position 72-75%), and SOXL at 43.5% range position with 3m -22.2% shows how much daily rebalancing has eaten the levered version. The proximate damage is idiosyncratic megacap: AVGO -8.13% on the week and 18% off its high. NVDA is fine (+8.56% 1m) but not enough to carry the basket.\n\nEVERYTHING ELSE IS WORKING AND UNCHANGED. IWM, KRE, TNA and XLI all printed 100% range position (new 52-week highs); XBI 90.9% with 12m +74.4% and 3m +16.8%; XLV 97.0%; QQQ 92.4%; SPY 99.0%; VIX 14.25 and falling; 10y 4.70%, steady. Broad tape is healthy, which argues for holding gross up rather than down.\n\nNEW CANDIDATE THAT EARNED A SLOT: XAR (aerospace/defense) \u2014 100% range position, 1w +3.45%, 1m +14.54%, 3m +9.38%, 12m +38.2%, above all MAs, and the strongest of the defense vehicles (vs ITA 12m +30.5%, PPA +27.1%). It is the equity-beta expression of the same Iran risk premium bidding crude, so it adds the geopolitical hedge without adding more commodity beta.\n\nREJECTED AFTER CHECKING: precious metals (GDX +26% 1m, SLV +16% 1m, but range positions of 56.6%, 34.3% and GLD 50.5% with GLD/SLV below their 200-day \u2014 recovering from a break, not an intact trend); uranium (URA 37.5%, URNM 28.7% range position); homebuilders (ITB, XHB both negative on 12m); China (KWEB 20.1% range position, 12m -22.9%; FXI -7.3%); EWZ (below all MAs); IGV and ARKK (12-1 momentum negative); XME (18% 1m spike but 3m negative and 72% range position). Considered swapping XLE for IEO, which scores better on every horizon, but held the existing wrapper rather than paying a full round-trip to micro-optimize."
+}

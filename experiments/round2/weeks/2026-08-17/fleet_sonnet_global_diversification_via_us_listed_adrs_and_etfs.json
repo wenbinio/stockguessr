@@ -1,0 +1,76 @@
+{
+  "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate the core toward international/EM ETFs and quality non-US ADRs that lagged the US AI-infra rally, keep crypto exposure at zero given the deep bear trend, and hold a modest inverse-ETF hedge plus elevated cash against US mega-cap AI-valuation risk.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Broad EM ETF core exposure; kept below single-country legs in size since the fund is ~46% tech-weighted (TSM/Samsung top holdings) and thus a less clean diversifier from the US-AI trade than it's labeled as. No news shift this week."
+    },
+    {
+      "symbol": "TSM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "Best-in-class semis ADR; still Strong Buy with average PT ~$547 (+28% upside from $426), ramping 3nm production for AI demand, exploring a Sony image-sensor JV. Modest \"too expensive\" chatter but no downgrade -- unchanged."
+    },
+    {
+      "symbol": "ASML",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "thesis": "Monopoly lithography maker, +73% YTD; consensus PT $2176 (+18% from $1844) and 17% interim dividend hike reaffirm the franchise. Some valuation-fatigue commentary emerging but no Strong-Buy erosion -- unchanged."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Brazil ETF, low correlation to the US AI-valuation trade; top holding Nu Holdings just jumped 10% to a 5-month high, supportive of the ETF. Unchanged conviction."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Japan ETF, governance-reform tailwind independent of the US AI drawdown/rally cycle. No adverse news this week -- unchanged."
+    },
+    {
+      "symbol": "BABA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "China ADR, still resilient (Apple tapping Alibaba for a China-specific AI model, 3B+ AI model downloads, some analysts see it 37% undervalued) but earnings land 8/20, after this book's next scheduled review -- adding a -12% stop now closes that unprotected downside gap through a binary print plus the standing shareholder-litigation overhang, at no cost unless triggered."
+    },
+    {
+      "symbol": "INDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "India ETF, structural EM growth diversification with low correlation to the US AI trade; unchanged."
+    },
+    {
+      "symbol": "SQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Modest inverse-Nasdaq hedge against US mega-cap AI-valuation risk. Down ~3% over the past week as QQQ held near its highs (Burry reportedly shorting QQQ/Micron on valuation, but no confirmed correction yet) -- exactly the expected drag from a hedge in a grinding-up tape; far from stop/TP, size stays modest per mandate."
+    }
+  ],
+  "cash_pct": 25,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Weekly check across all 8 positions found no thesis-breaking news since the 8/10 entry (TSM $426, ASML $1844, EWZ, EWJ, EEM, INDA, SQQQ all tracking prior theses with no new catalysts) so the book is otherwise left untouched -- one addition: BABA reports earnings 8/20, which falls after this book's next scheduled weekly review (8/22), leaving the position unprotected on the downside through a binary catalyst for over a week. Adding a stop-loss closes that gap at zero cost unless triggered; TP+25% (already trimmed last week for this same event) and all other 7 legs, sizes and cash are unchanged.",
+  "research_notes": "Checked point-in-time prices/news through 8/14 close via WebFetch (Yahoo Finance, WebSearch budget was exhausted for this session so relied on WebFetch): TSM $426.35 (Strong Buy, PT ~$547, Sony JV chatter, no downgrade), ASML $1844.08 (+73% YTD, PT $2176, some valuation-fatigue commentary but bullish consensus intact, next earnings 10/14 so no near-term event risk), BABA $123.81 (Apple/Alibaba China AI-model partnership, 3B+ model downloads, earnings confirmed 8/20 -- next weekly review is 8/22, i.e. after the print, so added a stop-loss to protect the unhedged downside through that binary event), QQQ $731.07 (near highs, but Michael Burry reportedly increasing shorts against QQQ/Micron on valuation -- supports keeping the SQQQ hedge), SQQQ $36.24 (down ~3% over the week as Nasdaq firmed, consistent with its role as a hedge in a rising tape), EWZ $33.93 (Nu Holdings +10% to 5-month high, supportive), XLF $58.16 (within $0.25 of 52-wk high $58.41), XBI $157.41 (climbing toward 52-wk high $165.71, active biotech-breakout coverage), GDX $89.97 and SOXL $144.95 (both still well above the 8/4 and 8/5 stop-out levels of $83.68/$78.22 -- confirms the short-squeeze in gold miners/leveraged semis has not reversed, so re-shorting per the Round 3 mandate remains premature). EWJ/INDA/EEM Yahoo pages 503'd on fetch; no news surfaced elsewhere to challenge their unchanged theses. Net conclusion: Round 2 gets one targeted risk-management edit (BABA stop ahead of earnings), everything else in both books holds -- no stops hit, no thesis breaks, momentum legs in Round 3 still confirmed and mean-reversion shorts still not safe to re-enter."
+}

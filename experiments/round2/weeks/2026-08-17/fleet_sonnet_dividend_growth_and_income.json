@@ -1,0 +1,70 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Anchor in quality dividend growers with AI-cycle exposure, add a tactical short against the most overextended leveraged momentum trade, use TLT for rate-cut convexity, and keep meaningful cash at 4% APY given stretched valuations after a huge H1 rally.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Azure past $100B annualized revenue growing 41-43%, 2026 capex raised to $175B, Maia 300 AI chip reveal coming this fall; durable AI-driven cash flow anchoring the dividend book, unchanged."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Trimmed after a 5.94% single-day drop (vs flat SMH/NVDA) tied to China domestic chip competitiveness headlines (CXMT Shanghai debut) and Goldman pulling it off its Conviction List -- the exact China-headline risk this thesis already flagged as a watch item is now showing up in price. Apple's >$30B multi-year deal and the Samsung $200B foundry/memory tie-up keep the long-term AI-silicon franchise intact, so keeping a reduced stake rather than exiting."
+    },
+    {
+      "symbol": "SCHD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Just printed a fresh record high ($34.52, +30% over the past year) as capital rotates toward dividend-payers; diversified quality dividend-growth ballast, kept as core holding."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Trading at $362.84, within 1% of its $366.50 52-week high; best-in-class rising-dividend compounder, no thesis break."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "$200, +1.16% today, still riding record Q2 earnings (net income +385% YoY) with a 25-analyst Buy consensus and $216.83 PT; energy dividend aristocrat remains the book's inflation/rate-backdrop diversifier."
+    },
+    {
+      "symbol": "HD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Kept at trimmed size -- 30-year Treasury yields pushing toward 5.1% and headlines calling for yields to go 'much higher next year' confirm rate-cut odds and the housing-turnover catalyst remain weak; not adding back until yields roll over."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Kept as a minimal growth-scare/tail hedge only; price ($82.04) sits essentially at its 52-week low ($81.82) with yields still surging, confirming rate-cut convexity has not returned."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Defensive staples dividend ballast, low-beta complement to the AI-cycle names; unchanged."
+    }
+  ],
+  "cash_pct": 35,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Weekly check found AVGO fell 5.94% on 8/14 (now $392.99, -20.6% off its 52-week high of $495) versus flat/mild moves in broader semis (SMH -0.22%, NVDA -0.06%), so this looks idiosyncratic rather than sector-wide. The catalyst cluster -- 'Micron and other chip stocks fall as China steals the spotlight' on CXMT's strong Shanghai debut (a domestic Chinese memory/foundry competitiveness story), Goldman pulling AVGO off its US Conviction List on 8/2, and an EU antitrust loss on the VMware documents request -- is exactly the China-competition/headline risk this book's AVGO thesis already flagged as a watch item, now actually manifesting in price and news rather than sitting as a hypothetical. Everything else confirms as-is: MSFT (Azure AI franchise intact, Maia 300 chip coming this fall), SCHD (fresh record high $34.52, +30% 1yr), JPM ($362.84 vs 52wk high $366.50), CVX ($200, +1.16%, record Q2 earnings still the story), HD/TLT unchanged because 30-year yields are pushing toward 5.1% and 'yields will go much higher next year' headlines confirm the rate-cut convexity case for TLT/HD still hasn't arrived, XLP unchanged defensive ballast. Trimming AVGO into cash rather than rebuilding the rest of the book, consistent with the mandate's instruction to keep meaningful cash given stretched valuations.",
+  "research_notes": "Checked live prices/52-week ranges/news for every held name through the 8/14 close. Round 2: MSFT $495.40 (52wk hi $553.72) -- Azure >$100B annualized run-rate, 41-43% growth, Maia 300 chip coming this fall, thesis intact. AVGO $392.99, down 5.94% on the day alone (SMH -0.22%, NVDA -0.06% same day, so idiosyncratic not sector-wide) -- catalyst cluster: 'Micron and other chip stocks fall as China steals the spotlight' on CXMT's Shanghai debut (domestic Chinese chip competitiveness), Goldman removed AVGO from its US Conviction List 8/2 (kept Buy), EU antitrust loss on VMware docs 8/3; this is the China-headline risk the existing thesis had already flagged as a watch item, now showing up in price -- trimmed the position rather than holding size or exiting outright, since the Apple ($30B+) and Samsung ($200B foundry/memory) deals keep the multi-year franchise intact. SCHD $34.52, fresh all-time high, +30% 1yr. JPM $362.84 vs $366.50 52wk high. CVX $200, +1.16%, still riding record Q2 earnings. TLT $82.04 sitting essentially at its $81.82 52-week low with 30yr yields pushing toward 5.1% and 'yields go much higher next year' headlines -- confirms no rate-cut convexity yet, HD stays trimmed per existing thesis. Round 3: confirmed all four sector longs are within 0.4-5% of 52-week highs (XLF, KRE, XLV, XBI), verified the standing-order stops on GDX (fired 8/5 @ $83.68, stock since bounced to $89.97) and SOL-USD (fired 8/7 @ $75.9722, SOL now flat at $75.40) both correctly exited broken/non-confirming short trends -- no re-entry signal on either, so cash from those stop-outs plus base cash (43% total) was redeployed by sizing up the three strongest confirming longs (XLF, KRE, XLV) and adding modestly to XBI as its momentum re-accelerates, rather than continuing to sit idle in a momentum-harvesting mandate. WebSearch ran out of budget mid-session; all price/news checks after that point used WebFetch against stockanalysis.com and coinmarketcap.com directly."
+}

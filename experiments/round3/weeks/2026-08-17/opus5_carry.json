@@ -1,0 +1,81 @@
+{
+  "name": "Opus 5 carry",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "A 10-leg cross-asset carry book that earns spread and premium income rather than price appreciation - structured credit (JAAA/CLOZ), agency-MBS-vs-repo carry (NLY), EM currency and sovereign carry (EMLC/EMB), high-yield spread (SPHY), equity and VIX variance premium (SPYI/SVXY) and midstream distributions (AMLP) - funded by 13% cash at 4% APY, with the only short expressed as a 3%-margin 3x BTC perp because perp shorts pay 0% financing in this engine while equity shorts carry a ~7% all-in drag.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JAAA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "thesis": "Restoring part of what I cut too aggressively. I halved this from 40 to 20 on 10 August with one explicit justification \u2014 that the hike which upgrades its coupon was off the table after the payroll miss. It is not off the table: odds are ~42%, Warsh has said he will move if inflation stays elevated, he speaks at Jackson Hole 27-29 August, and UMich 1-year expectations just rose to 4.3%. AAA CLO paper at SOFR+~120bp with effectively zero duration is the one asset in this book that is genuinely indifferent to that binary \u2014 it does not lose if Warsh is hawkish and its coupon resets higher if he acts, while every duration-bearing leg I own loses. Roughly 5% distribution on $27bn of AUM, 600+ AAA tranches, thirty years without a default, LSTA trailing loan defaults falling toward 3.5%. Not back to 40, because the honest spread over 4% cash is still only about a point and JPMorgan flags AAA spreads as tight with issuance guided down ~20%; 26 is the size that reflects hedge value against an event rather than a yield reach. Wide -10% stop because the only real risk here is a liquidity gap and a tight stop would whipsaw me out of the safest income I own.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "AMLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "The clearest error to reverse, and now the book's largest thesis change. I cut this from 16 to 14 last week because the Iran-Oman Hormuz transit arrangement was 'advancing' and I judged the energy windfall spent. Instead the talks stalled, attacks on shipping resumed, Brent gained ~5% on the week to ~$87, EIA now says Middle East output will not approach pre-conflict levels until early 2027 and puts 2026 Brent at $87, and IEA sees global supply down 4.3 mb/d. Beyond the price, this is the only leg in the book that is paid by the specific force damaging the others: with 1-year inflation expectations at 4.3% and a rising term premium, midstream contracts escalate with CPI while my fixed-rate spread legs are marked down by it. The distribution case never depended on any of that \u2014 7.8% just raised to a record $1.03 per quarter, every top holding raised in H1, coverage guided through 2027, fee-based and volume-linked revenue with LNG exports at capacity and data-center power demand adding multi-year throughput, and US midstream is structurally the beneficiary when Middle East barrels are the ones missing. Wide -20% stop because this is the book's most volatile leg and I want it to survive an oil round trip, not be shaken out by one.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "CLOZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "BBB/BB CLO mezzanine at ~7.4%, floating \u2014 the same improving loan collateral as JAAA, paid for taking subordination rather than duration. Raised modestly for the same reason JAAA is raised: floating-rate coupons are the right place to sit into a Jackson Hole binary I cannot handicap, and roughly three-and-a-half points of cushion over 4% cash means a lower SOFR path erodes far less of the edge here than at JAAA's 5%. Only modestly, and not more, because the offsetting negative got worse, not better: payrolls at -23,000, consumer sentiment at 51.0, and retail sales growth halving to +5.2% y/y are a genuine negative for leveraged-loan borrowers even with defaults still falling toward 3.5%, and mezzanine subordination gaps wider in a risk-off well before collateral actually deteriorates. -15% stop respects that gapping behaviour.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "EMLC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Trimmed, not abandoned, because the engine is intact but the event risk is concentrated here. The dollar case still works \u2014 DXY finished 14 August at 99.6, down again on the day and roughly 0.9% on the month, with bank consensus for the mid-90s by year-end on slowing US growth \u2014 and EM local sovereign carry pays high single-digit local coupons with rate cuts in several large markets as an additional return source. But by my own stated logic this is the leg that hurts most if the hike revives, and the hike did not die: a hawkish Warsh at Jackson Hole on 27-29 August is a dollar-up, EM-FX-down event, twelve days away and not in the price at a 42% hike probability. Cutting from 13 to 10 is paying a small amount of carry to not have my largest FX exposure be my largest event exposure. -10% stop because local-currency drawdowns arrive through the exchange rate and arrive fast.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "NLY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Cut from 8 because the curve shape I bought it for did not arrive. I re-added this on 10 August arguing that removing a live hike gives agency carry the front-end rally with anchored policy that it wants. What actually happened is a bear steepener \u2014 2y at 4.17% but 10y at 4.68% after touching a 19-month high of 4.75% \u2014 which is the shape that marks down the asset side of a 5.6x-levered book while the funding leg barely moves. Annaly's own disclosure is that agency MBS spreads widened on increased rate volatility, and rate volatility is exactly what Jackson Hole plus three pre-FOMC inflation prints will deliver. I keep 5 rather than zero because the fundamentals are delivering rather than hoped-for: Q2 dividend raised to $0.75 from $0.70 on $0.79 EAD (105% coverage), book value +1.7% to $20.15, 5.5% economic return in the quarter and 6.9% in the half, net interest spread +8bp to 1.50%, $9.6bn available for financing, and nine of thirteen analysts at Buy with a $24.45 target versus ~$22.70. That is a real carry stream; it just should not be an 8% weight into a rates-volatility event. -15% stop.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "SPHY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimmed again on the same logic as last week, now with the demand-side evidence I was missing then. High-yield at roughly 7% and ~285bp is the richest, most crowded carry on my board, and the case for holding it thinned this week rather than the spread widening to compensate: consumer sentiment collapsed to 51.0 from 55.2 against 54.5 expected with long-run expectations down 17%, and July retail sales growth halved to +5.2% y/y from +8.5%. Spreads at the tights are priced for the opposite. It keeps a place because the coupon is genuine and short duration limits the damage from the long-end selloff that is hurting everything else in fixed income, but I am not paid to hold credit beta at the tights with a deteriorating consumer and VIX at 14.25. -12% stop.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SPYI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Cut for the third consecutive week for the reason that keeps getting more true. My stated case was that writing index calls is worth size at VIX 18 and not at VIX 14; VIX settled at 14.25 on Friday, a low for the year, so the premium I am collecting is now unambiguously below the level I already called too thin. The structure is long index beta with capped upside into a tape where the S&P 500, its equal-weight version and the Russell 2000 all just printed records in a third straight up week \u2014 the worst configuration a covered-call fund can hold. It survives at 4% only because the mandate calls for an equity-premium sleeve and monthly distributions still clear cash. For the same reason I again decline to add SVXY: buying short-volatility carry at the year's low VIX is selling insurance at the cheapest possible price. -15% stop.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 4,
+      "thesis": "Adding a point of margin because this is the one leg where the tape confirmed the thesis outright. BTC fell to roughly $62,700-63,400 on 14 August from ~$64,900 at entry, and it did so in a week when the S&P 500, the equal-weight S&P and the Russell 2000 all made record highs and the market posted a third straight weekly gain. An asset that cannot rally in that tape, still ~40% below its January-2025 high, is carrying its own problem rather than trading a macro discount, and that is what I sized it for. The financing edge is the reason it is a perp and not an equity short: perp shorts are charged 0% funding in this engine while longs pay 10% APR, and an equity short would cost 3% borrow plus 4% forgone cash yield \u2014 roughly seven points a year cheaper to be short here. At 4% margin and 3x this is 12% of notional hedging an 86% gross long-carry book, which is the right ratio now that my remaining longs are more concentrated in two names. Leverage stays at 3x \u2014 I will not raise leverage on a hedge \u2014 so liquidation still needs a ~32% rally and the -50% stop fires long before that, capping the entire hedge at 2% of NAV. Take-profit at +45%, about a 15% BTC decline, so a working hedge gets banked rather than round-tripped.",
+      "leverage": 3,
+      "stop_loss_pct": 50.0,
+      "take_profit_pct": 45.0
+    }
+  ],
+  "cash_pct": 14,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: I built this book five days ago on three stated premises and all three have been contradicted by data since, in the same direction. I declared the September hike dead and halved JAAA \u2014 it is a live 42% with a hawkish Warsh speaking at Jackson Hole in twelve days. I added seven years of EM hard-currency duration calling it an asset \u2014 the 10-year promptly tested a 19-month high of 4.75% on term premium while 1-year inflation expectations rose to 4.3%. I trimmed AMLP because the Hormuz reopening was 'advancing' \u2014 Iran and Oman failed to agree, shipping attacks resumed, and Brent rallied 5%. The common thread is that I positioned for policy easing and disinflation and got a bear steepener with un-anchoring inflation expectations instead. So I rotate the book back toward the carry that is indifferent to the Jackson Hole binary and gets paid by energy inflation \u2014 floating-rate CLO (JAAA/CLOZ) and midstream (AMLP) \u2014 and out of the carry that is short that risk: EMB to zero because its premise was simply wrong, NLY down because a bear steepener plus rate volatility is what destroys 5.6x-levered agency book value, SPHY down because 285bp is the wrong compensation with sentiment at 51 and retail sales halving their growth rate, SPYI down again because VIX at a year low of 14.25 is the cheapest possible price to sell insurance. Turnover is roughly 29% one-way at ~2bps, under a basis point of NAV, so cost is not a reason to sit on premises I no longer believe.",
+  "novelty": "I run no Round-2 book, so there is no same-direction overlap to constrain; the distinctive expression here is that the only short is a 3x BTC perp chosen purely for financing mechanics \u2014 perp shorts pay 0% funding in this engine versus roughly 7 points a year all-in for an equity short \u2014 so the hedge is nearly free carry rather than a drag on an income mandate.",
+  "research_notes": "Checked the three things my 2026-08-10 rebuild was explicitly premised on. All three are damaged.\n\n(1) \"The September hike is off the table.\" Partly true, not true enough. July CPI (released 12 Aug) printed +0.1% m/m headline / +0.2% core, 3.4% and 2.5% y/y, both -0.1pp from June; shelter was two-thirds of the headline. Front end rallied and September hike odds were cut to ~42%. But Friday's UMich (14 Aug) showed 1-year inflation expectations UP to 4.3% from 4.2% \u2014 a fifth straight month above 4% versus 3.4% in February \u2014 and Kevin Warsh speaks at Jackson Hole 27-29 August having said he will raise if inflation data stays elevated. September FOMC is 16-17 Sep with three inflation prints before it. A 42% hike with a hawkish chair and a live event in 12 days is not a dead thesis; I priced it as dead and cut JAAA from 40 to 20 on that basis.\n\n(2) \"Duration flipped from a liability to an asset.\" Factually wrong on the tape. The curve bear-steepened: 2y ended 14 Aug at 4.17% but 10y ended at 4.68-4.70%, having tested a 19-MONTH HIGH of 4.75% earlier in the week, on term premium and inflation-expectation concerns rather than policy. I added EMB (roughly 7 years of duration) at 7% five days ago on precisely the opposite call.\n\n(3) \"The Hormuz windfall has expired.\" It did not expire \u2014 it reversed. Iran and Oman failed to reach a reopening agreement, attacks on shipping resumed, and Brent rallied ~5% on the week to ~$87. EIA now expects Middle East production not to return near pre-conflict levels until early 2027 and Brent to average $87 for 2026; IEA cut its demand outlook and sees global supply down 4.3 mb/d (~4%) this year. I trimmed AMLP from 16 to 14 on a deal that then fell apart.\n\nOther marks: BTC ~$62,700-63,400 on 14 Aug versus ~$64,900 at entry \u2014 my short is working, and it fell while the S&P 500 and an equal-weight S&P and the Russell 2000 all set records into a third straight up week, which is the idiosyncratic-weakness profile I sized it for. VIX settled at 14.25, a low for the year \u2014 thinner covered-call premium than when I already cut SPYI for being too thin. UMich headline sentiment collapsed to 51.0 from 55.2 versus 54.5 expected, long-run expectations -17%, and July retail sales decelerated to +5.2% y/y from +8.5% \u2014 a poor backdrop for high yield at ~285bp. JAAA is now ~$27bn AUM yielding ~5%; CLOZ yields ~7.4%. NLY's own filings note agency MBS spreads widened on increased rate volatility, which is exactly the regime the long end just entered, against 5.6x economic leverage.\n\nSynthesis: the regime that showed up is not \"hike dead, risk-on\" \u2014 it is stagflation-lite. Anchored front end, rising term premium, un-anchoring inflation expectations, re-accelerating energy, collapsing consumer. The carry that belongs in that regime is floating-rate and real-asset. The carry that does not is long-duration dollar spread and credit beta at the tights."
+}

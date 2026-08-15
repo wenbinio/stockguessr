@@ -1,0 +1,80 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Untraded at 19 for a third week and the anchor of the book. Closed at a 52-week high, 100% of range, +9.81% over three months against QQQ's +1.68% - the anti-concentration view is being expressed here by the long leg, which is why the size sits here and not in the short. Held rather than pressed because it is already my joint-largest and adding at a record close is how a breadth basket turns into a momentum basket."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Held at 19 despite the reason I gave for restoring it having reversed - I put it back to 19 because the 30-year fell from 5.22%, and it is now 5.26%. I am keeping the position and discarding the argument: IWM closed at a 52-week high with 12-1 momentum of +31.5%, so small caps are making records with long yields against them, which means the driver is domestic cyclical earnings breadth rather than the rate call I talked myself into. No trade, so this costs nothing to hold while I watch which explanation the tape prefers."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "thesis": "Rebuilt 8->13 after cutting it 17->8 exactly one week too early. The distinction that makes this a re-entry and not a round trip: last week's case was a supply-shock premium from strikes near Hormuz that had visibly drained out of the price, and I was right that it drained. This week's case is that crude ground $78.18->$82.40 without a headline, XLE closed at 99% of its 52-week range with 12-1 momentum of +37%, and XOP and OIH both added over 8% - a whole cyclical sector confirming on price is the breadth signal my mandate names, not a war trade. Sized 13 rather than back to 17 because I have now been whipsawed on this sector twice and the second mistake should be smaller than the first, with a -18% stop (roughly 2.5 monthly sigma at 25 vol) so the third one is capped at 2.3% of NAV."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Untraded at 11. Industrials closed at 100% of their 52-week range with 12-1 momentum of +21% and no crude beta and no semiconductor supply-chain exposure, so it is the cleanest domestic cyclical breadth I hold and does not double-count the energy add I just made. Left alone because nothing about it changed and a position doing its job does not need my attention."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Untraded at 10 and the best-performing non-energy leg this week at +2.26%, closing at a 52-week high. Notable because it did that with the 30-year rising to 5.26%, which is the opposite of the securities-portfolio argument I used to justify the weight - regional banks are levered small-cap breadth first and a rates trade second. Capped at 10 because payrolls at -23,000 with heavy negative revisions is a credit-quality signal and banks are where a labour-market crack shows up first."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Cut 12->8, reversing last week's restoration honestly. I took it from 7 back to 12 because the 30-year had fallen from 5.22% and the reason for the earlier trim was gone; the 30-year closed at 5.26% on Friday, so the reason is back and my restoration was wrong. It is also the only long in the book that failed to participate in a week when RSP, IWM, XLI, KRE and TNA all closed at 52-week highs - +0.03%. Kept at 8 rather than cut to zero because 12-1 momentum of +68% is still among the best in my universe and it satisfies the equal-weight construction leg of the mandate by design; I am removing the size I added on a bad argument, not exiting a good asset."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 25.0,
+      "thesis": "Untraded at 6 and up 8.28% on the month - the mandate-named amplifier finally earning its slot. Not pressed despite working, because 3x daily compounding is a bet on trend without chop and the reason to hold it small is unchanged: a sideways month costs decay whether or not the direction is eventually right. Stop stays -25%, which caps this leg at 1.5% of NAV."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 30.0,
+      "thesis": "Untraded at 3% so I pay no crossing cost. Being explicit that this is now dead weight rather than a tail: flat on the week, flat on the month, and 10-day realized vol of 11% on an asset whose entire purpose in this book is convexity. It is a mandate-required speculative sleeve and at 35bps a side it is not worth paying to express indifference, so it stays at 3 with a -30% stop until it either wakes up or costs me the stop."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Untraded at 6 and vindicated on the horizon that counts. I halved this after it caused my worst single-leg drag; since then QQQ returned +1.11% against RSP's +1.22%, and over three months QQQ is +1.68% against RSP's +9.81%, so the concentration spread is paying and last week was the exception rather than the trend. Deliberately not upsized back toward 12 - upsizing this leg into strength is the exact mistake I made a fortnight ago, and the mandate calls for a small anti-concentration short, which at 6% against 89% of longs is what this is."
+    }
+  ],
+  "cash_pct": 5,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: The week falsified two of my calls in opposite directions and only one of them needs money moved. I cut energy 17->8 on the argument that a war premium had left the tape; crude then ground from $78.18 to $82.40 with no fresh headline and XLE put in +7.67% to 99% of its 52-week range, with XOP +8.47% and OIH +8.51% alongside it. That is no longer a geopolitical premium I would be paying for - it is a cyclical sector making highs on price, which is precisely the breadth signal this mandate exists to own, so I am buying it back on a different reason than the one I abandoned rather than re-buying my old mistake. The funding comes from the leg where my stated rationale actually died: I restored IWM, XBI and KRE last week because the 30-year had fallen from 5.22%, and it closed Friday at 5.26%, higher than when I cut. IWM and KRE made record closes anyway so price overrides the vanished rate story there, but XBI is the one long that did nothing (+0.03% while the whole book made highs) and it is the longest-duration asset I own facing a 30-year that went back up - lost rationale and missing price confirmation in the same position is what a funding source looks like. I am not touching RSP, IWM, XLI, KRE, TNA, ETH or the QQQ short, because a book that just beat SPY by 125bps with every breadth index at 100% of range is not a book to redesign.",
+  "research_notes": "Web search budget for the session was exhausted before I could use it, so I worked from point-in-time price and momentum data pulled directly (Yahoo chart API) for my whole universe through the 2026-08-14 close: 1w/1m/3m/6m/12m returns, 12-month-minus-1-month momentum, 52-week range position, 10/50/200-day MA status, and realized vol at 10/20/60 days.\n\nMACRO. 30-year yield closed 5.26%, UP from 5.21% a week ago and now ABOVE the 5.22% level I explicitly cited last week as the reason to cut duration; 10-year 4.70% from 4.66%. The rate-relief argument I used to restore IWM/XBI/KRE has fully unwound inside one week. Crude went the other way: WTI $78.18 -> $82.40 (+5.4%), Brent $83.55 -> $88.52 (+6.0%) as a grind rather than a headline spike.\n\nBREADTH (Round 2 mandate). Everything I own in breadth made records: RSP, IWM, XLI, KRE, IJR, MDY and TNA all closed at 100% of their 52-week range. RSP +1.22% w/w vs SPY +0.40% and QQQ +1.11%; on 3 months RSP +9.81% vs QQQ +1.68%, so the anti-concentration spread is paying on the horizon that matters even though it lost last week. XBI was the sole non-participant at +0.03%. Energy was the standout I was underweight: XLE +7.67% w/w, +8.58% 1m, 99% of range; XOP +8.47%; OIH +8.51%. XLU is the only sector below its 50- and 200-day. ETH at $1,876 is flat on the week and the month with 10-day realized vol of just 11% - a speculative tail currently speculating on nothing.\n\nMOMENTUM (Round 3 mandate). The screen has moved against two of my legs. SMH sits at 78.8% of range, 12% below its 52-week high, BELOW its 50-day, and +1.64% over three months - dragged by AVGO (-8.13% w/w, below its 10-day) - while the memory names that carry the thesis I actually wrote ripped: MU +10.72% w/w, 12-1 momentum +607% (top of my entire universe), above all MAs. PLTR fails my mandate's own construction outright: 12-1 momentum -24.12%, 66.8% of range, 12m -1.77%, and flat since I bought it four sessions ago at $175.23 despite a +29% month - the post-earnings drift has stalled. Best unowned leaders on 12-1: CRWD +90.5% at 93.8% of range above all MAs; NET +35.6% at 91.2% of range, +5.17% w/w; MDB +50.6% but duplicates SNOW's data theme. On the short side HOOD is a weak laggard that is now bouncing (+2.43% w/w, back above its 10-day, 12-1 only -7.1%), whereas COIN is at 3.0% of its 52-week range, below its 10-, 50- AND 200-day, -3.34% w/w and -7.49% 1m with 12-1 of -49.5%. ORCL remains the best-qualified laggard on the screen (16.9% of range, 12-1 -49.4%) but is squeezing, +21% on the month. Vol check for stop sizing: MU rv20 104% / rv60 110% (one weekly sigma is ~15%, so it must be sized small with a wide stop), COIN rv20 73%, CRWD rv20 46%, NET rv20 51%, XLE rv20 25%."
+}

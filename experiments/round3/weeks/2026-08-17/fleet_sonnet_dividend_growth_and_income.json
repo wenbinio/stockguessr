@@ -1,0 +1,52 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Strongest confirmed trend in the book -- $58.16 vs a $58.41 52-week high, within 0.4%; pressing the leg with the clearest trend confirmation."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Regional banks $77.93 vs $78.35 52-week high, within 0.5%; financials rotation broadening beyond the majors, adding."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Healthcare still re-accelerating, $167.37 vs $169.71 52-week high (-1.4%), 27.76% trailing 1yr return; strongest newly-confirming sector trend, sizing up further."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Gap to 52-week high has narrowed from 10.7% to 5% since last week ($157.41 vs $165.71 high) -- short-term momentum is re-confirming on top of the intact 1-year breakout, adding back some of the size trimmed previously."
+    }
+  ],
+  "cash_pct": 26,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Checked live prices against 52-week highs for every held sector leg: XLF $58.16 vs $58.41 high (-0.4%), KRE $77.93 vs $78.35 high (-0.5%), XLV $167.37 vs $169.71 high (-1.4%), XBI $157.41 vs $165.71 high (only -5%, improved from -10.7% off highs at last entry) -- all four confirmed trends are intact or re-accelerating. Meanwhile GDX's stop fired 8/5 at $83.68 and the stock has since bounced further to $89.97 (+7.5% above the stop), and SOL is sitting flat at $75.40, right at the level where its 3x short was stopped out 8/7 -- both prior short trends are broken/non-confirming, so no re-entry on either. That left 43% of NAV sitting idle in a momentum-harvesting book with every remaining leg confirming, which is a poor fit for a trend-confirmation mandate that's supposed to press winners; sized up XLF, KRE and XLV (the three closest to 52-week highs) and added modestly to XBI, cutting cash roughly in half rather than continuing to sit on cash the mandate isn't built around.",
+  "novelty": "Round 3 stays a pure sector-ETF trend-rotation sleeve (XLF/KRE/XLV/XBI long, no crypto/gold shorts currently confirming) with zero symbol overlap against the Round 2 dividend book's individual equity names (MSFT/AVGO/SCHD/JPM/CVX/HD/TLT/XLP), so same-direction gross-weight overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/52-week ranges/news for every held name through the 8/14 close. Round 2: MSFT $495.40 (52wk hi $553.72) -- Azure >$100B annualized run-rate, 41-43% growth, Maia 300 chip coming this fall, thesis intact. AVGO $392.99, down 5.94% on the day alone (SMH -0.22%, NVDA -0.06% same day, so idiosyncratic not sector-wide) -- catalyst cluster: 'Micron and other chip stocks fall as China steals the spotlight' on CXMT's Shanghai debut (domestic Chinese chip competitiveness), Goldman removed AVGO from its US Conviction List 8/2 (kept Buy), EU antitrust loss on VMware docs 8/3; this is the China-headline risk the existing thesis had already flagged as a watch item, now showing up in price -- trimmed the position rather than holding size or exiting outright, since the Apple ($30B+) and Samsung ($200B foundry/memory) deals keep the multi-year franchise intact. SCHD $34.52, fresh all-time high, +30% 1yr. JPM $362.84 vs $366.50 52wk high. CVX $200, +1.16%, still riding record Q2 earnings. TLT $82.04 sitting essentially at its $81.82 52-week low with 30yr yields pushing toward 5.1% and 'yields go much higher next year' headlines -- confirms no rate-cut convexity yet, HD stays trimmed per existing thesis. Round 3: confirmed all four sector longs are within 0.4-5% of 52-week highs (XLF, KRE, XLV, XBI), verified the standing-order stops on GDX (fired 8/5 @ $83.68, stock since bounced to $89.97) and SOL-USD (fired 8/7 @ $75.9722, SOL now flat at $75.40) both correctly exited broken/non-confirming short trends -- no re-entry signal on either, so cash from those stop-outs plus base cash (43% total) was redeployed by sizing up the three strongest confirming longs (XLF, KRE, XLV) and adding modestly to XBI as its momentum re-accelerates, rather than continuing to sit idle in a momentum-harvesting mandate. WebSearch ran out of budget mid-session; all price/news checks after that point used WebFetch against stockanalysis.com and coinmarketcap.com directly."
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "DBMF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0,
+      "thesis": "The structural core of the mandate and untouched: cross-asset managed futures that re-position themselves when the regime turns, so I capture the next trend rotation without having to be early on every leg by hand. It earned its keep this week at +1.36% while holding above both moving averages (1.5% above the 50-day, 4.2% above the 200-day) and +20.7% over twelve months. Its -0.18 beta is the reason it sits at the top of the book: with the consumer visibly cracking, the one sleeve that can be structurally short equities if the tape rolls over is the most valuable diversifier I own."
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Still the most consistent uptrend on my screen and held at full weight despite a flat week (+0.08%), because it is sitting at its 52-week high with every longer horizon positive: +4.65% one month, +5.01% three months, +13.13% year-to-date, 3.9% above its 50-day and 8.0% above its 200-day. A pause at a high is consolidation, not distribution. Unlike the US momentum complex it never had the AI-capex air pocket, so there is no unwind overhanging it, and falling Treasury yields on weak US consumer data keep the dollar soft \u2014 which is a direct, mechanical tailwind to unhedged developed-international returns. Trend and currency carry in one line."
+    },
+    {
+      "symbol": "JEPI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 10.0,
+      "thesis": "The covered-call income sleeve, held at full weight. It clears the same trend filter I apply to everything else \u2014 2.4% above its 50-day, 1.4% above its 200-day, +3.63% over three months \u2014 while paying roughly 8% in distributions, which is why its price return understates what it earns. Its RSI of 68.5 does not worry me the way it would elsewhere: written-call upside is capped by construction, so this leg is not something I can get hurt by chasing. If a record-high tape built on softening economic data turns into the choppy, low-drift market that retail sales and delinquency data point toward, harvested call premium is the right carry to own."
+    },
+    {
+      "symbol": "PDBC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Deliberately left at the residual weight I cut it to, even though it was the best performer on my board this week at +3.83%. The bounce came from crude reclaiming its 50-day and from gold's +10% month, not from a repair of the thing that broke: its three-month return is still negative and the fund is majority energy, while a contracting labour market and falling retail sales are straightforwardly demand-negative for oil. I am not going to reverse a two-week-old decision on one strong week and pay the round trip for the privilege. It holds above both moving averages (5.3% above the 50-day, 12.9% above the 200-day) at +35% year-to-date, which is why it is not zero, and it keeps me in the broad commodity basket while I express the specific carry signal in copper instead."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Trimmed two points and the stop tightened from 10% to 8%, as a risk adjustment rather than a change of view. The trend itself is impeccable: a new 52-week high this week, +7.26% over three months, +17.55% over six, 13.6% above its 200-day and 3.4% above its 50-day. But at beta 1.12 this is the highest-beta and by far the most consumer-credit-sensitive thing I own, and the two datapoints that landed this week hit it precisely \u2014 retail sales fell 0.6% for the first decline in 14 months, and the New York Fed flagged elevated card and auto delinquencies. Small-cap earnings and small-cap balance sheets are where that shows up first. The rate-cut repricing that powered this leg is also less certain into Jackson Hole, so I keep the momentum exposure the mandate requires but stop paying full size for it."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Held unchanged. It still does two mandate jobs at once \u2014 a confirmed uptrend at +13.39% over three months, 4.9% above its 50-day and 9.5% above its 200-day, plus dividend carry \u2014 and falling front-end rates with a steepening curve remains the classic setup for wider net interest margin alongside strong capital-markets activity. The elevated consumer delinquencies reported this week are the live risk to this leg, and they are exactly why I chose XLF over KRE in the first place: money-centre banks, insurers and exchanges are far better collateral than regional-bank loan books if consumer credit is genuinely deteriorating. The wider 12% stop reflects that this is a sector I expect to be volatile around Jackson Hole rather than one I want shaken out of."
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New, and the cleanest carry-plus-trend setup available to me. Copper calendar spreads are at their highest since 2021, meaning the curve is backwardated and the fund earns positive roll yield simply by holding \u2014 this is literally the commodity carry my mandate names, as opposed to a directional bet dressed up as carry. The trend confirms it on every horizon: +5.12% one month, +12.67% six months, +42.94% over twelve, above its 20-, 50- and 200-day, and within 2.3% of a record price. What makes it a better entry than the rest of the commodity complex is that RSI is only 57 \u2014 a trend at a record high that is not overbought is rare and is the opposite of the squeezed conditions I refused to buy in gold miners. The demand story is structural rather than cyclical (AI datacentre power, grid buildout, supply constraints and tariffs), which is what I want when the cyclical data is deteriorating."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 55.0,
+      "thesis": "Cut from 5% to a marker because the trend failed its confirmation. The only reason I held it a week ago was that it was the strongest short-horizon crypto trend on offer, sitting above its 50-day; it has now lost its 20-day, RSI has decayed to 51, and it remains roughly 21% below its 200-day and 61% off its high. Decisive is that it went nowhere in a week when every other asset class I track rallied \u2014 non-participation in broad risk-on is how a trend mandate identifies a dead trend. I keep 3% rather than zero because it is still marginally above its 50-day and I am not willing to call it a confirmed downtrend either, and because crypto is a sleeve the mandate names. Held spot rather than as a perp so I am not paying 10% APR funding to be long something whose primary trend is down, with the stop tightened slightly and the take-profit left where a 50-day reclaim would have become a real base."
+    }
+  ],
+  "cash_pct": 14,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Two things a trend mandate must act on happened this week, and neither is a change of mind about the book's core. First, the crypto leg failed its own confirmation test: ETH went sideways-to-lower and lost its 20-day while every other asset class I track rose in a third straight up week for the S&P, with RSI decaying to 51 and price still roughly 21% below its 200-day. A trend sleeve that cannot participate in broad risk-on is not a trend, and I said last week that a trend mandate cannot justify size in a market whose primary trend is down \u2014 so I cut it toward a marker rather than defend it. Second, a genuinely new carry signal appeared where I was not positioned: copper spreads are at their highest since 2021, which is backwardation paying actual positive roll yield, against record prices driven by AI and grid demand into constrained supply. That is the literal 'commodity carry' my mandate names, and CPER expresses it far better than adding back PDBC, which is majority energy and whose three-month return is still negative \u2014 the oil-demand reason I cut PDBC from 24% two weeks ago has not been refuted just because crude bounced, so I leave that weight alone rather than whipsaw myself into paying for the same trade twice. I also trimmed IWM two points and tightened its stop, not because its trend broke \u2014 it made a new 52-week high \u2014 but because it is my highest-beta, most consumer-credit-sensitive holding and the two datapoints that landed this week, retail sales falling for the first time in 14 months and elevated card and auto delinquencies, hit that exposure specifically. Everything that is working is untouched: DBMF, EFA, JEPI and XLF all hold above both moving averages and keep their weights.",
+  "novelty": "This book shares no symbol and no direction with my Round-2 defensive book \u2014 zero same-direction gross-weight overlap \u2014 and expresses an orthogonal idea: Round 2 owns low-beta US quality equity and bullion for capital preservation, while this book stacks negative-beta managed futures, unhedged developed-international currency trend, written-call income, small-cap momentum, financials and now industrial-metal backwardation carry, deriving its return from trend persistence and roll yield rather than from defensive earnings streams.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked both books against 8/14 closes plus this week's macro tape.\n\nMACRO (new since I set these books on 8/10): July CPI cooled and PPI was flat, but July retail sales fell -0.6% \u2014 the first decline in 14 months, as tax-refund stimulus rolled off \u2014 and NY Fed data shows credit-card and auto delinquencies still elevated. Treasury yields fell on the retail print. Jackson Hole is next up with the September cut no longer priced as certain. Net: disinflation plus a visibly cracking consumer, layered on the -23,000 payroll print that drove my last reassessment. That is a confirming regime for a low-beta quality book and a warning for anything consumer-credit-sensitive.\n\nROUND 2 TAPE (all figures 8/14): every long is above both moving averages. XLV $167.37, +1.02% wk, +3.44% mo, +14.14% qtr, +24.94% 1yr, 4.7% above 50d, 9.0% above 200d, beta 0.57, RSI 62 \u2014 leading the defensive set without being extended. SCHD $34.52, +1.83% wk, +8.55% qtr, +25.85% YTD, 5.2%/13.1% above 50d/200d, but RSI 71.9. USMV $101.13, +0.51% wk, +6.25% qtr, 4.0%/6.2% above 50d/200d, RSI 72.2 \u2014 min-vol at RSI 72 is a stretched configuration. XLP $86.09 still the laggard: +1.14% wk but +1.31% qtr and -3.50% half-year. GLD $401.48, +0.76% wk, +10.01% mo, and now only -2.64% below its 200-day after being 3.2% below it a week ago \u2014 the turn I bought is progressing and it stalled precisely at 200-day resistance (~$4,450-4,500 spot), which is normal, not a failure. SMH $587.82 is the single most important read: it is the ONLY instrument on my entire board still below its 50-day (-0.62%), RSI 54, +1.64% over three months against XLV +14.14% and XLF +13.39%, and -12.5% from its 52-week high. My 4% short cost 3.5bp this week and the relative thesis is quietly intact. No stop or take-profit fired.\n\nROUND 3 TAPE: DBMF $31.35, +1.36% wk, +1.52% mo, above both MAs, beta -0.18 \u2014 the cross-asset core is doing its job. EFA $108.64 stalled at +0.08% on the week but sits at its 52-week high with +4.65% mo, +5.01% qtr, 3.9%/8.0% above 50d/200d. JEPI $58.02 +0.76% wk, +3.63% qtr, above both MAs, RSI 68.5 \u2014 for a written-call fund with capped upside that is as good as the sleeve gets. IWM $305.09 printed a new 52-week high, +17.55% half-year, 13.6% above its 200-day \u2014 trend perfect, but it is my highest-beta (1.12) and most consumer-credit-sensitive leg on the exact week retail sales turned negative and delinquencies were flagged. XLF $58.16 +13.39% qtr, above both MAs. PDBC $17.91 was the board's best week at +3.83% (+5.60% mo), driven by USO reclaiming its 50-day (+5.19% above it now) and gold's +10% month \u2014 but its quarter is still -7% to -4%, so the oil-demand reason I cut it from 24% has not been refuted.\n\nTwo legs failed their own tests. ETH: the ETHA/ETHE proxies now sit BELOW their 20-day (-0.86%), RSI decayed to 51, and they are ~21% below the 200-day and 61% off the high. Crypto was the only asset class that did not participate in a third consecutive up week for the S&P. Non-participation in broad risk-on is exactly how a trend mandate identifies a dead trend.\n\nThe genuinely new trend-and-carry signal is copper, not oil: spreads are at their highest since 2021 (backwardation = positive roll yield, literally the commodity carry my mandate names), copper is at record prices on AI/grid demand plus tariff and supply constraints, and CPER $40.01 is +5.12% mo, +12.67% half, +42.94% 1yr, above all three moving averages, only 2.3% from its record \u2014 with RSI at just 57. A trend at a record high that is not overbought is the best setup on my board, and it expresses the carry far more cleanly than adding back PDBC, which is ~55% energy."
+}

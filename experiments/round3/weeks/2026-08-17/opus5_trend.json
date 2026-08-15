@@ -1,0 +1,72 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "Unchanged top weight and still the cleanest, lowest-volatility trend I own. Closed 776.01 with the index at 7,785 after printing a record 7,800 on Thursday, and it booked a third straight weekly gain despite a 0.2% Friday fade on soft retail sales and a UMich sentiment miss. Comfortably above both moving averages with positive 3m momentum at roughly 13% realised vol, which is exactly why inverse-vol sizing keeps it first. I hold it at 22 rather than adding, because a week that made a marginal new high and then closed slightly lower is not new information. Wide -15% catastrophe stop: an index drawdown that size is a regime change, and weekly reassessment is my real exit.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Raised from 11 back toward conviction weight because the specific reason I cut it has been falsified. I trimmed on Iran-Oman talks reopening Hormuz and Goldman framing Brent at $80-90 absent escalation; instead the US-Iran ceasefire broke down, Hormuz stayed closed, and the IEA slashed 2026 global supply by 4.3 mb/d (~4%) to roughly 1.27 mb/d below demand, citing the blockade of Iranian exports, Bab el-Mandeb attacks and reduced CPC Blend flows. Brent $88.38 and WTI $82.37 versus the ~$82/$78 I cut on, oil +34% y/y, and energy was the top S&P sector at nearly +6% on the week with XLE at 61.06 versus ~57.50 in my last book. Both filters strongly positive and re-accelerating. I stop at 17 rather than 19 because 24% realised vol is the highest in the book. Stop widened back from -22% to -25% because the driver is physical supply loss again, not a negotiation.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Nudged from 14 because it made a fresh 52wk high at 169.66 this week, trading 168.01 against the prior 168.53 peak and the 130.13 low \u2014 the trend extended rather than merely held. Still the strongest 3m time-series momentum among my low-volatility sleeves at ~18% vol, above both moving averages with the golden cross intact, and my lowest-correlation equity leg against an index core plus two cyclicals. Nothing in this week's macro \u2014 CPI at 3.4% headline, September hold odds up to 64%, weak consumer prints \u2014 touches the healthcare trend in either direction, which is precisely the point of owning it.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Held flat at 10 with no change because nothing changed: $27.59 versus $27.62 a week ago, still inside a $25.40-$28.84 range, above both moving averages with 1yr +10%. A sideways week is not a signal failure and re-trading a 0.1% move would be pure cost. Its beta of ~0.12 makes it the least equity-correlated thing I own, which matters more this week than last given I have just pushed gross from 78% to 87% and concentrated more of it in a cyclical sector. At ~13% realised vol it is the cheapest diversifying risk available to me and inverse-vol sizing would justify carrying more than I do.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Trimmed from 11 because the slope has flattened while the fundamental risk has rotated. Price is roughly 57.00-57.60, flat to slightly lower on the week off the 57.60 record I bought the extension of, so the trend filter still passes but 3m momentum is no longer being added to. Meanwhile the rate tail I raised weight for has already paid out \u2014 September hold odds went 52% to 64% after a 3.4% CPI \u2014 so that catalyst is spent, and the offsetting risk got worse: July retail sales fell the most in over a year and preliminary August UMich sentiment came in at 51 against 55 expected, which is a consumer-credit headwind for the sector. I keep it because price has not broken, but it no longer earns weight above its inverse-vol baseline.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Trimmed a point from 10 despite an intact trend, for a risk reason rather than a signal reason. The trend is unambiguous \u2014 ~$40.12 near the high end of a $27.27-$40.97 range, COMEX copper $6.59/lb after an all-time intraday $6.77 on 7 August, +4.76% on the month and +47.46% y/y on electrification, grid buildout and AI datacentre demand against tight supply. But the pending Section 232 decision on refined cathode is now the copper market's own stated single biggest catalyst, and CPER holds COMEX futures, which is precisely the leg carrying the tariff premium: the current COMEX-LME spread implies only a 14.6% chance of the recommended phased 15% duty by January 2027, so a delay, scale-back or exclusion of refined copper unwinds pre-tariff warehouse positions and collapses the US premium in a gap that a -25% stop set from entry may not catch. Vol-based sizing does not price jump risk, so I do it by hand.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 5,
+      "leverage": 1,
+      "thesis": "New leg and the only candidate in my screen where both filters point the same way in a direction I can act on, in an asset class where I currently hold nothing. BTC at $62,875 sits below its 20-day, 50-day, 100-day ($66,735) and 200-day ($72,097) EMAs, having failed a 50-EMA breakout within two sessions, with 14d RSI back under its 50 midline. Three-month momentum is decisively negative: roughly $73,469 at the end of May, -20.5% in June (worst month in four years), and about 50% below the $126,000 cycle high, on record spot-ETF outflows and institutional distribution. My rules say short where price and momentum are both negative, and this also restores genuine non-equity, non-commodity risk to a book that had collapsed into US equity beta plus two commodities. Deliberately sized small at 5% and run at 1x \u2014 no liquidation-relevant leverage \u2014 because price has chopped in a $60-64k range for seven weeks and I have just been whipsawed out of three shorts; carry is close to free since perp funding is charged on longs only. Wide -30% stop, i.e. BTC back above roughly $82k, which would be a regime change rather than noise.",
+      "stop_loss_pct": 30.0
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: One leg's exit thesis was falsified by price and one asset class re-entered my universe, so I resize rather than rebuild. Last week I cut XLE from 19 to 11 on the explicit view that the driver had become diplomatic (Iran-Oman talks on reopening Hormuz) rather than physical; that view is now wrong on the facts and, more importantly, wrong on the tape \u2014 the ceasefire broke down, Hormuz stayed shut, the IEA cut 2026 supply by 4.3 mb/d into a 1.27 mb/d deficit, Brent went from ~$82 back to $88.38, and energy was the best S&P sector on the week at roughly +6%. A trend follower who trims into an accelerating trend because of a narrative he has since had to abandon has to put the weight back, so XLE goes to 17 and its stop widens back to -25% to match a physical rather than negotiated driver. Against that I take weight from the two legs whose risk is no longer being paid for: XLF is flat on the week off its record with the slope gone while July retail sales fell the most in over a year and August UMich sentiment printed 51, and CPER's trend is intact but the pending Section 232 refined-copper decision is a binary that would unwind the COMEX premium the fund actually holds \u2014 a gap risk inverse-vol sizing cannot see. XLV earns a point for making a new 52wk high at 169.66. SPY and DBA are untouched because nothing in their signal changed. I also add a small short BTC perp: it is the only candidate where both of my filters point the same way in an asset class I have zero exposure to. I do NOT re-enter gold, silver, uranium or EUR despite all four having moved my way after stopping me out last week \u2014 gold is above its 50dma but still below a 200dma it broke in June, which is a no-signal, and reversing a covered short seven days later is exactly the whipsaw that cost me last week. Net gross 78% to 87%, cash 22% to 13%, because the surviving signals are broadly positive and 22% cash at 4% was pure drag on a book already down 1.42%.",
+  "novelty": "This book is not a variant of any other book I run \u2014 it is a pure systematic time-series trend sleeve whose only inputs are moving-average position and 3-month momentum, and this week that rule set produced a directional short (BTC perp) alongside a commodity-driven energy overweight and an explicit refusal to re-enter four sleeves whose narratives improved but whose 200-day filters have not, which is a different exposure profile from any discretionary long-equity construction.",
+  "research_notes": "Re-scored every leg on my two filters (price vs 50/200dma + 3m time-series momentum) using data through the 2026-08-14 close, and screened the sleeves I exited last week for re-entry.\n\nEQUITY INDEX \u2014 SPY closed 776.01 (S&P 7,785). The index printed a record 7,800 Thursday, gave back 0.2% Friday, and still booked a third consecutive weekly gain. Both filters positive, unchanged; lowest vol in the book.\n\nHEALTHCARE \u2014 XLV traded 168.01 with a fresh 52wk high of 169.66 this week, up from 165.68 and the $168.53 old high. Trend strengthened, not just held.\n\nFINANCIALS \u2014 XLF ~57.00-57.60, essentially flat to slightly lower on the week off its 57.60 record. Still above both MAs so the signal survives, but the slope is gone. Backdrop deteriorated on the consumer side: July retail sales fell the most in over a year and preliminary August UMich sentiment printed 51 vs 55 expected. July CPI +0.1% m/m, 3.4% y/y, core 0.2%/2.5%; PPI final demand unchanged m/m but +4.7% y/y. FedWatch now 64% for a September hold (from 52%), i.e. hike odds fading.\n\nENERGY \u2014 the big change and a direct falsification of last week's cut. I trimmed XLE from 19 to 11 because Iran-Oman talks made the driver \"diplomatic rather than physical.\" The US-Iran ceasefire has since broken down, Hormuz remains shut, and the IEA cut its 2026 supply forecast: global supply -4.3 mb/d (~4%) this year, running ~1.27 mb/d below demand, aggravated by the US blockade of Iranian exports, Bab el-Mandeb attacks and reduced CPC Blend flows. Brent $88.38 (+1.51% Friday, +4.04% on the month, +34.22% y/y) vs the ~$82 I cut on; WTI $82.37. Energy was the top S&P sector on the week, up nearly 6%; XLE 61.06 on 13 Aug vs the ~57.50 in my last book.\n\nCOPPER \u2014 CPER ~$40.12, just off the $40.97 area high; COMEX copper $6.59/lb after an all-time intraday $6.77 on 7 Aug, +4.76% on the month, +47.46% y/y. Trend unambiguously intact. But the Section 232 refined-cathode decision is now the market's own stated \"single biggest catalyst\": the COMEX-LME premium currently implies only a 14.6% probability of the recommended phased 15% duty by Jan 2027, and a stand-down or exclusion of refined cathode would unwind pre-tariff COMEX inventory positions and collapse the US premium fast. That is gap risk a vol-based sizing rule does not see.\n\nAGRICULTURE \u2014 DBA $27.59 vs $27.62, unchanged. Above both MAs, beta ~0.12, cheapest diversifying risk I own.\n\nRE-ENTRY SCREENS ON WHAT I EXITED \u2014 Gold $4,364.96, up over 10% on the month to a two-month high, and it has reclaimed the ~$4,243 level that stopped my short. But it fell through its 200dma in June for the first time since October 2023 and traded near $4,040 in July, against a January all-time high of $5,589; the 200dma sits far above spot. Above the 50dma and below the 200dma is a no-signal, not a long, so I stay flat rather than reverse a position I covered seven days ago. Silver $64.21 same problem. URA $45.25, back at its ~$44.5 50dma \u2014 a coin flip, not a trend, and it just whipsawed me. EUR/USD strength argues a long-EUR trade; I refuse to flip a short I was just stopped out of into a long one week later.\n\nCRYPTO \u2014 the one clean new signal. BTC $62,875, below its 20d, 50d, 100d ($66,735) and 200d ($72,097) EMAs after a failed 50-EMA breakout lasted two sessions; 14d RSI 46.3, back under its midline. Three-month momentum is decisively negative: BTC closed May near $73,469, fell 20.5% in June (worst month in four years), and is roughly 50% off the $126,000 cycle high. Both filters negative in the same direction, which is a short by my rules, and it is the only non-equity, non-commodity sleeve available to me. Caveat I am sizing for: price has been range-bound $60-64k for about seven weeks, so this is a chop risk, and perp shorts pay no funding (10% APR applies to longs only) so the carry cost of being early is near zero."
+}

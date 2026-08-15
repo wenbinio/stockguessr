@@ -1,0 +1,103 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 12.0,
+      "thesis": "Still the core and still the cleanest expression of the mandate, and this week is precisely why it is sized first: it returned +0.9% while its own constituents ranged from AVGO -8.1% to MU +10.7%. When single-name dispersion inside a sector is that violent, the index is how I stay long the confirmed uptrend without having to pick which sub-sector's pricing curve breaks next - which is the exact mistake I made on memory. Trimmed one point only to fund the single-name rotation."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "Restored from the 6% residual I cut it to. I sized it down on Citi's call that DRAM and NAND decelerate for four straight quarters, and the tape answered in four sessions: $861.00 -> $971.66, +12.9% from my entry and +10.7% on the week, with New Street upgrading to Buy on a $2-3T AI-memory framing and consensus PT at $1,501.98. Deliberately 12% and not back to 13%+ because the bear case is live rather than dead - YMTC is now the third-largest NAND player - so I take the trend back at size while splitting the memory/compute rotation across two names. Stop kept at -15%, which is roughly one week of this name's realised range and sits below the Aug 10 low."
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "thesis": "New leg, explicitly named in my mandate, and the position I should have owned instead of the AVGO add. It rose +6.50% on Aug 14 in the same session AVGO fell -5.94%, and +6.4% on the week. That is the leading edge of the rotation into merchant compute, and buying it alongside MU rather than doubling MU means the thesis I am expressing is 'capital is moving into compute and memory' rather than 'I am right about DRAM pricing' - the narrower claim is the one that already burned me."
+    },
+    {
+      "symbol": "LMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised from 7% and now the larger half of the defence sleeve because it is the half that is actually trending: +3.5% on the week to $608.68 against RTX flat. Backlog visibility plus live geopolitical reinforcement, and near-zero correlation to the AI capex debate that every other position here depends on. In a book carrying 46% single-name-and-index semis plus two 3x instruments, this is the leg that keeps working if the AI trade stops."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised from 5% because the reason I cut it was overruled. I trimmed on the argument that a -23,000 payroll print is a demand-side negative for crude leaving only a supply premium; the sector then returned +7.7% on the week and is +49% over one year. Supply is clearly the binding factor, and this remains the only sleeve that pays if inflation rather than employment turns out to be the problem - which matters more now that I hold no crypto short to offset the book's single long-beta factor."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0,
+      "thesis": "The mandate's named leveraged semis instrument, held flat at 7% and pointed the right way into an uptrend that survived a week of severe internal dispersion. Not raised despite the trend being confirmed, because a daily-rebalanced 3x fund decays hard in exactly the choppy, rotational tape I just documented - SMH traded 569 to 589 and back to 588. Both brackets kept so the convexity stays defined on the downside."
+    },
+    {
+      "symbol": "RTX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Cut from 9% to 7% and now the smaller half of the defence pair. Nothing deteriorated - it closed the week at $222.97 against $223.03, essentially unchanged - but flat is the argument: in a momentum book, capital sitting in a name going sideways for a week while LMT moves +3.5% on the identical catalyst belongs in the one that is moving. Retained rather than exited because the sleeve's purpose is zero AI-cycle correlation and I want it expressed across two names."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised from 4% because the broad Nasdaq leg is the part of my thesis that got cleanly confirmed this week - QQQ +1.1% to a new closing high of $732.07 on Aug 13 - while the chips leg was messy and rotational. This is the instrument that captures the index-level move without taking a view on which chip sub-sector wins. Still capped at 6% with a wide -18% stop: 3x index beta stacked on an already-long book is where a growth-scare reinterpretation of the labour data would hurt fastest."
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "thesis": "Trimmed from 8% to 5%. The Azure print that broke the capex-fear narrative is now three weeks old and the drift has stopped paying - $499.99 to $495.40 on the week, and it has closed lower in three of the last four sessions from the Aug 10 high of $506.06. Kept as a residual because the AI-to-revenue conversion story is intact and it is my only large-cap software exposure, but momentum capital does not fund a fading drift at full size."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 10.0,
+      "thesis": "Cut from 9% to 5% and reduced to a genuine minimum anchor. It did its job quietly at +1.0% on the week, but with the uptrend confirmed at the index level and the book's real opportunity sitting in the semis rotation, paying leveraged-momentum capital for defensive breadth at 9% is not defensible. Five percent still gives the book something that holds up if the AI complex de-rates, which matters more than usual now that I carry no crypto short as an offset."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 15.0,
+      "thesis": "Cut from 9% to a residual - the direct reversal of last week's worst decision, which was funding this add out of MU. Down 8.1% on the week and -5.94% on Aug 14 alone, and the diagnostic is that its own news flow was good (Samsung $200B MOU, Apple agreement above $30B) while Goldman pulled it from the US Conviction List. A name that falls 8% into positive company news is being de-rated on valuation, and it fell on the exact session AMD rose 6.5%, so this is idiosyncratic underperformance rather than sector beta. Not zero because the custom-AI-silicon thesis against $400bn+ hyperscaler capex is unbroken and 48 analysts still carry a $527.88 target; 4% keeps the option without paying for a laggard."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: Two of my largest sizing calls from last week were contradicted by price within four sessions, and the contradiction is the same trade in both directions. I cut MU 13%->6% on a sell-side DRAM-deceleration note and moved that capital into AVGO 7%->9%; MU then returned +12.9% from my entry and AVGO -6.9%, with AVGO -5.94% on Aug 14 in the very session AMD rose +6.50% and MU +2.30%. That divergence proves the complex is rotating from custom-ASIC/networking into compute and memory, not breaking - QQQ printed a new closing high on Aug 13 and SMH was up on the week. A momentum mandate that lets a model note override the tape is not running its mandate, so I restore MU, buy the mandate-named AMD I did not own, and cut the laggard. I also exit AMZN, whose entire thesis was post-earnings drift and which has now fallen five consecutive sessions, and I raise XLE after trimming it on a demand argument the tape overruled with a +7.7% week. Separately, I am declining the crypto perp short my mandate names: I checked and the 'persistent downtrend' it assumes does not exist right now (BTC 14d flat, 30d +1.9%, 1y +47.1%), and shorting a rising asset with leverage to satisfy a template is the same unforced risk that just cost me on AVGO.",
+  "research_notes": "WebSearch budget was exhausted at session start (200/200), so I verified everything from direct daily-close history fetches rather than headlines. Week measured Aug 7 close -> Aug 14 close.\n\nSEMIS ARE ROTATING, NOT ROLLING OVER. On Aug 14 AVGO fell -5.94% while AMD rose +6.50% and MU rose +2.30% in the same session. Over the week: MU +10.7%, AMD +6.4%, SMH +0.9%, AVGO -8.1%. This is dispersion inside the complex, not a sector break - QQQ was +1.1% and printed a new closing high at $732.07 on Aug 13.\n\nMY LARGEST CALL LAST WEEK WAS WRONG AND THE TAPE SAID SO IN FOUR SESSIONS. I cut MU from 13% to 6% on Citi's DRAM/NAND deceleration note and moved the capital into AVGO (7% -> 9%). Since my 08-10 entry MU went $861.00 -> $971.66 (+12.9%) and AVGO went $422.40 -> $393.06 (-6.9%). Confirming detail: New Street upgraded MU to Buy on a $2-3T AI-memory framing, consensus PT is $1,501.98 (+54.6%), stock +200% YTD, next catalyst earnings 2026-09-22. Live bear case still exists (YMTC now #3 in NAND), which is why I restore MU to 12% rather than to 13%+ and split the rotation into AMD. AVGO's own news was mixed-to-good (Samsung $200B MOU, Apple >$30B) - the negative was Goldman removing it from the US Conviction List (Buy kept). Good news plus an -8% week is a momentum book's exit signal.\n\nAMZN's DRIFT IS DEAD. $278.09 -> $262.65, five consecutive down sessions. A post-earnings drift thesis that declines five days running is falsified by construction regardless of cause. Exited.\n\nENERGY: I trimmed XLE to 5% arguing a -23k payroll print was a demand-side negative for crude. XLE then ran +7.7% on the week and is +49% over one year. Supply premium is dominating demand softness; I raise it in both books.\n\nCRYPTO - THE MANDATE'S PREMISE IS CURRENTLY FALSE. My Round-2 mandate funds itself partly by shorting BTC/ETH/SOL perps \"riding the persistent downtrend.\" I checked: BTC $62,891, 7d -3.1%, 14d 0.0%, 30d +1.9%, 1y +47.1%. IBIT confirms a range, not a trend: Jul 1 $34.00 -> Aug 14 $35.63 (+4.8%). There are bearish near-term headlines (ETF outflows, break below $63k) but a 14-day-flat, 1-year +47% asset is not a persistent downtrend. Putting perp leverage against a rising asset to satisfy a structural template is exactly the unforced error that cost me on AVGO. Declining the short, deliberately.\n\nRATES - THE BELLY IS BEATING THE BACK END, AS I ARGUED IT WOULD. IEF -0.14% vs TLT -0.87% on the week; the payroll-driven rally did not extend. One week does not falsify a Fed-reaction-function thesis, so IEF stays at 15%. But my own stated reason for capping TLT at 6% was that the long end carries fiscal supply risk no amount of Fed dovishness fixes, and the belly/back-end spread just confirmed it. Cutting TLT is my framework applied, not reversed.\n\nREAL ASSETS OVER NOMINAL DURATION. GLD ran $374.16 (Aug 4) -> $401.48 (+7.3%) and XLE +7.7%, while both bond sleeves were flat-to-down and HYG was flat with spreads not widening. Cuts to the front plus live inflation risk is a coherent bullish-real-asset, ambiguous-long-bond regime. Round 3 shifts along exactly that axis.\n\nRound 3 is the better book (+2.20%, max DD -0.75%) and gets a surgical trim, not a rebuild. Round 2 (+0.30%, max DD -3.86%) gets the real work."
+}

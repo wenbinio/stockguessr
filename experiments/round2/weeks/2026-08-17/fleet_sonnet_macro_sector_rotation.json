@@ -1,0 +1,54 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Small-cap Fed-cut lever continuing to confirm across every timeframe (+1.17% wk, +3.21% mo, +7.26% qtr) \u2014 the cleanest multi-timeframe confirmation in the book; sized up from 12% to 14% to press the trend while keeping the -10% stop.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Industrial capex reacceleration grinding steadily higher (+0.72% wk, +3.53% mo, +6.88% qtr) but still lacks a standout catalyst; held flat at 8% pending a clearer signal, stop -10% unchanged.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Duration/Fed-cut hedge has bled for three straight months (-0.87% wk, -2.58% mo, -3.39% qtr) as yields grind higher rather than falling \u2014 the policy-response thesis isn't being confirmed by price; trimmed from 10% to 6% to cut the cost of carrying an unconfirmed hedge, adding a -8% stop for discipline.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "EM/China rotation posted its worst week since entry (-3.54%), erasing the month's gain and pulling the position toward its -8% stop; trimmed from 12% to 8% to de-risk while the multi-month uptrend (still untested, not technically broken) is given room to prove itself.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Dollar-debasement trade decelerated sharply from last week's +13.76% GDX / +3.46% gold squeeze to a much calmer +0.76% this week, even as the month remains strong (+10.01%); trimmed from 15% to 12% to lock in some of the squeeze-driven gains rather than chase a cooling trade, stop -8% unchanged.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 52,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: FXI posted its worst week since entry (-3.54%), erasing the month's gain and pulling the position toward its -8% stop; GLD's rally decelerated sharply from last week's blow-off (+13.76% GDX/+3.46% gold) to a much calmer +0.76% this week even as the month stays strong (+10.01%); and TLT has now bled for three straight months (-0.87% wk / -2.58% mo / -3.39% qtr) without the Fed-cut policy response the hedge was betting on. Trimmed FXI and GLD to de-risk the two legs that drove recent gains, trimmed TLT since the hedge isn't being confirmed by price, sized up IWM on its clean multi-timeframe confirmation (+1.17% wk / +3.21% mo / +7.26% qtr), held XLI flat, and raised cash from 43% to 52% given reduced conviction in this week's formerly-hottest legs.",
+  "research_notes": "Read the account packet (NAV, positions, stops, entered 2026-08-10) for both books. WebSearch was exhausted for the session, so pulled fresh Perf Week/Month/Quarter data via WebFetch on finviz.com for every held symbol (GLD, IWM, SMH, XLF, XLV, XLI, TLT, FXI, XBI, KRE, SPLV, XLY) plus current price/return context for GLD/IWM/SMH/XLF/XLV via stockanalysis.com, and SOL price/7d/30d change via coingecko.com, all as of the 2026-08-14 close.\n\nKey findings: (1) GLD's momentum decelerated hard, from last week's +13.76% GDX/+3.46% gold squeeze to just +0.76% this week (month still +10.01%) \u2014 a real change from the \"accelerating\" read used to size it up last week. (2) FXI had its worst week since entry (-3.54%), reversing the \"stalled but not reversing\" read from last week and pulling it toward its -8% stop. (3) TLT has now lost money for three straight months (-0.87% wk/-2.58% mo/-3.39% qtr) \u2014 the Fed-cut duration hedge isn't being confirmed by price action, yields are grinding higher not lower. (4) IWM is the cleanest confirming trade in the R2 book across all three timeframes (+1.17% wk/+3.21% mo/+7.26% qtr). (5) SMH's squeeze has cooled sharply (+12.99% wk last week to +0.88% wk now, quarter only +1.64%, weakest quarter read in the R3 book), suggesting the \"exhausted\" AI-infra thesis may be re-approaching viability, but it's still a positive week and this desk has a specific history of stop-outs on this exact short \u2014 chose to wait for an actual down-week rather than re-risk immediately. (6) KRE posted the strongest weekly print in either book (+2.26%), confirming regional-bank breadth beyond the majors. (7) XLV and XBI both show strong quarter-level reads (+14.14%, +16.73%) reaccelerating after a cooling month. (8) XLY's short thesis reconfirmed with its first real down-week (-1.38%) since being trimmed last week on a flat month. (9) SOL-USD is flat/slightly positive near-term but the 6-month breakdown (-37.7%) is intact, no reason to change a no-funding-cost short.\n\nResult: rebalanced both books \u2014 de-risked R2's two hottest/most-decelerating legs (GLD, FXI) plus the unconfirmed TLT hedge into more cash (43%\u219252%), while sizing up R2's cleanest confirming trade (IWM); sized up R3's confirming longs (XLV, KRE, XBI) and reactivated the XLY short, held SOL-USD short flat, and deliberately did not reinstate a semis/AI-capex short given the stop-out history and still-positive (if cooling) SMH tape. R2 and R3 books have zero symbol overlap, so the <50% overlap constraint is trivially satisfied."
+}

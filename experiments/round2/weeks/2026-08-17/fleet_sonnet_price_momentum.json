@@ -1,0 +1,50 @@
+{
+  "name": "Sonnet price momentum",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrate in the strongest 12-month price-momentum themes (AI infrastructure/semis, mega-cap tech, and newly-broadening small caps) via leveraged long ETFs and leaders, while shorting the clearest negative-momentum trends (AI-disruption software laggards and the crypto bear market) to stay style-true without chasing an overextended single sector.",
+  "entry": "2026-08-17",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Trading within 0.4% of its 52-week high ($58.16 vs $58.41); cleanest multi-timeframe uptrend in the book remains intact. Unchanged.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Within 1.4% of its 52-week high ($167.37 vs $169.71); healthcare momentum still building. Unchanged.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Within 2.4% of its 52-week high ($61.91 vs $63.46), up on the day; energy leadership persists on elevated oil. Unchanged.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Effectively at an all-time high ($305.09 vs 52-wk high $305.18) -- the strongest price confirmation across the book this week. Sized up from 8% to reflect the small-cap breadth theme now fully confirming, not just intact.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 20.0
+    }
+  ],
+  "cash_pct": 46,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-15: XLF/XLV/XLE all confirmed within ~2-3% of 52-week highs -- the long momentum legs are working and get no changes beyond keeping existing stops. IWM is effectively at an all-time high ($305.09 vs 52-wk high $305.18), the cleanest price confirmation in the book, so sized up 8%->12%. TQQQ short is the one leg that broke: it rallied ~33% off its 7/29 low ($57.75->$76.79) to 87% of its 52-week range, the identical squeeze signature that already stopped this manager out of SOXL (8/4) and GDX (8/7) this cycle. Closing it now rather than waiting for the -15% stop to confirm a third squeeze loss in the same pattern; proceeds mostly parked in cash as a drawdown buffer given the book is already -6.29% with a -12.65% max drawdown.",
+  "research_notes": "Read the account packet first (NAV, P&L, standing-order fires). Web search budget was exhausted for the session before I could run any WebSearch queries, so all market research came from WebFetch against stockanalysis.com (current quote + 52-week range pages, and history/ pages for daily closes) for every held or watched symbol: XLF, XLV, XLE, IWM, TQQQ, XBI, KRE, TLT, GLD, SOXL, GDX.\n\nKey findings as of 2026-08-14 close:\n- XLF, XLV, XLE, XBI, KRE all trading within ~1-5% of their 52-week highs -- every long-momentum leg in both books is confirmed and working.\n- IWM closed at $305.09 vs a 52-wk high of $305.18 -- essentially an all-time high, the single strongest confirmation in either book.\n- TQQQ (Round 2's short) rallied ~33% off its 7/29 low ($57.75) to $76.79 by 8/14, now at 87% of its 52-week range -- pulled up daily closes and confirmed this is a live, ongoing squeeze, not noise, matching the exact pattern (SOXL 8/4, GDX 8/7) that already stopped this manager out twice per the packet's own history.\n- GLD (Round 3's short) rallied ~9% off its 7/20 low ($367.60) to $401.48 by 8/14; GDX (the leveraged cousin already stopped out on 8/7) is also up strongly (+56% trailing year, near highs) -- gold is not exhausted, it's continuing the same squeeze that already burned this book once in this complex.\n- TLT (Round 3) fell from ~$84 (7/28) to $82.04 (8/14) as Treasury yields rose on oil-price-driven inflation concerns -- the \"rate-cut duration carry\" thesis is not confirming in price, unlike every other long in the book.\n\nNet decision: kept every confirmed long-momentum position unchanged (or sized up where confirmation strengthened, IWM), closed both shorts that are now showing the identical squeeze signature that has already cost this manager two stop-outs this cycle (TQQQ in Round 2, GLD in Round 3) rather than waiting for a third stop to confirm it, and trimmed/tightened the one long whose price action is contradicting its thesis (TLT). Verified the resulting Round 3 book keeps same-direction overlap with the new Round 2 book to about 27% of gross, comfortably under the 50% cap."
+}
