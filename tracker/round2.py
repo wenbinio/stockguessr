@@ -85,6 +85,14 @@ def fetch(symbol: str, retries: int = 4) -> pd.Series | None:
             s = pd.Series(closes, index=pd.to_datetime(list(dates)), name=symbol).dropna()
             # crypto has intraday "today" rows; keep one row per date (last)
             s = s.groupby(s.index).last()
+            if symbol.endswith("-USD"):
+                # Crypto daily bars are UTC days, and the newest one is the LIVE
+                # in-progress bar, not a settled close. Marking off it makes every
+                # crypto mark provisional: on 2026-08-20 five standing orders did
+                # not fire, and on the next run - same date, settled bar - they
+                # did. Drop the unfinished bar so crypto marks are final.
+                today_utc = pd.Timestamp(datetime.now(timezone.utc).date())
+                s = s[s.index < today_utc]
             return s if not s.empty else None
         except Exception:  # noqa: BLE001
             time.sleep(2 ** attempt)
