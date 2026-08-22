@@ -1,0 +1,72 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed from 22 to 20 \u2014 the first cut I have made to it \u2014 because this is the one equity leg whose slope rolled over. The index closed 7,674.37, down 1.4% on the week after a record 7,800 the prior Thursday, so the trend filter still passes comfortably against both moving averages and 3m momentum is still strongly positive, but momentum stopped being added to while three other legs added to theirs. At ~13% realised vol it remains my lowest-volatility trend and therefore still my largest single weight under inverse-vol sizing; I am funding better trends from it, not doubting it. The pressure is identifiable and not yet in price: a 30-year at its highest yield since 2007 with a buyers' strike in the long end since June, which the Treasury's doubled buyback tempers without curing. Wide -15% catastrophe stop \u2014 an index drawdown that size is a regime change, and weekly reassessment is my real exit."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 25.0,
+      "thesis": "Raised from 17 to 19 because the physical driver intensified rather than merely persisted. Brent closed $94.39 against the $88.38 I sized on a week ago and the ~$82 I wrongly cut on two weeks ago, WTI $87.06, with roughly 8 mb/d of the pre-war 20 mb/d Hormuz flow still lost and the US now moving to cut Iran off from banking, shipping registries and settlement entirely \u2014 the 'economic D-day', detail due Monday. XLE at $63.64 versus $61.06 last week against a 52wk range of $42.35-$64.70, +53% on the year: new highs into an escalating supply story is the cleanest configuration in my universe. It stays below SPY's weight only because its ~24% realised vol is the highest in the book and inverse-vol sizing refuses to let a strong signal buy unlimited size. Stop stays wide at -25% precisely because a headline de-escalation gap is the known failure mode and a tight stop guarantees being taken out on the first one."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised from 15 to 17 for exactly the reason I own it: it rose 3.9% to $174.62, within a percent of its $176.60 52wk high, in a week the S&P fell 1.4%. That is about five points of relative strength earned at a 0.56 beta, and it is the only leg that both extended its own trend and diversified the tape. Above both moving averages with the golden cross intact, the strongest 3m time-series momentum among my low-volatility sleeves, +29.2% on the year, ~18% realised vol. I re-verified this against a stale source claiming healthcare fell 4% on the week and is down 29% year-on-year; the tape says the opposite, and trusting that number would have cut my best relative trend. With the long end stressed and gross tilted into two cyclical commodity legs, a low-beta trend that works when the index does not is worth more weight now than last week."
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised from 10 to 11 because the flat leg started trending again. $28.32 against $27.59 a week ago, +2.6%, now pressing the top of its $25.40-$28.84 twelve-month range rather than sitting mid-range as it has for a month, and above both moving averages. I explicitly declined to trade it last week on a 0.1% move and I add now only because this move is real and directional. Its ~0.12 beta makes it the least equity-correlated thing I own and its ~13% realised vol the cheapest risk unit available under inverse-vol sizing, which is what the book needs while I carry energy and copper into an unstable long end. Agriculture is also a natural beneficiary of the same fiscal-debasement impulse that lifted oil, copper and bitcoin this week, without carrying any of their headline binaries."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 18.0,
+      "thesis": "Held flat at 9 with no change and no new information. $57.48 against roughly $57.00-$57.60 a week ago and a $58.41 52wk high \u2014 the trend filter passes, price has not broken, and 3m momentum is still not being added to, which is precisely the state I sized for when I cut it from 11 last week. The rate picture cuts both ways and therefore cuts neither: a 30-year at its highest yield since 2007 steepens the curve in banks' favour, while a buyers' strike in the long end and a Treasury forced into doubled buybacks is systemic stress that lands on financials first. With last week's consumer prints \u2014 the worst retail sales in over a year and UMich at 51 \u2014 still the live downside, this earns its inverse-vol baseline and nothing more. Re-trading a flat week would be pure cost."
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 25.0,
+      "thesis": "Trimmed from 9 to 8, again for risk rather than signal. The trend is intact but has stalled: $39.99 versus $40.12 last week, still near the high end of a $27.37-$40.97 range with +44.6% on the year on electrification, grid buildout and AI datacentre demand. What has not moved is the binary I trimmed for a week ago \u2014 I re-checked Section 232 and refined cathode remains exempt with no determination made, the phase-in at 15% still only contemplated for 2027, and CPER holds exactly the COMEX futures that carry the US tariff premium. A stalled price and an unresolved gap risk in the same leg is worse than either alone, because vol-based sizing prices neither. With the trend no longer paying me to sit through the decision window, I keep taking size off by hand a point at a time while the -25% stop stays wide enough not to be hit by ordinary copper volatility."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 4,
+      "leverage": 1,
+      "stop_loss_pct": 20.0,
+      "thesis": "Replaces last week's 5% short, which my own filters have falsified. I shorted at $62,875 with price under the 20/50/100/200-day EMAs and 3m momentum decisively negative; BTC closed the week near $77,000 after tagging $79,500, +22% \u2014 its best five sessions since March 2024 \u2014 and reclaimed the 200-day moving average for the first time in about 270 days. Price is now above a 50-day anchored in the abandoned $60-64k range and above the 200-day, and 3m momentum has turned positive from ~$73.5k at end-May. My rules are symmetric, so the same evidence that forces me out of the short puts me into a long. It is also not an isolated crypto event: the catalyst was the Treasury doubling long-end buybacks into a 2007-high 30-year yield, plus a White House crypto push and ~$800m of two-day ETF inflows \u2014 the identical fiscal-stress impulse lifting Brent to $94 and copper toward its high. I size at the bottom of the inverse-vol range and run 1x with no liquidation-relevant leverage because every filter is marginal, a one-day-old 200dma reclaim on +4.8% 3m momentum, and a 22% squeeze week is the worst possible entry price. Funding is 10% APR on longs, roughly 0.008% of NAV a week at this size, which is not a reason to avoid the wrapper. The -20% stop sits near $61.5k, back inside the seven-week range, which would falsify the breakout outright rather than merely bruise it."
+    }
+  ],
+  "cash_pct": 12,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: My BTC short's signal inverted, and a systematic trend book that will not close a falsified short has no claim to being systematic. I shorted on price below the 20/50/100/200-day EMAs with decisively negative 3m momentum; BTC has now closed above its 200-day for the first time in roughly 270 sessions, sits far above a 50-day anchored in the abandoned $60-64k range, and 3m momentum has flipped positive (~$73.5k end-May to ~$77k). All three filters point the other way, so the position goes regardless of the ~23% mark-to-market loss \u2014 my stop did not fire, so this is judgment applied to my own rules rather than the engine bailing me out. I flip rather than sit flat because my rules are symmetric, and because the same impulse driving BTC is driving the rest of the book: a 30-year yield at its highest since 2007 on fiscal and war risk, with the Treasury forced into doubled buybacks, is a debasement tape, and Brent at $94, copper near its high and ags breaking their range are the same trade in other wrappers. But every BTC filter is marginal \u2014 a one-day-old 200dma reclaim, +4.8% 3m momentum, after a 22% squeeze week \u2014 so I take the signal at the smallest inverse-vol size I can justify, 4% at 1x with no liquidation-relevant leverage, and let a stop back inside the old range settle whether the breakout was real. Elsewhere I rotate rather than expand: gross goes 87 to 88, essentially unchanged, taking two points from SPY (the only equity leg whose slope actually decelerated) and one from a stalled CPER carrying unresolved tariff jump risk, into the three trends that measurably accelerated \u2014 energy, healthcare and ags.",
+  "novelty": "I manage no Round-2 book, so there is no overlap to constrain; the only structural change here is that my crypto sleeve has inverted from short to a small long, flipping the sign of my sole non-equity, non-commodity exposure.",
+  "research_notes": "Verified every leg against Friday 2026-08-21 closes rather than trusting the packet or the prompt's summary.\n\nCRYPTO (the leg that matters): BTC ~$77,000 at the Friday close after touching $79,500 intraday, +22% on the week \u2014 its best five-day run since March 2024 \u2014 and it reclaimed the 200-day moving average for the first time in ~270 sessions (since Nov 2025). Drivers: Treasury doubling long-end buyback operations from $2bn to $4bn per op (effective Sept 9), a White House crypto summit / CLARITY Act push, ~$800m of spot ETF inflows over two days, and a short squeeze. 1-month +17.5%, 1-year -31.8%. Against my entry of $62,875 my short is ~23% offside; my -30% stop (~$81.7k) did NOT fire, so this is my decision, not the engine's.\n\nMACRO: the week's real story is the long end. A bond selloff took the 30-year to its highest yield since 2007 on fiscal deterioration plus US-Iran escalation; Bessent's buyback expansion pulled 30y back 9bp to 5.196% and 10y to 4.647%, but strategists were explicit that this treats the symptom, not the cause. S&P 500 closed 7,674.37, -1.4% on the week despite Friday's +0.43%. Long-end stress, hard assets bid, equities soft is one coherent debasement/geopolitical impulse, and it is what is simultaneously driving oil, copper, ags and now BTC.\n\nENERGY: Brent closed $94.39 (from $88.38), +5%+ on the week, WTI $87.06. US moving to full economic isolation of Iran, Trump's \"economic D-day\" detail due Monday; ~8 mb/d still lost through Hormuz vs ~20 mb/d pre-war. XLE $63.64 against a 52wk range of $42.35-$64.70 and up from $61.06 a week ago; +53% 1yr total return. Strongest and most re-accelerating trend I own.\n\nEQUITY SLEEVES: XLV $174.62, up from $168.01, just under a 52wk high of $176.60 with +29.2% 1yr \u2014 it OUTPERFORMED a down tape by ~5 points. (An early search hit claiming XLV fell 4.2% and is down 29% y/y was simply wrong; the primary quote page contradicts it, and acting on it unchecked would have cut my best relative trend.) XLF $57.48 vs 52wk high $58.41 \u2014 flat, trend intact, no new information. CPER $39.99 vs $40.12 last week \u2014 stalled just under the $40.97 high; I re-checked Section 232 and refined cathode is STILL exempt with no decision made, phase-in only contemplated for 2027 at 15%, so the binary jump risk I trimmed for last week is entirely unresolved. DBA $28.32 vs $27.59 \u2014 +2.6% and pushing the top of its $25.40-$28.84 range, so the sideways leg has resumed trending."
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "thesis": "Multi-month biotech breakout keeps confirming: up further this week to $165.73 from $154.23, continuing the record-2026-M&A/rotation-out-of-AI story. No new information breaks this thesis; adding from 25% to 30% using freed-up IBIT cash since this is the strongest confirmed trend currently in the book.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Regional-bank uptrend intact and still near its 52-week high ($74.86 vs $78.35 high) on continued lending strength and fee income, though it slipped modestly from last week's $76.21. Adding a bit from 18% to 20% as the trend hasn't broken, sized smaller than the XBI add given the softer week.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 22,
+      "thesis": "Long-bond downtrend still shows on price ($82.05, pinned near the 52-week low of $81.17), but this week's news -- 'Treasury doubled long-bond buybacks, yields fall sharply' -- is the same falling-yield dynamic that's driving gold miners higher, and is a real risk to this short if it continues. Holding size unchanged with the already-tight -8% stop doing the risk work rather than adding into an uncertain signal.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 28,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: IBIT's stop fired this week (2026-08-21 @ $43.68) as BTC ran to ~$77-78k, converting that 20% short into cash and confirming the crypto-weakness leg of the mandate is dead for now -- re-shorting into an active squeeze would repeat the exact GDX mistake the desk already flagged twice. GDX itself is still climbing ($102.83, up again this week, explicitly on falling-yields tailwinds), so that bear leg is also not available. That leaves the book sitting on 35% idle cash with only one working short (TLT) against two live, still-confirmed long uptrends (XBI, KRE). Rather than park cash waiting for a short setup that isn't there, redeploying part of it into the two legs that are actually working, while trimming nothing from TLT's tight -8% stop even though falling-yield headlines this week (Treasury buyback-driven) are a genuine risk to watch.",
+  "novelty": "Zero symbol overlap with the Round 2 AI/semis book -- this account holds no AI/semis names at all (biotech + regional-bank longs against a long-bond short), so same-direction gross-weight overlap between the two books is 0%, well under the 50% cap by construction of the mandate itself.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet (Round 2 NAV $1,052.30 +5.23%, gross 79%/cash 21%; Round 3 NAV $962.13 -3.79%, live book is post-IBIT-stop: XBI 25/KRE 18/TLT short 22/cash 35 after the 2026-08-21 IBIT stop-loss fired at $43.68, confirming the market note that BTC's run to ~$77-78k stopped out crypto shorts field-wide). Verified BTC directly via Google Finance: $77,138, \"Bitcoin Surges as Institutional Demand, Short Covering, Clarity Act Progress Converge\" \u2014 confirms the IBIT stop was correctly triggered and re-shorting crypto now would be fighting a live squeeze.\n\nChecked all five Round 2 names via Google Finance quote pages (Aug 21 close): NVDA $214.72 (-4.6% vs last week's $225.16, but still well inside its -20% stop; Motley Fool/24-7 Wall St both flag Aug 26 earnings as the real catalyst \u2014 normal pre-print consolidation, not a thesis break). AMD $473.25, fresh BMO Strong-Buy upgrade (dated hours before this check) plus Seeking Alpha \"AI Infrastructure Flywheel Is Finally Turning\" \u2014 genuine incremental bullish catalyst on top of last week's Taalas/debt-raise/BofA news. MSFT $483.24 (+0.43%), steady, \"AI boom bigger than investors realize\" coverage, no new risk. AVGO $368.45, up off the post-selloff base, TD Cowen sees 27% upside and calls competition fears \"overblown\" \u2014 stabilizing but not yet fully recovered, so kept de-risked. MU $966.78, roughly flat, CEO framing memory as \"strategic infrastructure of the AI era,\" also has Aug 26 in its news cycle.\n\nFor Round 3, checked GDX, TLT, XBI, KRE. GDX is at $102.83 and still climbing (52-wk range $58-$117), explicitly driven by \"falling yields boosting gold miners\" \u2014 confirms staying out of that short (would have been the same mistake noted in the 8/8 desk note, now doubly confirmed). TLT $82.05, still pinned near its 52-week low ($81.17) so the short thesis hasn't broken on price, but flagged a real risk: recent headlines (\"Treasury doubled long-bond buybacks, yields fall sharply\") point the same direction as the gold-miner move (falling yields), which is a threat to the TLT short if it continues \u2014 watching closely, stop is already tight at -8%. XBI $165.73, up further from last week's $154.23, confirmed continuation of the biotech breakout. KRE $74.86, essentially flat/slightly softer than last week's $76.21 but still near its 52-week high \u2014 uptrend intact, not broken."
+}

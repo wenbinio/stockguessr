@@ -1,0 +1,38 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Sector-relative-value rotation: long the laggard cyclical/value/duration sectors just turning up (financials, regional banks, biotech, long bonds) while shorting the most overextended momentum trades (leveraged semis, gold miners) now breaking down, using hard stops for intraweek risk discipline.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Financials sitting near their 52-week high ($57.48 vs $58.41 high) on continued buyback/dividend strength; increasing 15%->17% as the rotation trade keeps confirming with no contrary signal this week."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Regional banks trading near their 52-week high ($74.86 vs $78.35) with steady positive momentum; increasing 13%->15% as resilient lending/fee trends continue to play out."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 15.0,
+      "thesis": "Biotech rally broadened this week on Moderna's surge pulling the whole sector higher, with XBI now just below its 52-week high ($165.73 vs $169.68); restoring 15%->17% now that fresh data (not just prior-week fatigue) supports the size, keeping the -15% stop."
+    }
+  ],
+  "cash_pct": 51,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: All three rotation longs (XLF, KRE, XBI) are confirming near 52-week highs with sector-specific tailwinds this week, and the book has been sitting on unusually high 57% cash since the GDX and SOXL shorts were both stopped out earlier in the cycle; deploying some of that cash into the working longs while deliberately staying out of new shorts given the tape has squeezed two straight momentum shorts (GDX 8/7, SOXL exit 8/8) and semis/gold have kept rallying since.",
+  "novelty": "Zero symbol overlap with the Round-2 book: R3 holds only broad sector ETFs (XLF, KRE, XBI) versus R2's individual growth names and SOXL/IWM, so same-direction gross-weight overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Read the account packet first (NAV/P&L/positions/fired stops for both R2 and R3). WebSearch was already exhausted for this session (200/200 budget used) so all research was done via WebFetch against Yahoo Finance / Google Finance pages for each held ticker, checked for prices and news dated through 2026-08-21.\n\nR2 holdings checked: SOFI ($18.31, Piper Sandler initiated Overweight $22 PT, no new de-ratings since last week's Mizuho/Goldman/MS cuts), RKLB ($72.57, huge week of contract wins -- $266M Space Force, ~$1B NITE-STAR, $190M HASTE, $8B Iridium -- still ~38% below consensus $112.94 PT), HOOD ($108.13, +13.7% in a single day on CEO's tokenized-stock regulatory push plus a strong Q2 print), ADBE ($275.30, +1.13%, up 45% off June lows after BlackRock added to its stake -- the AI-disruption short thesis is meeting real counter-evidence even though BofA maintains Underperform with a $220 PT), SOXL ($151.53, semis ETFs surging up to 19% this week on renewed AI-trade flows, record weekly inflows), CRSP ($59.50, Citi raised PT to $88, Morgan Stanley also hiked its target, Q2 beat), IWM ($299.96, near 52-wk highs, strategists flagging small-caps as new market leadership).\n\nR3 holdings checked: XLF ($57.48, near 52-wk high $58.41), KRE ($74.86, near 52-wk high $78.35, steady), XBI ($165.73, near 52-wk high $169.68, Moderna-led biotech rally). Considered whether to re-add a short (GDX/SOXL per mandate) but declined -- both prior shorts in this exact complex (GDX 8/7, SOXL 8/8) were squeezed and stopped/closed, and semis/gold have kept rallying since, so re-shorting into a confirmed uptrend was judged too risky this week; stayed long-only and deployed cash into the confirming rotation names instead.\n\nCrypto: BTC's run from ~$63k to ~$78k and the associated standing-order fires (BTC/DOGE stops) do not affect either book -- neither R2 nor R3 holds any crypto, consistent with the R2 mandate's explicit avoidance of crypto exposure. No action needed on that front. Did not re-check GDX price directly since no GDX position is held or being added."
+}

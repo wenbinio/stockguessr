@@ -1,0 +1,87 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Raised from 18% to the largest position in the book because it is the only leg that is both the strongest 12-month trend I own (+86.6%) and accelerating right now: +5.29% on the week, +8.87% on the month, +24.94% over three months, 95.3% of its 52-week range, above all three moving averages, and 2.25% off a high it set on 2026-08-19. Last week I trimmed it for going sideways while energy and defense broke out; defense has since broken down and biotech has broken out, so the trim was wrong and I am reversing it rather than defending it. The 12% stop stays wide on purpose -- at 32% realized vol an 8% stop on an equal-weight biotech index exits on noise instead of on trend damage, and the whole point of concentrating here is to survive the volatility that comes with the return."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Held and nudged up a point. Closed at 99.5% of its 52-week range with the high set 2026-08-20, +2.79% on the week and +52.99% over twelve months, above every moving average. The reason to keep it rather than roll it all into IEO is that XLE is the majors -- 22.8% vol against IEO's 27.7% -- so it carries the theme with less give-back if crude chops. Last week I sized this at 12% and tightened the stop because I feared the driver was a headline premium that could vanish overnight; this week defense fell 8% while energy made new highs, which is the observation that argues the bid is no longer that headline, so I am willing to hold it rather than keep treating it as a rented position."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Raised from 10% because it stopped being merely ballast and became a leader: fresh 52-week high on 2026-08-19, 97.5% of range, 0.6% off the high, +4.33% on the week and +18.39% over three months, with twelve-month momentum improving to +29.2% from the +25.0% that made it my funding source last week. It does the same defensive job it always did -- 20.1% realized vol is the lowest in the book -- but it now earns weight on price as well, and it is the low-volatility way to hold the same healthcare bid that XBI and LABU express with far more torque."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Cut from 14% to a core holding rather than a conviction one. Small-caps are damaged but not broken: IWM is still above all three moving averages at 93.7% of its range with +34.5% over twelve months, but it peaked on 2026-08-14, gave back 1.68% this week, and its three-month return of +6.44% is now middling rather than leading. The mandate names small-caps, so I keep unlevered exposure to the theme, but I am no longer paying for it twice -- the levered small-cap sleeve is gone, so this is now the entire small-cap expression and it is sized for a theme that has stopped leading rather than one that is."
+    },
+    {
+      "symbol": "IEO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 22.0,
+      "thesis": "New position, and the highest-ranked energy vehicle on my board: it closed 2026-08-21 exactly AT its 52-week high with +4.73% on the week, +9.55% on the month, +16.46% over three months and +58.92% over twelve, beating XLE on every single horizon, above all three moving averages. XOP confirms the move at its own fresh high. I want the E&P expression alongside the majors because the decoupling from defense points at oil supply rather than a risk premium, and E&P carries more torque to crude than integrateds do. Sized at 8% and stopped 1pp wider than XLE because at 27.7% vol it moves more, and because entering exactly at a high leaves no margin for error on the entry price."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 16.0,
+      "thesis": "Trimmed from 9%. Large-cap tech is fading rather than failing: still above its 50- and 200-day at 83% of range with +26.7% over twelve months, but its high dates to 2026-06-02, three-month performance is exactly flat at -0.04%, and it lost 2.41% this week. I hold it because it remains the least-bad way to own the AI complex next to a shrunken SMH and because it has not violated a moving average, but a theme whose last three months produced nothing does not deserve the weight of one making new highs, so the marginal points go to biotech and energy."
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Cut from 9% to a residual and the stop tightened from 10% to 8%. Semis have now failed every test except the historical one: below both the 20- and 50-day, 16.2% off a high set back on 2026-06-22, -1.31% over three months and -3.40% over the month, with SOXL -16.8% and XSD -8.46% this week confirming the damage is the basket rather than the wrapper. The +94.6% twelve-month figure is entirely backward-looking. I keep 5% only because the mandate names semis and because a residual is what let me re-enter energy on a real signal instead of a memory -- but it is now an option on re-acceleration, not a position, and the tight stop means a further break takes me out rather than bleeding me."
+    },
+    {
+      "symbol": "LABU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 55.0,
+      "thesis": "New, and it takes over the mandate's select-leverage clause from TNA. The comparison that decides it: LABU is +14.70% on the week, +25.0% on the month, +368% over twelve months, above all three moving averages at 91.1% of its range with its high set 2026-08-19 -- while SOXL, the same 3x structure on a broken trend, sits at 34.7% of range and -32.4% over three months. That gap is a direct measurement of how much daily-rebalancing decay each underlying has absorbed, and biotech has absorbed almost none because XBI has trended without a deep drawdown. Sized at only 5% for 15% effective exposure because 95% realized vol is nearly triple XBI's; the 22% stop is deliberately wide in absolute terms but equals roughly a 7% move in XBI, so it fires on real trend damage before my XBI stop does rather than on a single violent session."
+    }
+  ],
+  "cash_pct": 14,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Four of my nine legs stopped making highs on exactly the same day and rolled together, and the money went somewhere I can name. IWM, TNA, KRE and XAR all set their 52-week high on 2026-08-14 and none has touched it since; KRE, XAR and SMH now sit below both their 20- and 50-day averages. Meanwhile XBI, XLV, LABU, XLE, XOP and IEO all printed fresh 52-week highs on 08-19 to 08-21. That is not noise inside a trend, it is a change in which trends exist, and a mandate that concentrates in the strongest intact themes has to move with it. I exit XAR outright: I bought it eight days ago on a one-month-old breakout and explicitly gave it a tight 9% stop because a young breakout gets less rope than an old trend; it is -7.51% with 1.5pp of headroom left, so waiting for the stop to fill costs me the difference and teaches me nothing I do not already know. I exit KRE because the single fact I held it on last week -- a fresh 52-week high -- is gone and it has given back its 50-day. I exit TNA and replace it with LABU because the select-leverage clause should sit on whichever intact trend is actually leading: LABU is +14.7% on the week at 91% of its range above all three moving averages, TNA is -5.21% and its underlying peaked on the 14th. I cut SMH from 9% to a 5% residual rather than zero, mirroring exactly what I did with energy in July -- a named theme whose 12-month number is still the largest on my board but whose one- and three-month numbers are negative keeps an option, not a position. The two adds are where the highs are: biotech, and energy via IEO. On energy specifically, the decoupling is the signal -- defense fell 8% this week while crude names made new highs, and those two only diverge when the bid is no longer a geopolitical risk premium, which is the precise objection I sized XLE small for last week and which this week's tape answered. And I deliberately did NOT buy the loudest chart on the screen: GDX at +37% on the month has its 52-week high back in February and is negative over six months, which makes it a recovery off a drawdown rather than an intact trend, and buying it would be abandoning the test that the rest of this book is built on.",
+  "novelty": "This book expresses one idea -- own only US equity themes that printed a 52-week high in the last three sessions -- which concentrates 42% into the healthcare/biotech complex and 21% into energy E&P while explicitly refusing the week's strongest one-month mover (gold miners) on the grounds that its high is six months stale.",
+  "research_notes": "Pulled 2y daily adjusted closes through the 2026-08-21 close for my nine holdings plus a 45-name momentum universe (sector/theme ETFs, levered vehicles, metals, bonds) and computed 1w/1m/3m/6m/12m returns, 52-week range position, distance from high, 20/50/200-day MA status, 60-day realized vol, and \u2014 the decisive test this week \u2014 the DATE each vehicle last printed its 52-week high.\n\nThat last column reorganized the board. Fresh 52-week highs made 2026-08-19 to 08-21: XBI, IBB, XLV, LABU, FBT, XPH, IEO, XOP, XLE. Highs made 2026-08-14 and NOT since: IWM, TNA, KRE, XAR. Older and stale: SMH (2026-06-22), QQQ (2026-06-02), GDX (2026-02-27). Leadership rotated out of small-caps, regional banks, defense, semis and megacap tech and into healthcare/biotech and energy inside one week.\n\nLeg detail from my 2026-08-17 entry: XAR -7.51% (worst leg, only 1.49pp of headroom left above its 9% stop) and now below both its 20- and 50-day, one week after I bought a \"clean breakout\"; the whole defense complex broke together (ITA -6.27%, PPA -6.17% on the week). SMH -5.66% since entry, below 20d and 50d, 3m -1.31%, 1m -3.40% \u2014 with SOXL -16.8% and XSD -8.46% on the week confirming the basket, not the wrapper. KRE -3.27%, now below 20d and 50d after peaking 8/14. TNA -5.21% on the week. Book legs contributed roughly -0.51% of NAV this week.\n\nThe important structural read: defense collapsed -8.08% while energy made fresh 52-week highs (XOP and IEO both closed AT their highs, USO +6.35% on the week). Those two move together when the driver is a geopolitical risk premium. They decoupled, which argues the energy bid is now supply/demand rather than the Iran headline I sized around last week \u2014 that is a genuine strengthening of the energy case, not a bounce. IEO beats XLE on every horizon (1w +4.73, 1m +9.55, 3m +16.46, 6m +28.89, 12m +58.92) at 27.7% vol.\n\nBiotech is now the clear leader: XBI +5.29% week, 95.3% of range, +24.94% 3m, +86.6% 12m, 2.25% off a high set 8/19. IBB +7.72% week. LABU +14.70% week, +25.0% month, +368% 12m, above all three MAs at 91.1% of range, high set 8/19 \u2014 versus SOXL at 34.7% of range and -32.4% over three months. That contrast measures which levered trend has absorbed decay and which has not, and it now favours biotech over both semis and small-caps.\n\nExamined and REJECTED: GDX (+14.29% week, +37.07% month, 12m +77.6%) and the precious-metals complex. Its 52-week high is from 2026-02-27 and its 6-month return is -3.23% \u2014 this is a recovery rally off a six-month drawdown, not an intact trend. Same disqualification for SLV (39.6% of range, below its 200-day) and URA (40.2% of range, below 200d). My mandate is intact trends near their highs, not bounces, so I am not chasing metals. Also rejected IGV despite +18.68% on the month: 12m -2.77% fails the primary test.\n\nCrypto: verified BTC at ~$77.2k, consistent with the note about the run from $63k. I hold no crypto in any form and this book has no path to it under an intact-US-equity-trend mandate, so the standing orders that fired across the field do not touch me.\n\nCost check on the proposed turnover: ~52% of NAV traded two-way at ~2bps/side (5bps on the one leveraged name) is roughly 1bp of NAV. Cost is not a constraint on making this change; the rotation is."
+}

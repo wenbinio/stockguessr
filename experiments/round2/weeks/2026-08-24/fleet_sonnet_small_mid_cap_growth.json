@@ -1,0 +1,67 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Small caps remain near 52-week highs (IWM $299.96, +21.4% YTD) with strategists now flagging small-caps as the market leaders beyond mega-cap tech; unchanged core beta position, no new catalyst to resize either direction."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 20.0,
+      "thesis": "Semis rally broadened out this week -- sector ETFs surging as much as 19% and posting record weekly fund inflows on renewed AI-trade enthusiasm; increasing the prior token stake 4%->6% now that the previously 'mixed' sector debate has resolved bullishly, keeping the -20% stop given 3x leverage."
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Piper Sandler initiated fresh Overweight coverage this week ($22 PT, 'powerful product flywheel'), and no new price-target cuts followed last week's Mizuho/Goldman/MS de-rating -- thesis stabilizing rather than deteriorating further, holding at prior size."
+    },
+    {
+      "symbol": "CRSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Citigroup raised its PT to $88 and Morgan Stanley substantially hiked its target this week on the Q2 beat, with 5 more clinical readouts still due in H2; increasing 6%->7% as the pipeline-driven thesis keeps getting fresh analyst confirmation."
+    },
+    {
+      "symbol": "RKLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 20.0,
+      "thesis": "Thesis is confirming hard: this week alone brought a $266M Space Force deal, a near-$1B NITE-STAR win, a $190M HASTE hypersonic contract and an $8B Iridium deal, yet the stock ($72.57) still trades ~38% below the $112.94 consensus target; increasing 7%->9%, keeping the -20% stop given the name's volatility."
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 15.0,
+      "thesis": "AI-disruption short thesis is meeting real counter-evidence -- BlackRock increased its stake this week and the stock has rebounded 45% off June lows (now +1.13% to $275.30) even as BofA stays Underperform; trimming 7%->4% and adding a 15% stop to cap squeeze risk while the still-bearish PT ($220, well below spot) keeps a reduced position warranted."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "Stock jumped +13.7% today on regulatory optimism after the CEO pushed for tokenized-stock approval, on top of a strong Q2 (record prediction-markets revenue, $561M quarterly earnings); holding size given fundamentals keep improving, but adding a 15% stop to protect the outsized single-day gain."
+    }
+  ],
+  "cash_pct": 45,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Multiple theses actively confirming this week (RKLB contract wins, CRSP analyst upgrades, semis rally) while the ADBE short thesis is showing real counter-evidence (BlackRock adding to its stake, stock +45% off June lows) and HOOD just had an outsized one-day pop -- redeploying some cash into the confirming winners, trimming the weakening short, and adding protective stops rather than a full rebuild.",
+  "research_notes": "Read the account packet first (NAV/P&L/positions/fired stops for both R2 and R3). WebSearch was already exhausted for this session (200/200 budget used) so all research was done via WebFetch against Yahoo Finance / Google Finance pages for each held ticker, checked for prices and news dated through 2026-08-21.\n\nR2 holdings checked: SOFI ($18.31, Piper Sandler initiated Overweight $22 PT, no new de-ratings since last week's Mizuho/Goldman/MS cuts), RKLB ($72.57, huge week of contract wins -- $266M Space Force, ~$1B NITE-STAR, $190M HASTE, $8B Iridium -- still ~38% below consensus $112.94 PT), HOOD ($108.13, +13.7% in a single day on CEO's tokenized-stock regulatory push plus a strong Q2 print), ADBE ($275.30, +1.13%, up 45% off June lows after BlackRock added to its stake -- the AI-disruption short thesis is meeting real counter-evidence even though BofA maintains Underperform with a $220 PT), SOXL ($151.53, semis ETFs surging up to 19% this week on renewed AI-trade flows, record weekly inflows), CRSP ($59.50, Citi raised PT to $88, Morgan Stanley also hiked its target, Q2 beat), IWM ($299.96, near 52-wk highs, strategists flagging small-caps as new market leadership).\n\nR3 holdings checked: XLF ($57.48, near 52-wk high $58.41), KRE ($74.86, near 52-wk high $78.35, steady), XBI ($165.73, near 52-wk high $169.68, Moderna-led biotech rally). Considered whether to re-add a short (GDX/SOXL per mandate) but declined -- both prior shorts in this exact complex (GDX 8/7, SOXL 8/8) were squeezed and stopped/closed, and semis/gold have kept rallying since, so re-shorting into a confirmed uptrend was judged too risky this week; stayed long-only and deployed cash into the confirming rotation names instead.\n\nCrypto: BTC's run from ~$63k to ~$78k and the associated standing-order fires (BTC/DOGE stops) do not affect either book -- neither R2 nor R3 holds any crypto, consistent with the R2 mandate's explicit avoidance of crypto exposure. No action needed on that front. Did not re-check GDX price directly since no GDX position is held or being added."
+}

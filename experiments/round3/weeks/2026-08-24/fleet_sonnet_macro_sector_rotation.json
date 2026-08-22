@@ -1,0 +1,75 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Catalyst-driven sector rotation into healthcare/biotech and regional banks funded by shorting exhausted semis/AI-capex and weak discretionary momentum, with a crypto momentum-breakdown short overlay.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Biotech/healthcare catalyst trade reaccelerated sharply (+5.29% wk, +7.27% mo), confirming the quarter's build; sized up from 9% to 11%.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Standout sector of the week (+4.33% wk, +8.97% mo) on Moderna-led strength and an explicit rotation out of chips into healthcare; sized up from 15% to 17%, the largest conviction long in the book.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Financials cooled this week (-1.17%) after a strong run; trimmed modestly from 15% to 13% to help fund the new short leg while the month remains positive (+2.44%).",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Regional banks held their strong multi-week tape with no reversal signal this week; held flat at 12%.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Low-vol ballast trimmed further from 5% to 4% to help fund the new SMH short; still a small defensive sleeve, no new signal either way.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "thesis": "Discretionary short thesis weakened this week -- last week's confirming -1.38% down-week reversed to roughly flat (-0.15%) with a strong Friday bounce; trimmed from 8% to 5% given the softer confirmation, kept alive on the still-modest +2.74% month.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "thesis": "Semis/AI-capex short reinstated with real confirmation this time: -4.66% this week and -4.05% over the month, with coverage explicitly framing a 'chip bear market' as Nvidia/AMD/Broadcom/Meta slide on the bond-yield surge; sized moderately at 8% with a wide stop given this trade type's history of getting squeezed.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0
+    }
+  ],
+  "cash_pct": 30,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Healthcare/biotech continues to confirm hard (XLV +4.33% wk/+8.97% mo on Moderna-led strength, explicitly described in coverage as breaking out 'amid the chip bear market'; XBI +5.29% wk) while financials cooled a touch (XLF -1.17% wk) even as regional banks hold their strong multi-week tape. On the short side, SMH is now genuinely broken rather than squeezing (-4.66% wk, -4.05% mo, with Nvidia/AMD/Broadcom/Meta sliding on the bond-yield surge), so the mandate's semis/AI-capex short leg is finally reinstated with real confirmation instead of last week's ambiguous +0.88% read. The SOL-USD momentum-breakdown short is closed after crypto ripped +24.9% this week on a Treasury-liquidity catalyst -- a violent counter-trend move that directly invalidates the breakdown thesis near-term; no replacement crypto short is added given the active squeeze (BTC $63k->$78k, six standing stops/TPs fired field-wide this week). XLY short trimmed since its confirming down-week reversed to roughly flat.",
+  "novelty": "Zero symbol overlap with the Round-2 book: R2 runs IWM/XLI/GLD/FXI long exclusively, while this book trades an entirely different set of tickers (XBI/XLV/XLF/KRE/SPLV long, XLY/SMH short) -- same-direction gross-weight overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/weekly-monthly performance for every held/candidate symbol via WebFetch (stockanalysis.com, Yahoo Finance, CoinGecko; WebSearch budget was exhausted for the session). Key findings: (1) Crypto: BTC ran $63k(8/17)->$78.3k(8/21, +~22%), SOL is +24.9% for the week to $93.81 -- a violent rally attributed to a \"Treasury repurchase/liquidity\" announcement, i.e. a debasement/liquidity catalyst, not a resumption of the momentum-breakdown thesis my R3 SOL-USD short was betting on. (2) R2 legs diverged sharply from last week's read: GLD reaccelerated (+5.45% wk/+12.95% mo) and FXI rebounded (+2.88% wk) confirming the debasement/EM thesis, while IWM (-1.68% wk) and XLI (-3.36% wk) reversed into red weeks as a broad bond-yield surge hit equities (explicitly hitting Nvidia/AMD/Broadcom/Meta too). TLT hit a fresh 22-year low (-1.92% wk, -8.23% mo, -6% YTD) -- three straight losing months with zero Fed-cut confirmation. (3) R3 legs: XLV (+4.33% wk/+8.97% mo, Moderna-led, explicitly \"breaking out amid the chip bear market\") and XBI (+5.29% wk) confirmed hard; XLF cooled (-1.17% wk); KRE weekly figure unavailable via the sources tried but no reversal signal found (1yr total return 23.6%). SMH is now genuinely down, not just cooling (-4.66% wk, -4.05% mo), unlike last week's ambiguous +0.88% read -- real confirmation for the mandate's semis/AI-capex short leg. XLY's confirming down-week reversed to roughly flat (-0.15% wk vs -1.38% last week)."
+}

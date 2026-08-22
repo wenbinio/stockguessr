@@ -1,0 +1,73 @@
+{
+  "name": "Sonnet growth at a reasonable price",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-asset momentum/mean-reversion rotation: ride confirmed breakout trends (biotech, financials) and fade blow-off-top reversals (semis, gold miners, crypto) using price-action regime signals rather than valuation.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Rate-sensitive financial holding near highs, steady at $351 this week; no trend break. Held at weight."
+    },
+    {
+      "symbol": "ELV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Managed-care compounder, raised FY26 EPS guidance to at least $27; stock +1.1% this week on continued care-model investment. Trend intact, held at weight."
+    },
+    {
+      "symbol": "UNP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Rail duopoly still delivering strong margins/cash flow near 52-wk highs; no reversal signal. Held at weight."
+    },
+    {
+      "symbol": "V",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Resilient consumer spend, efficiency restructuring underway; trend intact. Held at weight."
+    },
+    {
+      "symbol": "PG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Defensive staples ballast against the book's momentum volatility. Held at weight."
+    },
+    {
+      "symbol": "IJR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Small-cap value breadth exposure tracking the broadening rally; no trend break this week. Held at weight."
+    },
+    {
+      "symbol": "CVX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Energy diversifier on cheap FCF yield; trend intact. Held at weight."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "thesis": "New position: biotech has confirmed a breakout from its multiyear bear market -- trading near 52-wk highs on record M&A activity ($106B through mid-2026) and AI-driven drug discovery, with bullish trend signals supporting further upside. Riding a confirmed breakout trend per the mandate, sized with a stop given the sector's volatility."
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: MSTR's stop already fired 8/20 (crypto-proxy squeeze confirmed the fade thesis was fighting the tape, exactly as the entry note warned), leaving ~27% of the book in cash. This week's price-action scan found no fresh short candidate: semis (SMH) show topping signals but NVDA -- the sector bellwether -- is only 8% off its high heading into 8/26 earnings, so a short now is a binary-event bet, not a confirmed reversal, and is exactly the whipsaw pattern that has repeatedly stopped this book out; gold miners (GDX) and crypto are both in confirmed uptrends, not blow-off tops, so neither qualifies as a fade. On the long side, biotech (XBI) is a clean, confirmed breakout -- near 52-wk highs, sector described as breaking a multiyear bear market on M&A and AI-drug-discovery tailwinds -- exactly the trend-following long the mandate is built to ride, so deploying part of the idle cash into it. No other holding showed a trend break this week (JPM, ELV, UNP, V, PG, IJR, CVX all checked, all intact), so those stay at weight.",
+  "novelty": "Zero symbol overlap with the Round-2 GARP book (MSFT/GOOGL/AVGO/META/IWM/UNH/COST/XOM/TQQQ) -- R3 trades an entirely different set of names (JPM/ELV/UNP/V/PG/IJR/CVX/XBI) selected on price-action/trend-confirmation grounds rather than valuation, so same-direction gross-weight overlap is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Verified BTC's violent rally (per market note) is real and hit crypto-adjacent equities hard: COIN closed 8/21 at $186.49, +8.2% on the day alone, with headlines describing a fresh 'crypto bull run' (MARA/COIN/MSTR rallying together) -- the opposite of the 'ongoing crypto bear market' the R2 COIN short was built to hedge. MSTR (R3) closed at $119.25, +6.1% on the day, confirming the same regime change; the packet shows R3's MSTR short was already stopped out 8/20 at $112.39, converting ~7% notional to cash, so R3's live book is JPM/ELV/UNP/V/PG/IJR/CVX (~73% gross) plus ~27% cash even though header stats still print the pre-stop 80/20 split. Checked R2 fundamentals for thesis breaks: MSFT $483 (AI-chip-supply questions and Copilot consolidation noise, no thesis break, still Strong Buy/56 analysts), GOOGL $345 (+1.2%, Marvell-Google $120B custom chip deal and Waymo expansion -- thesis strengthening), AVGO $368 (+1.2%, in talks for $60B+ AI financing deal including Anthropic, Q3 print 9/2), META $550 (recovered from the AH selloff, +0.75%, states-AG trial is a legal overhang not a fundamental one), UNH $390 (-1.37% -- down from the ~$420 level noted 7/30 but still far above the sub-$235 entry base, board just raised the quarterly dividend, no turnaround-thesis break), COST $948 (+1.5%, July comps +8.9%, Medicare Advantage expansion), XOM $165 (steady, Morgan Stanley PT raise to $177), IWM $300 (+0.8%, Russell 2000 near record highs, small-cap breadth thesis intact) -- none of these warrant a change. For R3's price-action mandate, checked the three 'fade blow-off-top' sleeves: semis (SMH) show real cracks -- 'momentum favors bears despite record highs,' a $129M options bet against the ETF, chip names 20%+ off highs -- but NVDA (the sector bellwether) is only ~8% off its 52-wk high heading into 8/26 earnings, i.e. pre-earnings consolidation, not a confirmed top; shorting semis into a binary earnings event is exactly the whipsaw pattern that has repeatedly stopped out GDX/GDXJ/SOXL/MSTR shorts in this book, so I'm passing. Gold miners (GDX) are still in a confirmed uptrend (+3% today, near 52-wk highs, central-bank buying tailwind) -- no reversal signal, so no short there either. Crypto just broke UP, not down -- disqualified as a fade candidate this week. On the long/breakout side, biotech (XBI) is a clean, confirmed signal: trading near its 52-wk high ($165.73), sector described as having 'broken out of its multiyear bear market' on $106B of M&A and AI-drug-discovery tailwinds, with 'bullish trend signals supporting upside targets' -- exactly the kind of confirmed breakout trend the R3 mandate is built to ride, and it's a clean addition to deploy the idle cash sitting since the MSTR stop-out."
+}

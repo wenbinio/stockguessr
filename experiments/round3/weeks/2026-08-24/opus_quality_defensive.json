@@ -1,0 +1,79 @@
+{
+  "name": "Opus Quality Defensive",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Cross-asset carry + trend stacking (crypto trend, equity momentum, covered-call income, managed-futures & commodity carry) with per-position stop-loss/take-profit discipline.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "DBMF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "The structural core of the mandate, untouched for a third week, and it keeps earning the top slot. 31.37-31.54 against 30.94 a month ago and within 1% of its 31.66 high \u2014 a steady grind rather than a spike, which is what a well-behaved managed-futures sleeve should look like. Its value to me is that it re-positions itself across asset classes without my having to be early on every leg by hand, and its negative beta means it is the one line in this book that can be structurally short equities if the tape rolls over. That matters more this week, not less: I have just added 13% of volatile crypto beta, and DBMF is the offsetting exposure that makes carrying that risk reasonable."
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Held at full weight, and the case got stronger rather than merely holding. 108.24 against 104.37 twenty-one sessions ago, sitting within 0.6% of its 108.89 high \u2014 a consolidation at a high, not distribution. The reason I am not trimming into that consolidation is the currency leg of the trade, which is now doing real work: UUP fell from 28.39 to 27.90 over the month and printed a fresh low in the last two sessions. Unhedged developed-international returns get that dollar move mechanically added on top of local equity returns, so this line is trend and currency carry in one instrument, which is exactly what the mandate asks for. It also never had the AI-capex air pocket the US momentum complex went through, so there is no unwind overhanging it."
+    },
+    {
+      "symbol": "JEPI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Trimmed two points, and this is a judgement about the tape rather than a criticism of the fund. It is doing precisely what it is built to do \u2014 57.92 against 56.79 a month ago, essentially flat over the last ten sessions while paying roughly 8% in distributions, so its price return badly understates what it earns. But the market is making new highs with SPY at 765.72, and in a trending-up tape a covered-call sleeve is capped by construction: I give away the upside and keep the premium. That is the right trade in a choppy market and the wrong one in a trending market, and right now the tape is trending. I keep 13% because harvested call premium is a genuine carry source the mandate names, and because if this melt-up does turn choppy this is the leg that starts outperforming immediately. I keep the 10% stop and no take-profit, since a capped-upside instrument has no upside target to take."
+    },
+    {
+      "symbol": "PDBC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Held, and I will say plainly that I under-rated this leg two weeks ago. I cut it to a residual on the argument that a contracting labour market is demand-negative for oil and that one strong week did not repair a broken three-month trend. It has now put in a second strong week \u2014 18.65 against 17.95 a month ago, +3.9%, and within 1.6% of its 18.95 six-month high \u2014 and the driver is no longer just a crude bounce. The dollar fell 1.7% on the month while the 10-year rose 19bp, and a broad commodity basket is a direct beneficiary of that specific combination in a way that a demand-driven oil call is not. I am not adding, because I do not want to reverse a considered decision on momentum alone and because the fund is still majority energy with genuine cyclical exposure. But the reasons to cut it further have gone away, and holding a broad commodity basket into a confirmed debasement regime is right."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Held unchanged. 57.48 against 56.31 a month ago, a little off its 58.41 high after four soft sessions, so the trend is intact but no longer leading. What keeps it at full weight is that the rate move this week is the good kind for banks rather than the bad kind: the 13-week bill rose only 6bp while the 10-year rose 19bp, which is a straightforward bear steepening, and a steeper curve is the textbook setup for wider net interest margin. Consumer credit deterioration remains the live risk and remains exactly why I own XLF rather than KRE \u2014 money-centre banks, insurers and exchanges are far better collateral than regional-bank loan books if card and auto delinquencies keep climbing. I keep the wider 12% stop because I expect this sector to be volatile around the rate repricing rather than because I want to be shaken out of it."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Raised from a 3% marker to a real 8% position, because the confirmation test I set last week has been met on its own terms. I kept 3% rather than zero specifically because I was 'not willing to call it a confirmed downtrend either,' and I said the deciding evidence would be participation in broad risk-on. It has now participated violently: four weeks pinned between $1,860 and $1,915, then a break to $2,524, closing $2,427 for +29% on the week. A long flat base followed by a decisive break and a shallow 4% pullback is the highest-quality entry pattern a trend follower gets, and it is the opposite of the squeezed, already-extended conditions I refused to buy in gold miners. I hold spot rather than a perp deliberately: the funding objection has flipped now that the primary trend is up, but 10x-plus leverage into something that just moved 29% in four sessions means an ordinary retrace liquidates the leg, and I would rather own the trend than gamble on its path. Stop stays at 18%, which from here sits around $1,990 \u2014 above the four-week base, so it triggers if and only if the breakout has genuinely failed. I cut the take-profit from 55% to 40% because roughly $3,400 is a realistic extension from this higher entry, whereas the old target was set from a much lower base and would have me holding for a level the move no longer needs to reach."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut from 10% to 6%, and unlike the rest of this book that is a response to a trend that actually broke rather than one that merely paused. Last week it printed a 52-week high; it has since faded from 305.18 to 299.96, down 1.7% and the only leg on my board that is meaningfully off its high on falling prices rather than consolidating. The rate move makes the reason clear. This leg was powered by the market pricing aggressive cuts, and this week the front end went the other way \u2014 the 13-week bill rose 6bp \u2014 while the 10-year rose 19bp. Small caps are the most rate-sensitive and most consumer-credit-sensitive thing I own at beta 1.12, and higher long rates plus elevated card and auto delinquencies hit small-cap balance sheets and small-cap earnings first and hardest. I keep 6% because the mandate requires equity momentum exposure and the six-month trend is still well intact, but I stop paying full size for the weakest trend in the book, and it is the natural funder for the strongest. Stop stays tight at 8%."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "New, and added alongside ETH rather than instead of it because BTC is the leg actually leading this move. The pattern is the cleanest on my entire board: three weeks compressed between $62,802 and $65,033, then $64,664, $69,418, $73,098, $78,318 in four consecutive sessions, closing $77,227 \u2014 a 20% break out of a tight base with a pullback of only 1.4%. I want the leader as well as the higher-beta follower, because if this is a real crypto trend BTC will carry it with materially less drawdown than ETH, and if it is a false break BTC is where I lose least. Sizing it below ETH at 5% reflects that ETH already gives me the convex expression and I do not need to double it. Spot rather than a perp, for the same reason as ETH: I am not putting leverage on an asset mid-parabola where the 5%-of-margin liquidation rule turns an ordinary shakeout into a total loss on the leg. The 15% stop lands near $65,600, just above the pre-breakout base \u2014 a retrace to the base means the breakout failed and I want out rather than hoping."
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimmed one point as a small risk adjustment, not a change of view. The carry logic that made this the cleanest setup on my board is unchanged: copper calendar spreads at their widest since 2021 means the curve is backwardated and the fund earns positive roll yield simply by holding, which is literally the commodity carry the mandate names rather than a directional bet dressed as carry. But the price has stopped making progress \u2014 39.99 after touching 40.97, so it has given back 2.4% from its high and is only 2.4% above where it was a month ago, which is a flattening trend rather than the record-chasing one I bought. The structural demand story around datacentre power, grid buildout and supply constraints is intact and is why this stays in the book at all, so I take one point rather than acting decisively. Stop and take-profit unchanged."
+    }
+  ],
+  "cash_pct": 11,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: A trend mandate that cuts a leg for failing confirmation is obliged to add it back when confirmation arrives, otherwise the rule is not a rule. Last week I cut crypto to a 3% marker with a precise reason: ETH 'went nowhere in a week when every other asset class I track rallied \u2014 non-participation in broad risk-on is how a trend mandate identifies a dead trend.' That test has now been passed emphatically and in the cleanest possible shape. ETH sat between $1,860 and $1,915 for four straight weeks, then broke to $2,524 and settled at $2,427, +29%. BTC sat between $62.8k and $65.0k for three weeks, then went $64.7k, $69.4k, $73.1k, $78.3k and settled at $77,227, +20%. Long consolidation base, decisive break, shallow 1.4-4% pullback \u2014 that is the specific pattern this mandate exists to buy, and it is the strongest signal anywhere on my board. So crypto goes from a 3% marker to a 13% sleeve, and I add BTC alongside ETH because BTC is leading, is the lower-volatility expression, and diversifies the sleeve. I stay in spot rather than perps: the funding case has flipped in my favour now that the trend is up, but taking leverage into an asset that just moved 25% in four sessions is how you get liquidated on the retrace, and the 5%-of-margin liquidation threshold makes that a real risk rather than a theoretical one. Funding comes from the two weakest trends and from cash. IWM is the one leg that broke down rather than paused \u2014 it printed 305.18 and faded to 299.96 \u2014 and the rate move makes that worse, since the 10-year rose 19bp while the front end rose 6bp, which is the opposite of the cut-driven steepening that powered it. JEPI comes down two points because in a tape making new highs a written-call sleeve caps me by construction; the carry is still worth owning, just not at 15%. CPER gives back a point after fading 2.4% from its high. Everything else holds because it is working: DBMF and EFA are both within 1% of their highs, and EFA in particular is the direct mechanical beneficiary of a dollar that just made a fresh leg down.",
+  "novelty": "The two books share no symbol at all and zero same-direction gross weight: Round 2 is a five-line domestic defensive equity book (healthcare, quality dividends, min-vol, staples) plus bullion, expressing capital preservation and hard-asset protection through low-beta cash-flow equities, while Round 3 is a nine-line cross-asset trend and carry book whose risk sits in spot crypto, managed futures, unhedged international, small-cap momentum, copper roll yield and call premium \u2014 and the two express the same debasement read in deliberately opposite instruments, with Round 2 owning bullion for its lack of volatility and Round 3 owning crypto precisely for its volatility.",
+  "r2_overlap_pct": 0,
+  "research_notes": "WEB SEARCH BUDGET WAS EXHAUSTED before I began, so I priced everything directly off market data endpoints (Yahoo chart API, CoinGecko) rather than reading narrative. That is arguably a better discipline for a week like this one.\n\nREGIME READ \u2014 this is a debasement/hard-asset week, not a growth week:\n- Crypto: BTC $77,275 (peaked $78,318, now 1.4% off). Trajectory is textbook: 3 weeks pinned in $62.8k-$65.0k, then $64.7k -> $69.4k -> $73.1k -> $78.3k in four sessions, +20% off the base. ETH $2,427 (peaked $2,524), same shape: four weeks flat at $1,860-$1,915, then vertical, +29% on the week and ~4% off the peak. Both are long-base breakouts with a shallow pullback, not blow-offs from an extended trend.\n- Gold: GLD $423.36, +12% in 21 sessions ($377.01). Critically, it is still 17% BELOW its 52-week high of $509.70. So this is a recovery trend out of a deep correction, not a chase into a top \u2014 which is precisely the setup I bought two weeks ago and it has now been confirmed by four straight higher weeks.\n- Dollar: UUP $27.90 vs $28.39 a month ago, -1.7%, and it made a fresh leg down in the last two sessions.\n- Rates, and this is the datapoint that changed my mind on one leg: the 10-year backed UP 19bp over the month, 4.545% -> 4.738%. The 13-week bill rose 6bp, 3.647% -> 3.710%. Long yields rising while the dollar falls and gold and crypto rip is a fiscal/debasement signature, not a disinflation signature. It also means long-duration bond-proxy defensives get no help.\n- Equities: SPY 765.72, +2.5% on the month, near highs. Breadth fine but leadership is narrowing away from small caps: IWM printed 305.18 then faded to 299.96, -1.7% off its high.\n\nPOSITION-LEVEL CHECKS:\n- XLV $174.62 vs $152.85 21 sessions ago, +14% on the month, 1.1% under its 52-week high of $176.60. My largest position is also the strongest large-cap sector on my board. Extraordinary, and it is why the book is up.\n- SMH $594.07, up from $569.41 a month ago and up ~3.5% on the week (569-575 range -> 594). This is the second consecutive week the semis short has cost me.\n- USMV $101.23 (+4.8% month, high $101.82); SCHD $35.11 (+2.4%, high $35.31); XLP $85.99 vs $85.36 a month ago (+0.7%, and 4.6% under its 52-week high of $90.14) \u2014 third straight assessment where staples do nothing.\n- DBMF $31.37-31.54 near its $31.66 high; EFA $108.24 near its $108.89 high; JEPI $57.92 flat, +2% month; XLF $57.48, off the $58.41 high; PDBC $18.65, +3.9% month and near its $18.95 high (better than I gave it credit for last week); CPER $39.99, faded 2.4% from its $40.97 high but still above where it was a month ago.\n\nWHAT I CONCLUDED: my Round 2 semis short has now failed the exact falsification test I wrote down for it, and my Round 3 crypto marker has now passed the exact confirmation test it failed a week ago. Both of those were pre-committed conditions, and both triggered. Acting on them is the discipline, not a change of mind."
+}

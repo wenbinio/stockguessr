@@ -1,0 +1,71 @@
+{
+  "name": "Opus Picks-and-Shovels",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long diversified AI-infra suppliers (power + semi-cap + custom silicon) with a contained 15% 3x-semis leverage kicker and a small laggard short; leverage capped so the April-dip-style drawdown stays ~-14%, not -44%.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Raised 11 to 18 and now the anchor. This is the only leg in the book whose demand is physically rationed rather than financed: management says customers are asking for roughly 50% more memory than Micron can commit, and it just committed $10B to an AI memory lab in Boise. That distinction is the whole argument of the week \u2014 an order that cannot be filled cannot be deferred by a tightening credit market, whereas a wafer-fab tool order or a custom-ASIC program can. At $966.78 it sits 23% below its $1,255 high on a 6.72 forward multiple against a $1,515 consensus, which is a 57% gap and by far the cheapest thing I own. Keeping the wide -22% stop: it has run enormously and memory is a genuine cyclical, so it needs room to be wrong without being a catastrophe. Earnings Sept 22, outside the window.",
+      "stop_loss_pct": 22.0
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Trimmed 17 to 14. The physical-constraint case is intact \u2014 $176B backlog, raised revenue guidance, turbines sold to hyperscalers off their own balance sheets rather than through SPVs \u2014 but two things argue for less: the print missed on profit even as revenue guidance rose, and at 44.68x forward this is now the richest multiple in my book at the precise moment the 30-year cleared 5.1% and every long-duration infrastructure buildout gets discounted harder. The stock fell 10% to $956.85 on that combination, not on any damage to the backlog. Target $1,239 leaves ~30% of room, so this stays a core holding, just not a co-largest one. Stop tightened -20 to -18 because a name that has started missing on margins deserves less rope.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Held at 14, essentially untouched. Revenue over $3B at +37.7% y/y with the full-year guide at $12.6B is the cleanest fundamental record in the book, and it closed +2.67% on Friday while the rest of my theme was being sold. Its customers are the hyperscalers paying cash, and compute-fabric demand depends on neither turbine lead times nor wafer-fab order timing, which is why it survives the financing question that just took AVGO down a peg. The risk is honest and unchanged: 40.6x forward against a $241.82 target is a growth multiple in a rising-long-rate tape, which is why it is 14 and not 18.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "AMAT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Held at 12 with only an arithmetic nudge, because nothing new happened. Last week I cut it hard on the read that the market rejected a genuine beat on multiple rather than on quarter, and that wafer-fab equipment is the most financing-elastic link in the chain; this week it went sideways at $492.32 while its peers fell, which is mild confirmation rather than new information. At 27.9x forward against a $641 target the discount is real and I keep a meaningful position, but nothing about the week earns it a promotion. Stop stays -18%: if the competitive threat is structural I want to be taken out early rather than proved right slowly.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut 17 to 6 \u2014 the largest single change I have made, and it is about my reasoning being falsified rather than about the price. I held this at co-largest weight on one specific sentence: that Broadcom's customers were Apple, Google and Samsung rather than debt-financed buyers, so it sat on the safe side of the AI financing question. This week Google signed Marvell for up to $120B of custom AI silicon through 2033 and took a ~$12.2B warrant in the competitor, and Broadcom was reported in talks to raise $60B+ of its own debt to finance customers' compute. The second-source risk and the vendor-financing risk I said did not apply here both now apply. I keep a stub rather than exiting because the Apple multi-year work and the Samsung manufacturing collaboration are untouched, 23.35x forward against a $526 target is the cheapest growth multiple I own after MU, and the Marvell revenue is back-half loaded across seven years. Stop tightened -20 to -15 and I carry Sept 2 earnings knowingly on a size where a bad print costs me under a point of NAV.",
+      "stop_loss_pct": 15.0
+    },
+    {
+      "symbol": "VRT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Trimmed 9 to 8. I raised this last week arguing the market was starting to agree that revenue deferred in a capex cycle this size is not revenue lost, and it promptly fell instead \u2014 so I mark that read as not yet confirmed and take the weight back down rather than average into it. The underlying case survives: power distribution and liquid cooling are physical bottlenecks on the same side of the ledger as GEV, revenue is +26.2% with net income more than doubled, and 28 analysts hold a Strong Buy with a $338 target against $261.95. But 33.5x forward on a name that just missed and whose CEO called the problem temporary is a claim awaiting evidence, so it stays the smallest long. Stop stays -20%.",
+      "stop_loss_pct": 20.0
+    },
+    {
+      "symbol": "CRWV",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "New, and the laggard short my mandate calls for but I have not been carrying. Every long in this book sells equipment into the AI buildout; CoreWeave is the customer buying it with borrowed money. It is planning $35-39B of 2026 capex against roughly $35B of existing debt while losing $1.93B, with no earnings to discount and a stock already 43% below its $153.20 high \u2014 so it is the leg that breaks first if the financing strain the market started pricing this month is real, and the week gave me two fresh datapoints in that direction with Nvidia trimming its OpenAI guarantee and Broadcom itself now borrowing tens of billions to move product. Sized at 6% because consensus is against me at a $144 target and this is a hedge, not a thesis I want to be large in. The Aug 26 NVDA print is deliberately embraced: a blowout hurts this leg while paying my six longs, a miss does the reverse, which is exactly the offset I want carrying a -14.6% drawdown. Stop at a 30% adverse move to survive a squeeze without being an accident; take profit at 35%.",
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 35.0
+    }
+  ],
+  "cash_pct": 22,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: I am not cutting this book because it fell; I am cutting the one leg whose stated reason for existing was destroyed by verifiable news, and rotating the proceeds into the leg the same news makes safer. Two weeks ago I wrote that AVGO earned top weight because its custom-silicon customers were Apple, Google and Samsung rather than debt-financed buyers. This week Google signed Marvell for up to $120B of custom AI silicon through 2033 with a $12.2B warrant attached, and Broadcom itself was reported raising $60B+ of debt to finance customers' compute. Both halves of my sentence are now false, so AVGO cannot stay co-largest at 17 \u2014 it goes to 6, kept only because 23x forward with 43% consensus upside and the Apple/Samsung work is a real business, not because I still believe the moat argument. The money goes to MU, which is the anti-AVGO: customers are begging for 50% more supply than it can commit, so its order book is a shortage rather than a financing decision, and at 6.7x forward against a $1,515 target it is the cheapest physical bottleneck I can own. Second, the macro changed underneath the whole theme \u2014 the 30-year cleared 5.1%, TLT is at a 22-year low, and utilities broke to 52-week lows while the index rose. Long-duration capex equities derate in that tape, so I trim the two fattest multiples I own (GEV at 44.7x after a profit miss, VRT at 33.5x) rather than defend them. Third, my mandate calls for a small laggard short that I have not been carrying, and the regime finally names it: I own the sellers of AI infrastructure, so I short CoreWeave, the buyer funding $35-39B of 2026 capex on $35B of debt while losing money. If AI financing strain is real my longs survive it and CRWV does not; if NVDA blows out on Aug 26 the short pays for itself out of my longs. I am at -14.61% drawdown, the exact tolerance this mandate was written to respect, so I take net exposure from 82% to 72% long against a 6% short and hold 22% cash at 4% instead of adding the 3x-semis kicker \u2014 that kicker is capped by the drawdown limit, and the drawdown limit is where we are.",
+  "research_notes": "WEB SEARCH BUDGET WAS EXHAUSTED for this session, so all verification was done by direct WebFetch of quote/fundamental pages (stockanalysis.com) plus what those pages carried as news context. Marks are Aug 21, 2026 closes.\n\nMACRO REGIME \u2014 this is the week's actual story, and it is not \"risk-off\":\n- 30-year Treasury yield topped 5.1%, highest in nearly a year; TLT $82.05, at the bottom of its 52-week range ($81.17-$92.19) and its lowest in over two decades.\n- Spot gold broke above $4,600/oz (from ~$4,450 a week ago); GLD $423.36. Cited drivers: weaker dollar, Treasury buyback announcements, and US debt-sustainability concerns.\n- SPY $765.72, up on the day and within 1.8% of its high; BTC ran ~$63k to ~$78k per the desk note (I hold no crypto in either book, so no direct action, but it corroborates the read).\n- XLU $42.77, -2.28% on the day and near its 52-week LOW ($41.15) \u2014 bond proxies broke while equities held.\nThat combination \u2014 long yields up, gold up, dollar down, utilities down, index up \u2014 is a fiscal-credibility/debasement rotation, not a growth scare. It is precisely the tape that pays my Round 3 book and taxes my Round 2 book. Round 2 lost 6.16% in the same week SPY rose, which confirms the loss is theme-specific derating, not beta.\n\nROUND 2 MARKS (all vs. last week's entry levels):\n- AVGO $368.45, fwd PE 23.35, target $526.30, -24% from its June peak, earnings Sept 2.\n- GEV $956.85 (from $1,063.25, -10.0%); fwd PE 44.68 \u2014 the richest multiple I own; profit line missed on the print even with revenue guidance raised; target $1,239.46.\n- ANET $188.65 (from $198.82, -5.1%, though +2.67% Friday); fwd PE 40.61; Q2 revenue >$3B, +37.7% y/y, FY guide $12.6B; target $241.82.\n- AMAT $492.32, fwd PE 27.91, target $641.03 \u2014 essentially unchanged on the week after last week's post-beat selloff. No new information.\n- MU $966.78, roughly flat on the week; fwd PE 6.72; target $1,515.11 (+57%); customers are asking for ~50% MORE memory than Micron can commit; announced a $10B AI memory research lab in Boise. Still 23% below its $1,255 high.\n- VRT $261.95, down on the week; fwd PE 33.52, target $338.15.\n\nTHE TWO FACTS THAT BROKE MY AVGO THESIS (both verified, not price-driven):\n1. Google signed an expanded custom-AI-silicon agreement with MARVELL worth up to $120B through 2033, and handed Google a warrant for ~$12.2B of MRVL stock. MRVL is $237.04, 52wk $61.44-$329.88. I held AVGO at co-largest weight explicitly because its custom-silicon customers were \"Apple, Google and Samsung, the strongest balance sheets on earth.\" Google just bought a second source at nine-figure-billions scale and took equity alignment with the competitor.\n2. Broadcom is reported in talks to raise $60B+ (some accounts $70-100B) of DEBT to finance AI chip deals for compute buyers. I held AVGO explicitly because it was NOT on the debt-financed side of the AI buildout \u2014 the vendor-financing pattern the market started punishing after Nvidia trimmed its OpenAI guarantee. Broadcom is now doing exactly that.\nBoth legs of my stated reason are gone in one week. The stock itself is fine at 23x forward with 43% consensus upside \u2014 which is why this is a demotion, not an exit.\n\nSHORT CANDIDATE VERIFIED: CRWV $87.85, -43% from its $153.20 high, unprofitable (-$1.93B), ~$35B of debt against $35-39B of planned 2026 capex, revenue $7.59B ttm. It is the purest debt-financed BUYER of the equipment my book SELLS. NVDA ($214.72, fwd PE 21.42) reports Aug 26 \u2014 inside the window \u2014 which is the right kind of risk for this pairing: a blowout print hurts the short and pays the longs, a weak print does the reverse.\n\nROUND 3 MARKS \u2014 the thesis fired:\n- GDX $102.83 (from $89.97, +14.3%); PE re-rated 13.6 -> 16.23; now only 12% below its $117.18 high versus 23% when I sized it up. The exact miners-lag-bullion divergence I raised weight for closed inside one week.\n- COPX $94.59 (from $85.70, +10.4%, +5.18% on Friday alone); now 5.4% below its $99.99 high versus 14% before.\n- XLE $63.64 (from $61.91, +2.8%) and it printed a NEW 52-week high \u2014 the range top moved from $63.46 to $64.70. Yield 2.38%, PE 20.0.\n- EWZ $35.06 (+2.7%), PE 9.68, yield 3.87% \u2014 the laggard of the commodity complex this week.\n- EWJ $95.18, near its $98.79 high, yield 3.74%; Japan exports +23.2% y/y, fifth straight acceleration, driven by chip shipments.\n- EZU untouched, no new information.\n- UUP $27.90 (from $28.11, -0.75%). The dollar leg I nearly wrote off last week for failing a live test just passed one: gold's break above $4,600 was explicitly attributed to a weaker dollar and debt-sustainability worries, with the long end confirming at 5.1%."
+}

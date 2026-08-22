@@ -1,0 +1,87 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Untraded at 19 for a fourth week and still the anchor. Closed at 97.4% of its 52-week range and outperformed QQQ by 1.9 points this week and by 8.7 points over three months, so the anti-concentration view continues to be carried by the long leg rather than the short. Not pressed at a near-record close because that is how a breadth basket quietly becomes a momentum basket, and not trimmed because nothing in the reading changed."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "thesis": "Untraded at 19. Down 1.68% on the week but still 93.7% of its 52-week range with 12-1 momentum of +30.6% and above its 50-day, and small-cap value (IWN) sits at 95.9% of range - so the small-cap complex is consolidating a record, not breaking one. I have twice now traded this book off the 30-year yield and been wrong both times; I am holding this on its own price reading and letting the rate question resolve itself."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Held at 13, the size I rebuilt to last week, and it is working: +2.79% on the week, +10.68% over two, crude from $82.40 to $87.06, 99.5% of its 52-week range with 12-1 of +41.8% and XOP at a flat 100% of range. Deliberately not pressed despite being my best cyclical - it is 10.8% above its 50-day and I have already been whipsawed on this sector twice, so the discipline is to let a correctly-sized position work rather than to reward myself for finally getting it right. Stop stays -18%, capping the leg at 2.3% of NAV.",
+      "stop_loss_pct": 18.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Restored 8->12, back to the size I cut a week ago. The cut's premise was that the 30-year had risen to 5.26%; the 30-year then touched 5.33% and XBI returned +5.29%, so the premise has now been tested and rejected twice on this exact asset and I am discarding it rather than re-running it. On the measures this mandate is built from XBI is my strongest leg: 95.3% of its 52-week range, 12-1 momentum of +70.1%, +8.1% over its 50-day, +24.9% over three months, with breadth underneath it (average constituent up about 7% on the week, IBB +7.72%, XLV at 97.5% of range) driven by $106B of 2026 sector M&A and a heavy FDA calendar. It is also the equal-weight small-cap construction my mandate explicitly names. Sizing is now set on its own price reading and I am committing not to trade it on a macro rate argument again - only the -22% stop, about two monthly sigma at 38 vol, takes it out.",
+      "stop_loss_pct": 22.0
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Cut 11->7. Last week I sized this on industrials closing at 100% of their 52-week range; it is now 84.3% of range and below its 50-day after -3.36%, and the infrastructure read-through (PAVE -3.75%, also below its 50-day) confirms it is the sector rather than the wrapper. Trimmed rather than exited because 12-1 momentum of +22.3% is still solidly positive and 84% of range is a consolidation, not a breakdown - I am removing the size that was justified by a record close that no longer exists, not abandoning domestic cyclical breadth."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut 10->6. Last week's best non-energy leg is this week's worst at -3.94%, and it now sits at 85.3% of range below its 50-day. The reason matters: with the 30-year at 5.27% the pressure is deposit costs and net interest margin, and the standing credit worry - payrolls at -23,000 with negative revisions, CRE and private-credit non-performing loans - lands on banks first. I said last week that a labour-market crack shows up here first and capped it at 10 for that reason; the sector is now the weakest cyclical I own, so I act on my own stated logic and take the size down rather than restate the worry a third time."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Untraded at 6. Down 5.21% on the week against IWM's -1.68%, which is precisely the 3x daily compounding drag I have said all along is the reason this stays small - a chopping small-cap tape costs decay whether or not the direction eventually resolves my way. Not cut, because 12-1 of +83.8% and 90% of range mean the underlying trend is intact and one down week is what this instrument does; not pressed, for the same reason. Stop stays -25%, capping the leg at 1.5% of NAV."
+    },
+    {
+      "symbol": "XLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "New at 5. Materials closed at a flat 100.0% of their 52-week range, +1.90% on the week and +3.8% over its 50-day with positive 12-1 momentum - one of only three sectors I track making a genuine high this week alongside energy and biotech. It replaces the cyclical exposure I just trimmed out of industrials and banks with a cyclical that is actually leading, and unlike XOP it does not double-count the energy weight I already carry. Sized small at 5 because 12-1 of +13.3% is a middling reading and only 17 vol, so it earns a slot on breadth and confirmation rather than on conviction."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "thesis": "Rebalanced back to the 3% target after +31.5% since 08-17, which banks the excess of the move. Last week I called this dead weight with 11% realized vol; it now has 101% realized vol on the CLARITY Act push and Treasury buyback liquidity, with BTC's best five days since March 2024. I am not adding on that: ETH is still only 29.1% of its 52-week range with 12-1 momentum of -60%, so this is a violent bounce off a deep hole, not an asset that qualifies as a leader, and chasing it at 35bps a side after a 34% week is the definition of paying up for someone else's catalyst. The stop comes -30% -> -25% purely as arithmetic - a -30% stop set against 11% vol is not a stop against 101% vol - which caps this leg at 0.75% of NAV while leaving the convexity the mandate wants intact.",
+      "stop_loss_pct": 25.0
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Untraded at 6 and paying for a second straight week: QQQ -2.41% against RSP -0.49%, and over three months QQQ is -0.04% against RSP's +8.70% with QQQ at 83.0% of its range while RSP sits at 97.4%. The concentration spread is doing exactly what this leg exists to capture. Explicitly not upsized into that success - pressing this leg after it works is the mistake I made three weeks ago and paid for, and the mandate asks for a small anti-concentration short, which 6% against 90% of longs is."
+    }
+  ],
+  "cash_pct": 4,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Leadership rotated inside breadth and my weights are pointed at the half that lost it. Industrials and regional banks closed at 100% of their 52-week ranges eight sessions ago and are now 84.3% and 85.3% of range and both below their 50-day, on a rates grind (30-yr 5.27% after touching 5.33%) plus private-credit and CRE pressure on NIM - so I take XLI 11->7 and KRE 10->6 rather than defending sizes set on readings that no longer exist. The money goes where the breadth signal actually is: XBI back to 12, undoing a cut I made a week ago on the argument that the 30-year had risen, after which XBI returned +5.29% with the 30-year rising. That rate argument has now failed twice in a row on the same asset, so I am retiring it rather than re-running it - XBI is my best-ranked leg in this book on every price measure I use (95.3% of range, 12-1 of +70.1%, +8.1% over its 50-day) and it is literally the small-cap equal-weight construction my mandate names. New XLB at 5 because materials closed at a literal 52-week high with positive 12-1 and 17 vol, replacing the cyclical exposure I just trimmed with the cyclical that is working and without double-counting energy. ETH gets rebalanced back to its 3% target, which banks the excess of a +31.5% week, and its stop comes from -30% to -25% because that stop was set when the asset had 11% realized vol and it now has 101% - the old stop is no longer a stop.",
+  "research_notes": "TAPE (verified via Yahoo daily closes through 2026-08-21 plus news): S&P 500 7,674.37 (-1.4% wk), Nasdaq 26,180.45 (-2.0%), Russell 2000 3,017.87. 30-yr Treasury hit 5.33% Tuesday (highest since June 2007), Bessent doubled long-bond buybacks from $2B to $4B on 08-19, 30-yr fell to 5.184% then round-tripped back to 5.26-5.27% by Friday - the buyback bought two days of relief and nothing more. Crude Sept futures $87.06 (from $82.40). Gold +2.39% to $4,680.\n\nCRYPTO (the market note, checked myself): BTC $78,335 at Friday's close, +24.4% on the week, best five-day run since March 2024; ETH $2,515, +33.8%. Drivers are Treasury buyback liquidity plus Trump meeting crypto executives and pushing the CLARITY Act; ETF inflows ~$800M/day for two days. My R2 ETH sleeve, which I described last week as dead weight with 11% realized vol, is +31.5% since 08-17 and now carries 101% realized vol. Note ETH is still only 29.1% of its 52-week range with 12-1 momentum of -60% - this is a bounce off a deep hole, not a momentum leader.\n\nMY LEG-LEVEL P&L SINCE 08-17 ENTRY: R2 - RSP +0.40, IWM -1.35, XLE +1.69, XLI -3.26, KRE -3.27, XBI +3.89, TNA -4.29, ETH +31.54, QQQ short +2.25. Book roughly +0.49% on the week. R3 - SNOW +0.81, SMH -5.66, PANW -4.76, CRWD -10.26, MU -4.44, NET -4.52, ORCL short +0.12, COIN short -23.87. Book roughly -4.7%. No standing order fired; the COIN short reached -23.9% against a -25% stop, i.e. one session from being taken out of my hands.\n\nBREADTH DIAGNOSTIC (%52-week range / 12-1 momentum / vs 50-day): RSP 97.4/+15.9/+3.1, IWM 93.7/+30.6/+1.1, IWN 95.9/+34.9/+1.4, XLE 99.5/+41.8/+10.8, XOP 100.0/+44.5/+13.3, XLB 100.0/+13.3/+3.8, XBI 95.3/+70.1/+8.1, IBB 95.8/+36.5/+12.2, XLV 97.5/+19.9/+8.0 versus XLI 84.3/+22.3/-0.8, KRE 85.3/+24.6/-0.5, PAVE 76.3/+26.7/-1.9. Breadth did not break - leadership rotated inside it, out of industrials and banks and into energy, materials and biotech. XBI put in +5.29% with the 30-year at 5.27%, which falsifies for the second consecutive week the rate argument I used to cut it. Regional-bank weakness is NIM/CRE/private-credit grind, not a fresh event.\n\nR3 UNIVERSE SCREEN (same three metrics): SNOW 97.9/+36.2/+19.4, PANW 85.0/+77.6/+6.6, FTNT 84.1/+94.9/-1.6, TWLO 80.3/+83.3/+8.5, NET 77.9/+36.1/+9.4, MU 77.5/+756.6/+0.2, XYZ 93.0/+3.2/+4.7 versus SMH 71.7/+102.5/-4.9, CRWD 75.7/+77.2/-0.6, DDOG 71.7/+89.2/-5.5, AVGO 41.9/+36.5/-5.1, VRT 55.1/+140.5/-10.9, KLAC 46.0/+151.8/-16.3, AMAT 59.4/+253.7/-12.1, WDC 57.3/+649.8/-16.2, STX 74.1/+495.7/-4.6. Essentially the whole semi-cap-equipment and memory-storage complex is below its 50-day; the cause is reported as rising long yields compressing the most extended multiples in the sector plus Samsung/SK Hynix supply additions and AI-capex-peak fears, not company news. MU fell only 0.50% while WDC -9.7%, STX -12.7%, KLAC -9.6% - genuine relative strength, though Netlist has filed new ITC and federal actions over DDR5 RDIMM/MRDIMM seeking exclusion orders, a fresh negative I did not have last week.\n\nCRWD SPECIFICS: five consecutive down days, -16%, ~$36B of market cap gone; CTO Elia Zaitsev departing to launch an AI/security fund with no named successor; earnings confirmed 2026-08-26, inside my holding window, with options pricing roughly a 10% move.\n\nEARNINGS DATES CHECKED: CRWD 08-26 (in window), MRVL 08-27 (in window - ruled out as an add despite 12-1 of +194.6% and being the only semi up on the week), MDB/ZM/OKTA/VEEV all late August (ruled out), PANW 09-01 confirmed after close (outside), SNOW 09-02 (outside), TWLO reported 08-06 and FTNT 07-29 (both clear), XYZ and UPST reported early August (clear), ORCL ~09-10 (outside).\n\nLAGGARD SCREEN for the second short slot: the deep-negative 12-1 cohort is squeezing hard - NOW 12-1 -47.6% but +39.7% on the month, ADBE -40.0%/+29.8%, WDAY -43.8%/+56.4%, TEAM -51.3%/+114.4%, ZS -48.3%/+30.1%, SOFI -28.6%/+13.6%. That junk-rally is the direct cause of my drawdown and I will not stand in front of it. UPST is the exception: 12.3% of its 52-week range (lowest in my universe), 12-1 of -56.6% (worst), below its 50- and 200-day, and flat at -0.43% in the exact week HOOD did +13.2% and COIN did +25.6%. ORCL is the other: 15.0% of range, 12-1 -47.9%, and it fell 2.69% while its own laggard cohort bounced."
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 24,
+      "thesis": "Samsara at $39.94, roughly flat post last week's pullback; Buy consensus with PT now $45.22 (13.2% upside) -- the best remaining risk/reward in the book as FLYW/TOST/RBRK targets compress. Upsized from 20% to 24% as top conviction; next earnings not until Sept 3, less near-term event risk than the Aug 27 names.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 45.0
+    },
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 24,
+      "thesis": "Affirm at $77.03, still the largest gap-to-target in the book: consensus PT $91.20 implies 18.4% upside, Buy rating intact. Held flat at 24% into the Aug 27 print -- reward/risk remains the most favorable of any name despite the event risk.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 50.0
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Flywire ran to $19.54 (near its 52-week high of $19.59, +4% on the week) on continued Trustly open-banking momentum, but consensus PT is now only $20.69 -- just 5.9% upside, sharply compressed from the $22-24 bank targets cited last week. Same overextension pattern that triggered prior cuts elsewhere in this book, so trimmed 14%->10% to lock gains; not closed since the Buy rating and partnership momentum are still real.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Toast rallied to $36.64 (+5.4% week) on continued post-Q2 beat/raise momentum, but consensus PT of $38.62 now implies only 5.4% upside, down sharply from the 25-30% upside cited last week as price caught up to targets. Trimmed 14%->10% to reduce exposure into a compressed edge.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Rubrik at $100.09; consensus PT has caught up to $103.07, restoring only a thin 3% upside after last week's above-target overextension. Strong Buy intact and Rubrik Agent Cloud (Claude Code integration) is a fresh catalyst, but with Aug 27 earnings imminent and almost no margin of safety on valuation, trimmed further from 10% to a 5% stub rather than adding back.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 35.0
+    }
+  ],
+  "cash_pct": 27,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Weekly reassessment through 8/21 close: edge has compressed sharply across three names (FLYW, TOST, and to a lesser extent RBRK) as price caught up to consensus targets post-rally, matching the exact pattern that drove prior S/PATH/RBRK cuts in this book -- trimmed those three. SOFI's consensus rating slipped to Hold with thin remaining upside and no new catalyst, so closed. IOT and AFRM still show the best gap-to-target in the book (13.2% and 18.4% upside, Buy ratings) so both are held/upsized as top conviction. Cash raised to buffer two Aug 27 earnings prints (AFRM, RBRK) still in the book.",
+  "research_notes": "Packet showed this manager runs Round 3 only (no Round 2 book), so the <50% overlap/novelty rule for dual Round-2/Round-3 managers does not apply here. Verified current prices/consensus targets for all six holdings via stockanalysis.com as of 8/21 close (WebSearch budget was exhausted for this session, used WebFetch instead): IOT $39.94 (PT $45.22, 13.2% upside, Buy, earnings 9/3); RBRK $100.09 (PT $103.07, only 3.0% upside now vs last week's above-target overextension -- targets caught up to price; Strong Buy; earnings 8/27; new catalyst: Rubrik Agent Cloud for Claude Code, $500M UK expansion); AFRM $77.03 (PT $91.20, 18.4% upside, Buy, earnings 8/27); FLYW $19.54, near 52-wk high $19.59 (PT $20.69, only 5.9% upside, down sharply from the $22-24 bank targets cited last week); TOST $36.64 (PT $38.62, only 5.4% upside, down sharply from the 25-30% upside cited last week post-Q2 beat); SOFI $18.91 (consensus downgraded to Hold, PT $19.98 = 5.7% upside, KBW still Sell $16). Action taken: trimmed FLYW and TOST (edge compressed as price caught up to targets, the same pattern that already triggered S/PATH/RBRK cuts in this book), trimmed RBRK further into its 8/27 earnings print given the thin remaining upside, closed SOFI on the Hold downgrade and exhausted edge, and upsized IOT (best remaining gap-to-target, later earnings date) while holding AFRM flat as the two highest-conviction names. Raised cash to 27% as a buffer ahead of two Aug 27 earnings events still in the book (AFRM, RBRK)."
+}

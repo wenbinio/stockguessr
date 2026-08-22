@@ -1,0 +1,71 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Financial sector dividend harvesting in supportive rate environment; net interest margin expansion validates carry flows; stable 1.3% yield"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Energy sector leading (+32% YTD), highest conviction; AI infrastructure electricity demand and supply discipline support valuations; 3-4% dividend yield"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Defensive quality healthcare with +21.5% YTD upside and +4% 1m momentum; recession-resistant cash flows; secular aging demographic tailwind"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "Pure value rotation core holding; +19.75% YTD demonstrates durability; higher dividend yields; paired with removed QQQ short creates net long value exposure"
+    },
+    {
+      "symbol": "EFA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "thesis": "International developed markets diversification away from US mega-cap concentration; +23% YTD recovery; dividend yields 2-3%"
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Regional banks small-cap financials; net interest margin expansion from higher rates; +26.5% YTD momentum; smaller notional weight controls small-cap risk"
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Japan ADR recovery (+16.76% YTD); Bank of Japan normalization supportive; developed markets value proposition; modest pullback to $94.27 provides fresh entry point"
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Duration ballast and income generation; hedge against equity volatility; if rates stabilize, potential capital appreciation; safe-haven anchor"
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: QQQ short thesis invalidated by early August breakout ending correction phase; QQQ showing recovery momentum contradicts tactical hedge rationale. Dividend/value harvest thesis exceptionally validated: XLE +32% YTD, VTV +19.75% YTD, XLV +21.5% YTD confirm sector rotation durability. Reallocate short proceeds into higher-conviction dividend positions and increase net long exposure to the outperforming value rotation. Novelty: Shift from tactical defensive tech hedging to pure offensive dividend/value harvest positioning with bond ballast.",
+  "r2_overlap_pct": 9.2,
+  "research_notes": "Market data verified through Aug 21, 2026 close: Bitcoin at ~$77k (up from ~$63k start of week), validating capitulation reversal thesis; standing order firings executed perfectly (SOXL sold at $151.53 before cliff to $129.10; BTC longs took profit). QQQ recovered with early August breakout ending correction phase, contradicting tech exhaustion short thesis. Value/dividend thesis firmly validated: XLE +32% YTD (leading all sectors), VTV +19.75% YTD, XLV +21.5% YTD, XLF stable. EWJ at $94.27 up +16.76% YTD. FXI at $35.23 confirming capital rotation OUT of China. Round 2 standing orders executed at market peaks. Round 3 value thesis massively outperforming. Overlap check: EWJ only common holding (~43% of R2's gross = compliant with <50% threshold)."
+}

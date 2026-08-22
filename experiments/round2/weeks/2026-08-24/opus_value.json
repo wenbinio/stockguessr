@@ -1,0 +1,72 @@
+{
+  "name": "Opus Value",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Contrarian mean-reversion: buy deeply oversold crypto and depressed value/quality names, hedge with gold, modest short of frothy 3x-leveraged semis; prudent sizing after backtests showed momentum-shorting is a portfolio killer.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "Held at 18% and now the largest position in the book. Every element of the impulse I bought this for strengthened: WTI went 82.40 to 87.06, TLT closed 82.05 within 1% of its 81.17 52-week low, and the miners confirmed violently with GDX +11.9% in five sessions. GLD itself added 4.4% to 423.36. I do not add, and the reason is the mandate: at 423.36 it is 16.9% below its 509.70 high rather than the 21% discount I was buying into, so each further point of size buys a smaller contrarian edge and a larger momentum bet. Holding a working hedge at unchanged weight is the correct expression here; chasing it is Round 3's job, not this book's."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 12.0,
+      "thesis": "Cut 18->13 with a stop attached for the first time. I am reducing the mechanism of the thesis, not abandoning the valuation. The fundamental record is unchanged and genuinely strong \u2014 Q2 adjusted EPS beat by 30%, targets raised by JPMorgan, Wells Fargo and Goldman, 18.9x forward, dividend just raised, 27 analysts averaging 475.23 against 390.11 \u2014 which is why I keep a double-digit weight in a mean-reversion book. But my stated reason for 18% was that this was an idiosyncratic gap versus a re-rating sector, and that specific claim failed a test I can verify: CVS, CI and HUM fell with it this week while XLV printed a fresh 52-week high driven by pharma. Six consecutive lower weekly closes from 429.09 to 390.11 against a rising tape is a downtrend, and 18% was sized for a mispricing, not for a downtrend I cannot explain. 13% is the weight I can defend on valuation alone."
+    },
+    {
+      "symbol": "NOW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Held at 9% \u2014 the one winner I am deliberately not trimming, and the distinction matters. It gained 9.2% to 128.48, but it is still 34.0% below its 194.73 high against the 36% discount I bought at, so the move barely dented the gap that justified the position. That is the opposite of ETH and CRM, where the run consumed most of the thesis. The offsetting risk is unchanged and is why I do not add either: at a 27.4x forward multiple this is the most rate-sensitive duration I own, and with TLT still pinned near its 52-week low the discount rate keeps moving against it even as 22.2% revenue growth and $1bn+ AI ACV say the business does not."
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "New 9%, funded by the CVS exit, and the direct replacement for the Adobe trade I closed at target last week \u2014 the most extreme valuation dislocation available in large-cap enterprise software. It fell 67% peak-to-trough, bottoming at 114.99 on 2026-07-20, and trades 146.47, some 57.6% below its 52-week high. What makes this a setup rather than a knife is the shape of the last four weeks: 147.02, 150.52, 146.47, 146.47 \u2014 it recovered 27% off the low and then stopped moving instead of rolling over, which is the basing behaviour I look for and precisely what NKE (49% off its high but still making lower lows, -11.8% over 13 weeks) does not show. I size it at 9% rather than higher because the reason it crashed is real and unresolved: the balance sheet was levered hard for the AI datacentre buildout, so this is a capital-structure dislocation and not merely a sentiment one, and I could not read this week's coverage to check whether that financing risk has improved."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Held at 8%, and this week justified why it exists. It gained 4.5% to 174.62, within 1.1% of its 52-week high, while every managed-care name I own fell \u2014 which is the diversification job I bought it for working exactly as specified, and it is also how I diagnosed the problem, since the divergence between this fund and my single names is what told me the issue was the group and not the company. Its composition is now the point: MRK sits 1.3% off its high after +17.2% in four weeks, with LLY, PFE and BMY all within 3% of theirs, so this is my exposure to the half of healthcare that is working while UNH is the half that is not. It stays a stub rather than growing because owning a fund at a 52-week high is not what a contrarian book is for."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Cut 13->8 ahead of the 2026-08-26 print, four days out. Last week I refused to add into this event on the grounds that increasing size into a binary outcome converts a valuation thesis into an earnings bet. The symmetric application of that rule is that when the market pre-pays a third of the thesis before the event, I reduce the event exposure: it ran 9.5% from 190.97 to 209.17 and the gap to the 242.29 consensus has compressed from 23.5% to 15.8%. I keep 8% rather than exiting because the residual gap is still real against net income +29.3% on revenue +11.0%, and because I have no edge on which way the Agentforce adoption debate resolves in one quarter \u2014 which is an argument for carrying less into it, not none."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "New 7%, and the most genuinely contrarian thing in the book. At 82.05 against a 92.19 high and an 81.17 low, long Treasuries are the most consensually hated asset I can find, and the tell is that I have personally quoted the bearish narrative \u2014 bond vigilantes, $40T of federal debt, fresh 52-week lows \u2014 in three consecutive weekly writeups as settled background fact justifying other positions. When I notice myself treating a consensus as furniture, that is precisely when this mandate says to check the other side. The structural reason to own it is that my book has no defense against one specific outcome: gold, crypto, value equity and cyclical healthcare all lose together in a genuine deflationary or risk-off shock, and this is the only asset that pays in it. I size it at 7% and accept that it is falling, because the warning from my backtests was that shorting momentum kills portfolios \u2014 a long in an oversold asset with a bounded floor is the opposite risk shape."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 18.0,
+      "thesis": "Harvested 9->4 with the stop tightened from -25% to -18%. This is the mandate paying out and being collected, not a change of view. I bought it as deeply oversold crypto at 1,912 when it was 62% below its all-time high; at 2,426 it is 51% below, so a quarter of the discount that justified the size disappeared in five sessions on the BTC breakout from roughly 63k to 78k. I am consistent with the Bitcoin exit I made last week for exactly this reason \u2014 a mean-reversion book that holds through the reversion is only pretending to have a rule. The 4% residual stays because 51% below an all-time high is still a real discount and the ETF-inflow story that made me prefer ETH over BTC is intact. The stop tightens because the asymmetry shrank with the discount: less room below means less licence above, and at 35bps a side I would rather be stopped out than round-trip this."
+    }
+  ],
+  "cash_pct": 24,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Three legs delivered the reversion I bought them for in five sessions and one leg was contradicted, so the book harvests and reallocates rather than holding green positions out of inertia \u2014 the same standard I applied to Bitcoin and Adobe last week. ETH ran +26.9% and CRM +9.5%, which is the payout, not the setup: a mean-reversion mandate that does not take reversion when it arrives is just a long book with a story. Against that, managed care is where I was wrong about the mechanism. I argued UNH was being left behind by a sector re-rating; the sector index then made a fresh 52-week high while UNH, CVS, CI and HUM all fell together, and UNH has now closed lower six weeks running. Four issuers declining in lockstep is the market pricing a group-level view, not overlooking one name \u2014 and with my research budget exhausted I cannot read what that view is. Cutting from 25% to 13% is what prudent sizing means when the only evidence for my largest thesis is a gap that keeps widening. The proceeds go into a deeper, fresher dislocation (ORCL, 57.6% off its high and basing) and into the one asset my book has no defense against, since gold, crypto and value equity all lose together in a genuine deflationary shock.",
+  "research_notes": "WebSearch budget for this session was exhausted (200/200) before I could run any query, so all research below is from direct market-data fetches I ran myself rather than news reading. I flag that explicitly because it changed one decision (see managed care).\n\nVERIFIED PRICES, 2026-08-21 close, vs my 2026-08-17 entry marks (not vs 08-14, which double-counts a gap I already took):\nRound 2 \u2014 UNH 395.62->390.11 (-1.4%); CVS 94.01->93.02 (-1.1%); CRM 190.97->209.17 (+9.5%); NOW 117.70->128.48 (+9.2%); GLD 405.49->423.36 (+4.4%); XLV 167.05->174.62 (+4.5%); ETH 1912.20->2426.10 (+26.9%).\nRound 3 \u2014 XLE 62.58->63.64 (+1.7%); GDX 91.89->102.83 (+11.9%); SPMO 155.16->148.73 (-4.1%); SCHD 34.29->35.11 (+2.4%); QUAL 224.63->223.22 (-0.6%); GOOGL 344.00->344.82 (+0.2%); JEPQ 60.56->59.84 (-1.2%); AMZN 261.31->258.63 (-1.0%).\nMacro \u2014 WTI 82.40->87.06 (+5.7%); TLT 82.05 (52wL 81.17, 52wH 92.19); SPY 776.34->765.72 (-1.4%); BTC 64,506->77,219 (+19.7%), IBIT 36.42->43.68 (+19.9%); ETH 52wH 4,953.73, so ETH is now 51% below its ATH vs 62% when I sized it.\n\nWHAT I LEARNED, in order of how much it changed my mind:\n\n1) The week was a hard-asset regime impulse, not a broad rally. Gold miners +11.9%, crude +5.7%, BTC +19.7%, ETH +26.9% \u2014 while SPY fell 1.4%, the momentum factor (SPMO) fell 4.1% and broke its 151-155 consolidation to a lower low, and TLT sat within 1% of a 52-week low all week. Leadership rotated out of the semiconductor/megacap complex into real assets. Both books have to answer that, in opposite ways: Round 2 harvests the reversion it was paid for, Round 3 follows the new leadership.\n\n2) The managed-care problem is a GROUP problem, not a UNH mispricing. I pulled the whole complex: UNH -2.9%, CVS -4.3%, CI -1.8%, HUM -2.6% on the week, while XLV made a fresh 52-week high (174.62 vs 176.60). I then checked what is actually driving XLV: MRK +17.2% over 4 weeks and 1.3% off its high, with LLY, PFE and BMY all within 3% of theirs. So XLV's strength is pharma, and managed care is the group being left behind \u2014 CI is 12.0% off its high and flat over 13 weeks, HUM 11.7% off its high. UNH itself has now closed lower six consecutive weeks: 429.09, 421.55, 417.64, 415.36, 408.74, 395.62, 390.11. My stated thesis was that UNH was being overlooked by a sector re-rating and would catch up. Four issuers moving down together for three straight weeks is the market pricing a sector-level cost-trend or policy view, not overlooking one company. Without news access I cannot identify what that view is \u2014 and carrying 25% of the book on a thesis whose only confirming evidence is a price gap that keeps widening, while I cannot read the other side, is anchoring rather than contrarianism.\n\n3) Screened for the next dislocation. Ran a 17-name quality screen on drawdown depth plus 4-week and 13-week change. NKE is 49.2% off its high but still making lower lows (-11.8% over 13 weeks) \u2014 a falling knife with no turn, skipped. ORCL is the standout: 57.6% off its high, bottomed at 114.99 on 2026-07-20, now 146.47 having built a four-week base (147.02, 150.52, 146.47, 146.47) \u2014 a 27% recovery off the low that then went flat rather than rolling over. Same setup and same sleeve as the ADBE trade I closed at target last week.\n\n4) Verified my standing orders. Nothing fired in either book. ETH's -25% stop was never approached \u2014 it went the other way. GDX's -15% stop off 91.89 sat near 78 while price ran to 102.83, meaning the stop was protecting nothing and needed trailing up.\n\n5) Checked the field-wide crypto event named in the desk note against my own book. Six orders fired across the field; none were mine, because I had already exited BTC last week and my remaining crypto leg was ETH with a stop far below. ETH's +26.9% is the mean-reversion payoff Round 2 exists to capture; BTC's breakout from a long base is a trend initiation Round 3 exists to capture. Same event, two different jobs."
+}

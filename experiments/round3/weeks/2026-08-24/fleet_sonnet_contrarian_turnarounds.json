@@ -1,0 +1,51 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into confirmed sector breakouts/breakdowns (financials, healthcare, biotech momentum, gold-miner and semi-extreme mean reversion) plus a defensive low-vol/utilities vs discretionary relative-value pair, rather than betting on beaten-down single names or fading crowded fear trades.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "$74.86, near its 52-week high of $78.35, with the 'cheaper way to play the AI banking boom' framing still running in coverage and a lending/fee-income rebound confirmed - adding from 17% to 20% on continued strength and adding a +25% take-profit given the proximity to the 52-week high.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "$174.62, essentially at its 52-week high ($176.60), with Moderna-led strength driving 'the healthcare sector's standout week' - adding from 19% to 22% on confirmed breakout momentum and attaching a +25% take-profit given how extended the sector already is.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "$165.73, YTD +34% / 1yr +84%, right at its 52-week high with M&A and trial readouts still cited as tailwinds ('biotech stocks are booming') - adding from 12% to 18%, the single highest-conviction breakout in the book right now, keeping the existing -15%/+30% bracket.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Defensive ballast, unchanged - modest size given it's been 'trounced' by the S&P on a relative basis this cycle, but retained as a small hedge against the added momentum concentration elsewhere in the book.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 33,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Closing the XLU/XLY relative-value pair outright: both legs are now moving adversely at the same time (XLU -2.28% on the day and badly lagging its own utilities category, with press explicitly rebutting the 'AI power demand' thesis it was held on; XLY pushing toward its 52-week high as discretionary keeps rallying) - the identical pattern that forced the GDX short and then the SOXL short out of this book two weeks ago, so exiting proactively instead of waiting for a second and third forced stop in the same complex. Redeploying part of the freed capital into the already-confirmed KRE/XLV/XBI sector breakouts, which are all trading near 52-week highs on intact catalysts, and banking the rest as cash.",
+  "novelty": "Zero symbol overlap with the Round 2 book (pure sector-ETF breakout momentum here vs. single-name AI-disruption-fear turnarounds plus BTC/ETH/gold in Round 2), and this rebalance widens that divergence further by dropping the book's only relative-value pair (XLU/XLY) and concentrating purely in confirmed-momentum financials/healthcare/biotech ETFs plus cash.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/news for every held name plus market context. BTC: ~$77.1k (was $78.3k prior close) after a squeeze from ~$63k that 'decimated' bears per crypto press - confirms the desk's market note; no crypto standing orders fired in my Round 2 book (no TP was set) so both BTC/ETH rode the full move. ETH: $2,423, pulled back ~3.7% intraday off the post-squeeze high even as ETH ETF inflows hit their largest pace since October. ADBE: $275.30 (+45% off June lows, BlackRock stake-building) but BofA reiterated Underperform (PT only raised to $220, still below spot and below the $270.61 Street average) - stock now trades above both bear case and consensus. CRM: $209.17, Q2 earnings land 8/26, Agentforce past $1B revenue supports the AI-turnaround (not AI-disruption-fear) thesis. PYPL: $61.55, FY EPS guidance raised again to $5.38; could not re-verify the Stripe/Advent bid storyline in current coverage, so leaning on the confirmed guidance raise rather than deal speculation going forward. IWM: $299.96, near highs, YTD +21.4%, small-cap-leadership commentary continuing. GLD: $423.36, gold at $4,680 with Morgan Stanley 'doubling down' post-breakout and Goldman now targeting $5,400 - GLD's implied level from that target (~$488) supports raising the TP. Round 3: KRE $74.86 near its 52-wk high, 'cheaper way to play the AI banking boom' theme still running. XLV $174.62, near 52-wk high, healthcare sector strength ('Thank Moderna for the Healthcare Sector's Standout Week'). XBI $165.73, YTD +34%/1yr +84%, biotech momentum still accelerating. XLU $42.77, -2.28% on the day and badly lagging its own category (3.9% YTD vs 12.4% category) with press explicitly noting utilities 'were supposed to be the AI trade' but are up only 4% while a true electrification fund is up 31% - this falsifies the pair's long-leg thesis. XLY $118.02, +1.15% and pushing toward its 52-wk high ($125.01), i.e. the short leg is also moving adversely. Both legs of the XLU/XLY relative-value pair are now failing simultaneously, the same pattern that forced the GDX and SOXL stops two weeks ago in this complex."
+}

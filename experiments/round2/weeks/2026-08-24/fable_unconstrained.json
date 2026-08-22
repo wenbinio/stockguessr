@@ -1,0 +1,46 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Dual-momentum: long 6m leaders that are NOT in sharp 1m correction (cyber-tilted), small unlevered BTC mean-reversion, no leverage, fat cash at 4%",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "PANW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 15.0,
+      "thesis": "Still passes both filters: +4.6% 1m and +7.8% since entry with Wells Fargo at $475 and platform-consolidation momentum; only -9.6% off the high versus CRWD's -15% crash. Sept-1 earnings is the known risk, so the -15% disaster stop stays."
+    },
+    {
+      "symbol": "FTNT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 15.0,
+      "thesis": "Mild -2.9% 1m drift is not a sharp correction, and fundamentals accelerated (Q2 billings +33%, product revenue +52%, Virtue AI deal); weakest momentum in the book so the -15% stop does the exit discipline if the drift becomes a break."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "The 6m leadership pocket NOT in 1m correction right now: Russell 2000 touched all-time highs three times this week, +21% YTD and beating the S&P as breadth broadens \u2014 a rules-clean momentum entry that diversifies cyber concentration into two binary earnings prints. Falling small-cap earnings estimates are the known flaw; price momentum is the mandate and the -15% stop caps the tail."
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "thesis": "Mean-reversion ticket from ~$64.5k is +~20% at ~$77.6k and the regime flipped to momentum (biggest weekly gain since March 2024, Treasury buyback + regulatory tailwinds); still ~37% below the ATH so the reversion runway is not spent. Weight is the mark-to-market drift, not an add (avoids 35bps churn); new -12% stop (~$68k) converts the open gain into a locked-in floor."
+    }
+  ],
+  "cash_pct": 48,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: One rules-driven cut, not a rebuild. CRWD now fails my second momentum filter the same way ANET did on 7/30: a -14.9% six-session crash from the Aug-13 high, heavy insider selling (>$200M incl. the CEO), and new execution risk (CTO quit five days before Aug-26 earnings priced for a 10% swing at 166x forward P/E) \u2014 dual momentum says never hold a leader into a sharp correction plus a binary catalyst. PANW (+4.6% 1m, target raises) and FTNT (-2.9% 1m, mild drift, billings +33%) still pass both filters, so they keep their size and -15% disaster stops. BTC stays: the mean-reversion ticket is +~20% and the regime has flipped to momentum in my favor; I let the mark drift to ~6% rather than pay 35bps to trim, and I add a -12% stop (~$68k) so the worst case still books a gain on the leg. Half the freed CRWD capital goes to IWM, the one 6m leadership pocket NOT in correction (Russell 2000 at records, +21% YTD, broadening breadth), diversifying a cyber sleeve that is wobbling into two earnings prints; the rest sits in 4% cash into the Warsh Jackson Hole speech, which my mandate explicitly budgets for.",
+  "research_notes": "Verified this week's tape from the 8/21 close. (1) Crypto: BTC ran ~20% on the week to ~$77.6k (briefly $78k) on Treasury long-end buybacks, a short squeeze, SEC rule proposals and a White House crypto summit \u2014 my Round 2 unlevered spot BTC ticket from ~$64.5k is +~20% and had no standing orders at risk. (2) Cyber sleeve marks from daily history: CRWD $191.95 (entry 7/31 $190.86, so +0.6%, but -14.9% in six sessions from the $225.53 Aug-13 post-Black-Hat high; CTO Elia Zaitsev departed Aug 20 five trading days before binary Aug-26 earnings, options pricing a ~10% swing, 166x forward P/E, >$200M insider dispositions incl. CEO Kurtz); PANW $357.87 (+7.8% since entry, +4.6% 1m, Wells Fargo PT $475, earnings Sept 1); FTNT $153.51 (-5.2% since entry, -2.9% 1m, Q2 billings +33%, product revenue +52%, consensus Hold). (3) Macro: S&P 7,674 at records, Russell 2000 hit ATHs three times this week (IWM $299.96, ~2% off high, +21% YTD), healthcare best week since June on Moderna/Merck mRNA data, Fed Chair Warsh speaks at Jackson Hole next week. (4) Round 3 marks: GLD $423.36 +1.95% Friday on fiscal/buyback tailwind (breakout above 200dma), EWZ $35.06 +2.7% with Selic cuts continuing, UNH $390 (+1.4%) with analyst PT $475, SVXY $61.57 at its 52-week high with contango intact, BRK-B/XLP unremarkable. Sources: Bloomberg/CNBC BTC coverage, stockanalysis.com quote and history pages, Yahoo Finance/StockStory on the CRWD selloff, CNBC weekly market wraps."
+}

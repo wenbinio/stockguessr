@@ -1,0 +1,87 @@
+{
+  "name": "Opus 5 mean reversion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "AXP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Raised from 12% to 14% and now the top weight, because the ballast job WMT was hired for has to go somewhere and AXP is the only leg that has actually done it. It closed around $332 against $342.48 last week with no company news at all, which deepens the laggard screen on both lookbacks and leaves it roughly 14% below the $387 high. The original setup is unchanged and still unresolved: a beat-and-raise sold on a $50mn revenue shortfall and 12% expense growth, while the stated bear case of consumer credit deterioration is contradicted by provisions improving to $1.1B from $1.4B. Its zero AI-capex exposure is why it sits out melt-up weeks and is exactly what I want when the capex complex unwinds. I size up on a price decline with no information change, which is the one condition under which averaging down is not knife-catching."
+    },
+    {
+      "symbol": "APP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 12% with no trade. It closed $305.77 after another ~2.2% decline and still has not reclaimed the gap, so it remains the knife I described last week and gets no addition despite being the worst-ranked name on both my lookbacks \u2014 that is the whole point of the discipline. But a 2% drift down is not the 9.8% break that justified cutting 16% to 12%, and cutting again on it would be churn dressed as risk management. Nothing fundamental has changed: Q2 net income grew 54.5% to $1.27B on an 84% adjusted EBITDA margin, Q3 is guided to $2.055-2.085B or +46-48% year over year, and the one-percent revenue shortfall traces to the next model step-up landing just after quarter end. Near $100B of market cap that is roughly 20x annualized earnings on a business compounding near 50%. The crowded-momentum-unwind bear case is still winning, which is why the weight stays where I put it rather than going up."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Raised from 10% to 12% because this is the only leg in the book where the turn stopped being a chart pattern and became an event. It closed $362.86, up 5.14% Friday on Clark County clearing driverless robotaxi operation in Las Vegas \u2014 a regulatory approval, not a broker reiteration, which matters because I wrote last week that the decline was fundamental and regulatory in origin and would therefore recover more slowly than a pure flow shock. A regulatory catalyst is precisely the kind of news that shortens that timeline. The $297.38 low has held, the higher-low sequence off the 7/29 print has now resolved upward, and against the $419.77 starting price and a $498.83 52-week high the reversion is still only partly paid. I add two points and not more because I am adding into strength and the position has already been sized up once on this same turn."
+    },
+    {
+      "symbol": "CSCO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Raised from 9% to 11%. It closed $110.61 against $111.55 at entry \u2014 a full week in which the market fell 1.37% and Cisco did nothing, meaning neither the dislocation nor the thesis has moved. The setup is intact: FY26 Q4 revenue $17.25B against $16.82B expected, adjusted EPS $1.22 against $1.17, next quarter guided $18.0-18.2B versus $16.8B consensus, FY27 guided to $72.2-73.4B or +15% at the midpoint, and an 8.4% one-day drop caused entirely by gross-margin mix from hyperscaler AI orders. That is the market repricing mix inside a revenue guide 7% above the Street. I add here rather than to WMT because this is the version of that structure where the guide went up, not down. It also has to carry more of the low-beta, cash-generative, dividend-paying load now that WMT has been demoted. Stops stay at the tighter -15%/+18% rather than mandate-standard 30/30 because this entered on the one-week leg of my ranking as a dislocation buy from near a 52-week high, not as a deep-drawdown buy, so both the recovery and the tolerable loss are proportionally smaller."
+    },
+    {
+      "symbol": "WMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Cut from 14% to 10%. I underwrote the 8/20 print rather than dodging it and it went against me: the stock fell 8.9% to $103.84 and extended to $102.41 on Friday, its worst earnings reaction in ten quarters. The four-point cut is not a directional retreat, it is the removal of a sizing rationale that no longer exists \u2014 14% was the weight of a low-beta ballast leg, and a name that just delivered the largest single-day loss in my book is not ballast. The content of the miss reinforces that: revenue beat at $187.9B and adjusted EPS beat at $0.81, but FY adjusted EPS guided $2.80-2.87 against ~$2.90 consensus, US comps decelerated to +2.6% against +3.8% expected, and 750bps of the margin expansion came from tariff refunds against a 125bps Maximum Fair Price headwind. By my own PEG standard that is an earnings trend turning genuinely negative rather than optically so, and I cap weight when that happens. I keep 10% because the reversion case actually improved on price: at ~$103 it is roughly 23% below the May high and now unambiguously in the bottom decile this mandate exists to own, eCommerce hit double-digit incremental margins for the first time with Marketplace +52% and ads +38%, and every major broker held its rating while cutting targets to $120-131 \u2014 all still above spot. I do not add, because it fell two days running with no reclaim and my rule is that I add to turns and not to knives."
+    },
+    {
+      "symbol": "HONA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 10% with no trade. It closed around $165.5, essentially unchanged, in a week the S&P fell 1.37% \u2014 so the reclaim of the $150.03 capitulation low is holding rather than fading, which is what I needed to see after adding last week. That is quiet confirmation, not fresh evidence, so it earns no additional weight. The cause of the drawdown still distinguishes it from the guide-downs that have cost me: a precision-casting shortage steering scarce components toward Boeing and Airbus production and away from higher-margin aftermarket, which defers revenue against end demand nobody questions. The average target of $218.38 against a $175 low estimate still sits well above spot even after the August cuts. It stays capped at 10% because a casting shortage can plausibly persist several quarters and the freshly spun-off holder base can still produce supply."
+    },
+    {
+      "symbol": "SNPS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 7% into Wednesday's print, deliberately and without resizing. It sits just under $400 against $412 last week, still roughly 39% below the $651.73 high, with full-year guidance raised to $9.625-9.705B revenue and $14.72-14.80 EPS on 42% revenue growth. Q3 FY26 lands 8/26 after the close against consensus of $3.67 EPS on $2.44B, or +40.3% revenue growth, carrying an $11B backlog and two consecutive ~6% EPS beats. This is the event that resolves Design IP softness and the Ansys integration in one direction or the other, and 7% is the size I chose precisely so I could hold it without needing to be right. Trimming it now would be paying costs to avoid a catalyst I already sized for, and adding would be buying a coin flip; both are worse than doing nothing."
+    },
+    {
+      "symbol": "PEG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 7%, with one genuine update in its favour. Last week I flagged that PEG failed to respond to a dovish CPI/PPI print and that non-response to a favorable catalyst is a warning. This week ran the opposite test: a sharp treasury selloff that dominated the tape, plus a down week for equities, is the single combination that should punish a bond proxy hardest, and PEG closed near $75.60 essentially unchanged. Failing to fall on bad news is the mirror image of failing to rise on good news, and it partly answers the concern rather than deepening it. It remains a regulated New Jersey T&D utility with 3,758 MW of carbon-free baseload nuclear, a ~3.5% yield, 56 consecutive years of dividends and a Buy consensus implying ~17% upside, pinned at the bottom of its range. Its value here is structural: with the XLE short gone it is the only leg with neither AI/tech beta nor correlation to the gap-down names. It stays capped at 7% because the earnings trend is genuinely rather than optically negative, which is the wrong ingredient for a reversion name and the same test that just cost WMT four points."
+    }
+  ],
+  "cash_pct": 17,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: Two premises broke in opposite directions and both were sizing premises rather than direction premises. First, WMT was carried at 14% explicitly as the low-beta ballast against four gap-down names; a 9% single-day drop makes it the largest one-day move in my book, so it is no longer ballast and cannot keep ballast-sized weight. Worse for the thesis, this was not a beat-and-raise sold on a secondary line item like CSCO or AXP \u2014 the FY EPS guide came in below consensus and US comps missed by 120bps, so the earnings trend turned genuinely negative rather than optically so, which is the exact standard I use to cap PEG at 7%. I cut to 10% rather than exiting because at $102-104 it is ~23% below the May high with every major broker holding Overweight and targets $120-131 above spot, and selling the whole position into the second down day would be selling the setup at the low. Second, the XLE short goes to zero. Its one measurable claim was that XLE discounted ~$90 crude while Brent sat at $82; Brent is now $91-92, so the gap has not merely closed, it has inverted \u2014 at $63.64 XLE is arguably cheap to the commodity rather than rich. The single catalyst I named for keeping the stub, a Hormuz reopening deal that had been reported as close once, moved further away this week: Iran issued preconditions, Trump abandoned diplomacy and announced unprecedented economic warfare. I will not hold a short whose stated premise has inverted and whose only path to profit is a war ending, any more than I would buy it because the war continues. Redeployment follows my own written rule that I add to turns in progress and not to knives: TSLA is the one confirmed turn, so it gets +2; AXP and CSCO are the low-beta legs that now have to do the job WMT vacated, so they take +2 each at prices no worse than last week; APP is still the knife and gets nothing despite being the worst-ranked name. Cash rises 13% to 17% specifically because removing the short leaves the book with no hedge at all, and I would rather pay for that with 4% cash than with a position I no longer believe in.",
+  "novelty": "I manage only this Round 3 book and run no Round 2 book, so the overlap constraint is not binding; the distinguishing feature of this book remains a rank-based bottom-decile long list against a deliberately abandoned energy short, now expressed long-only with cash as the hedge.",
+  "research_notes": "Verified every leg against 8/21 closes plus the week's news. Market: S&P -1.37%, Nasdaq -2.00%, Dow -0.77% on the week on a treasury selloff; Friday bounced (S&P 7,674.37 +0.43%). My book is +0.96% since the 8/17 entry, so roughly 230bps of relative gain in a down tape. I hold no crypto in any form, so the BTC run from ~$63k to ~$78k and the six standing orders it fired across the field touch me only indirectly \u2014 I checked COIN ($185.21, +5.1% Friday) as a candidate replacement short cluster and declined it.\n\nWMT: Q2 FY27 on 8/20 was a revenue and EPS beat ($187.9B vs $186.8B; $0.81 adj vs ~$0.74) with a raised revenue guide, but the stock fell 8.9% to $103.84 and kept falling Friday to $102.41-$104.28. The reason matters: FY adjusted EPS guided $2.80-2.87 against ~$2.90 consensus, US comps +2.6% against +3.8% expected, and a 750bps tariff-refund windfall drove the profit beat while a 125bps Maximum Fair Price drug headwind pressured the underlying line. Analysts kept Overweight/Buy but cut targets across the board \u2014 JPM $137 to $125, RBC $137 to $131, Guggenheim $135 to $130, Wells Fargo $140 to $120; JPM and BofA are calling it a buying opportunity. Positives: first double-digit incremental eCommerce margins, US Marketplace +52%, ads +38%.\n\nXLE/energy: XLE closed $63.64, sitting against a 52-week high of $64.70, +52.99% on a one-year total-return basis. Brent is now roughly $91-92 with WTI in the mid-$80s; EIA has global inventories drawing 3.8M bpd in Q3. Diplomatically the situation moved away from resolution, not toward it: Iran's parliament speaker issued preconditions Tuesday (sanctions relief, end of military threats) before Hormuz reopens, Trump publicly stepped back from diplomacy, and on Thursday declared \"economic warfare and isolation on an unprecedented scale\" \u2014 an \"economic D-Day\" targeting oil smuggling, currency swaps, ship registries. US pump prices are up nearly $1 year over year to $4.11.\n\nTSLA: closed $362.86, +5.14% Friday, on Clark County/Nevada clearing driverless robotaxi operation in Las Vegas. 52-week range $297.38-$498.83, so the $297-298 washout low held and the higher-low sequence resolved upward on an actual catalyst rather than a broker note.\n\nOthers: APP $305.77, down another ~2.2%, no reclaim of the gap, still the worst-ranked name on both lookbacks. AXP ~$332 versus $342.48, no news, extending the laggard screen. CSCO $110.61 versus $111.55, unchanged since its 8/13 gap-down. HONA ~$165.5, essentially flat, holding the reclaim off the $150.03 low; average target $218.38 (range $175-256). SNPS just under $400 into Q3 FY26 on 8/26 after the close, consensus $3.67 EPS on $2.44B revenue (+40.3% y/y), $11B backlog, two straight ~6% EPS beats. PEG ~$75.60, down only fractionally in a week featuring both a bond selloff and a down tape \u2014 the single condition that should hurt a bond proxy most."
+}

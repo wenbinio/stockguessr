@@ -1,0 +1,84 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "Top momentum rank strengthened, not just retained: +34% YTD (vs a 5-yr average of -5.9% at this date) on the M&A wave, and this week's Moderna/Merck mRNA phase-3 success drove healthcare's best week since June 26 \u2014 the sector catalyst engine is still firing, and biotech's long-duration risk is offset by the catalyst flow."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed 13%->10%: the fiscal long-end spike (30yr 5.33%, 19-yr high; widest KRE/XLF divergence since SVB) is the exact scenario that marks down regional bank bond books, but the steeper curve supports NIM and loan growth/M&A keep 2026 estimates rising \u2014 still a top-5 long, no longer the largest, with the -15% stop as the SVB-tail circuit breaker."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed 11%->9%: industrials keep sector leadership and remain the book's least consumer-levered cyclical, but both tailwinds cited at entry \u2014 cheaper energy inputs and cheaper capital \u2014 reversed this week (WTI $86.90, 10yr 4.69%), so the position shrinks with its edge rather than exiting a still-ranked leader."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Breakout thesis accelerating: gold +~5% this week to $4,600 (highest since mid-May) on $40T debt, Treasury buybacks and a sliding dollar \u2014 the debasement regime is the miners' best case; +15% take-profit added because the $95-105 target zone is now in reach and momentum discipline means monetizing into strength, with the -15% stop unchanged."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15.0,
+      "thesis": "New fifth long replacing JETS: healthcare rose 4%+ for its best week since June 26 on the Moderna/Merck mRNA phase-3 win, giving large-cap pharma fresh cross-sectional leadership with defensive earnings that also fit a cracking-consumer tape; sized at 8% rather than full because it shares partial factor exposure with XBI under the correlation-dedupe rule."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Held at 7%, thesis now double-confirmed: the consumer contraction (retail sales -0.6%, sentiment 51.0) is intact and the rate-relief risk I stopped against has inverted \u2014 long yields at 19-year highs raise financing costs on houses, cars and cards, hitting discretionary first."
+    },
+    {
+      "symbol": "XHB",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "New bottom-3 short replacing XOP: a genuine broken downtrend (-3.9% trailing year while the market rose ~20%) with a fresh catalyst \u2014 housing starts plunged 10% as mortgage rates push 7%, builders are buying revenue with incentives, and the fiscally-driven long end (30yr 5.24-5.33%) keeps the pressure structural; -12% stop guards a Bessent-buyback rate-relief squeeze."
+    },
+    {
+      "symbol": "MSOS",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Bottom-3 rank unchanged for a third week: persistent downtrend with no reversal catalyst surfaced, and no exposure to the rates/oil cross-currents that broke XOP; kept smallest for liquidity and squeeze risk."
+    }
+  ],
+  "cash_pct": 35,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: The weekly re-rank forces three exits and two entries because the oil and rates facts flipped, not because I am restyling the book. XOP short is covered at a loss of thesis, not just price: WTI $86.90 vs my sub-$80 EIA anchor, with a Middle East premium rebuilding \u2014 a short against a rising commodity with a war catalyst is no longer a broken downtrend, it is fighting momentum. JETS is cut entirely: the position survived last week only because cheap fuel offset the cracking consumer, and fuel just rose ~6% while retail sales are contracting \u2014 both pillars are now against it, which under a momentum mandate is a rank flip, not a trim. KRE trims 13%->10% because a fiscally-driven long-end spike (30yr 5.33%, widest KRE/XLF divergence since SVB) attacks regional bank bond marks \u2014 the steepener/NIM story keeps it a top-5 long, but not the book's largest position into Jackson Hole. XLI trims 11%->9% because both cited tailwinds (cheaper energy inputs, cheaper capital) reversed this week. Replacements per the ranking: XLV enters at 8% as the fifth long \u2014 healthcare's +4% best-week-since-June on the Moderna/Merck mRNA phase-3 win is fresh cross-sectional leadership (sized moderate because it shares some factor exposure with XBI); XHB enters as the third short at 5% \u2014 a textbook broken downtrend (-3.9% trailing year in an up market) with a fresh catalyst (starts -10%, mortgage rates pinned near 7% by the fiscal long-end). XBI, GDX, XLY short, and MSOS short are retained on unchanged or strengthened theses; GDX gets a +15% take-profit added since gold at $4,600 puts my $95-105 target zone in reach. Gross drops 70%->65%; the freed 5% earns 4% in cash rather than being forced into a weak sixth-ranked long.",
+  "novelty": "Zero symbol overlap with my Round-2 barbell in either direction \u2014 this book expresses the same fiscal-shock world through cross-sectional sector momentum (miners, small-cap biotech, homebuilder and discretionary shorts) rather than AI-infra compounders and mega-cap ballast, with GDX-vs-GLD and XLV-vs-MRK/JNJ the only factor-level echoes, both held at deduped size.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Verified the week ending 2026-08-21: the driver was a fiscal-anxiety bond shock, not the dovish regime of two weeks ago \u2014 30yr Treasury hit 5.33% (highest since 2007) and 10yr 4.75% on deficit/inflation fears before Treasury Secretary Bessent doubled long-bond buybacks ($2B->$4B/op), which knocked the dollar to mid-May lows and lit the debasement trade: gold +~5% to $4,600, silver past $69, BTC +22% on the week (biggest since March 2024) to ~$77-78k, also helped by Trump's push for the Clarity Act. My R2 BTC 2x perp take-profit fired 2026-08-20 at $78,229 (+40% leg TP -> $44.89 cash), so R2 holds no crypto now. Equities posted weekly losses as bond vol hit tech/AI; NVDA reports Q2 FY27 on 8/26 (street $93-95B rev, bar very high) and Fed Chair Warsh speaks at Jackson Hole next week \u2014 he has signaled he welcomes higher long yields, so hawkish tail risk is live. Position-specific findings: WTI ran from $81-82 to $86.90 (Middle East premium + inflation), breaking my XOP short thesis (EIA sub-$80 Q3) and gutting the JETS fuel-windfall pillar just as the consumer contracts; healthcare had its best week since June 26 (+4%) on the Moderna/Merck mRNA phase-3 success, supporting XBI and making healthcare a top-momentum sector; KRE shows the widest YTD divergence from XLF since SVB (down >3% YTD) and a fiscal-driven long-end spike is the SVB-style risk for bank bond books, though steeper curve/loan growth/M&A keep analysts constructive \u2014 trim not cut; GDX benefits from gold at $4,600 approaching my $95-105 target zone; homebuilders are the cleanest new broken downtrend: XHB -3.9% trailing year, housing starts plunged 10% (8/19 print), mortgage rates pushing 7% with the long end at 19-year highs, builders defending revenue with incentives. Sources: CNBC/Yahoo market recaps 8/21, Bloomberg 8/17 bond selloff, CNBC 8/18-8/20 yields and Bessent/Warsh coverage, USAGOLD 8/21 metals, Fortune/Yahoo BTC 8/21, intellectia NVDA preview, stockanalysis/247wallst XHB and housing starts, Seeking Alpha XBI upgrade."
+}

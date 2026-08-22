@@ -1,0 +1,89 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "entry": "2026-08-24",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised 13% -> 16% and now the top weight, which is a real change of role rather than a size tweak. Last week I added only one point and said adding hard after a 7% run is how a low-vol book imports volatility; gold then added another 5.4% to $423.36 with a +1.95% session Friday, and the reason it is running is now explicit in the headlines - U.S. debt sustainability and dollar weakness, the same fiscal fact that took the 30-year to a 19-year high. That changes the calculus: this is not a momentum chase, it is the only asset in the basket that is structurally paid by the specific shock repricing everything else I own. It also does the job my Treasury sleeve just failed at - in a fiscal/inflation shock bonds and equities fall together, so gold is now carrying the diversification load that duration used to. Capped at 16% rather than higher because inverse-vol weighting must still bind on what is now one of the highest-vol assets here, and the -12% stop stays to survive post-squeeze mean reversion after a two-week run."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Untouched at 14% and now the largest equity sleeve. Nothing about a min-vol equity book deteriorated this week in a way specific to it - the S&P fell 1.4% and min-vol is designed to take less than its share of that. It remains the vehicle I want owning the equity risk premium in a tape where the index is falling on discount-rate compression rather than on earnings, since low-vol names carry less multiple to compress. Left alone deliberately: this rebalance is along the rates axis, and touching legs the axis did not move is churn."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Cut 15% -> 12% and demoted from top weight, but deliberately not gutted the way TLT was. The distinction is the one my framework already draws and that keeps being confirmed: the fiscal supply problem sits at the back of the curve, and the belly has consistently outperformed it through this repricing. At a 4.73% ten-year the carry is genuinely attractive on an absolute basis for the first time in this cycle, and this is still the only asset in the basket that rallies outright if the labour-market crack resolves as a real growth scare rather than the inflation problem the tape is currently pricing. Trimmed rather than held because that scenario is now the less likely of the two and I should not have my largest position in the branch the market is voting against."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "thesis": "Raised 6% -> 8%. Crude at $87.06 with rising energy costs named directly as a driver of the inflation keeping the long end elevated, which makes this the leg most tightly coupled to the regime and the only one that does not need rates to fall in order to work. That property is worth more now than it was a week ago, because the entire rest of a carry book is implicitly short rising long rates. Held to 8% rather than pushed higher because it is the highest-volatility sleeve in the basket and inverse-vol weighting has to cap it regardless of how well the thesis is running - the discipline is the point."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Held at 7%. Selected on a pure realised-volatility screen where USMV is optimisation-based, so the two hold materially different constituents and genuinely diversify rather than duplicate a single factor. Running both is what allows the equity-premium allocation to stay above 20% in a book whose mandate is variance minimisation. Untouched for the same reason as USMV: the rates axis moved, this leg did not."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 6.0,
+      "thesis": "Cut 8% -> 6%, continuing the direction I have been trimming rather than reversing it. Spreads still have not widened and the ETF has been quiet, so this is not a reaction to damage - it is a judgement that the compensation has become thin relative to the alternative. Roughly 7% of yield for credit risk standing in front of a debt-funded AI complex, a contracting labour market and a government whose borrowing costs just hit a 19-year high, when cash next to it pays 4% with zero duration and zero default risk, is about 300bp for a genuinely fat left tail. Kept at 6% rather than zero because spread carry is explicitly in my mandate and tight spreads can stay tight for a long time; the -6% stop remains the thing that makes the asymmetry survivable."
+    },
+    {
+      "symbol": "XLRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Cut 9% -> 6%, the largest reduction among the equity carry sleeves, because REITs are the most rate-sensitive asset I own outside the Treasury complex - they are levered vehicles whose cost of capital is the long yield that just hit a 19-year high, so they take the hit twice, through the discount rate on the cash flows and through refinancing. I wrote last week that I would rather carry rate sensitivity here than at the back of the Treasury curve because at least here I get paid a contractual yield while waiting; that is still true and is why this survives at 6% rather than going to zero, but if I am cutting duration as a portfolio decision it would be incoherent to cut TLT to zero and leave the levered real-estate proxy at 9%."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Held at 6%. Staples earn their place through the distinction that drives this whole rebalance: their effective duration is short and their pricing power passes inflation through to revenue, so unlike REITs or the long bond they are not simply a levered bet on rates falling. They take the defensive dividend-carry role at a similar yield to utilities without the AI-datacenter-power exposure that has turned utilities into a proxy for the same capex cycle this book exists to avoid, and they are the equity that holds up if the next payroll print gets read as recessionary."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Held at 5%. The single-name expression of defensive dividend carry with the strongest trend of any staple and a stable, growing dividend, and it shares the inflation pass-through property that is the reason I am keeping staples while cutting the pure bond proxies. Essentially no exposure to the AI capex debate and no fiscal-duration exposure, which in a week when both the equity index and the long bond fell together is precisely the profile the basket needs more of."
+    },
+    {
+      "symbol": "T",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Trimmed 5% -> 4%. The diversification case is intact - regulated domestic cash flows, a real coupon, near-zero correlation to the AI capex cycle - but the reason it is the one dividend name I am cutting is that telecom carries heavy balance-sheet debt, so a structural repricing of borrowing costs to a 19-year high hits it through refinancing in a way it does not hit KO or the staples basket. A one-point trim rather than an exit, because that is a slow-burning headwind on a genuinely diversifying yield stream, not a thesis break."
+    }
+  ],
+  "cash_pct": 16,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-22: The one axis that moved is the exact axis I wrote my framework around, and it moved violently enough to require extending that framework rather than merely reapplying it. Two weeks ago I capped TLT at 6% on the argument that the back end carries fiscal supply risk no amount of Fed dovishness can fix; last week I halved it to 3% when TLT returned -0.87% against IEF -0.14%; this week the 30-year printed 5.31-5.33%, a 19-year high, and TLT closed $82.05, a 22-year low. The argument has now been confirmed three times running and the honest conclusion is that it was too timid, not that it is finished. So TLT goes to zero. The deeper point is definitional for this mandate: my mandate names term premium as something to harvest, but term premium is currently WIDENING, which means being long the long bond is being short the very thing I want to own. You harvest term premium by buying after it has repriced, not while it is repricing - so I stand aside and revisit when the 30-year stabilises. The second-order consequence is that this is a fiscal-and-inflation shock rather than a growth scare, which breaks the usual risk-parity assumption that bonds diversify equities: this week both fell together on rising real yields. That is why the diversification budget moves to gold, which returned +5.4% on the week to $423.36 and +37% over a year on exactly these debt-sustainability headlines, and to energy with crude at $87.06 - the two assets that are paid BY the shock rather than merely uncorrelated to it. I also cut the rate-sensitive equity proxies where the discount-rate channel bites hardest (XLRE most of all, since REITs are literally levered to long rates, and T with its refinancing exposure) while keeping the staples, whose shorter effective duration and inflation pass-through make them a different animal. HYG comes down because roughly 7% for credit risk standing in front of a fiscal shock is thin compensation when cash pays 4% with no duration and no default risk. Cash 9% -> 16% is not caution for its own sake: in a term-premium shock, cash is the only genuinely zero-duration asset I can own, and at 4% APY it out-carries the long bond on a risk-adjusted basis. I deliberately did not express this as a short in TLT despite the regime call, because shorting it costs 3% borrow while forgoing a 4.76% yield - about 7.8% a year of negative carry against me - and a carry mandate should not pay 7.8% to be directionally right. Holding cash is the same view with positive carry. This remains a surgical rebalance along one axis, not a rebuild: USMV, SPLV and the staples sleeve are untouched, and the book is +3.17% with a -0.75% max drawdown precisely because I keep doing it this way.",
+  "novelty": "Round 3 shares exactly one name with Round 2 - XLE at 8% here against 9% there, roughly 10% same-direction gross-weight overlap - because the two books are now expressing opposite sides of the same macro fact: Round 2 is reducing exposure to the long-duration growth equities that a 19-year-high 30-year yield de-rates, while Round 3 is a zero-leverage, zero-semiconductor, zero-crypto basket of gold, min-vol equity, belly duration, credit and dividend carry whose entire purpose is to earn a return that does not depend on the AI capex cycle at all.",
+  "r2_overlap_pct": 9.5,
+  "research_notes": "Checked the tape through the 2026-08-21 close and the picture changed materially on one axis: the long end of the Treasury curve.\n\nMACRO / THE DRIVER. 30-year Treasury yield hit ~5.31-5.33% on Aug 17-18, the highest since July 2007, and closed the week ~5.27%; 10-year 4.73%. The stated drivers are fiscal supply (deficit-funding issuance) and sticky inflation from tariffs plus rising energy, i.e. a term-premium repricing, NOT a growth scare. Treasury Secretary Bessent announced expanded buybacks of long-dated debt mid-week and bonds unwound all of that relief by Friday. TLT closed $82.05, a 22-year low, -6% YTD.\n\nEQUITIES. Week: Nasdaq -2.0% (26,180.45), S&P -1.4% (7,674), Dow -0.8% (53,277). Nasdaq ran a five-day losing streak before a +0.43% Friday bounce. Explicit commentary: tech stumbled because long-dated yields hit their highest since 2007 and are challenging elevated valuations.\n\nSEMIS - MY MANDATE'S CORE. SMH closed $560.42 (Aug 21), down from ~$588 a week earlier, roughly -4.7%. My SOXL leg stopped out at $120.74 on 2026-08-19 (-20%), which is the 3x confirmation. Single names dispersed again: MU $988.82 (up from $971.66, so it held its gain and outperformed its own sector by ~6 points), AMD $476.97, AVGO ~$410-427 and still de-rating despite enormous guidance (FY26 AI semi revenue $56bn, +180%; FY27 guided >$100bn; Q3 revenue +84% y/y). AVGO's next print (FQ3, quarter ended Aug 2) lands early September. Notably semi ETFs (SMH/SOXX/SOXL) took the largest weekly inflows of any ETF category - retail bought the dip, which is not the same as the trend resuming.\n\nREAL ASSETS. GLD $423.36 (+1.95% Friday alone), up from $401.48 a week ago = +5.4% on the week, +37.3% 1-year total return, at records on U.S. debt-sustainability and dollar-weakness headlines. Spot gold ~$4,681. Crude $87.06 and rising, with Bessent set to detail an Iran sanctions strategy Monday.\n\nCRYPTO (verified per the market note). BTC $77,339 Friday, having tapped $79.4k, +22-24% on the week - best week since March 2023/2024 depending on source. Drivers were (1) the Treasury buyback announcement read as liquidity support, (2) a short squeeze - ~$1.42bn of BTC liquidations on Aug 19 alone plus another ~$1bn over the next 24 hours, (3) reclaiming the 200-day EMA. So one-third technical, one-third liquidity, one-third forced covering. I hold no crypto in either book.\n\nROTATION. Healthcare/biotech is the destination: IBB +20% since mid-June against semiconductors -20% over the same stretch. Crypto-adjacent equities ripped Friday (HOOD +13.7%, COIN +8%).\n\nCONCLUSION I DREW. Rising long real rates are a multiple-compression mechanism pointed at the longest-duration assets on the board, and leveraged semis are precisely that. The same force is simultaneously paying gold, energy and hard assets. That single observation drives both books this week: cut levered equity duration and nominal bond duration, raise real assets and cash, and stay flat crypto rather than chase a squeeze or short a 200-day reclaim."
+}
