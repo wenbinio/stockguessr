@@ -1,0 +1,84 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs vs short the bottom-3 broken downtrends, correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "thesis": "Top momentum rank intact: +36% YTD near 52-week highs on the M&A/mRNA catalyst wave; long-duration rate risk is real under a hawkish Warsh, but the 2yr moved only 6bps while the long end fell, and the -15% stop caps the tail."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "NIM-widening thesis confirmed by earnings (deposit costs rolling over, ~+9% YTD, +28% 1yr); Warsh's hawkishness lifts asset yields on the short end while the calmer long end eases the bond-book markdown risk that made me trim it earlier \u2014 stop stays as the SVB-tail circuit breaker."
+    },
+    {
+      "symbol": "XLI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 15.0,
+      "thesis": "Still a ranked sector leader and the book's least consumer-levered cyclical; held at the already-trimmed 9% because the cheap-capital tailwind stays gone under Warsh while order momentum persists."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Cut 10%->6%, stop tightened to -10%: a ~+40% MTD parabola that reversed into the market's worst group within 25 minutes of Warsh attacking its real-yield driver is momentum exhaustion \u2014 but the cross-sectional rank is still top-tier and the debasement case ($40T debt) survives one speech, so I keep a stopped, take-profited remnant instead of round-tripping the whole leg."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 15.0,
+      "thesis": "Healthcare keeps fresh cross-sectional leadership from the Moderna/Merck mRNA phase-3 wave with defensive earnings that fit both a cracking consumer and a hawkish Fed; sized below full for factor overlap with XBI."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Short strengthened by the week's one big fact: a Fed chair who welcomes higher yields keeps financing costs on houses, cars and cards elevated by design, on top of contracting retail sales and 51.0 sentiment \u2014 the rate-relief squeeze I stop against just got less likely."
+    },
+    {
+      "symbol": "XHB",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Genuine broken downtrend (-2% YTD, lagging even XLY) with 7% mortgage rates, -10% housing starts and builders buying revenue with incentives; Warsh's tolerance for high yields keeps the pressure structural, and the -12% stop guards a rate-relief squeeze."
+    },
+    {
+      "symbol": "MSOS",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 4,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Downtrend intact for a fourth week as rescheduling hopes fade per sector coverage, but the pending broader DEA Schedule I->III decision is a binary squeeze catalyst \u2014 so it stays the smallest short with the tightest effective risk."
+    }
+  ],
+  "cash_pct": 39,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: The weekly re-rank changes one thing: GDX cuts 10%->6% with the stop tightened -15%->-10%. Miners ran ~+40% month-to-date into Friday morning and then became the single worst corner of the market within 25 minutes of Warsh's speech \u2014 a parabolic run reversing violently on a named regime catalyst (a Fed chair who welcomes higher yields, i.e. higher real yields, gold's kryptonite) is the classic momentum-exhaustion signature, so the position shrinks with its edge and the tighter stop converts the remaining leg into a cheap option on the debasement trend resuming. It is a cut, not an exit, because GDX is still at or near the top of the cross-sectional rank and momentum discipline means following the rank, not front-running it. Everything else holds on evidence, not inertia: XBI (+36% YTD, near highs) and XLV keep the catalyst engine; KRE's NIM-widening confirmation survives a 6bp 2yr bump; XLI stays the least consumer-levered cyclical; the XLY short is strengthened by a Fed deliberately keeping financing costs high; XHB (-2% YTD, lagging even XLY) remains a genuine broken downtrend with 7% mortgage rates; MSOS stays smallest because the fading-rescheduling downtrend is intact but the pending DEA Schedule III decision is a live squeeze catalyst. Freed 4% goes to 4%-yielding cash \u2014 being paid to wait suits a hawkish-again Fed.",
+  "novelty": "Zero ticker overlap with my Round-2 barbell (0% same-direction gross-weight overlap): this book expresses gold through stopped-and-take-profited miner momentum rather than unstopped bullion ballast, holds no single-name AI infrastructure at all, and carries a 16% short sleeve \u2014 an exposure direction the Round-2 book does not have.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Week ending 2026-08-28 checks: (1) NVDA Q2 FY27 blowout \u2014 $96.2B revenue (+106%), $89B data center, +7% Thursday, AWS 2M-GPU order, Vera Rubin in full production, China guided at zero (pure upside) \u2014 the aggressive sleeve's anchor thesis is confirmed. (2) Jackson Hole: new Fed chair Kevin Warsh was \"deliberately hawkish\" (BMO), said the Fed has \"work to do\" on inflation and has separately said he welcomes higher yields as a tightening tool; 2yr +6bps to 4.298%, 10yr flat 4.676%, 30yr -2bps to 5.168% (long end reassured). S&P closed the week at 7,711 (-0.25% Friday). (3) Gold fell ~3% Friday to ~$4,454 from ~$4,600 on the speech; precious-metal miners went from +~40% MTD (GDX) Friday morning to the worst corner of the market within 25 minutes of Warsh speaking. (4) BTC ~$79.6k after spiking to $81.4k \u2014 my Round-2 BTC perp take-profit fired 8/20 at $78,335 (+40% leg), so that gain is banked and BTC now trades above my exit. (5) Round-3 legs: XBI +36% YTD near 52-wk highs, KRE ~+9% YTD with NIM-widening confirmation, XHB still -2% YTD lagging both SPX and XLY, MSOS rescheduling rally fading per Seeking Alpha (broader Schedule I->III decision still pending post-hearing \u2014 live squeeze catalyst, keep it smallest). Key sources: cnbc.com stock-market and treasury-yield live blogs 8/26-8/28, sec.gov NVDA 8-K, coindesk.com 8/28 live updates, benzinga.com Warsh mining-stock selloff piece, invezz.com gold-below-$4,600, tradingeconomics.com gold, stockanalysis.com/financecharts XBI, yahoo finance KRE/XHB."
+}

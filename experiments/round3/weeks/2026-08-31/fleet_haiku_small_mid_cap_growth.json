@@ -1,0 +1,62 @@
+{
+  "name": "Haiku small/mid-cap growth",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Biotech-led healthcare pivot combining sector rotation (biotech/banks) with small-cap diversification and semi-cycle mean-reversion, hedged by crypto shorts for carry income",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Russell 2000 small-cap breadth exposure for SMB-focused tech companies benefiting from cloud/AI adoption; at record highs with mid-cycle strength in economically sensitive names; maintains core small-cap allocation"
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Japan equity outperformance on structural reforms; Tokyo Stock Exchange delisting driving capital returns (buybacks, dividends); up 31.7% trailing 12m vs SPY 17%; international diversification outside US rate/tech cycles; increased from 8% to capitalize on confirmed multi-year structural trend"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "take_profit_pct": 25.0,
+      "thesis": "Biotech momentum sustained at 5-year highs; healthcare sector rotation away from tech saturation; M&A activity accelerating; FDA action window strong through late Aug/Sept; take-profit at +25% captures extended valuation on strength"
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 10.0,
+      "thesis": "Regional bank recovery momentum vulnerable to Fed rate hike cycle (57% September probability); NIM expansion thesis compromised by tightening policy; trimmed from 9% to 4% to reduce macro exposure; stop loss at -10% manages downside through rate decision"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "perp",
+      "side": "short",
+      "weight_pct": 6,
+      "leverage": 1.5,
+      "stop_loss_pct": 15.0,
+      "thesis": "Crypto bear market continuation (-33% YTD from Aug 2025 highs) with short perp generating 10% APR funding yield for carry strategy; Bitcoin rallied to $78.7k after Aug 18 stop at $69.3k; reduced from 17% (3x lev) to 6% (1.5x lev) to maintain carry income while preventing liquidation risk at 5% margin threshold into rate decision volatility"
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 2,
+      "thesis": "Consumer staples momentum fade as growth environment strengthens; defensive rotation losing as rates stabilize; trimmed from 6% to 2% as shorting thesis weakens in stronger growth regime"
+    }
+  ],
+  "cash_pct": 48,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Dual macro inflection reshapes portfolio: (1) Fed rate hike repricing (57% September probability) hurts regional bank NIM recovery thesis\u2014trimming KRE from 9% to 4% with STOP -10% downside protection; (2) BTC short stop fired Aug 18 at $69.3k, Bitcoin rallied to $78.7k, reducing leverage risk by cutting BTC short from 17% (3x lev) to 6% (1.5x lev) to maintain carry yield (10% APR) while preventing liquidation at 5% margin threshold. Increasing conviction in validated themes: EWJ from 8% to 12% (Japan outperformance +31.7% trailing 12m), maintaining XBI 11% with TP +25% (biotech cycle strength into FDA tailwind), keeping IWM 17% (small-cap breadth). Trimming XLP short from 6% to 2% (defensive trade losing relevance in growth environment). Deploying capital: raising cash from 32% to 48% to reduce gross from 102% to 55%, eliminating excess leverage into rate inflection while preserving core theme exposure.",
+  "novelty": "Shifts from leveraged tech thesis to multi-sector mean-reversion: biotech cycle strength into FDA tailwind + bank recovery into rate cycle + Japan outperformance, with crypto shorts for carry income rather than directional bets, hedging US tech concentration risk.",
+  "r2_overlap_pct": 17.7,
+  "research_notes": "Fed Chair Warsh's Jackson Hole speech (2026-08-28) delivered hawkish inflation warning: PCE at 3.7% is concerning, no forward guidance, sparking market repricing of September rate hike from 34% to 57% probability. This reverses prior dovish bias and materially increases leverage risk. However, small-cap cloud/AI/fintech thesis remains validated: Russell 2000 hitting record highs (+23% YTD, beating Nasdaq 100's +19%), trading at 34.5% earnings discount. Cloud leaders confirm strength (DDOG +88% YTD with 36% YoY growth, CRWD raised FY27 guidance to $6B). Fintech split: SOFI beat earnings (+40% revenue, +35% members), rallied 6%; UPST down 33% YTD. Bitcoin rebounded to $78.7k after Aug 18 stop loss. Japan (EWJ) +31.7% trailing 12m. Regional banks (KRE) momentum fading with rate hike expectations rising. Biotech (XBI) at 5-year highs with strong FDA activity window. Market reflecting shift from \"rate cuts coming\" to \"rate hikes likely,\" requiring leverage reduction into October FOMC decision while maintaining long growth thesis."
+}

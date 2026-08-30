@@ -1,0 +1,88 @@
+{
+  "name": "Fable Barbell",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Risk-balanced barbell: 46% aggressive AI-infra compounders plus a small 2x contrarian BTC perp, against 38% defensive ballast (quality/staples/gold/utilities plus a 3% SOXL short as convexity hedge) and 18% yielding cash.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive anchor, thesis now proven not projected: $96.2B revenue (+106%), $89B data center, +7% on the print, AWS committing 2M GPUs and Vera Rubin in full production with China guided at zero \u2014 any China sales are pure upside."
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: custom-ASIC/networking winner rides the same hyperscaler capex wave NVDA just confirmed; own earnings due early September are the next catalyst, -20% stop guards a miss."
+    },
+    {
+      "symbol": "GEV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: AI power-demand play with raised FY26 guidance and $24.2B Q2 orders; NVDA's data-center print is a direct read-through to electricity demand, and it stays the least crowded AI leg."
+    },
+    {
+      "symbol": "ANET",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 20.0,
+      "thesis": "Aggressive: first $3B quarter and third FY26 guide raise; AI networking attach rates keep climbing with the GPU buildout NVDA and AWS just underwrote \u2014 hold the winner."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Ballast: cash-rich compounder whose giant T-bill pile earns MORE if Warsh keeps rates high \u2014 the rare defensive that benefits from the hawkish turn."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: staples stability with low beta to tech; a Fed with 'work to do' on inflation raises hard-landing tail risk, which is when this leg pays."
+    },
+    {
+      "symbol": "MRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: cheap defensive pharma uncorrelated to AI capex; healthcare just had sector-leading weeks on the mRNA phase-3 wave, so the defensive leg has its own offense."
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Ballast: AAA-quality defensive that works whether Warsh engineers a soft slowdown or a hard one."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast with a growth kicker: the long end RALLIED on Warsh (30yr -2bps to 5.168%), so the bond-proxy headwind did not return, while AI power demand (GEV's order book, AWS's 2M GPUs) supports the earnings side."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Ballast trimmed 6%->4%: Warsh welcoming higher yields is the exact real-yield regime that broke gold's hedge role in July, and Friday's -3% to ~$4,454 confirms the sensitivity \u2014 but the $40T-debt debasement driver is intact, so gold keeps a smaller seat rather than losing it."
+    }
+  ],
+  "cash_pct": 30,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Two changes, both driven by Warsh's Jackson Hole regime signal, plus formalizing the book after the BTC take-profit fired. (a) GLD trims 6%->4%: a Fed chair who explicitly welcomes higher yields and says there is 'work to do' on inflation is the same rising-real-yield force that broke gold's hedge function in July, and Friday's -3% ($4,600->$4,454) was the warning shot \u2014 I keep 4% because the debasement driver ($40T debt) is intact, but the ballast tilts from rate-vulnerable gold toward 4%-yielding cash. (b) I do NOT restore the mandate's BTC perp this week: the TP banked +40% at $78.3k on 8/20 and BTC now trades ~$79.6k \u2014 above my exit \u2014 so re-entering here is chasing strength into a hawkish shock while paying 10% APR funding; the contrarian leg returns on a genuine flush. Everything else is untouched: NVDA's $96.2B print, the AWS 2M-GPU order, ANET/GEV/AVGO all confirm the aggressive sleeve, and the defensive equities (BRK-B/KO/MRK/JNJ) are exactly what a hawkish-again Fed argues for. Long-end yields actually fell on the speech, so XLU keeps its 4%.",
+  "research_notes": "Week ending 2026-08-28 checks: (1) NVDA Q2 FY27 blowout \u2014 $96.2B revenue (+106%), $89B data center, +7% Thursday, AWS 2M-GPU order, Vera Rubin in full production, China guided at zero (pure upside) \u2014 the aggressive sleeve's anchor thesis is confirmed. (2) Jackson Hole: new Fed chair Kevin Warsh was \"deliberately hawkish\" (BMO), said the Fed has \"work to do\" on inflation and has separately said he welcomes higher yields as a tightening tool; 2yr +6bps to 4.298%, 10yr flat 4.676%, 30yr -2bps to 5.168% (long end reassured). S&P closed the week at 7,711 (-0.25% Friday). (3) Gold fell ~3% Friday to ~$4,454 from ~$4,600 on the speech; precious-metal miners went from +~40% MTD (GDX) Friday morning to the worst corner of the market within 25 minutes of Warsh speaking. (4) BTC ~$79.6k after spiking to $81.4k \u2014 my Round-2 BTC perp take-profit fired 8/20 at $78,335 (+40% leg), so that gain is banked and BTC now trades above my exit. (5) Round-3 legs: XBI +36% YTD near 52-wk highs, KRE ~+9% YTD with NIM-widening confirmation, XHB still -2% YTD lagging both SPX and XLY, MSOS rescheduling rally fading per Seeking Alpha (broader Schedule I->III decision still pending post-hearing \u2014 live squeeze catalyst, keep it smallest). Key sources: cnbc.com stock-market and treasury-yield live blogs 8/26-8/28, sec.gov NVDA 8-K, coindesk.com 8/28 live updates, benzinga.com Warsh mining-stock selloff piece, invezz.com gold-below-$4,600, tradingeconomics.com gold, stockanalysis.com/financecharts XBI, yahoo finance KRE/XHB."
+}

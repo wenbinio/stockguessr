@@ -1,0 +1,77 @@
+{
+  "name": "Opus 5 mean reversion",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Rank a fixed universe of 133 liquid US large caps by the average of their 1-week and 1-month trailing-return percentiles through the 2026-07-24 close, buy the bottom decile (the 10 worst-ranked names, 8% each) and short the most crowded top-decile winner cluster (energy, expressed as XLE), holding 13% cash with wide 30% stops so the reversion has room to work.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "AXP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 14%, no trade. It closed $333.20 against ~$332 last week \u2014 dead flat through an up week with an 8.7% NVDA melt-up in it. That is precisely the job I hired it for when I moved the ballast mandate here from WMT: it does not participate in AI-capex weeks, which is the same reason it should not participate when that complex unwinds. Its zero AI exposure is a feature, not a drag. The original dislocation is unchanged and still unresolved: a beat-and-raise sold on a $50mn revenue shortfall and 12% expense growth, while the stated bear case of consumer credit deterioration is contradicted by provisions improving to $1.1B from $1.4B, against 2026 EPS guidance of $17.30-17.90. It sits roughly 14% below the $387 high. It earns no addition because it did not decline \u2014 I add to this name on price weakness without information change, and there was neither this week."
+    },
+    {
+      "symbol": "SNPS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Doubled from 7% to 14%, now tied for my largest weight. I held this at half-size into the 8/26 print explicitly so I could own it without needing to be right, and the print came in beating on every line: non-GAAP EPS $3.91 against $3.67 consensus, revenue $2.477B against $2.44B and up 42% from $1.740B, with revenue, margin and EPS all above the high end of guidance. Full-year guidance was raised across the board to $9.715B revenue and $15.07 EPS. What matters more than the beat is its composition \u2014 Design IP softness and the Ansys integration were the two named causes of the 39% drawdown, and both were cited as strength. That refutes the drawdown's premise rather than merely outgrowing it, which is the strongest form of confirmation a reversion thesis can get. The tape corroborated: +13.39% on 8/27 to $464.89, then a 4.79% give-back to $442.61 on a red Friday, retaining two-thirds of the gap. Baird upgraded to Outperform at $560, consensus sits near $565-575, and even BofA's cut target of $500 is 13% above spot. At $442.61 it is still ~28% below the $615.79 high, so I am paid for maybe a third of the move. I go to 14% and not higher because a 30% stop here is 4.2% of NAV and because the remaining risk is multiple compression in a crowded AI-adjacent name, which no earnings report can insure against."
+    },
+    {
+      "symbol": "APP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 12%, no trade, for the third straight week. It closed $321.40, up 5.1% on the week and 3.37% on Friday alone \u2014 the first genuinely green week since the Q2 gap, and the beginning of the reclaim I have been waiting for. But one week is a bounce, not a turn, and Friday's range of $315.05 to $335.45 is a 6% intraday swing that says the name is still being traded rather than owned. My rule is that I add to turns after they establish, and this one has not. The fundamentals never justified the gap: Q2 net income grew 54.5% to $1.27B on an 84% adjusted EBITDA margin, Q3 is guided to $2.055-2.085B or +46-48% year over year, and the 1% revenue shortfall traces to the next model step-up landing just after quarter end. Average analyst target near $526 against $321 spot. This is the deepest laggard on both my lookbacks and therefore the truest expression of the mandate, which is exactly why it stays capped rather than sized to the screen rank."
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 12%, and this is the hardest hold in the book because the news got materially better while the price got worse. Nevada raised the Las Vegas robotaxi cap from 10 vehicles to 5,000 \u2014 a 500x expansion of the identical regulatory catalyst I sized up on last week, and regulatory throughput is the variable that converts robotaxi from narrative to revenue. Against that, it fell 3.9% to $348.75 on a China voluntary recall of roughly 3mn vehicles for electronic door-handle function plus profit-taking. A door-handle recall is a one-time warranty cost, not a demand or franchise impairment, so on my own stated rule \u2014 size up on price weakness when information has not deteriorated \u2014 this qualifies as an add. I am declining it anyway. I have already sized this leg up once on this same turn, it is the highest-beta name I own, and a third press on a 500x headline is how a position stops being sized to what I can survive and starts being sized to how good the story sounds. The $297.38 low still holds and the reversion toward the $498.83 high is unfinished; 12% is enough exposure to be paid for that."
+    },
+    {
+      "symbol": "CSCO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Held at 11%, no trade. Closed $109.93 against $111.55 at entry \u2014 a third consecutive week of doing nothing, this one against a rising index. That is frustrating but it is not information: the week's news was an internal AI-agent deployment and a Secure AI Factory partnership with NVIDIA and Supermicro, neither of which speaks to the gross-margin mix question that caused the 8.4% drop. The setup is fully intact: FY26 Q4 revenue $17.25B against $16.82B expected, adjusted EPS $1.22 against $1.17, next quarter guided $18.0-18.2B versus $16.8B consensus, and FY27 guided to $72.2-73.4B, up 15% at the midpoint. The market repriced mix inside a revenue guide 7% above the Street. I neither add nor cut: adding to something that has refused to move for three weeks would be buying my own patience, and cutting a thesis that nothing has contradicted would be paying costs for boredom. Stops stay at the tighter -15%/+18% because this entered as a one-week dislocation from near a 52-week high, not a deep-drawdown buy, so both the recovery and the tolerable loss are proportionally smaller."
+    },
+    {
+      "symbol": "WMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 10%, no trade. It closed $103.09, up 0.45% Friday and up 0.7% on the week \u2014 the first week since the 8/20 guide-down in which it did not make a new low. Stabilization is what I needed to see and it is why I do not cut further, but it is not a reclaim and it is not a reason to restore weight. The reason I took this from 14% to 10% still holds exactly: FY adjusted EPS guided $2.80-2.87 against ~$2.90 consensus and US comps decelerating to +2.6% against +3.8% expected is an earnings trend that turned genuinely rather than optically negative, and that is the one condition under which I refuse to add regardless of how attractive the price looks. And the price does look attractive \u2014 roughly 23% below the May high, unambiguously bottom-decile, with eCommerce hitting double-digit incremental margins for the first time, Marketplace +52%, ads +38%, and every major broker holding its rating at targets of $120-131, all above spot. The week's news was immaterial: a $50M DOJ pharmacy settlement, tap-to-pay finally arriving, a new sub-$25 apparel line. 10% is the size at which I am paid if the reversion comes without having rewarded a guide-down."
+    },
+    {
+      "symbol": "HONA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Held at 10%, no trade. Closed $162.37, down 1.9%, which gives back part of the reclaim but leaves it comfortably above the $150.03 capitulation low that anchors the position \u2014 the low is still holding two weeks on, which is the specific thing I said I needed. No new information on the casting shortage this week. The cause of this drawdown remains what separates it from the guide-downs that have actually cost me money: a precision-casting shortage steering scarce components toward Boeing and Airbus production lines and away from higher-margin aftermarket, which defers revenue against end demand nobody disputes, rather than destroying it. Against a 52-week range of $150.03 to $297.50 the reversion is barely begun. It stays capped at 10% for the two reasons that have not changed: a casting shortage can plausibly run several more quarters, and a freshly spun-off holder base can still produce mechanical supply that has nothing to do with the business."
+    }
+  ],
+  "cash_pct": 17,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: One position earned a change and one earned an exit; everything else genuinely did not move, so I am making exactly two trades rather than redecorating the book. SNPS was held at 7% for one stated reason \u2014 a binary print I wanted to survive without needing to be right. That print resolved, and it resolved on the specific axes that caused the drawdown: EDA, Ansys and IP were all called out as strong, revenue/margin/EPS all beat the high end of guidance, and full-year guidance was raised on every metric to $9.715B and $15.07. When the reason for holding a position small stops existing, the correct response is to stop holding it small; keeping 7% now would be treating a resolved uncertainty as if it were still unresolved. It gapped 13.4% and then held two-thirds of that on a red Friday, which is what distinguishes a repriced stock from a squeeze, and at $442.61 it remains ~28% below its 52-week high with a ~$565 consensus target, so the reversion this mandate exists to capture is only partly paid. PEG funds it one-for-one. I set PEG an explicit test over three weeks: it failed to rise on a dovish CPI/PPI print, it held flat through a treasury selloff, and this week \u2014 an UP week for the index with no rate shock \u2014 it fell 3.2% to a fresh range low. A name that will not rise on good news and will not hold on no news has no response function, and the fundamentals now agree: full-year EPS guidance merely maintained with a $4.34 midpoint below $4.38 consensus, plus target cuts from Morgan Stanley and Truist. That is the same genuinely-negative earnings trend that cost WMT four points, and PEG's only remaining argument was portfolio construction rather than reversion. A 3.66% yield is not a thesis. I am NOT adding to TSLA despite Nevada lifting the robotaxi cap from 10 vehicles to 5,000, which is the strongest single piece of news in the book \u2014 I have already sized it up once on this same turn, the 3.9% decline came alongside a real ~3mn-vehicle China recall, and pressing a high-beta name a third time would be sizing to the story rather than to what I can survive. Cash stays at 17% against a 13% mandate: I am deliberately keeping the buffer above spec after Friday's reversal on Warsh's inflation remarks, and I would rather hold the excess than manufacture an eighth conviction I do not have.",
+  "research_notes": "Week of 2026-08-24 to 08-28. Tape: S&P 500 +0.5% on the week to 7,711.76, Nasdaq +0.9%, Dow +0.5%; NVDA +8.7% Thursday on a Q2 beat ($2.22 EPS, $96.22B revenue, +4.8% vs est) drove the rally; Friday -0.25% after Fed Chair Warsh flagged inflation worries at Jackson Hole. So this was an UP week \u2014 an important denominator for judging my laggards.\n\nMarks vs last week (all 2026-08-28 closes): AXP $333.20 (+0.4%), APP $321.40 (+5.1%, +3.37% Friday alone), TSLA $348.75 (-3.9%), CSCO $109.93 (-0.6%), WMT $103.09 (+0.7%), HONA $162.37 (-1.9%), SNPS $442.61 (+11.2%), PEG $73.19 (-3.2%). Weighted ~+0.5%, roughly in line with the index.\n\nSNPS \u2014 the event I deliberately sized 7% for, resolved. Q3 FY26 (8/26 after close): non-GAAP EPS $3.91 vs $3.67 consensus (+6.5% beat), revenue $2.477B vs $2.44B est and $1.740B a year ago (+42%). Revenue, margin AND EPS all exceeded the high end of guidance. Full-year raised across every metric: revenue to $9.715B midpoint (from $9.625-9.705B) and non-GAAP EPS to $15.07 midpoint (from $14.72-14.80). Critically, the two things that caused the 39% drawdown \u2014 Design IP softness and Ansys integration \u2014 were both called out as strong contributors, so the drawdown's cause is refuted, not just outgrown. Baird upgraded to Outperform, PT $560; consensus PT ~$565-575 vs $442.61 spot. BofA cut its target to $500 from $600 but kept Buy \u2014 still 13% above spot. Price path: $410.00 on 8/26, gapped +13.39% to $464.89 on 8/27, gave back 4.79% to $442.61 on 8/28. It retained roughly two-thirds of the gap, which is a hold, not a fade.\n\nPEG \u2014 failed the test I set for it. Last week I argued that failing to fall on bad news (treasury selloff, down equity week) partly answered the concern that it had failed to rise on a dovish CPI/PPI print. This week ran the third and cleanest test: an up week for equities with no adverse rate shock, and PEG fell 3.2% to a fresh range low. It now has no response function in either direction. Fundamentals confirm the drift: FY26 adjusted EPS guidance merely maintained at $4.28-4.40, midpoint $4.34 BELOW $4.38 consensus; Morgan Stanley cut to $91 from $93, Truist to $84 from $90. Q2 did beat ($0.86 vs $0.80 on $2.55B). Ex-dividend 9/9, 3.66% yield.\n\nTSLA \u2014 information improved while price fell. Nevada raised Tesla's Las Vegas robotaxi cap from 10 vehicles to 5,000, a 500x expansion of the exact regulatory catalyst I added on last week. The 3.9% decline came from a China voluntary recall of ~3mn vehicles for electronic door-handle function, plus profit-taking after the Nevada rally.\n\nWMT \u2014 stabilized. $103.09, first up week since the 8/20 guide-down, no further breakdown. News flow immaterial: $50M DOJ/DEA pharmacy settlement, tap-to-pay rollout, a sub-$25 women's apparel brand.\n\nCSCO \u2014 genuinely nothing. Third straight flat week ($109.93 vs $111.55 entry). Week's news was an internal AI-agent rollout and a Secure AI Factory partnership with NVIDIA/Supermicro \u2014 neither touches the gross-margin-mix question that caused the 8.4% drop.\n\nHONA \u2014 $162.37, still holding well above the $150.03 capitulation low, 52-week range $150.03-$297.50. No new casting-shortage news.\n\nAPP \u2014 rebounding off the Q2 revenue-miss gap, +5.1% on the week, but Friday's range was $315.05-$335.45 (~6% intraday), so the volatility that justified capping it has not gone away. Average analyst PT ~$526."
+}

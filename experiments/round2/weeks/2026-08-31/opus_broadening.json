@@ -1,0 +1,82 @@
+{
+  "name": "Opus Broadening",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Long-heavy breadth basket (small-cap + equal-weight + cyclical sectors, TNA-amplified) with a small anti-concentration QQQ short and a speculative crypto tail",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "RSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 23,
+      "thesis": "Raised 19->23 and still the anchor. At 93.3% of its 52-week range it lost the least of anything I own in a -1.4% week, and it is the version of breadth that does not depend on the rate path: equal-weight large-cap has no leverage, no funding sensitivity and no size premium to give back if the Fed hikes. I am adding here rather than holding cash because the deterioration across my book was a consolidation from record levels, not a break, and this is the leg I would most want to own if I am wrong about the macro. It also remains the long half of the anti-concentration pair, which has carried that view far better than the short."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed 19->16 and given a stop for the first time. Small caps are the single most rate-sensitive cohort in my book and the Fed chair just made hikes a live scenario; IWM fell 1.5% and slipped from 93.7% to 87.6% of range. I am not exiting the size factor \u2014 87.6% of range with the 12-1 trend intact is a consolidation and I have twice been punished for abandoning this on a rate argument. I am moving three points to RSP, which expresses the same anti-concentration idea with none of the funding sensitivity. The new -15% stop, roughly two monthly sigma at 20 vol, exists because the identified vulnerability of this book now has a name and I would rather define the loss in advance than argue about it later."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "thesis": "Held at 13 through a -3% week that took it from 99.5% to 91.0% of range. Energy is the one cyclical whose thesis a hawkish Fed does not damage \u2014 it is short-duration cash flow with a commodity behind it, and refiner margins are at records on Middle East supply risk and AI-driven power demand. Giving back part of a run from a 52-week high is what a leader does; 91% of range is still top-tier in my universe. I have been whipsawed twice on this sector by trading the weekly number instead of the reading, so the discipline is to leave a correctly-sized position alone. Stop stays -18%, capping the leg at 2.3% of NAV."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 22.0,
+      "thesis": "Untraded at 12, deliberately, and this is the position where my own audit trail binds me. I cut it a week earlier on a 30-year-yield argument, the argument was rejected by the tape, I restored it and committed in writing that only the -22% stop would take it out and that I would not trade it on a macro rate story again. A hawkish Jackson Hole is precisely that story in a new costume. The reading has not broken: 90.7% of its 52-week range after -2.2% on the week, with the sector M&A and FDA calendar underneath it unchanged. Cutting here would be running the same failed trade a third time with better prose. The -22% stop, about two monthly sigma at 38 vol, is the entire risk control and it is sufficient."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Untraded at 6. I cut this in half last week on the labour-market and CRE credit worry and it promptly outperformed the complex it sits in, -1.3% against IWM's -1.5% and XLI's -2.5%, holding 80.5% of range. That is the position now sized correctly rather than a position to keep cutting: the size that was justified by an old record close is already gone, and 6% is small enough that the credit scenario I am worried about costs me under a point of NAV. Rate hikes are genuinely two-sided here \u2014 better asset yields against deposit costs \u2014 which is another reason to hold rather than take a view I cannot support."
+    },
+    {
+      "symbol": "XLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Raised 5->6 with money from the XLI exit. Materials came off a flat 100% of range to 91.7%, which now makes it the best cyclical read I own alongside energy, and it did that while industrials fell to 73%. That is the whole reason this position exists \u2014 it was added as the cyclical that was actually leading, and one week later it is still leading while the one it replaced keeps falling. The add is one point rather than five because 12-1 momentum here is a middling reading and the position earns its slot on confirmation and low vol, not conviction."
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut 6->3. This is the third consecutive week I have written that 3x daily compounding punishes a chopping small-cap tape, and the third consecutive week it has: -4.5% against IWM's -1.5%. What changed is that the tape now has a specific reason to keep chopping \u2014 a Fed chair calling inflation too high, with small caps the cohort that pays for it. I am not exiting, because the mandate names TNA amplification and 81.9% of range with the underlying trend intact does not justify abandonment. I am removing the amplification I cannot defend paying decay for while the rate question is open, and I already hold the directional small-cap view at 16% in an unlevered wrapper. Stop stays -25%, now capping the leg at 0.75% of NAV."
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 2,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut 3->2. I refused to chase this into the CLARITY Act melt-up and said it was a violent bounce off a deep hole rather than a leader; that call is now settled \u2014 Bitcoin fell to roughly $77.6k and ETH sits at $2,435, the low end of its $2,409-$2,526 weekly range, with the catalyst spent. Tightening liquidity expectations are the wrong backdrop for the asset, and at 29% of its 52-week range with deeply negative 12-1 momentum it fails every screen the rest of this book is built on. Cut to 2 rather than zero because the mandate asks for a speculative convexity tail and 2% at 100% realized vol still delivers real optionality; the -25% stop caps it at 0.5% of NAV."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "thesis": "Untraded at 6 and I am holding it through its first bad week in three. QQQ was roughly flat against RSP's -0.8%, which is exactly what a hike-risk repricing does: cash-rich mega-caps outperform leveraged small caps. That is a real headwind to this leg and I am stating it rather than hiding it. I am not cutting, because with 81% of the book in longs this is the structural offset that makes a long-heavy breadth basket survivable, and QQQ at 83.3% of its range against RSP at 93.3% means the spread I am short is still wide. I am equally not upsizing it into a macro story \u2014 pressing this leg on conviction is the mistake that cost me three weeks ago, and the mandate asks for a small anti-concentration short, which 6% against 81% of longs is."
+    }
+  ],
+  "cash_pct": 13,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Warsh told the market inflation is too high and the market is now pricing hikes, and unlike my two previous rate-driven trades in this book I am not acting on that inference alone \u2014 I am acting where the price readings independently agree. XLI has deteriorated a second straight week to 73.1% of range, the worst sector read I own, so I finish the trim I started rather than restate the concern a third time; last week I said I was removing size justified by a record close that no longer existed, and that logic exits it now. TNA goes 6->3 because a 3x daily-rebalanced small-cap instrument in a chop with a fresh macro reason to chop bleeds regardless of direction, and I already own the directional view at 16% in IWM. ETH 3->2 because the CLARITY Act catalyst has passed, BTC has rolled over, and at 29% of its 52-week range it fails every screen this book uses. The proceeds go to the two best readings, not to the sidelines: RSP 19->23 (93.3% of range, held up best of anything I own and is the lower-vol breadth expression that survives a hawkish repricing) and XLB 5->6 (91.7%, still the leading cyclical). IWM 19->16 shifts a slice of breadth from the most rate-sensitive expression to the most durable one without abandoning it. Critically I am NOT touching XBI at 12: I committed in writing last week to stop trading it on a macro rate argument after being wrong twice on exactly that, its reading is still 90.7% of range, and honouring that commitment is worth more than this week's -2.2%. Cash to 13% at 4% is a buffer, not a view; gross 96->87 is a measured step back, still long-heavy as the mandate requires.",
+  "research_notes": "MACRO \u2014 the regime input changed this week and it is not my own chart inference this time. Fed Chair Kevin Warsh's first Jackson Hole address stated that \"inflation is running too high\"; markets repriced toward rate HIKES rather than cuts. S&P 500 -1.4% on the week, snapping a three-week win streak; Friday S&P -0.25%, Nasdaq -0.52%, Dow flat. Gold -2.88% and Bitcoin -2.29% to ~$77.6k on Friday, i.e. the classic liquidity-tightening repricing. VIX only 14.43, so this is a repricing, not a panic. This matters because a hike-risk regime lands hardest on exactly the cohorts my Round-2 breadth mandate owns (small caps, regional banks, leveraged small-cap) and on the long-duration high-multiple software my Round-3 mandate owns, while it is a tailwind to both of my Round-3 shorts (ORCL: -$23.7B FCF, $97.6B net debt, ~$40B FY27 financing need; UPST: unsecured consumer lender funding costs).\n\nROUND-2 PRICE READINGS (52-wk range %, 08-28 close, prior week in brackets): RSP 93.3 [97.4], IWM 87.6 [93.7], XLE 91.0 [99.5], XBI 90.7 [95.3], XLB 91.7 [100.0], TNA 81.9 [90.0], KRE 80.5 [85.3], XLI 73.1 [84.3], QQQ 83.3 [83.0]. Every long deteriorated; nothing broke. Two readings stand out: XLI has now fallen for a second straight week and is the worst sector read I own, and TNA lost roughly 4.5% against IWM's 1.5% \u2014 the 3x daily-compounding drag I have flagged three weeks running, now in a tape with a fresh reason to chop. The RSP/QQQ concentration spread went slightly against me for the first time in three weeks (QQQ roughly flat, RSP -0.8%), which is what a hawkish repricing does: cash-rich mega-cap beats leveraged small-cap. ETH $2,434.86, sitting at the low end of a $2,409-$2,526 seven-day range \u2014 the CLARITY Act / melt-up bounce has stalled and BTC has rolled over, so the catalyst I refused to chase has now passed.\n\nROUND-3 \u2014 THE FINDING THAT DRIVES THIS WEEK. I checked every earnings date rather than trusting last week's notes, and one of them was wrong. Three of my nine positions print INSIDE the coming window: PANW Tue 09-01, SNOW Wed 09-02, and ORCL Fri 09-04. I wrote last week that ORCL reports \"~09-10, outside the window\"; that is factually incorrect. At current weights that is 18+15+6 = 39% of the book on binary events in four sessions, in an account already -2.62% with a -7.73% max drawdown. Setups: SNOW $328.00, 93.8% of range, consensus PT $327.85 \u2014 the stock is exactly at target, 156x forward, no valuation floor. PANW $371.59, 89.5% of range [85.0], -2.94% Friday, consensus PT $364.01 \u2014 trading ABOVE target, 95x forward, China security review still live. ORCL $150.85, 15.7% of range [15.0] \u2014 it stopped underperforming and ticked up ~1% in a -1.4% tape, so the non-participation confirmation I upsized on has weakened, and it goes into a print with 62% consensus upside and a Citi positive-catalyst-watch $330 target. Names with NO print in the window improved their readings while the cohort fell: FTNT 92.1 [84.1], TWLO 87.1 [80.3], NET 81.3 [77.9], XYZ 91.3 [93.0], and my best short UPST fell to 9.6% of range [12.3], -4.6% on the week, the lowest reading in my universe. MU $932.86 is 71.8% of range [77.5] with earnings 09-30 (outside window) and the supply-shortage story still contested by Samsung/SK Hynix additions.\n\nTHE GOVERNING POINT: a stop-loss does not work through an earnings gap. A -22% stop on SNOW is worthless if it opens -18%. For an event inside the window the only risk control that exists is position size, and my mandate is cross-sectional momentum, not event trading \u2014 I have no edge in a single-name print. So I cut event size and redeploy into the momentum names that carry no event."
+}

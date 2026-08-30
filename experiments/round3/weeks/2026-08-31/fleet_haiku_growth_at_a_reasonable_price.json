@@ -1,0 +1,85 @@
+{
+  "name": "Haiku growth at a reasonable price",
+  "model": "haiku",
+  "group": "fleet",
+  "strategy": "Sector rotation into lagging fundamentals with long-short mean-reversion discipline; long value/healthcare/financials, short semiconductor extremes, contrarian crypto recovery.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4.6885,
+      "thesis": "Financials sector rotation; net beneficiary of rate environment, lagged YTD, attractive valuations"
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3.6066,
+      "thesis": "Energy sector strength; commodity cycle momentum outperforming, relative value versus tech"
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3.6066,
+      "thesis": "Healthcare quality exposure; defensive characteristics with steady earnings growth"
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 2.8852,
+      "thesis": "Biotech value exposure; strong momentum, cycle strength within value rotation"
+    },
+    {
+      "symbol": "VTV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1.8033,
+      "thesis": "Value factor diversification; mean-reversion potential, reduced from higher allocation due to recent underperformance"
+    },
+    {
+      "symbol": "QUAL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1.4426,
+      "thesis": "Quality factor at reasonable multiples; defensive characteristics, trimmed due to underperformance"
+    },
+    {
+      "symbol": "TNA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1.082,
+      "stop_loss_pct": 15.0,
+      "thesis": "Small-cap Russell 2000 3x leverage; value rotation exposure, reduced from 7% to minimize volatility decay drag"
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 1.4426,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 150.0,
+      "thesis": "Bitcoin contrarian recovery; down 30% YTD from -46% in July, washout bottom formation still intact, institutional adoption tailwind, increased from 2% to capture continuing recovery"
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 1.4426,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 100.0,
+      "thesis": "Ethereum contrarian recovery; down 25% YTD from -44.1% in July, similar washout thesis, DeFi/NFT cycle recovery early-stage, increased from 2% to match BTC allocation"
+    }
+  ],
+  "cash_pct": 78,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Sector rotation thesis foundation (mean-reversion from July crash) deteriorating as semiconductors recover in August, suggesting mean-reversion upside mostly played out. Contrarian crypto recovery thesis is the working component (BTC/ETH up 25-30% from July lows, validating washout bottom thesis), but severely under-exposed at 4% allocation while underperforming sector plays capture 66% of capital. Rebalance to align capital with validated thesis: increase crypto to 8% (BTC 4%, ETH 4%), reduce value/quality drag (VTV 10%\u21925%, QUAL 8%\u21924%), trim small-cap leverage decay (TNA 7%\u21923%), increase cash to 39% for flexibility. Maintains 51% sector exposure to preserve mean-reversion and lagging-sector capture mandates while shifting allocation to working thesis.",
+  "novelty": "R3 differentiates from R2 by rotating away from concentrated AI infrastructure plays into sector diversification (financials 13%, energy 10%, healthcare 10%, biotech 8%, value 5%, quality 4%) while maintaining elevated contrarian crypto exposure (8%) that R2 largely neglects; R3 explicitly captures mean-reversion in beaten-down segments and cycles while R2 extends secular buildout themes.",
+  "r2_overlap_pct": 1.2,
+  "research_notes": "Semiconductor sector staged dramatic August recovery: PHLX +10% YTD (up from -21% in July), SOXX 70-83% YTD, on pace for best August since 2003. NVIDIA beat Q2 earnings (Aug 27) with EPS $2.22 vs $2.09E, revenue $96.2B vs $92.3B E, and strong Q3 guidance ($105.8-110.1B), validating AI infrastructure buildout thesis. Crypto recovered 25-30% in August (BTC $64k\u2192$78-81k, ETH $1,900\u2192$2,450-2,500) on regulatory clarity and institutional adoption signals, validating contrarian washout-recovery thesis. Sector rotations mixed: Energy +7.67%, Healthcare stable, Value +3.4% (weak). R2 delivered +9.33% P&L with only -2.37% drawdown, validating concentrated AI infrastructure exposure. R3 delivered +4.36% P&L with -1.53% drawdown; underperformance driven by lagging sector allocation (VTV, QUAL underperforming) while crypto component is the working thesis. Sector rotation basis (mean-reversion from July crash) deteriorating as semis recover; crypto recovery thesis still early-stage at down ~30% YTD (from -46% in July).",
+  "registration_note": "Desk handling \u2014 39% 'CASH' folded into cash; weights summed to 61 with cash 78; scaled by 0.3607"
+}

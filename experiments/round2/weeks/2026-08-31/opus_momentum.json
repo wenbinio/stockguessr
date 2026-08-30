@@ -1,0 +1,81 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Leveraged long US semis/Nasdaq momentum (TQQQ/SOXL/SMH/AMD/MU/AVGO) funded partly by short crypto perps riding the persistent BTC/ETH/SOL downtrend, weekly-reassessed with a cash buffer.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SMH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 8.0,
+      "thesis": "Cut 13% -> 10% and kept as the mandate's core because a semis momentum book that owns zero semis is not managing a mandate, it is abandoning one. The reduction is not about the price action, which was only -1.3% on the week; it is about the arrival of a genuine policy overhang - reported administration work on semiconductor tariffs extended to servers and laptops, which lands hardest on exactly the offshore-manufactured names that dominate this index - stacked on top of a Bank of America call for a sharp near-term decline. I keep the index rather than picking winners for the same reason as always: I already paid tuition for betting on which sub-sector's pricing curve breaks. The stop tightens 9% -> 8% because the whole case for owning this is that the uptrend resumes quickly, and the intraweek path - 546.80, then 573.00, then 553.11 - is a market that has stopped trending and started thrashing, which is precisely when a wide stop stops being patience and becomes a slow bleed."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 13.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Halved 12% -> 6%, and the reason is that the specific evidence I cited to make it my largest bet has reversed. A week ago it was the one name rising while the sector fell, which is textbook leadership; this week it fell 5.7% against SMH's 1.3%, so it went from leading the sector to lagging it in a single week, and it now sits 26% below its June peak of $1,257. On any momentum measure that is a broken leader, and continuing to carry it at 12% would mean holding the position for the story rather than the trend. Not exited, because the fundamental support got stronger, not weaker: Nvidia's own results named memory supply as the binding limit on its AI growth, the stock trades at 21x with a Strong Buy consensus, and there is a dated catalyst on 30 September earnings. So this is a half-size bet on a specific event rather than a conviction hold. Stop widened from 15% to 13% in loss terms to fit the smaller size while still giving a name with this realised range room to breathe through the print; the +30% take-profit stays so a memory squeeze exits on plan."
+    },
+    {
+      "symbol": "AMD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "Trimmed 9% -> 7%, a smaller cut than MU took, because it earned it on relative performance: -2.4% against MU's -5.7% in a week when the sector's own leadership changed hands. It remains the compute half of the semis expression alongside memory, which is what keeps this sleeve a claim about where AI capital is flowing rather than a single bet on DRAM pricing, and the datacenter-CPU share argument against both Intel and Nvidia is still intact. It takes a cut anyway because at 119x earnings it is the highest-multiple thing in the book and therefore the most exposed to both the tariff headline and the positioning-fatigue unwind BofA is warning about, and because Cathie Wood cutting her position is a small but real signal that the marginal holder here is a seller. Stop tightened 13% -> 12% in line with the shorter leash the semis sleeve is now on."
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12.0,
+      "thesis": "New position and the largest single addition, because it is the direct expression of the rotation that defined this week. Morgan Stanley is telling clients to move from chipmakers to hyperscalers, and Friday priced it: GOOGL closed +1.74% on the same session NVDA fell 4.57%, so this is a live relative-strength trade rather than a forecast. Critically it lets me stay long the AI capex cycle - which the mandate requires and which is not what broke this week - while stepping out of the leg carrying the tariff risk, since a semiconductor tariff on servers and laptops raises the buyer's input cost but does nothing to the demand for the services the buyer sells. It also happens to be the cheapest large-cap in the complex at 17.4x on +20% revenue and +111% net income growth, which means the momentum here is not being paid for with a multiple that a hawkish Warsh can compress the way he can compress a 119x name. Stop at -12%, one normal drawdown for a megacap."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 15.0,
+      "thesis": "New, and the deliberate answer to the question my mandate keeps asking: where does the leverage belong? I was stopped out of SOXL at -20% on 19 August and SOXL fell another 9.5% on Friday alone, so the sector is the wrong place to be levered. But the index is not the sector - QQQ closed within 4.3% of its 52-week high on a day the chip complex broke, because the hyperscalers that dominate it are the rotation's destination rather than its source. So I am putting a small amount of 3x exposure on the thing that is still trending instead of the thing that is not. Sized at 5% precisely because 3x is a size multiplier, not a conviction multiplier: 5% at 3x is 15% of effective Nasdaq beta, and the -15% stop caps the loss on this leg at 0.75% of NAV, which corresponds to roughly a 5% move in QQQ. I accept the 5bp leveraged-ETF cost and the decay drag for a position I expect to hold weeks, not quarters."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "thesis": "Raised 8% -> 10% and now co-largest in the book. Last week I called this a rotation destination and bought the broad, low-beta vehicle while I was cutting risk; this week the tape confirmed the call - XLV sits near its 52-week high of 176.60 and is +27% over a year while the semis complex breaks - so the position gets promoted from a hedge to a core holding. The mechanism matters as much as the price: healthcare is the sector that is absorbing the capital leaving chips, its earnings are unconnected to the AI capex debate that every other equity leg here depends on, and at a 0.56 beta it cannot be de-rated by a long-yield shock the way a 119x semi can. Stop at -10%, appropriate for something with this realised volatility, and tight enough that if the rotation reverses back into chips I am out and can redeploy."
+    },
+    {
+      "symbol": "IBB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 12.0,
+      "thesis": "New. Last week I explicitly chose XLV over the biotech vehicle because I was reducing book risk; that constraint was a function of the week, not of the trend, and the trend has only strengthened. IBB is +51% over a year and roughly 4% below its 52-week high, and the equal-weight XBI at +81% is being flagged as approaching its 2021 high after a bullish flag breakout - so this is the single strongest, most persistent uptrend I can find anywhere in the tape, which is what a momentum mandate is supposed to own. The driver is fundamental and self-reinforcing rather than a rate story: M&A has restarted, capital markets have reopened for the sector, and both feed on each other. Held via IBB rather than XBI because the large-cap concentration in Amgen, Vertex and Gilead gives me the trend without the single-trial binary risk that dominates equal-weight small-cap biotech. Friday's -2.7% is a pullback inside an uptrend, not a break; the -12% stop is where I stop calling it that."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 5,
+      "leverage": 2,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 30.0,
+      "thesis": "The crypto sleeve comes back on, but on the opposite side. My mandate was written to short a persistent BTC/ETH/SOL downtrend; that downtrend just ended with the strongest weekly move since 2023, from the low $60Ks to roughly $80K, on Bessent's bond buyback and momentum behind the Clarity Act. A momentum manager follows the trend rather than defending the direction he wrote down, and shorting into that would be the single worst thing this mandate could do right now. Everything about the sizing reflects that I am entering late, though: 5% at only 2x, because I am buying after a 30% run and into a binary mid-September Senate deadline on the Clarity Act that can resolve either way. At 2x, liquidation needs a 47% adverse move so the only thing that can end this is my own -20% stop, which corresponds to a 10% BTC decline - roughly one bad week for this asset and the point at which the reversal thesis is simply wrong. Funding at 10% APR on the long side costs about 2bp of NAV a week here, which is immaterial relative to the move I am after."
+    }
+  ],
+  "cash_pct": 41,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Three of my four stated catalysts resolved against me, and momentum discipline is about following the tape rather than defending the reason I gave last week. The defence pair and XLE were all bought on one shared impulse - Bessent's Iran sanctions and rising crude - and that impulse inverted into Hormuz-reopening talks, a Venezuela supply deal and a fading fear premium; LMT -7.4% and RTX -5.1% in a week SPY was flat is the market telling me the catalyst is gone, so all three legs go rather than get trimmed. On semis I am cutting again but not capitulating: what changed is that the pullback acquired a policy driver (tariffs extended to servers and laptops) and a sell-side capitulation call, and Friday's split - NVDA -4.6% and SMH -3.5% against QQQ -0.65% - proves this is a targeted sub-sector de-rating, not index risk. So I keep semis as the mandate core at reduced size and move the freed capital to where the same money is going: hyperscalers (GOOGL rose 1.7% on the day NVDA fell 4.6%), healthcare and biotech (the only sector making new highs), and index-level Nasdaq leverage rather than sector-level leverage, because QQQ is 4% off its high while the chip complex is breaking. MU is halved specifically because the property that justified its 12% - being the one leg outperforming a falling sector - is gone: it fell 5.7% against SMH's 1.3% and now sits 26% below its June peak. And I am putting the crypto sleeve back on the long side, because the persistent downtrend my mandate was written to short just had its best week since 2023.",
+  "research_notes": "PRICES/MOVES CHECKED (through 2026-08-28 close, vs 2026-08-21 marks in my packet):\n- SMH: 560.42 -> 546.80 (8/24) -> 555.82 -> 555.77 -> 573.00 (8/27) -> 553.11 (8/28, -3.47%). Net week -1.3% but pure whipsaw, ending on a violent break. SOXX 508.62 (-3.20%), SOXL 111.34 (-9.52%), NVDA 217.55 (-4.57%).\n- MU 988.82 -> 932.86 (-5.7%); now -26% from its June peak of $1,257. AMD 476.97 -> 465.58 (-2.4%). AVGO 368.79, sitting near the low end of a 287-495 52wk range after Marvell won a Google custom-AI-chip deal.\n- LMT 608.68 -> 563.85 (-7.4%). RTX 222.97 -> 211.71 (-5.1%). ITA -0.61% Friday. Both fell hard in a week SPY was roughly flat.\n- SPY 769.35 (-0.23% Fri, 52wk high 779.37). QQQ 716.43 (-0.65% Fri). GOOGL 346.59 (+1.74% Fri, 17.4x PE on +20% rev / +111% NI).\n- XLV 171.16, near its 52wk high of 176.60, +27% 1yr. IBB 208.95 (-2.7% Fri) but ~4% off its 52wk high, +51% 1yr. XBI 162.38, +81% 1yr, flagged as approaching its 2021 high of 174.79 after a bullish flag breakout.\n- GLD 423.36 -> 408.89 (-3.4% week, -3.24% Friday alone).\n- TLT 82.05 -> 82.88 (+1.0%). IEF 92.85. XLE 62.68 (+0.63% Fri), XOM 156.71 (+0.17%). USMV 101.74 (52wk high 102.21), SPLV 75.08, XLP 85.45 (+0.43%), KO 89.66 (+0.67%), T 26.01 (+2.28%), XLRE 44.48, HYG 79.74 (52wk range 78.57-81.36).\n- IBIT 43.90; BTC ran from the low $60Ks to ~$80K, its best week since 2023.\n\nWHAT I LEARNED - four catalysts inverted or newly appeared this week, and three of them sit directly under positions I own:\n1. SEMIS GOT A POLICY CATALYST, NOT JUST A WOBBLE. Trump administration officials are reported to be weighing broader semiconductor tariffs extended to servers and laptops, and Bank of America told clients chip stocks face a sharp near-term decline on positioning fatigue. Morgan Stanley is pushing rotation out of chipmakers and into hyperscalers. Friday's tape confirms it: NVDA -4.6% and SMH -3.5% while QQQ was only -0.65% and SPY -0.23%. That is not a market selloff, it is a targeted de-rating of one sub-sector inside an index making new highs.\n2. THE IRAN TRADE REVERSED. Iran-Oman talks on reopening the Strait of Hormuz, a US-Venezuela deal covering 65bn barrels of reserves, and Persian Gulf exports back to two-thirds of pre-war levels have crude retreating toward $85 Brent support with the fear premium fading. Coverage is explicit that the Iran war has not helped defence stocks. My XLE and LMT/RTX legs were both bought on \"Bessent details Iran sanctions Monday\" - that catalyst resolved the opposite way.\n3. FED CHAIR WARSH WENT HAWKISH AT JACKSON HOLE, reinforcing an inflation-fighting stance. Gold fell 3.2% on it. A credibly hawkish Fed cuts the real-rate tailwind under gold and simultaneously raises the odds that the next labour-market crack reads as a policy-induced growth scare - the branch the belly of the curve wins in.\n4. THE LONG END STABILISED. Global yields fell on declining oil plus further Treasury steps on the back end; TLT +1% off its 22-year low. The term-premium shock that drove my last two rebalances is easing at the margin, mostly because oil is falling.\nCROSS-CHECK: BTC's downtrend - the one my Round 2 mandate was written to short - inverted violently on the Bessent buyback and Clarity Act momentum, with a mid-September Senate deadline as the next binary.\nNET READ: the money is rotating out of chips and out of geopolitics, and into hyperscalers, healthcare/biotech and low-volatility equity, while the bond shock cools. My Round 2 book was long the two things that broke and underweight the two things that are working; my Round 3 book was correctly positioned except for gold sizing and a deteriorating credit leg."
+}

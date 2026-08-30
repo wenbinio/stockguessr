@@ -1,0 +1,80 @@
+{
+  "name": "Opus 5 trend following",
+  "model": "opus",
+  "group": "opus5",
+  "strategy": "Systematic time-series trend across six asset classes: every candidate is scored on price vs its 50- and 200-day moving average plus 3-month time-series momentum computed from data through the 2026-07-24 close, long where both filters are positive and short where both are negative, sized inversely to 60-day realised volatility so each sleeve contributes similar risk, with wide catastrophe stops rather than tight exits because the engine's stops are fixed-from-entry and weekly reassessment is the real trend-exit mechanism.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 15.0,
+      "thesis": "Trimmed 20 to 19, which is a funding trim and not a signal change. The index closed 7,711.76, +0.49% on the week and within a percent of its 779.37 SPY high, so price is comfortably above both moving averages with 3m momentum still strongly positive \u2014 and at ~13% realised vol it remains the lowest-volatility trend I own and therefore still my largest weight under inverse-vol sizing. What changed is the character of the risk rather than the trend: Warsh explicitly put rate increases in play at Jackson Hole and the market now prices ~34% odds of a September hike, so the equity leg no longer has a Fed put underneath it. The disciplined response to that is not to sell a trend that is working but to stop paying for it with cash and start paying for it with a duration short, which is what the new TLT leg does. Wide -15% catastrophe stop; weekly reassessment stays the real exit."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut hard from 19 to 14 \u2014 the largest single move in the book \u2014 because I sized it up for a driver that has since reversed. Last week I raised it to 19 on Brent at $94.39 and a US move to cut Iran out of banking, shipping and settlement entirely. Brent is now $88.29 and WTI $83.38, the market has re-priced Iran as an economic and sanctions confrontation rather than an imminent threat to physical supply, and Goldman has Persian Gulf exports back at 15-16 mb/d against the 5-6 mb/d March low. XLE at $62.68 is only 1.5% lower, still above both moving averages and still inside striking distance of its $64.70 high, so the trend filter passes and I keep a real core position \u2014 the equity simply has not yet marked what the barrel did. But a 19% weight was the expression of a specific escalation thesis, and that thesis is running backwards; 14 is roughly the inverse-vol baseline for the highest-volatility equity sleeve I own (~24% realised). The stop stays wide at -25% for the same reason as always: a headline gap in either direction is the known failure mode and a tight stop guarantees being taken out on the first one."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 18.0,
+      "thesis": "Back to 15 from 17, reversing exactly the add I made last week and for exactly the mirror reason. I raised it to 17 because it gained 3.9% in a week the index fell 1.4% \u2014 five points of relative strength at a 0.56 beta. This week it fell 2.0% to $171.16 while the index rose 0.49%, which is two and a half points of relative weakness, and the outperformance I paid up for did not persist. The underlying trend is untouched: still above both moving averages with the golden cross intact, still within 3% of its $176.60 52-week high, still the strongest 3m momentum among my low-volatility sleeves, ~18% realised vol. So this is not a doubt about the leg, it is a refusal to let a one-week tactical add calcify into a permanent overweight. It stays a substantial core holding because a low-beta trend that works when the tape does not is worth more, not less, now that the Fed has stopped promising cuts."
+    },
+    {
+      "symbol": "DBA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised 11 to 13 because it did the one thing nothing else in my commodity complex did: it broke out. $29.19 against $28.32 a week ago, +3.1%, and that is a new 52-week high \u2014 the 12-month range now reads 25.40-29.20 and price is sitting on the top of it. Set that against the week it happened in: gold -3.7%, crude -3.8%, copper -0.7%. Agriculture made new highs while every other commodity I follow fell, which is the definition of a leg extending its own trend rather than riding a complex-wide beta. It also carries the two properties this book needs most right now \u2014 a ~0.12 beta makes it the least equity-correlated thing I own, and ~13% realised vol makes it the cheapest risk unit available under inverse-vol sizing, at a moment when I am cutting a high-vol energy leg and the Fed has turned hawkish. Two weeks ago I declined to trade this on a 0.1% move; I am adding now because the move is real, directional, and confirmed by a range breakout."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "thesis": "Raised 9 to 13, the largest add in the book, because the condition I cut it for has resolved in its favour. I took it to 9 and then held it flat two weeks running with an explicit reason: the trend passed but momentum was not being added to, and the rate picture cut both ways so it cut neither. That ambiguity is gone. $58.10 against $57.48, +1.1%, now pressing the $58.41 52-week high, and Warsh at Jackson Hole put rate increases in play with ~34% priced for September \u2014 higher-for-longer at the front end with a 30-year already near 19-year highs is a steeper curve and better net interest margin, which is the cleanest bank tailwind on offer. The systemic-stress side of the argument, a buyers' strike in the long end, has eased modestly with the 30-year back to ~5.20% from 5.33%. I said I would size this up when momentum resumed rather than anticipate it; it resumed, and I am paying for the add out of the energy leg whose driver went the other way."
+    },
+    {
+      "symbol": "CPER",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 25.0,
+      "thesis": "Cut again, 8 to 5, for the third consecutive week and for the same compounding reason. The price path is $40.12, $39.99, $39.67 \u2014 three weeks of no progress at the top of a $27.37-$40.97 range, with copper itself down 0.71% on the week. The moving-average filters still pass, which is why this is a trim and not an exit, but a trend that has stopped trending is no longer paying me for the risk it carries. And the risk it carries is not ordinary volatility: Section 232 remains unresolved with refined cathode still exempt and no determination made, the 15% phase-in still only contemplated for 2027, and CPER holds exactly the COMEX futures that embed the US tariff premium. A stalled price and an unpriced gap risk in the same leg is worse than either alone precisely because inverse-vol sizing cannot see the second one. I keep taking size down by hand while the -25% stop stays wide enough that normal copper volatility does not hit it."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "perp",
+      "side": "long",
+      "weight_pct": 5,
+      "leverage": 1,
+      "stop_loss_pct": 20.0,
+      "thesis": "Raised 4 to 5 because the flip I made a week ago has been confirmed rather than faded. I sized this at the very bottom of the inverse-vol range specifically because every filter was marginal \u2014 a one-day-old 200dma reclaim on +4.8% 3m momentum, entered after a 22% squeeze week, which is the worst possible entry. A week later BTC closed near $80,200 against ~$77,000, the 200-day sits at $69-75k so the reclaim now has a real buffer instead of being a single print, and 3m momentum has strengthened to roughly +9% ($73,525 to $80,173). That is the marginal case becoming an ordinary one, which earns one point of size and nothing more \u2014 realised vol here is multiples of anything else I own and inverse-vol sizing keeps it the smallest leg in the book regardless of how good the signal looks. Still 1x with no liquidation-relevant leverage. Funding at 10% APR on this size is a rounding error and not a reason to change wrapper. The -20% stop sits near $64k, back inside the abandoned range, which would falsify the breakout outright."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "thesis": "New leg, and the first short since I closed the falsified BTC short. My mandate is symmetric \u2014 short where both filters are negative \u2014 and a time-series trend book running no shorts at all while a qualifying short sits in plain sight is a construction failure, not neutrality. TLT closed $82.88, below every moving average with the 10dma having crossed under the 50dma on 2026-07-14, after printing a 22-year low this month; the 52-week range is 81.17-92.19 and the all-time low is $80.67, so price is pinned at the bottom of its own distribution rather than mid-range. The fundamental driver is now pushing the same way: Warsh explicitly said rate increases are in play, ~34% of a September hike is priced, easing calls are being pushed into 2027, and the 30-year is near 19-year highs with debt approaching $40tn. I size this at 6% rather than the ~12% inverse-vol would suggest for a ~13% vol asset, deliberately, because the momentum leg is weak: late-May TLT was ~$83.5 against $82.88 now, so 3-month momentum is only marginally negative and the last three months are really a flat range at the lows, not a downtrend paying me to be in it. Strong MA structure plus weak momentum earns a half-size position, not a full one. The second reason to own it is portfolio construction: this is short precisely the long-end stress I have named as my book's main pressure point for two weeks running, so it cuts net long from 88 to 78 while diversifying an all-long risk book. Borrow at 3% APR on 6% of NAV is immaterial. The -15% stop would require the 30-year to collapse roughly a full point, which is a recession or QE regime change and should take me out."
+    }
+  ],
+  "cash_pct": 10,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Every leg still passes its trend filter, so I close nothing \u2014 but the internal ranking moved enough that holding last week's weights would mean holding theses the tape has already contradicted. Three specific things forced size to move. First, I raised XLE to 19 last week explicitly because Brent went to $94.39 and the Iran story was turning into a physical supply war; Brent is now $88.29, WTI $83.38, and the market has re-read Iran as a sanctions fight while Gulf exports recovered to 15-16 mb/d from the 5-6 mb/d March low. XLE itself is only -1.5% because the equity lags the barrel, which means the deterioration is not yet marked. I will not hold a 19% weight underwritten by a $94 Brent when Brent is $88, so it goes back to its inverse-vol baseline. Second, I added 2 points to XLV for outperforming a falling index; it then fell 2.0% while the index rose 0.5%, so I take those 2 points back \u2014 I add for relative strength and I remove for its absence, symmetrically. Third, DBA printed a new 52-week high and XLF pressed its own while gold, oil and copper all fell, and Warsh putting hikes in play is a higher-for-longer, steeper-curve setup that is the cleanest bank tailwind available; those are the two legs momentum is actually being added to, so they get the size. Separately, a time-series trend book carrying zero shorts while a qualifying short sits in plain view is a construction failure, not neutrality: TLT is below every moving average at a 22-year low with the Fed chair signalling hikes, and it is short precisely the risk I have flagged as my book's main pressure point for two weeks. Net long falls from 88 to 78 even as gross rises, which is the right direction into a Fed that has taken the put away.",
+  "novelty": "The book gains its first short since I closed the BTC short \u2014 a 6% TLT leg that is short duration rather than short risk \u2014 and the weight centre of gravity moves out of the energy/healthcare pair that dominated it into agriculture and financials, the only two legs making new highs.",
+  "research_notes": "Verified every leg's mark and trend structure against the 2026-08-28 close, plus the macro drivers I sized on last week.\n\nPRICES (last week -> 2026-08-28): SPY 769.35 (S&P 7,674.37 -> 7,711.76, +0.49% on the week, 52wk high 779.37). XLE 63.64 -> 62.68 (-1.5%, 52wk range 42.35-64.70). XLV 174.62 -> 171.16 (-2.0%, high 176.60). DBA 28.32 -> 29.19 (+3.1%, 52wk range 25.40-29.20 \u2014 a NEW 52-week high). XLF 57.48 -> 58.10 (+1.1%, high 58.41). CPER 39.99 -> 39.67 (-0.8%, high 40.97). BTC ~77,000 -> ~80,200.\n\nMACRO. (1) Jackson Hole: Fed Chair Warsh called inflation \"concerning,\" said this summer's better prints \"do not tell me that underlying trends have meaningfully improved,\" and explicitly put rate INCREASES in play. Markets now price ~34% odds of a hike at the Sept 15-16 meeting; some houses pushed easing into 2027. Gold -3.7% on the week to $4,506 is the clean read-through. (2) Oil reversed hard: Brent 94.39 -> 88.29, WTI 87.06 -> 83.38 (-3.8% wk, ~-5% intra-week trough). The driver flipped \u2014 traders now frame Iran as a sanctions/economic confrontation rather than an imminent physical supply threat, Hormuz flows are improving, and Goldman puts Persian Gulf exports back at 15-16 mb/d versus the March low of 5-6 mb/d (pre-war 22-24). That is the exact \"economic D-day\" thesis I raised XLE on last week, running backwards. (3) Long end: 30yr ~5.20% on 8/27, off the 5.33% 19-year high of 8/18 \u2014 pressure eased slightly but the structure is unchanged. (4) Copper -0.71% on the week; I re-checked Section 232 and refined cathode is still exempt with no determination.\n\nNEW CANDIDATE SCREENED: TLT. Below all moving averages (10dma crossed below the 50dma on 2026-07-14), printed a 22-year low this month, $82.88 close against a 52wk range of 81.17-92.19 and an all-time low of $80.67. 3-month momentum is only marginally negative (~$83.5 in late May -> $82.88), so this is a strong-MA / weak-momentum signal, and I size it accordingly rather than to full inverse-vol.\n\nCONCLUSION: no leg failed its trend filter, so nothing gets closed. But the ranking inside the book changed materially \u2014 DBA and XLF accelerated, XLE's physical driver reversed, XLV gave back exactly the relative strength I paid up for, CPER stalled a third week, and BTC's flip is now confirmed. This is a re-sizing week, not a rebuild."
+}

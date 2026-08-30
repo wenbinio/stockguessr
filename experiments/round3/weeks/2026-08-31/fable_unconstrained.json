@@ -1,0 +1,52 @@
+{
+  "name": "Fable Unconstrained",
+  "model": "fable",
+  "group": "flagship",
+  "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, staples) + volatility-risk-premium via SVXY, 32% cash at 4%",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Trimmed 14->10: the driver of the +10% month (rising no-hike odds) reversed at Jackson Hole and gold fell 2% from the $4,696 high; the multi-quarter reversion-to-$5,000 case survives (Treasury long-bond support, UBS target), but a hawkish-Fed dollar is the classic headwind, so I bank part of the run and keep core size."
+    },
+    {
+      "symbol": "EWZ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Trimmed 14->10 by the same rule as 7/30: hawkish-Fed dollar risk (~58% Sept hike odds post-Warsh) is the documented trigger for trim size. The core carry thesis is intact \u2014 single-digit P/E, ~8% carry, Selic cutting cycle live at 14% \u2014 so the position stays; only the dollar-risk overlay changed."
+    },
+    {
+      "symbol": "BRK-B",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Unchanged quality-value ballast: the record cash pile now earns MORE if Warsh hikes, and it remains the book's flight-to-quality sink if hawkish repricing cracks the record-high tape."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 30.0,
+      "thesis": "Unchanged multi-year reversion: Q2 beat, raised FY26 guide, and Medicare Advantage funding tailwind still confirming the sub-$300-to-$420 recovery; an Erste downgrade to Hold and commercial-cost worries are noise against bullish call flow, and rate policy barely touches the thesis."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Unchanged correction hedge: cheap defensive carry that is designed to lag record highs and outperform if the now-live hike risk reverses the melt-up \u2014 exactly the scenario Warsh made more probable."
+    }
+  ],
+  "cash_pct": 44,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Warsh's Jackson Hole speech re-fired the exact trigger this book has traded twice: Sept hike odds jumped ~35%->~58% with two hikes priced by March. Rule-consistency: I trimmed EWZ on 7/30 at ~60% hike odds and restored it on 8/15 when odds collapsed \u2014 the condition has returned, so EWZ goes back to trim size (14->10) against renewed dollar strength, while the Selic-carry core thesis keeps it in the book. GLD's stated driver \u2014 rising no-hike odds \u2014 reversed on Friday and gold fell 2% from a $4,696 three-month high, so I bank part of the extended run (14->10); holding a full-size position after the overshoot driver flips is the wrong side of mean reversion. SVXY is cut entirely: its own sizing logic said 'hike odds fell' and 'contango intact' justified 5% \u2014 hike odds now near 60% into a September FOMC with VIX at a compressed 14.35 means the harvested premium is thin and the spike convexity against me is maximal; the VRP trade returns when vol is fatter or the hike is resolved. BRK-B, UNH, and XLP are untouched \u2014 the defensive core is worth more, not less, in a hawkish regime \u2014 and cash rises to 44% at 4% APY, which gets a raise if the Fed actually hikes. Net: de-risk the three legs whose specific stated conditions reversed, change nothing else.",
+  "novelty": "Zero symbol overlap with my Round-2 momentum book: this book now expresses the hawkish-Warsh shift through defensive value, carry trims, and a 44% cash yield position rather than through momentum leaders and crypto.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked: (1) Warsh Jackson Hole debut Fri 8/28 \u2014 hawkish, Sept hike odds 35%->~58%, two hikes priced by March; S&P +0.5% wk but Friday risk-off, gold -2% on speech, Russell 2000 -1.5% wk, VIX 14.35. (2) PANW ~$358, ~flat WoW, ~-10% off Aug-13 $396 high, Sept-1 earnings Tuesday at ~85x fwd; Jefferies raised PT to $450 \u2014 no CRWD-style -15% crash/insider-sale/executive-exit combination, so it still passes my second momentum filter. (3) FTNT no adverse news. (4) IWM record highs earlier in the month, -1.5% Warsh week \u2014 not a sharp 1m correction. (5) BTC ~$79-80k vs $77.6k mark, stop floor intact. (6) EWZ ~$35 with Selic cut cycle live, but my documented 7/30 trim trigger (hawkish-Fed dollar risk at ~60% Sept-hike odds) has re-fired at ~58%. (7) GLD driver (rising no-hike odds) reversed; gold -2% off a $4,696 3-month high. (8) SVXY: VIX 14.35 compressed premium into a September FOMC that now has a live ~58% hike \u2014 worst convexity setup for short-vol. (9) UNH: Erste downgrade to Hold, bullish call flow, no thesis change."
+}

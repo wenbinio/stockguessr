@@ -1,0 +1,88 @@
+{
+  "name": "Opus Momentum",
+  "model": "opus",
+  "group": "flagship",
+  "strategy": "Net-low-beta cross-asset carry / risk-parity: harvest bond term premium, credit-spread carry, equity risk premium and gold diversification via an inverse-vol-balanced basket, rebalanced weekly.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "Raised 14% -> 17% and now the top weight in the book, which is the first time I have added to this leg rather than leaving it alone. The reason is that its relative performance finally turned: USMV closed within half a percent of its 52-week high while the S&P sits below its own and the semiconductor complex breaks, and the commentary is right that low-volatility stocks are having a moment after a long stretch of underperformance. That matters more than it sounds, because for months this sleeve was the correct structural choice that was not being paid; a factor that starts working is worth more than the same factor being merely defensible. It is also the cleanest way to keep this book's equity risk premium above 20% while gold - my other high-conviction leg - is being cut, since a min-vol equity book carries far less multiple to compress if Warsh's hawkishness does what it is meant to do to discount rates."
+    },
+    {
+      "symbol": "IEF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 16,
+      "thesis": "Raised 12% -> 16%, reversing last week's trim, because the probability weighting behind that trim has flipped. I cut this on the grounds that a growth-scare resolution was now the less likely branch and I should not hold my largest position in the scenario the market was voting against. Warsh changed that: a Fed chair who publicly recommits to fighting inflation with the labour market already cracking is a Fed chair raising the odds of a policy-induced growth scare, and the belly of the curve is the only asset in this basket that rallies outright in that outcome. Meanwhile the reason I had for avoiding duration is easing - falling oil pulled global yields down, Treasury is taking further steps at the back end, and TLT bounced off its 22-year low. My framework's distinction still holds and is why this is IEF rather than TLT: the fiscal supply problem lives at the long end, and the belly has outperformed it through every leg of this repricing. At a 4.7% ten-year I am paid genuine carry to hold the insurance."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "thesis": "Cut 16% -> 12%, giving back last week's promotion. I am not abandoning the argument - US debt sustainability and dollar weakness are unchanged facts, and gold remains the only asset here that is structurally paid by a fiscal shock, which is the diversification job my Treasury sleeve failed at. What changed is two things I have to respect. First, Warsh's Jackson Hole hawkishness attacks the real-rate channel that has been gold's tailwind, and the market agreed immediately with a 3.2% single-session decline. Second, and more binding for a book whose mandate is variance minimisation: gold just printed the largest one-day and one-week loss of anything I own, which means my own inverse-vol rule now says it should be a smaller position regardless of how much I like the story. Last week I wrote that adding hard after a big run is how a low-vol book imports volatility, then added hard anyway; this is me applying my own rule rather than arguing past it. Twelve percent still leaves it a top-three weight. The -12% stop stays for exactly the scenario now unfolding."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Raised 7% -> 8% alongside USMV, for the same reason - realised low volatility is being rewarded again - but kept as the smaller of the pair. The point of holding both remains that SPLV is a pure realised-volatility screen while USMV is an optimiser output subject to sector and turnover constraints, so their constituents genuinely differ and running both diversifies within the factor rather than doubling one construction. Its top holdings sit in insurance, conglomerates and regulated utilities, which is a materially different economy from USMV's healthcare and industrials tilt. The one-point add rather than three reflects that its trailing return of 4.1% shows the factor has been out of favour longer here than in USMV; I am adding to the turn, not extrapolating it."
+    },
+    {
+      "symbol": "XLRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Held at 6% and given a -10% stop it did not have before. Last week I cut this hard on the logic that a levered real-estate proxy takes a 19-year-high long yield twice, through the discount rate and through refinancing. That logic is intact but its premise softened slightly this week: yields fell globally on declining oil, TLT rose 1% off its low, and Treasury is acting on the back end. So this is the leg with the most to gain from any durable long-end relief, which is why it survives at 6% rather than getting cut again. But one week of relief off a 22-year low is not a trend, and unlike staples or gold this asset has no independent reason to work if rates go back up - so I am adding the stop I should have had while I wait for the answer, rather than raising the weight on a maybe."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Held at 6%. The distinction that earns staples their place keeps getting confirmed rather than tested: short effective duration plus pricing power that passes inflation through to revenue, which is why they are not simply a levered bet on rates falling the way REITs and the long bond are. Friday made the point cleanly - XLP closed green while the S&P, the semis complex and gold all fell - which is precisely the payoff profile a variance-minimising basket is paying for. It also remains the equity that holds up if the labour crack that Warsh appears willing to tolerate turns into a real recession print, and it does the defensive dividend job at a comparable yield to utilities without importing exposure to the AI-datacenter power buildout that this book exists to avoid."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Cut 8% -> 5%, the largest proportional reduction in the book, because the exact property I raised it for last week has weakened. I sized it up as the leg most tightly coupled to the inflation regime and the only one that does not need rates to fall - but Iran-Oman talks on reopening Hormuz, a US-Venezuela deal covering 65bn barrels and Gulf exports back to two-thirds of pre-war levels have crude retreating toward $85 support with the fear premium draining out. When the mechanism a position is coupled to reverses, the position shrinks even though the price has not yet fallen; XLE was up 0.6% on Friday and I am cutting anyway, because sizing follows the thesis rather than the last print. Kept at 5% rather than zero because refiners are heading into a historic profit surge on supply-disruption margins, the SPR sits at its lowest since 1982, and this is still the only leg that pays if the inflation shock resumes."
+    },
+    {
+      "symbol": "KO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Held at 5%. The single-name expression of defensive dividend carry, and unusually for a staple it is also the one with a live fundamental trend behind it - 5% volume and 6% organic revenue growth with margin expansion and double-digit EPS growth in Q2, which is why UBS and TD Cowen have both been raising targets into a tape that is de-rating almost everything else. It closed up 0.67% on Friday's red session. It shares the inflation pass-through property that is the reason I keep staples while cutting pure bond proxies, and it carries no exposure to either the AI capex debate or fiscal duration, which is the profile this basket most needs more of in weeks when the equity index and the long bond move together."
+    },
+    {
+      "symbol": "T",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "thesis": "Held at 4% after last week's trim. I cut it because a structural repricing of borrowing costs hits a heavily indebted telecom through refinancing in a way it does not hit KO - that remains the reason it is not larger. But the headwind eased on both counts this week: the long end stabilised as global yields fell, and the company delivered on execution, closing its $23bn EchoStar spectrum purchase and passing 2 million 5G home internet subscribers, with the stock up 2.28% on a red Friday. At 8.6x earnings with a 4.3% dividend it is the cheapest real coupon in the basket, and regulated domestic cash flows with near-zero AI-cycle correlation is exactly the uncorrelated yield stream the mandate asks for. Holding rather than adding, because one week of long-end relief does not retire a balance-sheet argument."
+    },
+    {
+      "symbol": "HYG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 6.0,
+      "thesis": "Cut 6% -> 3%, continuing a direction I have now trimmed three weeks running, but this time for a different and better reason. Until now the case was purely that the compensation was thin - roughly 300bp over risk-free for a genuinely fat left tail, with cash next door at 4% carrying zero duration and zero default risk. Now there is actual damage to point at: HYG has broken below triangle support on rising volume with bearish momentum, and it sits in the bottom third of its 52-week range while the equity index is near its high, which is credit refusing to confirm equities. That divergence is the classic early tell, and it is arriving in front of a debt-funded AI complex, a contracting labour market and a Fed chair who has just said he will not rescue it. Kept at 3% rather than zero only because spread carry is explicitly in my mandate and tight spreads can stay tight for years; the -6% stop is what makes owning a fat left tail survivable at all."
+    }
+  ],
+  "cash_pct": 18,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: This book is doing its job - up 2.53% with a 1.13% maximum drawdown while my momentum book is down 5.33% - so the changes are calibration along the two axes that actually moved, not a reconstruction. The first is gold. I raised it to top weight last week on the fiscal-debasement argument and said the stop was there to survive post-squeeze mean reversion; the mean reversion arrived immediately, -3.4% on the week with -3.2% of it on Friday alone when Warsh used Jackson Hole to reassert an inflation-fighting stance. The fiscal fact is unchanged, but a credibly hawkish Fed removes the real-rate tailwind, and having just watched it print the largest single-day loss in the basket, inverse-vol weighting has to bind on it rather than be argued around. The second is that the long-end shock is cooling for a reason I did not have last week: oil is falling on Hormuz-reopening talks, global yields fell with it, and Treasury is acting on the back end. That does two things - it makes the belly of the curve more attractive, and it makes a hawkish Warsh raise rather than lower the odds of a policy-induced growth scare, which is the exact branch IEF wins in and the one I demoted last week for being the less likely outcome. So duration comes back at the belly, gold comes down, energy comes down because its inflation coupling is precisely what weakened, credit comes down because it has now added technical damage to thin compensation, and the low-volatility equity sleeve goes up because it is finally outperforming after a long stretch of not doing so and it is the purest form of the equity risk premium my mandate is built to harvest.",
+  "novelty": "The two books now share zero symbols and zero same-direction gross weight: Round 2 owns semis, hyperscalers, leveraged Nasdaq, healthcare/biotech and a long crypto perp - all high-beta, all levered to the AI capex cycle and a trend continuing - while Round 3 owns gold, the belly of the Treasury curve, minimum-volatility and low-volatility equity, staples, REITs, energy and high yield, every one of them a carry or diversification claim that pays without needing any trend to persist, and the one name they might have shared (XLE) has been removed from Round 2 entirely rather than held in both.",
+  "r2_overlap_pct": 0,
+  "research_notes": "PRICES/MOVES CHECKED (through 2026-08-28 close, vs 2026-08-21 marks in my packet):\n- SMH: 560.42 -> 546.80 (8/24) -> 555.82 -> 555.77 -> 573.00 (8/27) -> 553.11 (8/28, -3.47%). Net week -1.3% but pure whipsaw, ending on a violent break. SOXX 508.62 (-3.20%), SOXL 111.34 (-9.52%), NVDA 217.55 (-4.57%).\n- MU 988.82 -> 932.86 (-5.7%); now -26% from its June peak of $1,257. AMD 476.97 -> 465.58 (-2.4%). AVGO 368.79, sitting near the low end of a 287-495 52wk range after Marvell won a Google custom-AI-chip deal.\n- LMT 608.68 -> 563.85 (-7.4%). RTX 222.97 -> 211.71 (-5.1%). ITA -0.61% Friday. Both fell hard in a week SPY was roughly flat.\n- SPY 769.35 (-0.23% Fri, 52wk high 779.37). QQQ 716.43 (-0.65% Fri). GOOGL 346.59 (+1.74% Fri, 17.4x PE on +20% rev / +111% NI).\n- XLV 171.16, near its 52wk high of 176.60, +27% 1yr. IBB 208.95 (-2.7% Fri) but ~4% off its 52wk high, +51% 1yr. XBI 162.38, +81% 1yr, flagged as approaching its 2021 high of 174.79 after a bullish flag breakout.\n- GLD 423.36 -> 408.89 (-3.4% week, -3.24% Friday alone).\n- TLT 82.05 -> 82.88 (+1.0%). IEF 92.85. XLE 62.68 (+0.63% Fri), XOM 156.71 (+0.17%). USMV 101.74 (52wk high 102.21), SPLV 75.08, XLP 85.45 (+0.43%), KO 89.66 (+0.67%), T 26.01 (+2.28%), XLRE 44.48, HYG 79.74 (52wk range 78.57-81.36).\n- IBIT 43.90; BTC ran from the low $60Ks to ~$80K, its best week since 2023.\n\nWHAT I LEARNED - four catalysts inverted or newly appeared this week, and three of them sit directly under positions I own:\n1. SEMIS GOT A POLICY CATALYST, NOT JUST A WOBBLE. Trump administration officials are reported to be weighing broader semiconductor tariffs extended to servers and laptops, and Bank of America told clients chip stocks face a sharp near-term decline on positioning fatigue. Morgan Stanley is pushing rotation out of chipmakers and into hyperscalers. Friday's tape confirms it: NVDA -4.6% and SMH -3.5% while QQQ was only -0.65% and SPY -0.23%. That is not a market selloff, it is a targeted de-rating of one sub-sector inside an index making new highs.\n2. THE IRAN TRADE REVERSED. Iran-Oman talks on reopening the Strait of Hormuz, a US-Venezuela deal covering 65bn barrels of reserves, and Persian Gulf exports back to two-thirds of pre-war levels have crude retreating toward $85 Brent support with the fear premium fading. Coverage is explicit that the Iran war has not helped defence stocks. My XLE and LMT/RTX legs were both bought on \"Bessent details Iran sanctions Monday\" - that catalyst resolved the opposite way.\n3. FED CHAIR WARSH WENT HAWKISH AT JACKSON HOLE, reinforcing an inflation-fighting stance. Gold fell 3.2% on it. A credibly hawkish Fed cuts the real-rate tailwind under gold and simultaneously raises the odds that the next labour-market crack reads as a policy-induced growth scare - the branch the belly of the curve wins in.\n4. THE LONG END STABILISED. Global yields fell on declining oil plus further Treasury steps on the back end; TLT +1% off its 22-year low. The term-premium shock that drove my last two rebalances is easing at the margin, mostly because oil is falling.\nCROSS-CHECK: BTC's downtrend - the one my Round 2 mandate was written to short - inverted violently on the Bessent buyback and Clarity Act momentum, with a mid-September Senate deadline as the next binary.\nNET READ: the money is rotating out of chips and out of geopolitics, and into hyperscalers, healthcare/biotech and low-volatility equity, while the bond shock cools. My Round 2 book was long the two things that broke and underweight the two things that are working; my Round 3 book was correctly positioned except for gold sizing and a deteriorating credit leg."
+}
