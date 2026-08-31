@@ -1,0 +1,60 @@
+{
+  "name": "Sonnet small/mid-cap growth",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Concentrated long book in secular small/mid-cap growth (small caps, semis leverage, fintech, biotech, space, consumer AI) paired with a single high-conviction AI-disruption short and a large cash cushion, avoiding crypto exposure given the ongoing bear market.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "thesis": "Small caps remain near 52-week highs (IWM $295.75, ~21% YTD) even after today's broad -1.35% pullback; unchanged core beta position, no new catalyst to resize."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 15.0,
+      "thesis": "Semis round-tripped a full rally-and-giveback this week ($111->$123->$111) as fresh tariff headlines and a BofA -10% downside call collide with still-strong AI-capex demand; trimming the 3x leveraged sleeve 6%->4% and tightening the stop -20%->-15% to reflect the newly two-sided setup rather than exiting the sector call outright."
+    },
+    {
+      "symbol": "SOFI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Piper Sandler's fresh Overweight ('product flywheel working') thesis is unchallenged this week and the stock is flat vs. the $18.24 entry despite today's -5.8% print giving back the midweek pop; holding at prior size."
+    },
+    {
+      "symbol": "CRSP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Morgan Stanley called the new CTX310 durability data presented at the European Society of Cardiology Congress 'encouraging,' with 5 more H2 readouts still ahead and consensus PT ($87.56) implying 52% upside; stock is flat vs. the $57.08 entry, thesis intact."
+    },
+    {
+      "symbol": "RKLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 20.0,
+      "thesis": "Contract confirmation kept coming this week (new Space Force SDN orders, NITE-STAR $981M program onboarding, a ViaSat GEO-satellite award, 93rd successful Electron launch) even as the stock fell 11% with the broader growth-stock rout to $64.39, now ~43% below the unchanged $112.94 consensus target; holding size, keeping the -20% stop given the volatility."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "thesis": "Crypto-rally and prediction-market tailwinds, tokenized-stock advocacy, the new Trump Accounts launch and the RVII IPO keep the fundamental story improving; stock is flat vs. the $103.62 entry despite big intraweek swings, holding size with the existing -15% stop protecting the prior outsized gain."
+    }
+  ],
+  "cash_pct": 51,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Closing the ADBE short and trimming SOXL on emerging risk; other five positions are essentially flat vs. their 8/24 entries despite a broad growth-stock down day on 8/28 (SOXL -9.5%, HOOD -5.0%, SOFI -5.8%, RKLB -4.7%, CRSP -2.8% intraday) with no stops close to triggering and fundamentals still confirming, so leaving those unchanged. ADBE: thesis has now deteriorated for a third straight week -- stock is +5.5% since the $276.27 entry to $291.52, BofA lifted its own target to $220 (still a bearish call but a real upward revision), Jefferies initiated coverage at $285, and technicals show a golden-cross setup with breakout targets of $306-330 heading into the Sep 10 earnings date, above where the -15% stop would even sit ($317.7) -- closing now rather than paying 3% borrow to hold a low-conviction position through a binary earnings event with real squeeze risk. SOXL: new bearish crosscurrents this week (reports of a possible fresh round of semiconductor tariffs, BofA flagging another ~10% sector downside on positioning fatigue, hedge funds reportedly rotating out of chip stocks for several straight weeks) haven't broken the position (it round-tripped $111->$123->$111 over five sessions, well inside the old -20% stop) but materially raise event risk on a 3x leveraged sleeve -- trimming 6%->4% and tightening the stop to -15% to lock in better protection while keeping a reduced toehold for the AI-capex bull case.",
+  "research_notes": "Read the account packet (R2 NAV $981.23/-1.88%, gross 55%/cash 45%; R3 NAV $974.29/-2.57%, gross 49%/cash 51%), then pulled fresh prices and news via WebFetch (stockanalysis.com) for every held name since WebSearch's session budget was exhausted before I could use it. Pulled current quotes + 8/21-8/28 daily closes for RKLB, CRSP, HOOD, SOFI, ADBE, SOXL, IWM, XLF, KRE, XBI to measure each position's actual distance from its 8/24 entry and from its stop (not just the day's headline move). Found 8/28 was a broad risk-off day for growth/small-mid names (SOXL -9.5%, HOOD -5.0%, SOFI -5.8%, RKLB -4.7%, CRSP -2.8%, IWM -1.35%) that mostly just erased a midweek rally -- every R2 long is within a couple percent of its 8/24 entry and nowhere near its stop. RKLB kept adding contract wins (Space Force SDN orders, NITE-STAR $981M onboarding, ViaSat GEO satellite award) despite the price drop -- fundamentals decoupled from tape. CRSP's CTX310 durability data drew a positive Morgan Stanley read at the ESC Congress. HOOD's crypto/prediction-market/tokenization tailwinds are intact. SOFI's Piper Sandler Overweight thesis stands unchallenged. The ADBE short is the standout problem: stock is now +5.5% versus its $276 entry to $291.52, BofA raised its own target to $220, Jefferies initiated at $285, and technicals show a golden-cross setup targeting a $306-330 breakout right into the Sep 10 earnings date -- three straight weeks of thesis erosion with real squeeze risk into a binary event, so closed it. SOXL faces new two-sided risk (tariff headlines, a BofA -10% sector call, reported hedge-fund rotation out of chips) after round-tripping $111->$123->$111 this week, so trimmed 6%->4% and tightened the stop to -15%. For R3, financials/regional banks (XLF, KRE) held up far better than growth this week (near 52-week highs, steady inflows) which is exactly what the rotation mandate wants, and XBI's pullback is well inside its stop with the underlying biotech catalyst story unchanged -- held the book as-is. No stops were triggered in either account this week.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

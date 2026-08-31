@@ -1,0 +1,31 @@
+{
+  "name": "Sonnet macro/sector rotation",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Rotate into rate-sensitive small caps, industrial/capex reacceleration, and dollar-debasement hedges (gold, EM) funded by trimming exposure to the extended AI-infra trade, keeping a large cash buffer earning 4% given crypto bear/AI correction risk.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Trimmed from 16% to 7% after the debasement trade's sharpest reversal since entry: gold gave back ~3% in one session directly on Warsh's hawkish tone as rate-hike repricing lifted real yields and the dollar -- the exact mechanism the trade depends on, now working in reverse. Kept a reduced core position since the structural fiscal-debasement/Treasury-liquidity narrative isn't necessarily dead, just unconfirmed at prior size.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "FXI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Trimmed from 10% to 5%: a firmer dollar on rising September hike odds is a mechanical headwind for China/EM equities. Kept a small residual on the still-intact China domestic-stimulus/rebound narrative, sized down given the new dollar-strength crosswind.",
+      "stop_loss_pct": 8.0
+    }
+  ],
+  "cash_pct": 88,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Fed Chair Warsh's hawkish Jackson Hole speech (Aug 28) directly reversed the mechanism underpinning this book's two core legs -- rate-cut-sensitive small caps and dollar-debasement hedges -- with real price confirmation same-day: September rate-hike odds jumped from ~35% to 55-65% (Dec ~89%) per CME FedWatch, gold fell ~3% in a single session erasing the week's gains and interrupting its best-month-in-decades setup, and IWM closed below its 50-day MA for the first time since April on a second straight red week (-1.40% wk). Closed IWM and XLI (both directly levered to the now-inverted rate-cut/yield-relief thesis), cut GLD and FXI to reduced core sizes (structural debasement/China-stimulus stories aren't dead, just no longer confirmed at prior conviction), and raised cash to 88% to preserve capital until the Sept 15-16 FOMC clarifies whether this hawkish pivot is durable.",
+  "research_notes": "Read the account packet (R2: NAV $1,006.30/+0.63%, IWM 10%/XLI 6%/GLD 16%/FXI 10%/cash 58%; R3: NAV $989.22/-1.08%, XBI 11%/XLV 17%/XLF 13%/KRE 12%/SPLV 4%/XLY short 5%/SMH short 8%/cash 30%). Searched for the week's macro/price action through the 2026-08-28 close given the WebSearch budget ran out mid-session (used most of it on the highest-value queries first).\n\nSingle biggest finding: Fed Chair Kevin Warsh's Jackson Hole speech on Friday 8/28 turned hawkish -- called inflation \"concerning,\" said the Fed \"has work to do,\" would not rule out a September hike. Market-implied Sept hike odds jumped from ~35-40% to 55-65% (CME FedWatch), Dec hike odds ~89%. This is a direct, mechanism-level rebuttal of Round 2's two core legs: (1) small caps as a \"Fed-cut lever\" -- IWM fell -1.40% on the week and closed below its 50-day MA for the first time since April, with coverage noting IWM is \"the most floating-rate, most refinancing-sensitive slice of the market\" and each 25bp hike cuts Russell 2000 earnings ~2%; (2) dollar-debasement/gold hedge -- gold spiked -3% in the single Friday session on Warsh's remarks (rising real yields + firmer dollar raising the opportunity cost of non-yielding gold), erasing the week's gains and interrupting what had been tracking as gold's best month in decades. XLI also closed soft (-0.93% Fri) on the same bond-yield-driven pressure. FXI was soft early week (-0.86% Mon); a firmer dollar on hike repricing is a mechanical EM headwind.\n\nBroader tape was mixed-to-firm ex-chips: S&P +0.5% wk, Nasdaq +0.9% wk, Dow +0.5% wk (first winning week in three) -- but semis specifically kept breaking down (SMH -3%+ wk, Marvell -8%, Applied Materials -5%, Micron -5.8%, AMD/Broadcom down 2-3%+), continuing to validate the Round 3 SMH short and the \"chip bear market\" framing that's driving the parallel healthcare/biotech rotation (XLV/XBI described as breaking out \"amid the chip bear market\"). Found no fresh weekly-specific data on XLF/KRE/XLY this week (only stale YTD comparisons) and ran out of search budget before checking crypto, so made no changes to those Round 3 legs absent new information.\n\nAction: Round 2 REBALANCE -- closed IWM and XLI (both directly undercut by the hawkish pivot), cut GLD 16%->7% and FXI 10%->5% to reduced core sizes, raised cash 58%->88% to sit out the regime uncertainty until the Sept 15-16 FOMC. Round 3 HOLD -- theses (chip short, healthcare rotation) remain confirmed and are largely orthogonal to the rate-hike shock; avoided churn on a book with zero ticker/sector overlap against the newly de-risked Round 2 book.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

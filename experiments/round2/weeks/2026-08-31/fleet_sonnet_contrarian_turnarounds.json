@@ -1,0 +1,68 @@
+{
+  "name": "Sonnet contrarian turnarounds",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Fade H1's extremes: buy the AI-disruption-fear and macro-beaten-down names with real turnaround catalysts (ADBE/CRM/PYPL, oversold crypto, small caps, gold), while trimming the most overextended momentum trade (SOXL) short.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "ADBE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "thesis": "At $291.46 (+5.7% since last mark), CLSA just initiated Outperform at $300 and Adobe raised FY26 guidance on Firefly/AI-Assistant uptake, but BofA's Underperform PT hike to only $220 (still well below spot) shows the bull/bear analyst split persists rather than resolving \u2014 holding size and the -12%/+20% bracket unchanged into the 9/10 earnings catalyst.",
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Q2 beat decisively (rev $11.35B, EPS $5.90, Agentforce+Data360 ARR ~$3.4B up 200%+ y/y), sending the stock up 22.6%+ in two sessions \u2014 the disruption-fear thesis this position was built to fade is now fully vindicated. That also makes it the most extended name in the book: trimming from 16% to 8% and tightening the bracket to -10%/+15% locks in the realized gain and caps round-trip risk from a typical post-earnings-gap fade, rather than letting a binary-catalyst position ride unmanaged after the catalyst has already fired.",
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "BTC-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "~$79.5k, holding inside the post-squeeze -15%/+12% bracket set last week. Spot BTC ETFs saw ~$202M of outflows on 8/28 even as ETH captures the incremental flow \u2014 a mild caution flag, not a reversal \u2014 so size and bracket are unchanged rather than adding into a fading flow picture.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 12.0
+    },
+    {
+      "symbol": "ETH-USD",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 7,
+      "thesis": "Spot ETH ETFs just logged their strongest single day in 10 months ($225.8M on 8/28) inside a 9-day, $1.42B inflow streak, while BTC ETFs saw outflows over the same stretch \u2014 ETH has become the incremental flow leader the position was sized for. Holding size and the -15%/+15% bracket to let the still-live catalyst run rather than trimming into strength.",
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 15.0
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Russell 2000 hit fresh record highs in August, now +23% YTD and 9pts ahead of the S&P, on a still-wide ~34% valuation discount to large caps \u2014 the breakout is confirming further, not exhausting. Adding from 5% to 8% using capital freed by the CRM trim, deploying into the least-extended confirmed winner in the book rather than adding to CRM/ADBE after their runs.",
+      "stop_loss_pct": 8.0
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Gold has pulled back modestly off its highs (roughly $428 down to the low-$410s) as markets position for the Fed Chair Warsh speech, but Goldman's $5,400 year-end target (~16% upside from ~$4,650 spot) and the underlying breakout structure are intact \u2014 holding size and the -8%/+25% bracket through the Fed-speech catalyst rather than trimming into routine pre-event chop.",
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 25.0
+    }
+  ],
+  "cash_pct": 42,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: CRM's 8/26 print was a decisive beat (revenue $11.35B, EPS $5.90 vs ~$3.27 consensus) that sent the stock up 22.6% in a single session and further since \u2014 the AI-agent-not-disruption thesis is now fully validated, which makes this the most overextended position in the book, not just the most confirmed. Trimming it and tightening its bracket locks in the realized gain and caps post-earnings-gap giveback risk, mirroring how the desk already handled the BTC/ETH squeeze two weeks ago. PYPL's stop already fired on the Stripe/Advent deal collapse (-12.7% on the news) \u2014 leaving that capital in cash rather than re-chasing immediately, since the drop mostly just unwound acquisition premium (stock is 'back near its 50-day moving average') rather than creating a fresh value dislocation; will revisit once it stabilizes. Redeploying a slice of the freed capital into IWM, where the small-cap breakout is still confirming (fresh Russell 2000 record highs, 23% YTD, 9pts ahead of the S&P, ~34% valuation discount to large caps intact) rather than adding to the already-extended CRM/ADBE winners. ADBE, BTC, ETH and GLD are all behaving within their existing brackets with no new information that changes the thesis, so left unchanged.",
+  "research_notes": "Checked point-in-time news through the 8/28 close (today is the 8/29 reassessment) for every held name plus the PYPL stop that fired.\n\nRound 2: (1) CRM beat Q2 hard on 8/26 (rev $11.35B, EPS $5.90 vs ~$3.27 cons, Agentforce+Data360 ARR ~$3.4B up 200%+ y/y) and the stock ripped 22.6% in one session and kept running, closing near $256-264 vs a $209.17 entry \u2014 the disruption-fear thesis is now fully vindicated but the position is also now the most extended in the book. (2) ADBE up modestly to ~$291 on CLSA's new $300 PT and raised FY26 guidance; BofA's Underperform PT ($220) still sits well below spot, so the bull/bear split persists rather than closing \u2014 no change warranted. (3) PYPL: confirmed the packet's fired stop \u2014 Stripe/Advent's ~$53B/$60.50-share bid formally collapsed 8/28, PYPL fell ~12.7% and is described as landing 'back near its 50-day moving average,' i.e. the drop mostly unwound deal premium rather than creating a fresh dislocation, so I left the freed capital in cash rather than re-entering immediately. (4) BTC ~$79.5k (spot ETFs saw ~$202M outflows 8/28) and (5) ETH ~$2,454 with spot ETH ETFs logging $225.8M on 8/28 alone (strongest day in 10 months) inside a 9-day $1.42B inflow streak \u2014 flow leadership is rotating to ETH but neither triggered a bracket. (6) IWM: Russell 2000 made fresh record highs in August, +23% YTD (9pts ahead of the S&P) at a ~34.5% valuation discount to large caps \u2014 breakout still confirming, so added a modest amount funded by the CRM trim. (7) GLD: gold spot eased slightly to ~$4,650-4,656 (from ~$4,680) and GLD itself traded down into the low-$410s from a $428 close ahead of the Fed Chair Warsh speech, but Goldman's $5,400 year-end target is unchanged (~16% upside) \u2014 held.\n\nRound 3: XBI hit a fresh 52-week high (biotech M&A + trial readouts + improving funding, up ~9% trailing 30 days); KRE still near its 52-week high with NIM-tailwind coverage continuing (KBW's 'banner year' call), deposit-cost pressure flagged as the swing factor to watch but not yet adverse; XLV eased a few percent off its 52-week high even as Moderna-led strength continues and at least one shop upgraded the healthcare sector outlook to positive for Q3; USMV unchanged. No stops or take-profits hit anywhere in Round 3, so held the book intact rather than paying costs to resize positions still tracking their theses. Round 3 (KRE/XLV/XBI/USMV) has zero symbol overlap with the Round 2 book (ADBE/CRM/BTC/ETH/IWM/GLD), satisfying the <50% same-direction overlap constraint trivially.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

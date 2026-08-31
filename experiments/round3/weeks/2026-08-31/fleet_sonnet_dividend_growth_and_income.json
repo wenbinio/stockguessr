@@ -1,0 +1,44 @@
+{
+  "name": "Sonnet dividend growth and income",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Trend-confirmation sector rotation: ride accelerating relative-strength moves in financials/healthcare/biotech while pressing the breakdown in gold/miners and crypto majors via shorts, harvesting momentum carry rather than dividend yield.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Strongest confirmed trend in the book, at/near its 52-week high ($58.10 vs $58.41 high) even as KRE breaks down -- the divergence itself confirms this leg: higher-for-longer rates help money-center NIM. Pressing the clearest trend confirmation, unchanged."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Made a fresh high this week ($171.16, above the $169.71 level noted at entry) despite pulling back from an intraweek $175.68 peak; healthcare rotation still re-accelerating, unchanged."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "8/28's -3.5% single-day dip looks like broad hawkish-Fed-driven noise rather than a trend break -- FDA posture still flexible, MFN drug-pricing risk called 'narrower than feared,' and fresh sell-side Buy initiations this week; still net positive vs. entry, unchanged."
+    }
+  ],
+  "cash_pct": 43,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Trimming KRE to zero because its trend has technically broken while the rest of the book is still confirming: KRE is down 4.66% since entry to $74.30 (from $77.93), down 7 of the last 10 sessions, printed a sell-signal pivot top on 8/14 and currently carries sell signals from both short- and long-term moving averages plus the 3-month MACD, with 'further fall indicated until a new bottom pivot is found.' That's the opposite of this book's trend-confirmation mandate, and it lines up with a real fundamental driver: Kevin Warsh's hawkish Jackson Hole remarks pushed Sept rate-hike odds to 57% and the 30yr yield to ~5.21%, which hits regional-bank deposit costs/NIM (KRE) far harder than it hits money-center-heavy XLF -- exactly why XLF is still making fresh highs ($58.10, essentially at its 52-week high of $58.41) while KRE is breaking down. Rather than ride KRE down to its -9% hard stop, cutting proactively on the confirmed technical/fundamental divergence. XLF, XLV, and XBI all remain intact: XLF at/near highs, XLV made a new high this week ($171.16 vs. the $169.71 high noted at entry, even after pulling back from $175.68), and XBI's -3.5% single-day dip on 8/28 reads as broad-market/rate-driven noise (FDA posture still flexible, MFN drug-pricing risk 'narrower than feared,' fresh Buy initiations) rather than a trend break, with XBI still net positive vs. entry. Not redeploying the freed capital into a fresh short yet: gold miners (GDX) are up >20% in a week on strong retail inflows -- the exact opposite of the 'breakdown' this mandate was built to press, which is why that leg was already stopped out -- and crypto's post-Jackson-Hole reversal (BTC fell from a 3-month high of ~$81,455 on 8/28 to below $78,000 by 8/29) is only one session old versus SOL's premature short getting stopped out 8/7; holding the cash and waiting for the breakdown to actually confirm before re-entering a funded short.",
+  "novelty": "No symbol overlap with the Round 2 book at all (Round 2 holds MSFT/AVGO/SCHD/JPM/CVX/HD/TLT/XLP long dividend growers; Round 3 holds sector-momentum ETFs XLF/XLV/XBI), so same-direction gross-weight overlap is 0%, well under the 50% cap -- the two books express genuinely distinct strategies, dividend-quality carry versus trend-confirmation sector rotation.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked live prices/news for every held name in both books against the 8/17 entry marks, plus the week's dominant macro driver.\n\nMacro: Kevin Warsh's first Jackson Hole keynote (8/28) came in hawkish -- inflation \"too high,\" policy could stay restrictive -- pushing Sept rate-hike odds to 57% and the 30yr Treasury yield to ~5.21-5.22% (up from ~5.1%). This hit rate-sensitive risk assets broadly: crypto reversed hard from a 3-month BTC high (~$81,455 on 8/28) to below $78,000 by 8/29 (-3.8%), while gold miners (GDX) kept rallying (+20%+ on the week) on safe-haven/retail-inflow demand -- a genuine divergence, not a contradiction.\n\nRound 2 (dividend growth): MSFT up ~30% post-Q4-earnings, Azure >$100B/41-43% growth confirmed. AVGO drifted to $368.79 (from ~$392 at entry) heading into its 9/2 earnings print; Strong Buy consensus and Cathie Wood buying intact. JPM ($357.62) and CVX ($199.77, Venezuela deal news) near highs. SCHD near record high on $17.7B YTD inflows. HD's Q2 beat explicitly reaffirmed \"housing frozen\" (mortgages ~6.7%) -- exactly the reason it's kept trimmed. TLT near 52-week lows as yields keep rising, confirming no rate-cut convexity yet. All theses intact -- HOLD.\n\nRound 3 (sector momentum): Pulled fresh closes for all four ETF legs. XLF ($58.10) at/near its 52-week high. XLV ($171.16) made a new high this week. XBI had a single -3.5% down day on 8/28 but remains net positive vs entry and sector news (FDA flexibility, MFN risk \"narrower than feared,\" fresh Buy initiations) stayed constructive. KRE, however, is down 4.66% since entry ($74.30 vs $77.93), down 7 of the last 10 sessions, with a confirmed technical breakdown (sell-pivot on 8/14, sell signals on both moving averages and MACD) -- and a fundamental driver behind it: hawkish-Fed deposit-cost/NIM pressure hits regional banks harder than money-center banks, explaining why XLF and KRE are now diverging sharply. Cut KRE to zero proactively rather than riding it to its hard stop. Checked for a fresh short opportunity to redeploy into per the mandate (gold miners, crypto) but found gold miners in a strong rally (opposite of \"breakdown\") and crypto's reversal only one session old -- held the freed capital in cash rather than force an unconfirmed trade.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

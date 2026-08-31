@@ -1,0 +1,64 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and run a small levered short-BTC hedge against a continuing crypto bear, holding sizable cash for drawdown buys.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XOM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.4211,
+      "thesis": "Integrated energy major, FCF yield still attractive; steady ~+2% drift to $156.71 with no new catalyst -- held unchanged."
+    },
+    {
+      "symbol": "JPM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9.5526,
+      "thesis": "Cheap at ~15x P/E with a 10% dividend hike; stock near highs (~$357) on strong newsflow (enterprise AI rollout, $750B housing initiative, lead role in the Anthropic IPO) -- held unchanged."
+    },
+    {
+      "symbol": "GM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.4211,
+      "thesis": "Q2 beat/raised guidance thesis intact and stock trades near record territory, but Trump's threatened 50% tariff on Canada-built vehicles is a live overhang (stock -2% this week to $86.27) -- trimmed modestly to de-risk the trade-policy tail."
+    },
+    {
+      "symbol": "UNH",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12.1579,
+      "thesis": "Mean-reversion off medical-cost-fear lows continuing (~$401, back up from a governance-lawsuit-driven dip to ~$391); Buy-rated with a $475 average target vs current price -- held unchanged."
+    },
+    {
+      "symbol": "PFE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.6842,
+      "thesis": "Deep-value re-rate keeps confirming -- fresh 52-week-high territory (~$28.30, up from $26.76 two weeks ago) on new FDA COVID-variant vaccine approval and an active obesity/oncology/immunology pipeline (19 pivotal starts guided over 12 months) while still yielding ~6%; sized up to press the winner."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8.6842,
+      "thesis": "Small-cap catch-up trade continues to run -- Russell 2000 at record highs, now beating the Nasdaq 100 YTD, with a cited ~34% valuation discount still unclosed; held unchanged."
+    },
+    {
+      "symbol": "F",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6.0789,
+      "thesis": "Q2 beat and raised FY guidance (EBIT to $10-11B) plus fresh analyst upgrades (Jefferies to Buy, $17.50 PT) have not moved the stock, which is flat-to-down at $13.88 (vs $13.98 two weeks ago) because Canada-tariff threats and a weak July US sales print (-10.2% YoY) are capping it -- trimmed further to shrink exposure to a name where policy headline risk is overriding fundamentals."
+    }
+  ],
+  "cash_pct": 34,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Both BTC-USD short legs in this book have effectively been killed by price action: the current 6%/2x short (entered ~$64.9k, stop -15%) already triggered on 2026-08-18 at $69,266 per the standing-order log, and BTC has since continued to melt up to ~$79,700 (+23% from the ~$64.9k reference), decisively breaking the 'multi-quarter downtrend' thesis this hedge was built on -- re-shorting into a rally that just stopped out the same trade once already is not a good risk. Dropping the crypto hedge entirely and redeploying to cash. Elsewhere: PFE's deep-value re-rate keeps confirming (new COVID-vaccine variant approval, obesity/oncology pipeline news, stock making fresh highs near $28.30 vs $26.76 two weeks ago) so sized up modestly; F has stagnated at ~$13.88 (basically flat over three weeks) despite a Q2 beat and analyst upgrades (Jefferies Buy $17.50 PT) because Trump's 50% Canada-auto-tariff threat and a weak July US sales print (-10.2% YoY) are capping the stock -- trimmed further to de-risk a name where good fundamentals are being overridden by trade-policy headline risk; GM trimmed slightly on the same Canada-tariff overhang even though Q2/guidance remain strong. XOM, JPM, UNH, IWM theses are all intact and unchanged (JPM near highs on strong AI/Olympics/IPO-banking newsflow, UNH's mean-reversion continuing despite a governance-lawsuit-driven dip, IWM still making Russell 2000 record highs on a cited ~34% valuation discount to large caps).",
+  "research_notes": "Checked current prices/news for every held name plus BTC and broad regime context, prices through 2026-08-28 close (some latest confirmed closes as of 8/26-8/28 where 8/28-exact wasn't available). Key finding: both books' BTC-USD short hedges have already been stopped out by standing orders during the week (Round 2: 2026-08-18 @ $69,266, 2x lever, -15% stop, ->$50.86 cash; Round 3: 2026-08-20 @ $78,335, 1x lever, -20% stop, ->$46.36 cash) -- the packet's Positions list still displays these legs with their original 8/10 thesis text, but the standing-order log and the arithmetic (stop trigger prices imply entries near the cited ~$64.9k reference) confirm they are no longer live. BTC has kept rallying hard since (to ~$79,700+, a >20% move past the reference price), decisively invalidating the 'multi-quarter downtrend' thesis both hedges were built on, so I did not re-enter either short -- treated the freed weight as cash. Verified GDX's stop/TP (-8%/+25%) is calibrated off its post-trim ~$89.89 base (not the original entry), so it has NOT fired despite GDX now trading at $103.64 (+15%, still below the +25% TP) -- confirmed this against the 8/8 note's own math ('~85% of the way to TP' at $89.89). Checked equity names for fresh news: XOM ($156.71, steady), JPM ($356.91, near highs on AI/housing/Anthropic-IPO newsflow), GM ($86.27, Q2 strength offset by Trump's threatened 50% Canada-auto tariff), UNH (~$401, mean-reversion resumed after a governance-lawsuit dip to ~$391), PFE (~$28.30, fresh highs on COVID-vaccine variant approval and pipeline news), IWM (Russell 2000 at record highs, ~34% valuation discount to large caps still cited), F ($13.88, flat despite Q2 beat/guidance raise and a Jefferies upgrade to Buy because Canada-tariff threats and a weak July sales print are capping the stock), XBI ($168.39, near 52-wk high but an Aroon indicator flagged a possible momentum stall since 8/12), and semiconductor/AI momentum (SMH, Nvidia +8.7% post-earnings, semis on pace for best August since 2003 -- explicitly avoided as a new short target given this book's history of repeated stop-outs shorting into this exact melt-up). Round 2 and Round 3 books share zero overlapping symbols (large-cap value/IWM vs. low-vol/gold-miners/biotech ETFs), well under the 50% overlap cap.",
+  "registration_note": "Desk handling \u2014 weights summed to 76 with cash 34; scaled by 0.8684 | Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

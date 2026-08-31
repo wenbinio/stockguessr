@@ -1,0 +1,41 @@
+{
+  "name": "Sonnet concentrated AI/technology",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Cross-sector momentum/relative-value: long confirmed sector breakouts (biotech, financials, regional banks), short confirmed breakdowns (gold miners, long bonds) and crypto weakness, avoiding AI/semis entirely.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30,
+      "thesis": "Multi-month biotech breakout still standing: choppy but rangebound this week (roughly $162-169 vs last week's $165.73 mark), with the 2026 M&A/consolidation story ($106B across 201 deals) still confirmed and no new breakdown signal. Holding the already-increased 30% unchanged.",
+      "stop_loss_pct": 12.0
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "thesis": "Regional-bank uptrend fundamentally intact on continued net-interest-margin widening as deposit costs roll over; price steady near $74.35 (vs $74.86 last week), still close to the 52-week high of $78.35. No new negative catalyst this week -- holding size unchanged.",
+      "stop_loss_pct": 10.0
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 12,
+      "thesis": "Long-bond downtrend thesis is now under genuine, continuing pressure: 30Y yields have stabilized near 5.2% post-buyback-announcement and TLT has risen for a second straight week ($82.05->$83.12), while GDX -- this book's other falling-yield short casualty -- keeps rallying too, confirming the broader falling-real-yield theme is real and ongoing. Cutting size from 22% to 12% and tightening the stop from -8% to -6% now, proactively, rather than waiting to be stopped out like the GDX and IBIT legs were.",
+      "stop_loss_pct": 6.0
+    }
+  ],
+  "cash_pct": 38,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: The desk's flagged risk on the TLT short has now materialized for a second consecutive week rather than fading: 30Y yields have held near 5.2% (off the >5.33% peak) after the Treasury buyback news, and TLT has continued firming from $82.05 to $83.12. Critically, GDX -- the other falling-yield-driven short in this mandate that already stopped out -- kept rallying too this week ($102.83->$103.64), confirming this is one broad falling-real-yield theme working against both the bond and gold-miner shorts simultaneously, not an isolated blip. Rather than repeat the GDX/IBIT pattern of holding a fading short into a forced stop, cutting the TLT short by more than half now while it's still a choice rather than a liquidation, and tightening the stop to limit further damage if the trend keeps running. XBI and KRE are unchanged: XBI's price action was choppy but rangebound this week (no confirmed breakdown, 2026 biotech M&A run-rate of $106B/201 deals still intact) and KRE held flat near $74.35 with the regional-bank NIM-widening fundamental story still standing despite generic technical-caution chatter -- no new catalyst-grade information on either leg to justify resizing them.",
+  "novelty": "This round-3 book holds zero of the same symbols as the round-2 AI/semis long book (NVDA/MSFT/AVGO/AMD/MU) -- it trades entirely different sectors (biotech, regional banks, long-duration Treasuries) by mandate design, so same-direction gross-weight overlap between the two books is 0%, well under the 50% cap.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked point-in-time news/prices through 2026-08-28 close for every held name in both books.\n\nRound 2 (AI/semis long book): NVDA reported Aug 26 -- revenue $96.2B (+106% YoY), EPS $2.22, FY28 growth guided to 70% vs 44% street, plus AWS committing to 2M Nvidia GPUs -- a clean beat-and-raise, but the stock is only net +1.5% for the week ($214.72->$217.89), so the print looks priced in already. MSFT is the standout: +6.3% to $513.53 on continued 43% Azure growth and 30M+ Copilot seats, no negative catalyst. AMD's Q3 guide ($13.0B, 41% YoY) beat the $12.5B Street consensus, stock +5% Aug 26 to $479.18, a second confirming week. AVGO took a real hit: Marvell+Google's TPU/custom-chip commercial agreement (Google also reportedly qualifying MediaTek/AMD as alternate TPU sources) knocked AVGO -5% intraday; earnings land Sept 2 so this is a genuine live risk, not settled. MU is the negative-catalyst leg: a report that Apple may source memory from Chinese suppliers (ChangXin/YMTC), a new patent-litigation overhang, and Samsung's capital-return disappointment dragging sector sentiment -- stock -3.5% this week to $932.86, ~30% off its June high.\n\nRound 3 (cross-sector momentum book): XBI choppy/rangebound this week (roughly $162-169 vs last week's $165.73), 2026 biotech M&A run-rate ($106B/201 deals) still intact, no confirmed breakdown. KRE steady near $74.35 (vs $74.86), NIM-widening fundamental story still standing. TLT is the key finding: 30Y yields stabilized near 5.2% post Treasury-buyback announcement and TLT rose for a second straight week ($82.05->$83.12) -- exactly the risk flagged last week to the short -- and GDX, this book's other falling-yield short casualty (already stopped out), kept climbing too ($102.83->$103.64), confirming a broad falling-real-yield theme working against the short rather than a one-week blip. Bitcoin traded ~$79-80k, still well above the level that stopped out the IBIT short, so crypto-weakness remains unavailable as previously noted.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

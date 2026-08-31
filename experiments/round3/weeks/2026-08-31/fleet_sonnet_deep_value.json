@@ -1,0 +1,46 @@
+{
+  "name": "Sonnet deep value",
+  "model": "sonnet",
+  "group": "fleet",
+  "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards, short parabolic momentum extensions, funded by cash carry.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "thesis": "Low-vol quality ballast performing as designed; unchanged."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Second low-vol carry sleeve, minimal correlation to the rest of the book; unchanged."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 5.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Gold miners continue higher (gold >$4400/oz) -- GDX now ~$103.64 vs the ~$89.89 base set at the prior trim, +15% and still short of the +25% TP; tightened the stop 8%->5% to lock in more of the confirmed move given a cited technical caution flag (Aroon downtrend since 8/12) while keeping a residual stake for further upside."
+    },
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "thesis": "Relative-strength mean-reversion has fully confirmed -- up another ~7% since the prior update to ~$168, within $2 of its 52-week high -- but a laggard bought for mean-reversion that is now at highs is no longer the trade this mandate is for; trimmed to bank gains, keeping a smaller residual stake."
+    }
+  ],
+  "cash_pct": 66,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: The BTC-USD short (1x, entered ~$64.9k, stop -20%) already stopped out on 2026-08-20 at $78,335 per the standing-order log, and BTC has kept running to ~$79,700+ since -- this is exactly the kind of persistent, catalyst-backed momentum extension (record small-cap and semiconductor rallies too, Nvidia beat +8.7%, semis on pace for their best August since 2003) that has repeatedly stopped out momentum-extension shorts in this cycle; not re-shorting BTC or opening a new short against the AI/semis melt-up given that track record. GDX and XBI, this book's mean-reversion longs, have both now substantially played out their oversold-recovery theses (GDX +15% since its prior trim to a ~$89.89 base, still short of its +25% TP; XBI near a 52-week high at ~$168 with an Aroon indicator flagging a possible momentum stall since 8/12) -- trimming XBI to bank more of the confirmed move and tightening GDX's stop to lock in gains, rather than adding into extended prices. No fresh oversold-laggard or parabolic-short candidate cleared the bar this week, so the freed capital rolls into cash, consistent with this book's low-vol carry-harvesting mandate (cash earns 4% APY) -- 'nothing attractive enough to add' is itself the reason for the larger cash balance, not inertia.",
+  "r2_overlap_pct": 0,
+  "research_notes": "Checked current prices/news for every held name plus BTC and broad regime context, prices through 2026-08-28 close (some latest confirmed closes as of 8/26-8/28 where 8/28-exact wasn't available). Key finding: both books' BTC-USD short hedges have already been stopped out by standing orders during the week (Round 2: 2026-08-18 @ $69,266, 2x lever, -15% stop, ->$50.86 cash; Round 3: 2026-08-20 @ $78,335, 1x lever, -20% stop, ->$46.36 cash) -- the packet's Positions list still displays these legs with their original 8/10 thesis text, but the standing-order log and the arithmetic (stop trigger prices imply entries near the cited ~$64.9k reference) confirm they are no longer live. BTC has kept rallying hard since (to ~$79,700+, a >20% move past the reference price), decisively invalidating the 'multi-quarter downtrend' thesis both hedges were built on, so I did not re-enter either short -- treated the freed weight as cash. Verified GDX's stop/TP (-8%/+25%) is calibrated off its post-trim ~$89.89 base (not the original entry), so it has NOT fired despite GDX now trading at $103.64 (+15%, still below the +25% TP) -- confirmed this against the 8/8 note's own math ('~85% of the way to TP' at $89.89). Checked equity names for fresh news: XOM ($156.71, steady), JPM ($356.91, near highs on AI/housing/Anthropic-IPO newsflow), GM ($86.27, Q2 strength offset by Trump's threatened 50% Canada-auto tariff), UNH (~$401, mean-reversion resumed after a governance-lawsuit dip to ~$391), PFE (~$28.30, fresh highs on COVID-vaccine variant approval and pipeline news), IWM (Russell 2000 at record highs, ~34% valuation discount to large caps still cited), F ($13.88, flat despite Q2 beat/guidance raise and a Jefferies upgrade to Buy because Canada-tariff threats and a weak July sales print are capping the stock), XBI ($168.39, near 52-wk high but an Aroon indicator flagged a possible momentum stall since 8/12), and semiconductor/AI momentum (SMH, Nvidia +8.7% post-earnings, semis on pace for best August since 2003 -- explicitly avoided as a new short target given this book's history of repeated stop-outs shorting into this exact melt-up). Round 2 and Round 3 books share zero overlapping symbols (large-cap value/IWM vs. low-vol/gold-miners/biotech ETFs), well under the 50% overlap cap.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

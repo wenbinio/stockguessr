@@ -1,0 +1,88 @@
+{
+  "name": "Opus-fleet price momentum",
+  "model": "opus",
+  "group": "factorial",
+  "strategy": "Concentrate in the strongest intact 12-month US equity momentum themes \u2014 semis, biotech, tech and small-caps \u2014 using select leverage where the trend is still working.",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 28.0,
+      "thesis": "Trimmed from 25% but still my largest position, because the trend is intact and only its macro backing got worse. XBI is +80.7% over twelve months -- the strongest 12-month trend I own now that SMH is gone -- at 91.0% of its 52-week range, above its 20-day by 1.3%, its 50-day by 3.8% and its 200-day by 21.2%, and only 4.23% below the high it set on 2026-08-19. Nothing about that is broken. What changed is that on 08-28 it fell 3.48% while SPY fell 0.23% and energy rose, which measures its rate duration precisely: XBI is an equal-weight basket stuffed with pre-revenue names whose value sits far out on the discount curve, and a Fed that may hike on September 16 is a direct de-rating input. I cut six points rather than defending a number I set a week ago, and I moved them to FBT and XLV -- the same healthcare bid held with less duration -- rather than out of the theme. The 12% stop stays wide on purpose: at 33% realized vol a tight stop on this basket exits on noise, and 12% still sits above the 200-day, so it fires on trend destruction rather than on a hawkish week."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Raised from 12% and it now shares the top of the book, on the strength of one number: it fell 0.24% on 08-28 while XBI fell 3.48%. Same healthcare theme, one-fourteenth the damage from the rate shock, because large-cap pharma earns cash now instead of in 2032. It is not ballast masquerading as momentum either -- fresh 52-week high on 2026-08-19, 89.5% of range, only 2.57% off that high, +15.0% over three months and +27.1% over twelve, above all three moving averages -- at 19.7% realized vol, the lowest in the entire book. When the thing that changed is the discount rate and not the theme, the correct response is to hold the same theme at a shorter duration, and this is the shortest-duration healthcare I can buy."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Raised from 13%. Closed at 95.2% of its 52-week range with the high set 2026-08-20, +44.9% over twelve months, above every moving average -- and, decisively, it went UP 0.63% on the day the hike odds repriced, because a hawkish Fed is a statement that the economy is strong and strong economies burn oil. I also finally have the mechanism rather than a guess: the Strait of Hormuz has been shut since February 2026, roughly 20% of global supply, Brent near $85, and sector earnings tracking +57% for the calendar year. That is a supply constraint with a physical cause, which is why it survived defense collapsing beside it. I hold the majors as the core of the theme at 22.5% vol -- five points below IEO and half of ERX -- so that if a de-escalation headline gaps the group, the largest energy leg I own is the one that gives back least."
+    },
+    {
+      "symbol": "IEO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 22.0,
+      "thesis": "Raised from 8% and it remains the best-ranked energy vehicle on my board: 95.8% of its 52-week range, high set 2026-08-21, +8.4% on the month, +18.7% over three months and +49.1% over twelve, sitting 3.9% above its 20-day and 10.7% above its 50-day. It beats XLE on every horizon and it beat it again through this week's shock. E&P is the right torque to a supply-driven crude move because producers capture the price directly rather than through refining spreads, and with Hormuz constraining barrels the constraint transmits to the wellhead. Stopped a point wider than XLE at 9% because 27.4% vol needs the room, and capped at 22% for the same reason."
+    },
+    {
+      "symbol": "FBT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 9.0,
+      "take_profit_pct": 22.0,
+      "thesis": "New, and it is where six of XBI's points went. FBT set a fresh 52-week high on 2026-08-27 -- the single most recent 52-week high anywhere in the biotech complex, eight sessions later than XBI's -- closing at 93.2% of range only 2.54% below it, +19.8% over three months and +55.1% over twelve, above all three moving averages. The reason to own it alongside XBI rather than instead of it is the duration split: FBT is a modified equal-weight basket of profitable large- and mid-cap biotech, it runs 23.1% realized vol against XBI's 32.8%, and on the hawkish 08-28 session it lost 2.54% against XBI's 3.48%. That is the same theme, the same breakout, and measurably less sensitivity to the thing that actually moved this week. Holding biotech through two vehicles at two points on the duration curve is how I stay long a trend I still believe in without betting 25% of the book on the most rate-exposed slice of it."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 16.0,
+      "thesis": "Held flat at 7% and it is now my entire large-cap tech expression. It earns the hold and nothing more: +25.5% over twelve months, 84.6% of range, only 3.88% off its high, and it was the one leg that gained through this week's shock (+1.43% from my entry, +1.37% on the NVDA-driven 08-27 session). But its high still dates to 2026-06-02, three-month return is -2.86%, and it closed 0.2% BELOW its 20-day and a bare 0.6% above its 50-day. A theme that has produced nothing in three months and is sitting on its 50-day does not get the points I took out of SMH -- those went to trends making new highs. I keep it because mega-cap tech carries net cash and real earnings, which is the least rate-sensitive way to hold the AI complex now that the levered and semi expressions have failed, and because it has not violated a moving average."
+    },
+    {
+      "symbol": "IWM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 7.0,
+      "take_profit_pct": 14.0,
+      "thesis": "Cut from 11% to the smallest equity leg in the book, and the stop tightened from 8% to 7%. Small-caps are the most direct casualty of what happened on 08-28: the Russell fell 1.35% on hike odds because small-caps carry floating-rate debt and near-term refinancing walls that mega-caps do not, so a hiking Fed hits their earnings mechanically rather than just their multiple. The price already agreed before the Fed spoke -- IWM peaked on 2026-08-14, now closes below both its 20-day (-1.5%) and its 50-day (-0.5%), and its three-month return is +2.07% against a +12.75% six-month figure. Its +26.7% twelve-month return is the weakest in the book. The mandate names small-caps so I keep the theme alive at a token weight, but I am sizing a theme that stopped leading, is below its moving averages, and now faces a policy path aimed at it -- and the 7% stop means the next leg down takes me out rather than bleeding me."
+    },
+    {
+      "symbol": "ERX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 4,
+      "stop_loss_pct": 13.0,
+      "take_profit_pct": 35.0,
+      "thesis": "New, and it takes over the mandate's select-leverage clause from LABU. The comparison decides it. ERX is 2x on a theme at 93.0% of its 52-week range with its high set 2026-08-20, above all three moving averages, +89.2% over twelve months, running 45.3% realized vol -- and it rose 0.89% on the day the hike odds repriced. LABU is 3x on a theme that lost 10.71% on that same day at 97.5% vol. Leverage should sit where the trend is working and where the underlying's volatility does not eat the compounding, and energy at 22.5% underlying vol suffers far less daily-rebalancing decay than biotech at 33%. Sized at only 4% for 8% effective exposure -- half the effective leverage LABU carried -- because the underlying trend rests on a geopolitical supply constraint that could reverse on a single de-escalation headline, and 4% is what I can lose 20% of without it mattering. The 13% stop equals roughly a 6.5% move in XLE, so it fires before my XLE stop rather than after it."
+    }
+  ],
+  "cash_pct": 15,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: A 60% probability of a September rate hike got priced on 08-28 and the cross-section that day told me exactly which of my themes carries duration. My book was built assuming the biotech bid was a clinical/M&A story insulated from rates; on the one day that assumption was tested, XBI lost 3.48% and LABU 10.71% while energy rose and SPY barely moved. So I am not fighting the trend -- every leg I keep is still above all three moving averages -- I am moving weight down the duration curve inside the themes I own and toward the one theme that made new highs INTO the shock. Three specific changes. First, LABU goes to zero: it is 3x leverage on the most rate-sensitive equity theme there is, at 97.5% realized vol, and holding it into a live hike meeting means a 22% stop is a coin flip rather than a trend signal -- the mandate's select-leverage clause belongs on the trend that is working, so I move it to ERX at 2x on energy. Second, SMH goes to zero: I kept it for six weeks as an option on re-acceleration, NVDA's beat handed it the catalyst on 08-27, and it gave the whole move back in a session while still sitting 17% below its June high and under both its 20- and 50-day. That is the test failing, not the test being postponed, and holding it now would be paying for the +86% twelve-month number rather than for price. Third, my top position comes DOWN from 25% to 19%: I raised XBI last week on genuine acceleration and the trend has not broken, but 25% in the highest-duration theme I own into a hike meeting is asymmetric the wrong way, so I split the biotech sleeve with 9% FBT, which set a fresh 52-week high on 08-27, held up a full point better on the hawkish day, and does it at 23% vol against XBI's 33%. Same theme, less rate duration. Gross stays at 85% -- this is a rotation within the book, not a de-risking of it.",
+  "novelty": "I manage no Round-2 book in this experiment, so there is no same-direction gross-weight overlap to constrain; this Round-3 book stands alone.",
+  "research_notes": "Refreshed daily closes through 2026-08-28 for ~55 US equity ETFs and computed 1w/1m/3m/6m/12m returns, 52-week range position, date of the 52-week high, 20/50/200-day MA structure and 63-day realized vol.\n\nBook performance: NAV $1,009.80, +0.98% since round inception, max DD -2.64%. From the 08-24 entry the marks are roughly -0.77%: XBI -1.09%, XLV -2.03%, LABU -4.08%, IWM -0.75%, XLE -0.68%, IEO -0.44%, offset by QQQ +1.43% and SMH +1.15%. The XAR stop fired on 08-24 at $265.61 and XAR has since fallen to $261.79, so that exit was correct.\n\nTHE WEEK'S ONE MATERIAL EVENT. Fed Chair Kevin Warsh's first Jackson Hole keynote on 2026-08-28 said inflation's underlying trend has not improved and the Fed may have \"work to do\". Fed funds futures now price a 60.4% chance of a quarter-point HIKE at the September 15-16 meeting. The tape on 08-28 was not risk-off, it was a duration repricing: 10y 4.67% -> 4.72%, UUP +0.57%, VIX FELL to 14.43, SPY only -0.23% -- while GLD -3.24%, GDX -3.90%, XBI -3.48%, LABU -10.71%, SMH -3.47%, IWM -1.35%. Energy went UP on the same day: XLE +0.63%, IEO +0.47%, XOP +0.25%. That single-session cross-section is the cleanest read I have on which of my themes carries rate duration and which does not.\n\nBIOTECH. The trend is intact but its macro backing changed. XBI is still 91.0% of its 52-week range, above all three MAs (+1.3%/+3.8%/+21.2%), +80.7% over twelve months and only -4.23% off its 08-19 high. FBT (NYSE Arca biotech, large/profitable names) actually set a FRESH 52-week high on 2026-08-27 -- the most recent high anywhere in the biotech complex -- at 93.2% of range, +55.1% over 12m, and it fell only -2.54% on the hawkish day versus XBI's -3.48%, on 23.1% realized vol against XBI's 32.8%. IBB +51.2% and BBH +43.7% confirm the theme. So biotech is not broken; it is simply the most rate-sensitive equity theme I own going into a live hike.\n\nSEMIS. NVDA reported and revived AI optimism on 08-27: SMH +3.10%, XLK +3.16%, IGV +7.74% (Okta +22%, Salesforce +20%, CrowdStrike +18% on agentic-AI demand). SMH gave the entire move back the next day, -3.47%. It remains -17.31% below its 2026-06-22 high, below both its 20-day (-2.8%) and 50-day (-5.1%), and -7.65% over three months. My 5% residual was explicitly an option on re-acceleration; the option got its catalyst -- the best semi news of the quarter -- and expired worthless. SOXL -62.98% off its high and XSD -25.81% confirm the damage is the basket.\n\nENERGY. The strongest and now the best-supported theme on the board, and I found the reason. The Strait of Hormuz has been closed since February 2026, taking out roughly 20% of global supply, with Brent near $85 and S&P 500 energy earnings projected +57% for CY26. That is a structural supply constraint, not a headline premium -- which is why energy rose on a hawkish day (a hawkish Fed implies a strong economy implies demand). XLE 95.2% of range, high 08-20; IEO 95.8%, high 08-21; XOP 94.7%; VDE 94.9%; all above every MA. ERX (2x energy) is +89.2% over twelve months at 93.0% of range with its high on 08-20 and 45.3% vol -- markedly tamer than LABU's 97.5%.\n\nCHECKED AND REJECTED. IGV (+17.4% on the month) fails my 12-month test at +1.9%. XLF at 98.0% of range with a 08-25 high and FAS +39% over 3m both fail it too (XLF +9.7%, FAS +12.1% over 12m) -- a hiking Fed is a macro argument for banks, not a momentum signal, and my mandate is 12-month momentum. GDX +29.8% on the month but -13.98% below a February high and -3.90% on the hawkish day: a recovery, not an intact trend, and directly hostile to rising real rates. XME 3m -5.1%, OIH 3m +0.01%, URA -26% off its high: none intact.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}

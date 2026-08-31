@@ -1,0 +1,60 @@
+{
+  "name": "Sonnet+tools small/mid-cap growth",
+  "model": "sonnet",
+  "group": "factorial",
+  "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer",
+  "entry": "2026-08-31",
+  "capital_usd": 1000,
+  "positions": [
+    {
+      "symbol": "AFRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 26,
+      "thesis": "Affirm at $77.76, basically flat through the Aug 27 print despite a strong beat (record profitability quarter, GMV growth intact). Consensus PT jumped to $99.90 (28.5% upside) as TD Cowen, Piper Sandler, JPMorgan, BofA, BMO and Barclays all raised targets post-print. Still Strong Buy (19B/6H/0S). Best gap-to-target in the book now that the event risk cleared cleanly -- upsized from 24% to 26%.",
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 32.0
+    },
+    {
+      "symbol": "RBRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "thesis": "Rubrik fell to $93.05 (-13% on the print) despite Q2 FY27 beating on revenue (+38% YoY to $427.3M), subscription ARR (+33% to $1.66B), and a raise across ARR/revenue/margins/EPS/FCF -- the drop traces to free-cash-flow-margin compression (38% growth on a 15% FCF margin), a legitimate quality flag but not a growth-story break. All 25 analysts stayed Buy and consensus PT moved up to $116.35 (25.6% upside), with Citi/Wells Fargo/Goldman/Stephens all raising targets meaningfully post-print. Re-added from the 5% stub to 14% to capture the reopened gap-to-target, sized below AFRM/IOT given the fresh FCF concern and the single-day 13% volatility just demonstrated -- wider stop to match.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 35.0
+    },
+    {
+      "symbol": "IOT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 22,
+      "thesis": "Samsara at $41.87 (+4.8% since entry) on continued momentum including new Fuel Command Center product news. Consensus PT $45.17 (15.4% upside), Moderate Buy (10B/4H/0S). Fundamentals remain strong (Q1 revenue +30.5% YoY, net income +301% YoY) but the rating cooled slightly from outright Buy to Moderate Buy and earnings land Sept 3 -- trimmed modestly from 24% to 22% to fund the RBRK re-add and keep some cash buffered into that print.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 40.0
+    },
+    {
+      "symbol": "FLYW",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Flywire at $18.70, pulled back from its 52-week high on no fresh negative catalyst; Q2 revenue +27.2% YoY. Consensus PT $21.50 (14.1% upside), Moderate Buy (7B/4H/0S) -- edge stable versus last week rather than further compressing. A 10% shareholder has been selling stock while holding calls, a minor overhang worth watching but not thesis-breaking. Held flat at 10%.",
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 28.0
+    },
+    {
+      "symbol": "TOST",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Toast at $35.17 (-4% since entry) despite a beat-and-raise quarter -- picked up a blue-chip-ranking downgrade this week and consensus upside has compressed further to just 7% ($39.55 PT), the same overextension pattern that has driven repeat trims in this book. Strong Buy rating (18B/6H/0S) and the beat/raise keep some optionality alive, so held as a 5% stub rather than closed outright.",
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 30.0
+    }
+  ],
+  "cash_pct": 23,
+  "rules_epoch": "unrestricted-retail-2026-07-30",
+  "reassessment_note": "Weekly desk 2026-08-29: Both Aug 27 earnings prints have now cleared with results that reopen upside rather than close it, which is the trigger this book has consistently acted on. AFRM beat/raised and the sell-side re-rated hard (consensus PT jumped to ~$99.90, 28.5% upside, several $90s-targets moved to $105-124) while the stock is roughly flat -- edge widened, so held/upsized. RBRK beat and raised guidance across ARR, revenue, margins, EPS and FCF, yet the stock fell 13% on a free-cash-flow-margin efficiency concern -- all 25 covering analysts stayed Buy and multiple raised targets (Citi 96->130, Wells Fargo 90->120, Goldman 106->120), pushing consensus upside from a 3% stub-level thesis to 25%. That is a valuation reset on a real but secondary metric, not a broken thesis, so re-added from the 5% stub. IOT holds a still-solid but unchanged ~15% gap-to-target with earnings not until Sept 3, so trimmed slightly to fund the RBRK add and keep some dry powder into that print. FLYW's edge is stable/moderate (14% upside) but minor insider-selling flagged, held flat. TOST continues the exact edge-compression pattern that has driven repeat cuts in this book -- beat-and-raise quarter, but a fresh downgrade and only ~7% upside left with the stock down 4% on the week -- trimmed further to a 5% stub rather than closed, since the Strong Buy/beat-raise combo still has some optionality.",
+  "research_notes": "Checked live prices and post-earnings analyst data for all five book positions through the 2026-08-28 close (this manager runs Round 3 only; no Round 2 book exists for it, so no overlap/novelty requirement applies). Key findings: (1) AFRM's Aug 27 Q4 FY26 print was a clean beat (record profitability), stock roughly flat at $77.76, but six-plus sell-side firms (TD Cowen, Piper Sandler, JPMorgan, BofA, BMO, Barclays) raised targets, pushing consensus PT to $99.90 (28.5% upside) -- edge widened materially rather than compressing. (2) RBRK's Aug 27 Q2 FY27 print beat and raised guidance across ARR (+33% YoY to $1.66B), revenue (+38% to $427.3M), margins, EPS and FCF, yet the stock fell 13% intraday/close-to-close on a free-cash-flow-margin efficiency concern (growth outpacing cash conversion). All 25 covering analysts stayed Buy and several (Citi, Wells Fargo, Goldman, Stephens) raised targets 20-30+ points post-print, moving consensus PT to $116.35 (25.6% upside from the new lower price) -- read this as a valuation reset on a real but secondary metric, not a broken growth thesis, and reloaded the position that had been cut to a 5% stub ahead of the print. (3) IOT continues steady momentum (+4.8% since entry, new Fuel Command Center product news) with consensus upside little changed (~15%) but rating cooled from Buy to Moderate Buy and earnings are Sept 3 -- trimmed slightly to fund the RBRK add. (4) FLYW edge held roughly stable (~14% upside) with a minor insider-selling flag; held flat. (5) TOST extended the same edge-compression pattern flagged last week -- beat-and-raise quarter but a fresh downgrade, stock down 4% on the week, consensus upside down to just 7% -- trimmed further to a 5% stub. Net effect: gross exposure raised modestly from 73% to 77% (cash 27%->23%) reflecting that two of the three Aug 27 event risks resolved favorably (AFRM clean beat, RBRK beat/raise despite the tape reaction), while IOT's still-pending Sept 3 print argues for keeping some cash in reserve.",
+  "registration_note": "Polled on the week-7 retry: this manager's first invocation never ran (platform session limit). It was re-polled with the identical packet and the same 2026-08-28 price cutoff, so it decided on the same information as the managers reached in the first pass, with no extra day of hindsight."
+}
