@@ -99,14 +99,50 @@ def fetch(symbol: str, retries: int = 4) -> pd.Series | None:
     return None
 
 
+class PriceDataUnavailable(RuntimeError):
+    """Raised when a requested symbol cannot be priced at all.
+
+    Dropping the symbol and carrying on is NOT an acceptable fallback. On
+    2026-09-03 a rate-limited sweep failed to fetch CRWD and XOM - two of the
+    most liquid tickers in the field. Both were absent from the matrix, three
+    books became "unpriceable", and the run recorded 96 of their fills as
+    VANISHED: an upstream hiccup rewrote the experiment's history. A refusal
+    that leaves yesterday's artifacts intact is strictly better than a
+    published NAV computed from a matrix with a hole in it.
+    """
+
+
 def load_price_matrix(symbols: set[str]) -> pd.DataFrame:
-    series = []
+    series, missing = {}, []
     for sym in sorted(symbols):
         s = fetch(sym)
-        if s is not None:
-            series.append(s)
+        if s is None:
+            missing.append(sym)
+        else:
+            series[sym] = s
         time.sleep(0.35)
-    px = pd.concat(series, axis=1).sort_index()
+
+    # A whole-symbol failure is nearly always rate limiting rather than a
+    # genuinely unpriceable ticker, so back off hard and try the stragglers
+    # once more before giving up on the run.
+    if missing:
+        print(f"  {len(missing)} symbol(s) failed the first pass: {missing} - "
+              f"backing off 20s and retrying")
+        time.sleep(20)
+        still = []
+        for sym in missing:
+            s = fetch(sym, retries=5)
+            if s is None:
+                still.append(sym)
+            else:
+                series[sym] = s
+            time.sleep(1.0)
+        missing = still
+
+    if missing:
+        raise PriceDataUnavailable(", ".join(missing))
+
+    px = pd.concat(series.values(), axis=1, sort=False).sort_index()
     return px.ffill()
 
 
@@ -337,7 +373,14 @@ def main() -> int:
                 if p["kind"] in ("crypto", "perp") and not s.endswith("-USD"):
                     s += "-USD"
                 symbols.add(s)
-    px = load_price_matrix(symbols)
+    try:
+        px = load_price_matrix(symbols)
+    except PriceDataUnavailable as e:
+        print(f"REFUSING TO SCORE round{_round}: could not price {e}. "
+              f"Every book that holds one of those would be marked at par and its "
+              f"fills recorded as vanished, so nothing is written this run - "
+              f"the previous artifacts stand until the data source recovers.")
+        return 1
     # crypto trades 24/7 and returns an intraday row for "today"; official fills
     # happen at the US close, so truncate to the last completed equity session
     px = px.loc[:px["SPY"].dropna().index[-1]]
