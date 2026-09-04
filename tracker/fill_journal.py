@@ -74,6 +74,17 @@ def ident(f: dict) -> str:
 # as evidence of a revision it may well not be.
 UNIFORM_TOL = 1e-3  # 0.1% spread in the ratio still counts as one factor
 
+# What counts as a restatement at all. The test used to be an absolute 1e-9 on
+# the price, which on a $100 quote is the last digit Yahoo prints: on 2026-09-04
+# it flagged SHV at 109.7229 -> 109.7230 and TLT at 83.8596 -> 83.8595 across
+# nine books, all of them rounding dust. Worse, that dust was classified
+# ANOMALOUS, because only the fills that happened to cross the absolute
+# threshold moved and a partial move is the signature of a real revision. The
+# threshold is relative, and sits two orders of magnitude below the smallest
+# move with any meaning - a monthly distribution on even a cash-like ETF is
+# some 4e-3, and the URNM revision that started all this was 1.8e-2.
+RESTATEMENT_EPS = 1e-5
+
 
 def classify(moves: list[tuple[str, float, float]],
              journal: dict[str, dict]) -> dict[str, str]:
@@ -144,7 +155,8 @@ def run(rnd: str) -> int:
         if k not in journal:
             continue
         was, isnow = journal[k].get("fill_price"), f.get("fill_price")
-        if was is not None and isnow is not None and abs(was - isnow) > 1e-9:
+        if (was is not None and isnow is not None and was
+                and abs(isnow / was - 1) > RESTATEMENT_EPS):
             raw_moves.append((k, was, isnow))
     classes = classify(raw_moves, journal)
     moved = [(k, was, isnow, classes[k]) for k, was, isnow in raw_moves]
