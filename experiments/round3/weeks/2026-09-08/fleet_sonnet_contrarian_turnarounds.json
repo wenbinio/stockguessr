@@ -1,0 +1,48 @@
+{
+ "name": "Sonnet contrarian turnarounds",
+ "model": "Sonnet",
+ "group": "fleet",
+ "strategy": "Rotate into the sector breakouts that are actually confirmed (regional banks on widening NIMs, biotech on M&A/catalyst momentum) and add the two mean-reversion legs the mandate always called for but the book never held -- long the statistically cheap, technically breaking-out gold miners and short the most stretched, richly-valued semis -- while dropping the two legs (broad healthcare, low-vol) that have just been dead weight with no confirmed catalyst.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "This book (-2.50% NAV, badly lagging SPY +3.62% and BTC +23.17% over the same stretch) has been sitting in four unconfirmed, half-committed positions -- KRE, XLV, XBI, USMV -- with no short leg despite a mandate that explicitly calls for gold-miner/semi mean reversion and a defensive-vs-discretionary pair. I rebuilt it around what the tape actually confirmed this week rather than what it was merely exposed to. Kept and increased KRE (20% -> 25%): regional banks are one of 2026's better financial trades, +9% YTD and +28% over a year on genuinely widening net interest margins as deposit costs roll over -- a confirmed breakout, not a hope. Kept and increased XBI (18% -> 22%): biotech is showing a real, catalyst-driven uptrend (post-conference data confirmations, sector momentum into a volatile but rising range), distinct from and stronger than broad healthcare. Dropped XLV (22% -> 0%): this is the unconfirmed leg -- XLV's 2026 story is dominated by Eli Lilly's GLP-1 pricing exposure and recurring drug-pricing/Medicare-Advantage-rate headwinds, and it has underperformed SPY by double digits this year with no fresh breakout catalyst; the mandate says rotate into confirmed moves, and XLV isn't one. Dropped USMV (7% -> 0%): the low-vol/defensive leg has just been a drag in a risk-on tape and was never actually paired against a discretionary short, so it wasn't expressing the relative-value idea the mandate names -- better to remove the unpaired half than keep bleeding on it. Added GDX long (13%): gold miners have broken through prior highs even as gold itself hasn't cleared its equivalent resistance (miners leading the metal, a classic leveraged-reversion setup), and GDX's free-cash-flow/EV yield is at record highs with forward multiples at five-year lows -- a legitimate mean-reversion-to-fair-value trade the book never held despite the mandate naming it explicitly (note: this book's one prior GDX attempt was stopped out, so sized modestly). Added SOXX short (10%): semis have pulled back 20% from June highs after a 250% run since April 2025, but SOXX still trades at ~76x trailing earnings and carries a Strong Sell valuation call even with the pullback -- the definition of the 'semi-extreme' the mandate was written to fade, funded by cutting XLV/USMV rather than raising gross materially. Cash raised slightly (33% -> 30%) reflects modestly higher gross exposure now that a real short leg is doing work instead of sitting idle.",
+ "positions": [
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Increased from 20% to 25%. Confirmed sector breakout, not a hope trade: regional banks are +9% YTD and +28% over the past year as Q1-through-Q2 earnings confirm net interest margins widening as deposit costs roll over. This is the cleanest 'rotate into a confirmed breakout' leg in the mandate right now."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Increased from 18% to 22%. Biotech is showing a genuine catalyst-driven uptrend distinct from broad healthcare -- post-conference data confirmations have been driving sector momentum, and this is the specific sub-sector rotation the mandate targets rather than a defensive healthcare beta bet."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "New leg, sized modestly given this book's prior GDX attempt was stopped out. Gold miners have broken through prior highs even though gold itself hasn't cleared the equivalent resistance yet -- miners leading the metal is the leveraged, mean-reversion-to-fair-value setup the mandate names explicitly, reinforced by GDX's free-cash-flow/EV yield sitting at record highs and forward EV/EBITDA at five-year lows."
+  },
+  {
+   "symbol": "SOXX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New leg. This is the 'semi-extreme mean reversion' short the mandate was written for: SOXX ran 250% off its April 2025 low, has only pulled back 20% from June highs, and still trades near 76x trailing earnings with a Strong Sell valuation call despite continued inflows -- fade the extreme rather than chase the AI-capex momentum story that's already priced in."
+  }
+ ]
+}

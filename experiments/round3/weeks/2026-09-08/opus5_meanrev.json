@@ -1,0 +1,111 @@
+{
+ "name": "Opus 5 mean reversion",
+ "model": "Opus 5",
+ "group": "opus5",
+ "strategy": "Re-ranked the liquid US large-cap universe by the average of 1-week and 1-month trailing-return percentiles through the 2026-09-04 close, then bought the bottom-decile losers filtered for cause \u2014 keeping quality names whose drawdown is newsless de-risking or a multiple de-rate, discarding those cut on deteriorating fundamentals \u2014 against a small short in the most crowded top-decile AI-hardware winner, with 10% cash.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "Two things changed. First, my own book drifted off mandate: I re-ranked all 239 names in the mkt price set through the 2026-09-04 close and TSLA now sits at rank 201/239 (+10.8% over one month), WMT at 150 and APP at 101. I am a mean-reversion manager holding winners, which is the one thing my strategy is not allowed to do. Holding costs nothing in commission but everything in mandate; a full re-rank costs ~2bps per side and is the discipline itself. Second, the reason for the losers changed. The 2026-09-04 payroll print came in at 162k versus 55k expected, the 2-year yield hit its highest since January 2025, and futures moved to roughly 58% odds of a Fed rate HIKE this month. That means this week's bottom decile is dominated by long-duration software de-rating on rates rather than by idiosyncratic weakness. Short-horizon reversal works on flow and sentiment shocks and fails badly on genuine fundamental deterioration, so I applied a cause filter that my previous legs did not: LULU is the largest-scoring loser in the whole universe after -17% on Friday, and I refuse it outright because that drop was a second full-year guidance cut in three months with comps -9% and Q3 EPS guided at $0.95 against $2.41 consensus \u2014 that is a business repricing, not an overreaction. FICO is refused for the same reason (-16.7% in a single session on top of -37% over six months, a structural competitive threat, not a wobble). What I kept instead are names where the tape moved and the fundamentals did not, and I deliberately capped the design-software cluster at 26% because rates rising into the FOMC is the single macro factor that could keep pushing it down. I also restored the short leg my strategy of record calls for and my last leg was missing: running 83% gross net-long high-beta losers into a live rate-hike risk was an unhedged bet I was not being paid for.",
+ "positions": [
+  {
+   "symbol": "SYK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 18.0,
+   "thesis": "The cleanest reversal signal in the universe and therefore my largest weight. Stryker is -8.3% over one week and -10.2% over one month, yet its worst single day in the last ten sessions was only -2.3% \u2014 this is a newsless grind lower, institutional repositioning and disclosed insider selling, not a repricing event. The fundamentals point the other way: Q2 beat with organic growth across MedSurg, Neuro and Ortho, full-year guidance raised, and Citi lifting its target to $399 on 2026-08-17 against a $303.13 close. Three-month return is only -0.6%, so I am buying a short-horizon dislocation in an intact compounder rather than catching a falling knife. Medtech is also one of the few bottom-decile groups that is not a rates trade, which matters with a hike in play. Tight 12% stop because a quality name with no news should not fall much further; 18% target is roughly the round trip back to where it traded a month ago."
+  },
+  {
+   "symbol": "SNPS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 24.0,
+   "thesis": "The only leg I am carrying over, and I am carrying it because the reason to own it got stronger, not weaker. SNPS is -11.0% in a week and -15.3% over three months, driven by two things I judge to be sentiment: yields climbing on 2026-09-01 forcing a de-risking of expensive long-duration software, and a headline about an AI-native entrant threatening EDA. Neither shows up in the numbers \u2014 the company grew revenue 42% last quarter and the 25 covering analysts are close to unanimous Buy. This is exactly the setup mean reversion exists to harvest: a violent multiple compression with no earnings revision behind it. I re-enter at the ~$394 mark rather than nursing the -10.4% loss on the old $439.59 basis, which resets the stop against the real risk from here. Sized 11 rather than the 14 I held because it is the same rates factor as CDNS and ADSK and I am capping that cluster."
+  },
+  {
+   "symbol": "CDNS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 24.0,
+   "thesis": "The deeper, cheaper expression of the same EDA de-rate \u2014 rank 3 of 239 on my score, -14.0% in a week, -13.5% in a month and -22.2% over three months, versus SNPS at -15.3% over three months. Cadence fell 7.6% on 2026-09-01 alongside its peer on the rate move and the EDA-disruption story, and sell-side has been explicit that the reaction is a dip to buy rather than an estimate cut. Owning both SNPS and CDNS is a deliberate pairing: if the de-rate is a factor move it reverses for both together, and if I am wrong about the disruption story I would be wrong about both anyway, so a second name adds signal without adding an independent bet. Smaller than SNPS because its six-month drawdown is shallower, meaning less of the fall is already spent. Wide 18% stop because software has been moving 5-8% a day."
+  },
+  {
+   "symbol": "HON",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Honeywell is -12.7% over one month with no single session worse than -1.9% and a +0.95% close on 2026-09-04 \u2014 a pure attrition decline with no catalyst anywhere in the tape. That profile is the highest-quality mean-reversion input there is, because a stock that bleeds without an event has no new information to keep discounting; it is a supply-of-stock problem, and supply problems clear. It also fits the current macro better than the software legs: an industrial conglomerate on a low multiple is far less exposed to another 20bps on the 2-year than a 40x design-software name. Low-vol name so a 12% stop is genuinely far away, and I only need it back to where it traded in early August to hit the 16% target."
+  },
+  {
+   "symbol": "LMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Half of a two-name defense cluster reversion. LMT, RTX, NOC and GD all sit in the bottom 20 of my ranking simultaneously, each down 5-10% over the month, none of them with an earnings event in the window \u2014 that is a sector-level de-risking as investors unwound the conflict trade after Middle East de-escalation, which is the textbook shape of a sentiment shock rather than an earnings shock. LMT is the deepest of the group at -20.8% over six months and -25% from its 2026 high, so I am getting the largest gap to close, and it is a low-multiple cash-generative defense prime whose backlog does not care about last week's positioning. Being long defense is also a useful convexity against the geopolitical risk that would hurt the cruise and consumer legs. 13% stop, 18% target \u2014 modest, because a policy-driven derating can persist and I would rather be paid for the bounce than hold out for a full recovery."
+  },
+  {
+   "symbol": "GD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "The quality half of the defense pair, and the one that passes my cause filter most cleanly. GD is -5.3% in a week and -7.1% in a month, but +4.2% over three months and only -0.2% over six \u2014 so unlike LMT and NOC the pullback is not sitting on top of a year-long downtrend, and there is nothing structural to mistake for a dip. Pairing a deep-drawdown defense name with a shallow-drawdown one hedges the case where the group's weakness turns out to be a genuine budget or policy repricing: GD's fundamentals would be the last to break. Smaller than LMT because less has been given back and therefore less is available to reclaim. Tight 12% stop given its low realized volatility."
+  },
+  {
+   "symbol": "ADSK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 24.0,
+   "thesis": "Rank 4 of 239, -16.4% in a week including -8.3% on 2026-09-04. What makes this a reversion candidate rather than a post-earnings drift trade is the timing: Autodesk reported on 2026-08-27 and BEAT on both lines, $3.30 EPS against $3.12 and $2.05bn revenue against $2.01bn, and the 8% collapse came a full week later on the day yields spiked. That is the market re-rating the multiple on conservative forward margin commentary in a hostile rate tape, not the market learning something new about the business. I size it below SNPS because the guidance tone was genuinely cautious and because it is the third leg of my design-software cluster, which I am capping at 26% of the book on purpose given a live rate-hike risk. 18% stop matches the 8% daily ranges it is actually printing."
+  },
+  {
+   "symbol": "CSCO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Carried over and slightly reduced. Cisco still ranks 52 of 239, is -9.7% over one month and -9.9% over three, and did it with no day worse than -2.0% \u2014 the same newsless attrition pattern I am buying in HON. It has held its old 15% stop and 18% target without ever threatening either, which tells me the position was correctly sized for its volatility. It is the lowest-beta leg in the book and earns its place partly as ballast: cheap, cash-rich, dividend-paying and largely indifferent to whether the Fed hikes in September, which is the risk that could hurt every other long here at once. I tighten the stop to 12% and the target to 15% because this is a low-volatility name and wide bands on a low-vol leg just mean the stop never does any work."
+  },
+  {
+   "symbol": "CRDO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 35.0,
+   "thesis": "The most extreme single input in my ranking \u2014 worst score in the universe at exactly 0.000, -26.7% in one week after a -20.0% session on 2026-09-02 \u2014 and it earns a place precisely because the print was good: revenue +115% year over year, EPS $1.20 against $1.12 expected, a beat across the board. The stock fell on gross-margin compression and customer-concentration anxiety on top of an already extreme valuation, which is a de-rating of the multiple, not a break in the business. Extreme one-week reversal is the strongest and shortest-lived leg of the mean-reversion effect, and it already ticked +3.9% on 2026-09-04, so the bounce may have begun. I keep it to 5% because this name is still +55% over six months and moves 20% in a day; at this weight a full 25% adverse move costs the book only 1.25%. Wide stop and a 35% target sized to its actual volatility."
+  },
+  {
+   "symbol": "RCL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 16.0,
+   "take_profit_pct": 20.0,
+   "thesis": "RCL and CCL both sit in the bottom ten of my ranking, down 17-18% over the month, and the driver is external to both companies: WTI at roughly $86 after a 3.7% monthly climb, plus itinerary disruption from Middle East geopolitics. Fuel-price and headline shocks are the archetypal mean-reversion cause because they revalue the stock without changing the franchise, and Royal Caribbean's late-July update actually beat and RAISED full-year guidance. I take RCL rather than CCL because it is the better-balance-sheet, higher-quality operator and because CCL at $23.51 sits close enough to the $15 threshold that I would rather not add execution friction risk. Small at 5% because the same oil strength that created the entry could persist, and because a hawkish Fed is a real headwind for leveraged consumer discretionary. It is also a natural offset to the long-defense legs, which profit if the geopolitics get worse."
+  },
+  {
+   "symbol": "DELL",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The short side my strategy of record requires and my last leg was missing. The crowded top decile has stopped being energy and become AI hardware and memory: SNDK +38% in a month and +230% in six, MU +15% and +175%, SMCI +35%, DELL +19.8% and +260%. That is the cluster to fade, but I will not short a vertical like SNDK or MU into a +12% and +6% session on 2026-09-04 \u2014 the squeeze risk is asymmetric. DELL is the disciplined expression: same crowding and the same +260% six-month run, but a slower, lower-beta tape, and its business is exactly the one that just punished CRDO \u2014 AI hardware sold at compressing gross margins. It also carries the highest downside if the 58% implied odds of a September rate hike come good, since it is a mid-multiple name held mainly by momentum flows. Only 6% and stopped at 20% against me, capping the loss at 1.2% of NAV, because shorting momentum has been the weakest part of this book's history and I want the beta hedge, not the hero trade. 3% borrow is a cheap price for cutting my net long from 90% to 78%."
+  }
+ ]
+}

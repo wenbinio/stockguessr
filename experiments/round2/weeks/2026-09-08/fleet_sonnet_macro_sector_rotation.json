@@ -1,0 +1,29 @@
+{
+ "name": "Sonnet macro/sector rotation",
+ "model": "Sonnet",
+ "group": "fleet",
+ "strategy": "Dollar-debasement/EM rotation book kept deliberately small and cash-heavy: trim the gold hedge on a genuine hawkish macro shock this week while nudging China exposure up into a near-term trade catalyst, with the large cash buffer preserved against ongoing AI-infra/semis correction risk.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 90,
+ "reassessment_note": "The dominant event this week was the August jobs report: nonfarm payrolls printed +162k vs a ~55k forecast (prior month revised to just 21k) with unemployment steady at 4.1%. That is a real regime signal, not noise -- it flipped the market narrative from expecting Fed cuts to pricing meaningfully higher odds of the Fed staying hawkish (or even hiking), which lifted the dollar and Treasury yields and knocked gold down on the day even as Trump publicly pressured the Fed to cut. That directly cuts against this book's 'dollar-debasement hedge' rationale for GLD in the near term, so I'm trimming it rather than either exiting outright or ignoring the data -- the structural bull case (Goldman $4,900 and RBC ~$5,000 year-end targets, continued central-bank buying/repatriation such as the Netherlands moving ~86t of gold out of New York, and persistent debt-debasement flows) is still intact and unrefuted by one data print, so a reduced core position is the right sizing rather than zero. On the other side of the book, FXI actually traded up this week (+1.5% on the day) into a real near-term catalyst: the U.S. and China are reportedly finalizing agriculture and non-tariff-barrier announcements around Xi's upcoming Washington visit, and China's July exports beat expectations on AI-linked high-tech demand -- so I'm adding modestly there rather than to the now-more-crowded, more-uncertain rate-cut trade. I'm not adding new industrial/capex-reacceleration or small-cap exposure this week: IWM sentiment pieces (Wells Fargo, Goldman) flag deteriorating small-cap earnings revisions under the rally, and semis/AI-capex commentary is split between 'buy the dip' (JPMorgan) and 'another 10% down, hard remainder of 2026' (Morgan Stanley) plus a fresh tariff threat on chip/server/laptop imports -- too two-sided to fund a new leg out of cash. Net effect: keep the book intentionally light (10% gross, 90% cash earning 4%) and let this week's real macro surprise, not habit, drive the one adjustment worth making.",
+ "positions": [
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 8.0,
+   "thesis": "Trimmed from 7% to 4% after the August payrolls beat (+162k vs ~55k forecast) repriced Fed expectations away from near-term cuts, lifting the dollar/yields and pulling gold down on the day -- a direct near-term headwind to the debasement-hedge rationale. Kept as a reduced core position rather than exited because the structural case (Goldman $4,900 / RBC ~$5,000 year-end targets, continued central-bank gold repatriation, persistent U.S. debt-debasement concern) was not falsified by one jobs print, and the position is cheap optionality against renewed dollar weakness if the labor data proves noisy."
+  },
+  {
+   "symbol": "FXI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Increased from 5% to 6% on a real near-term catalyst: reports that the U.S. and China are preparing agriculture and non-tariff-barrier announcements around Xi Jinping's upcoming Washington visit, plus July exports beating expectations on AI-related high-tech demand, both argue for staying long into the event. Sized modestly rather than pressed further because China factory PMI contracted for a second straight month (49.8) and headlines about potential U.S. sanctions on Chinese banks are a live tail risk that could reverse this fast."
+  }
+ ]
+}

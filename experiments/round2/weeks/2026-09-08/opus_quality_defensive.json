@@ -1,0 +1,61 @@
+{
+ "name": "Opus Quality Defensive",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Low-beta quality/defensive core anchored on healthcare and cash-flow-screened dividend quality, with rate-sensitive bond-proxy exposure cut back ahead of a likely September Fed hike, a small high-free-cash-flow energy sleeve as an inflation/geopolitical hedge, and a raised 22% cash buffer earning 4%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "The regime changed on me this week and it changed against one specific part of my book. Going into the week the market was pricing Waller's disinflation comments; by Friday's close August payrolls printed 162k against a ~55k consensus with June and July revised up a combined 55k, the 2-year yield jumped 3.8bp to 4.37% (highest since January 2025), the 10-year hit 4.78%, and short-rate futures moved to roughly a 58-65% probability of a HIKE at the September 15-16 FOMC. A defensive book is not automatically safe in that world: the bond-proxy defensives are precisely the trade that loses when the front end reprices higher. My previous book carried roughly 29% in rate-sensitive sleeves (XLP staples, USMV min-vol which is heavy utilities/staples/REITs, and GLD which is short real rates). So I am cutting XLP entirely, trimming USMV from 17 to 11 and GLD from 7 to 6, and moving the released weight into things that are defensive for reasons other than duration: healthcare earnings resilience, quality free cash flow, and cash itself. Second observation: this economy is bifurcated, not uniformly weak. Lululemon fell 17% on cut guidance and dragged the whole athletic-apparel complex, while semis and memory were the strongest part of Friday's tape on continued AI demand. That says consumer-facing staples/discretionary is the wrong place to hide and that a modest allocation to broad quality (which now carries real megacap-tech cash-flow weight) is a better quality expression than more staples. Third, Brent is near $95 on US-Iran tension and refinery disruption, which is both an inflation risk to the Fed path and an earnings tailwind to integrated energy, so I am adding a small XLE sleeve as a hedge that actually earns something rather than adding more gold. Finally, with the Fed possibly hiking, 22% cash at 4% is a genuine competing asset, not a drag - I am willing to hold it and stay ahead of SPY on a risk-adjusted basis rather than reach. Book is up 3.18% vs SPY 2.59% with a 1.70% max drawdown; the job is to keep that profile intact through a hawkish FOMC, not to chase.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 30,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare stays the core of the book but I am trimming it from 34% to 30% for position-sizing discipline rather than thesis reasons. It is the one large defensive sector whose earnings are not a function of the front end of the curve: managed care, pharma and med-tech revenue does not reprice with a 25bp hike the way a utility's cost of capital or a staples multiple does. It was among Friday's laggards, which is exactly the kind of entry I want in a low-beta compounder - I am being paid to add duration-insensitive defense while the tape rotates into semis. Valuation remains the cheapest of the defensive sectors and the sector is the natural home for a quality mandate that must not own bond proxies into a hiking meeting. Keeping the 12% stop as a discipline against a genuine policy/regulatory shock rather than as a trading stop."
+  },
+  {
+   "symbol": "SCHD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 12.0,
+   "thesis": "Dividend quality screened on return-on-capital and free cash flow, held at 17% (from 20%). This is the sleeve I trust most against a rising-rate backdrop because it is a value/cash-flow screen rather than a yield screen - its holdings are cheap on earnings, not merely high-yielding, so the discount-rate hit from a 4.37% 2-year is far smaller than for a pure income proxy. It also carries relatively little of the consumer-discretionary and apparel exposure that just blew up with Lululemon's guidance cut. Slight trim because rising short rates do compress the relative appeal of any dividend product when cash pays 4%, and I would rather hold that margin in cash than argue with the front end."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 10.0,
+   "thesis": "Cut from 17% to 11%. Min-vol is the right factor for my mandate in the abstract, but its construction loads heavily on utilities, staples and REIT-like names, which is the single most rate-sensitive corner of the equity market and the most exposed if the Fed hikes on September 16 with the 2-year already at a 20-month high. I keep a meaningful stake because the factor genuinely damps drawdown and my max drawdown of 1.70% is a number I want to defend, but I refuse to run it at a weight where a front-end repricing dictates my whole book's return. The 10% stop is tighter than my others precisely because the drawdown risk here is a known, identifiable macro exposure rather than idiosyncratic."
+  },
+  {
+   "symbol": "QUAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "New 8% position. This week made clear the economy is split: consumer-facing names are cutting guidance (Lululemon -17%, Nike and the rest of the apparel complex following) while AI-linked demand is still the strongest signal on the tape, with semis and memory leading Friday's session. A quality-factor ETF screened on high ROE, stable earnings growth and low leverage is the mandate-consistent way to own the resilient half of that split - I am buying balance-sheet strength and earnings durability, not momentum. It also corrects a real weakness in my previous book, which was defensive purely by being a bond proxy and therefore had almost no participation in the part of the market that is actually compounding. Sized at 8% so it diversifies the book without turning a defensive mandate into a growth one."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New 6% inflation and geopolitical hedge. Brent is around $95 on US-Iran tension plus refinery disruption, which is simultaneously the main upside risk to the inflation path the Fed is now hiking against and a direct earnings tailwind to integrated majors. Unlike gold, this hedge is not short real rates - large-cap integrated energy generates enormous free cash flow at $95 Brent and pays it out, so it hedges the same tail as more gold would while getting paid to wait. Kept deliberately small at 6% because energy is not a low-beta sector and it lagged on Friday; the 15% stop reflects that higher volatility and the 20% take-profit exists because this is a hedge against a specific geopolitical premium - if Iran tension resolves, the premium deflates and I want to be taken out with the gain rather than round-trip it."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 9.0,
+   "thesis": "Trimmed from 7% to 6%. Gold and silver both fell on Friday as the dollar strengthened and yields rose, which is the textbook response to a repricing toward a hike - gold's carry is the negative of the real rate, and the real rate just went up. I do not cut it entirely because the Middle East tail that is holding Brent near $95 is exactly the scenario where a small gold position earns its keep, and because it is the only leg in the book that is genuinely uncorrelated to US equity beta. But I am not willing to fund a rate-losing hedge at size into a meeting the market thinks is 65% likely to hike, so the weight comes down and I keep the 9% stop tight to cap the cost of being wrong about the real-rate path."
+  }
+ ]
+}

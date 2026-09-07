@@ -1,0 +1,71 @@
+{
+ "name": "Opus 5 trend following",
+ "model": "opus5",
+ "group": "opus5",
+ "strategy": "Systematic time-series trend across six asset classes with signals refreshed on data through the 2026-09-04 close: long where price is above both the 50- and 200-day moving average with positive 3-month momentum, short where both are negative, sized inversely to 60-day realised volatility and then tilted toward the strongest-ranked signals, with wide catastrophe stops because weekly reassessment is the real trend-exit mechanism.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "The book I have been running was built on signals computed from data through the 2026-07-24 close and is now six weeks stale, which is exactly why it is -1.34% while SPY is +3.62% and BTC is +23.17%: it held a diluted, near-equal spread across everything instead of the trends that actually ran. Re-running the signal set on data through the 2026-09-04 close changes the picture in four concrete ways. (1) The dominant 2026 trend is an energy/inflation shock, not an equity trend: USO is +89.7% over one year with WTI testing $91 on Strait of Hormuz risk and falling US inventories, and XLE is +49.3% YTD after a +7.4% August, the best of the eleven Select Sector SPDRs. I was carrying 14% in XLE and zero direct crude. (2) The bond downtrend has hardened - the August payroll print came in at 162k against a 55k consensus, Warsh's Jackson Hole speech was deliberately hawkish, the 10-year sits at 4.79% near its highest since October 2023, and TLT at $82.21 is within $1.54 of its all-time low. My TLT short was only 6%. (3) Copper broke to record levels on AI-infrastructure and grid demand with CPER +40.9% YTD sitting at $39.95 against a $40.97 high, and I owned only 5%. (4) BTC reclaimed its 200-day moving average (~$69.4k) at ~$81k after 270 consecutive sessions below it, so it flips from a filtered-out asset to a legitimate long. Two legs fail the refreshed filter and are cut: DBA is chopping inside a 25.40-29.52 range with no clean signal and was my worst leg at -1.60%, and XLF at +10.3% over a year is the weakest of the sector uptrends and is the one most exposed if a hiking Fed cracks credit. I am also deliberately NOT adding XLK despite +44% YTD - it is 5.9% below its high, sitting on its 50-day EMA, and the tape shows money rotating out of tech into healthcare, which is a decaying signal rather than a trend. Net result: gross stays 90% but it is concentrated in the four signals that actually rank highest instead of spread thin across eight mediocre ones. I capped the TLT short at 16% rather than the ~23% pure inverse-vol sizing would give, because a September hike is only ~52% priced and a no-hike surprise would produce a violent bond rally - that is event risk, not trend risk, and it deserves a size haircut.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 20.0,
+   "thesis": "The single strongest ranked signal in the equity sleeve. XLE closed at $64.06, roughly 2% below its 52-week high of $65.52, is +49.3% over one year, and posted +7.4% in August - the best of the eleven Select Sector SPDRs. Price is decisively above both the 50- and 200-day averages and 3-month momentum is strongly positive, so both filters are green. The driver is a genuine supply shock (Middle East escalation, Strait of Hormuz risk, falling US inventories) rather than multiple expansion, and the sector trades at 16.4x with a 2.37% yield, so the trend is not being carried by valuation. Sized at 17% - above its inverse-vol share at ~22% realised vol - because signal strength justifies a tilt, and it is the lower-volatility way to own the energy trend alongside USO. Wide 20% stop matches the sector's volatility and lets a normal correction breathe."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "thesis": "The cleanest short in the book. TLT closed at $82.21 against a 52-week range of $81.17-$92.19 and is within $1.54 of its all-time low of $80.67, so price is below both the 50- and 200-day averages with negative 3-month momentum - both filters negative, which is my short condition. The macro is pushing the same way: August payrolls printed 162k versus 55k expected, Warsh told Jackson Hole the Fed still has work to do on inflation, September hike odds jumped from 35% to ~52-58%, and the 10-year is at 4.79%, near its highest since October 2023. Short borrow costs only 3% APR (about 6bps a week on this weight), so carry is not a reason to avoid it. I sized this at 16% rather than the ~23% that pure inverse-vol would assign because a hike is barely more than a coin flip and a no-hike surprise is the one event that produces a fast adverse move; the 10% stop is deliberately tighter than my equity stops for the same reason - a 10% TLT rally would mean the rate trend has genuinely broken."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 12.0,
+   "thesis": "The core index trend remains intact and is the lowest-volatility way to hold beta. The S&P closed the week at 7,718.60, up 0.1% on the week and still in a record-rally regime, with price above both the 50- and 200-day averages and positive 3-month momentum. I hold the index rather than XLK specifically: XLK is +44% YTD but sits 5.9% below its high, hugging its 50-day EMA at 37x earnings while the tape shows money rotating out of tech into healthcare - a decaying signal I do not want to size into just because its trailing return is large. SPY gives me roughly 35% tech exposure inside a broader, better-behaved trend. At ~14% realised volatility it earns a large inverse-vol weight; 16% reflects a slight haircut for the fact that rising yields are a headwind to the index multiple."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "My best non-commodity diversifier and the one leg from the old book whose signal strengthened rather than decayed. XLV closed at $171.45 against a 52-week high of $176.60, is +27.4% over one year, and is above both moving averages with positive 3-month momentum. Crucially the flow story supports the trend continuing: healthcare has become the destination for investors rotating out of expensive tech, with Eli Lilly and J&J making new highs. At ~14% realised volatility it is a large inverse-vol weight, and it is the leg least correlated to the energy/rates factor that dominates the rest of this book, which is precisely why I keep it at full size rather than selling it to fund more oil."
+  },
+  {
+   "symbol": "CPER",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 20.0,
+   "thesis": "Copper is at record levels and I was badly underweight it at 5%. CPER closed at $39.95 against a 52-week high of $40.97 and a low of $27.85, and is +40.9% YTD - price above both averages, 3-month momentum strongly positive. The demand side is structural rather than cyclical (AI data-centre buildout, electrification, grid expansion) and it is colliding with supply constraints and disruption in major producing regions, which is the kind of setup that produces persistent rather than mean-reverting trends. Tripling the weight to 12% reflects both the signal rank and ~28% realised volatility; the 20% stop is wide enough to survive the sharp shakeouts that base metals produce inside intact uptrends. The 0.97% expense ratio is real but small against the trend."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 40.0,
+   "thesis": "New leg and the most direct expression of the strongest trend in the whole cross-section: USO is +89.7% over one year at $141.96, with WTI testing $91 on Strait of Hormuz disruption risk, falling US inventories and record Labor Day gasoline prices. Owning XLE alone under-expresses this - energy equities capture a fraction of the crude move. I hold this at only 10% rather than matching XLE because it is a front-month WTI futures vehicle: ~40% realised volatility, roll drag, and a -6.39% average annual return since inception, so it is a trend-rental, never a hold. Inverse-vol sizing does most of the work here. This is the one leg where I attach a take-profit: crude supply shocks spike and then fade hard, so a 40% gain gets banked mechanically rather than surrendered, and the 25% stop respects the volatility. Combined with XLE this puts 27% in energy, which is a deliberate concentration into the trend that is actually running."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "perp",
+   "side": "long",
+   "leverage": 1,
+   "weight_pct": 5,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The signal genuinely flipped this month. Bitcoin closed below its 200-day moving average for 270 consecutive sessions through late July; it has now reclaimed it, trading around $81k against a 200-day average near $69.4k, after +25% in August on $3.52bn of spot-ETF inflows. Price above both the 50- and 200-day with positive 3-month momentum is my long condition, so it stays in the book. It stays small at 5% because ~50% realised volatility gives it the smallest inverse-vol share of any leg, and because the signal is a fresh reclaim rather than an established trend - it is still 9.6% below where it started the year and a hawkish Fed already knocked it below $78k intraday once after Jackson Hole. I keep the 1x perp rather than spot: at 7.5bps of notional per side plus 10% APR funding (~19bps a week) it is cheaper than 35bps-per-side spot for a book that is reassessed weekly. Leverage stays at 1 because levering the highest-volatility asset would break the risk-parity logic the whole book is built on."
+  }
+ ]
+}

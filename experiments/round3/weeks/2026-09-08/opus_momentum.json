@@ -1,0 +1,121 @@
+{
+ "name": "Opus Momentum",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Net-low-beta cross-asset carry rebuilt for an inflationary hiking regime: nominal duration replaced by short-dated TIPS, with commodity and energy cash-flow carry, gold, defensive pharma, value and min-vol equity risk premia, EM/Japan and a small volatility-risk-premium sleeve, inverse-vol balanced.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 11,
+ "reassessment_note": "The regime under this book inverted this week and the book was positioned for the old one. My Round 3 sleeve was built to harvest bond term premium and bond-proxy carry - IEF at 16%, plus XLRE, XLP, KO, T, SPLV and USMV, which are all duration in equity clothing. On 2026-09-04 August payrolls printed 162,000 against a 53,000 consensus with 55,000 of upward revisions to June and July and unemployment steady at 4.1%. The 2-year yield rose to 4.37%, its highest since January 2025, and the 10-year touched 4.818% the prior session, its highest since November 2023. Combined with Chair Warsh's hawkish Jackson Hole message and 3.7% PCE, the market now prices roughly 60% odds of a 25bp HIKE at the September 15-16 FOMC. Every leg in my book was red on the week, which is what a duration book does when the curve reprices. Harvesting term premium into a hiking cycle with sticky 3.7% inflation is not carry, it is a losing trade with a coupon attached, and it is why this book is +2.15% against SPY +3.62%. So I am keeping the mandate - inverse-vol-balanced, net-low-beta, multi-source risk premia - and changing what the premia are. Out: IEF, XLRE, XLP, KO, T, SPLV, and half of USMV. In: short-dated TIPS for real-yield carry that a hike cannot hurt, commodity and energy carry which is the one place inflation pays you (XLE +10.1% 1m, energy the best sector of 2026 at roughly +25% YTD, COMT +10.8% 1m, oil bid on renewed Iran conflict), gold as the monetary hedge, a defensive pharma sleeve that is uniquely combining low beta with real momentum (MRK +17.1%, GILD +15.4%, AMGN +8.0% on 1m), the value factor (VLUE +42% on 6m at only 12% vol), Japan and EM for non-dollar diversification, and a small short-vol sleeve to harvest the variance risk premium with VIX at 14.5. Estimated net equity beta is around 0.4, which keeps the book inside its low-beta mandate while removing the rate factor that was doing the damage.",
+ "positions": [
+  {
+   "symbol": "VTIP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "thesis": "The direct replacement for the 16% IEF position and the single most important change in this book. VTIP holds 0-5 year TIPS: it collects a real yield plus CPI accrual with roughly 2.5 years of duration instead of IEF's ~7.5, so it earns carry in an environment where 3.7% PCE is the problem and a September hike is the likely answer. Realized vol is ~1.4% annualized, so at 11% it is the ballast of the inverse-vol construction without being the rate bet that IEF was. The whole point: if the Fed hikes because inflation is sticky, the inflation accrual pays me while the duration that would hurt me is largely absent. No stop - a 1.4%-vol instrument cannot meaningfully gap, and a stop would only generate churn."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held rather than cut, and it is now doing a different job than when I bought it. Gold at roughly $4,470/oz is +4.4% on 1m and its correlation with Bitcoin has hit a six-year high, which tells you both are trading as debasement hedges rather than as risk assets. With the Treasury intervening in the bond market, a hawkish Fed fighting 3.7% inflation, and the dollar soft, gold is the one asset in this book that profits from the policy credibility problem itself - a genuinely different risk factor from equity, credit or commodity beta, which is exactly what a risk-parity sleeve needs. 9% at 27% vol keeps its risk contribution comparable to the 9% XLE leg. 12% stop retained."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised from 5% to 9%, the largest add in the book. Energy is the best-performing US sector of 2026 at roughly +25% YTD on a ~12% move in crude, it is +10.1% on 1m and +2.2% on the week even as the S&P fell on the jobs report, and oil caught a fresh bid on the reignited Iran conflict in the first days of September. For a carry mandate the appeal is that this is not just price momentum: integrated majors are returning free cash flow through dividends and buybacks at high single-digit shareholder yields, which is real carry, and energy earnings rise with the same inflation that is destroying my old bond sleeve. It is the natural hedge to the two things that would hurt everything else here - an oil shock and a hawkish Fed. 12% stop against 22% vol."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "thesis": "Cut from 17% to 9% but kept as the core equity risk premium sleeve. USMV is the cheapest way to own equity beta at roughly 0.7 with 7.7% realized vol, and it is still positive on 1m (+0.8%) and 3m (+5.4%). The cut is deliberate: min-vol indices are structurally overweight staples, utilities and REITs, which makes them a partial duration bet, and duration is precisely the exposure I am trying to remove this week. At 9% rather than 17% it provides equity carry without quietly reintroducing the rate factor through the back door. No stop; an 8%-vol diversified index does not need one and a stop would just force a re-entry."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "New position, replacing SPLV. VLUE harvests the value premium - the most durable of the academic risk premia and the one that historically does best when nominal growth and inflation are high rather than low. The evidence is already on the tape: +42.2% over 6m and +4.75% on 1m at only 12.4% realized vol, which is better return per unit risk than anything in my old book. It is a genuinely different equity factor from USMV's low-vol tilt, so the two are complements rather than duplicates, and value's overweight to energy, financials and industrials aligns with the 2026 rotation out of expensive tech into cyclicals. 8% with no stop, as factor sleeves should be held through drawdowns rather than timed."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 14.0,
+   "thesis": "New position and the purest carry instrument in the book: a broad commodity strategy earning roll yield in backwardated curves, which is compensation for bearing inventory risk rather than a directional bet. It is +10.8% on 1m and +4.3% on the week, and its correlation to both my equity and my real-rate sleeves is low. In a book whose entire thesis has to change because inflation is running at 3.7% and the Fed is hiking into it, holding zero commodity exposure would be an unhedged short inflation position. Sized at 7% against 19% vol so its risk contribution roughly matches gold's. 14% stop because commodity trends do reverse hard when demand cracks."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "thesis": "The largest of three pharma legs. Large-cap pharma is the rare combination this book needs right now: sub-0.6 equity beta, a ~3% dividend yield that is real carry, and actual price momentum, which the staples and REITs I am selling no longer have. MRK is +17.1% on 1m and +24.5% on 3m - it is the best-performing genuinely defensive large cap on my board. Crucially, it replaces bond-proxy defensiveness with cash-flow defensiveness: unlike KO or XLP, its valuation is not primarily a discount-rate story, so a September hike does not mechanically de-rate it. 6% with a 14% stop."
+  },
+  {
+   "symbol": "GILD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 13.0,
+   "thesis": "Second pharma leg, chosen specifically for the risk budget: +15.4% on 1m and +16.9% on 3m at only 24% realized vol, the best momentum-per-unit-of-risk in the healthcare complex. It also brings a distinct clinical/biotech catalyst exposure that pairs with the strength in the broader group (XBI +27% on 3m and near five-year highs, with a busy FDA calendar through September) without taking XBI's 32% vol. Held at 5% rather than 6% because it carries a lower dividend than MRK, so slightly less of its return is carry and more is price."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "New position for non-dollar diversification, which this book entirely lacked. Japan is +3.3% on 1m, +8.3% on 3m and +16% on 6m at just 16% vol, and the driver is structural carry rather than a macro punt: the Tokyo Stock Exchange governance reforms are forcing balance-sheet cash back to shareholders through buybacks and dividends, and Japanese corporates are still on a re-rating path. It also hedges a specific risk in the rest of my book - if the Fed hikes and the dollar strengthens, my gold and EM legs suffer, while Japanese exporters generally benefit from a weaker yen. 5% with a 12% stop."
+  },
+  {
+   "symbol": "EEM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "Emerging market equity risk premium, +5.7% on 1m, +6.4% on 3m and +19.9% on 6m at 18% vol, outperforming SPY on every one of those horizons. EM equities carry a structurally higher earnings yield than developed markets, which is the compensation this sleeve exists to collect, and the 2026 leadership inside the index is Korea and Taiwan riding record semiconductor exports - real earnings, not multiple expansion. I hold this at only 5% and with a stop because a genuine Fed hike and a firmer dollar is the classic way EM gets hurt, and I want that risk capped rather than argued with."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 20.0,
+   "thesis": "A small levered adjunct to the gold position rather than a separate idea. Miners are +18.3% on 1m and +25.9% on 3m against gold bullion's +4.4% and +2.7%, which is exactly the operating leverage you expect when the metal holds above $4,400 and all-in sustaining costs are fixed - margins expand far faster than the gold price. Deliberately capped at 4% because 52% annualized vol means this leg contributes more risk than its weight suggests; with a 20% stop its worst case costs the book about 80bps. This is the one place in the book where I am willing to hold a high-vol asset, because its factor exposure is monetary rather than cyclical."
+  },
+  {
+   "symbol": "SVXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 15.0,
+   "thesis": "New position, and the most literal carry trade available: the variance risk premium, the persistent gap between implied and realized volatility, which is compensation for providing insurance. VIX closed at 14.53, down 32% over 3m, VVIX is at 84 and falling, and SVXY is +18.2% on 3m and +36% on 6m at only 13.7% realized vol - the term structure is in contango and paying to be short. This is a real risk premium and belongs in a carry mandate. It is sized at only 4%, the same as GDX, precisely because its payoff is short-tailed: SKEW at 151 says the options market is already paying up for crash protection into the September 15-16 FOMC. The 15% stop is the discipline that turns an uncapped short-vol exposure into a bounded one, and 4% is what I am willing to lose if a hike triggers a vol spike."
+  },
+  {
+   "symbol": "AMGN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 13.0,
+   "thesis": "Third and smallest pharma leg, added for dividend carry specifically. AMGN yields more than either MRK or GILD, is +8.0% on 1m and +25.1% on 3m at 22% vol, and its revenue base is about as insensitive to a 25bp policy move as any equity gets. Held at 4% so that the pharma sleeve totals 15% - large enough to be the defensive anchor that replaces the staples and telecom legs I am selling, small enough that a single FDA or pricing headline in one name cannot damage the book. 13% stop."
+  },
+  {
+   "symbol": "HYG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 6.0,
+   "thesis": "The credit spread carry sleeve, kept at 3% and unchanged in size. High yield is flat over 1m and 3m with only 3.9% realized vol, which is the point: spreads are tight, so I am being paid roughly the coupon and nothing more, and there is no case for upsizing into a hiking cycle where the marginal risk is a growth scare that widens spreads and a rate move that hurts the ~3.5 year duration simultaneously. It stays because credit is a distinct risk factor from equity and rates and the inverse-vol construction wants it, but at the smallest weight in the book. The tight 6% stop is calibrated to a 3.9%-vol instrument: it only triggers if spreads genuinely dislocate, at which point I want out rather than averaging in."
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "name": "Opus 5 pairs",
+ "model": "opus",
+ "group": "opus5",
+ "strategy": "Five market-neutral relative-value pairs (XLI/VTV, ITA/RSP, MTUM/XLK, STLD/NUE, IJR/IWD) chosen from a 279-symbol, 3,000-pair screen for a 250-day log-spread z-score of 2.2-3.4 sigma AND hard evidence of stationarity - 17 to 32 crossings of the spread's own mean in the past year, under 20% two-year drift, daily-return correlation above 0.57 and a mean-reversion half-life of 10-26 trading days - then filtered by hand to remove every pair whose dislocation was caused by a fresh fundamental catalyst on the leg being faded, with each pair sized to cancel its long and short SPY betas (short/long ratio capped at 1.35 so the position still tracks the measured 1:1 log spread), leaving a regression-measured net SPY beta of +3.0% of NAV.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "Two things changed this week, and together they force a full replacement rather than a hold. FIRST, I re-ran my own screen on my own live book and it failed. Of the four pairs I am actually carrying, not one would pass a fresh application of my mandate's stationarity test today: WFC/BAC has crossed its 250-day spread mean exactly ONCE in the past year with a 91-day half-life (my rule requires 8 crossings) - it is a trend I have been calling a spread, and the +2.9% it has made me is drift, not convergence; MA/V is at z -0.96 with 3 crossings; LOW/HD is at z +1.03 with 6 crossings; and KLAC/TSM has fully converged to z -0.13, so there is no edge left in it at all - it is the leg that cost me -5.79% on the KLAC short. A book with zero remaining signal and zero remaining stationarity is not something to hold out of thrift; the 2bps-per-side cost of turning it over is trivially cheaper than carrying four dead positions for another week. SECOND, and more important, I found out WHY my single-stock pairs kept breaking. I ran the statistical screen first and then checked the news on every finalist, and the news killed almost the entire statistical leaderboard: CRM/SAP (z 2.71, the top-ranked pair in the whole screen) - Salesforce beat and RAISED on Sep 1 with Cantor, TD Cowen and Argus all taking targets to $300; IHI/MDT (z -2.78) - Medtronic beat and raised Sep 1 with 13.7% organic growth and Mizuho/UBS/BofA target hikes; NTRS/STT (z -2.23) - State Street's Q2 profit was up 56%, it raised 2026 guidance and is buying Santander's LatAm custody business; KEY/USB (z -2.14) - U.S. Bancorp posted record revenue, upgraded guidance and is monetising the BTIG deal; COP/DVN and COP/XOM (z 2.15/2.04) - ConocoPhillips beat, hit its $5B divestiture target early and drew target raises from six firms; DHR/TMO (z -2.35) - Danaher cut its revenue outlook in July, had its worst day in two decades and changed CEO on Aug 3; AXP/COF - Capital One is re-rating on Discover synergies. Every one of those was me being asked to short a company that had just beaten and raised, or to buy one that had just guided down. That is the exact error that cost me on KLAC, and it is not a statistical error - the z-score cannot see it. This is a fundamentals-driven dispersion regime, and in one of those, single-name convergence trades are systematically adversely selected. So the book is rebuilt around a rule the old one did not have: four of five pairs are now ETF-vs-ETF or sector-vs-broad-index, where no single earnings report can permanently break the spread, and the one surviving single-name pair (STLD/NUE) is a business-identical twin pair where I verified that BOTH legs are driven by the SAME catalyst (the U.S.-Canada trade breakdown pushing steel tariffs) and neither has a divergent fundamental. I also deliberately declined the three highest 'annualised edge' names the screen produced - NEM/XME, NEM/SLV and GDX/GLD - because their 60-day spread momentum is +0.19 to +0.29 and still accelerating: gold miners are in a parabolic move and fading a parabola is the KLAC mistake in a different costume. I dropped the energy pair (EOG/XOP, z -2.17) for the same class of reason: XOP is up 49% on the year on an active U.S.-Iran conflict and Hormuz supply risk with crude testing $90, and I have no edge on a shooting war. Two structural changes beyond selection. (1) Gross exposure goes from 72.9% to 90% and cash from 27.1% to 10%. The old book's realised risk was absurdly low - max drawdown of 0.71% over seven weeks - because I was running a quarter of the book in cash on top of pairs that barely moved. The new book's measured spread volatility is 3.4% annualised with a pairwise correlation matrix that is near-zero everywhere except one 0.61 (XLI/VTV vs ITA/RSP, which share a long-cyclicals leg and which I accept as the book's single concentration). At that level of volatility, holding 27% cash to earn 4% is not prudence, it is under-deployment. (2) I am running no stop-losses or take-profits anywhere, and that is deliberate rather than an omission. Stops here are evaluated per LEG against entry fill, so a stop firing on one side of a pair converts a hedged spread into a naked directional position - it makes the book strictly more dangerous at exactly the moment it is losing. In a market-neutral pairs book the risk control has to live in pair selection, half-life and sizing, which is where I have put it. Beta discipline is unchanged and verified two ways: the sum of beta-weighted legs and an independent 250-day regression of the assembled book's daily P&L on SPY both give +3.0% of NAV per 1% SPY move, against my +3.2% mandate. The book is net -8.8% in dollars and +3.0% in beta, which is the correct shape when the short legs are low-beta value baskets.",
+ "positions": [
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9.8,
+   "thesis": "Long leg of the highest-quality spread in the entire 3,008-pair screen. The log spread log(VTV)-log(XLI) sits at +3.43 sigma on 250 days - the widest reading I found anywhere - and its two-year drift is 0.02, meaning the relationship between large-cap value and industrials has essentially zero trend over two years while crossing its own mean 31 times in the past twelve months, with a 20-day half-life and 0.81 daily-return correlation. That combination (extreme z, no drift, high crossing count) is the textbook definition of the stationary spread my mandate is built to trade, and it is the only pair I found where the drift term is effectively nil. Critically, both legs are broad diversified baskets - XLI holds 78 industrials, VTV holds ~340 value names - so unlike WFC/BAC or TSM/KLAC no single earnings report can permanently break this spread, which is the specific failure mode that broke three of my four current pairs. XLI at $175.27. Sized as the largest long at 9.8% because it has the best statistical evidence, not the biggest payoff (full convergence is worth 6.9% on the spread).",
+   "note": "pair 1 of 5, long leg"
+  },
+  {
+   "symbol": "VTV",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 13.2,
+   "thesis": "Short leg against XLI. Vanguard Value is 3.43 sigma rich versus industrials on a spread with 31 mean crossings in the last year and 0.02 two-year drift. I am shorting it as a diversified index rather than any single name precisely because VTV's richness IS fundamentally driven - its heavy financials and energy weights are where this quarter's beat-and-raises (USB, STT, COF) and the Hormuz oil premium are concentrated - but at the index level that is a valuation stretch that has mean-reverted 31 times, not a company-specific re-rating that can never come back. Weighted 13.2% against 9.8% of XLI (a 1.35x ratio, my cap) because VTV's SPY beta is 0.56 versus XLI's 0.95; that ratio is what cancels most of the pair's beta while keeping the position close enough to the 1:1 log spread I actually measured. VTV at $226.46. The cap is binding here, which is deliberate - going to full beta neutrality would require a 1.70x ratio and would stop the position tracking the spread I screened.",
+   "note": "pair 1 of 5, short leg"
+  },
+  {
+   "symbol": "ITA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8.8,
+   "thesis": "Aerospace and defence is 2.25 sigma cheap versus the equal-weight S&P on a spread that has crossed its own mean 32 times in the past year with a 17-day half-life - and the cheapness is multiply confirmed across independent counterparties (ITA/VTV at -2.71, PPA/VYM at -2.39, EFA/PPA at +2.90, VTV/XAR at +2.68), which tells me this is a sector dislocation rather than one noisy pair. What makes it the highest-payoff pair I am willing to take (9.1% on full convergence) is that the news check ran the RIGHT way for once. On every other single-name candidate the news explained the dislocation and killed the trade; here the news contradicts it. Defence is cheap into an active U.S.-Iran conflict, a proposed $1.5 trillion FY27 defence budget, the Pentagon invoking the Defense Production Act to break munitions bottlenecks, and European rearmament commitments - with the sell-side explicitly puzzled that 'defence stocks aren't rising despite all the fighting'. I want the cap-weighted primes basket (ITA: RTX, GE, BA, LMT, NOC, GD) rather than equal-weight XAR, because the same coverage warns that speculative defence tech 'may be in a bubble' and XAR carries far more of it. ITA at $225.61. This pair carries the book's highest single-pair volatility (1.7% annualised) and its lowest leg correlation (0.57), which is why it is sized second rather than first.",
+   "note": "pair 2 of 5, long leg"
+  },
+  {
+   "symbol": "RSP",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 11.8,
+   "thesis": "Short leg against ITA. I chose the equal-weight S&P 500 as the counterparty rather than SPY, VTV or IWD deliberately: equal-weight strips out the megacap-AI concentration that dominates cap-weighted benchmarks, so the short is a clean, 500-name, catalyst-proof expression of 'the average U.S. large-cap' with no single position above ~0.3%. That matters because the defence cheapness signal appeared against six different counterparties and I want the one least likely to carry its own idiosyncratic story. Weighted 11.8% against 8.8% of ITA (1.35x, my cap) to offset RSP's 0.70 SPY beta versus ITA's 1.03. RSP at $219.00. Spread half-life is 17 days and it has crossed its mean 32 times in a year, so this is sized to be a two-to-four week holding, not a structural long-defence bet.",
+   "note": "pair 2 of 5, short leg"
+  },
+  {
+   "symbol": "MTUM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9.3,
+   "thesis": "The momentum factor is 2.29 sigma cheap versus the technology sector on the tightest-fitting relationship in the whole screen: 0.90 daily-return correlation, the highest of any pair I evaluated, with 0.10 two-year drift, 17 mean crossings and a 26-day half-life. High correlation is what makes a pair a pair - it is the parameter that decides whether the residual is genuinely a spread or just two different bets - and at 0.90 this is the closest thing to a pure statistical arbitrage available in a liquid ETF. Economically it is a bet that the AI-led narrowing that has pushed XLK ahead of a diversified momentum basket goes back to its own mean, which it has done 17 times in twelve months. Both legs are index products, so this pair is structurally immune to the beat-and-raise adverse selection that killed CRM/SAP, IHI/MDT and NTRS/STT in this week's screen. MTUM at $304.86, worth 7.2% on full convergence.",
+   "note": "pair 3 of 5, long leg"
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8.3,
+   "thesis": "Short leg against MTUM. This is the one pair where the short leg has the HIGHER beta (XLK 1.75 versus MTUM 1.57), so the beta-cancelling ratio is 0.95 rather than my 1.35 cap - I hold slightly less XLK than MTUM in dollars and the pair's residual SPY beta comes out at +0.08%, essentially perfectly neutral without any distortion of the measured spread. That makes it the book's beta anchor: it offsets the positive residuals the capped pairs are forced to carry. XLK at $187.28. I am short the sector rather than any individual megacap on purpose - shorting a single AI name into this reporting season is precisely the trade that cost me 5.79% on KLAC, and a 65-name sector ETF cannot gap on one guidance raise.",
+   "note": "pair 3 of 5, short leg"
+  },
+  {
+   "symbol": "STLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6.8,
+   "thesis": "The only single-name pair that survived my fundamental filter, and it survived because I checked both legs and found the SAME driver on each. Steel Dynamics and Nucor are business-identical domestic EAF steelmakers; the spread log(NUE)-log(STLD) is +2.47 sigma with 20 mean crossings in the past year, 0.84 correlation, 0.15 two-year drift and a 14-day half-life, and full convergence is worth 10.3% - the largest payoff of any pair I kept. Crucially the late-August move that opened the gap was the U.S.-Canada trade breakdown putting steel tariffs back in play, which lifted BOTH names roughly 4% and is common-mode to the pair, not a reason for them to permanently diverge. On the STLD side specifically I verified there is no company problem behind the underperformance: record Q2 shipments of 3.7 million tons, management guiding to strong domestic steel and aluminium consumption through 2026, a Goldman Sachs Buy reinstatement at $300, and the only 'news' being an orderly, pre-announced CEO succession (Millett to Wagler effective Jan 2027). STLD at $242.06. Sized smaller than the ETF pairs at 6.8% because single-name gap risk is real even when I cannot find a reason for it.",
+   "note": "pair 4 of 5, long leg"
+  },
+  {
+   "symbol": "NUE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8.3,
+   "thesis": "Short leg against STLD. Nucor is the rich half of the twin pair at $261.07. I checked it for exactly the catalyst that disqualified seven other candidates this week and it does not have one: its Q2 guidance for higher Q3 earnings on better realised pricing is the same cycle call Steel Dynamics is making, its only company-specific items are a routine $59 million Vulcraft Indiana expansion and a routine shelf registration, and it trades at 8.3% below the $282.81 consensus target - so I am not shorting a stock the market has just re-rated on new information. Weighted 8.3% against 6.8% of STLD (1.22x, inside my cap) to offset Nucor's 0.93 SPY beta against Steel Dynamics' 1.13, which brings the pair's residual beta to -0.04% - effectively exactly neutral. The 60-day spread momentum is still +0.145 (Nucor still pulling ahead), so this is the pair most likely to widen before it converges; that is priced into the smaller size.",
+   "note": "pair 4 of 5, short leg"
+  },
+  {
+   "symbol": "IJR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.9,
+   "thesis": "Small-cap core is 2.28 sigma cheap versus large-cap value on a spread with 29 mean crossings in the past year, only 0.08 two-year drift, 0.85 correlation and the fastest half-life in the book at 9.8 days. This is the book's low-volatility ballast: 0.52% annualised pair volatility, near-zero correlation to every other pair I hold (-0.06 to +0.21), and a reversion clock short enough that it should resolve inside two or three weeks. Payoff on full convergence is only 3.3%, the smallest here, which is exactly why it is the smallest position - I am buying reliability, not upside. Both legs are broad indices (600 small caps against 850 large-value names) so no single-name catalyst can break it. IJR at $145.34.",
+   "note": "pair 5 of 5, long leg"
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7.8,
+   "thesis": "Short leg against IJR, at $257.63. I used Russell 1000 Value here rather than doubling the VTV short from pair one, even though the underlying signal is closely related, because concentrating 21% of the book into one short ticker would turn two independent statistical readings into a single undiversified bet - and the whole lesson of this week's screen is that I get hurt when a position's real risk is more concentrated than the position count suggests. Splitting the large-value short across VTV and IWD keeps the realised correlation between pair one and pair five at just 0.21. Weighted 7.8% against 5.9% of IJR (1.32x) to offset IWD's 0.70 SPY beta versus IJR's 0.98, leaving +0.32% residual beta. Note this pair is not the same trade as pair one: pair one is industrials versus value, this is small-cap versus value, and their spread returns are almost uncorrelated in the data.",
+   "note": "pair 5 of 5, short leg"
+  }
+ ]
+}

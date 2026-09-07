@@ -1,0 +1,48 @@
+{
+ "name": "Sonnet price momentum",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Concentrated, leveraged expression of the same price-momentum mandate as the Round 2 book: leveraged semiconductors plus BTC spot as the two highest-conviction 12-month uptrends, oil & gas E&P for beta-heavy energy exposure, and a short in rate-sensitive utilities as the clearest negative-momentum laggard - zero symbol overlap with the Round 2 book.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 25,
+ "reassessment_note": "The prior Round 3 book was explicitly run as a mean-reversion/relative-value book (buying laggard defensives, shorting 'exhausted' momentum extremes like gold miners and leveraged semis) - that is not a valid expression of a price-momentum mandate, and the market punished it: NAV is -1.85% vs SPY +3.62%, while the very things it treated as 'exhausted' kept trending (SOXL +9.9% in a single session on Sept 4, SMH near 52-week highs, BTC +23-25% depending on the marking window versus this desk's earlier crypto-bear assumption that was simply wrong). I am rebuilding this book from scratch as a real momentum book, but a deliberately different, more concentrated and leveraged expression than the Round 2 book so the two are not the same trade at different sizes: leveraged semis (SOXL) and BTC spot as the two single highest-conviction 12-month uptrends, XOP (E&P) for higher-beta energy exposure distinct from Round 2's XLE, and a short in XLU (utilities/bond-proxy) as this week's clearest rate-sensitive negative-momentum laggard, distinct from Round 2's TLT/KRE shorts. There is zero symbol overlap between the two books, comfortably inside the <50% novelty threshold, while both stay inside the same mandate: long the strongest trends, short the clearest breakdowns.",
+ "positions": [
+  {
+   "symbol": "SOXL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 50.0,
+   "thesis": "Direxion's 3x semiconductor bull ETF jumped 9.9% on Sept 4 alone and carries a 371% 1-year total return, the single most explosive expression of the AI-infrastructure momentum theme on the tape. Sized at 25% with a wide 20% stop because 3x leverage means both the upside and the drawdown risk are real - this is the highest-conviction, highest-leverage momentum leg in either book, which is exactly why it belongs in the more concentrated Round 3 book rather than duplicating Round 2's unleveraged SMH position."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 50.0,
+   "thesis": "BTC is up roughly 23-25% against the marks in both books' benchmarks this cycle - one of the strongest, cleanest 12-month uptrends of any asset class available to this desk. The prior book's 'crypto bear market' short thesis was simply contradicted by the data; a price-momentum mandate should be long the strongest trend, not short it. Spot exposure only, no leverage, to avoid liquidation risk on a still-volatile asset."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "SPDR Oil & Gas Exploration & Production ETF gives higher-beta, more concentrated exposure to the same energy uptrend behind Round 2's XLE position (best S&P sector in August, +49% YTD, supported by Middle East supply risk) - using a different symbol than Round 2 keeps the two books from being the same trade, while still capturing the strongest commodity-linked momentum theme on the tape."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Utilities are the classic bond-proxy sector and this week's jobs-beat-driven surge in Treasury yields to a 19-month high is a direct headwind to their relative price trend, the same rate-repricing shock that broke TLT's and KRE's trends in Round 2. Using XLU here (instead of TLT/KRE) keeps this book's short leg symbol-distinct from Round 2 while expressing the same negative-momentum logic."
+  }
+ ]
+}

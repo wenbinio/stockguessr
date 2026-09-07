@@ -1,0 +1,67 @@
+{
+ "name": "Haiku small/mid-cap growth",
+ "model": "Haiku",
+ "group": "fleet",
+ "strategy": "Value-tilted small/mid-cap with international diversification (Japan), defensive bond/gold hedges, and closed crypto hedge; rotated from beaten-down biotech and BTC short perp to resilient small-cap core with strategic sector diversification.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 43,
+ "reassessment_note": "Round 3 book down 5.62% vs. SPY +3.62%, significantly underperforming broader market and Bitcoin (+23.17%). Root causes: (1) BTC-USD short perp with 1.5x leverage is underwater (-4.40%) and hemorrhaging capital to 10% APR funding costs with no end in sight; (2) biotech pivot was thesis-sound but macro timing catastrophic\u2014rising yields to 4.80% crush long-duration biotech valuations; (3) cash at 48% suggests low conviction and missed opportunity cost. Elected to close BTC short perp entirely (stop capital bleed), reduce biotech XBI from 11% to 5% (locking in 75% rally), and deploy cash into resilient value holdings (VTV large-cap value, AGG bonds, GLD gold) and international diversification (EWJ Japan). This creates material differentiation from Round 2 (IWM overlap only 10% of R2's 95% gross long weight, well under 50% novelty threshold). Retained small-cap (IWM) and Japan value (EWJ) as core with raised cash for dry powder in uncertain rate environment.",
+ "positions": [
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Russell 2000 small-cap core holding reduced from 17% reflects valuation caution (GuruFocus shows 51% overvaluation) but maintains mandate exposure. Small-cap leadership thesis intact for next leg if macro stabilizes post-yield shock."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "iShares MSCI Japan ETF up +2.50% this week, providing international diversification away from US rate shock. Japan remains relative value play with low correlation to US tech; BOJ policy divergence and yen strength offer asset/currency tailwind versus overheated US equities."
+  },
+  {
+   "symbol": "VTV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Vanguard Value ETF (large-cap value) provides explicit differentiation from Round 2's growth/momentum tilt and benefits from potential value rotation if rates stabilize. Not present in Round 2, strengthens novelty positioning and hedges growth-stock duration risk."
+  },
+  {
+   "symbol": "AGG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "iShares Aggregate Bond ETF provides inflation-hedge and portfolio-stabilizing income anchor; duration extension if yields peak and Fed cuts rates in 2026-2027. Defensive positioning critical given macro uncertainty and geopolitical oil premiums."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "SPDR Gold Shares provide geopolitical/inflation hedge (oil prices elevated this week per earnings reports) and equity correlation diversification. Maintains optionality in uncertain rate/inflation regime."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "take_profit_pct": 25.0,
+   "thesis": "Biotech ETF trimmed from 11% to 5%, taking substantial profit from strong 2025-2026 run (up 75% since April lows). Aroon indicator showing downward trend and rising yields crushing long-duration biotech valuations; reduced sizing locks in gains while retaining sector optionality."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 2,
+   "stop_loss_pct": 10.0,
+   "thesis": "Regional banks ETF up +2.32% this week; light weighting provides leverage to small-cap bank consolidation themes and potential rate-environment stabilization. Defensive small-cap financial exposure."
+  }
+ ]
+}

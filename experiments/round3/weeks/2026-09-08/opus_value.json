@@ -1,0 +1,84 @@
+{
+ "name": "Opus Value",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Quality-momentum / trend-following: own only the factors and sectors whose relative strength the tape currently confirms - quality, value, healthcare, energy, financials, gold miners - cut the software leadership that has broken down, and keep hard stops under every leg.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 11,
+ "reassessment_note": "A trend book has one obligation: own what is going up and stop owning what has stopped going up. Two of my legs failed that test this week. IGV is -4.92% and CRWD is -7.75% on a leg that is eight days old, and they are the only names in the book that broke - that is not noise, it is the single factor being repriced. The reason is macro and it is not going away in a week: the 09-04 payroll beat (162k vs 53k expected) pushed fed funds futures to a ~56-65% chance of a HIKE on 09-16, CPI is 3.4%, Warsh's Jackson Hole line was explicitly hawkish, and my own data has the 10y at 4.78% and the 5y at 4.55%, both at 52-week highs. High-multiple software is the longest-duration equity there is and it is the wrong thing to hold into that. So I am firing IGV and CRWD outright and moving that 20% into the leadership the tape is actually printing. Screening my whole universe for 'above the 200dma, above the 50dma, within 6% of the 52-week high, positive three-month return' returns healthcare, energy, financials and the value factor over and over, and almost no software. I am buying that answer rather than arguing with it: XLV in, XLE upsized, XLF in, VLUE in. I also drop JEPQ - a Nasdaq covered-call wrapper caps upside on the index that is now the laggard, which is the worst of both ends. QUAL stays the core, SCHD stays as ballast, GDX earns its place on the strongest one-month momentum in the book (+18.3%), MRK stays as the single-name leader, and IBIT stays because BTC is +26% in a month with the trend intact. Cash held at 11% into a live FOMC.",
+ "positions": [
+  {
+   "symbol": "QUAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "thesis": "The core of the book and the leg I am least willing to disturb. High-ROE, low-leverage, stable-earnings companies are the factor that holds up when the discount rate rises, which is the exact test the next ten days pose. The trend qualifies on its own terms: 7.4% above its 200dma, above its 50dma, and only 2.0% below its 52-week high, with 11% realized vol - the best trend-per-unit-of-risk in my universe. Largest weight because a quality-momentum mandate should have its biggest bet on the factor itself rather than on any single sector call. The 10% stop is tight precisely because low vol means a 10% break would be a genuine regime change, not a wobble."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "This is the leg that replaces IGV, and it is a deliberate swap of one sector bet for another on relative-strength evidence. Healthcare is +26.9% over twelve months, +12.5% over three months, 10.9% above its 200dma and 2.4% from its 52-week high, and the strength is broad rather than one name - MRK, AMGN, JNJ, ABBV, GILD, VRTX, BIIB and XBI all cleared my trend screen. Breadth like that is what distinguishes a durable trend from a crowded trade. It also does what software cannot in this regime: healthcare demand is rate-insensitive, and at 19% realized vol I get the exposure without the duration risk that just cost me on IGV and CRWD."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Upsized from 10 to 12 because it is both the strongest trend I own and the only leg that pays if the rest of the book is wrong. Energy is +48.3% over twelve months, 17.8% above its 200dma and 1.6% from its 52-week high, driven by a real supply shock - Brent near $96 with roughly 0.6 mb/d of Middle East production shut in on Hormuz constraints. That same oil price is what is forcing the Fed toward a hike, so this position is long the specific risk that would hurt QUAL, XLV and IBIT. I keep the 12% stop rather than widening it because the EIA and JPM both model Brent back to $78-85 by year end; if the geopolitics resolve, the trend breaks fast and I want out mechanically rather than by opinion."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "New leg, and the cleanest single expression of what is actually leading in 2026. The value factor is at its 52-week high - literally 0.0% below it - with +74.6% over twelve months, +43.3% over six months and 23.8% above its 200dma, outrunning both SPY (+20.0% twelve months) and the momentum factor MTUM (+25.3%). A trend-following mandate that ignores the strongest factor in the market because the label says 'value' would be following the wrong thing; I am buying relative strength wherever it is priced. It also diversifies me away from the sector bets in XLV and XLE while staying inside the same rotation."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "New leg. Financials sit 0.8% from a 52-week high, +11.5% over three months and +15.9% over six, above both moving averages, with only 13% realized vol - a strong, quiet uptrend rather than a crowded one, and JPM, BAC, SCHW, V and MA all cleared the screen independently. The macro fit is the point: a Fed that hikes into 3.4% CPI with the curve at 3.76% front / 4.78% long steepens net interest margins and improves credit spreads, so this leg is a beneficiary of the same rate move that just broke my software legs. Sized 10% as the book's rate-regime hedge on the equity side."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 14.0,
+   "thesis": "Held and slightly trimmed from 11 to 9. It has the strongest one-month move in the entire book at +18.3% and is 10.5% above its 200dma and 17.6% above its 50dma, so the trend rule keeps it. What makes me size it down rather than up is that the miners are running well ahead of the metal - GLD is only +4.4% on the month and is itself 2.1% below its 200dma and 18% off its high - and that operating-leverage gap closes in both directions. A 14% stop, wider than the equity legs, reflects 51% realized vol; the leg is currently +0.76% so the stop sits meaningfully below cost."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "The single-name momentum leader in the book and my best-performing leg (+1.74%). +84.8% over twelve months, +25.4% over three months, 28.0% above its 200dma and 11.7% above its 50dma while still 3.9% below its high - a trend with room rather than a blowoff. Held alongside XLV rather than folded into it because concentrated single-name relative strength is what a quality-momentum mandate is supposed to capture; XLV gives me the sector, MRK gives me the leader within it. 12% stop for 38% realized vol."
+  },
+  {
+   "symbol": "SCHD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 12 to 8 but kept as the book's ballast. Dividend-quality is a genuine uptrend (+11.7% over six months, above its 200dma) and it is the leg that lets me hold 89% gross exposure into an FOMC without the book being all sector bets. I cut four points because SCHD is the slowest trend I own and, with VLUE and XLF added, its value/financials tilt is now partly duplicated at higher beta - I would rather hold the sharper expressions and keep the ballast at a size that reflects its role."
+  },
+  {
+   "symbol": "IBIT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 18.0,
+   "thesis": "Held unchanged at 6% because the trend is intact and unambiguous: BTC is near $79.7k, +26.4% over the last month and +26.3% over three, and the leg is +1.25%. This is the book's only non-equity trend and its highest-beta leg, which is why it stays at token size with an 18% stop - crypto is the one holding that can gap through a stop-loss level overnight, and a 6% weight bounds that. I own it through the ETF rather than spot to keep the friction at 2bps a side instead of 35bps, which matters for a leg I may have to exit on a stop."
+  }
+ ]
+}

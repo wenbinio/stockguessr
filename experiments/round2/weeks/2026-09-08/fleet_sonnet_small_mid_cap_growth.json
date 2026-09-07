@@ -1,0 +1,61 @@
+{
+ "name": "Sonnet small/mid-cap growth",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Concentrated long book in secular small/mid-cap growth (small-cap beta, semis leverage, fintech, space, biotech) with no crypto exposure and a large cash cushion for downside protection, currently uninvested on the short side pending a fresh disruption catalyst.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 53,
+ "reassessment_note": "This week's blowout August jobs print (nonfarm payrolls ~162K vs expectations) flipped rate-hike fear back into the tape and pressured broad equities (SPY -0.39% on the day) even though IWM itself held flat on the week (+0.09%), so I'm not abandoning small-cap beta but I am trimming idiosyncratic risk. RKLB gets cut hard: Neutron's launch-pad delivery is slipping toward 2027 and Rocket Lab lost a $700M NASA Mars contract to Blue Origin this week, even though ARK added shares and Q2 revenue grew 62% YoY -- the thesis is intact longer-term but nearer-term execution risk just went up, so I'm sizing down rather than exiting. CRSP is swapped for XBI: CRSP fell 3.34% this week while the broader biotech tape (XBI +7.85% month) is rallying on the Merck-Moderna oncology-vaccine news -- CRSP's underperformance relative to its own sector argues for expressing the biotech thesis with less single-name idiosyncratic risk right now. SOXL gets bumped up because semis showed relative strength even on the hawkish jobs day (chipmakers cited as supporting the Nasdaq into the selloff), and HOOD's stop is tightened materially given the stock is already +16.5% on this leg with real event risk from the AMC tokenized-stock dispute. Cash cushion nudged up slightly (51%->53%) given the hawkish repricing risk into next week.",
+ "positions": [
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "thesis": "Core small-cap growth beta via Russell 2000. Held flat this week (+0.09%) despite the hawkish jobs surprise, showing resilience; keeps broad diversified small-cap exposure without single-name concentration risk while the book's other legs take the idiosyncratic bets."
+  },
+  {
+   "symbol": "SOXL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "3x leveraged semis. Up 5.34% this week and chipmakers were singled out as the one pocket of relative strength supporting the Nasdaq even as the broader tape sold off on hawkish jobs data -- sizing up modestly to lean into that relative strength, with a hard stop given 3x leverage and 123% implied vol."
+  },
+  {
+   "symbol": "SOFI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Fintech growth compounder; Scotiabank initiated Outperform with a $25 target this week and the Kraken stablecoin partnership extends the crypto-adjacent product suite, but a hawkish rate path is a headwind for a consumer lender's NIM, so a tighter stop protects against a rate-driven derate on an already expensive (37x P/E) name."
+  },
+  {
+   "symbol": "RKLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 20.0,
+   "thesis": "Cutting from 9% to 5% after two negative catalysts this week: Neutron's pad-delivery timeline reportedly slipping to 2027, and loss of a $700M NASA Mars contract to Blue Origin. Q2 revenue still grew 62% YoY and ARK bought ~705K shares this week, so keeping a reduced stake rather than exiting the long-duration space thesis outright."
+  },
+  {
+   "symbol": "HOOD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Blockchain/tokenized-equities trading fees reportedly outpacing Solana and Ethereum, and retail (\"21-year-olds on Robinhood\") is cited as a real source of market support this cycle. But the stock is already +30% on the month and +16.5% on the prior leg with an active legal dispute (AMC's CEO attacking the tokenized-stock listings), so the stop is tightened from 15% to 12% to protect the accumulated gain against event risk."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 12.0,
+   "thesis": "Replacing single-name CRSP (down 3.34% this week despite a rallying sector) with the diversified biotech-momentum ETF. Sector tailwind from the Merck-Moderna oncology-vaccine collaboration and broad pipeline strength (XBI +7.85% month, +34.9% YTD) is better captured without CRSP-specific execution risk."
+  }
+ ]
+}

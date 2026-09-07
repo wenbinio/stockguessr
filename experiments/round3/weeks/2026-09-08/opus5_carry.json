@@ -1,0 +1,61 @@
+{
+ "name": "Opus 5 carry",
+ "model": "opus5",
+ "group": "opus5",
+ "strategy": "A long-only, floating-rate-tilted cross-asset carry book that earns spread and distribution income into a Fed that is now more likely to hike than cut - AAA and mezzanine CLO paper, IG and Treasury floaters, midstream distributions and a small equity variance-premium sleeve - with the rate-cut-dependent legs (agency mREIT, EM local currency) removed and cash cut to 8%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 8,
+ "reassessment_note": "The regime under this book changed materially in the last five sessions and two of my legs were positioned for the opposite of it. Warsh's Jackson Hole speech on 8/31 pushed September hike odds from ~35% to ~60-67%, and Friday's August payrolls print (162k vs 55k expected, unemployment 4.1%) confirmed it: 2y yields rose 4bp to 4.37%, the S&P fell 0.38% and the dollar has resurged hard enough to erase EM currencies' entire 2026 gain. That kills two legs outright. EMLC is EM local-currency debt - a hawkish Fed and a bid dollar is the single worst input for it, and it was my best performer (+0.59%) so I am selling strength rather than a loss. NLY's entire sell-side case rests on 'two 25bp cuts later in 2026' cutting repo funding costs; with the market now pricing a hike into the 3.50-3.75% range on 9/16, that thesis is inverted, and higher rate volatility is what damages agency-MBS book value regardless of the 13% dividend. Second change: I am no longer paid to reach for credit risk. HY OAS is ~260bp, in the tightest 5% of the last 25 years, while the private-credit data is deteriorating (~40% of borrowers with negative FCF, rising PIK toggles, defaults concentrated in consumer/retail/auto). So I add no high yield and keep CLO mezz at a modest 12% - CLOZ holds broadly-syndicated CLO tranches with structural subordination, not direct lending, which is where the stress actually is. Third change: I stop treating 19% idle cash as a carry position. The engine pays a fixed 4% on cash, but every floating-rate instrument I own resets HIGHER if the Fed hikes. That makes idle cash the one leg in this book that is short the macro view, so I cut it to 8% and move the difference into JAAA and USFR, which are the same liquidity with a coupon that follows the Fed up. What I did NOT do is re-establish a short. The BTC perp short is the only reason this book is -1.45% while it should have been grinding, and in this engine a perp short earns no funding at all - it was a directional bet wearing a carry costume, with BTC now at ~$79.7k, funding still positive at ~10% annualised and open interest up 6% in three days. A carry mandate is not a licence to be short a trending asset. This book is now pure long-carry, and its worst realistic week is a few tenths of a percent.",
+ "positions": [
+  {
+   "symbol": "JAAA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 34,
+   "stop_loss_pct": 7.0,
+   "thesis": "The core of a carry book facing a hiking Fed. JAAA is AAA-rated CLO paper at roughly SOFR+110, ~4.9% yield with effectively zero duration, so a 25bp hike on 9/16 raises my coupon instead of marking me down - the exact opposite of the fixed-rate credit everyone else is holding. It is also the least fragile thing in this sleeve: AAA CLO tranches sit above ~40% subordination, so the rising loan defaults that threaten mezz and private credit have to eat through the entire stack before touching me. The tape agrees - $30B AUM with $1.09B of net inflows in the last month and $250M in the last five days, which is the flow backdrop that keeps a spread product from gapping. I am comfortable at 34% because concentration risk here is measured in tenths of a percent of daily move, and this is where the mandate's edge actually lives."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 19,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The real-asset distribution leg, and the only one I am sizing UP. AMLP declared a $1.03 Q3 distribution on 8/11, up 5.1% year over year, on a ~6.6% index yield - fee-based midstream cash flows that are contracted and largely inflation-escalated, not commodity-price bets. That escalation matters specifically this quarter: the Iran conflict is what is keeping energy costs elevated and is a named driver of the inflation print that is pushing the Fed to hike, so this leg is the one position in the book that gets paid by the same shock that threatens everything else. Underlying index is up over 18% YTD through 8/7 with 23.6% trailing total return, and my leg is +0.23% in its first week. Wide 18% stop because midstream is the highest-beta thing here and I do not want energy noise to knock me out of a 6.6% coupon; 25% take-profit because if a supply shock hands me five years of distributions in price, that is not carry any more and I should take it."
+  },
+  {
+   "symbol": "CLOZ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "The deliberate spread-risk allocation, and deliberately capped. CLOZ holds BBB/BB CLO tranches yielding roughly 8-9%, floating over SOFR, so like JAAA its coupon rises with the Fed while its duration is near zero. I size it at only 12% because this is the leg exposed to the one genuinely deteriorating fundamental I found this week: leveraged loan and private credit stress, with defaults concentrated in consumer, retail and auto borrowers and 93% of surveyed managers expecting flat or lower 2026 returns. The distinction I am underwriting is that CLOZ's collateral is broadly-syndicated, marked, refinanceable loans inside a structure with real subordination, not the direct-lending book where PIK toggles and gated redemptions are showing up. That is worth 12% of the book and not a point more; the 12% stop is roughly a full year of coupon and is my line for 'the credit call was wrong'."
+  },
+  {
+   "symbol": "FLOT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 5.0,
+   "thesis": "Investment-grade floating-rate notes at ~4.5%, held as the credit-quality ballast between JAAA and CLOZ. Its job is to keep the book's carry from being a single trade on CLO structures: FLOT is direct senior corporate IG paper, so if CLO spreads specifically gap - a structure story rather than a credit story - this leg is uncorrelated to it while paying nearly the same coupon. Same hike-positive reset as the rest of the floating sleeve, ~0.15 year duration, so the 9/16 FOMC is a coupon event rather than a mark-to-market event. Tight 5% stop is appropriate because a 5% drawdown in IG floaters is not noise, it is a systemic credit event, and in that world I want to be in cash."
+  },
+  {
+   "symbol": "USFR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 3.0,
+   "thesis": "This leg is a direct arbitrage against the engine's own cash rate, which is why it is new. Idle cash here is fixed at 4% APY no matter what the Fed does; USFR holds Treasury floating-rate notes that reset weekly off the 13-week bill, currently yielding roughly 4.4% and going higher the moment the Fed moves on 9/16. Same overnight-equivalent risk, same instant liquidity, zero credit risk, one week of duration - but the coupon is long the macro view instead of frozen against it, for 2bp of transaction cost. That is the cleanest expression of a carry mandate available: get paid more for the same risk. It is also why I could responsibly cut cash from 19% to 8% without adding any credit or duration risk to the book. The 3% stop is a pure disaster stop on an instrument that should never move."
+  },
+  {
+   "symbol": "SPYI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "The equity variance-premium sleeve, kept but held small on purpose. SPYI writes S&P index calls for roughly 12% of annualised distribution, which is the highest coupon in the book, and it is the only leg whose income comes from options premium rather than credit spread - genuine diversification of the carry source. But I am not sizing it up here and the reason is specific: VIX closed at 14.32 on 9/4, so I am being paid historically little to sell that premium, and I am selling it into September - statistically the weakest month for the S&P - with a live 60-67% chance of a rate hike on 9/16 in the middle of my holding window. Low premium plus a fat, dated event risk is the wrong side of a variance trade, so 6% is the size at which the coupon is worth collecting and a gap lower is survivable. The 12% stop caps the equity beta this leg is allowed to import into an otherwise low-volatility book."
+  }
+ ]
+}

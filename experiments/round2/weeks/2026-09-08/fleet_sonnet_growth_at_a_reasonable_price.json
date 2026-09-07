@@ -1,0 +1,76 @@
+{
+ "name": "Sonnet growth at a reasonable price",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Round 2: quality mega-cap and select mid-cap GARP core (MSFT/GOOGL/AVGO/META), a healthcare and energy ballast (UNH/XOM), a trimmed small-cap breadth sleeve (IWM), a cut-down stake in stretched-multiple COST, and a new modest short on leveraged semis (SOXL) to finally execute the book's long-stated hedge against AI/rate-cycle froth.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "This week's August jobs report (nonfarm payrolls +162k vs a ~31k trailing 12-month average, unemployment flat at 4.1%) was read by the tape as hawkish -- 'rate-hike jitters,' yields up, stocks down Thursday/Friday, Bitcoin knocked back below $80k -- pushing out the rate-cut timeline the market had been pricing. Two names had idiosyncratic good news this week (GOOGL cleared its ad-tech antitrust case and sell-side flagged its AI pivot; AVGO beat Q3 estimates) which supports adding modestly to the highest-conviction reasonable-price growth names. At the same time the newly hawkish rate path is a real headwind for the book's most rate- and multiple-sensitive legs, so I trimmed small-cap breadth (IWM) and cut the COST position, which slid -5.73% on the leg even while the market rose this week -- a straightforward 'reasonable price' failure even though the underlying business (revenue +11.6% YoY) is fine. The strategy of record has said since inception that it would 'hedge frothy speculative excess with a modest short' but this book has never actually placed one; this week's mixed, wobbly semis tape (AVGO beat-and-sold-off, memory rallying while other chip names fell hard) plus the broader hawkish repricing hitting high-multiple tech is the froth this mandate was built to hedge, so I opened a small SOXL (3x semis) short with a tight stop given the leverage. Cash nudged up to 20% to reflect a slightly more defensive posture into the regime shift.",
+ "positions": [
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 19,
+   "thesis": "Core mega-cap AI/cloud compounder and the book's steadiest leg (+2.54% since 8/24 entry); Azure and AI monetization keep compounding and the stock held up better than the market in Thursday's hawkish-jobs selloff. Holding the full prior size as the anchor position."
+  },
+  {
+   "symbol": "GOOGL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "thesis": "This week Google cleared the ad-tech antitrust overhang (kept its ad-tech tools rather than facing a breakup) and sell-side coverage is framing the AI pivot as a fresh growth leg, all while the stock sits down on the leg at a still-reasonable multiple near $338-340. Adding modestly (12%->13%) on the cleared legal risk."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Beat Q3 estimates this week but sold off on the print (classic buy-the-rumor/sell-the-news in a jittery tape) -- still a core AI-networking/custom-silicon compounder at a reasonable forward multiple. Holding size steady while the post-earnings volatility settles rather than chasing or panic-selling."
+  },
+  {
+   "symbol": "META",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Best performer in the book (+10.33% on the leg) as ad-business momentum and the AI product cycle keep delivering without the stock re-rating to an extreme multiple. Sizing up modestly (6%->8%) to let the winner run within the reasonable-price framework."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "thesis": "Small-cap breadth sleeve kept per mandate but trimmed (8%->6%): this week's hawkish jobs print and the resulting rate-hike jitters are a direct headwind for higher-duration, higher-leverage small-cap balance sheets, so reducing exposure without abandoning the breadth thesis."
+  },
+  {
+   "symbol": "UNH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Defensive healthcare quality name; a credit-rating affirmation this week reduces balance-sheet tail risk for the managed-care group and the stock has stabilized near flat on the leg. Held as ballast against the more cyclical/growth legs."
+  },
+  {
+   "symbol": "COST",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Cutting size (7%->4%) on a rich-multiple name that fell -5.73% on the leg even as the broader market rose this week ('Costco stock slides as market rises') despite genuinely strong fiscal Q3 numbers (revenue +11.6% YoY, net income +15.2% YoY). The business is fine but the valuation is failing this book's 'reasonable price' test, so trimming rather than exiting outright."
+  },
+  {
+   "symbol": "XOM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "thesis": "Energy/value counterweight to the growth-heavy core, providing diversification against an inflation-surprise or higher-for-longer scenario that would hurt the book's long-duration names. No new catalyst this week; held at prior size as a hedge sleeve, not a conviction add."
+  },
+  {
+   "symbol": "SOXL",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 10.0,
+   "thesis": "New leg: fading frothy 3x-leveraged AI/semiconductor exposure. This week's semis tape was mixed and jittery (AVGO beat-but-sold-off, memory chips rallying while other chip names fell hard) right as the hawkish jobs report hit high-multiple tech broadly -- exactly the 'frothy speculative excess' this book's strategy of record has always said it would hedge with a modest short but never actually placed. Sized small (4%) with a tight 10% stop given the 3x leverage embedded in SOXL itself."
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "name": "Sonnet+tools price momentum",
+ "model": "Sonnet",
+ "group": "factorial",
+ "strategy": "Long the strongest data-verified 12-1 momentum sector/name themes (energy, healthcare, biotech, financials), cutting whichever leg's momentum has broken versus the group, with cash sized to macro-shock risk.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 12,
+ "reassessment_note": "This week's tape confirms the book's momentum thesis is mostly intact but flags one clean break and one fresh macro risk. XBI and XLV are the strongest legs by a wide margin -- XBI is up ~11% on this leg with a bullish flag breakout toward its 2021 high ($174.79) and a 76% trailing total return, while XLV just got a rare positive-outlook upgrade (State Street moved healthcare to 'positive' in Q3 after nearly a year of caution) on demand that isn't AI-correlated, plus active biotech/pharma M&A. XLE remains the best-performing legacy leg (+7.6%, sector YTD +46.5%) and financials/GS are still grinding out gains near 52-week highs on record trading revenue. KRE, by contrast, is the only leg with negative leg P&L (-1.04%) and it just took a fresh, specific headwind: the August payrolls print released 2026-09-04 came in at 162k vs. a 55k forecast, which reversed market pricing from a September Fed cut toward hike risk and pushed Treasury yields sharply higher intraday (10Y +0.46pp to 4.78%, 5Y +0.91pp). That is a direct threat to regional-bank funding costs and NIM assumptions and it hit gold/BTC and knocked the S&P/Nasdaq down on the day too -- the first real macro air-pocket this book has seen. Rather than hold a laggard through a leverage-sensitive-sector data shock, I am rotating KRE's full weight into the two legs with the cleanest, freshest momentum confirmation (XBI, XLV) and using part of it to lift cash from 8% to 12% as a buffer against a possible September hike repricing shaking the broader tape. XLF, GS, IWD, and XLE are left at their prior sizes since nothing this week changed their trend, only added modest same-direction confirmation.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Energy remains the best-performing legacy leg (+7.6% since 7/31 entry, sector YTD +46.5%, trading near 52-week highs at $64.06). No news this week broke the trend -- 12-1 momentum and the commodity/earnings backdrop are unchanged, so full size is retained unchanged."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 21,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Sized up from 17% to 21%. State Street just upgraded healthcare to 'positive' in Q3 2026 after nearly a year of caution, citing demand characteristics not tied to AI plus active drugmaker M&A and cancer-vaccine pipeline catalysts. Sector YTD total return +27.4% and this leg is already +5.5%; the upgrade is the freshest institutional momentum confirmation in the book this week, and it diversifies the book away from the tech-selloff-sensitive names that got hit on the hawkish payrolls print."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Financials are still trading near 52-week highs on record trading revenue and strong bank earnings/dividend hikes post stress-test. Held at unchanged size -- the sector tailwind is intact, but the same payrolls-driven yield spike that threatens KRE funding costs argues against adding here, so weight is kept flat rather than increased."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Sized up from 12% to 17% -- this is the strongest leg in the book (+11.4% since entry, 76% trailing total return) and technicals remain constructive, with a bullish flag breakout targeting the 2021 high near $174.79. This is the highest-conviction 12-1 momentum name currently available to the mandate and is being sized accordingly while the breakout is confirmed."
+  },
+  {
+   "symbol": "GS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Single-name expression of the same financials momentum as XLF, already +2.5% on the leg. No new information this week changes the picture, so size is held unchanged rather than chased."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Broad value/cyclical diversifier participating in the same rotation as energy/financials, +2.3% on the leg. Held at unchanged size as a lower-beta complement to the more concentrated sector bets."
+  }
+ ]
+}

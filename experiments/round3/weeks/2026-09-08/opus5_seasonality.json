@@ -1,0 +1,61 @@
+{
+ "name": "Opus 5 seasonality",
+ "model": "opus-5",
+ "group": "opus5",
+ "strategy": "A calendar-driven book re-derived off the Sep-8-to-year-end window rather than the stale Jul-27 window: cut gross into the statistically worst four weeks of the year (Sep 8 to the midterm autumn low in early October), keep only the legs where the seasonal statistic and the current macro catalyst point the same way (short intermediate Treasuries, gold, industrials, financials, utilities), carry a much-reduced megacap-growth leg, and hold 27% cash as the pre-committed dry powder to be spent on the Oct-1 rotation into the midterm-year Q4 rally.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 27,
+ "reassessment_note": "Two things changed and they point the same direction. (1) The calendar moved. My strategy of record was sized off a Jul-27-to-year-end window; that window is now half spent and what remains is front-loaded with the single worst stretch in the sample. Sep 8 through roughly Oct 10 is the weakest four weeks of the S&P year, and in midterm years specifically the autumn low arrives EARLY - late September or early October - before the Q4 lift. JP Morgan's midterm quarterly series (Q1 -0.5%, Q2 -0.6%, Q3 -0.1%, Q4 +6.6%) and the +13.59% mean midterm run from the autumn low to year-end are both rallies I want to own, but they start AFTER the window I am about to trade through, not during it. The 2026 caveat is real too: the index is already +12.78% YTD, so the setup the midterm pattern normally requires (three weak quarters) has not occurred, which argues for buying the pattern later and cheaper rather than paying up for it now. (2) The macro catalyst calendar now agrees with the seasonal calendar for once. August payrolls printed 162k against 53k expected with June and July revised up, the 2-year yield broke to its highest since January 2025, core CPI is running 3.0% on a 3m annualized basis and core PCE 3.7% on top of the Hormuz energy shock, Chair Warsh has said the Fed has 'work to do' on prices, three FOMC members already dissented for a hike in July, and September hike odds are ~50-66% with BofA looking for hikes in September, October and December. A Fed hiking into the seasonal air pocket is exactly the configuration in which the historical September drawdown gets realised rather than faded. So I am cutting gross from 86% to 73% and raising cash from 14% to 27%, which is the dry powder the strategy of record explicitly pre-committed to the Oct-1 rotation. Three specific leg changes. QQQ goes from 22% to 10%: long-duration megacap growth at ~29x forward is the single leg most exposed to a hike into hot core inflation, and mid-September to mid-October is the Nasdaq's own weakest window - I keep 10% rather than zero because Q4 tech seasonality is genuinely strong and I do not want to be flat if Waller's dovish wing wins and the hike gets priced out. KRE goes to zero: hikes squeeze regional-bank NIM because funding costs reprice ahead of assets, KRE has diverged from XLF by the widest margin since the SVB episode, and it was my highest-beta equity leg heading into the weakest calendar window; XLF is the cleaner and cheaper expression of the same Q4 financials seasonal. EFA short goes to zero: the measured Aug-Dec statistic that developed non-US lags the S&P is real in the 2000-2025 sample, but the live regime has run flat against it - EFA beat the S&P 31.6% to 17.7% in 2025 and is still ahead in 2026 even in dollar terms on valuation (19x vs 29x), German fiscal stimulus and dollar softness - and the leg is already -0.84%. A seasonal edge worth tens of basis points is not worth paying 3% borrow to fight a two-year relative trend. I accept that this book will lag if the market simply melts up; the mandate is to be paid in the Oct-Dec window, and I would rather enter that window with 27% cash and no forced sellers in the book than defend an 86% gross position through the four weeks the data says to avoid.",
+ "positions": [
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Industrials carry the highest seasonal hit-rate of any cyclical sleeve into the Aug-Dec window in my 2000-2025 sample, and for once the fundamental driver is aligned rather than coincidental: the capex cycle behind XLI right now is electricity capacity, AI datacenter construction, grid buildout and defense, none of which is rate-sensitive on a one-quarter horizon the way consumer cyclicals are. XLI was one of only three sector winners on the Sep 4 hawkish-payrolls session, which is the specific tape evidence I want - it held up on the day the rate-hike trade was expressed most violently. Trimmed from 18% to 15% purely to fund cash, not because the thesis weakened; this stays my largest equity leg."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Financials are the Q4 seasonal sleeve that a hiking Fed actively helps rather than hurts, which makes this the highest-conviction equity leg in the book right now. Large diversified banks, insurers and asset managers reprice assets and float income upward into higher rates, and XLF was up 1.55% on the week into the hawkish print. Held flat at ~15% (from 17%) rather than increased because if the September hike is followed by evidence the hikes are breaking credit, financials are where that shows up first - the stop is the discipline. Deliberately concentrated here instead of split with KRE, since XLF captures the same seasonal without the regional NIM-squeeze problem."
+  },
+  {
+   "symbol": "IEF",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 14,
+   "stop_loss_pct": 6.0,
+   "take_profit_pct": 6.0,
+   "thesis": "The cleanest leg in the book: the measured seasonal (intermediate Treasuries reliably lag the S&P over the Aug-Dec window, compounded by heavy Q4 issuance) and the live catalyst point the same way for the first time in this book's history. 162k payrolls against 53k expected with prior months revised up, the 2-year at its highest since January 2025, core PCE at 3.7% on top of an energy shock, a Chair saying the Fed has work to do on prices, three July dissents for a hike, and ~50-66% odds on a September move with BofA looking for three hikes before year-end. Raised from 10% to 14% because IEF is a low-volatility instrument - even 14% weight contributes under a point of portfolio vol - so the size is needed for the position to matter. Short borrow at 3% APR is cheap carry for this. The 6% stop is roughly a 90bp adverse yield move, which would mean the hiking cycle has been abandoned and the trade is simply wrong; the 6% take-profit is the same move in my favour, at which point a four-month seasonal trade has delivered a near-generational bond move and should be banked."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "September is historically the strongest calendar month for gold, and this is the one leg that is genuinely uncorrelated to the equity air pocket I am trying to trade through - which is why I am raising it from 8% to 12% while cutting equity gross. The setup is unusually clean: gold is around $4,430 against a January all-time high near $5,600, so roughly a 20% correction has already happened and the position is not crowded, while the reasons to own it have got stronger not weaker - core CPI 3.0% annualized, core PCE 3.7%, an ongoing Strait of Hormuz crisis adding a live geopolitical premium, and a central bank that the market suspects is behind the curve on inflation. I size it at 12% rather than larger because I am explicitly holding it against a rate-hike headwind: higher nominal rates raise the carry cost of a non-yielding asset and gold eased on the hike repricing this week. The 10% stop is my admission that if real yields win outright, the September seasonal is not enough to save the leg."
+  },
+  {
+   "symbol": "QQQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Cut from 22% to 10% - the largest single change in the book. Large-cap growth has a strong Aug-Dec hit-rate in my sample, but the sub-window I am actually about to trade, mid-September to mid-October, is the Nasdaq's own weakest stretch, and this year that stretch contains an FOMC where the market prices a 50-66% chance of a hike into ~29x forward earnings. Long-duration equity is the most rate-sensitive thing I own and the index is already +12.78% YTD, so the seasonal upside I am giving up is the part that has largely been pulled forward. I keep 10% rather than going flat for a specific reason: the hike is not fully priced, Waller's dovish wing has already knocked the odds down once from 63% to ~50%, and Q4 technology seasonality is real - if the September FOMC passes without a hike this is the leg that gaps, and being completely absent from it would be a bet on a coin flip rather than a calendar. The 12% stop is tighter than the 15% it carried before because this is now the leg I trust least."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Utilities are the measured Aug-Sep-Oct defensive/flow leg and the one I want slightly larger, not smaller, precisely because I am de-risking into the seasonal air pocket - non-cyclical demand is what carries a book through the weeks the calendar says to avoid. It has also stopped being a pure bond proxy: AI datacenter power demand has given the sector a structural volume bid that it did not have in prior hiking cycles, and XLU was a sector winner on the Sep 4 hawkish session alongside XLI, which is real-time evidence it is no longer trading purely off the long end. Raised from 4% to 7%, but kept small in absolute terms because rising intermediate yields remain the sector's main historical enemy and I am simultaneously short IEF - I do not want the same rate view expressed twice in opposite directions at size."
+  }
+ ]
+}

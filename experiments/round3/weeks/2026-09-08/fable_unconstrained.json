@@ -1,0 +1,57 @@
+{
+ "name": "Fable Unconstrained",
+ "model": "Fable 5.1",
+ "group": "flagship",
+ "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold pullback, Brazil carry, UNH, Berkshire, a smaller staples sleeve) plus a small volatility-risk-premium sleeve via SVXY, with 46% cash at 4%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 46,
+ "reassessment_note": "This book is doing its job (+2.9% since Jul 17, max drawdown -1.7%, five days into leg 4), so I am changing as little as possible and only where the week changed the facts. Three things changed. (1) EWZ stopped being a contrarian entry: it rallied 6.5% on the week to RSI 69 after Quaest/PoderData polls showed Flavio Bolsonaro pulling level or ahead of Lula, with the real at a three-week high near 5.10. A mean-reversion leg that has mean-reverted on a 45-44 poll, four weeks before an Oct 4 first round, is now a momentum bet with binary event risk; I cut it 10% -> 7% and attach a +10% take-profit rather than exiting, because the Selic carry is real and the rally may extend. (2) XLP is losing to the rate regime: 6m -1.4%, 1m -0.6%, below its 20/50-day with the 10-year at 4.76-4.81% (highest since Oct 2023) and 63% odds of a Sept 16 hike. Staples are a bond proxy and this is not the week to own more than a token of one; 8% -> 5%. (3) The strategy of record names a VRP sleeve via SVXY but the book has not carried one; the term structure now argues for a small one: spot VIX 14.5, Sep future ~16.6, Oct ~18.4, Nov ~19.1 - steep contango and a front future already priced for FOMC/CPI event vol. Sized at 4% with a 20% stop so a VIX spike to the mid-20s costs about 1% of NAV. GLD (6m -14%, 1m +4.4%, 20% off the high; Waller pushed back on the hike, Iran keeps a bid under it), BRK-B and UNH (Bernstein Buy Sept 1, $2.32 dividend record Sept 14) are unchanged. Cash rises 44% -> 46%. No symbol overlaps my Round 2 book, which is all momentum leaders (energy, healthcare, financials, small caps, cyber, BTC); this book is contrarian value plus vol carry.",
+ "positions": [
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "thesis": "Anchor value leg, unchanged at 16%. $508 vs 52-week range $464-538, $1.09T market cap, Abel has redeployed $39.4B into equities in six months and the float-funded, cash-rich structure is the closest thing to a positive-carry equity when short rates may go up rather than down. Leg +0.4%. No stop: this is the position I want to add to on a drawdown, not be shaken out of."
+  },
+  {
+   "symbol": "UNH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 30.0,
+   "thesis": "Contrarian recovery leg, unchanged at 12%. $397-401, 23 buys / 0 sells, Bernstein initiated Buy on Sept 1, Morningstar-style fair values moved to ~$529 on Medicare margin recovery; $2.32 dividend with Sept 14 record date lands inside this leg. Healthcare was the only sector besides energy with positive 1m and 6m momentum, so the value thesis now has a tape behind it. Wide 30% stop is deliberate: the thesis is multi-quarter and the stock gaps on regulatory headlines."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Pullback-buy leg, unchanged at 10%. Gold ~$4,500-4,520, GLD 6m -14% and 20% below its $509 high but 1m +4.4% and back above the 20-day after two up sessions; Waller said he would hold if Sept 11 CPI cools, which took hike odds from 63% to ~50% before the jobs print sent them back up. A confirmed hike is the risk; the Iran escalation and $95 Brent are the offset. Leg -0.4%, nothing to do. No stop: I want to hold this through a hike-driven flush, not sell into it."
+  },
+  {
+   "symbol": "EWZ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "take_profit_pct": 10.0,
+   "thesis": "Brazil carry leg, trimmed 10% -> 7% and given a +10% take-profit. Up 5.1% on the leg and 6.5% on the week to RSI 69 because polls (PoderData 45-44 Flavio, Datafolha 46-44 Lula) put a market-friendly outcome roughly at coin-flip odds for the Oct 4 first round. That is no longer a contrarian entry; it is a position the market agrees with, so I harvest a third of it and let the rest ride the carry with a mechanical exit if the poll rally overshoots. USD/BRL 5.10 and a weaker DXY (98.97) support the remainder."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Staples defensive sleeve, cut 8% -> 5%. 6m -1.4%, 1m -0.6%, below its 20- and 50-day, RSI 45, and Lululemon's -17% guide cut on Friday is a reminder that the consumer is soft. With the 10-year at 4.76-4.81% a bond-proxy sector has an active headwind, so it keeps only a token weight for its low beta; cash at 4% is the better defensive asset this month."
+  },
+  {
+   "symbol": "SVXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 20.0,
+   "thesis": "Volatility-risk-premium sleeve, new at 4%. Spot VIX 14.5 vs Sep future ~16.6, Oct ~18.4, Nov ~19.1: steep contango, so the -0.5x product earns roll as the front future decays toward spot if Sept 11 CPI and the Sept 16 FOMC pass without a shock. The 63%-priced hike is largely in the front future already; the real tail is an Iran/oil escalation, which is why the size is 4% and the stop is 20%, capping a mid-20s VIX spike at about 1% of NAV. This is the one sleeve the strategy of record has named all along and not carried."
+  }
+ ]
+}

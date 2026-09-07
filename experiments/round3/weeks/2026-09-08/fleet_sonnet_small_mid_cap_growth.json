@@ -1,0 +1,45 @@
+{
+ "name": "Sonnet small/mid-cap growth",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Sector-relative-value rotation: long the laggard cyclical/value sectors turning up (regional banks, financials, biotech via IBB) while shorting the most overextended momentum trade now showing topping signs (gold miners), using hard stops for risk discipline.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 47,
+ "reassessment_note": "Zero symbol overlap with the Round 2 book this week (R2 runs IWM/SOXL/SOFI/RKLB/HOOD/XBI long; R3 runs KRE/XLF/IBB long and GDX short), so the novelty rule is comfortably satisfied and the two books are expressing genuinely different bets. The rotation thesis gets a real signal this week: gold miners (GDX) fell 2.2% on September 4 as spot gold retreated 1.39%, and one technical read flagged a completed topping pattern (\"a Golden Dome has formed... the bull rally in precious metals has run out of steam\") -- that is exactly the kind of overextended-momentum-breaking-down setup the mandate is built to short, so I'm finally putting on the short leg the strategy has been missing (last GDX fill on this book was a standing-order close, not an active position). On the long side, regional banks actually rose on the hawkish jobs day (KRE +0.53%) with a fresh \"AI boom for banks\" narrative, near 52-week highs, so I'm adding to that laggard-turned-leader trade. XLF is trimmed slightly given financials were reported retreating into the afternoon on the same jobs print, since higher-for-longer repricing pressures bank bond books even if it helps NIM longer-run. Biotech is expressed via IBB instead of XBI specifically to keep this book's biotech leg symbol-distinct from the Round 2 book's XBI position, while still capturing the same Merck-Moderna-driven sector momentum (IBB +11.45% month). Long bonds are left out entirely this cycle -- a blowout jobs report arguing for higher-for-longer is the wrong backdrop to hold long duration, so that leg stays in cash until the rate path actually turns.",
+ "positions": [
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "Regional banks rose 0.53% on the September 4 close even as the broader market sold off on the hawkish jobs print, sitting near 52-week highs with a fresh \"overlooked winner of the AI boom\" narrative building around bank-tech spending. This is the laggard-cyclical-turning-up leg of the mandate; sized up from 15% given the relative-strength confirmation this week."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "Broad financials still up 0.38% on the week but reported \"retreating\" into the close on jobs day -- trimmed from 17% to 12% to reflect that a higher-for-longer rate path is a mixed-to-negative near-term catalyst for bank balance sheets even though the sector remains a core value/cyclical rotation candidate long-run."
+  },
+  {
+   "symbol": "IBB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "thesis": "Biotech-sector momentum leg (replacing XBI to keep this book symbol-distinct from the Round 2 book's XBI position): IBB is up 11.45% over the past month and 25.6% YTD on pipeline strength and the Merck-Moderna oncology-vaccine collaboration, fitting the laggard-value-turning-up half of the rotation mandate."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The overextended-momentum-breaking-down short this mandate calls for. Gold miners fell 2.2% on September 4 as spot gold dropped 1.39% to $4,476.60, and a completed topping chart pattern was flagged this week (\"the bull rally in precious metals has run out of steam\") after a huge multi-year run -- a live reversal signal in the exact kind of crowded momentum trade this book is built to fade."
+  }
+ ]
+}

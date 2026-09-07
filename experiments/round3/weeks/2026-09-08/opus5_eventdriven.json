@@ -1,0 +1,85 @@
+{
+ "name": "Opus 5 event driven",
+ "model": "opus5",
+ "group": "opus5",
+ "strategy": "A book of nine discrete, tape-datable catalysts: a post-shareholder-vote cash merger arb as the largest and most beta-immune leg, four post-earnings-drift longs held on gaps the tape has already refused to give back, two capitulation longs bought into 10x-volume earnings washouts with wide stops, one high-volume momentum leg, and an enlarged SPY short sized against a September FOMC where a hike is now roughly a coin flip.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "Three things changed this week and each one moved a specific leg. First, my merger-arb leg stopped being a maybe: Arcosa stockholders approved the CRH acquisition at a special meeting on 2026-09-04, clearing the single largest remaining condition on an all-cash $150.00 deal, and ACA closed the week at $145.45 - a 3.13% gross spread with only regulatory clearance left before a Q1 2027 close. The stock has traded in a $145.21-$145.60 band for ten straight sessions on ~500k shares a day, 1.8% annualised realised vol. That is the highest-quality risk/reward on my sheet and I was carrying it at 8% while sitting on 35% idle cash earning 4%. I am taking it to 18%. Second, my HRB leg is dead and I am admitting it. It was a pre-announcement-premium trade, but H&R Block already reported FY26 on 2026-08-11 and already published above-consensus FY27 guidance ($6.04-$6.24 vs $5.86) on 08-24. There is no dated catalyst left before the December quarter, and the stock fell 5.7% this week with no news attached to it. An event-driven book does not hold a position whose event has passed; I am selling it. Third, the macro now has a hard date inside my holding period. Warsh's Jackson Hole speech and Friday's payrolls print (162k vs 55k consensus) have pushed the odds of a 25bp HIKE at the 09-16 FOMC to roughly 57-66%, with CPI landing 09-10/11. My surviving drift longs are mostly high-multiple software, which is precisely the cohort a hawkish surprise hits, so I am doubling the SPY beta offset from 4% to 9%. Net of it all my beta-bearing exposure is essentially unchanged (about 50% net long versus 49% last week) - what changed is that 18 points of dead cash became a deal spread, and the weakest leg became the strongest one. On new entries I ran my own gap screen over 323 names and let the tape, not the headline, pick: CRM gapped +11.9% and closed +22.6% on 55m shares on 08-27 and has since traded 256-264, giving back none of it over six sessions, which is the cleanest drift signature in the market right now; ANF's +35.7% gap on 11.5x volume pulled back to 136.60 and then made a fresh post-event high on 09-04, a day the S&P fell. I deliberately did NOT buy GTLB or SNOW, which both gapped +22-23% and then surrendered more than half the move intraday - a failed gap is not a drift. And I added LULU as a capitulation long because it is the same setup that is currently working for me in DKS, one week later.",
+ "positions": [
+  {
+   "symbol": "ACA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 3.0,
+   "thesis": "The cleanest dated event I own. CRH is acquiring Arcosa for $150.00 per share in all cash, $8.5bn enterprise value, announced 06-23; Arcosa stockholders approved it on 2026-09-04, which removes the shareholder condition entirely and leaves only regulatory clearance ahead of a Q1 2027 close. At $145.45 that is a 3.13% gross spread to terms, plus a $0.20 quarterly dividend declared 09-02 that ordinary-course covenants permit. The reason this deserves to be my largest leg rather than a token 8% is what it does to the rest of the book: ten sessions in a $145.21-$145.60 band, 1.8% annualised realised vol, effectively zero beta. Into a 09-16 FOMC that is a coin flip on a hike, this is the only position I hold whose payoff is indifferent to what Warsh does. The 8% stop is not a volatility stop, it is a deal-break stop - ACA traded near $120 pre-announcement, so a break costs far more than the spread earns, and I want to be out mechanically if the tape starts pricing an antitrust problem rather than debating it. The 3% take-profit is simply the terms: if regulatory clearance lands early and the spread collapses to par, the trade is over and I would rather hold cash than a stub."
+  },
+  {
+   "symbol": "CRM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "The best post-earnings-drift setup on the tape and a new leg this week. On 2026-08-27 Salesforce gapped from a $205.62 close to a $230.05 open and then closed at $252.05, up 22.6% on 55.5m shares against a ~10m baseline - a 3.6x volume event where the stock closed at the top of the gap rather than fading into it. What earns the size is the six sessions since: 256.00, 257.54, 258.11, 256.93, 264.43, 259.23. Not one of them gave the gap back, and volume decayed in the orderly pattern that separates real repricing from a squeeze. Pre-event 20-day momentum was +9.2%, marginally under my usual +10% screen, but the post-event behaviour is the part that has actually paid in this book. I also want this specific drift rather than another 15x-sales name into a possible hike on 09-16: CRM spent two years de-rating, so the multiple compression a hawkish Fed causes has largely already happened here, which is not true of TEAM or VEEV. 12% stop is roughly one gap-width below entry - if the market takes back the event, the thesis is void."
+  },
+  {
+   "symbol": "TEAM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 14.0,
+   "thesis": "Held from the 08-27 event and trimmed from 14% to 9%. Atlassian gapped 168.47 to 185.62 on 6.1m shares on 08-27 and has spent seven sessions between 186.44 and 194.68 - the drift is intact and none of the gap has been surrendered, which is the only reason I still own it. Two things argue for a smaller leg rather than the same one. It is up 72% in a month and 107% in sixty days with 91% annualised realised vol, so it is the position where a bad print in the tape costs me the most per unit of weight; and it is the purest high-multiple software exposure I have going into a 09-16 meeting that may deliver a hike, which is the single input that compresses these multiples fastest. I bought this at $194.17 on 08-31, chasing 4.6% above the post-gap close, and that entry is why the leg is -2.4% despite the drift working - trimming into a stable price is how I fix a sizing error without abandoning a thesis the tape still supports. Stop at 14% sits below the pre-gap price, so it only fires if the event is fully retraced."
+  },
+  {
+   "symbol": "VEEV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held from the 08-27 event, trimmed 12% to 9%. Veeva gapped from $244.91 to a $275.36 open and closed $282.13, up 15.2% on 6.4m shares versus a ~1.5m baseline, and pre-event 20-day momentum was +17.8%, so it passes my screen on every leg. Six sessions later it sits at $275.09 - it has held about 98% of the gap, which keeps the drift alive, but unlike CRM it has stopped extending, and Friday's -3.3% on light 1.15m volume is the first sign the marginal buyer is done. That is a reason to shrink the leg rather than exit it: drift that flattens usually decays rather than reverses. Healthcare-software cash flows are also less rate-reflexive than the rest of my software sleeve, which is what keeps it in the book at all with a hike on the table. 12% stop is set just below the pre-gap $244.91 level."
+  },
+  {
+   "symbol": "ANF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 14.0,
+   "thesis": "New post-earnings-drift long, and the strongest post-event tape in my whole screen. On 2026-08-26 Abercrombie gapped from $108.90 to a $131.37 open and closed at $147.75 - up 35.7% on 17.2m shares against a ~1.5m baseline, an 11.5x volume event closed near the high. It then did the thing I actually want to see: it pulled back over three sessions to $136.60, absorbed the supply, and made a fresh post-event high of $149.67 on 2026-09-04 - a session in which the S&P 500 fell 0.38% on the hot payrolls print. Buying a new high on a down day is the relative-strength tell that separates a re-rating from a pop. I will be honest about the one criterion it misses: pre-event 20-day momentum was +5.6%, under my usual +10% filter. I am overriding that specifically because the post-event evidence is nine sessions long and unambiguous, and because ANF is the leg in this book least exposed to the risk I am actually hedging - it is a single-digit-multiple retailer whose customer is the beneficiary of a 162k payroll print, not a long-duration cash flow that a hike discounts. 14% stop sits above the pre-gap price so I keep the event's gains if it fails."
+  },
+  {
+   "symbol": "SMCI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 15.0,
+   "thesis": "Held and trimmed from 11% to 7%; my best leg at +6.2%, up 27% over 20 days. What keeps it in the book is Friday's tape: +4.5% to $39.59 on 53.5m shares, the single heaviest volume day in my ten-session sample, on a session when the index fell - accumulation, not drift decay. What caps the size is the character of the name. 94% annualised realised vol, a 52-week range of $20.53 to $58.68, and a history of gapping on filing and guidance news that no screen sees coming, which is exactly the wrong tail to carry double weight into a week containing CPI on 09-10 and an FOMC on 09-16. Trimming to 7% keeps the exposure to a working AI-infrastructure catalyst while cutting the position that would do the most damage on the one day this book cannot forecast. 15% stop is wide enough for the name's normal noise and tight enough to stop a repeat of its historical drawdowns."
+  },
+  {
+   "symbol": "DKS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 20.0,
+   "thesis": "The capitulation long that is validating the pattern, held unchanged at 7%. On 2026-08-25 Dick's fell from $179.33 to a $124.31 close - a -30.6% day on 38.9m shares against a ~3.5m baseline, opening at $142.36 and closing 12.7% below the open, which is what genuine forced selling looks like. It has since made a series of higher lows and higher closes: 129.66, 131.77, 135.09, 135.10, 132.95, 137.34, 139.77, 139.15. That is +11.9% off the capitulation low and, more importantly, the $124.31 low has not been retested in eight sessions. My entry at $135.10 is +3.0%. I keep the 20% stop rather than tightening it into the gain because the whole premise of a capitulation long is that the recovery is jagged - a tight stop here converts a working trade into a whipsaw. The catalyst is dated and behind me; what I am now holding is the mean reversion of an oversold, index-excluded, tax-loss-supplied position into a consumer that just printed 162k jobs."
+  },
+  {
+   "symbol": "LULU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 22.0,
+   "thesis": "New capitulation long, deliberately the smallest equity leg. On 2026-09-04 Lululemon gapped from a $121.77 close to a $98.15 open and closed $100.61, -17.4% on 37.3m shares versus a ~3.5m baseline - roughly 10x volume into an eight-year low, on a second consecutive full-year guidance cut, a China demand problem and a CEO transition. The single detail that makes it a buy rather than a falling knife is that it closed 2.5% above its opening print: the day-one supply was absorbed. This is the identical setup to DKS one week earlier, and DKS is currently my best-behaved leg, so I am running the pattern again rather than theorising about it. I am sizing it at 6% and not 10% because unlike DKS the deterioration here is sequential rather than a single shock - two guidance cuts in a row is a trend, and the analyst target dispersion of $44 to $122 says the sell side has no idea where the floor is either. A 22% stop is at the wide end of my capitulation band precisely because I expect it to be tested; if $78 breaks, the thesis was wrong and the position should be gone without me deciding anything."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 9,
+   "stop_loss_pct": 9.0,
+   "thesis": "The beta offset, more than doubled from 4% to 9%, and the only leg in this book whose catalyst is on the macro calendar rather than a company's. The FOMC meets 09-15/16 with the market pricing roughly a 57-66% chance of a 25bp HIKE - a genuine coin flip on a direction that was not in the price a month ago - after Warsh said at Jackson Hole that underlying inflation has not meaningfully improved and Friday's payrolls printed 162k against a 55k consensus, with August CPI landing 09-10/11 in between. My drift legs are structurally the wrong side of that: CRM, TEAM, VEEV and GTLB-adjacent software is the cohort that de-rates fastest on a hawkish surprise, and a post-earnings drift is a relative-strength phenomenon that a broad index drawdown will overwhelm regardless of how good the individual print was. Shorting SPY rather than QQQ is deliberate - I want to neutralise market beta, not manufacture a second short-tech bet on top of the one my longs already imply. 9% against 61% of gross long exposure leaves me about 50% net, essentially unchanged from last week, so this is a hedge that pays for the cash I redeployed into the Arcosa spread, not a directional call. It costs 3% annualised in borrow, which is the correct price for carrying event risk through a meeting whose outcome I cannot forecast. Stop at 9% caps the cost if the Fed holds and the melt-up resumes."
+  }
+ ]
+}

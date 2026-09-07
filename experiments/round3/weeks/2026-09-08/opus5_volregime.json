@@ -1,0 +1,70 @@
+{
+ "name": "Opus 5 vol regime",
+ "model": "opus-5",
+ "group": "opus5",
+ "strategy": "Regime reclassified from calm-carry to a compressed-implied / rising-macro-risk vol floor: with VIX 14.53 at the 6th percentile of two years, VVIX 84.4 at the 1.2nd percentile, SPY 20d realized 8.1% at the 7th percentile, but 5y and 10y yields at two-year highs and a coin-flip Fed HIKE at the Sept 15-16 FOMC, the book stops harvesting carry and instead owns cheap convexity (14% VIXY), rotates its equity risk out of rate-sensitive low-vol proxies into real assets and low-duration value where volatility is actually being realized and paid, and holds 25% cash at 4%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 25,
+ "reassessment_note": "Last week I classified the tape as calm-index / high-dispersion and sized to harvest the variance risk premium (SVXY short vol, 60% vol-targeted low-vol equity, a short-gamma leveraged-ETF pair). Three things changed and they invert that call. (1) Implied vol has fallen to a floor, not to a fair level: VIX closed 14.53 on 2026-09-04, the 6.2nd percentile of two years, and VVIX closed 84.42, the 1.2nd percentile and within 3 points of its two-year low of 81.89 - convexity on volatility itself has literally never been cheaper in my sample. Selling vol at the 6th percentile pays a few points of carry for unbounded left-tail; the VRP has compressed from the ~7 points I sized to (VIX 18.6 vs RV 11.65) to ~6.4 points at half the absolute level, so the same dollar of short-vol risk now earns far less. (2) The macro risk that vol is supposed to price has gone to a two-year HIGH at exactly the same time. August payrolls printed 162k against a 55k consensus with unemployment steady at 4.1%; PCE is running 3.7%; the 5y (4.55%) and 10y (4.78%) closed at the 98.8th and 99.0th percentile of two years, effectively at their two-year highs; and fed funds futures now price roughly 50-58% odds of a rate HIKE at the September 15-16 FOMC, which also carries a Summary of Economic Projections. CPI and PPI land before it. That means three live macro catalysts fall inside six or seven sessions of my 2026-09-08 entry, and the equity vol surface is pricing them as a non-event. Note also that SKEW has climbed from 143 to 151.6 over two weeks while ATM vol fell - someone is paying up for tails while the ATM strip melts, which is the signature of a market that is complacent at the money and nervous in the wings. (3) My own book is on the wrong side of the rate regime. RSP plus USMV was 48% of NAV in equal-weight and minimum-volatility equity, both of which carry heavy bond-proxy and duration sensitivity; with the long end at two-year highs and a hiking Fed live, that is a short-rates-vol position dressed as a defensive one, and it shows in the tape - SPLV is -1.81% over a month and -0.64% over six, USMV +5.05% over six against SPY +15.16%, and the book is -0.25% for the round against SPY +3.62%. So I am replacing rather than holding. The regime call is that index volatility is mispriced low relative to identifiable event risk, while sector-level volatility is being realized at the 60th-80th percentile (XLE 21.3, COMT 18.7, GLD 27.1, GDX 51.2, XLV 18.9) - a very low implied-correlation state. The correct expression is to own the convexity while it is cheap, to take equity risk only where volatility is actually being paid, to hold nothing whose main risk is duration, and to let cash at 4% carry the rest rather than manufacture carry by selling a 6th-percentile vol surface. Turnover is roughly half the book; at 2bps a side that costs a few basis points, which is trivial against the risk of being short gamma into a coin-flip hike.",
+ "positions": [
+  {
+   "symbol": "VIXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 28.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The core regime expression, upsized from 9% to 14%. VIX at 14.53 is the 6.2nd percentile of two years and VVIX at 84.42 is the 1.2nd percentile, so both spot vol and the convexity of vol are at two-year floors, while CPI, PPI and a September 15-16 FOMC carrying roughly 50-58% odds of an actual rate hike all fall within six or seven sessions of the 2026-09-08 entry. The carry cost is real and I am paying it knowingly: VIXY is -12.95% over the last month on contango, roughly 1.2% a week, so 14% of the book bleeds about 17bps a week if nothing happens. Against that, a hawkish surprise that takes VIX from 14.5 to the mid-20s is historically worth +45% or more on VIXY, which is +6.3% at the book level - a payoff-to-carry ratio I do not get to buy when VIX is at 20. The 45% take-profit is deliberately set below the 60% I used last week because the likely shock here is a hawkish repricing rather than a crash, and I would rather actually monetise a move to VIX 24 than hold out for a move to 30. The 28% stop is not a risk stop but a regime stop: VIXY would need VIX pinned near 11 for it to fire, which would mean my classification of a mispriced floor was simply wrong and I should stop paying for the option."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 14.0,
+   "thesis": "Doubled from 6% to 12%, and the largest non-vol leg. Broad commodities are where volatility is genuinely being realized and paid rather than suppressed: COMT's 20-day realized vol is 18.69%, the 62nd percentile of two years, against SPY at the 7th, and it has returned +10.75% over the past month and +4.32% in the last week alone while the index went nowhere. It is also the internally consistent hedge for my macro read - the Fed is contemplating a hike because PCE is 3.7%, so the asset that pays if the inflation impulse is real is the same asset that pays if the Fed is judged behind the curve. Unlike my former low-vol equity sleeve, a commodity futures basket has no duration, so a further backup in the long end that is now at a two-year high does not hurt it. The 14% stop gives a trending, high-realized-vol asset room to breathe without letting a commodity reversal, which is the main way this leg fails, run to a book-level loss."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "thesis": "This is the replacement for the 48% that sat in RSP and USMV, and the swap is specifically a duration swap. Minimum-volatility and equal-weight equity carry bond-proxy sensitivity that is a direct headwind with the 5y at 4.55% and 10y at 4.78%, both at two-year highs and a live hike two weeks out. Value is the low-duration equity factor: its cash flows are front-loaded, so it de-rates least when the discount rate rises, and the tape agrees - VLUE is +4.75% over a month, +7.46% over three and +43.28% over six months, against USMV +0.80%, +5.73% and +5.05%. Critically for a vol-regime mandate, it delivers that with 20-day realized vol of 12.43%, only the 21.6th percentile of its own two-year range, so I am buying the leadership factor without buying its historically expensive volatility. Sized at 13% as the single largest equity leg. The 12% stop is tight because the way this leg is wrong is a growth-scare rotation back into duration, and I want to be told quickly."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "Kept as the core beta anchor but trimmed from 14% to 12%, and the stop tightened hard from 18% to 10%. I do not want to be absent from the market - the index has ground higher all round and shorting a 6th-percentile vol tape is a directional bet I am not making. But I also refuse to hold a large index position whose implied vol says a coin-flip Fed hike is a non-event. Twelve percent is the size at which SPY funds my participation without the book's outcome depending on it. The 10% stop matters more than the weight: with SPY 20-day realized vol at 8.10%, the 7.5th percentile of two years, a 10% drawdown from the entry fill is a genuine multi-sigma regime break rather than noise, so this stop cannot be shaken out by ordinary chop but will take my index beta to zero precisely in the scenario where the VIXY leg is paying and I want the cash."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 16.0,
+   "thesis": "Increased from 6% to 9% as the equity-form expression of the same inflation-vol read as COMT, held alongside it rather than instead of it because energy equities and a commodity futures basket fail differently - one on equity multiples, one on the futures curve. This is currently the highest-realized-vol broad sector I hold at 21.31% 20-day, the 58th percentile of two years, against an index at the 7th, which is the dispersion the regime is offering: index vol at the floor while sector vol sits mid-range. XLE is +10.14% over a month and +2.20% in the last week, so I am adding to something the tape is already rewarding, and it is one of the few sectors that is a net beneficiary rather than a victim of a higher-for-longer rate path. The 16% stop is wider than my equity legs and narrower than COMT's, matching its realized vol."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 14.0,
+   "thesis": "New leg, and the defensive allocation that replaces USMV without importing USMV's rate sensitivity. Healthcare is non-cyclical but not a bond proxy, so it defends against the growth-scare branch of a Fed mistake without being hurt by the yield backup that is the other branch. It also fits the mandate on its own terms: XLV's 20-day realized vol is 18.93%, the 81.7th percentile of its two-year range, one of the highest-percentile readings in my entire screen, at a time when the index sits at the 7th - if I want the dispersion in this regime I have to own the sectors where volatility is genuinely elevated, and this is one of the few defensive ones. Momentum supports it too, +4.26% over a month and +12.55% over three. Sized at 8% and stopped at 14%, wide enough for its realized vol."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 22.0,
+   "take_profit_pct": 40.0,
+   "thesis": "The smallest and most volatile leg, held for convexity per dollar rather than for size. GDX's 20-day realized vol is 51.16%, roughly six times SPY's 8.10%, so 7% of the book here contributes more variance than 20% in an index fund - which is the point in a regime where I want vol exposure but cheap ones are scarce. It is up 18.28% in a month and 25.90% in three. I am explicit that this is the leg most exposed to being wrong: a Fed that hikes and is believed lifts real yields and normally hurts gold. What makes me hold it anyway is that the miners produced that +18% move while the 5y and 10y were climbing to two-year highs, which says the bid is an inflation-credibility bid rather than a rate bid, and that is precisely the scenario a 3.7% PCE print with a hesitant Fed creates. The 40% take-profit exists because this is a leg to harvest, not to marry, and the 22% stop is sized to its own volatility so an ordinary miner drawdown does not close it."
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "name": "Opus Broadening",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Long-heavy breadth basket - equal-weight core plus mid-caps, industrials, energy, materials, regional banks and a trimmed biotech tail - with the leveraged small-cap amplifier removed, a small anti-concentration QQQ short and a 2% ETH tail, positioned for broadening to survive a hawkish Fed.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 12,
+ "reassessment_note": "What changed this week is the rates path, not the breadth thesis. August payrolls printed 162k against a 53k consensus, unemployment held 4.1%, the 2-year jumped to 4.37% (highest since January 2025) and the 10-year to 4.78%, and futures flipped to roughly 53-65% odds of an actual HIKE at the September 15-16 FOMC, with August CPI (July ran +3.4% y/y) landing 9/11 as the swing factor. Simultaneously WTI ripped +9.5% on the week to about $91 while energy equities fell, so the inflation impulse is real. The broadening trade itself is still winning - equal-weight S&P is up roughly 15.8% YTD versus 12.1% for cap-weighted, RSP just crossed $100bn in assets, and the Mag 7 were flat in H1 - so I am not abandoning the mandate; I am re-cutting it so that the hawkish tail does not hit it through the most rate-sensitive legs. Three concrete changes: (1) TNA is gone - a 3x small-cap amplifier is precisely the leg you do not want with the front end at cycle highs and a live hike two weeks out, and its 5bp leveraged-ETF friction plus decay is not worth 3% of book; (2) XBI is halved from 12 to 6 - unprofitable biotech is the longest-duration thing in a breadth basket and healthcare was a losing sector on Friday; (3) I add XLI at 10 and MDY at 7, taking breadth toward the parts that led on the hawkish day (technology, industrials, utilities were the Friday winners) and toward mid-caps, which carry the broadening without small-cap floating-rate debt sensitivity. IWM is trimmed 16 to 11 and KRE 6 to 5 for the same reason. Gross exposure stays near where it was (88 vs 87) so this is a re-cut of risk, not a de-risking - the book still has to earn its keep, and at $1,000 with 2bp equity commissions the turnover costs about a dime.",
+ "positions": [
+  {
+   "symbol": "RSP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 24,
+   "thesis": "The purest single expression of the mandate and therefore the core. Equal-weight S&P is up about 15.8% YTD versus 12.1% for the cap-weighted index, the number of S&P names above their 200-day moving average has climbed from roughly 50% in early 2024 to about 75%, and RSP just passed $100bn in assets - participation is genuinely wide, not a statistical artifact. It is also the lowest-variance way to own broadening: no single-name risk, no leverage, no duration bet. I hold it without a stop deliberately, because a stop on a diversified 500-name equal-weight sleeve just converts normal index noise into realized losses; the risk control on this leg is its size, not a trigger."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "thesis": "Sized up to the second-largest leg because of a divergence I can actually point at: WTI rose about 9.5% on the week to roughly $91 while the energy sector was one of the week's losing groups and XLE sits essentially unchanged against my 63.96 fill. Either crude gives the move back or energy equities catch up, and the second is the better-odds side with tanker names already at 52-week highs. It is also the natural hedge against the exact scenario that threatens the rest of this book: if oil at $91 is what forces the Fed to hike on September 16, this leg pays while my rate-sensitive legs do not. Wide 15% stop because energy equities can shake out on a single OPEC headline without breaking the thesis."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 13.0,
+   "thesis": "Small caps stay in the book but at a reduced 11% from 16%. The evidence is genuinely two-sided: the Russell 2000 has been outrunning the S&P this year and it actually outperformed on Friday's hawkish reset (+0.21% while the S&P fell 0.38%), which argues the cohort is being bought on economic strength rather than sold on rates. Against that, small caps carry the most floating-rate debt in the market and a September hike is now a coin flip, so this is the leg where a bad CPI on 9/11 hurts most. Keeping meaningful but not dominant exposure, with a 13% stop, is the honest way to hold a view I believe in but cannot prove into a binary."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 13.0,
+   "thesis": "New leg, funded out of TNA and XBI. Industrials were one of only three winning sectors on Friday's hawkish tape and they are the cleanest way to own the AI buildout without paying AI multiples - electrical capacity, grid and datacenter construction, defense and energy capex all land in this sector, and copper up 1.95% on the week corroborates that the physical-economy demand is real. Critically for a hawkish regime, industrials earn from nominal capital spending rather than from a discount rate, so this leg does not fight the front end the way biotech and leveraged small caps do. 10% is a meaningful new sleeve without displacing the equal-weight core."
+  },
+  {
+   "symbol": "MDY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 13.0,
+   "thesis": "New leg. Mid-caps are the part of the broadening I have been under-owning: they capture leadership dispersing out of the mega-cap complex, but with better balance sheets, more fixed-rate financing and far less refinancing sensitivity than the Russell 2000. In effect this is the risk-adjusted half of my small-cap bet, and adding it at 7% while cutting IWM by 5 and TNA by 3 leaves the book's exposure to broadening roughly intact while measurably cutting its exposure to a hike. 13% stop, same discipline as the other cyclical sleeves."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 18.0,
+   "thesis": "Halved from 12% to 6%. Biotech is a legitimate breadth expression - it is the definition of leadership away from mega-cap tech - and the leg is modestly green (+0.81% at 163.81 versus a 162.50 fill), so I am not exiting on price. I am cutting it on duration: an index of largely unprofitable, cash-burning companies is the single most rate-sensitive thing in this basket with the 2-year at a 20-month high, a hike near a coin flip and healthcare already among Friday's losing sectors. A 6% position lets the thesis keep working if CPI comes in soft on 9/11 without letting one macro print define the book. Wide 18% stop because XBI's normal volatility would trigger anything tighter."
+  },
+  {
+   "symbol": "QQQ",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "thesis": "The anti-concentration hedge stays, unchanged in size, and it is the leg that makes this book a breadth book rather than just a long basket. Paired against RSP it isolates exactly what I am paid for: equal-weight beating cap-weight. It has cost me a little (-0.31%) and the Nasdaq was up 0.4% on the week, but the structural case is intact - the Mag 7 were flat in the first half against +9.3% for the S&P, and the same long-duration mega-caps are the most exposed to a hike I now have to underwrite. Held at 6% and no larger because a short in a bull tape is a hedge, not a thesis, and the 3% borrow cost is a real drag; 10% stop caps the damage if leadership violently reconcentrates."
+  },
+  {
+   "symbol": "XLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 14.0,
+   "thesis": "Materials held at a small 5% as the commodity-linked corner of the cyclical breadth basket. Copper rose 1.95% on the week, and the same grid, datacenter and defense construction cycle that supports industrials pulls through chemicals, metals and packaging. The leg is fractionally red (52.44 versus a 52.69 fill), which is noise, and the sector was a mild loser on the week - hence keeping it a satellite rather than adding. Real assets also hedge the inflation impulse that oil at $91 is feeding into CPI."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 15.0,
+   "thesis": "Regional banks trimmed from 6% to 5% while keeping the leg on. It is my best-performing sleeve at +2.32% (75.27 versus a 73.56 fill) and it is the one long here that mechanically benefits from a hawkish Fed through wider net interest margins on the front end. The trim reflects the other side of the coin: a hike that arrives because inflation is re-accelerating raises deposit costs and commercial real estate credit risk at exactly these banks, and this is a group that gaps rather than drifts. 15% stop respects that gap risk."
+  },
+  {
+   "symbol": "ETH-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 2,
+   "stop_loss_pct": 25.0,
+   "thesis": "The speculative tail stays at 2%, deliberately untouched. Ethereum opened Friday around $2,508, up 4.9% on the day, as bitcoin pushed past $81,000 on its largest ETF inflow in nine months and crypto-linked equities rallied with it - the complex is the highest-beta version of the same risk-broadening I own in equities. At 35bp per side, rotating this leg into BTC would burn 70bp of round-trip friction to swap one crypto beta for another, so holding is the correct call. Kept tiny with a 25% stop: this is a call option on the tail, sized so that being wrong costs the book half a percent."
+  }
+ ]
+}

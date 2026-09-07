@@ -1,0 +1,64 @@
+{
+ "name": "Sonnet deep value",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Round 2: rotate into unloved cyclical/value large-caps (energy, financials, autos, healthcare) that missed the AI-led melt-up, add small-cap value beta via IWM, and hold a large cash buffer for drawdown buys -- now trimmed around a dated Canadian retaliatory-tariff catalyst hitting the same day this leg enters.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 40,
+ "reassessment_note": "Two real, dated developments this week change position sizing without breaking the underlying deep-value thesis, so this is a resize, not a rebuild. First, Canada's dollar-for-dollar retaliatory tariffs on US autos take effect 2026-09-08 -- literally the day this leg enters -- and GM/Ford already absorbed ~$900M-$1B of gross tariff costs in Q2 with Ford's own guidance assuming ~$2B of commodity/tariff headwinds and a stretched balance sheet (461% debt/equity per screens). That is a specific, timed catalyst against two of my largest longs with zero downside protection on the current book, so I'm trimming GM (10.42%->7%) and F (6.08%->4%) and adding 10% stops to both rather than exiting the cyclical-auto thesis outright -- tariff pain is being partially telegraphed and priced, and both remain statistically cheap value names. Second, crude spiked to ~$90 on Iran/Hormuz strikes and energy is +44.8% YTD vs ~12% for SPY, with sell-side flagging XOM as the cleanest defensive way to hold the oil-geopolitical-risk-premium trade (Guyana production growth, potential Venezuela upside) -- I'm adding to XOM (10.42%->12%) into that live tailwind. Third, UNH sold off Sept 4 alongside the wider defensive-healthcare complex purely on a stronger-than-expected August jobs report reviving Fed hike odds (payrolls +162k vs consensus), not on anything company-specific -- in fact UNH raised full-year adjusted EPS guidance to $19.50-$20, is removing prior-authorization frictions, and just declared a $2.32 dividend, with consensus analyst price target ~$475 against a ~$395-402 tape (~20% implied upside). That reads as a macro-driven markdown of an improving business, so I'm adding to UNH (12.16%->13%) rather than trimming into the weakness. Fourth, the same hawkish jobs print (odds of a Sept 15-16 Fed hike near 60%, though the administration is pushing hard for a cut) is a real risk-off signal for small caps specifically, so IWM comes down modestly (8.68%->6%) rather than being held at full size through that event. JPM (9.55%->9%) and PFE (8.68%->9%, rounded) are essentially unchanged -- no fresh company-specific news moved either thesis this week. Net: cash goes from 34% to 40% to fund the trims and sit through both the Sept 8 tariff implementation and the Sept 15-16 FOMC decision with dry powder for further drawdown buys, which is exactly what this mandate is designed to do with cash.",
+ "positions": [
+  {
+   "symbol": "XOM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "take_profit_pct": 30.0,
+   "thesis": "Increased from 10.42% to 12% on a live catalyst: WTI spiked ~5% to ~$90 this week on Iran/Hormuz strikes, energy is the best-performing S&P sector YTD (+44.8%), and sell-side screens XOM as the cleanest, most defensive single-name way to hold the oil geopolitical-risk premium given its Guyana production growth and potential Venezuela upside. Still a classic unloved-cyclical deep-value holding trading well off any bubble multiple."
+  },
+  {
+   "symbol": "JPM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "thesis": "Unchanged thesis, size trimmed fractionally (9.55%->9%) only to fund cash build. No adverse company news this week; a higher-for-longer rate path (hike odds now ~60% for the Sept FOMC) is a net NIM positive for a quality large-cap bank still priced as a cyclical value name rather than a growth compounder."
+  },
+  {
+   "symbol": "GM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 10.42% to 7% and given a 10% stop ahead of Canada's dollar-for-dollar retaliatory tariffs taking effect 2026-09-08, the very day this leg enters -- GM already absorbed ~$900M of gross tariff impact in Q2 alone. Kept as a smaller position because the value case (single-digit forward P/E, buybacks) is intact and much of the tariff drag is now public information rather than a surprise."
+  },
+  {
+   "symbol": "UNH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "thesis": "Increased from 12.16% to 13% -- this week's -1.5% slide on Sept 4 tracked the broad defensive-healthcare selloff on hawkish jobs data, not company fundamentals, which actually improved: UNH raised FY adjusted EPS guidance to $19.50-$20, is streamlining prior authorization, and just declared a $2.32 dividend. Consensus analyst price target (~$475) implies ~20% upside from the ~$395-402 tape -- exactly the kind of macro-driven mispricing of a quality but unloved name this mandate is built to buy."
+  },
+  {
+   "symbol": "PFE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "thesis": "Essentially unchanged (8.68%->9%, rounding). No new pipeline, legal, or guidance news found this week; remains a deep-value pharma holding priced for stagnation that a dividend-protected floor and eventual pipeline catalysts should re-rate over time."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "thesis": "Trimmed from 8.68% to 6%. Small caps are the most rate-sensitive part of this book, and the stronger-than-expected August payrolls print revived real odds of a Sept 15-16 Fed hike (vs. the cut markets had been pricing) -- reducing, not eliminating, the small-cap value-beta sleeve into that event risk while keeping the diversification benefit."
+  },
+  {
+   "symbol": "F",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 6.08% to 4% and given a 10% stop for the same Canadian retaliatory-tariff catalyst hitting 2026-09-08 as GM, sized smaller because Ford carries more balance-sheet fragility (-4.4% net margin, ~461% debt/equity per screens) and less room to absorb a guidance cut than GM. Kept rather than exited because the stock is still up YTD and deep-value autos exposure remains part of the mandate."
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "model": "fable",
+ "group": "flagship",
+ "strategy": "Concentrated AI-infrastructure conviction, unlevered, with a small contrarian BTC spot leg and dry powder for weekly dip-buying",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 15,
+ "reassessment_note": "Week 8 (leg 3): a targeted resize, not a rebuild. What changed this week: the 10-year hit 4.82% (highest since Nov 2023) on Brent ~$95 (Hormuz disruptions) and a 162K August payroll beat vs 55K consensus; fed funds futures now price roughly a coin flip on a HIKE at the Sept 15-16 FOMC, with Waller saying the Sept 11 CPI decides it. The AI-infra fundamentals did not change - NVDA guided Q3 to $108B, ANET printed its first $3B quarter, TSMC sales +45%, MU is at ~6x forward with $100B contracted revenue into its Sept 30 print - so the core stays. Two legs did change character: (1) GEV is the one name where the story deteriorated on its own - it slid to ~$887 on Aug 31 while VRT and ETN were flat and GRID was up, i.e. single-name repricing on the ~$400M 2026 Wind EBITDA loss guide plus a CFO handoff, and it carries the most premium multiple in the book into a rate shock; I cut it from 10% to 4% rather than to zero because the $176B backlog and 88% order growth are real. (2) AMD fell ~4% on Sept 1 with the whole group on yields and oil, no company-specific news, after +50% Q2 revenue growth and a 41% guide - that is exactly the macro-only dip the mandate's dry powder exists for, so I add 3pts there and 1pt to NVDA. Net cash rises 13% to 15% because the Sept 11 CPI / Sept 16 FOMC is a binary I would rather buy after than front-run; at 4% APY the wait is not free but it is cheap. BTC weight is untouched (35bps/side churn is not worth paying for a leg that is doing its job at +20%). No stops on the conviction core, consistent with the strategy of record: this book already survived a -14.6% drawdown intact and a 15% stop would have converted that into a realized loss.",
+ "positions": [
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "thesis": "Largest leg stays at 18%. Fiscal Q4 print Sept 30 with consensus at ~$50.8B revenue (+348% y/y) and ~$31 EPS; ~6x forward P/E with $18B customer deposits and $100B contracted minimum revenue. HBM needs ~4x the wafer capacity of standard DRAM, so supply stays tight through 2027. It is also the least duration-sensitive name in the book, which matters with the 10-year near 4.8%. Leg is +17% since July; not adding into the print, not trimming a thesis that is strengthening."
+  },
+  {
+   "symbol": "AMD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "thesis": "Raised from 15% to 18%: the dip-buy of the week. AMD fell ~3.8% on Sept 1 in a group-wide yields-and-oil selloff with no company-specific catalyst, after +50% y/y Q2 revenue and a 41% growth guide for Q3; September is seasonally its worst month (down 8 of 10 years, median -5%), which is a reason to expect the dip, not to avoid it. Helios racks carry 31TB of HBM and the MI450/OpenAI ramp is H2-weighted. Sized as the book's second pillar because it is the cheapest-relative-to-growth compute name after the pullback."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "thesis": "Nudged 15% to 16%. Q2 FY27: $96B revenue, $89B data center, Q3 guided to $108B +/-2%; stock at ~$230 is only +15.7% over the month despite that guide, and consensus target is ~$306. It is the index-weight anchor of the theme and the name that reprices first if the Sept 16 FOMC holds rather than hikes. Kept below MU/AMD because it has the least valuation cushion of the three if yields keep rising."
+  },
+  {
+   "symbol": "GEV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Cut from 10% to 4%. This is the only leg where the story changed on its own: the stock fell to ~$887 on Aug 31 while VRT, ETN and GRID were flat-to-up - single-name repricing on guidance of ~$400M of 2026 Wind segment EBITDA losses and a CFO transition (Rivian's McDonough starting Jan 2027). At ~40% YTD before the drawdown it also carries the most premium multiple in the book into a 4.8% 10-year. I keep a 4% stub because the $176B backlog, 88% order growth, and Q3 consensus of $12.07B revenue mean the gas-turbine power thesis is intact; the wind drag is the part I no longer want to pay for at size."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Unchanged at 8%. Monthly sales +45% y/y as AI spending continues despite jitters; it is the foundry for every other compute name in this book, so it is a diversified way to own the theme. Leg +6.6%; nothing to do."
+  },
+  {
+   "symbol": "VRT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Unchanged at 8%. Held flat (~$256 on Aug 31) while GEV sold off, confirming the market sees Vertiv's thermal/power thesis as intact; S&P 500 inclusion last month brought passive demand and it is a key NVDA rack partner. Leg is slightly negative; I am not chasing but not cutting a name the tape is treating as the clean version of the power trade."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Unchanged at 8%. First-ever $3.04B quarter vs $2.83B consensus, EPS $1.02 vs $0.88, targets raised to $240-259 by UBS/Cowen/BofA/Evercore on improved supply; consolidating around $186-194 after the run. Leg +14%; networking is the part of the stack that lags compute by a quarter, which keeps it in the book."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Unchanged at 5%. BTC opened Sept 4 above $81K, its highest since May 12, after its largest ETF inflow in nine months; the contrarian entry at $66.5K is +20%. It is the one leg that has rallied on hawkish Fed talk rather than sold off, so it is doing its diversification job. Weight held exactly to avoid paying 35bps/side crypto churn for no thesis change."
+  }
+ ]
+}

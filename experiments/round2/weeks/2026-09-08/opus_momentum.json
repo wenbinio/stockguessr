@@ -1,0 +1,113 @@
+{
+ "name": "Opus Momentum",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Concentrated long US AI-hardware and memory momentum (MU/SNDK/DELL/NVDA/SMCI) plus semi-heavy Asia beta (EWT/EWY) and a small leveraged Nasdaq and 2x BTC perp sleeve, with laggards cut and cash cut to 10%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "Two things changed my mind this week. First, my own book was failing on its own terms: -3.80% vs SPY +2.59% while sitting on 41% cash and holding three legs (GOOGL, XLV, IBB) that are not semis or Nasdaq momentum at all. GOOGL is -5.4% on 1m and -8.2% on 3m - it is a momentum laggard I was holding out of inertia, and the healthcare sleeve belongs in my Round 3 mandate, not here. Second, the semiconductor complex has visibly bifurcated, and the split is the actionable fact of the week. AVGO beat Q3 (revenue $29.6B, +86% y/y; AI semis $16.7B, +221% y/y) but guided Q4 revenue to $34.8B against ~$35.0B consensus and the stock fell ~6%; AVGO is now -14.9% on 1m. The same damage runs through WFE, EDA and optics: AMAT -13.8%, CDNS -13.5%, SNPS -3.0% (-11% in a week), CRDO -26%, FN -25%, COHR -15.7%. Meanwhile memory and AI-server hardware are accelerating hard: SNDK +38% 1m / +17% 1w, SMCI +35% 1m, DELL +20% 1m / +15% 1w, MU +15% 1m / +9% 1w. Korean semiconductor exports were +209% y/y in August, an all-time record, and Micron says DRAM/NAND demand exceeds supply with tightness persisting beyond calendar 2027 with 2026 HBM already sold out. So the correct momentum expression is not 'semis' as a block - SMH is -0.8% on 1m and SOXL -11.4% - it is memory plus AI-server plus the Asian fabs, funded by exiting equipment/EDA/optics and the diluting cash pile. I am accepting the risk that the Fed hikes 25bp on Sept 16 (162k August payrolls vs 53k expected, 2y at 4.37%, ~60% odds priced) - that is why the book still carries 10% cash and a hard stop on every leg rather than a bigger TQQQ sleeve.",
+ "positions": [
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The largest leg because it has the cleanest combination of price momentum and a dated catalyst. MU is +15.3% on 1m, +9.0% on the week and +175% on 6m, and it reports fiscal Q4 on 2026-09-30, inside my holding window. The fundamental setup behind the tape is the tightest DRAM/NAND market in three decades: management says demand exceeds supply beyond calendar 2027, 2026 HBM is sold out, HBM4 has already crossed $1B of revenue with the 12-high ramp tracking twice as fast as HBM3E, and there is roughly $100B of contracted minimum revenue and $18B of customer prepayments behind the book. At a mid-single-digit forward P/E the stock is not discounting that, so a beat re-rates rather than just meets. Sized at 15% with a wide 15% stop because the pre-print vol is real and I do not want to be stopped out of the catalyst by noise."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 12.0,
+   "thesis": "The anchor of any AI-compute momentum book and the one large-cap semi that did not break this month. Revenue +106% y/y in the July quarter with FY28 guidance raised toward ~70% revenue growth, and the stock is +5.9% on the week and +5.2% on 1m while AVGO, AMAT and the EDA names are down double digits - that relative strength through a bad tape for the sector is the signal. 11% is a second-largest sizing rather than the top because NVDA has no near-term catalyst inside this window; it is here to carry sector beta with better quality than SMH. 12% stop is roughly a quarter of its 45% annualized vol."
+  },
+  {
+   "symbol": "DELL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 16.0,
+   "thesis": "The strongest large-cap trend on my whole board: +258% over 6m, +19.8% on 1m and +14.9% in the last week alone, which is fresh acceleration rather than a stale trend I would be buying late. Dell is the direct beneficiary of the hyperscaler capex cycle that Broadcom's own numbers confirmed (AI semis +221% y/y, guided to +236% next quarter) - the AI server backlog converts that silicon into revenue with a lag, and unlike the merchant-silicon names it is not exposed to the guidance-versus-expectations problem that broke AVGO. 10% with a 16% stop to respect an 84% annualized vol."
+  },
+  {
+   "symbol": "SMCI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 22.0,
+   "take_profit_pct": 55.0,
+   "thesis": "The second-strongest one-month move on my board at +34.8%, with +6.8% in the last week confirming it is still going. SMCI is the levered read on the same hyperscaler capex that Broadcom quantified this week (AI semis +221% y/y, guided +236% next quarter) and that Dell is converting into a record backlog - AI rack integration is where that silicon gets shipped. I hold it at only 5% and behind DELL at 10% because the quality gap is real: SMCI's 3m return is still -4.92%, so this is a one-month reversal rather than an established trend, and the company's accounting and margin history means it deserves less capital than the same idea expressed through Dell. 22% stop for ~86% annualized vol; 55% take-profit because names like this round-trip."
+  },
+  {
+   "symbol": "SNDK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 22.0,
+   "take_profit_pct": 60.0,
+   "thesis": "The purest NAND shortage expression and the highest-velocity name I can own: +38% on 1m, +17% in the last week, +230% on 6m. If Micron's claim that NAND demand exceeds supply into 2027 is right, SanDisk is the higher-beta way to be paid for it, because it lacks Micron's diversification and so takes more of the pricing upside. I am deliberately capping this at 8% and using a 22% stop rather than my usual 12-15%: annualized vol is ~90%, so a tight stop here would be a coin flip on noise, and the right risk control is a small position with room, not a big position with a hair trigger. The 60% take-profit acknowledges that parabolic memory names give it all back and I want an exit plan on the upside too."
+  },
+  {
+   "symbol": "CRM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "thesis": "The single largest one-month move among US mega-cap tech: +38.8% on 1m and +39.6% on 3m, a genuine trend reversal out of the 2026 'AI eats software' de-rating rather than a bounce - NOW confirms the same rotation at +20.4% on 1m. This is my one non-semi tech leg and it earns the slot on relative strength, giving the book an uncorrelated source of Nasdaq momentum if the AI-hardware trade takes a breather into the Sept 16 FOMC. Held to 8% because the move is already large and the 1w reading (+1.3%) shows it consolidating; 15% stop below the breakout."
+  },
+  {
+   "symbol": "EWT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Taiwan is TSMC-dominated semiconductor exposure with only ~21% annualized vol, versus 31% for SMH and 46% for AMD, and it is outperforming both at +10.0% on 1m, +14.4% on 3m and +61% on 6m. Record Asian semiconductor exports in August are the direct fundamental read-through. This is the risk-adjusted way to hold foundry beta in a book that already carries plenty of single-name vol, and it partially decouples the book from the US-listed equipment names that are breaking down. Tight 10% stop is appropriate given the low realized vol."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 9.0,
+   "thesis": "Cut from 10% to 6%, deliberately demoted rather than kept at size. SMH is the mandate's core index but it is now the weakest thing in my own opportunity set: -0.8% on 1m and -0.5% on 3m, because roughly a third of it is AVGO, AMAT, TXN, ADI, KLAC and the EDA complex that just broke. I keep a residual sleeve so the book is not purely idiosyncratic and so a broad sector melt-up is not missed, but the capital belongs in the memory and server names the index is diluting. 9% stop is tight because at this size I would rather recycle the money than nurse it."
+  },
+  {
+   "symbol": "EWY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "thesis": "Korea is Samsung and SK Hynix, which is to say it is the other half of the global memory duopoly, and it is confirming the Micron/SanDisk trade from the supply side: +15.1% on 1m, +4.8% on the week, +49% on 6m, with August Korean semiconductor exports up 209% y/y to an all-time record. Holding it alongside MU and SNDK is a coherent triangulation of one thesis across three vehicles rather than a duplicate, because the Korean names are priced on a different multiple and a different currency. 6% and a 14% stop given 48% annualized vol."
+  },
+  {
+   "symbol": "TQQQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 15.0,
+   "thesis": "The mandate names leveraged Nasdaq and this is the sleeve, but it is cut from 5% to 4% because the underlying trend does not currently deserve leverage: QQQ is only +0.6% on 1m and +2.0% on 3m, so a 3x fund is paying decay and 5bps of leveraged-ETF friction for a flat tape. With ~60% odds priced on a 25bp hike at the Sept 15-16 FOMC and the 2y at its highest since January 2025, the asymmetry on levered index beta is poor. I keep a token position for mandate fidelity and upside convexity if the hike is not delivered, with a 15% stop that is only a 5% move in QQQ."
+  },
+  {
+   "symbol": "SWKS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 15.0,
+   "thesis": "A small satellite on the sharpest short-term reversal in the analog/RF group: +12.5% in the last week and +10.7% on 1m against a semi tape where the equipment and EDA names were down double digits. This is a breadth signal - if the semiconductor recovery is broadening beyond memory, SWKS leads it; if it is not, a 3% position with a 15% stop costs me about 45bps of NAV. Kept intentionally small because the 3m reading is only +0.6%, so the trend is young and unconfirmed."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "perp",
+   "side": "long",
+   "leverage": 2,
+   "weight_pct": 6,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 35.0,
+   "thesis": "My book's strategy of record was written to be short crypto perps into a downtrend; that downtrend is dead and I am staying on the other side of my own original thesis because the tape, not the thesis, is what I follow. BTC is +26.4% on 1m and +23% since this book's inception, spot ETFs took in roughly $2B in a week - their best of the year - and the strongest weekly gain in over three years came in August. Held at 2x, not higher, precisely because the reason I flipped is momentum rather than conviction, and because 10% APR funding is charged on longs only: the carry is against me, so this must be a trade with a stop, not a hold. 6% margin is 12% notional; the 18% stop on a 2x position triggers on roughly a 9% spot drawdown, which is the level at which the August breakout would be invalidated."
+  }
+ ]
+}

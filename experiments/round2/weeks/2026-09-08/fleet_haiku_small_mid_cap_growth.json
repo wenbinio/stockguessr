@@ -1,0 +1,95 @@
+{
+ "name": "Haiku small/mid-cap growth",
+ "model": "Haiku",
+ "group": "fleet",
+ "strategy": "Rotated small/mid-cap cloud/AI/fintech with reduced tech leverage and raised cash; tactical trim of most-pressured positions (MDB, CRWD, DDOG) and rebalance toward fintech strength (SOFI, UPST) amid rising-yield environment.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "Macro backdrop shifted meaningfully this week: 10-year Treasury yields spiked to 4.80% (highest since Jan 2025), Fed Warsh signaling hawkish stance on inflation, and hot jobs report Friday triggering risk-off tape. Cloud/software sector pressure evident in DDOG (-10.17%), CRWD (-7.75%), MDB (-18.67%) losses despite intact fundamentals. Rising yields pressure high-duration tech/SaaS valuations, requiring defensive rebalance. Elected to trim most-pressured positions (MDB 6.66%\u21921%, CRWD 8.51%\u21925%, DDOG 7.6%\u21924%) and raise cash from 15% to 30% for dry powder. Fintech plays (SOFI, UPST) showing relative strength with less rate sensitivity; increased SOFI 8%\u219210% and UPST 3%\u21925%. Maintained core small/mid-cap mandate via ARKK, IWM, TQQQ with protective 12% stops. Book rotated from 85% gross exposure to 70% for improved risk-adjusted positioning.",
+ "positions": [
+  {
+   "symbol": "ARKK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "ARK Innovation ETF remains core small/mid-cap growth holding with concentrated tech/AI/disruptive exposure; outperformed this week (+0.76%) and retains conviction through volatility. Slight trim from 16% reflects macro caution but position remains meaningful for mandate."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "Russell 2000 provides broad small-cap diversification; up 20% YTD. Trimmed 1% from 15% given GuruFocus signal of 51% overvaluation vs. intrinsic value. Retains core weighting but reduced sizing reflects tail risk from Fed tightening."
+  },
+  {
+   "symbol": "TQQQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "3x leveraged Nasdaq ETF provides tech upside leverage but leverage itself creates risk in rising-rate environment where duration matters. Trimmed from 10% to 8% to reduce portfolio volatility and rate-shock exposure while maintaining tactical leverage."
+  },
+  {
+   "symbol": "SOFI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "SoFi showing relative strength (+1.90% this week) and Wall Street bullish reset (Scotiabank Outperform, $25 target vs. current ~$18). Fintech capital-light model less rate-sensitive than cloud SaaS; Kraken deal strengthens crypto/fintech positioning. Increased from 8% to 10%."
+  },
+  {
+   "symbol": "CRWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "CrowdStrike quality cybersecurity play with strong Q2 results, but trimmed 3.5% from 8.51% to reduce concentration risk and take partial profits from earlier rally. Sector rotation pressure and yield sensitivity warrant lighter exposure; FalCon 2026 innovation pipeline justifies retention."
+  },
+  {
+   "symbol": "DDOG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 12.0,
+   "thesis": "Datadog quality SaaS infrastructure play down 10.17% this week on profit-taking and yield shock. Fundamentals intact but trimmed from 7.6% to 4% to reduce software sector concentration; will reassess if valuations normalize post-rate-shock."
+  },
+  {
+   "symbol": "MDB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 1,
+   "stop_loss_pct": 12.0,
+   "thesis": "MongoDB hit hardest (-18.67%) this week; valuation stretch evident. Trimmed dramatically from 6.66% to 1% to free capital for higher-conviction trades and reduce tech database concentration. Token position maintains database-tech exposure while protecting downside."
+  },
+  {
+   "symbol": "SHOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "Shopify reported strong Q1 GMV (+35% YoY) but stock pressured by LLM cost concerns and agentic-commerce skepticism. Trimmed 0.7% to 5%; position retains e-commerce secular growth exposure while acknowledging near-term headline risk."
+  },
+  {
+   "symbol": "UPST",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Upstart fintech lending down 2.2% but faces mean-reversion bounce opportunity if macro clarity improves. Capital-light AI lending model attractive with rates stabilizing. Increased from 3% to 5% to capture beaten-down fintech valuations; mean-reversion opportunity in lending."
+  },
+  {
+   "symbol": "SNOW",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Snowflake data-cloud play up +1.73% this week, showing sector resilience despite software pressure. Light trim to 3% from 2.85% maintains exposure; earnings looming could drive volatility but long-term AI data infrastructure thesis remains sound."
+  }
+ ]
+}

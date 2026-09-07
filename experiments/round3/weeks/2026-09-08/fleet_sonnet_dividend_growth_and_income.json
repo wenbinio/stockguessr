@@ -1,0 +1,66 @@
+{
+ "name": "Sonnet dividend growth and income",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Dividend growth and income expressed a second way: high-current-yield real-assets and defensive income (monthly-pay REIT, midstream energy, utilities, international dividend growers) instead of Round 2's mega-cap AI-tilted quality compounders, plus a small tactical short against the extended gold-miner trade as a portfolio hedge.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 38,
+ "reassessment_note": "The prior Round 3 book ('trend-confirmation sector rotation... harvesting momentum carry rather than dividend yield') had drifted outside my mandate -- it was a momentum/rotation book wearing a dividend manager's name, and it was underperforming for it (+0.30% vs SPY +3.62% and BTC +23.17% since inception). I'm resetting Round 3 back inside the dividend-growth-and-income mandate but as a genuinely different sleeve from my Round 2 book: instead of domestic mega-cap quality growers with AI exposure (MSFT/AVGO/SCHD/JPM/CVX/HD/TLT/XLP), this book leans into current yield and diversification -- a monthly-dividend REIT, midstream energy income tied to the data-center power-demand and LNG-export buildout, defensive utilities that share that same electricity-demand tailwind, and international dividend growers to reduce US mega-cap concentration risk. This week's macro backdrop (August payrolls at 162k, unemployment flat at 4.1%, long yields pinned near 5% on hawkish Fed repricing) argues against duration-sensitive bond proxies (why Round 2's TLT is being left alone rather than added to here) and favors real, cash-generating assets with pricing power. Gold has had an enormous run and is now showing a rollover (spot gold -1.39% and GDX -2.20% this week off news of easing energy-price pressure and flattish yields), so a modest short hedges the book's income sleeve against a genuine trend break without abandoning the dividend mandate the way the old momentum book did. Zero symbol overlap with the current Round 2 book, well clear of the 50% novelty threshold.",
+ "positions": [
+  {
+   "symbol": "O",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Realty Income, 'The Monthly Dividend Company,' 674 consecutive monthly dividends, 5.27% forward yield, 98.8% portfolio occupancy. A real-assets income anchor that is a genuinely different expression of dividend growth than Round 2's mega-cap tech tilt; sized moderately since the REIT sector remains rate-sensitive in a hawkish-Fed tape (analyst targets were just trimmed, e.g. Barclays to $65) so I'm not overweighting duration risk here."
+  },
+  {
+   "symbol": "KMI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 22.0,
+   "thesis": "Kinder Morgan midstream pipelines: 3.73% yield, Q2 beat ($4.48B revenue, $867M earnings), export-driven Permian volume growth, and a business model (fee-based, long-life gas infrastructure) that benefits from the LNG-export buildout and rising natural-gas demand for AI data-center power generation without behaving like a rate-duration play the way TLT does."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Utilities Select Sector SPDR: classic defensive dividend income, now with a genuine secular growth kicker from data-center electricity demand that dividend investors did not historically get from this sector -- a different way to harvest 'AI-cycle exposure' than owning the chipmakers directly, and a ballast against the tech-sleeve volatility that hit MSFT/AVGO this week."
+  },
+  {
+   "symbol": "VYM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Vanguard High Dividend Yield ETF: broad, diversified high-current-yield exposure across financials, healthcare, staples and energy payers that is deliberately not concentrated in the same mega-cap names as the Round 2 book, giving this sleeve a materially different composition while staying squarely inside the income mandate."
+  },
+  {
+   "symbol": "IDV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "iShares International Select Dividend ETF: international dividend growers give geographic diversification away from a US-mega-cap-concentration risk that both the old Round 3 book and my Round 2 book share, and are less directly exposed to the US hawkish-Fed/long-yield repricing that is pressuring US rate-sensitive income names this week."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Tactical short against gold miners after an enormous multi-month gold rally (spot near $4,477) that is now rolling over (-1.39% on the week, GDX -2.20%) alongside flattish energy prices and a hawkish, higher-yield backdrop that reduces the safe-haven/rate-cut bid for gold. This mirrors the risk-management style my Round 2 book description calls for (a tactical short against the most overextended trade) applied to a different, currently more overextended target, and it funds/hedges the book's income sleeve rather than replacing it -- consistent with a dividend-and-income manager using a small hedge, not running a momentum book."
+  }
+ ]
+}

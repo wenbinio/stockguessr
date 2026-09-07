@@ -1,0 +1,39 @@
+{
+ "name": "Sonnet quality compounders",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Exit the rate-cut-dependent carry longs now that the jobs print has flipped Fed pricing toward a hike, keep only the idiosyncratic biotech M&A position, add the mandate's short pillar (gold miners, a crypto major) where the momentum breakdown is now live, and sit mostly in cash into the Sept 16 FOMC.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 61,
+ "reassessment_note": "This book's core premise -- imminent Fed rate cuts driving a carry trade in regional banks, financials and small caps -- was directly contradicted by this week's data. The August jobs report (released Sept 4-5) beat estimates hard enough that Fed funds futures for the Sept 16 FOMC swung from a plurality favoring a cut to now pricing better-than-even odds (~58%) of a HIKE to 3.75-4.00%, an 8-point swing in a single day. KRE and IWM were already leaking lower into the print (KRE -1.00%, IWM -1.32% on this book's marks) and broader coverage this week was explicitly framing strong jobs data as bad news for risk assets ('stocks close lower... stir rate-hike jitters'). There is no case for holding a rate-cut-carry book into a meeting the market now thinks is more likely to hike than cut, so I am exiting KRE and XLF outright and closing the IWM long rather than let the same repricing that already knocked ~1-1.3% off them keep compounding. I am keeping XBI, but re-underwriting it as a standalone biotech M&A idea rather than a rate-cut play -- Eli Lilly's newly announced acquisition this week is fresh evidence the large-pharma consolidation cycle is alive independent of Fed policy, and XBI is still +3.66% on this book's own entry. In place of the exited carry longs I am adding the mandate's other pillar -- momentum-breakdown shorts in gold miners and crypto majors -- with actual evidence behind it this week rather than waiting: Bitcoin broke back below $80k specifically on the rate-hike repricing, with BTC ETF net inflows collapsing 76% in a single day, and gold/gold-miner equities carry direct negative sensitivity to rising real-rate expectations (GDX short already fired once via this book's standing order this cycle, so the setup has precedent). Raising cash to 61% (from 36%) reflects that the FOMC outcome is now a genuine coin-flip rather than a settled cutting cycle, and this is not the week to be levered into that uncertainty.",
+ "positions": [
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Re-underwritten as an idiosyncratic biotech M&A position rather than a rate-cut trade. Eli Lilly announced a major acquisition this week, fresh evidence the large-pharma consolidation cycle is active regardless of Fed path, and XBI is already +3.66% since this book's Aug 10 entry. Sized down from a full-carry position to reflect that the book's original rate-cut rationale for holding it no longer applies, keeping only the M&A-driven conviction. Stop at -12% protects against a broader risk-off wave dragging high-beta biotech down with everything else; take-profit at +30% banks the M&A-cycle gain if it runs."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The Sept 4-5 jobs report was strong enough to flip Fed funds futures for the Sept 16 FOMC from favoring a cut to pricing better-than-even odds of a hike (~58% vs ~42% the prior day). Gold and gold-mining equities are directly and inversely sensitive to rising real-rate expectations, and GDX carries operating leverage to the bullion price, amplifying the move. This book already has precedent for this exact trade (one standing-order GDX short already filled this cycle); reinstating it now that the rate-repricing catalyst is concrete rather than anticipatory. Stop at -12% caps the risk if the Fed instead confirms a cut and gold rallies; take-profit at +25% locks in the breakdown if real yields keep rising into the meeting."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Bitcoin broke back below $80k this week specifically on the rate-hike repricing that followed the strong jobs report, with BTC ETF net inflows collapsing 76% in a single day -- a concrete momentum breakdown in the crypto-major carry trade that this mandate's short pillar is built to capture. Sized moderately (12%, no leverage) given crypto's volatility and the fact this book is up big on a long-BTC benchmark comparison in its own packet, i.e. the broader crypto trend is still up and this is a tactical fade of the week's specific breakdown, not a structural bear call. Wide 15% stop reflects crypto's volatility; 30% take-profit reflects how fast crypto momentum breaks can run once they start."
+  }
+ ]
+}

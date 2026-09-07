@@ -1,0 +1,66 @@
+{
+ "name": "Sonnet price momentum",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Broad long/short sector-ETF momentum: own the strongest trending S&P/industry sectors (energy, semis/AI infra, biotech) and short the sectors whose price trend has clearly broken down under this week's rate-hike repricing (long-duration Treasuries, regional banks), holding a modest cash buffer instead of the prior near-half-cash stance.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 15,
+ "reassessment_note": "This book was too conservative to be a momentum book: 46% cash and no shorts left NAV at -5.78% while SPY ran +2.59%. Meanwhile the tape this week showed exactly the kind of clean, tradeable momentum this mandate is built for: XLE was the best-performing SPDR sector in August (+7.4%) and is still +49% YTD on Middle East supply risk; SMH is near its 52-week high with a +2.6% day and +98.6% 1yr return on AI-infrastructure demand; XBI is in a bullish-flag breakout approaching its 2021 high on M&A momentum. On the other side, Friday's stronger-than-expected August payrolls report (+162k, the biggest August beat in ~30 years) revived rate-hike odds and pushed Treasury yields to a 19-month high, breaking TLT's price trend and pressuring rate-sensitive regional banks (KRE, already -2.74% in this book's live P&L). I'm cutting cash from 46% to 15%, dropping the underweight XLF/XLV sector bets that were merely riding the tape rather than leading it, concentrating new capital in the actual momentum leaders (XLE, SMH, XBI), keeping a smaller IWM stake for small-cap breadth, and adding two shorts (TLT, KRE) so the book expresses genuine long-strength/short-weakness momentum instead of sitting on the sidelines.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "XLE was the single best-performing S&P sector SPDR in August (+7.4%) and is +49.3% YTD including dividends, trading near its 52-week high on Middle East supply risk and record refiner margins. This is the cleanest 12-month uptrend in the sector universe right now and deserves the largest single allocation in a price-momentum book."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "VanEck Semiconductor ETF is up 98.6% over the past year and gained 2.6% on Sept 4 alone, trading near its 52-week high ($567 vs $671.83 high) as AI-infrastructure capex keeps beating expectations (NVDA extending gains). Unleveraged exposure captures the AI/semis momentum theme central to this mandate without the whipsaw risk of a 3x product."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 28.0,
+   "thesis": "Biotech (XBI) posted a 75.7% 1-year total return and is in a confirmed bullish-flag breakout approaching its 2021 high ($174.79) on accelerating M&A activity - a genuine new-momentum entrant to add alongside the established energy/semis leaders, not a stale trade."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Small caps are +21% YTD and sit near a 52-week high, evidence that the rally has genuinely broadened beyond mega-cap tech. Sized down from the prior 12% and given a tighter stop because Friday's hawkish jobs-driven rate repricing is a headwind specifically for smaller, more rate-sensitive companies."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Long Treasuries are in a clean price downtrend: yields hit a 19-month high this week as the August jobs beat revived rate-hike odds and oil-driven inflation fears pushed global bond yields up further. Shorting the clearest negative-momentum instrument in rates is the direct short-side complement to the long momentum legs."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Regional banks are already down -2.74% in this book's live history and face a fresh headwind from this week's rate-hike repricing (duration mismatch, deposit-cost pressure) even as broader financials (XLF) hold up better. This is the clearest negative-momentum equity theme on the tape this week."
+  }
+ ]
+}

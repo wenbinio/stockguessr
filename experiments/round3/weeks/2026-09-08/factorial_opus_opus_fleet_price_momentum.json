@@ -1,0 +1,102 @@
+{
+ "name": "Opus-fleet price momentum",
+ "model": "opus",
+ "group": "factorial",
+ "strategy": "Concentrated long-only US price momentum in the four themes actually making new highs into 2026-09-04 - refining, memory/AI hardware, biotech and Taiwan semis - holding the specific leaders rather than the diluted sector ETFs, with trend-break stops on every leg.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "My themes were right but my expression of them was wrong, and that is why the book is +1.93% against SPY +3.62%. Three changes. (1) Energy: I owned XLE/IEO/ERX, which are E&P- and integrated-heavy. Measured to the 2026-09-04 close, E&P is up 12-20% over three months while the refiners are up 40-49% - VLO +45.5%, MPC +48.8%, PSX +40.1%, all three sitting at 52-week highs. WebFetch on Yahoo's VLO and MPC news pages confirms this is earnings-confirmed, not a squeeze: VLO +120.5% YTD with consensus looking for a ~310% y/y EPS increase next quarter on a favourable refining backdrop, MPC +141.9% YTD and +30% since its last print on Q2 EPS of $17.73. I am selling the diluted energy wrapper and buying the leaders. (2) Ballast: QQQ, IWM and XLV were 28% of the book in things with 0-5% three-month momentum, and all three are flat-to-down over the last 16 sessions. Friday's August payroll print (162K vs a prior -23K, unemployment 4.1%) pushed yields and the dollar up and repriced the Fed hawkishly, which is exactly the wrong tape for long-duration index beta. All three are gone. (3) I am adding the memory/AI-hardware complex, which just re-accelerated: MU and DELL carry the two highest 12-1 momentum scores in my 306-name screen and both thrust hard on 09-03/09-04 while broad SMH is still 15% below its high - so I own the names, not the ETF. Cash comes down from 15% to 10%. Net effect on the weighted book: 12-1 momentum goes from roughly +40% to +145%, three-month from +14% to +33%, and because refiners have run at -0.29 correlation to SPY over the last 120 days the portfolio still only carries 0.66 beta at ~20% annualised vol. I am also deliberately keeping WebSearch out of this note: the session's 200-call search budget was already exhausted, so all news verification above was done with WebFetch, and all price/momentum work is my own computation off daily closes through 2026-09-04.",
+ "positions": [
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The best risk-adjusted momentum name in my screen: 12-1 momentum +99.1% on only 35% annualised vol, a 2.75 return-to-vol ratio, +45.5% over three months and +22.4% over one month, closing 2026-09-04 exactly at its 52-week high. The advance is orderly, not parabolic - +8.5% over the last 16 sessions with no single blow-off day - which is the signature of trend rather than squeeze. Fundamentals confirm the tape: +120.5% YTD with the street modelling a ~310% y/y EPS increase for the coming quarter on a favourable refining backdrop. Largest single leg because it combines the highest 12-1 score in the refining sleeve with the lowest realised vol. The 13% stop is roughly six daily sigmas at 35% vol, so it triggers on a genuine crack-spread break rather than noise."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The strongest recent acceleration in the refining sleeve: +48.8% over three months and +30.3% over one month, +5.4% in the last week, closed 2026-09-04 at its 52-week high and 21% above its 50-day average. +141.9% YTD and up ~30% since its last earnings report on Q2 EPS of $17.73, so the price trend is being paid for by realised earnings rather than multiple expansion. Sized just under VLO because its 12-1 score (+69.5%) is lower and it is the more extended of the two above trend. Held alongside VLO and PSX as a single 34% refining sleeve - the three run at 0.85-0.89 correlation to each other, so I am sizing them as one bet, but that bet has been -0.25 to -0.32 correlated to SPY over 120 days, which is why I am willing to make it this large."
+  },
+  {
+   "symbol": "PSX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The lowest-volatility way to own the refining trend - 31.3% annualised vol against 34.6% for VLO and MPC - while still delivering +40.1% over three months, +24.8% over one month and +4.5% in the last week, finishing 2026-09-04 within 0.4% of its 52-week high. Smallest of the three refiners because its 12-1 momentum (+60.0%) is the weakest of the sleeve; it is here to lower the sleeve's realised volatility rather than to add a new idea. Same 13% stop across all three so the whole sleeve exits together if the crack-spread regime turns."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The single highest-ranked momentum signal in the entire 306-name universe: 12-1 momentum of +610% with a 7.51 return-to-vol ratio, and a clean two-year price path from $89 to $1,016 with no gap or split artefact - a real memory supercycle, not a data error. Crucially it is re-accelerating right now rather than rolling over: +6.3% in the last two sessions and +9.0% on the week, and memory was the standout group on 2026-09-04 (SanDisk +11.9%) even as the S&P fell 0.38% on the hot payroll print. Capped at 10% because realised vol is 98% annualised and it is still 16% below its own 52-week high; the wide 20% stop is deliberately about three daily sigmas so a normal shakeout does not knock me out of the strongest trend I can find."
+  },
+  {
+   "symbol": "DELL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The cleanest breakout in the screen: positive on every horizon I measure - 12-1 +249.9%, six-month +259.5%, three-month +33.1%, one-month +19.8%, one-week +14.9% - closing 2026-09-04 at a 52-week high and 107% above its 200-day average, with a 3.4 return-to-vol ratio. It just V-reversed a 13% drawdown into a new high in three sessions, which is trend continuation rather than exhaustion. I own it instead of adding more SMH because broad semis are still 15% below their high and flat over 16 sessions, and DELL's correlation to MU is only 0.37, so the AI-server exposure is genuinely additive to the memory leg rather than a duplicate of it. 8% because 77% annualised vol does not deserve more."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 11.0,
+   "take_profit_pct": 26.0,
+   "thesis": "Retained as the core diversified momentum sleeve and still the highest return-to-vol ratio of any broad ETF I screen: 2.37, on 12-1 momentum of +66.1% and +27.4% over three months at only 29.3% annualised vol, sitting 3.4% below its 52-week high. Trimmed from 19% to 13% for two reasons: the thrust is decelerating at the margin - just +0.9% on the week and -0.9% over two sessions against +27% over three months - and biotech is the most duration-sensitive thing I own into a hawkish rates repricing. It stays the largest non-refining leg because nothing else offers this much trend per unit of volatility. Tighter 11% stop than the single names since a 29%-vol ETF that breaks 11% has genuinely broken."
+  },
+  {
+   "symbol": "BBH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 24.0,
+   "thesis": "Replaces part of my FBT position with the large-cap end of biotech, which currently has the better near-term thrust: +28.3% over three months and +14.5% over one month against XBI's +27.4% and +6.0%, on comparable 26.6% volatility, and it is up 10.6% over the last 16 sessions versus XBI's 4.1%. It is also far less market-coupled than XBI - 0.30 correlation to SPY against XBI's 0.48 - so it carries the biotech trend with less index beta at a moment when index beta is the thing being repriced. Small at 6% because it overlaps XBI at 0.75 correlation; this is a tilt within the biotech sleeve, not a second bet."
+  },
+  {
+   "symbol": "AMGN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 24.0,
+   "thesis": "Single-name confirmation of the large-cap biopharma trend and the least correlated leg in the book to my two big themes: 12-1 momentum +47.7%, +25.8% over three months, +8.6% over one month, 1.6% below its 52-week high on only 26.6% annualised vol, with a 1.73 return-to-vol ratio. Correlation is -0.20 to VLO, -0.09 to MU and just 0.19 to SPY, so at 5% it does real work reducing portfolio variance while still being a momentum leader in its own right rather than a defensive hedge. This is the only place I keep meaningful pharma exposure after cutting XLV, whose 12-1 momentum of +21.8% made it the weakest holding in the old book."
+  },
+  {
+   "symbol": "EWT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 28.0,
+   "thesis": "The best-behaved way to own the semiconductor trend right now. Taiwan closed 2026-09-04 at a 52-week high with 12-1 momentum of +79.9% and positive returns on every horizon - six-month +61.4%, three-month +14.4%, one-month +10.0%, one-week +4.0% - on 38.3% vol for a 2.57 return-to-vol ratio, while US-listed SMH is still 15.2% below its high and negative over three months. When the foundry complex is making highs and the US semi ETF is not, I want the one making highs. It does add beta - 0.77 correlation to SPY - which is exactly why it is capped at 8% and carries a 12% stop rather than the wider stops I give MU and DELL."
+  },
+  {
+   "symbol": "TGT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 28.0,
+   "thesis": "A genuine momentum leader outside all three of my main themes: 12-1 +63.8%, six-month +38.5%, three-month +35.2%, one-month +12.7%, 3.2% below its 52-week high on 33% vol for a 2.1 return-to-vol ratio - positive on every horizon I measure. Its value here is that it is essentially uncorrelated with everything else I hold: 0.06 to SPY, -0.13 to VLO, -0.18 to MU, 0.08 to XBI. Deliberately held at only 6% because broad consumer discretionary was among the weakest groups on 2026-09-04, so this is a single-name turnaround trend running against its own sector rather than with it, and the 12% stop reflects that lack of group support."
+  }
+ ]
+}

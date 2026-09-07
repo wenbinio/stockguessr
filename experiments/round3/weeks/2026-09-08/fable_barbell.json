@@ -1,0 +1,80 @@
+{
+ "name": "Fable Barbell",
+ "model": "fable",
+ "group": "flagship",
+ "strategy": "Cross-sectional sector-momentum long/short: long the top-5 non-AI momentum ETFs (biotech, regional banks, industrials, health care, energy) vs short the bottom-3 broken downtrends (discretionary, homebuilders, cannabis), correlation-deduped, with hard stop/take-profit discipline, re-ranked weekly.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 36,
+ "reassessment_note": "The weekly re-rank makes one swap and one resize; everything else holds on evidence. SWAP: GDX (6%) exits and XLE (8%) enters. Both are commodity-beta sectors but the Sept 4 jobs print (+162k vs ~53k, hike odds 49%->58%, 2yr ~4.40%, 10yr ~4.80%, dollar up) pushes them in opposite directions: gold fell ~1.4-2% to ~$4,380-4,480 as real yields and the dollar rose, and gold miners were among the day's worst groups -- the second violent reversal in two weeks for a leg I had already cut and tightened after Warsh's Jackson Hole speech, so the momentum-exhaustion read is now confirmed rather than suspected. XLE meanwhile was August's top Select Sector fund (+7.4%), made a 52-week high on Monday's US-Iran strikes and the Hormuz tanker attack, sits at $64.06 vs a $65.52 high with WTI ~$91 and Brent ~$96, and is the sector the sell-side names as an outperformer if the Fed hikes -- the same macro shock that hurts gold helps energy, so the swap raises the book's alignment with the regime without adding a new factor. It also keeps the correlation dedupe honest: one commodity-beta long, not two. RESIZE: XHB short 5%->6%. The thesis strengthened this week -- 10yr at 4.8% (from 4.1% at the start of the year), 30-year mortgage 6.7%, new home sales at the lowest level since January, XHB -8.5% over one year and 16% below its 52-week high -- and Friday's +1% bounce is a better short entry inside an intact downtrend. HOLDS: XBI at 12% is the strongest long in the book (+76% YTD, bull-flag breakout at $163.8 toward the 2021 high of $174.8) and the mandate's catalyst engine. KRE at 10% (+2.3% on the leg, higher highs since the June breakout) benefits from a Fed that keeps the front end high while the 2s/10s curve stays positive ~+40-50bp. XLI at 9% was the best sector on Friday and stays the least consumer-levered cyclical. XLV at 8% keeps the health-care rotation; its Friday weakness is a one-day give-back inside a leadership trend. XLY short at 7% was strengthened by Lululemon's -18% guidance cut and discretionary being the weakest sector on the day. MSOS short stays at 4% -- the June DEA hearing catalyst I flagged has passed, the ETF is still ~30% below its June high, and the -12% stop covers the Friday +3% squeeze; at 12bps per side under $15 it is not worth churning. NET: gross rises 61%->64%, longs 45->47, shorts 16->17, cash 39->36 still earning 4% into PPI 9/10, CPI 9/11 and the FOMC 9/16. Round 3 novelty: zero ticker overlap with my Round 2 book (NVDA/AVGO/GEV/ANET/BRK-B/KO/MRK/JNJ/XLU/GLD), so same-direction gross-weight overlap is 0%.",
+ "positions": [
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "thesis": "Top of the cross-sectional rank: +76% YTD, closed $163.81 on 9/4 after a bull-flag breakout with the 2021 high at $174.79 as the next reference, and health care/biotech is the group money rotated into as tech leadership narrowed. Largest long because it is the least rate-sensitive of the leaders (funding-cost narrative already priced when the Fed held at 3.50-3.75%) and the sector's catalysts are idiosyncratic (trials, M&A), which is what a hawkish macro week rewards. -15% stop below the flag base."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "thesis": "Uptrend of higher highs since the June breakout, +2.3% on the current leg to $75.27, and the net-interest-margin story improves under a Fed that keeps the front end at 3.50-3.75% or higher while the 2s/10s curve stays positive (~+40-50bp with the 10yr at 4.8%). KBW calls 2026 a banner year for regionals. Second-largest long as the cleanest expression of rates-higher-for-longer that is also in a confirmed price trend. -15% stop."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "thesis": "Industrials were the best-performing sector on the Sept 4 jobs day and remain near highs; the leg is flat at $175.27 but the sector is the least consumer-levered cyclical and the one most directly fed by grid/power/defense capex (GE Vernova's Venezuela mandate this week is a case in point). Held at 9% because its 1-month momentum trails XBI/KRE and I do not want to add cyclical beta into the FOMC. -15% stop."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "thesis": "Health care is the rotation destination of the summer -- 'healthcare rules State Street's top 5 ETFs' -- and XLV is the large-cap, lower-volatility way to hold that trend next to XBI. Friday's sector-worst day was a one-day give-back inside a leadership trend, not a break. Kept at 8% rather than more because it is correlated with XBI and I dedupe the pair by keeping their combined weight at 20%. -15% stop."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New entrant replacing GDX. XLE was the top Select Sector fund in August (+7.4%), made a 52-week high on Monday's US-Iran strikes and the Hormuz tanker attack, and closed $64.06 on 9/4 vs a $65.52 high with WTI ~$91 and Brent ~$96; 1-year total return +49%. The same hawkish-Fed, stronger-dollar shock that broke gold on Friday helps energy (oil is the inflation the Fed is fighting), so the swap moves the commodity-beta sleeve onto the right side of the regime. Sized at 8% (larger than GDX's 6%) because the trend is intact rather than exhausted, with a -12% stop below the August breakout area and a +20% take-profit because geopolitical spikes are the kind of momentum that reverses on a ceasefire headline."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Weakest large sector on the tape: bottom-3 rank, -1.33% Friday to $114.91 (52-week range $105-$125), flat total return over a year while SPY is +13%, and Lululemon's -18% guidance cut on China weakness plus FICO's -17% show the consumer-cyclical names breaking one by one. A Fed deliberately keeping financing costs high is the macro tailwind for this short. +1.44% on the leg; -12% stop, +20% take-profit kept."
+  },
+  {
+   "symbol": "XHB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Resized up from 5% to 6%. The 10-year moved to 4.8% (from 4.1% at the start of the year), the 30-year mortgage is 6.7%, new home sales just printed the lowest level since January, and XHB is -8.5% over one year and 16% below its $123 high at $103.25. Friday's +1% bounce inside that broken downtrend is the entry I want for a slightly larger short. Kept smaller than XLY because homebuilders have the higher squeeze beta on any dovish surprise at the 9/16 FOMC. -12% stop, +20% take-profit."
+  },
+  {
+   "symbol": "MSOS",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Smallest short and unchanged. The fading-rescheduling downtrend is intact -- MSOS at $5.11 is ~30% below its June 2026 high of $7.25 despite Schedule III having been finalized in April -- and the June DEA adult-use hearing catalyst I had flagged as squeeze risk has now passed without lifting the tape. Friday's +3.2% bounce is inside the -12% stop. Not resized because, under $15/share, it costs 12bps per side to trade and a 1-2% weight change is not worth the friction; it stays as the cleanest idiosyncratic (non-macro) downtrend in the short sleeve."
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "name": "Opus 5 dispersion",
+ "model": "opus",
+ "group": "opus5",
+ "strategy": "Beta-matched dispersion: a 57.5% long basket of twelve large caps rescreened on 126-day residual-to-SPY volatility, pairwise residual correlation (avg |rho| 0.12, max 0.35) and positive residual drift across nine sectors, volatility-tempered rather than strictly equal-weighted, hedged with a 38% SPY short sized to the basket's measured 0.36 beta contribution (QQQ dropped because it minimises nothing for this basket), leaving 4.5% cash and net index beta of roughly zero.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 4.5,
+ "reassessment_note": "I re-measured my own book and found it was not doing what its mandate says. Regressing every leg on SPY over the last 126 sessions, the 51% long basket carries only 42 beta-units while the 28% SPY + 19% QQQ hedge carries 56.3 (QQQ's beta to SPY is 1.49, not 1.0) - so the book has been running roughly -14% net short index beta, not the 'roughly zero' of record. That is a macro bet I am not paid to take, and it is exactly why the current leg is net negative (+30bps from the longs, -59bps from the shorts) while my longs were mostly right. Second problem: the long basket had drifted into one macro factor rather than twelve idiosyncratic ones. RCL (-9.5% on the leg), GM, COF, DLTR and BA are all consumer-cycle/credit expressions, and this week's tape priced that factor hard - RCL -5.1%, CCL -5.1%, MAR -4.2%, LULU -18% on a guidance cut. That was a factor loss, not idiosyncratic noise, and a dispersion book should not own it four times. Third: the macro backdrop is now genuinely correlation-raising. Warsh's Jackson Hole speech put a September 16 hike at a coin flip, Friday's 162k payrolls (vs 55k expected) pushed yields up, and Cboe's implied-dispersion measure is falling into that. In a rising-correlation regime the residual spread is all the return there is, so I want the residual spread to be as clean as possible and the index leg to be exactly the right size. Fixes: (1) hedge by measured beta, not by dollars, and drop QQQ - a grid search over hedge sizes shows minimum residual vol at ~33-38% SPY with zero QQQ for this basket, since only one long is a software name; (2) rescreen with a residual-momentum filter (63-day and 21-day cumulative residual return) so I stop owning names whose idiosyncratic drift is persistently negative - the screen alone would have kept buying HUM at -25.5% residual over three months; (3) volatility-temper the weights instead of flat 4.25%, so MRNA's 161% idiosyncratic vol does not silently become a third of the book's risk. Result: weighted average idiosyncratic vol 50.8%, average pairwise residual correlation 0.12 (was 0.15, max was 0.62 between OXY and CF), portfolio vol ~10.5% annualised, net SPY beta between -3.9 and +5.8 depending on the estimation window rather than -14.3. Turnover cost is about 2bps of NAV at equity commissions, which is not a reason to keep an unintended macro position. Kept from the old book: MRNA, CHTR, NEM - the three legs whose idiosyncratic drift is genuinely alive.",
+ "positions": [
+  {
+   "symbol": "MRNA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3.0,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The single most idiosyncratic large cap in the market right now: 161% residual-to-SPY volatility, essentially none of it explained by the index. The Merck/Moderna individualised cancer vaccine data in late August re-rated the equity from ~$63 to ~$145 and the FDA cleared the 2026-27 COVID formulas on Aug 27; a $2.6bn convertible now funds the oncology build. I already own this at $138.89 and it is +4.8%. But I am cutting the weight from 4.25% to 3.0% rather than adding: at 161% idio vol a flat weight would make one name a third of the book's risk, and Rothschild's Sept 4 valuation downgrade is a reminder that a stock that tripled in three weeks can retrace as violently as it rose. Small size, 25% stop, 45% take-profit to bank a parabolic if it keeps going - the dispersion payoff here is the option-like idiosyncratic distribution, not the direction."
+  },
+  {
+   "symbol": "TEAM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4.0,
+   "stop_loss_pct": 25.0,
+   "thesis": "88.6% residual vol on a 0.66 beta - the highest idiosyncratic content available in software with barely more than half the index's directional exposure. FY26 revenue grew 26% with losses down 79%, and the August print flipped the narrative from 'AI disrupts seat-based enterprise software' to 'Atlassian monetises AI', with BTIG to $230 and Citi to $225; +42% cumulative residual return in the last month. This is my only software leg on purpose: every other software candidate I tested (VEEV 0.75, NOW 0.74, DOCU 0.69, CRM 0.68, HUBS 0.68) has a residual correlation to TEAM above 0.6, so a second one would be one factor bet wearing two tickers, which is precisely the mistake I am correcting this week. 4.0% rather than 5% because of the vol."
+  },
+  {
+   "symbol": "CHTR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4.5,
+   "stop_loss_pct": 20.0,
+   "thesis": "The purest dispersion asset in the book: 65.4% residual volatility on a beta of 0.04 - it is almost mathematically uncorrelated with SPY, so nearly all of its variance is mine to harvest and none of it is index risk I have to hedge. The Cox close in mid-August created a 38-million-subscriber operator at a 3.95x P/E with record short interest and a CFO transition on Oct 15 - a genuine two-sided idiosyncratic situation where deleveraging and integration news dominate anything the Fed does on Sept 16. +35% cumulative residual return over three months. Held from the prior leg at $150.30; the thesis is intact and re-entry is nearly free."
+  },
+  {
+   "symbol": "NEM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 20.0,
+   "thesis": "Gold miners are the classic low-mutual-correlation sleeve and this one is running: +21.7% in a month, +24.9% cumulative residual return over three months, 41.9% idio vol. Its residual correlation to every other long here is between -0.24 and +0.35, and it is negatively correlated with CHTR - it hedges the book from inside the long side. It also carries the one exposure that pays if the Fed's inflation problem turns out to be worse than the hike currently priced. Sized up from 4.25% to 5.0% because its idiosyncratic vol is nearer the basket average than MRNA's or TEAM's. Wide 20% stop: gold-miner corrections are violent and I do not want to be shaken out of a working idiosyncratic trend."
+  },
+  {
+   "symbol": "CF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 18.0,
+   "thesis": "Nitrogen is driven by natural gas spreads and geopolitical supply, not by the S&P: measured beta is negative (-1.67 raw, which I do not lean on, but the sign is telling) and residual correlation to the rest of this basket sits between -0.15 and +0.17, the second-lowest in the book. H1-26 net earnings $1.34bn on $2.18bn adjusted EBITDA with tight global nitrogen markets, a 20% dividend raise in July, the Blue Point One low-carbon ammonia JV with JERA and Mitsui broke ground in August, and Iran-related supply disruption is tightening the market further. At 9.9x earnings the downside is bounded by cash generation. Held from the prior leg (+3.2%) and one of only three legs I am keeping."
+  },
+  {
+   "symbol": "CEG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 20.0,
+   "thesis": "Utilities is the sector my old book had no exposure to at all, and CEG is the highest-idiosyncratic-content way into it: 43.9% residual vol on a 0.85 beta, driven by nuclear PPA pricing and datacenter contracting rather than by the ten-year yield that moves the rest of the sector. Q2 adjusted operating EPS $2.55 (+$0.64 y/y) with FY guidance raised to $11.50-12.50, nearly 1GW of new long-term nuclear contracts signed, the Texas gas plant sold to LS Power for $860m, and the Three Mile Island restart with Microsoft. +21.3% residual over three months and +4.9% on Sept 4 alone. Its only correlation worth noting is 0.35 to NEM, my highest pair and still inside tolerance."
+  },
+  {
+   "symbol": "GPN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 20.0,
+   "thesis": "My financials slot, chosen over COF specifically because I want idiosyncratic vol, not consumer credit beta into a possible hike. 38% residual vol, +26.3% cumulative residual return over three months, off a $61 low toward $95. The Worldpay integration is running ahead of schedule and Genius adoption is accelerating; Q2 delivered 4% adjusted net revenue growth and 12% adjusted EPS growth even after management cut the annual forecast on Middle East-linked uncertainty. That guidance cut is the idiosyncratic risk and it is already in the price at a 4-handle discount to the $103 consensus target. Residual correlation to my other eleven legs peaks at 0.28."
+  },
+  {
+   "symbol": "MELI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 18.0,
+   "thesis": "Latin American ecommerce, fintech and logistics is a demand cycle the FOMC does not set: 38.1% residual vol, 0.87 beta, and residual correlation to my US industrial and materials legs between -0.15 and +0.01. It is up 21% over three months (+17.8% of that residual) and consolidating just under $2,000 rather than extending, which is where I would rather add. This is the leg that keeps the basket from being twelve expressions of the US consumer and US rates, which is what the old book had quietly become."
+  },
+  {
+   "symbol": "DG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 15.0,
+   "thesis": "The trade-down winner, and deliberately the opposite side of the consumer trade that just cost me money in RCL. This week the tape said the discretionary consumer is cracking - LULU -18% on a cut, RCL -5.1%, CCL -5.1%, MAR -4.2% - and DG put up +8.7% of cumulative residual return over the same five sessions and +31.2% over three months, the strongest residual drift in my entire screened pool. 36.6% idio vol on a 0.57 beta. It replaces DLTR, which is the same trade with half the residual momentum (+14.0% vs +31.2%) and would be redundant next to it. Tighter 15% stop because the entry is into strength."
+  },
+  {
+   "symbol": "HII",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 18.0,
+   "thesis": "Naval shipbuilding is a multi-decade contracted backlog priced off Navy procurement, not the business cycle - which is why HII's residual correlation to every other leg in this book runs between -0.13 and +0.09, the lowest average of the twelve. 37.6% idio vol on a 0.66 beta. Q2 shipbuilding sales +16% y/y with $5.27 EPS, a $2.2bn surveillance/tracking task order and a $336m submarine materials award, at 17x earnings against a $368 consensus target. It has given back from $324 to $286 since early August on no company-specific news, so I am entering the idiosyncratic pullback rather than the extension. It replaces BA, whose residual drift over the last month was -4.3%."
+  },
+  {
+   "symbol": "SLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.5,
+   "stop_loss_pct": 18.0,
+   "thesis": "My largest weight because it is my best decorrelator: SLB's maximum residual correlation to any other leg in this book is 0.17, the lowest of every candidate I screened. 37.5% idio vol on a 0.62 beta, and the story is no longer only oil - the $3.4bn Kelvion acquisition pushes it into AI datacenter thermal management, on top of the S&P Global upstream software deal, the PDVSA data agreement and the Brunei Shell restoration work. It is also the one leg that pays if the Middle East supply disruption that is driving the Fed hawkish gets worse, which makes it a hedge against the correlation shock that is the main risk to everything else here. Up from $46 in late June to $57.51 with +9.2% residual in the last month, and analyst targets at $62-66. It replaces OXY, whose residual drift is -2.9% over three months and whose 0.62 residual correlation to CF was the worst pair in my old book."
+  },
+  {
+   "symbol": "DE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.5,
+   "stop_loss_pct": 15.0,
+   "thesis": "Second-largest weight because it has the lowest idiosyncratic vol here (32.4%), so an equal risk contribution needs more dollars - that is the volatility-tempering the old flat-4.25% book did not do. The agricultural replacement cycle is turning: Q3 on Aug 20 showed net sales +6% with 14.4% operating margins led by Construction & Forestry, Evercore upgraded to Outperform at $813 on North American replacement demand returning, and the stock has broken to $693 near its 52-week high with +9.2% of residual return in the last five sessions alone. Residual correlation to my software leg is -0.24 and to MELI -0.10. The UAW contract rejection is the idiosyncratic risk and it is a 2027 negotiation, outside this holding window. 15% stop given the entry near highs."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 38.0,
+   "thesis": "The index leg, and its size is the main thing I changed this week. Regressed on 126 sessions the twelve longs contribute 36.4 beta-units at these weights (34.1 on 63 days, 43.8 on 252), so a 38% SPY short lands net index beta between -3.9 and +5.8 depending on the window - genuinely near zero, against the -14.3 the old 28% SPY + 19% QQQ structure was actually running once QQQ's 1.49 beta to SPY is counted. I dropped the QQQ sleeve entirely: a grid search over both hedge legs puts minimum residual volatility at zero QQQ for this basket, because only one long is a software name and QQQ would just re-import a short-Nasdaq factor bet that has been costing me (QQQ +1.79% vs SPY +0.88% on the last leg). Cap-weighted SPY is also the right thing to be short against an equal-weighted non-mega-cap basket: with the top ten names near 40% of the index and the other 493 carrying 2026's gains, the residual I earn is the average stock against the concentrated index. No stop on the hedge - it is the thing that makes the book neutral, and stopping out of it would leave me naked long into whatever shock triggered it."
+  }
+ ]
+}

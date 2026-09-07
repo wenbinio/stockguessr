@@ -1,0 +1,75 @@
+{
+ "name": "Haiku macro/sector rotation",
+ "model": "Haiku",
+ "group": "fleet",
+ "strategy": "Close losing mean-reversion short; consolidate into quality diversified long book positioned for rates environment: healthcare earnings, financials net-interest-margin expansion, emerging markets rotation, materials on commodity strength, low-volatility carry.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 26,
+ "reassessment_note": "Short QQQ thesis (momentum mean reversion) was falsified by earnings strength: Nasdaq +22.3% earnings growth expected Q3 2026, confirming this was wrong directional bet. Closing it (-3.40% leg) frees capital for higher-conviction long positions. Utilities thesis also failed due to rate environment: XLU sec yield 2.6% vs Treasury 4.8% yields crushing demand. Trimming XLU from 9.3% to 3%. Macro has rotated to favor: (1) Financials on steeper 2-10yr curve with 57% probability of September hike extending cycle, (2) Healthcare on earnings turnaround momentum, (3) Emerging markets on valuation and rate cycle positioning, (4) Small-cap value on broadening market participation, (5) Materials on commodity strength from energy leadership. Maintaining 26% cash (up from 12.1%) for tactical flexibility while entering higher-rate regime. This book differs materially from R2 via: no shorts, no energy/crypto concentration, higher EEM/SPLV allocation, and more defensive positioning.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16.0,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Healthcare earnings turnaround thesis intact: +6.43% leg this week, +24% 1-year return, +14% 3-month momentum. Sector at turning point after 2023-2024 weakness. Upgraded from 15.4% to 16% reflecting confidence in earnings visibility and mean-reversion cycle. Stop-loss tightened to 8% from initial 8% to protect gains."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14.0,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Financials the primary rate beneficiary: +3.27% leg on expectations of steeper yield curve supporting net interest margins. 10-year Treasury at 4.80%, 2-year at 4.40% = 40bp curve. September hike now 57% priced-in, confirming this tailwind extends. Capital markets activity improving. Upgraded from 13.9% to 14% on conviction."
+  },
+  {
+   "symbol": "EEM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13.0,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Emerging markets rotation: +8.55% leg this week capturing broadening market participation beyond mega-cap US. EEM valued cheaper than developed markets on rate cycle; benefits from dollar stabilization as Fed hike expectations stabilize. Divergence from R2's domestic-only approach creates novelty while capturing global rotation."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12.0,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Small-cap low-volatility value: currently -2.03% leg but mean-reversion candidate in strengthening small-cap cycle (IWM leadership rotation). SPLV's sub-market volatility and value tilt attractive in rising-rate environment. Slight upgrade from 10% to 12% to increase conviction in value rotation thesis."
+  },
+  {
+   "symbol": "XLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8.0,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Materials benefiting from energy/commodity leadership: +3.78% leg. Copper and other commodities supported by AI infrastructure demand and geopolitical supply concerns. Inflation hedge with better price discovery than utilities. Maintained at 8% as stable contributor to rotation thesis."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8.0,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 22.0,
+   "thesis": "Low-volatility quality anchor: +4.35% leg providing return with defensive positioning. USMV's focus on lower-beta, dividend-paying quality names aligns with defensive rotation off momentum and into earnings certainty. Maintained at 7% originally, upgraded slightly to 8% as portfolio needs quality ballast."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3.0,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Utilities heavily discounted from original 9.3% (cut 67%) due to macro headwinds: Treasury yields (4.8% on 10yr) now exceed utilities SEC yield (2.6%) by 220bps, making income-focused capital flow to bonds. Rising rate environment and capital-intensive operations mean debt costs rising faster than pricing power. Minimized to 3% from conviction loss."
+  }
+ ]
+}

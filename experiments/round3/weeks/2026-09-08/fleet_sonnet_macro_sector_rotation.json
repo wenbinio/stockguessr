@@ -1,0 +1,71 @@
+{
+ "name": "Sonnet macro/sector rotation",
+ "model": "Sonnet",
+ "group": "fleet",
+ "strategy": "Catalyst-driven sector rotation pressing the biotech-M&A and regional-bank longs that worked this week, funded by trimming the crowded semis short (which is now fighting fresh strength) and adding modestly to the discretionary short after another week of confirming earnings blowups, cash trimmed slightly to fund the adds.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 28,
+ "reassessment_note": "This week's news mostly confirmed rather than challenged the book's core rotation thesis, so I made targeted size changes instead of a rebuild. Healthcare/biotech: reporting this week put 2026 biotech M&A on track for its best year since pre-COVID (~$106B in deals through mid-year), described healthcare as a 'haven for investors ditching tech,' and flagged XBI approaching a breakout toward its 2021 high near $174.79 off a bullish flag -- strong enough to add to the winning leg (11% -> 14%), funded by a small trim to XLV (17% -> 16%) which is working but has less specific fresh catalyst news this week. Regional banks: coverage this week ('Small Banks Are Finally Gaining on Their Giant Rivals,' 'Main Street Banks Are a Cheaper Way to Play the AI Banking Boom') plus ongoing deregulation and excess-capital tailwinds support adding to KRE (12% -> 14%); XLF held flat at 13% as the broader financials beneficiary. Discretionary short: the thesis got fresh, hard confirmation -- Lululemon fell ~17% on a cut forecast/revenue decline, Netflix dropped over 5%, and Tesla fell nearly 6% after its Cybercab event drew regulatory scrutiny -- so I added modestly to XLY short (5% -> 6%). Semis short: this is the one leg where the tape got genuinely more two-sided. SMH is near 52-week highs (98.6% 1-year total return) and the leg is already down -3.7% against us; JPMorgan is recommending buying the semis dip and Nvidia was up on the day, which directly fights the short. But real bear catalysts also arrived this week -- a fresh Trump-administration proposal for sweeping new semiconductor tariffs (chips, servers, laptops, gaming hardware), Chinese DUV lithography progress threatening ASML's moat, and Morgan Stanley's 'hard remainder of 2026' call warning of another ~10% downside on positioning fatigue -- so I kept the short rather than covering it, but cut its size (8% -> 5%) to respect the more balanced evidence and reduce concentration risk on a name making fresh highs. SPLV (4%) is unchanged low-vol ballast. Cash trimmed 30% -> 28% to fund the net size increase on higher-conviction legs.",
+ "positions": [
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Increased from 11% to 14%. Biotech M&A is on pace for its best year since pre-COVID (~$106B in deals through mid-2026), healthcare is being described as a haven for investors rotating out of stretched tech, and XBI is setting up for a bullish-flag breakout toward its 2021 high near $174.79 from the current $163.81 -- press the leg that is both working (leg P&L essentially flat/slightly positive on a strong 1-year base) and has the freshest positive catalyst news of the week."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed slightly from 17% to 16% to fund adds elsewhere, not because the thesis weakened -- healthcare's 'haven from tech' rotation narrative is intact this week -- but XBI and KRE carried more specific, dated positive catalysts (M&A pipeline, bank-rotation coverage) than the broad healthcare ETF did, so the marginal dollar was better spent there. Remains the single largest position, i.e. still the anchor of the healthcare rotation."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 10.0,
+   "thesis": "Held flat at 13%. Banks broadly continue to benefit from deregulation momentum and sit on excess capital available for buybacks, M&A and lending growth; no fresh negative catalyst this week, and the leg is essentially flat, so no reason to change size -- capital was better deployed into the more targeted regional-bank story (KRE) instead."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "Increased from 12% to 14%. Fresh coverage this week specifically flagged regional banks: 'Small Banks Are Finally Gaining on Their Giant Rivals' on strengthening business loan growth, and 'Main Street Banks Are a Cheaper Way to Play the AI Banking Boom' as a data-center-adjacent lending angle, on top of ongoing deregulatory tailwinds and a cheap ~12.6x P/E for the group. This is the most specific, freshest positive catalyst in the whole book this week, worth sizing up."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 8.0,
+   "thesis": "Unchanged low-volatility ballast at 4%. No thesis-relevant news this week; it exists to dampen the book's realized volatility while the higher-conviction rotation legs do the work, and nothing this week argues for resizing it."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Increased from 5% to 6% short after the discretionary-weakness thesis got hard confirmation this week: Lululemon collapsed ~17% on a cut forecast and revenue decline, Netflix fell over 5%, and Tesla dropped nearly 6% after its Cybercab event drew regulatory scrutiny. This is exactly the exhausted-discretionary-momentum breakdown the leg is positioned for, and it is already working (+2.87% leg P&L), so add modestly rather than take profit early."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Cut from 8% to 5% -- the leg is down -3.7% and SMH is trading near 52-week highs (98.6% 1-year total return) with Nvidia up on the day and JPMorgan explicitly recommending buying the semis dip, all of which fight the short in the near term. Kept rather than covered because real bear catalysts also showed up this week: a proposed new round of sweeping U.S. tariffs on semiconductors (chips, servers, laptops, gaming hardware), Chinese progress on DUV lithography threatening ASML's competitive position, and Morgan Stanley's call for a 'hard remainder of 2026' with another ~10% downside on positioning fatigue. Sizing down to respect the more balanced tape while keeping optionality on the tariff/positioning-unwind catalyst."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "name": "Fable Unconstrained",
+ "model": "Fable 5.1",
+ "group": "flagship",
+ "strategy": "Dual-momentum: long 6-month sector/asset leaders that are NOT in a sharp 1-month correction (energy, healthcare, financials, small caps, one surviving cyber name), a small unlevered BTC mean-reversion sleeve, no leverage, 40% cash at 4%.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 40,
+ "reassessment_note": "The week broke my biggest leg on its own rule. PANW beat on every line (rev $3.41B +34%, NGS ARR +63%) yet fell ~8-10% on gross-margin compression worries: Perf Week -10.3%, Perf Month -7.3%, now below its 20- and 50-day and 16% off the high. My mandate is explicit: 6m leaders that are NOT in a sharp 1m correction. PANW is now exactly that, so the filter exits it even though the -15% stop never fired and sell-side calls it a buying opportunity. The cyber complex is fading short-term (CIBR week -4%, month -1.9%), so FTNT stays but shrinks to 12% (its month is only -2.4%, still above the sharp-correction threshold). Where the leadership actually sits per the finviz sector table: Energy 6m +11.5% / 1m +7.1% / YTD +39% with Brent >$95 after US strikes on IRGC sites and Iranian retaliation on Gulf bases; Healthcare 6m +12% / 1m +4.3%; Financials 6m +15% at a 52-week high with the 2-year at its highest since Jan 2025. All three pass both screens and none of them is in my book, so I rotate the PANW capital into them. Macro regime note: payrolls 162k vs 53k expected, swaps price ~63% odds of a 25bp HIKE on Sept 16, 10-year 4.76-4.81% (3-year highs), CPI lands Sept 11. That is why I keep cash at 40% rather than deploying fully, and why energy is the largest new leg: it is the one leader whose driver (oil supply shock) is also the thing that hurts the rest of the tape. IWM passes (6m +18%, 1m -0.75%) and actually rose on jobs day, so it stays at 9%. BTC stays at 6%: spot ETFs took $731M on Sept 3 (biggest day since January) after a $236M outflow on Sept 1; the mean-reversion sleeve is doing what it should. Net: gross 52% -> 60%, single-name concentration falls from 36% in two cyber names to 12% in one.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Strongest leader on both screens: 6m +13.2%, 1m +10.1%, YTD +43%, RSI 63, 2% below its 52-week high. The driver is live, not stale: US strikes on IRGC air-defense and naval sites this week, Iranian missile/drone retaliation on Kuwait and other Gulf hosts, Brent from ~$88 to $95-97, oil +7% on the week. It is also the only momentum leader that acts as a hedge for the rest of this book if the oil shock keeps pressuring rates and equities. Largest leg at 15% because it has the widest positive 1m/6m spread; a ceasefire headline is the obvious risk, which is why the stop is 12% rather than 15%."
+  },
+  {
+   "symbol": "FTNT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "The surviving cyber leg. 6m +87%, YTD +97%, still 42% above its 200-day; raised 2026 revenue guide to $8.02-8.18B (+19%). Its 1m is only -2.4% (week -5.9%, mostly PANW sympathy on Sept 2), which is nowhere near the sharp-correction threshold that PANW tripped, so the rule keeps it. Cut from 18% to 12% because sector momentum is decelerating (CIBR week -4%) and I do not want a second single-name that can gap on a margin comment. 12% stop tight enough that a PANW-style repricing takes me out around $138."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Healthcare passes both screens cleanly: 6m +12.3%, 3m +12.1%, 1m +4.3%, price above 20/50/200-day, RSI 55, 3% off the high. It is the leader that is least rate-sensitive going into a possible Sept 16 hike and a 4.78% 10-year, which matters for a book whose other legs (IWM, FTNT) are the ones a hike hurts. 10% sizing: an accelerating but low-beta leader, so it earns a mid-size slot with a tight 10% stop."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Still a 6m leader (6m +18%, YTD +20%) and not in a correction (1m -0.75%, week +0.1%, RSI 48). The tell this week: Russell 2000 closed +0.23% on Friday while the S&P fell 0.4% on 63% hike odds, i.e. small caps have already absorbed a lot of the rate anxiety. Trimmed from 10% to 9% only because a confirmed hike on Sept 16 is the one macro event that directly targets floating-rate small-cap balance sheets; the 12% stop is my exit if that proves wrong."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Financials at a 52-week high (0.85% below it), 6m +14.9%, 3m +11.1%, 1m +0.5%: a leader with flat-to-positive 1m, exactly what the filter wants. Higher front-end yields and a 2-year at its highest since Jan 2025 are a tailwind for bank NIM rather than a headwind, so this is the one leg that benefits if the Fed does hike. 8% because 1m momentum is only marginal; 10% stop."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unlevered mean-reversion sleeve, unchanged at 6%. BTC held $77-80k through an oil spike and rising hike odds; spot ETFs took $731M on Sept 3, the biggest inflow day since Jan 14, after a $236M outflow on Sept 1, and August was +$3.5B. The sleeve is +1.4% on the leg. No leverage because a hawkish FOMC plus Iran headline risk is precisely when perp funding and liquidation risk are not worth paying for. 12% stop as before."
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "name": "Sonnet deep value",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards (low-vol equity, gold miners, biotech), short a genuinely parabolic AI-momentum extension, funded by cash carry -- now actually expressing the short leg the mandate calls for instead of sitting almost entirely in cash.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 56,
+ "reassessment_note": "This book has been flat (+0.01% NAV vs SPY +3.62% and BTC +23.17% since inception) while running 66% cash and, despite a stated mandate of 'long defensive/oversold laggards, short parabolic momentum extensions,' has never actually held a short leg -- it has just been a low-beta long-only sleeve sitting on cash. That is a mandate-execution gap, not a market call, and this week's research gives a concrete way to close it: AI/semiconductor names have gone genuinely parabolic in 2026 (memory names like Micron posting repeated double-digit daily gains, RSI-70+ overbought readings across the group per multiple screens this week, and commentary explicitly flagging the sector as vulnerable to a sharp, sudden reversal after pricing in years of future growth). I'm adding a moderate short in MU -- sized at 8% with a 12% stop given real short-squeeze risk in a name this hot, and a 20% take-profit -- as the actual 'short parabolic momentum' leg the strategy has always called for, funded out of idle cash. On the long side, the defensive/low-vol core (USMV, SPLV) is unchanged: this week's hawkish August jobs print (payrolls +162k, reviving Sept Fed hike odds) is exactly the kind of volatility event low-vol factor exposure is meant to dampen, and neither ETF had any adverse fundamental news. I'm nudging GDX up slightly (3%->5%) because gold miners benefit from both the Iran/Hormuz-driven oil-and-geopolitical risk premium and the political tug-of-war over Fed independence (Trump publicly pressuring for cuts against a market pricing hikes), which is a classic environment for gold optionality; keeping its existing -5%/+25% stop/TP discipline but resized. XBI is unchanged (6%) as an oversold-laggard biotech holding with no new negative news found. Net effect: cash comes down from 66% to 56%, still a large buffer consistent with a carry-harvesting mandate, but the book now actually has a market-neutral-ish long/short structure instead of being a disguised cash position.",
+ "positions": [
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "thesis": "Unchanged core low-vol defensive holding. No adverse news this week; this factor is specifically designed to dampen exactly the kind of hawkish-jobs-report volatility spike the market saw Sept 3-4, and it remains the anchor long of the low-vol carry sleeve."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Unchanged. Complements USMV as a second low-vol/defensive-laggard long; no company or fund-level news this week changes the case for holding it through the current rate-path uncertainty into the Sept 15-16 FOMC."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 5.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Increased from 3% to 5%, stop/TP discipline unchanged (-5%/+25%). Gold miners sit at the intersection of this week's two live macro threads -- a geopolitical oil-and-risk premium (Iran/Hormuz strikes) and open political pressure on Fed independence (Trump pushing for cuts against markets pricing hikes) -- both classic tailwinds for gold optionality, which GDX expresses with more torque than spot."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "thesis": "Unchanged. Held as an oversold-laggard biotech position; no negative company or sector news found this week to change the mean-reversion case, and it continues to diversify the book's long sleeve away from pure low-vol factor exposure."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New position: this week's research flags Micron by name as a poster child for the current AI-memory parabolic move -- repeated double-digit daily percentage gains, sector-wide RSI readings above 70 signaling overbought/profit-taking zones, and explicit commentary that the semiconductor/memory/AI-infrastructure rally is vulnerable to a sharp, sudden reversal after pricing in years of future growth. This is precisely the 'short parabolic momentum extension' leg the book's stated mandate has called for since inception but never actually held; sized at 8% (moderate, not aggressive) with a 12% stop to respect real short-squeeze risk in a name moving this fast, funded from what was otherwise idle 4%-APY cash."
+  }
+ ]
+}

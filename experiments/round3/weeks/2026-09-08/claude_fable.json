@@ -1,0 +1,86 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "model": "fable",
+ "group": "flagship",
+ "strategy": "Rate-cycle rotation + carry + early trend-reversal, with stop discipline - now rotated to the hawkish side of the cycle: energy, value, large-cap financials, Japan into a BOJ hike, income carry, and a stopped crypto trend leg",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 26,
+ "reassessment_note": "Week 8 (leg 2): the rate cycle this book was built to rotate with has turned, so the book rotates. In July the thesis was a Fed cutting cycle broadening the market into biotech, regionals and healthcare. This week: 10-year at 4.82% (highest since Nov 2023), Brent ~$95 on Hormuz disruptions, August payrolls +162K vs 55K consensus, the Fed has now held five straight meetings, futures price roughly 50% odds of a HIKE on Sept 16 with the Sept 11 CPI as the swing input, and the street sees no cuts until mid-2027. Two legs were explicitly rate-cut trades and are exited or cut: XBI (14% -> 0) was 'the purest rate-cut duration trade in equities' in my own July words; it is +6% and near its 52-week high on M&A, which is precisely when to sell a long-duration leg into a possible hike rather than wait for the 18% stop to do it. KRE (12% -> 4%) is liability-sensitive with high deposit betas and CRE exposure, was already -1.9% and lagging XLF; hike odds are the single worst input for it. What replaces them is the other side of the same cycle: XLE (new 12%) - energy is the inflation/hike hedge and oil is back above pre-war levels since July, which is the early trend-reversal the mandate looks for; IWD (8 -> 12) - value beats growth when real yields rise; EWJ (8 -> 10) - BOJ is priced to hike Sept 17-18, the yen appreciated ~1.8% this week and Japanese financials are being bought, and unhedged EWJ gets the currency tailwind on top; XLF held at 10 (large banks are asset-sensitive and win from higher rates where regionals lose); XLV trimmed 10 -> 8 (defensive but long-duration); JEPQ 10 stays as the carry engine. ETH 5 / SOL 3 stay at identical weights (crypto churn is 35bps/side and the trend is intact - BTC's largest ETF inflow in nine months this week), with stops re-anchored to the new fill. Cash goes 20% -> 26%: at 4% APY it is a genuine carry position and the right size to be holding into a CPI-then-FOMC week where the coin can land either way. Every equity leg keeps a stop as the mandate requires. Novelty vs my Round 2 book: zero symbol overlap (R2 is MU/AMD/NVDA/GEV/TSM/VRT/ANET/BTC) - no AI-capex thesis anywhere here.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "New 12% leg and the anchor of the rotation. Brent traded above $95.50 Thursday and Oct WTI ~$91.50 on Strait of Hormuz disruptions, revoked Iranian sanctions waivers, and damaged Middle East/Russian refining capacity - the EIA expects elevated fuel prices into next year. Energy is the sector that benefits from the same inflation impulse that is pushing the Fed toward a hike and the 10-year to 4.8%, so it hedges the rest of the book's rate exposure while carrying a dividend. Oil back above pre-war levels since July is the early trend-reversal the mandate targets. 12% stop: if oil reverses on a Hormuz de-escalation the thesis is gone and I want out mechanically."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised 8% -> 12%. Russell 1000 Value is the cleanest expression of 'higher-for-longer': when the 10-year rises 30-40bps to 3-year highs, the multiple compression lands on long-duration growth and value outperforms on a relative basis - which is what happened this week (Russell 2000 and value names green on Friday while megacap growth fell). Leg was +3.9%; sizing it as a co-pillar with XLE because it is the low-volatility way to own the regime shift. 12% stop per mandate."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held at 10%. Large-cap financials are asset-sensitive: higher policy rates and a 4.8% 10-year widen NIM at the money-center banks and capital-markets franchises, the opposite of what they do to regionals. Leg +3.3% and outperforming KRE by ~5 points since July, which is the tape confirming the large-vs-regional split I am now leaning into. 12% stop."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised 8% -> 10%. This is the one rate-cycle leg where a central-bank hike is the tailwind: the BOJ is priced to hike at the Sept 17-18 meeting, the yen strengthened ~1.8% this week to ~155.8, and Japanese financials were bought while exporters were sold. EWJ is unhedged, so a firmer yen adds directly to the dollar return on top of the financials rotation inside the index; TOPIX made new highs this week even as the Nikkei lagged, which favors the broader MSCI Japan basket over a Nikkei tracker. Leg +8.6%, the best equity leg in the book. 12% stop."
+  },
+  {
+   "symbol": "JEPQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Held at 10%. The carry engine: covered-call income on the Nasdaq-100 pays a double-digit distribution yield, and option premium is worth more, not less, in a week where the market is pricing a coin-flip FOMC and CPI - implied vol is the input. It also caps my upside participation in the growth complex, which is what I want when the 10-year is at 3-year highs. Leg +4.8%. 10% stop."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed 10% -> 8%. Healthcare remains the defensive anchor and was +6.4% on the leg, but large-cap pharma is a long-duration cash-flow stream and the defensive bid that helped it under a cutting thesis is weaker under a hiking one. Kept because a hawkish surprise on Sept 16 that hits cyclicals would still see rotation into it; sized down because it is no longer the core of the thesis. 12% stop."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 10.0,
+   "thesis": "Cut 12% -> 4%. Regionals are the most liability-sensitive part of the financials complex - higher deposit betas and more CRE - and the mid-2026 episode already showed them as the weak link when hike odds jump. The leg was -1.9% and lagging XLF by ~5 points, and the Sept 16 FOMC is a live hike risk. I keep a 4% stub rather than zero because NIMs are widening as deposit costs roll over and a hold-plus-dovish-guidance outcome on Sept 16 would squeeze it higher; stop tightened to 10% so being wrong stays cheap."
+  },
+  {
+   "symbol": "ETH-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 22.0,
+   "take_profit_pct": 60.0,
+   "thesis": "Weight unchanged at 5% (no churn at 35bps/side). The early trend-reversal call from July is now a trend: ETH ~$2,500, +32% on the leg, and crypto rallied on Waller's hawkish comments rather than selling off, with BTC posting its largest ETF inflow in nine months this week. Stops re-anchor to the Sept 8 fill, so I tighten the stop from 25% to 22% and set a 60% take-profit to lock in a large part of what is now a profitable trade rather than a speculative one."
+  },
+  {
+   "symbol": "SOL-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 80.0,
+   "thesis": "Weight unchanged at 3%. SOL ~$104, +36% on the leg, bullish structure intact but daily momentum showing early fatigue per this week's tape - so the beta leg stays small, keeps a 25% stop off the new fill (tightened from 30%), and the take-profit comes in from 100% to 80%. It is the highest-beta expression of the same crypto trend as ETH and is sized so a full stop-out costs under 1% of NAV."
+  }
+ ]
+}

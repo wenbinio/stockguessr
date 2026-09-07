@@ -1,0 +1,48 @@
+{
+ "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+ "model": "sonnet",
+ "group": "fleet",
+ "strategy": "Domestic sector relative-value: stay long confirmed-momentum XLF (financials) and XBI (biotech) while adding short exposure in the two mean-reversion candidates the mandate names -- leveraged semis (SOXL) and gold miners (GDX) -- both showing acute technical overextension this week, with hard stops on every leg.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 15,
+ "reassessment_note": "The book had drifted to two flat longs and 35% idle cash even though the strategy of record explicitly calls for shorting overextended mean-reversion names like gold miners and leveraged semis -- the standing GDX/SOXL short orders had already filled and closed twice each, so the short sleeve was empty exactly when this week produced textbook setups on both names. SOXL spiked +9.87% in a single session (Sep 4) on no new fundamental catalyst, and BofA and JPMorgan both published warnings this week that chip stocks are due a ~10% pullback after positioning got stretched -- a leveraged 3x fund up 389% off its 52-week low on a single euphoric day is precisely the overextension this book is mandated to fade, with a tight stop in case the AI-capex melt-up simply continues. GDX printed a bearish engulfing candle and is down from its $117 high with technical commentary explicitly warning 'don't buy the dip in gold-miner stocks' -- a second name that fits the short mandate cleanly. Meanwhile the long sleeve keeps working: financials just hit record highs on strong bank earnings (trading/AI/dealmaking) and reports describe 'the breakout rally may have just begun,' and biotech (XBI) is basing just under 2021 resistance ($174.79) off a bullish flag with M&A activity ($106B across 201 deals) at its strongest pace since before the pandemic. Redeploying idle cash into the short sleeve completes the barbell the strategy was always supposed to run, rather than sitting half-invested. This book shares zero symbols with the Round 2 book (EEM/TSM/ASML/EWZ/EWJ/BABA/INDA/SQQQ), so gross-weight overlap is 0%, well inside the novelty rule.",
+ "positions": [
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 30,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Large-cap financials just hit record highs on strong Q2 trading/AI/dealmaking revenue and a deregulation tailwind; commentary this week frames the breakout as having 'just begun.' Keeping the position roughly at prior size (30% vs 35%) to fund the new short sleeve while staying long the sector's clearest confirmed momentum."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Biotech M&A is running at its strongest pace since before the pandemic ($106B across 201 deals) and XBI is basing in a bullish flag just under its 2021 high ($174.79), with rotation flows moving into healthcare as investors diversify away from concentrated mega-cap tech. Trimming slightly from 30% to fund the short sleeve without abandoning the sector's best momentum name."
+  },
+  {
+   "symbol": "SOXL",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 15,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 20.0,
+   "thesis": "3x leveraged semis spiked +9.87% in a single session with no discrete fundamental trigger, on top of a +389% run off its 52-week low -- the exact overextended, mean-reversion-prone profile the mandate targets. BofA and JPMorgan both flagged chip-stock pullback risk (~10%) this week on positioning fatigue. Sized at 15% (not larger) and given a wide-ish 15% stop specifically because 3x leveraged ETFs can gap hard against a short if the AI melt-up simply resumes."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 15,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 20.0,
+   "thesis": "GDX printed a bearish engulfing pattern this week and is fading from its $117 high, with technical commentary explicitly warning against buying the dip in gold miners after a huge 53% trailing-year run. A classic overextended mean-reversion short per the mandate; a 15% stop protects against a renewed safe-haven/gold bid if macro risk (tariffs, yields) flares back up."
+  }
+ ]
+}

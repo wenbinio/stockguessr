@@ -1,0 +1,80 @@
+{
+ "name": "Opus Quality Defensive",
+ "model": "opus",
+ "group": "flagship",
+ "strategy": "Cross-asset carry and trend stacking rebuilt around the three trends that are actually working - commodity/energy carry, AI-led equity momentum, and crypto trend - funded by cutting unhedged international beta, with covered-call and financials carry sleeves and stop/take-profit discipline on every leg.",
+ "entry": "2026-09-08",
+ "capital_usd": 1000,
+ "cash_pct": 15,
+ "reassessment_note": "This book is my problem child and this week told me why. It is up 1.52% against SPY +3.62% and BTC +23.17% since inception, with a 4.44% max drawdown - so I have been paying the volatility of a trend book while collecting the return of a cash-plus book. The diagnosis is not that trend stopped working; it is that I was not actually in the trends. My mandate explicitly names equity momentum and I owned zero of it. My mandate names commodity carry and I ran it at 8% while Brent went to ~$95 on US-Iran tension and refinery disruption. My mandate names crypto trend and I ran BTC at 5% through a 23% move. Meanwhile my second- and third-largest sleeves were JEPI and EFA, neither of which is a trend expression at all. Friday's tape sharpened this: August payrolls printed 162k versus ~55k expected with upward revisions to June and July, the 2-year yield jumped to 4.37% - its highest since January 2025 - and hike odds for the September 15-16 FOMC moved to roughly 58-65%. Two direct consequences. First, EFA has to go: a hawkish repricing strengthens the dollar, and unhedged developed international is a levered short-dollar position I am not being paid to hold. Its 0.84% gain is a gift I should take before the currency leg turns. Second, higher-for-longer is genuinely good for the front-end-sensitive carry I do want - bank net interest margins and the short-rate leg inside managed futures - so XLF stays and DBMF stays large. On the trend side, semis and memory were the strongest complex on Friday against a consumer that is visibly cracking (Lululemon -17% on cut guidance, dragging the whole athletic complex), which is the cleanest momentum signal available; I am adding MTUM as the broad equity-momentum sleeve the mandate always called for and SMH as the concentrated expression of it. Commodity carry goes from 8% to 12% because $95 Brent with a live geopolitical bid is exactly the backwardated-carry environment PDBC is built for. Crypto goes from 13% to 16%, with the increase going entirely into BTC (5% to 8%) so the sleeve is now balanced 8/8 rather than tilted toward the leg that has lagged; BTC is the asset actually trending and it is the one I was most underweight. I keep 15% cash at 4% as dry powder into an FOMC that could go either way. This is deliberately a different book from my Round 2 defensive core - there is zero symbol overlap with it, by design.",
+ "positions": [
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "Managed futures remains the engine of the book and the largest single leg at 18%, trimmed from 21% only to fund the momentum sleeve. This is the one holding that expresses trend across every asset class at once, and the current macro is close to ideal for it: a strong energy trend with Brent near $95, a clear short-duration trend with the 2-year at a 20-month high on hike repricing, and a strengthening dollar - three persistent, well-established directional moves that a replicated CTA should be positioned long, short and long respectively. It is also the only leg with a structurally negative correlation to my equity sleeves in a risk-off tape, which is what limits the book's drawdown. Wide 12% stop by design: stopping out a trend-following strategy on a normal drawdown is self-defeating, so the stop exists only to catch a structural break in the strategy itself."
+  },
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Commodity carry raised from 8% to 12%, the largest proportional increase in the book. Brent trading around $95 on US-Iran tension plus refinery disruption is a supply-driven move, and supply-driven energy markets are the ones that go into backwardation - which is precisely when an optimised-roll broad commodity fund earns positive roll yield on top of spot, the definition of the carry my mandate is supposed to harvest. It is already my best-performing leg at +1.93%. It also hedges the main risk to the rest of the book: if oil keeps running, the Fed hikes harder and my equity legs suffer, and this is the leg that pays for that. Take-profit at 25% because a geopolitical supply premium is not permanent - if the Iran situation defuses, the roll advantage and spot both reverse, and I want the trend banked rather than round-tripped."
+  },
+  {
+   "symbol": "MTUM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "New 12% position and the most important correction in this rebuild. My strategy of record names equity momentum as a core sleeve and the book contained none of it, which is the single clearest reason it lagged SPY. A momentum-factor ETF systematically holds whatever has been working and rotates out of what has not - which is the same rule I apply in DBMF, applied to single-name equities. The signal it is currently expressing is the bifurcation this week made obvious: long the AI-capex and industrial complex that led Friday's session, structurally underweight the consumer names that are cutting guidance. Sized at 12% so it is a genuine sleeve rather than a token, with a 12% stop because momentum's characteristic failure mode is a sharp factor crash rather than slow bleed, and a stop is the right instrument for that shape of risk."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "Covered-call income trimmed from 16% to 12%. The volatility-selling carry it harvests is still a legitimate and mandate-central income stream, and a market that spent the week going roughly nowhere in aggregate - S&P up 0.1% on the week - while chopping day to day is the environment where writing calls beats owning the index outright. But it is a capped-upside instrument, and I am now deliberately adding uncapped trend exposure through MTUM and SMH, so JEPI's role shrinks from second-largest holding to a supporting income sleeve. It also keeps equity beta in the book at a lower volatility than an index position would, which matters with an FOMC on the 15th and 16th. The 10% stop is tight because a covered-call fund that has fallen 10% has failed at the one thing it is meant to do, which is cushion the downside."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Financials held at 10% and now the cleanest direct beneficiary in the book of what actually happened this week. The 2-year yield jumped 3.8bp to 4.37%, its highest since January 2025, and the market moved to roughly a 58-65% probability of a hike on September 16. Higher-for-longer front-end rates expand bank net interest margins, and the 162k payroll print with upward revisions to the prior two months argues that the credit backdrop supporting those margins is not deteriorating - which is the combination banks need, since high rates with a cracking labour market would instead mean credit losses. This is carry in the literal sense: I am being paid the spread between what banks fund at and lend at, and the macro is widening that spread. The 12% stop guards against the scenario where the labour data reverses and rate benefit turns into credit risk."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Bitcoin raised from 5% to 8% and now the larger of the two crypto legs, reversing my previous weighting. Bitcoin is up roughly 23% since this book started while the book itself made 1.52%, which is a direct measurement of how badly I underweighted the strongest trend available to a trend mandate. The leg is already +2.94% and the trend structure is intact. I am raising it rather than doubling it because the honest risk is real and immediate: crypto has historically been the most rate-sensitive risk asset, and a September hike with the dollar firming is genuinely adverse. 8% is the size at which the position materially contributes if the trend continues but a 15% stop costs the book only about 1.2% if it does not. Take-profit at 40% to bank a parabolic extension rather than give it back."
+  },
+  {
+   "symbol": "ETH-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Ethereum held at 8%. It is my second-best crypto leg at +1.56% and it keeps the crypto sleeve diversified across the two assets with genuinely different demand drivers - bitcoin as a macro/store-of-value trend and ether as the beta on onchain activity, staking yield and tokenisation flows, which is itself a carry expression consistent with the mandate. I considered cutting it in favour of concentrating the whole sleeve in BTC given ether's relative lag, but a trend book that concentrates its highest-volatility exposure into one asset is taking idiosyncratic rather than trend risk. Keeping both at 8% caps total crypto at 16% of the book, sized so that a simultaneous 15% stop-out on both legs costs roughly 2.4% - survivable, and the level at which I am willing to hold crypto through a hawkish FOMC."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "New 5% satellite, the concentrated version of the momentum trade MTUM expresses broadly. Semiconductors recovered strongly on Friday with memory names particularly robust, and this held up even as the index fell on the hawkish payroll print - relative strength on a down day is the highest-quality trend signal there is. Nvidia's demand commentary continues to point at an AI capex cycle that is running independently of the consumer weakness showing up everywhere else, which is exactly the kind of durable divergence a trend book should lean into. Deliberately kept to 5% because semis are the highest-beta equity exposure available and I already have overlapping momentum exposure through MTUM; this is a satisfying idea sized as a satellite, not a core. The 15% stop matches its volatility and the 35% take-profit reflects that semis trends end abruptly."
+  }
+ ]
+}

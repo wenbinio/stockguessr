@@ -142,8 +142,24 @@ def load_price_matrix(symbols: set[str]) -> pd.DataFrame:
     if missing:
         raise PriceDataUnavailable(", ".join(missing))
 
-    px = pd.concat(series.values(), axis=1, sort=False).sort_index()
-    return px.ffill()
+    # Deliberately NOT forward-filled here. Callers need to see which rows are
+    # genuine prints before any carrying-forward happens, because the last real
+    # equity session is what defines "as of" - see truncate_to_session().
+    return pd.concat(series.values(), axis=1, sort=False).sort_index()
+
+
+def truncate_to_session(px: pd.DataFrame) -> pd.DataFrame:
+    """Carry equity marks forward, but only as far as the last real session.
+
+    Crypto trades every day, so the matrix has Saturday and Sunday rows that no
+    equity printed into. Forward-filling first and *then* looking for SPY's last
+    valid index finds the ffilled weekend row rather than Friday's close, so the
+    truncation silently does nothing: on Labor Day 2026-09-07 the engine dated
+    every book "as of 2026-09-06", a Sunday. Weekday refreshes hid this because
+    the newest row was a real session anyway. Find the session first, fill after.
+    """
+    last_session = px["SPY"].dropna().index[-1]
+    return px.ffill().loc[:last_session]
 
 
 def registered_notionals(alloc: dict) -> dict:
@@ -258,6 +274,40 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
     return pd.Series(nav), positions
 
 
+def validate(spec, fname):
+    """Unrestricted-retail rules (effective 2026-07-30).
+
+    Concentration guardrails are gone: no maximum position size, no minimum
+    position count, and the short side may use the whole notional. What
+    remains is arithmetic (a book must allocate exactly 100% of the
+    account) plus venue realism on perp leverage. Books registered before
+    2026-07-30 were built under the old caps; see round2/RULES.md.
+    """
+    w = sum(q["weight_pct"] for q in spec["positions"]) + spec["cash_pct"]
+    shorts = sum(q["weight_pct"] for q in spec["positions"] if q["side"] == "short")
+    probs = []
+    # Cash is `cash_pct`, never a position. CASH and USDC are real listed
+    # securities (Pathward Financial; USDATA Corp, a sub-penny OTC shell),
+    # so a manager writing "CASH" for dry powder silently bought a bank —
+    # and a symbol-priceability check passes them precisely because they
+    # are genuine tickers. Ten books were filled this way on 2026-07-31.
+    for q in spec["positions"]:
+        if q["symbol"].upper() in CASH_LIKE:
+            probs.append(f"'{q['symbol']}' is a listed security, not cash — use cash_pct")
+    if abs(w - 100) > 0.05: probs.append(f"weights+cash={w:.1f}")
+    if not spec["positions"]: probs.append("no positions")
+    if any(q["weight_pct"] < 0 for q in spec["positions"]):
+        probs.append("negative weight (use side=short instead)")
+    if spec["cash_pct"] < 0: probs.append(f"negative cash={spec['cash_pct']:.1f}")
+    if shorts > 100: probs.append(f"shorts={shorts:.0f}%")
+    for q in spec["positions"]:
+        if q["kind"] == "perp" and not 0 < float(q.get("leverage", 0)) <= PERP_MAX_LEV:
+            probs.append(f"perp leverage {q.get('leverage')} (venue max {PERP_MAX_LEV}x)")
+    if probs:
+        print(f"RULES VIOLATION {fname}: {'; '.join(probs)}")
+    return not probs
+
+
 def run_agent(files: list[Path], px: pd.DataFrame, fills: list):
     """Chain an agent's allocation history (sorted by entry date) into one NAV curve."""
     specs = sorted((json.loads(f.read_text()) for f in files), key=lambda s: s["entry"])
@@ -293,7 +343,7 @@ def main() -> int:
         syms = {normalize(p["symbol"]) + ("-USD" if p["kind"] in ("crypto", "perp")
                 and not normalize(p["symbol"]).endswith("-USD") else "")
                 for p in alloc["positions"]} | {"SPY", "BTC-USD"}
-        px = load_price_matrix(syms)
+        px = truncate_to_session(load_price_matrix(syms))
         res = simulate(alloc, px, entry, end)
         if res is None:
             print("missing entry prices")
@@ -309,39 +359,6 @@ def main() -> int:
             print(f"    {pos['sym']:<9} {'S' if pos['side']<0 else 'L'}"
                   f"{pos['lev']:.0f}x  ${pos.get('value', 0):8.2f}{tag}")
         return 0
-
-    def validate(spec, fname):
-        """Unrestricted-retail rules (effective 2026-07-30).
-
-        Concentration guardrails are gone: no maximum position size, no minimum
-        position count, and the short side may use the whole notional. What
-        remains is arithmetic (a book must allocate exactly 100% of the
-        account) plus venue realism on perp leverage. Books registered before
-        2026-07-30 were built under the old caps; see round2/RULES.md.
-        """
-        w = sum(q["weight_pct"] for q in spec["positions"]) + spec["cash_pct"]
-        shorts = sum(q["weight_pct"] for q in spec["positions"] if q["side"] == "short")
-        probs = []
-        # Cash is `cash_pct`, never a position. CASH and USDC are real listed
-        # securities (Pathward Financial; USDATA Corp, a sub-penny OTC shell),
-        # so a manager writing "CASH" for dry powder silently bought a bank —
-        # and a symbol-priceability check passes them precisely because they
-        # are genuine tickers. Ten books were filled this way on 2026-07-31.
-        for q in spec["positions"]:
-            if q["symbol"].upper() in CASH_LIKE:
-                probs.append(f"'{q['symbol']}' is a listed security, not cash — use cash_pct")
-        if abs(w - 100) > 0.05: probs.append(f"weights+cash={w:.1f}")
-        if not spec["positions"]: probs.append("no positions")
-        if any(q["weight_pct"] < 0 for q in spec["positions"]):
-            probs.append("negative weight (use side=short instead)")
-        if spec["cash_pct"] < 0: probs.append(f"negative cash={spec['cash_pct']:.1f}")
-        if shorts > 100: probs.append(f"shorts={shorts:.0f}%")
-        for q in spec["positions"]:
-            if q["kind"] == "perp" and not 0 < float(q.get("leverage", 0)) <= PERP_MAX_LEV:
-                probs.append(f"perp leverage {q.get('leverage')} (venue max {PERP_MAX_LEV}x)")
-        if probs:
-            print(f"RULES VIOLATION {fname}: {'; '.join(probs)}")
-        return not probs
 
     alloc_files = {}
     bad = []
@@ -381,9 +398,9 @@ def main() -> int:
               f"fills recorded as vanished, so nothing is written this run - "
               f"the previous artifacts stand until the data source recovers.")
         return 1
-    # crypto trades 24/7 and returns an intraday row for "today"; official fills
-    # happen at the US close, so truncate to the last completed equity session
-    px = px.loc[:px["SPY"].dropna().index[-1]]
+    # crypto trades 24/7 and returns rows for days no equity printed; official
+    # fills happen at the US close, so truncate to the last completed session
+    px = truncate_to_session(px)
 
     fills = []
     out = {"updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
