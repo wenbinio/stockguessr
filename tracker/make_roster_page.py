@@ -1036,8 +1036,16 @@ def build():
     # cards by cohort
     sections = []
     for g in COHORT_ORDER:
+        # An unrecognised tier sorts last rather than raising: on 2026-09-08 a
+        # manager returned "Fable 5.1" as its model and .index() took the entire
+        # roster page down. The label itself is fixed at the writer, which now
+        # stamps tier and cohort from the register; this only makes sure one bad
+        # string can never again cost the whole page.
+        order = list(TIER)
         members = sorted((e for e in REG.values() if e["group"] == g),
-                         key=lambda e: (list(TIER).index(e["model"]), e["name"]))
+                         key=lambda e: (order.index(e["model"])
+                                        if e["model"] in order else len(order),
+                                        e["name"]))
         if not members:
             continue
         cards = "".join(agent_card(e) for e in members)
