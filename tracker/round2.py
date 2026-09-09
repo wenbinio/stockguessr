@@ -45,6 +45,7 @@ PERIOD1 = 1704067200  # 2024-01-01, deep enough for backtests
 UA = "Mozilla/5.0"
 BORROW_APR, FUNDING_APR, CASH_APY = 0.03, 0.10, 0.04
 LIQ_THRESHOLD = 0.05  # perp liquidated when value <= 5% of margin
+SETTLEMENT_GRACE = 3  # sessions a leg may wait for a bar before it is an error
 PERP_MAX_LEV = 100.0  # venue maximum on majors (unrestricted-retail rules, 2026-07-30)
 CASH_LIKE = {"CASH", "USDC", "USD", "MONEY", "CASHX"}  # tickers that are NOT cash
 ALIASES = {"FI": "FISV", "SQ": "XYZ"}
@@ -80,17 +81,33 @@ def fetch(symbol: str, retries: int = 4) -> pd.Series | None:
             r = json.loads(out)["chart"]["result"][0]
             ind = r["indicators"]
             closes = ind.get("adjclose", [{}])[0].get("adjclose") or ind["quote"][0]["close"]
-            dates = pd.to_datetime(r["timestamp"], unit="s", utc=True) \
-                      .tz_convert("America/New_York").date
-            s = pd.Series(closes, index=pd.to_datetime(list(dates)), name=symbol).dropna()
+            ts = pd.to_datetime(r["timestamp"], unit="s", utc=True)
+            is_crypto = symbol.endswith("-USD")
+            if is_crypto:
+                # Yahoo stamps a daily bar with its START. Crypto bars start at
+                # 00:00 UTC, so the bar stamped day D closes at 00:00 UTC on D+1
+                # - which is 20:00 in New York on D, essentially the US equity
+                # close on D. Date crypto by that UTC day and the two asset
+                # classes line up. Converting crypto to a New York date instead
+                # moves every bar back to 20:00 the previous evening and files
+                # it one day EARLY: on 2026-09-09 the row labelled 09-08 held
+                # the still-running 09-09 bar, and the settled bar belonging to
+                # the 09-08 close sat under 09-07. Every crypto mark, and every
+                # crypto stop and take-profit trigger, was a day out of step
+                # with the equities in the same book.
+                idx = pd.to_datetime(ts.date)
+            else:
+                idx = pd.to_datetime(ts.tz_convert("America/New_York").date)
+            s = pd.Series(closes, index=idx, name=symbol).dropna()
             # crypto has intraday "today" rows; keep one row per date (last)
             s = s.groupby(s.index).last()
-            if symbol.endswith("-USD"):
-                # Crypto daily bars are UTC days, and the newest one is the LIVE
-                # in-progress bar, not a settled close. Marking off it makes every
-                # crypto mark provisional: on 2026-08-20 five standing orders did
-                # not fire, and on the next run - same date, settled bar - they
-                # did. Drop the unfinished bar so crypto marks are final.
+            if is_crypto:
+                # The newest UTC day is the LIVE in-progress bar, not a settled
+                # close. Marking off it makes every crypto mark provisional: on
+                # 2026-08-20 five standing orders did not fire, and on the next
+                # run - same date, settled bar - they did. This comparison only
+                # became meaningful once the index above was actually UTC-dated;
+                # against a New York-dated index it never matched the live bar.
                 today_utc = pd.Timestamp(datetime.now(timezone.utc).date())
                 s = s[s.index < today_utc]
             return s if not s.empty else None
@@ -158,8 +175,40 @@ def truncate_to_session(px: pd.DataFrame) -> pd.DataFrame:
     every book "as of 2026-09-06", a Sunday. Weekday refreshes hid this because
     the newest row was a real session anyway. Find the session first, fill after.
     """
-    last_session = px["SPY"].dropna().index[-1]
-    return px.ffill().loc[:last_session]
+    # The last session at which EVERY held symbol has settled. Equities settle
+    # at 16:00 New York; a crypto UTC day only closes at 00:00 UTC, which is
+    # 20:00 New York the same evening. A refresh run between those two moments
+    # can price the equities but not the crypto, and the honest answer is to
+    # report the last session where the whole book is real rather than to mark
+    # part of it against a bar that is still moving.
+    equity_last = px["SPY"].dropna().index[-1]
+    complete = px.dropna(how="any").index
+    last_session = complete[-1] if len(complete) else equity_last
+    if len(px.loc[last_session:equity_last]) > SETTLEMENT_GRACE:
+        # One symbol with a long stale tail must not drag the entire tracker
+        # back with it. Beyond the settlement window this is a data problem,
+        # not a market-hours one, so report to the equity session and let the
+        # affected book surface as a DATA ERROR instead of silently rewinding
+        # every other book by weeks.
+        stale = [c for c in px.columns
+                 if px[c].last_valid_index() is not None
+                 and px[c].last_valid_index() < last_session]
+        print(f"  WARNING: stale price tail on {stale or 'unknown symbols'}; "
+              f"reporting to {equity_last.date()} rather than {last_session.date()}")
+        last_session = equity_last
+    # Never carry a column past its own last real print. A crypto bar for day D
+    # only settles after D ends, so on the evening of D the newest crypto bar is
+    # D-1 (fetch() drops the live one). Filling forward without this mask hands
+    # simulate() D-1's crypto close as if it were D's, which is how the nine
+    # crypto legs entering 2026-09-08 got provisional entry fills that were
+    # silently rewritten the next day once the real bar landed. A leg is either
+    # priceable or it is not; it is never almost-priceable.
+    last_real = {c: px[c].last_valid_index() for c in px.columns}
+    out = px.ffill().loc[:last_session]
+    for c, lr in last_real.items():
+        if lr is not None:
+            out.loc[out.index > lr, c] = float("nan")
+    return out
 
 
 def registered_notionals(alloc: dict) -> dict:
@@ -308,15 +357,43 @@ def validate(spec, fname):
     return not probs
 
 
+def priceable(spec: dict, px: pd.DataFrame) -> bool:
+    """Does every leg of this book have a settled price on its entry date?
+
+    Only answers for the *tail* of the matrix. A settlement lag is at most a
+    day or two, so an unpriced leg further back than SETTLEMENT_GRACE sessions
+    is a real data problem and must not be silently waited out — say it is
+    priceable and let simulate() fail loudly into the DATA ERROR path instead of
+    freezing the book on its previous leg with no explanation.
+    """
+    entry = pd.Timestamp(spec["entry"])
+    if entry not in px.index:
+        return False
+    if len(px.loc[entry:]) > SETTLEMENT_GRACE:
+        return True
+    for q in spec["positions"]:
+        sym = normalize(q["symbol"])
+        if q["kind"] in ("crypto", "perp") and not sym.endswith("-USD"):
+            sym += "-USD"
+        if sym not in px.columns or pd.isna(px.at[entry, sym]):
+            return False
+    return True
+
+
 def run_agent(files: list[Path], px: pd.DataFrame, fills: list):
     """Chain an agent's allocation history (sorted by entry date) into one NAV curve."""
     specs = sorted((json.loads(f.read_text()) for f in files), key=lambda s: s["entry"])
     curve = pd.Series(dtype=float)
     capital = CAPITAL
     for i, spec in enumerate(specs):
-        if pd.Timestamp(spec["entry"]) > px.index[-1]:
-            # registered rebalance whose entry close hasn't printed yet: the
-            # prior book keeps running until the new leg becomes priceable
+        if pd.Timestamp(spec["entry"]) > px.index[-1] or not priceable(spec, px):
+            # A registered rebalance whose entry close has not printed yet, or
+            # whose entry date is in the matrix but where some leg has no
+            # settled bar there (crypto on its own entry day). Either way the
+            # prior book keeps running until the new leg can be priced for real.
+            # Recording it now would mean recording a fill we would have to
+            # revise tomorrow, and a revised fill moves that leg's stop and
+            # take-profit levels with it.
             break
         end = specs[i + 1]["entry"] if i + 1 < len(specs) else None
         res = simulate(spec, px, spec["entry"], end, capital, fills,
