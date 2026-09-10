@@ -133,7 +133,15 @@ def main() -> None:
     spy_h1 = (adj["SPY"].loc[H1_ENTRY:] / adj["SPY"].loc[H1_ENTRY:].iloc[0]) * 100
     spy_h2 = (adj["SPY"].loc[H2_ENTRY:] / adj["SPY"].loc[H2_ENTRY:].iloc[0]) * 100
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    as_of = adj.index[-1].strftime("%Y-%m-%d")
+    # Anchor on SPY's last real print, not on the union index. adj.index[-1] is
+    # the newest date ANY ticker carries, so a single ticker that has published
+    # while the rest of the tape has not dates the whole page to a session it
+    # cannot actually mark. Yahoo withdraws a just-closed session overnight
+    # while it reprocesses — at 00:46 UTC on 2026-09-10 every equity checked had
+    # been rolled back to 09-08 — and during that window the union index still
+    # claimed 09-09. SPY is the benchmark every leg is scored against: if SPY
+    # has not printed, the session is not markable.
+    as_of = adj["SPY"].dropna().index[-1].strftime("%Y-%m-%d")
 
     def fill(ticker, date):
         try:
