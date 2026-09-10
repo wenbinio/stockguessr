@@ -184,6 +184,18 @@ def truncate_to_session(px: pd.DataFrame) -> pd.DataFrame:
     equity_last = px["SPY"].dropna().index[-1]
     complete = px.dropna(how="any").index
     last_session = complete[-1] if len(complete) else equity_last
+    if last_session < equity_last:
+        # Say so. A single symbol that has not republished yet costs the whole
+        # tracker a session, and on 2026-09-10 that happened silently: the 08:00
+        # UTC run reported 09-08 and a re-run nine minutes later reported 09-09,
+        # with nothing to show which symbol had been holding it back.
+        laggards = [c for c in px.columns
+                    if px[c].last_valid_index() is not None
+                    and px[c].last_valid_index() < equity_last]
+        print(f"  holding at {last_session.date()} rather than {equity_last.date()}: "
+              f"{len(laggards)} symbol(s) not yet published "
+              f"({', '.join(sorted(laggards)[:8])}"
+              f"{' ...' if len(laggards) > 8 else ''})")
     if len(px.loc[last_session:equity_last]) > SETTLEMENT_GRACE:
         # One symbol with a long stale tail must not drag the entire tracker
         # back with it. Beyond the settlement window this is a data problem,
