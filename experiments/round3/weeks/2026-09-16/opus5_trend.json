@@ -1,0 +1,61 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend across six asset classes, signals refreshed on data through the 2026-09-15 close: long where price is above both the 50- and 200-day moving average with positive 3-month momentum, short where both are negative, sized inversely to 60-day realised volatility and then tilted toward the strongest-ranked signals, now expressed almost entirely through the single dominant 2026 macro trend \u2014 an energy/inflation shock driving a global bond bear market into a hiking Fed.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "Signals were last refreshed on 2026-09-04 data. The eleven sessions since have resolved three of my seven legs decisively and the Saturday desk failure let stale signals run two extra days, so this is a full refresh rather than a tweak. What changed: (1) The bond downtrend went from strong to historic. The US 10-year printed 5.02% on 2026-09-15, the highest since 2007, blowing through the November 2023 peak, with a global bond selloff driven by energy prices, debt supply and the Iran war; Bessent's $6bn buyback did not slow it. Market-implied odds of a 25bp hike to 4.00% at the 2026-09-16 FOMC are ~91% after August CPI held at 3.4% y/y. Short TLT is now my highest-ranked signal on both momentum and, because bond vol is low relative to commodities, on inverse-vol sizing. It goes from 16% to 20%. (2) The energy trend accelerated violently. Brent ~$109 and WTI ~$104 on 2026-09-14, a 16-week high, after strikes closed Saudi Arabia's 7mb/d East-West pipeline and Houthi attacks extended the war to a new theatre. USO is my best-performing leg (+8.99%) and XLE trades above both its 50- and 200-day EMAs pressing new highs, with energy the leading S&P sector at +43% YTD. Both get added to. (3) Three legs lost their signal and are cut outright. BTC broke below $80,000 and trades ~$76.9k, falling on exactly the rate-hike repricing that is helping my other legs \u2014 a long there is now fighting the book rather than diversifying it. CPER just posted copper's first losing week since June after the White House stalled the refined-copper import tax, which was the entire source of the COMEX premium CPER tracks; that is a policy-driven trend break, and the -5.69% leg loss is the market telling me so. XLV is flat with no momentum and is being sold as capital rotates to energy. (4) One genuinely strong trend I did not own gets added: gold at record highs above $4,300-4,500/oz, up over 25% since early 2025 on inflation, war and debt. It is a clean long signal on my own rules and it is the one leg that still works if the FOMC surprises dovish and bonds squeeze, so it partly offsets my concentration in the short-duration trade. (5) SPY keeps its signal \u2014 27 record closes and +13% YTD keep it above both averages \u2014 but it is my weakest-ranked long with a 5% 10-year and a chip-led selloff pressing on multiples, so it halves from 16% to 10%. Net: the book concentrates into the inflation-shock/rising-rate trend that the tape has been paying for months, at the cost of diversification I judge to be false comfort right now. Turnover is roughly 74% one-way, about 3bp round-trip on traded notional \u2014 a rounding error against leaving three dead signals on the books through an FOMC.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 20,
+   "stop_loss_pct": 10.0,
+   "thesis": "Highest-ranked signal in the book and therefore the largest weight. The 10-year yield hit 5.02% on 2026-09-15, the highest since 2007, having taken out the November 2023 high; TLT is below both its 50- and 200-day averages with strongly negative 3-month momentum, which is the textbook short condition in my mandate. The driver is not one data point but a stack of them: August CPI at 3.4% y/y, Brent over $109 feeding headline inflation, heavy Treasury supply against unchecked deficits, and a Fed that the market prices at ~91% to hike 25bp to 4.00% on the very day this leg enters. Inverse-vol sizing also argues for the largest weight here: long-bond realised vol, even elevated, is well below that of my commodity legs, so 20% of capital in TLT carries less risk contribution than 14% in USO. Short borrow costs 3% APR, cheap for the exposure. The stop stays at 10% because the real risk is not a grind against me but a violent squeeze if the FOMC delivers dovish dots alongside the hike, and 10% on a low-vol instrument is a genuine catastrophe stop rather than noise."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 18.0,
+   "thesis": "The cleanest equity expression of the dominant trend and the leg I want largest on the long side. XLE trades above both its 50- and 200-day exponential moving averages and was pressing new highs around $64.77 in early September; energy is the leading S&P sector at +43% YTD, with the ETF itself up over 21% and Exxon up 40%. Unlike USO this is a cash-flow asset rather than a pure futures bet, so it carries roughly half the realised volatility for exposure to the same supply shock \u2014 Saudi's East-West pipeline shut, Strait of Hormuz disruption, tit-for-tat US-Iran strikes \u2014 which is why inverse-vol sizing puts more capital here than in the oil ETF despite USO having the stronger raw momentum. It also fits the regime in a second way: with the 10-year at 5%, capital is rotating out of long-duration tech into near-term cash generators, and oil majors are the largest beneficiaries. Wide 18% stop because weekly reassessment, not the stop, is my trend exit."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 15.0,
+   "thesis": "A strong trend I was simply not capturing, and the only leg that diversifies the book's concentration. Gold is at record highs \u2014 above $4,300/oz spot with December futures over $4,500, up more than 25% since early 2025 \u2014 comfortably above both moving averages with strong positive 3-month momentum, driven by 3.4% inflation, the Iran war, and sovereign debt concerns. My rules say own the strongest trends, and on price action this is one of the three strongest available. It earns its 16% weight for a second reason that matters into the 2026-09-16 FOMC: my TLT short, XLE long and USO long are all variants of one bet that rates and energy keep rising, and gold is the one asset that would rally if that bet breaks the dovish way \u2014 a Fed that holds or signals a pause would squeeze bonds against me but send real yields down and gold up. Sized below XLE because its momentum, while strong, has been choppier since the $5,300 spike and reversal earlier this year; moderate realised vol supports a mid-sized weight."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Strongest raw momentum in the book and my only winning leg of consequence at +8.99%, so it gets added to rather than trimmed \u2014 cutting winners is exactly the error trend-following exists to avoid. Brent jumped 4.5% to $109.29 and WTI to $104.26 on 2026-09-14, a 16-week high, after strikes from Iraqi territory forced Saudi Arabia to close the 7mb/d East-West pipeline and Houthi attacks opened a new front, on top of existing Strait of Hormuz disruption that has already caused fuel shortages in Asia. It is capped at 14% rather than made the largest position for two disciplined reasons. First, inverse-vol sizing: front-month crude realised volatility is roughly double XLE's, so 14% here contributes more risk than 18% in energy equities. Second, this trend has a specific, fast, non-price kill switch \u2014 oil has repeatedly halted its rally on nothing more than headlines about Iran talks, and the April ceasefire and June memorandum show how quickly the geopolitical premium can be given back. That is why I tighten the stop from 25% to 15% and keep a 35% take-profit: on this leg alone, a stop is a real exit rather than a formality."
+  },
+  {
+   "symbol": "ITB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "thesis": "A second short that expresses the rate trend through the sector with the most direct mechanical damage from it, and which is itself below both moving averages with negative momentum. The published bear threshold for the group was a 10-year break above 4.70%; we are at 5.02% and rising, with the bull case explicitly conditioned on either a September Fed hold or materially softer inflation \u2014 the market now prices ~91% odds that neither happens. Homebuilder fundamentals are already deteriorating underneath the rate move: order books are being defended with escalating buyer incentives that are compressing margins, and names like LGI Homes are breaking down. This leg does double duty. It is a valid standalone trend short, and paired against my SPY long it isolates the rate shock rather than betting on the index falling, which keeps me from doubling down on a directional equity view I do not actually have. Sized at 12% because homebuilder realised vol is high \u2014 roughly twice SPY's \u2014 and because short squeezes in beaten-down cyclicals are sharp."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept but halved, because the signal is intact and my rules do not let me abandon a valid trend on a macro opinion. SPY closed 7,619.98 on 2026-09-14 after 27 record closes and a +13% YTD advance, so price remains above both the 50- and 200-day averages with positive 3-month momentum. But it is now the weakest-ranked long I own: the index fell on 2026-09-14 in a chip-led selloff, breadth has narrowed to industrials, consumer defensives and energy while technology falters, consumer discretionary is outright negative on the year, and a 5% 10-year is a direct mathematical headwind to the multiple. Trend says hold; rank says small. At 10% it is also the leg that protects me against the most plausible way this book is wrong \u2014 the hike being fully priced and equities rallying in relief once the uncertainty clears at 2pm on entry day. Entry is at the 2026-09-16 close, after the decision and dot plot are public, so this fill already reflects the outcome."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

@@ -1,0 +1,42 @@
+{
+ "name": "Sonnet deep value",
+ "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards (low-vol equity, biotech), short a genuinely parabolic AI-momentum extension, funded by cash carry -- the gold-miners leg is cut after rising real yields broke its thesis, with the now-confirmed AI-momentum short sized up in its place.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 59,
+ "reassessment_note": "Rising real yields have broken the gold-miners leg's thesis rather than the book's broader mean-reversion logic: the 10-year Treasury yield is at 5.01%, its highest since 2007 and still climbing into an FOMC meeting priced roughly 90% for a hold (not a cut), gold itself is down ~14% YTD and just printed its 'lowest open in weeks as Treasury yields keep rising,' and there is no near-term (i.e. this week's) catalyst to reverse that. GDX was already the book's worst leg (-4.25%, carrying a -5% stop) with a thesis that requires falling real yields to work, so it is cut to zero now rather than waiting to be stopped out. Conversely, the short MU leg is the one part of the book fresh research unambiguously confirms: the stock is still +227.9% YTD (52-week range $154.65-$1,255) but has pulled back ~5% on 'concerns over AI development and its potential impact on future memory demand,' and Mizuho trimmed its target from $1,375 to $1,300 while staying Outperform -- exactly the 'genuinely parabolic AI-momentum extension' this mandate is built to fade. Size on that leg is increased from 8% to 10% with the stop/TP retained to cap squeeze risk into Micron's September 30 earnings. USMV, SPLV and XBI are left untouched -- nothing in today's research broke their low-vol-carry or oversold-laggard theses -- and the capital freed from GDX, net of the larger MU short, rolls into cash, consistent with the book's cash-funded design. Round 3 novelty: this book shares zero symbols with the Round 2 deep-value book (XOM/JPM/GM/UNH/PFE/IWM/F), so same-direction gross-weight overlap is 0%, well under the 50% threshold.",
+ "positions": [
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "thesis": "Low-volatility defensive equity held as a mean-reversion/laggard holding and to help fund the short carry leg; unchanged today -- nothing in fresh research breaks the low-vol thesis, and an 11-month-old 15% core position isn't worth touching absent new information."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Second low-vol sleeve alongside USMV for the same defensive-carry purpose; unchanged -- no catalyst today argues for resizing a diversifying low-vol pair rather than concentrating further in one low-vol ETF."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "thesis": "Oversold biotech laggard held for mean reversion; kept at its current small size -- no fresh news today either confirms or breaks the reversion thesis, so it stays sized as a modest convex bet rather than being cut or added to on no information."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The book's clearest confirmed thesis: MU is still up 227.9% YTD (52-week range $154.65-$1,255) -- textbook parabolic AI-momentum extension -- but has already cracked ~5% on genuine demand-sustainability concerns, and Mizuho just cut its target from $1,375 to $1,300 despite staying Outperform. Sized up from 8% to 10% (the capital vacated by cutting the broken GDX leg) with the existing 12% stop / 20% take-profit retained to cap squeeze risk into Micron's September 30 earnings print."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

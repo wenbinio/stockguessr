@@ -1,0 +1,73 @@
+{
+  "name": "Haiku macro/sector rotation",
+  "strategy": "Quality defensive rate-beneficiary positioning: emphasize yield-oriented stocks and low-volatility factors resilient to post-FOMC volatility while capturing utilities and financial dividend yield.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 20,
+  "reassessment_note": "Round 3 is outperforming Round 2 (+0.60% vs -1.80%) on defensive quality positioning. To maintain diversification per novelty rule (< 50% overlap with R2), rebalance to emphasize orthogonal factors: increase utilities (XLU 3%→14%) as rising-rate dividend-yield safe haven, reduce emerging-market currency risk (EEM 13%→5%) given dollar-strength tailwind from rate hike, maintain low-vol quality factors (SPLV, USMV). Utilities historically support portfolios through rate-shock volatility while dividend yields become more competitive vs bonds. This creates macro-hedge positioning: R2 is aggressive rate-winner play, R3 is defensive quality diversifier.",
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Healthcare sector core defensive holding in quality-focused portfolio. Earnings resilience independent of rate cycles; stable revenue from aging demographics and healthcare inflation. Lower beta to equity volatility. Dividend yield 2-3% supports quality income narrative. Maintains exposure to secular trends while providing downside cushion through reduced sensitivity to FOMC rate-shock volatility."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Utilities sector upgrade from 3% (major underweight) to 14% to capitalize on rising-rate dividend-yield appeal. Higher rates (3.75%-4.00% likely) make utility dividend yields (2.5%-4.5%+) increasingly attractive vs bond alternatives. Regulated utility cash flows are durable through rate shocks. Sector provides portfolio ballast through low equity-market correlation, stable earnings, and dividend growth potential. Defensive positioning orthogonal to R2's energy/financial aggression."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Financial sector quality exposure (lower than R2's 20% to maintain novelty) captures rate-hike net interest margin expansion while maintaining quality/dividend filter. Large financial names offer 2-3% dividend yields and earnings visibility. Positioned as quality equity exposure to rate beneficiary rather than aggressive carry trade. Balances dividend growth narrative with sector fundamentals."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "S&P 500 Low Volatility ETF provides defensive quality-factor exposure uncorrelated to rate cycles. Selected low-vol names have demonstrated FOMC-shock resilience through volatility clustering. Diversified across sectors with bias to stable earnings and dividend-paying names. Lower beta to post-FOMC equity dislocation. Factor exposure that outperforms in uncertainty environments."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 22.0,
+      "thesis": "US Low Volatility large-cap quality factor positioning. Focuses on domestic blue-chip companies with stable earnings and low historical volatility. Dividend-weighted construction (avg yield 2%+) supports quality income strategy. Provides uncorrelated return stream vs rate-sensitive growth. Essential diversifier within quality defensive framework, protecting downside while maintaining equity participation."
+    },
+    {
+      "symbol": "XLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Materials sector minimal allocation (6%) provides cyclical diversification without overcommitting to commodity-price risk. Maintains some exposure to structural growth in energy infrastructure (rare earths for wind/solar). Reduced weighting (vs prior 8%) reflects caution on growth slowdown in rate-hike scenario. Token position allows capture of any commodity-strength continuation without asymmetric downside if growth disappoints."
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Emerging markets dramatic reduction (13%→5%) reflects currency headwind from Fed rate hike. Higher US rates strengthen dollar, creating FX drag on EM returns. Policy divergence (Fed tightening vs central bank easing) reduces relative attractiveness. Minimal 5% allocation maintains diversification and exposure to long-term EM growth narrative while limiting currency impact on returns. Tactical underweight vs historical allocation."
+    }
+  ]
+}

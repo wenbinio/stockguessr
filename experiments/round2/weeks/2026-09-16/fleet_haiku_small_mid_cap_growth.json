@@ -1,0 +1,95 @@
+{
+ "name": "Haiku small/mid-cap growth",
+ "strategy": "Rate-sensitive small/mid-cap growth with reduced leveraged beta and elevated cash hedge ahead of hawkish FOMC decision; shifted toward resilient cloud/SaaS core positions with trimmed tech leverage.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 40,
+ "reassessment_note": "FOMC rate decision at 2 PM ET today carries 88-90% market-implied probability of 25bps hike given sticky core inflation above 2% target and elevated energy prices. This tightening cycle disproportionately hits high-beta growth and leveraged positions. Trimmed most vulnerable exposures: TQQQ (3x QQQ leverage) from 8% to 2%, ARKK (concentrated innovation/high-multiple) from 15% to 12%, and SNOW (elevated valuation multiple) from 3% to 2%. Raised defensive cash position from 30% to 40% given VIX at 15.8% and market-implied 1.1% move on FOMC announcement. Maintained core cloud/infrastructure exposure (CRWD, DDOG, SHOP) which offer pricing power through rate rises, and kept fintech positioning (SOFI, UPST) as defensive complementary growth theme. Gross exposure down to 60% from 70%. If Fed surprises with pause, have ample redeployment capacity from cash. If hawkish hike occurs as expected, reduced leverage cushions downside.",
+ "positions": [
+  {
+   "symbol": "ARKK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Innovation/small-cap growth exposure but concentration trimmed from 15% pre-FOMC given high multiple sensitivity to rate increases. ARKK off 2.61% on current leg. Maintaining position for core growth theme but at lower weight given beta and concentration risk into hawkish decision."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "Broad small-cap exposure provides mandate-appropriate diversification. Maintains non-correlated small-cap beta to ARKK innovation concentration. Down 2.92% on leg but retains core positioning."
+  },
+  {
+   "symbol": "TQQQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 2,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed 3x QQQ leveraged position from 8% to 2% ahead of hawkish FOMC. 3x leverage to NASDAQ-100 creates outsized duration risk in rising-rate regime; maintains minimal core exposure for upside capture if Fed surprises with dovish hold. Currently down 4.31% on leg reflecting rate sensitivity."
+  },
+  {
+   "symbol": "SOFI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Fintech beneficiary of rising rates (higher deposit margins, lending spreads widen). SOFI down 3.69% on leg but positioned to benefit from tightening cycle offsetting Fed hawkishness. Take-profit at 30% reflects reasonable upside from core thesis."
+  },
+  {
+   "symbol": "CRWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "Cloud security infrastructure with pricing power through cycle; up 11.24% on current leg demonstrating resilience. Rate-insensitive SaaS model benefits from continued enterprise digitalization regardless of monetary policy. Maintained at full weight."
+  },
+  {
+   "symbol": "DDOG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 12.0,
+   "thesis": "Cloud monitoring/observability platform with recurring SaaS revenue model. Up 7.88% on leg. Less rate-sensitive than growth-at-any-price positions; maintained as core holdings for resilience in hawkish scenario."
+  },
+  {
+   "symbol": "MDB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 1,
+   "stop_loss_pct": 12.0,
+   "thesis": "Minimal-weight database/infrastructure play. Up 5.34% on leg. Core position in cloud infrastructure theme but kept at 1% to reduce overall growth/tech concentration ahead of FOMC."
+  },
+  {
+   "symbol": "SHOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "E-commerce infrastructure with reasonable valuations and positive cash flow. Down 1.67% on leg. Maintained at 5% as exposure to online commerce growth independent of rate regime; moderate multiple provides some hedge vs. pure-growth names."
+  },
+  {
+   "symbol": "UPST",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 35.0,
+   "thesis": "AI-driven fintech lending platform; positioned to benefit from rising rates increasing lending margins. Down 3.93% on leg but take-profit at 35% reflects upside potential. Maintained at 5% as complementary fintech exposure alongside SOFI."
+  },
+  {
+   "symbol": "SNOW",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 2,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Cloud data platform trimmed from 3% to 2% pre-FOMC given elevated multiple sensitivity to rates. Down 3.06% on leg. Maintaining minimal exposure for core cloud/data infrastructure theme but reducing concentration risk."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

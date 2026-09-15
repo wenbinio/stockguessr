@@ -1,0 +1,73 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Risk-balanced barbell rebuilt for a hiking Fed and an oil shock: 25% aggressive AI-infra compounders (NVDA/AVGO/ANET) against 35% rate-resilient ballast (Berkshire, energy, gold, pharma) and 40% yielding cash.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 40,
+ "reassessment_note": "Two things changed since the 08-31 leg. First, the regime: August CPI 3.4% y/y, Brent above $105 on the Iran/Saudi pipeline shock, the 10-year at 5.04% (highest since 2007, up five sessions running), and a ~92% priced 25bp hike on 09-16 with ~56bp more priced through December; even Goldman and HSBC have flipped to a hike. In that world my 'defensive' ballast of utilities and staples is not defensive: XLU is -6.3% over a month and -11.9% over six, staples are below their 200-day, and gold has slipped 3.5% on rising real yields. Second, the AI-capex narrative cracked on 09-14 when Amodei, Altman and Musk called for a development slowdown: SOX -5.9%, NVDA -3.4%, AVGO ~-4.5%, GEV -8.6% (plus a GLJ Sell initiation at 38.9x EV/EBITDA), ANET -5.1%. So I am doing three things. (1) Shrink the aggressive side from 35% to 25% and concentrate it in the two AI names with contracted, cash-generative revenue (NVDA guiding $108B, AVGO AI semis +200% y/y) plus a smaller ANET; GEV goes because it is the most narrative- and multiple-sensitive leg and just got a Sell call. (2) Rebuild the ballast for rising rates: drop XLU and KO, add XLE as the inflation-shock ballast (energy +14% over three months, +41.5% YTD, the only sector green on a month), raise BRK-B (its T-bill pile earns more with every hike and it has zero AI beta), keep a small GLD as the hedge for the ~8% Fed-hold tail and the Middle East, keep MRK/JNJ as low-beta health care (sector +7.7% over three months). (3) Lift cash to 40% at 4% APY, which is the cleanest ballast available when the Fed is hiking and bond proxies are falling. Fills are at the 09-16 close, after the 2pm decision, so this is a post-FOMC book, not a bet on the print. Churn cost is roughly 2bps per side on ~45% turnover, trivial against the drawdown avoided if utilities and GEV keep bleeding.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 18.0,
+   "thesis": "Core of the aggressive side, upsized from 10 to 12 because it is the cheapest it has been on forward earnings after a 3.4% drop on a rhetorical slowdown call: Q2 FY27 revenue $96B with data center $89B and Q3 guided to $108B, all of it backed by contracted hyperscaler capex that does not switch off because three CEOs asked for a pause. 12% is enough that a re-rating matters to the book and small enough that the 18% stop (evaluated daily against my 09-16 fill) caps the leg's damage at ~2.2% of NAV."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18.0,
+   "thesis": "Second aggressive leg held at 8%: custom-ASIC AI revenue running at ~$16B a quarter, up over 200% y/y, and the cheapest way to own AI compute that is not NVDA. It fell ~4.5% on the slowdown headline, which is a sentiment hit to a business with multi-year design wins. Kept smaller than NVDA because the leg is already -7% from the 08-31 fill and I want the AI sleeve concentrated, not spread. 18% stop."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "thesis": "Cut from 7% to 5%: Arista is the purest networking play on hyperscaler capex and dropped 5.1% on 09-14, so it is the aggressive leg most exposed to the AI-slowdown narrative that survives the cut. I keep a reduced position because Ethernet back-end switching share gains are real regardless of model-training cadence, but at 5% it cannot hurt the book much if the capex-pause story has a second leg. 18% stop."
+  },
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "thesis": "Anchor of the ballast, raised from 12 to 14: Berkshire is the one large-cap that gets paid by Fed hikes (its ~$300B-plus T-bill pile reprices with every 25bp), has no AI capex exposure, and is already +1.7% on the leg while everything around it fell. No stop because it is the position I want to be adding to on weakness, not selling into it."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "New ballast leg, replacing XLU/KO: the shock driving the Fed to hike is an oil shock (Brent ~$107, Saudi pipeline shut, Hormuz and Red Sea fighting), so energy is the one sector that benefits from the same thing hurting the rest of the book. It is +4.5% over a month, +14% over three and +41.5% YTD while every other sector is red on a month. 8% because it is also the leg most exposed to a ceasefire headline, hence the 15% stop and a 25% take-profit to force me to bank a spike."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Held and nudged from 4 to 5 despite being -3.8% on the leg. Gold at ~$4,300 has been squeezed by real yields and a firmer dollar, but it is the only ballast that pays off in the ~8% scenario where Warsh holds and the curve screams behind-the-curve, and it is also the geopolitical hedge for the Middle East escalation that is driving oil. No stop: a stopped-out hedge is worthless."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Kept at 4%: health care is +7.7% over three months and one of only two sectors positive on that window, and Merck is a low-beta, low-multiple pharma with no rate sensitivity and no AI beta. Leg is -3.1% but the sector is holding up as the rotation-into-defensives destination (GSK +4.7% on 09-14). No stop; it is ballast."
+  },
+  {
+   "symbol": "JNJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Kept at 4% for the same reason as MRK: quality health care ballast, AAA balance sheet, nearly flat on the leg (-0.8%) through a week in which utilities and staples broke down. Two pharma names at 4% each rather than one at 8% keeps single-name drug-pipeline risk small. No stop."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

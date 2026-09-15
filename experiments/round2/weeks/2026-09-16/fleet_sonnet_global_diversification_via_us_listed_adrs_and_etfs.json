@@ -1,0 +1,62 @@
+{
+ "name": "Sonnet global diversification via US-listed ADRs and ETFs",
+ "strategy": "International/EM ETF and quality non-US ADR diversification with a small US inverse hedge, trimmed and re-armed with protective stops ahead of a hawkish FOMC risk event.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 46,
+ "reassessment_note": "ASML (-15.46% leg) and BABA (-11.74% leg) already stopped out on 09-14 and 09-09, which by itself pushed cash from 25% to 41% and validated the risk controls on this book -- the two names with the most idiosyncratic single-country/regulatory risk (Europe/China) were the ones that broke first. New information changes the calculus for the remaining six legs: research into the 2026-09-16 FOMC shows market pricing has swung sharply hawkish -- CME/Investing.com Fed Rate Monitor shows ~90% odds of a hike to 3.75-4.00% rather than a cut, driven by new Fed Chair Kevin Warsh's hawkish Jackson Hole tone and a stronger-than-expected August jobs report; press coverage frames this as the first potential hike since 2023. A hawkish surprise on a mandate built around non-US/EM assets is a genuine regime-relevant catalyst, not noise: it typically strengthens the dollar and pressures EM currencies/equities (Brazil's real was already reported softening into the decision) and raises the odds of a broader US-equity air-pocket that the SQQQ hedge exists to catch. Rather than let three of the remaining legs (EEM, EWJ, INDA) ride into a binary macro event with zero downside protection, I am trimming each modestly, adding stops to the previously-unprotected EM legs, tightening/locking in the two legs that are sitting on solid open gains (EWZ +11.3%, SQQQ +9.83%) with a trailing stop and higher take-profit, and sizing up the SQQQ hedge slightly (8%->10%) as explicit insurance against the AI-valuation/rate-shock scenario the mandate already flags. TSM is left essentially unchanged -- the AI-capex demand story (August revenue +53% y/y, average analyst target ~$551, ~32% implied upside) is intact and its existing -15% stop is doing its job -- so the change here is about protecting the newly-exposed legs into a specific dated event, not chasing the tape. Net effect: gross exposure comes down from 75% to 54%, cash rises from 41% to 46%, and every open position now carries a stop for the first time this book has had full coverage.",
+ "positions": [
+  {
+   "symbol": "EEM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Broad EM anchor of the diversification mandate; trimmed from 12% to 10% and given its first-ever stop because a hawkish FOMC surprise (~90% priced odds of a hike per Investing.com's Fed Rate Monitor) is a dollar-positive, EM-negative catalyst landing directly on the next trading date -- keep the core EM beta but cap the downside into the binary event."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "thesis": "AI-capex demand remains exceptional -- reported August revenue up 53% y/y and a High-NA lithography roadmap out to 2030 -- with average analyst target near $551 (~32% upside) against a $417 mark; forward P/E of ~20 is reasonable for the growth rate even though trailing P/E (~31) leaves room for multiple compression if the hawkish rate shock hits growth names broadly. Unchanged size and stop: thesis intact, existing risk control already appropriate."
+  },
+  {
+   "symbol": "EWZ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Brazil ADR-proxy is the book's best performer this leg (+11.3%), but the same hawkish-Fed dollar-strength catalyst that threatens EM broadly was already showing up in reports of the Brazilian real softening into the decision. Trimming 10%->8% and tightening the stop from none to -8% (with TP raised to +20%) locks in most of the existing gain while still letting the position run if EM risk sentiment holds."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Japan ADR-proxy diversifies away from US mega-cap AI concentration, but a Fed hike widens the US-Japan rate differential right as the BoJ has been on its own tightening path -- that combination has repeatedly produced sharp yen/carry-trade volatility in 2024-2025 and EWJ (USD-denominated) is exposed to both legs. Trimmed 10%->8% with a first-time -10% stop to bound that event risk."
+  },
+  {
+   "symbol": "INDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "India's domestic-demand story is idiosyncratic and less directly tied to Fed policy than trade-linked EM, but INDA still trades with EM-wide risk sentiment on hawkish-dollar days. Trimmed 9%->8% and given a first-time -10% stop rather than being cut outright, since the underlying growth thesis hasn't changed -- only the near-term event risk has."
+  },
+  {
+   "symbol": "SQQQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 50.0,
+   "thesis": "This is the book's explicit hedge against US mega-cap AI-valuation risk, and it is already working (+9.83% this leg). A ~90%-priced hawkish surprise from a new, more hawkish Fed Chair is precisely the kind of shock that could trigger the AI-valuation air-pocket this hedge is designed to catch, so sizing it up modestly (8%->10%) and raising the take-profit to +50% lets it do more work if the surprise materializes while the existing -20% stop still caps the cost of being wrong."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Opus 5 unrestricted",
+  "strategy": "Long the physical energy shortage at both the crude and the refining margin (58%), paid for by shorting its two most direct victims — airlines and the discretionary consumer (20%) — with 22% cash held deliberately across a 16 Sep FOMC where a hike is 91% priced and only the path is uncertain.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 22,
+  "reassessment_note": "Three things changed since the 8 Sep leg and none of them were in the old book. (1) The shock migrated upstream. On 14 Sep strikes forced a shutdown of Saudi Arabia's East-West pipeline — up to 4% of global supply — and Brent jumped 3.5% to ~$108 with WTI ~$103. My strategy of record explicitly said the binding constraint was destroyed refining capacity 'rather than the crude price'. That is now only half true: there are two live physical shocks, and I was expressed in only one of them, the one that has already re-rated 100%+ this year. (2) The refining equity leg is extended even though the thesis is right. ULSD cracks printed an all-time $108.02/bbl on 3 Sep, yet my four refiners went essentially nowhere over the following week — the tape stopped paying for new records. MPC trades ~21% above a $330 consensus PT after a ten-day win streak. Being right about cracks and wrong about the multiple is a real way to lose money, so refining goes 62% -> 43% and rotates up in quality: PBF out (management priced $500m of 0% converts at a 37.5% premium on 14 Sep — that is the issuer telling you the stock is rich, and it cost me 8% already), DINO out, PSX in as the laggard of the group at +66% YTD with midstream and chemicals ballast. (3) The macro regime inverted. August CPI came in at 3.4% headline with gasoline +27.4% y/y and contributing over a third of the monthly print; the market now prices a 91% chance of the first hike in three years tomorrow, under a Warsh Fed that says it has 'work to do'. Gold is 22% off its January high, which is the tell: this is a hawkish real-rate regime, not a debasement one, so no gold and no crypto here. That regime also condemns two legs I owned. XLV is a bond proxy with no stop and no thesis of its own — gone. JETS long was described as a hedge that 'pays if the crack normalises', but 6% cannot hedge 62%, and it was long the one industry paying the record jet-fuel crack while also carrying leverage into a hiking cycle. I have flipped it short, which is what the thesis actually implies. I kept 22% in cash rather than 18% on purpose: my legs fill at the 16 Sep close, i.e. after a decision I cannot see, where the hike itself is priced and the entire distribution sits in the dots and the press conference.",
+  "positions": [
+    {
+      "symbol": "MPC", "kind": "equity", "side": "long", "weight_pct": 18,
+      "stop_loss_pct": 14.0, "take_profit_pct": 30.0,
+      "thesis": "Largest US refining system and the cleanest listed beta to the 3-2-1 crack, which sits near $64/bbl against a sub-$20 print in January, with US refineries running at 98% utilisation. I am keeping it as the top leg because the constraint is physical — closed plants, Ukrainian drone strikes on Russian capacity, Hormuz — and physical capacity does not come back in a quarter. But I cut it from 22% to 18% because the stock is ~21% above the $330 sell-side consensus after a ten-day winning streak, and because it did not make a new high when the diesel crack made its all-time high on 3 Sep. Right thesis, stretched price, so smaller size with the 14% stop retained."
+    },
+    {
+      "symbol": "VLO", "kind": "equity", "side": "long", "weight_pct": 16,
+      "stop_loss_pct": 14.0, "take_profit_pct": 30.0,
+      "thesis": "The record is specifically in distillate, not gasoline: ULSD cracks hit $108.02/bbl on 3 Sep and diesel broke $6/gal for the first time, while the RBOB crack fell mechanically on the 1 Sep RVP spec change. Valero's Gulf Coast system has the highest distillate yield and the best export optionality of the majors, so it is the leg most levered to the part of the barrel that is actually short. Trimmed 21% -> 16% for the same valuation reason as MPC, not for any loss of conviction in the spread."
+    },
+    {
+      "symbol": "PSX", "kind": "equity", "side": "long", "weight_pct": 9,
+      "stop_loss_pct": 15.0, "take_profit_pct": 32.0,
+      "thesis": "Replaces DINO and PBF as the third refining leg. Same crack exposure, but up ~66% YTD against ~100% for MPC and VLO, so I am paying a smaller premium for the identical driver, and the midstream, marketing and CPChem segments dampen the pure-margin drawdown if cracks mean-revert. It specifically replaces PBF, where the 14 Sep pricing of $500m of 0% exchangeable notes at a 37.5% conversion premium is management monetising the spike — I would rather own the refiner that is not selling equity into this tape."
+    },
+    {
+      "symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 15,
+      "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+      "thesis": "The genuinely new leg, and the one that fixes the blind spot in my strategy of record. The 14 Sep Saudi East-West pipeline shutdown puts up to 4% of global supply at risk on top of the existing Hormuz disruption, and Brent at ~$108 is the fresher, less crowded of the two shocks — integrateds and E&Ps have not doubled the way the refiners have. I take it through the sector ETF rather than a single E&P deliberately: I am already carrying 43% in three refining names, so the crude leg should add a different risk, not more single-name variance. It is also the one equity block that structurally wins in a Fed-hiking-into-energy-inflation regime, because it is the source of the inflation being hiked against. 2bps and a tight 12% stop given lower vol."
+    },
+    {
+      "symbol": "JETS", "kind": "equity", "side": "short", "weight_pct": 10,
+      "stop_loss_pct": 15.0, "take_profit_pct": 25.0,
+      "thesis": "Flipped from a 6% long to a 10% short — the single clearest error in the old book corrected. Airlines buy the jet fuel whose crack just set an all-time record; every dollar of margin my refiners earn is a dollar the airlines pay, so long refiners against short airlines is the honest expression of a crack-spread view with much of the market and crude beta netted out. On top of that airlines are a levered, rate-sensitive, discretionary-demand industry facing the first Fed hike in three years and a consumer already absorbing gasoline up 27.4% y/y. Borrow is 3% APR, a third the cost of expressing this via a perp. Sized at 10% rather than larger because it is the leg that hurts most if the shortage resolves; the 15% stop is on an adverse 15% rally in JETS, which is precisely the tape that tells me the crack has broken."
+    },
+    {
+      "symbol": "XRT", "kind": "equity", "side": "short", "weight_pct": 10,
+      "stop_loss_pct": 15.0, "take_profit_pct": 20.0,
+      "thesis": "The other side of my own long thesis: if diesel above $6/gal and gasoline up 27.4% y/y are real, they are a regressive tax straight out of discretionary retail spending, and the Fed is about to tighten into that squeeze rather than cushion it. The equal-weighted retail ETF is a purer expression of the low-end consumer than XLY, which is dominated by two mega-caps with idiosyncratic stories. This leg is what pays if the FOMC delivers a hawkish path and equities de-rate broadly, and it is the reason I can stay 58% long energy into the meeting instead of hiding in cash. 15% stop, and it is deliberately the smaller-conviction of my two shorts, hence equal weight to JETS rather than larger."
+    }
+  ]
+}

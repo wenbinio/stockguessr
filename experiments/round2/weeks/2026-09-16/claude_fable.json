@@ -1,0 +1,55 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Concentrated AI-infrastructure conviction, unlevered, now narrowed to the compute/memory/foundry/networking core with the two idiosyncratically broken legs (VRT, GEV) cut, a small contrarian BTC spot leg, and more dry powder held back into a hawkish Fed.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 21,
+ "reassessment_note": "What changed: (1) The Sept 14 semi rout (SOX -6%) was triggered by Amodei's 'Pace the Frontier' essay, endorsed by Altman and Musk. I read it as a sentiment shock, not a demand shock: no lab has announced a moratorium, no hyperscaler has cut capex, and the memory tape is the opposite of weak - DRAM and NAND at record highs in August, HBM sold out through 2026, Micron guiding $50B revenue and ~86% gross margin for the Sept 30 print. Semis bounced 1-2% on Sept 15. So the core thesis (MU/AMD/NVDA/TSM/ANET) survives and I am not selling it into the dip. (2) Two legs broke on their OWN facts, not on the essay: Vertiv fell 9.6% on Sept 9 and another 7.65% on Sept 14, sits 31% below its May high, carries a Q2 revenue miss and a $1.45B UtilityInnovation acquisition whose economics it has not detailed - it is a broken chart with a broken story, and at -16.5% on the leg it is my worst position. GE Vernova dropped ~8.8% on Sept 14 on a Street-low $470 Sell initiation; it is a power-equipment adjacency, not core AI compute, and momentum is gone. A conviction book should not carry legs whose conviction has left. Both are cut to zero. (3) Macro turned hostile to long-duration growth: 10Y touched 5.01% (19-year high) on $102 oil and AI-linked issuance, and the FOMC is ~90% priced to hike 25bp on Sept 16 - Warsh does not even submit a dot, so guidance risk is two-sided. My fills land at the Sept 16 close, after the decision is public, which is why I am not deploying the whole 15% cash into the dip now; instead I lift cash to 21% (4% APY) as ballast and dip-buying powder for after the Fed/BOJ week. (4) Of the 12% freed, 6% goes to MU - the one leg whose fundamentals are supply-constrained rather than frontier-pacing-dependent - ahead of the Sept 30 catalyst, with a 20% stop because a 24% single-name into a binary print deserves a hard floor. Net: gross exposure falls from 85% to 79%, the book is more concentrated in the highest-conviction names, and churn is limited to the two cuts plus one add (roughly 3bps of friction).",
+ "positions": [
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 24,
+   "stop_loss_pct": 20.0,
+   "thesis": "Largest leg at 24% (up from 18%) because memory is the part of the AI-infra stack least exposed to the 'pace the frontier' narrative: DRAM and NAND contract prices hit record highs in August, server DRAM was up ~53% q/q in Q2, all three suppliers call 2026 HBM output sold out, and the shortage is a capacity constraint that does not care whether frontier labs slow training. Micron guides FQ4 revenue $50B +/- $1B and ~86% gross margin, reporting Sept 30 - a hard catalyst two weeks out. The leg is -6% from my 9/8 fill after a 5% sentiment-driven drop on Sept 14; I add into that. Stop at 20% because a 24% single-name position into a binary print and a hawkish Fed week needs a hard floor: worst case about -5% of NAV."
+  },
+  {
+   "symbol": "AMD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "thesis": "Held at 18%. -4.4% on Sept 14, +2% on Sept 15; only -0.65% on the leg, so it has been the most resilient of the compute names through the shock. AMD is the second-source accelerator whose share gains depend on hyperscaler diversification, which does not reverse if frontier pacing slows - buyers still want a second vendor. No change to size: the leg is roughly flat and there is no idiosyncratic news that would justify adding or cutting into a Fed decision."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "thesis": "Held at 16%. This is the name the essay hits hardest in narrative terms (-3.4% on Sept 14, -5.2% on the leg) because Nvidia is the purest 'picks and shovels' seller. But the D.A. Davidson read is the right one: an AI slowdown is an all-or-nothing coordination game, no lab has announced a moratorium, and China (Z.AI just raised $5B) is not pacing anything. I keep the position rather than add because the multiple is the most rate-sensitive in the book and the 10Y just printed 5%; I would rather add MU into a dated catalyst than NVDA into a Fed press conference."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Held at 8%. The foundry is the toll road under every accelerator in this book regardless of which vendor wins, and it has no exposure to the VRT/GEV style idiosyncratic problems that made me cut those legs. -4.5% on the leg, roughly in line with the sector move. I keep it at the same size as the diversifying layer under the MU/AMD/NVDA concentration."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Held at 8%. Arista is the networking layer of the AI data center build and was the second-most resilient leg through the Sept 14 shock (-1.5% on the leg). Cluster networking spend scales with deployed capacity that is already ordered, so a pacing narrative about frontier model training affects it less than the accelerator names. No news that argues for a size change; it stays as the non-compute leg of the core stack."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Held at 5% as the book's contrarian, non-AI leg. BTC is ~$78K, flat on the leg, Fear & Greed 69, and the crypto market rose 3% on Sept 15 with the Senate Clarity Act procedural vote in play. It is the only leg in this book that is not correlated to semiconductor sentiment or to the 10Y, which is exactly why it stays: it is the diversifier. 35bps per side in crypto friction is another reason not to touch it."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

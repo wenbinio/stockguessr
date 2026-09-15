@@ -1,0 +1,45 @@
+{
+ "name": "Opus 5 carry",
+ "strategy": "A long-only floating-rate carry book that concentrates in top-of-capital-structure AAA CLO and IG floaters whose coupons reset upward on the 2026-09-16 hike, keeps a fee-based midstream distribution sleeve as the energy-inflation carry hedge, sells a little index variance, and holds the rest in 4% cash rather than in a Treasury floater that now yields less than cash.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "Two things changed since the 2026-09-08 leg, and only two. First, the Fed call I am positioned for got confirmed rather than refuted: August CPI printed +0.4% m/m and 3.4% y/y with core 0.1pp above forecast on an Iran-war energy shock, and fed funds futures now put a 25bp hike to 3.75-4.00% at 84-91% for the 2026-09-16 meeting under Chair Warsh, with Goldman and JPMorgan having moved to the hike. That vindicates the floating-rate core, so I am adding to it rather than rotating away. Second, and this is the real reassessment: the compensation for sitting in mezzanine CLO paper has gone negative. High-yield OAS is 2.65%, essentially cycle tights, while the CCC-to-single-B differential has blown out past 600bp after widening ~200bp year to date, private credit funds are gating redemptions and marks are going from par to zero. That is a bifurcated market where the index level hides the loss tail, and BBB/BB CLO tranches are precisely the levered claim on that tail. CLOZ is the empirical proof: it has run a ~7.5% distribution yield and is still down 1.69% year to date, which means spread widening has already eaten more than the entire coupon. A carry manager's job is to harvest compensated spread, not to collect a coupon that the mark is quietly taking back, so CLOZ goes to zero weight. Third housekeeping point: USFR now distributes ~3.81% gross, ~3.66% net of its 15bp fee, and even after the hike resets it to roughly 3.75% net it still sits below the 4% APY this book earns on idle cash with no fee, no bid-ask and no mark-to-market noise. Cash strictly dominates that leg, so USFR goes to zero and cash rises to 16%. Net effect is that blended book yield only falls from about 6.0% to about 5.8% while I have removed the one position carrying genuine tail risk and the one position that was being paid less than cash. I deliberately kept the turnover surgical: JAAA, AMLP, FLOT and SPYI all stay, so only about a quarter of the book actually trades. This book has now run seven legs in nine weeks and is at -1.59% while earning positive carry the whole way, which tells me the churn has been the enemy, not the positioning. I am not rebuilding; I am cutting two legs and letting the rest compound.",
+ "positions": [
+  {
+   "symbol": "JAAA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 46,
+   "stop_loss_pct": 5.0,
+   "thesis": "This is the single best expression of the house view and I am sizing it accordingly, up from 34%. JAAA holds 90%+ AAA CLO tranches at roughly a 5.0-5.6% yield with near-zero duration, so its coupon mechanically resets higher off term SOFR when the Fed takes the funds rate to 3.75-4.00% tomorrow - it is one of the few carry assets that gets paid MORE by the event that is 85-90% priced, and it takes essentially no mark-to-market hit if the dots come out more hawkish still. Critically, it is the opposite side of the trade I am exiting in CLOZ: AAA sits at the very top of the CLO waterfall with the entire mezzanine and equity stack subordinated beneath it, so the CCC/single-B dispersion and private-credit gating that is chewing through junior tranches has to destroy an implausible amount of collateral before it reaches this paper. Street base case has Tier 1 AAA new issue around S+125, in line with current levels, so I am not paying up for the spread either. A $27bn fund gives me the liquidity to hold a 46% weight without it being a position I cannot exit. Stop at 5% is a true circuit breaker, not a trading stop - JAAA's worst historical drawdown is in the 2-3% area, so a 5% break would mean a systemic liquidity dislocation in structured credit and I want to be out mechanically if that happens rather than arguing with it."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Held and nudged up a point, because this leg is doing a job no other position in the book can do. At a 7.3% trailing distribution yield it is the highest-carry asset I own, and the source of that carry is fee-based US midstream cash flow tied to volumes, storage and long-term contracts rather than to the spot crude print - which matters right now, with WTI having slipped under $70 on soft demand even while the Iran conflict keeps a geopolitical risk premium in the curve. More importantly it is the natural hedge to the very thing forcing the Fed's hand: the August CPI beat was driven by energy, gasoline up 3.9% and the energy index up 2.1%, accounting for over a third of the headline gain. If that energy shock persists or worsens, the Fed hikes further and every other leg in this book just earns a higher reset coupon while AMLP also appreciates. If the shock fades, the Fed backs off and I keep collecting 7.3%. That two-sided payoff is why it stays at a fifth of the book. This is now my only real equity-beta leg, so I have tightened the stop from 18% to 15% - a 15% drawdown would mean the fee-based thesis itself has broken rather than just oil being noisy - and kept the 25% take-profit, which is roughly where a geopolitical supply spike would take midstream before I would rather bank it than press it."
+  },
+  {
+   "symbol": "FLOT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 5.0,
+   "thesis": "Kept and sized up one point, as the investment-grade half of the floating-rate core. FLOT yields roughly 4.6% on floating-rate IG corporate paper with near-zero duration, so like JAAA it gets a coupon uplift from tomorrow's hike rather than a price hit, and it diversifies the book's credit exposure away from being purely structured: JAAA's risk is the broadly syndicated loan collateral pool, FLOT's is investment-grade corporate balance sheets, and those two do not fail together in any scenario short of a genuine recession. It is also the deliberate quality substitute for the CLOZ weight I am retiring - I want to keep the book's spread income, I just want to earn it from IG issuers rather than from the levered loan tail where the CCC/single-B differential has already gapped 200bp wider this year. 12% is a supporting weight, not a bet; the 5% stop matches the JAAA logic, since IG floaters only move that far in a real credit event."
+  },
+  {
+   "symbol": "SPYI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unchanged at 6% - a small, deliberate variance-premium sleeve rather than an equity view. SPYI writes S&P index calls to convert implied volatility into a high monthly distribution, and the variance premium is structurally richest into a scheduled macro event, which is exactly what a 2pm FOMC decision plus a Warsh press conference is. The payoff shape also happens to fit the house view: with a hike 85-90% priced, the upside scenario for equities is a modest relief rally rather than a melt-up, and giving away the tail above the strike costs me little while the premium collected is real. I am keeping it deliberately small because it is the one leg in the book that carries genuine equity drawdown risk without a floating coupon underneath it, and at 6% a bad quarter here cannot meaningfully damage NAV. The 12% stop is unchanged and sits below any normal index correction, so it only triggers on a proper risk-off break where I would want the cash back anyway."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

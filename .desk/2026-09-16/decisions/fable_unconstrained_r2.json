@@ -1,0 +1,50 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Dual-momentum: long 6-month sector/asset leaders that are NOT in a sharp 1-month correction (energy, healthcare, financials, one surviving cyber name), a small unlevered BTC mean-reversion sleeve, no leverage, small caps dropped ahead of the first hike since 2023, 47% cash at 4%.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 47,
+ "reassessment_note": "One change, made because the macro trigger I wrote into the IWM thesis last week has now effectively fired. On Sept 8 I kept IWM at 9% with the explicit caveat that a confirmed Sept 16 hike is the one macro event that directly targets floating-rate small-cap balance sheets. Since then: Aug CPI (Sept 11) printed +0.4% m/m, 3.4% y/y with core +0.3%, gasoline +27% y/y; the 10-year touched 5.012% on Sept 14 (first time since Oct 2023) and closed 4.96%; fed funds futures now price a 25bp hike at 91-93%, up from 63% when I sized the leg; and the Russell 2000 closed 2,892 on Sept 15 (-0.4% on the day, IWM $286 vs my $294.67 fill, leg -2.9%) while XLE sits 1.5% below its 52-week high. Goldman puts 32% of Russell 2000 companies on floating-rate debt vs 6% of the S&P 500 and BofA estimates each 25bp hike removes about 2% of R2K operating earnings, so the regime that starts Wednesday is one where small caps lose their earnings tailwind while the 6m ranking still shows them as a leader on stale returns. I exit IWM entirely rather than wait for the 12% stop at $259 to do it for me. Important mechanical point: my fills land at the Sept 16 close, after the 2:00pm decision and the 2:30pm Warsh presser, so this trade cannot hedge the event itself; it positions the book for the post-hike regime, and if the Fed surprises with a hold I will have sold IWM into a relief pop, which I accept because a hold would signal the Fed fears growth, not that small-cap floating-rate exposure is fine. Two points of the freed nine go to XLE (15% -> 17%): it is the strongest leader on every screen (1-year total return +50%, YTD +43%) and the driver escalated this week rather than faded: drone strikes from Iraq shut Saudi's 7 mb/d East-West pipeline on Sept 10-11 with Hormuz still closed, Yanbu has 5-7 days of storage, WTI is $102.32 (+21.7% in a month) while XLE is only +0.5% on my leg, i.e. energy equities have not yet caught up to the commodity. The remaining seven points go to cash (40% -> 47%) because the 10-year at 5% and a hiking Fed raise the bar for every other leg. Unchanged: FTNT 12% (leg +7.5%, $8.02-8.18B guide; Wedbush cut to Neutral on Sept 10 but the 1m return is nowhere near the sharp-correction threshold, and Monday's semi selloff, SOX -5.9% on the Amodei/Altman/Musk slowdown calls, hit AI hardware not security software), XLV 10% (least rate-sensitive leader, leg -0.3%), XLF 8% (a hike with the curve near 5% is a NIM tailwind; 2-year at multi-year highs), BTC 6% (mean-reversion sleeve, $76.6k, spot ETFs lost $463M Sept 8-11 after +$731M on Sept 3; hawkish Fed is a headwind but the sleeve is sized for that). Book gross falls 60% -> 53%, and no symbol overlaps my Round 3 book. Churn cost is two equity tickets at 2bps.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 12.0,
+   "thesis": "Largest leg, raised 15% -> 17%. Energy is the only 6m leader whose driver is accelerating into the hike: WTI $102.32 on Sept 15 (+0.9% on the day, +21.7% in a month, +59% y/y) after drone strikes from Iraq shut Saudi Arabia's 7 mb/d East-West pipeline on Sept 10-11 with the Strait of Hormuz still closed by Iran; Saudi Red Sea storage covers 5-7 days of exports and Capital Economics estimates up to 4% of world supply could go offline. XLE $65.16 is 1.5% below its $66.17 52-week high with a 1-year total return of +50%, yet my leg is only +0.5%, so energy equities are lagging the commodity rather than chasing it. It also hedges the rest of the tape: the oil shock is what pushed the 10-year to 5% and the Fed toward a hike. Risk is a Hormuz deal or pipeline restart headline, which is why the stop stays at 12% rather than wider and why I add two points, not nine."
+  },
+  {
+   "symbol": "FTNT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unchanged at 12%, leg +7.5% ($169.21 mark vs $157.47 fill). Still the surviving cyber leader: 6m +87%, YTD +97%, 2026 revenue guide raised to $8.02-8.18B. Wedbush downgraded to Neutral on Sept 10 and MarketBeat's average target sits below the price, which is why I do not add, but the 1m return is nowhere near the 12% sharp-correction threshold that removed PANW, and Monday's AI selloff (SOX -5.9% on the Amodei/Altman/Musk slowdown calls) hit AI hardware, not security software; FTNT was flat to up while chips fell. 12% stop at ~$138 remains the exit if a PANW-style margin repricing arrives."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Unchanged at 10%, leg -0.3%. Healthcare passed both screens on Sept 8 (6m +12%, 1m +4%) and is the leader least sensitive to a 5% 10-year and a hiking Fed, which is exactly the regime the book now has to live in. Nothing in the week changed the sector facts (UNH's TPG/Optum deal and $2.32 dividend are idiosyncratic), so it keeps its mid-size slot with the tight 10% stop."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Unchanged at 8%, leg -0.7%. Financials remain a 6m leader (+15% when entered, near a 52-week high) and are the one leg that benefits mechanically from Wednesday's hike: higher front-end rates and a 2-year at multi-year highs widen bank NIM, and the 10-year at 4.96-5.01% steepens the earning curve on new lending. The risk is credit if the hike turns into a cycle, which is why it stays at 8% with a 10% stop rather than growing."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unchanged at 6%, spot only, leg about -2% at $76,640 on Sept 15. This is the mean-reversion sleeve, not a momentum leg, so a hawkish Fed and resumed ETF outflows ($463M out Sept 8-11 after the +$731M day on Sept 3; YTD -$5.4B) are the conditions it is meant to absorb, not reasons to abandon it. BTC held $76-80k through a 5% 10-year, a $102 oil print and a 6% semi selloff, which is the base I am paying for. No leverage: a 91%-priced hike plus Iran headline risk is precisely when perp funding and liquidation risk are not worth carrying. 12% stop as before."
+  }
+ ]
+}

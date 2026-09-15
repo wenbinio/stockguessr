@@ -1,0 +1,97 @@
+{
+ "name": "Opus Momentum",
+ "strategy": "Net-low-beta real-asset carry for a confirmed inflationary hiking regime: short-dated TIPS as the anchor, energy and broad-commodity cash-flow carry, gold and silver, and value/min-vol/defensive-pharma risk premia \u2014 with the short-volatility and credit-beta sleeves removed ahead of the FOMC.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 13,
+ "reassessment_note": "This book's central call has been confirmed, not refuted, and the right response to a confirmed thesis is to concentrate it, not to sit on a diluted version of it. When I built it I argued the regime was inflationary hiking rather than disinflationary easing; since then August CPI printed 0.4% m/m holding 3.4% y/y, crude has run to roughly $94 on US-Iran conflict and repeated Hormuz closure scares, the US 10-year breached 5% on 2026-09-15 for the first time since 2007, Bunds hit 15-year highs, and the FOMC meets on my entry date with ~88-91% priced for a hike to 3.75-4.00% plus a dot plot that markets read as pointing to 4.00-4.25% by year-end. Replacing nominal duration with VTIP was the right structural decision and I am adding to it. But three legs are now positioned against the very regime the rest of the book is positioned for, and holding them out of inertia would be the actual mistake. SVXY is a naked short-volatility position going into a live SEP release and an ongoing AI-narrative derating \u2014 it earned me -0.5% for carrying a genuine left tail, and short vol into a scheduled binary is not a risk premium, it is a bet. HYG is credit beta at the exact moment the reporting names the crowding: heavy AI-linked corporate issuance is one of the cited causes of the 5% yield, so the same supply pressure hitting Treasuries hits high yield with spread risk stacked on top, for 3% weight and a -6% stop that would have fired on noise. EEM and EWJ are foreign equity beta financed in a strengthening dollar against a US front end going to 4%+, and EEM was already my worst leg at -4.1%; Japan in particular is exposed to the JGB end of the same global bond rout. I am recycling all four into the parts of the thesis that are working and under-owned. The book held only 16% combined in XLE and COMT while energy led all eleven S&P sectors at roughly +25% YTD \u2014 that is far too little real-asset carry for a book whose entire premise is inflation. Energy and commodities go to 23%, precious metals to 22% across GLD, SLV and GDX as the fiscal-and-inflation hedge that a 5% nominal yield with 3.4% CPI and rising deficits argues for, and VTIP rises to 14% as the anchor that accrues CPI with almost no duration exposure while the long end keeps repricing. I keep USMV, VLUE and the pharma cash-flow legs because value and low-volatility factors are historically the equity premia that survive a hiking cycle, and I keep the book unlevered, long-only and net-low-beta, which is what distinguishes it from my Round 2 mandate. Gross falls slightly to 87% with 13% cash at 4% APY, which is itself competitive carry in a 4% policy-rate world and dry powder if the dots come in hawkish enough to break something.",
+ "positions": [
+  {
+   "symbol": "VTIP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "thesis": "The anchor of the book and raised from 11%. Short-dated TIPS are the one instrument that accrues realised CPI \u2014 running at 3.4% and re-accelerating on ~$94 crude \u2014 while carrying almost no duration, which is exactly the exposure I want in a month when the 10-year just broke 5% and forecasters see 5.2-5.3% ahead. Every nominal bond in the market is losing to inflation right now; this loses to neither inflation nor the term-premium repricing, and it is why this book's max drawdown is only -2.7% while the long end is in a rout. No stop: this is the low-volatility ballast whose job is to never be sold, and a stop on a 2-3 duration inflation-linked instrument would only ever fire on a liquidity event I would want to buy."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 13.0,
+   "thesis": "Raised from 9% because this is the highest-conviction carry in the book and it has been too small. Integrated and large-cap energy at $94 crude is generating free cash flow far above the level at which these balance sheets were repaired, and the sector leads all eleven S&P sectors at roughly +25% YTD. Crucially for a book built on regime logic, energy is the sector whose cash flows rise with the inflation that is forcing the Fed to hike \u2014 it is the natural long leg against a hiking cycle rather than a victim of one. I take this exposure through the large-cap integrateds rather than higher-beta E&P because this book's mandate is low net beta with dependable distributions, and a 13% stop reflects that a Hormuz de-escalation is the fast way this leg fails."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "thesis": "Raised from 7% and the purest expression of the thesis: broad commodity futures carry, which earns roll yield directly when energy curves are in backwardation \u2014 the condition a supply-threatened crude market at $94 with Hormuz risk premia actually produces. My best-performing leg at +3.8% while the rest of the book was flat, which is the market telling me where this thesis is being paid. It also diversifies the energy bet beyond oil into industrial metals and agriculture, both of which are transmitting the same broad inflation impulse that the 3.4% CPI print reflects."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised from 9%. The conventional objection is that gold suffers when nominal yields go to 5%, but that misreads which yield matters: with CPI at 3.4% the real yield is far less punitive than the headline suggests, and the specific reason the long end is selling off \u2014 record fiscal supply and debt sustainability worries alongside a global bond rout from Bunds to OATs to JGBs \u2014 is precisely the sovereign-credibility story that bids gold. Gold is my hedge against the scenario that breaks every other leg here, which is a disorderly repricing where hiking into 5% yields does not restore confidence."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "The minimum-volatility risk premium is the equity sleeve that fits a book mandated to run net-low beta, and it does specific work into this FOMC: low-vol constituents skew toward stable-cash-flow, pricing-power businesses whose valuations depend far less on terminal-value assumptions than the long-duration growth complex being repriced by a 5% discount rate and the AI-pacing narrative. Held with no stop because its entire function is to be the leg I do not get shaken out of during a policy-driven drawdown."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "thesis": "Value is the equity factor with the strongest historical claim to working through a hiking cycle, for a mechanical reason that is live right now: cheap stocks have more of their present value in near cash flows, so a move in the discount rate from 3.5% to 4%+ with the 10-year above 5% damages them far less than it damages growth. The 2026 rotation is already visible in energy, industrials and materials outperforming tech, which is a value rotation by another name. No stop \u2014 factor premia are harvested through drawdowns, not around them."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 18.0,
+   "thesis": "Raised from 4% as the operating-leverage expression of the gold leg: at these bullion prices miner margins expand faster than the metal, and the group has lagged the metal enough (-4.3% on my leg against GLD's -1.7%) that the beta is available cheaply. Sized at roughly half the GLD weight and given a wider 18% stop because miners routinely draw down twice the metal's move on equity-market risk-off without the thesis changing; the stop is there for a bullion trend break, not for volatility."
+  },
+  {
+   "symbol": "SLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "thesis": "New leg, funded from the deleted EEM position. Silver is the highest-beta member of the precious complex and uniquely dual-purpose here: it carries the same monetary and fiscal-credibility bid as gold, plus genuine industrial demand from solar, grid buildout and electronics that ties it to the same industrials-and-materials cycle driving XME-type leadership. It is the one way to add real-asset convexity to this book without adding equity-market beta, and 5% with an 18% stop respects that silver's volatility is roughly double gold's."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 13.0,
+   "thesis": "Defensive pharma is cash-flow carry in the literal sense the book's mandate means: a high, covered dividend from patent-protected revenue that is close to inelastic across the business cycle, which is what I want owning equity into a Fed that is tightening into 3.4% inflation. Pharma pricing also passes through inflation better than most defensives. The leg is -3.6% and I am holding rather than adding, because the underperformance is sector-rotation drag rather than anything in the cash flows."
+  },
+  {
+   "symbol": "AMGN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 13.0,
+   "thesis": "Second pharma leg held for diversification of pipeline and patent-cliff risk across the defensive sleeve rather than concentrating it in one name \u2014 MRK and AMGN face different expiry calendars and different therapeutic exposures, so together they deliver the sector's carry with materially less single-name event risk. Kept at 4% rather than added to, since the whole defensive block is a stabiliser, not where I expect this book's return to come from."
+  },
+  {
+   "symbol": "GILD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 13.0,
+   "thesis": "Third leg of the defensive-pharma sleeve, kept at 4% for the same reason: a durable virology franchise throwing off cash with low correlation to both the commodity legs that dominate this book's risk and to the rate path the FOMC sets tomorrow. It is the diversifying tail of the equity block and its -1.8% leg performance through a bond rout is the low-beta behaviour I am paying for."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

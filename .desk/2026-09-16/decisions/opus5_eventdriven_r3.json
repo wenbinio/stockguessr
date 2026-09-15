@@ -1,0 +1,54 @@
+{
+  "name": "Opus 5 event driven",
+  "strategy": "A concentrated event book rebuilt around the one hard-dated, beta-immune catalyst that still pays \u2014 the post-vote ACA/CRH cash merger \u2014 plus a live physical-supply event in energy, two post-earnings-drift legs whose estimate revisions still point the right way, and a reduced index short now that the September hike is fully priced.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 30,
+  "reassessment_note": "Three things changed and all three cut the same way. (1) My SPY short was explicitly sized for a September FOMC where a hike was 'roughly a coin flip.' It is no longer a coin flip: CME FedWatch is ~92% for a 25bp hike on 2026-09-16, Goldman and JPMorgan have both moved to the hike, and August CPI held 3.4% y/y with core elevated. The mispricing my leg was built to harvest has been arbitraged away by the tape, and the residual asymmetry has inverted \u2014 at 92% priced, the hike is the boring outcome and a hold is the one that rips the index. Equally important mechanically: my fill is the 2026-09-16 CLOSE, which is after the 2pm decision and the presser. The FOMC is therefore not an event I can position for in new legs at all; it is a resolved fact by the time I am filled. So I stop paying for it and cut the short from 9% to 8% as a plain beta hedge, not an event bet. (2) A macro regime I did not underwrite has arrived on top of my book. Brent settled near $108 with Hormuz crude flows collapsed below 2mbpd from 8-9mbpd, and the only scheduled de-escalation event \u2014 the Salalah GCC-Iran ministerial \u2014 was postponed on 2026-09-14 with no new date after Saudi objections and a Bahraini no-show. The 10Y hit 5.02%, its highest since 2007. That combination is a direct tax on exactly what I owned: 22% of the book in consumer discretionary (ANF, DKS, LULU) facing a $108 oil consumer, and 30% in long-duration software facing a 5% discount rate. (3) My weakest legs got new adverse catalysts rather than the silence a drift leg needs. SMCI is -35% in a month, missed on revenue, and the Amodei/Altman AI-risk essays have reopened the AI-capex question \u2014 a capitulation long requires the tape to stop making new lows and it has not; the washout thesis is broken, not pending. ANF is -7.6% into a discretionary tape. VEEV has drifted -0.81% in five weeks, which for a post-earnings-drift leg is not a drawdown, it is a failed thesis, and the August earnings gaps behind all of these are now five to six weeks stale and being overwritten by macro. I am cutting ANF, DKS, LULU, SMCI and VEEV outright \u2014 38% of gross \u2014 at 2bps a side, which is cheap relative to carrying five legs whose catalysts have expired or reversed. I researched replacement deal spreads and deliberately rejected two: BWIN trades $32.02 against a $32.50 cash take-private closing Q1 2027, roughly 1.5% gross or about 4% annualized, which is exactly my cash rate for real deal-break risk; and LNTH trades $104.59 ABOVE its $102.50 cash consideration, meaning I would be paying a premium for a CVR, which is an optionality bet and not an arb. So the deal sleeve concentrates into ACA rather than diluting into mediocre spreads, and the capital I could not deploy honestly sits in cash at 4% rather than being forced into a trade. 30% cash with a 5% 10Y is a real position, not an abdication.",
+  "positions": [
+    {
+      "symbol": "ACA",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 33,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 3.5,
+      "thesis": "The best risk-adjusted asset I can own in this tape and the reason to enlarge it from 18% to 33%. CRH is acquiring Arcosa for $150.00 per share in all cash; stockholders approved on 2026-09-04 by 39,595,867 to 66,113 \u2014 a 99.8% margin \u2014 so the vote condition is gone and only customary regulatory clearance remains, with close guided to Q1 2027. At the $145.10 mark that is a 3.38% gross spread over roughly four and a half months, about 9% annualized, against a cash consideration that does not care about the 10Y at 5.02%, Brent at $108, or what Powell says at 2:30pm on Wednesday. That last point is the whole argument for the size: every other risk in this book is macro-correlated and this leg has a beta of approximately zero to all of it. Aggregates M&A carries limited overlap risk and the 2026 backdrop has been unusually permissive, with the HFRI merger arb index +8.2% on faster completions and fewer breaks. Sized at 33% rather than higher because a break is the single point of failure: the unaffected price implies roughly -22% on a bust, and the 8% stop caps that at about -2.6% of NAV. Take-profit at 3.5% above my 2026-09-16 fill sits essentially at the $150 deal price, so the leg retires itself on convergence instead of sitting in dead money into 2027."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "The most tape-datable live event on the board, and the only long I can own that is helped rather than hurt by the two forces wrecking the rest of the market. This is a physical supply event, not a sentiment one: Hormuz crude flows are below 2mbpd against 8-9mbpd pre-conflict, inventories are drawing, tanker strikes have continued through the El Gaia hit near Hengam Island, and Brent settled near $108 after its strongest weekly rally since 2022. The dated catalyst is the negative one: the Salalah GCC-Iran ministerial on 2026-09-14 was the week's only scheduled event capable of taking risk premium out of the barrel and Oman postponed it with no new date after Saudi Arabia objected to the Iran-Oman corridor amendments and Bahrain declined to attend. The de-escalation path got structurally worse, not better, and crude rose ~2% on the postponement alone. I am buying the equity rather than crude because energy producers have lagged the move in the barrel and because equity does not gap the way the front month does. I hold this at 14% and not larger precisely because the headline risk is two-sided and violent \u2014 Brent has printed -10% days on nothing more than Trump delaying strikes \u2014 and because it is directionally correlated with, not hedged against, my index short. The 12% stop respects that a genuine ceasefire headline is a gap risk no stop fully protects against, so position size is the real risk control here."
+    },
+    {
+      "symbol": "CRM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 18.0,
+      "thesis": "The one post-earnings-drift leg I am keeping at close to full size, because it is the only one where the fundamental support behind the gap is still strengthening rather than decaying. Salesforce beat and raised on its late-August print, the gap has been held rather than given back, the leg is +3.5% for me, and critically the FY2027 consensus has been revised UP by four cents over the past 30 days to $14.16, implying 13.1% year-over-year growth. That upward revision trend is what distinguishes a drift that has further to run from a gap that is simply decaying, and it is the specific evidence I am underwriting. The stock is +42.5% over three months so I am respecting that some of the recent weakness is profit-taking in a rate-driven software selloff rather than anything company-specific. I have trimmed from 12% to 9% rather than holding size because a 5.02% 10Y compresses multiples on every long-duration cash flow regardless of how good the revisions are, and I would rather carry the drift smaller than defend it. Take-profit added at 18% to retire the leg on convergence instead of holding it into the next print."
+    },
+    {
+      "symbol": "TEAM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 9.0,
+      "thesis": "My best-performing leg at +8.28%, and I am trimming it from 9% to 6% and putting a take-profit on it rather than letting a winner run, because the fundamental case underneath the drift has quietly turned. The Zacks FY2027 consensus for Atlassian has been revised DOWN seven cents in the past seven days to $5.69, implying a 2.7% year-over-year DECLINE in EPS, and the shares are -4.1% over twelve months. A post-earnings drift held on negative revisions into a 5% 10Y and an AI-capex narrative shock is a momentum position wearing a catalyst's clothes. The correct handling is to bank most of what the drift has already paid and leave a small residual with a tightened 10% stop and a take-profit at 9% above my fill, which is within reach of the move already in hand. This leg is now a position I am exiting on a schedule, not one I am adding to."
+    },
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 8,
+      "stop_loss_pct": 7.0,
+      "thesis": "Re-based and reduced, not removed. The thesis this leg was originally sized for \u2014 that a September hike was roughly a coin flip and therefore underpriced \u2014 is dead: fed funds futures are ~92% for 25bp, and my fill at the 2026-09-16 close lands after the decision and the presser, so there is no event premium left for me to capture. What survives is a different and still-live argument: the Fed is tightening into a war-driven oil supply shock, the 10Y is at 5.02% and its highest since 2007, Brent is at $108, and the President has publicly threatened to reshape trade policy if the Fed hikes. That is a multiple-compression regime regardless of Wednesday's outcome, and this leg is now sized as a beta hedge against my remaining 29% of long equity exposure in CRM, TEAM and XLE rather than as a directional macro bet. Cut from 9% to 8% and given a 7% stop specifically because the live risk after a fully-priced hike is a sell-the-rumor-buy-the-news relief rally, and I want a mechanical exit if the index tells me this hedge has become the wrong trade."
+    }
+  ]
+}

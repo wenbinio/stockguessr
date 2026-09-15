@@ -1,0 +1,22 @@
+{
+  "name": "Sonnet price momentum",
+  "strategy": "Concentrated, leveraged expression of the same price-momentum mandate as the Round 2 book: leveraged semiconductors and BTC spot as the highest-conviction uptrends, a leveraged oil & gas E&P vehicle for beta-heavy energy exposure, and a utilities short as the cleanest confirmed negative-momentum trend on the board - zero symbol overlap with the Round 2 book.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 20,
+  "reassessment_note": "Kept the book's identity (concentrated + leveraged, versus R2's diversified sector-ETF approach) but made three changes on fresh research. First, swapped plain XOP for GUSH (Direxion 2x E&P): it is up 19.35% over the past month against a genuine oil breakout (crude above $100/bbl for the first time since May, Goldman targeting $120) and, since the R2 book has now also added plain XOP, using the leveraged vehicle here both keeps this book's 'leveraged expression' identity sharp and keeps the two books at zero symbol overlap (well inside the <50% same-direction novelty rule). Second, sized BTC up from 20% to 25% - it remains the strongest momentum asset in either book, up 21.3% over the past month even through today's -2.2% Fed-jitters dip, and that dip is backed by real demand (ETF inflows hit a 10-month high, $6.8B in six weeks), not a trend breaking. Third, trimmed SOXL from 25% to 20%: the 12-month semis uptrend is intact but the leg is down -14.6% on elevated near-term chip volatility (Kospi -10% pre-earnings) and a 3x-leveraged position going into a binary FOMC print deserves a smaller size so a violent single-day move doesn't force it out near the stop. Sized the XLU short up from 10% to 15% since it is the single cleanest confirmed downtrend I found anywhere in this scan (-6.0% 1-month, -11.3% 6-month) even against a bullish AI-power-demand narrative - rate-hike repricing is winning that fight in the actual price action. Cash raised slightly less (20% vs 25%) given the extra conviction on BTC and XLU.",
+  "positions": [
+    {"symbol": "SOXL", "kind": "equity", "side": "long", "weight_pct": 20,
+     "stop_loss_pct": 20.0, "take_profit_pct": 50.0,
+     "thesis": "Trimmed from 25% to 20%. Leveraged semis remain the highest-conviction 12-month uptrend for this book's concentrated mandate, but the leg is down -14.6% amid a genuine near-term volatility spike (South Korea's Kospi fell 10% pre-earnings). Keeping the leveraged exposure core to the strategy but sized down so a sharp post-FOMC swing doesn't force an early stop-out on 3x leverage."},
+    {"symbol": "BTC", "kind": "crypto", "side": "long", "weight_pct": 25,
+     "stop_loss_pct": 20.0, "take_profit_pct": 50.0,
+     "thesis": "Sized up from 20% to 25%. Bitcoin is the strongest momentum asset in either book - up 21.3% over the past month even after today's -2.2% Fed-jitters pullback - and that momentum is backed by real flow evidence (crypto ETF inflows hit a 10-month high at $6.8B over six weeks), so the dip reads as noise around the trend, not a reversal of it."},
+    {"symbol": "GUSH", "kind": "equity", "side": "long", "weight_pct": 20,
+     "stop_loss_pct": 25.0, "take_profit_pct": 50.0,
+     "thesis": "Replaces XOP with its 2x-leveraged equivalent to keep this book's 'leveraged expression' identity distinct from the now-unleveraged XOP long in the R2 book. GUSH is up 19.35% over the past month riding a confirmed oil breakout (crude above $100/bbl first time since May, Goldman targeting $120) - the same energy uptrend, expressed with the leverage this book's mandate calls for."},
+    {"symbol": "XLU", "kind": "equity", "side": "short", "weight_pct": 15,
+     "stop_loss_pct": 10.0, "take_profit_pct": 20.0,
+     "thesis": "Sized up from 10% to 15%. Utilities is the cleanest confirmed negative-momentum trend across the entire scan - down 6.0% in the past month and 11.3% over six months - even with a bullish AI-data-center-power narrative pushing the other way, because rate-hike repricing is dominating the tape. Adding to a short that is already working (+3.9% on the current leg)."}
+  ]
+}

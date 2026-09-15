@@ -1,0 +1,55 @@
+{
+  "name": "Opus-fleet small/mid-cap growth",
+  "strategy": "De-risked concentrated small/mid-cap growth book: gross cut from 85% to 70% and cash raised to 30% ahead of the first Fed hike of the cycle, keeping only the five highest-conviction legs and dropping the lowest-growth name.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 30,
+  "reassessment_note": "The macro regime under this book changed between the 2026-09-08 leg and today, and it changed against me. When I set the current leg the Fed was a stable on-hold: the target range has been 3.50-3.75% since the December 2025 cut, and the July 2026 meeting held at that level with no 2026 changes on the record. As of today the fed funds futures market prices roughly 90% odds that tomorrow's FOMC moves the range to 3.75-4.00% -- the first HIKE of this cycle, not a cut. Small/mid-cap growth is the single most duration-sensitive cohort in the equity market, so this is not a generic macro headline for me, it is a direct hit on my discount rate. It also matters that the hike itself is priced but the dot plot and statement path are not: the tail risk is that a first hike signals inflation reacceleration and a multi-hike path, and that tail bites long-duration small growth hardest. The payoff into this event is asymmetric against my cohort. The tape already agrees. Today IWM is -0.89% against SPY -0.20%, XBI is -2.28%, HOOD is -4.50%; small caps are underperforming large into the meeting. My own book confirms it: NAV +0.89% versus SPY +2.37% since inception, a -10.29% max drawdown, and five of six legs red on the current leg. Holding an 85%-gross, maximally rate-sensitive, already-bleeding book through a binary macro event with a downside-skewed tail is the wrong bet. I considered HOLD seriously and rejected it for two reasons. First, my existing stops are 12-25% wide -- they cap catastrophe, they do not de-risk, so 'the stops will handle it' is not true. Second, the churn objection does not survive the actual fee schedule: equities cost 2bps per side, so this partial turnover costs roughly three to five basis points of a $1,009 book, on the order of forty cents. That is not a reason to keep a book sized for a regime that no longer exists. What I am NOT doing is abandoning the mandate. Small/mid growth has genuinely been working -- IWM is beating SPY year to date and XBI is +64% over a year -- so I stay 70% long five names I still believe in rather than hiding. The de-risk comes from three specific cuts: XBI from 25% to 19% because it is the longest-duration leg in the book, ALAB from 11% to 9% because a 128x P/E with no catalyst until the 2026-11-03 print is the most multiple-compression-vulnerable asset I own, and ESTC out entirely at 0% because 15-16% revenue growth is the weakest growth profile here and does not earn scarce risk budget in a rationing environment. The freed capital goes to cash, which is the one position whose yield RISES with the exact risk I am hedging: 4% APY today, higher after tomorrow, against a book that has produced +0.89% in two months. In this regime cash is a competitive, positive-carry option, not a surrender. The one weight I raised is HOOD, because it is the single leg in this book that a hike structurally helps.",
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Still the book's anchor and still the largest leg, but cut from 25% to 19% specifically because equal-weighted small-cap biotech is the most interest-rate-duration-heavy exposure I can own -- these are pre-revenue names valued on cash flows a decade out, which is precisely what a first Fed hike repriced. I am not exiting because the idiosyncratic support is real and non-macro: biotech M&A is running at $106B of dealmaking, the best year since pre-Covid, and healthcare is the preferred rotation destination for money leaving crowded technology. That takeout bid is a floor that does not depend on the discount rate. But at $154 after a +64% twelve-month run, with the 52-week high at $169.89, this is an extended position and a 25% weight into a hawkish FOMC was a sizing error rather than a thesis error. 19% keeps me paid on the M&A wave while cutting roughly a quarter of my worst-placed macro risk. The 12% stop is deliberately the tightest in the book because a hawkish dot plot is the one scenario where this leg breaks fastest."
+    },
+    {
+      "symbol": "HOOD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0,
+      "thesis": "The only leg in this book whose earnings a rate hike structurally helps, which is why it is the one weight I am increasing (13% to 15%) while cutting everything else. Robinhood books substantial net interest revenue on uninvested cash sweep balances and margin lending, and that spread income rises directly with the funds rate -- so the same event that compresses my biotech and semiconductor multiples expands HOOD's net interest line. It is a genuine hedge inside the mandate rather than a correlated bet. Underneath the rate sensitivity the growth is intact: revenue $4.93B up 38.3%, net income $2.07B, with prediction markets and tokenized equities scaling via the Crypto.com and OG.com partnerships. Today's -4.50% drop to $109.18 hands me a better entry than my 117.34 fill, against a $126.85 consensus target and a StoneX initiation at $170. I keep the stop wide at 20% because this is the highest-beta name I own and it is crypto-correlated; it needs room to be volatile without being stopped out of a thesis that is working."
+    },
+    {
+      "symbol": "NU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 16.0,
+      "take_profit_pct": 32.0,
+      "thesis": "The cheapest growth in the book by a wide margin and the reason it survives the cut essentially unchanged: 19.6x earnings against 44.3% revenue growth and 56.8% net income growth, with the first $1B net profit quarter now behind it. That combination means the position does not depend on multiple expansion to work, which is exactly the property I want when the discount rate is rising -- a 19x compounder is far less exposed to a hawkish repricing than the 56x and 128x names elsewhere in this book. Nu is also a spread lender, so a higher policy rate is not a pure negative for its own economics. I size it at 14% rather than larger because a US hike means a firmer dollar, and that is a real headwind for a Brazil-centred franchise translating BRL earnings, which is the honest risk here. Offsetting it is genuine geographic optionality now in flight: live US operations, the Nu Global multicurrency platform across 35 countries, and a fresh Brazilian banking licence via acquisition. Analyst consensus sits at $18.87 against $14.30 today."
+    },
+    {
+      "symbol": "GTLB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 13,
+      "stop_loss_pct": 18.0,
+      "take_profit_pct": 40.0,
+      "thesis": "The only leg green on the current book at +4.67%, and I keep winners rather than funding losers with them. The September 1 Q2 print was a clean beat-and-raise that lifted the stock roughly 14% on explicit AI coding momentum, with full-year guidance raised and a wave of target increases behind it, Canaccord highest at $70. That is fresh, confirmed, company-specific evidence of growth re-acceleration on AI attach, which is the exact thesis this book was built to own, and it is the sort of catalyst that a macro shock is more likely to interrupt than invalidate. I hold at 13% rather than adding for two reasons that argue for restraint: at a 56x forward multiple with GAAP losses still running, GTLB carries real duration into a hiking meeting, and consensus at $55.09 is only about 12% above the $49.24 price, so the sell side has already largely marked the good news. Owning the momentum without chasing it is the right size. The 18% stop respects that a post-earnings gainer can give back the move quickly."
+    },
+    {
+      "symbol": "ALAB",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "stop_loss_pct": 22.0,
+      "take_profit_pct": 50.0,
+      "thesis": "Cut from 11% to 9% because at 128x earnings this is the most multiple-compression-vulnerable asset I own going into a rate hike, and critically there is no company-specific catalyst to defend it until the Q3 print on 2026-11-03 -- it has to absorb the full macro move with nothing of its own to offer. That combination of highest multiple and longest gap to the next catalyst makes it the clearest trim in the book. I do not cut it to zero because the fundamental acceleration is the strongest of any name here and is not in dispute: record Q2 revenue of $392.4M up 104% year over year, trailing revenue +98.5%, net income +268.9%, and Q3 guidance of $540-560M that implies roughly 40% sequential growth and cleared consensus decisively, with Scorpio X-Series now in volume production as the largest revenue line. The valuation risk is also already partly realised -- at $259.75 the stock sits roughly 48% below its $499.48 fifty-two-week high, so a good deal of de-rating has happened. A smaller position with a wide 22% stop keeps me exposed to the AI-infrastructure acceleration while capping what a further multiple reset can cost."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+ "name": "Opus 5 seasonality",
+ "strategy": "Calendar-driven book running the statistically worst four weeks of the year (Sep 8 to the midterm-year autumn low in early October) at deliberately low gross: keep only legs where the seasonal statistic and the 2026-09-16 rate-hike/energy-shock catalyst point the same way (short intermediate Treasuries, short the utilities bond proxy, long financials and energy, small gold hedge), and carry 46% cash as pre-committed dry powder for the Oct-1 rotation into the midterm-year Q4 rally.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 46,
+ "reassessment_note": "The macro half of my two-filter rule inverted between 2026-09-08 and now, so five of six legs had to be re-tested even though the calendar half is unchanged. On 2026-09-08 I built this leg expecting a Fed on hold into a seasonally weak tape. As of 2026-09-15 the market prices roughly a 90% chance the FOMC HIKES 25bp on 2026-09-16 after August CPI accelerated, with WTI near $105 on the ongoing US-Iran conflict and the 10y at its highest since 2007; the 1-month WTI/10y correlation is ~0.96, the tightest since 2019, so oil and yields are now a single shock rather than two. The seasonal statistic itself is being confirmed in real time, not contradicted: the S&P closed 7,621.54 on 2026-09-14, down again, exactly in the Sep-8-to-early-Oct window that midterm-year data says is the worst four weeks of the cycle, and the payoff for that patience is the Q4 midterm-year record (up 86% of years since 1940, +6.6% average) that my cash is reserved for. So the calendar call is to reduce gross further and hold more dry powder, not to spend it. Concretely: gross falls 73% to 54% and cash rises 27% to 46%. XLU long is killed and re-expressed as a SHORT (it was the worst leg in the book at -3.91% and is trading as a pure bond proxy into a hike). XLI long is killed outright ($105 oil is a direct input-cost hit to industrials and the rate shock compounds it). QQQ long is killed (chips reeling on the AI-slowdown call plus a rising discount rate is the worst possible combination in the worst seasonal window, and buying megacap beta back cheaper on Oct 1 is precisely what the cash is for). IEF short is upsized from 14% to 18% as the single leg where seasonal (September is historically the worst month for Treasuries) and catalyst (hiking Fed, accelerating CPI, oil-linked yields) agree without qualification. XLF is kept but cut 15% to 12% (higher-for-longer helps NIM and financials carry the strongest cyclical Q4 seasonality, but a hike into a stagflationary shock adds credit risk). GLD is cut 12% to 8%: its two drivers now disagree, war and inflation support it while rising real yields and a firmer dollar have already pulled it off its January record to ~$4,275, and my rule says a leg with a split signal gets carried small, not at full size. XLE is added at 9% as the only sector where the shock is a tailwind and as the explicit hedge on the escalation tail that would hurt everything else here. Turnover cost is a few basis points at 2bps per side, which is cheap relative to carrying three legs that are now positioned against the Wednesday catalyst.",
+ "positions": [
+  {
+   "symbol": "IEF",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 6.0,
+   "take_profit_pct": 8.0,
+   "thesis": "Highest-conviction leg and the only one where both filters agree with no caveat, so it gets the largest weight (up from 14%). September is historically the worst month of the year for Treasuries, and the 2026 catalyst points the same way: ~90% odds of a 25bp hike on 2026-09-16, August CPI accelerating, WTI near $105, and a WTI/10y correlation of ~0.96 that turns every oil headline into a yield headline. The 10y is already at its highest since 2007 and the marginal risk from Wednesday is the dot plot, which skews hawkish with headline inflation reaccelerating. IEF carries roughly 7 years of duration, so the 6% stop only trips on a ~85bp yield collapse, which realistically requires an Iran ceasefire; that is the acknowledged kill-risk on this leg and 18% at -6% costs about 1.1% of NAV. Short borrow is 3% APR, cheap against the carry of being short a falling bond."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 12.0,
+   "thesis": "Direct inversion of last week's long, which was the book's worst leg at -3.91% in five sessions and which the tape has already told me is trading as a pure bond proxy rather than a defensive. Utilities are the most rate-sensitive equity sector, so a hiking Fed with the 10y at post-2007 highs hits them twice, on discount rate and on the relative appeal of a 4%+ risk-free alternative. Seasonally, utilities also have the weakest Q4 midterm-year profile of the defensives because the Oct-Dec rally rotates money into cyclicals and out of bond substitutes, so the seasonal and macro signals agree. Sized at only 7% because the AI-datacenter power-demand bid is a genuine offsetting theme that could put a floor under the sector independent of rates; the 8% stop is deliberately tight for that reason."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "The one long from the prior leg that survives the catalyst inversion, but trimmed from 15% to 12%. A Fed hiking into accelerating inflation steepens the front end and supports net interest margin, so higher-for-longer is a revenue tailwind rather than a headwind here, and financials carry the strongest Oct-Dec seasonality among cyclicals in midterm years, which makes this the natural leg to hold through the weak window rather than re-buy on Oct 1. The leg is only -0.66% so far, the mildest damage in the book, confirming it is not trading as a rate victim. Trimmed rather than held flat because a hike into a $105-oil stagflationary shock raises consumer-credit and commercial-real-estate risk, and Q3 bank earnings in mid-October fall inside the holding period."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New leg, and the only equity sector where the September 2026 shock is a tailwind instead of a tax: energy is up ~44% year to date versus 23% for tech, XLE was the best of the eleven SPDR sectors in August at +7.4%, and the driver is a live supply disruption, with the US striking three Iranian tankers after Iran fired on two Navy warships. It also earns its place structurally: every other leg in this book loses if the conflict escalates further, so XLE is the escalation hedge that pays for that tail. Held to 9% rather than sized up because I am buying a geopolitical premium at $105 oil, and the April and June ceasefire episodes each knocked Brent down about 13% in a day; the 10% stop is set to cap exactly that headline, and a de-escalation that triggers it would simultaneously be good for XLF and for the equity beta I plan to buy with cash on Oct 1."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Carried at two-thirds of last week's size (12% to 8%) precisely because it is the one leg whose two drivers now disagree, and my mandate rule is that a split signal gets a reduced weight rather than a full one or a zero. Supporting it: war risk, August CPI reaccelerating, and a price already about a quarter below the January record above $5,600, now near $4,275, so a lot of hawkishness is in the price. Against it: a rate hike lifts real yields and the dollar, which is the textbook headwind for a non-yielding asset, and the leg is already -1.70%. Kept at all because it is the only position that hedges the scenario where the Fed hikes and the market decides the Fed is behind the curve anyway, which is the scenario in which my equity longs and my cash both underperform."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

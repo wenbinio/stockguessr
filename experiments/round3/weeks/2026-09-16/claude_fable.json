@@ -1,0 +1,78 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Rate-cycle rotation + carry + early trend-reversal with stop discipline, positioned for the hawkish side of the cycle (Fed hike Sept 16, BOJ hike Sept 18): energy, value, large-cap financials, unhedged Japan, income carry, a stopped crypto trend leg, and 30% cash at 4% - with the regional-bank leg dropped as the one holding that is wrong for a 5% 10-year.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "What changed: mostly the tape confirmed the book. Since the 9/8 rotation, every event I positioned for has moved from probable to near-certain: CME FedWatch has the Sept 16 hike at ~90% (first since 2023), all 52 Bloomberg-surveyed BOJ watchers expect a hike to 1.25% on Sept 18 with OIS at 97%, WTI is $102 and Brent up 18% in September on the Saudi East-West pipeline shutdown and Houthi attacks, and the 10Y printed 5.01% - a 19-year high. The book is +5% from inception with a -1.7% max drawdown and every leg within +/-1% of its 9/8 fill, so this is not a book that needs rebuilding. The one thing the research changed my mind on is KRE. I bought regional banks as part of a 'higher rates help financials' rotation, but the evidence says the opposite for the small end: bank unrealized securities losses climbed back to $325B in Q1 and rise with every tick in the 10Y, regional banks are the worst-hedged cohort, and a Fed hike raises their deposit costs faster than their asset yields. XLF (large caps with diversified funding) is the right financials expression for this tape; KRE is the wrong one. It is only 4% and flat, so I cut it to cash rather than chase something else - refiners have already more than doubled this year and I am not buying a trend that extended. Cash goes to 30% at 4% APY, which in a hiking cycle is a carry position in its own right and the mandate's carry sleeve. Every other leg is kept at the same weight with the same stops. I am deliberately NOT adding to XLE despite the oil tape: an 18%-in-a-month spike driven by a pipeline shutdown is exactly the kind of move that reverses the day the pipeline reopens, and this mandate is about catching reversals early, not chasing extended ones. Friction is about 3bps for the re-registration; the stops reset to the new fills, which is acceptable with every leg near flat.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at 12%, not increased. WTI $102, Brent toward $107 and +18% in September after Saudi Arabia shut its East-West pipeline (7 mb/d of rerouted Gulf crude) with no reopening date; XOM and CVX are +40% YTD. Energy is the inflation-hedge leg of a hawkish-cycle book and the one sector that benefits from the same force pushing the 10Y to 5%. I hold the size rather than add because a supply-shock spike unwinds fast when the shock ends, and a 12% stop is the reversal guard."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at 12%. Large-cap value is the natural beneficiary of a rate-cycle turn against long-duration growth: with the 10Y at 5% and the Fed hiking, the equity risk premium compression that favored growth reverses in favor of near-term cash flows. The Sept 14 AI rout (SOX -6% while Alphabet/Microsoft/Meta rose) is early evidence of that rotation inside the index. Leg is -0.7%, thesis unchanged, 12% stop as before."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at 10% and now the sole financials leg after cutting KRE. Large-cap banks and insurers have diversified funding, hedged duration and stronger liquidity, so they capture the higher-rate net interest tailwind without the unrealized-loss and deposit-cost squeeze that hits regionals. A hiking Fed with a 5% 10Y is the environment large-cap financials were built for. 12% stop retained."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at 10%. This is the BOJ-hike trade: 52 of 52 surveyed economists expect a move to 1.25% on Sept 18, 93% expect another by January, and the Nikkei rose 0.56% on Sept 15 to 63,850. EWJ is unhedged, so the yen appreciation a hike brings is a direct tailwind to the dollar return even while it pinches exporters' local earnings; that hedge-free structure is the point of holding this rather than a currency-hedged Japan fund. 12% stop guards against a yen-carry-unwind shock hitting the index."
+  },
+  {
+   "symbol": "JEPQ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Kept at 10% as the income-carry sleeve. A covered-call Nasdaq-100 fund monetises exactly the elevated volatility the AI-sentiment shock and Fed week are producing, and the capped upside costs little in a tape where I do not expect large-cap tech to rip into a hawkish Fed. It is the book's only tech exposure and is structurally lower-beta than the index. 10% stop as before."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at 8% as the defensive value leg. Healthcare has low rate sensitivity, low oil sensitivity and no AI-capex exposure, so it is the ballast that keeps the book from being a pure macro bet on hikes and oil. Leg is -0.3%; nothing in the week's news argues for changing the size. 12% stop retained."
+  },
+  {
+   "symbol": "ETH-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 22.0,
+   "take_profit_pct": 60.0,
+   "thesis": "Kept at 5% with the same 22% stop and 60% take-profit. ETH is above $2,500 and +1.2% on the leg; the crypto market rose 3% on Sept 15 with the Senate Clarity Act procedural vote as a live catalyst, and this is the early-trend-reversal sleeve of the mandate. Crypto friction is 35bps per side, so the position is untouched; the stop does the risk management."
+  },
+  {
+   "symbol": "SOL-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 3,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 80.0,
+   "thesis": "Kept at 3% with the same 25% stop and 80% take-profit as the higher-beta half of the crypto trend leg. -0.8% on the leg, roughly flat; same Clarity Act and risk-appetite catalysts as ETH with more convexity. Small size because a 25% stop on a 3% leg caps the worst case at under 1% of NAV."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

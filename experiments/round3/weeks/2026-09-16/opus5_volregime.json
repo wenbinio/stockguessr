@@ -1,0 +1,72 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "Regime reclassified again: the Fed hike is ~90% priced so near-dated implied vol carries maximum event premium into a steeply contangoed curve (VIX 15.84 vs VIX3M 18.60, day 109 of contango) and is set up to crush after the decision, so the book cuts paid-for convexity from 14% to 6%, stops owning long-duration beta (SPY, GDX) with the 10y near 5%, and redeploys into the one place volatility is actually being realized and paid \u2014 a live crude supply shock (Brent ~$109, Hormuz conflict, Saudi East-West pipeline down ~7mbd) expressed in lagging energy equities \u2014 plus a short-duration leg that is long the same inflation impulse, and 22% cash at 4%.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "Two things changed since the 2026-09-08 entry and both cut against the old book. First, the reason I bought convexity is gone: on 09-08 a September hike was a coin flip with VIX 14.53 at the 6th percentile \u2014 un-priced macro risk against compressed implied vol. It is now ~90% priced (Polymarket 88%, CME ~56% but bond and equity desks trading it as done after Warsh's Jackson Hole 'work to do' speech, August CPI 3.4% and the oil spike). You do not get paid to own a hedge on an event everyone has already discounted; you get the post-FOMC IV crush. The tape already told me this: VIXY is +0.95% on my leg over a week in which SPY fell four straight days and the 10y hit a three-year high near 5%. Spot vol rose ~9% and my convexity leg went nowhere, because a day-109 contango curve (VIX 15.84 / VIX3M 18.60) rolls that move away faster than I earn it. A vol-regime book whose hedge fails to pay during the exact stress it was bought for must resize it, not defend it. Cut VIXY 14 to 6 \u2014 kept only because the Iran escalation is an unscheduled tail the Fed cannot price. Second, the volatility that IS being realized and paid moved to crude: Brent ~$109 (four-month high, +8.7% on the week), Strait of Hormuz strikes, Saudi East-West pipeline closed. Critically, energy EQUITIES have not marked to it \u2014 my XLE leg is +0.48% while crude is +9%, so XLE is discounting a barrel far below spot. That is the asymmetry I want and it is a better inflation-shock hedge than VIX futures, because it pays on the scenario that actually breaks equities from here (an inflation impulse the Fed has to keep chasing) instead of on the scenario already in the price. Sold outright: SPY (broad beta into a delivered hike with the 10y at 5% is a poor risk/reward and it was already my second-worst leg) and GDX (-4.25%, my worst leg, and the wrong side of rising real yields with a hawkish Fed hiking into 3.4% CPI; gold is at five-week lows). Deliberately underweighting COMT relative to XLE because COMT marks directly to the war premium that EIA ($90 H2 average) and Goldman ($85 Dec-26) both expect to unwind, while the equities never capitalized it. Turnover is ~40% of the book at 2bps a side, a few dollars, cheap against carrying a decaying hedge for another leg.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "The core expression and the biggest single upsize (9% to 20%). Brent is ~$109 on a genuine physical supply disruption \u2014 Hormuz strikes and the Saudi East-West pipeline, ~7mbd of routing, shut \u2014 yet XLE has moved +0.48% over the week crude moved +9%. Integrated and majors earnings are levered to the strip, and the equity is discounting a barrel in the $70s-80s. I would rather own the lagging equity than the marked-up futures: if the war premium unwinds toward the EIA's $90 H2 average, XLE barely has to give back what it never took; if the disruption persists or worsens, the equity has to re-rate. It also carries the inflation impulse that makes the Fed's job harder, which is the same trade as the rest of the book. 15% stop because a ceasefire headline gaps this sector and I want to survive that, not argue with it."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 50.0,
+   "thesis": "Deliberately small, high-beta sleeve on the same thesis as XLE. E&Ps are pure price-takers on the crude strip with no refining or marketing offset, so they convexify the supply-shock case \u2014 they outrun XLE if Brent holds above $100 and they underperform it if the premium bleeds. Held at 8% rather than larger precisely because that convexity is two-sided and I already have 20% in the lower-beta version; this is the piece of my convexity budget that I am willing to pay for, because unlike VIX futures it has no contango to roll against me. Wide 20% stop because equal-weight E&P volatility makes a tight stop a coin flip on noise."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 13.0,
+   "thesis": "Held flat at 12%, not increased, and that is a decision rather than inertia. COMT is my best-performing leg (+3.84%) and broad commodity futures are the direct claim on a supply shock with backwardated energy curves paying positive roll \u2014 the opposite carry sign to the VIX futures I am cutting. But it also marks to the war premium in real time, and both EIA ($90 Brent H2 average) and Goldman ($85 Dec-26) see spot as overshooting fundamentals. So I keep the roll-yield exposure and the non-energy commodity diversification, and I put the incremental dollar into the energy equities that never repriced instead."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept at roughly prior size (13 to 12) as the book's low-duration equity core. The thesis that put it here is intact and has strengthened: with the 10y near 5% and a hiking Fed, cash flows dated far out get discounted hardest, and value's short-duration earnings profile is the structural winner against the growth complex I am no longer holding via SPY. It is -1.46% on the leg, which is noise against a rate move of this size and not a reason to capitulate. This is the position that keeps the book from being a pure commodity bet."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unchanged at 8% as the low-beta ballast. Healthcare demand is inelastic to both the rate path and the oil price, its multiple is already compressed so it has little duration to lose at a 5% 10y, and it is the sector least correlated to the energy complex that now dominates the long side. With 44% of gross in commodity-linked risk I need one leg that does nothing when crude moves, and this is it. Essentially flat on the leg (-0.29%), doing exactly the job it was sized for."
+  },
+  {
+   "symbol": "VIXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 30.0,
+   "take_profit_pct": 60.0,
+   "thesis": "Cut from 14% to 6% \u2014 the central resize of this reassessment. The case for owning it at 14% was a coin-flip FOMC against 6th-percentile implied vol; with the hike ~90% discounted, the near-dated future I am long carries the full event premium and is the single most likely thing in this book to lose value on 09-16 regardless of which way equities go, because a delivered, expected hike releases that premium. Compounding it, the curve is in day-109 contango at VIX 15.84 versus VIX3M 18.60, so the roll bleeds me every day the spike does not come \u2014 proven this past week, when spot vol rose ~9% during a four-day equity slide and this leg gained under 1%. I keep a 6% stub rather than zero because the Iran/Hormuz escalation is an unscheduled tail that is not on any calendar and cannot be discounted the way the Fed can, and a vol-regime mandate should always own some claim on the gap. Wide 30% stop: this leg is expected to bleed and stopping it out on ordinary contango decay would defeat its purpose."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "New leg, and the cleanest direct expression of the regime that replaced the one I was hedging. Warsh said the Fed still has 'work to do' on inflation, August CPI printed 3.4% headline, crude at $109 is about to push that higher, and the 10y is already near 5% at three-year highs with a global bond selloff underway. Long-bond duration is the asset with the most to lose from a Fed that keeps hiking into a supply-driven inflation impulse, and at 3% borrow this costs a fraction of the ~50%+ annualized contango I was paying to hold the same macro fear in VIX futures. It also hedges the one FOMC outcome that hurts the rest of the book \u2014 hawkish dots and a hawkish presser, which pressure equities and long bonds together. Sized at 12% and stopped at 8% because the real risk is the opposite trade: a hawkish hike can bear-flatten into a growth scare and rally the long end, and I want that to cost me one leg, not the book."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

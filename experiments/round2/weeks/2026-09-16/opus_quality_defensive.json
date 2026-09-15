@@ -1,0 +1,61 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Low-beta quality/defensive core anchored on healthcare, with the inflation hedge moved out of gold and into high-free-cash-flow energy now that real yields are at 2007 highs, dividend and min-vol bond-proxy sleeves trimmed for rate sensitivity, and a 22% cash buffer held at 4% into a live FOMC.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "The regime finally resolved and it resolved against my gold leg. Fed funds have sat at 3.75% since June, three members dissented in July for a hike, August CPI printed 3.40% y/y, and the 10-year is at its highest since 2007 with crude at $100 after a Saudi pipeline outage that threatens ~4% of global supply. In that setup gold is not an inflation hedge, it is an unlevered short-real-rate position: GLD is 23% below its 52-week high of 509.70 and my 6% leg is the worst performer in the book at -1.70%. I am cutting GLD to zero and moving the inflation-hedge role to energy, which does the same job with actual free cash flow, a 17x P/E, a 2.3% yield and a price near its 52-week high. XLE doubles from 6% to 12%. I also trim the two most rate-sensitive quality sleeves: USMV 11 to 8 and SCHD 17 to 15, because min-vol and high-dividend screens both drag in utilities and staples that de-rate as the long end rises. XLV stays the anchor at 29% because the rotation out of crowded semis is landing in healthcare and the sector is up ~5% since mid-July while SPY is flat. I hold cash at 22% rather than raising it: my fill is at the 2026-09-16 close, after the FOMC reaction is already in the price, so I am not paid to hide from the event itself. Total one-way turnover is roughly 12% of the book, about a quarter of a basis point in commissions, which is the right price for swapping a losing hedge for a working one.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 29,
+   "stop_loss_pct": 12.0,
+   "thesis": "The core defensive anchor and the only large sector where the defensive story and the price trend agree. XLV is at 166 versus 158 in mid-July, roughly +5% while SPY went nowhere, and the flow explanation is explicit: capital leaving concentrated tech is parking in healthcare. Lilly, J&J and AbbVie are 33% of the fund and are cash-generative, low-beta and largely insensitive to a 5% 10-year. Held at 29% rather than 30% only to fund the energy add; I am not diluting the highest-conviction leg to chase breadth."
+  },
+  {
+   "symbol": "SCHD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Cash-flow-screened dividend quality remains the right second sleeve for this mandate, but the screen tilts into staples, utilities and telecom that compete directly with a 5% risk-free rate. Trimmed from 17% to 15% as a rate-sensitivity haircut rather than a thesis change. The leg is only -0.39% since 2026-09-08, so this is a sizing decision, not a stop-out, and the 12% stop stays where it was."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Doubled from 6% to 12% and promoted from a token hedge to the book's inflation expression. Crude is at $100 with a Saudi pipeline outage threatening ~4% of global supply, refiners are posting record margins, and XLE is +52% over the past year yet still trades at 17x with a 2.3% yield and a 20/15/6 Exxon-Chevron-ConocoPhillips core. Unlike gold, this hedge is paid for by free cash flow rather than by the absence of a yield, which is what makes it survivable if the Fed stays restrictive. It is also the one leg in this book that was profitable (+0.48%) into the reassessment. Take-profit raised to 25% to let a genuine supply shock run; 15% stop respects that energy is the highest-vol sleeve here."
+  },
+  {
+   "symbol": "QUAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Balance-sheet-quality factor exposure: high ROE, low leverage, stable earnings. In a higher-for-longer rate path the refinancing wall is the dominant equity risk and this screen is the cleanest way to own the companies that do not have one. Nudged from 8% to 9% because quality is the factor that should lead if the Fed hikes again, and it is the only factor sleeve here I want larger rather than smaller."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Minimum-volatility remains useful for drawdown control - this book's max drawdown is -3.70% and that is the mandate's real product - but the construction buys low-beta names that are disproportionately rate-sensitive bond proxies, and it has returned only ~6% over twelve months while the defensive job was being done better by healthcare. Cut from 11% to 8%: enough to keep the volatility dampener, small enough that it stops being the second-largest drag on a rising 10-year."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "thesis": "A small new staples sleeve funded by the GLD exit. Staples have been the worst defensive sector of the last year (+7%) and that is precisely the argument for a 5% position: it is the one genuinely low-beta sector nobody is crowded into, and with CPI at 3.4% the pricing-power names carry cost inflation through rather than absorb it. Deliberately capped at 5% because the sector also carries the same duration problem as USMV; this is diversification of the defensive bucket, not a call."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

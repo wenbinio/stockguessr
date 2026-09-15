@@ -1,0 +1,28 @@
+{
+  "name": "Sonnet price momentum",
+  "strategy": "Broad long/short sector-ETF momentum: own the sectors whose uptrend is confirming and accelerating (energy, E&P beta, semis, biotech) and short the rate-sensitive sectors whose downtrend is confirming ahead of tomorrow's FOMC (long-duration Treasuries, homebuilders), holding a small cash buffer.",
+  "entry": "2026-09-16",
+  "capital_usd": 1000,
+  "cash_pct": 5,
+  "reassessment_note": "Re-ran the sector scan against live prices/news rather than the last mark. Two legs no longer confirm the trend they were sized for: IWM is down 6.32% over the past month (a clear small-cap momentum breakdown, not a pause) and KRE - the short meant to capture 'rate-sensitive breakdown' - is flat-to-up since entry (74.31 -> 74.54), with current commentary noting regional banks could actually benefit from higher rates near-term, so that short was never confirmed by the tape. I cut both. In their place: XOP (E&P) adds a cleaner, higher-beta long expression of the energy breakout that's already working via XLE - oil topped $100/bbl for the first time since May with Goldman targeting $120, and both XLE and XOP printed fresh highs today. XHB (homebuilders) replaces KRE as the rate-sensitive short - it is down 10.6% over the past month, a far more decisive breakdown than KRE ever showed, for the same underlying 'rate-hike repricing hurts rate-sensitive equities' thesis (oil-driven inflation and resurgent war-risk coverage are explicitly cited as building the case for a Fed hike into tomorrow's decision). I sized up the two legs with the clearest confirming trends (XLE, TLT short) and trimmed SMH modestly given elevated near-term chip-sector volatility (South Korea's Kospi fell 10% pre-earnings), while leaving XBI unchanged since its longer momentum (YTD +28%, 1yr +64%) is intact despite a small 1-month pullback. This is a tape-driven rebalance, not a bet on the FOMC outcome itself - I'm not trying to call tomorrow's decision, I'm following which trends the market has already confirmed or broken over the last week.",
+  "positions": [
+    {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 25,
+     "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+     "thesis": "Energy is the strongest, most-confirmed uptrend in the book: crude oil topped $100/bbl for the first time since May with Goldman targeting $120, and XLE is up 1.21% today at fresh highs (YTD +47.7%, 1yr +50.7%). Sizing up from 20% to 25% to lean into the leg that is actually working rather than diluting it with a decaying one."},
+    {"symbol": "XOP", "kind": "equity", "side": "long", "weight_pct": 15,
+     "stop_loss_pct": 15.0, "take_profit_pct": 35.0,
+     "thesis": "New leg: E&P is the higher-beta, cleaner expression of the same oil breakout driving XLE - XOP printed a fresh 52-week high today (+2.18%, YTD +56.4%). Adding direct exposure to the sub-sector doing the most work within the energy uptrend."},
+    {"symbol": "SMH", "kind": "equity", "side": "long", "weight_pct": 15,
+     "stop_loss_pct": 15.0, "take_profit_pct": 35.0,
+     "thesis": "Trimmed from 20% to 15%. The 12-month uptrend remains intact (YTD +57.9%, 1yr +87.6%) but near-term action has gone choppy - South Korea's Kospi fell 10% pre-earnings and coverage is mixed on chip stocks this week. Staying long the trend but de-risking the size into FOMC volatility rather than cutting outright."},
+    {"symbol": "XBI", "kind": "equity", "side": "long", "weight_pct": 15,
+     "stop_loss_pct": 12.0, "take_profit_pct": 28.0,
+     "thesis": "Unchanged size. Biotech remains one of the strongest trends on the board (YTD +28.2%, 1yr +64.0%, current coverage describing the sector as 'booming') despite a shallow 1-month pullback (-1.9%) that looks like consolidation, not a reversal, against that backdrop."},
+    {"symbol": "TLT", "kind": "equity", "side": "short", "weight_pct": 15,
+     "stop_loss_pct": 8.0, "take_profit_pct": 15.0,
+     "thesis": "Sized up from 10% to 15%. This short is accelerating, not fading: TLT sits near its lows (YTD -8.3%, 1yr -10.6%) and today's coverage explicitly links the oil price spike and resurgent geopolitical/war-risk to a building case for a Fed hike, which is exactly the catalyst this leg needs going into tomorrow's decision."},
+    {"symbol": "XHB", "kind": "equity", "side": "short", "weight_pct": 10,
+     "stop_loss_pct": 10.0, "take_profit_pct": 20.0,
+     "thesis": "New leg replacing KRE. Homebuilders show the cleanest rate-sensitive breakdown I found in the whole scan - down 10.6% over the past month and near 52-week lows - versus KRE, which is flat-to-up since our entry despite the same rate-hike setup (banks can benefit from higher rates near-term via NIM, which is exactly why that short never confirmed). Swapping to the leg the tape actually supports."}
+  ]
+}

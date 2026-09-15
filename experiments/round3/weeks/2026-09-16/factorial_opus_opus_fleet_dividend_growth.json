@@ -1,0 +1,82 @@
+{
+ "name": "Opus-fleet dividend growth",
+ "strategy": "Long-only dividend-growth book anchored by a 34% SCHD core and deliberately tilted into hard-asset dividend aristocrats - integrated oil majors and midstream - funded by exiting the most expensive bond-proxy staple and a pharma leg with a sector overhang, because a 5% 10-year Treasury has repriced every low-yield defensive while a $103 oil shock pays the energy dividend growers directly.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 12,
+ "reassessment_note": "Two things changed materially since this leg was set on 2026-09-08, and both point the same direction. First, the 10-year Treasury has pushed through 5.01% - its highest since 2023 - and the tape is now openly debating rate-INCREASE risk into tomorrow's FOMC rather than cuts. That is a direct discount-rate attack on every leg I own whose appeal is a low-but-safe yield: at a 5% risk-free rate, KO's 2.37% forward yield on a 26.5x multiple is a negative spread, and the 28% YTD it has already printed is exactly the gain that gets given back when the bond-proxy trade unwinds. Second, the cause of those yields is an oil shock, not a growth boom: WTI is $103.55, up 11.3% in a month and 78.7% in a year, on escalating Middle East conflict, a shut Saudi pipeline and an SPR at its lowest level since 1982. Inflation-driven yields are the one regime where dividend GROWTH from hard assets beats dividend LEVEL from consumer staples, because the energy aristocrats' cash flow is indexed to the very thing lifting the discount rate while KO's input costs are on the wrong side of it. So I am not changing my mandate, I am financing its stated energy-aristocrat pillar properly: direct energy goes from 15% to 28% (CVX 12->15, EPD 3->5, XOM added at 8), and I exit KO entirely and AMGN entirely. AMGN goes because it fell ~10% on a COMPETITOR's failed Lp(a) trial - a read-through I think is partly fair to olpasiran, not a clean overreaction - and because consensus now sees only ~2.9% upside, which is not worth a slot when I need the capital elsewhere. SCHD trims 36->34 purely as funding; it is up ~26% YTD and beating SPY by roughly 16 points, the single best evidence that the dividend/value factor is the right chassis this year, so it stays the anchor. I add XOM rather than doubling CVX because a 28% energy tilt driven by Middle East headlines should not sit on one balance sheet - XOM at 15.1x forward with strong refining margins and CVX at 15.8x forward with 20 Mtpa of LNG ambition are different cash-flow engines. Net gross exposure rises 87% -> 88% with 12% cash at 4%; I am deliberately NOT raising cash into the FOMC, because the energy overweight is itself the hedge against the hawkish outcome. Equity frictions here are ~2bps a side, roughly $0.35 all-in on this reshuffle, which is trivial against the risk of carrying a bond-proxy book into a 5% 10-year.",
+ "positions": [
+  {
+   "symbol": "SCHD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 34,
+   "stop_loss_pct": 12.0,
+   "thesis": "The chassis of the mandate and still the highest-conviction single line: a 0.06% ER screen for 10-year dividend consistency plus quality (ROE, cash-flow-to-debt) that is up ~26% YTD against SPY's ~11%, i.e. the dividend/value factor is winning this year by roughly 16 points and I want to keep owning that beta rather than hand-pick around it. Its 0.56 five-year beta and sector mix - energy, staples, health care, financials - is the same regime bet I am making with the single names, so the core and the satellites compound rather than fight. Trimmed 36 to 34 only to fund the energy add; no take-profit because a core holding should not be stopped out of a working factor by a number I picked in advance. 12% stop is a regime-break stop, not a noise stop."
+  },
+  {
+   "symbol": "CVX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The purest expression of the mandate in this macro: a 38-year dividend grower paying 3.36% - above the 10-year's 5% on an after-growth basis and rising - at 15.8x forward earnings while WTI sits at $103. Raised 12 to 15 because the oil move is supply-driven (Saudi pipeline outage, SPR at 1982 lows), which flows to the integrated model's upstream margin without the demand destruction that usually caps an oil rally, and because management is explicitly building for it: 20 Mtpa of LNG capacity targeted across Argentina, the Mediterranean and Australia, into a world short of fuel. BMO raised its target to $235 on 2026-09-03. Sized at 15 rather than larger because $215 is already ~45% YTD and near the $221 consensus average, so I am paying up for a regime, not a discount. 12% stop is deliberately wide - this is a headline-driven commodity name and a Middle East de-escalation is the live risk - and the 20% take-profit harvests the melt-up rather than the peak."
+  },
+  {
+   "symbol": "XOM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New leg, added specifically so the 28% energy tilt is not a single-balance-sheet bet. A 43-year consecutive dividend raiser at 15.1x forward with a 2.5% yield, and up 41.7% YTD on a different driver than CVX: refining and product margins are being held up by global fuel shortages, which is the downstream side of the same shock that lifts CVX's upstream. That decorrelation within energy is the entire reason for holding both - if crude mean-reverts but product cracks stay tight, XOM carries the sleeve, and the reverse holds for CVX. Piper Sandler just took its target from $158 to $185 against a $167 price. Sized at 8, half of CVX, because CVX is the higher-yielding and longer-tenured dividend grower and remains the sleeve's anchor; XOM is the diversifier, not the co-lead. Same 12/20 stop/target frame as CVX since it is the same underlying risk factor."
+  },
+  {
+   "symbol": "ABBV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Held at 8 and now the largest health-care leg after AMGN exits. It is the winner of the current leg at +4.19% and it carries the Abbott dividend heritage - 53 consecutive years of increases across the spin - which is exactly the 25-year-plus pedigree the mandate is built on. Pharma is the one defensive I am keeping weight in through a 5% 10-year, because unlike a staple its pricing is contractual and patent-protected rather than a function of consumer elasticity, so it does not get squeezed from both ends by the oil shock the way KO does. Immunology has cleared the Humira cliff and the Skyrizi/Rinvoq ramp is the growth that funds continued raises. Stop at 10% and target 18% - a clinical or policy shock in pharma is a fast, discrete repricing, so a tighter stop than the energy legs is appropriate."
+  },
+  {
+   "symbol": "MDT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 15.0,
+   "thesis": "A 48-year dividend grower and the book's medtech exposure, trimmed 8 to 7 as partial funding for the energy add. Kept because procedure volumes are the least macro-sensitive revenue line I own - hospital capital and elective procedure demand does not care about the 10-year or the oil price - which is genuine diversification against a book that is now 28% levered to crude. It is modestly profitable on the leg at +0.94% and trades at a discount to its medtech peers, so I am not paying a premium for that diversification. Trimmed rather than exited because the diversification is the point; 15% take-profit is lower than the energy legs because the realistic bull case here is multiple normalization, not a commodity move."
+  },
+  {
+   "symbol": "JNJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "thesis": "The 63-year dividend king and one of two remaining AAA-rated corporate balance sheets in the United States. Held at 6 through a -2.03% leg because this is the position whose job is to still be there and still be raising if the FOMC turns genuinely hawkish tomorrow and the market repricing is disorderly - a AAA credit is the one equity that does not need the funding markets to stay open. It is the cheapest form of ballast I can own inside a long-only dividend mandate, strictly better than adding to the 4% cash line for that purpose because it still compounds a growing dividend. No take-profit, because a ballast leg should never be sold into strength; a 10% stop is there only for a company-specific event such as an adverse talc or Stelara-erosion development."
+  },
+  {
+   "symbol": "USB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Held flat at 5 - not raised - as the book's deliberate rate-beneficiary. At 11.0x forward and a 3.45% yield just increased 3.8%, it is the cheapest thing I own, and a higher-for-longer or hiking Fed widens net interest margin on the asset side. I am explicitly NOT sizing it up despite that, because USB is the same bank whose securities book blew a hole in tangible capital via AOCI the last time the long end moved this fast, and a 10-year that has gone from 4.3% to 5.01% reopens exactly that mark-to-market wound. Holding 5% keeps the rate-hedge leg in the book while acknowledging the position is long NIM and short duration at the same time. 12% stop reflects that two-sided risk; the 20% target reflects the 12% discount to the $70 consensus average."
+  },
+  {
+   "symbol": "EPD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Raised 3 to 5. The one leg in the book that competes with a 5% Treasury on the Treasury's own terms - a 5.70% distribution yield, backed by 27 consecutive years of distribution growth, at 12.2x forward with adjusted EBITDA up 17% year on year. Midstream is the right way to add energy beta on top of CVX and XOM rather than a third producer, because EPD's 50,000 miles of pipe earns fee-based, largely volume- and often inflation-escalated revenue: it gets paid for throughput whether crude is $103 or $80, so it holds up in precisely the de-escalation scenario that would hurt the two majors. That is why it earns a raise even though Morgan Stanley is Underweight it. Kept at 5 rather than larger because K-1 midstream is structurally less liquid and because 28% total energy is already the ceiling I am willing to run."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

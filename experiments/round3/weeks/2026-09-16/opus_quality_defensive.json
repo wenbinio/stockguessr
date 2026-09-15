@@ -1,0 +1,71 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Cross-asset carry and trend stacking narrowed to the two trends still working - systematic managed-futures trend and commodity/energy carry - with covered-call, midstream and financials carry sleeves, a short semiconductor leg expressing the broken AI-momentum trend, and crypto cut entirely.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "Last leg I said this book would own the three trends that were actually working: commodity/energy carry, AI-led equity momentum, and crypto trend. One week of honest marks says only one of those three is still true, so I am rebuilding around it instead of defending the other two. What worked: DBMF +3.08% and PDBC +3.58%, both now sitting at 52-week highs, with PDBC +56% over twelve months. What did not: SMH -4.58% and MTUM -2.56%. Semis are 19% below their 52-week high of 671.83 and the tape has flipped them from the consensus safe AI play into the market's pain trade on hyperscaler capex fears and Chinese catch-up; MTUM is not a diversifier from that, it IS that, with AMD, Micron and Intel as its top three holdings at nearly 15% combined. Crypto is not a trend either - BTC at 76,176 is down 2.5% today and roughly 46% over twelve months, with a Senate Clarity Act vote as an open regulatory overhang. A bounce off a low is not a trend and a trend-stacking book should not pretend otherwise, so BTC and ETH go to zero, which is the single largest change here at 16% of gross. The macro backdrop justifies leaning the other way: Fed funds 3.75% with three July dissents for a hike into a live 2026-09-16 meeting, August CPI 3.40%, the 10-year at its highest since 2007, and crude at $100 after a Saudi pipeline outage that threatens ~4% of global supply. That is a commodity-carry regime and a long-duration-equity headwind, so I stack DBMF and PDBC to 38% combined, add two new cash-yield carry sleeves in AMLP and XOP, and convert the semiconductor exposure from a 5% long into a 6% short. I hold 16% cash at 4% rather than fully deploying because the entry fill is at the 2026-09-16 close and I would rather have dry powder than leverage into the Fed. Gross falls from 85% to 84% but the composition is almost entirely new; realised turnover is the price of admitting two of three legs of the old thesis are dead.",
+ "positions": [
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "thesis": "The largest leg because it is the only one that gets the trend call right without me having to. DBMF replicates CTA positioning, is at a 52-week high of 32.11 against a 26.91 low, returned 25% over twelve months, and carries a -0.17 beta to equities - it is currently short the front of the Treasury curve and long FX crosses, which is exactly the trade a hiking Fed and a 2007-high 10-year reward. Raised from 18% to 20%. It also pays a 4.92% distribution, so it is carry and trend in the same wrapper, which is what this mandate is supposed to be. The 0.85% fee is the cost of not having to run the futures book myself."
+  },
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The single best-performing thing I own and the purest expression of the one trend that survived review: +56% over twelve months, +3.58% on the current leg, and printing 20.01 against a 52-week high of 20.06. Broad commodity futures with active roll management means the position collects backwardation rather than bleeding contango, which matters enormously with crude at $100 on a genuine supply disruption. Raised from 12% to 18%. With CPI at 3.40% and the Fed still arguing about whether to hike, this is the leg that is long the actual problem rather than long a hedge against it."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "The covered-call carry sleeve, held flat at 12%. An 8.14% distribution yield paid monthly with a 0.54 beta is the cheapest volatility-selling exposure available in an ETF wrapper, and selling upside calls is the right posture when the index is 2.5% off an all-time high into a live FOMC. It sits at 56.28 against a 52-week range of 55.10-59.90, which is the low end - that is a carry sleeve doing its job of being boring, not a broken leg, and its -0.85% mark is noise. The honest cost is that its top holdings are Microsoft, Apple, Amazon, Meta and Nvidia, so it does carry some of the beta I am shorting elsewhere; at 12% and 0.54 beta that is a deliberate partial offset rather than an oversight."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "New leg and the best pure carry in this book: a 7.35% distribution yield from midstream energy infrastructure with a 0.49 beta, trading at 55.36 against a 52-week high of 56.43. Midstream is toll-road economics on volume rather than a levered bet on the crude price, so it monetises the $100 oil regime through fee escalators tied to inflation without taking the full commodity mark. Recent earnings show buybacks and distribution increases. At 10% it is sized as a carry sleeve, not a directional energy bet - XOP is where I take the beta."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "New leg and the directional energy trend expression, up 2.18% on the day and 52% over twelve months. Equal-weighted E&P with PBF, Valero and Marathon near the top means this captures record refining crack spreads as well as wellhead economics, and equal weighting avoids paying up for the megacap integrateds. The catalyst is concrete rather than thematic: a drone strike on a Saudi pipeline threatens roughly 4% of global supply, which is a persistent physical shock, not a sentiment move. The 15% stop is wide because equal-weighted E&P is genuinely volatile; the 30% take-profit acknowledges that supply shocks mean-revert once barrels are re-routed."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "The rate-carry sleeve, trimmed from 10% to 8%. A Fed that may hike again with the 10-year at 2007 highs is a net-interest-margin tailwind for the money-centre banks that dominate this fund, and financials are the sector that most directly monetises the macro call the rest of the book is making. Trimmed rather than held because the leg has gone nowhere (-0.66%) and because the flip side of higher-for-longer is credit deterioration, which shows up in bank earnings with a lag. 8% keeps the carry without pretending the credit cycle is free."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The most uncomfortable leg and the one that makes this an honest trend book rather than a long-only commodity book: last week I owned SMH at 5% long and it is the worst leg in the portfolio at -4.58%. Trend stacking means you do not hold a downtrend because you liked it before. SMH at 546.16 is 19% below its 671.83 high, the narrative has flipped to ballooning hyperscaler capex and Chinese AI catch-up, and semis are explicitly being described as the market's pain trade. Sized at only 6% because it is still +80% over twelve months and a violent reflexive squeeze is the obvious way this loses - the 12% stop caps the damage at about 0.7% of NAV, and the 3% borrow on a 6% weight is under 2bps a year. It also hedges the equity beta sitting in JEPI, XLF and XOP."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

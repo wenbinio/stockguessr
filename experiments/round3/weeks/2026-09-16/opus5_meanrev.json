@@ -1,0 +1,93 @@
+{
+ "name": "Opus 5 mean reversion",
+ "strategy": "Re-ranked the liquid US large-cap universe through the 2026-09-14 close and rebuilt around a single discipline: buy oversold quality whose drawdown cause is ALREADY PRICED into Wednesday's Fed decision (rate-sensitive and beta washouts), refuse oversold names whose drawdown cause is live and unpriced (the 3-day-old AI-pacing shock and the $100 oil/Hormuz shock), keep a small short in the crowded AI-hardware winner, and hold 16% cash at 4% as dry powder across the first Fed hike since 2023.",
+ "entry": "2026-09-16",
+ "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "My book's ranking was struck through the 2026-09-04 close and entered 09-08. Two regime breaks have happened since and the desk's platform fault meant neither was traded: (1) the 10Y touched 5.012% on 09-14, its highest since 2007, and closed 4.96%, with US crude above $100 and the Strait of Hormuz de facto closed, and markets now price ~92% odds of a 25bp HIKE on 09-16 -- the first since July 2023, landing the same day my legs fill; (2) Amodei's 'We Must Pace the Frontier' essay on 09-12, endorsed by Altman and Musk, derated the whole AI complex on 09-14 (SOX -6%, NVDA -3.36%, AVGO -4.77%, AMD -4.4%, MU -5%). Holding an 8-session-stale ranking through two regime breaks is drifting off a weekly-re-rank mandate, so I trade -- but surgically, keeping the legs my own filter still endorses so turnover is ~40% of the book rather than 100%.\n\nThe organising judgement is a distinction my strategy has never had to make explicitly before, and it is the whole decision: mean reversion pays when the shock that caused the drawdown is EXHAUSTED, and bleeds when the shock is still arriving. The rate shock has been building since 09-01 and is 92% discounted into Wednesday afternoon -- by the close on my entry date the cause of those drawdowns is a known quantity. The AI-pacing shock is three trading days old, has no revenue impact yet to anchor it, and carries an open policy tail now that two rival CEOs have publicly agreed with it. So I lean INTO the priced shock and refuse the fresh one, and I apply that rule symmetrically: it is the same logic that makes me buy HD and GS and that makes me cut CRDO.\n\nCuts: CRDO (small-cap AI-hardware beta, -9.58% and squarely in the path of an unexhausted narrative shock -- and it was incoherent to be long AI-hardware small cap while short AI-hardware large cap), RCL (crude above $100 with Hormuz shut is a direct ongoing fuel-cost and consumer shock, i.e. fundamental deterioration, exactly what my 'filter for cause' discards), ADSK (+5.39% -- the reversion happened, so I take it and recycle), CDNS (40x NTM into a 5% 10Y, carrying the same Kimi K3 EDA-disruption narrative as SNPS but with none of the cheapness, the Q3 fundamental reversal, or the near-term catalyst -- I am concentrating the EDA reversion bet in the better of the pair rather than paying twice for one idea). Cash goes 10% to 16% because the event lands on my fill date and 4% APY is a real return while I wait to re-rank on the other side of the dots.",
+ "positions": [
+  {
+   "symbol": "SNPS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 26.0,
+   "thesis": "Largest leg and the cleanest setup in my universe. Down ~34% over a year and within ~8% of its $366 52-week low, but the bear case that caused the de-rate -- the Design IP segment shrinking all year -- inflected in the Q3 print on 08-26, with Design IP back to ~11% y/y growth at $474mm. That is a multiple de-rate on improving fundamentals, which is precisely the case my mandate says to keep rather than discard. It also has a dated catalyst inside my holding window: the 09-30 Investor Day, where IP royalty and AI-monetisation detail is what 19 of 25 covering analysts rating Buy or better are waiting on. At ~26x NTM versus CDNS at ~40x it is the cheaper half of the EDA pair, so it absorbs the Kimi K3 EDA-disruption narrative and a 5% 10Y with far less multiple to lose. Sized up from 11% on the strength of the catalyst; the wide 18% stop is deliberate because this is a high-beta name I need to hold through a Fed day to reach 09-30."
+  },
+  {
+   "symbol": "SYK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Trimmed from 15% because it has already done part of its work (+0.57% on the old leg) and so is a less coy reversion candidate than it was, but kept as the book's largest defensive anchor. Medtech procedure volumes are the one demand stream in my book that is indifferent to both live macro drivers: hospital capital and elective procedure schedules do not reprice on a 25bp fed funds move and do not carry a fuel bill. In a book whose other longs all have some rate or geopolitical beta, I want a genuinely uncorrelated 12% rather than more cash."
+  },
+  {
+   "symbol": "LMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 18.0,
+   "thesis": "I am being honest that this leg has changed character: I bought it on 09-08 as a bottom-decile loser, and it has since converted into a momentum position with a live catalyst -- the US-Iran conflict running since February, strikes on Saudi energy infrastructure, fresh sell-side upgrades on LMT specifically, and institutional flow into defense ETFs. A purist would exit a thesis that converted. I size it up instead, because it is the only long in the book that is positively exposed to the oil-and-geopolitics factor that is the direct cause of the drawdowns in everything else I own. It is a deliberate internal hedge: if Hormuz worsens, HD and GS and SNPS all get worse and this gets better. Only +1% of size, because paying up for a crowded safety trade is how mean-reversion books get hurt."
+  },
+  {
+   "symbol": "HON",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Held flat at 9% -- the only leg I neither trimmed nor added to, because the original thesis is simply unfinished. It is -3.41% since the 09-08 entry, so the reversion has not been paid out, and nothing in either regime break invalidates the cause: the drawdown was newsless multiple compression in a diversified industrial, not a demand break. Its aerospace and defense segment gives it the same geopolitical offset as LMT and GD without the crowding, and its short-cycle automation revenue is not a long-duration cash-flow stream that a 5% discount rate mechanically destroys."
+  },
+  {
+   "symbol": "GD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Same defense-cycle logic as LMT and up 1% for the same reason, but held as a separate leg rather than folded into LMT because its mix is materially different: Gulfstream business jets and Marine Systems submarine work are long-dated program revenue that is insulated from the Middle East headline cycle, so it gives me defense-budget exposure with less of LMT's day-to-day geopolitical beta. Essentially flat since entry (-0.25%), so unlike LMT I am not paying up for a move that already happened."
+  },
+  {
+   "symbol": "CSCO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 11.0,
+   "take_profit_pct": 14.0,
+   "thesis": "Held flat at 8% as low-duration ballast. It is working (+1.76%) and it is the one technology holding whose cash flows are mostly near-term maintenance and subscription renewals rather than terminal-value optionality, so a 5% 10Y does far less damage to its multiple than to any AI-narrative name. Its networking and security demand also does not depend on frontier-model capability improving -- an industry that voluntarily paces capability development still runs and defends the same enterprise networks. The tight 11/14 stop-and-target pair reflects that this is a low-volatility carry leg, not a deep-value swing."
+  },
+  {
+   "symbol": "HD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 18.0,
+   "thesis": "New leg and the purest expression of my priced-versus-unpriced rule. HD sold off with the rest of the housing complex on 09-14 (down more than 1.5% alongside LOW, with LGI -2.5% and TREX -3%) for one identifiable reason: mortgage rates at ~6.76% and the 10Y touching 5%. That is a discount-rate de-rate on an unchanged business -- newsless de-risking, which my mandate keeps -- and crucially the cause gets fully repriced at 2pm on my entry date. A 25bp hike delivered as the ~92% consensus already expects, especially if the statement frames it as the end of the adjustment, removes the overhang that created the drawdown. Large-cap, deeply liquid, dividend-paying, and oil-neutral, so it carries none of the fuel-cost exposure that made me cut RCL. The 13% stop bounds the hawkish-dot-plot scenario at roughly 1% of NAV."
+  },
+  {
+   "symbol": "GS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 18.0,
+   "thesis": "New leg, and the most newsless drawdown on the tape: GS was the second-worst Dow performer on 09-14 at -3.99% with no company-specific item, purely macro beta from the yield and oil moves. That is textbook bottom-decile-for-no-reason. What makes it better than a generic beta bounce is that the macro driver punishing it is arguably a revenue tailwind for it: a first hike in three years, a 5% 10Y and this much rate and commodity volatility is exactly the environment in which the FICC trading franchise earns, and higher rates lift net interest income. So I own a name whose price fell on an input that improves its earnings -- a genuine dislocation rather than a hopeful one. The wider 14% stop respects that financials gap hard if the dot plot implies a hiking cycle rather than a single move."
+  },
+  {
+   "symbol": "DELL",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 22.0,
+   "thesis": "The mandated short in the crowded top-decile AI-hardware winner, carried and sized up modestly from 6%. It is now the coherent way for this book to express the 09-12 AI-pacing shock: I refuse to buy the semiconductor dip because that shock is three days old and unexhausted, and the consistent other side of that view is to be short the crowded AI-hardware beneficiary rather than long it. DELL is the right vehicle because its AI-server backlog is the most narrative-dependent, lowest-margin part of the AI trade -- a deliberate slowdown in frontier training compresses the order book that justifies its re-rating, while the commodity PC business underneath carries no premium. Kept small at 7% and with an 18% stop because the leg is currently against me (-2.46%), DELL has not yet broken with the group, and a 3% borrow cost is cheap enough to be patient but not free."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}
