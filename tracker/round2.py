@@ -165,7 +165,7 @@ def load_price_matrix(symbols: set[str]) -> pd.DataFrame:
     return pd.concat(series.values(), axis=1, sort=False).sort_index()
 
 
-def truncate_to_session(px: pd.DataFrame) -> pd.DataFrame:
+def truncate_to_session(px: pd.DataFrame, required: set[str] | None = None) -> pd.DataFrame:
     """Carry equity marks forward, but only as far as the last real session.
 
     Crypto trades every day, so the matrix has Saturday and Sunday rows that no
@@ -182,31 +182,45 @@ def truncate_to_session(px: pd.DataFrame) -> pd.DataFrame:
     # report the last session where the whole book is real rather than to mark
     # part of it against a bar that is still moving.
     equity_last = px["SPY"].dropna().index[-1]
-    complete = px.dropna(how="any").index
+    # Completeness is only owed by symbols some book still holds. A ticker that
+    # appears solely in a closed historical leg has already been priced and paid
+    # for, so waiting on it buys nothing: on 2026-09-14 KHC, held by no live
+    # book, would have held round 3 at 09-11 while round 2 reported 09-14 —
+    # two rounds of the same experiment dated a session apart.
+    cols = [c for c in px.columns if c in required] if required else list(px.columns)
+    cols = cols or list(px.columns)
+    if "SPY" not in cols:
+        cols.append("SPY")
+    complete = px[cols].dropna(how="any").index
     last_session = complete[-1] if len(complete) else equity_last
+    # Name the symbols holding the tracker back, once, so both messages below
+    # agree. They used to be computed against different reference dates, which
+    # is how 2026-09-14 reported "stale price tail on unknown symbols" in the
+    # same breath as naming KHC one line earlier.
+    laggards = sorted(c for c in cols
+                      if px[c].last_valid_index() is not None
+                      and px[c].last_valid_index() < equity_last)
     if last_session < equity_last:
         # Say so. A single symbol that has not republished yet costs the whole
         # tracker a session, and on 2026-09-10 that happened silently: the 08:00
         # UTC run reported 09-08 and a re-run nine minutes later reported 09-09,
         # with nothing to show which symbol had been holding it back.
-        laggards = [c for c in px.columns
-                    if px[c].last_valid_index() is not None
-                    and px[c].last_valid_index() < equity_last]
         print(f"  holding at {last_session.date()} rather than {equity_last.date()}: "
               f"{len(laggards)} symbol(s) not yet published "
-              f"({', '.join(sorted(laggards)[:8])}"
-              f"{' ...' if len(laggards) > 8 else ''})")
-    if len(px.loc[last_session:equity_last]) > SETTLEMENT_GRACE:
+              f"({', '.join(laggards[:8])}{' ...' if len(laggards) > 8 else ''})")
+    # Sessions, not rows. Crypto contributes weekend rows that no equity printed
+    # into, so counting rows made a single missing Friday-to-Monday bar look
+    # like four periods of staleness and tripped the override on 2026-09-14.
+    sessions_behind = len(px["SPY"].dropna().loc[last_session:equity_last]) - 1
+    if sessions_behind > SETTLEMENT_GRACE:
         # One symbol with a long stale tail must not drag the entire tracker
         # back with it. Beyond the settlement window this is a data problem,
         # not a market-hours one, so report to the equity session and let the
         # affected book surface as a DATA ERROR instead of silently rewinding
         # every other book by weeks.
-        stale = [c for c in px.columns
-                 if px[c].last_valid_index() is not None
-                 and px[c].last_valid_index() < last_session]
-        print(f"  WARNING: stale price tail on {stale or 'unknown symbols'}; "
-              f"reporting to {equity_last.date()} rather than {last_session.date()}")
+        print(f"  WARNING: {', '.join(laggards) or 'unknown symbols'} "
+              f"{sessions_behind} session(s) stale; reporting to "
+              f"{equity_last.date()} rather than {last_session.date()}")
         last_session = equity_last
     # Never carry a column past its own last real print. A crypto bar for day D
     # only settles after D ends, so on the evening of D the newest crypto bar is
@@ -479,6 +493,16 @@ def main() -> int:
                 if p["kind"] in ("crypto", "perp") and not s.endswith("-USD"):
                     s += "-USD"
                 symbols.add(s)
+    live_symbols = set()
+    for files in alloc_files.values():
+        newest = max(files, key=lambda f: json.loads(f.read_text())["entry"])
+        for p in json.loads(newest.read_text())["positions"]:
+            s_ = normalize(p["symbol"])
+            if p["kind"] in ("crypto", "perp") and not s_.endswith("-USD"):
+                s_ += "-USD"
+            live_symbols.add(s_)
+    live_symbols |= {"SPY", "BTC-USD"}
+
     try:
         px = load_price_matrix(symbols)
     except PriceDataUnavailable as e:
@@ -489,7 +513,7 @@ def main() -> int:
         return 1
     # crypto trades 24/7 and returns rows for days no equity printed; official
     # fills happen at the US close, so truncate to the last completed session
-    px = truncate_to_session(px)
+    px = truncate_to_session(px, required=live_symbols)
 
     fills = []
     out = {"updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
