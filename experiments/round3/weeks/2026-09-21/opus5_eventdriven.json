@@ -1,0 +1,47 @@
+{
+ "name": "Opus 5 event driven",
+ "strategy": "A deliberately de-risked event book: a right-sized CRH/Arcosa cash-merger carry, a trimmed energy leg as the supply-disruption tail, one post-earnings-drift long with confirmed upward revision breadth, a small index short against a hiking Fed, and a majority cash position because 4% cash currently out-yields the entire tight-spread merger-arb complex.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 53,
+ "reassessment_note": "Three things changed this week and all three argue for less risk, not more. (1) ACA is no longer a near-dated catalyst. The stockholder vote passed on 2026-09-04 (39.6m for, 66k against), but the HSR waiting period has NOT expired, and the merger agreement's outside date is 2027-06-21 with automatic extensions to 2027-09-21 and 2027-12-21 if regulatory conditions are unresolved. Q1 2027 is a goal, not a commitment. The remaining spread is 145.84 to 150.00 = 2.85%; over a 5-month close that is ~6.8% annualized and over a 9-month close it is ~3.8% - i.e. at or below cash - against a break tail worth roughly -25% to -30%. A thin-edge, fat-tail position does not deserve a third of the book, so ACA goes 33 -> 22. (2) I priced the rest of the arb complex and it is worse. LXP closed 60.81 Friday against Brookfield/CPPIB's 61.20 all-cash with a Q4 2026 target: 0.64% gross, ~2.6% annualized, below cash after 2bps each way - I am not paying fees to earn less than idle balances. WBD is the one genuinely live situation (31.00 cash, ticking fee from 2026-09-30, FCC foreign-ownership clearance 2026-09-17), but it closed 27.80 and then jumped roughly 8% after hours Friday on the WSJ settlement-talks report. My entry is the Monday close, so I would be buying the news, not the event - paying ~29.5-30.1 for ~4-7% of residual upside while Bonta, who already walked out of talks once citing bad faith, can reprice it -10% in an afternoon. Declined. (3) CRM's drift thesis has inverted and I am cutting it outright: the stock fell on a fiscal-2027 guidance raise, fell again into Dreamforce, is down ~30% YTD, and the -4.87% mark is the market telling me the revision tailwind I bought is not there. The honest conclusion of a week's research is that the event calendar is empty at a price I want, and the correct event-driven answer to an empty calendar is cash - especially with the Fed having hiked to 3.75-4.00% on 2026-09-16, 16 of 18 dots showing at least one more hike this year, and the 10-year back above 5%. Gross exposure falls 70% -> 47%.",
+ "positions": [
+  {
+   "symbol": "ACA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 3.0,
+   "thesis": "CRH acquiring Arcosa for $150.00/share in all cash; stockholders approved 2026-09-04 by an overwhelming margin, financing is CRH cash plus committed debt so there is no funding risk, and the position is immune to the index beta and rate path that drives everything else in this book. What is left is purely regulatory: HSR clearance is still outstanding and CRH is the largest US aggregates producer buying a major aggregates/infrastructure player, so a second request and divestiture remedies are live possibilities, with CRH's obligation to accept remedies contractually capped. That is why the spread is 2.85% while a clean financial-buyer REIT deal like LXP trades at 0.64% - the width is payment for timeline and remedy risk, not free money. I want the carry but at carry size, so 22% rather than 33%. Take-profit at 3.0% sits just above the $150 deal price so the leg closes itself on consummation; the 8% stop is not gap protection against a break but does cap the bleed if a second request resets the market's clock toward the 2027 outside date."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 15.0,
+   "thesis": "The physical-supply event I bought this for is repairing rather than escalating: Saudi Arabia says the East-West pipeline can restart within days after the Iran-affiliated strikes that suspended it, Aramco expects to restore half of daily flows, satellite data shows 2.8m bpd moving through Hormuz over six days versus 700k bpd in August, and WTI fell 2.34% to $99.53 on Friday with Brent at $103.21. A decaying catalyst gets a smaller position, so 14% -> 10%. I am not cutting it to zero for two reasons: Hormuz transit is still materially disrupted and any re-escalation is a fast, large upside gap that nothing else in this book participates in, and $100 crude mechanically flows into US energy Q3 results in late October, which is the next hard-dated catalyst this leg owns. Take-profit tightened from 20% to 15% because the easy part of the move has happened; stop stays wide at 12% because the whole point of the leg is to survive the chop and be there for the tail."
+  },
+  {
+   "symbol": "TEAM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 9.0,
+   "thesis": "This is the one post-earnings-drift leg where the revision test still passes on fresh evidence rather than on memory: nine upward current-year EPS estimate revisions over the last 30 days against zero cuts, with Mizuho lifting its target to $215 from $175 and Citi to $225 from $170, against a ~$192 mark. Drift works when the estimate tape keeps moving in the direction of the surprise, and it is. I am adding 6% -> 9% precisely because it now carries the drift sleeve alone after CRM was cut - CRM failed the identical test in the opposite direction, falling on a guidance raise and again into its own user conference, which is what an exhausted drift looks like. Sizing stays modest because this is high-multiple software going into a Fed that just hiked with the 10-year above 5%. Take-profit 9% keeps the discipline of harvesting drift rather than marrying the name; 10% stop."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 7.0,
+   "thesis": "A deliberately small hedge, not a macro call. The 2026-09-16 FOMC hiked 25bp to 3.75-4.00% - the first hike in three years - unanimously, with 16 of 18 participants projecting at least one further hike in 2026 and Warsh emphasising persistent inflation, and the 10-year is back above 5%. That is a poor setting for multiple expansion, and stocks have already erased the hawkish reaction on nothing more than a one-day retreat in oil and yields. I hold 19% of genuine long beta (XLE plus TEAM); a 6% short covers roughly a third of it, which is the right ratio for a book whose job is idiosyncratic events rather than direction. Trimmed 8% -> 6% because the long beta it hedges shrank by more. Short borrow costs 3% APR, so I keep it small and stopped at 7% - if the market is squeezing higher against a hiking Fed, I want to be told to stop paying for the hedge rather than to keep financing it."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

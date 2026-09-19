@@ -1,0 +1,40 @@
+{
+ "name": "Sonnet growth at a reasonable price",
+ "strategy": "Round 3: momentum/regime rotation, trimmed further to the legs that survive a hawkish-Fed reality check -- financials (JPM) and a trimmed biotech position (XBI) whose breakout is losing steam, a healthcare profit-take (ELV), an energy leg (CVX) sized up on a geopolitically-driven oil spike -- with the MSTR short covered after its 'cracking blow-off top' thesis was invalidated by a regulatory-driven rally, and cash raised sharply to 49%.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 49,
+ "reassessment_note": "Two facts changed my thinking, both from research done via WebFetch (WebSearch budget was exhausted for this session before any query ran; I relied on federalreserve.gov and Yahoo Finance quote/news pages instead). First, the 2026-09-16 FOMC hiked 25bp to 3.75-4.00% rather than cutting -- a hawkish surprise, with the statement citing elevated inflation and offering no forward guidance -- and the tape has been roughly flat since (S&P -0.54% trailing month, 'elevated yields' cited as a headwind). Second, and more urgent for this book: the MSTR short's thesis was 'fade the cracking Bitcoin blow-off top,' but MSTR is instead extending the blow-off -- +16.4% in a single session (9/18) and +17.5% over the trailing month -- on regulatory catalysts (a favorable House Committee vote on digital assets, tokenized-stock approval) that have nothing to do with rates or a top forming. The leg is already at -12.75% against a -15% stop, i.e. within roughly two points of being stopped out or, worse, of the book's margin cushion getting tested on further follow-through; there is no informational basis left for staying short a rally driven by policy catalysts rather than exhaustion, so I am covering it now rather than waiting for the stop to do it at a worse fill. On the long side, XBI shows explicit deceleration signals ('XBI loses steam after hot 2026 run', -2.1% trailing month, essentially flat-to-down the last session) even though its longer six-month trend is still up +29%, so under this book's own 'actually still trending' test it gets trimmed rather than held at full size. CVX gets sized up because oil is spiking on Iran-conflict-driven geopolitical risk per current market commentary, which is a fresh, real tailwind for the energy leg specifically (not just beta). JPM and ELV are left at their current sizes: JPM has genuine near-term softness (-3.74% trailing month, and JPMorgan's own CEO flagging inflation as not 'slayed') offset by a real Q3 catalyst (investment banking and trading strength flagged for the quarter), so it's a hold-size, not an add; ELV's profit-take is working (+2.69% leg) and doesn't need resizing. Net effect: gross exposure falls from 61% to 51% and cash rises from 39% to 49%, reflecting that a hawkish Fed regime plus a momentum book with only four legs that still pass the 'still trending' bar argues for being more conservative, not less, right now. This book has zero symbol overlap with my Round 2 GARP book (JPM/ELV/CVX/XBI here vs. MSFT/GOOGL/AVGO/META/IWM/UNH/COST/XOM/SOXL there), so it is trivially compliant with the Round 3 novelty rule.",
+ "positions": [
+  {
+   "symbol": "JPM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "thesis": "Held at unchanged size. Financials remain the strongest 'still trending' name in the momentum sleeve despite a soft trailing month (-3.74%) and CEO Dimon's public caution that inflation 'hasn't been slayed' post-hike; that near-term softness is offset by a flagged Q3 catalyst in investment banking and trading strength. A hawkish, higher-for-longer Fed is also structurally supportive of bank net interest margin versus the growth/duration-sensitive alternatives elsewhere in the market. Not adding on the soft print, not cutting given the earnings catalyst -- hold size."
+  },
+  {
+   "symbol": "ELV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Held at unchanged size. This is already sized as a trimmed profit-take (leg +2.69%) rather than a full-conviction trend leg; price action is stable with no new negative catalyst found in research, so there is no reason to cut further, and no new momentum signal strong enough to justify adding back to a larger size."
+  },
+  {
+   "symbol": "CVX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "thesis": "Sized up from 12% to 15%. Current market commentary ties JPMorgan's own risk framing to 'soaring oil prices' amid an active Iran-conflict geopolitical risk premium -- a fresh, energy-specific tailwind on top of the already-continuing uptrend this leg was held for. This is the one leg in the book with a clearly strengthening, not weakening, trend signal this week, so it gets the incremental capital freed up by covering MSTR and trimming XBI."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Trimmed from 15% to 10%. Sector commentary explicitly flags the breakout 'losing steam after a hot 2026 run,' and the leg itself is down -2.12% over the trailing month with the latest session essentially flat-to-down; six-month trend is still strongly positive (+29%) so this is a trim on decelerating momentum, not an exit, consistent with the book's mandate to hold only the legs that are 'actually still trending.'"
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

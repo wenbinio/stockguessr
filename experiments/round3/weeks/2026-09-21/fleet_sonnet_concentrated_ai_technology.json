@@ -1,0 +1,39 @@
+{
+ "name": "Sonnet concentrated AI/technology",
+ "strategy": "Cross-sector momentum/relative-value book, long confirmed sector breakouts (biotech, regional banks) and short confirmed breakdowns (long-duration Treasuries), deliberately kept free of AI/semis exposure so it expresses a different macro/rotation view than the Round 2 concentrated-AI book; this week trims the two long legs whose breakouts are stalling and leans harder into the short leg whose catalyst just got confirmed.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 35,
+ "reassessment_note": "The single biggest input this week is the FOMC outcome: on 2026-09-16 the Fed delivered a hawkish surprise, a 25bp HIKE to 3.75-4.00% (unanimous 12-0) rather than the cut many had positioned for, explicitly citing inflation still running elevated even as it framed the move as supporting a 'timelier return to 2 percent.' That directly validates and strengthens the TLT short (higher policy rates and a hawkish tilt are bearish for long-duration bond prices), so I am increasing that leg from 15% to 25%, the largest single-leg change in the book. On the long side, both breakout theses are showing real signs of stalling rather than confirming further: XBI is described in current coverage as having 'lost steam' after its 2026 run (still +29.9% YTD vs. healthcare's +2.4%, but down 2.1% over the trailing month and the leg itself is -3.2% since the 9/8 entry) -- a momentum breakout that is decelerating, not accelerating, is exactly the kind of position this strategy's own mandate says to lighten rather than average into. KRE is worse: -5.3% over the trailing month (leg -2.1%), and current commentary is turning selective/skeptical on the regional-bank basket as a whole (pieces arguing specific dividend names 'look stronger' than the broad basket) -- combined with a hawkish, still-inflation-worried Fed that raises credit and margin-pressure risk for regional lenders, the 'confirmed breakdown' bar for justifying this exposure is weakening. I am trimming XBI 40%->25% and KRE 25%->15%, and letting cash rise from 20% to 35% rather than rotating that capital into a fourth pair I have not yet diligenced -- with the book down -6.1% since inception against an SPY that is up +2.7%, preserving capital while the one leg with a fresh, confirmed catalyst (the TLT short) does the work is the more disciplined move than forcing new breakout ideas into place under a fifteen-minute research window. This keeps the book's stated cross-sector, non-AI mandate intact and, because it shares zero tickers or sectors with the Round 2 concentrated-AI/semis book, remains far under the 50% same-direction overlap threshold.",
+ "positions": [
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Biotech's 2026 breakout is real on a YTD basis (+29.9% vs. +2.4% for broader healthcare) but current coverage explicitly frames it as having 'lost steam,' and the leg is down 3.2% since the 9/8 entry with a further 2.1% pullback over the trailing month. Trimming from 40% to 25% to respect the deceleration while the position is still a small net winner off the original breakout signal -- this is a 'stay engaged but stop pressing' sizing, not a full exit, and the stop is tightened from -12% to -10% given the loss of momentum."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The regional-bank breakout thesis is the weakest leg in the book: -5.3% over the trailing month and the leg itself is -2.1% since entry, with current sector commentary turning selective (arguing individual dividend names look stronger than the basket) rather than confirming broad-based strength. A hawkish Fed that is still worried about elevated inflation is a mixed-to-negative setup for regional lenders (deposit-cost and credit-quality pressure can outweigh any NIM benefit). Cutting from 25% to 15% -- kept on rather than closed because the YTD trend (+13.5%) hasn't broken down outright, but sized to reflect the deteriorating near-term tape."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 25,
+   "stop_loss_pct": 6.0,
+   "take_profit_pct": 15.0,
+   "thesis": "This is the leg with a genuinely fresh, confirming catalyst: the FOMC just delivered a 25bp hike (to 3.75-4.00%, unanimous) instead of the cut many were positioned for, explicitly citing still-elevated inflation -- a hawkish surprise that is unambiguously bearish for long-duration Treasury prices. TLT is already down modestly since the prior entry and 0.65% on the announcement day itself; I expect continued pressure as the market digests a Fed that is not yet done tightening into sticky inflation. Increasing the short from 15% to 25%, the largest add in the book, and widening the take-profit from 12% to 15% to let the confirmed catalyst run further before covering."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

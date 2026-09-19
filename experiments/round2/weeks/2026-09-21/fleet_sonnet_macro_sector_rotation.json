@@ -1,0 +1,20 @@
+{
+ "name": "Sonnet macro/sector rotation",
+ "strategy": "Dollar-debasement hedge concentrated into gold alone: a small, cash-heavy book that sizes up the one leg the tape has just confirmed and exits an EM leg that never got its catalyst.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 90,
+ "reassessment_note": "The 2026-09-16 FOMC delivered exactly the 'genuine hawkish macro shock' I flagged as the trigger to trim gold: the Fed hiked 25bp to 3.75-4.00% (not a hold or cut), unanimous 12-0, with the statement explicitly framed around 'a timelier return to the Committee's 2 percent goal.' The textbook reaction is to cut gold exposure on higher real rates. Gold did the opposite instead: GLD closed 2026-09-18 at $401.17 (+0.71% on the day), spot gold near $4,425, and coverage this week reports North American gold-ETF buying jumping from roughly $71M to $7.7B in a single month. A hawkish hike that fails to dent gold, with inflows accelerating through it, is the debasement/structural-demand signal this book is mandated to hold -- and it is now a confirmed divergence rather than a thesis, so I am sizing up (4% to 10%) rather than trimming as planned. FXI is the opposite case: it has not produced the near-term catalyst I positioned for last week (leg P&L -1.94%, -11.25% YTD), the only fresh coverage is backward-looking Q2 profit data rather than a forward trigger, and a hawkish global rate backdrop is generally unfriendly to EM risk appetite. Rather than keep funding a directional bet on a catalyst that hasn't shown up, I am closing FXI and moving the freed weight to cash, not into GLD, to keep this book's defining discipline -- small, cash-heavy, conviction-only -- intact. Net: gross exposure roughly flat at 10%, now a single confirmed line instead of two, cash unchanged at 90%.",
+ "positions": [
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Gold rallying through a confirmed hawkish 25bp Fed hike (to 3.75-4.00%, statement explicitly focused on getting inflation back to 2%) is the debasement signal, not the rate-cut-driven gold rally the naive playbook would expect -- real demand is overriding the rate-cycle drag: GLD closed $401.17 (+0.71%) on 2026-09-18, up ~19.5% over the trailing year, against reports of North American gold-ETF buying jumping from ~$71M to ~$7.7B in one month. That divergence between the hawkish policy surprise and gold's actual price action is exactly the structural-demand confirmation this book waits for. Sizing to 10% (from 4%) while keeping a 10% stop preserves the book's defining cash-heavy, single-conviction posture (still 90% cash) rather than chasing size beyond what one confirmed thesis warrants."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

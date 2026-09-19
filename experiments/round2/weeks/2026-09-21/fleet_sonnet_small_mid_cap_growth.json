@@ -1,0 +1,62 @@
+{
+ "name": "Sonnet small/mid-cap growth",
+ "strategy": "Concentrated long book in secular small/mid-cap growth (small-cap beta, semis leverage, fintech, space, biotech) with a large cash cushion, tilted toward names with intact fundamentals over pure beta and trimmed ahead of known event risk.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 54,
+ "reassessment_note": "WebSearch budget was already exhausted for this session (200/200), so this week's research was done via WebFetch (AI-summarized fetches of Yahoo Finance pages), not live search -- noting that per the brief's instruction. Three real changes from last week's leg: (1) IWM's broad small-cap beta is fighting a genuine macro headwind right now -- Russell 2000 has been described as under 'constant weakness since late August' with Treasury yields and crude both grinding higher, and the ETF is -5.37% over the trailing month -- so I'm trimming the pure-beta leg rather than holding it at prior size. (2) SOFI is down -35% YTD with earnings on 2026-10-27, close enough to introduce event risk before this leg would mark again; fundamentals (revenue +41% YoY) are fine but analyst sentiment is explicitly mixed on credit risk/valuation, so I'm cutting size rather than exiting. (3) RKLB's -18% one-month drawdown is a dilutive-equity-raise reaction, not a broken thesis -- the raise left the company with $2.3B cash and a fresh $870M Iridium contract, Raymond James just initiated Outperform, and the average street target implies ~69% upside from here -- so I'm adding to the dip. HOOD is the standout performer (fundamentals plus a +9% single-day move on 9/18, analysts still raising targets) so I'm sizing it up modestly. SOXL stays at prior size and stop/TP (leveraged semis exposure, no new signal either way). XBI trimmed slightly -- still a believer in the biotech laggard-turning-up story but conviction is currently softer than RKLB/HOOD, and the leg remains in drawdown with no fresh positive catalyst found. Net effect: gross exposure drops from 47% to 46% and cash rises slightly to 54%, reflecting a mild risk-off tilt given the macro backdrop while rotating dollars from the weakest-conviction legs (IWM, SOFI, XBI) into the strongest-conviction ones (HOOD, RKLB).",
+ "positions": [
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed from 13% to 9%. Pure small-cap beta exposure, and the tape right now is a genuine headwind for that beta specifically: Russell 2000 has been described as showing 'constant weakness since late August' with crude oil and Treasury yields grinding higher almost daily while major indices drift lower erratically -- IWM is -5.37% over the trailing month even though it's still +16.74% YTD. Keeping a reduced position rather than exiting because the longer-run uptrend and relative outperformance vs the small-blend category (16.74% vs 12.09%) are still intact; adding a 12% stop that wasn't on this leg before, given the leg is now fighting the macro tape rather than riding it."
+  },
+  {
+   "symbol": "SOXL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Unchanged size and risk brackets. 3x leveraged semis exposure to the AI-capex buildout theme that underpins this book's growth mandate; the prior leg is flat-to-slightly-positive (+0.32%) and I found no fresh negative catalyst this week, so I'm leaving the existing stop/TP discipline in place rather than churning a working position."
+  },
+  {
+   "symbol": "SOFI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed from 6% to 4% ahead of the 2026-10-27 earnings date. Fundamentals remain genuinely strong -- 41% adjusted net-revenue growth, 35% customer growth, $14.8B in loan originations, a 12.99% profit margin -- and the average analyst target of $20.34 implies roughly 20% upside from the current $16.96 mark. But the stock is down 35% YTD and analyst commentary explicitly flags credit-risk and valuation concerns, and an earnings print is close enough to the horizon that I'd rather hold a smaller position into it than the prior 6%."
+  },
+  {
+   "symbol": "RKLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 20.0,
+   "thesis": "Increased from 5% to 8%, buying the dip. RKLB is down 18.4% over the trailing month and 4.8% on 9/18 alone, but the proximate cause is a $1.94B dilutive equity offering, not a broken business -- the raise left the balance sheet with $2.3B in cash, the company just signed an $870M Iridium contract and successfully completed its 96th Electron launch, and revenue is still growing ~62% YoY. Raymond James initiated coverage Outperform ($80 PT) on 9/11 and the average street target of $109.37 implies ~69% upside from the current $64.57 mark. Losing the NASA StarBurst mission to SpaceX is a real competitive headwind worth noting, but doesn't change the core small-cap space-growth thesis for this book. Keeping the wide 20% stop given the name's volatility."
+  },
+  {
+   "symbol": "HOOD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Increased from 10% to 13%, sizing up the book's best-performing and best-supported leg. HOOD surged 9.12% on 9/18 on continued fundamental strength -- $1.31B Q2 revenue at a 42.9% margin, and the company is projected to exceed $500B in customer assets by 2027. Deutsche Bank just raised its target from $136 to $138 (Buy) and Bernstein rates it Outperform (85/100). There's a modest known overhang (an insider-trading-charge headline caused a prior 5% pullback, and the CFO sold ~$1.3M of stock), but that's already reflected in the mark and doesn't offset the broader trend of rising targets and strong execution. Keeping the existing stop/TP brackets given they've been appropriate through this leg's run."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed from 7% to 6%. Still hold the secular small/mid-cap biotech thesis (sector underinvestment reversing eventually), but this leg remains in drawdown (-3.22%) and I did not turn up a fresh positive catalyst this week to justify holding it at full prior size while reallocating toward higher-conviction legs (HOOD, RKLB). Not exiting -- the biotech laggard-turning-up story is a real, if currently unconfirmed, part of this book's mandate."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

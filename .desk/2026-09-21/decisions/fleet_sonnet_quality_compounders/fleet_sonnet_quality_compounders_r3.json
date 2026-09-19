@@ -1,0 +1,37 @@
+{
+  "name": "Sonnet quality compounders",
+  "strategy": "Post-FOMC reassessment: retire the two momentum-breakdown shorts that the tape has now falsified, flip gold exposure long to ride the actual breakout, upsize the working biotech M&A idiosyncratic long, and add one new distinct quality-compounder name, while keeping half the book in cash given standing AI-bubble drawdown risk flagged in the market.",
+  "entry": "2026-09-21",
+  "capital_usd": 1000,
+  "cash_pct": 50,
+  "reassessment_note": "The book's prior stance was explicitly conditional on the Sept 16 FOMC and a 'momentum breakdown' in gold and crypto - both premises have now been overtaken by events. The FOMC delivered the hike (25bp to 3.75-4.00%) the book was positioned for, so the reason to sit mostly in cash INTO the meeting no longer applies; more importantly, gold has NOT broken down - spot is flirting with $4,400/oz on central-bank buying and softer data, and mining-sector commentary is actively bullish miners specifically ('poised to outshine gold'), which directly contradicts the short GDX thesis that was still nursing a fragile +2.98% mark. Bitcoin has done the same in the other direction: instead of continuing its breakdown, it reclaimed $80k and triggered roughly $180M of short-position liquidations in the past week, a textbook squeeze against the short BTC leg. Rather than wait for the -12%/-15% stops to absorb further losses on two theses the market has already disproven, I am closing both shorts now. XBI's thesis is the one part of the old book that has been reconfirmed - biotech M&A hit ~$106B across 201 deals and the sector is seeing a rotation-in from tech - so I am sizing it up rather than just holding it. I am redeploying part of the freed capital into ISRG, a genuine wide-moat, high-ROIC healthcare compounder (20%+ revenue and net income growth, 32 analysts at Buy, +21% to target) that has zero symbol or sector overlap with anything in the Round 2 book, to keep this book idiosyncratic and independently sourced rather than a levered echo of Round 2's mega-cap tech tilt. I am keeping cash at 50%, still elevated, because a widely cited AI-bubble-collapse warning (Capital Economics flagging a possible 30% US equity drawdown) argues for dry powder heading into an environment where the Fed just resumed hiking rather than cutting - the opposite of the easy-money backdrop the rate-cut carry longs this book exited in leg 4 were built for. Zero symbol overlap with the Round 2 book (MSFT/GOOGL/AVGO/LLY/V/MA/COST/UNH long, IWM short) satisfies the novelty rule by construction.",
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Biotech M&A momentum is real and current, not stale: ~$106B across 201 deals through mid-2026, plus a documented rotation of investor flow from expensive tech into healthcare and a string of positive Phase-stage cancer/cardiac readouts. This is the idiosyncratic, non-rate-dependent leg the mandate calls for - sector re-rating driven by dealmaking and clinical catalysts, not Fed policy - so I am sizing it above the prior 15% now that the thesis has independent confirmation rather than trimming into a hike."
+    },
+    {
+      "symbol": "GDX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Flipping from short to long: gold is near $4,400/oz on sustained central-bank buying and softer macro data even as the Fed hikes, which is the opposite of what the prior short-momentum-breakdown thesis required, and sector commentary specifically expects miners to outperform bullion on operating leverage at these prices (PE ~15x on the ETF). Fighting a live breakout with a short was the wrong side of the tape; riding it long with a tight 10% stop captures the same volatility with the trend instead of against it."
+    },
+    {
+      "symbol": "ISRG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "New idiosyncratic quality-compounder leg, deliberately distinct from Round 2's mega-cap tech/payments/healthcare-insurer set: da Vinci 5/SP/Ion platform adoption is driving >20% revenue and net income growth, a clinical meta-analysis just reinforced the outcomes case (shorter hospital stays) that underpins da Vinci's pricing power, and 32 analysts rate it Buy with 21% upside to target. Recent pullback from the 52-week high to $393 on procedure-growth worries looks like a valuation reset in a name whose moat (installed base + recurring instrument/service revenue) is unaffected by one quarter's growth-rate debate."
+    }
+  ]
+}

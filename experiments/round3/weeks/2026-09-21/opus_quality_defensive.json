@@ -1,0 +1,62 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Cross-asset carry and trend stacking with the falsified short-semiconductor leg closed and not reversed, weight pushed into the three carry engines a hiking Fed and commodity-led inflation actually pay - broad commodity carry, systematic managed-futures trend and bank net-interest-margin - alongside midstream and E&P energy carry and a reduced covered-call sleeve, all long-only.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 12,
+ "reassessment_note": "Two things changed and they point the same way. First, and this is the leg that matters, the short SMH position is wrong and I am closing it. It was entered to express a broken AI-momentum trend; SMH is +88.3% over twelve months and rose 2.21% on 9/18 alone, and the leg is already -5.03% two marks after entry. A book whose mandate is trend stacking has no business being short the strongest measured trend in the investable universe - that was not a trend expression, it was a contrarian view wearing a trend book's clothes, and the tape has falsified it. I am closing it and I am deliberately NOT flipping it long. Reversing the exact ticker that just hurt me, after a +88% run and on a two-day loss, is whipsaw rather than discipline, and at 22.6% NVIDIA the residual risk in SMH is idiosyncratic rather than trend. Closing a broken leg and standing aside is a complete decision. Second, the 2026-09-16 FOMC hiked 25bp to 3.75-4.00%, unanimously, with the year-end median dot lifted to 4.10% from 3.80%, into a statement describing solid activity, resilient spending and a stable unemployment rate. Headline CPI is stuck at 3.4% with a +0.4% August month, the hottest in three months, while core has fallen to 2.4%, the lowest since March 2021 - so the Fed is tightening against commodities in a healthy economy. That is close to the ideal setting for every carry engine in this book: commodity carry is long the thing causing the problem, bank net-interest-margin is long the policy response, and managed-futures trend is long whichever of those keeps working. The SMH weight plus trims to the covered-call sleeve fund increases in commodity carry, financials carry and midstream. Gross exposure rises 84 to 88 and the book goes fully long-only, which I accept because the short I was carrying was the leg adding risk rather than reducing it. Turnover is roughly a third of the book at 2bps a side - under a basis point of friction to remove a position whose premise no longer exists.",
+ "positions": [
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The single best carry-and-trend expression available right now and the book's largest leg, raised from 18 to 22. +51.7% total return over twelve months makes this the strongest non-semiconductor trend I can measure, and the macro confirms rather than contradicts the price: the Fed just hiked specifically because headline CPI will not fall below 3.4% while core has already dropped to 2.4%, and that entire wedge is commodities and energy. PDBC is actively managed to optimise roll yield rather than mechanically rolling front-month, so in a market where the carry is positive it harvests that carry instead of bleeding it, which is the difference between a commodity trend fund that compounds and one that does not. Being long the commodity complex is also the cleanest hedge against the risk that scares this book most - that the committee has to deliver more than the one further hike its own dots imply. 12% stop with a 25% target: this is a trend leg with a defined exit, not a permanent allocation."
+  },
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held flat at 20 and left untouched deliberately. This is systematic trend replication across futures markets and it has returned +25.8% over twelve months with a beta to equities of roughly -0.17, which is the property I am paying the 0.85% expense ratio for: it is the only leg that can make money if the equity and commodity legs around it break at the same time. It also solves the problem I created by closing the SMH short - with the book now long-only in cash equities, DBMF is the entire diversifier, and that argues for keeping it large rather than spending it on more directional carry. The honest risk is that its replication carries meaningful notional in 2-year and 10-year Treasury futures, and a Fed that keeps hiking past 4.10% would hurt that sleeve if it is positioned long duration. 20% is the size at which that risk is a drag rather than a wound, and the 12% stop bounds it."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised from 10 to 13 as the highest-quality carry leg in the energy complex. Midstream partnerships earn fee-based, volume-linked distributions on pipelines and terminals rather than taking direct commodity price risk, so this is a yield harvested from energy throughput rather than a bet on where crude prints - genuine carry, which is what this mandate is built around. It complements rather than duplicates the E&P exposure below: if energy prices chop sideways while volumes stay high, XOP goes nowhere and AMLP still pays. It also holds up better than other high-yield sleeves against the hike, because distribution coverage comes from contracted throughput with inflation escalators rather than from a fixed coupon that cash at 4.00% now competes with. 12% stop."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised from 8 to 12 because this is the leg the 9/16 decision most directly rewards, and it was underweight for a world that has now arrived. A unanimous hike to 3.75-4.00% with the median dot at 4.10% widens net interest margin on the asset side, and the statement's description of solid activity, resilient spending and a stable unemployment rate is exactly the credit backdrop that lets banks keep that margin rather than give it back in provisions. That combination - higher short rates plus benign credit - is the textbook setting for bank carry, and it is rare to get both. The risk is the inversion or credit-cycle scenario in which the Fed hikes into a slowdown, which is why this is 12% rather than the 20% the thesis might otherwise justify, and why it carries the same 12% stop as the rest of the book."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 12 to 11 and kept as the book's equity-volatility carry sleeve. Writing calls against a low-volatility equity portfolio monetises the implied-to-realised volatility spread, which is a real and persistent carry source and belongs in this mandate. The reason it is trimmed rather than raised is that the environment has shifted against the strategy's weak spot: with semiconductors running +88% on the year and the broad tape grinding higher post-hike, covered-call overlays cap exactly the upside participation that is being delivered, and the +0.55% mark since entry is consistent with that. It stays because the distribution stream is genuine and because it is the lowest-beta equity leg in the book, which matters more now that the short is gone. 10% stop, tighter than the rest, because a covered-call fund breaking 10% means the volatility regime itself has changed."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Held flat at 10 as the high-beta end of the energy trend. Equal-weighted E&P gives a more levered, more small-cap expression of the same commodity move PDBC captures at the index level and AMLP captures as throughput - if the energy trend that drove the sector +47% over the past year continues, this is where the convexity is. Held flat rather than raised because it is the most volatile leg in the book and because I am already adding to energy through AMLP; stacking a third increase on the same underlying driver would turn a diversified carry book into a one-factor energy fund. The -0.62% mark since entry is noise at this volatility. Widest stop in the book at 15% because equal-weighted E&P routinely draws down 10%+ inside an intact uptrend, paired with a 30% target that reflects the same asymmetry."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

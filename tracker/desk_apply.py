@@ -64,6 +64,34 @@ def overlap_pct(r2, r3book, r2book):
     return sum(min(a[k], b.get(k, 0.0)) for k in a) / sum(a.values()) * 100
 
 
+_PRICEABLE: dict[str, bool] = {}
+
+
+def unpriceable(r2, d):
+    """Symbols in this book that the price source does not know.
+
+    Not a risk rule — the hard rules constrain exposure, and this is the
+    prior question of whether the book can be executed at all. In week 10 a
+    manager allocated 8% to "IUSX", described as the "iShares MSCI USA
+    Dividend ETF"; no such listing exists. Nothing downstream can price it,
+    so the tracker refused to score the whole of round 3 rather than mark it
+    at par. A book naming an instrument that does not exist is malformed in
+    the same way unparseable JSON is, and is refused here, whole, with the
+    manager's prior book standing — not silently repaired by dropping the
+    leg, which would rewrite the manager's decision and break weights+cash.
+    """
+    bad = []
+    for pos in d.get("positions", []):
+        sym = r2.normalize(pos["symbol"])
+        if pos.get("kind") in ("crypto", "perp") and not sym.endswith("-USD"):
+            sym += "-USD"
+        if sym not in _PRICEABLE:
+            _PRICEABLE[sym] = r2.fetch(sym) is not None
+        if not _PRICEABLE[sym]:
+            bad.append(pos["symbol"])
+    return bad
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--entry", required=True)
@@ -77,7 +105,12 @@ def main() -> int:
 
     r2 = load_engine()
     rows, accepted = [], {}
-    for fp in sorted(dec_dir.glob("*.json")):
+    # Recursive: from week 10 each manager writes into its own subdirectory and
+    # is told of no other. In week 9 all 75 returns shared one readable folder
+    # and at least three managers cited "parallel desk decision files" or a
+    # "sibling desk book's pull" in their reasoning — their decisions were not
+    # independent draws, which is the one thing this experiment cannot afford.
+    for fp in sorted(dec_dir.glob("**/*.json")):
         stem, rnd = fp.stem.rsplit("_r", 1)
         name = stem2name.get((rnd, stem))
         try:
@@ -104,6 +137,10 @@ def main() -> int:
         d["model"], d["group"] = reg["model"], reg.get("group")
 
         notes = sanitize(d)
+        bad = unpriceable(r2, d)
+        if bad:
+            rows.append((name, rnd, "REJECT",
+                         f"no such listing: {', '.join(bad)} — prior book stands")); continue
         if not r2.validate(d, f"{stem}_r{rnd}"):
             rows.append((name, rnd, "REJECT", "failed hard rules — prior book stands")); continue
         if rnd == "3" and "2" in man[name]["stems"]:

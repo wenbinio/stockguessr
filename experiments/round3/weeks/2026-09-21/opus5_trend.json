@@ -1,0 +1,61 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend across six asset classes with signals refreshed through the 2026-09-18 close: long where price is above both the 50- and 200-day moving average with positive 3-month momentum, short where both are negative, sized inversely to 60-day realised volatility and then tilted toward the strongest-ranked signals - still the single 2026 macro trend of an energy/inflation shock into a hiking Fed, but with the tilt shifted out of spot crude and into gold and energy equities after this week's Saudi risk-premium unwind.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "No regime change, a rank refresh. Three things moved in the two sessions since my 2026-09-16 fill. (1) The 9/16 FOMC delivered the first hike since 2023 to 3.75-4.00% on a 12-0 vote, 16 of 18 dots show at least one more, and the 10y sits near 5% - the bond bear trend that is the spine of this book got confirmed, not faded, so I add to the TLT short. (2) Crude reversed hard: Brent printed above 109 on the Saudi pipeline/Houthi strikes Tuesday and then fell three straight sessions to ~103.70, WTI ~101, as the market decided the export disruption is smaller and shorter than feared. My USO leg is the only losing leg and the momentum rank of spot crude has deteriorated from first to marginal - a trend follower cuts the leg whose signal is decaying rather than defending a thesis, so USO is halved to 7%. I keep a stub because crude is still above both moving averages with positive 3-month momentum; the signal weakened, it did not flip. (3) Gold made new highs near $4,400 on central-bank buying at 244t in Q1 and dollar debasement flows, and is my best leg at +2.41% in two days, so it takes the freed risk and becomes co-largest. XLE also takes some: energy equities are +28% YTD with sector EPS projected up ~57%, a cleaner and lower-vol expression of the same energy trend than a futures-roll vehicle. SPY is trimmed from 10% to 7% - it is still above both MAs, but it is the weakest-ranked of my longs and a Fed that is hiking into a 5% 10y is a headwind to the multiple, so it keeps its diversifying role at a smaller size. ITB short is untouched and is the leg I most want to own: mortgage rates back near 6.7%, new-home supply over nine months, buyer intentions down to 5.2% from 6.5% in a single month, DR Horton running a 20% cancellation rate and cutting FY26 revenue guidance. I deliberately do NOT add bitcoin despite it being the loudest tape in my packet (+26.6% against my -1.7%). BTC is ~$81k after a short squeeze, still far under the ~$126k October 2025 high, and well below its 200-day average - it fails my long screen. Chasing it would be abandoning the system to buy someone else's benchmark, which is the single fastest way for a trend book to die. Turnover here is ~20% of gross, a few cents of friction, not a churn of the book.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 22,
+   "stop_loss_pct": 10.0,
+   "thesis": "Highest-conviction and lowest-volatility trend in the book, so inverse-vol sizing puts it at the top. TLT is below its 50- and 200-day averages with negative 3-month momentum and the policy path just hardened underneath it: a 12-0 hike to 3.75-4.00%, a dot plot with 16 of 18 participants expecting more, year-end dots at 4.1-4.4%, and the 10y pinned near 5% with October hike odds rising. Short duration is the purest expression of the energy-shock-into-hiking-Fed regime. Sized up from 20% because the FOMC removed the main two-sided risk to it. Stop 10% on a 20-year bond ETF is roughly a 2.5-sigma move in yields and would mean the trend has genuinely broken."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "thesis": "Strongest-ranked signal in the book and the one leg making new highs, so the tilt rule sends it the risk I take out of crude. Gold is at records near $4,400, above both moving averages with the best 3-month momentum of anything on my screen, and the bid is structural rather than positional: central banks bought 244 tonnes in Q1 at the fastest pace in years, diversifying away from dollar assets on fiscal and Fed-independence concerns. It is also the one long that does not need the energy shock to persist - it works on dollar debasement, on the inflation the Fed is hiking against, and on any risk-off that would hurt my SPY and XLE legs. Raised from 16% to 22%. Stop widened to 12% to respect elevated realised vol at these levels without giving up the trend to noise."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 18.0,
+   "thesis": "The energy trend is intact; I want to own it through producers rather than futures. XLE is up roughly 28-32% YTD against a near-flat SPY, holds well above both moving averages, and sector earnings are projected up ~57% for 2026 on high realised prices and strong refining margins, with Exxon and Chevron at 42.5% of the fund providing cash-flow ballast. Unlike USO it does not bleed on roll mechanics and it did not give back the whole Saudi spike this week - equities are discounting a multi-quarter price level, not Tuesday's headline. Raised from 18% to 20% as the preferred energy vehicle. Wide 18% stop because this is my highest-beta long and I do not want a normal commodity-equity drawdown to stop me out of the year's best sector trend."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Halved from 14% because the signal is decaying, not because the thesis is dead. Brent spiked over 109 on the Saudi pipeline attacks and has fallen three consecutive sessions to ~103.70 with WTI ~101 as the market priced a faster export restart - a disruption premium unwinding, which is exactly the pattern a time-series model should fade rather than average into. It stays in the book at a stub weight because crude is still above both moving averages with positive 3-month momentum and the physical market is not normal: October Fujairah-Asia supertanker rates are at record highs. At 7% a full stop-out costs the book about one percent of NAV, which is the right price for optionality on the next Middle East headline. Take-profit at 35% left on to harvest any genuine re-escalation spike."
+  },
+  {
+   "symbol": "ITB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "thesis": "Unchanged at 12% and the cleanest short in the book after TLT. Homebuilders are below both moving averages with negative 3-month momentum, ITB is down ~2% YTD while the index is up double digits, and the fundamentals are deteriorating in the direction the trend is already pointing: mortgage rates back near 6.7% and rising with the 10y at 5%, over nine months of new-home supply, buying intentions collapsing to 5.2% from 6.5% in one month - the largest monthly drop in five years - and DR Horton, 15% of the fund, posting a 20% cancellation rate and cutting FY26 revenue guidance to $32.5-33bn. This is the second-order expression of the same rate trend as the TLT short, but on an asset where the operating leverage runs against the owner. Checked REITs as a companion short and rejected it - real estate is outperforming in 2026, so the weakness is specific to for-sale housing."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 10% to 7%. The signal is still valid - SPY is above both moving averages with positive 3-month momentum and closed the post-FOMC week almost unchanged at 7,650, absorbing the first hike in three years without breaking - so the system keeps it. But it is the weakest-ranked of my longs and it now carries an identifiable regime headwind: a Fed that has committed to fighting inflation with more hikes into a 5% 10y compresses multiples even when earnings hold. Its job here is to diversify a book that is otherwise long inflation and short duration, and it can do that at a smaller size. Tighter 10% stop than my commodity legs because if the equity trend breaks in a hiking cycle it tends to break fast and I would rather be out and hold the cash at 4%."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

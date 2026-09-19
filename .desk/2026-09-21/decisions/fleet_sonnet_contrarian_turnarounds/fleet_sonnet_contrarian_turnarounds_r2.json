@@ -1,0 +1,25 @@
+{
+  "name": "fleet_sonnet_contrarian_turnarounds",
+  "strategy": "Fade H1's extremes: hold the AI-disruption-fear and macro-beaten-down names with real, now-confirming turnaround catalysts (CRM, oversold crypto, gold as a hawkish-surprise hedge), drop the one leg (small-cap IWM) whose rate-sensitive tailwind broke this week, and let cash keep earning while conviction concentrates in the legs the tape actually confirmed.",
+  "entry": "2026-09-21",
+  "capital_usd": 1000,
+  "cash_pct": 44,
+  "reassessment_note": "The Sept 16 FOMC delivered a 25bp HIKE -- its first since 2023, unanimous, with 16 of 18 policymakers projecting another hike before year-end. That is a genuine surprise against a market that had been pricing cuts, and it lands hardest on the most rate-sensitive, most-levered names: Russell 2000 small caps. IWM is -3.34% on this leg, sits near a 52-week high on trailing momentum that strategists (Wells Fargo and others) already flagged as decelerating on falling earnings estimates, and now loses its macro tailwind outright -- I am closing it rather than let a broken rate thesis ride to its stop. CRM is the opposite case: the turnaround thesis has gone from plausible to confirmed -- 56 analysts at Buy consensus, Stifel/Guggenheim to $300, BMO to $285, a Dreamforce FY30 revenue target above $63B and visible Agentforce traction -- so I am adding meaningfully to the strongest-confirming leg. GLD held its bid through a hawkish surprise that should have hurt it (safe-haven/debt-concern demand overriding the rate read), which is exactly the mean-reversion behavior this leg was sized for, so I am adding modestly there too. ADBE's beat-but-soft-Q4-guide-plus-CEO-transition picture is unchanged and still worth holding at current size but not adding to. BTC/ETH momentum (BTC back over $80k, ETH benefiting from an 85%+ fee drop and network upgrades clearing rehearsals) is intact and needs no resizing. Net effect: closing the one disconfirmed leg, concentrating new weight in the two most-confirmed legs, and letting cash (44%) keep earning 4% APY rather than forcing capital into a broken thesis.",
+  "positions": [
+    {"symbol": "ADBE", "kind": "equity", "side": "long", "weight_pct": 10,
+     "stop_loss_pct": 12.0, "take_profit_pct": 20.0,
+     "thesis": "Record Q3 (rev +12% YoY, 1B MAUs, raised FY guide) confirms the AI-integration turnaround is real, but a softer Q4 outlook and an incoming CEO (Anil Chakravarthy, effective Dec 2026) keep a lid on re-rating near-term -- analysts are Hold-consensus at $276 (11% upside). Hold current size; don't chase into a leadership transition."},
+    {"symbol": "CRM", "kind": "equity", "side": "long", "weight_pct": 17,
+     "stop_loss_pct": 10.0, "take_profit_pct": 18.0,
+     "thesis": "Strongest-confirming leg in the book: 56-analyst Buy consensus, fresh target hikes to $285-300 from Stifel/Guggenheim/BMO, a Dreamforce-unveiled FY30 revenue target above $63B, and demonstrated Agentforce enterprise traction (Snap/AWS/Nvidia tie-ins). The AI-disruption-fear discount that justified entering this name is unwinding in real time -- sizing up from 12% to 17% to reflect confirmed catalyst strength while it still trades below its 52-week high."},
+    {"symbol": "BTC-USD", "kind": "crypto", "side": "long", "weight_pct": 10,
+     "stop_loss_pct": 15.0, "take_profit_pct": 15.0,
+     "thesis": "Reclaimed $80k and absorbed a CLARITY Act regulatory setback with a $180M short-liquidation squeeze -- resilience despite this week's hawkish Fed surprise argues the oversold-crypto turnaround thesis still has legs. Hold size; no new information changes the risk/reward here, just widening the take-profit slightly to let the confirmed momentum run."},
+    {"symbol": "ETH-USD", "kind": "crypto", "side": "long", "weight_pct": 8,
+     "stop_loss_pct": 15.0, "take_profit_pct": 15.0,
+     "thesis": "Network fees down over 85% with renewed on-chain activity, moving averages nearing a bullish cross, and the Glamsterdam upgrade clearing rehearsals -- fundamentals are improving alongside price, not just riding beta to BTC. Hold size unchanged."},
+    {"symbol": "GLD", "kind": "equity", "side": "long", "weight_pct": 11,
+     "stop_loss_pct": 8.0, "take_profit_pct": 25.0,
+     "thesis": "Gold held its bid through a genuinely hawkish surprise (25bp hike, more signaled) that should have been bearish for a non-yielding asset -- proof the safe-haven/debt-concern bid this leg was sized for is real and not just a rate-cut trade. Adding modestly (8%->11%) as the macro-beaten-down hedge that just got its clearest confirmation yet."}
+  ]
+}

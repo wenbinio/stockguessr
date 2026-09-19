@@ -1,0 +1,63 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "The post-FOMC vol crush I positioned for has happened, so the book stops paying for convexity and starts collecting it: flips the long VIXY leg to a short to harvest a front VIX futures premium of 2.48 points over a 14.81 spot with realized vol at 9.6% and falling, trims a crude supply shock whose physical cause is being repaired within days, and keeps short duration against a 5.00% 10y and a Fed signalling more hikes, with 22% cash at 4% as the tail hedge that steep contango makes too expensive to buy.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "Three things changed since the 2026-09-16 fill. First, my own event-vol call came true and is now spent: VIX1D fell 22.9% to 13.12, VIX9D 23.1% to 13.39, VIX is 14.81 and index realized is 9.6% and falling, while VIX3M sits at 18.55 for a 3M/spot ratio of ~1.20-1.25 and the front VIX future trades 17.92, a 2.48-point premium to spot versus 0.79 the day before. I was holding long VIXY into exactly the configuration my own strategy of record said would crush it, and VIXY is -9.4% in a month and -49% in three. Owning it was internally incoherent; the coherent leg is the other side of the same roll. Second, the crude supply shock is being repaired: Brent is ~$103 from ~$109 at my fill, Aramco is restoring half of the East-West pipeline within days and full capacity in about six weeks, and Saudi is already pushing 2.8mbd through Hormuz against 700kbd in August. The asymmetric spike premium is half-spent and headline risk is now two-sided, so energy comes down from 40% gross to 28% and the pure spot-beta expression (XOP) goes entirely. Third, and this is the part that caps my short-vol size rather than expanding it: index vol is low because COR3M collapsed 11.4% to 11.58, not because components went quiet, while SKEW held at 145.70 straight through a 12.8% VIX drop. The crash bid never unwound. Implied correlation near 11 is a floor, and from a floor any macro shock re-correlates the index and gaps front vol. So I take the carry, which is genuinely at a multi-month extreme, in deliberately modest size behind a hard stop, and I hold 22% cash instead of buying the convexity back at a 2.48-point premium. Note for the record: the desk WebSearch budget was exhausted mid-research, so the last instrument check was done with WebFetch.",
+ "positions": [
+  {
+   "symbol": "VIXY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The single largest carry in the listed vol complex right now, and the direct reversal of the leg I was wrong to hold. Front-month VIX futures at 17.92 against a 14.81 spot is a 2.48-point premium that has to decay into settlement unless spot rallies ~21%; against index realized of 9.6% and falling that is roughly a low-double-digit monthly roll, funded at 3% APR borrow. VIXY's own record confirms the mechanism rather than my forecast of it: -9.4% over one month, -49% over three, -96% over five years. Size is capped at 10% and not more precisely because my own regime read is bearish on its own tail: COR3M at 11.58 is near a floor and SKEW at 145.70 held flat through the whole vol unwind, so the crash bid is intact and a re-correlation event would gap this leg. A 25% stop caps a normal adverse move at about 2.5% of NAV; I accept gap risk beyond that as the price of the carry and refuse to size where a VIX print of 25 would be structural damage."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Highest-conviction directional leg and the one piece of the old book whose case strengthened rather than decayed. The 10y closed the week at 5.004% after the Fed hiked to 3.75-4.00%, Warsh reaffirmed the inflation fight, the Fed has guided to at least one more hike this year and fed funds futures carry roughly 42% odds of two. Long duration is the wrong asset against an explicitly hawkish reaction function and a live crude-driven inflation impulse, and short borrow costs only 3% APR while the position is effectively long the same impulse my energy legs express. Sized up from 12% to 18% because it is the leg where the macro evidence moved my way. The 8% stop is set where a roughly 50bp rally in the 10y would say the higher-for-longer trade has broken, and a 15% take-profit marks where the move would be fully paid."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Kept as the core energy expression but trimmed from 20%, because crude is the one place volatility is still being realized and paid while the spot spike deflates. GVZ fell only 5.91% against a 12.8% VIX drop and OVX is near 50, so energy vol is holding while equity vol empties out; analysts still see sub-$100 Brent as unlikely with ~4mbd of routing at risk. XLE is the right vehicle for that now rather than E&P beta: the integrateds carry refining and marketing exposure that stays bid on tight product markets even as crude spot backs off from $109 to $103, so it decays more slowly than pure spot beta if the pipeline repair lands on schedule. The 13% stop is tightened from 15% because the asymmetry is narrower once the physical disruption is being fixed within days."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held at roughly flat weight as the cleanest carry expression of a tight physical crude market. COMT holds the futures themselves, so it is paid the backwardation roll while the curve stays tight, which is exactly the part of the oil trade that survives the spot spike deflating: the pipeline can come back and the front of the curve can still pay to be owned. It also diversifies the energy sleeve away from equity beta at a moment when the index is quiet only because correlation cracked, and it is long the same inflation impulse as the TLT short, so the two legs reinforce rather than hedge each other. No take-profit: this is a carry position I want to keep collecting, not a spike I want to sell into."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "The best-performing leg of the outgoing book at +1.61% and the right factor for this regime. With COR3M at 11.58 and DSPX up to 32.91, index-level moves are muted while components keep moving, which is the tape where a valuation factor earns its spread instead of being drowned by beta. Value is also the factor that holds up with the 10y at 5.00%, since a high discount rate penalises long-duration growth cash flows and leaves near-term earnings yield as what is actually being paid for. Held flat at 12% rather than pressed, because this is a factor tilt inside a vol mandate, not a stock-picking book."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Raised modestly from 8% as the low-beta ballast the book needs once I am net short volatility. If correlation re-couples from its 11.58 floor and index vol gaps, the VIXY short is the leg that hurts, and healthcare is the sector whose earnings stream is least geared to that shock and least geared to the crude impulse the rest of the book is long. It also carries no duration sensitivity worth the name against a 5% 10y, unlike the SPY and GDX beta I removed last week. This is deliberately a defensive allocation rather than a thesis about drug pipelines; the 10% stop reflects that I hold it for its low beta and would not keep it if it stopped behaving that way."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

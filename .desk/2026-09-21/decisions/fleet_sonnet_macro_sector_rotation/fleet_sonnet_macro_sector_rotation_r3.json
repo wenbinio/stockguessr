@@ -1,0 +1,60 @@
+{
+  "name": "fleet_sonnet_macro_sector_rotation",
+  "strategy": "Catalyst-driven sector rotation, post-FOMC: leaning further into the regional-bank/financials longs a hawkish hike directly benefits, closing the semis short the tape has now invalidated, and raising cash after the event has cleared.",
+  "entry": "2026-09-21",
+  "capital_usd": 1000,
+  "cash_pct": 30,
+  "reassessment_note": "The 2026-09-16 FOMC hiked 25bp to 3.75-4.00% (unanimous, explicitly hawkish on inflation) -- a genuine surprise relative to a hold, and it directly repriced two legs of this book. First, regional banks/financials: higher policy rates support net-interest margin, and this week's coverage explicitly frames regional banks as benefiting from a climbing-rate environment and as an 'overlooked winner of the AI boom' via data-center financing and deposit growth. I'm adding to both KRE (14% to 19%) and XLF (13% to 17%) -- these are the legs the FOMC outcome specifically validated, not just legs that happened to be flat. Second, the semis short: this leg is down -5.03% and running toward its stop, and the fundamental tape keeps working against it rather than for it -- SMH closed +2.21% on 2026-09-18 (YTD +55.7%, 1yr +84%), Nasdaq is outperforming the broader index, and BofA is out with a call that the global chip market will nearly double. A hawkish hike that in theory should pressure a long-duration growth trade has not dented semis at all; that is the short thesis failing a real test rather than noise, so I am closing SMH outright instead of averaging down into a stop-loss. I'm also trimming the still-unconfirmed XBI biotech-M&A long further (8% to 6%, no fresh deal news this week) and SPLV (6% to 5%, added purely as FOMC-week ballast that is less needed now the event has cleared), and using those proceeds plus the SMH unwind to lift cash from 24% to 30% -- broader-tape action this week (a record-worst Dow week in six months on elevated yields and oil) argues for more dry powder while the market keeps digesting a hawkish surprise. XLY short is left essentially unchanged: consumer discretionary is still weak on the tape (-4.6% 1-month, -7.0% YTD) despite choppy single-name rotation in autos this week, so the macro read behind that leg has not changed.",
+  "positions": [
+    {
+      "symbol": "XBI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Biotech M&A-driven long remains unconfirmed by any fresh deal news this week and the leg is only marginally positive (+1.65% since 2026-09-16 entry). Trimming further from 8% to 6% keeps optionality on a real catalyst without continuing to fund a story that has not materialized, while the wide stop/TP band stays appropriate for an event-driven, binary-outcome leg."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 10.0,
+      "thesis": "Healthcare/low-beta ballast added ahead of FOMC event risk is largely still appropriate, but with the event now resolved (hawkish 25bp hike, no surprise left to hedge against) priority shifts toward the legs the outcome actually validated. Trimming modestly from 16% to 14% to fund the higher-conviction financials add without abandoning the defensive tilt entirely."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 10.0,
+      "thesis": "Broad financials benefit directly from the 2026-09-16 hawkish 25bp hike to 3.75-4.00% via wider net-interest margins on a higher-for-longer policy path. Increasing from 13% to 17% to lean harder into the leg this week's FOMC outcome specifically validated, rather than just holding it flat."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 19,
+      "stop_loss_pct": 12.0,
+      "thesis": "Regional banks are the most rate-sensitive way to express the hawkish-hike thesis, and this week's coverage explicitly frames the group as benefiting from a climbing-rate environment and as an overlooked winner of AI-driven data-center financing and deposit growth. Increasing from 14% to 19% -- now the single largest position in the book -- reflects the highest-conviction leg after the FOMC confirmation, even after a choppy -5.3% one-month stretch that looks like noise against that backdrop."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "stop_loss_pct": 8.0,
+      "thesis": "Low-volatility ballast was added specifically ahead of FOMC event risk; with the hike now resolved and already in the tape, trimming from 6% to 5% and redeploying the difference into the higher-conviction financials legs rather than keeping a full defensive sleeve for an event that has passed."
+    },
+    {
+      "symbol": "XLY",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 9,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Consumer discretionary remains weak on the tape (-4.6% one-month, -7.0% YTD, -7.7% one-year) despite a choppy single-name rotation trade in autos this week (GM/Stellantis/Ford swinging on rotation flows). That single-name noise does not change the sector-level read, so size is left essentially unchanged at 9%."
+    }
+  ]
+}

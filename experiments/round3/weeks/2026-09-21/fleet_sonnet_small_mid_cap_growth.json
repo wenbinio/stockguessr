@@ -1,0 +1,36 @@
+{
+ "name": "Sonnet small/mid-cap growth",
+ "strategy": "Sector-relative-value rotation: long the laggard cyclical/value sectors turning up (regional banks, financials, biotech via IBB), now run long-only after closing the gold-miner short whose 'topping' premise the tape does not currently support, with hard stops for risk discipline.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 64,
+ "reassessment_note": "WebSearch budget was already exhausted for this session (200/200), so this week's research was done via WebFetch (AI-summarized fetches of Yahoo Finance / investing.com pages), not live search -- noting that per the brief's instruction. The material change this week is closing the GDX short entirely. The book's short thesis was that gold miners were 'the most overextended momentum trade now showing topping signs,' but the data I could pull shows the opposite over the relevant window: GDX is +7.34% over the trailing month and +9.95% YTD, with gold itself near $4,424.90/oz, i.e. continued strength, not a confirmed top. The current leg is marked +2.98% (entry 98.41 vs mark 95.48) so this isn't a stop-out -- it's a decision that the thesis behind the position is not currently supported by the tape, and holding a short into an unconfirmed-reversal uptrend is the highest risk item in either of my books this week. Web data on the macro driver (Fed hike vs cut path) was actually contradictory across sources, which lowers my conviction further rather than raising it, so I'm not trying to re-underwrite a new short this week -- I'm taking the risk off and going long-only. On the long side: KRE and XLF both pulled back over the trailing month (KRE -5.34%, XLF -3.42%) even though both are still up over longer windows (KRE +13.53% YTD, XLF +14.07% over 6 months) and both carry reasonable valuations (KRE PE 12.47, XLF PE 15.84, XLF beta only 0.71). That pullback doesn't break the laggard-cyclical rotation thesis, but combined with the same broad market volatility flagged in my other book (rising yields and oil pressuring risk assets since late August) it argues for trimming size rather than holding full weight through the chop. IBB trimmed for the same reason -- thesis intact, conviction on timing lower than a week ago. Net effect: gross exposure drops from 53% to 36% and cash rises from 47% to 64%, a real risk-off move driven specifically by removing the short leg rather than by the long legs, which I still believe in at reduced size.",
+ "positions": [
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed from 18% to 14%. Regional banks are still up 13.53% YTD, outperforming the broader financial-sector category (13.53% vs 1.23%), with a reasonable PE of 12.47 and 2.17% dividend yield -- the laggard-cyclicals-turning-up thesis is intact. But the ETF is down 5.34% over the trailing month, a real pullback, and I'm sizing down to reflect lower near-term conviction on timing while keeping the core position given the multi-month trend is still constructive."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 12% to 10%. Broad financials (banks, insurers, capital markets, mortgage REITs) are up 14.07% over 6 months and 1.99% YTD at a reasonable PE of 15.84, with a low beta of 0.71 that gives this leg some ballast against the more volatile KRE leg. Down 3.42% over the trailing month alongside the same broad-market volatility, so trimming rather than holding full size, but keeping the position since the underlying sector-rotation thesis (value/cyclicals catching a bid) has not been invalidated."
+  },
+  {
+   "symbol": "IBB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "Trimmed from 15% to 12%. This leg is the biotech component of the laggard-cyclical-turning-up thesis and is currently down -1.33% with no fresh confirming catalyst found this week (research budget was concentrated on the GDX short reassessment and the more actionable KRE/XLF pullbacks). Keeping a meaningful position because the sector-rotation mandate still calls for laggard-sector exposure, but sizing down given the lack of new positive signal."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}

@@ -1,0 +1,111 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum pressed into the refining/crack complex - the only group in the whole screen printing fresh 52-week highs with accelerating 1-week returns - funded by cutting the integrated-energy, defensive and mega-cap-tech legs whose 1-month momentum has decayed to flat, with a smaller sleeve in the four non-energy names still within ~5% of a 52-week high, trend-break stops sized to each leg's realized volatility.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "I re-ran the momentum screen myself over ~60 tickers with 1-year daily closes (WebSearch budget was exhausted, so this was done with WebFetch/HTTP against Yahoo's chart API; my pulls reproduce the packet marks exactly, e.g. VLO 413.28, so the series are aligned to the 2026-09-18 close). The result was not ambiguous. The top EIGHT names in the entire universe on 3-month return are all refiners: CVI +95.9%, DK +88.4%, CLMT +80.8%, DINO +79.7%, MPC +74.9%, VLO +74.9%, PARR +65.8%, PSX +64.4%. Heating oil futures are +61.7% over 3 months against crude +30.9%, which tells me this is crack-spread expansion and not crude beta - the refiners are outrunning the barrel. Meanwhile SPY is -1.0% on the month and QQQ -2.6% on three: there is exactly one trend in this tape and I already own it. So I am not changing theme; I am removing the drag. Five legs no longer earn their weight on the only metric this book is allowed to use. XLE is the clearest failure - it is +1.1% on the month and -1.3% on the week because it is mostly XOM/CVX/COP, every one of which is negative over 1 week; it is the diluted, wrong-exposure way to own an energy trade whose alpha is in margins, not barrels. MSFT has decayed to +2.0% on the month, -0.4% on the week, and sits 10.8% under its 52-week high - textbook momentum exit even though its 3-month is still respectable. ABBV is -0.8% on the month. META is 15.3% below its high and its +21.9% month is a bounce off a drawdown, not a trend. STNG is the weakest leg in the book at +8.2% over 3 months. All five go. I also rejected two tempting additions on the same discipline: crypto (ETHA +54.7% 3m, IBIT +29.2%) is strong short-horizon but sits 44% and 35% below its highs, which fails this book's new-high filter, and the power/AI-infrastructure complex is now a wreck (NRG -23%, TLN -33%, VST -14%, GEV -15% over 3 months) which vindicates last month's rotation out of it. What I am consciously accepting is extension risk: the core refiners are 19-39% above their 50-day averages after a 75% quarter, and that is where trends like this die. I pay for that three ways - I cap refining at 52% rather than the 65%+ the raw ranking implies, I tighten the core stops from -14% to -12% so a genuine crack-spread break exits me back near the 50-day rather than far below it, I cut take-profits from +35% to +30% on the large-cap refiners so a blow-off gets harvested, and I carry 14% cash at 4% instead of forcing weak longs into a tape with no breadth. Turnover is roughly 40% of the book, about 1.6bps plus SEC fees - genuinely trivial against leaving 34% of capital in positions that have stopped trending.",
+ "positions": [
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Largest weight because it is the best risk-adjusted expression of the crack trade: +74.9% over 3 months and +19.4% over 1 month, closing at 413.28 against a 52-week high of 416.66, yet only 24% realized volatility - the second-lowest in the refining group. Already +2.48% since the 2026-09-16 fill and still accelerating (+5.9% in the last week). I am sizing the lowest-volatility leader largest rather than chasing the highest raw return, which is what keeps a 52%-in-one-factor book survivable. The 12% stop sits roughly where the 50-day average is, so a real trend break takes me out near the moving average instead of 10% below it."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The lowest-volatility name in the entire refining complex at 20.9% realized, and it closed at 424.89 against a 428.00 52-week high - literally at the highs - after +74.9% over 3 months and +7.3% in the past week alone. Same-size-class as VLO deliberately: these two are the liquid, institutionally-owned core of the crack trade and the pair I want carrying the most capital, with the higher-beta refiners sized down around them. Held from 2026-09-16 at +2.65%, so I am adding conviction to a leg already proving itself rather than initiating into strength blind."
+  },
+  {
+   "symbol": "DINO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Raised from 7% to 10% because it is the strongest of the four large refiners on the short horizon that actually matters for momentum persistence: +22.5% over 1 month and +7.5% over the past week, the best 1-week print of my incumbent legs, at 115.90 against a 117.70 high. Its 32.7% volatility is meaningfully above VLO/MPC, which is exactly why it gets 10% and a wider 14% stop rather than a 13% weight at a 12% stop - I am equalizing risk contribution, not dollar weight. DINO also has the most inland/mid-con crude-discount leverage of the group, so it captures the widest part of the margin structure."
+  },
+  {
+   "symbol": "PSX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Kept at 8% rather than raised: +64.4% over 3 months and +12.7% over 1 month make it the laggard of the big-four refiners, and its 1-month is roughly half DINO's. It still clears the filter - 273.13 against a 277.12 high, 18.9% above its 50-day - so it stays, but sized as the weakest of the four. In a book this concentrated in one factor, holding four large refiners rather than two is my only real diversification inside the theme, and PSX's midstream and chemicals mix makes it the least pure crack-spread play, which is worth something if distillate margins roll."
+  },
+  {
+   "symbol": "CVI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 55.0,
+   "thesis": "New. The single highest-momentum name in my entire 60-ticker screen: +95.9% over 3 months, +46.3% over 1 month, +8.1% in the past week, at 53.69 against a 54.64 high. A momentum book that owns the theme but refuses to own the theme's leader is not running the mandate. But it is also 38.9% above its 50-day with 50% realized volatility, which is exactly the profile that round-trips violently, so it gets a 5% weight and a 20% stop - wide enough that ordinary noise cannot shake me out, small enough that a full stop-out costs 1% of NAV. Liquidity of 1.9m shares a day is ample for a $1,000 book."
+  },
+  {
+   "symbol": "CLMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "New, and the only refining name I own with a 6-month figure (+105.4%) stronger than its 3-month (+80.8%), meaning the trend has been building for two quarters rather than one - the persistence profile momentum research actually rewards. At 59.00 against a 59.67 high, 24.6% above its 50-day, and 35.5% volatility, it sits between the large refiners and CVI on risk, hence the 4% weight and 18% stop. Its specialty-products and renewable-fuels mix makes it the least correlated leg inside the refining sleeve, which is the point of including a sixth name instead of just upsizing VLO."
+  },
+  {
+   "symbol": "FRO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Raised from 3% to 5% and STNG's 4% is redeployed here, because on a direct comparison FRO is the better half of the tanker pair on every horizon that counts: +15.7% vs +10.1% over 1 month, +25.6% vs +8.2% over 3 months, and 21.4% above its 50-day vs 9.9%. Crude tanker rates are the freight-side expression of the same physical dislocation driving the crack - barrels moving abnormal distances to reach the refiners I own - so it is a correlated but distinct payoff. Held since 2026-09-16 at +2.26%. Sized at only 5% because 41% volatility and a position 4.8% below its high make it the least clean momentum profile in the energy sleeve."
+  },
+  {
+   "symbol": "DELL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Raised from 7% to 9% and now the anchor of the non-energy sleeve: +29.8% over 1 month is the best 1-month in my entire tech screen, on top of +262% over 6 months, sitting 4.6% under its high. This is the hardware-to-software rotation leg that actually worked while the semis I avoided broke down around it (SMH -13.2%, AVGO -13.1%, MU -10.4% over 3 months). The 18% stop is deliberately wide because realized volatility is 85% - a 12% stop on this name is noise, not a trend break, and would have shaken me out of the move that produced the 262%."
+  },
+  {
+   "symbol": "CRWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 50.0,
+   "thesis": "New, and the strongest non-energy momentum name in the screen: +38.8% over 3 months, +17.9% over 1 month, +122% over 6 months, and +15.0% in the past week on heavy volume - a post-event drift setup, which is one of the few momentum signals with genuine out-of-sample evidence behind it. At 237.65 it is ~5% under a 52-week high it set recently, so this is a fresh-high name, not a dead-cat recovery. It replaces MSFT as the software exposure on a straight ranking: MSFT is +2.0% on the month and 10.8% below its high, CRWD is nine times that on the month and near highs. Sized 7% with a 20% stop because 96% realized volatility is the highest in the book."
+  },
+  {
+   "symbol": "AAPL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Raised from 6% to 8% and repurposed as the book's stabilizer. It is the only name I own combining a near-high position (336.13 vs a 344.57 high, 2.4% below) with 21.7% realized volatility - the lowest of any leg here - and it is still compounding quietly at +6.1% on the month and +12.8% over 3 months while SPY does -1.0%. In a book with 52% in one violently cyclical factor and 27% in names averaging 60%+ volatility, I need one large, liquid, low-beta leg that is nonetheless still trending, and AAPL is the only candidate that clears the momentum filter. Tight 10% stop because low volatility means a 10% break genuinely is a trend break here."
+  },
+  {
+   "symbol": "AMD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "New, and a deliberately narrow, single-name re-entry into a complex I otherwise still refuse to own. AMD is the one semiconductor in the screen with a near-high profile: 559.82 against a 584.73 high (-4.3%), +20.0% over 1 month and +8.5% over the past week, +172.7% over 6 months. Every peer fails the filter badly - AVGO is 25.7% below its high, MU 16.3%, SMH 14.3% - so this is not a rotation back into AI hardware, it is owning the single name re-accelerating off a base while the group stays broken. Its weak spot is a +4.2% 3-month, which is why it gets 5% rather than 8%, with an 18% stop against 50% volatility."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

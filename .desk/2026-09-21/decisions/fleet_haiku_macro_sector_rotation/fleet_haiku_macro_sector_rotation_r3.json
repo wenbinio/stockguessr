@@ -1,0 +1,73 @@
+{
+  "name": "fleet_haiku_macro_sector_rotation",
+  "strategy": "Quality dividend and yield infrastructure for higher-rate environment with defensive diversification",
+  "entry": "2026-09-21",
+  "capital_usd": 1000,
+  "cash_pct": 15,
+  "reassessment_note": "Round 3 underperformed dramatically by 281bp (down 0.08% vs SPY +2.73%), revealing excessive defensiveness inappropriate for the earnings-driven market environment. While market breadth weakness (33% of S&P above 50-day MA) deserves caution, corporate earnings momentum (39.7% upward revisions, strong profit margins, AI spending driving industrial growth) outweighs short-term technical weakness. Previous portfolio's extreme tilt into utilities and low-volatility factors (XLU, SPLV, USMV) penalized returns without proportional downside protection; the market selloff concerns did not materialize. Rebalancing toward quality dividend infrastructure across healthcare, utilities, staples, financials and REITs—sectors providing inflation hedges and yield in higher-rate regime—while diversifying internationally and reducing drag from defensive factor overweighting. Maintaining lower overlap vs Round 2's cyclical energy/financial emphasis (12% XLF overlap only).",
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Healthcare provides quality dividend yield (~1.2% base) with consistent earnings and pricing power for inflation environments. Sector shows stable profit margins; upward earnings revisions support valuations. Healthcare quality and defensiveness anchor portfolio while offering yield generation; moats in pharma and medical devices provide protection against rate volatility."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 22.0,
+      "thesis": "Utilities deliver high yield (4-5% typical dividends) and inflation protection through regulated rate base and pricing power. Rate sensitivity in valuations offset by stable cash flows and essential nature of service. Dividend yield provides income in higher-rate environment where bond yields have risen to 4.9% on 10-year; utilities offer equity yield with earnings growth."
+    },
+    {
+      "symbol": "XLP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 28.0,
+      "thesis": "Consumer Staples provides recession-resistant earnings with pricing power to offset inflation (3.4% CPI, energy prices elevated). Staples show strong dividend yields (2.5-3%) and stable earnings even during rate transitions. With employment resilient (162k August adds), consumer spending on essential goods remains solid. Dividend growth from pricing supports total return."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Financial sector weighted for dividend yield and quality benefits (JPM, GS 2-3% yields) rather than cyclical leverage. Quality banks benefit from rate hikes through NIM expansion while providing income stream. Includes financial services, diversified banks with strong balance sheets positioned for higher-rate environment; dividend sustainability supported by rate-driven profitability."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 40.0,
+      "thesis": "S&P 500 Low Volatility Factor captures quality exposure to lower-beta, higher-dividend S&P constituents. SPLV provides diversified quality factor exposure with reduced portfolio volatility. Complements dividend-yield focus with factor premium; upward earnings revisions in quality factors support valuations while reducing portfolio swings vs broad market."
+    },
+    {
+      "symbol": "IUSX",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 28.0,
+      "thesis": "iShares MSCI USA Dividend ETF provides diversified US dividend yield (2-3% range) across all sectors. Adds quality dividend concentration complementing sector-specific positions (XLV, XLU, XLP); diversification across dividend payers reduces sector concentration risk. International-quality dividend holdings provide diversification beyond single-sector yield."
+    },
+    {
+      "symbol": "VNQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Real Estate Investment Trusts (Vanguard Real Estate ETF) provide inflation-hedging exposure with 3-4% typical yields. REITs benefit from higher asset values and pricing power in inflationary regime (elevated oil prices structurally). REIT yields attractive relative to 4.9% 10-year Treasury; diversification from equities with fixed-income-like yield characteristics."
+    }
+  ]
+}

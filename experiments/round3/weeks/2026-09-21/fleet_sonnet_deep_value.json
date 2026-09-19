@@ -1,0 +1,51 @@
+{
+ "name": "Sonnet deep value",
+ "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards (low-vol equity, biotech, and gold miners re-added after a likely whipsaw stop-out) funded largely by cash, with a reduced short against the still-extreme AI-momentum extension in memory names ahead of its earnings print.",
+ "entry": "2026-09-21",
+ "capital_usd": 1000,
+ "cash_pct": 52,
+ "reassessment_note": "The MU short is down -9.63% on its leg and sits only ~2 points from its -12% stop, and Micron reports earnings on 9/30, just 9 days after this entry -- a binary catalyst arriving right inside the stop's blast radius. Fresh data changes the risk read on that short: despite a 226% YTD run (and 1,000%+ since the start of 2025) to ~$1,016, MU's forward P/E is only ~7x, sell-side consensus sits ~49% above spot ($1,513 average target), and coverage is framing the next print as 'another strong quarter' on the AI memory upcycle -- meaning part of this move looks increasingly earnings-supported rather than a pure momentum/multiple blow-off. Running it at full size into that print is poor risk/reward, so I'm cutting it roughly in half and widening the stop/TP so pre-earnings vol doesn't chop the position out before the thesis can play. Separately, the GDX stop that fired 9/16 at 92.80 looks like a whipsaw in hindsight: gold has since rallied back to roughly $95.5 (spot near $4,400) on renewed central-bank buying and a weaker dollar, a rally that held up even through the Fed's surprise 25bp hike to 3.75-4.00% the same day -- so I'm re-adding gold miners as the book's defensive/real-asset laggard leg, sized smaller and with a wider stop than last time. USMV and SPLV stay as the low-vol carry core (both roughly flat, doing their job), and XBI gets a modest add since the biotech reversion is working (+1.65% on the existing leg). No symbol in this book overlaps with the Round 2 book (XOM/JPM/GM/UNH/PFE/IWM/F), so the novelty constraint is satisfied with room to spare.",
+ "positions": [
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "thesis": "Low-vol defensive core, essentially flat on the current leg (-0.10%). The Fed's hawkish 25bp hike on 9/16 (a surprise versus a hoped-for cut) argues for staying in low-beta/quality rather than duration-sensitive growth while the rate path re-prices. No stop -- this is the book's low-turnover carry anchor, not a trade."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Second low-vol sleeve alongside USMV, diversifying the defensive core across index methodologies. Marginal drag (-0.47%) is in line with a quiet low-beta basket; kept unchanged because nothing this week argues for rotating out of low-vol into higher-beta names with the Fed just surprising hawkish."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Biotech laggard reversion is working (+1.65% on the existing leg) and the sector is largely uncorrelated to the AI-momentum, tariff, and rate narratives driving the rest of the tape, which is exactly the diversification this book wants. Sizing up modestly rather than replacing it since the thesis is confirmed, not broken."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Re-entering gold miners after the 9/16 stop-out at 92.80: GDX has since rallied back to roughly $95.5 and spot gold is near $4,400, supported by renewed central-bank buying and dollar weakness that held up even through the same-day hawkish 25bp Fed hike -- evidence the 'rising real yields broke the thesis' read from last week was premature. Re-added as the book's oversold real-asset laggard leg, sized smaller than before and with a wider stop (12% vs. whatever triggered last time) specifically to avoid getting whipsawed out of a reversion that is still in progress."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Cutting size roughly in half (from 10% to 5%) ahead of Micron's 9/30 earnings, which land just 9 days after this entry while the short is already down -9.63% on its prior leg and was only ~2 points from its old -12% stop. New research is a genuine caution flag for the bears: at ~$1,016 (226% YTD, 1,000%+ since early 2025) MU's forward P/E is only ~7x and consensus sits ~49% above spot with the next print expected to be 'another strong quarter' -- some of this move is earnings-backed, not pure multiple extension, so full-size short risk into a binary catalyst is unattractive. Keeping a reduced position preserves convexity if the AI-momentum trade does crack post-print, with the stop/TP widened (15%/25%) so ordinary pre-earnings vol doesn't take the leg out before the catalyst even happens."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}
