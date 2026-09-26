@@ -1,0 +1,80 @@
+{
+  "name": "Haiku deep value",
+  "strategy": "Sector rotation capturing energy outperformance and small-cap value momentum while maintaining moderate risk through cash buffer and disciplined position sizing.",
+  "entry": "2026-09-28",
+  "capital_usd": 1000,
+  "cash_pct": 30,
+  "reassessment_note": "Initial tech mean-reversion thesis (TQQQ short at -17.41%) did not work as tech momentum persisted despite valuation concerns—QQQ up 25.76% YTD, TQQQ up 49.86%. Nasdaq-100 rally driven by Magnificent Seven capex on AI infrastructure shows no signs of rolling over. Pivoting to capture working themes: energy sector outperformance (+32% YTD with XLE at 62.04), small-cap value rotation (IWD/SPLV/KRE tier exposure), emerging market strength (EEM +3.44%), and financial sector resilience (XLF) amid steeper yield curve. Eliminated underwater TQQQ short; reduced cash from 39% to 30% to deploy capital into high-conviction working trades while maintaining defensive positioning. Maintains less than 50% overlap with Round 2 (only SPY and BTC commonality).",
+  "positions": [
+    {
+      "symbol": "SPY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "Core broad-market equity beta; maintains S&P 500 index exposure as anchor holding while other positions provide sector tilt."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Energy Select Sector SPDR at $62.04. Energy outperformance structural (+32% YTD) driven by geopolitical tensions, supply constraints, and renewed demand. Sector has outpaced all S&P 500 segments; momentum remains intact."
+    },
+    {
+      "symbol": "IWD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "iShares U.S. Small-Cap Value ETF at $251.93. Traditional value rotation catalyst as interest rates stabilize and growth expectations moderate. Currently down -0.31% from entry; mean reversion setup with cleaner fundamentals than mega-cap tech."
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "iShares MSCI Emerging Markets ETF showing strength (+3.44% on current leg). Emerging market valuations attractive relative to developed markets; rotation themes benefit from commodity strength and China stabilization."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 15.0,
+      "thesis": "Financial Select Sector SPDR at $54.84. Financials benefit from elevated yield environment and steeper yield curve; banking system resilience demonstrated through recent stress periods. Regional bank strength (KRE separate position) indicates sector health."
+    },
+    {
+      "symbol": "KRE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 18.0,
+      "thesis": "Invesco KBW Regional Banking ETF at $71.55. Concentrated play on regional bank outperformance; benefits from sticky deposits, loan growth, and rate environment. Currently -1.08% on leg; supports thesis on financial sector rotation."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 12.0,
+      "thesis": "Invesco S&P 500 Low Volatility ETF at $71.30. Complement to value tilt; provides downside protection and steady returns. Diversifies from high-beta energy/emerging markets positions while maintaining equity exposure."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 3,
+      "stop_loss_pct": 30.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Bitcoin spot exposure at $83,974. Maintains crypto allocation for portfolio diversification. BTC consolidating near all-time highs (+31.51% on current leg); moderate 3% allocation manages downside risk while capturing upside participation."
+    }
+  ]
+}
