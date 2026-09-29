@@ -1,0 +1,64 @@
+{
+  "name": "Haiku macro/sector rotation",
+  "strategy": "Quality defensive positioning with low-volatility factors and selective yield, repositioned for rising-rate environment with emphasis on defensive sectors resilient to Treasury yield headwinds.",
+  "entry": "2026-09-30",
+  "capital_usd": 1000,
+  "cash_pct": 17,
+  "reassessment_note": "Original strategy assumed rate declines that would benefit dividend stocks; Federal Reserve surprise rate hike in September reversed this assumption. Current book down 415 bps vs SPY reflects positioning mismatch. Defensive sector positioning remains sound given market breadth concerns (Morgan Stanley flagged declining breadth) and all-time high valuations, but repositioned to address rate environment change. Reduced utilities allocation from 14% to 8% (down 4.31% from recent entry on 2026-09-16, experiencing 20% peak-to-trough drawdown from rising Treasury yields and data center demand normalization concerns). Increased healthcare from 17% to 20% (showing +2.47% recent strength, 3%+ dividend yield, lower rate sensitivity than utilities). Expanded SPLV low-volatility allocation from 13% to 18% (demonstrating 3.62% September performance, quality factor outperformance). Added emerging markets EEM (+2.25% recent strength, less exposed to rising US rate cycle). Increased cash allocation from 20% to 17% to maintain dry powder for opportunistic entry on further volatility.",
+  "positions": [
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 28.0,
+      "thesis": "Healthcare sector upgraded to primary defensive holding with 3.0%+ dividend yield, lower rate sensitivity than utilities, and demonstrated strength (+2.47% recent); benefits from secular aging demographic trends and defensive characteristics resilient to rising Treasury yields."
+    },
+    {
+      "symbol": "SPLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Invesco S&P 500 Low Volatility positioned as core quality defensive; September performance 3.62%, year-to-date 8.25%; addresses market breadth deterioration (breadth concerns noted at all-time valuations) and quality factor rotation into lower-volatility names."
+    },
+    {
+      "symbol": "XLF",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 32.0,
+      "thesis": "Financials sector provides dividend yield with rate-hike benefit (wider net interest margins from Fed tightening); allocation increased to capitalize on September rate hike and signaled additional hikes through 2026, providing tailwind to financial sector fundamentals."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 20.0,
+      "thesis": "iShares MSCI USA Minimum Volatility ETF provides ultra-low volatility portfolio protection; 10-year return 9.65% annually demonstrates quality factor consistency; expense ratio 0.15% supports long-term defensive positioning."
+    },
+    {
+      "symbol": "XLU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Utilities reduced from 14% to 8% following 4.31% decline from recent entry (2026-09-16) and 20% peak-to-trough drawdown driven by rising Treasury yields and data center demand normalization concerns; maintained for dividend yield (3.63%) but de-risked pending stabilization."
+    },
+    {
+      "symbol": "EEM",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 30.0,
+      "thesis": "iShares MSCI Emerging Markets provides international diversification with +2.25% recent strength; less exposed to US Federal Reserve rate cycle than domestic sectors; offers geographic diversification and valuation opportunity in developing economies."
+    }
+  ]
+}
