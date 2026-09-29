@@ -1,0 +1,74 @@
+{
+  "name": "Haiku global diversification via US-listed ADRs and ETFs",
+  "strategy": "Diversify beyond concentrated leveraged semis/tech toward emerging markets theme (+25.2% YTD outperformance) with crypto, broad US market, international equities, and bond ballast at elevated yields.",
+  "entry": "2026-09-28",
+  "capital_usd": 1000,
+  "cash_pct": 31.5,
+  "reassessment_note": "Current book worked well (+3.32% vs SPY +3.00%) but is overconcentrated in leveraged 3x semis (SOXL, TQQQ) showing exhaustion signals (Aroon downtrend Sept 15, AI skepticism). Broad EM up 25.2% YTD vs 12% for SPY—this is 2026's dominant theme that book underweights. BTC remains strong (+31.74%) but single-position crypto concentration is risky. Current 62.8% cash is defensive but reactive. Reposition to capture EM outperformance, reduce leverage risk, add diversification via VXUS (14.29% YTD), broad VTI, and TLT bond ballast at 5.17% 10Y yield. Lock in leveraged gains by reducing SOXL/TQQQ positions.",
+  "positions": [
+    {
+      "symbol": "IEMG",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 20,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Broad emerging markets (EM +25.2% YTD vs SPY +12%) is 2026's clear outperformer, driven by valuation recovery and US-China trade talks progress. IEMG provides core EM exposure with 22.49% YTD return and $160.9B in assets. Upgrade from 9.76% to 20% to capture dominant trend. Stop at 15% to protect against China/EM recession fears; take-profit at 25% to lock gains."
+    },
+    {
+      "symbol": "BTC",
+      "kind": "crypto",
+      "side": "long",
+      "weight_pct": 14,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Bitcoin momentum remains strong (+31.74% YTD from entry) on regulatory clarity and macro shift to alternative assets. Crypto positioning from current book continues to work. Slight increase from 12.2% to 14% to emphasize asset class strength. Stop at 25% guards against macro risk-off; take-profit at 40% captures further upside."
+    },
+    {
+      "symbol": "VTI",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "thesis": "Vanguard Total Stock Market ETF provides foundational US broad-market exposure capturing mega-cap AI infrastructure beneficiaries (NVIDIA 6.87%, Apple 6.30%, Microsoft 5.10%) with 0.03% expense ratio. Core holding for stability and diversification vs concentrated semis. No stop/TP for foundation position."
+    },
+    {
+      "symbol": "EWJ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Japan regional diversification with demonstrated stability (+6.00% YTD from entry, +3.26% in current Round 3 position). Maintain allocation for persistent low-volatility diversification and Japan's relative outperformance. No stop/TP given steady performance."
+    },
+    {
+      "symbol": "VXUS",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 8,
+      "thesis": "Vanguard Total International Stock Index captures developed and emerging markets ex-US (14.29% YTD) with low 0.05% expense ratio and $665.69B in assets. Complements IEMG EM focus with international developed exposure. No stop/TP for stable diversification holding."
+    },
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "iShares 20+ Year Treasury Bond ETF provides ballast at elevated 5.17% 10-year and 5.27% 30-year yields (highest since 2004-2007). Harvests bond income while offering portfolio stability and negative correlation to equities during risk-off. Positioned for income and diversification. No stop/TP for defensive allocation."
+    },
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 1,
+      "stop_loss_pct": 20.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Reduce from 1.22% to lock in +32.10% YTD gains on Direxion 3x leveraged semiconductor exposure. Maintain minimal 1% position as hedge to semis recovery while eliminating concentrated leverage risk. Aroon downtrend signal (Sept 15) and AI skepticism building warrant reduction. Stop at 20% captures portfolio mean reversion protection; take-profit at 40% captures further upside."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 0.5,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 30.0,
+      "thesis": "ProShares UltraPro QQQ 3x Nasdaq leverage reduced from 1.22% to 0.5% to lock in +23.42% YTD gains and eliminate concentrated tech leverage risk. Maintain tiny 0.5% position as asymmetric upside hedge with smaller downside exposure. Stop at 15% protects against tech washout; take-profit at 30% harvests remaining gains."
+    }
+  ]
+}
