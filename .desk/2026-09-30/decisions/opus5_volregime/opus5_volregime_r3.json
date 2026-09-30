@@ -1,0 +1,61 @@
+{
+  "name": "Opus 5 vol regime",
+  "strategy": "The vol-crush carry trade has run its course, so the book stops selling convexity and buys a small, defined-cost piece of it: VIXY flips from short to a 7% long with VIX near a one-year low and SPX one-month skew in the 5th percentile, while the real volatility in this regime \u2014 rates \u2014 is expressed through a short-duration core and an inflation-linked real-asset sleeve, with 24% cash earning 4% into a Fed that is still hiking.",
+  "entry": "2026-09-30",
+  "capital_usd": 1000,
+  "cash_pct": 24,
+  "reassessment_note": "Last week I argued the post-FOMC vol crush had happened and the book should collect the premium rather than pay it, and I flipped VIXY to a short. That trade worked (+0.89%) but the reason to hold it has gone. Three things changed in eight sessions. (1) Equity vol is now pinned near a one-year low around 14.9-16.0, so the premium I am being paid to be short it is the thinnest it has been all year. (2) Rates volatility spiked to a one-year high: the 10y went from the 5.00% I underwrote to 5.23%, up 48bp on the month, the 30y is at its highest since 2004, and fed funds futures put ~64% odds on an October hike. (3) Most important and genuinely new: SPX one-month skew has collapsed to the 5th percentile and roughly 40% of the top 100 names show inverted call skew \u2014 the market has actively sold its hedges and bought upside calls into record index highs. A short vol book gets paid least exactly when the left tail is least owned. That is an asymmetry inversion, not tape noise, and reading it is what this mandate is for, so I flip back to a small long. I size the VIXY long at only 7% because steep contango still bleeds roughly 15-20% a month: a 25% stop caps the cost of being early at about 1.7% of NAV while an 80% take-profit captures a real spike. I am NOT hedging the rest of the book against that event, because this yield rise is driven by tighter financial conditions rather than inflation fear, which means an equity vol spike from here most likely arrives with bonds selling off too, 2022-style. On that logic short TLT and long VIXY are complementary rather than offsetting, and I keep TLT short at 18%. I also correct an error: last week I trimmed crude on the view that the supply shock was being physically repaired within days. It was not \u2014 Brent is back up near $97 \u2014 so XLE goes back up to 17%. Cash rises to 24% because at 4% APY with the Fed still hiking, cash is the cheapest tail hedge on the sheet and the one contango cannot tax.",
+  "positions": [
+    {
+      "symbol": "TLT",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 18,
+      "stop_loss_pct": 8.0,
+      "take_profit_pct": 15.0,
+      "thesis": "The highest-conviction leg and the core carry of the book. The 10y is at 5.23% and rising, up 48bp in a month, the 30y is at its highest since 2004, the Fed hiked to 3.75-4.00% and futures price ~64% odds of another hike in October with nearly a full point of tightening over twelve months. The move is being driven by term premium and tighter financial conditions rather than an inflation scare, which is the version of a bond bear market that does not reverse on one soft print. I am paid 3% borrow to be short against a 4% cash yield, so the carry is close to free. Held at 18% rather than larger because after a 48bp month the move is extended and a genuine flight-to-quality would hurt here; the 8% stop is deliberately tight for that reason."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 17,
+      "stop_loss_pct": 13.0,
+      "take_profit_pct": 30.0,
+      "thesis": "Sized back up from 15% because last week's thesis was wrong in a checkable way: I trimmed on the view that the crude supply disruption was being physically repaired within days, and instead Brent is at roughly $97 and still making ground, with gasoline at $3.15. Energy equities are the one equity sector with short effective duration, so they do not de-rate as the 10y grinds toward 5.25% the way long-duration growth does, and they carry positively through an inflation-driven tightening rather than fighting it. This is also the cheapest way in the book to be long the thing actually forcing the Fed's hand."
+    },
+    {
+      "symbol": "COMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "thesis": "Broad commodity exposure as the diversified expression of the same real-asset view that XLE expresses in single-sector equity form, so a company-specific or refining-margin problem inside energy equities does not take the whole real-asset sleeve with it. A dynamic-roll structure limits the contango drag that plagues front-month commodity trackers. Held flat at 12% rather than added to, because with crude already near $97 the commodity complex is no longer cheap and this is a hedge against the inflation path, not a bet on a further spike."
+    },
+    {
+      "symbol": "VLUE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 12.0,
+      "thesis": "The value factor is the natural long when the discount rate rises: a 5.23% 10y compresses the terminal-value multiples that long-duration growth trades on far more than it touches near-cash-flow names. It is also the direct anti-crowding trade against the positioning signal that drives this whole reassessment, since the inverted call skew across 40% of the top 100 names sits overwhelmingly in the mega-cap growth complex that VLUE is structurally underweight. Held at 12%: the leg is down 1.60% and the thesis is unbroken, so this is patience, not conviction-adding."
+    },
+    {
+      "symbol": "XLV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 10.0,
+      "thesis": "The defensive ballast, and the only one I want while rates rise. Healthcare is the cheapest major sector on earnings and, unlike utilities, staples or REITs, it is not a bond proxy, so it does not get hit twice when the long end sells off. It is the one leg that is up on the week (+1.33%), which is consistent with it doing its job. At 10% it is a stabiliser, not a view."
+    },
+    {
+      "symbol": "VIXY",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 25.0,
+      "take_profit_pct": 80.0,
+      "thesis": "The flip, and the reason this book exists. VIX is near a one-year low around 14.9-16.0 while rates vol has spiked to a one-year high, and SPX one-month skew sits in the 5th percentile with roughly 40% of the top 100 names on inverted call skew, meaning the market has sold its downside protection to fund upside calls into record index highs with financial conditions tightening. Convexity is priced at its cheapest of the year precisely when the fewest people own it, so the premium for staying short it no longer compensates for a 50-80% adverse spike. I buy it small and with a defined cost: steep contango still bleeds this instrument roughly 15-20% a month, so 7% with a 25% stop caps the cost of being early at about 1.7% of NAV over five or six weeks, while the 80% take-profit means one ordinary vol event pays for many months of being wrong."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Opus Momentum",
+  "strategy": "Net-low-beta real-asset and short-duration carry for a confirmed inflationary hiking regime: short-dated TIPS plus floating-rate Treasuries as the anchor, energy and broad-commodity cash-flow carry into a supply-constrained oil market, and value/min-vol/defensive-pharma risk premia — with the precious-metals sleeve cut to a residual geopolitical tail hedge because rising real yields, not inflation alone, now set the gold price.",
+  "entry": "2026-09-30",
+  "capital_usd": 1000,
+  "cash_pct": 10,
+  "reassessment_note": "The regime call is confirmed; the expression of it was internally inconsistent. The 2026-09-16 FOMC delivered a 25bp hike to 3.75-4%, the first since 2023, on a 12-0 vote, with core PCE above 3% every month of 2026, a median dot showing one more hike this year and the market pricing further hikes into 2027. That vindicates the inflationary-hiking thesis this book is built on. But I paired that thesis with 22% in gold, gold miners and silver, and those are the assets that lose when a central bank hikes into inflation: gold is roughly 26% below its January record and down 6.5% in the past month on rising real yields and a firmer dollar, with sell-side forecasts calling for a further 5-20% correction. My own marks say the same — GLD -3.53%, GDX -5.29%, SLV -3.68%, the three worst legs in the book, and GDX and SLV are also the two highest-beta legs in a book whose mandate is explicitly net-low-beta. So I cut GDX and SLV to zero and halve GLD to a 6% tail hedge kept only against a Hormuz escalation, and redeploy into the parts of the mandate the regime actually pays. VTIP goes to 18% and I add 5% USFR: short-dated real carry plus a floating-rate note that resets upward with each hike, both near-zero duration, which is the correct anchor when the policy rate is climbing rather than the long-duration or zero-coupon real assets. Energy and commodities stay at size, not larger: the Strait of Hormuz closure has global inventories drawing 3.0 mb/d this quarter with total supply down 5.7 mb/d and Brent near $90, which is real cash-flow carry today, but OPEC and the IEA both cut 2026 demand growth and the 2027 Brent forecast is $74, so I take the carry with a stop and a take-profit rather than pressing it. The defensive-pharma sleeve is the one part of the book that has worked — AMGN +11.1% on the leg with positive Phase 3 dazodalibep data and a 6% dividend raise, GILD +3.07% on HIV growth and a raised outlook, MRK +2.61% and the sector's YTD leader at +44% — so it goes from 13% to 19% across three uncorrelated franchises, sized to respect the drug-pricing and tariff overhang. USMV and VLUE both rise slightly: min-vol is the mandate's low-beta ballast and value is the factor that a higher discount rate structurally favours. Net effect is the same strategy with the rate-sensitive leg removed and the rate-resilient legs funded by it. Zero symbol overlap with my Round 2 book, which is long semiconductors and energy E&P against short duration and small caps.",
+  "positions": [
+    {
+      "symbol": "VTIP",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 18,
+      "thesis": "The anchor of the book, raised from 14%. Short-dated TIPS accrue CPI directly while carrying almost no duration, which is exactly the instrument you want when inflation is running above 3% on core PCE and the Fed is still hiking — the inflation accrual is collected without the mark-to-market loss that longer real duration takes as real yields rise. Its -0.39% mark since 2026-09-16 through a rate hike is the evidence: it did its job while the longer-duration real assets in this book fell 3-5%. Left unstopped deliberately; a stop on a sub-1-duration inflation-linked instrument would only fire on noise."
+    },
+    {
+      "symbol": "XLE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 12,
+      "stop_loss_pct": 13.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Energy cash-flow carry held at size rather than increased. With the Strait of Hormuz closed, global inventories drew 3.9 mb/d in Q2 and are drawing 3.0 mb/d this quarter, total 2026 supply is set to fall 5.7 mb/d, and Brent is holding near $90 — integrated and large-cap E&P free cash flow at that strip is the cleanest real-asset carry available and a genuine hedge against the energy-led leg of the inflation the Fed is hiking against. I am not adding, because OPEC and the IEA have both cut 2026 demand growth (OPEC to 580kb/d from 780kb/d) and the 2027 Brent forecast is $74 as Gulf production rebounds, so this is a carry trade with a horizon, not a secular long. Hence the 25% take-profit: if the supply shock pays out quickly I want to be taken out of it rather than round-trip into the 2027 supply recovery."
+    },
+    {
+      "symbol": "COMT",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 11,
+      "stop_loss_pct": 14.0,
+      "thesis": "Broad-commodity exposure held at 11% as the diversified expression of the same real-asset carry, spreading the bet beyond crude into industrial metals and agriculture so the book is not a single-commodity wager on Hormuz. Its dynamic-roll construction is the specific reason to own this rather than a front-month tracker: in a market where inventories are drawing this hard, curves sit in backwardation and the roll is a positive contributor rather than the drag it is in contango. Stopped at 14% because a demand-led commodity selloff, which is the real risk if the hiking cycle bites growth, would hit every sleeve of this index at once."
+    },
+    {
+      "symbol": "USMV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "thesis": "Min-vol equity raised from 8% to 10%, funded by the precious-metals cut. This is the mandate's low-beta ballast and the reason the book's max drawdown is only -3.85% against a -8.61% drawdown in my other book. It is also the equity sleeve that behaves best in a hiking cycle: low-volatility names skew to stable-cash-flow, dividend-paying defensives whose valuations are already discounted at a high rate, so they de-rate less than long-duration growth as the policy rate climbs. Left unstopped as the intended ballast — stopping out the stabiliser in a drawdown is exactly backwards."
+    },
+    {
+      "symbol": "VLUE",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 9,
+      "thesis": "Value factor raised from 7% to 9%. A higher discount rate mechanically favours equities whose cash flows arrive sooner, which is the structural case for value over growth in a hiking regime, and it is the only equity-factor leg in the book that is actually up on this leg (+1.03%) while the real-asset sleeve fell. At 9% it stays a risk-premium allocation rather than a directional equity bet, which is what keeps the book net-low-beta. Unstopped for the same reason as USMV: this is a factor premium harvested over the cycle, not a momentum position."
+    },
+    {
+      "symbol": "MRK",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 7,
+      "stop_loss_pct": 13.0,
+      "thesis": "Raised from 5% to 7% and the largest of the three pharma legs. Merck is the best-performing large-cap US drugmaker of 2026 at roughly +44% YTD, and the composition of that return is what earns the increase: it came from oncology and newer launches rather than from a GLP-1 obesity franchise, so it is not a crowded thematic trade riding the same flows as the rest of the sector. Defensive, dividend-paying and low-beta, which fits the mandate; +2.61% on the current leg. Stopped at 13% against the live drug-pricing and pharma-tariff overhang, which is a policy risk that can hit the whole sector's top line at once."
+    },
+    {
+      "symbol": "AMGN",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 13.0,
+      "thesis": "Raised from 4% to 6%, the best-performing leg in the book at +11.10% since 2026-09-16 and momentum backed by fundamentals rather than multiple expansion: positive late-stage Phase 3 data for dazodalibep in Sjogren's disease opens a new indication, and the 6% quarterly dividend raise is management signalling cash-flow confidence. At roughly +35% YTD it is the sector's second-best performer. Held at 6% rather than more because I am already running 19% total in pharma and the three names share one common policy risk. Stopped at 13%."
+    },
+    {
+      "symbol": "GILD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 13.0,
+      "thesis": "Raised from 4% to 6%. Gilead is the least correlated of the three pharma franchises — HIV rather than oncology or biologics — which is the point of holding three names instead of one. Strong HIV growth drove a raised 2026 sales outlook and a 3.8% dividend increase, and the leg is +3.07%. Recurring, price-inelastic treatment revenue is genuinely defensive cash flow in a slowing, high-rate economy, which is what this sleeve is for. Stopped at 13% alongside the other two."
+    },
+    {
+      "symbol": "GLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 6,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 20.0,
+      "thesis": "Halved from 11% to 6% and explicitly redefined: this is no longer a core real-asset holding, it is a residual tail hedge. Gold is about 26% below its January record and fell 6.5% in the past month, and the cause is my own regime call — the Fed hiking to 3.75-4% with more to come lifts real yields and the dollar, the two things that set the gold price, and consensus now looks for a further 5-20% correction. Holding a large gold position while forecasting more hikes was the contradiction at the centre of this book. What justifies keeping any is the Strait of Hormuz closure: if that geopolitical situation escalates, gold is the asset that reprices violently upward while the rest of this book's equity and credit-sensitive sleeves fall together. 6% is the size at which that hedge pays enough to matter without the ongoing real-yield bleed dominating returns. The 20% take-profit is the hedge-monetisation trigger."
+    },
+    {
+      "symbol": "USFR",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5,
+      "thesis": "New position. Floating-rate Treasury notes reset their coupon upward with each hike, so this is the one fixed-income instrument that is actively long the path the dots are pointing at — a median FOMC member expecting another 25bp this year and the market pricing more into 2027. Effectively zero duration against Treasury credit, so it carries the rising policy rate with no mark-to-market exposure to it, complementing VTIP: VTIP collects realised inflation, USFR collects the policy response to it. Sized at 5% and funded from the silver leg. Chosen over simply raising cash because idle cash is fixed at 4% APY and does not capture the hikes. Unstopped — a stop on a floating-rate Treasury fund has no economic meaning."
+    }
+  ]
+}

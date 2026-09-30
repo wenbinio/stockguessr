@@ -85,13 +85,25 @@ def main() -> int:
         entry = bk["live"]["entry"]
         idx = {(f["symbol"], f.get("side", "long"), f.get("kind")): f
                for f in bk["fills"] if f["ts"][:10] == entry and f["action"] == "OPEN"}
+        # A leg closed by a standing order is NOT a live position. Until week 11
+        # this table marked it to the latest price and showed a running P&L, so a
+        # manager read a stopped-out leg as still open — Sonnet GARP caught its own
+        # SOXL short listed live five sessions after the stop fired. The engine was
+        # always right (it zeroes the position and banks the proceeds); only this
+        # display was wrong.
+        closed = {}
+        for f in bk["fills"]:
+            if f["action"] in ("STOP_LOSS", "TAKE_PROFIT") and f["ts"][:10] >= entry:
+                closed[(f["symbol"], f.get("side", "long"), f.get("kind"))] = f
         rows = []
         for p in bk["live"]["positions"]:
             s = r2.normalize(p["symbol"])
             key = s + ("-USD" if p["kind"] in ("crypto", "perp") and not s.endswith("-USD") else "")
-            f = idx.get((p["symbol"], p.get("side", "long"), p.get("kind"))) or \
-                idx.get((s, p.get("side", "long"), p.get("kind")))
-            ep, cp = (f.get("fill_price") if f else None), px.get(key)
+            sig = (p["symbol"], p.get("side", "long"), p.get("kind"))
+            f = idx.get(sig) or idx.get((s, p.get("side", "long"), p.get("kind")))
+            x = closed.get(sig) or closed.get((s, p.get("side", "long"), p.get("kind")))
+            ep = f.get("fill_price") if f else None
+            cp = x.get("fill_price") if x else px.get(key)
             ret = None
             if ep and cp:
                 ret = (cp / ep - 1) * 100
@@ -99,7 +111,8 @@ def main() -> int:
                     ret = -ret
                 if p.get("leverage"):
                     ret *= float(p["leverage"])
-            rows.append({**p, "entry_fill": ep, "mark": cp, "leg_return_pct": ret})
+            rows.append({**p, "entry_fill": ep, "mark": cp, "leg_return_pct": ret,
+                         "closed_by": (x["action"], x["ts"][:10]) if x else None})
         return rows
 
     def render(name, entries):
@@ -126,8 +139,11 @@ def main() -> int:
                     p["symbol"], p["kind"], p.get("side", "long"), p.get("leverage") or "",
                     p.get("weight_pct"),
                     f"{p['entry_fill']:.4f}" if p["entry_fill"] else "—",
-                    f"{p['mark']:.4f}" if p["mark"] else "—",
-                    f"{p['leg_return_pct']:+.2f}" if p["leg_return_pct"] is not None else "—",
+                    (f"{p['mark']:.4f} (CLOSED {p['closed_by'][0]} {p['closed_by'][1]})"
+                     if p.get("closed_by") else (f"{p['mark']:.4f}" if p["mark"] else "—")),
+                    ((f"{p['leg_return_pct']:+.2f} realized" if p.get("closed_by")
+                      else f"{p['leg_return_pct']:+.2f}")
+                     if p["leg_return_pct"] is not None else "—"),
                     f"-{p['stop_loss_pct']}%" if p.get("stop_loss_pct") else "—",
                     f"+{p['take_profit_pct']}%" if p.get("take_profit_pct") else "—"))
             L += ["", f"- cash: {bk['live'].get('cash_pct', 0)}%"]

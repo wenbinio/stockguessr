@@ -1,0 +1,11 @@
+{"name":"Sonnet deep value","strategy":"Unloved cyclical/value large-caps (energy, financials, autos, healthcare) plus small-cap value beta via IWM, with a large cash buffer for drawdown buys; Ford removed after its stop.",
+"entry":"2026-09-30","capital_usd":1000,"cash_pct":44,
+"reassessment_note":"The 10% stop on F fired at the 2026-09-28 close (12.38), so the book is rewritten without it and the freed 4% goes to cash rather than being chased back into a name that just broke its risk limit. The other six legs are unchanged in weight and stops: the value/cyclical rotation thesis is intact and the drawdowns in JPM, UNH, IWM and GM are within mark-to-market noise, not thesis breaks. The 44% cash earns 4% APY and keeps dry powder for buys if the drawdown deepens, and I am not adding risk into a tape that ran +2.2% on AI leadership while value lagged.",
+"positions":[
+{"symbol":"XOM","kind":"equity","side":"long","weight_pct":12,"take_profit_pct":30.0,"thesis":"Cheap integrated energy with strong cash returns, a low-beta hedge to oil shocks; marked +1.2% and still the book's anchor at 12%."},
+{"symbol":"JPM","kind":"equity","side":"long","weight_pct":9,"thesis":"Best-in-class bank at a modest multiple; down 4.8% on the leg but no fundamental break, size kept at 9% so drawdown stays tolerable."},
+{"symbol":"GM","kind":"equity","side":"long","weight_pct":7,"stop_loss_pct":10.0,"thesis":"Low-multiple autos with heavy buybacks; tariff exposure is the risk, so the 10% stop stays and size stays small at 7% (F's stop shows the risk in this group)."},
+{"symbol":"UNH","kind":"equity","side":"long","weight_pct":13,"thesis":"Deep-value managed-care recovery candidate that missed the melt-up; largest weight as the highest-conviction rebound, accepting the -5% mark."},
+{"symbol":"PFE","kind":"equity","side":"long","weight_pct":9,"thesis":"High-yield, low-multiple pharma that is working (+3.4%) and diversifies the cyclical exposure."},
+{"symbol":"IWM","kind":"equity","side":"long","weight_pct":6,"thesis":"Small-cap value beta for a broadening rally; kept at 6% since it is -4.7% and rate-sensitive."}
+]}
