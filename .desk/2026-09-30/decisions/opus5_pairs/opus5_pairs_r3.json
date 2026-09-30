@@ -1,0 +1,42 @@
+{
+  "name": "Opus 5 pairs",
+  "strategy": "Two equal-weighted, same-industry relative-value pairs (STLD/NUE in steel, M/KSS in department stores), each built on a dated company-specific guidance divergence, run at 60% gross with 40% cash at 4%.",
+  "entry": "2026-09-30",
+  "capital_usd": 1000,
+  "cash_pct": 40,
+  "reassessment_note": "One pair retired, one kept, one added; structure (two equal-weighted same-industry pairs, 60% gross / 40% cash) unchanged. RETIRED UAL/AAL. That pair was built on the 2026-09-16 divergence where UAL guided FY26 EPS $9-11 and said it recovers 80-90% of the fuel spike in Q3 and 100% by Q4, while AAL cut FY26 to -$0.65 to +$0.65 with ~$700M of unrecovered Q3 fuel. The fundamental divergence is still true, but its sign flipped: after Iran's diplomatic submission on the Strait of Hormuz around 2026-09-25 the geopolitical premium came out of crude, and softer jet fuel is worth far more to the hyper-fuel-levered, near-breakeven carrier (AAL) than to the one that already passes fuel through. That is exactly why the pair bled -2.52% on the long and only +0.37% on the short into the 09-28 mark. I am not flipping to long AAL / short UAL either: AAL already ran on 09-25 and 09-29, so that is day three of a squeeze, and it makes the leg a bet on whether Hormuz re-escalates rather than a company-specific relative-value bet. A pairs book should not own a geopolitical coin flip in either direction, so I take the pair off rather than pick a side. KEPT STLD/NUE at unchanged size and stops; the 2026-09-17 guidance divergence is intact but decaying, so it gets no upsize. ADDED M/KSS, where the 2026-09-10 prints give a cleaner and fresher divergence than anything left in steel: both retailers raised FY26, but for opposite reasons. Net effect is that I swap a macro-driven pair whose driver inverted for a pair whose driver is the quality of two guidance raises.",
+  "positions": [
+    {
+      "symbol": "STLD",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 15.0,
+      "thesis": "Long half of the steel pair, held from the 09-21 leg at unchanged size. On 2026-09-17 Steel Dynamics guided Q3 to $5.34-$5.38 per diluted share with steel-operations profit significantly higher sequentially on metal-margin expansion across the platform and record shipments, driven by higher realized selling values combined with LOWER scrap costs. That combination - price up and input down at the same time - is the specific thing NUE did not claim. The leg is +0.17% since entry, so the spread has not moved against me and the divergence has not been arbitraged away. I am deliberately not upsizing: the guide is now two weeks old and largely priced, UBS upgraded STLD and NUE together on tariff support (which compresses rather than widens the pair), and late-September ferrous scrap export demand is firming domestic scrap into Q4, which is the one input that would retire the 'lower scrap costs' edge. 15% is the right size for a real but decaying edge, with the 15% stop kept from the prior leg."
+    },
+    {
+      "symbol": "NUE",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "stop_loss_pct": 15.0,
+      "thesis": "Short half of the steel pair, hedging the STLD long dollar-for-dollar so the position is the spread, not a bet on steel prices. On the same mid-September guidance round Nucor guided Q3 to $5.55-$5.65, below consensus, and framed it as higher average selling prices and stable mill volumes being partly offset by rising costs, increased corporate expenses and weaker Raw Materials - i.e. the same revenue tailwind as STLD but with cost offsets STLD did not flag. The leg is -0.86% since entry, which is noise on a hedged spread. The one thing that would genuinely turn this leg against me is firming scrap, because Nucor's Raw Materials arm is a beneficiary of higher scrap while it is a pure cost to a converter; that risk is live into Q4 and is the main reason the pair stays at 15% instead of growing. Stop held at 15%."
+    },
+    {
+      "symbol": "M",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 15,
+      "stop_loss_pct": 18.0,
+      "thesis": "New long half of a department-store pair, replacing the retired airline long. In its 2026-09-10 Q2 8-K Macy's beat on both comparable sales and adjusted EPS and raised all four FY26 lines: net sales to $21.675-21.825B from $21.5-21.75B, comps to +1.0-1.5% from +0.5-1.2%, adjusted EBITDA, and adjusted EPS to $2.15-$2.35 from $2.00-$2.20, with growth across all nameplates. That is an operating raise - the comp guide itself moved up and is positive - which is the specific quality the short leg lacks. This is the freshest dated company-specific divergence I could source, which is why it goes in at the same 15% as the steel pair rather than as a starter. The 18% stop is wider than the steel legs because M is a mid-teens-priced, higher-volatility equity where a 15% stop is inside normal noise."
+    },
+    {
+      "symbol": "KSS",
+      "kind": "equity",
+      "side": "short",
+      "weight_pct": 15,
+      "stop_loss_pct": 18.0,
+      "thesis": "Short half of the department-store pair, equal-weighted against the M long so the trade is the relative quality of two FY26 raises rather than a bet on the direction of US discretionary retail. Kohl's also raised FY26, to adjusted EPS $1.80-$2.40 - but the raise was driven by roughly $150M of one-time tariff refunds, and the underlying comparable-sales guide is still down 1.5% to flat. So the pair is long a retailer whose raise came from positive operating comps against short a retailer whose raise came from a non-recurring cash item while its comps remain negative; that gap should close when the refund stops flattering the compare. Sized at 15% rather than larger specifically because KSS carries heavy short interest and a 2025 history of violent squeezes, and the 18% stop is there to cap that: on a squeeze-prone short, being stopped out is the risk control, and I would rather take a defined 18% loss on the leg than hold an unbounded one. No take-profits anywhere in this book by design - each leg is half of a spread, and taking profit on one side would silently leave me unhedged on the other."
+    }
+  ]
+}
