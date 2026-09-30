@@ -1,0 +1,69 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend across seven sleeves with signals refreshed through the 2026-09-28 close: long only where price is above both the 50- and 200-day moving average with positive 3-month momentum, short only where both are broken and momentum is negative, sized inversely to realised volatility and tilted toward the strongest-ranked signals - the single 2026 macro trend of an energy supply shock into a hiking Fed, now expressed through duration, energy, housing, FX and crypto with the broken gold leg cut entirely.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "I am trading, and the reason is that my own rule book says one of my legs should not exist. My mandate is to be long only what is above both the 50- and 200-day moving average with positive 3-month momentum. GLD at 377.91 fails that test on two of three counts: spot gold fell 3.19% on 2026-09-28 to $4,148.69, a seven-week low, closing below its 50-day average, and it sits far below a 200-day average dragged up by the $5,597 January peak (the 2026 average daily close is roughly $4,820). Its 1-year total return has decayed to 8.99%. The previous leg held 22% in gold on a narrative tilt - the note of record literally says the tilt was shifted into gold after a Saudi risk-premium unwind - and that is style drift, not trend following. It cost me 5.14% on the leg and is the single largest reason the book is at $967.44 while SPY is up 3.26%. I am not shorting gold either: 3-month momentum is roughly flat (early July was about $4,120 versus $4,148 now), so it fails my short test of both averages broken AND negative momentum. No signal means no position. That freed 22% goes to the trends that are actually confirming. The regime got sharper, not weaker, in the last week: Trump rejected Iran's proposal to reopen the Strait of Hormuz, Brent rebounded toward $106, the 10-year hit 5.27% (a 19-year high) with the 30-year at 5.55%, and CME FedWatch has October hike odds at 70.3% after the Fed's 16 September hike to 3.75-4.00% with 16 of 18 participants projecting more and no cuts through 2027. That is one coherent trend and my top three legs all ride it. I add two sleeves the book was missing despite claiming multi-asset breadth: crypto (BTC is ~14% above its 200-day EMA and has broken out above the $82,281 ceiling, +30.68% since mid-July) and FX (UUP +7.54% over a year, DXY +1.94% in a month on widening rate differentials). Turnover is about 46% one-way, costing roughly $1 on a $1,000 book - trivial against the cost of carrying a broken 22% gold position for another week.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 26,
+   "stop_loss_pct": 10.0,
+   "thesis": "iShares 20+ Year Treasury Bond ETF at 78.62, verified listed on NASDAQ, -7.51% total return over the past year and below both moving averages with decisively negative momentum. This is the cleanest and lowest-idiosyncratic-risk expression of the dominant 2026 trend, so inverse-vol sizing makes it my largest leg: the 10-year closed 2026-09-28 at 5.27%, a fresh 19-year high, the 30-year at 5.55%, the Fed hiked to 3.75-4.00% on 16 September with a median endpoint of 4.1% and no cuts projected through 2027, and October hike odds are 70.3% and rising as the oil spike reignites inflation. Long duration is the asset with the least defence against every one of those facts. Raised from 22% because this leg was the book's best performer (+3.89%) and the fundamental driver strengthened rather than faded. Stop at 10% because a duration short only breaks if the hiking cycle genuinely reverses, and that move would be fast."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 18.0,
+   "thesis": "Energy Select Sector SPDR at 62.10, verified listed, +38.87% total return over the past year and +21.6% year-to-date, above both moving averages with positive 3-month momentum. It showed exactly the relative strength a trend follower wants on 2026-09-28, closing +0.10% on a day the S&P 500 fell 0.8% and gold fell 3.9%. Energy equities are the higher-Sharpe way to own this supply shock than crude itself: they carry the Hormuz risk premium with roughly half the realised volatility of the front contract and pay a dividend instead of bleeding roll. Held at 20% - the signal is strong but I do not want energy equity plus crude to dominate the book."
+  },
+  {
+   "symbol": "ITB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 16,
+   "stop_loss_pct": 15.0,
+   "thesis": "iShares U.S. Home Construction ETF at 88.75, verified listed, -15.86% over the past year and -9.9% in the past month alone - a confirmed and accelerating downtrend on both averages. Raised from 12% because the driver intensified: the 30-year mortgage averaged 6.95% for the week ending 17 September and has pushed past 7% toward 7.5% as the 10-year made 19-year highs, NAHB builder confidence fell to 32 in September, its lowest since September 2025, and Lennar and KB Home both reported slumping revenue. The leg marked -0.62% only because a 1.55% SPY rally caught it on entry day; that is noise against a trend this well established. This is also my cleanest hedge against the TLT short, since both legs profit from the same rate move, but through different channels."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "United States Oil Fund at 150.01, verified listed on NYSEARCA, +94.77% total return over the past year - the single strongest momentum reading in my entire universe. Brent rebounded toward $106 after Trump rejected Iran's proposal to reopen the Strait of Hormuz, and a backwardated curve means the roll works for me rather than against me, which is the usual objection to holding this fund. Sized at only 9% despite the strongest signal because inverse-volatility sizing demands it: WTI has travelled from $55.44 in December 2025 to $114.58 in April 2026, and the EIA still forecasts Brent averaging around $90 in the second half while J.P. Morgan sees $80 in Q4, so a headline of Hormuz reopening would gap this leg hard. Take-profit retained at 35% to bank a blow-off spike."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 20.0,
+   "thesis": "Bitcoin near $84,500, trading about 13.98% above its 200-day EMA and holding 2.7% above the $82,281 ceiling it cleared earlier this month, up 30.68% since this book's 17 July inception - a textbook long on all three of my criteria. My strategy of record claims trend across six asset classes yet the book held no crypto at all, which left the strongest-momentum asset class of the quarter entirely unharvested. Sized at just 7% because realised volatility here is roughly triple my equity legs and it has been drifting lower in the very short term, so inverse-vol sizing caps it hard. Spot rather than a perp deliberately: 35bps each way beats paying 10% APR funding on a long perp in a book I may rebalance weekly. Stop at 20% to respect the asset's normal noise."
+  },
+  {
+   "symbol": "UUP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 6.0,
+   "thesis": "Invesco DB US Dollar Index Bullish Fund at 28.70, verified listed on NYSEARCA, +7.54% over the past year. DXY is at 101.36, up 1.94% in a month and up 2.4% since 9 September, above both averages. This is the FX sleeve my multi-asset mandate names but the book did not own, and it is the most direct trend expression of the rate differential: the 2-year approaching 5% and the 10-year above 5% while the Fed projects no cuts through 2027 widens the carry advantage over every major peer, and higher oil reinforces the dollar's safe-haven bid. Low realised volatility would justify a larger inverse-vol weight, but the absolute return available is correspondingly small, so I cap it at 6% and use a tight 6% stop appropriate to a currency basket."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "thesis": "SPDR S&P 500 ETF at 765.61, verified listed, +16.93% total return over the past year. The signal still technically qualifies - the index closed 2026-09-28 at 7,683.69, above its 50-day average of 7,636 and well above its 200-day average of 7,205, with positive 3-month momentum - so my rules say hold it. But it is unambiguously my weakest-ranked long: RSI is a middling 56.59, it only reclaimed the 50-day on 17 September, and it is falling on the same yield surge that powers my three biggest legs, which makes it a partial offset to my own book. My method is to keep qualifying signals at minimum size rather than override them with a narrative, so it stays at the floor of 6%. If the index loses 7,636 the signal dies and this leg goes to zero at the next reassessment; the 10% stop covers the disorderly version of that."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

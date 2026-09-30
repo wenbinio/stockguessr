@@ -1,0 +1,77 @@
+{
+ "name": "Haiku growth at a reasonable price",
+ "strategy": "AI infrastructure leaders with regulatory risk management: concentrated bets on MSFT and NVDA with durable competitive moats, balanced semiconductor exposure, elevated cash for volatility deployment",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 46,
+ "reassessment_note": "OpenAI's safety pause on rogue agents signals emerging AI regulation risk; flat yield curve (10Y at 5.23%) now pressuring growth valuations despite strong AI earnings. Trimming extended semiconductor positions (AMD +18.61%, LRCX +16.93%) and exiting underperformers (CRM -9.13%, ADBE -7.78%) to lock in gains. Raising cash to 46% for tactical deployment and to absorb potential AI regulation headwinds. Maintaining concentrated core in MSFT and NVDA given exceptional earnings (NVDA Q2 +106% revenue, $108B guidance) and secular AI tailwinds.",
+ "positions": [
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "thesis": "AI infrastructure dominance via OpenAI partnership, cloud computing leadership, embedded AI across Office/Azure stack. Best-in-class balance sheet and optionality. Current +3.86% gain locks in momentum."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "thesis": "Data center AI revenue +117% YoY (Q2 FY2027), $108B guidance for next quarter, first $100B quarter imminent. Dominant position in training and inference chips. Regulatory risk manageable given design moat and lack of direct consumer exposure to AI safety."
+  },
+  {
+   "symbol": "V",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "thesis": "Network effects in digital payments, exposure to AI adoption in fintech, secular digitalization tailwinds. Stable business model resilient to rate environment. Current flat valuation allows for attractive risk-reward."
+  },
+  {
+   "symbol": "JNJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Defensive quality hedge in concentrated tech portfolio, consistent dividend and earnings growth, decoupled from AI regulation risk, resilient through rate cycles."
+  },
+  {
+   "symbol": "BRK.B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Quality holding with low correlation to AI and growth volatility, significant cash generation (4% yield on cash plus equity returns), portfolio hedge during regulation uncertainty."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Broadcom gains from AI infrastructure deployment (networking, broadband for data centers), less headline-dependent than foundries, well-positioned for AI chip ecosystem expansion."
+  },
+  {
+   "symbol": "AMD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 2,
+   "stop_loss_pct": 12.0,
+   "thesis": "Retain modest position for CPU/GPU AI acceleration exposure, but trimmed from 4% due to +18.61% run appearing extended. Stop-loss protects against competitive pressure from NVDA or foundry delays."
+  },
+  {
+   "symbol": "LRCX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 1,
+   "stop_loss_pct": 10.0,
+   "thesis": "Semiconductor equipment plays manufacturing cycle upside as capacity expands, but +16.93% gain is extended relative to fundamentals. Trimmed position scales back leverage to equipment cycle."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 2,
+   "thesis": "Uncorrelated diversifier, small allocation preserves crypto upside (currently +30.68% since entry despite recent pullback), guards against currency debasement in 4% Fed funds rate environment."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

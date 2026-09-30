@@ -1,0 +1,84 @@
+{
+ "name": "Opus 5 seasonality",
+ "strategy": "The pre-committed Oct-1 midterm-year rotation, executed with the mandate's seasonal-AND-catalyst filter rather than blindly: deploy part of the dry powder into the October/Q4 midterm statistic (SPY, financials) while keeping the rate-shock legs that the Sep-16 hike validated (short IEF/TLT/XLU) and re-expressing the energy leg through refiners, where the Hormuz supply catalyst is actually landing.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "Three things changed and all three are in the research, not in my memory. (1) The calendar event my book was built around has arrived: this book pre-committed 46% cash to an Oct-1 rotation into the midterm-year Q4 rally, and the entry date is 2026-09-30. Holding would be declining to execute my own mandate on the one date it specifies. The statistic still checks out: since 1950 October is the best month in midterm years, +3% average, positive 73.7% of the time, and the mean autumn-low-to-yearend move in midterm years is +13.6% vs +9.1% otherwise. (2) But the defensive half of my premise was falsified. My strategy of record said to wait for 'the midterm-year autumn low in early October.' There was no low. The S&P closed 2026-09-28 at 7,683 near record highs, 27 record closes YTD and ~13% up on the year; the statistically worst four weeks delivered a rally instead. I am therefore rotating, but NOT to full deployment: I take cash from 46% to 30% and gross from 54% to 70%, because buying a seasonal 'low' that never printed, into narrowing breadth (Morgan Stanley), a ~14% premium to fair value, a hiking Fed and a 5.25% 10-year, deserves a partial commitment, not the whole magazine. My mandate's own filter says keep only legs where the seasonal stat and the catalyst agree; for broad beta they now disagree, so SPY gets a statistic-sized 12%, not a conviction-sized one. (3) The energy leg was expressed in the wrong instrument. Oil is the dominant catalyst -- Brent ~$108, Strait of Hormuz traffic down 95% from 100+ ships/day to 5-12, Iranian officials signalling no deal before the November midterms -- yet my XLE leg is -2.44%. The reason is visible in the holdings: XLE is 23.5% XOM, 17.9% CVX, 6.8% COP, roughly half integrated majors, while the actual shortage is in refined product, with 7mbpd of Middle East and Russian refining offline and VLO/MPC/PSX more than doubling YTD on crack spreads. I cut XLE to 6% and move the weight into refiners, which is the same seasonal-plus-catalyst thesis in the instrument that expresses it. I am also cutting GLD entirely. Its mechanism has broken, not just its price: gold fell 3.7% to a seven-week low as the 10-year hit 5.25% and October hike odds rose, because rising real yields raise the carrying cost of a non-yielding asset. That is a broken thesis, not noise, and my rule is to drop legs where the tape contradicts the mechanism. For consistency I also declined a Bitcoin 'Uptober' leg (median +11.2%, 10 of 15 years) despite it being a genuine calendar statistic: if rising real yields are my reason for selling gold, buying the higher-beta non-yielding asset on the same day would be incoherent, and 35bps each way is a real tax on a coin already +30% since July.",
+ "positions": [
+  {
+   "symbol": "IEF",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 14,
+   "stop_loss_pct": 6.0,
+   "take_profit_pct": 8.0,
+   "thesis": "Cleanest catalyst on the board and my only winning directional read so far (+1.32% on the prior leg). The Fed hiked 25bp to 3.75-4% on 2026-09-16, its first hike since 2023, on a 12-0 vote with 16 of 18 dots seeing another this year, and the oil shock is now feeding the inflation print that justifies it -- money markets have been raising October hike odds. The 10-year at 5.25% is the highest since 2007 and still rising. Carried at 14% rather than the prior 18% only because I am adding TLT alongside it for convexity; combined duration short is larger than last week's. Sized to absorb the 3% APR borrow."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 14.0,
+   "thesis": "Convexity on the same rate view. TLT's ~16-year duration gives roughly twice IEF's move per unit of weight, so 8% here buys more expression than adding 8% to IEF. The specific thing I want exposure to is term premium rather than the policy rate: a central bank hiking into a supply-driven inflation shock, with the long end already breaking to 2007 highs and heavy Q4 coupon supply ahead, is where the long bond underperforms the belly. Stopped at 8% because the same oil shock could produce a growth scare that bids duration."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 12.0,
+   "thesis": "Best-performing leg of the prior book at +4.31% and the thesis is intact: utilities are the equity market's bond proxy and a 5.25% 10-year makes a regulated 3-4% yield uncompetitive. Trimmed from 7% to 6% for two reasons rather than one -- it is correlated duplicate risk against an already-larger IEF/TLT duration short, and utilities carry a genuine structural bid from AI datacenter power demand plus a defensive bid if equities crack, either of which could squeeze it. Keeping it small and letting the winner run."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The highest-conviction seasonal-plus-catalyst leg and the correction of my main execution error. The binding shortage is refined product, not crude: over 7mbpd of Middle East and Russian refining capacity is offline and Hormuz traffic has collapsed ~95%, so crack spreads are being set by physical scarcity rather than sentiment. Valero is the pure-play US refiner levered to exactly that spread, closing 2026-09-28 at $389.57. Iranian officials casting doubt on any deal before the November midterms keeps the catalyst alive across my holding period. Sized at 9% rather than larger and stopped at 14% precisely because it has already doubled YTD and a surprise diplomatic breakthrough would gap refiners down violently -- the stop is what makes this size responsible."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Same crack-spread thesis as VLO, held as a second name rather than doubling VLO because the risk I am underwriting is a sector-wide physical shortage, not single-refinery execution -- splitting across two large US refiners removes idiosyncratic outage and accident risk without diluting the trade. Marathon Petroleum closed 2026-09-28 at $389.44, is among the names that have more than doubled in 2026 on fuel-market tightness, and carries a larger retail and midstream footprint than Valero, which diversifies the margin mix slightly. Same 14% stop for the same US-Iran diplomacy tail."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Cut from 9% to 6% but deliberately not to zero. XLE is ~48% XOM/CVX/COP, and that integrated-major weighting is why it is down 2.44% for me while crude sits near $108 and refiners doubled -- majors are being priced for demand destruction and capex discipline, not spot crude. Retained as the diversified energy sleeve that keeps me long the complex if the leadership rotates from refining margins back to upstream reserves, which is what happens if Hormuz actually closes and crude gaps rather than cracks. It is the lower-beta half of a barbell whose sharp end is VLO and MPC."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Held but trimmed from 12% to 7%. The seasonal case is real -- financials are a classic midterm-Q4 leader -- and a hiking Fed with a steepening curve genuinely expands net interest margin. But I am cutting the size because the leg is -2.77% and the risks have grown teeth since I put it on: a 5.25% 10-year re-opens the 2023 AOCI problem on bank securities portfolios, and an oil shock squeezing the consumer is a credit-quality headwind. This is a medium-conviction seasonal leg, so it gets a medium-conviction weight rather than the second-largest slot in the book."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 7.0,
+   "take_profit_pct": 12.0,
+   "thesis": "The pure expression of the statistic this book exists to harvest, deliberately sized to the statistic rather than to conviction. October in midterm years is the best month since 1950 at +3% average and 73.7% positive, and the S&P has been higher 12 months after all 19 midterms since 1950. I use SPY itself because it is the instrument the statistic is actually measured on, and at 2bps it is the cheapest way to own it. It stays at 12% rather than the 30%+ a full rotation would imply because the setup is compromised -- the autumn low never printed, breadth is narrowing and the index is ~14% above fair value at 7,683. It also usefully offsets my duration short: the scenario where IEF/TLT/XLU all pay is the scenario where this leg hurts, which is the correlation I want given I could be wrong about the direction of rates. The 7% stop is the level at which the seasonal thesis is simply not working this year."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

@@ -1,0 +1,39 @@
+{
+ "name": "Opus-fleet small/mid-cap growth",
+ "strategy": "De-risked, concentrated small/mid-cap growth: gross cut from 88% to 70% into a live Fed hiking cycle, exiting the two legs whose theses broke (NU deal overhang, XBI duration) and concentrating the book in three earnings-backed compounders whose revenue growth, not the discount rate, is doing the work.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "My last leg was built on an explicitly wrong premise. I lifted gross from 70% to 88% on 2026-09-21 because 'the September FOMC event risk has passed.' It did not pass benignly: the Fed hiked 25bp to 3.75-4.00% in a 12-0 vote, its first increase since 2023, committed to an inflation fight driven by energy, and the median dot now points to one more hike this year. The 10-year has since printed 5.04%, its highest since 2007. That is a direct, sustained headwind to the exact factor my mandate is long - high-multiple small/mid-cap growth duration - and it is the opposite of the environment I sized up into. The honest response is to reverse the sizing decision rather than defend it, so gross goes back down to 70% and cash to 30%, which now earns a real 4% APY instead of being dead weight. Two legs are cut outright. NU is not a broken business - Q2 net income $1.1bn on 139m customers - but on 2026-09-26 Sky News reported it in talks to buy UK-based Monzo at roughly $11-13.5bn, and the stock lost about $6.6bn of market value on 2026-09-28, -10% in a session. That is an acquirer-dilution and integration overhang of unknown duration layered on top of an EM fintech already absorbing a US rate shock, and at $12.23 it sits only ~6% above my -18% stop; I would rather choose the exit than be handed it. XBI is the cleanest sell in the book: it is the purest duration asset I own, it is down ~8.3% over thirty days, and with the 10-year at 5% the catalyst density ahead does not compensate for a sector that has run straight into a rate wall. What survives is what is being carried by earnings rather than by the discount rate. I am not replacing the cut legs with new names - I looked at adding AI-optics exposure via LITE and rejected it because at roughly $880 a share it has become a ~$60bn large cap and sits outside this book's small/mid-cap mandate. Concentration into three positions I actually understand beats reaching for a fourth I diligenced in an afternoon, and the brief imposes no minimum position count. Churn is real: this trade replaces 35% of the book rather than all of it, keeping the three winners in place rather than round-tripping them through friction.",
+ "positions": [
+  {
+   "symbol": "CRDO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 28,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 55.0,
+   "thesis": "Promoted to the largest position because it is the best growth-per-turn-of-multiple in the book at the moment multiples are the thing under attack. Credo grew revenue 157% year over year in its latest quarter - faster than Astera Labs' 104% - while trading near 40x forward earnings against ALAB's ~89x P/E and ~128x EV/EBITDA. In a hiking cycle the de-rating risk is proportional to the multiple, so within one theme I want the cheaper, faster leg carrying the larger weight. Its active electrical cables and SerDes/retimer content sit in hyperscaler AI racks where spend is contracted rather than discretionary, which is why this leg is one of only two in the book that is green on the current leg (+2.88% from 187.27). It is also the only name here with a lifetime standing-order fill against it, so I know it is volatile: the 25% stop is wide on purpose to survive AI-capex sentiment air pockets rather than being shaken out by one, and the 55% take-profit reflects that a 157% grower re-rates violently in both directions."
+  },
+  {
+   "symbol": "HOOD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 45.0,
+   "thesis": "The single leg I own that is helped rather than hurt by the rate move, which is why it stays near full size after being marked down 5.55% from 123.30. Robinhood earns net interest on customer cash balances and margin books, so a Fed funds rate moving to 4.00% with another hike signalled expands the NII line directly - the stock sold off with a broad rate-sensitive fintech basket on a factor that does not actually apply to its P&L. Meanwhile the fundamentals accelerated into the drawdown: at HOOD Summit '26 on 2026-09-29 it announced 24/7 trading in native US equities including weekends, options hours extended 35%, intraday margin to 4x, in-app perpetual futures coming, and trading agents rolling out to roughly 29m customers. Volume is the monetisation engine and every one of those extends hours or leverage in which volume can occur. Through 24 September it had already done ~$267bn equity and ~$17bn crypto notional for the month, and BTIG lifted its target to $135 on 24 September against a $116.46 mark. Buying a widening fundamental gap at a lower price is the trade; the 20% stop is tighter than the semis because the drawdown here should be sentiment, and if it is not, I am wrong about the NII offset."
+  },
+  {
+   "symbol": "ALAB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 24.0,
+   "take_profit_pct": 50.0,
+   "thesis": "Kept, but deliberately sized below CRDO despite being the stronger franchise, because valuation is the transmission channel for a rate shock and this is the most expensive thing I own. Astera Labs is the rack-scale AI connectivity leader, grew revenue 104% year over year with Scorpio X ramping ahead of plan, and is the best-positioned pure play on PCIe/CXL fabric content per AI rack; it closed 2026-09-28 at 351.31, +3.10% on the leg, and is up 326% over the past year. Against that, it carries an ~89x P/E and ~128x EV/EBITDA, with sell-side flagging overbought technicals, continuing insider selling and rising stock comp. With the 10-year at 5.04% that multiple is the risk, not the business - a 100bp move in the long end is worth far more to this price than a beat is. So I hold the franchise and let CRDO carry the incremental theme exposure, trimming ALAB from 18% to a relatively smaller share of a smaller gross. The 24% stop respects that a name up 326% in a year has a long way to fall if AI capex sentiment turns."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

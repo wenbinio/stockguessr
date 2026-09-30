@@ -1,0 +1,45 @@
+{
+ "name": "Opus 5 carry",
+ "strategy": "A long-only floating-rate carry book that concentrates two-thirds of capital in top-of-capital-structure AAA CLO floaters across two managers, whose coupons reset upward with every Fed hike while the engine's cash rate stays fixed at 4%, keeps a right-sized fee-based midstream sleeve as the energy-inflation hedge, sells a little index variance, and holds a reduced 10% cash buffer.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "Three things changed my mind since the 2026-09-16 leg. First, the hiking cycle is confirmed and extending: the Fed went to 3.75-4.00% on 09-16 in a 12-0 vote with 16 of 18 dots showing another hike, markets price ~65% for 10-28 and ~4.2% by December, with more into 2027. Against that, the engine pays a FIXED 4% APY on cash while SOFR-linked coupons reset upward at every hike. Cash is therefore a decaying asset in relative terms and floating-rate credit mechanically widens its advantage with each meeting. I cut cash 16%->10% and put the proceeds into AAA CLO. Second, FLOT no longer earns its place: it yields ~4.3% against a 4.0% risk-free engine cash rate, so I was accepting IG corporate credit and spread risk for roughly 30bps. That is the same logic this strategy already used to reject a Treasury floater, applied consistently - FLOT is sold in full and replaced by ICLO (Invesco AAA CLO Floating Rate Note ETF, 30-day SEC yield ~5.57%, 0.19% ER, $588mm AUM, $25.59 on 09-28), which pays ~125bps more for equal-or-better credit standing, since senior AAA CLO tranches sit above IG bank paper in the capital structure. Splitting the CLO core across Janus and Invesco also diversifies manager and deal-selection risk rather than concentrating it in one book. Third, I re-read why AMLP is down 3.29% while Brent trades ~$102: it is not trading as oil beta, it is trading as a yield instrument being repriced by rising short rates. At a 6.05% distribution it offers only ~50bps over a 5.57% AAA CLO floater while carrying full equity and commodity risk - poor compensation on carry grounds. So I size it as the hedge it is rather than as a carry engine: 20%->16%. I keep it, because the inflation the Fed is fighting IS energy, midstream posted record Q2 throughput, and it is the only leg that participates if oil keeps running. Net effect: blended carry rises from ~5.4% to ~5.8% annualized, the 66% floating block resets higher at every hike, and equity/commodity beta falls. Turnover is ~38% one-way at 2bps, roughly 2bps of NAV, which the added carry repays in under three weeks. I also widened the stops on the CLO legs from -5% to -8%. A AAA CLO fund's worst historical drawdown is ~2-3%, so a -5% stop is never hit by noise but could fire in exactly the liquidity air pocket where selling par-paying paper at the low is the worst possible action. This book's single lifetime standing-order fill was a stop that took it out of BTC-USD before a +30.68% rally; I will not repeat that error on instruments that redeem at par. -8% remains a genuine brake on a structured-credit catastrophe.",
+ "positions": [
+  {
+   "symbol": "JAAA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 50,
+   "stop_loss_pct": 8.0,
+   "thesis": "The core carry engine and the cleanest expression of my one high-conviction macro view. JAAA holds AAA-rated senior CLO tranches paying roughly SOFR+110bps, so its coupon reprices upward automatically at each of the hikes now priced for October and beyond, while the engine's cash alternative is frozen at 4%. Credit backdrop supports the size: speculative-grade defaults are projected to fall to 3.0% by October 2026 from 5.3% a year earlier, Q2 CLO issuance hit $126.5bn across 285 deals, and primary AAA spreads near 124bps are expected to tighten modestly rather than widen. A AAA CLO tranche sits at the very top of the capital structure and would require catastrophic collateral losses before impairment - no AAA CLO tranche has ever defaulted. With $31.45bn AUM and 18mm shares traded it is the most liquid instrument in its class. I size it at 50% because the brief permits unlimited concentration and this is the highest risk-adjusted carry available to a long-only floating-rate mandate in a hiking cycle. Priced $50.70 at the 09-28 close, matching my mark."
+  },
+  {
+   "symbol": "ICLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 8.0,
+   "thesis": "Direct replacement for FLOT and the second manager in the AAA CLO core. ICLO invests at least 80% of net assets in floating-rate notes issued by CLOs rated AAA at purchase, carrying a 30-day SEC yield of ~5.57% against FLOT's ~4.3% - roughly 125bps of additional carry for credit that is arguably stronger, since senior AAA CLO paper ranks above the IG corporate and bank floaters FLOT holds. Like JAAA it is SOFR-linked with effectively zero duration, so it gains rather than loses as the Fed hikes. Running the CLO block across two managers (Janus and Invesco) instead of one diversifies deal-selection and manager risk at no cost to the thesis. Verified currently listed and trading on BATS at $25.59 as of the 2026-09-28 close, $588mm AUM, ~98k average daily shares, 0.19% expense ratio, inception December 2022 - ample liquidity for a $1,000 book."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The energy-inflation hedge, deliberately trimmed from 20% to hedge size rather than carry size. The case to keep it is that the inflation forcing the Fed's hand is specifically an oil shock - Brent near $102, about $33 above a year ago, driven by attacks on shipping and energy infrastructure rather than by demand - and midstream is fee-based throughput that collects on volumes regardless of price, with record Q2 volumes, strong NGL margins, and structural LNG-export and data-center gas demand behind it. It is the only leg that participates if oil keeps running. The case to trim is that at a 6.05% distribution it pays barely 50bps over a 5.57% AAA CLO floater while carrying full equity and commodity risk, and its 3.29% loss since 09-16 reveals it is currently trading as a rate-sensitive yield vehicle being repriced by the hiking cycle, not as an oil proxy. That is inadequate compensation for the risk at a 20% weight, so 16% is the honest size. The 15% stop bounds the demand-destruction and geopolitical-resolution scenarios; the 25% take-profit harvests an outsized move if the supply shock worsens."
+  },
+  {
+   "symbol": "SPYI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "The index-variance sleeve, nudged from 6% to 8%. SPYI writes S&P 500 index calls and distributes the premium monthly, running a ~11.9-12.4% distribution rate - by far the highest carry in the book - and it is my only leg currently in profit on this leg at +1.64%. With VIX at ~16.3, near its 10-year average and inside a 13.8-18.9 month range, option premium is neither rich nor depressed, so this is a steady premium-harvest rather than a volatility bet. I keep the weight small and deliberately do not scale it up, because a Fed hiking into a $102 oil shock is a historically poor setup for equities and a covered-call structure buffers only by the premium collected while retaining essentially all of the downside. The 12% stop caps that downside. $53.34 at the 09-28 close, $12.31bn AUM."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

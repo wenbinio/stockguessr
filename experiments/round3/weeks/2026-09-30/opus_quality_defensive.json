@@ -1,0 +1,62 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Cross-asset carry and trend stacking with the falsified bank net-interest-margin leg closed and replaced by floating-rate loan carry, weight concentrated in the three engines a hiking Fed and supply-driven commodity inflation actually pay - broad commodity carry in backwardation, systematic managed-futures trend, and coupons that reset upward with the policy rate - alongside midstream and E&P energy carry and a covered-call premium sleeve, all long-only.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "The bank net-interest-margin leg is falsified and I am closing it rather than averaging down, the same discipline I applied to the short-semiconductor leg. I bought XLF on the premise that a hiking Fed widens net interest margin. The tape has now shown me the mechanism does not hold in this cycle: the spread between 2-year and 10-year Treasuries is at its narrowest since March 2025, so the Fed is lifting banks' funding costs at the front end while the long end - the asset side of the lending book - stays anchored. Hiking into a flattening curve compresses margin, it does not expand it. My premise was directionally right about rates and wrong about the shape that matters, and shape is the whole trade. A second, separate risk landed on top: Meta's Muse AI agent triggered a de-rating of businesses that monetise consumer inertia, driving XLF's worst six-day run versus QQQ since the SVB episode and taking the sector down 6.3% on the month, with Wells Fargo alone off 3.9% in a session. That is an unhedgeable narrative risk in a leg whose original rationale is already gone, and the fact that XLF now screens as cheap is not a reason to keep it - it is cheap because two independent things broke. The 12 points go to a carry engine with the same macro driver but an intact mechanism: senior floating-rate bank loans, whose coupons reset upward off short rates directly. That is the hiking Fed paying me a coupon instead of the hiking Fed maybe widening someone else's margin, and it carries neither curve-shape risk nor AI-disruption risk. I also add to the two engines the tape is validating - managed-futures trend, my only profitable leg at +1.72%, which is built to monetise exactly the sustained rate and commodity trends now in force, and commodity carry, where 5.7mb/d of shut-in Middle East production through Q4 and a further 1.7mb/d of inventory draw keep the curve in backwardation and the roll yield positive. XOP is trimmed two points to 9%: it is the highest-beta expression of the same crude view I already hold through AMLP, and crude fell 3.79% on 29 September, so I want the oil exposure weighted toward fee-based cash flow rather than drilling torque. Cash drops from 12% to 10% because the replacement leg is itself short-duration and cash-like.",
+ "positions": [
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 23,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The core commodity carry engine, raised one point to 23% and still the largest leg. This is a roll-yield trade, not a spot-price trade: with Middle East production shut-ins averaging 5.7mb/d through Q4, OPEC spare capacity down near 5.1mb/d and global inventories drawing a further 1.7mb/d in Q4 on EIA numbers, the physical deficit keeps the futures curve in backwardation, and an optimum-yield roll methodology harvests that positive carry every month regardless of whether spot goes up. It is the one asset that is long the same shock forcing the Fed's hand - core PCE has printed above 3% every month of 2026 and the hike cycle is supply-driven inflation, so this leg pays precisely when the rest of a long book is being discounted harder. The leg is down 0.36%, which is flat carry through a volatile month, and it takes no K-1. 12% stop, 25% take-profit to harvest a disruption-driven spike rather than round-trip it."
+  },
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "thesis": "Managed-futures trend, raised from 20% to 22% and my highest-conviction add. It is the only leg in the prior book that made money, at +1.72%, and it made it in the month that broke two of my other theses - which is the entire point of owning trend. The current macro is unusually trend-friendly in the technical sense: a first rate hike since 2023 with more in the dots, a curve flattening toward its tightest since March 2025, crude held elevated by persistent physical disruption, and a dollar repricing off all three. Those are sustained, multi-month directional moves across rates, FX and commodities, and they are exactly what a replication strategy monetises long or short without me having to pick the side. Critically, it is the only sleeve here that can be short, which makes it the book's structural hedge against my own long-only carry bias - if the commodity or energy legs are wrong together, this is the position with a mechanism to profit from that. 12% stop."
+  },
+  {
+   "symbol": "BKLN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "stop_loss_pct": 8.0,
+   "thesis": "New leg, funded directly by the closed XLF position, and deliberately the same macro bet executed through a mechanism that actually works. Senior secured floating-rate bank loans pay a coupon set as a spread over short-term rates, so it resets upward every time the Fed hikes - the 25bp move to 3.75-4% on 16 September flows straight into the coupon, and the additional hike in the December dots would too. That is a hiking Fed paying me directly, rather than a hiking Fed hopefully widening a bank's margin, which is the premise the flattening curve just falsified. Duration is near zero, so the curve shape that destroyed the XLF thesis is irrelevant here, and loans sit senior and secured in the capital structure rather than in the equity of businesses facing an AI-disruption narrative. The live risk is credit rather than rates - leveraged borrowers under higher-for-longer funding - but the Fed is hiking because demand and inflation are hot, not because growth is rolling over, and bank allowance-for-credit-loss coverage has been stable near 1.66%. Sized at 13% rather than the full 12-point rotation plus more, because credit spread risk is real and I want it as a carry sleeve, not a core holding. Tight 8% stop: a floating-rate loan fund down 8% is a credit event, not noise, and at that point the thesis is wrong and I want out mechanically."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Midstream energy carry, trimmed one point to 12% but retained as the quality expression of the energy view. Midstream partnerships earn fee-based, volume-linked tariffs with contractual inflation escalators, so revenue indexes to the same CPI that is forcing the Fed to hike while margin stays insulated from the crude price itself - this is carry, not a commodity-direction bet, which is why it belongs in this book alongside PDBC rather than duplicating it. The distribution yield is the return engine and it is funded from current distributable cash flow. The leg is down 2.61%, the worst in the prior book, dragged by the broad energy selloff into the 29 September crude drop of 3.79%; I am willing to hold that because volumes through the pipes are supported by exactly the inventory drawdown and production-replacement dynamic that the disruption is creating, and unit prices de-rated with spot crude that the cash flows are largely indifferent to. 12% stop."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 10.0,
+   "thesis": "Covered-call premium carry, held flat at 11%. The sleeve monetises implied volatility by writing upside against a low-volatility equity portfolio, and the setup for it is better now than when I entered: the index has been consolidating in a range for months with the desk flagging increasing fragility, which is the regime where a buy-write collects premium repeatedly without having its stock called away. Selling upside is the right trade-off in a market where the Fed is still hiking and the last two rallies have been given back. The leg is essentially flat at -0.25%, and the monthly distribution is the return I am underwriting rather than price appreciation. It stays at 11% rather than growing because it is still equity beta with a capped right tail, and this book's risk budget belongs in the commodity and trend engines that have a genuine asymmetry. 10% stop."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Exploration and production, trimmed from 10% to 9% - kept, but deliberately the smallest leg. It is the high-torque expression of the crude view: equal-weighted E&P names give roughly leveraged exposure to the oil price, so with Brent projected near $90 for 2H26 and the physical deficit intact it has the largest upside in the book if the Middle East shut-ins persist or deepen. But it is the same underlying risk I already hold through AMLP and PDBC, expressed in the form with the most beta and the least carry, and crude just fell 3.79% in a session on easing supply headlines. So I want the energy exposure weighted toward fee-based and roll-yield cash flow and only a modest tail in drilling economics. Widest stop in the book at 15% because E&P volatility would trigger anything tighter on noise, and a 30% take-profit to force a sale into a genuine supply-shock spike rather than let a disruption premium round-trip."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

@@ -1,0 +1,73 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade, now tilted hard at the one thing the tape is confirming: short long-duration Treasuries into a Fed that is hiking again, Japan switched from currency-hedged to unhedged so the BoJ tightening cycle pays us in yen, international developed value and European defense as the equity core, insurance geared to a 5.5% long end, emerging markets trimmed against a firming dollar, and Brazil removed ahead of a binary October election.",
+ "entry": "2026-09-30",
+ "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "Three things changed since the 2026-09-21 fill. First, the higher-for-longer call stopped being a forecast: the Fed hiked 25bp on 09-16 to 3.75-4.00%, 16 of 18 dots carry another hike, core PCE was revised to 3.4%, and the 10Y touched 5.23% with the 30Y at 5.55% - the highest since 2007 and 2004 respectively. My TLT short is the only leg in the book the tape has paid (+3.89%) and it was my smallest long-side conviction at 8%. Underweighting the one thesis that is being confirmed is the error I am fixing: TLT short doubles to 16%. Second, my Japan leg is on the wrong side of its own currency. DXJ hedges the yen, and I owned it for a 'firming dollar' - but the BoJ is accelerating tightening, the yen has strengthened ~1.55% over the past month with USD/JPY back to 157, and hedged Japan gives that appreciation away. I am swapping DXJ for unhedged EWJ, which keeps the Takaichi-reform equity exposure and stops fighting the one G10 central bank whose currency has a hiking tailwind. Third, EWZ is my worst leg (-4.89%) and Brazil's general election lands in October, inside this holding period. The real's carry is genuinely attractive, but a binary political event is not something I am being paid to underwrite at 8% in an already-drawdown book, so it goes to zero. VWO is trimmed 16->10 because a firming dollar is a headwind to the whole EM complex and I would rather own the parts of ex-US that have a domestic rate cycle working for them than the broad beta. Gold's ~4% single-day break is not in this book but it is the tell that real yields, not growth, are now setting prices - which is the same signal that argues for short duration and for value over everything else. Cash goes to 16% at 4% APY, which in this regime is a real competitor to a marginal long, and gross drops to 84% because the book is -6.70% and I want the concentration in the confirmed leg, not in the size.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The book's only winning leg and now its anchor. The Fed hiked in September for the first time since 2023, the median dot carries one more, and inflation is not projected back to target until 2029 - while the 30Y at 5.55% and 10Y at 5.23% show the long end repricing term premium rather than growth. TLT is the purest expression of that and it is a non-US-equity way to own the macro, which keeps me inside a mandate that is about avoiding the US index-structure trade, not about avoiding US instruments. Doubled from 8% to 16% because this is the thesis the tape confirmed. Sized at 16 rather than higher because two decades of yield highs is already a crowded short and the 3% borrow plus a violent risk-off reversal are the ways this loses; the 10% stop caps that."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Replaces DXJ as a direct correction of a broken assumption. I held hedged Japan for a firming dollar, but the BoJ is accelerating its tightening cycle and the yen has strengthened against the dollar over the past month - so the hedge is now a short of the one currency with a central-bank tailwind, and DXJ has gone nowhere (-0.23%) while EWJ's underlying market has run ~41% over the past year on the Takaichi reform agenda. Unhedged EWJ keeps the corporate-governance and reflation equity story and adds yen appreciation instead of paying it away. Japan is also the cleanest place in developed markets to own equities whose rate cycle is domestic rather than imported from the Fed."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value, upsized from 9% to 14% and promoted to co-core of the equity sleeve. When real yields set prices, long-duration equity multiples compress and near-cash-flow value outperforms - EFV is heavy in European and Japanese banks and insurers whose net interest margins widen with the very long-end move that is hurting everything else I own. It has also been the most resilient long in the book (-1.15%). No take-profit: this is a regime holding I want to let run, not a trade."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "European rearmament is a multi-year budget commitment funded by national defense floors, not a rate-sensitive growth story, which is why I want it in a book that is otherwise getting pushed around by the discount rate. Held flat at 12% - the -2.17% mark is beta, not a thesis break, and European defense primes are the rare ex-US industrial whose order books are insulated from both the dollar and the Fed. Wide 15% stop because the sector is volatile around headline risk."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Upsized from 8% to 12% because its thesis just got the confirmation the market gave TLT. Insurers reinvest float at the long end, and the long end went to 5.55% - the highest since 2004. The -3.26% mark is the sector trading down with equity beta while the actual economics improve, which is the setup I want to add to rather than cut. This is the one US-listed equity sleeve I keep, and it belongs: it is geared to the rate structure, not to the mega-cap index concentration my mandate exists to avoid."
+  },
+  {
+   "symbol": "VWO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Trimmed from 16% to 10%. The EM valuation gap to the US is still the widest in years and I do not want zero exposure to the broadening trade's biggest prize, but a Fed that is hiking again with the dollar firming is the classic EM headwind, and dollar strength hits the index through both currency translation and local funding costs. Ten percent keeps the option on EM without making the dollar the book's dominant risk factor."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Trimmed from 12% to 6% and demoted to a residual. With EWJ and EFV both upsized, VEA's broad developed-market exposure is now largely duplicated by holdings I own for specific reasons, and the part of it that is not duplicated is the growth-tilted half that a rising real-yield regime penalises. Kept at 6% purely as breadth so the ex-US sleeve is not three concentrated bets and nothing else."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}
