@@ -1,1 +1,71 @@
-{"decision":"HOLD","reason":"Interim safety-net entry pending this week's research. The real-asset/short-duration carry book is only three days into its 2026-09-30 leg, the VTIP/USFR anchor is doing its job, XLE and COMT carry the gains, and the only losers are the defensive-pharma sleeve (AMGN -4.38%, GILD -2.89%) which is a diversifier held for low beta, not a momentum leg to be stopped out on three days of noise."}
+{
+ "name": "Opus Momentum",
+ "strategy": "Net-low-beta real-asset and short-duration carry for a confirmed inflationary hiking regime: a short-dated TIPS and floating-rate Treasury anchor sized up to a third of the book because a hike is now live, energy and broad-commodity cash-flow carry into the deepest oil deficit in five years, and value/min-vol/defensive-pharma risk premia \u2014 with the gold sleeve retired because real yields at 24-year highs, not inflation alone, set the gold price.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "This book's standing thesis \u2014 an inflationary hiking regime \u2014 got the strongest confirmation it has had all quarter, so the changes are about following my own logic more honestly, not about changing direction. The 10y hit 5.33% and the 30y 5.67%, both 24-year highs, the 2y is at 4.92%, and the market prices roughly a 39% chance of an October HIKE, with the stated cause being energy-driven inflation plus a ~$40.1tn debt load. That is this book's scenario happening in print. Two legs were therefore cut for contradicting it. GLD goes to zero: my own strategy of record says real yields set the gold price, and gold has now fallen from a $5,608 January high to ~$4,140 while the 10y went 5.02% to 5.34% in two weeks. J.P. Morgan's own sensitivity is roughly $20/oz per basis point of real yield, so holding 6% in the single asset most mechanically short real yields, inside a book built on real yields rising, was an unhedged contradiction. The geopolitical tail hedge it was supposed to provide is being done better and with positive carry by the energy sleeve, because the conflict risk IS the oil price here. AMGN also goes to zero: it was held as low-beta defensive ballast and it has stopped behaving that way. Its loss is idiosyncratic pipeline impairment, not market beta \u2014 Novartis's pelacarsen missed on cardiovascular outcomes, the market marked Amgen's olpasiran down on the same Lp(a) premise, the stock fell 10.08% in a day, its worst since October 2000, and it is still sliding, roughly 15% below its 03-Sep high. A binary readout on a shared scientific hypothesis is the opposite of the diversifier I wanted. The proceeds went to the leg the regime pays directly: USFR from 5% to 13%. Floating-rate Treasuries reset their coupon UP if the Fed hikes, which makes them the cleanest long expression of the live October risk and the only leg in the book that gets better if I am right about rates. VTIP 18 to 20% and XLE 12 to 14% are small adds to the two working anchors. Total one-way turnover is about 12% of the book, so I am paying a few basis points to remove two contradictions and add to the regime trade. Overlap with my Round 2 book is zero by symbol and zero by same-direction gross weight: Round 2 is long AI semis, power equipment and E&P against short duration and short homebuilders, which is a different and in places deliberately opposite expression of the same rate view.",
+ "positions": [
+  {
+   "symbol": "VTIP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "thesis": "Sized up from 18% to 20% as the book's largest holding and its ballast. Short-dated TIPS are the one instrument that pays me for being right about inflation without making me wrong about rates: the duration is short enough that a 5.33% 10y does little damage, while the principal accrues with a CPI that is being pushed by ~$104 Brent. That asymmetry is the whole reason this book has a -4.12% max drawdown against a book-life loss of only 0.54% while the long end made 24-year yield highs. No stop and no take-profit by design \u2014 a stop on a short-duration inflation-linked anchor would convert a volatility dampener into a thing that can be shaken out of the portfolio at the worst moment."
+  },
+  {
+   "symbol": "USFR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "thesis": "The main change in the book: up from 5% to 13%, funded by the GLD and AMGN exits. Floating-rate Treasury notes reset to the bill rate, so with the 2y at 4.92% and roughly a 39% market-implied chance of an October hike, this is the only leg whose income RISES in the scenario my book is positioned for, with effectively no duration to lose while it happens. It is a strictly better version of sitting in cash at 4% APY while still being short-duration \u2014 and in a regime where the market is debating a HIKE rather than a cut, paying nothing for duration is the point. No stop: a floating-rate Treasury fund has no drawdown mechanism worth stopping out of, and putting one on would be theatre."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Up from 12% to 14% and the best performer in the book (+2.15%). Brent ~$103.9 and WTI ~$91.2, crude ~50% above a year ago, and supply described as the deepest global deficit in five years with deployments extended into 2027. I hold the integrated majors here rather than high-beta E&P deliberately: this is a low-beta carry book, and XLE's dividends and buybacks turn the oil deficit into realized cash flow rather than a drilling-levered price bet. It also now doubles as the book's geopolitical tail hedge in place of gold, with the advantage of positive carry instead of a zero-coupon asset fighting 24-year-high real yields. Stop at 13% because a ceasefire headline is the one event that takes both the oil price and this leg down together."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "thesis": "Held at 11% as the broad-commodity complement to the single-sector energy leg, +0.43%. Its dynamic roll is the specific feature I want: in a supply-deficit market the curve backwardates, and a roll-optimized structure harvests that rather than bleeding on it, which is how a commodity index leg earns carry instead of just tracking spot. It also diversifies the inflation exposure beyond crude into metals and agriculture, which matters because the yield move this week was attributed to broad energy-driven inflation rather than one barrel price. No take-profit: this is a regime holding meant to compound through the cycle, and capping it would defeat the point of owning the inflation itself."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "Held at 10%, +0.79%. This is the book's claim on the equity risk premium with the beta deliberately engineered out, which is the only form of equity exposure that belongs in a net-low-beta mandate when the S&P sits at 7,666 against a 5.33% risk-free 10y. That gap is the real risk I am managing: if the multiple compresses because the discount rate repriced rather than because earnings broke, minimum-volatility construction is what limits the damage. No stop \u2014 low-vol equity is held precisely for the drawdowns when I would otherwise be forced to sell, and a stop would force exactly that sale."
+  },
+  {
+   "symbol": "VLUE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "thesis": "Held at 9%, +1.11%. Value is the factor with the shortest implied duration in equities \u2014 the cash flows arrive sooner, so a 5.33% discount rate hurts it least, and it is structurally the right factor premium to own when the long bond is making 24-year yield highs. It is also the cleanest counterweight inside my own mandate to the long-duration growth complex that my Round 2 book is long, which keeps the two books genuinely independent expressions rather than one bet in two wrappers. No stop: factor premia are harvested across cycles and get stopped out at precisely the wrong point in them."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 13.0,
+   "thesis": "Held at 7% and now the larger of the two remaining pharma legs after the AMGN exit, down only 0.70%. It stays because its small loss is ordinary sector beta rather than an impaired thesis \u2014 unlike Amgen, it has no exposure to the failed Lp(a) hypothesis that broke that leg. Large-cap pharma earns its place here on cash-flow durability and inelastic demand, which is the kind of defensive income this book wants when the discount rate is 5.33%. Stop at 13% because US drug-pricing policy remains a live top-line risk for the sector that no amount of balance-sheet quality hedges."
+  },
+  {
+   "symbol": "GILD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 13.0,
+   "thesis": "Held at 6% despite being 2.89% underwater, deliberately not sized up and deliberately not cut. The drawdown is sector drift from a week when pharma was marked down on an Lp(a) read-across that has nothing to do with Gilead's HIV and virology franchise, so cutting it would be selling an unrelated asset for someone else's trial failure \u2014 the same error in reverse that kept AMGN too long. Its franchise cash flows are about as rate-insensitive and recession-insensitive as listed equity gets, which is the defensive premium this sleeve exists to hold. Kept at 6% rather than larger because after retiring AMGN I want the pharma sleeve at 13% of the book in total, not rebuilt to its old size. Stop at 13% for the same drug-pricing policy risk that caps the MRK leg."
+  }
+ ]
+}
