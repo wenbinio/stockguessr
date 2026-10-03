@@ -91,9 +91,16 @@ def main() -> int:
         # SOXL short listed live five sessions after the stop fired. The engine was
         # always right (it zeroes the position and banks the proceeds); only this
         # display was wrong.
+        # Strictly after the entry date. A standing order cannot fire on the leg's
+        # own entry day: the position fills at that close, so its P&L is zero. A
+        # fill dated ON the entry therefore closed the PREVIOUS leg's position,
+        # and attributing it to the new one marks a live holding as gone — which
+        # is how Sonnet deep value's GM, stopped out of the old leg at 77.00 and
+        # re-opened in the new leg at 77.00 the same close, first showed up as
+        # "CLOSED ... +0.00 realized".
         closed = {}
         for f in bk["fills"]:
-            if f["action"] in ("STOP_LOSS", "TAKE_PROFIT") and f["ts"][:10] >= entry:
+            if f["action"] in ("STOP_LOSS", "TAKE_PROFIT") and f["ts"][:10] > entry:
                 closed[(f["symbol"], f.get("side", "long"), f.get("kind"))] = f
         rows = []
         for p in bk["live"]["positions"]:
