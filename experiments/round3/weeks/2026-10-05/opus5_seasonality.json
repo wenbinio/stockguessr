@@ -1,0 +1,84 @@
+{
+ "name": "Opus 5 seasonality",
+ "strategy": "Lean into the midterm-year October/Q4 statistic now that the calendar window is actually open: raise index and small-cap beta, keep the distillate-seasonality refiner legs where the Hormuz catalyst is landing, cut the Fed-path rate shorts the weak September payroll broke, and keep one small long-end steepener plus a modest Uptober crypto leg.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "Two things changed between the 09-30 fill and the 10-02 close, and they point in opposite directions on the two halves of this book. First, the seasonal window I pre-committed to is now genuinely open and I am under-exposed to it: October is the best month of the year in midterm years (avg ~3.0% on the S&P, higher gains frequency than any other month), Q4 of midterm years has averaged ~5.6% since 1930 versus ~2.9% for Q4 generally, the record $1.3T buyback authorization window reopens from Oct 15, and CTA equity positioning has already been cut hard, which is the setup that turns a seasonal drift into a squeeze. Sitting at 70% gross with 30% cash through the single best statistic in my mandate is why this book is -0.41% while SPY is +3.80%; that is a process error, not bad luck, so I am deploying the dry powder into the statistic rather than holding it for a cheaper entry that the calendar says is unlikely to come. Second, the rate-shock half of the book lost its catalyst. The September payroll printed +29k against +84k expected with unemployment up to 4.2%, October hike odds collapsed, and the 2-year fell 6bp; the Fed-path short (IEF, the belly) is now fighting the data instead of riding it, so it goes. XLU goes too, for a different reason: short utilities is no longer a fresh idea but a crowded one after ~30% underperformance versus the S&P, with put/call flow flipping to calls and strategists openly calling it for a bounce - that is a short I want to be out of before the mean reversion, not during it. What I keep on the rates side is only the long end, and only small: if the Fed pauses into still-elevated inflation the curve bear-steepens, which hurts the 30-year specifically, so TLT short survives at a reduced 10% as the book's rate expression and its hedge against the equity beta I just added. I am adding IWM because small caps give the cleanest exposure to this exact statistic (midterm-year Octobers average +3.5%, higher in 83% of instances since 2002) and they come in beaten up, -7.2% on the quarter and ~9% off the August high, so the seasonal tailwind meets a washed-out tape rather than a stretched one. Refiners stay and get slightly larger because that leg is working for the reason I wrote down: Goldman now models US refiner diesel margins near $50/bbl in Q4 on products export losses of ~4mb/d, consensus 2026 Brent has been marked up to ~$89 from ~$85, and distillate seasonality is independently positive from October into January, so the seasonal and the catalyst agree. Net effect: gross 70% to 86%, rate-short gross 28% to 10%, and the book's risk moved from a rate-shock bet into the calendar bet my mandate is actually about. I am keeping 14% cash at 4% so that October - the most volatile month of the second half - can be bought into rather than only endured.",
+ "positions": [
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 7.0,
+   "take_profit_pct": 12.0,
+   "thesis": "The core expression of the mandate's single strongest statistic, upsized from 12% because the window is now open rather than approaching. October is the best month of the midterm year (~3.0% average) and Q4 of midterm years averages ~5.6% since 1930, roughly double the all-years Q4. Three live mechanics support the statistic this cycle rather than just the average: the $1.3T record buyback authorization re-opens its execution window from Oct 15, CTA/systematic equity exposure has already been cut so the marginal flow is a buyer, and the 10-02 payroll miss takes the October hike off the table, which removes the specific shock that was capping multiples. 22% is the largest single leg but it is index beta, not idiosyncratic risk, and the 7% stop is tight enough that a genuine seasonal failure - the midterm-October pattern breaking - takes me out for under 1.6% of the book."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "The highest-quality version of the same seasonal bet, and new to this book. Midterm-year Octobers have averaged +3.5% on small caps with gains in 83% of instances since 2002, and November is nearly as strong (+3.1%, positive in all six instances), so the pattern is both larger and more reliable down-cap than in the S&P. Crucially the entry is not stretched: the Russell 2000 fell 7.2% in Q3 and sits ~9% below its August high after rising yields punished floating-rate small-cap balance sheets, so I get the seasonal tailwind on a washed-out tape instead of on a momentum extension. The 10-02 payroll miss cuts both ways here - it is the leg most exposed if weak labour becomes an actual earnings problem rather than just a Fed-path story - so I size it at 12%, half the SPY leg, and set the stop wider at 9% to respect small-cap volatility without letting the position become the book's dominant risk."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The best seasonal-AND-catalyst leg in the book and already +4.8% from the 09-30 fill, so I am adding to a winner where the reason is intact rather than taking the profit. Distillate cracks are seasonally strong from October into January as heating demand builds and autumn maintenance pulls supply, and this year that calendar sits on top of a genuine supply shock: global refined product exports are running ~4mb/d below pre-war levels with the Hormuz disruption dragging on, and Goldman now models US refiner diesel margins near $50/bbl for Q4 against $37 in Europe. Valero is the most distillate- and export-levered of the large US refiners, so it is the cleanest way to own that specific margin. I keep the wide 14% stop because refining equities are high-beta to crack prints and a tight stop would be noise-stopped out of a thesis measured in months, and the 30% take-profit reflects that a Hormuz normalisation headline is the one event that ends this trade abruptly."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Same distillate-seasonality-plus-Hormuz thesis as VLO, held as a pair so the book owns the Q4 US refining margin rather than one company's operational luck - a single unplanned turnaround at one refiner should not decide whether the leg works. Marathon adds the largest US refining footprint by capacity and a midstream earnings stream that cushions the downside if cracks mean-revert faster than the seasonal suggests. It is the book's best performer at +6.8% in two sessions, which is informative rather than a reason to trim: the margin data is being revised up, not down, and consensus 2026 Brent has been marked to ~$89 from ~$85 over the past month. Sized at 10%, marginally under VLO because it is the less distillate-levered of the two, with the same 14% stop and 30% target so the pair is managed as one risk."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Held unchanged at 6% as the upstream complement to the refiner pair, and deliberately not upsized. The crude leg of the Hormuz story is working - consensus 2026 Brent marked up to ~$89 from ~$85, WTI to ~$83.90, and the leg is +2.2% - but refiners, not producers, are where the actual catalyst is landing, because the shock is in products supply rather than in crude availability. XLE earns its place by being the leg that pays if the conflict escalates to crude supply itself, which is precisely the scenario in which the equity beta I just added would be falling; it is partly a hedge on the SPY and IWM legs. A 10% stop is tighter than the refiners' because XLE is more directly a price-of-oil position and a de-escalation headline hits it first and hardest."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Kept and modestly upsized from 7% as the sector expression of the midterm-Q4 statistic, where financials are historically among the stronger Q4 performers and where a dated catalyst arrives inside the holding window: big-bank earnings open reporting season in mid-October, the same week the buyback execution window reopens, and banks are the largest single source of those repurchases. The rate backdrop also now helps rather than hurts this leg in the configuration I expect - a Fed on hold with a long end anchored near 5.3% is a steeper curve and a better net interest margin than the flattening the September hike produced, which is the same bear-steepener view the TLT short expresses, so the two legs are coherent. The leg is flat (+0.2%) since the fill, so I am adding at essentially my own cost rather than chasing. 9% stop sits just outside normal sector noise."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 14.0,
+   "thesis": "The only rates leg I keep, cut from a 28% three-leg rate-shock complex to a single 10% long-end short, because the half of the thesis that survived the payroll print is the term-premium half, not the Fed-path half. A Fed that pauses with inflation still elevated is the textbook bear-steepener: the 2-year rallies on the pause while the 30-year - already at 5.57% and carrying the fiscal supply burden - does not follow, which is exactly where a short expresses itself. I hold this at reduced size and not larger because the counter-evidence is real and recent: TLT rebounded on 10-02 and the signals that a bond selloff is ending are being flagged, so this is a position I want sized to survive being early rather than to be the book's main bet. It also earns its keep as the hedge against the 55% long equity beta I just added, since the scenario that breaks SPY and IWM into year-end is a renewed yield spike. 3% borrow cost is cheap for that insurance; the 8% stop caps the cost of being wrong at under 1% of NAV."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 25.0,
+   "thesis": "A second, genuinely independent calendar statistic for a seasonality book, which is the whole point of holding it alongside the equity legs. October is bitcoin's strongest month on record - higher in 10 of the last 13 years with an average near 18-20% - and that is a larger and better-documented seasonal edge than anything in the equity calendar. The entry is also not extended: BTC closed September near $83.5k and trades in the mid-$80ks, having gone sideways rather than parabolic into the window, and market-implied odds of a $100k October have collapsed from 85% to 13%, so the seasonal is being priced out just as it opens. I size it at only 6% for two reasons: 35bps per side makes crypto spot the most expensive thing in this book to own, and October 2025 is the live precedent for how a single macro shock cancels Uptober, with $19bn of leveraged liquidations in one session. 6% spot with a 14% stop means the tail scenario costs under 1% of the book, while a median Uptober pays multiples of that."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

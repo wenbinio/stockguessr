@@ -1,0 +1,73 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade: short the long end for term premium and deficit supply rather than for Fed policy, Japan switched back to currency-hedged because the BoJ's hikes are weakening the yen rather than strengthening it, European rearmament and international developed value as the equity core, insurance collecting a confirmed 5.6% long end, and emerging markets restored against a dollar that is now falling on a paused Fed.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "This book's two biggest ideas both needed work this week, in opposite directions. The Japan leg is an outright error I am correcting: last week I switched EWJ from currency-hedged to UNHEDGED specifically so 'the BoJ tightening cycle pays us in yen.' The BoJ then hiked 25bp to 1.25% in September, the highest policy rate since 1995 and the shortest interval between hikes since 1990 - and the yen WEAKENED past 157 to the dollar while JGB yields slipped and the Nikkei rose 1.5%. That is the precise opposite of the mechanism I bought, and it is not a one-day fluke but the established pattern of this cycle: Japanese equities rally on normalisation while the currency keeps sliding. Unhedged exposure donates that equity gain back through the yen, so I switch to DXJ and take the Japanese equity upside with the currency hedged out, which also tilts me toward the exporters and financials that BoJ normalisation actually helps. The TLT short is the opposite case - right leg, wrong stated reason. I justified it as shorting duration 'into a Fed that is hiking again,' and on 10-02 the Fed stopped: a +29k payroll print and a soft inflation report took October hike odds to ~17%, yields fell and the dollar dropped. But that repriced the FRONT end, and TLT is 20+ year paper. The 30-year closed at 5.59% on 10-02, a 19-year high, up 34bp in a month, and it is being driven by term premium, deficit supply and AI capex competing for capital - none of which the Fed pausing fixes, and a Fed that pauses with inflation still a risk steepens the curve, which is short-TLT-positive. So I keep the leg and raise it to 18%, on the correct thesis this time. Elsewhere I reverse one trim: I had cut emerging markets 'against a firming dollar,' and the dollar is now falling on a paused Fed, so VWO goes back up. KIE's thesis was that insurance is geared to a 5.5% long end; the long end printed 5.59%, so that leg is simply confirmed and stays. I am staying out of Brazil: its general election first round is 10-04, one day before my entry fills, and re-entering a binary the day after it resolves but before I can see the result is a coin flip, not a view.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Raised from 16% on a rewritten thesis. The short is not a bet on the policy rate - the Fed just paused, with October hike odds down to ~17% - it is a bet on the long end, where the 30-year closed at 5.59% on 10-02, a 19-year high and 34bp higher in a month. That move is term premium, Treasury supply against persistent deficits, and AI capex bidding for the same capital, and a central bank that stops hiking while inflation risk lingers steepens the curve rather than rescuing 20+ year duration. Note also that the cost of carry runs my way: a short pays 3% borrow while idle cash earns 4%. Stop at 10% because a genuine growth scare is the one thing that would bid long bonds hard, and the 4.2% unemployment print says that risk is live."
+  },
+  {
+   "symbol": "DXJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Direct correction of last week's mistake, replacing unhedged EWJ. The BoJ hiked to 1.25% in September, its highest since 1995, and the yen still weakened past 157 while the Nikkei gained 1.5% - so Japanese equity strength and yen weakness are arriving together, and unhedged exposure hands the equity gain back in the currency. DXJ hedges the yen out and is tilted to dividend-paying exporters and financials, both of which are the actual beneficiaries of normalisation: exporters earn more in yen terms as it slides, banks earn more as domestic rates finally rise off zero. The 10-29/30 BoJ meeting with an Outlook Report is the next catalyst, and on this cycle's evidence a hawkish surprise there helps this leg and would have hurt the one I am replacing."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Raised from 12% because this is the leg whose fundamentals got better while its price did not - it is my only losing position whose order book is independently confirmed. NATO Europe is set to spend ~$639bn in 2026 with well over a third on procurement and R&D, Germany's 2026 budget earmarks ~EUR108bn for defence, a 25% year-on-year increase, and it is targeting 3.5% of GDP by 2029, six years early. NATO's own Secretary-General has warned manufacturers cannot keep pace with demand, which is the definition of pricing power for Airbus, Rolls-Royce, Safran, MTU and Rheinmetall. Multi-year legislated budgets are about the least Fed-sensitive revenue stream available to me, which is exactly what I want alongside a duration short."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value is the ex-US core of the broadening mandate and gets a direct tailwind from 10-02: the dollar fell as hike odds faded, and unhedged ex-US value translates a weaker dollar straight into returns. Value also carries far less of the index-concentration risk that makes me uncomfortable owning the US tape here - this is the portion of the world's equity market that never participated in the 40%-top-ten problem. Held flat at 12% rather than raised because the same soft-growth data that weakens the dollar is not good for cyclical value earnings."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Thesis confirmed rather than revised, so the position stands. I bought this geared to a 5.5% long end; the 30-year printed 5.59% on 10-02 at a 19-year high. Insurers reinvest float into that curve, so every month the long end stays here mechanically raises forward investment income on a book they have already written, and a 2026 of elevated catastrophe and war-risk loss activity supports the pricing cycle on the underwriting side. This is also the natural long partner to the TLT short: both legs profit from a long end that stays high, so they express one macro view through two different balance sheets."
+  },
+  {
+   "symbol": "VWO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Restored from 10% because the reason I trimmed it has reversed. I cut emerging markets against 'a firming dollar'; on 10-02 the dollar fell outright as October hike odds collapsed to ~17%, and a Fed that has stopped hiking is the single most important variable for EM, which borrows and prices in dollars. EM is also the largest pool of equity in the world trading at a discount with no exposure to US index concentration, which is the mandate in its purest form. Keeps me diversified away from the developed-market rate trade that dominates the rest of this book."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Small broad developed ex-US position held as the neutral ballast of the book. It is deliberately the only leg here with no sharp thesis: EFV expresses the value factor, DXJ the hedged Japan call and EUAD a single sector, and if my factor and currency judgements are wrong but ex-US equity still beats a concentrated US index, this leg collects that. Kept at 6% so it dilutes rather than drives."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

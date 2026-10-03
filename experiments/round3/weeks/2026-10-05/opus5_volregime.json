@@ -1,0 +1,56 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "Stagflationary vol-dispersion book: long the supply-shock inflation that is physically happening (energy equities, broad commodities), short the two most rate-and-labor-sensitive assets (small caps, long duration), with a small defined-cost VIX tail and 22% cash at 4% - low net exposure, high internal dispersion.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "The regime call in the book of record was right and the instruments were wrong. I said the real volatility in this regime is rates, and the tape confirmed it hard: MOVE 108 after a ~30% one-week jump, the 10y at 5.24% (a 19-year high), while VIX closed 15.31 and the S&P closed at a record 7,666. But I expressed that view with a 76%-gross, six-position book that earned nothing (-0.99% vs SPY +3.80%) and with two legs that were filler rather than regime expressions. Three things changed my thinking this week. (1) The 10-02 payroll print - 29k against an 84k forecast, 60k of downward revisions, unemployment 4.2% - converts this from an inflation regime into a stagflation regime, with core PCE still 3.4% and a Warsh Fed that hiked to 3.75-4% and guides to one more. That makes the duration short two-sided at a 19-year yield high, so I cut TLT from 18% to 12% rather than pressing it. (2) I checked the VIX curve before upsizing convexity and it killed my own plan: 116 consecutive days of contango with VIX3M at 17.6 against spot ~14-15, and the extreme-complacency signal historically resolving in 3-9 months, not in my holding period. I had drafted VIXY at 14%; paying that roll bleed for a catalyst outside my window is how this book lost money being clever, so VIXY stays an 8% defined-cost option, not a core holding. (3) The better way to be short complacency has no carry cost: the Russell 2000 has 32% of its debt at floating rates against 6% for the S&P 500, is already down over 6% this quarter, and is the first casualty of a 5.24% long end plus a 29k labor market. So I drop XLV and VLUE - a defensive healthcare sleeve and a generic value factor are not volatility-regime expressions and XLV was my only loser - and concentrate into energy long versus small-cap and duration short. Net exposure is only about +18% but internal dispersion is high, which is the correct shape for a vol book when the macro is stagflating and equity implied vol refuses to price it.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 28,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The one inflation trade with a physical cause rather than an expectation: Strait of Hormuz disruption to over 20% of seaborne oil, Brent near 97 and up roughly 19% on the month, S&P energy earnings forecast +57% for 2026, XLE +28% YTD and +9% over 30 days against a roughly flat SPY. Sized up from 17% to the book's conviction leg because this is realized supply-shock inflation and it is the engine behind the 3.7% headline the Fed is hiking into. Held at 28 rather than higher out of respect for the named gap risk - a durable Hormuz ceasefire would compress the geopolitical premium fast - which the 13% stop bounds to under 4% of book."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New leg and now the primary way this book is short equity complacency, chosen over more VIX exposure specifically because a short has no roll decay against 116 days of contango - I pay 3% borrow instead of several percent a month in carry. The mechanism is concrete: 32% of Russell 2000 debt is floating-rate versus 6% for the S&P 500, so a 5.24% long end compounds directly into small-cap interest expense, and a labor market adding 29k jobs with 60k of revisions removes the growth offset that let small caps shrug off rising yields earlier in 2026. Already down over 6% this quarter and underperforming by the widest margin since 2020, so the trend is confirmed rather than anticipated. It also pays in the hard-landing tail where VIXY pays and the TLT short loses, which is what makes this book something other than a one-way inflation bet."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Held unchanged at 12%. Broad commodity roll exposure diversifies XLE's equity beta inside the same inflation thesis: if a ceasefire headline compresses the risk premium in oil equities, it should hit energy share prices faster and harder than the broad commodity complex, and COMT carries no single-sector earnings or buyback sensitivity. This is the inflation-linked real-asset sleeve doing its job, and at +0.43% it has no thesis damage to answer for."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Cut from 18% rather than held or pressed, which is the single biggest change in risk here. Short duration still belongs: the Fed hiked to 3.75-4%, 16 of 18 participants expect another this year, swaps imply about 70% odds for October, and core PCE at 3.4% with oil near 97 keeps feeding the long end. But I am now short a bond at 5.24%, the highest 10y since 2002, reached after a 30% one-week MOVE spike and already retreating from the high - most of the hawkishness is in the price, and the 29k payroll print makes a flight-to-quality rally a live tail rather than a theoretical one. Halving it keeps the carry and the regime exposure while cutting what is now a crowded, two-sided position at an extreme."
+  },
+  {
+   "symbol": "VIXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 80.0,
+   "thesis": "Kept small and deliberately not upsized. The mispricing is real - VIX 15.31 and falling with the S&P at a record, a 19-year high in long yields, core PCE 3.4%, a shooting war on a fifth of seaborne oil and payrolls at 29k - but the instrument bleeds: 116 straight days of contango with VIX3M at 17.6 over a ~14-15 spot means persistent negative roll, and the complacency signal historically resolves over 3-9 months rather than inside a weekly book. So this is sized as the premium on a defined-cost option that pays multiples in a genuine spike, with the 80% take-profit set to monetize a move toward VIX 30, not as a position expected to carry the book. The wide 25% stop is intentional - a tight stop on a decaying hedge just guarantees paying the premium and losing the optionality."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

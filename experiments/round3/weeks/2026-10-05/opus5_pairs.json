@@ -1,0 +1,44 @@
+{
+ "name": "Opus 5 pairs",
+ "strategy": "Two equal-weighted, same-industry relative-value pairs built on dated company-specific guidance divergences - long STLD / short NUE in steel and long UAL / short AAL in airlines - run at 70% gross with 30% cash at 4%.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "Two changes, one conviction and one correction. CORRECTION: I am retiring the M/KSS department-store pair because its premise did not survive re-reading the filings. I built it on a guidance divergence, but both names RAISED full-year guidance - Macy's lifted sales, comps, EBITDA and EPS guidance on 2026-09-10, and Kohl's also raised its FY outlook on 2026-08-26 to $1.80-2.40 EPS with gross margin up 305bps, a restarted buyback of up to $100M and a maintained dividend. The real gap was only comp quality (M +2.7% vs KSS -0.9%, where the KSS beat leaned on roughly $150M of one-time tariff refunds), a far thinner edge than I had sized it for. Worse, the short leg is the most crowded short in consumer discretionary: KSS short interest was 29.4% of shares outstanding and about 41% of float as of 2026-10-01, rising off a ~24% trough in late September after the stock nearly tripled from its April lows, and it has a Reddit-driven squeeze in its history. Paying 3% borrow to stand in front of 41%-of-float short interest, in a company that is raising guidance and expanding gross margin, to harvest a 3.6pp comp difference is the wrong side of a convexity trade - a squeeze costs multiples of the fundamental edge and would blow through an 18% stop in a single session. That pair was also the losing half of the book, roughly -0.31% net across its two legs since the 09-30 fill. CONVICTION: I am sizing the steel pair up from 15/15 to 20/20 because it has an unusual property going into earnings season - BOTH legs have already pre-released quarterly guidance (STLD on 09-17, NUE for its quarter ended 10-03), so the 10-19 and late-October prints are largely de-risked and what is left to trade is the forward divergence rather than a surprise. REPLACEMENT: the airline pair restores a genuine directional divergence - raised versus cut - with a short leg that is liquid and not crowded. Net effect: gross 60% to 70%, cash 40% to 30%, the book stays close to market-neutral, and total friction for the switch is well under $1 on a $1,009 book, so churn is not the binding consideration - idea quality is. I omit take-profits deliberately: stops and TPs are evaluated per leg against my entry fill, so a TP firing on one leg would orphan the other and convert a hedged pair into a naked directional bet. Stops are wide and symmetric within each pair for the same reason.",
+ "positions": [
+  {
+   "symbol": "STLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "thesis": "Long leg of the steel pair, upsized from 15% on a forward catalyst NUE does not have. STLD's 09-17 guidance of $5.34-5.38 read as a headline miss against roughly $5.60 consensus and the stock sold off, which is where my 09-30 fill at 221.61 came from; the contents were better than the headline - record shipments, metal-margin expansion across the platform, and higher realized selling values against lower scrap costs. Two company-specific drivers run past this quarter: a steel-fabrication backlog nearly 50% above prior-year Q3 that extends through Q1 2027, and the Columbus, Mississippi aluminum flat-rolled mill, where all three cold mills are operational and the first CASH line ships commercial material in Q4 2026 - a new earnings stream starting now. Because STLD pre-guides, the 10-19 print should land near a number already public, so I am paid for the forward divergence rather than exposed to a surprise."
+  },
+  {
+   "symbol": "NUE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "thesis": "Short leg of the steel pair, matched at 20% so the trade expresses company-specific divergence rather than a view on hot-rolled coil. NUE guided its quarter to $5.55-5.65, but the composition is weaker than STLD's: steel mills and steel products improve on higher realized pricing while Raw Materials deteriorates on both lower pricing and lower shipments, and NUE has no ramping new-capacity earnings stream comparable to STLD's aluminum mill - its incremental dollar comes from price, a shared industry input I am hedging out, not an idiosyncratic one. Holding it short also caps the pair's exposure to a steel-price reversal, which is the main way the long leg could be wrong for reasons that have nothing to do with STLD."
+  },
+  {
+   "symbol": "UAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 20.0,
+   "thesis": "Long leg of the new airline pair and the cleaner half of a raised-versus-cut divergence. United raised full-year adjusted EPS guidance to $9-11 even while absorbing nearly $6 billion of additional 2026 fuel expense - the strongest form of my strategy's signal, a company guiding up into a cost shock, which argues the margin gain is structural (international network, premium cabin, loyalty) rather than cyclical. At $112.51 on the 10-02 close that is roughly 11-12x the guided range, and UAL was nearly flat in September (+0.3%) while Delta ran +4.5%, so unlike DAL this leg has not already paid out its divergence; I chose UAL over DAL for that reason even though Delta's Trainer refinery is the better fuel hedge. Earnings are 10-20, after next week's poll, so I am not entering blind into a print. Sized at 15% rather than 20% because this pair carries oil-price basis risk the steel pair does not."
+  },
+  {
+   "symbol": "AAL",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 15,
+   "stop_loss_pct": 20.0,
+   "thesis": "Short leg of the airline pair, and the specific name that guided DOWN in the same cost shock UAL guided up into: American cut full-year adjusted EPS to a range spanning a loss, -$0.65 to +$0.65 from -$0.40 to +$1.10, and guided its September quarter to an adjusted LOSS of $0.10-0.70 despite forecasting 16-19% revenue growth. That gap between record revenue and zero earnings is the thesis - AAL assumed about $3.75/gallon fuel versus United's $3.69 and Delta's $3.15, the thinnest cushion in the group, and with an $8.57B equity cap sitting on a far larger debt stack its equity is a thin sliver that absorbs margin pressure disproportionately. September confirmed the direction: AAL -2.4% to $13.32 while UAL was flat and the JETS sector ETF fell 3.3%. Critically, unlike the KSS short I am retiring, AAL is a large-float, cheaply-borrowed, lightly-crowded short rather than a 41%-of-float squeeze candidate. At $12.94 it sits under $15 so I pay the 12bp commission tier, about $0.18 on a $150 leg, which does not change the case. Earnings 10-22. The stop is wide at 20% to match the long leg and avoid orphaning the pair on a sector-wide fuel-relief rally, which is the main risk here: if crude collapses, AAL is the highest-beta beneficiary in the group."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

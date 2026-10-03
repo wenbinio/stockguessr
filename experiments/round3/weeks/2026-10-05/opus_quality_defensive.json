@@ -1,0 +1,62 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Cross-asset carry and trend stacking with the floating-rate loan carry leg closed on deteriorating loan credit and replaced by a gold trend sleeve, keeping weight in the engines a still-tightening Fed and supply-driven commodity inflation actually pay - commodity backwardation carry, systematic managed-futures trend, midstream and E&P energy carry, and an equity variance-premium sleeve - all long-only.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 10,
+ "reassessment_note": "One premise in this book broke this week and one got much stronger, so I am making a single surgical swap rather than another full rebuild - this book is on leg 11 in 12 weeks and over-trading is part of why it sits at -0.80%. What broke is BKLN. I bought floating-rate loan carry last week for coupons that reset upward with the policy rate, and all three legs of that case weakened at once. First, the reset kicker is now hostage to a Fed that is pausing: the weak September jobs report (29k jobs, unemployment up to 4.2%) cut October hike odds from ~64% to ~21%, with Williams saying there is 'no need for urgency' and Jefferson wanting 'more time'. Second, the credit side is deteriorating into the exact window I am holding - Fitch's trailing-12-month leveraged loan default rate was 3.8% in July and Fitch expects 4.5-5.0% by year-end against a 3.4% historical average, and the premium to lend to B- borrowers is the widest since the onset of COVID. Third, there is little historical precedent for loan spreads to tighten further, so the only route to higher loan prices is a LOWER SOFR base rate, which is the one thing that also kills the coupon. A carry leg whose spread cannot tighten, whose coupon only rises if the Fed keeps hiking, and whose defaults are forecast to rise either way is not carry I am being paid for. I am taking the 13% out. What got stronger is the commodity-inflation engine, but I deliberately did NOT recycle BKLN's weight into it. Brent is ~$99.7 and WTI ~$91, Brent is up ~54% year-on-year, OPEC+ is expected to hold production targets, and forecasters are raising 2026 numbers because quick normalization of Strait of Hormuz shipping no longer looks likely. That is why PDBC, AMLP and XOP all stay. But PDBC's index is itself energy-heavy, so PDBC+AMLP+XOP already means a single Hormuz de-escalation headline marks down 43% of this book at once, and that correlation is the real risk here, not the direction. So the replacement is GLD at 14%, which keeps the inflation and fiscal-debasement exposure while unloading the Hormuz risk premium. The regime argues for it directly: the 10-year hit 5.34% intraday (highest since 2002), the 30-year is at 24-year highs and the 5-year cleared 5% for the first time since 2007, driven by fiscal concern and term premium rather than by growth - that is the setup gold is paid in. Gold also rallied back through $4,190 on the same jobs print that hurt my loan leg, so it hedges the pause my other legs dislike. I am keeping the hiking-cycle tilt generally, because futures still price fed funds at ~4.1% by January and ~4.7% by October 2027 off 3.75-4.00% today; an October pause is one meeting, not a pivot. Cash stays at 10% at 4%.",
+ "positions": [
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The core commodity-carry engine and the leg with the strongest physical confirmation in the book. Broad commodity carry only pays when the curve is backwardated, and the oil curve is backwardated for a supply reason that is persisting rather than resolving: Brent ~$99.7 and WTI ~$91, Brent up ~54% year-on-year, OPEC+ expected to leave production targets unchanged at its meeting of eight members, and a Reuters poll of analysts marking 2026 Brent up to ~$89 average because hopes for a quick normalization of Strait of Hormuz shipping have faded. PDBC's no-K-1 optimum-yield structure rolls into the backwardated part of the curve, so I collect roll yield as well as spot. I trimmed 1pt from 23% to 22% only to fund the gold sleeve, not because conviction fell. Sized below last week's level in spirit because PDBC's index is energy-heavy and this book already owns AMLP and XOP against the same Hormuz headline; 22% is as much of that single correlated risk as I want in the largest leg. Stop 12% because a Hormuz de-escalation is a real and fast tail, take-profit 25% to bank a genuine supply spike rather than round-trip it."
+  },
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "thesis": "The systematic trend sleeve and the one leg that does not need me to be right about direction. DBMF replicates managed-futures positioning, and the two trends that dominate right now are exactly the ones the tape is delivering: long commodities into a supply-driven crude move, and short duration into a long end repricing to multi-decade highs (10-year 5.27% after a 5.34% intraday print, 30-year at 24-year highs, 5-year above 5% for the first time since 2007). It also holds the one structural advantage in this book - it is the only position that can flip its own sign. If the Hormuz premium unwinds and crude breaks, the trend model reverses and goes short the commodity complex while PDBC, AMLP and XOP are all losing, which is why I keep it at the same 22% as PDBC rather than behind it. Kept at full weight and unchanged; +1.17% on the current leg. Stop 12% and no take-profit on purpose - a trend sleeve is only worth owning if I let the convex right tail run, and a take-profit would cut exactly the payoff I am buying."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "thesis": "New leg, funded by closing BKLN plus 1pt from PDBC. This is the trend half of the mandate taking over weight from carry I am no longer paid for, and its job is to hold the inflation and debasement exposure without adding to the Hormuz concentration. The driver stack is live and distinct from crude: the long end is at multi-decade highs (30-year at 24-year highs, 5-year over 5% for the first time since 2007) on fiscal and term-premium concern rather than on growth, which is historically the cleanest environment for gold, and gold is in a powerful multi-year uptrend trading around $4,140-4,218 on 10-02. Critically it hedges the one macro event that hurts the rest of this book: gold rebounded through $4,190 on the very September jobs print that cut October hike odds to ~21% and undercut my floating-rate coupon thesis, so a dovish surprise that compresses my carry legs is a tailwind here. Sized at 14% rather than larger because gold's own carry is negative (no coupon, no roll yield) and DBMF is likely already long it, so this is deliberately a diversifier and not a second core. Stop 12%, roughly gold's annualized vol, and no take-profit so the trend can run."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Midstream distribution carry - the highest-quality cash coupon left in the book now that the loan leg is gone, and the one energy leg that is paid on volumes and fee-based contracts rather than on the flat price of crude. With Brent near $100, OPEC+ holding targets and US producers having every incentive to move barrels, throughput and the distributions it funds are well supported, and MLP distribution yields clear my 4% cash rate by a wide margin, which is the actual test for a carry sleeve. Unchanged at 12% and +1.48% on the current leg. I kept it rather than rotating it because its payoff is structurally less flat-price-sensitive than XOP's, so it is the more defensible of my two equity energy legs if the Hormuz premium deflates. Stop 12%, no take-profit: this leg is held to collect the coupon, so capping the price upside would cut the return without reducing the risk I actually carry."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 10.0,
+   "thesis": "The equity variance-premium sleeve, kept at 11% because I checked whether the premium is actually being paid rather than assuming it. It is: VIX closed at 15.31 on 10-02 against realized 30-day volatility of 10.51, a spread of roughly five vol points, which is a healthy variance risk premium and precisely the gap a covered-call overlay monetizes. Writing calls at implied 15 against a tape realizing 10.5 is positive-expectancy carry, and JEPI's underlying is a low-volatility quality equity screen rather than the crowded AI complex that led the market to its record 30,808 Nasdaq close. I am clear on the cost: JEPI caps upside, so in a continued melt-up this is the leg that lags, and that is why it stays at 11% and is not sized up. Stop 10%, tighter than the rest of the book, because a covered-call fund gives up upside and so has no mechanism to recover a deep drawdown quickly; if equity vol regime-shifts upward the premium collected will not cover the delta and I want out early."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The highest-beta expression of the crude thesis and the best-performing leg in the book at +3.12% in two sessions. XOP is equal-weighted E&P, so it is levered to the flat price in a way AMLP is not: with Brent ~$99.7 and WTI ~$91 and analysts raising 2026 forecasts on a Hormuz disruption that is dragging on while OPEC+ withholds supply, producer free cash flow at these strip prices is very large relative to where the names are valued. Deliberately the smallest equity leg at 9% and left unchanged - this is the right vehicle for the thesis but the wrong one to concentrate in, because it is the third position in this book exposed to the same single headline, and equal-weight E&P drops hardest if that headline turns. Wide 15% stop because E&P noise would trigger anything tighter and I would be stopped out of a thesis that was still intact, with a 30% take-profit to force me to actually bank a geopolitical spike instead of holding it into the de-escalation."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

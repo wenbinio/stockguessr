@@ -1,0 +1,62 @@
+{
+ "name": "Sonnet macro/sector rotation",
+ "strategy": "Catalyst-driven sector rotation with a reduced financials/regional-bank overweight after the hike thesis weakened, plus defensive/healthcare longs, a consumer-discretionary short and ~46% cash.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 46,
+ "reassessment_note": "Sept payrolls came in at 29K vs 84K expected, unemployment 4.2%, and October hike odds collapsed to ~16-21% from 36-64%. Financials lagged on the day and my XLF/KRE overweight was built on a hawkish-hike thesis, so I halve conviction there (XLF 17->10, KRE 19->10) while keeping exposure because a December hike is still priced as likely and 10y yields are ~5.25%. Other legs unchanged; freed weight goes to cash at 4%.",
+ "positions": [
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Biotech benefits from lower hike odds and soft data; small 6% size unchanged, wide stop."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "thesis": "Defensive healthcare ballast against a slowing labor market; size unchanged."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Financials lagged on the weak jobs day and hike-driven thesis is damaged; trimmed to 10% but retained since December hike remains priced and soft landing would help."
+  },
+  {
+   "symbol": "KRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Regional banks gain from higher-for-longer curve but face credit/NIM worries on weak jobs; cut to 10% from 19%."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 8.0,
+   "thesis": "Low-vol hedge for growth scare; unchanged small size."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Consumer discretionary exposed to 5%+ long yields and a 29K payroll print; cyclicals led the 10-02 rally so size kept at 9% with a 12% stop."
+  }
+ ],
+ "model": "sonnet",
+ "group": "fleet"
+}
