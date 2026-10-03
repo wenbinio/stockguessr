@@ -1,11 +1,11 @@
 {
- "updated_utc": "2026-10-02 09:20 UTC",
+ "updated_utc": "2026-10-03 09:19 UTC",
  "entry": "2026-07-17",
  "capital_usd": 1000.0,
- "as_of": "2026-10-01",
+ "as_of": "2026-10-02",
  "benchmarks": {
   "SPY ($1000)": {
-   "nav": 1030.4,
+   "nav": 1038.02,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 1000.0,
@@ -83,11 +83,12 @@
     "2026-09-28": 1032.59,
     "2026-09-29": 1030.68,
     "2026-09-30": 1028.57,
-    "2026-10-01": 1030.4
+    "2026-10-01": 1030.4,
+    "2026-10-02": 1038.02
    }
   },
   "BTC ($1000)": {
-   "nav": 1327.92,
+   "nav": 1322.35,
    "series": {
     "2026-07-17": 1000.0,
     "2026-07-18": 1014.04,
@@ -165,7 +166,8 @@
     "2026-09-28": 1306.78,
     "2026-09-29": 1308.66,
     "2026-09-30": 1307.58,
-    "2026-10-01": 1327.92
+    "2026-10-01": 1327.92,
+    "2026-10-02": 1322.35
    }
   }
  },
@@ -174,8 +176,8 @@
    "model": "fable",
    "group": "flagship",
    "strategy": "Rate-cycle rotation + carry + early trend-reversal with stop discipline, positioned for the hawkish side of the cycle (Fed hike Sept 16, BOJ hike Sept 18): energy, value, large-cap financials, unhedged Japan, income carry, a stopped crypto trend leg, and 30% cash at 4% - with the regional-bank leg dropped as the one holding that is wrong for a 5% 10-year.",
-   "nav": 1050.1,
-   "growth_pct": 5.01,
+   "nav": 1052.3,
+   "growth_pct": 5.23,
    "max_drawdown_pct": -2.08,
    "gross_exposure_pct": 70,
    "n_positions": 8,
@@ -325,16 +327,17 @@
     "2026-09-28": 1052.31,
     "2026-09-29": 1049.71,
     "2026-09-30": 1047.83,
-    "2026-10-01": 1050.1
+    "2026-10-01": 1050.1,
+    "2026-10-02": 1052.3
    }
   },
   "Fable Barbell": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Cross-sectional sector-momentum long/short re-ranked for a 5% ten-year and a hiking Fed: long energy, health care, financials, communication services and biotech versus short the broken rate-sensitive downtrends in industrials, utilities, homebuilders and discretionary, correlation-deduped with hard stops and take-profits.",
-   "nav": 963.87,
-   "growth_pct": -3.61,
-   "max_drawdown_pct": -3.87,
+   "nav": 962.98,
+   "growth_pct": -3.7,
+   "max_drawdown_pct": -3.96,
    "gross_exposure_pct": 66,
    "n_positions": 9,
    "cash_pct": 34,
@@ -498,15 +501,16 @@
     "2026-09-28": 968.09,
     "2026-09-29": 966.02,
     "2026-09-30": 966.09,
-    "2026-10-01": 963.87
+    "2026-10-01": 963.87,
+    "2026-10-02": 962.98
    }
   },
   "Fable Unconstrained": {
    "model": "fable",
    "group": "flagship",
    "strategy": "Defensive risk-premia harvest: long contrarian value/mean-reversion (gold, Brazil carry with a pre-election stop, UNH, Berkshire) plus a small term-premium sleeve via TLT at 5.3% yields and a small volatility-risk-premium sleeve via SVXY, with 46% cash at 4%.",
-   "nav": 1008.96,
-   "growth_pct": 0.9,
+   "nav": 1013.48,
+   "growth_pct": 1.35,
    "max_drawdown_pct": -2.39,
    "gross_exposure_pct": 54,
    "n_positions": 6,
@@ -637,15 +641,16 @@
     "2026-09-28": 1011.44,
     "2026-09-29": 1011.95,
     "2026-09-30": 1008.47,
-    "2026-10-01": 1008.96
+    "2026-10-01": 1008.96,
+    "2026-10-02": 1013.48
    }
   },
   "Opus-fleet deep value": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long in sub-market-multiple, FCF-rich cash returners, rotated out of crude-price beta now trading at 12.4-12.7x on war-inflated peak earnings and into the cheapest defensives in the market (managed care at 8.6x, pharma at 11x, a 1.3x-book bank), with a residual Brent-weighted energy stub kept for Hormuz tail risk and an enlarged short in 21x consumer-staples bond proxies against a 5%+ 10-year.",
-   "nav": 1043.49,
-   "growth_pct": 4.35,
+   "nav": 1046.81,
+   "growth_pct": 4.68,
    "max_drawdown_pct": -4.39,
    "gross_exposure_pct": 86,
    "n_positions": 8,
@@ -809,15 +814,16 @@
     "2026-09-28": 1056.86,
     "2026-09-29": 1051.96,
     "2026-09-30": 1048.95,
-    "2026-10-01": 1043.49
+    "2026-10-01": 1043.49,
+    "2026-10-02": 1046.81
    }
   },
   "Opus-fleet dividend growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Long-only dividend-growth book anchored by a 34% SCHD core and deliberately tilted into hard-asset dividend aristocrats - integrated oil majors and midstream - funded by exiting the most expensive bond-proxy staple and a pharma leg with a sector overhang, because a 5% 10-year Treasury has repriced every low-yield defensive while a $103 oil shock pays the energy dividend growers directly.",
-   "nav": 1016.27,
-   "growth_pct": 1.63,
+   "nav": 1017.79,
+   "growth_pct": 1.78,
    "max_drawdown_pct": -4.63,
    "gross_exposure_pct": 88,
    "n_positions": 8,
@@ -971,15 +977,16 @@
     "2026-09-28": 1028.37,
     "2026-09-29": 1019.33,
     "2026-09-30": 1014.31,
-    "2026-10-01": 1016.27
+    "2026-10-01": 1016.27,
+    "2026-10-02": 1017.79
    }
   },
   "Opus-fleet price momentum": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long-only US price momentum re-ranked out of the broken refining/crack complex and into the two groups actually printing fresh 52-week highs with accelerating 1-month returns - AI-levered mega/large-cap tech and the biotech/life-sciences tools cohort - with trend-break stops sized to each leg's realized volatility.",
-   "nav": 989.38,
-   "growth_pct": -1.06,
+   "nav": 997.32,
+   "growth_pct": -0.27,
    "max_drawdown_pct": -4.68,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -1153,15 +1160,16 @@
     "2026-09-28": 990.04,
     "2026-09-29": 988.58,
     "2026-09-30": 993.8,
-    "2026-10-01": 989.38
+    "2026-10-01": 989.38,
+    "2026-10-02": 997.32
    }
   },
   "Opus-fleet quality compounders": {
    "model": "opus",
    "group": "factorial",
    "strategy": "Concentrated long book of five wide-moat, high-ROIC franchises that FUND their own growth out of operating cash flow - V, NVDA, TSM, GOOGL, CME - exiting Meta and halving Alphabet after both turned into negative-free-cash-flow AI-capex borrowers, and adding CME as a wide-moat compounder whose earnings rise with the rate volatility that is the main threat to the rest of the book, against 17% cash at 4%.",
-   "nav": 1068.49,
-   "growth_pct": 6.85,
+   "nav": 1078.4,
+   "growth_pct": 7.84,
    "max_drawdown_pct": -5.32,
    "gross_exposure_pct": 83,
    "n_positions": 5,
@@ -1287,15 +1295,16 @@
     "2026-09-28": 1065.75,
     "2026-09-29": 1068.91,
     "2026-09-30": 1065.93,
-    "2026-10-01": 1068.49
+    "2026-10-01": 1068.49,
+    "2026-10-02": 1078.4
    }
   },
   "Opus-fleet small/mid-cap growth": {
    "model": "opus",
    "group": "factorial",
    "strategy": "De-risked, concentrated small/mid-cap growth: gross cut from 88% to 70% into a live Fed hiking cycle, exiting the two legs whose theses broke (NU deal overhang, XBI duration) and concentrating the book in three earnings-backed compounders whose revenue growth, not the discount rate, is doing the work.",
-   "nav": 1042.62,
-   "growth_pct": 4.26,
+   "nav": 1054.79,
+   "growth_pct": 5.48,
    "max_drawdown_pct": -10.29,
    "gross_exposure_pct": 70,
    "n_positions": 3,
@@ -1406,15 +1415,16 @@
     "2026-09-28": 1018.82,
     "2026-09-29": 1023.67,
     "2026-09-30": 1022.73,
-    "2026-10-01": 1042.62
+    "2026-10-01": 1042.62,
+    "2026-10-02": 1054.79
    }
   },
   "Sonnet+tools deep value": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Global deep-value dividend payers - single-digit-to-low-teens P/E, near-book P/B, strong FCF, durable 6%+ dividends across tobacco, telecom, financials, pharma and autos - now with the packaged-food leg cut on credible dividend-cut risk and cash raised as ballast.",
-   "nav": 1004.73,
-   "growth_pct": 0.47,
+   "nav": 1006.63,
+   "growth_pct": 0.66,
    "max_drawdown_pct": -4.14,
    "gross_exposure_pct": 68,
    "n_positions": 5,
@@ -1543,15 +1553,16 @@
     "2026-09-28": 1024.6,
     "2026-09-29": 1017.94,
     "2026-09-30": 1011.16,
-    "2026-10-01": 1004.73
+    "2026-10-01": 1004.73,
+    "2026-10-02": 1006.63
    }
   },
   "Sonnet+tools dividend growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, unleveraged basket of dividend aristocrats/kings and a curated dividend-growth ETF core, tilted to defensive staples/healthcare with an energy hedge",
-   "nav": 1009.03,
-   "growth_pct": 0.9,
+   "nav": 1009.52,
+   "growth_pct": 0.95,
    "max_drawdown_pct": -3.53,
    "gross_exposure_pct": 92,
    "n_positions": 8,
@@ -1699,15 +1710,16 @@
     "2026-09-28": 1029.21,
     "2026-09-29": 1021.68,
     "2026-09-30": 1012.15,
-    "2026-10-01": 1009.03
+    "2026-10-01": 1009.03,
+    "2026-10-02": 1009.52
    }
   },
   "Sonnet+tools price momentum": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long the strongest data-verified 12-1 momentum sector/name themes (energy, healthcare, biotech, financials), cutting whichever leg's momentum has broken versus the group, with cash sized to macro-shock risk.",
-   "nav": 1019.1,
-   "growth_pct": 1.91,
+   "nav": 1020.66,
+   "growth_pct": 2.07,
    "max_drawdown_pct": -4.87,
    "gross_exposure_pct": 66,
    "n_positions": 4,
@@ -1827,15 +1839,16 @@
     "2026-09-28": 1021.59,
     "2026-09-29": 1017.62,
     "2026-09-30": 1014.35,
-    "2026-10-01": 1019.1
+    "2026-10-01": 1019.1,
+    "2026-10-02": 1020.66
    }
   },
   "Sonnet+tools quality compounders": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only, equal-weight basket of ten wide-moat, high-ROIC compounders across payments, enterprise software/cloud, consumer, and pharma, unlevered with a 10% cash buffer.",
-   "nav": 1027.67,
-   "growth_pct": 2.77,
+   "nav": 1035.21,
+   "growth_pct": 3.52,
    "max_drawdown_pct": -3.73,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -1999,15 +2012,16 @@
     "2026-09-28": 1035.39,
     "2026-09-29": 1036.39,
     "2026-09-30": 1029.35,
-    "2026-10-01": 1027.67
+    "2026-10-01": 1027.67,
+    "2026-10-02": 1035.21
    }
   },
   "Sonnet+tools small/mid-cap growth": {
    "model": "sonnet",
    "group": "factorial",
    "strategy": "Long-only basket of small/mid-cap cloud, AI-infra, and fintech growth names sized by current momentum and stress-window resilience, with a cash buffer.",
-   "nav": 1134.77,
-   "growth_pct": 13.48,
+   "nav": 1152.63,
+   "growth_pct": 15.26,
    "max_drawdown_pct": -9.42,
    "gross_exposure_pct": 78,
    "n_positions": 5,
@@ -2136,15 +2150,16 @@
     "2026-09-28": 1106.3,
     "2026-09-29": 1116.01,
     "2026-09-30": 1114.3,
-    "2026-10-01": 1134.77
+    "2026-10-01": 1134.77,
+    "2026-10-02": 1152.63
    }
   },
   "Haiku concentrated AI/technology": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Supply-chain-anchored AI infrastructure thesis emphasizing ASML (EUV bottleneck for chip production) and enterprise software adoption (MSFT, CRM) with reduced cloud infrastructure and semiconductor concentration, positioned for structural AI capex tailwinds with defensive stops.",
-   "nav": 1043.21,
-   "growth_pct": 4.32,
+   "nav": 1056.79,
+   "growth_pct": 5.68,
    "max_drawdown_pct": -6.51,
    "gross_exposure_pct": 85,
    "n_positions": 7,
@@ -2291,15 +2306,16 @@
     "2026-09-28": 1026.39,
     "2026-09-29": 1031.2,
     "2026-09-30": 1038.16,
-    "2026-10-01": 1043.21
+    "2026-10-01": 1043.21,
+    "2026-10-02": 1056.79
    }
   },
   "Haiku contrarian turnarounds": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Energy supercycle with tactical growth rotation and macro hedging, pivoting from defensive positioning as market cycle advances.",
-   "nav": 1119.44,
-   "growth_pct": 11.94,
+   "nav": 1120.05,
+   "growth_pct": 12.0,
    "max_drawdown_pct": -1.83,
    "gross_exposure_pct": 65,
    "n_positions": 5,
@@ -2428,15 +2444,16 @@
     "2026-09-28": 1112.57,
     "2026-09-29": 1110.85,
     "2026-09-30": 1112.78,
-    "2026-10-01": 1119.44
+    "2026-10-01": 1119.44,
+    "2026-10-02": 1120.05
    }
   },
   "Haiku deep value": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Risk-adjusted momentum mean-reversion via sector rotation: short exhausted tech momentum (TQQQ), rotate into small-cap value and energy with reduced BTC leverage ahead of rate hike.",
-   "nav": 1022.06,
-   "growth_pct": 2.21,
+   "nav": 1024.7,
+   "growth_pct": 2.47,
    "max_drawdown_pct": -2.62,
    "gross_exposure_pct": 61.0,
    "n_positions": 9,
@@ -2598,15 +2615,16 @@
     "2026-09-28": 1025.02,
     "2026-09-29": 1022.65,
     "2026-09-30": 1018.93,
-    "2026-10-01": 1022.06
+    "2026-10-01": 1022.06,
+    "2026-10-02": 1024.7
    }
   },
   "Haiku dividend growth and income": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive value rotation with tactical shorts on overheated momentum sectors; longs in lagging value/dividend/low-vol paired with shorts in extreme-outperformers (semis, small-caps), betting on mean reversion and dividend outperformance over 5-month window.",
-   "nav": 1001.83,
-   "growth_pct": 0.18,
+   "nav": 1003.19,
+   "growth_pct": 0.32,
    "max_drawdown_pct": -2.4,
    "gross_exposure_pct": 84.6,
    "n_positions": 9,
@@ -2754,15 +2772,16 @@
     "2026-09-28": 1003.75,
     "2026-09-29": 1002.37,
     "2026-09-30": 998.03,
-    "2026-10-01": 1001.83
+    "2026-10-01": 1001.83,
+    "2026-10-02": 1003.19
    }
   },
   "Haiku global diversification via US-listed ADRs and ETFs": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Harvest dividend carry and income from high-yielding financials, energy, and healthcare sectors while implementing tactical short on mega-cap tech (QQQ) following exhaustion after dominant YTD rally; diversify across international value (EFA, EWJ) with bond ballast.",
-   "nav": 1001.16,
-   "growth_pct": 0.12,
+   "nav": 1005.23,
+   "growth_pct": 0.52,
    "max_drawdown_pct": -3.99,
    "gross_exposure_pct": 87,
    "n_positions": 8,
@@ -2902,15 +2921,16 @@
     "2026-09-28": 1009.74,
     "2026-09-29": 1005.33,
     "2026-09-30": 1000.16,
-    "2026-10-01": 1001.16
+    "2026-10-01": 1001.16,
+    "2026-10-02": 1005.23
    }
   },
   "Haiku growth at a reasonable price": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Defensive value with secular growth hedges: healthcare and consumer staples quality focused on pricing power and dividend resilience in high-rate environment, energy exposure for yield, selective semiconductor equipment diversification",
-   "nav": 1025.6,
-   "growth_pct": 2.56,
+   "nav": 1029.02,
+   "growth_pct": 2.9,
    "max_drawdown_pct": -2.67,
    "gross_exposure_pct": 54,
    "n_positions": 9,
@@ -3057,15 +3077,16 @@
     "2026-09-28": 1033.57,
     "2026-09-29": 1032.06,
     "2026-09-30": 1028.22,
-    "2026-10-01": 1025.6
+    "2026-10-01": 1025.6,
+    "2026-10-02": 1029.02
    }
   },
   "Haiku macro/sector rotation": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Quality defensive positioning with low-volatility factors and selective yield, repositioned for rising-rate environment with emphasis on defensive sectors resilient to Treasury yield headwinds.",
-   "nav": 983.37,
-   "growth_pct": -1.66,
+   "nav": 985.68,
+   "growth_pct": -1.43,
    "max_drawdown_pct": -4.43,
    "gross_exposure_pct": 83,
    "n_positions": 6,
@@ -3203,15 +3224,16 @@
     "2026-09-28": 991.11,
     "2026-09-29": 991.46,
     "2026-09-30": 984.21,
-    "2026-10-01": 983.37
+    "2026-10-01": 983.37,
+    "2026-10-02": 985.68
    }
   },
   "Haiku price momentum": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Contrarian sector rotation: short overextended semiconductors (SOXL, +506% YTD extreme) paired with tactical long rotation into energy, financials, biotech, value, and EM; position-level stops (18% SL shorts) and take-profits (15-30% TP longs).",
-   "nav": 958.34,
-   "growth_pct": -4.17,
+   "nav": 964.78,
+   "growth_pct": -3.52,
    "max_drawdown_pct": -7.04,
    "gross_exposure_pct": 100,
    "n_positions": 7,
@@ -3351,15 +3373,16 @@
     "2026-09-28": 965.28,
     "2026-09-29": 961.47,
     "2026-09-30": 956.18,
-    "2026-10-01": 958.34
+    "2026-10-01": 958.34,
+    "2026-10-02": 964.78
    }
   },
   "Haiku quality compounders": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Quality growth compounders focused on AI infrastructure and semiconductor supply chain, leveraging foundational and enabling positions distinct from mega-cap concentration.",
-   "nav": 971.39,
-   "growth_pct": -2.86,
+   "nav": 987.15,
+   "growth_pct": -1.29,
    "max_drawdown_pct": -4.86,
    "gross_exposure_pct": 79,
    "n_positions": 8,
@@ -3499,15 +3522,16 @@
     "2026-09-28": 981.06,
     "2026-09-29": 977.42,
     "2026-09-30": 970.14,
-    "2026-10-01": 971.39
+    "2026-10-01": 971.39,
+    "2026-10-02": 987.15
    }
   },
   "Haiku small/mid-cap growth": {
    "model": "haiku",
    "group": "fleet",
    "strategy": "Rate-defensive small/mid-cap growth leveraging quality SaaS infrastructure positions with strong guidance and elevated cash, reducing broad large-cap tech exposure in rising-rate environment",
-   "nav": 931.5,
-   "growth_pct": -6.85,
+   "nav": 936.15,
+   "growth_pct": -6.39,
    "max_drawdown_pct": -7.95,
    "gross_exposure_pct": 50,
    "n_positions": 7,
@@ -3654,15 +3678,16 @@
     "2026-09-28": 928.63,
     "2026-09-29": 928.54,
     "2026-09-30": 929.39,
-    "2026-10-01": 931.5
+    "2026-10-01": 931.5,
+    "2026-10-02": 936.15
    }
   },
   "Sonnet concentrated AI/technology": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Cross-sector momentum/relative-value book, long confirmed sector breakouts (biotech, regional banks) and short confirmed breakdowns (long-duration Treasuries), deliberately kept free of AI/semis exposure so it expresses a different macro/rotation view than the Round 2 concentrated-AI book; this week trims the two long legs whose breakouts are stalling and leans harder into the short leg whose catalyst just got confirmed.",
-   "nav": 941.83,
-   "growth_pct": -5.82,
+   "nav": 944.01,
+   "growth_pct": -5.6,
    "max_drawdown_pct": -8.51,
    "gross_exposure_pct": 65,
    "n_positions": 3,
@@ -3773,15 +3798,16 @@
     "2026-09-28": 944.36,
     "2026-09-29": 944.38,
     "2026-09-30": 946.22,
-    "2026-10-01": 941.83
+    "2026-10-01": 941.83,
+    "2026-10-02": 944.01
    }
   },
   "Sonnet contrarian turnarounds": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Rotate fully into the sector breakouts the tape has now actually confirmed -- regional banks on a just-delivered NIM-widening catalyst, biotech on a live bullish-flag breakout and record M&A dealmaking, gold miners on a continuing multi-month winning streak -- and close the short semis leg that the market has spent the last week disconfirming rather than fight a still-accelerating momentum trade with open-ended downside.",
-   "nav": 918.86,
-   "growth_pct": -8.11,
+   "nav": 923.16,
+   "growth_pct": -7.68,
    "max_drawdown_pct": -10.35,
    "gross_exposure_pct": 66,
    "n_positions": 3,
@@ -3892,15 +3918,16 @@
     "2026-09-28": 925.69,
     "2026-09-29": 925.55,
     "2026-09-30": 923.57,
-    "2026-10-01": 918.86
+    "2026-10-01": 918.86,
+    "2026-10-02": 923.16
    }
   },
   "Sonnet deep value": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Relative-value mean-reversion and low-vol carry harvesting: long defensive/oversold laggards (low-vol equity, biotech, and gold miners re-added after a likely whipsaw stop-out) funded largely by cash, with a reduced short against the still-extreme AI-momentum extension in memory names ahead of its earnings print.",
-   "nav": 965.02,
-   "growth_pct": -3.5,
+   "nav": 967.78,
+   "growth_pct": -3.22,
    "max_drawdown_pct": -5.19,
    "gross_exposure_pct": 48,
    "n_positions": 5,
@@ -4023,15 +4050,16 @@
     "2026-09-28": 969.58,
     "2026-09-29": 970.39,
     "2026-09-30": 968.11,
-    "2026-10-01": 965.02
+    "2026-10-01": 965.02,
+    "2026-10-02": 967.78
    }
   },
   "Sonnet dividend growth and income": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Defensive real-assets and high-current-yield income (monthly-pay net-lease REIT, midstream energy, utilities, broad high-yield and international dividend growers, plus a preferred-stock income sleeve) sized down and de-hedged after the prior tactical gold-miner short proved to be fighting a structural bull trend.",
-   "nav": 941.35,
-   "growth_pct": -5.86,
+   "nav": 946.09,
+   "growth_pct": -5.39,
    "max_drawdown_pct": -5.81,
    "gross_exposure_pct": 57,
    "n_positions": 6,
@@ -4169,15 +4197,16 @@
     "2026-09-28": 948.76,
     "2026-09-29": 946.71,
     "2026-09-30": 942.57,
-    "2026-10-01": 941.35
+    "2026-10-01": 941.35,
+    "2026-10-02": 946.09
    }
   },
   "Sonnet global diversification via US-listed ADRs and ETFs": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "A quality-tilted basket of individual US-listed ADRs spanning Europe and developed Asia (semis, enterprise software, pharma, staples, electronics), sized conservatively with a large cash buffer against a still-hawkish Fed and firm dollar.",
-   "nav": 958.69,
-   "growth_pct": -4.13,
+   "nav": 964.5,
+   "growth_pct": -3.55,
    "max_drawdown_pct": -5.65,
    "gross_exposure_pct": 58,
    "n_positions": 5,
@@ -4306,15 +4335,16 @@
     "2026-09-28": 961.19,
     "2026-09-29": 965.6,
     "2026-09-30": 960.82,
-    "2026-10-01": 958.69
+    "2026-10-01": 958.69,
+    "2026-10-02": 964.5
    }
   },
   "Sonnet growth at a reasonable price": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Round 3: momentum/regime rotation, trimmed further to the legs that survive a hawkish-Fed reality check -- financials (JPM) and a trimmed biotech position (XBI) whose breakout is losing steam, a healthcare profit-take (ELV), an energy leg (CVX) sized up on a geopolitically-driven oil spike -- with the MSTR short covered after its 'cracking blow-off top' thesis was invalidated by a regulatory-driven rally, and cash raised sharply to 49%.",
-   "nav": 954.52,
-   "growth_pct": -4.55,
+   "nav": 955.01,
+   "growth_pct": -4.5,
    "max_drawdown_pct": -5.51,
    "gross_exposure_pct": 51,
    "n_positions": 4,
@@ -4426,15 +4456,16 @@
     "2026-09-28": 959.69,
     "2026-09-29": 957.3,
     "2026-09-30": 955.01,
-    "2026-10-01": 954.52
+    "2026-10-01": 954.52,
+    "2026-10-02": 955.01
    }
   },
   "Sonnet macro/sector rotation": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Catalyst-driven sector rotation, post-FOMC: leaning further into the regional-bank/financials longs a hawkish hike directly benefits, closing the semis short the tape has now invalidated, and raising cash after the event has cleared.",
-   "nav": 948.99,
-   "growth_pct": -5.1,
+   "nav": 950.4,
+   "growth_pct": -4.96,
    "max_drawdown_pct": -6.38,
    "gross_exposure_pct": 70,
    "n_positions": 6,
@@ -4568,15 +4599,16 @@
     "2026-09-28": 957.57,
     "2026-09-29": 954.82,
     "2026-09-30": 950.33,
-    "2026-10-01": 948.99
+    "2026-10-01": 948.99,
+    "2026-10-02": 950.4
    }
   },
   "Sonnet price momentum": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Concentrated, leveraged expression of the same price-momentum mandate as the Round 2 book: leveraged semiconductors and BTC spot as the highest-conviction uptrends, a leveraged oil & gas E&P vehicle for beta-heavy energy exposure, and a utilities short as the cleanest confirmed negative-momentum trend on the board - zero symbol overlap with the Round 2 book.",
-   "nav": 1037.06,
-   "growth_pct": 3.71,
+   "nav": 1053.95,
+   "growth_pct": 5.4,
    "max_drawdown_pct": -8.22,
    "gross_exposure_pct": 80,
    "n_positions": 4,
@@ -4696,16 +4728,17 @@
     "2026-09-28": 1006.33,
     "2026-09-29": 1011.03,
     "2026-09-30": 1014.13,
-    "2026-10-01": 1037.06
+    "2026-10-01": 1037.06,
+    "2026-10-02": 1053.95
    }
   },
   "Sonnet quality compounders": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Post-FOMC reassessment: retire the two momentum-breakdown shorts that the tape has now falsified, flip gold exposure long to ride the actual breakout, upsize the working biotech M&A idiosyncratic long, and add one new distinct quality-compounder name, while keeping half the book in cash given standing AI-bubble drawdown risk flagged in the market.",
-   "nav": 967.23,
-   "growth_pct": -3.28,
-   "max_drawdown_pct": -4.37,
+   "nav": 965.4,
+   "growth_pct": -3.46,
+   "max_drawdown_pct": -4.55,
    "gross_exposure_pct": 50,
    "n_positions": 3,
    "cash_pct": 50,
@@ -4815,15 +4848,16 @@
     "2026-09-28": 976.46,
     "2026-09-29": 977.65,
     "2026-09-30": 974.76,
-    "2026-10-01": 967.23
+    "2026-10-01": 967.23,
+    "2026-10-02": 965.4
    }
   },
   "Sonnet small/mid-cap growth": {
    "model": "sonnet",
    "group": "fleet",
    "strategy": "Sector-relative-value rotation: long the laggard cyclical/value sectors turning up (regional banks, financials, biotech via IBB), now run long-only after closing the gold-miner short whose 'topping' premise the tape does not currently support, with hard stops for risk discipline.",
-   "nav": 960.63,
-   "growth_pct": -3.94,
+   "nav": 961.93,
+   "growth_pct": -3.81,
    "max_drawdown_pct": -6.96,
    "gross_exposure_pct": 36,
    "n_positions": 3,
@@ -4931,15 +4965,16 @@
     "2026-09-28": 965.48,
     "2026-09-29": 964.07,
     "2026-09-30": 962.06,
-    "2026-10-01": 960.63
+    "2026-10-01": 960.63,
+    "2026-10-02": 961.93
    }
   },
   "Opus 5 carry": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A long-only floating-rate carry book that concentrates two-thirds of capital in top-of-capital-structure AAA CLO floaters across two managers, whose coupons reset upward with every Fed hike while the engine's cash rate stays fixed at 4%, keeps a right-sized fee-based midstream sleeve as the energy-inflation hedge, sells a little index variance, and holds a reduced 10% cash buffer.",
-   "nav": 973.96,
-   "growth_pct": -2.6,
+   "nav": 975.71,
+   "growth_pct": -2.43,
    "max_drawdown_pct": -3.89,
    "gross_exposure_pct": 90,
    "n_positions": 4,
@@ -5046,15 +5081,16 @@
     "2026-09-28": 976.81,
     "2026-09-29": 974.19,
     "2026-09-30": 972.68,
-    "2026-10-01": 973.96
+    "2026-10-01": 973.96,
+    "2026-10-02": 975.71
    }
   },
   "Opus 5 dispersion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Beta-matched dispersion rebuilt for a Fed-hiking, 5.24% 10-year regime: a 55% long basket of eleven large caps across eleven sectors, screened for residual-to-SPY volatility and low pairwise residual correlation, with leverage-sensitive and secular-decline names removed and two rate-up beneficiaries (CME, TRV) added as the offsetting counterweight to the inflation-hedge legs (NEM, SLB), hedged with a 38% SPY short sized to the basket's 0.68 estimated beta for net index beta of roughly zero, 7% cash.",
-   "nav": 1007.78,
-   "growth_pct": 0.78,
+   "nav": 1006.27,
+   "growth_pct": 0.63,
    "max_drawdown_pct": -5.97,
    "gross_exposure_pct": 93.0,
    "n_positions": 12,
@@ -5226,15 +5262,16 @@
     "2026-09-28": 1012.71,
     "2026-09-29": 1011.91,
     "2026-09-30": 1005.57,
-    "2026-10-01": 1007.78
+    "2026-10-01": 1007.78,
+    "2026-10-02": 1006.27
    }
   },
   "Opus 5 event driven": {
    "model": "opus",
    "group": "opus5",
    "strategy": "A three-catalyst event book: the CRH/Arcosa cash-merger spread as a non-correlated carry anchor, a sized stake in the broken-but-contested Brighthouse takeover where a rival bidder floors the downside, an upsized energy leg expressing the Hormuz supply disruption through producers rather than policy-exposed refiners, and a small index short against a Fed that has resumed hiking.",
-   "nav": 1002.71,
-   "growth_pct": 0.27,
+   "nav": 1002.42,
+   "growth_pct": 0.24,
    "max_drawdown_pct": -5.36,
    "gross_exposure_pct": 62,
    "n_positions": 4,
@@ -5342,15 +5379,16 @@
     "2026-09-28": 1001.04,
     "2026-09-29": 998.28,
     "2026-09-30": 998.63,
-    "2026-10-01": 1002.71
+    "2026-10-01": 1002.71,
+    "2026-10-02": 1002.42
    }
   },
   "Opus 5 mean reversion": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Concentrated long book of oversold US large-cap quality whose specific drawdown cause is now priced or actively reversing - defense de-rated on a peace-deal headline that reversed on 28 Sep, an EDA leader that raised guidance into its selloff, a network incumbent marked down by target cuts while revenue accelerates, and a water-infrastructure compounder at the exact bottom of its 52-week range on an acquisition-financing overhang that is now fully priced - with the two legs whose drawdown cause is live and worsening cut and 25% cash held at 4% against a 10-year yield at 5.25%, its highest since 2007.",
-   "nav": 1013.99,
-   "growth_pct": 1.4,
+   "nav": 1017.89,
+   "growth_pct": 1.79,
    "max_drawdown_pct": -5.47,
    "gross_exposure_pct": 75,
    "n_positions": 6,
@@ -5478,15 +5516,16 @@
     "2026-09-28": 990.36,
     "2026-09-29": 987.89,
     "2026-09-30": 992.54,
-    "2026-10-01": 1013.99
+    "2026-10-01": 1013.99,
+    "2026-10-02": 1017.89
    }
   },
   "Opus 5 pairs": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Two equal-weighted, same-industry relative-value pairs (STLD/NUE in steel, M/KSS in department stores), each built on a dated company-specific guidance divergence, run at 60% gross with 40% cash at 4%.",
-   "nav": 1007.47,
-   "growth_pct": 0.75,
+   "nav": 1009.31,
+   "growth_pct": 0.93,
    "max_drawdown_pct": -1.13,
    "gross_exposure_pct": 60,
    "n_positions": 4,
@@ -5592,15 +5631,16 @@
     "2026-09-28": 1007.99,
     "2026-09-29": 1008.08,
     "2026-09-30": 1009.9,
-    "2026-10-01": 1007.47
+    "2026-10-01": 1007.47,
+    "2026-10-02": 1009.31
    }
   },
   "Opus 5 seasonality": {
    "model": "opus",
    "group": "opus5",
    "strategy": "The pre-committed Oct-1 midterm-year rotation, executed with the mandate's seasonal-AND-catalyst filter rather than blindly: deploy part of the dry powder into the October/Q4 midterm statistic (SPY, financials) while keeping the rate-shock legs that the Sep-16 hike validated (short IEF/TLT/XLU) and re-expressing the energy leg through refiners, where the Hormuz supply catalyst is actually landing.",
-   "nav": 994.55,
-   "growth_pct": -0.55,
+   "nav": 995.92,
+   "growth_pct": -0.41,
    "max_drawdown_pct": -3.66,
    "gross_exposure_pct": 70,
    "n_positions": 8,
@@ -5746,15 +5786,16 @@
     "2026-09-28": 986.35,
     "2026-09-29": 985.6,
     "2026-09-30": 984.59,
-    "2026-10-01": 994.55
+    "2026-10-01": 994.55,
+    "2026-10-02": 995.92
    }
   },
   "Opus 5 trend following": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Systematic time-series trend across seven sleeves with signals refreshed through the 2026-09-28 close: long only where price is above both the 50- and 200-day moving average with positive 3-month momentum, short only where both are broken and momentum is negative, sized inversely to realised volatility and tilted toward the strongest-ranked signals - the single 2026 macro trend of an energy supply shock into a hiking Fed, now expressed through duration, energy, housing, FX and crypto with the broken gold leg cut entirely.",
-   "nav": 975.52,
-   "growth_pct": -2.45,
+   "nav": 976.33,
+   "growth_pct": -2.37,
    "max_drawdown_pct": -3.87,
    "gross_exposure_pct": 90,
    "n_positions": 7,
@@ -5885,15 +5926,16 @@
     "2026-09-28": 967.44,
     "2026-09-29": 966.68,
     "2026-09-30": 969.34,
-    "2026-10-01": 975.52
+    "2026-10-01": 975.52,
+    "2026-10-02": 976.33
    }
   },
   "Opus 5 unrestricted": {
    "model": "opus",
    "group": "opus5",
    "strategy": "Own the physical refining-and-logistics margin of the Iran-war fuel crisis at 69% gross long (four refiners plus product tankers), cut the diluted crude-beta ETF, and keep 17% short the two most direct victims of $4.71 jet fuel and a hiking Fed, with the FOMC cash buffer now redeployed.",
-   "nav": 1080.24,
-   "growth_pct": 8.02,
+   "nav": 1079.49,
+   "growth_pct": 7.95,
    "max_drawdown_pct": -5.22,
    "gross_exposure_pct": 86,
    "n_positions": 7,
@@ -6030,15 +6072,16 @@
     "2026-09-28": 1037.24,
     "2026-09-29": 1038.57,
     "2026-09-30": 1044.85,
-    "2026-10-01": 1080.24
+    "2026-10-01": 1080.24,
+    "2026-10-02": 1079.49
    }
   },
   "Opus 5 vol regime": {
    "model": "opus",
    "group": "opus5",
    "strategy": "The vol-crush carry trade has run its course, so the book stops selling convexity and buys a small, defined-cost piece of it: VIXY flips from short to a 7% long with VIX near a one-year low and SPX one-month skew in the 5th percentile, while the real volatility in this regime \u2014 rates \u2014 is expressed through a short-duration core and an inflation-linked real-asset sleeve, with 24% cash earning 4% into a Fed that is still hiking.",
-   "nav": 991.82,
-   "growth_pct": -0.82,
+   "nav": 990.13,
+   "growth_pct": -0.99,
    "max_drawdown_pct": -2.6,
    "gross_exposure_pct": 76,
    "n_positions": 6,
@@ -6163,15 +6206,16 @@
     "2026-09-28": 989.43,
     "2026-09-29": 987.57,
     "2026-09-30": 986.97,
-    "2026-10-01": 991.82
+    "2026-10-01": 991.82,
+    "2026-10-02": 990.13
    }
   },
   "Opus Broadening": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Broadening owned outside the US index-structure trade, now tilted hard at the one thing the tape is confirming: short long-duration Treasuries into a Fed that is hiking again, Japan switched from currency-hedged to unhedged so the BoJ tightening cycle pays us in yen, international developed value and European defense as the equity core, insurance geared to a 5.5% long end, emerging markets trimmed against a firming dollar, and Brazil removed ahead of a binary October election.",
-   "nav": 926.85,
-   "growth_pct": -7.32,
+   "nav": 932.85,
+   "growth_pct": -6.71,
    "max_drawdown_pct": -8.89,
    "gross_exposure_pct": 84,
    "n_positions": 7,
@@ -6316,15 +6360,16 @@
     "2026-09-28": 932.99,
     "2026-09-29": 931.28,
     "2026-09-30": 930.53,
-    "2026-10-01": 926.85
+    "2026-10-01": 926.85,
+    "2026-10-02": 932.85
    }
   },
   "Opus Momentum": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Net-low-beta real-asset and short-duration carry for a confirmed inflationary hiking regime: short-dated TIPS plus floating-rate Treasuries as the anchor, energy and broad-commodity cash-flow carry into a supply-constrained oil market, and value/min-vol/defensive-pharma risk premia \u2014 with the precious-metals sleeve cut to a residual geopolitical tail hedge because rising real yields, not inflation alone, now set the gold price.",
-   "nav": 997.11,
-   "growth_pct": -0.29,
+   "nav": 994.57,
+   "growth_pct": -0.54,
    "max_drawdown_pct": -4.12,
    "gross_exposure_pct": 90,
    "n_positions": 10,
@@ -6486,15 +6531,16 @@
     "2026-09-28": 997.18,
     "2026-09-29": 997.87,
     "2026-09-30": 994.39,
-    "2026-10-01": 997.11
+    "2026-10-01": 997.11,
+    "2026-10-02": 994.57
    }
   },
   "Opus Picks-and-Shovels": {
    "model": "opus",
    "group": "flagship",
    "strategy": "A real-asset book rebuilt around the electrification bottleneck rather than the oil supply shock: copper miners as the largest leg, three grid-and-power equipment names selling into record backlogs, gold miners as the policy hedge, and a cut-down energy stub left only as a Hormuz tail.",
-   "nav": 1107.76,
-   "growth_pct": 10.78,
+   "nav": 1118.9,
+   "growth_pct": 11.89,
    "max_drawdown_pct": -6.09,
    "gross_exposure_pct": 82,
    "n_positions": 6,
@@ -6632,15 +6678,16 @@
     "2026-09-28": 1097.56,
     "2026-09-29": 1098.01,
     "2026-09-30": 1098.98,
-    "2026-10-01": 1107.76
+    "2026-10-01": 1107.76,
+    "2026-10-02": 1118.9
    }
   },
   "Opus Quality Defensive": {
    "model": "opus",
    "group": "flagship",
    "strategy": "Cross-asset carry and trend stacking with the falsified bank net-interest-margin leg closed and replaced by floating-rate loan carry, weight concentrated in the three engines a hiking Fed and supply-driven commodity inflation actually pay - broad commodity carry in backwardation, systematic managed-futures trend, and coupons that reset upward with the policy rate - alongside midstream and E&P energy carry and a covered-call premium sleeve, all long-only.",
-   "nav": 991.35,
-   "growth_pct": -0.86,
+   "nav": 991.99,
+   "growth_pct": -0.8,
    "max_drawdown_pct": -4.56,
    "gross_exposure_pct": 90,
    "n_positions": 6,
@@ -6774,15 +6821,16 @@
     "2026-09-28": 989.09,
     "2026-09-29": 981.99,
     "2026-09-30": 982.61,
-    "2026-10-01": 991.35
+    "2026-10-01": 991.35,
+    "2026-10-02": 991.99
    }
   },
   "Opus Value": {
    "model": "opus",
    "group": "flagship",
    "strategy": "A trend book that finally owns the trends that exist: the confirmed US momentum and quality factors on the long side, the 19-year-high rates regime expressed short across the long end of the Treasury curve, a short in the real-yield-driven gold-miner downtrend, and a retained energy leg sized as insurance against the one scenario that hurts every other leg at once.",
-   "nav": 958.99,
-   "growth_pct": -4.1,
+   "nav": 961.7,
+   "growth_pct": -3.83,
    "max_drawdown_pct": -7.06,
    "gross_exposure_pct": 90,
    "n_positions": 6,
@@ -6914,7 +6962,8 @@
     "2026-09-28": 958.33,
     "2026-09-29": 954.58,
     "2026-09-30": 953.92,
-    "2026-10-01": 958.99
+    "2026-10-01": 958.99,
+    "2026-10-02": 961.7
    }
   }
  }
