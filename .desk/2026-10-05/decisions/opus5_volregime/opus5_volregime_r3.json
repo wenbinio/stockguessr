@@ -1,0 +1,15 @@
+{
+  "name": "Opus 5 vol regime",
+  "strategy": "Stagflationary vol-dispersion book: owns the supply-shock inflation that is actually happening (energy, broad commodities) plus cheap equity convexity against an S&P at record highs with VIX at 15.3, funded by a reduced duration short and a small-cap short that pays in the growth scare the 29k payroll print just made live.",
+  "entry": "2026-10-05",
+  "capital_usd": 1000,
+  "cash_pct": 20,
+  "reassessment_note": "DRAFT - pending final verification.",
+  "positions": [
+    {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 28, "stop_loss_pct": 13.0, "take_profit_pct": 30.0, "thesis": "Supply-shock energy is the one inflation trade with a physical cause: Strait of Hormuz disruption, Brent ~97 and +19% on the month, sector 2026 earnings forecast +57%, XLE +28% YTD against a flat SPY. Sized up from 17% because this is realized, not anticipated, and it is the engine behind the 3.7% headline CPI the Fed is hiking into."},
+    {"symbol": "VIXY", "kind": "equity", "side": "long", "weight_pct": 14, "stop_loss_pct": 25.0, "take_profit_pct": 80.0, "thesis": "The mandate trade. VIX closed 15.31 and falling with the S&P at a record 7,666, the 10y at a 19-year high of 5.24%, core PCE 3.4%, a shooting war on 20% of seaborne oil, and payrolls at 29k. Equity implied vol is mispriced against that macro dispersion. Sized up from 7% but capped at 14% because roll decay makes this a defined-cost option, not a core holding."},
+    {"symbol": "COMT", "kind": "equity", "side": "long", "weight_pct": 12, "stop_loss_pct": 12.0, "thesis": "Broad commodity roll exposure diversifies XLE's equity beta: it keeps the inflation-linked real-asset sleeve without doubling the energy-equity drawdown if a Hormuz ceasefire compresses the geopolitical premium in oil equities faster than in spot commodities."},
+    {"symbol": "IWM", "kind": "equity", "side": "short", "weight_pct": 14, "stop_loss_pct": 10.0, "take_profit_pct": 20.0, "thesis": "New leg and the book's tail hedge. Small caps carry floating-rate debt into a 5.24% long end and are first casualty of a labor market adding 29k jobs with 60k of downward revisions. Critically it pays in the growth scare where VIXY also pays and the TLT short loses, so the book is no longer a one-way inflation bet."},
+    {"symbol": "TLT", "kind": "equity", "side": "short", "weight_pct": 12, "stop_loss_pct": 8.0, "take_profit_pct": 15.0, "thesis": "Cut from 18% rather than held. The Fed hiked to 3.75-4% with one more guided and core at 3.4%, so short duration still belongs. But at a 5.24% 10y, a 19-year yield high reached after a 30% one-week MOVE spike, much hawkishness is priced and the 29k payroll print makes a flight-to-quality rally a real tail. Reduce, do not press."}
+  ]
+}

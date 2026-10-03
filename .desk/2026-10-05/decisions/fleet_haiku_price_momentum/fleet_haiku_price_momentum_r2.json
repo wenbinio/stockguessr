@@ -1,0 +1,53 @@
+{
+  "name": "Haiku price momentum",
+  "strategy": "Aggressively pursue H2 2026 momentum via leveraged semiconductor (3x SOXL) and mega-cap tech (3x TQQQ) exposure, with direct chip play (MU) and modest defensiveness; reduce cash drag from 50% to 25%.",
+  "entry": "2026-10-05",
+  "capital_usd": 1000,
+  "cash_pct": 25,
+  "reassessment_note": "Current book down 4.46% vs SPY +2.78% over 59 days (entry 2026-07-31) due to strategic misalignment: 50% cash drag + underweight in actual momentum winners. Market data as of Oct 2 shows clear momentum shift: SOXL +6.5% daily (up 54.7% YTD), TQQQ +2.9% daily, semiconductors driving market (AMD +195%, Intel +230% YTD), while small caps lag (+0.94%). Current small-cap/bond positioning fights the trend. Pivoting to leverage the clear H2 2026 momentum in semis and AI-driven tech via SOXL and TQQQ overweights, reducing cash from 50% to 25% to deploy into momentum, and maintaining take-profit/stop-loss discipline to manage risk in a leveraged portfolio.",
+  "positions": [
+    {
+      "symbol": "SOXL",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 25.0,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 40.0,
+      "thesis": "Direxion Daily Semiconductor Bull 3X: captures extreme momentum in semiconductor complex. SOXL up 6.5% on Oct 2 alone; underlying SOXX up 54.7% YTD. Semiconductors are core to H2 2026 AI infrastructure buildout (Broadcom +221% AI rev growth, NVIDIA data center up 117% pace). 3x leverage amplifies the momentum move while take-profit order locks in gains and stop-loss limits downside."
+    },
+    {
+      "symbol": "TQQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 30.0,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 35.0,
+      "thesis": "ProShares UltraPro QQQ: 3x leveraged Nasdaq-100 captures mega-cap tech momentum. QQQ +1.02% on Oct 2, translating to TQQQ +2.9%. Provides direct exposure to AI leaders (NVIDIA, MSFT, Apple, Meta) driving market. Nasdaq outperformed Sep (+1.9% vs SP 500 -0.5%). 3x leverage captures intraday momentum while stop-loss protects against reversal."
+    },
+    {
+      "symbol": "QQQ",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10.0,
+      "stop_loss_pct": 10.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Invesco QQQ Trust: unlevered Nasdaq-100 index. Core exposure to tech/AI momentum without 3x leverage concentration risk. Diversifies from TQQQ/SOXL leverage while maintaining participation in primary momentum theme. Provides optionality for rebalancing within large-cap tech space."
+    },
+    {
+      "symbol": "MU",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.0,
+      "stop_loss_pct": 12.0,
+      "take_profit_pct": 35.0,
+      "thesis": "Micron Technology: single-name semiconductor play on H2 2026 AI chip demand wave. MU up 3.03% on Oct 2. Direct exposure to memory demand from AI infrastructure buildout; component of both SOXX and SOXL but allows independent thesis expression and potential outperformance if memory demand accelerates vs other semis."
+    },
+    {
+      "symbol": "SHV",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 5.0,
+      "thesis": "iShares Short Treasury Bond ETF: defensive ballast against leverage concentration. Provides capital preservation element in face of rising long-end yields (TLT -3.03% on week). Modest allocation maintains optionality for rotation if momentum reverses or volatility spikes."
+    }
+  ]
+}

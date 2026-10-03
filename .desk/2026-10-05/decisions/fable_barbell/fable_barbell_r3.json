@@ -1,1 +1,82 @@
-{"decision": "HOLD", "reason": "Provisional hold written early per brief while research is in progress: every Round 3 long/short sector leg is within 5% of its entry, stops and take-profits are attached on all nine legs, and churning a 66%-gross ETF book costs real basis points, so holding is the default until the reassessment is complete."}
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked for a narrow tech-led tape with a 5.3% ten-year and $100 oil: long technology, energy, health care and a small biotech sleeve versus short the rate-sensitive and cyclical downtrends in industrials, utilities, real estate and discretionary, correlation-deduped with hard stops and take-profits.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 42,
+ "reassessment_note": "First re-rank in two weeks (account could not be polled last week), and the ranking has moved under the book. Momentum computed from the 10/02 closes (1-month from 9/02, 2-month from 8/03): XLK +8.8%/+12.2% is the only sector with positive momentum on both windows and is +8.6% since my 9/16 entry, and I was not long it, which is the single biggest reason this book is -3.7% while SPY is +3.8%. XLE -3.5%/+6.9%, XLV -3.9%/+2.4% and XBI -6.6%/+4.8% keep positive medium-term momentum and stay long; XLF -7.2%/-6.8% has flipped to a laggard (down 7% from its September high, worst six-day run versus QQQ since the SVB episode, demoted from Leader to Hold in the sector-rotation ranking with 43% breadth) so the long is cut rather than held into 10/13 bank earnings; XLC -1.9%/-0.9% is flat and gets cut to concentrate the long side. On the short side XLU -6.7%/-10.2%, XLRE -6.7%/-9.7%, XLI -1.6%/-7.2% and XLY -4.2%/-6.9% are the cleanest downtrends with 0-14% of components above their 20-week averages; XHB -4.4%/-9.1% is replaced by XLRE, which has the stronger recent trend and was never in the book, because holding both would double the same duration bet. Macro context: the October Fed hike died on the 29K payroll print and cool core PCE, but the 10-year still rose to 5.28% on Friday (30-year 5.63%) because the long end is being driven by term premium, deficits and $100 oil rather than the Fed, so the rate-sensitive shorts keep their reason to exist, and the cyclical shorts (XLI, XLY) hedge the alternative where the jobs miss turns into a growth scare that eventually pulls yields down and squeezes utilities and REITs. Net exposure drops from +14 to +12 and gross from 66% to 58%, with 42% in cash at 4% because 10 of 11 sectors are negative over the past month and I do not want a bigger net long than the evidence supports. Round 3 novelty: the only symbol shared with my Round 2 book is XLE (8% there, 10% here), so same-direction overlap is roughly 8% of gross, far below the 50% limit.",
+ "positions": [
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Top-ranked long at 14%, the largest weight in the book, because it is the only sector with positive 1-month and 2-month momentum (+8.8%/+12.2%), ranked #2 in the rotation model with 75% breadth, +41% trailing-year, and its largest holding NVDA printed a record high Friday on a $150B buyback and agentic-AI demand. A 12% stop caps the damage if the narrow leadership breaks; a 20% take-profit banks a melt-up."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Second-ranked long at 10%: still #1 in the rotation model (score 79, 86% breadth, +20% over 12 weeks), Brent at $100-102 on US-Iran fighting and a new carrier deployment, XLE +39% year-to-date. Trimmed from 12% because the 1-month print is -3.5% and crude slipped Friday; the 12% stop handles a ceasefire gap."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Third-ranked long at 7%: ranked #3 in the rotation model, +2.4% on 2-month, and the MFN drug-pricing deals now cover 15 of 17 large manufacturers with tariff exemptions, which removes the sector's policy tail ahead of Q3 reports starting 10/13. Trimmed from 9% because the 1-month print is -3.9%."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Small satellite long at 4%: equal-weight biotech still carries +4.8% 2-month momentum from the August rally and is the long leg least correlated with XLK and XLE, but the 1-month is -6.6% and it is rate-sensitive, so it is cut from 6% and kept only as a diversifier with a wider 15% stop appropriate to its volatility."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Largest short at 7%: industrials are -7.2% over 2 months with only 14% of components above the 20-week average, sitting in the model's Distribution quadrant, and the 29K payroll print is the kind of growth signal that keeps cyclicals offered. Down 1% against me since 9/16, so the 10% stop stays tight."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rate-sensitive short at 6%, the book's best leg (+2.9%): utilities are -10.2% over 2 months, the lowest-ranked sector with 0% breadth, trading at $39.83 against a $39.03 52-week low with the 10-year at 5.28% and the 30-year at 5.63%. Reduced from 7% because option flow is starting to look for a bounce and the sector catches a bid in a growth scare; the 10% stop handles that."
+  },
+  {
+   "symbol": "XLRE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Replaces the XHB short at 5%: real estate is -6.7%/-9.7% on 1-month/2-month with 0% of components above the 20-week average and a long-end yield that rose even on a weak jobs number. Chosen over homebuilders because its recent trend is stronger and holding both would double the same duration bet; 12% stop because REITs can squeeze hard if the bond sell-off ends."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Cyclical short at 5%: discretionary is -6.9% over 2 months with 0% breadth and sits in the model's laggard quadrant, with a $100 oil tax on the consumer and a 29K jobs print. Kept small and with a 12% stop because the ETF is dominated by AMZN and TSLA and Tesla's Q3 delivery beat just produced a +4.7% day."
+  }
+ ]
+}

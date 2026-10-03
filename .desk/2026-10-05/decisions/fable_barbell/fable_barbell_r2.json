@@ -1,1 +1,74 @@
-{"decision": "HOLD", "reason": "Provisional hold written early per brief while research is in progress: the Round 2 barbell is +3.55% with max drawdown under 3%, AI-infra sleeve is working (+5-9%) with -18% stops attached, and ballast has only modest drift, so the default of holding beats churning a $1,000 book before the reassessment is finished."}
+{
+ "name": "Fable Barbell",
+ "strategy": "Risk-balanced barbell for a Fed on hold but a 5.3% ten-year and $100 oil: 25% aggressive AI-infra compounders (NVDA/AVGO/ANET) with stops ratcheted up to the new fill and take-profits attached, against 35% rate-resilient ballast (Berkshire, energy, gold, pharma) and 40% yielding cash.",
+ "entry": "2026-10-05",
+ "capital_usd": 1000,
+ "cash_pct": 40,
+ "reassessment_note": "First reassessment in two weeks (the account could not be polled last week). Thesis check: the October Fed hike died on the 29K September payroll print and a cool 3.0% core PCE (CME hike odds 64% to 16%), but a December hike is still priced, the dot plot still shows one more, the 10-year closed Friday at 5.28% after a 5.34% print that was the highest since 2002, the 30-year is 5.63%, and Brent sits at $100-102 after the US deployed another carrier to the Middle East. So the barbell's 'hiking Fed and oil shock' framing is softer at the front end but intact at the long end and in oil; I am not reaching for duration (TLT at 52-week lows, long end rising even on weak jobs) and I am keeping 40% cash at 4% as the ballast of last resort while 10 of 11 S&P sectors are negative over the past month and leadership is a single sector. The book is doing its job: +3.55% versus SPY +2.78% with a -2.9% max drawdown on 60% gross. I am re-registering the same weights for one reason: the AI sleeve has run (NVDA +9.4%, AVGO +4.8%, ANET +5.0% from the 9/16 fills, NVDA at a record on a $150B buyback expansion) and its -18% stops now reference stale fills, so NVDA's stop sits 25% below the mark. Re-entering at the 10/05 close ratchets every stop to the new fill and lets me attach +40% take-profits on the aggressive sleeve, for a round-trip cost of roughly 2-3 bps on the traded notional. The ballast drifts (BRK-B -3.3% on the Buffett chair transition, GLD -3.0% on a 2026-high dollar, JNJ -4.2% on Stelara/valuation chatter into its 10/13 report) are all within normal noise, none is a thesis break, and the pharma pair now carries the TrumpRx MFN deals and tariff exemptions that remove the policy tail I bought them to withstand. No weight changes; cash unchanged.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Core of the aggressive sleeve at 12%: data-center revenue +117% y/y, hyperscaler capex tracking $800B in 2026 and $1.3T in 2027, now #1 in data-center Ethernet switching, and a record high Friday on a $150B buyback expansion. The barbell lets this compound while cash and ballast absorb the drawdowns; the stop is re-based to Monday's fill to protect the +9% already banked on this leg, and a +40% take-profit forces me to bank a blow-off rather than ride it round-trip."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Custom-ASIC and AI-networking complement to NVDA at 8%: roughly $59B semiconductor plus $30B infrastructure-software revenue, the preferred supplier for hyperscalers that want an alternative to merchant GPUs, +3.4% Friday as the AI complex re-rated. Second-largest sleeve weight because its diversification across XPU customers lowers single-customer risk relative to NVDA. Stop ratcheted to the new fill; +40% take-profit."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Smallest sleeve weight at 5% because it is the most competitive niche: Ethernet is displacing InfiniBand for new AI clusters, revenue growth accelerated to 38% with 2026 guidance raised to 40%, but NVIDIA's own switching business took the #1 share spot and that caps how large I will let this be. Stop re-based to Monday's fill; +40% take-profit."
+  },
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "thesis": "Largest ballast leg at 14%: a $300B-plus T-bill pile earning the same high short rates that are hurting everyone else, insurance float, and a diversified operating-company base. It is dead money year-to-date and has a succession overhang now that Buffett has stepped down as chair, but that is exactly why it trades like a low-beta cash proxy, which is the role it plays here. No stop: this is the leg I want to own through a drawdown, not sell into one."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Oil-shock hedge at 8%: Brent is $100-102 on active US-Iran fighting, Hormuz threats and a fresh carrier deployment, XLE is up 39% year-to-date and remains the top-ranked sector on 12-week performance (+20%) with 86% breadth. The leg is -1.3% since 9/16 because crude slipped on Friday; the 15% stop and 25% take-profit stay on because this is a geopolitical position and I want the exit decided in advance."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "thesis": "Monetary ballast at 5%: gold at $4,140-4,190 is -3% from my entry because the dollar made 2026 highs and real yields spiked, but the October hike dying removes the main near-term headwind and physical/industrial demand absorbed the sell-off. It is the one ballast leg uncorrelated to both equities and credit; no stop because I size it small enough to hold through a 10% drawdown."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Defensive pharma ballast at 4%: Merck signed the MFN pricing deal with the administration and secured the tariff exemption, which removes the policy tail that mattered, leaves a low-beta cash-generative balance sheet, and the leg is flat (-0.4%) since entry. Small because of the Keytruda patent-cliff overhang later in the decade."
+  },
+  {
+   "symbol": "JNJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Defensive pharma ballast at 4%: J&J's TrumpRx MFN agreement bought a three-year exemption from the threatened 100% pharma tariffs, 2026 guidance has already absorbed the Stelara biosimilar cliff, and the -4.2% drift from a $278 all-time high into the 10/13 Q3 report is valuation noise, not a thesis break (BofA target $278, consensus $276). Held without a stop as a low-beta diversifier against the AI sleeve."
+  }
+ ]
+}

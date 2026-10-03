@@ -1,0 +1,18 @@
+{
+  "name": "Opus 5 pairs",
+  "strategy": "Two equal-weighted same-industry relative-value pairs built on dated company-specific guidance divergences: long STLD / short NUE in steel, and long M / short KSS in department stores, run at 60% gross with 40% cash at 4%.",
+  "entry": "2026-10-05",
+  "capital_usd": 1000,
+  "cash_pct": 40,
+  "reassessment_note": "EARLY DRAFT written for outage insurance; refinement in progress. Steel pair is working and its catalyst is still forward-looking (STLD record shipments, fabrication backlog ~50% above prior-year Q3 extending through Q1 2027, and first commercial aluminum shipments from Columbus MS in Q4, against NUE raw-materials drag). Department-store pair has the right fundamentals (Macy's Q2 comps +2.7%, FY guidance raised, Bloomingdale's +11.3%; Kohl's comps -0.9% with the EPS beat leaning on a ~$150M one-time tariff refund) but the KSS short is a crowded trade I am re-sizing.",
+  "positions": [
+    {"symbol": "STLD", "kind": "equity", "side": "long", "weight_pct": 15, "stop_loss_pct": 15.0,
+     "thesis": "Long leg of the steel pair. STLD guided Q3 to $5.34-5.38 with record shipments and metal-margin expansion, and carries two company-specific drivers NUE lacks: a steel-fabrication backlog roughly 50% above prior-year Q3 that extends through Q1 2027, and the Columbus MS aluminum flat-rolled mill reaching first commercial shipments in Q4 2026."},
+    {"symbol": "NUE", "kind": "equity", "side": "short", "weight_pct": 15, "stop_loss_pct": 15.0,
+     "thesis": "Short leg of the steel pair. NUE guided Q3 to $5.55-5.65 but the composition is weaker: steel mills and steel products improve while raw materials deteriorate on lower pricing and shipments, and NUE has no ramping new-capacity earnings driver comparable to STLD's aluminum mill. Held as the industry hedge so the pair expresses company-specific divergence rather than hot-rolled coil direction."},
+    {"symbol": "M", "kind": "equity", "side": "long", "weight_pct": 15, "stop_loss_pct": 18.0,
+     "thesis": "Long leg of the department-store pair. Macy's Q2 comps rose 2.7% with all three nameplates growing (Bloomingdale's +11.3%, Bluemercury +6.2%) and management raised FY2026 net sales, comps, EBITDA and EPS guidance - a dated, company-specific upgrade."},
+    {"symbol": "KSS", "kind": "equity", "side": "short", "weight_pct": 15, "stop_loss_pct": 18.0,
+     "thesis": "Short leg of the department-store pair. Kohl's Q2 net and comparable sales both fell 0.9% and the EPS beat leaned on roughly $150M of one-time tariff refunds, leaving it the only mid-tier peer without real demand growth while Ross and TJX grew comps 10% and 4%."}
+  ]
+}
