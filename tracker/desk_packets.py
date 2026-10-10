@@ -107,8 +107,12 @@ def main() -> int:
             s = r2.normalize(p["symbol"])
             key = s + ("-USD" if p["kind"] in ("crypto", "perp") and not s.endswith("-USD") else "")
             sig = (p["symbol"], p.get("side", "long"), p.get("kind"))
-            f = idx.get(sig) or idx.get((s, p.get("side", "long"), p.get("kind")))
-            x = closed.get(sig) or closed.get((s, p.get("side", "long"), p.get("kind")))
+            # Fills record crypto/perp legs under the priced key ("BTC-USD") while the
+            # registered book may say "BTC"; without the key lookup the BTC rows of
+            # Opus 5 trend following and Opus 5 seasonality showed no entry fill.
+            ksig = (key, p.get("side", "long"), p.get("kind"))
+            f = idx.get(sig) or idx.get((s, p.get("side", "long"), p.get("kind"))) or idx.get(ksig)
+            x = closed.get(sig) or closed.get((s, p.get("side", "long"), p.get("kind"))) or closed.get(ksig)
             ep = f.get("fill_price") if f else None
             cp = x.get("fill_price") if x else px.get(key)
             ret = None
