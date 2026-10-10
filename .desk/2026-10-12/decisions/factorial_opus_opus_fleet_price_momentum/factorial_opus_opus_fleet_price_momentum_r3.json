@@ -1,0 +1,26 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum: an AI-levered tech core (META/NVDA/AMD) plus the cybersecurity leaders that are actually printing relative strength, a slimmed life-sciences sleeve limited to names whose trend has not broken, and an elevated cash buffer while the genomics momentum cohort unwinds.",
+ "entry": "2026-10-12",
+ "capital_usd": 1000,
+ "cash_pct": 25,
+ "reassessment_note": "Research was limited: WebSearch returned no market coverage for the Oct 5-9 week for the tech names, so the tech-core calls rest on packet marks. Aggregator sources did confirm two things. TXG traded near a $95.16 52-week high on Oct 5, after a roughly 469% YTD run, and has since fallen to $80.65. MRNA joined the Nasdaq 100 on Oct 9, and detailed Phase 3 cancer-vaccine data are reportedly due in October. What changed: the genomics rotation I made on 10-05 was bought into a crowded blow-off that reversed within days. TWST was stopped out at -25.8%, TXG is -17.5%, GRAL -8.8% and NTRA -5.9%. That is a cohort-level momentum break, not noise in one name, so I am cutting TXG and GRAL rather than waiting for their wide stops. The tech core is only 3-4% off entry after four sessions, which is a pullback inside a trend, not a break, so those legs are held at the same weights. The cyber legs are the book's relative-strength leaders (OKTA +6.3%, CRWD +0.9%) and get modest adds. MRNA is the best leg (+10.7%), but it carries a binary data event and post-index-inclusion fade risk, so I keep its size and replace the 25% stop with a tight one. Freed weight goes to cash at 4% APY rather than being forced into new names I could not research this week. Changes are limited to keep friction low.",
+ "positions": [
+  {"symbol": "META", "kind": "equity", "side": "long", "weight_pct": 15, "stop_loss_pct": 15.0, "take_profit_pct": 35.0,
+   "thesis": "Largest AI-capex beneficiary in the core. It is -3.1% four sessions after entry, a normal pullback that has not broken the trend. Held at 15%, unchanged, because it is the least semiconductor-cyclical way to own the AI trade."},
+  {"symbol": "NVDA", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 15.0, "take_profit_pct": 40.0,
+   "thesis": "Core AI-compute momentum leg, -4.0% since 10-05. Held at 10%, not added to: the mandate deliberately avoids adding into the extended semiconductor move after several stops across the field (SOXL among them). The 15% stop defines the risk."},
+  {"symbol": "AMD", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 18.0, "take_profit_pct": 45.0,
+   "thesis": "Second AI-accelerator leg, supported by its multi-gigawatt GPU supply relationship with Meta. It is -3.7% from entry, within normal volatility for a name at this level. Held at 10% with an 18% stop that fits its higher beta."},
+  {"symbol": "OKTA", "kind": "equity", "side": "long", "weight_pct": 12, "stop_loss_pct": 18.0, "take_profit_pct": 45.0,
+   "thesis": "The book's strongest relative-strength equity leg: +6.3% in four sessions while semis and genomics fell. Momentum logic says add to the leader, so weight goes from 10% to 12%, and the stop tightens from 20% to 18% since the entry basis resets higher."},
+  {"symbol": "CRWD", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 18.0, "take_profit_pct": 45.0,
+   "thesis": "Cybersecurity momentum leg that held up (+0.9%) through a week when the rest of growth sold off. Adding 1 point to 10% builds a two-name security sleeve that is less correlated with the semiconductor tape."},
+  {"symbol": "MRNA", "kind": "equity", "side": "long", "weight_pct": 7, "stop_loss_pct": 12.0, "take_profit_pct": 40.0,
+   "thesis": "Best leg in the book (+10.7%), driven by its Nasdaq-100 inclusion on Oct 9 and the run into October Phase 3 data. Size stays at 7%, but the stop tightens from 25% to 12%. Index-inclusion buying is now done and the data readout is binary, so I want to keep exposure to the trend without giving back the gain."},
+  {"symbol": "NTRA", "kind": "equity", "side": "long", "weight_pct": 7, "stop_loss_pct": 15.0, "take_profit_pct": 45.0,
+   "thesis": "The one genomics/diagnostics name kept, because its drawdown (-5.9%) is modest and it has recurring testing revenue, unlike the TXG/TWST blow-off. Held at 7% with the stop tightened from 20% to 15%, so the book exits if it joins the cohort unwind."},
+  {"symbol": "TMO", "kind": "equity", "side": "long", "weight_pct": 4, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+   "thesis": "Small low-beta life-sciences anchor, -2.8% and behaving defensively relative to the genomics names. Held at 4% to keep some sector exposure after cutting TXG and GRAL, with a tight 12% stop."}
+ ]
+}

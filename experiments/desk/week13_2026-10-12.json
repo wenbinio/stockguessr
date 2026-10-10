@@ -1,0 +1,638 @@
+{
+ "desk_run_utc": "2026-10-10 12:07 UTC (poll) / apply after all 75 returns",
+ "week": 13,
+ "protocol": "v3 unrestricted retail",
+ "effective_entry": "2026-10-12",
+ "price_cutoff": "2026-10-09 close \u2014 identical for every manager.",
+ "managers_polled": 47,
+ "responded": 47,
+ "books_polled": 75,
+ "rebalances_accepted": 4,
+ "holds": 71,
+ "rejected": 0,
+ "rebalances": {
+  "Fable Barbell R3": "sector re-rank: long XLK 15 / XLE 10 / XLV 8, short XLRE 7 / XLB 7 / XLF 5 / XLI 6, cash 42",
+  "Opus 5 dispersion R3": "sold DE (FTC/USDA farm-equipment inquiry, corn drop), CME 9->12, SPY hedge short 36.5->34.5, cash 13",
+  "Opus Momentum R2": "AVGO 8 -> NVDA 8 (AVGO 3- and 6-month trend negative); rest unchanged, cash 8",
+  "Opus-fleet price momentum R3": "cut TXG and GRAL after genomics selloff (TWST stopped 10-08), OKTA 10->12, CRWD 9->10, tighter MRNA/NTRA stops, cash 25"
+ },
+ "risk_note": "No leverage anywhere; no perps. Largest single leg among the new books is Opus Momentum SMH 30% (unchanged from prior book). Opus 5 dispersion carries a 34.5% SPY short as a beta hedge. No newly concentrated or levered books.",
+ "standing_order_fills_since_last_poll": [
+  "R2 Sonnet global diversification SQQQ stop 10-06",
+  "R2 Haiku price momentum SOXL stop 10-08",
+  "R2 Sonnet small/mid-cap growth HOOD stop 10-08",
+  "R3 Opus-fleet price momentum TWST stop 10-08"
+ ],
+ "liquidations": 0,
+ "dispatch_note": "Interleaved tier order (dispatch_order.json). Prompts committed under .desk/2026-10-12/prompts/ and passed by file pointer so every manager received byte-identical template text. Fable available (probe OK).",
+ "research_access_confound": "Interleaving removed the week-12 mechanism: no manager reported an exhausted search budget. A tier skew in research depth remains, but it is behavioural/search-quality, not access: all 11 Sonnet-tier books (16 Sonnet R2/R3 files) report 0-2 searches and decided mostly or entirely on the packet (Sonnet GARP and Sonnet+tools quality compounders ran no search at all), finishing in ~10-33 s; Haiku managers ran 2-4 searches and mostly got stale (2017-2025) results; Opus managers ran 2-4 searches plus WebFetch/Yahoo with mixed freshness; all three Fables ran full research (27-40 tool calls). Many managers across tiers reported WebSearch returning stale pages for October 2026 queries. Treat week-13 research depth as tier-correlated; do not attribute HOLD rates to model reasoning alone.",
+ "packet_display_bug": "BTC rows registered as 'BTC' showed no entry fill because fills are keyed 'BTC-USD' (Opus 5 seasonality, Opus 5 trend following, Sonnet price momentum [25% BTC leg, actually +8.4%], Haiku global diversification, Haiku macro rotation). Display only; engine unaffected. Two Opus managers flagged it; fixed in desk_packets.py for week 14. Affected managers decided HOLD.",
+ "isolation_note": "Opus Momentum wrote Yahoo price pulls into decisions/opus_momentum/scratch/; moved out of the decisions tree before apply (desk_apply globs recursively). Not committed.",
+ "mandate_drift_flag": "Opus Quality Defensive self-reported that its R3 strategy of record (cross-asset carry and trend) has drifted from its 'Quality Defensive' name. Logged; no action (managers have free mandate within their book).",
+ "epoch_note": "All data here is post-2026-07-30; do not pool with pre-change data.",
+ "decisions": {
+  "claude_fable_r2": {
+   "decision": "HOLD",
+   "reason": "Researched decision (WebSearch and WebFetch were available and used). The Round 2 AI-infrastructure book is +12.31% with 22% cash; every leg is inside its stop (worst is TSM at -6.69% vs a -15% stop; MU at $1,029 sits on its $1,000 technical support and far above its $851 stop). The week's -3% to -7% chip pullback was macro and sentiment, not thesis-breaking: the 10-year printed a 24-year high of 5.35% on Oct 8 after the Fed minutes (most officials expect another hike by year-end), then the SOX fell 3.4% on the FT report that OpenAI's annualized revenue is ~$50B versus the ~$70B rumored. Against that, the hard data on my names got better, not worse: TSMC's Oct 8 6-K showed a record Q3 of NT$1.49T (+50% y/y), above its own $44.6-45.8B guidance range, with the full print on Oct 15; ASML reports Oct 14; Nvidia GTC Berlin is Oct 20-22; AMD reports Nov 3 and NVDA ~Nov 18, so no earnings landmine sits inside the next week. The 10-year closed Oct 9 at 5.24%, down ~5bps on the week with strong 10y/30y auction demand, and markets price an October hold at ~81%. The one event that could hurt is Wednesday's September CPI (August was 3.4%); I am not deploying the 22% cash in front of it with yields at 5.2-5.3%, and I am not cutting legs that are 5-7% above their stops into a TSMC print that is very likely to confirm the demand picture. BTC spot (5%, -3.8%) is a one-month-low flush of leveraged longs (~90% of $1.16B liquidated on Oct 9 were longs) while spot ETFs still took $118.8M on Oct 6 and $241M the prior week; its -20% stop stays. Re-registering an identical book would only reset my fills and stop bases and pay churn for nothing. Stops, sizes and cash are unchanged."
+  },
+  "claude_fable_r3": {
+   "decision": "HOLD",
+   "reason": "Researched decision (WebSearch and WebFetch were available and used). The Round 3 rate-cycle rotation book is +5.74% with a -2.08% max drawdown, 25% cash at 4%, and every equity leg green except EWJ (-1.45%). Leg by leg: XLE (12%, +2.6%) remains the Hormuz hedge and the strait is still constrained - eleven tankers were attacked in the week to Oct 4, the SPR is at a near-record low, Brent is $104 and WTI $92; Iran's Sept 25 seven-day reopening plan has not been accepted (Tehran restated its seven conditions on Oct 4 and the WSJ reported Trump rejected it), though Trump's Oct 9 'no strikes before the midterms' line is why I keep the leg at 12% with a 12% stop rather than adding. TLT (8%, +1.1%) is doing what the trend-reversal leg was bought to do: the 10-year hit a 24-year high of 5.35% on Oct 8 and closed 5.24% on Oct 9, down ~5bps on the week with strong 10y/30y auctions and an October hold priced at ~81%; Wednesday's September CPI is the test and the -7% stop (roughly +60-70bps of yield) covers a bad print. XLF (7%) was deliberately cut last week ahead of bank earnings and that is now imminent - JPM, Citi and Goldman on Oct 13, BofA and Morgan Stanley on Oct 14 - so I keep the small stake and the -10% stop rather than sizing up into prints. EWJ unhedged (10%) is being dragged by a fourth straight weekly yen decline to 158, but with the BoJ at 1.25% and board members backing further gradual hikes, and the August joint-intervention zone near 160 approaching, the unhedged yen bet is nearer its payoff than its failure; -12% stop stays. IWD, XLV and JEPQ are all positive and unchanged. ETH (-8.3%) and SOL (-9.6%) are at one-month lows after a flush in which ~90% of the $1.16B liquidated on Oct 9 were longs, while spot BTC ETFs still took net inflows; both legs sit far inside their -22%/-25% stops with take-profits attached, and selling a flushed market is the wrong side. Holding also preserves the Round 3 novelty rule: zero same-direction overlap with my Round 2 chip book. Re-registering the same book would only reset fills and stop bases and pay churn. Stops, sizes and cash unchanged."
+  },
+  "fable_barbell_r2": {
+   "decision": "HOLD",
+   "reason": "Researched decision (WebSearch and WebFetch were available; I used both). What the tape did this week: the Fed hiked to 3.75-4.00% in September and the Oct 7 minutes say most officials expect another hike by year-end; the 10-year touched 5.365% on Oct 7, its highest since 2002, before a strong $39B auction pulled it back to ~5.29%; WTI ~$89 and Brent ~$100-102; gold ~$4,100; the 30-year mortgage rate hit 7.49%. Tech sold off Oct 8 (XLK -1.8%, NVDA -2.9%) on yields and oil rising plus an FT report cutting OpenAI's annualized revenue estimate by ~$20B and a WSJ report that Broadcom is seeking $50B+ of borrowing for its OpenAI custom-chip program. Next week: bond market shut Monday (Columbus Day), bank earnings Tue/Wed, and September CPI Wednesday with consensus 3.6% headline (from 3.4%) and 2.5% core (from 2.4%), then PPI and retail sales Thursday and Fed Chair remarks at the IMF meetings. This is exactly the regime the barbell was built for, and the book is behaving as designed: the 35% rate-resilient ballast is up on every leg (BRK-B +2.3%, XLE +2.6%, GLD +1.3%, MRK +4.3%, JNJ +3.4%), 40% cash is earning 4%, and the 25% AI-infra sleeve is mixed (NVDA -4.0%, AVGO -0.3%, ANET +4.8%) with every leg far inside its -18% stop and no standing order fired. The NVDA/AVGO weakness is a macro-and-AI-capex-sentiment wobble, not a break in fundamentals (NVDA just reported $96B quarterly revenue, +106% y/y, and authorized a further $150B buyback on Sept 28), so I am not going to pay to cut it four sessions after entering. I considered trimming the AI sleeve ahead of a hot CPI, but a hotter print would be absorbed by the energy, gold and cash legs, which is the point of the barbell, and a full replacement would reset every fill and stop for no new information edge. Holding beats trading: the book is +4.62% versus SPY +3.97%, with a 2.91% max drawdown, and the only thing a trade would buy this week is churn cost."
+  },
+  "fable_barbell_r3": {
+   "name": "Fable Barbell",
+   "strategy": "Cross-sectional sector-momentum long/short re-ranked on the Sep 1 to Oct 9 tape with a 5.3% ten-year, $100 oil and a hiking Fed: long technology, energy and health care versus short the bottom of the cross-section in real estate, materials, financials and industrials, correlation-deduped with hard stops and take-profits and 42% yielding cash.",
+   "entry": "2026-10-12",
+   "capital_usd": 1000,
+   "cash_pct": 42,
+   "reassessment_note": "Researched decision (WebSearch and WebFetch were available; I used both, pulling daily closes for all eleven sector SPDRs plus XBI from Sep 1 through Oct 9). The cross-sectional ranking has moved since I set the week-12 book, so I re-rank rather than hold. Sep 1 to Oct 9 sector returns: XLK +8.2%, XLE +0.5%, XLV -0.5%, XLC -0.5%, XLY -1.5%, XLI -2.0%, XLP -2.1%, XLU -2.7%, XLF -4.3%, XLB -5.1%, XLRE -5.5%, XBI -5.9%. Three things changed. First, two of my four shorts have bounced out of the bottom of the ranking: XLU is up 5.2% from its Sep 24 low (39.36 to 41.41, including a +3.0% day on Oct 6) and sits -3.6% against me, and XLY is up 3.5% from its Sep 28 low; neither is a bottom-three sector any more, and holding a short in a sector that is mean-reverting against a 5.3% ten-year is fighting a bid I cannot see the end of (the utilities bid is the AI-power-demand story, which keeps attracting buyers on every dip). Second, XBI is the weakest leg in the whole book at -5.9% since Sep 1 and fell to 149.29 intraday on Oct 8; a momentum book should not be long its worst-ranked sleeve, so it goes. Third, XLB (-5.1%) and XLF (-4.3%) have fallen to the bottom alongside XLRE, and the macro behind them is intact: the Fed hiked to 3.75-4.00% in September and the Oct 7 minutes say most officials expect another hike by year-end, the 10-year touched 5.365% (highest since 2002), the 30-year mortgage rate is 7.49% and mortgage applications fell 4.2% w/w, and September CPI on Wednesday is expected at 3.6% headline (from 3.4%). The tech-long side of the book is unchanged in conviction: the Oct 8 drop (XLK -1.8%) came from yields and oil rising plus an FT story cutting OpenAI's revenue estimate and a WSJ report on Broadcom borrowing for OpenAI chips, which is a sentiment wobble inside a sector still +8% on the window, and XLK remains the clear top of the cross-section. Energy stays long on $100 Brent, the IEA emergency-reserve release dip notwithstanding, and health care stays as the defensive long with positive relative momentum. Shorts are deduped into two rate-sensitive legs (XLRE, XLF) and two cyclical legs (XLB, XLI) rather than four of one kind. The XLF short carries bank-earnings risk on Tue/Wed, so it is the smallest short at 5% with a 10% stop. Gross stays at 58% and cash at 42% earning 4%; the full replacement costs roughly 2-5 bps on the traded notional, which is small relative to the 3.6% I would otherwise be sitting in on a short that has stopped working. Lesson from this book's three fired stops: I keep stops at -10% to -12% but am now cutting a losing short on a ranking change at -3.6% rather than waiting for the -10% stop to do it for me.",
+   "positions": [
+    {
+     "symbol": "XLK",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 15,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Top of the cross-section at +8.2% from Sep 1 to Oct 9 and still the only sector making new highs into a 5.3% ten-year; the Oct 8 pullback (XLK -1.8%) was driven by yields, oil and an OpenAI-revenue story rather than a change in the data-center capex cycle (NVDA just reported +106% y/y revenue and a $150B buyback). Largest leg at 15% because it is the strongest-ranked sector by a wide margin; 12% stop guards against a hot-CPI rate shock, 20% take-profit locks a momentum extension."
+    },
+    {
+     "symbol": "XLE",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Brent ~$100-102 and WTI ~$89 with OPEC+ holding November targets; XLE is +4.9% over the last two weeks (62.04 on Sep 25 to 65.08 on Oct 9) and is the second-ranked sector on the Sep 1 window. It is also the leg that pays if Wednesday's CPI prints hot on energy, which is the main macro risk to the XLK long, so it hedges the book's biggest position. 10% weight, 12% stop below the late-September low."
+    },
+    {
+     "symbol": "XLV",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 8,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Health care is flat-to-slightly-negative on the Sep 1 window (-0.5%) but has positive relative momentum over the last two weeks (167.37 on Oct 5 to 170.81 on Oct 9, +2.1%) and is the defensive sector least sensitive to a 5.3% ten-year. Replaces the XBI sleeve as the book's defensive long; 8% weight, 12% stop."
+    },
+    {
+     "symbol": "XLRE",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 7,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Bottom-ranked sector at -5.5% from Sep 1 to Oct 9 and down from 44.04 to 41.61 with the 30-year mortgage rate at 7.49% (highest since Nov 2023), mortgage applications falling 4.2% w/w and the Fed minutes pointing to another hike by year-end. The Oct 9 +1.9% bounce is a reason to re-enter the short at a better price, not to drop it. Largest short at 7%; 12% stop allows for the sector's habit of sharp short-covering days."
+    },
+    {
+     "symbol": "XLB",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 7,
+     "stop_loss_pct": 10.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Materials is the second-weakest sector at -5.1% from Sep 1 to Oct 9 (52.07 to 49.43), making lower lows every two weeks (50.73, 49.80, 49.50, 49.27) with no counter-trend bounce, unlike XLU or XLY. It is a cyclical that loses on both legs of the current regime: $100 oil raises input costs and a hiking Fed slows end demand. Replaces the XLU short; 7% weight, 10% stop."
+    },
+    {
+     "symbol": "XLF",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 5,
+     "stop_loss_pct": 10.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Financials have fallen to third-weakest at -4.3% from Sep 1 to Oct 9 (57.20 to 54.73) despite higher rates, which tells me the market is pricing the credit and deposit-cost side of a 5.3% ten-year and 7.49% mortgages rather than the NIM side. Big-bank earnings land Tue/Wed (JPM, GS, C, WFC, then BAC, MS), so this is the smallest short at 5% with a 10% stop; a clean set of prints would stop it out for a small loss, a reserve build or credit warning would confirm the ranking. Replaces the XLY short."
+    },
+    {
+     "symbol": "XLI",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 6,
+     "stop_loss_pct": 10.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Industrials are -2.0% from Sep 1 to Oct 9 and fell 2.2% on Oct 7 as the 10-year hit 5.365%; the leg is +0.5% in my favour since Oct 5 and remains in the lower half of the cross-section with cyclical exposure to a hiking Fed and $100 oil. Kept at 6% as the second cyclical short alongside XLB; 10% stop."
+    }
+   ]
+  },
+  "fable_unconstrained_r2": {
+   "decision": "HOLD",
+   "reason": "Considered HOLD after research (WebSearch and WebFetch were available; sources: Money365 10-08 and 10-09 closes, TSMC 6-K/September revenue report, thriveinmarkets week-ahead calendar, Trading Economics and QNA on yields/gold, MercoPress on Brazil). The dual-momentum book entered 2026-10-05 is one week old and the signals that put each leg on have not flipped. Energy: WTI ~$91 and Brent ~$104 with Hormuz transits still a fraction of pre-war levels and US-Iran talks stalled; XLE +2.6% and the 6-month leader. Tech/semis: the 10-08 semiconductor selloff (Nasdaq -1.25%) was reversed on 10-09 (S&P +0.59% to 7,811, VIX back to 14.8, 10-year eased to 5.23%), and TSMC reported a record Q3 (NT$1.494tn, +50.9% y/y, above the top of its own guidance) on 10-08, so SMH's -4.8% week is noise against a 6-month uptrend, not a sharp 1-month correction; the -15% stop stays as the tail hedge. BTC: from the ~$60k February low and ~$64k mid-July to ~$82.5k now, the 3- and 6-month trends are up and the 1-month pullback from ~$86k is shallow; the -12% stop / +25% TP stay. FTNT is +5.8% and working. The real risk this week is rates, not fundamentals: the 30-year printed above 5.6% (24-year high), the Fed hiked in September for the first time in three years with a December hike ~87% priced, and September CPI prints 10-14 with consensus 3.6% headline (from 3.4%) and Chair Warsh speaks at the IMF 10-15/16. That argues for keeping the 43% cash sleeve at 4% and the stops, not for churning the book a week after it filled: dual momentum rebalances on monthly signals, and a full replacement would cost real basis points to re-enter the same leaders. Hold all five legs, stops and TP unchanged."
+  },
+  "fable_unconstrained_r3": {
+   "decision": "HOLD",
+   "reason": "Considered HOLD after research (WebSearch and WebFetch were available; sources: UnitedHealth BusinessWire release-date notice, MercoPress and LBC on the Brazil first round, thriveinmarkets week-ahead calendar, Money365 10-08/10-09 closes, FXStreet and Finance Magnates on the gold correction, Wealth Professional and 247WallSt on Fed/yields). The defensive risk-premia book is +3.14% with a -2.39% max drawdown, and the EWZ take-profit at 42.98 on 10-05 banked +12.9% on exactly the event it was sized for: the 10-04 first round surprised polls (Flavio Bolsonaro ~47%, Lula ~45%) and Brazil popped. The runoff is 10-25, so re-entering EWZ now would be chasing a 13% rally into a second binary event, which is the opposite of the mean-reversion mandate; that 7% stays in cash at 4% until after 10-25. UNH (12%) reports Q3 before the open on 10-13 at 8:00 ET; the leg was entered 9-21 at 377.56 knowing the print was coming, with a deliberately wide -30% stop because the contrarian case is that the name is already deeply derated and expectations are low. Holding through the print is the consistent choice, and at 12% a +/-15% move is about +/-1.8% of NAV, inside the book's risk budget. GLD (10%, -3.5%) is ~25% below the January $5,589 record while central banks bought ~289t in Q2 (+62% y/y); the headwind is real yields with the 30-year above 5.6% and the Fed hiking, which is why this is a 10% contrarian sleeve and not a core position. TLT (5%, -4.3%) is the leg most exposed to a hot 10-14 CPI (consensus 3.6% headline, oil at $91-104), but it is small, the -8% stop sits ~3.7% below the mark and will do the exit if the term-premium thesis fails; at a 5.6% long bond the contrarian value is better, not worse, than at entry. BRK-B (+2.7%) and SVXY (+2.1%, VIX 14.8 with Fear and Greed at 70) are doing what they were bought to do. A replacement book to resize one leg would re-base every fill and stop and cost basis points for no change in thesis. Hold all legs and standing orders; revisit EWZ after the 10-25 runoff and UNH sizing after the 10-13 print."
+  },
+  "factorial_opus_opus_fleet_deep_value_r3": {
+   "decision": "HOLD",
+   "reason": "The book is +5.41% since inception against SPY +5.01%, and the current leg (entered 2026-09-30) is only eight sessions old. Every leg is well inside its stop. The worst is the XLP short at -3.51% against a -10% stop, then BMY at -4.28% against -16%. CI (+3.9%), CVX and XOM (+3.8% each) are working. I ran three web searches. They gave context but no fresh catalyst. Treasury yields made multi-decade highs in early October (10-year about 5.34% on 10-05, easing to about 5.27% by 10-06), which supports the short in staples bond proxies. Brent is still hovering around $100 on the unresolved Hormuz disruption, which supports keeping the energy stub. I could not find a reliable current quote or October news for BMY, CI or CVS. The searches returned only background (BMY reports Q3 on about 10-29, and the April CMS 2027 Medicare Advantage rate bump of +2.48%). Nothing I found breaks the thesis on any leg. With no new information, replacing or resizing would only pay frictions to reshuffle a book that is beating its benchmark. So I hold, keep 14% in cash at 4%, and let the existing stops manage risk. I will revisit BMY and PFE ahead of late-October pharma earnings."
+  },
+  "factorial_opus_opus_fleet_dividend_growth_r3": {
+   "decision": "HOLD",
+   "reason": "The book was rebuilt only five sessions ago (2026-10-05 fill) and is working as designed: NAV +3.52% since inception, the new legs CB (+3.2%), CVX (+2.7%), XOM (+3.0%) and ABBV (+4.0%) are up, and nothing is near a stop. The worst leg is EPD at -2.0%, far above its -10% stop. I ran three web searches. They returned mostly undated or older pages, so this is light research, not a full refresh. What I found does not contradict the thesis. Undated but recent-looking headlines put Brent back near or above $100 after Houthi and Iranian strikes on Saudi infrastructure and Hormuz shipping, and one undated page puts the 10-year near 5.2%. That is the inflationary, high-yield regime the energy, midstream, P&C-float and defense legs were picked for. I found no company-specific negative news on any holding. The next real catalyst is Q3 earnings season: an earnings calendar lists CVX, XOM and ABBV around 2026-10-23, and CB and GD report in late October. Re-cutting the book a week after a full rotation would pay round-trip frictions without new information. The existing stops (10-13%) and take-profits already handle a reversal in oil or a rate shock, and the 12% cash keeps earning 4%. I will revisit after the Q3 prints."
+  },
+  "factorial_opus_opus_fleet_price_momentum_r3": {
+   "name": "Opus-fleet price momentum",
+   "strategy": "Concentrated long-only US price momentum: an AI-levered tech core (META/NVDA/AMD) plus the cybersecurity leaders that are actually printing relative strength, a slimmed life-sciences sleeve limited to names whose trend has not broken, and an elevated cash buffer while the genomics momentum cohort unwinds.",
+   "entry": "2026-10-12",
+   "capital_usd": 1000,
+   "cash_pct": 25,
+   "reassessment_note": "Research was limited: WebSearch returned no market coverage for the Oct 5-9 week for the tech names, so the tech-core calls rest on packet marks. Aggregator sources did confirm two things. TXG traded near a $95.16 52-week high on Oct 5, after a roughly 469% YTD run, and has since fallen to $80.65. MRNA joined the Nasdaq 100 on Oct 9, and detailed Phase 3 cancer-vaccine data are reportedly due in October. What changed: the genomics rotation I made on 10-05 was bought into a crowded blow-off that reversed within days. TWST was stopped out at -25.8%, TXG is -17.5%, GRAL -8.8% and NTRA -5.9%. That is a cohort-level momentum break, not noise in one name, so I am cutting TXG and GRAL rather than waiting for their wide stops. The tech core is only 3-4% off entry after four sessions, which is a pullback inside a trend, not a break, so those legs are held at the same weights. The cyber legs are the book's relative-strength leaders (OKTA +6.3%, CRWD +0.9%) and get modest adds. MRNA is the best leg (+10.7%), but it carries a binary data event and post-index-inclusion fade risk, so I keep its size and replace the 25% stop with a tight one. Freed weight goes to cash at 4% APY rather than being forced into new names I could not research this week. Changes are limited to keep friction low.",
+   "positions": [
+    {
+     "symbol": "META",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 15,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 35.0,
+     "thesis": "Largest AI-capex beneficiary in the core. It is -3.1% four sessions after entry, a normal pullback that has not broken the trend. Held at 15%, unchanged, because it is the least semiconductor-cyclical way to own the AI trade."
+    },
+    {
+     "symbol": "NVDA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Core AI-compute momentum leg, -4.0% since 10-05. Held at 10%, not added to: the mandate deliberately avoids adding into the extended semiconductor move after several stops across the field (SOXL among them). The 15% stop defines the risk."
+    },
+    {
+     "symbol": "AMD",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 45.0,
+     "thesis": "Second AI-accelerator leg, supported by its multi-gigawatt GPU supply relationship with Meta. It is -3.7% from entry, within normal volatility for a name at this level. Held at 10% with an 18% stop that fits its higher beta."
+    },
+    {
+     "symbol": "OKTA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 12,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 45.0,
+     "thesis": "The book's strongest relative-strength equity leg: +6.3% in four sessions while semis and genomics fell. Momentum logic says add to the leader, so weight goes from 10% to 12%, and the stop tightens from 20% to 18% since the entry basis resets higher."
+    },
+    {
+     "symbol": "CRWD",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 45.0,
+     "thesis": "Cybersecurity momentum leg that held up (+0.9%) through a week when the rest of growth sold off. Adding 1 point to 10% builds a two-name security sleeve that is less correlated with the semiconductor tape."
+    },
+    {
+     "symbol": "MRNA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Best leg in the book (+10.7%), driven by its Nasdaq-100 inclusion on Oct 9 and the run into October Phase 3 data. Size stays at 7%, but the stop tightens from 25% to 12%. Index-inclusion buying is now done and the data readout is binary, so I want to keep exposure to the trend without giving back the gain."
+    },
+    {
+     "symbol": "NTRA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 45.0,
+     "thesis": "The one genomics/diagnostics name kept, because its drawdown (-5.9%) is modest and it has recurring testing revenue, unlike the TXG/TWST blow-off. Held at 7% with the stop tightened from 20% to 15%, so the book exits if it joins the cohort unwind."
+    },
+    {
+     "symbol": "TMO",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 4,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 30.0,
+     "thesis": "Small low-beta life-sciences anchor, -2.8% and behaving defensively relative to the genomics names. Held at 4% to keep some sector exposure after cutting TXG and GRAL, with a tight 12% stop."
+    }
+   ]
+  },
+  "factorial_opus_opus_fleet_quality_compounders_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the five-compounder book (V 22, NVDA 20, TSM 16, GOOGL 14, CME 11, cash 17) unchanged. It stands at +9.44% vs SPY +5.01%, with max drawdown -5.32%. Every leg was entered on 2026-09-30, only eight sessions ago, and none is close to its stop: the worst is TSM at -0.63% against a -20% stop. Research this week (WebSearch) confirmed rather than challenged the theses. TSMC's 2026-10-08 monthly release showed September revenue of NT$511.9bn, up 54.6% YoY. That put Q3 at about NT$1.494tn, a record, +50.9% YoY and above the top of guidance, so the AI-foundry cash-generation case is intact going into the mid-October Q3 print. CME's 2026-10-02 release reported record September ADV of 31.8M contracts (+22% YoY) and record Q3 ADV of 29.4M, with Treasury futures and options up 42%. That is exactly the rate-volatility hedge the leg was bought for, and it is working: the leg is +7.09%. A roundup of the week to 2026-10-03 had Nvidia tagging an intraday record near $237.88, and NVDA marks at $229.28, above entry. I found no October 2026 news on Visa or Alphabet, so I am relying on price action for those two: V is +7.27% and GOOGL +2.20%. Visa reports fiscal Q4 in late October and Alphabet reports Q3 then too; I would rather carry those legs through earnings with their existing stops than pay to rotate before the catalysts arrive. A full replacement would cost real basis points and buy nothing the current book does not already express. The 17% cash at 4% stays as a buffer against rate shocks, and the existing stops and take-profits remain in force."
+  },
+  "factorial_opus_opus_fleet_small_mid_cap_growth_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the book as it stands: CRDO 28% (+11.2%), HOOD 22% (-3.1%), ALAB 20% (-3.9%) and 30% cash, with NAV +3.98% since inception. These legs were entered on 2026-09-30, only about eight sessions ago. Every position is well inside its stop (-25%, -20% and -24%), and the 30% cash buffer from the de-risking into the hiking cycle is still in place. What I could check: four web searches turned up no company-specific news for CRDO, HOOD or ALAB dated October 2026, and no recap of the week ending 10-09. CRDO's only scheduled item is its routine AGM on 10-12 (director elections, say-on-pay, auditor ratification). Its last reported numbers (FY26 revenue about $1.34B, roughly 3x the prior year, and next-quarter guidance of $465-475M) still support the thesis. HOOD already has its $1.5B buyback authorization and, as far as I could find, nothing new against it. ALAB has been volatile (high beta, down from its July highs) but I found nothing that breaks the thesis. The field-wide HOOD stop on 10-08 was on another book with a tighter, more recent entry; ours is -3.1%. My research could not confirm the precise drivers of this week's tape, so this decision rests mainly on the packet marks plus the stale-but-relevant fundamentals above. On that basis, no thesis has broken, and re-trading a book that is only eight sessions old would just pay friction. The stops stay as the risk control, and the next real checkpoints are the HOOD and ALAB earnings in late October and early November."
+  },
+  "factorial_sonnet_deep_value_r3": {
+   "decision": "HOLD",
+   "reason": "Research was thin: one WebSearch on VZ found no October 2026 news, only the late-June spin-off/JV and cost-cut headlines, so this rests mostly on the packet. NAV is +1.14% with 32% cash as ballast. VZ is -16.1% against its 18% stop (about $40.70, 2.3% below the $41.65 mark), so the standing stop already manages the one weak leg. Selling now would pay churn costs and lock in a loss on a 6%+ yield name without a new catalyst. MO, BTI and PFE are modestly positive and C is -5% against a 20% stop. No evidence found to justify replacing any thesis, so I keep the book and stops unchanged."
+  },
+  "factorial_sonnet_dividend_growth_r3": {
+   "decision": "HOLD",
+   "reason": "One WebSearch returned only generic, undated dividend-sector commentary with no current catalysts, so this decision rests mainly on the packet. Book is +3.76% vs SPY +5.01%, drawdown only -3.53%, no stops fired, and legs are all within their stops (worst NOBL -2.77%). It is a defensive dividend-aristocrat basket with an energy hedge (CVX +14%), which matches the mandate; lagging SPY in a risk-on tape is expected for this style and is not a reason to abandon it. Trading costs (2bps per side plus spread) and no identified edge mean churn is worse than holding. 8% cash earns 4% APY."
+  },
+  "factorial_sonnet_price_momentum_r3": {
+   "decision": "HOLD",
+   "reason": "Ran one WebSearch (search budget is shared, so I did not do more; no WebFetch of primary data). Findings: Oct 9 session saw healthcare (+1.48%) and real estate lead with energy roughly flat; Schwab's October outlook still favors energy, financials, health care; energy has a 12-month return near +39% though oil is volatile (Hormuz/Iran risk, G7 reserve releases). Macro is hawkish (10-year reportedly above 5.3%, recent Fed hike, September CPI due Oct 14), which supports keeping the 34% cash buffer. The book is +3.9% with 4 momentum legs (XLE, IWD, XLF, XLV) that are all within a few percent of entry and nowhere near their stops. XLF is the weakest leg (-1.8%) and financials lagged in some recaps, but it is only 10% of the book and bank earnings start next week, so cutting it now would pay churn for a coin-flip. No evidence of momentum breaking versus the group, so holding beats paying frictions to reshuffle. This is a decision on the packet plus one search, not deep research."
+  },
+  "factorial_sonnet_quality_compounders_r3": {
+   "decision": "HOLD",
+   "reason": "Decision made on the packet alone; I did not run web research for this decision. The book is +6.60% vs SPY +5.01% with a -3.73% max drawdown, and no stop or take-profit has fired. The ten-name quality-compounder basket still matches the mandate. Turnover would cost basis points with no evidence-backed edge, so I am holding."
+  },
+  "factorial_sonnet_smid_growth_r3": {
+   "decision": "HOLD",
+   "reason": "Holding. Book is +20.45% vs SPY +5.01% with no stops fired; every leg sits inside its stop/TP band (RBRK +36.6% is nearing its +40% TP, which will lock gains automatically). Research was limited: one WebSearch returned only stale/undated results (no October 2026 news on IOT, RBRK, AFRM), so this decision rests mainly on the packet, not on fresh catalysts. With no new information showing a thesis break, churn costs (2-5bps per side) and giving up the 22% cash buffer's 4% yield are not justified."
+  },
+  "fleet_haiku_concentrated_ai_technology_r2": {
+   "decision": "HOLD",
+   "reason": "Research was thin: I ran four WebSearch queries and found no reliable October 9 2026 close, no current Nvidia, Microsoft or Salesforce news, and only stale sector commentary (mostly August 2026). I am not implying more research than that. The book is +12.35% against SPY +3.97%, and its legs are working: SNOW +25.8%, CRM +24.7%, SOXL +21.9%, NVDA +14.3%, MSFT +15.4%. The two laggards, ADBE (-3.3%) and AMZN (-3.4%), are small and have no new catalyst I could verify, so cutting them would be churn at a loss. Cash is 31% and the strategy of record already provides dry powder for weekly rebalancing. With no verified new information and a book that is performing, a full replacement would cost basis points for no demonstrable edge, so holding beats trading this week."
+  },
+  "fleet_haiku_concentrated_ai_technology_r3": {
+   "decision": "HOLD",
+   "reason": "Research was thin: four WebSearch queries returned no reliable October 9 2026 close and no current company news for Nvidia or Microsoft. The one concrete catalyst I could find is ASML's Q3 2026 results, which several third-party calendars list for October 14 (not confirmed on ASML's investor relations page). ASML's July 2026 guidance was Q3 net sales of EUR 11.0-12.0bn and a raised full-year outlook of EUR 43-45bn, and the book is already positioned into that print with a -15% stop and a +45% take-profit. Trimming ASML ahead of the print would be a judgment call on a catalyst I cannot verify, and it would add churn costs. The rest of the book is in line: MSFT +4.3%, NVDA +0.4%, SNOW +8.6%, CRM -0.2%, AMD -0.6%, QCOM -4.6%, and all legs have stops in place. The book is at 85% gross with 15% cash, so there is room to act if the print disappoints, and I would rather hold the existing stops than reshuffle on unverified information. Same-direction overlap with the Round 2 book is unchanged by this hold: MSFT, CRM, SNOW and NVDA, on a minimum-weight basis, total about 36 points of Round 3 gross, roughly 43%, under the 50% novelty limit."
+  },
+  "fleet_haiku_contrarian_turnarounds_r2": {
+   "decision": "HOLD",
+   "reason": "I ran four WebSearch queries (ADBE, CRM, BTC/ETH, XLE) and none returned coverage dated October 2026; results were mostly from 2025 or early-to-mid 2026, and the price pages conflicted. So this decision rests on the 2026-10-09 packet marks plus stale background, and I say so plainly. Within that limit, holding beats trading: the book is already 84% gross with 16% cash, and a full or partial rotation would pay 2 to 35 bps per side plus the 0.31 bps SEC/TAF on sells without any fresh evidence that the contrarian thesis has changed. The thesis (ADBE/CRM beaten by AI-disruption fears, BTC/ETH depressed, MSTR as a levered crypto proxy) is intact on the packet numbers: CRM +16%, MSTR +59%, ETH +33%, BTC +29% on leg; ADBE -11% is the weak leg but is unchanged in thesis. The one legitimate adjustment would be to size or stop ADBE, but without a current price or news I cannot justify setting a stop level or a take-profit from evidence, so I leave the book as is. Re-check with live quotes and October news before next week."
+  },
+  "fleet_haiku_contrarian_turnarounds_r3": {
+   "decision": "HOLD",
+   "reason": "I ran WebSearch on XLE/oil and on BTC/ETH; neither returned October 2026 coverage. The XLE results were from May to September 2026 and the crypto results from April to May 2026, so my view rests on the 2026-10-09 packet marks and dated background. Within that limit, holding beats trading. The book is 65% gross with 35% cash and already has stops and take-profits on every leg. Turnover costs about 2 bps per side plus SEC/TAF on sells, and I have no fresh news that breaks the energy thesis: XLE is +4% on leg with a -12% stop and +35% target, and the Iran-conflict oil bid that drove the 2026 energy move has not been shown to reverse. MSFT (+6.7%) and the TLT short (+4.3%) are working. ETH is -10.5% against a -12% stop, which is close, and I accept that the engine will close it on a further ~1.5% drop rather than add to a losing leg. BTC at -4.7% sits inside its -15% stop. I am not adding to the crypto legs without a current price or news. Re-check live quotes and October news before next week."
+  },
+  "fleet_haiku_deep_value_r2": {
+   "decision": "HOLD",
+   "reason": "Research was partial and I am saying so plainly. Two WebSearch queries returned macro and BTC context but nothing dated 2026-10-09; the latest BTC reports are from 2026-10-04/05 (mid-$80,000s, range $83.5k-$86.6k), which is consistent with the 82,546 packet mark. A third query on ADBE/CRM returned only January to March 2026 coverage, so I could not verify current software-sector news. Macro backdrop from a September 2026 note: a 25bp Fed hike, oil above $100, and inflation expectations raised, with the next FOMC on Oct 27-28. I found no current, sourced evidence that justifies trimming the tactical software legs (CRM +33%, ADBE +3%), the defensive anchors (SPY/VTV/JPM/KO), or the GLD and SQQQ shorts. Full replacement costs real basis points with no verified edge, so holding the existing book beats churning it."
+  },
+  "fleet_haiku_deep_value_r3": {
+   "decision": "HOLD",
+   "reason": "Research was partial and I am saying so plainly. Two WebSearch queries returned macro and BTC context but nothing dated 2026-10-09; the latest BTC reports are from 2026-10-04/05 (mid-$80,000s), roughly consistent with the 82,546 packet mark on BTC-USD, which has a 15% stop at roughly 72,900 against the 85,786.59 entry fill and a 40% take-profit. Macro backdrop from a September 2026 note: a 25bp Fed hike, oil above $100, and raised inflation expectations, with the next FOMC on Oct 27-28. I did not get current, sourced news on QQQ, EEM, XLE or XLF, so I cannot verify a reason to change them. The book is 50% cash, which already reflects caution ahead of the Fed, and every open leg sits inside its stop. Replacing it without a verified thesis would add churn cost, so holding beats trading."
+  },
+  "fleet_haiku_dividend_growth_and_income_r2": {
+   "decision": "HOLD",
+   "reason": "Researched HOLD. Search only returned partial, partly dated 2026 data: the Oct 7 report says the 10-year yield topped 5.36%, the 30-year mortgage rate hit 7.63%, WTI settled near $88 and Brent near $100, and rate-sensitive groups sold off. I could not verify the Oct 9 close. That backdrop supports the book's existing tilts (TLT short hedges rising yields, XLE long benefits from firm oil). The dividend aristocrat core (JNJ, MCD, ABT, MMM) is hurt by rising yields, but it is a 6-name, roughly 26% slice of a book with 39.5% cash, and selling it now would crystallize losses and add basis-point churn with no verified new catalyst. Holding keeps the book near-flat versus its prior week with no new information strong enough to justify a full replacement."
+  },
+  "fleet_haiku_dividend_growth_and_income_r3": {
+   "decision": "HOLD",
+   "reason": "Researched HOLD. Search evidence is thin and partly dated: Oct 6-7 reports show yields high and rising, oil firm, and rate-sensitive sectors falling, and one 2026 FXEmpire piece says the Russell 2000 is more than 9% below its August high and that the Fed hiked in September. I could not verify the Oct 9 close or confirm the Fed detail, and found no TNA-specific analyst view. Directionally the book is positioned for that backdrop: TNA short (+13.98%, 20% take-profit set) and PSQ short are working, and XLE (+9.94%) is working. Longs XLI (-5.64%) and XLF (-3.54%) are the weak legs, but cutting them now would be a full-book rebuild on unverified data and would cost churn. With 15.36% cash and the TNA take-profit already in place, I prefer to hold. The Round 3 novelty rule is not triggered because I am not trading."
+  },
+  "fleet_haiku_global_diversification_via_us_listed_adrs_and_etfs_r2": {
+   "decision": "HOLD",
+   "reason": "Round 2 book is +3.02% on $1,000 with 62.79% cash and four live legs: BTC 12.2%, IEMG 9.76%, EWJ 7.93%, FXI 4.88%. The strategy-of-record text is stale: its AI-infrastructure legs (SOXL, TQQQ) already closed on take-profit (Aug 17 and Sep 21), and its 24% cash buffer does not match the actual 62.79% cash. Research was partial: I could not find Oct 9 closes for FXI, IEMG, EWJ or BTC. The latest usable data: FXI at 34.89 on Aug 14 and -10.9% YTD as of Jul 19 with heavy outflows (China is the weak leg); a Oct 6 report of the Nikkei up about 1% on Wall Street gains and lower oil; BTC range-bound around 83k to 86.6k in early October, with a Fed meeting Oct 27-28 as the next catalyst. FXI's stop is -20% against a current -6.19% loss, so the leg is not near its exit. Selling it now would crystallise a loss with no verified better entry, and a rebalance would add churn costs with no confirmed edge. Holding also keeps 62.79% cash as the main risk control while oil is above $100 and the Fed decision is unresolved. I am deciding largely on the packet marks."
+  },
+  "fleet_haiku_global_diversification_via_us_listed_adrs_and_etfs_r3": {
+   "decision": "HOLD",
+   "reason": "Round 3 book is +1.65% and diversified: SPY 20, SCHD 15, XLE 12, AGG 10, XLV 10, VYM 8, EWJ 8, with 17% cash. Each leg sits near its entry fill (SPY +0.48%, XLE +2.57%, EWJ -1.45%), and no stop has fired. Its overlap with the Round 2 book is only EWJ (8% vs 7.93%), far under the 50% novelty limit, so nothing forces a change. Research was thin: I found no Oct 9 quotes for any holding. The main risk I could identify is oil above $100, which supports XLE but pressures the broad core. I have no verified move that justifies churning a 12% energy leg at 2bps per side with no confirmed signal, so I keep the book and its 17% cash buffer. I am deciding largely on the packet marks."
+  },
+  "fleet_haiku_growth_at_a_reasonable_price_r2": {
+   "decision": "HOLD",
+   "reason": "HOLD. Research done with WebSearch (4 queries). Findings were thin and partly stale: S&P 500 closed at a record on 2026-10-07 (7,818.93), but the 2026-10-09 close could not be confirmed, and no fresh October 2026 company news was found for MSFT or NVDA. MSFT and NVDA earnings are only estimated (MSFT about Oct 28, NVDA mid-November), so the core positions are not facing a confirmed catalyst inside the window. The book is already 46% cash with stops on AMD (-12%) and LRCX (-10%), and it has 9 names with a +9.4% NAV. Churning a $1,000 book on unverified information would cost basis points without a clear edge, so the current structure stands."
+  },
+  "fleet_haiku_growth_at_a_reasonable_price_r3": {
+   "decision": "HOLD",
+   "reason": "HOLD. Research done with WebSearch (4 queries, shared with other managers). Findings: ASML reports Q3 on 2026-10-14 before the open, with an implied move of about +/-5.6%. This is the one dated catalyst in this book, and the ASML leg is -4.3% with no stop-loss set. I considered adding a stop or trimming ahead of the print, but the sources conflicted on ASML's Q2 2026 sales figure (EUR 9.3bn vs 7.7bn), so I could not verify the fundamentals I would be trading on. UNH's Q3 date is unconfirmed (somewhere between Oct 9 and Oct 27), and the Oct 1 prior-authorization change is a positive operating signal but not enough to justify a full book replacement. The defensive book is 50% cash with stable holdings (PG, KO, PFE, NEE, XLE are all positive), so holding through the ASML print is the decision, with the -4.3% leg accepted as a known risk. Next review: after the ASML print on Oct 14."
+  },
+  "fleet_haiku_macro_sector_rotation_r2": {
+   "decision": "HOLD",
+   "reason": "Research was thin: WebSearch ran three times and returned mostly stale results (2018 to 2024 pages and a May 2026 recap). I could not confirm the 2026-10-09 closes or a current week-ahead outlook, so this decision rests mainly on the packet. The most recent macro data I found was from about 2026-10-02: the 10-year yield settled near 5.28% after touching 5.34%, the highest since 2002. That is a real headwind for rate-sensitive legs such as SPLV and XLV, but it is not enough by itself to justify a full replacement. The book is -1.23% with 95% gross in XLF, XLE, SPY, XLV, BTC and SPLV, all still above entry except BTC (which is up on mark). No stop or take-profit has fired, and every stop is well away from its mark. Churning the whole $1,000 book on unverified prices would cost frictions and add execution risk without a confirmed edge. I will reassess next week once current closes are available."
+  },
+  "fleet_haiku_macro_sector_rotation_r3": {
+   "decision": "HOLD",
+   "reason": "Research was thin: WebSearch ran three times and returned mostly stale results, so I could not confirm the 2026-10-09 closes or a current week-ahead outlook. This decision rests mainly on the packet. The latest macro data I found was from about 2026-10-02, with the 10-year yield near 5.28% after touching 5.34%, the highest since 2002. That supports keeping the defensive tilt of this book, since XLU, USMV and SPLV are the legs most exposed to yields, and it argues against adding more rate-sensitive exposure. The book is +0.32% with 83% gross across XLV, SPLV, XLF, USMV, XLU and EEM, and 17% cash. Every leg has a stop and take-profit well away from its mark, and none has fired. EEM is flat versus entry and is the weakest leg, but a trim would cost frictions on a position that has no triggered exit. Holding this round preserves the Round 3 book's independence from Round 2 and avoids churn on unverified prices. I will reassess next week once current closes are available."
+  },
+  "fleet_haiku_price_momentum_r2": {
+   "decision": "HOLD",
+   "reason": "HOLD. Research was thin: two WebSearch queries for October 2026 semiconductor and market-close news returned only 2024-2025 and May 2026 coverage, so I could not verify the 2026-10-09 closes or current SOXL, Nasdaq or sector news. The one fresh item I could find (early October 2026 analyst notes on Micron, close $1,063.96 on 10-05, Strong Buy consensus, record fiscal 2026) is supportive but is not a reason to churn. Trading now would mean replacing a book with 3x-leveraged TQQQ and a 5% MU leg using a thesis I cannot confirm, and every rebalance costs real basis points (equities 2bps per side, 5bps for leveraged ETFs). The SOXL stop-out on 10-08 shows the leveraged semis risk is real, but the remaining legs (TQQQ -2.2%, QQQ -0.7%, MU -3.3%, SHV +0.1%) sit inside their stops, so holding keeps the existing risk controls in place. Cash is 25% and I am not adding exposure without verified data."
+  },
+  "fleet_haiku_price_momentum_r3": {
+   "decision": "HOLD",
+   "reason": "HOLD. Research was thin: the same market-close searches returned only a May 2026 recap of a different session and no October 2026 sector data, so I could not verify energy, financials, biotech or EM moves for 10-09. The book is fully invested in seven long legs with no cash: XBI +2.1%, XLE +12.2%, XLF -3.4%, TNA -15.7%, VTV -0.1%, EEM +5.0%, KRE -8.1%. TNA and KRE are the weakest legs and have no stop-loss, which is a real gap, but without current news I cannot tell whether that drawdown is a broken thesis or a normal pullback, and selling into an unverified tape adds churn cost. This book has under 50% same-direction overlap with Round 2 (it holds no SOXL, TQQQ, QQQ or MU), so the novelty rule is satisfied. I am holding rather than trading on an unverified read."
+  },
+  "fleet_haiku_quality_compounders_r2": {
+   "decision": "HOLD",
+   "reason": "Research was thin, so this HOLD rests mostly on the packet. Two WebSearch queries on MSFT and UNH returned mostly dated items; the most current MSFT item said fiscal Q1 2027 earnings are due 2026-10-27, which is a catalyst the book would hold through. The MSFT leg (14%, +33.65%) carries no stop, but it is the book's largest winner and churning it into an earnings event would add frictions for no evidenced edge. The UNH leg (8%, -9.86%) has analyst support in the search results (Evercore Outperform $400, RBC $408, Bernstein $444 targets; dated, so not current) and a prior-authorization rollback in October that could pressure margins; with no confirmed news for the week of 2026-10-09, I am not cutting it on this evidence. No WebFetch was used. Week-of-10-09 news for the book's other names was not found, so this is an admitted limitation, not a considered view on each leg."
+  },
+  "fleet_haiku_quality_compounders_r3": {
+   "decision": "HOLD",
+   "reason": "Research was thin, so this HOLD rests mostly on the packet. A WebSearch on semiconductor news for the week of 2026-10-09 found nothing current: results were late-2025 and early-2026 outlook pieces, plus an undated TSMC earnings item that may be from January 2026. I did not find current Nvidia, TSMC or ASML price action, so I have no evidenced basis to rotate the book. The book is down about 3% in the 2026-10-09 marks with a 21% cash cushion and no legs at stop levels. Trading now would add churn costs on a stale view. The Round 3 novelty rule is respected because this book is an unchanged HOLD and carries no new overlap with Round 2 (the R2 book holds MSFT, NVDA, AMZN, META, AAPL, BRK.B, UNH, COST and JPM; the R3 book holds AVGO, TSM, QCOM, AMAT, CRWD, ADBE, ASML and SMH). This HOLD is an admitted limitation of the research, not a considered view on each leg."
+  },
+  "fleet_haiku_small_mid_cap_growth_r2": {
+   "decision": "HOLD",
+   "reason": "Research was limited: two WebSearch queries (small-cap/Fed backdrop for the week of 2026-10-09; CRWD/DDOG/SNOW/SHOP news) returned no October 2026 coverage for any name in this book and no verified Russell 2000 close for the week. The most recent company items were May-June 2026 and the market items were undated or from August, so I could not tie any recent catalyst to the current marks. Decision rests mainly on the packet. The book is +5.01% versus SPY +3.97%, holds 40% cash, and every leg carries a -12% stop, so the existing risk framework is intact. Without a dated catalyst, trading 10 names and paying full churn costs on a $1,000 book is not justified. Several legs sit near their stops or take-profits (SOFI -6.18%, UPST -3.02%, IWM -1.75%), and I will reassess them next week against fresh news rather than act blind this week."
+  },
+  "fleet_haiku_small_mid_cap_growth_r3": {
+   "decision": "HOLD",
+   "reason": "Research was limited: two WebSearch queries (small-cap/Fed backdrop for the week of 2026-10-09; CRWD/DDOG/SNOW/SHOP news) returned no October 2026 coverage for any name in this book and no verified Russell 2000 close for the week. The most recent company items were May-June 2026, so I could not tie any recent catalyst to the current marks. Decision rests mainly on the packet. The book is -4.61% versus SPY +5.01% and holds 50% cash with seven legs, all with -12% stops. The main weakness is the software and growth exposure (CRWD, DDOG, SNOW, SHOP, ARKK at 6% each), but the stops are still well away from the marks and I have no dated evidence that the thesis broke. Trading now would mean rotating into names I could not research and paying churn on a $1,000 book. Novelty rule is not triggered because no trade is proposed. I will reassess the overlap with the Round 2 book next week, when I have fresh research."
+  },
+  "fleet_sonnet_concentrated_ai_technology_r2": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone. I ran one WebSearch for current semis news and it returned only 2022-2025 articles, nothing for this week, so I have no fresh catalyst. The book is +13.7% vs SPY +4.0%, with all legs within about 1.5% of the 09-21 entry (MSFT +6.7%) and no stops near. Reweighted only three weeks ago, so churn costs and no new information argue against trading."
+  },
+  "fleet_sonnet_concentrated_ai_technology_r3": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone. One WebSearch returned only stale 2022-2025 articles, so I did no real research on XBI, KRE or TLT. The book is down 6.2% with 35% cash. Legs are inside their stops (XBI -2.8% vs 10% stop, KRE -4.1% vs 10%, short TLT +4.3% and working). Without new information I would only be paying churn costs and possibly crystallising losses, and this book already avoids AI/semis overlap with Round 2, so the novelty rule is satisfied."
+  },
+  "fleet_sonnet_contrarian_turnarounds_r2": {
+   "decision": "HOLD",
+   "reason": "Held. Research was thin: two WebSearch queries returned only an earnings calendar (big bank reports Oct 13-14) and nothing reliable on CRM/ADBE, crypto or gold for the week, so this rests mostly on the packet. All five legs are modestly down (-3% to -10%) but inside their stops; ETH at -10.5% is within its 15% stop. Selling now would pay churn costs to crystallise losses on a thesis with no new disconfirming evidence, and 44% cash already earns 4% and limits drawdown. Keeping standing stops/TPs as set."
+  },
+  "fleet_sonnet_contrarian_turnarounds_r3": {
+   "decision": "HOLD",
+   "reason": "Held. Research was thin: two WebSearch queries returned only an earnings calendar (JPM, BAC, MS, PNC, USB, CFG report Oct 13-16, a direct catalyst for the KRE leg) and nothing reliable on XBI or GDX, so this rests mostly on the packet. Legs are down 3-5% but inside their stops (12/15/12%), 34% cash is already a buffer, and rotating ahead of bank earnings would only add churn costs without new evidence. Stops and take-profits stay as set."
+  },
+  "fleet_sonnet_deep_value_r2": {
+   "decision": "HOLD",
+   "reason": "Research was limited to two WebSearch queries (week-ahead calendar, MU quote); no filings or transcripts read. Findings: Monday 10-12 has no major earnings and bond markets are closed; JPM and UNH (22% of the book) report Tuesday 10-13 and CPI lands 10-14, with the Fed having hiked in September and long yields above 5%. The book is only 56% invested with 44% cash, leg P&L is small (+0.66% NAV), and the leg was opened 9/30, so a rebalance would cost basis points for no new information. Waiting for the bank/UNH prints and CPI before adding to the unloved-value sleeve is better than trading ahead of them. GM keeps its 10% stop; XOM keeps its 30% take-profit."
+  },
+  "fleet_sonnet_deep_value_r3": {
+   "decision": "HOLD",
+   "reason": "Research was limited to two WebSearch queries (week-ahead calendar, MU quote); no filings or transcripts read. The macro backdrop is a rate-hike regime with long yields above 5% and CPI due 10-14, which favours keeping the defensive low-vol and cash-heavy (52%) posture. MU closed 10-09 at about 1,029 after record fiscal-2026 results (10-K), and the short is only 5% with a 15% stop and 25% take-profit, so risk is capped. The earnings print I cited as the reason for the short has already happened and the stock held up, so the short thesis is weaker, but the position is small and still in profit, so churning to close it is not worth the cost. GDX is -5.5% against a 12% stop and XBI is -2.8%; I found no news to justify cutting either. The book was opened 9/21 and the novelty rule against Round 2 is already satisfied by the unchanged book."
+  },
+  "fleet_sonnet_dividend_growth_and_income_r2": {
+   "decision": "HOLD",
+   "reason": "One WebSearch for the week-ahead market picture returned only 2017-2024 articles, so this decision rests on the packet alone, not on fresh research. Book is +5.39% vs SPY +3.97% with a 2.9% max drawdown and 35% cash earning 4%. No stops fired and the entry-to-mark moves (MSFT +11.6%, HD -13.3%, AVGO/JPM about -7%) do not by themselves break the dividend-growth thesis. Re-trading a diversified quality book costs 2-12 bps per leg for no identified edge, so holding beats churning."
+  },
+  "fleet_sonnet_dividend_growth_and_income_r3": {
+   "decision": "HOLD",
+   "reason": "One WebSearch for the week-ahead market picture returned only 2017-2024 articles, so this decision rests on the packet alone, not on fresh research. The book was rebuilt on 2026-09-21 as a defensive income sleeve with 43% cash at 4%; it is -4.63% vs SPY +5.01%, which reflects the deliberately defensive mix rather than a broken thesis. Weakest legs (IDV -5.1%, O -3.9%) are well inside their 10-12% stops. Rebuilding again three weeks in would pay friction and lock in the lag, and a rotation toward higher beta would drift from the income mandate, so I hold."
+  },
+  "fleet_sonnet_global_diversification_via_us_listed_adrs_and_etfs_r2": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone: one WebSearch returned only stale, undated results, so no real research informed this. The SQQQ hedge stopped out on 10-06 and the remaining long ETF/ADR legs (EEM, TSM, EWZ, EWJ, INDA) are positive or near flat except INDA at -3%, with stops and the EWZ take-profit still armed. 46% cash earns 4% and fits the mandate and a still-hawkish backdrop. No evidence justifies paying churn costs, so I keep the book and rely on the existing stops."
+  },
+  "fleet_sonnet_global_diversification_via_us_listed_adrs_and_etfs_r3": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone: one WebSearch returned only stale, undated results, so no real research informed this. The five-ADR quality basket (ASML, SAP, NVO, UL, SONY) is mostly modestly positive with NVO at -2.9%, well inside its 15% stop, and every leg has a stop and take-profit armed. The 42% cash buffer earns 4% and suits the hawkish-Fed, firm-dollar framing. Without new information, churn costs and the Round 3 novelty rule against the Round 2 book favor leaving it unchanged."
+  },
+  "fleet_sonnet_growth_at_a_reasonable_price_r2": {
+   "decision": "HOLD",
+   "reason": "Provisional/final: I did not run web research this session (shared search budget; decided on the packet alone). Book is +2.90% vs SPY +3.97% with a 20% cash buffer, all quality GARP legs intact (MSFT +8%, META +17%, no leg breaching thesis). The SOXL hedge already stopped out on 09-21, and re-shorting after a -15% realized loss without fresh evidence is not warranted. Churn costs real bps and nothing in the packet argues for a change, so I hold."
+  },
+  "fleet_sonnet_growth_at_a_reasonable_price_r3": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone; I did not run web research this session. The book was just cut on 09-21 to 4 legs (JPM, ELV, CVX, XBI) with 49% cash earning 4%, drawdown is modest, and no leg is near a thesis break. Re-rotating after one more week would add churn cost without new information, and it also keeps the Round 3 overlap with the Round 2 book well under the 50% novelty limit (only distinct names held)."
+  },
+  "fleet_sonnet_macro_sector_rotation_r2": {
+   "decision": "HOLD",
+   "reason": "Did one WebSearch (the only research I did). It found conflicting gold quotes (~$4,157 vs ~$4,344), a hawkish Fed (3.75-4.00% after a September hike, roughly even odds of another in October, FOMC Oct 28) and a weak September payrolls print that trimmed hike odds. Nothing actionable or reliable beyond that. GLD is a 10% leg at -3.5% against a -10% stop, with 90% cash earning 4%. Neither the tape nor the search gives a clear reason to resize, and churn costs basis points, so I hold."
+  },
+  "fleet_sonnet_macro_sector_rotation_r3": {
+   "decision": "HOLD",
+   "reason": "Did one WebSearch (the only research I did). It found a hawkish Fed (3.75-4.00% after a September hike, roughly even odds of another in October, FOMC Oct 28) and a weak September payrolls print that trimmed hike odds, but no sector-level data or reliable week-ahead view. The decision rests mainly on the packet. The book is diversified across six legs with 46% cash. Every leg sits within a few percent of its entry and well inside its stop (XLV +2.1%, XLF +1.6%, KRE -2.0%, XLY short -2.2%). The hike-odds news slightly weakens the financials thesis, but KRE and XLF are small and I have no evidence to justify churn costs. Holding."
+  },
+  "fleet_sonnet_price_momentum_r2": {
+   "decision": "HOLD",
+   "reason": "Did one WebSearch (standard) plus the packet. Findings: no FOMC this week (next decision 2026-10-28); long yields near multi-year highs (10y ~5.3%) with hike odds being priced, which supports the TLT short; oil elevated near $90-100, supporting XLE/XOP; equities and semis near highs, supporting SMH (+10.6%). The trend thesis behind each of the six legs is intact, no stop is near, and a rebuild would cost basis points for no new edge. The search did not give a semis or XBI/XHB-specific read, so I am not claiming one. Holding."
+  },
+  "fleet_sonnet_price_momentum_r3": {
+   "decision": "HOLD",
+   "reason": "Did one WebSearch (standard) plus the packet; no deeper research. Macro backdrop (long yields near multi-year highs, hike odds rising, oil elevated, equities near highs, BTC strong) is consistent with the existing legs: BTC long, GUSH energy beta, XLU short. The SOXL leg already closed on a standing order and I am not chasing it back in at 5bps friction without a fresh read on semis, which my search did not provide. Remaining legs are near flat and nowhere near stops; churning costs basis points. Holding, with cash left idle at 4%."
+  },
+  "fleet_sonnet_quality_compounders_r2": {
+   "decision": "HOLD",
+   "reason": "Research was thin: one WebSearch returned only a FactSet Q3 earnings preview (S&P Q3 EPS growth expected ~29.5%, estimates rising), nothing specific on my names, so this rests mainly on the packet. Book is +6.3% vs SPY +4.0%, diversified across quality compounders; the only deep loser, AVGO at -14%, has no stop and no new information justifying a sale at the low, and a replacement costs real basis points. Holding."
+  },
+  "fleet_sonnet_quality_compounders_r3": {
+   "decision": "HOLD",
+   "reason": "Decision rests on the packet plus one thin search (FactSet Q3 preview: strong expected earnings growth); no name-specific research found. Book is 50% cash earning 4% with three legs (XBI, GDX, ISRG) each inside their stops and take-profits; no evidence to cut or resize, and turnover is costly and would also risk the Round 3 novelty overlap rule. Holding."
+  },
+  "fleet_sonnet_small_mid_cap_growth_r2": {
+   "decision": "HOLD",
+   "reason": "Decided mostly on the packet. One WebSearch for the 10-09 close returned nothing usable for that date (only a stale IWM ~281.5 print on 10-02), so I did not get real catalyst research. The book is 54% cash with a -3.96% NAV and the HOOD stop already fired; the remaining legs (IWM, SOXL, SOFI, RKLB, XBI) are each within 1-7% of entry with stops in place. Re-entering or resizing without fresh information would only cost basis points, so I hold and let the standing stops/TP work."
+  },
+  "fleet_sonnet_small_mid_cap_growth_r3": {
+   "decision": "HOLD",
+   "reason": "Decided on the packet alone. One WebSearch for the 10-09 close found nothing usable for that date, so I have no fresh evidence on regional banks, financials or biotech. The book is 64% cash and long-only with 10-12% stops on KRE, XLF and IBB; losses are small (KRE -4.1%, XLF -2.1%, IBB -0.3%) and no stop has triggered. Churning on no new information costs basis points, so I hold; this also keeps R3 distinct from the R2 book (no novelty-rule overlap issue)."
+  },
+  "opus5_carry_r3": {
+   "decision": "HOLD",
+   "reason": "Holding beats trading because the book's core thesis got stronger this week and nothing on it is broken. Web research (search worked) shows the Fed in a hiking cycle at 3.75-4.00% after the September hike. The September FOMC minutes say most participants see another hike as likely by year end; UOB expects December 2026 and 1Q 2027 hikes, and futures price about an 80% hold for the 28 Oct meeting after a weak September jobs report. Each hike lifts the coupons on the 66% AAA CLO floater sleeve (JAAA 50%, ICLO 16%), while the engine's cash rate stays at 4%, which is the carry this book is built to harvest. All four legs are positive since the 2026-09-30 entry: JAAA +0.12%, ICLO +0.12%, AMLP +1.33%, SPYI +1.73%. No stop is near (the floaters have -8% stops against near-zero price volatility), and no standing orders fired on this book in the stop-out wave that hit leveraged and high-beta names this week. I found no current AAA CLO spread data or 2026 midstream news, so the AMLP and spread views rest on the packet marks rather than fresh reporting. A replacement would cost real basis points to get back roughly the same exposures. Risk to watch: a growth scare that flips the Fed to cuts would cut floater coupons; I would reassess the floater weight then, not now."
+  },
+  "opus5_dispersion_r3": {
+   "name": "Opus 5 dispersion",
+   "strategy": "Beta-matched dispersion book: a 52.5% long basket of nine large caps with high residual-to-SPY volatility and low pairwise residual correlation, concentrated in the legs whose idiosyncratic drivers are confirmed by hard data (CME on record-high rates volatility, NEM on gold FCF), hedged by a 34.5% SPY short sized to Blume-adjusted basket beta for net index beta near zero, with 13% cash.",
+   "entry": "2026-10-12",
+   "capital_usd": 1000,
+   "cash_pct": 13.0,
+   "reassessment_note": "One change of substance. DE fell 9% in a week while SPY rose. On 10-07 the FTC and USDA opened a joint inquiry into anticompetitive conduct in agricultural equipment, following Deere's July right-to-repair settlement, and the USDA corn yield/production upgrade crushed corn futures and with them farm income. AGCO (-11%) and CNH (-14%) fell alongside, so DE's residual driver has turned decisively negative and is open-ended; it is not the kind of noise a dispersion book should sit through. DE is sold at about -9%, before its 16% stop. The proceeds go 3 points to CME, whose driver strengthened (10y/30y yields at 2002 highs, December hike priced, international volume +22%, MS target $337), and the rest to cash. The SPY short is cut from 36.5% to 34.5% to keep net beta near zero for the smaller, lower-beta basket. I recomputed it from 1y daily betas pulled for every leg. All other legs were checked against prices and headlines through the 10-09 close (AKAM's dip reversed; HII's target trim was minor; CI/MCK/DG/TRV are up) and are held at unchanged weights and stops. Research: WebSearch (two standard queries and one extended) plus Yahoo Finance price/headline endpoints. Some search results were thin or from other dates, and I relied only on items dated this week.",
+   "positions": [
+    {
+     "symbol": "CME",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 12.0,
+     "stop_loss_pct": 13.0,
+     "thesis": "Rates-volatility franchise is the cleanest idiosyncratic driver in the basket: 10y/30y Treasury yields at their highest since 2002 with a December hike priced keeps rate-futures hedging demand elevated, international volume was reported up 22%, and Morgan Stanley lifted its target to $337 on 10-09. 1y beta to SPY is about -0.27, so it is also the best hedge-diversifier; lifted from 9% to 12% with the DE proceeds. Stop 13% unchanged."
+    },
+    {
+     "symbol": "NEM",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 8.0,
+     "stop_loss_pct": 20.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Gold-margin/FCF story intact: gold recovered to ~$4,216 by 10-09 despite 24-year-high yields and a firm dollar, which keeps NEM's record free cash flow narrative alive; it is the basket's highest-beta leg (~1.7 raw), which the SPY short absorbs. Held at 8%, existing 20% stop / 40% TP."
+    },
+    {
+     "symbol": "MCK",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 6.5,
+     "stop_loss_pct": 15.0,
+     "thesis": "Drug-distribution volume and specialty/oncology growth are driven by utilisation, not the macro cycle; near-zero/negative beta to SPY (~-0.2) makes it a strong residual leg. Up 2.6% on the leg with no adverse news; held at 6.5%."
+    },
+    {
+     "symbol": "CI",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 6.0,
+     "stop_loss_pct": 16.0,
+     "thesis": "Managed-care/PBM residual driver (Evernorth pricing and medical-cost trend) is uncorrelated with the rest of the basket and SPY (beta ~0.2); +4.1% since entry with no thesis-breaking news. Held at 6%."
+    },
+    {
+     "symbol": "AKAM",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 5.0,
+     "stop_loss_pct": 18.0,
+     "thesis": "Edge/security plus new AI-cloud inference contracts give a company-specific driver; the 10-07/10-08 dip (to $100.90) fully reversed to $106.95 on 10-09 and Q3 results come on 11-05 as a scheduled idiosyncratic catalyst. Held at 5%."
+    },
+    {
+     "symbol": "HII",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 5.5,
+     "stop_loss_pct": 16.0,
+     "thesis": "Shipbuilding is driven by Navy budget and submarine-throughput execution rather than the index: the new Baltimore submarine module plant and Q3 results on 10-29 are company-specific. TD Cowen trimmed its target to $340, still far above $265, so the thesis holds. Held at 5.5%."
+    },
+    {
+     "symbol": "SLB",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 4.0,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 35.0,
+     "thesis": "Oilfield-services leg tied to international/offshore capex and the oil tape rather than US equity beta; modestly down (-2.7%) with no thesis change. Kept small at 4% with existing 18% stop / 35% TP."
+    },
+    {
+     "symbol": "DG",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 3.0,
+     "stop_loss_pct": 14.0,
+     "thesis": "Discount-retail leg was kept small after the low-income-consumer cut; it has rebounded 7% on trade-down/execution evidence. Held at 3% rather than chasing it."
+    },
+    {
+     "symbol": "TRV",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 2.5,
+     "stop_loss_pct": 12.0,
+     "thesis": "Commercial-lines insurer with pricing driven by the underwriting cycle, not the index (beta ~-0.1); sized small at 2.5% because of catastrophe exposure. Held."
+    },
+    {
+     "symbol": "SPY",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 34.5,
+     "thesis": "Beta hedge resized from 36.5% to 34.5%. Using 1y daily betas Blume-adjusted (0.67*raw+0.33), the new 52.5% long basket carries ~34.3 beta-dollars (versus ~37.4 before DE was cut and CME was raised), so a 34.5% short keeps net index beta near zero and isolates the dispersion/residual return the mandate targets. No stop, as the leg is a hedge."
+    }
+   ]
+  },
+  "opus5_eventdriven_r3": {
+   "decision": "HOLD",
+   "reason": "All three catalyst legs entered on 2026-10-05, sit within a few percent of entry (BHF -2.6%, XLE +2.6%, ACA +0.3%), and research this week found no change to any thesis, so a re-trade would only pay friction. BHF (34%): Aquarian's $70 cash deal still awaits Delaware, New York and Massachusetts insurance approvals. Delaware has hired outside experts and is scrutinising the Mubadala-linked financing. The merger auto-extended to a 2026-12-06 walk-away date. Sixth Street's Talcott reportedly told the board around 9/22 that it stays interested if Aquarian fails. At $48.53 the stock pays roughly +44% if the deal closes, while the -22% stop (about $38.9) caps a deal break that leaves BHF near its pre-deal ~$51 or lower. That is the asymmetric binary this book is built on, and its decision window falls in the next eight weeks. I found no new adverse regulatory news between 9/24 ($53.23) and now; the drift lower looks like spread widening, not an event. ACA (11%): Arcosa stockholders approved CRH's $150 cash deal, and filings target a Q1-2027 close. At $147.18 that is about 1.9% gross spread, uncorrelated carry above the 4% cash rate. XLE (14%): Brent was around $102-107 in early October. Hormuz transits still require coordination with Iranian forces, and strikes on Gulf shipping have postponed reopening talks. The supply-disruption leg is working, protected by its -10% stop and +18% TP. 41% cash at 4% APY stays as dry powder. Research done via WebSearch/WebFetch this session; I could not get a dated 10/8-10/9 Brent print or a dated BHF headline for the 10/5-10/9 decline."
+  },
+  "opus5_meanrev_r3": {
+   "decision": "HOLD",
+   "reason": "The book filled at the 2026-10-05 close, only four sessions ago, and every leg is still inside its band: CSCO +4.9% and SNPS +4.4% are partway through their snapbacks but well short of their +15%/+20% take-profits; LMT, GD and XYL are flat (+0.3% to +0.6%); HON at -3.0% is far from its -11% stop. None of the mean-reversion theses has been invalidated, and the setups have not finished playing out, so this is not the time to trade. Research this week (WebSearch) found little October-dated news on these names. It confirmed upcoming catalysts: HON reports around Oct 22 (options price about +/-5.7%; stock down about 8.6% since its July report), and XYL reports Oct 27 (about +/-7.8% priced; down about 13% since July, now below its earlier 52-week low of about $105), with the defense primes due in the same late-October window. For an oversold-quality book, de-rated names going into earnings are the bet the mandate exists to make, and the existing stops cap any miss. Search found no new peace-talk or contract news that would change the LMT/GD view either way. A full replacement would spend real basis points (2bps/side plus SEC/TAF) to swap one set of theses for an identical set. The 27% cash keeps earning 4% and leaves room to add to a post-earnings flush next week. Holding beats churning."
+  },
+  "opus5_pairs_r3": {
+   "decision": "HOLD",
+   "reason": "Both pairs went on at the 2026-10-05 close, only four sessions ago. They are roughly flat net (steel pair about -0.7% spread, airline pair about -1.8% spread), so neither is near its stop. Research via WebSearch shows both theses are intact, with their catalysts in the next two weeks. Steel: STLD's mid-September guide was Q3 EPS $5.34-5.38 against $3.69 in Q2, about +45% sequential on record shipments and wider metal margins. NUE guided only $5.55-5.65 against $4.84, about +16%, below a $5.99-6.17 consensus, and it flagged that $130M of Q2 raw-material refunds will not recur. STLD reports Oct 19 and NUE Oct 26, so the divergence in guidance will be tested by actual prints while we hold. Airlines: UAL's July guide was Q3 EPS $2.50-3.50, while AAL guided -$0.70 to -$0.10 with a full-year range straddling zero. AAL is expected to report around Oct 15 (date not firmly confirmed) and UAL around Oct 20. AAL's heavy debt keeps it the weaker credit if fuel moves against the sector. The known risk is the April report that UAL's CEO floated a UAL-AAL merger. That could spike the AAL short, but the deal faces steep antitrust hurdles and nothing new surfaced in my searches. The 20% stops cap that tail. Replacing the book now would pay round-trip frictions just ahead of the very prints the pairs were built for. I found no October-specific price news for the week, so the marks come from the packet."
+  },
+  "opus5_seasonality_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the week-old midterm-year Q4 seasonality book (entered 2026-10-05, NAV +1.07%, no stop or take-profit fired). Research this session (WebSearch; I could not find a 10-09 close recap, so the latest tape I saw is 10-07) supports every leg's premise without changing it. (1) SPY/IWM/XLF: the S&P sat near record highs (7,802 on 10-07, VIX ~15), so the October-into-year-end midterm statistic is playing out for large caps. Small caps are lagging (R2K -1.31% on 10-07, IWM leg -1.6%) because yields are pressing on them, but the leg is far from its 9% stop, and the seasonal small-cap edge is concentrated in late Oct-Dec, so cutting it now would sell the window as it opens. (2) TLT short: the 10y hit ~5.36% intraday, the highest since 2002, before a strong 10y auction (5.300% high yield) pulled it to ~5.28%; FOMC minutes said most participants see another hike as likely appropriate by year-end, and NY Fed 1y inflation expectations are at their highest since 2023. The small -1.1% mark is noise against an intact hawkish/term-premium thesis with an 8% stop. (3) VLO/MPC/XLE: WTI is still ~$88-89 with the Iran/Hormuz situation unresolved; the refiner legs are up 3-5% and well inside the 14% stops and 30% targets, and distillate seasonality runs through Q4. (4) BTC 6%: a modest Uptober leg under a 14% stop; the packet shows no entry fill for this row, which I flag for the desk but which does not change the decision. The risk I am accepting is a hawkish Oct-28 hike that hits IWM and SPY together; the stops cap that, and 14% cash buffers it. A full replacement would pay frictions to recreate essentially the same book, so holding beats trading."
+  },
+  "opus5_trend_r3": {
+   "decision": "HOLD",
+   "reason": "Trend-following re-check on the 2026-10-09 close, recomputed from one year of daily prices (closes match the packet marks exactly): every sleeve still meets its entry rule, so there is no signal to trade. Shorts remain fully broken: TLT 77.98 vs 50d 81.08 / 200d 85.17, 3m momentum -7.1%; ITB 84.76 vs 92.82 / 97.01, 3m -12.0%. Longs remain intact: XLE 65.08 vs 62.67 / 57.05, 3m +14.7%; USO 148.20 vs 139.16 / 117.12, 3m +25.8% (1m -6.4% is a pullback inside an uptrend, well clear of its 15% stop); BTC ~82.5k vs 80.8k / 71.9k, 3m +29.8%; UUP 29.02 vs 28.32 / 27.78, 3m +1.8%, 1m +3.5%; SPY 778.57 vs 767.57 / 722.93, 3m +3.9%. Gold (GLD 384.58, below both averages but 3m +4.8%) is still mixed, so cutting it remains right and it does not qualify for a short. The legs are eight sessions old, the book is 90% gross with 10% cash, and the stops (TLT 10%, ITB 15%, XLE 18%, USO 15%, BTC 20%, UUP 6%, SPY 10%) already bound the risk. A rebalance to exact inverse-vol weights would cost basis points for a cosmetic change and is not justified. Research limits, stated plainly: two web searches returned no October 2026 coverage. The latest context found is from late August: a hawkish Warsh Fed with hikes priced by December, and oil supported by Strait of Hormuz tension. That is consistent with the book's energy-shock / hiking-Fed theme, but the hold rests mainly on the price signals, not on fresh news. Note for the desk: the packet shows no entry fill for the BTC leg; I am assuming it is held at its 7% weight."
+  },
+  "opus5_unrestricted_r3": {
+   "decision": "HOLD",
+   "reason": "Researched (WebSearch, WebFetch of Delta's Oct-9 8-K and TradingEconomics Brent page, Yahoo daily closes). The book is a deliberate two-sided bet on the Hormuz outcome: 35% low-beta refiners (MPC/PSX/VLO, +3 to +5% on the leg) gain if the product squeeze persists, 27% airlines (JETS/UAL, -1.6%/-2.3%) gain if a deal deflates fuel, and 38% cash is the clean deal hedge. This week's news hit both sides without breaking either. Brent is ~$104 with Iran 'reviewing' a US proposal to reopen Hormuz within 7 days, 11 tankers were attacked in the week to Oct 4, and Trump says no new strikes before the midterms, so the outcome is still binary and the hedge structure is right. On refiners, the US issued a temporary license for ~22.5M bbl of Russian diesel and China resumes product exports, and heating oil fell ~3% on Oct 9 while MPC/VLO gave back ~2%. But Hormuz carries mostly crude, not products, Gulf refineries remain offline, and late-October Q3 prints will show record-crack earnings, so I keep the low-beta refiners rather than chase or dump. I am honest that the airline leg's original premise of management-quantified fuel relief was dented: Delta missed Q3 ($1.72 vs ~$2.02), cut FY EPS to $5.10-5.60 from $6.50-7.50, and guided Q4 fuel to ~$4.25/gal. Yet DAL closed flat on the day (82.14 to 82.17), which says the fuel pain is priced, and the airlines now act as the book's main lever on a Hormuz deal. UAL reports this week and its 18% stop caps that event risk. Every leg is far from its stop and take-profit, the book is +10.76% with a -5.22% max drawdown, and a full or partial rebalance would cost basis points without changing the exposure I want. So I hold."
+  },
+  "opus5_volregime_r3": {
+   "decision": "HOLD",
+   "reason": "The week-12 stagflationary dispersion book has worked in its first week on every main leg: XLE +2.57% (XLE +2.7% on 10-09 alone, top sector, +42.6% YTD per tapeboard.com), IWM short +1.57% (small caps were the weakest index on 10-07, -1.31%), COMT +1.98%; weighted leg P&L is about +1% with no stop near being hit. Research (two web searches plus tapeboard.com daily recaps for 10-07 and 10-09, a single source I could not cross-check) shows WTI ~$90-92, the 10-year stuck at ~5.24-5.28%, VIX down to 14.84. The catalyst calendar favors the book as built: September CPI prints Wed 10-14 with headline nowcast ~3.6-3.7% (up from 3.4%), and the 10-27/28 FOMC carries a live hike risk. A hot print supports energy and commodities and hurts small caps and duration. The TLT short is only -1.13% against an 8% stop and is the direct expression of that CPI/hike risk, so I keep it. VIXY is decaying (-1.45%), but with VIX at 14.8 the tail is at its cheapest right before a binary macro week; at 8% it is a defined-cost hedge against my short-IWM/long-cyclical gross. I hold rather than trim, because a full or partial rebalance costs real basis points and nothing in the data has falsified any leg. The existing stops (XLE 13, IWM 10, COMT 12, TLT 8, VIXY 25) and take-profits stay as the risk framework, with 22% cash earning 4%."
+  },
+  "opus_broadening_r2": {
+   "decision": "HOLD",
+   "reason": "The week-12 broadening book filled on 2026-10-05, only four sessions ago, and seven of eight legs are green on the leg (GDX +2.1%, XLE +2.6%, GLD +1.3%, COWZ +1.3%, RSP +0.9%, SIL +0.8%). The two losers, XLI -0.5% and KRE -2.0%, are well inside their 12% and 14% stops. Research was limited. Three web searches gave only partial and partly contradictory coverage of Oct 2-7 and no recap of the Oct 9 close, and the two recap pages I tried to fetch returned 403/503. What I did find mostly supports the book as it stands. Brent is back above ~$102 after renewed Iranian attacks on Hormuz shipping, which argues against cutting XLE further. A weak September payroll print (+29k vs ~90k expected) reduced expectations of another Fed hike, which fits the 'Fed has stopped hiking' premise behind the miners sleeve. Reports also had gold at a two-month low near $4,140 early in the week as long yields rose. GLD/GDX nevertheless marked above entry by Friday, so I would not chase or trim on that. I found nothing that breaks a leg thesis, and a full or partial rebalance of a four-day-old book would cost real basis points for no edge. Holding keeps all existing stops and take-profits in force."
+  },
+  "opus_broadening_r3": {
+   "decision": "HOLD",
+   "reason": "The week-12 international-broadening book filled on 2026-10-05, four sessions ago. Every leg is within noise of entry (TLT short -1.1%, DXJ -0.7%, EFV -0.5%, KIE +0.9%, VWO -1.4%, VEA -1.1%). The largest drawdown, EUAD at -4.0%, is far from its 15% stop. Research was limited. Three web searches gave partial, partly contradictory coverage of Oct 2-7 and nothing for the Oct 9 close, and recap pages I tried to fetch were refused (403/503). What I did find is relevant to the biggest leg, the TLT short. Reports had the 10-year touching roughly 5.36% midweek and the 30-year near 5.28%, multi-decade highs, even though Treasury expanded its long-end buyback program to $4bn per operation. That supports the term-premium and deficit-supply thesis, but it also shows an active official backstop on the long end. TLT nonetheless closed the week only 1.1% above my entry, so the 10% stop and 20% take-profit already bound the risk sensibly. Soft US payrolls (+29k) cut Fed-hike odds, which fits the weaker-dollar premise behind VWO/VEA/EFV. Oil back above $100 on Hormuz is a headwind for importers like Japan and Europe, but not yet enough to justify churning a four-day-old book. Holding also leaves the Round 2/Round 3 overlap unchanged at zero shared symbols, so the novelty rule is still satisfied."
+  },
+  "opus_momentum_r2": {
+   "name": "Opus Momentum",
+   "strategy": "Cross-sectional price momentum: long the confirmed 2026 leadership complexes \u2014 AI semiconductors (SMH core plus AMAT and NVDA), AI power (GEV) and oil-shock E&P (XOP) \u2014 against the two cleanest measured losers, long-duration Treasuries (TLT) and rate-killed homebuilders (ITB).",
+   "entry": "2026-10-12",
+   "capital_usd": 1000,
+   "cash_pct": 8,
+   "reassessment_note": "One-leg rotation only, after re-measuring momentum from Yahoo daily closes (which match the packet marks to the cent). The book is down about 4.4% over five sessions, almost all of it from the semis pullback (SMH -4.3% over 5d, AMAT -6.1%), but on a 6-month lookback the ranking the book is built on still holds: SMH +38%, AMAT +27%, NVDA +22%, XOP +14%, XLE +14% against TLT -10%, ITB -10%, SPY +15%. A one-week pullback in a leader is not a signal for a 6-month momentum book, and every stop is far from being hit (worst is AMAT at -6.5% against a -15% stop). AVGO is the exception: -2.7% over 6m and -5.9% over 3m, so by the book's own rule it is a laggard and should not be held as a leader. I am swapping its 8% into NVDA, the semi with the strongest 3m/6m trend that the book does not already hold through a single name. GEV stays: its 6m momentum is weak (+1.4%), but it has rebounded 8.7% in a month and is +1.5% on the leg, so I will reassess it next week rather than churn it. Rates context from search: the 10y reached 5.34% on 10-05 (highest since 2002) and eased toward about 5.17% by week's end, with Brent near $105. The TLT short stays at its trimmed 10% because the trend is intact but the yield spike may be exhausting. Web-search coverage of the 10-05 to 10-09 week was sparse, so this decision rests mainly on measured price momentum, not on news.",
+   "positions": [
+    {
+     "symbol": "SMH",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 30,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 40.0,
+     "thesis": "Core AI-semis leadership exposure: SMH is +38% over 6 months and +7.7% over 1 month, the strongest trend in the measured universe. The -4.3% week is a pullback inside an uptrend, not a trend break. Kept at 30% as the book's anchor, with a 15% stop as the trend-failure line."
+    },
+    {
+     "symbol": "AMAT",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 10,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 35.0,
+     "thesis": "Semicap leader: +27% over 6 months and +11.7% over 1 month despite a sharp September drawdown. The leg is -6.5%, well inside the 15% stop. Held at 10% as the higher-beta capex expression of the AI build-out, with the stop unchanged."
+    },
+    {
+     "symbol": "NVDA",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 8,
+     "stop_loss_pct": 15.0,
+     "take_profit_pct": 35.0,
+     "thesis": "Replaces AVGO at the same 8%. NVDA is +21.6% over 6 months and +12.7% over 3 months, a confirmed leader, while AVGO is negative on both lookbacks. This keeps a single-name AI-compute sleeve without holding a laggard. The overlap with SMH (where NVDA is about 21% of the fund) is accepted because this is a momentum book."
+    },
+    {
+     "symbol": "GEV",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 7,
+     "stop_loss_pct": 18.0,
+     "take_profit_pct": 40.0,
+     "thesis": "AI power-infrastructure leg: momentum has been flat over 6 months (+1.4%) but has rebounded 8.7% over 1 month, and the leg is +1.5% since entry. Held at a modest 7% under probation with a wide 18% stop because of its volatility, and will be cut next week if the 3-month trend does not turn positive."
+    },
+    {
+     "symbol": "XOP",
+     "kind": "equity",
+     "side": "long",
+     "weight_pct": 15,
+     "stop_loss_pct": 14.0,
+     "take_profit_pct": 30.0,
+     "thesis": "Oil-shock E&P leadership: +15.9% over 3 months and +13.7% over 6 months, with Brent around $105. The leg is +2.2%. Held at 15% as the book's second leadership complex and an inflation hedge for the rest of the book."
+    },
+    {
+     "symbol": "TLT",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 10,
+     "stop_loss_pct": 8.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Long duration is a measured loser: TLT is -9.8% over 6 months and -7.1% over 3 months as the 10y made a 24-year high of 5.34% on 10-05. Kept at the trimmed 10% with a tight 8% stop because yields eased late in the week and a squeeze in this crowded short is the main risk."
+    },
+    {
+     "symbol": "ITB",
+     "kind": "equity",
+     "side": "short",
+     "weight_pct": 12,
+     "stop_loss_pct": 12.0,
+     "take_profit_pct": 20.0,
+     "thesis": "Homebuilders are the cleanest equity loser: ITB is -12% over 3 months and -10.1% over 6 months, with mortgage rates pinned by a 5%+ 10-year. The leg is +1%. Held at 12% as the rate-sensitive equity short paired with the long leadership sleeves."
+    }
+   ]
+  },
+  "opus_momentum_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the R3 real-asset/short-duration carry book. It entered at the 10-05 close and seven of its eight legs are green (NAV +0.65% since inception), and re-measuring with Yahoo daily closes shows its thesis intact. Energy and commodities lead (XLE +14.7% and COMT +16.6% over 3 months, with Brent near $105). Defensive pharma is working (MRK +17.4% and GILD +15.0% over 3 months). USMV is +8.4% over 6 months, and USFR is doing its floating-rate cash job. Rates stay at a 24-year high (the 10y reached 5.34% on 10-05 and was near 5.17% at week's end), so the case for the short-duration anchor stands. VTIP (-2.3% over 3 months) and VLUE (-0.1% on the leg) are the soft spots, but neither has changed enough in five sessions to justify paying to churn. No leg is near a stop. The book has zero same-direction overlap with the R2 momentum book (SMH/AMAT/NVDA/GEV/XOP long, TLT/ITB short), so it satisfies the novelty rule. Web search turned up little news for the 10-05 to 10-09 week, so this rests mainly on measured prices and the rate and oil levels I could find."
+  },
+  "opus_picks_and_shovels_r2": {
+   "decision": "HOLD",
+   "reason": "Holding the MU 45 / SNDK 24 / LRCX 21 / cash 10 memory-and-WFE book entered at the 2026-10-05 close. Research (WebSearch, limited week-specific results): secondary coverage of TrendForce's 4Q26 outlook (late Sept) still projects conventional DRAM contract prices +10-15% QoQ and NAND +15-20% QoQ, with the market undersupplied and suppliers prioritising server/AI parts. NAND is accelerating from Q3's 10-15%, which supports the SNDK leg. Lam's next report is 2026-10-28 and it had raised its WFE view earlier in the year. My searches turned up no October 2026 news explaining the week's -3% MU, -7% SNDK and -8% LRCX, so I treat it as volatility after a big run, not a broken thesis. I could not verify that and say so plainly. Every leg is far inside its stop (MU 18%, SNDK 28%, LRCX 18%). Rebuilding a book that is one week old on an unexplained drawdown would pay roughly 4bps round-trip per leg and give up the Q4 pricing upside the book exists to capture. Main risk to watch: a cut in the memory pricing outlook or an export-control headline before LRCX's 10-28 print."
+  },
+  "opus_picks_and_shovels_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the electrification real-asset book entered 2026-09-30 (COPX 22, GEV 14, ETN 14, PWR 10, GDX 12, XLE 10, cash 18). Five of six legs are up and ETN is flat. None is near its stop or take-profit: the best leg, PWR at +9.9%, is far below its +40% target. Research (WebSearch): in mid-September the GE Vernova CEO said backlog could reach about $200B early in 2027, up from $176B at Q2, and GEV, ETN and PWR rallied together. Eaton's data-center revenue was growing about 50% YoY. Both support the grid-equipment thesis. The caution I found is valuation: GEV at about 47x forward and ETN at about 32x guidance midpoint, as of an Oct 5 analysis. That argues against adding to them, not for selling a leg already working. I found no October copper-price data, so the COPX leg rests on the standing electrification-demand thesis rather than fresh evidence. The 18% cash already serves as dry powder and hedge. Holding costs nothing, while trimming would pay churn with no new information. The Round 3 novelty rule is satisfied with 0% overlap against the Round 2 memory book."
+  },
+  "opus_quality_defensive_r2": {
+   "decision": "HOLD",
+   "reason": "Holding the defensive core (XLV 38, XLE 16, QUAL 14, USMV 10, cash 22) because it is already set up for the week ahead. Four WebSearch queries were all I could do, and the coverage was thin: the S&P 500 fell about 1.5% from its 10-06 record of 7,818.93 as renewed US-Iran fighting and Red Sea attacks lifted oil about 10% (Brent near $105, per one NYSE strategist preview). September CPI is out 10-14 and is the swing factor for an October FOMC where markets price roughly 50-70% hike odds. I found no October-dated XLV news and no current oil or gold prices, so the leg-level read rests on my packet marks, and every leg is green: XLE +5.8% (stop -15% / take-profit +25%, both far off), USMV +3.2%, QUAL +2.2%, XLV +1.4%. With a CPI print and a possible hike both still to come, low-beta quality, energy backed by physical crude, and 22% cash at 4% are the right defenses. A replacement would pay frictions for no better exposure, and adding risk before CPI and the FOMC would cut against the mandate. I'd revisit after the FOMC: take XLE profits if the conflict de-escalates and crude reverses, or add equity beta from cash if CPI comes in soft and the hike is priced out."
+  },
+  "opus_quality_defensive_r3": {
+   "decision": "HOLD",
+   "reason": "Holding the leg entered 2026-10-05 (PDBC 22, DBMF 22, GLD 14, AMLP 12, JEPI 11, XOP 9, cash 10). It is five sessions old, and the risk-off, oil-led week is the one it was built for. Four WebSearch queries found renewed US-Iran fighting and Red Sea attacks lifting oil about 10% while the S&P 500 fell about 1.5%, plus a live chance of an October Fed hike (September CPI 10-14). I found no current, dated gold or oil prices, so the leg-level read rests on my packet marks: PDBC +2.1%, XOP +2.2%, GLD +1.3%, JEPI +0.9%, DBMF +0.1%, AMLP -0.8%. No leg is within 11 points of its stop. Commodity carry, energy and gold hedge the supply shock, DBMF's trend models can follow either a hike or a reversal, and JEPI plus 10% cash keep the book's beta low. Replacing it after one week would pay frictions to swap one defensive mix for another. The Round 3 novelty rule holds, with 0% same-direction overlap against the Round 2 book (XLV/XLE/QUAL/USMV). I'd revisit after the FOMC: AMLP is the weakest leg and goes first if rate-hike pressure on yield assets builds, and the energy sleeves get cut if the Iran conflict de-escalates."
+  },
+  "opus_value_r2": {
+   "decision": "HOLD",
+   "reason": "Research was limited: three web searches and one fetch, none of which found an Oct 9 closing wrap, so the marks come from the packet and the macro picture from Oct 5-6 reports. On Oct 5 the 10y was at 5.34% and the 30y at 5.70%, the highest since 2002, with roughly a 25% chance priced for an October Fed hike and a full 25bp hike by December. Brent was around $98-102 on Middle East risk, gold near $4,180, and equities near records on poor breadth. That is the oil-driven stagflation regime this book was rebuilt for on 10-05, so the thesis has not changed in four sessions. The managed-care recovery trade, 30% in UNH plus CI, faces its catalyst right after entry: Zacks (a single secondary source, unconfirmed by the company) dates UNH's Q3 report to Oct 13. The question is whether Q2's 86.7% MCR, helped by $860M of favorable reserve development, holds against the 88.1% full-year guide. I sized UNH at 16% with a 12% stop specifically to own that print, and cutting it the day before would abandon the trade at its moment of truth. All seven equity legs are in profit (+0.2% to +7.2%) and none is near its stop or take-profit. ETH at -8.3% is a 3% sleeve with a 20% stop, so its risk is already capped. A full replacement would pay real basis points to arrive at the same book. Hold and let the standing stops do the work."
+  },
+  "opus_value_r3": {
+   "decision": "HOLD",
+   "reason": "Research was limited: three web searches and one fetch, with no Oct 9 closing data found, so this rests on the packet marks plus Oct 5-6 market reports. The trend legs entered 10-05 are four sessions old and every one sits well inside its stop. MTUM is -1.0% against a 12% stop, QUAL +0.6%, XLE +2.6% and GDX +2.1%, with gold near $4,180 and Brent around $100 on Middle East risk. The reports do not break the trends these legs ride: the Nasdaq-100 and Nvidia were near records, and long yields printed 24-year highs (30y at 5.70%) on Oct 5, with a full 25bp Fed hike priced by December. The TLT short at -1.1% reflects the Oct 6 pullback in yields from those highs, but it is still far from its 8% stop and the hike-pricing that drives it is intact. The XLY short at -2.2% against a 10% stop is the leg most exposed to a broad rally, but the weak-consumer thesis behind it, the 29K payroll print, has not been contradicted by anything I found. Replacing a book this young on noise would pay frictions to chase four days of P&L, which is the whipsaw a trend book must avoid; two field-wide stops this week hit legs only three sessions old. The book as registered already satisfied the Round 3 novelty rule versus Round 2 (no shared names). Hold."
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "name": "Opus 5 dispersion",
+ "strategy": "Beta-matched dispersion book: a 52.5% long basket of nine large caps with high residual-to-SPY volatility and low pairwise residual correlation, concentrated in the legs whose idiosyncratic drivers are confirmed by hard data (CME on record-high rates volatility, NEM on gold FCF), hedged by a 34.5% SPY short sized to Blume-adjusted basket beta for net index beta near zero, with 13% cash.",
+ "entry": "2026-10-12",
+ "capital_usd": 1000,
+ "cash_pct": 13.0,
+ "reassessment_note": "One change of substance. DE fell 9% in a week while SPY rose. On 10-07 the FTC and USDA opened a joint inquiry into anticompetitive conduct in agricultural equipment, following Deere's July right-to-repair settlement, and the USDA corn yield/production upgrade crushed corn futures and with them farm income. AGCO (-11%) and CNH (-14%) fell alongside, so DE's residual driver has turned decisively negative and is open-ended; it is not the kind of noise a dispersion book should sit through. DE is sold at about -9%, before its 16% stop. The proceeds go 3 points to CME, whose driver strengthened (10y/30y yields at 2002 highs, December hike priced, international volume +22%, MS target $337), and the rest to cash. The SPY short is cut from 36.5% to 34.5% to keep net beta near zero for the smaller, lower-beta basket. I recomputed it from 1y daily betas pulled for every leg. All other legs were checked against prices and headlines through the 10-09 close (AKAM's dip reversed; HII's target trim was minor; CI/MCK/DG/TRV are up) and are held at unchanged weights and stops. Research: WebSearch (two standard queries and one extended) plus Yahoo Finance price/headline endpoints. Some search results were thin or from other dates, and I relied only on items dated this week.",
+ "positions": [
+  {
+   "symbol": "CME",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12.0,
+   "stop_loss_pct": 13.0,
+   "thesis": "Rates-volatility franchise is the cleanest idiosyncratic driver in the basket: 10y/30y Treasury yields at their highest since 2002 with a December hike priced keeps rate-futures hedging demand elevated, international volume was reported up 22%, and Morgan Stanley lifted its target to $337 on 10-09. 1y beta to SPY is about -0.27, so it is also the best hedge-diversifier; lifted from 9% to 12% with the DE proceeds. Stop 13% unchanged."
+  },
+  {
+   "symbol": "NEM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8.0,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Gold-margin/FCF story intact: gold recovered to ~$4,216 by 10-09 despite 24-year-high yields and a firm dollar, which keeps NEM's record free cash flow narrative alive; it is the basket's highest-beta leg (~1.7 raw), which the SPY short absorbs. Held at 8%, existing 20% stop / 40% TP."
+  },
+  {
+   "symbol": "MCK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6.5,
+   "stop_loss_pct": 15.0,
+   "thesis": "Drug-distribution volume and specialty/oncology growth are driven by utilisation, not the macro cycle; near-zero/negative beta to SPY (~-0.2) makes it a strong residual leg. Up 2.6% on the leg with no adverse news; held at 6.5%."
+  },
+  {
+   "symbol": "CI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6.0,
+   "stop_loss_pct": 16.0,
+   "thesis": "Managed-care/PBM residual driver (Evernorth pricing and medical-cost trend) is uncorrelated with the rest of the basket and SPY (beta ~0.2); +4.1% since entry with no thesis-breaking news. Held at 6%."
+  },
+  {
+   "symbol": "AKAM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.0,
+   "stop_loss_pct": 18.0,
+   "thesis": "Edge/security plus new AI-cloud inference contracts give a company-specific driver; the 10-07/10-08 dip (to $100.90) fully reversed to $106.95 on 10-09 and Q3 results come on 11-05 as a scheduled idiosyncratic catalyst. Held at 5%."
+  },
+  {
+   "symbol": "HII",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5.5,
+   "stop_loss_pct": 16.0,
+   "thesis": "Shipbuilding is driven by Navy budget and submarine-throughput execution rather than the index: the new Baltimore submarine module plant and Q3 results on 10-29 are company-specific. TD Cowen trimmed its target to $340, still far above $265, so the thesis holds. Held at 5.5%."
+  },
+  {
+   "symbol": "SLB",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4.0,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Oilfield-services leg tied to international/offshore capex and the oil tape rather than US equity beta; modestly down (-2.7%) with no thesis change. Kept small at 4% with existing 18% stop / 35% TP."
+  },
+  {
+   "symbol": "DG",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 3.0,
+   "stop_loss_pct": 14.0,
+   "thesis": "Discount-retail leg was kept small after the low-income-consumer cut; it has rebounded 7% on trade-down/execution evidence. Held at 3% rather than chasing it."
+  },
+  {
+   "symbol": "TRV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 2.5,
+   "stop_loss_pct": 12.0,
+   "thesis": "Commercial-lines insurer with pricing driven by the underwriting cycle, not the index (beta ~-0.1); sized small at 2.5% because of catastrophe exposure. Held."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 34.5,
+   "thesis": "Beta hedge resized from 36.5% to 34.5%. Using 1y daily betas Blume-adjusted (0.67*raw+0.33), the new 52.5% long basket carries ~34.3 beta-dollars (versus ~37.4 before DE was cut and CME was raised), so a 34.5% short keeps net index beta near zero and isolates the dispersion/residual return the mandate targets. No stop, as the leg is a hedge."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

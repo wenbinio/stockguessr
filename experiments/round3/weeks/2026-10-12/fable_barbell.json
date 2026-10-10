@@ -1,0 +1,75 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked on the Sep 1 to Oct 9 tape with a 5.3% ten-year, $100 oil and a hiking Fed: long technology, energy and health care versus short the bottom of the cross-section in real estate, materials, financials and industrials, correlation-deduped with hard stops and take-profits and 42% yielding cash.",
+ "entry": "2026-10-12",
+ "capital_usd": 1000,
+ "cash_pct": 42,
+ "reassessment_note": "Researched decision (WebSearch and WebFetch were available; I used both, pulling daily closes for all eleven sector SPDRs plus XBI from Sep 1 through Oct 9). The cross-sectional ranking has moved since I set the week-12 book, so I re-rank rather than hold. Sep 1 to Oct 9 sector returns: XLK +8.2%, XLE +0.5%, XLV -0.5%, XLC -0.5%, XLY -1.5%, XLI -2.0%, XLP -2.1%, XLU -2.7%, XLF -4.3%, XLB -5.1%, XLRE -5.5%, XBI -5.9%. Three things changed. First, two of my four shorts have bounced out of the bottom of the ranking: XLU is up 5.2% from its Sep 24 low (39.36 to 41.41, including a +3.0% day on Oct 6) and sits -3.6% against me, and XLY is up 3.5% from its Sep 28 low; neither is a bottom-three sector any more, and holding a short in a sector that is mean-reverting against a 5.3% ten-year is fighting a bid I cannot see the end of (the utilities bid is the AI-power-demand story, which keeps attracting buyers on every dip). Second, XBI is the weakest leg in the whole book at -5.9% since Sep 1 and fell to 149.29 intraday on Oct 8; a momentum book should not be long its worst-ranked sleeve, so it goes. Third, XLB (-5.1%) and XLF (-4.3%) have fallen to the bottom alongside XLRE, and the macro behind them is intact: the Fed hiked to 3.75-4.00% in September and the Oct 7 minutes say most officials expect another hike by year-end, the 10-year touched 5.365% (highest since 2002), the 30-year mortgage rate is 7.49% and mortgage applications fell 4.2% w/w, and September CPI on Wednesday is expected at 3.6% headline (from 3.4%). The tech-long side of the book is unchanged in conviction: the Oct 8 drop (XLK -1.8%) came from yields and oil rising plus an FT story cutting OpenAI's revenue estimate and a WSJ report on Broadcom borrowing for OpenAI chips, which is a sentiment wobble inside a sector still +8% on the window, and XLK remains the clear top of the cross-section. Energy stays long on $100 Brent, the IEA emergency-reserve release dip notwithstanding, and health care stays as the defensive long with positive relative momentum. Shorts are deduped into two rate-sensitive legs (XLRE, XLF) and two cyclical legs (XLB, XLI) rather than four of one kind. The XLF short carries bank-earnings risk on Tue/Wed, so it is the smallest short at 5% with a 10% stop. Gross stays at 58% and cash at 42% earning 4%; the full replacement costs roughly 2-5 bps on the traded notional, which is small relative to the 3.6% I would otherwise be sitting in on a short that has stopped working. Lesson from this book's three fired stops: I keep stops at -10% to -12% but am now cutting a losing short on a ranking change at -3.6% rather than waiting for the -10% stop to do it for me.",
+ "positions": [
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Top of the cross-section at +8.2% from Sep 1 to Oct 9 and still the only sector making new highs into a 5.3% ten-year; the Oct 8 pullback (XLK -1.8%) was driven by yields, oil and an OpenAI-revenue story rather than a change in the data-center capex cycle (NVDA just reported +106% y/y revenue and a $150B buyback). Largest leg at 15% because it is the strongest-ranked sector by a wide margin; 12% stop guards against a hot-CPI rate shock, 20% take-profit locks a momentum extension."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Brent ~$100-102 and WTI ~$89 with OPEC+ holding November targets; XLE is +4.9% over the last two weeks (62.04 on Sep 25 to 65.08 on Oct 9) and is the second-ranked sector on the Sep 1 window. It is also the leg that pays if Wednesday's CPI prints hot on energy, which is the main macro risk to the XLK long, so it hedges the book's biggest position. 10% weight, 12% stop below the late-September low."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Health care is flat-to-slightly-negative on the Sep 1 window (-0.5%) but has positive relative momentum over the last two weeks (167.37 on Oct 5 to 170.81 on Oct 9, +2.1%) and is the defensive sector least sensitive to a 5.3% ten-year. Replaces the XBI sleeve as the book's defensive long; 8% weight, 12% stop."
+  },
+  {
+   "symbol": "XLRE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Bottom-ranked sector at -5.5% from Sep 1 to Oct 9 and down from 44.04 to 41.61 with the 30-year mortgage rate at 7.49% (highest since Nov 2023), mortgage applications falling 4.2% w/w and the Fed minutes pointing to another hike by year-end. The Oct 9 +1.9% bounce is a reason to re-enter the short at a better price, not to drop it. Largest short at 7%; 12% stop allows for the sector's habit of sharp short-covering days."
+  },
+  {
+   "symbol": "XLB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Materials is the second-weakest sector at -5.1% from Sep 1 to Oct 9 (52.07 to 49.43), making lower lows every two weeks (50.73, 49.80, 49.50, 49.27) with no counter-trend bounce, unlike XLU or XLY. It is a cyclical that loses on both legs of the current regime: $100 oil raises input costs and a hiking Fed slows end demand. Replaces the XLU short; 7% weight, 10% stop."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Financials have fallen to third-weakest at -4.3% from Sep 1 to Oct 9 (57.20 to 54.73) despite higher rates, which tells me the market is pricing the credit and deposit-cost side of a 5.3% ten-year and 7.49% mortgages rather than the NIM side. Big-bank earnings land Tue/Wed (JPM, GS, C, WFC, then BAC, MS), so this is the smallest short at 5% with a 10% stop; a clean set of prints would stop it out for a small loss, a reserve build or credit warning would confirm the ranking. Replaces the XLY short."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Industrials are -2.0% from Sep 1 to Oct 9 and fell 2.2% on Oct 7 as the 10-year hit 5.365%; the leg is +0.5% in my favour since Oct 5 and remains in the lower half of the cross-section with cyclical exposure to a hiking Fed and $100 oil. Kept at 6% as the second cyclical short alongside XLB; 10% stop."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}
