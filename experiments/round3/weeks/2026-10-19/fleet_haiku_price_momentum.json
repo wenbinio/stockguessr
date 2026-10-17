@@ -1,0 +1,48 @@
+{
+ "name": "Haiku price momentum",
+ "strategy": "Defensive sector-rotation book: 68% in energy, value, financials and biotech longs with stop-losses and take-profits, and 32% in cash at 4% APY, after exiting TNA, KRE and EEM.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 32,
+ "reassessment_note": "The prior Round 3 book was 100% long with no cash, and TNA was down 23.5% with no stop attached. Search showed the Russell 2000 at 2,729.53 on 2026-10-14, about 10% below its 3,045.48 record of 2026-08-12, and mid-2026 Fed coverage shows officials projecting possible hikes; a rates-driven small-cap rally is vulnerable to that. I exit TNA and KRE entirely, cut EEM to zero, and trim XBI to 8%, moving to cash. I keep XLE (already +17.6%), VTV and XLF as the lower-beta core, and attach stops and take-profits to every kept leg. Research was limited because most search results were undated or from earlier months, so this rests on the packet marks and the dated index points above.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Energy is already +17.6% on this leg and is the one sleeve in the book that has worked. Undated coverage links a Brent move above $84 to Middle East escalation, which supports energy into a rates-driven tape. A 20% weight keeps it a meaningful but not dominant sleeve; the 12% stop protects the gain if the oil bid fades."
+  },
+  {
+   "symbol": "VTV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Large-cap value is the lowest-beta equity sleeve here and held flat (+1.2%) through the small-cap and semiconductor weakness. It replaces the leveraged small-cap exposure with a steadier core. The 10% stop and 15% take-profit bound the position for a book that now carries 32% cash."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Financials are roughly flat (-2%) and tend to benefit from higher-for-longer rates, which is the risk the mid-2026 Fed coverage flags. This is a hedge against the rate-hike case that hurts the small-cap leg being exited. The 10% stop limits damage if credit concerns surface."
+  },
+  {
+   "symbol": "XBI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Biotech is high-beta and down 4% on this leg, so I cut it from 16% to 8% rather than exit: it keeps a small exposure to a sector rebound while sizing to a rate-sensitive, falling tape. The 12% stop caps further loss and the 20% take-profit captures a bounce."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

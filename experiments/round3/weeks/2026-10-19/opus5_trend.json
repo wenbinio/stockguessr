@@ -1,0 +1,61 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend across six sleeves with signals refreshed through the 2026-10-16 close: long only where price is above both the 50- and 200-day moving average with positive 3-month momentum, short only where both are broken and momentum is negative, sized inversely to realised volatility - still the single 2026 macro trend of an energy supply shock into high yields, expressed through duration, energy, housing, the dollar and crypto, with the equity-beta (SPY) sleeve cut after its signal broke.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "I recomputed every sleeve's signal from Yahoo Finance daily closes through 2026-10-16. Those closes match the packet marks exactly. Five of the seven sleeves still pass the rule unchanged. TLT (80.05) is below its 50-day (80.73) and 200-day (84.95) averages, with 3-month momentum of -4.6%: short still valid. ITB (86.40) is below its 50-day (91.52) and 200-day (96.70), at -9.4%: short still valid. XLE (68.24) is above its 50-day (63.54) and 200-day (57.62), at +17.8%: long still valid. USO (161.76) is above its 50-day (142.68) and 200-day (119.26), at +28.9%: long still valid. UUP (28.92) is above its 50-day (28.40) and 200-day (27.84), at +1.9%: long still valid. BTC (81,501) is above its 200-day (72,360) and only barely above its 50-day (81,252), at +29.4%. It still qualifies, so it stays at its small 7% weight. SPY fails the rule: it closed at 763.25, below its 50-day of 768.50, after the 10-14 to 10-16 semiconductor-led selloff, and its 3-month momentum is only +2.9%. The mandate holds a long only where price is above both averages, so the SPY sleeve is closed and its 6% goes to cash at 4% APY rather than being forced into another sleeve. Weights and stops on the other legs are unchanged, to avoid churn costs on signals that have not changed. One risk I am watching is that TLT bounced about 2.7% this week from 77.98. That has not broken the short signal, and the 10% stop is far away. The research was limited. One web search did not return coverage of the 10-16 session itself. It only returned mid-September reports of chip selloffs alongside WTI above $101 and a 10-year yield above 5%, which fit the book's macro thesis. This decision therefore rests mainly on the price-based signal recomputation, not on news.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 26,
+   "stop_loss_pct": 10.0,
+   "thesis": "Duration short is still the core of the oil-shock / high-yield trend. TLT at 80.05 is below its 50-day (80.73) and 200-day (84.95) averages, with 3-month momentum of -4.6%. Its 20-day volatility is only about 11%, so inverse-vol sizing keeps it the largest sleeve. This week's bounce from 77.98 has not broken the signal, and the 10% stop caps the damage if duration rallies."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 18.0,
+   "thesis": "The strongest equity trend in the book: XLE at 68.24 is well above its 50-day (63.54) and 200-day (57.62) averages, with 3-month momentum of +17.8%, and the leg is +11% since entry. Energy is the primary expression of the supply-shock trend. Weight held at 20% with a wide 18% stop so a trend this strong is not shaken out by noise."
+  },
+  {
+   "symbol": "ITB",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 16,
+   "stop_loss_pct": 15.0,
+   "thesis": "Housing is the rate-sensitive loser of high yields. ITB at 86.40 is below its 50-day (91.52) and 200-day (96.70) averages, with 3-month momentum of -9.4%. Its 20-day volatility is about 27%, so inverse-vol sizing holds it at 16%. The 15% stop guards against a sharp rate-relief rally."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Crude is the purest trend in the book: USO at 161.76 is above its 50-day (142.68) and 200-day (119.26) averages, with 3-month momentum of +28.9% and a fresh high this week. Its realised volatility of about 38% is the highest of any sleeve, so inverse-vol sizing keeps it at 9%. The 35% take-profit banks a parabolic spike, and the 15% stop protects against a geopolitical reversal."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 20.0,
+   "thesis": "The weakest qualifying long. BTC at about 81,500 is above its 200-day (72,360) and only marginally above its 50-day (81,252), with 3-month momentum still +29.4% but 1-month momentum -3.0%. It still passes the rule, so it is held at a small 7% weight rather than paying 35bps per side to churn it. If it breaks the 50-day decisively, the next refresh cuts it, and the 20% stop limits the tail."
+  },
+  {
+   "symbol": "UUP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 6.0,
+   "thesis": "The dollar trend is mild but intact: UUP at 28.92 is above its 50-day (28.40) and 200-day (27.84) averages, with 3-month momentum of +1.9%. It is a low-volatility (about 5%) diversifier that pays when high US yields draw capital in. The weak momentum argues for keeping it small at 6% with a tight 6% stop."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

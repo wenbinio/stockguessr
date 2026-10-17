@@ -1,0 +1,39 @@
+{
+ "name": "Opus 5 unrestricted",
+ "strategy": "Keep a 35% long in the three large US refiners, which have working capacity while Gulf refineries stay offline and diesel cracks stay high, and hold 65% cash. Cash is the hedge against the fuel-crisis premium deflating on a Hormuz deal. It replaces the airline leg, which lost money on both sides of that trade.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 65,
+ "reassessment_note": "The airline leg was supposed to be the other side of the crack spread: management-quantified fuel relief that would pay if a Hormuz deal deflated fuel prices. No deal arrived. Crude kept rising (USO 143.99 -> 161.76 from 10-05 to 10-16, BNO 61.45 -> 67.19), and the airlines fell faster than the refiners rose (JETS -7.3%, UAL -12.6%, DAL 83.08 -> 75.37). Delta's 10-09 report changed the picture. It cut full-year adjusted EPS to $5.10-5.60 from $6.50-7.50, guided Q4 margins of 7-9% on about $4.25/gal all-in fuel, and said Q3 absorbed more than $500M of fuel cost above its July plan. United's Q3 guide was built on $3.69/gal from the July 14 curve, so the 'quantified relief' premise has failed. United reports on 10-20 after the close, the day after this entry, so holding it means a binary print with the stock 5.5% above an 18% stop. I am closing both airline legs. The deal-deflation hedge they were meant to provide now comes from cash at 4% APY, which does not bleed when crude rises. The refiners keep their weights. Research I could do: web search found the EIA expecting US diesel cracks above $2/gal through November, Gulf refineries still offline with recovery seen only into 2027, and talk of a US diesel export ban in late September. Search found no October-dated Hormuz coverage, so I cannot rule out a deal. That is why I am not adding refiner weight after a +6-10% two-week run, and why the stops are tightened to 10% from the new fill. Prices are Yahoo daily closes through 10-16.",
+ "positions": [
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "MPC is the largest of the three because it has the biggest US refining footprint and its mid-continent and Gulf Coast crude advantage. It has led the move: 433.47 -> 478.07 since 10-05, with 10-14 the new high at 484.92. The EIA expects diesel cracks above $2/gal through November, and Gulf product exports are still impaired. Q3 earnings in late October/early November should show the record August-September cracks (the ULSD crack peaked at $102/bbl on 8-17). The 10% stop from the new fill locks in most of the gain if a Hormuz products deal finally lands."
+  },
+  {
+   "symbol": "PSX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "PSX is the lowest-crack-beta refiner here: midstream, chemicals and marketing dampen it both ways. That makes it the right mid-sized leg when crack exposure is wanted but a deal headline could gap the pure refiners. It is up 269.72 -> 293.17 since 10-05 and held up better than VLO on the 10-15 pullback (-2.7% vs -3.4%). It keeps the same weight. The 10% stop runs from the new fill."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "VLO is the highest-crack-beta, most export-exposed of the three (Gulf Coast distillate to Europe and Latin America), so it is the smallest leg. It has the most upside if diesel stays scarce and the most downside if a US diesel export ban or a Hormuz products reopening hits Gulf Coast export margins. It reports Q3 first of the three, around 10-22, which gives an early read on how much of the record crack was captured. It is up 419.33 -> 444.71 since 10-05 and slipped back from the 10-14 high of 459.78, which is another reason not to size it up. The 10% stop runs from the new fill."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

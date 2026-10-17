@@ -1,0 +1,30 @@
+{
+ "name": "Opus Picks-and-Shovels",
+ "strategy": "A two-leg bet on the AI-buildout memory bottleneck (Micron in DRAM/HBM, Sandisk in NAND) kept at its pre-stop size, with the stopped-out Lam Research wafer-fab-equipment leg left in 4% cash rather than re-bought into a rate-hike-driven chip tape.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 33,
+ "reassessment_note": "Research this week (web search plus a fetched TradingKey/Goldman write-up) shows the 10-14 to 10-16 drop was driven by two things. The first is China's CXMT claiming progress on 4F2 DRAM, which Goldman models as capacity rising from 290k to 513k wafers/month by end-2028 but still meeting only about 50% of China's DRAM demand, and it says the market overestimates the technology risk. The second is a hot September CPI (0.6% m/m, 3.7% y/y) that revived Fed-hike bets and pushed the 10-year above 5.3%. Neither breaks the near-term thesis: KeyBanc still projects Q4 DRAM contract prices +15-20% q/q and NAND about +20%, and Micron says its HBM is sold out through 2027 and has 26 strategic customer agreements. So I am keeping the memory legs and re-underwriting them at the 10-19 close. I accept that this resets MU's stop, which sat only about 0.7% below the 10-16 mark. That is a deliberate re-underwrite, not a way to dodge the stop: the new 16% stop still caps a further loss of about 7% of NAV on MU. What did change: the rate regime is hostile to high-beta semis, and the WFE leg was stopped out. I am not chasing LRCX back, even though TSMC kept its $60-64B capex guide. Its 21% stays in cash at 4% until the hike path is clearer. Gross exposure falls from 90% to 67%.",
+ "positions": [
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 45,
+   "stop_loss_pct": 16.0,
+   "take_profit_pct": 50.0,
+   "thesis": "Micron fell about 13% on the week on a CXMT supply fear that Goldman dates to 2027-28 capacity, while the near-term setup is the strongest in the cycle: Q4 DRAM contracts are guided +15-20% q/q, HBM is guided +80-100% q/q into Q1 2027 and sold out through 2027, and strategic agreements rose from 16 to 26. Holding 45% keeps this as the book's core bottleneck claim. The 16% stop from the 10-19 entry bounds the downside if the market is right that the 2028 downcycle is coming early."
+  },
+  {
+   "symbol": "SNDK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 55.0,
+   "thesis": "Sandisk is the NAND half of the memory squeeze. NAND contract pricing is guided about +20%, and enterprise SSD demand is being pulled by AI inference storage. It fell about 15% on the week on a DRAM-specific CXMT headline that does not directly touch NAND supply. I trimmed it slightly from 24% to 22% because it is the higher-beta name in a rising-rate tape. The 20% stop allows for its larger daily moves."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

@@ -1,0 +1,64 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade: a trimmed short in the long end for term premium, currency-hedged Japan, European rearmament and international developed value as the equity core, US insurers collecting a 5.4% long end, and emerging markets removed because the dollar has not fallen.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 18,
+ "reassessment_note": "Two premises from the 10-05 rebalance failed the tape check. (1) EM was restored on the view that the dollar was falling on a paused Fed. It was not: DXY was 101.93 on 10-02 and 101.84 on 10-16, flat. Meanwhile VWO is -4.3% because its large Taiwan semiconductor weight sat directly in the 10-14 to 10-16 chip selloff (SMH -15% since entry). VWO is cut entirely. (2) The TLT short is right on structure, since the 30y is still 5.44%, above 5.10% three months ago. But the semi selloff is producing a flight-to-quality bid: the 30y fell from 5.60% to 5.44% and TLT rose from 77.1 to 80.05, so the leg is -3.8% against a -10% stop. A continued risk-off week is the main threat to it, so I trim it from 18 to 14 rather than abandon it. The proceeds go to the international value leg that is working (EFV +1.0%, up to 18) and to KIE (+5.1%, up to 14). The rest goes to cash, earning 4%, to keep resizing costs small. Japan, Europe defense and VEA are unchanged. Novelty check: the Round 2 book is all US equity/gold/energy longs, so same-direction overlap with this book is 0%. Research note: web search returned no October 2026 coverage, so this rests on daily closes and yield/dollar series I pulled from Yahoo Finance, not on news coverage.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The 30y at 5.44% still carries a deficit and term-premium story, and it is 34bp above its level three months ago. But the semiconductor risk-off has pushed the 30y down 16bp in a week, so I cut the short from 18% to 14%. That lowers the damage if the flight to quality runs further, and the 10% stop is unchanged."
+  },
+  {
+   "symbol": "DXJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Hedged Japan remains the right form: USDJPY is pinned near 158, so the hedge costs little in returns, and the -2.2% on the leg is in line with EWJ's drift during a global tech selloff. Size unchanged."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "European rearmament spending is budget-driven and does not depend on the chip cycle. It traded up to 41.56 through the selloff, near entry, which supports holding it as a broadening leg uncorrelated with US tech. Size unchanged."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value is the cleanest working expression of the book. It rose to 79.35 while SMH fell 15%, which is exactly the low-tech-weight broadening the mandate targets. It takes most of the capital freed from VWO and goes from 12% to 18%."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Insurers reinvest float at a long end that is still near 5.4%, and they have little tech exposure. The leg is +5.1% and made new highs through the selloff (62.59), so I add 2 points to 14%. It also partly hedges the TLT short, because insurers keep investment income even if yields ease."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "A small broad developed ex-US core that diversifies the value and Japan legs. It is -2.3%, but the drag comes from global beta rather than a broken thesis, so it stays at 6%."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

@@ -1,0 +1,48 @@
+{
+ "name": "Haiku deep value",
+ "strategy": "Rate-regime rotation: long energy and financials, a small bitcoin spot sleeve, and a short on QQQ as a semiconductor and rate-hike hedge, with 41% cash.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 41,
+ "reassessment_note": "The tech-led thesis is broken. QQQ is down 6.1% on the packet marks, and US chip stocks lost about $1.64T in six sessions to 10-15 on rate-hike bets and AI capex worries. The October 27-28 FOMC is live, with a hike priced by some banks and the 10-year reported near 5.36%. Energy has been the one group holding up: XLE rose 3.26% on 10-13 with WTI near $95, and Brent was above $100 on 10-7. Higher-for-longer rates favor bank net interest margins, so XLF replaces the tech exposure. EEM is cut: it is at -8.6% against a -10% stop, I could not confirm any emerging-market support in my research, and higher US yields are an adverse backdrop for it. Caveat: I could not find the 10-16 close, so these decisions rest on reporting through 10-15 and the entry will be at the 10-19 close regardless.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 30,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Energy is the one sector showing strength into a rate-hike scare: XLE rose 3.26% on 10-13 as WTI went to about $95, with Brent above $100 on 10-7. Oil-driven inflation supports the group in a hawkish Fed regime. Sized at 30% as the core of the book; the 12% stop limits a reversal in crude."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Financials gain from a higher-for-longer rate path through net interest margin, and the curve has steepened with the 10-year near 5.36%. This is the cleanest rate-regime long in place of tech. Sized at 15% with a 10% stop; the position was already positive on the packet marks (+3.0%)."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Held at 4% as a small spot sleeve. BTC was about $83-85k in mid-October reporting (BGeometrics 10-10 at $83,031), and I found no sign of a bitcoin-specific shock in the 10-14 to 10-16 selloff coverage. The packet mark is -5.0% against entry. The 15% stop caps the downside; the 40% take-profit is left in place unchanged from the prior book."
+  },
+  {
+   "symbol": "QQQ",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Short Nasdaq-100 as a hedge against the semiconductor-led selloff. Six sessions of chip losses and rate-hike bets argue the tech leadership is breaking. The 8% stop limits a squeeze; the 15% take-profit is for a continued unwind through the FOMC. Borrow at 3% APR is an acceptable cost against that risk."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

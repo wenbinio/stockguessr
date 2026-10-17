@@ -158,6 +158,11 @@ def main() -> int:
                     f"-{p['stop_loss_pct']}%" if p.get("stop_loss_pct") else "—",
                     f"+{p['take_profit_pct']}%" if p.get("take_profit_pct") else "—"))
             L += ["", f"- cash: {bk['live'].get('cash_pct', 0)}%"]
+            # Weights, gross and cash above are as REGISTERED at the leg's entry. A manager
+            # (Haiku dividend growth, week 14) read a CLOSED leg's weight as missing money.
+            if any(p.get("closed_by") for p in marked(bk)):
+                L.append("- note: weights, gross exposure and cash are as registered at entry; "
+                         "a leg marked CLOSED has been sold and its proceeds are now cash.")
             fired = [f for f in bk["recent"] if f["action"] != "OPEN"]
             if fired:
                 L += ["", "**Standing orders that FIRED since the last poll:**"]

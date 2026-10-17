@@ -1,0 +1,61 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Dual-momentum: long the 6-month sector/asset leaders that are not in a sharp 1-month correction - now the Hormuz-driven energy complex (XLE, XOP, refiners VLO and MPC), healthcare (XLV) and a BTC trend sleeve - with tech, semis and cyber cut after their correction broke the rule; every leg stop-protected, no leverage, 39% cash at 4%.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 39,
+ "reassessment_note": "Research (web search plus a Yahoo price screen of ~70 ETFs/stocks over 6m/3m/1m) says the regime the book was built for changed between 10-14 and 10-16. Tech is now in exactly the 'sharp 1-month correction' my rule excludes: SOXX is -25% off its 6-month high, SMH -19%, XLK -9%, the Nasdaq just had its worst week since June (-4.5%) on AI-capex doubts and ~50% CME odds of a second Fed hike on Oct 28 after a hot 0.3% core CPI; the 10-year is 5.10% off a 5.31% 24-year high. Cyber names (CRWD/PANW/FTNT) are 6-month leaders but all -13% to -19% off highs; FTNT fell 7% on Friday alone - I could not find the specific cause, and with its Oct 28 earnings a binary I exit under the correction rule rather than hold a leg I cannot explain. SMH at -14.85% was within 0.15% of its own stop anyway. Meanwhile the leaders that are NOT correcting are all energy: Iran attacked at least nine tankers near Hormuz this week, Kpler puts Gulf flows at ~68% of the pre-war baseline, Houthi strikes hit Saudi infrastructure and US inventories had a record draw; WTI settled $101.41 (+10% on the week) and Brent ~$110. On my screen refiners MPC/VLO/PSX are +88-124% over 6 months and within 1-3% of their highs, XLE/XOP/COP/XOM/CVX closed AT 3-month highs, and XLE was the one leg in this book making money (+7.6%). Healthcare (XLV +19% 6m, +5% 1m, at a high) is the one non-energy sector leader. BTC is range-bound 81-86k but +27% over 3 months and not correcting, so the trend sleeve stays. The obvious risk to this book is a ceasefire or Hormuz reopening that would gap crude 15-20% in a day through my stops, so I cap total energy at 39% rather than going all-in, keep 39% cash at 4%, and spread energy across integrated (XLE), E&P (XOP) and refiners (crack-spread beneficiaries that are less exposed to the crude price itself). Churn cost of replacing roughly half the book is ~10 bps, trivial against a -8.7%/-14.9%/-8.2% tech/semi/cyber drawdown that the mandate says to cut. Round 3 novelty: zero symbol overlap with my Round 3 book (BRK-B/UNH/GLD/TLT/SVXY).",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Kept unchanged: the only leg that was working (+7.6% on the leg) and now the clearest 6-month/3-month/1-month leader (+24%/+18%/+7%), closing at a 3-month high on Friday as WTI settled $101 with Gulf flows through Hormuz cut to ~68% of baseline. 15% is the same size as before; 12% stop covers a ceasefire gap."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "E&P beta to the crude move itself: +25% over 6 months, +4.5% over 1 month, closed at its high on 10-16. Sized at 8% because E&Ps are the leg most exposed to a sudden Hormuz reopening; 12% stop."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Valero is +99% over 6 months, +44% over 3 months, +10% over 1 month and 3% off its high. Refiners earn the crack spread, not the crude price, and Hormuz disruption plus strikes on Russian refineries have widened product cracks; diesel cracks are seasonally strongest Oct-Feb (MPC's Q2 R&M margin was $36/bbl vs $18 a year earlier). 8% with a wider 15% stop for a volatile single name and a 30% take-profit to bank a parabolic move."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Marathon Petroleum is the strongest name on my whole screen: +124% over 6 months, +53% over 3 months, +15% over 1 month, 1.4% off its high. Same refining-margin thesis as VLO; split the refiner sleeve across two names so a single-company miss cannot take the whole sleeve out. 15% stop, 30% take-profit."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare is the one non-energy sector that qualifies: XLV +19% over 6 months (vs SPY +7.5%), +5% over the last month, 0.3% off its high, and was bid during the tech selloff. UNH's Oct 13 beat-and-raise (FY adj EPS at least $20.50) is lifting the group. Replaces the XLK/FTNT tech exposure with a leader that is also defensive if the hike-cycle fear broadens; 12% stop."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Kept unchanged: BTC is range-bound 81-86k and -5% on the leg, but +27% over 3 months and +7% over 1 month, so it is a leader that is not in a sharp correction and the rule says hold. Keeping the 12% stop and 25% take-profit; no reason to pay 35 bps crypto friction to churn a leg that is still inside its stop."
+  }
+ ]
+}

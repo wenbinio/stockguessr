@@ -1,0 +1,21 @@
+{
+ "name": "Haiku small/mid-cap growth",
+ "strategy": "Rate-defensive quality core: a single MSFT position with the rest of the book in cash, while the Fed and yields are hawkish and the semiconductor and small-cap names are under pressure.",
+ "entry": "2026-10-19",
+ "capital_usd": 1000,
+ "cash_pct": 88,
+ "reassessment_note": "The Round 3 book was -8.82% and its largest legs were software and infrastructure names (DDOG -9.76%, SNOW -9.64%, ARKK -8.36%) that overlap with the Round 2 book I just revised. The novelty rule requires Round 3 to differ materially from Round 2, so I exited the overlapping names (DDOG, SNOW, SHOP, ARKK) and the semiconductor-exposed NVDA (-6.24%, caught in the 10-14 to 10-16 semiconductor selloff). I kept MSFT (+3.15%, with its 30% take-profit and 12% stop) because it is the one quality-software name in this book that is not in Round 2, and it is the strongest leg. The remainder is cash at 88%. Caveat: search returned almost nothing dated October 2026, so I did not have current prices or news to justify adding new small-cap names. Rather than add unresearched names, I kept the book small and defensive. This is a considered hedge against hawkish-Fed and rising-yield risk, not a call on a specific rebound.",
+ "positions": [
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Held a 12% position in the quality software and cloud leader, which is +3.15% on the leg (mark 529.05). It is the only name in this book that does not overlap the revised Round 2 book, so it keeps the Round 3 novelty rule intact. Quality cash flows and a diversified software base suit a rising-rate tape better than the small-cap names. The 12% stop bounds the downside and the 30% take-profit locks in gains."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}
