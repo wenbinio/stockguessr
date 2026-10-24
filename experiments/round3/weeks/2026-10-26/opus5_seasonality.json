@@ -1,0 +1,75 @@
+{
+ "name": "Opus 5 seasonality",
+ "strategy": "Midterm-year Q4/'best six months' seasonality book: core SPY and IWM beta held into the Nov 3 midterm and the historically strong November-January window, distillate-season refiner and energy legs where record-low US diesel inventories support winter cracks, a financials leg, and a small Uptober/Q4 crypto leg; the long-end rate short is removed.",
+ "entry": "2026-10-26",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "Research (web search plus Yahoo daily closes through 10-23): the only leg whose premise has broken is the TLT short. The 30y yield hit a 24-year high on Oct 7, but since then TLT has rallied from 77.9 to 81.3 while SPY slipped and oil/XLE rose. That is a flight-to-quality pattern ahead of the Nov 3 midterm, and in it a long-bond short loses together with my equity longs instead of diversifying them; it sits 2.4% from its stop. I close it rather than wait for the stop. Of the freed 10%, 4% goes to SPY to lean into the post-midterm seasonal window that opens in a week, and 6% goes to cash, which earns 4% while pre-election volatility runs. The refiners sold off after Valero's 10-22 print (Q3 EPS $23.89 vs $3.53 a year ago, near-record utilization), which reads as sell-the-news, not thesis damage: EIA distillate stocks of 102.6M bbl in the week of Oct 9 were the lowest for the season since 1982, so I hold VLO and MPC at size. All other legs, sizes and stops are unchanged, and none is near its stop.",
+ "positions": [
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 26,
+   "stop_loss_pct": 7.0,
+   "take_profit_pct": 12.0,
+   "thesis": "Core seasonality leg: in midterm years the S&P has historically bottomed around October and rallied from the election into year-end, and the Nov-Apr 'best six months' window opens next week. I add 4 points from the closed TLT short because SPY at 760 is only 2% under my entry, and buying the pre-election dip is the point of the strategy. The 7% stop caps the damage if the oil/war shock turns into a real drawdown."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Small caps have the strongest November-January seasonal (the January effect / year-end rebound) and have held up better than SPY over the last week (flat versus -1%). I keep it at 12% with a wider 9% stop because it is higher beta."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Distillate seasonality: winter heating-oil demand meets EIA distillate inventories at their lowest for the season since 1982. Valero's Q3 EPS of $23.89 on near-record utilization confirms the margin regime, and the ~9% slide from the Oct 14 high looks like post-earnings profit-taking, not damage to the thesis. Held at 11%."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Second refiner leg, with the same diesel-tightness and winter-crack thesis as VLO. Its Q2 R&M margin was $36/bbl versus $17.6 a year earlier, and it reports Q3 in early November into a tight distillate market. It is up 5.5% on the leg; held at 10%."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Broad energy exposure to the Iran/Hormuz supply premium, which is still live (XLE made a new leg high on 10-23 while stocks fell). It is a partial hedge against the oil shock that is the main risk to my equity-beta legs. Up 9% on the leg; kept small at 6%."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Financials do well in Q4 seasonals, and this leg is working (+3.75%) after Q3 bank earnings. It gives cyclical exposure to the post-midterm rally without more megacap concentration; held at 9%."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Q4 is historically bitcoin's strongest quarter, with November its best month. Uptober has disappointed and BTC is about 5.5% under my entry, but it is still 8.5 points from the 14% stop, and the leg is kept small at 6% so a further slide costs under 1% of NAV. I hold it rather than pay 35bps a side to churn it."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

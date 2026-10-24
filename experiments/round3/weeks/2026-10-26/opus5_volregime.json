@@ -1,0 +1,47 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "Stagflationary vol-dispersion book, rates leg removed: long the physical oil/commodity supply shock (energy equities, broad commodities), short the most rate-and-margin-sensitive equity cohort (small caps), with a small VIX tail into FOMC and 37% cash at 4% - low net exposure, high internal dispersion.",
+ "entry": "2026-10-26",
+ "capital_usd": 1000,
+ "cash_pct": 37,
+ "reassessment_note": "Research (WebSearch plus a direct Yahoo daily-close pull for the legs, ^VIX, ^TNX and CL=F; I found no dated wrap for 10-22/10-23 itself, so the cause of the 10-22 bond rally is inferred, not confirmed) shows the two halves of the stagflation thesis splitting apart. The supply-shock half is still working: WTI rose from $91.5 (10-08) to $103.3 (10-23) on the Middle East/Iran premium, and XLE and COMT are at their highs. The rates half is breaking. The 10-year was rejected near 5.30% after CPI, fell from 5.24% to 4.99%, and dropped about 20bp on 10-22 alone, the same day the VIX rose to 19. Oil-driven risk-off now produces a haven bid for duration rather than a term-premium selloff. TLT is up from 77.11 to 81.34, which puts the short at -5.5% against an -8% stop, and the FOMC meets 10-27/28 with two-sided risk (hike odds were around coin-flip in older pricing). Close the TLT short instead of waiting to be stopped through an event. Trim XLE from 28 to 25 and tighten its stop, because the oil premium is geopolitical and a strike pause can take $10 off crude in a session. Keep IWM short, COMT and VIXY. Gross falls from 78% to 63% and the freed weight goes to cash. Re-registering resets entries to the 10-26 close, so stops and take-profits are restated from that fill; turnover cost is a few basis points of NAV.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "WTI is $103 and still making higher highs (from $91 two weeks ago) on a physical Middle East supply shock, and XLE has tracked it from 63.45 to 69.33. Still the core expression of the mandate's supply-shock leg, but trimmed from 28% to 25% and the stop tightened to 10% from the new entry (about $62), so most of the +9% leg gain is protected if a strike pause or ceasefire collapses the risk premium."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "Broad commodity basket (energy, metals, ags) up 6.9% on the leg and at a new high of 39.30. It diversifies the inflation leg beyond crude, so a geopolitical oil unwind hurts it less than XLE while it still captures the supply shock. Size unchanged at 12%, and a 10% stop added from the new entry."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Small caps carry the most floating-rate debt and the thinnest margins against $100 oil. Even with the 10-year falling 25bp, IWM has gone nowhere (277.6 to 275.8 since 10-08), which shows the growth/margin damage outweighing the rate relief. A Fed hike at the 10-27/28 meeting, or a growth scare, both hurt this cohort most. Holding the short at 18%, with the stop tightened to 8% because the rate tailwind for small caps is now real."
+  },
+  {
+   "symbol": "VIXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 25.0,
+   "take_profit_pct": 60.0,
+   "thesis": "Defined-cost tail with spot VIX at 19.45 (up from 14.8 on 10-09), bought into a live FOMC with two-sided hike/hold risk and an active oil shock. It pays if the oil shock turns into a broad risk-off and offsets drawdowns in XLE/COMT on a disorderly tape. Kept small at 8% because contango decay is the cost; a 25% stop caps the bleed and a 60% take-profit banks a spike."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

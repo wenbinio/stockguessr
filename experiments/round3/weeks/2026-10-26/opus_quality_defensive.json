@@ -1,0 +1,54 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Cross-asset carry and trend stacking, long-only: commodity backwardation carry, systematic managed-futures trend, midstream and E&P energy carry, and an equity variance-premium sleeve, with the gold sleeve closed because its trend broke and the proceeds split between commodity carry and 4% cash ahead of the FOMC.",
+ "entry": "2026-10-26",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "GLD was added on 10-05 as a gold *trend* sleeve, but the trend has turned against it: GLD is -3.4% from entry, -6.4% over a month, -4.0% this week and ~7% below its 50-day average (~394.5), and reports put spot gold near $4,120 and sliding as $110+ Brent lifts inflation and rate-hike expectations (Fed hiked to 3.75-4.00% in September, minutes show most see another hike by year-end, FOMC Oct 27-28). A trend sleeve that holds a downtrend violates its own rule, so I close it rather than wait for the -12% stop. I add 4 points to PDBC, whose backwardation carry is working (+5.7% on the leg, above its 50-day average, oil at five-month highs), and park 10 points in cash at 4% because the Fed is still paying for it and the meeting is binary. All other legs are held unchanged at the same weights, stops and targets. The book holds no symbol in common with the Round 2 book (XLV, XLE, QUAL, USMV), so the novelty rule is satisfied.",
+ "positions": [
+  {
+   "symbol": "PDBC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 26,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Broad commodity futures basket with an energy-heavy tilt that earns roll yield while curves are backwardated; Brent ~$111 on Gulf/Hormuz supply risk keeps the front end tight. The leg is +5.7% and trending above its 50-day average, so it takes 4 of the freed gold points to become the book's largest carry engine at 26%."
+  },
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 12.0,
+   "thesis": "Managed-futures replication is the book's crisis-diversifier and trend engine; it has gone flat (-1.2%) during a rotation but adapts to whichever trends dominate, including short-duration and long-energy positioning in a hiking cycle. Held at 22% as the uncorrelated core into the FOMC and midterms."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Midstream MLP toll-road cash flows with roughly an 8% distribution yield that is volume-linked rather than price-linked. It is flat on the leg and a little below its 50-day average, so it is held but not added to, as steady carry beside the more cyclical E&P exposure."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 10.0,
+   "thesis": "Covered-call equity income harvests the variance premium, which is rich into a binary FOMC and the midterms while SPY chops (-0.9% over a month). Its low beta makes it the book's equity carry sleeve; held at 11%."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Equal-weight E&P producers carry high operating leverage to $100+ crude; the leg is +7.6% and 6% above its 50-day average. It stays at 9% because its beta is high, and the +30% take-profit locks in gains if a Hormuz spike runs."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

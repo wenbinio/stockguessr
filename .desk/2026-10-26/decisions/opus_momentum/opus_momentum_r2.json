@@ -1,0 +1,23 @@
+{"name": "Opus Momentum",
+ "strategy": "Cross-sectional price momentum ranked on 12-1 and 6-month returns: long energy E&P (XOP), a trimmed AI-semiconductor core (SMH, NVDA), healthcare (XLV) and newly qualifying cybersecurity (CIBR), against the persistent losers: homebuilders (ITB), China internet (KWEB) and a reduced long-duration Treasury short (TLT).",
+ "entry": "2026-10-26", "capital_usd": 1000,
+ "cash_pct": 13,
+ "reassessment_note": "Re-ranked a ~45-ETF universe on Yahoo daily closes through 2026-10-23 (marks verified against the packet). Leaders on 12-1 + 6m: SOXX/SMH, CIBR, XOP/XLE, IBB/XBI, XLV. Laggards: KWEB (-34% 12-1, -20% 6m, near a 3-year low), URA, TAN, FXI, ITB, TLT. Changes are resizes, not a rebuild, to keep churn low one week after the 10-19 entry. (1) Semis still top the 12-month rank, but SMH's 6-month return has decayed to +4% and it is -12% over one month and below its 50-day average, while NVDA's 6-month return is +1.5%. I trim SMH 22->18 and NVDA 8->5. (2) Add CIBR at 8%: it ranks #2 on the composite and #1 on 6-month (+58%), and it rebounded +7.4% last week after a mid-October sector washout. (3) Rates-short concentration: ITB and TLT were 24% gross of what is effectively one duration bet, going into the 10-27/28 FOMC. The market prices a hold, and the weak +29k September payrolls give some dovish tail risk. I cut TLT 10->6 and ITB 14->12, and add a KWEB short at 6% because it is the weakest loser in the universe and uncorrelated with US rates. (4) XLV 10->12: persistent 6-month strength (+25%), above both moving averages. Web search found no usable recap of the 10-19 to 10-23 week, so the ranks rest on price data I pulled myself plus searches on Fed pricing, cybersecurity and KWEB.",
+ "positions": [
+  {"symbol": "XOP", "kind": "equity", "side": "long", "weight_pct": 20, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+   "thesis": "Unchanged core leader: 12-1 +50%, 6m +21%, 1m +9.6%, 20% above its 200-day, with WTI near $103. Strongest combination of long- and short-horizon momentum in the book."},
+  {"symbol": "SMH", "kind": "equity", "side": "long", "weight_pct": 18, "stop_loss_pct": 12.0, "take_profit_pct": 35.0,
+   "thesis": "Still #1-3 on 12-1 momentum (+78%), so it stays the largest tech leg. Trimmed from 22% because 6-month momentum has faded to +4% and price is -12% on the month and 8% below its 50-day, after the October AI-funding and rate-hike-scare selloffs."},
+  {"symbol": "NVDA", "kind": "equity", "side": "long", "weight_pct": 5, "stop_loss_pct": 15.0, "take_profit_pct": 35.0,
+   "thesis": "Single-name AI leader kept as a small satellite (12-1 +25%), cut from 8% because its 6-month return of +1.5% now ranks it mid-pack and it adds overlap with SMH."},
+  {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 12, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+   "thesis": "Healthcare momentum is persistent and low-volatility: 6m +25%, 1m +5.5%, 14% above its 200-day. Raised to 12% as a defensive leader that balances the semis trim."},
+  {"symbol": "CIBR", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+   "thesis": "New entry: First Trust NASDAQ Cybersecurity ETF ranks #2 on 12-1 + 6m composite (12-1 +36%, 6m +58%), 29% above its 200-day. It washed out in mid-October to ~$99 and rebounded to $106 (+7.4% last week). Sized at 8% given the sector's elevated valuations and recent volatility."},
+  {"symbol": "ITB", "kind": "equity", "side": "short", "weight_pct": 12, "stop_loss_pct": 10.0, "take_profit_pct": 20.0,
+   "thesis": "Homebuilders remain a bottom-decile loser (12-1 -14%, 6m -8%, below 200-day) with mortgage rates pinned by a hiking Fed. Cut from 14% because the ETF bounced +4.8% last week back above its 50-day, and the FOMC is this week. The stop is tightened to 10% on the new fill."},
+  {"symbol": "TLT", "kind": "equity", "side": "short", "weight_pct": 6, "stop_loss_pct": 8.0, "take_profit_pct": 20.0,
+   "thesis": "Long duration is still a 12-1 loser (-10%) with CPI at 3.7% and a hike-biased Fed. Cut from 10% to reduce the combined duration bet with ITB going into the 10-28 FOMC, where weak payrolls create dovish rally risk."},
+  {"symbol": "KWEB", "kind": "equity", "side": "short", "weight_pct": 6, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+   "thesis": "New short: KraneShares CSI China Internet ETF is the weakest asset in the universe (12-1 -34%, 6m -20%, 18% below its 200-day, -5% last week), trading near its 3-year low of ~$22.7. It diversifies the short book away from US rates. Sized at 6% with a 12% stop given squeeze risk from any Chinese stimulus headline."}
+ ]}

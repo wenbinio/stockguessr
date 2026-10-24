@@ -1,0 +1,30 @@
+{
+  "name": "Opus Broadening",
+  "strategy": "Broadening expressed where it is actually paying: a larger equal-weight and free-cash-flow value core that is holding up as the AI/semis trade cracks, energy restored to a full weight because the Hormuz premium is rebuilding rather than decaying, a curve-steepener in regional banks, a trimmed AI-capex industrial sleeve, and precious metals cut to a residual position now that hot inflation has the market pricing Fed hikes and gold's haven bid has broken.",
+  "entry": "2026-10-26",
+  "capital_usd": 1000,
+  "cash_pct": 16,
+  "reassessment_note": "Researched via Yahoo Finance price histories (all marks confirmed against the packet) and news headlines; web search mostly returned older stories, so the news read is partial. Two premises in my strategy of record were wrong. (1) 'The Fed has stopped hiking' is not the regime: CPI came in hot at about 3.7%, the 3- and 6-month bills price one to two hikes, and the 10-year sits near 5.1%. In that tape gold failed as a haven. When the AI trade cracked (SOX -11.4% in the week to 10-16, CoreWeave -23.5%), Treasuries took the haven bid, while gold slid from about $4,180 toward $4,000, GDX fell from 86.72 to 80.20 and SIL from 81.40 to 74.06 over 10-22/23. The precious-metals sleeve (30% of the book) is the main drag, so I cut it to 14%: SIL is exited, GDX goes 16 to 8 and GLD 10 to 6. (2) 'The Hormuz war premium is decaying' is also wrong: WTI rose from $89.43 on 10-05 to $103.27 on 10-23, and XLE is +9.3% on the leg, so energy goes back up from 14 to 18. The broadening core is doing its job while mega-cap and semis tech sell off (RSP +2.6%, COWZ +5.0% on the leg), so COWZ goes to 18 and RSP to 16. The curve is steep (10y-3m about +84bp) and KRE is +2.9%, so banks go to 8. XLI is trimmed to 10 because its AI-capex leg is exposed to the semis crack. Cash rises to 16% at 4% APY. Turnover is about 30% of the book, roughly 0.6bps of NAV in frictions.",
+  "positions": [
+    {"symbol": "COWZ", "kind": "equity", "side": "long", "weight_pct": 18, "stop_loss_pct": 11.0,
+     "thesis": "Free-cash-flow value is the cleanest 'broadening away from AI multiples' exposure. It is +5% on the leg while semis fell 11% in a week, and its cash-rich, low-multiple holdings handle a 5% 10-year better than long-duration growth does. Raised from 14 to 18 as the largest core leg; the 11% stop caps a broad value drawdown."},
+    {"symbol": "RSP", "kind": "equity", "side": "long", "weight_pct": 16,
+     "stop_loss_pct": 10.0,
+     "thesis": "Equal-weight S&P is the direct anti-concentration bet. With AI leaders cracking (CoreWeave -23.5%, SOX -11.4% in the week to 10-16), RSP rose from 213.40 on 10-19 to 216.54, outperforming cap-weight on the rotation. Raised from 14 to 16 with the 10% stop kept."},
+    {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 18,
+     "stop_loss_pct": 12.0, "take_profit_pct": 28.0,
+     "thesis": "The Hormuz premium is rebuilding, not decaying. WTI went from $89 to $103 between 10-05 and 10-23, and earlier October reports describe Gulf barrels still carrying a risk premium. Energy also hedges the hot-inflation regime that is hurting the rest of the market. Restored from 14 to 18; a 12% stop from the new entry protects against a sudden reopening or deal headline."},
+    {"symbol": "XLI", "kind": "equity", "side": "long", "weight_pct": 10,
+     "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+     "thesis": "Industrials and power still collect AI-capex spillover and reshoring orders, but the leg is -3.2% and a crack in AI sentiment threatens capex guidance, so it is trimmed from 12 to 10 rather than exited. It still broadens the book beyond tech while limiting exposure if hyperscaler capex gets cut."},
+    {"symbol": "KRE", "kind": "equity", "side": "long", "weight_pct": 8,
+     "stop_loss_pct": 14.0, "take_profit_pct": 30.0,
+     "thesis": "The curve is steep and positive (10y minus 3m about +84bp, 30y minus 10y about +33bp), which widens regional-bank net interest margins. KRE is +2.9% on the leg and rose from 69.26 to 72.46 over the past week as tech sold off. Raised from 6 to 8 as the steepener expression; the 14% stop covers credit-scare risk."},
+    {"symbol": "GDX", "kind": "equity", "side": "long", "weight_pct": 8,
+     "stop_loss_pct": 15.0, "take_profit_pct": 45.0,
+     "thesis": "Cut from 16 to 8. With hot CPI and Fed hikes priced, real yields work against gold, and miners amplify the move (GDX -7.5% over 10-22/23 against GLD -3.3%). A residual position stays because miners are still the cheapest leverage to any return of the gold bid if the AI/credit stress deepens; a tighter 15% stop from the new entry limits further damage."},
+    {"symbol": "GLD", "kind": "equity", "side": "long", "weight_pct": 6,
+     "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+     "thesis": "Cut from 10 to 6. Gold lost its haven role to Treasuries in this risk-off and is sliding toward $4,000 as hike odds rise. A small bullion position stays as the lower-volatility tail hedge against a policy mistake or escalation in the Gulf; the 10% stop means the hedge cannot become a large loss."}
+  ]
+}

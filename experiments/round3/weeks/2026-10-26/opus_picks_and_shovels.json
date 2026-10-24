@@ -1,0 +1,66 @@
+{
+ "name": "Opus Picks-and-Shovels",
+ "strategy": "A real-asset book built on the electrification bottleneck: copper miners as the largest leg, three grid-and-power equipment names trimmed ahead of their earnings prints, gold miners as the policy hedge, and a slightly larger energy leg now that the Hormuz/Red Sea tail is live with Brent at $117.",
+ "entry": "2026-10-26",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "Researched this week (web search and fetches). The electrification thesis stands, but the power-equipment legs now trade as AI-capex beta. On 10-22 GEV fell about 10.6% to $827, PWR fell more than 8% and ETN fell 6.3% to $369, as Meta's capex raise reignited worries about how the AI build gets financed. That leaves GEV, ETN and PWR down 14-15% on the leg, with ETN within about 1 point of its 16% stop. GE Vernova is reported to print on 10-28, the same day as the FOMC decision. Quanta and Eaton typically report around then too. I trim the power cluster from 38% to 32% (GEV 14 to 12, ETN 14 to 10, PWR held at 10) to reduce gap risk across the prints without abandoning record-backlog names after a 15% drawdown. Oil is the other development: WTI settled at $103 and Brent at a six-month high of $116.72 on Middle East and Red Sea escalation. The XLE tail is the one leg working (+12.7%), so I lift it from 10% to 14%. Gold slipped 1.3% to about $4,008 as yields and the dollar rose, and a December hike is now 71% priced. GDX stays at 12% as the policy hedge, inside its stop. COPX stays at 22% as the core copper-for-grid leg. Cash rises from 18% to 20%. Re-registering resets each stop to the 10-26 entry, which I accept at these sizes. This book holds no symbol in common with my Round 2 book (MU, SNDK), so the Round 3 novelty rule is met.",
+ "positions": [
+  {
+   "symbol": "COPX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Copper is the physical bottleneck of grid and data-centre electrification, and miners are the purest shovel for it. The leg is down 13.7% on the broad AI-capex and rate selloff rather than on any break in supply-demand. It stays the largest leg at 22% because it is less tied to any single hyperscaler's financing than the equipment names."
+  },
+  {
+   "symbol": "GEV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "GE Vernova's gas-turbine and grid backlog (last reported at $176B, up 37% YoY) is the clearest sell-side bottleneck in power generation. The stock fell about 10.6% on 10-22 because of Meta-driven financing fears, not because of a GE Vernova miss. It is reported to print on 10-28, alongside the FOMC decision, so I trim from 14% to 12% to cut gap risk while keeping exposure to a backlog-driven beat."
+  },
+  {
+   "symbol": "ETN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 16.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Eaton sells switchgear, transformers and data-centre power distribution into a capacity-constrained market, at roughly 29x forward versus 47x for GEV. It fell 6.3% to $369 on 10-22 and the leg is within about a point of its stop. I cut it from 14% to 10% so a further AI-sentiment leg down costs less, keeping the cheaper-multiple grid exposure into its early-November print."
+  },
+  {
+   "symbol": "PWR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Quanta is the labour-and-construction shovel for transmission and interconnection. Utility grid capex, not hyperscaler equity financing, funds most of its backlog, so its 8% drop on 10-22 overstates its AI-financing sensitivity. I hold it at 10%, the smallest of the three power legs already."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Gold miners are the policy hedge if oil-driven inflation and a possible December hike unsettle duration and the dollar's credibility. Gold is still near $4,000 after a 1.3% dip on rising yields. I hold 12% to offset the book's equity-beta legs, with the stop limiting damage if real yields keep climbing."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The Hormuz and Red Sea tail is now active. Brent is at a six-month high of $116.72 after its third straight weekly gain, WTI is at $103, and energy led the S&P on Friday, with CVX and XOM reporting next week. This is the one leg working (+12.7%) and it directly hedges the oil-shock hit to the AI and industrial legs, so I raise it from 10% to 14%."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

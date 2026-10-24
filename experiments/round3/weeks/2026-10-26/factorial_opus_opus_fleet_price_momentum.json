@@ -1,0 +1,102 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum: cybersecurity leaders restored toward full size after reclaiming their trend, steady leaders (MSFT, LLY, TMO, NTRA) held, a small AI-semi core, META and MRNA cut on broken or fading tape, and 24% cash.",
+ "entry": "2026-10-26",
+ "capital_usd": 1000,
+ "cash_pct": 24,
+ "reassessment_note": "Resize, not a rebuild, one week after the 10-19 rebalance. Research: META reported Q3 on 10-21 with revenue +26% to $64.6B and Q4 guidance of $73-76B, but operating income fell 37% on a $9.89B state-AG teen-mental-health settlement charge. 2027 spending is to 'continue investing aggressively' with no figure, and the stock fell from $705 to $643 (-8.9%) after the print, a failed earnings reaction, so I cut META 12->5. MRNA is -11.8% on the leg after a string of 5-8% down days in October, with Q3 not until Nov 6, so the trend is fading and I trim 8->6. Cybersecurity, cut to half size last week on a trend break, reclaimed it: CRWD +12.9% and OKTA +12.2% this week, helped by an expanded NVIDIA AI-security pact on 10-21. I add back CRWD 7->10 and OKTA 6->8. MSFT (reports 10-28 after the close), NVDA, AMD, NTRA, TMO and LLY are unchanged and inside their stops. Cash rises 20->24 into a heavy megacap earnings week after the Nasdaq's worst week since June (week of 10-16). Every leg re-enters at the 10-26 close, so stops reset from that fill. Resizing six legs costs only a few bps.",
+ "positions": [
+  {
+   "symbol": "META",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Cut from 12 to 5. The Q3 business beat was real: revenue +26%, $7.40 EPS excluding the legal charge, and strong Q4 guidance. But the tape rejected it, falling ~9% from the pre-earnings close and ~13% from mid-October, so on a momentum mandate it no longer earns a top weight. I keep a 5% stub because the drop is driven by the one-off charge and capex fear, not by fundamentals. A 10% stop from the new fill exits if the post-earnings drift continues."
+  },
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Unchanged at 10. Only -1.7% on the leg through the tech drawdown, so relative strength holds. It reports FQ1 2027 on Wed 10-28 after the close, with consensus around $4.7-4.8 EPS and $91-92B revenue. I hold through it at moderate size behind a 10% stop rather than chase or pre-empt the print."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Kept as a small AI-semi core position after the October chip breakdown. At -2.8% on the leg it has held better than peers whose stops fired. The 10-21 NVIDIA-CrowdStrike AI-security expansion keeps its ecosystem news flow positive. At 5% it has little room to hurt the book."
+  },
+  {
+   "symbol": "AMD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Held at 8. AMD stops fired in other books entered at different fills, but this leg is only -4% from its 10-19 entry and still well above longer-term trend levels after a large 2026 run. The stop tightens slightly to 12% from the new fill to respect the chip-sector fragility."
+  },
+  {
+   "symbol": "OKTA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Added back from 6 to 8 after it reclaimed its trend with +12.2% on the leg. That includes a ~4% gain on 10-21 alongside the CrowdStrike/NVIDIA AI-security news and a sector that has re-rated hard in 2026. Momentum is re-confirmed, so it moves back toward full size with a 12% stop."
+  },
+  {
+   "symbol": "CRWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Restored from 7 to 10, the joint-largest position. It is +12.9% on the leg, roughly +120% YTD, and gained on the expanded NVIDIA AI-security partnership on 10-21. It is the clearest leader in the book's strongest group. Valuation is stretched (Morningstar flags it), so a 12% stop from the new fill guards against a reversal."
+  },
+  {
+   "symbol": "MRNA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Trimmed from 8 to 6. The leg is -11.8%, with repeated 5-8% October down days, including after a COO-role announcement and into earnings. Q3 is on Nov 6, and the company guides ~55% of H2 revenue into Q3, so a positive catalyst remains. The wide 15% stop from the new fill gives room for a high-volatility name, but the smaller size reflects the fading trend."
+  },
+  {
+   "symbol": "NTRA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Unchanged at 8. It is +1.1% on the leg and has held near highs through the tech selloff, a low-correlation healthcare momentum leader that diversifies the AI/tech exposure."
+  },
+  {
+   "symbol": "TMO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Unchanged at 8. Essentially flat (-0.8%) on the leg, it remains a steady life-science-tools leader near highs and a defensive anchor against the volatile tech legs, behind a 10% stop."
+  },
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Unchanged at 8. It is +2.7% on the leg at ~$1,273, still trading at or near highs, the book's most persistent large-cap momentum leader with GLP-1 franchise strength. It is held with a 10% stop."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}
