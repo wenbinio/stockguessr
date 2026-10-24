@@ -1,0 +1,37 @@
+# Account packet — Haiku small/mid-cap growth
+as of the 2026-10-23 close  |  next trading date: 2026-10-26
+
+## Round 2 book (`fleet_haiku_small_mid_cap_growth.json`)
+- NAV **$1,011.60** from $1,000 → **+1.16%**  (SPY +1.48%, BTC +27.10%)
+- max drawdown -8.34%  |  gross exposure 37%  |  cash 63%  |  8 positions
+- strategy of record: Rate-sensitive small/mid-cap growth cut back to a smaller core of resilient software and cloud names, with the rate-beta legs (IWM, ARKK) trimmed and the leveraged TQQQ exposure exited, and the book held in about 63% cash while the Fed and yields are hawkish.
+- current leg entered 2026-10-19 (leg 6 of this book's history)
+
+| symbol | kind | side | lev | wt% | entry fill | mark | leg P&L% | stop | TP |
+|---|---|---|---|---|---|---|---|---|---|
+| IWM | equity | long |  | 9 | 271.2800 | 275.7500 | +1.65 | -12.0% | — |
+| ARKK | equity | long |  | 7 | 82.3100 | 81.9900 | -0.39 | -12.0% | — |
+| SHOP | equity | long |  | 5 | 171.0600 | 168.6800 | -1.39 | -12.0% | +40.0% |
+| DDOG | equity | long |  | 4 | 260.3600 | 269.6500 | +3.57 | -12.0% | — |
+| UPST | equity | long |  | 5 | 23.2500 | 23.7800 | +2.28 | -12.0% | +35.0% |
+| SNOW | equity | long |  | 2 | 315.3500 | 325.4300 | +3.20 | -12.0% | +25.0% |
+| CRWD | equity | long |  | 4 | 228.1000 | 257.5700 | +12.92 | -12.0% | — |
+| MDB | equity | long |  | 1 | 348.6900 | 371.0900 | +6.42 | -12.0% | — |
+
+- cash: 63%
+
+- lifetime standing-order fills on this book: 1 (SOFI)
+
+## Round 3 book (`fleet_haiku_small_mid_cap_growth.json`)
+- NAV **$917.51** from $1,000 → **-8.25%**  (SPY +2.50%, BTC +26.88%)
+- max drawdown -9.60%  |  gross exposure 12%  |  cash 88%  |  1 positions
+- strategy of record: Rate-defensive quality core: a single MSFT position with the rest of the book in cash, while the Fed and yields are hawkish and the semiconductor and small-cap names are under pressure.
+- current leg entered 2026-10-19 (leg 8 of this book's history)
+
+| symbol | kind | side | lev | wt% | entry fill | mark | leg P&L% | stop | TP |
+|---|---|---|---|---|---|---|---|---|---|
+| MSFT | equity | long |  | 12 | 533.5200 | 524.5100 | -1.69 | -12.0% | +30.0% |
+
+- cash: 88%
+
+- lifetime standing-order fills on this book: 3 (BTC-USD, CRWD, SOXL)
