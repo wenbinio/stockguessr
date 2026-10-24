@@ -49,6 +49,13 @@ SETTLEMENT_GRACE = 3  # sessions a leg may wait for a bar before it is an error
 PERP_MAX_LEV = 100.0  # venue maximum on majors (unrestricted-retail rules, 2026-07-30)
 CASH_LIKE = {"CASH", "USDC", "USD", "MONEY", "CASHX"}  # tickers that are NOT cash
 ALIASES = {"FI": "FISV", "SQ": "XYZ"}
+# Listings that ended in a corporate action (experiments/corporate_actions.json).
+# ACA stopped printing after 2026-10-22 because CRH bought Arcosa for $150 cash;
+# without this the completeness check held round 3 at 10-22 waiting for a bar
+# that will never come.
+_CA_FILE = ROOT / "experiments" / "corporate_actions.json"
+CORP_ACTIONS = {k: v for k, v in json.loads(_CA_FILE.read_text()).items()
+                if not k.startswith("_")} if _CA_FILE.exists() else {}
 
 # Realistic retail fee schedule (per side, fraction of notional)
 LEVERAGED_ETFS = {"TQQQ", "SQQQ", "SOXL", "SOXS", "TNA", "TZA", "UPRO", "SPXU",
@@ -322,13 +329,17 @@ def simulate(alloc: dict, px: pd.DataFrame, entry: str, end: str | None = None,
             # standing orders: position-level P&L vs margin, evaluated at daily closes
             pnl_pct = (v / pos["margin"] - 1) * 100 if pos["margin"] > 0 else 0.0
             trigger = None
-            if not pos["dead"] and pos.get("stop") is not None and pnl_pct <= -abs(pos["stop"]):
+            ca = CORP_ACTIONS.get(pos["sym"])
+            if not pos["dead"] and ca and d >= pd.Timestamp(ca["date"]):
+                trigger = ca["type"]  # e.g. CASH_MERGER: converted at the deal price
+            elif not pos["dead"] and pos.get("stop") is not None and pnl_pct <= -abs(pos["stop"]):
                 trigger = "STOP_LOSS"
             elif not pos["dead"] and pos.get("tp") is not None and pnl_pct >= abs(pos["tp"]):
                 trigger = "TAKE_PROFIT"
             if trigger:
-                exit_cost = v * pos["lev"] * fee_rate(pos["kind"], pos["sym"],
-                                                      float(px.loc[d, pos["sym"]]), True)
+                exit_cost = 0.0 if trigger in ("CASH_MERGER",) else \
+                    v * pos["lev"] * fee_rate(pos["kind"], pos["sym"],
+                                              float(px.loc[d, pos["sym"]]), True)
                 proceeds = max(v - exit_cost, 0.0)
                 cash_events.append((d, proceeds))
                 pos["dead"] = True
@@ -513,6 +524,13 @@ def main() -> int:
         return 1
     # crypto trades 24/7 and returns rows for days no equity printed; official
     # fills happen at the US close, so truncate to the last completed session
+    # A delisted symbol is worth its deal consideration from the effective date
+    # on. Write that onto every equity session from then, so the column is
+    # complete and simulate() can close the leg at exactly that price.
+    for sym, ca in CORP_ACTIONS.items():
+        if sym in px.columns:
+            sessions = px["SPY"].dropna().index
+            px.loc[sessions[sessions >= pd.Timestamp(ca["date"])], sym] = float(ca["price"])
     px = truncate_to_session(px, required=live_symbols)
 
     fills = []

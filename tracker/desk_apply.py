@@ -85,6 +85,11 @@ def unpriceable(r2, d):
         sym = r2.normalize(pos["symbol"])
         if pos.get("kind") in ("crypto", "perp") and not sym.endswith("-USD"):
             sym += "-USD"
+        # A listing that ended in a cash merger still returns its old history,
+        # so the fetch below would pass it; it cannot be bought any more.
+        if sym in getattr(r2, "CORP_ACTIONS", {}):
+            bad.append(f"{pos['symbol']} (delisted {r2.CORP_ACTIONS[sym]['date']})")
+            continue
         if sym not in _PRICEABLE:
             _PRICEABLE[sym] = r2.fetch(sym) is not None
         if not _PRICEABLE[sym]:

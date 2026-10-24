@@ -100,7 +100,7 @@ def main() -> int:
         # "CLOSED ... +0.00 realized".
         closed = {}
         for f in bk["fills"]:
-            if f["action"] in ("STOP_LOSS", "TAKE_PROFIT") and f["ts"][:10] > entry:
+            if f["action"] in ("STOP_LOSS", "TAKE_PROFIT", "CASH_MERGER") and f["ts"][:10] > entry:
                 closed[(f["symbol"], f.get("side", "long"), f.get("kind"))] = f
         rows = []
         for p in bk["live"]["positions"]:
@@ -170,7 +170,7 @@ def main() -> int:
                     L.append(f"  - {f['ts'][:10]} {f['action']} {f['symbol']} "
                              f"({f.get('side','long')}) at {f.get('fill_price')}")
             hist = [f for f in bk["fills"]
-                    if f["action"] in ("STOP_LOSS", "TAKE_PROFIT", "LIQUIDATION")]
+                    if f["action"] in ("STOP_LOSS", "TAKE_PROFIT", "LIQUIDATION", "CASH_MERGER")]
             if hist:
                 L += ["", f"- lifetime standing-order fills on this book: {len(hist)} "
                           f"({', '.join(sorted({f['symbol'] for f in hist}))})"]
