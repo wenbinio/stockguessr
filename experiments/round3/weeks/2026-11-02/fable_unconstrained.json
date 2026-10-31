@@ -1,0 +1,51 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Defensive risk-premia harvest: long quality/value (Berkshire, UNH), a new minimum-volatility factor sleeve via USMV, a small term-premium sleeve via TLT at ~4.9% long yields and a small volatility-risk-premium sleeve via SVXY, with the gold and Brazil legs cut and 53% cash at 4%.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 53,
+ "reassessment_note": "Researched this week via WebSearch/WebFetch (10-30 market review, Fed decision, EWZ daily closes, Brazil post-runoff coverage, gold price action, UNH Q3, USMV listing check). The book is +4.16% vs SPY +1.92% with a -2.4% max drawdown and the quality/value core is doing its job in a tape that has now fallen three weeks running (S&P -1.8% on 10-30, Nasdaq -5.3% in October on an AI-capex scare, Intel -29%, VIX spiked to 23.9 and closed just under 20). Two legs no longer earn a risk premium and are cut: (1) GLD - gold fell 3.3% on 10-30 to $3,899, a 52-week low, is -30% from its January record and down in six of the past eight weeks; it did not hedge either the equity drop or the Iran escalation (oil +15% in October while gold fell), the Fed is on hold at 3.75-4.00% with a December hike being priced, and the 'contrarian' sleeve has only bled since it was halved; (2) EWZ - the post-runoff carry leg was entered the day of the -20% Lula crash and has printed four consecutive lower closes since (34.15 to 32.46), the real fell 8-11% on the result, and Brazil's Treasury cancelled its 10-27 and 10-29 bond auctions, which is funding stress, not a carry opportunity; exiting at ~32.5 beats waiting for the 30.74 stop. In their place a 10% sleeve in USMV (iShares MSCI USA Min Vol Factor ETF, verified listed on Cboe BZX, $24bn AUM): the low-volatility premium is a textbook defensive risk premium, it fits the mandate better than a commodity or EM bet, and minimum-volatility baskets are exactly what has led in October (staples, healthcare, utilities all +8-12%). Berkshire (16%, Q3 due 11-1, $380bn cash) and UNH (12%, Q3 beat and raised 2026 guidance to >=$20.50 EPS) are unchanged; TLT stays at 5% (10y 4.91% after a 36bp October drop, -8% stop) and SVXY stays at 4% (selling vol at VIX ~20 after a spike is when the premium is richest, -20% stop bounds a blow-up). Cash stays at 53% earning 4%. No symbol overlap with my Round 2 book (0% < 50%). Turnover about 20% of the book, roughly 1bp of friction.",
+ "positions": [
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "thesis": "Quality/value anchor: diversified cash-generative conglomerate with roughly $380bn of cash earning ~4%, which is the position of strength in a market selling AI-capex names; Q3 results due 11-1 with Zacks expecting modestly lower EPS, already in the price after a -1.1% leg. Held at 16 with no stop, as before - a stop on Berkshire only sells dips."
+  },
+  {
+   "symbol": "UNH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 30.0,
+   "thesis": "Value in a defensive sector that is the #1 momentum sector: Q3 adjusted EPS $4.69 vs $4.14 expected, 2026 guidance raised to at least $20.50, stock still ~12% below its 52-week high. Held at 12 with the existing -30% disaster stop."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "New minimum-volatility factor sleeve replacing the gold and Brazil legs: the low-vol premium is a defensive risk premium that has historically paid in drawdowns, and the October tape (defensives +8-12%, tech -8.6%) is the regime it is built for. iShares MSCI USA Min Vol Factor ETF, listed on Cboe BZX with $24bn AUM. 10% with a -10% stop."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 8.0,
+   "thesis": "Small term-premium sleeve: the 10-year at 4.91% after its largest monthly yield drop since 2023 still offers a positive carry and an equity hedge if the growth scare deepens; a December hike being priced and post-FOMC curve steepening are why it stays at 5 with a tight -8% stop."
+  },
+  {
+   "symbol": "SVXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 20.0,
+   "thesis": "Small volatility-risk-premium sleeve: VIX spiked to 23.9 and closed just under 20 on 10-30, so implied vol is elevated against realized and the premium for selling it is richest right after a spike. Kept small at 4 because the tape is deteriorating; the -20% stop caps a vol-shock loss at under 1% of NAV."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

@@ -1,0 +1,78 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Risk-balanced barbell for a Fed that held 10-2 on Oct 28 with an ~85%-priced December hike, a ten-year back under 5% and WTI near $103: a 16% aggressive AI-silicon sleeve (NVDA/AVGO) sized down and re-stopped from the new fill to survive into Nvidia's Nov 17 print, against 42% rate-resilient ballast (Berkshire, energy, health care, staples, pharma) with gold dropped as failed ballast, and 42% cash yielding 4%.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 42,
+ "reassessment_note": "What changed: (1) ANET was stopped out at -18.4% on 10-30, so the aggressive sleeve is 20% registered and roughly 17% marked, and NVDA (-14.3%) and AVGO (-10.1%) are both within a few percent of their old -18% stops set from the 10-05 fills. Friday 10-30 was an Intel-driven chip rout (INTC -28% on guidance, SOX -7.2%, NVDA -3.6% to a 3-month low of 204.64, AVGO -5.5%) layered on Alphabet's 10-28 print (cloud +103% but capex $51.4B > operating cash flow, FCF -$9.1B, 2027 capex signalled above $300B, stock -8% after hours) which re-ignited the 'who pays for AI capex' worry that began with CoreWeave bonds near 15% in mid-October. The demand signal for NVDA/AVGO silicon is intact (Alphabet cloud backlog $155B, hyperscaler capex still rising) but the tape is punishing the whole chain, so I am keeping the sleeve as a barbell is supposed to, but smaller (12/8 -> 10/6) and with stops re-based 15% under the Nov 2 fill rather than 4% under Friday's close; the old stops would almost certainly have been tripped on noise before the Nov 17 catalyst, which defeats the point of owning them. (2) Gold is no longer rate-resilient ballast: GLD closed 355.78 on 10-30, its lowest close of the quarter, -17% from its Aug 25 high and -6.3% on my leg, with gold down 3.1% on the week while the market priced a December hike and September CPI printed 3.7% with energy +20.4%. Rising real yields and a hiking Fed are exactly the regime gold has been losing in since August, so I am cutting it rather than averaging down. (3) The replacement ballast is what the tape actually rewarded this week and this quarter: XLV closed at a 3-month high (+3.1% this week, +9.8% on the month, +13.7% on the quarter) and XLP is +10.9% on the month; both are defensive into a hiking Fed. BRK-B (+7.6%) stays as the largest leg because a ~$350B cash pile earning over 4% is a direct beneficiary of the Fed's path, and it reports Q3 on Nov 1 before my Monday fill. XLE (+10.4%, 3-month high at 70.02) is kept at 8% even though Brent fell ~6% on 10-26 on Iran diplomacy progress, because WTI is still near $103 and energy remains the top-ranked sector on 1- and 3-month returns. (4) Macro backdrop: FOMC held 3.75-4.00% with Cook and Hammack dissenting for a hike, Warsh called it 'a heck of a family fight', payrolls were only +29k in September, and the 10-year fell to 4.93% on the week while the Nasdaq lost 2.0% and the S&P 0.6%. That is a growth-scare/hike-risk mix in which 42% cash at 4% is a real position, not idle. Research basis: WebSearch and WebFetch were available; prices are Yahoo Finance daily closes pulled 10-31, the FOMC detail is from the Admirals FOMC write-up (secondary source, intraday figures), the weekly sector/commodity table is from Tapeboard's week-of-10-30 recap, and the Friday chip-rout and Alphabet details are from Benzinga/CNBC/XTB coverage; I could not find a primary account of the Amazon/Apple reactions and did not rely on them.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Aggressive sleeve anchor, cut from 12% to 10% after a -14.3% leg. NVDA closed 204.64 on 10-30, its lowest close in three months and -14.5% from the 10-06 high of 239.24, with Friday's -3.6% driven by Intel's guidance collapse rather than any Nvidia-specific news. The demand side is still accelerating: Alphabet guided 2027 capex above $300B and reported a $155B cloud backlog; Q2 FY27 revenue was $96.2B. Q3 FY27 results are set for Nov 17, and the stock has now de-rated into that print. A 15% stop from the Nov 2 fill (~174 if filled near Friday's close) sits well below the Oct lows instead of 4% above them, so the position can hold through pre-earnings noise; a 35% take-profit captures a relief rally without needing a new high. 10% is the most I will risk on one AI name while the financing-of-capex debate is unresolved."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Second AI-silicon leg, cut from 8% to 6%. AVGO closed 326.08 on 10-30 (-5.5% on the day in the Intel-led rout, -24% from its Aug 7 high of 427.76) after rallying from 321.68 on 10-23 to 351.81 on 10-28. Broadcom is the custom-silicon supplier to the very hyperscaler whose capex just went to $51B a quarter with 2027 above $300B (Alphabet TPUs), so the capex-overspend worry that hit GOOGL is revenue to AVGO. Smaller than NVDA because AVGO already disappointed on custom-chip guidance in June and its drawdown is deeper; stop re-based to 15% under the new fill, take-profit 35%."
+  },
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "thesis": "Largest ballast leg, raised from 14% to 15%. BRK-B marked 542.49, +7.6% on the 10-05 leg, and outperformed the S&P through a week where the Nasdaq lost 2%. Berkshire's roughly $350B of T-bills earn more as the Fed moves toward a December hike (futures ~85%), its operating businesses are domestic and rate-insensitive, and it holds large energy and insurance exposure that benefits from the $100+ oil and high-rate backdrop. Q3 results land Saturday Nov 1, before my Monday fill, so the market will have digested them. No stop: this is the leg that is meant to be held through drawdowns, and its realised volatility does not justify one."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Energy ballast kept at 8%. XLE closed 70.02 on 10-30, a 3-month high, +10.4% on my 10-05 leg and the top-ranked sector on both 1-month (+13.9%) and 3-month (+17.6%) returns. Brent fell ~6% on 10-26 as US-Iran diplomacy progressed, yet XLE still rose 1.0% on the week with WTI holding near $103, which tells me the sector is trading on cash flow at $90-100 oil rather than on the marginal headline. Stop tightened from 15% to 12% because the diplomacy tail is the one scenario that would take oil back toward $80 quickly; take-profit 25%."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New ballast leg replacing gold. XLV closed 184.87 on 10-30, a 3-month high, led all sectors this week at +3.1%, and is +9.8% on the month and +13.7% on the quarter. Health care is the defensive sector that has actually been paid in this hiking-Fed, slowing-payrolls (+29k) tape, and the ETF diversifies my single-name pharma exposure (MRK, JNJ) across devices, managed care and biotech (REGN +13% this week). 6% keeps total health-care exposure at 14% of NAV. Stop 12%, take-profit 20%."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New ballast leg. XLP closed 89.42, +10.9% on the month (Sep 30 80.60) and within 1% of its Oct 22 high of 89.99; consumer staples was +1.0% this week while tech and communication services fell. With September CPI at 3.7% and a December hike 85% priced, staples' pricing power and low beta are the cheapest insurance I can buy against a further growth scare that is not cash. Small at 5% because its 3-month return (+5.1%) lags XLV and XLE. Stop 12%, take-profit 20%."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Pharma ballast held unchanged. MRK marked 149.52, +7.2% on the leg, participating in health care's sector leadership (XLV at a 3-month high) with a dividend yield and domestic earnings that are insensitive to the Fed's December path. No stop: it is a yield-and-defence holding at 4%, not a momentum bet, and the sector is the one that worked this week."
+  },
+  {
+   "symbol": "JNJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "thesis": "Pharma ballast held unchanged. JNJ marked 273.20, +8.0% on the leg and the best-performing of my ballast legs after Berkshire. It is the lowest-beta large cap I own, AAA-rated with a 3%+ dividend, which is what the ballast side of the barbell is for while the aggressive side is in drawdown. No stop at 4%; the risk I want to cut this week is in gold and AI-silicon sizing, not here."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

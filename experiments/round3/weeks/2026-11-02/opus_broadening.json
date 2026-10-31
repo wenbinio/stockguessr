@@ -1,0 +1,64 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade: currency-hedged Japan, European rearmament and international developed value as the equity core, US insurers collecting a ~5% long end, and the long-end term-premium short halved to a residual hedge now that 10-year yields have fallen below 5%.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 25,
+ "reassessment_note": "Researched via WebSearch plus Yahoo daily closes through 10-30. The TLT short is the leg whose thesis is weakening: despite the Fed holding with two hike dissents and an ~85% priced December hike, the 10-year fell from ~5.24% in early October to 4.93% on 10-30 and the 30-year from ~5.63% to 5.31%; TLT is +5.2% on the month and the leg is -3.0%. September payrolls of only 29k mean the 11-06 jobs report can pull the long end lower still, while a short also pays 3% borrow plus TLT's distribution yield. Hikes at the front end with a weakening labour market is a flattening setup, not the term-premium blowout I sized for, so I halve the short from 14% to 7% to keep a hedge against sticky 3.7% CPI and Hormuz-driven inflation, and move the other 7% to cash at 4%. The equity legs stay: KIE +2.3% since entry (+8.9% 1m) as insurers reinvest float at ~5% yields, EFV and VEA flat-positive, EUAD +3.3% this week as rearmament budgets keep coming; DXJ (-2.5%) and EWJ have softened with Japan this month but are well inside their stops. No overlap with the Round 2 book (COWZ, RSP, XLE, XLI, KRE, XLV, GLD), so the novelty rule is satisfied.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Halved residual hedge: CPI at 3.7%, energy inflation +20% y/y and a Fed set to hike in December still argue for a term premium, but the long end has rallied ~30bp in a month on weak payrolls, and shorting carries borrow plus distributions. 7% keeps the hedge without letting a wrong-way bond rally dominate the book."
+  },
+  {
+   "symbol": "DXJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Currency-hedged Japan exporters and banks: corporate governance reform and buybacks are a broadening story independent of US megacap tech, and the hedge removes yen noise while US rates stay high. Down 2.5% since entry, well inside the 14% stop; keep at 16%."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "European aerospace and defense rearmament: multi-year procurement budgets are insensitive to the US AI trade, and the ETF rebounded 3.3% this week after a soft month. Keep 14% with a 15% stop given the higher volatility."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value (banks, energy, industrials) is the core non-US broadening holding; it benefits from high global yields and oil, and has been stable (+0.8% since entry) while SPY fell. Largest weight."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "US insurers reinvest float at ~5% long-end yields and have low AI exposure; +2.3% since entry and +8.9% over the month. Keep 14%."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Small broad developed ex-US sleeve to diversify the single-country and sector bets above; flat since entry, kept at 6%."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

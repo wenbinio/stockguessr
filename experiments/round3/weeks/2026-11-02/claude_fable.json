@@ -1,0 +1,68 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Rate-cycle rotation + carry + trend-reversal with stop discipline: energy as the oil/Hormuz hedge, value, reduced large-cap financials, a trimmed unhedged Japan stake, S&P-based income carry (JEPI replacing Nasdaq-based JEPQ), an enlarged healthcare defensive, and a long-Treasury leg riding the safe-haven bid, re-based to the 2026-11-02 fill with trailing stops and 33% cash at 4% into a December Fed hike that is ~75% priced.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 33,
+ "reassessment_note": "Researched 2026-10-31 via WebSearch/WebFetch (Fed statement, Trading Economics bond/oil/US/Japan wraps, straits.live Hormuz brief). What changed: the Fed held 3.75-4.00% on 10-28 but Cook and Hammack dissented FOR a hike, core PCE is 3.1%, Q3 GDP 3.4%, and markets price a ~72-83% December hike; yet the 10-year fell to 4.93% on 10-30 (seven-week low, -36bp in October) as Alphabet (EPS miss, FCF -$9B, 2027 capex >$300B), Amazon (Q3 miss, higher capex) and Intel (-23%+ on guidance) triggered an AI-valuation selloff: S&P -1.8%, Nasdaq 100 -3.5% on 10-30, Nasdaq -6.6% for October. Oil is at a six-week high (WTI $104, Brent $113, +15% in October) with Hormuz at 2 transits/day vs 85 baseline and Trump threatening renewed Tehran strikes after the 11-03 midterms; XOM/CVX beat. BOJ held at 1.25% but declared underlying inflation at target, pointing to a December hike; Nikkei -2.1% Friday and -8% on the month, led by AI-linked names. The book is +6.92% with five of seven legs green and a -2.08% max drawdown, so this is a resize, not a rethink: (1) JEPQ (-3.2%) is Nasdaq beta dressed as carry and the AI trade is de-rating, so it is replaced by JEPI, the S&P 500 covered-call version with far less mega-cap tech weight; (2) unhedged Japan is trimmed 10->8 because the Nikkei is now AI/semicap-heavy and is the laggard, though a BOJ December hike should support the yen so the leg stays; (3) healthcare goes 8->10 as the working defensive (+5.25%) in a hiking cycle; (4) XLE, IWD, XLF and TLT are kept at size. Re-basing to the 11-02 fill converts the fixed stops into trailing stops on XLE, XLV, XLF and TLT, locking in more of the gains; the TLT -7% stop from ~81.8 sits near the early-October 5.3% yield high, which is where the trend-reversal thesis would be wrong. Churn on a seven-leg $1,000 book is a few basis points. Novelty rule: zero symbol overlap with my Round 2 AI-infrastructure book. Not verified: the detail of Amazon's AWS growth line and the AMD-specific driver of its 11% drop; those matter for Round 2, not this book.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Energy remains the oil/Hormuz hedge: WTI $104 and Brent $113 at six-week highs, crude +15% in October, Hormuz transits at 2/day versus an 85/day baseline, no ceasefire (Tehran rejected the Vance letter) and Trump threatening strikes after the midterms; XOM and CVX both beat Q3 on 10-30 and rose on a -1.8% S&P day. Held at 12% rather than added because oil at $113 can gap down on any reopening headline; the 12% stop is the thesis-is-wrong level."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Russell 1000 Value is the rotation core: with Nasdaq -6.6% in October, hyperscaler free cash flow turning negative and the market punishing AI capex, value is the side of the market not de-rating; energy, financials, healthcare and staples all live here. Kept at 12% (leg +1.3%) with a 12% stop."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Reduced large-cap financials stake kept at 7% (leg +2.6%): a 5% 10-year with a December hike priced keeps net interest margins wide and bank earnings were fine; sized small because a flattening curve (long end rallying on safe-haven demand while the Fed hikes) and midterm policy uncertainty cap the upside. 10% stop."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unhedged Japan trimmed from 10% to 8%: the Nikkei fell 2.1% on 10-30 and 8% in October, dragged by AI-linked names (Advantest, Tokyo Electron, SoftBank, Kioxia), making it the book's laggard (-2.2%). The leg stays because the BOJ held at 1.25% while declaring underlying inflation at its 2% target, which points to a December hike and a firmer yen; unhedged exposure captures that currency leg in USD terms. 12% stop."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Replaces JEPQ as the income-carry leg. JEPQ is a Nasdaq 100 covered-call fund, which during an AI de-rating (Nasdaq 100 -3.5% on 10-30, -6.6% for October) is mega-cap-tech beta with a capped upside, and it was -3.2% on the leg; JEPI writes calls on an S&P 500 low-volatility equity sleeve with much lower tech concentration, collects a high single-digit option premium yield that is enhanced by elevated volatility, and fits the rate-cycle/value tilt of this book. 10% weight, 10% stop."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare raised from 8% to 10% as the working defensive: the leg is +5.25% and rose while the index fell 1.8% on 10-30; in a cycle where the Fed has hike-dissenters, core PCE is 3.1% and the AI trade is being sold, a sector with pricing power and no capex-ROI question is the natural overweight. 12% stop re-based to the 11-02 fill trails the gain."
+  },
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 7.0,
+   "thesis": "Long-Treasury trend-reversal leg kept at 8% (leg +3.0%): the 10-year has fallen from its 10-07 peak near 5.34% to 4.93% on 10-30, a seven-week low, as weak tech earnings pushed money into bonds, and Q3 GDP/PCE data did not stop it. The risk is the Fed actually hiking in December with core PCE at 3.1%; a 7% stop from the ~81.8 fill corresponds roughly to the early-October yield high, so the position is cut if the reversal fails. Sized at 8% because it is a counter-trend leg against a hiking central bank."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

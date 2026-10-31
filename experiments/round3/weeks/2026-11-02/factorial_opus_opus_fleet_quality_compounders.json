@@ -1,0 +1,46 @@
+{
+ "name": "Opus-fleet quality compounders",
+ "strategy": "Concentrated long book of four wide-moat, high-ROIC franchises that fund their own growth out of operating cash flow - V, NVDA, TSM, CME - after Alphabet's stop-out confirmed its shift to a negative-free-cash-flow capex borrower, against 23% cash at 4%.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 23,
+ "reassessment_note": "GOOGL hit its 18% stop on 10-30 after its Q3 report (10-28). Capex reached $51.4B against $42.3B of operating cash flow, free cash flow was about -$9.1B, and 2027 capex is guided above $300B. That is exactly the self-funding test this book exists to apply, so I am not rebuying it on the dip. The stop finished the halving I began in September. That spending is revenue for NVDA and TSM, and their ~10% drawdowns since the 9-30 entry trace to sector sentiment: a CXMT DRAM scare, worries over margins on the 2nm ramp, and broad chip selling around 10-22. They do not trace to their own numbers. TSMC's Q3 net income rose ~69% to a record. Visa (FQ4 10-27: revenue +13%, dividend +16%) and CME (Q3 10-21: third-quarter-record revenue and ADV, Q4 volume running +17% YoY) both confirmed their theses. The GOOGL exit left roughly a third of the book in cash, which is too much for a compounder mandate. I redeploy about 10 points into the existing names where price has fallen behind fundamentals (TSM, NVDA) and into CME as the volatility hedge. I keep 23% cash and add no names I have not researched. Re-registering also resets the stops off the 11-02 fill, which tightens V's stop to protect its +15% gain. Research used WebSearch (Alphabet, Visa, CME and TSMC results; NVDA daily tape through 10-27). I did not find coverage of the 10-29/10-30 sessions for NVDA or TSM, so the packet marks are my source for those days.",
+ "positions": [
+  {
+   "symbol": "V",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 24,
+   "stop_loss_pct": 12.0,
+   "thesis": "Largest leg, held near its current drifted weight (~24% of NAV after +15%). FQ4 2026 (reported 10-27): net revenue $12.1B (+13%), FY revenue $45.9B (+15%), $5.2B returned in the quarter, dividend raised 16%. It is a toll-road network funded entirely from cash flow, with no AI-capex exposure, which balances the semis. Re-entering resets the 12% stop off the 11-02 fill and locks in most of the leg's gain, versus the old stop near $309."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Topped back up to 20% from a ~17% drifted weight after a -10% leg. Hyperscalers keep raising AI capex: Alphabet runs $195-205B for 2026 and is guiding above $300B for 2027. That spend is NVDA revenue, and NVDA funds its own growth with very high free cash flow (it is writing $3B equity checks into Meta's offering, not borrowing). The drawdown came from chip-sector sentiment (a -4.4% sector day on 10-22). Earnings in mid/late November are the catalyst. The 18% stop leaves room for earnings volatility, and the 35% take-profit stays as before."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Raised to 18% from a ~14% drifted weight. Q3 2026 net income rose ~69% to a record, yet the ADR is ~11% below the 9-30 entry. The selling came from a DRAM scare it has no exposure to, worries that the 2nm ramp dilutes margins, and broad SOX selling, not any demand miss. It is the monopoly foundry for every AI accelerator whatever the customer's balance sheet, and it self-funds its capex from operating cash flow. 18% stop, 30% take-profit."
+  },
+  {
+   "symbol": "CME",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Raised to 15% from a ~12% drifted weight. Q3 2026 (10-21) set third-quarter records for revenue (~$1.74B, +13%), ADV (29.4M, +16%) and market data, adjusted EPS $3.02 beat $2.98, and Q4-to-date volume is running +17% YoY. It is a capital-light exchange monopoly that returns nearly all its earnings, and its earnings rise with the rate and AI-wobble volatility that hurts the semis. That makes it the book's internal hedge, worth more weight now that NVDA+TSM rise to 38%. 12% stop off the new fill."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

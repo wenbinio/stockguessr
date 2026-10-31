@@ -1,0 +1,101 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend on signals refreshed through the 2026-10-30 close: long where price is above both the 50- and 200-day MAs with positive 3-month momentum (energy XLE/USO, dollar UUP, healthcare XLV, staples XLP), short where both MAs are broken with negative momentum (communication services XLC, gold GLD, silver SLV, copper miners COPX, uranium URA, emerging markets EEM), vol-scaled with the rest in cash.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 13,
+ "reassessment_note": "Refreshed every signal with a 1-year daily pull through the 2026-10-30 close (marks match the packet). The three held legs still qualify, so I keep them at unchanged weights and stops. What changed: the book has sat at 65% cash and carried only the long side of a rule that is explicitly long/short, which left it at -1.32% against SPY +1.92% while the clearest trends in the tape were downtrends. A hawkish Fed (holding at 3.75-4.00% with a December hike priced at about 71%), oil-driven inflation worry and a firm dollar have broken precious metals (SLV -31% vs its 200-day, -17% on the month per news reports; GLD -14%), copper and uranium miners, EM and communication services (Meta/Alphabet weakness), while defensives (XLV, XLP) have turned up. I add the strongest qualifying longs and shorts, vol-scaled to roughly equal risk, and skip marginal or overextended signals: XLB (only about +3% on every measure), XOP/DBC (duplicate the energy exposure), EWZ (57% vol after a -24% week, snapback risk; the stop fired in other books) and UNG (high vol into winter demand). Gross goes from 35% to 87% (55 long / 32 short, net +23%), and every new leg carries a reversal stop. Research: Yahoo price data for the signals and volatility, plus three web searches on oil, metals and the Fed/equity backdrop; oil-specific news for late October was thin, so the energy legs rest on the tape.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 18.0,
+   "thesis": "Strongest equity-sector uptrend: +7.8% over its 50-day, +19.2% over its 200-day, +19.1% over 3 months, at a 60-day high on 21.6% vol. The oil shock is still intact and the signal fully qualifies, so I hold at unchanged size and stop rather than pay churn."
+  },
+  {
+   "symbol": "USO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Crude is the source of the trend: +12.5% over its 50-day, +36% over its 200-day, +38% over 3 months, within 0.4% of its high. At 38% vol a 9% weight is a risk contribution similar to the other legs; held unchanged with its 15% stop and 35% take-profit."
+  },
+  {
+   "symbol": "UUP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 6.0,
+   "thesis": "The dollar still qualifies (+1.5% over its 50-day, +3.8% over its 200-day, +2.9% over 3 months), backed by a hawkish Fed pricing a December hike. The signal is modest but vol is only 4.9%, so a small weight with a tight 6% stop is a cheap diversifier; unchanged."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "thesis": "New qualifying long and the second-strongest equity trend: +7.3% over its 50-day, +16.5% over its 200-day, +13.9% over 3 months, at a 60-day high. Defensive rotation away from tech fits a hawkish, inflationary backdrop. Sized for 17.5% vol, with a 10% stop that sits below its 50-day."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 8.0,
+   "thesis": "New qualifying long: +5.7% over its 50-day, +5.9% over its 200-day, +5.4% over 3 months, +11% on the month, part of the same defensive rotation. The signal is weaker than XLV's, so it gets a smaller weight with an 8% stop."
+  },
+  {
+   "symbol": "XLC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Cleanest equity downtrend: -9.8% under its 50-day, -11.5% under its 200-day, -10.3% over 3 months and -5.3% in the past week, after Meta's weak results and GOOGL stops firing across the desk. 18% vol supports an 8% short, and a 10% stop covers it if mega-cap comms reclaim their averages."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Gold has broken trend: -8.9% under its 50-day, -13.8% under its 200-day, -4.3% over 3 months, -17% from its 60-day high. A strong dollar and rising real-rate and hike expectations are the driver. 24% vol, so 7%, with a 10% stop for a safe-haven reversal."
+  },
+  {
+   "symbol": "SLV",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 15.0,
+   "thesis": "The most extreme commodity downtrend: -20% under its 50-day, -31% under its 200-day, -15% over 3 months, with news reports putting silver down about 17% on the month. At 41% vol and with snapback risk after a -29% slide, I keep it to 4% with a wide 15% stop."
+  },
+  {
+   "symbol": "COPX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 14.0,
+   "thesis": "Copper miners are in a full downtrend: -15.9% under the 50-day, -13.8% under the 200-day, -9.3% over 3 months. They are being hit by both the metals sell-off and growth worries. 39% vol, so 4% with a 14% stop."
+  },
+  {
+   "symbol": "URA",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 15.0,
+   "thesis": "Uranium miners show one of the strongest negative trends in the universe: -17% under the 50-day, -28% under the 200-day, -17% over 3 months. At 43% vol it is the smallest leg at 3%, with a 15% stop."
+  },
+  {
+   "symbol": "EEM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 9.0,
+   "thesis": "Emerging markets fail every test: -7.7% under the 50-day, -4.4% under the 200-day, -5.1% over 3 months, -8.6% on the month, with a strong dollar and oil import costs weighing. It expresses EM weakness at 21% vol instead of chasing EWZ at 57% vol after its -24% week. 6% with a 9% stop."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

@@ -1,0 +1,75 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum: overweight the healthcare leaders at or near highs (LLY, TMO, NTRA, MRNA), hold steady MSFT and the two cybersecurity names still above their 50-day trend, exit the broken AI-semi and META legs, and keep 29% cash while SPY trades below its 50-day average.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 29,
+ "reassessment_note": "Last week I kept a small AI-semi core and a 5% META stub. Over the week their tape broke further. Using six months of daily closes pulled from Yahoo (they match the packet marks): META is -15.3% over 21 days, -21% from its high and 8% below its 50-day average. NVDA is -11.4% over 21 days and below its 50-day. AMD is -18% over 21 days and fell 10.9% on 10-30 alone. AMD also reports Nov 3 after the close with an options-implied move of about 11%, so holding it is a coin-flip on earnings rather than a momentum bet. All three go. Searches tied the October AI weakness to a sector selloff and to Lam Research's supply-constraint warning on 10-22. They also described a rotation from AI names into healthcare, which matches the tape. LLY reported Q3 before the open on 10-29, gained about 6.6% that day and another 3.2% on 10-30, closing at a new high (+23% over 21 days). TMO is 1.7% off its high and NTRA 5% off theirs. MRNA is +17% over 21 days and +302% over 63 days. I add to all four, LLY most. MSFT is flat but still above its 50-day and 4% off its high, so I hold it. CRWD and OKTA eased this week but remain above their 50-day averages with strong 63-day returns, so they stay at size under 12% stops. Search coverage of this specific week was thin: I could not find articles on the MSFT/META earnings reactions or the 10-30 AMD drop, and those calls rest on the price data. With SPY below its 50-day average, I hold 29% cash rather than redeploy everything. Turnover is about 31% of the book, a cost of roughly 0.6 bp of NAV.",
+ "positions": [
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Strongest tape in the book: new all-time high on 10-30, +11% on the week and +23% over 21 days, 18% above its 50-day. It extended for a second day after its 10-29 Q3 report, a post-earnings drift setup, and healthcare is the sector receiving the rotation out of AI. It is raised from 8% to 14% as the top weight; a 10% stop from the new entry caps the leg's loss at about 1.4% of NAV."
+  },
+  {
+   "symbol": "MRNA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Top momentum score in the book: +302% over 63 days, +17% over 21 days, +10.8% this week, 21% above its 50-day, and the leg is +11.5%. Very volatile, so it rises only from 6% to 9% and keeps a wider 15% stop, which risks about 1.35% of NAV."
+  },
+  {
+   "symbol": "TMO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "A steady healthcare leader 1.7% below its high: +6.8% over 21 days, +21% over 63 days, 6.5% above its 50-day, and +3.4% this week. Its low volatility suits a larger weight, so it goes from 8% to 10% with a 10% stop."
+  },
+  {
+   "symbol": "NTRA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Healthcare growth leader: +53% over 63 days and +108% over 120 days, 10% above its 50-day and 5% off its high. It pulled back on 10-30 after a new high on 10-29, but the trend is intact. It goes from 8% to 10% with a 12% stop."
+  },
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Still the steadiest mega-cap trend: +26.5% over 120 days, 1.8% above its 50-day and only 4% below its high, unlike META and NVDA. It is held at 10% as the book's only remaining large-cap tech exposure; a 10% stop exits if the earnings-season weakness becomes a trend break."
+  },
+  {
+   "symbol": "CRWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Cybersecurity leader whose intermediate trend holds: +85% over 120 days and +24% over 63 days, still 4% above its 50-day despite -5.9% over 21 days. Last week's re-entry thesis, that it had reclaimed its trend, is not invalidated, so it stays at 10%. The 12% stop from the new entry is the exit if the 50-day gives way."
+  },
+  {
+   "symbol": "OKTA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 45.0,
+   "thesis": "+155% over 120 days and +47% over 63 days, 8% above its 50-day and 10% off its high after a soft week. The trend is intact but losing pace, so it stays at 8%, below CRWD, with a 12% stop."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

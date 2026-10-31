@@ -1,0 +1,66 @@
+{
+ "name": "Haiku concentrated AI/technology",
+ "strategy": "Supply-chain-anchored AI infrastructure: EUV lithography, leading-edge foundry, wafer equipment and AI memory, plus one AI-workflow software name, with no overlap with the Round 2 book.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 23,
+ "reassessment_note": "Round 3 needed to change because its overlap with the Round 2 book (MSFT, CRM, NVDA, SNOW) was about 52% of gross, above the 50% novelty limit. I removed MSFT, CRM, NVDA, SNOW and QCOM, kept ASML as the anchor, and added names that are not in Round 2: TSM, AMAT, MU, NOW and PLTR. Overlap with Round 2 is now zero. The research this week was thin: searches did not return a verified 2026-10-30 close or 11-02 price for any of these names, so the theses are structural and sized conservatively, with 15 to 20 percent stops. Cash rises to 23 percent to reflect that uncertainty and the mid-October chip drawdown. Re-basing all legs to the 11-02 close resets the existing ASML loss, which I have accounted for in sizing.",
+ "positions": [
+  {
+   "symbol": "ASML",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Sole supplier of EUV lithography, which leading-edge AI chips require, so it is a structural bottleneck rather than a cyclical bet. A research source cites 2026 revenue guidance of roughly EUR 36-40B tied to AI-driven capex; I have not verified that against the company filing. Kept as the anchor of the book, sized at the book's largest weight, with a 15 percent stop."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Leading-edge foundry for the AI accelerator supply chain, so it captures AI demand regardless of which chip designer wins. Mid-October coverage flagged AI-revenue questions pulling chip stocks off their October highs, which is the main risk. Sized below ASML and given a 15 percent stop because I could not confirm a late-October price."
+  },
+  {
+   "symbol": "AMAT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Wafer-fabrication equipment, so it benefits from capacity expansion at foundries and memory makers as AI capex rises. Equipment is more cyclical than design, so it is sized below the anchor and given a 15 percent stop."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 50.0,
+   "thesis": "High-bandwidth memory is a supply-constrained input for AI accelerators, which makes Micron a second-order AI play separate from the GPU and foundry names. Memory is volatile, so the stop is wider at 18 percent and the position is held at a moderate weight."
+  },
+  {
+   "symbol": "NOW",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Enterprise workflow platform that sells AI agents on top of an existing customer base, which is a different revenue path from the seat-based SaaS names that have been de-rated this year. Held at a modest weight because the software sector has been volatile on AI-disruption fears; 15 percent stop."
+  },
+  {
+   "symbol": "PLTR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 60.0,
+   "thesis": "AI software for government and large enterprises, with a high-beta profile and a long-duration growth thesis. Given how volatile the name is, it is the smallest position with the widest stop, at 20 percent, so the book's downside stays bounded."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

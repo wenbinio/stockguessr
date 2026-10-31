@@ -1,0 +1,63 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Dual-momentum: long the 6-month sector leaders that are not in a sharp 1-month correction - healthcare (XLV plus leader LLY) now the top-ranked sector and the Hormuz-driven energy complex (XLE, XOP, upstream COP, refiner MPC) second - with the lagging refiner VLO dropped on relative weakness; every leg stop-protected, no leverage, 39% cash at 4%.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 39,
+ "reassessment_note": "Researched this week via WebSearch/WebFetch (sector momentum table as of 10-30, VLO/MPC daily closes, the 10-30 market review, the Fed decision, Lilly's and Valero's Q3 releases). The rule still points at the same two sectors: on 6-month momentum healthcare is the #1 S&P sector (+21.6%, also #1 on 3M/1M/1W) and energy is #2 (+12.3%, +10.6% 1M, WTI settled $104.12 on 10-30, highest since 9-15, +15% in October); technology is a 6M leader but is excluded by its sharp 1-month correction (-8.6%, SOX -15% in October, Intel -29% on 10-30). What changed: (1) the book was 44% energy vs 17% healthcare even though healthcare ranks first, so I move 8 points from energy to XLV; (2) VLO fails the relative-momentum test - +3.1% over one month vs +10.6% for the sector, -13% off its 10-14 high, a -9.2% day on 10-27 on Hormuz-diplomacy hopes, and a 10-29 close (384.57) within 0.2% of its stop - and on its own 10-22 call management warned that rising crude squeezes refining margins, which is exactly what $104 WTI does; MPC (+12.5% 1M, in line with the sector) still passes both tests and stays at 8. Lilly's Q3 (revenue +39%, 2026 revenue guidance raised $5.5bn at the midpoint, retatrutide head-to-head win) confirms the LLY leg, which is +10.8% with a +30% take-profit. Macro backdrop is a third straight weekly loss for the indices with an AI-capex scare in tech (Nasdaq -5.3% in October), the Fed on hold at 3.75-4.00% with a December hike being priced, and VIX just under 20 - a tape where defensive leadership persists and 39% cash at 4% is fine for a momentum book with poor breadth. The Hormuz binary (strikes vs. a reopening deal) is the main risk to the energy sleeve; the -12%/-10% stops bound it. Turnover is about 16% of the book, roughly 1bp of friction.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "thesis": "Core energy-sector momentum leg: energy is the #2 sector on 6-month momentum (+12.3%) and +10.6% over one month, with WTI at $104.12 (highest close since 9-15) while the Strait of Hormuz remains effectively closed and Exxon/Chevron just posted record refining profits. Unchanged at 15 with a -12% stop against a Hormuz reopening deal."
+  },
+  {
+   "symbol": "XOP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Higher-beta upstream expression of the same energy momentum; E&Ps are the cleanest winners from crude making new highs and do not carry the refining-margin squeeze that rising crude imposes on refiners. Kept at 8 with a -12% stop."
+  },
+  {
+   "symbol": "COP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Single-name upstream leader, +1.8% on the leg while the refiners fell; largest independent E&P benefits directly from $100+ crude. Kept at 5 with a -12% stop and +30% take-profit."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 25.0,
+   "thesis": "The refiner that still passes the rule: MPC is +12.5% over one month (in line with the sector) despite the 10-27 air-pocket, record Q3 refining margins across the group, and a +2.8% rebound on 10-30. Held at 8 with the tighter -10% stop because refiners are squeezed if crude keeps rising and hit hard if Hormuz reopens; VLO was dropped because it failed the relative test, MPC did not."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare is the #1 S&P sector on 6-month momentum (+21.6%) and also leads on 3-month (+11.0%), 1-month (+9.7%) and this week (+3.3%); breadth is confirmed by Lilly's and Regeneron's Q3 beats. Raised from 12 to 20 to align the book with the rule's ranking rather than overweighting the #2 sector; -12% stop."
+  },
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Sector leader, +10.8% on the leg after Q3 revenue +39%, a $5.5bn raise to 2026 revenue guidance and a retatrutide head-to-head win over Ozempic. Kept at 5 as a concentrated kicker on top of XLV, with a -12% stop and +30% take-profit."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

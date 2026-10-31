@@ -1,0 +1,66 @@
+{
+ "name": "Opus Picks-and-Shovels",
+ "strategy": "A real-asset electrification-bottleneck book: copper miners as the largest leg, grid-and-power equipment rebuilt to 36% after GE Vernova and Quanta printed strong, energy for the live Hormuz/Middle East tail, and gold miners cut to a small hedge as December-hike odds rise.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 22,
+ "reassessment_note": "Last week I trimmed the grid names ahead of their prints. GE Vernova (Oct 28) raised 2026 guidance: orders ~$29.3B (+96% organic; Power +178%), backlog +$20B sequentially to $197B, and a >$200B backlog expected in Q4. Quanta posted adjusted EPS $6.06 vs $3.33 a year ago and a record $63.7B backlog. Both prints de-risked those legs, so I'm adding GEV 12->14 and PWR 10->12. Eaton has not reported yet (I couldn't confirm a date), so it stays at 10. Gold miners were the policy hedge, but this week the Fed held with two dissents voting to hike, December hike odds rose to ~75-85%, and spot gold fell ~3% to ~$3,876, its yearly low. In this regime higher real-rate expectations hurt the hedge instead of helping it, so I'm cutting GDX 12->6. Copper finished the week roughly flat (~$6.49/lb) while COPX fell with the Oct 30 risk-off; it stays at 22. Brent eased to ~$112-113 but was still up 13.6% in October with OPEC+ meeting this weekend, so XLE stays at 14. Cash goes from 20% to 22% because the US midterms are Nov 3 and the Oct 30 tape (SPY -1.8%) was risk-off. Research: WebSearch, WebFetch, Yahoo closes. Round 3 has zero overlap with my Round 2 memory book (MU/SNDK).",
+ "positions": [
+  {
+   "symbol": "COPX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 45.0,
+   "thesis": "Copper miners remain the core electrification bottleneck exposure. Copper itself held flat on the week near $6.49/lb while COPX fell ~5% on Oct 30 with risk assets, so the miners are cheaper against an unchanged metal. Grid backlogs (GEV $197B, PWR $63.7B) confirm demand for wire-intensive buildout. It stays the largest leg at an unchanged 22% with an 18% stop for miner beta."
+  },
+  {
+   "symbol": "GEV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "The Oct 28 print removed the event risk I trimmed for: guidance raised, orders ~$29.3B (+96% organic), gas-turbine backlog 53->64 GW, total backlog $197B heading above $200B, and buyback authorization raised to $20B with $1.3B bought Oct 1-23. The stock is roughly flat since the print because of the Oct 30 tape, not the fundamentals, so I'm restoring it to 14%."
+  },
+  {
+   "symbol": "PWR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 18.0,
+   "take_profit_pct": 40.0,
+   "thesis": "Quanta printed adjusted EPS $6.06 (vs $3.33), revenue $12.0B and a record $63.7B backlog, and it guided to strong double-digit EPS growth in 2027. The stock is +10% since last week's entry, and this is the labor/installation bottleneck of the grid buildout. I'm adding back to 12% now that the print is behind it. The 18% stop is reset from the new entry."
+  },
+  {
+   "symbol": "ETN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 16.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Eaton's electrical/data-center equipment thesis is unchanged: at Q2 it raised FY26 adjusted EPS guidance to $13.40-13.60 and guided Q3 organic growth of 13.5-15.5%. Its Q3 print is still ahead, so I'm holding it at the trimmed 10% rather than adding before the event. Peers' strong prints are supportive."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Kept only as a small tail hedge against a geopolitical or policy shock. I cut it from 12% because the hedge is failing in the current regime: the Fed held with two hike dissents, December hike odds are ~75-85%, and gold fell ~3% on the week to a yearly low near $3,876. GDX is -4.85% on the leg."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The Hormuz/Middle East supply tail is still live. Brent eased to ~$112-113 this week but rose 13.6% in October (its fourth straight monthly gain), and OPEC+ meets this weekend. XLE was the only leg up on the Oct 30 risk-off day, which makes it a useful diversifier against the equipment and miner legs. It stays at 14%."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

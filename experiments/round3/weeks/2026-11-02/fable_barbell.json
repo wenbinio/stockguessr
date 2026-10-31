@@ -1,0 +1,66 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked on the tape through 10-30 with WTI near $103, a 4.93% ten-year and a Fed that held 10-2 in October with a December hike ~85% priced: long energy, health care and consumer staples (top three on blended 1- and 3-month returns) versus short communication services, industrials and technology (bottom three), with hard stops and take-profits and 45% yielding cash.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 45,
+ "reassessment_note": "Re-rank on Yahoo Finance daily closes pulled 10-31, blending 1-month (Sep 30 to Oct 30) and 3-month (Jul 31 to Oct 30) returns: XLE +13.9%/+17.6%, XLV +9.8%/+13.7%, XLP +10.9%/+5.1%, XLB +8.3%/+4.6%, XLU +10.1%/-2.1%, XLY +6.0%/-0.6%, XLF +5.8%/-0.8%, XLRE +5.5%/-4.2%, XLK -8.3%/+2.4%, XLI +0.3%/-6.9%, XLC -10.0%/-7.7%. The long side is unchanged: energy, health care and staples are still the top three, all three legs are green (XLE +3.3%, XLP +2.5%, XLV +5.3%), and XLE and XLV both closed at 3-month highs on 10-30 (70.02 and 184.87); I raise XLV to the same weight as XLE because it led all sectors this week (+3.1%) and is the strongest 3-month name after energy. The short side changes: XLRE (my -3.6% leg) and XLY (-0.8%) have climbed to 8th and 6th in the ranking, both up 5-6% on the month, and the 10-year's drop to 4.93% this week removes the rate pressure that was the case for shorting real estate, so both come off. XLC stays short: it was the worst sector again this week (-5.3% on the week, -9.4% over two weeks, -10% on the month) after Alphabet's 10-28 print (EPS $2.12 vs ~$3.00 expected, capex $51.4B above operating cash flow, FCF -$9.1B, 2027 capex above $300B, shares -8% after hours), Reddit -29% and Roblox -18% on the week; the leg is +9.3% and I keep it at 7% with a 10% stop from the new fill rather than press it after a 10% monthly fall. XLI stays short at 7%: flat on the month, worst 3-month return among the cyclicals (-6.9%), and 10% below its Aug 14 high of 186.51, with September payrolls +29k. XLK enters as the third short at 7%: -8.3% on the month, -2.0% on the week, -11% from its Oct 6 high of 202.00, and the 10-30 Intel-led chip rout (INTC -28%, SOX -7.2%, Nasdaq -2.9%, worst day since June) plus the capex-financing worry make it the sector with the most negative one-month momentum after XLC; I size it the same as XLI and cap the loss at 10% because Nvidia reports Nov 17 and a squeeze is the obvious risk. Macro: FOMC held 3.75-4.00% with Cook and Hammack dissenting for a hike, September CPI 3.7% (energy +20.4%), core PCE 3.0%, Brent fell ~6% on 10-26 on Iran-talk progress but WTI is still ~$103, gold -3.1% on the week, dollar ~102. Gross exposure drops from 60% to 55% (34 long, 21 short) because two shorts that were against the tape are removed and only one is added; cash at 45% earns 4% and the three shorts cost 3% borrow. Correlation check: XLC and XLK shorts share megacap-growth exposure, so together they are 14%, less than the 19% I had across four shorts before; longs XLE/XLV/XLP are low-correlation to each other. Novelty vs my Round 2 barbell: same-direction overlap is XLE 8, XLV 6, XLP 5 = 19 of 55 gross, about 35%, under the 50% limit. Research basis: WebSearch and WebFetch were both available; prices from Yahoo Finance, weekly sector table from Tapeboard's week-of-10-30 recap, FOMC from the Admirals write-up (secondary), Alphabet and chip-rout detail from XTB, Benzinga and CNBC coverage.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 1 of 11 on blended momentum (+13.9% 1-month, +17.6% 3-month). XLE closed at a 3-month high of 70.02 on 10-30 and rose 1.0% on a week when Brent fell ~6% on US-Iran diplomacy progress, which shows the sector trading on $90-100 cash flow rather than on the daily headline. Held at 12% with the stop at 12% and take-profit at 20% from the new fill; the diplomacy tail is the one thing that breaks this leg and the stop is sized for it."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 2 of 11 (+9.8% 1-month, +13.7% 3-month), raised from 10% to 12%. XLV closed at a 3-month high of 184.87 on 10-30 and led all sectors this week at +3.1% (REGN +13%), the only sector that rallied through both the chip rout and the Alphabet selloff. Defensive earnings into a Fed that is likely to hike in December and a labour market that added 29k jobs in September. Stop 12%, take-profit 20%."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 3 of 11 (+10.9% 1-month, +5.1% 3-month), trimmed from 12% to 10% because its 3-month return lags the two legs above it. XLP closed 89.42, within 1% of its Oct 22 high of 89.99, and was +1.0% on the week. Staples' pricing power with September CPI at 3.7% and their low beta into a growth scare keep them in the top three; the 12% stop and 20% take-profit are unchanged from the 10-19 leg."
+  },
+  {
+   "symbol": "XLC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 11 of 11 (-10.0% 1-month, -7.7% 3-month) and the worst sector again this week at -5.3%. XLC closed 99.90 on 10-30 after Alphabet's Q3 showed capex above operating cash flow, negative FCF of $9.1B, an EPS miss and 2027 capex guided above $300B, with Reddit -29% and Roblox -18% on the week. The 10-19 leg is +9.3%; rolling it at 7% (from 5%) with a 10% stop from the new fill protects most of that gain while keeping the position on the right side of post-earnings drift. Take-profit 20%."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 10 of 11 (+0.3% 1-month, -6.9% 3-month), kept at 7%. XLI closed 167.40, 10% below its Aug 14 high of 186.51, and was the weakest cyclical over three months while energy and staples made highs; September payrolls of +29k, a 10-2 Fed leaning toward a December hike and $100+ oil are a cost-and-demand squeeze on industrials. The 10-19 leg is roughly flat (-0.4%); stop 10%, take-profit 20% from the new fill."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 9 of 11 and the most negative 1-month return after XLC (-8.3%; +2.4% 3-month, so this is a momentum-reversal short, not a long-trend one). XLK closed 179.51 on 10-30, -11% from its Oct 6 high of 202.00, after the Intel-led chip rout (INTC -28%, SOX -7.2%, Nasdaq -2.9%, worst day since June) and the capex-financing worry that spread from CoreWeave bonds to Alphabet's negative FCF. Replaces the XLRE and XLY shorts, which had climbed to mid-pack. Sized at 7% with a hard 10% stop because Nvidia reports Nov 17 and a squeeze is the obvious risk; take-profit 20%."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

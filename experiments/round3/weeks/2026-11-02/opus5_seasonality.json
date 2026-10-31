@@ -1,0 +1,75 @@
+{
+ "name": "Opus 5 seasonality",
+ "strategy": "Midterm-year Q4/'best six months' seasonality book: core SPY and a larger IWM leg held through the Nov 3 midterm into the historically strong November-January window, distillate-season refiner and energy legs on record-tight US diesel, a financials leg, and a small Q4 crypto leg, with 14% cash.",
+ "entry": "2026-11-02",
+ "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "Researched via WebSearch/WebFetch on 2026-10-31. Week to 10-30: S&P -0.57%, Nasdaq -2.0%, Russell 2000 +1.29% (+12.1% YTD), XLE +1.0%, 10y down to 4.93%, VIX 19.4 (Tapeboard). Refiners fell 7-8% on 10-28 because hopes of better US-Iran relations hit crude, not on company news. VLO had already posted a record Q3 ($23.90 adj EPS vs $21.18 consensus) and MPC reports this coming week (TIKR). The fundamentals have not changed: distillate stocks were 104.3M bbl in the week to 10-16, 9% below the 5-year average and 11.3M below a year ago. Gulf Coast refiners are running at 95.9% with no slack before winter, and Brent was around $111 on 10-22 on reports of possible US/Israeli strikes on Iran after the midterms (Crux Investor). The book's thesis therefore stands. The one change follows the mandate: the window from midterm election day into January is historically the strongest of the four-year cycle, and small caps are currently leading. I move 6 points of cash into IWM (12 -> 18) and keep every other weight. Re-entering the book resets stops to the 11-02 fills; I accept that because the refiner stops stay wide enough to absorb Iran-headline volatility. Total churn is about 7bps of NAV, mostly the BTC round trip. Known two-sided risk: a US-Iran deal would compress cracks quickly, so refiners together stay at 21% and are not added to. I could not find late-October BTC news, so the crypto leg rests on seasonality alone and stays small.",
+ "positions": [
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 26,
+   "stop_loss_pct": 7.0,
+   "take_profit_pct": 12.0,
+   "thesis": "Core beta for the midterm-to-year-end seasonal window. The S&P 500 is +10.5% YTD and pulled back 0.6% last week on tech and communication-services weakness rather than broad deterioration. Post-midterm Q4 returns have historically been among the strongest of the cycle. Weight unchanged at 26%; a 7% stop caps the damage if the seasonal pattern fails."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Raised from 12% to 18% using cash. The Russell 2000 rose 1.29% last week while the S&P fell 0.57%, is +12.1% YTD (ahead of the S&P), and was +2% the week before, so the rotation toward small caps is persistent. Small caps also carry the strongest November-December seasonal and post-midterm effect, and a falling 10y (4.93%) helps rate-sensitive small caps. A 9% stop allows for higher small-cap volatility."
+  },
+  {
+   "symbol": "VLO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Distillate-season leg. Q3 was a record (adj EPS $23.90 vs $21.18 consensus). US distillate stocks are 9% below the 5-year average heading into winter, with Gulf Coast utilization at 95.9%, which supports diesel cracks. The ~6% leg drawdown came from the 10-28 US-Iran de-escalation headlines, not company news. Held at 11% rather than added to because a peace deal is a real tail risk; the 14% stop covers it."
+  },
+  {
+   "symbol": "MPC",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Second refiner with the same tight-diesel thesis: the largest US refining system, high Gulf Coast exposure and export access to capture wide diesel spreads, at roughly 6x forward earnings that already prices some margin fade. Q3 results come this week and should reflect record industry margins seen at VLO. Held at 10% with a 14% stop because of the earnings and Iran-headline event risk."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Diversified energy leg, +1.0% last week and +53% YTD, with WTI around $103. It hedges the refiner legs against a crude spike if strikes on Iran resume after the midterms, a scenario where cracks can compress while upstream wins. Kept small at 6% because the same peace-deal risk cuts the other way."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 16.0,
+   "thesis": "Financials benefit from a post-election policy-clarity rally and from year-end seasonality. Falling long yields last week helped the sector without breaking the steep curve that supports bank net interest margins. The leg is +0.9% since entry. Held at 9%."
+  },
+  {
+   "symbol": "BTC",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Small Q4 crypto seasonality leg: November has historically been one of bitcoin's strongest months, and the leg is down 3.5% since entry. I could not find current flow or news data, so this leg rests on seasonality alone and is capped at 6% with a 14% stop to limit damage."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}
