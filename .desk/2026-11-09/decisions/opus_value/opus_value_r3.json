@@ -1,0 +1,15 @@
+{"name": "Opus Value",
+ "strategy": "A trend book that owns only what the tape currently confirms: the leading defensive trends (healthcare, staples, low-volatility), a small short in the broken technology trend, and 47% cash while energy, quality, gold and the broad market are below trend.",
+ "entry": "2026-11-09", "capital_usd": 1000,
+ "cash_pct": 47,
+ "reassessment_note": "Rebuilt from fresh trend data (Yahoo daily closes, 6 months) plus news on the 11-05 crash. Energy's stop fired on 11-05 as Brent fell ~16% in five days on a collapsing war premium; I do not re-enter (XLE -12% in 5 days, below its 50-day average). QUAL has broken trend (below its 50- and 100-day averages, -3% over the month), so it goes. The XLY short is wrong on the tape: XLY is +5.3% over the month and above both averages, so I cover it before its stop does. Confirmed leaders are XLV (+9.9% 1m, +9.7% 3m, 6.6% above its 50-day), XLP (+8% 1m, above both averages) and SPLV (+6.8% 1m). The clearest downtrend is technology after the AI-regulation crash (XLK -16.7% 1m, -12.6% below its 50-day, Nasdaq in correction), so I add a small XLK short with a tight stop, because VIX ~28 means snapback rallies are violent. No overlap with the Round 2 book's symbols.",
+ "positions": [
+   {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 20, "stop_loss_pct": 8.0,
+    "thesis": "Strongest sector trend on the board (+9.9% 1m, +9.7% 3m, 6.6% above its 50-day, 2.6% off its 3-month high) and held up on the 11-05 crash; the post-election Medicaid relief rally adds a catalyst. Upsized from 14% to 20% as the core long."},
+   {"symbol": "XLP", "kind": "equity", "side": "long", "weight_pct": 15, "stop_loss_pct": 7.0,
+    "thesis": "New leg: staples are in a confirmed defensive uptrend (+8.0% 1m, +6.0% 3m, ~6% above both its 50- and 100-day averages, 2% off the high) as money rotates out of AI and tech; a 7% stop exits if the rotation reverses."},
+   {"symbol": "SPLV", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 7.0,
+    "thesis": "New leg replacing QUAL as the factor sleeve: low-volatility is the factor the tape confirms (+6.8% 1m, 4.2% above its 50-day), whereas quality has broken trend; it diversifies the defensive sleeve beyond healthcare and staples."},
+   {"symbol": "XLK", "kind": "equity", "side": "short", "weight_pct": 8, "stop_loss_pct": 8.0,
+    "thesis": "New short: technology is the cleanest downtrend (-16.7% 1m, -11.6% 3m, 12.6% below its 50-day, 18% off its 3-month high) after the 11-05 AI-regulation crash took the semis index down 12% in a day. Sized small at 8% with an 8% stop because the move is extended and VIX ~28 makes short squeezes likely; replaces the XLY short, which was fighting an uptrend."}
+ ]}

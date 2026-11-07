@@ -1,0 +1,122 @@
+{
+ "name": "Opus 5 trend following",
+ "strategy": "Systematic time-series trend on signals refreshed through the 2026-11-06 close: long where price is above both the 50- and 200-day MAs with positive 3-month momentum (healthcare XLV, staples XLP, dollar UUP), short where both are broken with negative momentum (XLC, GLD, SLV, COPX, URA, EEM, XLK, SMH, IWM, XLI, DBA), vol-scaled, with the rest in cash.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 17,
+ "reassessment_note": "I re-ran the trend rule on Yahoo daily closes through 2026-11-06. Energy broke down: XLE (61.62, -12% on the week) and USO (148.41, -12%) are now below their 50-day MAs. They are still above their 200d with positive 3m momentum, but that leaves them flat under the rule rather than long, so both legs are closed rather than averaged down (XLE was -8.4% from entry). The chip-led 11-05 selloff flipped XLK, SMH, IWM and XLI to short alongside QQQ, and DBA is also short. I added those as small vol-scaled shorts and left out QQQ, FXE and CPER because they duplicate existing exposure. The defensive longs (XLV, XLP, UUP) held through the selloff, so their weights went up. The book moves from net long about 33% to net short about 15%, with gross at 83% and 17% cash. Research note: web search found no dated market wrap for 11-05-2026, only an undated report of oil at a four-week low (Brent about $103.6). This decision rests mainly on the price signals, which is what the mandate calls for.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "thesis": "Healthcare: price 184.80 is above its 50d (173.38) and 200d (159.39), 3m momentum +9.7% and 1m +9.9%, flat on the week while SPY fell. One of the strongest clean uptrends in the universe. Raised from 12% to 14% to absorb part of the freed energy risk budget (22% vol)."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "thesis": "Staples: 90.08 is above its 50d (85.04) and 200d (84.67), 3m +6.0%, 1m +8.0%, up 0.7% in the selloff week. Defensive leadership confirms the trend. Raised from 8% to 10%."
+  },
+  {
+   "symbol": "UUP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 6.0,
+   "thesis": "Dollar: 29.13 is above its 50d (28.69) and 200d (27.97), 3m +3.5%, and it rose in the risk-off week. Only 4.8% realised vol, so it can carry a larger weight for the same risk. Raised from 6% to 10% (FXE's short signal confirms dollar strength, so I'm not adding a duplicate euro leg)."
+  },
+  {
+   "symbol": "XLC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Communication services: 104.79 is below its 50d (109.81) and 200d (112.61), 3m -6.3%. It bounced 4.9% last week, but the signal is intact. Trimmed from 8% to 7% because that bounce erodes the edge."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 10.0,
+   "thesis": "Gold: 372.52 is below its 50d (384.96) and 200d (411.24), 3m -7.5%. It rebounded 4.7% in the selloff, so trimmed from 7% to 6%. The 10% stop caps the damage if a safe-haven reversal turns into a trend change."
+  },
+  {
+   "symbol": "SLV",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 15.0,
+   "thesis": "Silver: 46.87 is well below its 50d (54.21) and 200d (63.28), 3m -21.1%. Volatility is high (44%) and it bounced 5% last week, so the vol-scaled weight is cut from 4% to 3%."
+  },
+  {
+   "symbol": "COPX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 14.0,
+   "thesis": "Copper miners: 71.25 is below both MAs (~83), 3m -20.4%, still falling. Sized to 3% at 43% vol. CPER also signals short, which confirms the copper downtrend."
+  },
+  {
+   "symbol": "URA",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 15.0,
+   "thesis": "Uranium: 32.34 is below its 50d (39.35) and 200d (46.55), 3m -27.1%, 1m -16.1%. The strongest negative momentum in the book. Kept at 3% because vol is 44%."
+  },
+  {
+   "symbol": "EEM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 6,
+   "stop_loss_pct": 9.0,
+   "thesis": "Emerging markets: 59.33 is below its 50d (65.43) and 200d (63.94), 3m -9.0%, 1m -10.2%. The trend is accelerating and a strong dollar is a headwind. Kept at 6%."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "New. Technology: 164.74 is below its 50d (188.45) and 200d (170.20), 3m -11.6%, 1m -16.7%. The signal flipped to short this week as the chip-led selloff broke the 200d. Kept to 5% because vol is 40% and capitulation-style weeks can snap back. A 12% stop limits a squeeze."
+  },
+  {
+   "symbol": "SMH",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 3,
+   "stop_loss_pct": 15.0,
+   "thesis": "New. Semiconductors: 463.96 is far below its 50d (565.64) and 200d (521.76), 3m -18.5%, 1m -23.6%. This leads the market's breakdown. Only 3% because realised vol is 59% and it already fell 11% last week, so rebound risk is high."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 10.0,
+   "thesis": "New. Small caps: 273.67 is below its 50d (282.11) and 200d (279.00), 3m -8.8%. The signal is newly short and confirms broad risk-off beyond megacap tech. 4% at 23% vol."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 5,
+   "stop_loss_pct": 10.0,
+   "thesis": "New. Industrials: 162.67 is below its 50d (169.47) and 200d (173.34), 3m -11.9%. A steady, lower-vol downtrend (20%) that suits a 5% weight."
+  },
+  {
+   "symbol": "DBA",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 4,
+   "stop_loss_pct": 8.0,
+   "thesis": "New. Agriculture: 26.11 is below its 50d (28.23) and 200d (27.39), 3m -6.1%, 1m -7.9%. Only 7% realised vol and uncorrelated with the equity shorts. 4%."
+  }
+ ]
+}

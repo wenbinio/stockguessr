@@ -1,0 +1,48 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum: hold only the leaders still above both their 50- and 200-day averages (LLY, MRNA, TMO, MSFT), exit the cybersecurity legs that broke their 50-day trend, and keep 57% cash while SPY trades below its 50-day average.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 57,
+ "reassessment_note": "Research this week: I pulled one year of Yahoo daily closes and ran web searches. Search found no dated recap of the 11-05 selloff. It did show cyber/software names repeatedly sold on AI-disruption fears through 2026, and that Moderna reported Q3 before the open on 11-06. What changed: my book's own rule was to hold CRWD and OKTA only while above their 50-day trend, and both have now failed it. CRWD closed 216.90 vs its 50-day of 243.78 (-17.5% in 1 month, five straight lower closes from 10-28). OKTA closed 168.69 vs its 50-day of 196.81 (-23.4% in 1 month). CRWD is at -10.3% against a 12% stop. Momentum discipline says cut these before the stops do it at worse prices. What did not change: LLY (1354 vs 50d 1214, 200d 1100), MRNA (254 vs 50d 192, +29% in 1 month, rose ~5% on earnings day), TMO (695 vs 50d 661) and MSFT (531 vs 50d 517) are all above both averages and relative-strength leaders while SPY is -5% in a month. They dipped with the market on 11-05 but did not break trend, so I keep them at unchanged weights to avoid churn. NTRA was already stopped out on 11-06 and is not re-bought, since it sits 18% below its 50-day. SPY is at 735 vs its 50-day of 766, so the regime filter keeps cash high at 57% rather than rotating into new names in a falling tape. I add nothing new this week.",
+ "positions": [
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Largest position because it is the cleanest healthcare momentum leader. It is +42.8% over 6 months, +15.8% in 1 month, and 11.5% above its 50-day average and 23% above its 200-day. It is only ~4.5% off its 1418 high despite the 11-05 market drop. Weight unchanged at 14%. The 10% stop protects against a GLP-1 pricing or news shock."
+  },
+  {
+   "symbol": "MRNA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 40.0,
+   "thesis": "The book's strongest trend: +29% in 1 month, ~32% above its 50-day, near its 258 high, and it closed up ~5% on its 11-06 Q3 earnings day. That says the print did not break the trend. It is extremely extended and volatile (it fell 34% in 23 sessions in July-August), so I keep it at a modest 9% with a wider 15% stop rather than adding to it."
+  },
+  {
+   "symbol": "TMO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "A steady, lower-volatility healthcare leader: +49% over 6 months and +6.6% over 1 month. It trades 5% above its 50-day and 26% above its 200-day, within 2% of its 709 high. It recovered most of its 11-05 drop on 11-06. Held at 10% as ballast alongside the higher-beta MRNA."
+  },
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The only large-cap tech name still in an intact uptrend. It is above its 50-day (531 vs 517) and 200-day (440), +27.8% over 6 months and +1.5% over 1 month while SPY fell 5%. It is held at 10% for exposure to quality tech momentum without the semis that led the selloff. Exit on a trend break via the 10% stop."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}

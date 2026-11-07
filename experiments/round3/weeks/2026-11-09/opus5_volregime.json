@@ -1,0 +1,30 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "De-risked vol-regime book after the oil supply-shock leg broke: a reduced residual long in integrated energy (XLE) against a short in rate-and-margin-sensitive small caps (IWM), 70% cash at 4% while VIX stays above 25.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 70,
+ "reassessment_note": "The commodity side of the book was a bet on a physical oil supply shock, and the tape has rejected it. Daily closes I pulled from Yahoo show USO at 168.83 on 10-30 and 148.41 on 11-06, about -12%. Over the same days XLE went from 70.02 to 61.62 (my leg is -8.37%, about 1.8% above its -10% stop) and COMT from 38.56 to 35.96. Web search found no dated coverage of this week; undated reports tie crude's drop to Iran/Hormuz talks and a weaker OPEC demand outlook, so I treat the cause as plausible but unverified. The price action alone is enough to say the supply-shock premium is unwinding. Meanwhile the IWM short is +1.96%, IWM fell 4.6% on 11-05, and VIX closed at 28.18 and then 25.64, so the high-vol regime this book exists for is here. Changes: drop COMT entirely (a broad commodity basket carrying the same unwinding oil beta); cut XLE from 25% to 12% instead of letting a full-size position ride into the stop, and keep a small stagflation hedge in case talks fail; keep the 18% IWM short. Gross falls from 55% to 30% and cash rises to 70%. Re-entering resets fills, and the frictions (about 2bps per side on these ETFs) are small next to the risk taken off.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Kept at half size, not at zero. XLE has already fallen about 12% from 70 to 61.6 while crude dropped roughly 12% on de-escalation and demand headlines that I could not date. Integrated majors with buybacks are the part of the oil complex best able to absorb lower crude, and if the Iran/Hormuz talks fail, XLE is the fastest way to regain the supply-shock exposure. A 12% weight with an 8% stop caps the damage at about 1% of NAV if crude keeps falling."
+  },
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 18,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 15.0,
+   "thesis": "The working leg. Small caps are the cohort most sensitive to rates and margins, and in a high-vol tape they sell off harder than large caps: IWM fell from 284.02 to 270.98 (-4.6%) on 11-05, when VIX jumped to 28. The leg is +1.96% from 279.14. With VIX still at 25.6, the risk-off regime has not resolved, so I keep the short at 18% to hedge the energy long and give the book negative beta. An 8% stop limits a squeeze, and I take profit at 15%."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

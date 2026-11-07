@@ -1,0 +1,64 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked on the 2026-11-06 tape: long health care, consumer staples and real estate (top three SPDR sectors on blended 1- and 3-month returns) versus short technology, industrials and communication services (bottom three), with hard stops and take-profits and 45% yielding cash.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 45,
+ "reassessment_note": "Researched the week with WebSearch/WebFetch and re-ran the ranking on ETF-level finviz data through the 11-06 close (blended = average of 1-month and 3-month return): XLV +9.8 (1M +9.90, 3M +9.71), XLP +7.0 (+7.98/+6.04), XLRE +3.4 (+7.71/-0.90), XLU +2.5, XLB +1.6, XLY ~+0.3 and XLF ~-0.2 (sector-table proxies), XLE -1.6 (1M -5.55/3M +2.39), XLC -6.4 (-6.50/-6.30), XLI -7.6 (-3.40/-11.88), XLK -14.1 (-16.71/-11.58). Energy fell out of the top three after WTI's ~13% weekly drop (worst since 2020) on Hormuz-deal hopes and a post-midterm read that war support fades; XLE is -12% on the week, 8% below its 20-day and 5% below its 50-day average, so the rule retires it at -8.4% on the leg rather than letting it drift to the -12% stop. Real estate replaces it: XLRE is above its 20/50/200-day averages after the 10-year fell from above 5% to 4.86% over the month. The short side is unchanged: XLK had its worst week since April 2025 (-8.2%) after the 11-05 AI crash, XLI sits below all three moving averages, and XLC, despite leading this week (+4.9%) and running 4.5% against the short, is still bottom-three on the blended measure. Macro backdrop: October payrolls +165K vs ~60K, unemployment 4.1%, December hike ~68-70% priced (down from ~83%), October CPI on 11-10, VIX 25.6. Rate-sensitivity is the obvious risk to the XLRE leg into CPI, so it takes the smallest long weight (10%) and the standard -12% stop. Cash stays 45% at 4% APY. Note: registering this as a replacement book re-bases every stop and take-profit to the 11-09 fill, which also gives the XLC short fresh room; I accept that as the cost of a clean re-rank. Novelty check vs my Round 2 book: same-direction overlap is XLV 6 + XLP 5 = 11 of 55 gross, about 20%, well under 50%.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Top-ranked sector: XLV +9.90% over one month and +9.71% over three, +28.8% over six, above its 20/50/200-day averages (+2.7%/+6.6%/+15.9%), flat on a week when the index fell 2.7%. Health care also screened as a midterm winner. Largest long weight at 12% as the strongest and least rate-sensitive momentum leg."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Second-ranked sector: XLP +7.98% over one month and +6.04% over three, +0.7% on the selloff week, above all three moving averages (+2.3%/+5.9%/+6.4%). Defensive momentum that held through the 11-05 crash; raised from 10% to 12% to match its rank."
+  },
+  {
+   "symbol": "XLRE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New third-ranked long replacing XLE: XLRE +7.71% over one month, -0.90% over three (blended +3.4 vs XLE -1.6 and XLU +2.5), +1.9% this week, above its 20/50/200-day averages (+2.9%/+3.4%/+1.4%) as the 10-year fell from above 5% to 4.86% over the month. Smallest long weight at 10% because a hot October CPI on 11-10 or firmer December-hike pricing would hit this leg first; the -12% stop is the exit if rates reverse."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Bottom-ranked sector: XLK -16.71% over one month and -11.58% over three, -8.2% this week (worst since April 2025) after the 11-05 AI/chip crash, 10% below its 20-day and 13% below its 50-day average. The prior short is +5.4% on the leg; re-registered at 7% with a -10% stop because Friday's +3.8% semiconductor bounce and Nvidia's Nov 17 print are the squeeze risk."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Second-worst sector: XLI -3.40% over one month and -11.88% over three, -2.8% this week, below its 20/50/200-day averages (-2.9%/-4.0%/-6.2%). Defense names also sold on the Democratic sweep. The prior short is +4.2% on the leg; kept at 7% with a -10% stop."
+  },
+  {
+   "symbol": "XLC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Third-worst sector on the blended measure: XLC -6.50% over one month and -6.30% over three, -10.4% over six, still below its 20/50/200-day averages (-1.5%/-4.6%/-6.9%) despite leading the market this week at +4.9%. The leg is 4.5% against me and this is the weakest short, so it stays at the minimum 7% with a -10% stop; it rotates out the first week it leaves the bottom three."
+  }
+ ]
+}

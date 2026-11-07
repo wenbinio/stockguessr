@@ -1,0 +1,45 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Low-beta quality/defensive core anchored in healthcare, with the min-vol sleeve enlarged, the quality sleeve trimmed for its AI-megacap exposure, a halved energy sleeve now that crude's war premium is unwinding, and 30% cash at 4%.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 30,
+ "reassessment_note": "Research this week (web search plus Yahoo price pulls): Brent fell from $117.64 (10-30) to $98.32 (11-06) and WTI from $104 to $90.83, its worst week since 2020. Traders are pricing a US-Iran deal after Democrats swept both chambers in the midterms, though no deal is signed and tanker attacks in Hormuz continue. XLE fell 12% from 70.02 to 61.62, which wiped out its leg gain. The 'physical crude tightness' leg of my thesis is now an event bet on a negotiation, and that is not a defensive position, so I halve it rather than exit, since the deal is unsigned and Brent still has a floor from supply risk. On 11-05 SPY fell 4.4% on AI-capex and regulation fears under a Democratic Congress; the SOX fell 12.3% and VIX hit 28. My healthcare core did its job: XLV ended the week flat at 184.80 (+9.7% on the leg). A Democratic Congress cannot pass drug-pricing law past a Republican veto, and the pricing overhang was already settled through administration deals, so I keep XLV at 38%. QUAL is heavy in megacap tech and semis, which is the epicenter of the selloff, so I move 6 points of it into USMV. The XLE trim goes to cash at 4% while VIX is in the mid-20s. Every leg re-enters at the 11-09 close, so stops reset from that fill.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 38,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare is the defensive anchor. It held flat through a 4.4% S&P down day and a 12% semis crash, and a divided government (Democratic Congress, Republican White House) blocks new drug-pricing legislation, so the policy overhang stays resolved. Kept at 38% as the core; the 12% stop limits damage if pharma reprices on a new policy shock."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "thesis": "Min-vol is the right factor for a VIX-25 tape led by an AI-capex unwind. USMV is +3.9% on its leg while SPY fell, and it underweights the high-beta semis that drove the 11-05 crash. Raised from 10% to 16% with the 6 points taken from QUAL."
+  },
+  {
+   "symbol": "QUAL",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "I keep a smaller quality-factor sleeve for balance-sheet strength and free cash flow. It is cut from 14% to 8% because QUAL's top holdings are megacap tech and semis, which led the post-midterm selloff, and QUAL now trades below its 50- and 100-day averages."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Energy cash flow at Brent $98 is still very strong, Hormuz tanker attacks keep a supply-risk floor, and no US-Iran deal is signed. But after a 16% weekly Brent drop, the war premium is clearly being priced out, and a signed deal could send Brent toward the $80s seen in August. Halved from 16% to 8%, with a tighter 12% stop, so the leg is a cash-flow hedge rather than a geopolitical bet."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

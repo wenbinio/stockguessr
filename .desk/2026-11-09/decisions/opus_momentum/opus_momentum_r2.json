@@ -1,0 +1,23 @@
+{"name": "Opus Momentum",
+ "strategy": "Dual-momentum (12-1 and 6-month both required) long healthcare/biotech, dividend-quality equity, cybersecurity and a shrunken E&P sleeve, against the persistent bottom-ranked losers: uranium, rare-earth miners and China internet; lower gross after the momentum crash.",
+ "entry": "2026-11-09", "capital_usd": 1000,
+ "cash_pct": 29,
+ "reassessment_note": "I re-ranked about 100 ETFs on fresh Yahoo daily closes through 11-06, using 12-1 and 6-month returns. Three things changed. (1) Semis broke the dual-momentum filter: SMH is still +75% on 12-1 but -18% over 6m, -18.5% over 3m and -24% over 1m. That 12-1 strength is stale, so the sleeve goes. (2) Energy momentum is fading and has become a headline binary. Brent fell about 12.5% on the week to roughly $98, per Trading Economics, on reports that Iran sent a nuclear proposal through Qatar, while tanker attacks continue. XOP's 6m return is only +6%, its 1m is -10%, and it is about 2% above its stop, so I cut it from 20% to 10%. (3) On the short side, ITB (6m +4.8%, 1m +12.4%) and TLT (6m -3%, 1m +5%) no longer rank among the losers; they are bouncing against the shorts, so I cover both. Healthcare is the cleanest leader on both lookbacks (XLV 6m +30%, IBB 6m +26%, each about 3% off its high), so it is upsized. SCHD is added as a consistent winner (12-1 +28%, 6m +13%, 1m +6%). Gross falls from 86% to 71% because momentum books are most crash-prone right after a market drawdown. I could not find a reliable dated recap of the 11-05 selloff itself; the oil and Fed reads come from Trading Economics and secondary search results.",
+ "positions": [
+   {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 18, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "This is the top-ranked broad sector on both lookbacks: 12-1 +17%, 6m +30% and 1m +10%. It was flat through the 11-05 selloff and is 2.6% off its 3-month high. The largest long is the most persistent winner with the lowest beta, which suits a book that needs to stop bleeding."},
+   {"symbol": "IBB", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+    "thesis": "Biotech momentum is intact: 12-1 +27%, 6m +26%, 3m +7%, 1m +7%, and it is 3.4% off its high. It has a different factor driver from XLV (M&A and the rate path rather than defensives), so it gets an upsize from 8% to 10% but stays secondary."},
+   {"symbol": "SCHD", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "New leg. Dividend-quality equity passes every lookback (12-1 +28%, 6m +13%, 3m +4%, 1m +6%), and it fell only 1.7% in a week when SPY lost about 4% on 11-05. It replaces part of the semis exposure with a winner whose momentum is current, not stale."},
+   {"symbol": "XOP", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 10.0, "take_profit_pct": 30.0,
+    "thesis": "12-1 is still +52%, but 6m has decayed to +6% and the leg fell 15% this week as Brent dropped about 12.5% on Iran-diplomacy headlines. Brent is still near $98 and tanker attacks continue, so I keep a half-size residual rather than exit at the low. The 10% stop from the new fill caps the downside if a deal reopens Hormuz."},
+   {"symbol": "CIBR", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+    "thesis": "It still passes dual momentum (12-1 +42%, 6m +21%), but 3m (-9.5%) and 1m (-14%) show software being sold alongside chips. I trim it from 8% to 6% and keep it only while the longer lookbacks hold; the stop does the rest."},
+   {"symbol": "URA", "kind": "equity", "side": "short", "weight_pct": 7, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+    "thesis": "This is the most persistent loser in the universe: 12-1 -15.5%, 6m -41%, 3m -27%, 1m -16%, and 33% below its 3-month high, with no bounce. I raise it from 6% to 7% as the core short; it is already +1.8% in our favour."},
+   {"symbol": "REMX", "kind": "equity", "side": "short", "weight_pct": 4, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+    "thesis": "New short. It has the worst 6-month return in the ranked universe (-52%) and is -34.5% over 3m and -15% over 1m. It is kept small at 4% because rare earths are policy-headline driven and can gap up on export-control news."},
+   {"symbol": "KWEB", "kind": "equity", "side": "short", "weight_pct": 6, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "It remains bottom-decile on 12-1 (-35%) and 6m (-16%), but it bounced 9% this week, so I cut it from 8% to 6%. The tighter 10% stop from the new fill means a sustained rotation into China gets cut quickly rather than averaged into."}
+ ]}

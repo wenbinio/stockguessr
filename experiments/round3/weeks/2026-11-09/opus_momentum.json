@@ -1,0 +1,74 @@
+{
+ "name": "Opus Momentum",
+ "strategy": "Net-low-beta real-asset and short-duration carry for an inflationary hiking regime: a short-dated TIPS and floating-rate Treasury anchor, a trimmed energy plus broad-commodity carry sleeve, and dividend-value, min-vol and defensive-pharma risk premia.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "The book is close to flat (-0.7%) and the anchor (VTIP, USFR) plus the pharma legs (GILD +15%, MRK +5%) are working, so this is a targeted two-leg change, not a rewrite. (1) VLUE fell 8.8% on the leg and behaved like a semiconductor proxy (6m +0.6%, 3m -7%, 1m -9%), because its sector-relative value screen holds heavy chip weights. It did not deliver the value premium the mandate wants in a chip-led selloff, so I swap it for SCHD, a cash-flow and dividend-quality value fund that is +6% over 1m and fell only 1.7% this week. (2) The oil-deficit thesis now carries a two-sided headline risk. Brent fell about 12.5% on the week to roughly $98, per Trading Economics, on reports of an Iranian nuclear proposal relayed via Qatar, while Hormuz tanker attacks continue and the US blockade is unresolved. I cut XLE from 14% to 10% and keep COMT at 11%, which is more diversified across commodities and rolls. Cash rises to 14%. The Fed read comes from secondary search results that point to a hawkish Warsh-led committee; I could not confirm the 10-28 decision, so the TIPS/floater anchor is unchanged. Same-direction overlap with the Round 2 book is only SCHD (min(10, 9) = 9%), well under 50%.",
+ "positions": [
+  {
+   "symbol": "VTIP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "thesis": "This is the short-dated TIPS anchor: +0.8% on the leg with negligible drawdown. It pays real carry plus inflation accrual while energy keeps headline CPI firm, and its short duration limits damage if the Fed stays hawkish. It is held unchanged."
+  },
+  {
+   "symbol": "USFR",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13,
+   "thesis": "This floating-rate Treasury sleeve resets with T-bill yields. It is positive every month, gives dry powder at zero duration risk, and pays above the 4% cash rate while policy stays restrictive. It is held unchanged."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "I trim it from 14% to 10%. Integrated majors still sit on strong cash flow with Brent near $98, but the 12.5% weekly drop on Iran-deal hopes makes oil a binary. A smaller position keeps the carry while limiting exposure if a deal reopens Hormuz; the 13% stop resets on the new fill."
+  },
+  {
+   "symbol": "COMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 11,
+   "stop_loss_pct": 14.0,
+   "thesis": "Broad commodity exposure with a dynamic roll is the diversified real-asset sleeve. It held up better than pure energy (1w -6.7% vs XLE -12%) and keeps its 12-1 at +51%. It is held at 11% because it hedges inflation without depending on Hormuz alone."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "thesis": "The min-vol equity premium is +2.3% on the leg and fell only 1.7% this week against SPY's roughly 4% one-day drop on 11-05. It provides equity participation at low beta and is held unchanged."
+  },
+  {
+   "symbol": "SCHD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 12.0,
+   "thesis": "This replaces VLUE as the value sleeve. SCHD screens on cash flow, dividend durability and quality rather than sector-relative multiples, so it avoids the semiconductor weight that sank VLUE. It is +28% on 12-1, +13% on 6m, +6% on 1m, and lost only 1.7% this week."
+  },
+  {
+   "symbol": "MRK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 13.0,
+   "thesis": "This defensive pharma leg is +5% on the leg, +33.5% on 6m and +70% on 12-1, so the trend and cash flow are intact. It is low beta to the chip and energy unwind and is held at 7%."
+  },
+  {
+   "symbol": "GILD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 13.0,
+   "thesis": "This is the best leg in the book (+15.4%), with 3m +26% and 1m +13.5%, and it is 4.4% off its high. The defensive-pharma premium is working, and a winner is not cut. It is held at 6% with the 13% stop as protection."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

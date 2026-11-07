@@ -1,0 +1,52 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Concentrated, unlevered AI-infrastructure conviction in the compute/foundry/networking core (NVDA, ANET, TSM, small MU) plus a small contrarian BTC spot leg, rebuilt at 42% gross after the 2026-11-05 semiconductor capitulation (SOX -12% in a day, Nasdaq into correction), with stops placed beneath each name's 11-05 panic low and 58% cash at 4% while a December Fed hike is ~77% priced.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 58,
+ "reassessment_note": "Four of six legs (NVDA, MU, AMD, TSM) were stopped out at the 2026-11-05 close, leaving ANET, BTC and ~87% cash; that is not a mandate book, so the question is how much AI-infrastructure risk to re-take and where. Research (WebSearch/WebFetch, 2026-11-07): the 11-05 crash was a policy-sentiment event, not an earnings event - after the Democratic midterm sweep, progressive Democrats called for a 'national data center moratorium' and Texas elected an anti-data-center governor (Wells Fargo: 27% of planned US data-center GW is in Texas); SOX fell ~12%, Nasdaq -5.5% into a >10% correction, a PM quoted it as 'the capitulation phase for data-center capex beneficiaries'. Hyperscalers rose the same day, so the market is pricing physical build-out constraints, not a capex cut. A federal moratorium cannot pass a Trump veto and the Texas governor does not take office until January, so I judge the demand hit to chips over a 12-month horizon smaller than the one-day repricing, while accepting that sentiment can stay depressed for weeks. Fundamentals confirmed this week: ANET Q3 revenue +58.5% y/y to $3.66B vs $3.3B guide, FY26 guide raised a fourth time to $13.3B and 2027 guided to 38-40% growth vs ~30% consensus; Lam authorized a $25B buyback. Friday 11-06 saw a partial bounce (SMH +3.6%, TSM +6.3%, ANET +7.3%, MU +5.1%, NVDA +2.8%) but the Nasdaq still logged a fourth straight weekly loss (-3.4%). Macro is hostile to long-duration growth: October payrolls +165k vs ~60k expected, unemployment 4.1%, 10y 4.87%, 30y ~5.25%, December hike odds ~77%. NVDA reports 2026-11-17, a binary catalyst inside this holding period. BTC fell ~6% to ~$75k on ~$1B of leveraged liquidations and spot-ETF outflows, tracking the Nasdaq. Balancing these: this book has now been stopped out five times re-entering the same names after washouts, which says I have repeatedly been early in a downtrend. So I rebuild at 42% gross rather than 63%, drop AMD (chased an 11% Friday bounce), cut MU to 5% (highest beta, -27% realized, Taiwan fab labor dispute), overweight ANET (the only name with a fresh fundamental confirmation), and set equity stops at 12-15% so each sits below the 11-05 panic low with cushion: a full stop-out of every equity leg now costs ~4.5% of NAV instead of ~10%. Cash at 58% earns 4% while the policy picture and NVDA's print resolve. This is a considered, researched replacement of the provisional HOLD.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Core compute leg at 12%: stopped out at 181.60 on 11-05 (-9.3% day), closed 186.64 Friday after a 2.8% bounce, ~40x trailing P/E after the drop. The selloff was regulatory sentiment (data-center moratorium talk) rather than demand data, hyperscalers rose the same day, and earnings on 2026-11-17 are the catalyst that will replace sentiment with numbers. A 12% stop from Monday's fill sits roughly 9% below the 11-05 panic low of 181.46; if that low fails on volume the capitulation thesis is wrong and I exit with ~1.4% of NAV lost."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Networking leg raised from 8% to 12%: Q3 revenue $3.66B (+58.5% y/y) vs $3.3B guide, EPS $1.20 vs $1.08, FY26 guide raised a fourth time to $13.3B, and 2027 guided to 38-40% growth vs ~30% consensus - described by analysts as a historic guidance beat. The stock fell from 178 to 159 on 11-05 purely on sector beta and recovered to 170.80 Friday; it is the one name in the book whose thesis was confirmed by fresh numbers this week. 12% stop from Monday's fill sits below the 158.35 panic low."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Foundry leg at 8%: stopped at 353.10 on 11-05 (-10.8%), rebounded 6.3% to 375.44 Friday. TSM serves global AI demand and is the least exposed of the group to US state-level data-center permitting politics, which was the actual trigger of the selloff, and it carries the lowest multiple of the core names. 12% stop from Monday's fill sits below the 351.19 panic low, so a retest that holds does not knock me out."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 15.0,
+   "thesis": "Memory leg cut to 5% from 16%: MU was the worst leg (-27% realized, -17.5% on 11-05 alone, with a separate labor-dispute report stalling its $4.5B Taiwan fab). Memory pricing is the highest-beta expression of AI capex and the one most sensitive to any slowdown in data-center build-out, so I keep only a token position sized so that a 15% stop costs 0.75% of NAV. Friday close 690 vs 11-05 low 650; the 15% stop from Monday's fill sits well below that low."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 20.0,
+   "thesis": "Contrarian spot leg kept at 5%: BTC fell ~6% to ~$75.7k on 11-05/06 on ~$1B of long liquidations, spot-ETF outflows and reduced CLARITY Act odds, trading as a high-beta Nasdaq proxy. Leverage flushes of this size have historically been better entries than exits, and the leg is small enough that its 20% stop costs 1% of NAV. Re-registered at Monday's fill with a fresh 20% stop."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

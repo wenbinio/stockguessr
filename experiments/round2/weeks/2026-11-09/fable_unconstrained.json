@@ -1,0 +1,54 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Dual-momentum: long the 6-month sector leaders that are not in a sharp 1-month correction - healthcare (XLV plus leader LLY, +27% over 6 months), financials (XLF, +10%) and consumer staples (XLP plus October's leader WMT) - with the whole energy sleeve (XLE, XOP, COP) cut after a -12% week as the Hormuz oil premium unwinds on US-Iran talks; every leg stop-protected, no leverage, 41% cash at 4%.",
+ "entry": "2026-11-09",
+ "capital_usd": 1000,
+ "cash_pct": 41,
+ "reassessment_note": "Researched with WebSearch/WebFetch (daily closes from stockanalysis.com and Yahoo, week summaries, oil and Fed coverage). What changed: (1) The 11-05 crash (S&P -4.36%, Nasdaq -5.5%, VIX to 28) was an AI/chip rout on post-midterm data-center regulation fears, but my damage came from energy: XLE fell 12% on the week (67.25 fill to 61.62), MPC and VLO stopped out, because WTI dropped ~13% to ~$90 and Brent to ~$98-100 as Doha mediation produced a draft 'bridge deal' to reopen Hormuz. JPMorgan puts the October global surplus at 1.4 mb/d, so a reopening removes the premium that drove energy's +40% YTD. (2) Re-ran the rule with 6-month (May 6 to Nov 6) and 1-month (Oct 6 to Nov 6) closes: XLV +27.1%/+10.6%, XLF +10.3%/+5.8%, XLE +8.1%/-3.3%, XLP +6.9%/+10.1%, SPY +0.2%/-5.6%, XLRE -1.7%/+7.1%, XLK -3.1%, XLU -5.6%. Energy is now the only 6-month leader in a sharp 1-month correction, so by my own rule it must go; XLV, XLF and XLP are the qualifying leaders. COP's 1-month is still positive but it is oil beta and fell 7% this week, so the whole sleeve goes rather than a half-measure. (3) Macro: Fed under Warsh hiked in September and held at 3.75-4% in October; the 165k payrolls beat on 11-06 lifted December hike odds to ~77%. Higher-for-longer rates favor financials' NIM and penalize long-duration growth, which fits the rotation. CPI prints 11-10. (4) Lilly's Q3 (10-29) beat big (revenue +39% to $24.4B, FY revenue guide raised to $91-92B); the 4.5% two-day dip was market beta on 11-05. Keeping LLY as the healthcare leader, modestly upsized. (5) Walmart had its best month since 1999 in October (+17% Oct 6 to Nov 6); it is the staples leader, sized small because it trades ~45x forward and reports 11-19. Gross exposure stays near 60% with 41% cash because the VIX is 25.6 and the Nasdaq is in correction. Risk I accept: if Doha talks collapse, oil and XLE snap back and I will have sold the low; the rule says sell corrections anyway, and I would re-enter once 1-month momentum turns.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 20,
+   "stop_loss_pct": 12.0,
+   "thesis": "Top-ranked sector on both windows: +27.1% over 6 months and +10.6% over 1 month, flat this week (-0.04%) while the S&P fell 2.7%. Defensive, rate-insensitive, and driven by Lilly's GLP-1 franchise (~15% of the fund) plus managed-care rate relief. Unchanged 20% anchor with a 12% stop."
+  },
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Healthcare leader: +17% over the past month (1157 to 1354) after a Q3 beat on 10-29 (revenue +39% to $24.4B, non-GAAP EPS $7.48 vs ~$5.60 expected, FY revenue guide raised to $91-92B). The 4.5% dip on 11-05/06 was market beta, not news. Upsized from 5% to 6%; 12% stop, 30% take-profit."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "thesis": "Second-ranked sector by 6-month return (+10.3%) with positive 1-month (+5.8%) and +1.15% this week. A Fed that is hiking (December hike ~77% priced after the 165k payroll beat) supports bank net interest margins, and the sector was among the few that rose through the 11-05 rout. 14% with a 10% stop."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "thesis": "Third qualifying sector: +6.9% over 6 months and +10.1% over 1 month, YTD +18%, best 1-month return of any sector alongside healthcare, and BofA flow data show staples among the few sectors clients bought during the AI selloff. Defensive ballast while the Nasdaq is in correction. 14% with a 10% stop."
+  },
+  {
+   "symbol": "WMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Staples leader: best month since 1999 in October, +17% from 107.20 (Oct 6) to 125.52 (Nov 6), far outpacing XLP. Kept small at 5% because it trades ~45x forward earnings and reports fiscal Q3 on or about 11-19; 12% stop, 25% take-profit."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

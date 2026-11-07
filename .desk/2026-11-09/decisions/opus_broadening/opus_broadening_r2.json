@@ -1,0 +1,21 @@
+{"name": "Opus Broadening",
+ "strategy": "Broadening expressed where it is actually paying: an equal-weight and free-cash-flow value core, an AI-capex industrial sleeve, a regional-bank curve steepener, healthcare as the defensive broadening leader, energy cut to a residual weight now that WTI has broken below $100, a single GLD hedge, and a larger cash buffer.",
+ "entry": "2026-11-09", "capital_usd": 1000,
+ "cash_pct": 28,
+ "reassessment_note": "The one thing that changed is the energy premise. The strategy of record held XLE at full weight only while WTI stayed above $100 on the Hormuz premium. Per oilprice.com's futures page, WTI December traded at $90.83 on 11-06 and was heading for a roughly 12% weekly loss despite Iranian reports of mined and burning tankers. So the market is fading the war premium even as incidents continue, and XLE is -8.4% on the leg, 3.6 points from its stop. I am cutting XLE from 18% to 8% rather than to zero, because Rystad expects Hormuz flows to stay below pre-war levels and $90 crude still supports energy cash flows. The freed 10% goes to cash at 4% APY instead of into another risk leg, because the 11-05 selloff led by chips and energy has not settled. The other legs are all well inside their stops and keep their weights and stop/take-profit settings. Research limits: web search returned no direct coverage of the 11-05 selloff or the 10-year yield on 11-06, and direct price downloads (stooq) were blocked, so the energy call rests on the oilprice.com quote and headlines plus my packet marks.",
+ "positions": [
+   {"symbol": "COWZ", "kind": "equity", "side": "long", "weight_pct": 18, "stop_loss_pct": 11.0,
+    "thesis": "Free-cash-flow value core. At -2.7% it held up far better than the chip-led tape in a week when the index-concentration trade cracked, which is the broadening thesis working. Kept at 18% as the book's largest leg."},
+   {"symbol": "RSP", "kind": "equity", "side": "long", "weight_pct": 16, "stop_loss_pct": 10.0,
+    "thesis": "Equal-weight S&P is the purest broadening expression. A semiconductor-led selloff hurts cap-weight more than equal-weight, and RSP is only -1.8% on the leg. Kept at 16%."},
+   {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 12.0, "take_profit_pct": 28.0,
+    "thesis": "Cut from 18% to 8% because WTI fell to about $91, below the $100 condition that justified full weight, and lost roughly 12% this week despite fresh tanker incidents. A residual 8% stays because Hormuz flows are expected to remain below pre-war levels and $90 oil still means strong energy free cash flow. The stop resets on the new fill."},
+   {"symbol": "XLI", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+    "thesis": "AI-capex industrial sleeve (power, electrical equipment, construction). At -4.1% it absorbed some of the chip selloff but remains well inside its stop, and the capex build-out is a multi-quarter story that one bad week does not refute. Kept at 10%."},
+   {"symbol": "KRE", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 14.0, "take_profit_pct": 30.0,
+    "thesis": "Regional-bank curve steepener. With 10-year yields near 5% and the long end carrying term premium, net-interest margins benefit. At -2.1% the leg is intact. Kept at 8%."},
+   {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "Healthcare as the defensive broadening leader. It was flat to positive (+0.1%) through a -4% SPY day, which is exactly the role it was added for. Kept at 6%."},
+   {"symbol": "GLD", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "Residual precious-metals hedge, up 3.0% on the leg while risk assets sold off, so the hedge is doing its job. Kept at 6% and not enlarged, since its role is insurance, not a core bet."}
+ ]}
