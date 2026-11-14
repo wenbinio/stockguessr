@@ -1,0 +1,28 @@
+{
+  "name": "Opus 5 unrestricted",
+  "strategy": "Hold a reduced 20% long in two pure-play US refiners (MPC, VLO) with wider 15% stops, since diesel cracks remain near $90/bbl while crude falls, and keep 80% cash as the hedge against the fuel-crisis premium deflating on a Hormuz deal.",
+  "entry": "2026-11-16",
+  "capital_usd": 1000,
+  "cash_pct": 80,
+  "reassessment_note": "All three refiner legs were stopped out at -10% (VLO 10-27; MPC and PSX 11-04) during the early-November crude crash (Brent about -16% in the week to 11-06 on deal hopes), so the book has been ~100% cash. The research shows the stop-outs were driven by the crude/deal-premium unwind, not by margin collapse. From Yahoo futures closes on 11-13: ULSD 4.259/gal less WTI 88.56 is a diesel crack of roughly $90/bbl (down from ~$108 on 10-22 but still several times the historical $10-20 range), and the 3-2-1 crack is ~$44/bbl. The diplomatic tail risk also eased: on 11-12 Trump said the US does not need a deal with Iran and is keeping the blockade, and Iran reported tanker explosions in Hormuz. Refiners have bounced 8-10% off their 11-06 lows (MPC 372.74 to 414.65, VLO 346.45 to 379.83) as crude stabilised near $88 WTI and $96 Brent. Lessons from the stop-outs: (1) 10% stops were too tight for names moving about 3% a day, so stops widen to 15%; (2) PSX is dropped as less pure-play (chemicals, midstream); (3) size comes down from 35% to 20%, which caps the stop-out loss near 3% of NAV. Remaining risks are a sudden Hormuz deal, the gasoline crack compressing seasonally (about $21, down from $34), softer US product demand in the latest EIA data, and possible diesel export restrictions (floated in September; I found no November reporting that they were enacted). I could not find November-dated crack-spread reporting, so the crack figures are my own calculation from futures closes.",
+  "positions": [
+    {
+      "symbol": "MPC",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Largest US refiner by capacity, with a heavy diesel/jet export slate on the Gulf Coast. It has the strongest relative rebound of the group (+11% off the 11-06 low to 414.65 on 11-13), and its Q2 R&M margin of $36/bbl shows how much earnings power a ~$90 diesel crack carries. The stock trades at a low single-digit multiple of run-rate earnings even after the selloff. 10% weight with a 15% stop caps the leg's loss at ~1.5% of NAV. Diesel export restrictions are the specific risk to this name, since it is the most export-exposed refiner."
+    },
+    {
+      "symbol": "VLO",
+      "kind": "equity",
+      "side": "long",
+      "weight_pct": 10,
+      "stop_loss_pct": 15.0,
+      "take_profit_pct": 25.0,
+      "thesis": "Most efficient pure-play refiner with a large Gulf Coast complex. Crude falling to about $88 WTI while ULSD holds about $4.26/gal widens its input-cost advantage, and Q3 consensus was around $21 EPS against a share price near $380. The stock is still about 12% below my old 10-19 entry, so this re-entry is at a better price than the leg that stopped. The 10% weight is sized so that a Hormuz-deal shock stopping this leg costs about 1.5% of NAV."
+    }
+  ]
+}
