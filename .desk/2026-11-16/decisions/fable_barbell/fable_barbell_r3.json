@@ -1,1 +1,73 @@
-{"decision":"HOLD","reason":"Provisional hold written before research as outage insurance; rests on the packet alone until replaced."}
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked on the 2026-11-13 tape: long health care and consumer staples (top two SPDR sectors on blended 1- and 3-month returns) plus a split third slot in consumer discretionary and financials (a statistical tie for third), versus short technology, industrials and communication services (bottom three), with hard stops and take-profits and 45% yielding cash.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 45,
+ "reassessment_note": "Researched the week with WebSearch/WebFetch (no dated wrap found for the 11-12/11-13 sessions) and re-ran the ranking myself on Yahoo adjusted daily closes through 11-13 (blended = average of 21-day and 63-day return): XLV +10.0 (1M +6.6, 3M +13.5), XLP +8.2 (+6.5/+9.8), XLY +4.4 (+5.8/+3.0), XLF +4.2 (+6.2/+2.3), XLU +3.1, XLRE +2.7 (+5.7/-0.2), XLB +1.9, XLE +1.0, XLC -2.5 (-3.3/-1.6), XLI -4.3 (+0.5/-9.2), XLK -10.2 (-10.0/-10.4). The change is on the long side: real estate fell from third to sixth. October CPI on 11-10 came in hot (headline +0.4%, core +0.3%, both a tenth above forecast), Waller called for at least 25bp in December, hike odds went to ~99% and the ten-year closed at 5.15%; XLRE was the weakest of my longs (+0.8% on a +2.6% SPY week, -0.6% on the leg) and that rate risk was the reason it carried the smallest weight. The rule retires it. Third place is a tie within 0.2 points between XLY and XLF, so I split the 10% slot 5/5 rather than pretend the ranking separates them; XLF also has the stronger long trend (+9.4% vs its 200-day) and is the natural beneficiary of higher yields, which offsets the rate sensitivity elsewhere in the long book. The short side is unchanged: XLK, XLI and XLC are still the bottom three, although all three bounced 3.4-3.8% this week and XLI's one-month return has turned slightly positive, so XLI is the short most likely to rotate out next. Squeeze risk is real with Nvidia's print pencilled for 11-17 and its board probing the CEO, so shorts stay at 7% each with -10% stops. This book is -4.2% since inception while SPY is +1.7%; the losses came from earlier commodity legs and whipsawed shorts, not from the defensive longs, and I am not raising gross to chase it. Registering re-bases all stops and take-profits to the 11-16 fill. Novelty check vs my Round 2 book (AVGO, BRK-B, XLE, XLV 6, XLP 5, MRK, JNJ): same-direction overlap is XLV 6 + XLP 5 = 11 of 55 gross, 20%, under 50%.",
+ "positions": [
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Top-ranked sector again: XLV +6.6% over 21 days and +13.5% over 63, +2.2% this week through a hot CPI print, 2.8% above its 20-day, 8.0% above its 50-day and 18.6% above its 200-day average. Least rate-sensitive momentum leg, so it keeps the largest long weight at 12%."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Second-ranked: XLP +6.5% over 21 days and +9.8% over 63, +2.5% this week, above its 20/50/200-day averages (+3.2%/+8.0%/+9.8%). Defensive momentum that has kept working through both the 11-05 crash and the 11-10 CPI shock; held at 12% to match its rank."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Nominal third on the blended measure at +4.4 (21-day +5.8%, 63-day +3.0%), above its 20/50/200-day averages (+2.3%/+5.5%/+4.3%), and helped by Brent under $90. Takes half of the slot vacated by XLRE, only 5%, because it is tied with XLF and its megacap weights make it the long most exposed to a bad Nvidia-week tape."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Tied for third at +4.2 blended (21-day +6.2%, 63-day +2.3%), +2.7% this week, 9.4% above its 200-day average. Takes the other half of the XLRE slot at 5%: financials are the one momentum-positive sector that gains from a ~99%-priced December hike and a 5.15% ten-year, the same move that knocked real estate out of the ranking."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Bottom-ranked by a wide margin: XLK -10.0% over 21 days and -10.4% over 63, still 4.7% below its 20-day and 9.0% below its 50-day average after a +3.4% bounce week. Nvidia, its largest drag, is -25% in a month with a board investigation of its CEO. Kept at 7% with a -10% stop because the Nvidia print can squeeze the sector either way."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Second-worst on the blend at -4.3 (63-day -9.2%, 21-day +0.5%), sitting right at its 50-day and 2.3% below its 200-day average after a +3.8% week. The one-month leg has turned flat, so this is the short closest to rotating out; held at the minimum 7% with a -10% stop, and higher rates are a headwind to capex-sensitive industrials."
+  },
+  {
+   "symbol": "XLC",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Third-worst: XLC -3.3% over 21 days and -1.6% over 63, below its 50-day (-0.6%) and 200-day (-2.8%) averages despite a +3.7% week that has it 1.2% against the short. Still clearly negative while eight sectors are positive, so the rule keeps it; 7% with a -10% stop caps the damage if the bounce extends."
+  }
+ ]
+}
