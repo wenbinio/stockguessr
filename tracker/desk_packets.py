@@ -166,9 +166,15 @@ def main() -> int:
             fired = [f for f in bk["recent"] if f["action"] != "OPEN"]
             if fired:
                 L += ["", "**Standing orders that FIRED since the last poll:**"]
+                # A fill dated ON (or before) the live leg's entry date closed a leg of
+                # the PREVIOUS book, which ran through that close. Unlabelled, Haiku
+                # concentrated AI (week 17) read an old-book ASML stop as its new leg's.
+                ent = bk["live"]["entry"]
                 for f in fired:
+                    tag = (" — PREVIOUS book's leg (filled on/before this leg's entry; "
+                           "not a position in your current book)") if f["ts"][:10] <= ent else ""
                     L.append(f"  - {f['ts'][:10]} {f['action']} {f['symbol']} "
-                             f"({f.get('side','long')}) at {f.get('fill_price')}")
+                             f"({f.get('side','long')}) at {f.get('fill_price')}{tag}")
             hist = [f for f in bk["fills"]
                     if f["action"] in ("STOP_LOSS", "TAKE_PROFIT", "LIQUIDATION", "CASH_MERGER")]
             if hist:
