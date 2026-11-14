@@ -1,0 +1,64 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade: currency-hedged Japan, European rearmament and international developed value as the equity core, US insurers collecting a ~5% long end, and the long-end term-premium short rebuilt to a meaningful hedge now that 10-year yields are back above 5%.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "One change: the TLT short goes from 7% to 12%, funded from cash (25% to 20%). All long legs are unchanged in weight, stops and take-profits. Two weeks ago I halved the short specifically because the 10-year had fallen below 5%. That condition has reversed. October CPI printed at +0.4% vs 0.3% expected on 11-10, a December hike is now fully priced, and the 10-year has risen from 4.86% to 5.15% and the 30-year from 5.26% to 5.48% in a single week. TLT is down from 81.96 to 79.38, and the existing short is +2.9%. Rebuilding the short to 12% hedges the main risk to this book's long equity core: a strong-dollar, higher-for-longer shock that hits EFV, VEA and EUAD. I am not going larger because the short carries 3% borrow, and a Democratic midterm sweep produced one sharp yield dip this month. Japan (DXJ +0.9%), international value (EFV +1.6%) and insurers (KIE +1.2%) are working. EUAD (-0.5%) and VEA (-0.2%) are near flat and stay. USDJPY near 160 raises the risk of yen intervention, which I note for DXJ but do not trade on. Research was limited: news search for this week returned few dated items, so the decision rests on fetched Yahoo price and yield series and a handful of 11-03 to 11-10 news reports. Round 3 shares no symbol with the Round 2 book, so same-direction overlap is 0%.",
+ "positions": [
+  {
+   "symbol": "TLT",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Long-end term-premium short rebuilt from 7% to 12%. The condition that justified halving it (10-year below 5%) has reversed: the 10-year is at 5.15% and the 30-year at 5.48% after a hot CPI and full pricing of a December hike, with Fed speakers calling for more. The 10% stop (a TLT rally to roughly 87) covers a disinflation or growth-scare reversal."
+  },
+  {
+   "symbol": "DXJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Currency-hedged Japan, +0.9% on the leg. Corporate-governance-driven buybacks and a weak yen (USDJPY about 159.9) support exporter earnings, and the hedge removes the yen translation drag for a USD book. The main risk is intervention near 160, which is why the 14% stop stays and the size is not raised."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "European aerospace and defense rearmament: multi-year budget commitments are not rate-sensitive. The fund has de-rated from 47.9 in August to 39.7, so the entry is no longer stretched. Flat on the leg (-0.5%); the wide 15% stop reflects its higher volatility."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value (banks, energy and industrials at single-digit multiples), +1.6% on the leg. It is the largest leg because low-multiple value with rate-sensitive financials does relatively well when global yields rise. The bigger TLT short now partly hedges its strong-dollar risk."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "US insurers reinvesting float at a 5%+ long end, +1.2% on the leg. A 30-year at 5.48% directly lifts their investment income, which makes this the long leg that benefits from the same move the TLT short is betting on."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "Broad developed ex-US beta as a small diversifier, flat on the leg (-0.2%). Kept small at 6% because a strong dollar (DXY 103.4, a three-month high) is a headwind to unhedged international exposure."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

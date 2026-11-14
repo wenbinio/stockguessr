@@ -1,0 +1,44 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Defensive risk-premia harvest: long quality/value (Berkshire, UNH), a minimum-volatility factor sleeve via USMV and a small volatility-risk-premium sleeve via SVXY, with the term-premium (TLT) sleeve cut because the Fed is hiking into re-accelerating inflation, and 58% cash at 4%.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 58,
+ "reassessment_note": "One change: the 5% TLT leg goes to cash; the other four legs are kept at unchanged weights. Research this week (web search worked, though I found no dated recap of the 11-09 to 11-13 week itself): October CPI on 11-10 came in hot (+0.4% headline vs +0.3% expected, core +0.3% for a third month), the 2-year jumped to about 4.7%, markets price roughly 85-89% odds of a 25bp hike at the 12-08/09 FOMC with a 50bp tail after Waller's remarks, and the Fed already hiked in September. My TLT thesis was harvesting term premium at ~4.9% long yields, but with policy tightening and inflation re-accelerating that premium is not being paid - the leg is -2.9% in two weeks and heading toward its -8% stop - while cash earns 4% with zero duration, so the carry pickup of under 1 point does not compensate for ~16 years of duration into a hike. The rest of the book is working as designed (BRK-B +6.6%, UNH +1.8%, USMV +1.0%, book +5.7% vs SPY +1.7% with a -2.4% max drawdown) and is the right posture after the 11-05 AI-financing selloff, so I am not paying friction to change it. Zero symbol overlap with my Round 2 book, so the novelty rule is satisfied.",
+ "positions": [
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 15.0,
+   "thesis": "Quality/value premium anchor: a cash-rich conglomerate whose huge T-bill pile earns more as the Fed hikes, with insurance and rail/utility earnings uncorrelated to the AI-capex trade that broke on 11-05; it is my best leg (+6.6% since 11-02) and momentum plus rising short rates both support keeping the full 16%. Adding a wide 15% stop from the new fill purely as disaster insurance on the largest position."
+  },
+  {
+   "symbol": "UNH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 30.0,
+   "thesis": "Value/recovery premium in a de-rated managed-care leader: earnings are driven by medical-cost trend and repricing rather than rates or AI spending, healthcare has been the 6-month sector leader, and the leg is quietly positive (+1.8%); 12% with a wide 30% stop because the name is headline-volatile and I do not want to be shaken out by a single policy headline."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "Minimum-volatility factor sleeve: after a 4%+ single-day S&P drop and with a December hike nearly fully priced, low-beta stocks are where equity risk premium can be collected with the least drawdown; it is +1.0% since entry while tech corrected, and 10% with a 10% stop keeps it a measured factor bet."
+  },
+  {
+   "symbol": "SVXY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 4,
+   "stop_loss_pct": 20.0,
+   "thesis": "Volatility risk premium via the -0.5x short-VIX-futures ETF: implied vol is elevated after the early-November selloff, which is when the premium for selling it is richest, but the hike risk and a likely Nvidia report make another spike plausible, so the sleeve stays at a small 4% with a hard 20% stop - sized so a full stop-out costs the book under 1%."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

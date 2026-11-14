@@ -1,0 +1,60 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Rate-cycle rotation + carry with stop discipline, now without duration: energy as the oil/Hormuz hedge, large-cap value, a modest financials stake, unhedged Japan, S&P-based covered-call income (JEPI) and a healthcare defensive, at 59% gross with 41% cash at 4% into a December Fed hike that hot CPI has made more likely.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 41,
+ "reassessment_note": "Research this week (web search worked; dated coverage found through 11-11, none for 11-12 or 11-13, so the last two sessions rest on my packet marks). One change: I am closing the 8% TLT leg to cash. Its thesis was a safe-haven bid for long Treasuries, and this week contradicted it: CPI came in hot, the 2-year yield jumped about 20bp in its biggest daily rise since April, the 10-year pushed to about 4.98-5.0%, a Fed official floated a double-size hike in December, and yields rose on days when stocks rose and oil fell, so the leg neither hedged nor carried. It is down 2.9% against a 7% stop and cash at 4% is now the better defensive asset in a hiking cycle. Everything else is held at the same weight: the book is +6.4% with a 2.45% max drawdown, the value/financials/healthcare/JEPI legs are all in profit and suit a market rotating away from megacap AI, and XLE (-3.4% as Brent eased to ~$91) remains the hedge against the oil-driven inflation that is causing the hikes. Stops keep the same percentages, re-based to the 11-16 fill. No overlap with my Round 2 book, so the novelty rule is met.",
+ "positions": [
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Energy is the book's hedge against the thing hurting everything else: oil-driven inflation pulling the Fed back to hikes. Brent eased to about $91.5 on 11-10 and the leg is -3.4%, but oil turned up again on 11-11 and the supply risk has not gone away. Held at 12%, not added to, because falling crude was this week's actual direction."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Large-cap value is the core beneficiary of money leaving megacap AI after the 11-05 selloff and Nvidia's slide; +1.5% since the 11-02 fill through a week when the Nasdaq went into correction. Low Nvidia exposure matters with its print on 11-17. Held at 12%."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "thesis": "Higher short rates support net interest income and the leg is +2%, but a 20bp jump in the 2-year and talk of a 50bp hike also raise credit and funding stress risk, so it stays at the reduced 7% with the tighter 10% stop."
+  },
+  {
+   "symbol": "EWJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "Unhedged Japan as a non-US diversifier, -1.2% since entry. A hiking Fed supports the dollar against the yen, which is a headwind for an unhedged holding, so I keep it at the already-trimmed 8% and do not add; I found no new Japan-specific news this week to change the view either way."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "thesis": "S&P-based covered-call income earns more when volatility is elevated, as it is after a 4.4% one-day S&P drop and ahead of Nvidia earnings, and its defensive stock tilt has held up (+1%). Held at 10% as the carry sleeve alongside cash."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "thesis": "Healthcare is the defensive leg and the best performer in the book since the 11-02 fill (+2.3%), with no dependence on AI capex or the rate path. Held at 10%; re-basing the 12% stop trails the exit up to about 166."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

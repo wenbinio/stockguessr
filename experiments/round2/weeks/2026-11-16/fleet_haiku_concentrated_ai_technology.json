@@ -1,0 +1,54 @@
+{
+ "name": "Haiku concentrated AI/technology",
+ "strategy": "H2 2026 rotation, trimmed: enterprise AI platforms (ADBE/CRM) and cloud services (MSFT/AMZN) at scale, core chip exposure (NVDA), SNOW, with the leveraged SOXL leg exited to cash and roughly one-third of the book in cash for rebalancing.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 33.6,
+ "reassessment_note": "Searches did not return any November 13 or November 16 price or news coverage for these names, so this is a judgment on the packet plus sector context, not a full read of the tape. Sector context found: chip stocks sold off hard in October and early November on anti-AI sentiment, with a sharp equipment-stock rally on Nov 9. SOXL is a 3x leveraged semiconductor ETF down 49% on its leg, which is exactly the instrument that compounds the sector drawdown and decays in choppy tape. Exiting it removes the leverage while keeping the underlying exposures through NVDA and the software/cloud legs. The other six legs are unchanged because their theses were not contradicted by anything I could find, and churning them into a choppy, news-thin week would cost frictions without a clear edge.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 13.28,
+   "thesis": "Core AI accelerator exposure. Leg is -18.8% from entry, but the thesis is the AI capex cycle, and the recent drawdown is sentiment-driven rather than a demonstrated demand break. Kept at the same size: not adding into a falling knife without fresh data, and not cutting a core holding on a week of thin information."
+  },
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12.45,
+   "thesis": "Cloud and enterprise AI distribution via Azure and Copilot. Leg is +12.9% and the thesis is intact. Held at target weight."
+  },
+  {
+   "symbol": "ADBE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14.94,
+   "thesis": "Enterprise creative and document AI at a depressed multiple after the 2026 software selloff. Leg is -2.9%. Thesis is a valuation-driven rebound if AI monetisation holds up; the risk is continued per-seat pressure from AI agents. Held at target weight, which is the largest software bet, so this is a key risk to watch."
+  },
+  {
+   "symbol": "SNOW",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9.13,
+   "thesis": "Data cloud with AI workload growth. Leg is -0.8%, flat around entry. Thesis is consumption growth from AI accounts; held at target weight."
+  },
+  {
+   "symbol": "AMZN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6.64,
+   "thesis": "AWS AI infrastructure exposure plus retail margin. Leg is -1.8%. Held at target weight as a diversifier from the chip names."
+  },
+  {
+   "symbol": "CRM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9.96,
+   "thesis": "Enterprise CRM with AI agent layer, at a low forward multiple after the software selloff. Leg is +18.6%, so the thesis is working. Held at target weight."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

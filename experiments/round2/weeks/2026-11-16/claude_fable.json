@@ -1,0 +1,52 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Concentrated, unlevered AI-infrastructure conviction tilted toward networking/foundry/memory (ANET, TSM, MU) with NVDA halved into its 2026-11-17 earnings print and board governance probe, plus a small BTC spot leg, at 36% gross with 64% cash at 4% while a December Fed hike is priced after a hot CPI.",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 64,
+ "reassessment_note": "Research this week (web search worked; I found dated coverage through 11-11 plus a 11-11 NVDA earnings preview, but no market wrap for 11-12 or 11-13, so the last two sessions rest on my packet marks). What changed: (1) NVDA reports Q3 FY27 on Tuesday 2026-11-17 after the close, one session after this entry, with options pricing about a +/-10.6% move against a 10-year average of 7.8%; (2) Reuters reported on 11-08/09 that Nvidia's board opened an independent investigation involving the CEO and an alleged Chinese-intelligence contact, a risk to leadership and export approvals that an earnings beat does not clear; (3) NVDA is my only losing equity leg (-8.9%) and sits about 3.5% above my close-evaluated stop, so the stop offers no protection against an overnight earnings gap; (4) the rest of the AI complex rebounded without it (AMD, AVGO, MU, MRVL, ARM led on 11-10/11-11) and my ANET, TSM and MU legs are all in profit; (5) CPI came in hot, the 2-year yield jumped ~20bp and a Fed official floated a double-size December hike. I have no edge on the print itself, so I am halving NVDA from 12% to 6% rather than exiting: the mandate is AI-infrastructure conviction and a good Q4 guide could squeeze a stock down ~30% from its October high, but a binary event with a governance overhang should not be my joint-largest position. The freed 6% goes to cash, not to another chip name, because the macro got more hostile this week. All other weights are unchanged; stops are re-based to the 11-16 fill, which trails them up on the three winners, and I tightened the BTC stop from 20% to 12% so its exit level stays near $60k instead of loosening after a 9% loss.",
+ "positions": [
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 14.0,
+   "thesis": "Kept at half size through the 11-17 print. Guidance was $108B +/-2% with consensus ~$108.8B and EPS ~$2.47 (~+90% y/y); the reaction hinges on the Q4 guide. The stock is ~30% off its 10-06 high of 243 and below its 200-day (~202), so a clean beat-and-raise has room, but the board probe into the CEO and the circular-financing worry are real discount factors and the technical trend is broken (support ~153, then ~129). At 6% a 10.6% implied move is about 0.65% of NAV either way, a size I can hold through a coin flip. The 14% stop sits outside the implied move so only a genuinely bad reaction closes the leg."
+  },
+  {
+   "symbol": "ANET",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "thesis": "Largest leg and best-behaved since the 11-05 capitulation (+6% from my 11-09 fill while NVDA fell). AI networking spend follows hyperscaler capex without carrying NVDA's single-name governance or China-export risk, and its earnings are already out of the way. Held at 12%; re-basing the 12% stop to the 11-16 fill lifts the exit level to roughly 174 from 164."
+  },
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 12.0,
+   "thesis": "The foundry is paid whichever accelerator vendor wins, which matters in a week when AMD and Broadcom rallied as NVDA fell. Up 2.6% from my fill and holding above the 11-05 panic low. Kept at 8% rather than raised because it will still trade in sympathy with the NVDA print on 11-18 and a hawkish Fed weighs on high-multiple semis."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 15.0,
+   "thesis": "Memory led the 11-11 rebound (Micron among the day's top gainers) and the leg is +6.2%. It is the highest-beta name in the book, so it stays a small 5% position with a wider 15% stop sized to its volatility; re-basing trails the stop up to roughly 660 from 623."
+  },
+  {
+   "symbol": "BTC-USD",
+   "kind": "crypto",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "thesis": "Small contrarian spot leg, down 9.3% as BTC slid from ~$74k on 11-11 to ~$68k at my 11-13 mark while rate-hike odds rose. I am not adding into a rising-yield tape, and selling 5% after the drop saves little, so it stays at 5%. The stop is cut to 12% from the new fill so the exit stays near $60k, about where the original stop was, rather than being reset lower."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

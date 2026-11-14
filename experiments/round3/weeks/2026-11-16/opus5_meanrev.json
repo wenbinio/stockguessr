@@ -1,0 +1,48 @@
+{
+ "name": "Opus 5 mean reversion",
+ "strategy": "Concentrated long book of oversold US large-cap quality whose drawdown cause is macro or sector-wide rather than company-specific: CSCO raised to the largest leg after it sold off on AI/semis tape volatility despite a clean beat-and-raise, GD, SNPS and HON held at existing weights, LMT left in cash after its stop, with 45% cash at 4% (including the stopped LMT proceeds).",
+ "entry": "2026-11-16",
+ "capital_usd": 1000,
+ "cash_pct": 45,
+ "reassessment_note": "The one new fact this week is Cisco's fiscal Q1 FY27 report on Nov 12. Per Stocktwits and Morningstar coverage it was a clean beat-and-raise: revenue about $18.5B (+24%) vs about $18.14B expected, adjusted EPS $1.40 vs $1.33, FY27 revenue guide raised to $74.8-75.8B from $72.2-73.4B, FY27 non-GAAP EPS guide raised to $5.47-5.53 from $5.05-5.11, and the hyperscaler AI infrastructure target raised to $9B from $7.5B. Yet the 11-13 mark is $95.64, down about 6% from my $101.61 entry, and coverage blames Nvidia-linked AI-complex volatility rather than anything in Cisco's numbers. That is exactly the drawdown this mandate buys (a sector/macro cause, with company fundamentals improving), so I am adding 6 points of the 51% effective cash (43% registered plus the 8% LMT proceeds) to CSCO (11% to 17%). The one company-specific blemish is adjusted gross margin of 65.6% vs 68.1% a year earlier. That is why this is an add, not an all-in bet. GD is at -2.7% after a Q3 beat with raised guidance and record backlog, and consensus targets are about $400; the reversion is not complete, so it holds. SNPS is at -2.3%, reports Dec 8 after a raised guide, and holds. HON is flat and holds. LMT stopped out on Nov 5 at -10.4%, and I am not re-buying it without evidence that the decline was sector-driven rather than company-specific. Caveats: I could not get a working price feed (stooq was blocked), so marks are from the packet. I could not confirm the reported Nvidia CEO news that coverage cites as the cause of the selling. Resubmitting resets every stop and take-profit against the 11-16 fill. Because of that, the CSCO stop is set wider at 12%. Churn is limited to the 6-point CSCO add.",
+ "positions": [
+  {
+   "symbol": "CSCO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Cisco beat Q1 FY27 on revenue and EPS and raised its FY27 EPS guide by about 8% at the midpoint, to $5.47-5.53. It also raised its hyperscaler AI networking target to $9B. Even so, the stock marks about 6% below my entry at $95.64, roughly 17.5x the new EPS guide midpoint, and Morningstar raised fair value to $120. The selling is attributed to AI-complex volatility, not to Cisco's own results, which is the mandate's ideal setup. At 17% it is the largest leg because it has the cleanest fundamental catalyst against the weakest price. The 12% stop (about $84 if it fills near $95.6) would mean the market is rejecting the raised guide, and I would accept that verdict. The 18% take-profit is near $113, about where the stock traded before the AI-complex selling and short of fair-value estimates."
+  },
+  {
+   "symbol": "GD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 15.0,
+   "thesis": "GD raised its 2026 guidance (EPS $17.2-17.3, revenue $56.5-56.8B) on a Q3 beat with a record order quarter and backlog. It still marks $363.46, about 2.7% below entry and about 9% below the roughly $400 52-week high, while consensus targets are about $400-407. The weakness looks like defense-sector rotation, not a GD problem, and the orderly January 2027 CEO handover to Danny Deep is not a thesis break. I hold at the same 16% weight; the reversion target is unchanged."
+  },
+  {
+   "symbol": "SNPS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 22.0,
+   "thesis": "Synopsys beat fiscal Q3 (revenue +42% with Ansys, non-GAAP EPS $3.91) and raised FY26 revenue guidance to $9.69-9.74B. The shares still mark $455.20, down about 8% year to date and about 30% below the 52-week high, with the drawdown tied to the software/EDA multiple and Ansys-related debt rather than broken demand. The next catalyst is FQ4 earnings on Dec 8, with a guide of $4.10-4.16 EPS. I hold at 12%; the 15% stop gives room for event volatility."
+  },
+  {
+   "symbol": "HON",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 11.0,
+   "take_profit_pct": 16.0,
+   "thesis": "After the aerospace spin, Honeywell is a pure automation company whose de-rating has come from spin-related selling and the industrial-automation cycle rather than a company-specific miss. It marks flat to my entry ($222.46 vs $223.07). I found no new adverse news, so I hold at 10% while that discount works off; this is the smallest leg because it lacks a near-term catalyst."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}
