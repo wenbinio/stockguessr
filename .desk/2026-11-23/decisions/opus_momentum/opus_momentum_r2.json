@@ -1,1 +1,23 @@
-{"decision":"HOLD","reason":"Provisional hold written before research as outage insurance; to be replaced."}
+{"name": "Opus Momentum",
+ "strategy": "Dual-momentum (12-1 and 6-month both required) long healthcare/biotech, dividend-quality equity and cybersecurity, against the persistent bottom-ranked losers: uranium, rare-earth miners, China internet and solar; E&P sleeve exited after failing the 6-month filter; low gross in a falling tape.",
+ "entry": "2026-11-23", "capital_usd": 1000,
+ "cash_pct": 35,
+ "reassessment_note": "Researched via Yahoo daily closes (1y) for the book and ~50 ETFs/stocks plus news searches: SPY fell 8.6% on the week amid an AI/tech rout and a Fed hiking cycle (first hike since 2023 in September, more signalled); XLK -12.5% and SMH -17.8% on the week. Re-ranking on 12-1 and 6-month returns: XOP's 6-month return has turned negative (-2.3%, -14.6% in a month), so it no longer passes the dual-momentum rule and is exited to cash rather than kept on hope. Healthcare (XLV 6m +18%, IBB +18%), SCHD (6m +3.4%, 12-1 +31%) and CIBR (6m +8.5%, 12-1 +44%) still pass both filters and stay at their sizes. The short sleeve is working (URA/REMX +22%, KWEB +15%) and all three remain bottom-ranked on both lookbacks, so they stay; TAN (6m -48.5%, 12-1 -10%, -18% on the week) joins at a small 4% weight. Gross falls from 71% to 65%; cash 35% earns 4% while the market is in a drawdown. Shorts carry 12% stops because a snapback rally after five down days is a real risk.",
+ "positions": [
+  {"symbol": "XLV", "kind": "equity", "side": "long", "weight_pct": 18, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+   "thesis": "Healthcare is still one of the top sectors on both lookbacks (6m +18.2%, 12-1 +17.3%), and its -6.1% week was smaller than SPY's -8.6%. Defensive earnings hold up in a hiking regime. It stays the largest long at 18%."},
+  {"symbol": "IBB", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+   "thesis": "Large-cap biotech passes both filters (6m +18.2%, 12-1 +25.1%) with leadership from AMGN/GILD-type names. It has more beta than XLV, so it is held at 10% with a wider 12% stop."},
+  {"symbol": "SCHD", "kind": "equity", "side": "long", "weight_pct": 10, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+   "thesis": "Dividend quality still passes, just (6m +3.4%, 12-1 +30.6%), and it fell less than the cap-weighted index. If its 6-month return turns negative next week, it is the next leg cut. It stays at 10% with a 10% stop."},
+  {"symbol": "CIBR", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 12.0, "take_profit_pct": 30.0,
+   "thesis": "Cybersecurity passes both filters (6m +8.5%, 12-1 +43.7%) and fell only 3.8% on the week while software (IGV -9.4%) sold off, which shows relative strength. Its -11% month keeps it at a small 6% weight."},
+  {"symbol": "URA", "kind": "equity", "side": "short", "weight_pct": 7, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+   "thesis": "Uranium is bottom-ranked on every lookback (6m -45.3%, 3m -41.4%, 12-1 -18.0%, week -15.9%). The negative trend is intact, so the short stays at 7% with a 12% stop against a squeeze."},
+  {"symbol": "REMX", "kind": "equity", "side": "short", "weight_pct": 4, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+   "thesis": "Rare-earth miners have the worst 6-month return in my universe (-56.6%; 12-1 -25.2%, week -15.9%). The short stays at a small 4% because the price falls on headline-driven policy news make it squeeze-prone."},
+  {"symbol": "KWEB", "kind": "equity", "side": "short", "weight_pct": 6, "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+   "thesis": "China internet is negative on both filters (6m -23.0%, 12-1 -36.3%) and is still making lower lows (-9.6% week). It is a persistent loser and the short stays at 6%."},
+  {"symbol": "TAN", "kind": "equity", "side": "short", "weight_pct": 4, "stop_loss_pct": 12.0, "take_profit_pct": 25.0,
+   "thesis": "This is a new short. Solar now ranks among the worst on both lookbacks (6m -48.5%, 12-1 -10.0%, -18.4% on the week), and higher rates hurt its financing-heavy model. It starts at 4% with a 12% stop to respect snapback risk after a capitulation-like week."}
+ ]}

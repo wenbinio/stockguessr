@@ -1,1 +1,25 @@
-{"decision":"HOLD","reason":"Provisional hold written before research as outage insurance; to be replaced."}
+{"name": "Opus Momentum",
+ "strategy": "Net-low-beta real-asset and short-duration carry for an inflationary hiking regime: a short-dated TIPS and floating-rate Treasury anchor, a further-trimmed energy plus broad-commodity carry sleeve, and dividend-value, min-vol, consumer-staples and defensive-pharma risk premia.",
+ "entry": "2026-11-23", "capital_usd": 1000,
+ "cash_pct": 14,
+ "reassessment_note": "Researched via Yahoo daily closes (1y) and news searches. The Fed is in a hiking cycle that began in September, while equities sold off hard (SPY -8.6% on the week, an AI/tech rout). The real-asset sleeve is the weak spot: commodities fell sharply over the month (COMT -12.4%, DBC -12.7%, XLE -10.4%, gold -24% over 3 months), and COMT's 6-month return is now negative. That suggests the market is pricing a growth scare more than the inflation leg of my thesis. I cut COMT from 11% to 6% and XLE from 10% to 7%, and redeploy that 8% into XLP, which fell only 2.0% on the week and is positive on 1, 3 and 6 months (6m +6.7%). The TIPS/USFR anchor (+0.1% to +0.5% on the week) is doing its job and stays at 33%. USMV, SCHD, MRK and GILD stay at their sizes. MRK (-10%) is the laggard and keeps a 13% stop, now measured from the new entry. Cash stays at 14%. The only overlap with the Round 2 book is SCHD (9% vs 10%), far below the 50% novelty limit.",
+ "positions": [
+  {"symbol": "VTIP", "kind": "equity", "side": "long", "weight_pct": 20,
+   "thesis": "Short-dated TIPS: an inflation-linked anchor with almost no duration. It was +0.5% in a week when SPY fell 8.6%. It stays the core at 20% with no stop, because it is the ballast."},
+  {"symbol": "USFR", "kind": "equity", "side": "long", "weight_pct": 13,
+   "thesis": "Floating-rate Treasuries: the coupon resets higher with each Fed hike, it has essentially zero drawdown, and it is pure carry in a hiking regime. It stays at 13% with no stop."},
+  {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 7, "stop_loss_pct": 13.0, "take_profit_pct": 25.0,
+   "thesis": "Energy is still the real-asset carry leg with a strong 12-1 return (+51%), but it fell 10.4% over the month as the growth scare hit oil. I trim it from 10% to 7% and keep a 13% stop."},
+  {"symbol": "COMT", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 14.0,
+   "thesis": "Broad commodity roll-yield carry is the inflation hedge, but the 1-month (-12.4%) and 6-month (-3.4%) trends have turned against it. I nearly halve it from 11% to 6%. It is still held because a hiking regime driven by sticky inflation is the book's core scenario."},
+  {"symbol": "USMV", "kind": "equity", "side": "long", "weight_pct": 10,
+   "thesis": "The min-vol equity premium. It fell 5.7% on the week against SPY's -8.6%, which shows its lower-beta profile working. It stays at 10%."},
+  {"symbol": "SCHD", "kind": "equity", "side": "long", "weight_pct": 9, "stop_loss_pct": 12.0,
+   "thesis": "Dividend-value cash flows with low exposure to the long-duration tech names driving the selloff (12-1 +30.6%). It stays at 9% with a 12% stop."},
+  {"symbol": "XLP", "kind": "equity", "side": "long", "weight_pct": 8, "stop_loss_pct": 10.0,
+   "thesis": "New leg. Consumer staples are the strongest defensive sector on recent tape (week -2.0%, 1m +0.5%, 6m +6.7%). Staples have pricing power and low beta, so they keep the book net-low-beta as commodity carry weakens. It is funded from the COMT/XLE trims and gets a 10% stop."},
+  {"symbol": "MRK", "kind": "equity", "side": "long", "weight_pct": 7, "stop_loss_pct": 13.0,
+   "thesis": "Defensive pharma at a value multiple, with a strong 12-1 return (+50.6%). It fell 9.5% on the week, in line with the market, so it is held at 7% and not added to. The 13% stop from the new entry caps further damage."},
+  {"symbol": "GILD", "kind": "equity", "side": "long", "weight_pct": 6, "stop_loss_pct": 13.0,
+   "thesis": "Defensive biopharma with genuine relative strength: -1.0% on the week, 1m +5.9%, 6m +23.9%. Steady HIV franchise cash flows make it a low-beta pharma premium. It stays at 6%."}
+ ]}
