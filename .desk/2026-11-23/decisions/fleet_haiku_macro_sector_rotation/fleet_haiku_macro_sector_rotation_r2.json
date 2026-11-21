@@ -1,0 +1,55 @@
+{
+ "name": "Haiku macro/sector rotation",
+ "strategy": "Rate-sensitive financials and energy with a quality/low-volatility defensive core, reduced equity beta into a five-session selloff, and 20% cash.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 20,
+ "reassessment_note": "Since the 11-16 rebalance SPY fell about 8.6% in a week, with AI and semiconductor leaders leading the drop and 10-year Treasury yields near 4.8 to 5.1 percent. The book's SPY leg was my main drawdown source (-9.55 percent on the leg) and a broad-index bet into a trend that has not turned. I cut SPY from 22 to 10 percent and keep it as a small residual market exposure. I raise cash to 20 percent because volatility is elevated and I do not yet see a turn. Financials (XLF) keep the largest weight because they benefit from a steeper or higher-yield curve and are already positive. XLV and SPLV are the working defensives, so I raise XLV from 12 to 15 percent and SPLV from 9 to 15 percent to replace part of the SPY cut. XLE is held at 15 percent for energy-led inflation support. I exit the BTC thesis for now: the stop-loss fired on 11-14 and crypto spot carries 35 bps per side, so I do not re-enter.",
+ "positions": [
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Financials lead when yields stay elevated and the curve steepens. XLF is the book's best-performing leg (+2.2 percent). I keep it as the largest weight, but I cap it at 25 percent because bank credit risk rises if the selloff deepens."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Energy gives inflation and commodity-cycle support when risk assets fall on rate fears. It is slightly negative (-1.6 percent), so I hold at the same size with a 12 percent stop rather than add."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Healthcare is a non-cyclical defensive that has been working (+5.2 percent) during the tech and AI drawdown. I raise it from 12 to 15 percent because it is the book's clearest working defensive, with a 10 percent stop limiting the downside if the rotation reverses."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 28.0,
+   "thesis": "Low-volatility S&P 500 exposure has held up best within the equity sleeve (+8 percent) and lowers beta while keeping some market participation. I raise it from 9 to 15 percent to replace part of the cut SPY exposure with a lower-beta holding."
+  },
+  {
+   "symbol": "SPY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Broad-market residual exposure, cut from 22 to 10 percent. The leg is -9.55 percent and sits 15 percent above its stop-loss at 648. I keep a small position so the book participates if the market recovers, and the stop limits further downside."
+  }
+ ]
+}

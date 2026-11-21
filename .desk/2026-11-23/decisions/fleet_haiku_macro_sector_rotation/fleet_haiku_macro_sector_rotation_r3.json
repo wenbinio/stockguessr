@@ -1,0 +1,55 @@
+{
+ "name": "Haiku macro/sector rotation",
+ "strategy": "Low-volatility, staples and utilities defensives, a gold hedge and a short semiconductor position, with 25% cash.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 25,
+ "reassessment_note": "The Round 3 book is up only 1.02 percent but has real exposure to the rate and rotation themes that drove the week. I want Round 3 to differ from Round 2, so I drop financials, energy, healthcare and the S&P 500 and rotate to non-overlapping defensives. USMV replaces SPLV for minimum-volatility exposure. XLU and XLP add rate-tolerant defensive sectors, though utilities are rate-sensitive, so I keep the weight modest. GLD is a hedge against the Treasury-yield and risk-off mix. A short SOXX position at 10 percent expresses the semiconductor breakdown, which accounted for many of the week's stop-outs. I hold 25 percent cash because the 10-year is near 5 percent and volatility is high. Gross overlap with Round 2 is zero: no shared symbols.",
+ "positions": [
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 25,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Minimum-volatility US equities hold up in drawdowns and tilt toward low-beta, quality names. It is the book's core defensive at 25 percent with a tight 8 percent stop."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Utilities are a defensive with stable cash flows. They are rate-sensitive, so I keep the weight at 15 percent and do not go larger while the 10-year is near 5 percent."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Consumer staples are a non-cyclical defensive with low beta. They diversify away from the rate-sensitive utilities and the AI-led drawdown."
+  },
+  {
+   "symbol": "GLD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Gold is a hedge against real-yield stress and a flight to safety when equities fall. I size it at 10 percent with a 12 percent stop because it can whipsaw."
+  },
+  {
+   "symbol": "SOXX",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Semiconductors were the largest source of stop-losses this week (TSM, NVDA, ASML, AMAT, MU). I short the sector ETF at 10 percent to express the breakdown, with a 12 percent stop against a sharp reversal."
+  }
+ ]
+}

@@ -1,1 +1,22 @@
-{"decision": "HOLD", "reason": "Provisional insurance file written before research. Round 2 book is -5.3% with ADBE, CRM, SQ, BTC, ETH, MSTR; holding pending research on the 11-20 selloff and whether the thesis still holds."}
+{"name": "Haiku contrarian turnarounds",
+ "strategy": "Contrarian recovery book holding beaten-down AI-disrupted SaaS (ADBE, CRM, SQ) and deeply drawn-down crypto (BTC, ETH) at unchanged weights, with 16% cash and new stop-losses added to cap further downside.",
+ "entry": "2026-11-23", "capital_usd": 1000,
+ "cash_pct": 16,
+ "reassessment_note": "The 2H rebound thesis has not yet shown up in the tape: software stocks kept falling on 11-17 (CRM -9.5% with no company news, 57 of 62 large application-software peers down that day) and BTC fell with risk assets on 11-20. I am not adding exposure into that. I am also not cutting into the selloff, because I found no company-specific break in ADBE, CRM, SQ, BTC or ETH and selling after a sector-wide drop locks in losses. Instead I keep the existing weights and attach stops so that a further leg down exits the position rather than compounding the -23% drawdown. I dropped MSTR, which carried 0% weight and was dead weight in the packet. Research was limited to a handful of searches, and some results were undated or from prior years, so I am treating the packet marks as the authority.",
+ "positions": [
+   {"symbol": "ADBE", "kind": "equity", "side": "long", "weight_pct": 25,
+    "stop_loss_pct": 25.0, "take_profit_pct": 50.0,
+    "thesis": "Adobe is trading near multi-year lows after a long de-rating on AI-disruption fears from newer, smaller competitors, and I have no company-specific news showing its franchise has broken. Holding at 25% keeps the rebound option, with a 25% stop from the 11-23 entry to cap a further leg down."},
+   {"symbol": "CRM", "kind": "equity", "side": "long", "weight_pct": 25,
+    "stop_loss_pct": 25.0, "take_profit_pct": 50.0,
+    "thesis": "Salesforce fell 9.5% on 11-17 with no company announcement while 57 of 62 peers also fell, so the move looks sector-driven rather than company-specific. The position stays at 25% as the largest contrarian bet, with a 25% stop because the sector trend is still negative."},
+   {"symbol": "SQ", "kind": "equity", "side": "long", "weight_pct": 13,
+    "stop_loss_pct": 25.0, "take_profit_pct": 50.0,
+    "thesis": "Block is a fintech that has fallen with the broader growth and fintech complex; the position stays at a smaller 13% weight, with a 25% stop to limit the downside of a continued fintech drawdown."},
+   {"symbol": "BTC-USD", "kind": "crypto", "side": "long", "weight_pct": 12,
+    "stop_loss_pct": 20.0, "take_profit_pct": 60.0,
+    "thesis": "BTC fell about 5% on 11-20 with risk assets and is well below the entry fill, but the drawdown is consistent with a deep crypto cycle low rather than a broken thesis. I keep 12% with a 20% stop because the 11-20 selloff showed risk-off correlation and a further break would argue for exit."},
+   {"symbol": "ETH-USD", "kind": "crypto", "side": "long", "weight_pct": 9,
+    "stop_loss_pct": 25.0, "take_profit_pct": 60.0,
+    "thesis": "ETH is down more than BTC in the packet and tracks the same risk-off tape, so I hold at 9% rather than add. The 25% stop is wider than BTC's because ETH already sits deeper in its drawdown, and I want to avoid being shaken out on a retest of lows."}
+ ]}
