@@ -1,1 +1,10 @@
-{"decision":"HOLD","reason":"Provisional: CRDO stop fired 2026-11-20, book is now 100% cash at 4% APY; holding cash pending research after a -8.6% SPY week."}
+{"name": "Opus-fleet small/mid-cap growth",
+ "strategy": "Defensive small/mid-cap growth book re-entering through a diversified 20% Russell 2000 Growth ETF (IWO) starter under a tight stop, with 80% in 4% cash after two single-name AI-connectivity stop-outs.",
+ "entry": "2026-11-23", "capital_usd": 1000,
+ "cash_pct": 80,
+ "reassessment_note": "The CRDO leg stopped out at 99.86 on 2026-11-20 (-28.7% realized), leaving the book 100% cash at NAV $806.89. Research (web search on the week's tape) shows the selloff is an AI-capex unwind: the S&P 500 posted its longest losing streak since 2024 (Dow -1,101 points on 11-19, >90% of S&P names down), with the Russell 2000 already in correction on yields/recession worries; IWO closed 320.43 on 11-20, down ~11% from its 11-11 close of 359.06 and -3.6% on Friday alone. Lesson from ALAB and CRDO: concentrated single-name AI-connectivity exposure in a crowded unwind is how this book lost a fifth of its capital, so I am not re-buying a single AI name into the drawdown. A mandate-consistent, diversified small-cap growth starter at 20% captures part of any oversold rebound after seven down sessions while capping the book-level risk of a further leg down at roughly 2% of NAV via a 10% stop. I could not find coverage of the 11-20 session itself or any weekend catalyst, so sizing is deliberately small; I will add or rotate into specific growth names only once the tape stabilizes.",
+ "positions": [
+   {"symbol": "IWO", "kind": "equity", "side": "long", "weight_pct": 20,
+    "stop_loss_pct": 10.0, "take_profit_pct": 25.0,
+    "thesis": "iShares Russell 2000 Growth ETF is the cleanest mandate-aligned exposure to small-cap growth without single-name AI-connectivity risk that stopped this book out twice. At 320.43 it is ~11% below its 11-11 close after a broad, indiscriminate liquidation (90%+ of large caps down on 11-19), so forward odds of a partial mean-reversion are reasonable, but the selloff accelerated Friday, hence only 20% weight and a 10% stop (about 2% of NAV at risk). 2bps friction makes the starter cheap to hold or exit; 25% take-profit would lock a full retrace above the prior high."}
+ ]}
