@@ -1,0 +1,39 @@
+{
+ "name": "Opus 5 vol regime",
+ "strategy": "High-vol regime defense: net-flat low-beta versus high-beta spread (long consumer staples XLP and a trimmed integrated-energy XLE sleeve against a short in small caps IWM), with 50% cash at 4% until equity vol mean-reverts.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 50,
+ "reassessment_note": "Last week's book assumed the early-November equity-vol spike had faded and leaned mid-vol (net +5% long, SPY long against IWM short). That premise has broken. VIX rose about 11% to 25.46 on 11-17, then jumped 26% to 35.89 on 11-20 as the S&P 500 fell 3.7% and XLK fell 9% in one session (tapeboard market pulse 11-17 and 11-20). That ended a five-session slide of roughly 8.6% on SPY. The 10-year yield has eased from about 5.1% to 4.91%, and WTI is firm near $84. The book held up (-0.53% NAV) only because the IWM short offset the longs. The SPY long is -6.78%, sitting 0.2% from its -7% stop, and SPY is now a concentrated bet on the tech and AI complex at the epicentre of the selloff. A vol-regime mandate in a VIX-35 regime should not carry index beta, so I drop SPY. I keep the short-beta side and swap the long leg into low-vol defensives: XLP was the best sector on 11-20 at -0.79%. I trim XLE from 15% to 10% because oil is firm but energy equities still trade with the tape. Net exposure is about 0% and gross is 50%. Stops are widened modestly for the higher daily range, so routine noise does not knock out the hedge legs. I re-risk only when VIX falls back below about 25. Research was a few web searches and fetches; some news results were from 2025 and I disregarded them.",
+ "positions": [
+  {
+   "symbol": "IWM",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 25,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 15.0,
+   "thesis": "Kept at 25% as the core short-beta leg. Small caps are high-beta and margin- and refinancing-sensitive. The Russell fell 2.76% on 11-20, with speculative crypto-linked names down 17-18%, and in a VIX-36 regime that risk-off rotation tends to persist. The stop is widened to 10% because a capitulation relief rally after five straight down days is the main risk to this leg. The XLP and XLE longs offset part of that risk."
+  },
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 15,
+   "stop_loss_pct": 7.0,
+   "take_profit_pct": 10.0,
+   "thesis": "Replaces the SPY long. Consumer staples are the lowest-beta, least tech-exposed sector and held best on 11-20 (-0.79% against -3.7% for the S&P). Easing 10-year yields (5.1% to 4.91%) also help bond-proxy defensives. Long XLP against short IWM is a low-vol-minus-high-beta spread, which is the factor that pays in a high-vol regime, and it does not depend on calling the bottom. Sized at 15% so the book stays roughly net flat with the energy sleeve."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 9.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Trimmed from 15% to 10%. Integrated energy has little exposure to the AI-capex unwind, and WTI is holding around $83-85 while the tape falls, which supports cash flows. But XLE still fell about 5% from entry with the market (-1.27% on 11-20), so its diversification is partial and it deserves a smaller weight in a high-vol regime. The stop is at 9% from the new entry to allow for elevated daily ranges."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

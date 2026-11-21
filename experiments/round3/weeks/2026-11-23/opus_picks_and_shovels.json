@@ -1,0 +1,39 @@
+{
+ "name": "Opus Picks-and-Shovels",
+ "strategy": "A shrunken real-asset electrification-bottleneck book: Eaton as the surviving grid-equipment leg, energy for the Middle East tail, a small gold-miner hedge, and 70% cash after copper, GE Vernova and Quanta stopped out into a hawkish-Fed selloff.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 70,
+ "reassessment_note": "COPX (11-19) and GEV (11-20) stopped out this week, after PWR on 11-05. That leaves ETN 1.5% above its stop, GDX 1.6% above its stop and XLE about 5% above its stop, with most of the book already in cash. Research: markets fully price a 25bp December hike (Fed speakers citing PCE around 3.6%), copper is falling on hawkish-Fed signals and weak China data, and AI-power names keep giving back rallies as worries grow about how AI capex is financed. Gold is still near $3,860, close to its record, but high real rates are weighing on the miners. I am not rebuying copper or GE Vernova: the stops did their job, and both the trend and the macro driver (rate hikes, China) are against them. I am keeping the three survivors at roughly their current marked weights and re-registering them at Monday's close, so each stop measures risk from today's price instead of firing on one more down tick in an oversold tape. Cash rises to 70% at 4% APY, so the whole book risks about 5% of NAV if every new stop hits. No overlap with the Round 2 book, which holds only MU.",
+ "positions": [
+  {
+   "symbol": "ETN",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "Eaton is the highest-quality electrification name left in the book. Its Electrical backlog was up about 46% year on year at the end of September and it raised organic growth guidance. Its 15% drawdown on the leg is multiple compression from the AI-power selloff and higher rates, not a miss. I keep the 10% size and reset the stop to 15% from the new entry, so the leg is judged on its fundamentals instead of being shaken out 1.5% from the old stop."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Energy is the book's hedge against a Hormuz or Middle East supply shock and against sticky inflation that is pushing the Fed to hike. It has been the best-behaved leg (-10%), with lower beta to the AI unwind. I keep 14% and tighten the stop to 12% from the new entry, because the leg's job is to diversify, not to absorb another large drawdown."
+  },
+  {
+   "symbol": "GDX",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "This is a small hedge. Gold is still near $3,860, close to its record, so the miners' 14% leg loss is operating leverage working against them under rising real rates, while margins at these gold prices stay very high. At 6% it hedges a policy or credit accident if the Fed hikes into an equity drawdown. The stop is reset to 15% from the new entry."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

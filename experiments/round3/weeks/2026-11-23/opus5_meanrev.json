@@ -1,0 +1,57 @@
+{
+ "name": "Opus 5 mean reversion",
+ "strategy": "Concentrated long book of oversold US large-cap quality whose drawdown cause is macro or sector-wide (AI/semis unwind, hawkish Fed, post-midterm defense budget fears) rather than company-specific: CSCO, GD, SNPS and HON held at existing weights and MSFT added as a 10% scale-in after a five-session 8.6% SPY slide, with 35% cash at 4%.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 35,
+ "reassessment_note": "Researched with WebSearch and Yahoo daily closes. The 11-13 to 11-20 slide (SPY 754.37 to 689.81, QQQ -10.5%, SMH -17.8% over the week, SMH -10.6% and SPY -3.6% on 11-20 alone) is an AI-trade unwind plus a hawkish Fed (FOMC minutes show a December hike fully priced) and Nvidia leadership/earnings disappointment, not news at my names. SNPS fell 8.1% on 11-20 alongside CDNS -7.6% and SMH -10.6%; I found no Synopsys-specific news (the Kimi K3 EDA scare was July). GD and LMT's slide traces to post-midterm Pentagon budget fears that analysts call overdone given record backlogs. CSCO is giving back its post-beat gains with the AI networking tape. All four legs remain inside their stops and their drawdown causes still fit the mandate, so I keep them. The book is -0.99% versus SPY -6.97% with 45% cash, which is underexposed for a mean-reversion mandate after a capitulation-style five-day decline, so I deploy 10% into MSFT, which is down 7.5% in five sessions and 12.8% off its high on sector-wide AI capex worries, with Mizuho and UBS reiterating Buy on 11-20. I deliberately do not buy GOOGL (company-specific search/earnings miss on 10-29) or the semis themselves (momentum crash, no sign of a base). Re-registering resets entry fills to the 11-23 close, so stops are restated close to their existing absolute levels rather than loosened. Kept 35% cash because the regime (Fed hiking, VIX mid-20s, five straight down days) can extend; SNPS reports Dec 8 after the close, inside the holding window.",
+ "positions": [
+  {
+   "symbol": "CSCO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 17,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 18.0,
+   "thesis": "Largest leg: a clean beat-and-raise in mid-November, then a fall from 102 to 90.64 purely with the AI networking and semis tape. That is a sector-driven drawdown on a cash-rich, low-multiple quality name, which is the setup this mandate buys. A 10% stop from the new entry (~81.6) sits just below the prior 83.2 stop level, and +18% targets a retrace toward the 11-12 high."
+  },
+  {
+   "symbol": "GD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 14.0,
+   "thesis": "Down from 367 to 341.5 on post-midterm fears of tighter Pentagon budgets plus broad de-risking, not company news. Record defense backlogs and a Gulfstream business jet cycle are intact, and analysts called the defense selloff an overreaction. The 8% stop (~314) stays close to the prior 323.7 absolute level so risk is not loosened, and +14% targets a recovery to the 384 three-month high."
+  },
+  {
+   "symbol": "SNPS",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "The -8.1% day on 11-20 matched CDNS (-7.6%) and SMH (-10.6%), and I found no Synopsys-specific headline, so the drawdown is sector-wide. The stock is 22% below its three-month high going into Dec 8 Q4 results, against guidance of $2.53-2.58B revenue and $4.10-4.16 EPS. I keep it at 12%, not larger, because of that earnings event and semis momentum. The 10% stop (~357) is a bit wider than the prior absolute level to survive sector noise, and a break below it would signal the EDA thesis is failing."
+  },
+  {
+   "symbol": "HON",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 14.0,
+   "thesis": "A diversified industrial, down from 229 to 212.6 in two weeks with the broad tape and with no company-specific damage. BofA flow data show industrials getting their first inflows in 16 weeks. It is a lower-beta mean-reversion leg next to the tech-linked names. The 10% stop (~191) is near the prior 194 level, and +14% targets the November high."
+  },
+  {
+   "symbol": "MSFT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 16.0,
+   "thesis": "New 10% scale-in. MSFT is down 7.5% in five sessions to 484.52, 12.8% off its high and at a 21-week low, on sector-wide AI capex and free-cash-flow worries shared by all hyperscalers, plus a transient M365 outage. Azure grew 48% last quarter, and Mizuho ($640) and UBS ($650) reiterated Buy on 11-20. This is quality sold for a macro or sector reason, the core of the mandate. It is sized modestly because AI-complex momentum is still negative. The 12% stop allows for VIX-25 volatility, and +16% targets a retrace toward 560."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

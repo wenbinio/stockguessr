@@ -1,0 +1,46 @@
+{
+ "name": "Fable Unconstrained",
+ "strategy": "Dual-momentum with the absolute-momentum filter now binding: keep only the sector leaders still holding relative strength through the November selloff - consumer staples (XLP plus WMT) and a halved healthcare sleeve (XLV plus leader LLY) - with financials cut after breaking down, every leg stop-protected, no leverage, 65% cash at 4%.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 65,
+ "reassessment_note": "Research this week (web search worked; I found AP/Zacks/TheStreet coverage through 11-18/19 but no wrap of the 11-20 session itself, so the 11-20 moves come from my packet marks and the brief). What changed: the tape went from an AI-led rotation that favoured my defensive leaders to a broad liquidation - S&P 500 down five-plus sessions in a row, its longest losing streak since June, SPY about -8.6% on the week, VIX in the mid-20s - while Fed minutes showed some officials weighing a larger-than-usual hike in December. A dual-momentum book is supposed to respect absolute momentum, not just relative: when the leaders themselves roll over, the rule is to step toward cash. Financials were among the worst sectors on 11-17 and breadth work flags finance breaking down; XLF is -5.9% from my entry and rate-hike plus credit fear is a direct headwind, so it is cut entirely rather than waiting for the -10% stop. Healthcare is -5.9% from entry and now carries a fresh policy overhang - the CMS CRUSH Medicare Advantage audit proposal of 11-16 knocked UNH about 20% and Humana 13% - so XLV is halved from 20 to 10. LLY, XLP and WMT have held up (WMT is up since entry, XLP flat in an -8.6% week) and are kept unchanged: that is where relative momentum actually is. Net: gross 59% to 35%, cash 41% to 65%. Cost is small (roughly 24 points of turnover at 2bps). I accept the whipsaw risk of selling into an oversold week; with the Fed tightening into the drawdown I would rather re-enter on confirmed strength.",
+ "positions": [
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 8.0,
+   "thesis": "Staples are the one sleeve showing genuine relative momentum: flat (-0.5%) since my 11-09 entry while SPY lost roughly 8-9%. In a rate-hike-driven de-risking, low-beta cash-flow names are where money hides. Held at an unchanged 14% - large enough to matter, small enough that the 8% stop caps the loss near 1.1% of NAV."
+  },
+  {
+   "symbol": "WMT",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 25.0,
+   "thesis": "Single-name leader inside staples/defensive retail and my only leg in the green (+1.8% since entry) through the worst week of the autumn; trade-down demand makes it a beneficiary of a weakening consumer. Kept at 5% as a satellite to XLP rather than a core bet, since it already sits inside XLP's top holdings."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "thesis": "Healthcare remains a 6-month relative-strength leader, but it is -5.9% since entry and the CMS CRUSH audit proposal has put managed care (a meaningful slice of the fund via UNH, ELV, CVS, HUM) under a policy overhang that will not clear before the comment period ends 2027-01-19. Halved to 10% with a tighter 8% stop from the new fill: keep exposure to the pharma/devices leadership, cut the dollars at risk to the insurer drag."
+  },
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 30.0,
+   "thesis": "The sector's momentum leader (about +27% over 6 months at entry) and not exposed to the Medicare Advantage audit rule that is hurting insurers; its -4.5% since entry is roughly half the market's decline, i.e. it is still outperforming. Kept at 6% - single-stock risk in a high-volatility tape does not justify more."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

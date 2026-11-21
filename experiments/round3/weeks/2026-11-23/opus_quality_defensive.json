@@ -1,0 +1,36 @@
+{
+ "name": "Opus Quality Defensive",
+ "strategy": "Long-only cross-asset carry and trend book, de-risked again: systematic managed-futures trend as the largest sleeve, the equity variance-premium sleeve held, a small midstream carry sleeve, the broken commodity-carry sleeve exited, and 50% cash at 4%.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 50,
+ "reassessment_note": "A trend book should follow its own signals, and commodities are now in a clear downtrend. DBC is -12.7% over one month and -4.8% on the week, crude is losing its war premium (USO -14% over a month), and even gold broke hard (GLD 365 to 323 since 11-11). PDBC (-5.4% on the leg) is no longer a carry-plus-trend position; it is a falling knife, so I exit it. The managed-futures sleeve is the only leg in the green (+0.74%) during an 8.6% equity drawdown, which is the crisis-alpha behaviour it is held for, so I add to it, 22 to 26. JEPI stays at 16: with VIX at ~36 its covered-call premium is the richest it has been all year, and it fell less than SPY. AMLP stays at 8 as fee-based midstream carry. Net effect: gross falls 60% to 50% and cash rises to 50% at 4%. Round 3 novelty: this book has zero symbol overlap with my Round 2 book (XLV/USMV/XLP/XLE), so same-direction overlap is 0%.",
+ "positions": [
+  {
+   "symbol": "DBMF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 26,
+   "stop_loss_pct": 12.0,
+   "thesis": "Managed-futures replication (it tracks the SG CTA index) is the book's trend engine and was flat-to-up during the week's selloff (+0.74% on the leg), because CTAs re-position short equities and commodities as trends break. Raised from 22% to 26% because persistent trends, here the AI unwind, the commodity slide and a hiking Fed, are its best environment. The 12% stop covers a sharp V-reversal, which is the strategy's known weakness."
+  },
+  {
+   "symbol": "JEPI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 10.0,
+   "thesis": "The equity variance-premium sleeve: low-vol stock selection plus sold index calls through ELNs. With VIX near 36, the call premium it collects is near its year high, which raises forward distribution yield and cushions further downside. JEPI fell less than SPY this week. Kept at 16% rather than raised, because it is still long-equity beta in a market under heavy de-grossing; the 10% stop limits a crash scenario."
+  },
+  {
+   "symbol": "AMLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 8,
+   "stop_loss_pct": 10.0,
+   "thesis": "Midstream MLP carry at a high distribution yield, fee-based and mostly insulated from spot crude. It fell only 2.2% on the leg while crude and equities slid. Held at a small 8% because sustained oil weakness could eventually weigh on volumes; the stop exits if midstream joins the commodity downtrend."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

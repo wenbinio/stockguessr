@@ -1,0 +1,55 @@
+{
+ "name": "Opus Broadening",
+ "strategy": "Broadening owned outside the US index-structure trade: currency-hedged Japan, European rearmament and international developed value as the equity core, plus US insurers, with the long-end Treasury short retired into cash.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 32,
+ "reassessment_note": "The TLT short was rebuilt last week as a term-premium hedge with 10-year yields above 5%. Research on this week's selloff shows it was an AI-valuation and growth scare: Nvidia's guidance midpoint missed, chip stocks were liquidated, and Treasury yields eased as investors moved toward safety. In that kind of risk-off the long bond rallies alongside falling equities, so the short added to losses instead of offsetting them. TLT rose about 2.6% against the short while every equity leg fell, which made it a correlated loss rather than a hedge. I am removing it and holding the 12% in cash at 4% APY, which is the cleaner hedge when stress shows up as a growth scare. The international equity core and KIE stay at their registered weights: their 3-7.5% losses came in a tape where SPY fell about 8.6%, so they still offer broadening away from US mega-cap AI concentration. Gross exposure falls from 80% to 68%. The book has no symbol overlap with the Round 2 book, so the novelty rule is met.",
+ "positions": [
+  {
+   "symbol": "DXJ",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 16,
+   "stop_loss_pct": 14.0,
+   "take_profit_pct": 30.0,
+   "thesis": "Currency-hedged Japanese equities hold the governance and buyback re-rating while hedging out yen swings. DXJ is weighted toward exporters and financials rather than AI semiconductors. The 7.5% drawdown this week was global de-risking, not a Japan-specific break, so I keep it at 16% as the largest single-country leg, with a 14% stop to cap a deeper global unwind."
+  },
+  {
+   "symbol": "EUAD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 15.0,
+   "take_profit_pct": 35.0,
+   "thesis": "European aerospace and defense is a multi-year, budget-driven capex cycle (NATO spending targets) with no link to the AI-profit doubts driving this selloff. I keep it at 14% after a 6% risk-off drawdown. The wide 15% stop allows for the sector's volatility."
+  },
+  {
+   "symbol": "EFV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 12.0,
+   "thesis": "International developed value (banks, energy, industrials, low multiples) is the core of broadening away from expensive US tech. A valuation-led AI sell-off is where low-multiple value should hold up best over the next weeks. I keep it at 18% as the core weight with a 12% stop."
+  },
+  {
+   "symbol": "KIE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 13.0,
+   "take_profit_pct": 25.0,
+   "thesis": "An equal-weight US insurance basket: underwriting earnings plus float reinvested near 5% long-end yields, with little AI exposure. It was the most defensive equity leg this week (-3%). I keep it at 14% as the domestic stabiliser."
+  },
+  {
+   "symbol": "VEA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 12.0,
+   "thesis": "A small broad developed ex-US leg that gives cap-weighted international diversification beyond the value tilt. I keep it at 6% so the core is not purely factor-driven."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

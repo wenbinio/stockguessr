@@ -1,0 +1,61 @@
+{
+ "name": "Haiku dividend growth and income",
+ "strategy": "Defensive value and low-vol longs (VTV, XLF, XLE, IWD, XLI, SCHV, USMV) with the PSQ short removed and the proceeds held as cash.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 26.4,
+ "reassessment_note": "The PSQ leg is an inverse-Nasdaq ETF held short, which is effectively a long bet on the Nasdaq. Its loss on the tech selloff (about -12.8% from entry) shows the leg is pointed the wrong way for a book that is meant to hedge overheated momentum. I am closing it and holding the difference as cash, which earns 4% APY and cuts gross exposure. The AI and semiconductor selloff through 11-19 supports a defensive tilt, but I found no clear evidence to add exposure. I keep the value and low-vol longs as the core. XLI remains a laggard at -12.8% from entry and I am keeping it at a smaller weight rather than adding, pending evidence it is turning. Research was limited to market-wrap and rates articles, which are thin for specific sector views.",
+ "positions": [
+  {
+   "symbol": "VTV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14.72,
+   "thesis": "Large-cap value is the core defensive sleeve, with lower valuation risk than the AI-led momentum names that drove the selloff. Holding at entry weight."
+  },
+  {
+   "symbol": "XLF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12.88,
+   "thesis": "Financials are a value sector that benefits from higher-for-longer rates through net interest margins. The position is down about 3.8% from entry, so I keep it at current size rather than adding. Rising yields add some credit risk, which I accept at this weight."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10.12,
+   "thesis": "Energy is a value hedge against supply shocks and has held up relative to the broad market. It is up about 2.2% from entry. The oil data I found conflicts, so I keep it at a moderate weight."
+  },
+  {
+   "symbol": "IWD",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10.12,
+   "thesis": "Russell 1000 Value gives broad value exposure with less AI and semiconductor concentration than the cap-weighted indices. It is down about 1.4% from entry and is a low-cost core holding."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10.12,
+   "thesis": "Industrials are a value and cyclical sector that has lagged, down about 12.8% from entry. I keep it at this size as a diversifier, not a conviction add, pending evidence the sector is turning."
+  },
+  {
+   "symbol": "SCHV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9.2,
+   "thesis": "Low-cost large-cap value adds dividend-oriented exposure. It is down about 3.7% from entry and is kept as a core value sleeve."
+  },
+  {
+   "symbol": "USMV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6.44,
+   "thesis": "Minimum-volatility equities are the defensive sleeve for a selloff. It is up about 0.6% from entry and fits the risk-off backdrop."
+  }
+ ],
+ "model": "haiku",
+ "group": "fleet"
+}

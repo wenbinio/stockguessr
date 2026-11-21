@@ -1,0 +1,53 @@
+{
+ "name": "Opus Value",
+ "strategy": "A trend book that owns only what the tape currently confirms: staples, low-volatility and Berkshire as the leading defensive trends, a trimmed healthcare leg, a re-struck short in the broken technology trend, and 38% cash while the broad market, gold, energy and long bonds are below or at trend.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 38,
+ "reassessment_note": "Checked trends on Yahoo daily closes through 11-20: XLP (90.46 vs 50d 86.4) and SPLV (76.0 vs 74.4) remain above their 50- and 100-day averages and fell only 2-3% in an 8.6% SPY week, so they are raised. XLV has slipped to just above its 50-day (177.2 vs 176.5) and is under policy pressure from CMS's CRUSH Medicare Advantage rule, so it is cut from 20% to 12%. BRK-B (570 vs 50d 537) is one of the few large caps still in a clean uptrend and is added. The XLK short is +12.8% (149 vs 50d 184) and its old 8% stop sat at ~$184.5, which would have given back the whole gain on a snapback after a 12.5% week; re-striking it at Monday's fill puts the stop near $161 and a 20% take-profit locks gains, and I add 2 points since the tech trend is the most broken on the board. Gold (14-month low), energy (Brent sliding toward surplus), SPY and TLT (at, not above, its 100-day) are not confirmed uptrends, so cash stays high at 38%. No symbol overlaps the Round 2 book.",
+ "positions": [
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 18,
+   "stop_loss_pct": 7.0,
+   "thesis": "Staples are the strongest sector trend on the board: 4.7% above the 50-day, near a six-month high, and down only 2% during the 8.6% SPY drawdown; raised from 15% to 18% with a 7% stop under trend support."
+  },
+  {
+   "symbol": "SPLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 7.0,
+   "thesis": "Low-volatility factor holding above its 50- and 100-day averages while the market broke; raised from 10% to 12% as the diversified defensive trend, stop 7%."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 7.0,
+   "thesis": "Healthcare is still marginally above its 50-day and well above its 100-day, so the trend is not broken, but the CRUSH Medicare Advantage rule hit insurers and the margin over trend is thin; cut from 20% to 12% with a 7% stop."
+  },
+  {
+   "symbol": "BRK-B",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "thesis": "New leg: Berkshire is trading 6% above its 50-day and 10% above its 100-day, near its six-month high, and fell under 4% in the selloff -- a confirmed defensive uptrend with low tech exposure; 10% with an 8% stop."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 10,
+   "stop_loss_pct": 8.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Technology is the most broken trend (149 vs a 184 50-day, -12.5% in five sessions on the AI-capex unwind); re-struck at Monday's close so the 8% stop protects this week's gain instead of sitting at $184.5, raised from 8% to 10%, with a 20% take-profit to bank a capitulation low."
+  }
+ ],
+ "model": "opus",
+ "group": "flagship"
+}

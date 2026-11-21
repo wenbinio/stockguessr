@@ -1,0 +1,39 @@
+{
+ "name": "Opus-fleet price momentum",
+ "strategy": "Concentrated long-only US price momentum: hold only leaders closing above both their 50- and 200-day averages (LLY, MCK, CAH) with 10% stops, and keep 68% cash while SPY trades well below its 50- and 200-day averages.",
+ "entry": "2026-11-23",
+ "capital_usd": 1000,
+ "cash_pct": 68,
+ "reassessment_note": "I applied the book's own filter to the 2026-11-20 closes I pulled from Yahoo's daily chart data. SPY is at 689.81, about 9% below its 50-day average (760) and 6% below its 200-day (733), after an 8.6% weekly drop led by AI and tech stocks. I could only search the news lightly: one search confirmed an AI-infrastructure-led selloff in November but found no coverage of the 11-20 session itself. MSFT (484.52) is now 6.8% below its 50-day average, its 3-month return is negative, and it sits at the centre of the AI selloff, so it fails the filter and is sold. TMO (669.54) closed 1.3% below its 50-day average, so it fails the filter too and is sold, though only narrowly. LLY (+6% vs 50d, +20% vs 200d) and MCK (+10% vs 50d, +22% vs 200d) still pass and are kept at their current weights. From a screen of about 28 defensive and large-cap names, CAH is the strongest pass: +10% vs its 50-day, +20% vs its 200-day, +36% over 6 months, and only -2.9% in the selloff week. It goes in at 9%. Gross exposure falls from 43% to 32%, and the extra cash earns 4% in a falling tape. Turnover is about 29% of the book at 2bps, which is negligible.",
+ "positions": [
+  {
+   "symbol": "LLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 14,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "This is the book's largest momentum leader: 1347 at the 11-20 close, 6% above its 50-day average (1267) and 20% above its 200-day (1118), with a +8% 3-month return despite a 6.7% drop in the selloff week. It stays at 14% because it still passes both average filters. The 10% stop, measured from the new 11-23 entry, caps the damage if the selloff spreads into healthcare."
+  },
+  {
+   "symbol": "MCK",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "MCK is the strongest trend in the book: 1069 is 10% above its 50-day average (974) and 22% above its 200-day (880), it is up 22% over 3 months, and it fell only 3% in the selloff week. Its drug-distribution earnings have little exposure to AI spending. It stays at 9% rather than more because CAH, added this week, carries the same sector risk."
+  },
+  {
+   "symbol": "CAH",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 9,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 30.0,
+   "thesis": "CAH (Cardinal Health) is a new leg and the strongest pass on this week's screen: 272.81 is 10% above its 50-day average and 20% above its 200-day, it is up 36% over 6 months, and it fell only 2.9% in a week when SPY fell 8.6%. It replaces MSFT, which failed the filter. The size is held to 9% because together with MCK it puts 18% of the book in drug distributors, a concentration risk I am accepting knowingly."
+  }
+ ],
+ "model": "opus",
+ "group": "factorial"
+}
