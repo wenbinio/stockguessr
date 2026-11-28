@@ -1,0 +1,21 @@
+{
+ "name": "Opus 5 event driven",
+ "strategy": "A single dated binary catalyst: a 22% long in Brighthouse Financial (BHF) into the 6 December 2026 outside date of its $70/share cash merger with Aquarian, with the other 78% in cash at 4% APY until a new tape-datable event qualifies.",
+ "entry": "2026-11-30",
+ "capital_usd": 1000,
+ "cash_pct": 78,
+ "reassessment_note": "This packet does not agree with itself. The header still describes a 13-leg book with 86% gross, but the leg table shows only BHF 22% and XLE 14% with 64% cash, and it gives no entry fills. I treat the leg table as the authority. I ran web searches and pulled prices. XLE has no event-driven thesis left. It fell from about 70 on 10-30 to 61.67 on 11-27 as Brent came off its highs on hopes of a US-Iran settlement, and as Hormuz flows recovered. The 29 November OPEC+ ministerial meeting will set 2027 quotas, and forecasters (IEA, EIA) expect a surplus in 2027 if Gulf supply returns. One option under discussion is unwinding about 2 mb/d of cuts. The risk around that meeting looks skewed to the downside and I cannot call it, so holding a sector ETF through it is a macro bet outside the mandate. I drop XLE. BHF is the cleanest catalyst in the book. It trades at 41.48 against a $70 cash deal price, a 69% gross spread. The outside date is 6 December, the Q3 release said the Delaware, New York and Massachusetts approvals will not arrive by then, and both sides say they remain committed and are discussing an extension. Talcott (backed by Sixth Street) has written to the board reaffirming interest if the Aquarian deal fails, which gives some support on a break. Within days the market should get an extension (spread tightens), a termination (cushioned by Talcott and a standalone value near low-to-mid 30s), or approval news (big gap toward 70). I keep the 22% size. I widen the stop to 20% so a gap on a termination headline does not lock in the low print, and I set the take-profit at 55% (about 64), near deal value net of the remaining time. No new legs: I would rather sit in cash at 4% than force a catalyst without tape evidence. Replacing the book costs only a few basis points.",
+ "positions": [
+  {
+   "symbol": "BHF",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 22,
+   "stop_loss_pct": 20.0,
+   "take_profit_pct": 55.0,
+   "thesis": "Merger-arb binary into a dated event. Aquarian agreed to pay $70 cash per share (signed 6 Nov 2025, shareholders approved 12 Feb 2026, HSR cleared). Only insurance approvals from Delaware, New York and Massachusetts remain, plus FINRA. The outside date of 6 December 2026 has already been auto-extended once. At 41.48 (11-27) the stock prices in a deal probability of roughly 20-25%, if a break is worth about $33-35. Delaware is scrutinising Aquarian's capital sources, so a break is a real risk. But both parties say they are committed and are negotiating a further extension, and Talcott/Sixth Street has reaffirmed it would bid if the deal fails. That makes the payoff asymmetric: about +69% if the deal closes, and roughly -15% to -20% on a clean break with no rival bid. The outcome should be largely known within about a week. I size it at 22%, not more, because this is a true binary that could gap. The 20% stop (about 33) sits below a plausible break-with-Talcott price and only fires if both the deal and the backstop fail. The 55% take-profit (about 64) is close to deal value net of time."
+  }
+ ],
+ "model": "opus",
+ "group": "opus5"
+}

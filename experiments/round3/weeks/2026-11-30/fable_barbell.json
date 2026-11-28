@@ -1,0 +1,75 @@
+{
+ "name": "Fable Barbell",
+ "strategy": "Cross-sectional sector-momentum long/short re-ranked on the 2026-11-27 tape: long consumer staples and health care (top two SPDR sectors on blended 1- and 3-month returns) plus a split third slot in consumer discretionary and utilities (a statistical tie for third), versus short technology, energy and industrials (bottom three), with hard stops and take-profits and 45% yielding cash.",
+ "entry": "2026-11-30",
+ "capital_usd": 1000,
+ "cash_pct": 45,
+ "reassessment_note": "Scheduled re-rank of the eleven SPDR sectors on the 11-27 close, using adjusted closes I pulled from Yahoo's chart API (the shared WebSearch returned almost nothing dated to this week, so this rests on the price tape plus my packet; the only macro colour found was undated reporting of a quarter-point Fed hike priced at about 87-95% for December 8-9 with oil sliding). Blended 1-month/3-month returns: XLP +7.9, XLV +5.3, XLY +3.3, XLU +3.0, XLRE +2.4, XLF +0.3, XLC -0.2, XLB -0.5, XLI -4.0, XLE -5.5, XLK -14.9. Two rank changes drive the trade. (1) Communication services is no longer a bottom-three sector: XLC is +4.2% on the month and sits 7th of 11, and it squeezed +7.5% last week, so the short is covered at a small loss; energy has dropped into the bottom three (XLE -9.9% on the month with WTI down 19% to $83) and takes its slot. (2) Financials slipped from a tie for third to 6th (+0.3 blend, leg -1.75%), while utilities rose to within 0.3 points of consumer discretionary for third, so the split third slot becomes XLY/XLU instead of XLY/XLF. Staples, health care, and the tech and industrials shorts keep their ranks and sizes. Gross stays 55% and cash 45% because last week's +5.6% SPY rebound was a holiday-thinned bounce inside a drawdown and a short book can be squeezed again. Novelty check versus my Round 2 book: the only same-direction overlap is XLV and XLP at 6 points each, 12 points in total, far below 50% of either book's gross.",
+ "positions": [
+  {
+   "symbol": "XLP",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 1 of 11 on blended momentum (+6.7% one month, +9.2% three months) and the only sector that was positive over the two weeks spanning the sell-off and the rebound; staples keep leading while the ten-year sits near 4.9% and a Fed hike is priced, so it holds a full 12% top-slot weight."
+  },
+  {
+   "symbol": "XLV",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 12,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 2 (+2.5% one month, +8.0% three months); the leg is down about 2% from its 11-16 fill but the rank is unchanged and it recovered 3.9% last week, so the signal still says hold at the full 12% top-slot weight rather than cut on a small mark."
+  },
+  {
+   "symbol": "XLY",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 3 at +3.3 blended (+4.0% one month, +2.6% three months), helped by crude falling 19% in a month; it leads utilities by only 0.3 points, so it gets half of the third slot at 5% rather than a full weight."
+  },
+  {
+   "symbol": "XLU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 12.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 4 at +3.0 blended (+2.9% one month, +3.1% three months), a statistical tie with discretionary for third; replaces financials, which fell to 6th, and adds a lower-beta long that offsets XLY's cyclicality. Sized at 5% because utilities are rate-sensitive into a likely December hike."
+  },
+  {
+   "symbol": "XLK",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 11 by a wide margin (-16.2% one month, -13.7% three months); last week's +7.5% bounce did not change the rank and the AI-led drawdown is the dominant cross-sectional trend. Kept at 7% with a 10% stop from the new fill because a short in the most oversold sector is the leg most exposed to a further squeeze."
+  },
+  {
+   "symbol": "XLE",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "New short: rank 10 at -5.5 blended (-9.9% one month) and the weakest sector in last week's rally at +1.9% against SPY +5.6%, with WTI down 19% in a month to about $83. Takes the slot vacated by XLC; 7% with a 10% stop because an oil headline can reverse crude quickly."
+  },
+  {
+   "symbol": "XLI",
+   "kind": "equity",
+   "side": "short",
+   "weight_pct": 7,
+   "stop_loss_pct": 10.0,
+   "take_profit_pct": 20.0,
+   "thesis": "Rank 9 at -4.0 blended (-1.7% one month, -6.3% three months), still in the bottom three; the leg is flat from its fill, the rank is unchanged, and it balances the book's defensive longs with a cyclical short at the same 7% as the other shorts."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

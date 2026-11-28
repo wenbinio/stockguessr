@@ -1,0 +1,44 @@
+{
+ "name": "Claude Fable (orchestrator)",
+ "strategy": "Concentrated, unlevered AI-infrastructure conviction rebuilt at small size after a full stop-out: foundry, GPU, custom silicon/networking and memory (TSM, NVDA, AVGO, MU) at 23% gross with wider stops, BTC removed, and 77% cash at 4% into the Dec 8-9 Fed hike.",
+ "entry": "2026-11-30",
+ "capital_usd": 1000,
+ "cash_pct": 77,
+ "reassessment_note": "Every equity leg of the 11-16 book stopped out (NVDA/TSM/MU on 11-20 in the S&P's ~9% washout week, ANET on 11-25), leaving an AI-infrastructure book holding only 5% BTC and cash, which is not the mandate. Research this week (web search worked; Yahoo Finance/Reuters-syndicated coverage through the 11-27 close): the washout was driven by hot inflation, tariff proposals and the Nvidia CEO crisis; the rebound came when Nvidia's board reinstated Jensen Huang (NVDA +~31% on 11-23, now ~150 vs my 125.53 stop fill), i.e. my tight 12-15% stops sold close to the low. Lesson applied: the stops were too tight for position-level volatility this high, so I am re-entering at smaller weights with 18-22% stops rather than bigger weights with tight ones. I am keeping gross low (23%) because the rebound is not confirmed: Sosnick calls it too early to rule out a dead-cat bounce, five of seven comparable post-8%-drop rebounds since 1950 were followed by more losses, the SOX still finished the week lower, the 10y is ~4.94% after Q3 GDP was revised to 4.3%, a December Fed hike was ~89% priced at last read, and next week brings jobs data and Huang's congressional hearings. ANET is not re-bought: it stopped out during a rally week, which is relative weakness I will not average into. BTC is closed: it fell 3.7% to ~59.3k on a day stocks rose 1.6%, sits at the bear-market lows near my stop, and is not core to an AI-infrastructure mandate.",
+ "positions": [
+  {
+   "symbol": "TSM",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 7,
+   "stop_loss_pct": 18.0,
+   "thesis": "Sole leading-edge foundry for every AI accelerator regardless of which chip designer or CEO wins; least exposed of the group to the Nvidia governance drama. Largest leg because it is the lowest idiosyncratic risk; 18% stop is wider than the 12% that was hit on 11-20 right before the rebound. Tariff proposals are the main risk, hence only 7%."
+  },
+  {
+   "symbol": "NVDA",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 6,
+   "stop_loss_pct": 22.0,
+   "thesis": "Huang's reinstatement removes the succession risk that drove the collapse, and the stock has already given back ~10% of Monday's 31% spike (close ~150.5), so I am not buying the spike high. Congressional hearings next week and 'exuberance fading' headlines argue for a small 6% weight and a 22% stop sized to recent daily swings rather than a stop a single bad session can trip."
+  },
+  {
+   "symbol": "AVGO",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 18.0,
+   "thesis": "Custom AI silicon plus data-center networking exposure that replaces the ANET networking slot without ANET's demonstrated relative weakness, and diversifies away from Nvidia-specific headline risk. 5% with an 18% stop; I could not find AVGO-specific news this week, so this leg rests on the structural thesis and is sized accordingly."
+  },
+  {
+   "symbol": "MU",
+   "kind": "equity",
+   "side": "long",
+   "weight_pct": 5,
+   "stop_loss_pct": 22.0,
+   "thesis": "Memory is the highest-beta part of AI infrastructure: MU rose more than 7% on 11-27 and memory names closed 15-27% off Wednesday's lows, showing the HBM/DRAM bid returns fastest when AI fears ease. That same beta is why it is the smallest weight with the widest stop."
+  }
+ ],
+ "model": "fable",
+ "group": "flagship"
+}

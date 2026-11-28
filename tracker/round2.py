@@ -77,7 +77,40 @@ def normalize(sym: str) -> str:
     return ALIASES.get(s, s)
 
 
+_ARCHIVE_DIR = ROOT / "experiments" / "price_archive"
+
+
+def _archive_path(symbol: str) -> Path:
+    return _ARCHIVE_DIR / f"{symbol}.json"
+
+
 def fetch(symbol: str, retries: int = 4) -> pd.Series | None:
+    """Fetch a daily close series, merged with any archived history for `symbol`.
+
+    Yahoo purges a delisted ticker's history. After the ACA cash merger it began
+    serving a single bar, which made every Opus 5 event driven leg that held ACA
+    unpriceable and silently dropped that whole book from valuation for a week
+    (2026-11-23..11-27). Archived closes now fill any dates Yahoo no longer
+    serves, and the history of every corporate-action symbol is archived on each
+    successful fetch, so a later purge cannot remove it.
+    """
+    s = _fetch_live(symbol, retries)
+    ap = _archive_path(symbol)
+    if ap.exists():
+        arch = pd.Series(json.loads(ap.read_text())["closes"], dtype=float)
+        arch.index = pd.to_datetime(arch.index)
+        s = arch if s is None else s.combine_first(arch).sort_index()
+    if s is not None and symbol in CORP_ACTIONS:
+        old = json.loads(ap.read_text()) if ap.exists() else {}
+        closes = old.get("closes", {})
+        if len(s) > len(closes):
+            closes = {**closes, **{d.date().isoformat(): round(float(v), 4) for d, v in s.items()}}
+            _ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+            ap.write_text(json.dumps({**old, "closes": dict(sorted(closes.items()))}, indent=1))
+    return s
+
+
+def _fetch_live(symbol: str, retries: int = 4) -> pd.Series | None:
     period2 = int(time.time()) + 86400
     url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
            f"?period1={PERIOD1}&period2={period2}&interval=1d")
