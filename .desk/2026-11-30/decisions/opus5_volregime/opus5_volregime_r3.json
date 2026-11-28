@@ -1,0 +1,16 @@
+{"name": "Opus 5 vol regime",
+ "strategy": "High-vol regime defense: roughly beta-neutral low-beta versus high-beta spread (long consumer staples XLP and integrated energy XLE against a trimmed short in small caps IWM), with 57% cash at 4% until equity vol fully mean-reverts.",
+ "entry": "2026-11-30", "capital_usd": 1000,
+ "cash_pct": 57,
+ "reassessment_note": "Research (WebSearch found 2026 coverage of the Nov 5-6 AI-led selloff and the Nov 17-19 tech-led slide; Yahoo daily closes pulled directly) shows the vol shock is fading but not gone: VIX closed 35.89 on 11-20, then 26.62 on 11-23 and 23.81 on 11-27. That is well off the spike but still above the ~18-19 level from early November. SPY rebounded from 689.8 to 728.3 and IWM from 256.6 to 273.8 (+6.7%). The book as registered was net short beta: IWM short 25% at a beta of about 1.2 is roughly -30 beta-weighted, against about +15.5 from XLP 15% and XLE 10%. That is why the leg lost about 0.9% while both defensive longs worked (XLP +2.5%, XLE +3.0%). The mandate calls for a net-flat spread, and with vol mean-reverting and December seasonality favourable to small caps, carrying an outright net-short tilt is a directional bet the mandate does not call for. So I trim the IWM short from 25% to 18% (net beta about -6, close to flat), keep both defensive longs at their current size, and move the 7 points to cash. I do not go fully to risk-on, because VIX near 24 still counts as an elevated regime. Stops are tightened relative to the new entry. Trading costs are a few basis points of NAV.",
+ "positions": [
+   {"symbol": "IWM", "kind": "equity", "side": "short", "weight_pct": 18,
+    "stop_loss_pct": 8.0, "take_profit_pct": 12.0,
+    "thesis": "This is the high-beta leg of the spread. Small caps are the most rate- and credit-sensitive part of the tape and fell hardest into the 11-20 VIX spike (IWM 283 to 256.6). They have since bounced 6.7% in a thin holiday week, so a renewed vol flare still hits IWM most. I cut it from 25% to 18% so the book's net beta is near flat rather than outright short. The 8% stop (around 296 from a ~274 entry) sits above the early-November highs, and I exit if the rebound turns into a full regime change."},
+   {"symbol": "XLP", "kind": "equity", "side": "long", "weight_pct": 15,
+    "stop_loss_pct": 6.0, "take_profit_pct": 10.0,
+    "thesis": "Consumer staples are the low-beta defensive anchor. XLP held near 90 through the 11-20 selloff and rose 2.5% on the leg, which is how this hedge should behave. At 15% it offsets most of the IWM short's beta in a further selloff. The 6% stop limits damage if a strong risk-on rotation out of defensives takes hold as vol normalizes."},
+   {"symbol": "XLE", "kind": "equity", "side": "long", "weight_pct": 10,
+    "stop_loss_pct": 8.0, "take_profit_pct": 15.0,
+    "thesis": "Integrated energy is a lower-beta value sleeve that diversifies away from the AI and tech complex driving this autumn's vol shocks. XLE fell from 65 to 59.9 into 11-23 and has recovered to 61.7. It stays at 10% because energy carries its own commodity risk, so it is a partial offset rather than a pure defensive. The 8% stop sits below the November low."}
+ ]}
